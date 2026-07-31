@@ -32,7 +32,7 @@ src/
     └── science/
         └── physics/
             └── lessons/
-                └── lesson1.json
+                └── lesson1.zl
 ```
 
 This makes educational content portable, version-controlled, easy to edit, easy to review, easy to translate, and easy to contribute to.
@@ -64,7 +64,7 @@ Every lesson can optionally have its own question bank.
 ```text
 physics/
 ├── lessons/
-│   └── lesson1.json
+│   └── lesson1.zl
 └── mcq/
     └── lesson1mcq.json
 ```
@@ -120,89 +120,7 @@ OpenUniversity can track:
 
 ## Project Structure
 
-```text
-OpenUniversity/
-│
-├── index.html
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-│
-├── public/
-│
-├── src/
-│   ├── app/
-│   │   ├── app.js
-│   │   ├── bootstrap.js
-│   │   ├── config.js
-│   │   ├── constants.js
-│   │   ├── routes.js
-│   │   └── state.js
-│   │
-│   ├── engines/
-│   │   ├── subject-engine.js
-│   │   ├── lesson-engine.js
-│   │   ├── mcq-engine.js
-│   │   ├── search-engine.js
-│   │   ├── progress-engine.js
-│   │   ├── bookmark-engine.js
-│   │   ├── notes-engine.js
-│   │   └── account-engine.js
-│   │
-│   ├── components/
-│   │   ├── layout/
-│   │   ├── subject/
-│   │   ├── lesson/
-│   │   ├── mcq/
-│   │   ├── search/
-│   │   ├── bookmarks/
-│   │   ├── notes/
-│   │   ├── progress/
-│   │   └── account/
-│   │
-│   ├── pages/
-│   │   ├── home.js
-│   │   ├── subjects.js
-│   │   ├── subject.js
-│   │   ├── lesson.js
-│   │   ├── mcq.js
-│   │   ├── search.js
-│   │   ├── bookmarks.js
-│   │   ├── notes.js
-│   │   ├── progress.js
-│   │   └── profile.js
-│   │
-│   ├── services/
-│   ├── storage/
-│   ├── utils/
-│   ├── accessibility/
-│   ├── i18n/
-│   │
-│   ├── subjects/
-│   │   ├── science/
-│   │   ├── mathematics/
-│   │   ├── computer-science/
-│   │   ├── history/
-│   │   ├── geography/
-│   │   └── languages/
-│   │
-│   └── styles/
-│
-├── assets/
-│   ├── illustrations/
-│   ├── diagrams/
-│   ├── backgrounds/
-│   └── branding/
-│
-├── schemas/
-├── tools/
-├── tests/
-│
-└── .github/
-    ├── workflows/
-    ├── ISSUE_TEMPLATE/
-    └── PULL_REQUEST_TEMPLATE.md
-```
+Tree.md
 
 ## Content Architecture
 
