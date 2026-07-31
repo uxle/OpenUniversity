@@ -1,3 +1,4 @@
+```
 OpenUniversity/
 │
 ├── index.html
@@ -352,3 +353,4 @@ OpenUniversity/
     │   └── feature.yml
     │
     └── PULL_REQUEST_TEMPLATE.md
+```
