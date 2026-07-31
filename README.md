@@ -24,7 +24,7 @@ Instead, OpenUniversity focuses on:
 
 ### Text-First Courses
 
-Courses are stored as structured JSON files instead of being locked inside a database or video platform.
+Courses are stored as human-readable Zolto (`.zl`) files instead of being locked inside a database or video platform.
 
 ```text
 src/
@@ -55,7 +55,7 @@ A lesson can contain:
 - Related lessons
 - Glossary terms
 
-The lesson engine converts structured JSON into the final learning interface.
+The lesson engine parses Zolto (`.zl`) into the final learning interface.
 
 ### MCQ Engine
 
@@ -120,7 +120,11 @@ OpenUniversity can track:
 
 ## Project Structure
 
-Tree.md
+The complete production project tree is maintained separately so this README stays focused on architecture and contributor documentation.
+
+**Complete folder/file structure:** [tree.md](tree.md)
+
+The tree includes the application engines, Zolto parser/renderer, content hierarchy, components, services, storage, styles, schemas, tools, tests, assets, and GitHub automation.
 
 ## Content Architecture
 
@@ -148,105 +152,9 @@ Science
     └── Newton's Laws
 ```
 
-## Subject
+## Subject and Sub-Subject Details\n\nEducational metadata is stored in Zolto files.\n\n### Subject\n\n```text\nsrc/subjects/science/details.zl\n```\n\nExample:\n\n```zl\n# Science\n\n@subject {\n    id: science\n    title: "Science"\n    description: "Explore the natural world through scientific knowledge."\n}\n\n@subSubjects {\n    physics\n    chemistry\n    biology\n}\n```\n\n### Sub-Subject\n\n```text\nsrc/subjects/science/physics/details.zl\n```\n\nExample:\n\n```zl\n# Physics\n\n@subject {\n    id: physics\n    title: "Physics"\n    parent: science\n    description: "Study matter, energy, motion, forces and the laws of nature."\n}\n\n@lessons {\n    lesson1\n    lesson2\n}\n```\n\n## Lesson\n\nLessons use Zolto (`.zl`) so contributors can write rich educational content without deeply nested JSON.\n\n```text\nsrc/subjects/science/physics/lessons/lesson1.zl\n```\n\nA lesson can contain normal text plus structured educational blocks such as equations, diagrams, examples, definitions, tables, callouts, timelines, concept maps, and interactive components.\n\nExample:\n\n```zl\n# Introduction to Motion\n\nMotion is the change in position of an object over time.\n\n@definition {\n    Motion describes how an object's position changes\n    relative to a reference point.\n}\n\n@equation {\n    v = \\frac{d}{t}\n}\n\n@important {\n    Motion always depends on a reference frame.\n}\n\n@example {\n    A car travels 100 km in 2 hours.\n\n    @equation {\n        v = \\frac{100}{2}\n    }\n\n    answer: "50 km/h"\n}\n```\n\nThe Zolto engine parses the `.zl` source and renders it as accessible HTML/UI components.\n\n## MCQ\n\nMCQs remain JSON because they are structured machine-readable question data.\n\n```text\nsrc/subjects/science/physics/mcq/lesson1mcq.json\n```\n\nExample:\n\n```json\n{\n  "lessonId": "physics-motion-001",\n  "questions": [\n    {\n      "id": "q001",\n      "question": "What is motion?",\n      "options": [\n        "Change in position over time",\n        "Change in color",\n        "Increase in mass",\n        "Remaining stationary"\n      ],\n      "answer": 0,\n      "explanation": "Motion is a change in the position of an object with respect to time."\n    }\n  ]\n}\n```\n\n## Content Validation
 
-Every subject can have a `details.json`.
-
-```text
-src/subjects/science/details.json
-```
-
-Example:
-
-```json
-{
-  "id": "science",
-  "title": "Science",
-  "description": "Explore the natural world through scientific knowledge.",
-  "icon": "science",
-  "subSubjects": [
-    "physics",
-    "chemistry",
-    "biology"
-  ]
-}
-```
-
-## Sub-Subject
-
-Example:
-
-```text
-src/subjects/science/physics/details.json
-```
-
-```json
-{
-  "id": "physics",
-  "title": "Physics",
-  "description": "Study matter, energy, motion, forces and the laws of nature.",
-  "subject": "science",
-  "lessons": 1
-}
-```
-
-## Lesson
-
-Example:
-
-```text
-src/subjects/science/physics/lessons/lesson1.json
-```
-
-```json
-{
-  "id": "physics-motion-001",
-  "title": "Introduction to Motion",
-  "description": "Learn the basic concept of motion.",
-  "sections": [
-    {
-      "heading": "What is Motion?",
-      "content": "Motion is the change in position of an object over time."
-    }
-  ],
-  "keyPoints": [
-    "Motion describes a change in position.",
-    "Motion is measured relative to a reference point."
-  ]
-}
-```
-
-## MCQ
-
-Example:
-
-```text
-src/subjects/science/physics/mcq/lesson1mcq.json
-```
-
-```json
-{
-  "lessonId": "physics-motion-001",
-  "questions": [
-    {
-      "id": "q001",
-      "question": "What is motion?",
-      "options": [
-        "Change in position over time",
-        "Change in color",
-        "Increase in mass",
-        "Remaining stationary"
-      ],
-      "answer": 0,
-      "explanation": "Motion is a change in the position of an object with respect to time."
-    }
-  ]
-}
-```
-
-## Content Validation
-
-OpenUniversity uses JSON schemas to make sure contributors don't accidentally break the learning system.
+OpenUniversity uses schemas and Zolto validation to make sure contributors don't accidentally break the learning system.
 
 ```text
 schemas/
@@ -261,12 +169,13 @@ schemas/
 Automated validation can check:
 
 - Required fields
-- Valid JSON
+- Valid JSON and valid Zolto syntax
 - Duplicate IDs
 - Broken references
 - Invalid MCQ answers
 - Missing lessons
 - Invalid subject structure
+- Invalid Zolto blocks and references
 
 ## Open Contributions
 
@@ -292,7 +201,7 @@ A contributor should not need to modify the core engine to add educational conte
 ```text
 Add a lesson
      ↓
-Create JSON
+Create `.zl` / JSON content
      ↓
 Validate JSON
      ↓
@@ -315,6 +224,7 @@ OpenUniversity is designed to remain lightweight.
 HTML
 CSS
 JavaScript
+Zolto (.zl)
 JSON
 ```
 
@@ -346,7 +256,7 @@ Browser
    ├── HTML
    ├── CSS
    ├── JavaScript
-   ├── JSON lessons
+   ├── Zolto lessons and JSON data
    │
    └── IndexedDB
         ├── Progress
@@ -419,9 +329,9 @@ src/i18n/
 Educational content can eventually have language variants:
 
 ```text
-lesson1.en.json
-lesson1.hi.json
-lesson1.es.json
+lesson1.en.zl
+lesson1.hi.zl
+lesson1.es.zl
 ```
 
 ## User Data
@@ -558,7 +468,7 @@ These tools can automatically:
 - Basic HTML application
 - Subject system
 - Sub-subject system
-- JSON lesson system
+- Zolto lesson system
 - Basic lesson renderer
 
 ### Phase 2 — Learning
@@ -675,7 +585,7 @@ Instead of making learners watch hours of video, OpenUniversity focuses on turni
 
 Instead of locking knowledge inside a proprietary platform, the content lives in structured, human-readable files.
 
-Instead of requiring every contributor to understand the application code, contributors can add knowledge through simple JSON structures.
+Instead of requiring every contributor to understand the application code, contributors can add knowledge through simple Zolto and JSON structures.
 
 ```text
 Knowledge
