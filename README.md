@@ -152,7 +152,166 @@ Science
     └── Newton's Laws
 ```
 
-## Subject and Sub-Subject Details\n\nEducational metadata is stored in Zolto files.\n\n### Subject\n\n```text\nsrc/subjects/science/details.zl\n```\n\nExample:\n\n```zl\n# Science\n\n@subject {\n    id: science\n    title: "Science"\n    description: "Explore the natural world through scientific knowledge."\n}\n\n@subSubjects {\n    physics\n    chemistry\n    biology\n}\n```\n\n### Sub-Subject\n\n```text\nsrc/subjects/science/physics/details.zl\n```\n\nExample:\n\n```zl\n# Physics\n\n@subject {\n    id: physics\n    title: "Physics"\n    parent: science\n    description: "Study matter, energy, motion, forces and the laws of nature."\n}\n\n@lessons {\n    lesson1\n    lesson2\n}\n```\n\n## Lesson\n\nLessons use Zolto (`.zl`) so contributors can write rich educational content without deeply nested JSON.\n\n```text\nsrc/subjects/science/physics/lessons/lesson1.zl\n```\n\nA lesson can contain normal text plus structured educational blocks such as equations, diagrams, examples, definitions, tables, callouts, timelines, concept maps, and interactive components.\n\nExample:\n\n```zl\n# Introduction to Motion\n\nMotion is the change in position of an object over time.\n\n@definition {\n    Motion describes how an object's position changes\n    relative to a reference point.\n}\n\n@equation {\n    v = \\frac{d}{t}\n}\n\n@important {\n    Motion always depends on a reference frame.\n}\n\n@example {\n    A car travels 100 km in 2 hours.\n\n    @equation {\n        v = \\frac{100}{2}\n    }\n\n    answer: "50 km/h"\n}\n```\n\nThe Zolto engine parses the `.zl` source and renders it as accessible HTML/UI components.\n\n## MCQ\n\nMCQs remain JSON because they are structured machine-readable question data.\n\n```text\nsrc/subjects/science/physics/mcq/lesson1mcq.json\n```\n\nExample:\n\n```json\n{\n  "lessonId": "physics-motion-001",\n  "questions": [\n    {\n      "id": "q001",\n      "question": "What is motion?",\n      "options": [\n        "Change in position over time",\n        "Change in color",\n        "Increase in mass",\n        "Remaining stationary"\n      ],\n      "answer": 0,\n      "explanation": "Motion is a change in the position of an object with respect to time."\n    }\n  ]\n}\n```\n\n## Content Validation
+# Subject and Sub-Subject Details
+
+Educational metadata and lessons are stored in **Zolto** (`.zl`) files and structured JSON formats to maintain clear organization, human readability, and machine accessibility.
+
+---
+
+## 1. Subject Metadata
+
+Subject-level metadata defines top-level educational domains (e.g., Science, Mathematics, History).
+
+**File Location:**  
+`src/subjects/science/details.zl`
+
+**Example (`.zl`):**
+
+```zl
+# Science
+
+@subject {
+  id: science
+  title: "Science"
+  description: "Explore the natural world through scientific knowledge."
+}
+
+@subSubjects {
+  physics
+  chemistry
+  biology
+}
+```
+
+---
+
+## 2. Sub-Subject Metadata
+
+Sub-subjects define specific branches within a primary subject (e.g., Physics under Science).
+
+**File Location:**  
+`src/subjects/science/physics/details.zl`
+
+**Example (`.zl`):**
+
+```zl
+# Physics
+
+@subject {
+  id: physics
+  title: "Physics"
+  parent: science
+  description: "Study matter, energy, motion, forces and the laws of nature."
+}
+
+@lessons {
+  lesson1
+  lesson2
+}
+```
+
+---
+
+## 3. Lesson Content
+
+Lessons use Zolto (`.zl`) syntax, enabling contributors to write rich, readable educational content without dealing with deeply nested JSON formats.
+
+**File Location:**  
+`src/subjects/science/physics/lessons/lesson1.zl`
+
+A lesson file can combine standard Markdown text with structured educational blocks such as equations, diagrams, examples, definitions, callouts, timelines, concept maps, and interactive components.
+
+**Example (`.zl`):**
+
+```zl
+# Introduction to Motion
+
+Motion is the change in position of an object over time.
+
+@definition {
+  Motion describes how an object's position changes
+  relative to a reference point.
+}
+
+@equation {
+  v = \frac{d}{t}
+}
+
+@important {
+  Motion always depends on a reference frame.
+}
+
+@example {
+  A car travels 100 km in 2 hours.
+
+  @equation {
+    v = \frac{100}{2}
+  }
+
+  answer: "50 km/h"
+}
+```
+
+> **Note:** The Zolto engine parses `.zl` source files and renders them as accessible HTML and UI components.
+
+---
+
+## 4. Multiple Choice Questions (MCQs)
+
+MCQs are written in JSON because they represent structured, machine-readable question data meant for evaluation engines.
+
+**File Location:**  
+`src/subjects/science/physics/mcq/lesson1mcq.json`
+
+**Example (`.json`):**
+
+```json
+{
+  "lessonId": "physics-motion-001",
+  "questions": [
+    {
+      "id": "q001",
+      "question": "What is motion?",
+      "options": [
+        "Change in position over time",
+        "Change in color",
+        "Increase in mass",
+        "Remaining stationary"
+      ],
+      "answer": 0,
+      "explanation": "Motion is a change in the position of an object with respect to time."
+    }
+  ]
+}
+```
+
+---
+
+## 5. Content Validation
+
+To maintain repository consistency and render accuracy across the platform, all Zolto (`.zl`) and JSON files must adhere to strict validation rules before build or deployment.
+
+### A. Zolto (`.zl`) Validation Guidelines
+1. **Syntax & Structure:**
+   - Every file must start with a primary header (`# Document Title`).
+   - All block annotations (e.g., `@subject`, `@definition`, `@equation`, `@example`) must be correctly opened `{` and closed `}`.
+2. **Metadata Consistency:**
+   - Subject and Sub-subject IDs must be lowercase, alphanumeric, and unique across the repository.
+   - Reference blocks (`@subSubjects`, `@lessons`) must point to existing directories or files relative to their sub-paths.
+3. **Math & LaTeX Formatting:**
+   - Inline and block LaTeX expressions inside `@equation` tags must use valid LaTeX syntax (e.g., `\frac{a}{b}`).
+
+### B. MCQ (`.json`) Validation Guidelines
+1. **Schema Standards:**
+   - `lessonId` is required and must match a valid lesson identifier.
+   - `questions` must be a non-empty array of question objects.
+2. **Question Integrity:**
+   - Each question object must contain `id`, `question`, `options`, `answer`, and `explanation`.
+   - `options` must be an array of at least 2 distinct choices.
+   - `answer` must be a valid zero-indexed integer corresponding to the correct entry in `options`.
+3. **ID Uniqueness:**
+   - Question IDs (`q001`, `q002`, etc.) must be unique within the individual JSON file and dataset.
+
 
 OpenUniversity uses schemas and Zolto validation to make sure contributors don't accidentally break the learning system.
 
