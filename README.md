@@ -1,58 +1,43 @@
 # OpenUniversity
 
-OpenUniversity is an open-source, text-first education platform designed to make learning clear, interactive, visual, accessible, and easy to contribute to.
+**OpenUniversity** is an open-source, text-first education platform designed to make learning **clear, interactive, visual, accessible, and easy to contribute to**.
 
 No video courses are required.
 
 Instead, OpenUniversity focuses on:
 
-- 📚 High-quality text lessons
-- 🎨 Rich UI/UX and visual explanations
-- 🧠 Interactive learning
-- ❓ Built-in MCQ engine
-- 📈 Learning progress tracking
-- 🔖 Bookmarks
-- 📝 Personal notes
-- 🔎 Fast content search
-- 🌐 Open knowledge contributions
-- ♿ Accessibility
-- 🌙 Light, dark, and accessibility-friendly themes
+- High-quality text lessons
+- Rich UI/UX and visual explanations
+- Interactive learning
+- Built-in MCQ engine
+- Learning progress tracking
+- Bookmarks
+- Personal notes
+- Fast content search
+- Open knowledge contributions
+- Accessibility
+- Light, dark, and accessibility-friendly themes
 
-The goal is simple:
+> **Turn written knowledge into an interactive learning experience.**
 
-«Turn written knowledge into an interactive learning experience.»
+## Features
 
----
-
-## ✨ Features
-
-📖 Text-First Courses
+### Text-First Courses
 
 Courses are stored as structured JSON files instead of being locked inside a database or video platform.
 
-Example:
-
+```text
 src/
 └── subjects/
     └── science/
         └── physics/
             └── lessons/
                 └── lesson1.json
+```
 
-This makes educational content:
+This makes educational content portable, version-controlled, easy to edit, easy to review, easy to translate, and easy to contribute to.
 
-- Portable
-- Version-controlled
-- Easy to edit
-- Easy to review
-- Easy to translate
-- Easy to contribute to
-
----
-
-## 🧠 Interactive Lessons
-
-Lessons aren't just plain paragraphs.
+### Interactive Lessons
 
 A lesson can contain:
 
@@ -72,20 +57,17 @@ A lesson can contain:
 
 The lesson engine converts structured JSON into the final learning interface.
 
----
-
-## ❓ MCQ Engine
+### MCQ Engine
 
 Every lesson can optionally have its own question bank.
 
-Example:
-
+```text
 physics/
 ├── lessons/
 │   └── lesson1.json
-│
 └── mcq/
     └── lesson1mcq.json
+```
 
 The MCQ engine can provide:
 
@@ -98,9 +80,7 @@ The MCQ engine can provide:
 - Retry
 - Performance tracking
 
----
-
-## 🔎 Search
+### Search
 
 OpenUniversity includes a dedicated search system for discovering knowledge.
 
@@ -115,60 +95,17 @@ Search can eventually support:
 - Tags
 - Glossary terms
 
-Example:
-
-Search: "Newton's laws"
-
-Results:
-
-Science
-└── Physics
-    ├── Newton's Laws
-    ├── Force
-    └── Motion
-
----
-
-## 🔖 Bookmarks
+### Bookmarks
 
 Users can bookmark important lessons and sections.
 
-Example:
-
-Bookmarks
-│
-├── Physics
-│   ├── Newton's Laws
-│   └── Motion
-│
-├── Mathematics
-│   └── Quadratic Equations
-│
-└── Computer Science
-    └── Algorithms
-
 Bookmarks can eventually support folders and custom organization.
 
----
+### Personal Notes
 
-## 📝 Personal Notes
+Users can create private notes while learning. Notes are associated with the user's learning environment rather than the public educational content.
 
-Users can create private notes while learning.
-
-Example:
-
-Newton's Laws
-
-"Remember:
-F = ma
-
-Force increases when mass or acceleration increases."
-
-Notes are associated with the user's learning environment rather than the public educational content.
-
----
-
-## 📈 Progress Tracking
+### Progress Tracking
 
 OpenUniversity can track:
 
@@ -181,20 +118,9 @@ OpenUniversity can track:
 - Bookmarked lessons
 - Achievements
 
-Example:
+## Project Structure
 
-Physics
-
-████████████░░░░ 75%
-
-Lessons:       12 / 16
-MCQ Score:     87%
-Completed:     2026-07-31
-
----
-
-## 🗂️ Project Structure
-
+```text
 OpenUniversity/
 │
 ├── index.html
@@ -205,7 +131,6 @@ OpenUniversity/
 ├── public/
 │
 ├── src/
-│   │
 │   ├── app/
 │   │   ├── app.js
 │   │   ├── bootstrap.js
@@ -277,25 +202,25 @@ OpenUniversity/
     ├── workflows/
     ├── ISSUE_TEMPLATE/
     └── PULL_REQUEST_TEMPLATE.md
+```
 
----
-
-## 📚 Content Architecture
+## Content Architecture
 
 Educational content follows a simple hierarchy:
 
+```text
 Subject
    │
    └── Sub-subject
           │
           ├── Lesson
-          │
           ├── Lesson
-          │
           └── Lesson
+```
 
-For example:
+Example:
 
+```text
 Science
 └── Physics
     ├── Introduction to Physics
@@ -303,17 +228,19 @@ Science
     ├── Force
     ├── Energy
     └── Newton's Laws
+```
 
----
+## Subject
 
-## 📄 Subject
+Every subject can have a `details.json`.
 
-Every subject can have a "details.json".
-
+```text
 src/subjects/science/details.json
+```
 
 Example:
 
+```json
 {
   "id": "science",
   "title": "Science",
@@ -325,15 +252,17 @@ Example:
     "biology"
   ]
 }
+```
 
----
-
-## 📘 Sub-Subject
+## Sub-Subject
 
 Example:
 
+```text
 src/subjects/science/physics/details.json
+```
 
+```json
 {
   "id": "physics",
   "title": "Physics",
@@ -341,15 +270,17 @@ src/subjects/science/physics/details.json
   "subject": "science",
   "lessons": 1
 }
+```
 
----
-
-## 📖 Lesson
+## Lesson
 
 Example:
 
+```text
 src/subjects/science/physics/lessons/lesson1.json
+```
 
+```json
 {
   "id": "physics-motion-001",
   "title": "Introduction to Motion",
@@ -365,15 +296,17 @@ src/subjects/science/physics/lessons/lesson1.json
     "Motion is measured relative to a reference point."
   ]
 }
+```
 
----
-
-## ❓ MCQ
+## MCQ
 
 Example:
 
+```text
 src/subjects/science/physics/mcq/lesson1mcq.json
+```
 
+```json
 {
   "lessonId": "physics-motion-001",
   "questions": [
@@ -391,13 +324,13 @@ src/subjects/science/physics/mcq/lesson1mcq.json
     }
   ]
 }
+```
 
----
-
-## 🧩 Content Validation
+## Content Validation
 
 OpenUniversity uses JSON schemas to make sure contributors don't accidentally break the learning system.
 
+```text
 schemas/
 ├── subject.schema.json
 ├── sub-subject.schema.json
@@ -405,8 +338,9 @@ schemas/
 ├── mcq.schema.json
 ├── user.schema.json
 └── contribution.schema.json
+```
 
-Before content is accepted, automated validation can check:
+Automated validation can check:
 
 - Required fields
 - Valid JSON
@@ -416,11 +350,9 @@ Before content is accepted, automated validation can check:
 - Missing lessons
 - Invalid subject structure
 
----
+## Open Contributions
 
-## 🌍 Open Contributions
-
-OpenUniversity is designed around the idea that knowledge should be easy to contribute to.
+OpenUniversity is designed around the idea that **knowledge should be easy to contribute to**.
 
 Anyone can potentially contribute:
 
@@ -439,8 +371,7 @@ Anyone can potentially contribute:
 
 A contributor should not need to modify the core engine to add educational content.
 
-For example:
-
+```text
 Add a lesson
      ↓
 Create JSON
@@ -454,42 +385,44 @@ Review
 Merge
      ↓
 OpenUniversity publishes it
+```
 
----
-
-## 🛠️ Technology
+## Technology
 
 OpenUniversity is designed to remain lightweight.
 
-Core
+### Core
 
+```text
 HTML
 CSS
 JavaScript
 JSON
+```
 
-Browser Storage
+### Browser Storage
 
+```text
 IndexedDB
 localStorage
+```
 
-Optional Future Backend
+### Optional Future Backend
 
+```text
 REST API / GraphQL
 Authentication
 Database
 Cloud synchronization
+```
 
 The first version can work without requiring a backend.
 
----
-
-## 💾 Offline-Friendly Design
+## Offline-Friendly Design
 
 OpenUniversity should eventually support learning even when the user has limited or no internet access.
 
-Possible architecture:
-
+```text
 Browser
    │
    ├── HTML
@@ -502,6 +435,7 @@ Browser
         ├── Notes
         ├── Bookmarks
         └── MCQ results
+```
 
 A Progressive Web App architecture can later provide:
 
@@ -511,11 +445,9 @@ A Progressive Web App architecture can later provide:
 - Installable application
 - Background synchronization
 
----
+## UI/UX Philosophy
 
-## 🎨 UI/UX Philosophy
-
-OpenUniversity is text-first but not visually boring.
+OpenUniversity is **text-first but not visually boring**.
 
 The interface should use visual design to make complex information easier to understand.
 
@@ -536,13 +468,9 @@ Possible UI elements:
 - Smooth transitions
 - Responsive layouts
 
-The goal is:
+> **Maximum clarity, not maximum decoration.**
 
-«Maximum clarity, not maximum decoration.»
-
----
-
-## ♿ Accessibility
+## Accessibility
 
 Accessibility should be considered from the beginning.
 
@@ -559,64 +487,63 @@ OpenUniversity should support:
 - Accessible diagrams
 - Clear color contrast
 
----
-
-## 🌐 Internationalization
+## Internationalization
 
 The platform should eventually support multiple languages.
 
+```text
 src/i18n/
 ├── i18n.js
 ├── en.json
 └── hi.json
+```
 
 Educational content can eventually have language variants:
 
+```text
 lesson1.en.json
 lesson1.hi.json
 lesson1.es.json
+```
 
----
-
-## 🔐 User Data
+## User Data
 
 Public educational content and private user data should remain separate.
 
-Public
+### Public
 
+```text
 Subjects
 Lessons
 MCQs
 Definitions
 Diagrams
+```
 
-Private
+### Private
 
+```text
 Progress
 Bookmarks
 Notes
 Preferences
 Quiz history
 Account information
+```
 
-For a frontend-only version:
-
-IndexedDB
-
-can store personal learning data locally.
+For a frontend-only version, IndexedDB can store personal learning data locally.
 
 A future server-based version can synchronize this data across devices.
 
----
-
-## 🔍 Search Architecture
+## Search Architecture
 
 Search can eventually use a generated index:
 
+```text
 src/data/search-index.json
+```
 
-Example:
-
+```text
 Search
   ↓
 Search Engine
@@ -628,6 +555,7 @@ Ranking
 Filters
   ↓
 Results
+```
 
 Potential ranking factors:
 
@@ -639,12 +567,11 @@ Potential ranking factors:
 6. Popularity
 7. User history
 
----
-
-## 📊 Learning Analytics
+## Learning Analytics
 
 The platform can locally calculate useful learning statistics:
 
+```text
 Learning Statistics
 │
 ├── Lessons completed
@@ -654,23 +581,25 @@ Learning Statistics
 ├── Subject progress
 ├── Weak topics
 └── Strong topics
+```
 
-The purpose should be to help learners, not to manipulate them.
+The purpose should be to **help learners**, not to manipulate them.
 
----
-
-## 🧪 Testing
+## Testing
 
 OpenUniversity should test both software and educational content.
 
+```text
 tests/
 ├── engines/
 ├── components/
 ├── content/
 └── integration/
+```
 
-Examples:
+Examples include:
 
+```text
 MCQ Engine
     ↓
 Question loading
@@ -680,19 +609,20 @@ Answer validation
 Score calculation
     ↓
 Result generation
+```
 
----
+## Development Tools
 
-## 🔧 Development Tools
+The `tools/` directory contains scripts that help maintain the knowledge base.
 
-The "tools/" directory contains scripts that help maintain the knowledge base.
-
+```text
 tools/
 ├── validate-content.js
 ├── build-search-index.js
 ├── generate-registry.js
 ├── check-links.js
 └── check-duplicates.js
+```
 
 These tools can automatically:
 
@@ -703,11 +633,9 @@ These tools can automatically:
 - Find broken references
 - Generate subject registries
 
----
+## Roadmap
 
-## 🚀 Future Roadmap
-
-Phase 1 — Foundation
+### Phase 1 — Foundation
 
 - Basic HTML application
 - Subject system
@@ -715,28 +643,28 @@ Phase 1 — Foundation
 - JSON lesson system
 - Basic lesson renderer
 
-Phase 2 — Learning
+### Phase 2 — Learning
 
 - MCQ engine
 - Scoring
 - Lesson completion
 - Progress tracking
 
-Phase 3 — Personalization
+### Phase 3 — Personalization
 
 - Bookmarks
 - Notes
 - History
 - Learning dashboard
 
-Phase 4 — Discovery
+### Phase 4 — Discovery
 
 - Search
 - Filters
 - Suggestions
 - Related lessons
 
-Phase 5 — UX
+### Phase 5 — UX
 
 - Advanced animations
 - Responsive design
@@ -744,7 +672,7 @@ Phase 5 — UX
 - Accessibility
 - Improved navigation
 
-Phase 6 — Community
+### Phase 6 — Community
 
 - Contribution workflow
 - Content validation
@@ -752,7 +680,7 @@ Phase 6 — Community
 - Reviews
 - Discussions
 
-Phase 7 — Offline
+### Phase 7 — Offline
 
 - PWA
 - Offline lessons
@@ -760,7 +688,7 @@ Phase 7 — Offline
 - IndexedDB
 - Synchronization
 
-Phase 8 — Accounts
+### Phase 8 — Accounts
 
 - Registration
 - Login
@@ -768,7 +696,7 @@ Phase 8 — Accounts
 - Cloud progress
 - Cross-device synchronization
 
-Phase 9 — Advanced Learning
+### Phase 9 — Advanced Learning
 
 - Adaptive quizzes
 - Weak-topic detection
@@ -776,7 +704,7 @@ Phase 9 — Advanced Learning
 - Spaced repetition
 - Learning paths
 
-Phase 10 — Open Knowledge Network
+### Phase 10 — Open Knowledge Network
 
 - Community-created courses
 - Translations
@@ -784,9 +712,7 @@ Phase 10 — Open Knowledge Network
 - Public knowledge graph
 - Open educational resources
 
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome.
 
@@ -794,8 +720,10 @@ You can contribute code, educational content, corrections, translations, design 
 
 Before contributing, read:
 
+```text
 CONTRIBUTING.md
 CODE_OF_CONDUCT.md
+```
 
 For educational content, contributors should prioritize:
 
@@ -807,25 +735,23 @@ For educational content, contributors should prioritize:
 - Reliable references where appropriate
 - Accessibility
 
----
-
-## 📜 License
+## License
 
 OpenUniversity is open source.
 
 The project license should be defined in:
 
+```text
 LICENSE
+```
 
 Educational content and software code may use different licenses if the project chooses to separate them.
 
----
-
-## 🌱 Philosophy
+## Philosophy
 
 OpenUniversity is built around a simple idea:
 
-«Education should be understandable, accessible, open, and easy to contribute to.»
+> **Education should be understandable, accessible, open, and easy to contribute to.**
 
 Instead of making learners watch hours of video, OpenUniversity focuses on turning written knowledge into an interactive experience.
 
@@ -833,6 +759,7 @@ Instead of locking knowledge inside a proprietary platform, the content lives in
 
 Instead of requiring every contributor to understand the application code, contributors can add knowledge through simple JSON structures.
 
+```text
 Knowledge
     ↓
 Structured Content
@@ -846,5 +773,6 @@ Practice
 Progress
     ↓
 Better Understanding
+```
 
-OpenUniversity — Learn. Understand. Contribute.
+**OpenUniversity — Learn. Understand. Contribute.**
