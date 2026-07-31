@@ -24,7 +24,7 @@ The goal is simple:
 
 ---
 
-✨ Features
+## ✨ Features
 
 📖 Text-First Courses
 
@@ -50,7 +50,7 @@ This makes educational content:
 
 ---
 
-🧠 Interactive Lessons
+## 🧠 Interactive Lessons
 
 Lessons aren't just plain paragraphs.
 
@@ -74,7 +74,7 @@ The lesson engine converts structured JSON into the final learning interface.
 
 ---
 
-❓ MCQ Engine
+## ❓ MCQ Engine
 
 Every lesson can optionally have its own question bank.
 
@@ -100,7 +100,7 @@ The MCQ engine can provide:
 
 ---
 
-🔎 Search
+## 🔎 Search
 
 OpenUniversity includes a dedicated search system for discovering knowledge.
 
@@ -129,7 +129,7 @@ Science
 
 ---
 
-🔖 Bookmarks
+## 🔖 Bookmarks
 
 Users can bookmark important lessons and sections.
 
@@ -151,7 +151,7 @@ Bookmarks can eventually support folders and custom organization.
 
 ---
 
-📝 Personal Notes
+## 📝 Personal Notes
 
 Users can create private notes while learning.
 
@@ -168,7 +168,7 @@ Notes are associated with the user's learning environment rather than the public
 
 ---
 
-📈 Progress Tracking
+## 📈 Progress Tracking
 
 OpenUniversity can track:
 
@@ -193,7 +193,7 @@ Completed:     2026-07-31
 
 ---
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 
 OpenUniversity/
 │
@@ -280,7 +280,7 @@ OpenUniversity/
 
 ---
 
-📚 Content Architecture
+## 📚 Content Architecture
 
 Educational content follows a simple hierarchy:
 
@@ -306,7 +306,7 @@ Science
 
 ---
 
-📄 Subject
+## 📄 Subject
 
 Every subject can have a "details.json".
 
@@ -328,7 +328,7 @@ Example:
 
 ---
 
-📘 Sub-Subject
+## 📘 Sub-Subject
 
 Example:
 
@@ -344,7 +344,7 @@ src/subjects/science/physics/details.json
 
 ---
 
-📖 Lesson
+## 📖 Lesson
 
 Example:
 
@@ -368,7 +368,7 @@ src/subjects/science/physics/lessons/lesson1.json
 
 ---
 
-❓ MCQ
+## ❓ MCQ
 
 Example:
 
@@ -394,7 +394,7 @@ src/subjects/science/physics/mcq/lesson1mcq.json
 
 ---
 
-🧩 Content Validation
+## 🧩 Content Validation
 
 OpenUniversity uses JSON schemas to make sure contributors don't accidentally break the learning system.
 
@@ -418,7 +418,7 @@ Before content is accepted, automated validation can check:
 
 ---
 
-🌍 Open Contributions
+## 🌍 Open Contributions
 
 OpenUniversity is designed around the idea that knowledge should be easy to contribute to.
 
@@ -457,7 +457,7 @@ OpenUniversity publishes it
 
 ---
 
-🛠️ Technology
+## 🛠️ Technology
 
 OpenUniversity is designed to remain lightweight.
 
@@ -484,7 +484,7 @@ The first version can work without requiring a backend.
 
 ---
 
-💾 Offline-Friendly Design
+## 💾 Offline-Friendly Design
 
 OpenUniversity should eventually support learning even when the user has limited or no internet access.
 
@@ -513,7 +513,7 @@ A Progressive Web App architecture can later provide:
 
 ---
 
-🎨 UI/UX Philosophy
+## 🎨 UI/UX Philosophy
 
 OpenUniversity is text-first but not visually boring.
 
@@ -542,7 +542,7 @@ The goal is:
 
 ---
 
-♿ Accessibility
+## ♿ Accessibility
 
 Accessibility should be considered from the beginning.
 
@@ -561,7 +561,7 @@ OpenUniversity should support:
 
 ---
 
-🌐 Internationalization
+## 🌐 Internationalization
 
 The platform should eventually support multiple languages.
 
@@ -578,7 +578,7 @@ lesson1.es.json
 
 ---
 
-🔐 User Data
+## 🔐 User Data
 
 Public educational content and private user data should remain separate.
 
@@ -609,7 +609,7 @@ A future server-based version can synchronize this data across devices.
 
 ---
 
-🔍 Search Architecture
+## 🔍 Search Architecture
 
 Search can eventually use a generated index:
 
@@ -641,7 +641,7 @@ Potential ranking factors:
 
 ---
 
-📊 Learning Analytics
+## 📊 Learning Analytics
 
 The platform can locally calculate useful learning statistics:
 
@@ -659,7 +659,7 @@ The purpose should be to help learners, not to manipulate them.
 
 ---
 
-🧪 Testing
+## 🧪 Testing
 
 OpenUniversity should test both software and educational content.
 
@@ -683,7 +683,7 @@ Result generation
 
 ---
 
-🔧 Development Tools
+## 🔧 Development Tools
 
 The "tools/" directory contains scripts that help maintain the knowledge base.
 
@@ -705,7 +705,7 @@ These tools can automatically:
 
 ---
 
-🚀 Future Roadmap
+## 🚀 Future Roadmap
 
 Phase 1 — Foundation
 
@@ -786,7 +786,7 @@ Phase 10 — Open Knowledge Network
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome.
 
@@ -809,7 +809,7 @@ For educational content, contributors should prioritize:
 
 ---
 
-📜 License
+## 📜 License
 
 OpenUniversity is open source.
 
@@ -821,7 +821,7 @@ Educational content and software code may use different licenses if the project 
 
 ---
 
-🌱 Philosophy
+## 🌱 Philosophy
 
 OpenUniversity is built around a simple idea:
 
