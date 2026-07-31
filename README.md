@@ -223,6 +223,8 @@ A lesson file can combine standard Markdown text with structured educational blo
 
 **Example (`.zl`):**
 
+### [zolto](https://github.com/uxle/Zolto)
+
 ```zl
 # Introduction to Motion
 
