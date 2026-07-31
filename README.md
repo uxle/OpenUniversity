@@ -1,4 +1,4 @@
-OpenUniversity
+# OpenUniversity
 
 OpenUniversity is an open-source, text-first education platform designed to make learning clear, interactive, visual, accessible, and easy to contribute to.
 
