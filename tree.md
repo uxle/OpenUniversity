@@ -41,6 +41,40 @@ OpenUniversity/
 │   │   ├── subject-engine.js
 │   │   ├── lesson-engine.js
 │   │   ├── mcq-engine.js
+│   │   │
+│   │   ├── zolto/
+│   │   │   ├── zolto-engine.js
+│   │   │   ├── parser.js
+│   │   │   ├── tokenizer.js
+│   │   │   ├── lexer.js
+│   │   │   ├── ast.js
+│   │   │   ├── renderer.js
+│   │   │   ├── validator.js
+│   │   │   ├── errors.js
+│   │   │   │
+│   │   │   ├── blocks/
+│   │   │   │   ├── text.js
+│   │   │   │   ├── heading.js
+│   │   │   │   ├── paragraph.js
+│   │   │   │   ├── list.js
+│   │   │   │   ├── equation.js
+│   │   │   │   ├── diagram.js
+│   │   │   │   ├── graph.js
+│   │   │   │   ├── table.js
+│   │   │   │   ├── example.js
+│   │   │   │   ├── definition.js
+│   │   │   │   ├── callout.js
+│   │   │   │   ├── timeline.js
+│   │   │   │   ├── concept-map.js
+│   │   │   │   ├── code.js
+│   │   │   │   └── interactive.js
+│   │   │   │
+│   │   │   └── extensions/
+│   │   │       ├── math.js
+│   │   │       ├── svg.js
+│   │   │       ├── media.js
+│   │   │       └── custom.js
+│   │   │
 │   │   ├── search-engine.js
 │   │   ├── progress-engine.js
 │   │   ├── bookmark-engine.js
@@ -70,15 +104,15 @@ OpenUniversity/
 │   ├── subjects/
 │   │   │
 │   │   ├── science/
-│   │   │   ├── details.json
+│   │   │   ├── details.zl
 │   │   │   │
 │   │   │   ├── physics/
-│   │   │   │   ├── details.json
+│   │   │   │   ├── details.zl
 │   │   │   │   ├── index.json
 │   │   │   │   │
 │   │   │   │   ├── lessons/
-│   │   │   │   │   ├── lesson1.json
-│   │   │   │   │   ├── lesson2.json
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   ├── lesson2.zl
 │   │   │   │   │   └── ...
 │   │   │   │   │
 │   │   │   │   └── mcq/
@@ -87,43 +121,157 @@ OpenUniversity/
 │   │   │   │       └── ...
 │   │   │   │
 │   │   │   ├── chemistry/
-│   │   │   │   ├── details.json
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
 │   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
 │   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
 │   │   │   │
 │   │   │   └── biology/
-│   │   │       ├── details.json
+│   │   │       ├── details.zl
+│   │   │       ├── index.json
 │   │   │       ├── lessons/
+│   │   │       │   ├── lesson1.zl
+│   │   │       │   └── ...
 │   │   │       └── mcq/
+│   │   │           ├── lesson1mcq.json
+│   │   │           └── ...
 │   │   │
 │   │   ├── mathematics/
-│   │   │   ├── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   │
 │   │   │   ├── algebra/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   ├── geometry/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   ├── calculus/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   └── statistics/
+│   │   │       ├── details.zl
+│   │   │       ├── index.json
+│   │   │       ├── lessons/
+│   │   │       │   ├── lesson1.zl
+│   │   │       │   └── ...
+│   │   │       └── mcq/
+│   │   │           ├── lesson1mcq.json
+│   │   │           └── ...
 │   │   │
 │   │   ├── computer-science/
-│   │   │   ├── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   │
 │   │   │   ├── programming/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   ├── algorithms/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   ├── operating-systems/
+│   │   │   │   ├── details.zl
+│   │   │   │   ├── index.json
+│   │   │   │   ├── lessons/
+│   │   │   │   │   ├── lesson1.zl
+│   │   │   │   │   └── ...
+│   │   │   │   └── mcq/
+│   │   │   │       ├── lesson1mcq.json
+│   │   │   │       └── ...
+│   │   │   │
 │   │   │   └── networking/
+│   │   │       ├── details.zl
+│   │   │       ├── index.json
+│   │   │       ├── lessons/
+│   │   │       │   ├── lesson1.zl
+│   │   │       │   └── ...
+│   │   │       └── mcq/
+│   │   │           ├── lesson1mcq.json
+│   │   │           └── ...
 │   │   │
 │   │   ├── history/
-│   │   │   └── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   ├── lessons/
+│   │   │   │   ├── lesson1.zl
+│   │   │   │   └── ...
+│   │   │   └── mcq/
+│   │   │       └── ...
 │   │   │
 │   │   ├── geography/
-│   │   │   └── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   ├── lessons/
+│   │   │   │   ├── lesson1.zl
+│   │   │   │   └── ...
+│   │   │   └── mcq/
+│   │   │       └── ...
 │   │   │
 │   │   ├── economics/
-│   │   │   └── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   ├── lessons/
+│   │   │   │   ├── lesson1.zl
+│   │   │   │   └── ...
+│   │   │   └── mcq/
+│   │   │       └── ...
 │   │   │
 │   │   ├── philosophy/
-│   │   │   └── details.json
+│   │   │   ├── details.zl
+│   │   │   ├── index.json
+│   │   │   ├── lessons/
+│   │   │   │   ├── lesson1.zl
+│   │   │   │   └── ...
+│   │   │   └── mcq/
+│   │   │       └── ...
 │   │   │
 │   │   └── languages/
-│   │       └── details.json
+│   │       ├── details.zl
+│   │       ├── index.json
+│   │       ├── lessons/
+│   │       │   ├── lesson1.zl
+│   │       │   └── ...
+│   │       └── mcq/
+│   │           └── ...
 │   │
 │   ├── components/
 │   │   │
@@ -223,6 +371,7 @@ OpenUniversity/
 │   │
 │   ├── services/
 │   │   ├── content-service.js
+│   │   ├── zolto-service.js
 │   │   ├── search-service.js
 │   │   ├── progress-service.js
 │   │   ├── bookmark-service.js
@@ -284,7 +433,8 @@ OpenUniversity/
 │       │   ├── lesson.css
 │       │   ├── lesson-content.css
 │       │   ├── lesson-navigation.css
-│       │   └── glossary.css
+│       │   ├── glossary.css
+│       │   └── zolto-content.css
 │       │
 │       ├── mcq/
 │       │   ├── mcq.css
@@ -322,6 +472,7 @@ OpenUniversity/
 │
 ├── tools/
 │   ├── validate-content.js
+│   ├── validate-zolto.js
 │   ├── build-search-index.js
 │   ├── generate-registry.js
 │   ├── check-links.js
@@ -332,10 +483,12 @@ OpenUniversity/
 │   │   ├── mcq-engine.test.js
 │   │   ├── search-engine.test.js
 │   │   ├── progress-engine.test.js
-│   │   └── bookmark-engine.test.js
+│   │   ├── bookmark-engine.test.js
+│   │   └── zolto-engine.test.js
 │   │
 │   ├── content/
 │   │   ├── lesson-validation.test.js
+│   │   ├── zolto-validation.test.js
 │   │   └── mcq-validation.test.js
 │   │
 │   └── components/
