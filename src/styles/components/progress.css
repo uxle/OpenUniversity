@@ -1,0 +1,30 @@
+/* src/styles/components/progress.css */
+.ou-progress-bar {
+  height: 8px;
+  border-radius: var(--ou-radius-pill);
+  background: var(--ou-border-strong);
+  overflow: hidden;
+}
+.ou-progress-bar__fill {
+  height: 100%;
+  width: 100%;
+  background: var(--ou-accent);
+  border-radius: inherit;
+  transform-origin: left center;
+  transform: scaleX(var(--ou-progress, 0));
+  transition: transform var(--ou-transition-base);
+}
+.ou-progress-ring {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.ou-progress-ring circle { transition: stroke-dashoffset var(--ou-transition-base); }
+.ou-progress-ring__label {
+  position: absolute;
+  font-size: var(--ou-fs-xs);
+  font-weight: 700;
+  color: var(--ou-text);
+}
+.ou-progress-ring__label--muted { color: var(--ou-text-secondary); font-weight: 600; }

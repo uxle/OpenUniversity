@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openuniversity/schemas/user.schema.json",
+  "title": "User",
+  "description": "Local (IndexedDB) learner profile — private data, never published as content.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "displayName": { "type": "string" },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "theme": { "type": "string", "enum": ["light", "dark", "high-contrast"] },
+        "language": { "type": "string" },
+        "reducedMotion": { "type": "boolean" }
+      }
+    }
+  }
+}

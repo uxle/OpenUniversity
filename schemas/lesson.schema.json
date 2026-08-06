@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openuniversity/schemas/lesson.schema.json",
+  "title": "Lesson",
+  "description": "Metadata for a single lesson.zl file. The lesson body itself is Zolto markup, not JSON — this schema covers the registry/index entry describing it.",
+  "type": "object",
+  "required": ["id", "title", "subject", "subSubject", "file"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "subject": { "type": "string" },
+    "subSubject": { "type": "string" },
+    "file": { "type": "string", "description": "Relative path to the .zl source file." },
+    "mcqFile": { "type": "string", "description": "Relative path to the matching mcq .json file, if any." }
+  },
+  "additionalProperties": false
+}

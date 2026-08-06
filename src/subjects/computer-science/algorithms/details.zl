@@ -1,0 +1,12 @@
+# Algorithms
+
+@subject {
+  id: algorithms
+  parent: computer-science
+  title: "Algorithms"
+  description: "Step-by-step methods for solving problems, and how to measure their efficiency."
+}
+
+@lessons {
+  lesson1
+}

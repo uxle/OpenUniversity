@@ -1,0 +1,12 @@
+# Physics
+
+@subject {
+  id: physics
+  title: "Physics"
+  parent: science
+  description: "Study matter, energy, motion, forces and the laws of nature."
+}
+
+@lessons {
+  lesson1
+}

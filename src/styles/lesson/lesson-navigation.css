@@ -1,0 +1,12 @@
+/* src/styles/lesson/lesson-navigation.css */
+.ou-lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--ou-space-4);
+  margin-top: var(--ou-space-6);
+  padding-top: var(--ou-space-4);
+  border-top: 1px solid var(--ou-border);
+}
+.ou-lesson-nav__link { max-width: 45%; }
+.ou-lesson-nav__label { display: block; font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); }
+.ou-lesson-nav__title { font-weight: 600; }

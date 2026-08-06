@@ -1,0 +1,12 @@
+# Programming
+
+@subject {
+  id: programming
+  parent: computer-science
+  title: "Programming"
+  description: "Writing instructions that tell computers what to do."
+}
+
+@lessons {
+  lesson1
+}

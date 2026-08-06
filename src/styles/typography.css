@@ -1,0 +1,50 @@
+/* src/styles/typography.css */
+body {
+  font-family: var(--ou-font-sans);
+  font-size: var(--ou-fs-md);
+  line-height: var(--ou-line-height);
+  color: var(--ou-text);
+}
+h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
+h1 { font-size: var(--ou-fs-2xl); }
+h2 { font-size: var(--ou-fs-xl); }
+h3 { font-size: var(--ou-fs-lg); }
+h4 { font-size: var(--ou-fs-md); }
+small, .ou-text-sm { font-size: var(--ou-fs-sm); color: var(--ou-text-secondary); }
+.ou-text-muted { color: var(--ou-text-muted); }
+code, pre, kbd { font-family: var(--ou-font-mono); font-size: 0.9em; }
+pre {
+  background: var(--ou-surface);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-sm);
+  padding: var(--ou-space-3);
+  overflow-x: auto;
+}
+a.ou-link { color: var(--ou-accent); text-decoration: none; }
+a.ou-link:hover { text-decoration: underline; }
+a.ou-footer-link { color: var(--ou-text-muted); text-decoration: underline; text-underline-offset: 2px; }
+a.ou-footer-link:hover { color: var(--ou-text-secondary); }
+
+.ou-text-secondary { color: var(--ou-text-secondary); }
+h1, h2, h3 { text-wrap: balance; }
+.ou-tabular-nums { font-variant-numeric: tabular-nums; }
+
+.ou-hero-heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: var(--ou-space-2);
+}
+.ou-hero-subtext {
+  font-size: var(--ou-fs-md);
+  color: var(--ou-text-secondary);
+  max-width: 46ch;
+}
+.ou-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-3);
+}
+.ou-section-title-row h2 { margin: 0; }

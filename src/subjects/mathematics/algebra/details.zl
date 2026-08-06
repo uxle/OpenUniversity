@@ -1,0 +1,12 @@
+# Algebra
+
+@subject {
+  id: algebra
+  parent: mathematics
+  title: "Algebra"
+  description: "Working with symbols and variables, and the rules for manipulating them."
+}
+
+@lessons {
+  lesson1
+}

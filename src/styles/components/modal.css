@@ -1,0 +1,23 @@
+/* src/styles/components/modal.css */
+.ou-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex; align-items: center; justify-content: center;
+  z-index: var(--ou-z-modal);
+  padding: var(--ou-space-4);
+}
+.ou-modal {
+  background: var(--ou-surface);
+  border-radius: var(--ou-radius-lg);
+  box-shadow: var(--ou-shadow-lg);
+  max-width: 480px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: var(--ou-space-5);
+}
+.ou-modal__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--ou-space-4); }
+.ou-modal__title { font-size: var(--ou-fs-lg); font-weight: 700; }
+.ou-modal__footer { display: flex; justify-content: flex-end; gap: var(--ou-space-2); margin-top: var(--ou-space-5); }
+
+.ou-modal__body { margin-bottom: var(--ou-space-2); }

@@ -1,0 +1,6 @@
+/* src/styles/mcq/results.css */
+.ou-mcq-result { text-align: center; padding: var(--ou-space-6) var(--ou-space-4); }
+.ou-mcq-result__score { font-size: var(--ou-fs-2xl); font-weight: 700; color: var(--ou-accent); }
+
+.ou-mcq-feedback--correct, .ou-mcq-review--correct { color: var(--ou-success); }
+.ou-mcq-feedback--incorrect, .ou-mcq-review--incorrect { color: var(--ou-danger); }

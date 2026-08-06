@@ -1,0 +1,21 @@
+{
+  "name": "openknowledge",
+  "version": "0.1.0",
+  "description": "OpenKnowledge (formerly OpenUniversity) — an open-source, text-first knowledge base. Knowledge is everyone's right.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "npx serve .",
+    "validate": "node tools/validate-content.js",
+    "validate:zolto": "node tools/validate-zolto.js",
+    "build:search-index": "node tools/build-search-index.js",
+    "check:links": "node tools/check-links.js",
+    "check:duplicates": "node tools/check-duplicates.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "notes": {
+    "zolto": "Vendored at src/engines/zolto/vendor/zolto/ (zolto@1.0.2, https://www.npmjs.com/package/zolto). No npm install needed — vendored to support zero-install static hosting. To update: copy the src/ directory of the new release over vendor/zolto/ and run npm test."
+  }
+}

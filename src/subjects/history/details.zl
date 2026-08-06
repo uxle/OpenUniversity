@@ -1,0 +1,11 @@
+# History
+
+@subject {
+  id: history
+  title: "History"
+  description: "The study of past events and how they shaped the present."
+}
+
+@lessons {
+  lesson1
+}

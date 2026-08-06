@@ -1,0 +1,136 @@
+/* src/styles/lesson/zolto-content.css — styling for content the real
+   Zolto engine renders inside a lesson (Zolto emits its own class
+   names; these are presentational hooks).
+
+   IMPORTANT: target Zolto's exact class names (.zl-admonition,
+   .zl-callout, etc.), not a `[class*="…"]` substring wildcard. Zolto
+   nests several elements that all legitimately contain the substring
+   "admonition" in their class — the outer .zl-admonition wrapper AND
+   its own .zl-admonition-header / .zl-admonition-body children. A
+   wildcard selector matches and box-styles (border+padding+margin+
+   radius) all three independently, producing three nested colored
+   bars instead of one box — that's what the thin vertical "oval"
+   artifacts in earlier renders actually were. Precise class selectors
+   don't have that collision. */
+.ou-lesson-content { font-size: var(--ou-fs-md); line-height: var(--ou-line-height); }
+.ou-lesson-content h1 { font-size: var(--ou-fs-xl); margin-top: var(--ou-space-6); }
+.ou-lesson-content h2 { font-size: var(--ou-fs-lg); margin-top: var(--ou-space-6); }
+.ou-lesson-content h3 { margin-top: var(--ou-space-5); }
+.ou-lesson-content p { margin-top: var(--ou-space-3); }
+.ou-lesson-content > *:first-child { margin-top: 0; }
+
+/* Admonitions:  [info]…[/info]  → .zl-admonition.zl-admonition-{type} >
+   .zl-admonition-header (icon + title) + .zl-admonition-body */
+.ou-lesson-content .zl-admonition {
+  background: var(--ou-surface-subtle);
+  border-left: 4px solid var(--ou-accent);
+  border-radius: 0 var(--ou-radius-lg) var(--ou-radius-lg) 0;
+  padding: var(--ou-space-4) var(--ou-space-5);
+  margin: var(--ou-space-5) 0;
+  font-size: 0.95em;
+}
+.ou-lesson-content .zl-admonition-header {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  font-weight: 700;
+  margin-bottom: var(--ou-space-2);
+}
+.ou-lesson-content .zl-admonition-body > *:first-child { margin-top: 0; }
+.ou-lesson-content .zl-admonition-body > *:last-child { margin-bottom: 0; }
+
+/* Color by semantic group — warm for caution-like types, calm accent
+   for everything else, matching the app's existing warning/danger
+   tokens rather than inventing 22 unique colors for every admonition
+   type Zolto supports. */
+.ou-lesson-content .zl-admonition-warning,
+.ou-lesson-content .zl-admonition-caution,
+.ou-lesson-content .zl-admonition-attention { border-left-color: var(--ou-warning); }
+.ou-lesson-content .zl-admonition-danger,
+.ou-lesson-content .zl-admonition-failure,
+.ou-lesson-content .zl-admonition-bug { border-left-color: var(--ou-danger); }
+.ou-lesson-content .zl-admonition-success,
+.ou-lesson-content .zl-admonition-check,
+.ou-lesson-content .zl-admonition-tip { border-left-color: var(--ou-success); }
+
+/* Callouts:  > [!NOTE] …  → .zl-callout.zl-callout-{type} >
+   .zl-callout-title (icon + text) + .zl-callout-body. Same box-per-
+   element bug risk as admonitions, same fix: exact classes only. */
+.ou-lesson-content .zl-callout {
+  background: var(--ou-surface-subtle);
+  border-left: 4px solid var(--ou-accent);
+  border-radius: 0 var(--ou-radius-lg) var(--ou-radius-lg) 0;
+  padding: var(--ou-space-4) var(--ou-space-5);
+  margin: var(--ou-space-5) 0;
+  font-size: 0.95em;
+}
+.ou-lesson-content .zl-callout-title { font-weight: 700; margin: 0 0 var(--ou-space-2); }
+.ou-lesson-content .zl-callout-body > *:first-child { margin-top: 0; }
+.ou-lesson-content .zl-callout-body > *:last-child { margin-bottom: 0; }
+.ou-lesson-content .zl-callout-warning,
+.ou-lesson-content .zl-callout-caution { border-left-color: var(--ou-warning); }
+.ou-lesson-content .zl-callout-danger { border-left-color: var(--ou-danger); }
+.ou-lesson-content .zl-callout-success,
+.ou-lesson-content .zl-callout-tip { border-left-color: var(--ou-success); }
+
+/* A source/attribution line written as a real blockquote (`>`), for
+   lessons that cite where their content came from — rounded on every
+   corner and quieter than an admonition, since it isn't an alert. */
+.ou-lesson-content blockquote {
+  background: var(--ou-surface-subtle);
+  border-radius: var(--ou-radius-md);
+  padding: var(--ou-space-3) var(--ou-space-4);
+  margin: var(--ou-space-4) 0;
+  color: var(--ou-text-secondary);
+  font-style: italic;
+}
+.ou-lesson-content blockquote > *:first-child { margin-top: 0; }
+.ou-lesson-content blockquote > *:last-child { margin-bottom: 0; }
+
+/* Math:  $x^2$ / @math…@/math  → .zl-math (inline) / .zl-math.zl-math-display
+   (block). Real math sub-parts (.zl-mn, .zl-mi, .zl-frac-num, etc.)
+   never contain the substring "math", so this precise pair is already
+   collision-free — no wildcard needed here. */
+.ou-lesson-content .zl-math-display {
+  display: block;
+  overflow-x: auto;
+  margin: var(--ou-space-4) 0;
+  text-align: center;
+}
+
+/* Diagrams:  @diagram …@/diagram  → inline <svg class="zl-diagram">.
+   Zolto injects its own <style> for the internals; this just fits the
+   SVG into the lesson column. */
+.ou-lesson-content .zl-diagram {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--ou-space-5) auto;
+}
+
+/* Tables:  | a | b |  → .zl-table-wrap > table.zl-table. Previously
+   completely unstyled (bare browser defaults) — added borders/padding/
+   header treatment and kept Zolto's own horizontal-scroll wrapper for
+   wide tables on narrow screens. */
+.ou-lesson-content .zl-table-wrap {
+  overflow-x: auto;
+  margin: var(--ou-space-5) 0;
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-md);
+}
+.ou-lesson-content .zl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+.ou-lesson-content .zl-table th,
+.ou-lesson-content .zl-table td {
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border-bottom: 1px solid var(--ou-border);
+  text-align: left;
+}
+.ou-lesson-content .zl-table th {
+  background: var(--ou-surface-subtle);
+  font-weight: 700;
+}
+.ou-lesson-content .zl-table tr:last-child td { border-bottom: none; }

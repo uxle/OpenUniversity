@@ -1,0 +1,24 @@
+/* src/styles/components/sidebar.css */
+.ou-sidebar {
+  border-right: 1px solid var(--ou-border);
+  background: var(--ou-surface);
+  padding: var(--ou-space-4);
+  overflow-y: auto;
+}
+.ou-sidebar__section + .ou-sidebar__section { margin-top: var(--ou-space-5); }
+.ou-sidebar__heading {
+  font-size: var(--ou-fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ou-text-muted);
+  margin-bottom: var(--ou-space-2);
+}
+.ou-sidebar__item {
+  display: block;
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border-radius: var(--ou-radius-sm);
+  color: var(--ou-text);
+  font-size: var(--ou-fs-sm);
+}
+.ou-sidebar__item:hover { background: var(--ou-bg); }
+.ou-sidebar__item[aria-current="page"] { background: color-mix(in srgb, var(--ou-accent) 12%, transparent); color: var(--ou-accent); font-weight: 600; }

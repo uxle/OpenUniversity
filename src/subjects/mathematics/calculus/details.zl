@@ -1,0 +1,12 @@
+# Calculus
+
+@subject {
+  id: calculus
+  parent: mathematics
+  title: "Calculus"
+  description: "The mathematics of change, motion, and accumulation."
+}
+
+@lessons {
+  lesson1
+}

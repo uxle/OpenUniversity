@@ -1,0 +1,12 @@
+# Hindi
+
+@subject {
+  id: hindi
+  title: "Hindi"
+  parent: languages
+  description: "Learn Hindi grammar and structure, starting from the Devanagari script and the Hindi alphabet (varnmala)."
+}
+
+@lessons {
+  varnmala
+}

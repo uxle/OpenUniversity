@@ -1,0 +1,121 @@
+{
+  "entries": [
+    {
+      "lessonId": "lesson1",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Lesson1",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "computer-science",
+      "subSubjectId": "networking",
+      "title": "Lesson1",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "computer-science",
+      "subSubjectId": "operating-systems",
+      "title": "Lesson1",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "Lesson1",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "varnmala",
+      "subjectId": "languages",
+      "subSubjectId": "hindi",
+      "title": "हिन्दी वर्णमाला",
+      "subject": "languages",
+      "keywords": [],
+      "content": "हिन्दी वर्णमाला हिन्दी भाषा को समझने की पहली सीढ़ी उसकी वर्णमाला है। इस पाठ में वर्णमाला की अवधारणा, हिंदी की लिपि, तथा स्वरों और व्यंजनों के विस्तृत वर्गीकरण को समझाया गया है। स्रोत: रोजगार विद अंकित (Rojgar With Ankit) 1. भाषा एवं वर्णमाला की अवधारणा वर्णमाला वर्णों का क्रमबद्ध या व्यवस्थित समूह है। - वर्ण / ध्वनि : भाषा की सबसे छोटी इकाई। - मौखिक रूप → ध्वनि - लिखित रूप → वर्ण - इकाइयों का क्रम : ध्वनि/वर्ण → अक्षर (शब्दांश) → शब्द (भाषा की सबसे छोटी सार्थक इकाई) → वाक्य (भाषा की सबसे बड़ी सा"
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Lesson1",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "mathematics",
+      "subSubjectId": "calculus",
+      "title": "Lesson1",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Lesson1",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Lesson1",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "Lesson1",
+      "subject": "science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Lesson1",
+      "subject": "science",
+      "keywords": [],
+      "content": "Lesson1 TODO: write lesson content."
+    },
+    {
+      "lessonId": "lesson1.hi",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "गति का परिचय",
+      "subject": "science",
+      "keywords": [],
+      "content": "गति का परिचय गति समय के साथ किसी वस्तु की स्थिति में होने वाला परिवर्तन है। गति यह बताती है कि किसी वस्तु की स्थिति किसी संदर्भ बिंदु के सापेक्ष कैसे बदलती है। गति हमेशा किसी संदर्भ फ्रेम पर निर्भर करती है। उदाहरण एक कार 2 घंटे में 100 किमी की दूरी तय करती है। उत्तर: 50 किमी/घंटा"
+    },
+    {
+      "lessonId": "lesson1",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Introduction to Motion",
+      "subject": "science",
+      "keywords": [],
+      "content": "Introduction to Motion Motion is the change in position of an object over time. Motion describes how an object's position changes relative to a reference point. Motion always depends on a reference frame. Example A car travels 100 km in 2 hours. Answer: 50 km/h"
+    }
+  ]
+}

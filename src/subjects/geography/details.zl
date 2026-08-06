@@ -1,0 +1,11 @@
+# Geography
+
+@subject {
+  id: geography
+  title: "Geography"
+  description: "The study of places, landscapes, and how people interact with them."
+}
+
+@lessons {
+  lesson1
+}

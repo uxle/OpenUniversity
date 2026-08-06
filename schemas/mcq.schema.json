@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openuniversity/schemas/mcq.schema.json",
+  "title": "MCQ",
+  "description": "Question bank for one lesson. Field names match src/engines/mcq-engine.js exactly.",
+  "type": "object",
+  "required": ["questions"],
+  "properties": {
+    "lessonId": {
+      "type": "string",
+      "description": "Recommended: identifier linking this file back to its lesson."
+    },
+    "title": { "type": "string" },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "question", "options", "correct", "rationale"],
+        "properties": {
+          "id": { "type": ["number", "string"] },
+          "question": { "type": "string", "minLength": 1 },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "correct": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Zero-indexed position of the correct entry in options."
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Shown as feedback after the learner answers."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

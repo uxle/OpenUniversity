@@ -1,0 +1,81 @@
+/* src/styles/variables.css — design tokens.
+   Palette/radius/shadow values adopted from the supplied reference
+   design (Apple-inspired: near-white app bg distinct from white cards,
+   rgba-based borders that adapt automatically to themes, soft layered
+   shadows, generous rounding). */
+:root {
+  /* Color — light (default) */
+  --ou-bg: #fbfbfd;
+  --ou-surface: #ffffff;              /* solid card background */
+  --ou-surface-translucent: rgba(255, 255, 255, 0.75); /* header/bottom-nav blur */
+  --ou-surface-subtle: #f4f4f7;
+  --ou-surface-raised: #ffffff;
+  --ou-border: rgba(0, 0, 0, 0.05);
+  --ou-border-strong: rgba(0, 0, 0, 0.1);
+  --ou-text: #1d1d1f;
+  --ou-text-secondary: #6e6e73;
+  --ou-text-muted: #a1a1a6;
+  --ou-accent: #0071e3;
+  --ou-accent-hover: #0077ed;
+  --ou-accent-subtle: rgba(0, 113, 227, 0.08);
+  --ou-accent-contrast: #ffffff;
+  --ou-success: #34c759;
+  --ou-warning: #ff9500;
+  --ou-danger: #ff3b30;
+  --ou-focus-ring: #0071e3;
+
+  /* Elevation — soft, layered (ambient + a barely-there direct shadow) */
+  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
+  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.06);
+  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.1);
+
+  /* Radius */
+  --ou-radius-sm: 8px;
+  --ou-radius-md: 12px;
+  --ou-radius-lg: 18px;
+  --ou-radius-xl: 24px;
+  --ou-radius-pill: 9999px;
+
+  /* Spacing scale (8px rhythm) */
+  --ou-space-1: 4px;
+  --ou-space-2: 8px;
+  --ou-space-3: 12px;
+  --ou-space-4: 16px;
+  --ou-space-5: 24px;
+  --ou-space-6: 32px;
+  --ou-space-7: 48px;
+
+  /* Typography — "liquid": the ROOT font-size itself is fluid (clamp()),
+     so every rem-based size below scales smoothly with viewport width
+     with zero per-token clamp() math. Simpler and easier to maintain
+     than clamping each size individually. */
+  --ou-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+  --ou-font-mono: "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  --ou-fs-xs: 0.75rem;
+  --ou-fs-sm: 0.875rem;
+  --ou-fs-md: 1rem;
+  --ou-fs-lg: 1.125rem;
+  --ou-fs-xl: 1.375rem;
+  --ou-fs-2xl: 1.875rem;
+  --ou-line-height: 1.6;
+
+  /* Layout constants */
+  --ou-header-height: 56px;
+  --ou-bottom-nav-height: 64px;
+  --ou-max-width: 980px;
+
+  /* Motion */
+  --ou-transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ou-transition-base: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-index scale */
+  --ou-z-dropdown: 100;
+  --ou-z-sticky: 200;
+  --ou-z-modal: 300;
+  --ou-z-toast: 400;
+}
+
+/* Fluid root size — everything using rem inherits this automatically. */
+html {
+  font-size: clamp(15px, 0.9vw + 10px, 18px);
+}

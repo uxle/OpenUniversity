@@ -1,0 +1,57 @@
+/* src/styles/print.css — used only in the print/PDF context (loaded via
+   @import "./print.css" print; in main.css). Not in tree.md originally;
+   added for the "export lesson as PDF" feature (see
+   components/lesson/export-pdf-button.js). */
+@media print {
+  .ou-app-shell__header,
+  .ou-app-shell__footer,
+  .ou-mobile-nav,
+  .ou-lesson-nav,
+  .ou-back-link,
+  .ou-reader-top-controls,
+  .ou-toast-region,
+  .ou-skip-link,
+  .ou-btn,
+  select {
+    display: none !important;
+  }
+  .ou-app-shell__main {
+    padding: 0;
+    max-width: 100%;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .ou-reader-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  .ou-reader-title {
+    font-size: 24pt !important;
+  }
+  .ou-lesson-content .zl-admonition,
+  .ou-lesson-content .zl-callout {
+    background: #f0f0f0 !important;
+    border-left: 4pt solid #000 !important;
+  }
+  /* Same collision the screen stylesheet had: Zolto's header/body
+     children also legitimately contain "admonition"/"callout" in their
+     class names, so a [class*="…"] wildcard here would give each of
+     them their own background+border too — three nested gray boxes
+     instead of one, in the printed/PDF output specifically. Exact
+     classes only, same fix as src/styles/lesson/zolto-content.css. */
+  .ou-lesson-content a {
+    color: #000;
+    text-decoration: underline;
+  }
+  .ou-lesson-content a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #555;
+  }
+  .ou-lesson {
+    max-width: 100%;
+  }
+}

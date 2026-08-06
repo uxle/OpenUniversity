@@ -1,0 +1,11 @@
+# Languages
+
+@subject {
+  id: languages
+  title: "Languages"
+  description: "Learn the script, grammar, and structure of world languages."
+}
+
+@subSubjects {
+  hindi
+}

@@ -1,0 +1,3 @@
+# .github/workflows/validate.yml
+name: Validate
+# TODO: define workflow/template

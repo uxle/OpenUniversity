@@ -1,0 +1,5 @@
+/* src/styles/mcq/mcq.css — theming hooks for the componentized MCQ pieces
+   in src/components/mcq/. (src/engines/mcq-engine.js injects its own CSS
+   at runtime and is unaffected by this file — see its header comment.) */
+.ou-mcq { max-width: 640px; margin: 0 auto; }
+.ou-mcq__header { margin-bottom: var(--ou-space-4); }

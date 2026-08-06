@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openuniversity/schemas/sub-subject.schema.json",
+  "title": "Sub-Subject",
+  "description": "A specific branch within a primary subject, e.g. Physics under Science.",
+  "type": "object",
+  "required": ["id", "title", "parent", "description"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Lowercase, alphanumeric, unique across the repository."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "parent": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "ID of the parent subject."
+    },
+    "description": { "type": "string", "minLength": 1 },
+    "lessons": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of lesson files (without extension) under lessons/."
+    }
+  },
+  "additionalProperties": false
+}

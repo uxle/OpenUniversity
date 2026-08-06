@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://openuniversity/schemas/contribution.schema.json",
+  "title": "Contribution",
+  "description": "Metadata describing an incoming content or code contribution for review tooling.",
+  "type": "object",
+  "required": ["type", "author"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["lesson", "mcq", "correction", "translation", "code", "design", "accessibility", "docs"]
+    },
+    "author": { "type": "string" },
+    "subject": { "type": "string" },
+    "subSubject": { "type": "string" },
+    "description": { "type": "string" }
+  }
+}

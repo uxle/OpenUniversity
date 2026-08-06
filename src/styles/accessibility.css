@@ -1,0 +1,90 @@
+/* src/styles/accessibility.css */
+.ou-visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.ou-skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--ou-accent);
+  color: var(--ou-accent-contrast);
+  padding: var(--ou-space-2) var(--ou-space-4);
+  z-index: var(--ou-z-toast);
+  border-radius: 0 0 var(--ou-radius-sm) 0;
+}
+.ou-skip-link:focus {
+  left: 0;
+}
+:focus-visible {
+  outline: 3px solid var(--ou-focus-ring);
+  outline-offset: 2px;
+}
+[data-a11y-text-size="lg"] body { font-size: 1.15rem; }
+[data-a11y-text-size="xl"] body { font-size: 1.3rem; }
+[data-a11y-reduced-motion="true"] *, [data-a11y-reduced-motion="true"] *::before, [data-a11y-reduced-motion="true"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* --- AGENTS.txt: forms & touch --- */
+input, textarea, select {
+  /* Prevent iOS Safari auto-zoom on focus (MUST: mobile input font-size >= 16px) */
+  font-size: max(16px, var(--ou-fs-md));
+}
+/* Bare text-like inputs/textareas (e.g. src/pages/contribute.js) had no
+   display/width rule anywhere, unlike select below or the ad-hoc
+   .ou-account-form/.ou-note-editor__textarea treatments — so they fell
+   back to the browser's native inline-block box model. An inline-block
+   textarea with no explicit width doesn't span the container, leaving
+   room for the next inline-block sibling (a button) to flow up beside
+   it instead of wrapping below — with baseline alignment then pulling
+   that short button down to sit across the tall textarea's bottom-right
+   corner. Giving every plain text control real block-level sizing here
+   fixes that everywhere at once, not just on the one page it was
+   noticed on. type="search" is excluded — .ou-search-box gives that
+   input fully bespoke transparent/borderless styling already. */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="url"], input[type="tel"], input[type="number"],
+input:not([type]), textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-sm);
+  background: var(--ou-surface);
+  color: var(--ou-text);
+  font-family: inherit;
+}
+textarea { resize: vertical; }
+select {
+  /* Explicit colors so native <select> isn't unreadable in Windows dark mode */
+  background-color: var(--ou-surface);
+  color: var(--ou-text);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-sm);
+  padding: var(--ou-space-1) var(--ou-space-2);
+}
+a, button, select, input[type="checkbox"], input[type="radio"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--ou-accent) 25%, transparent);
+}
+/* Unconditional, not gated behind @media(pointer:coarse) — that media
+   feature isn't reliably reported by every mobile browser/WebView, and a
+   44px target costs nothing on a mouse-driven desktop either. Found via
+   testing: icon buttons were measuring 18–24px in practice. */
+.ou-mobile-nav__item, select, input[type="checkbox"], input[type="radio"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+/* .ou-btn--icon's exact 44×44px sizing lives in components/buttons.css
+   (not here) — accessibility.css loads before buttons.css, so a rule
+   here would just lose the cascade to buttons.css's own padding value.
+   See buttons.css for why it needs to be exact, not just a minimum. */
+.ou-btn { min-height: 40px; }

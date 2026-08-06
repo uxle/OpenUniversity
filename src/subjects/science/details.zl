@@ -1,0 +1,13 @@
+# Science
+
+@subject {
+  id: science
+  title: "Science"
+  description: "Explore the natural world through scientific knowledge."
+}
+
+@subSubjects {
+  physics
+  chemistry
+  biology
+}

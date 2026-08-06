@@ -1,0 +1,23 @@
+/* src/styles/themes/high-contrast.css — WCAG AAA-leaning contrast theme */
+[data-theme="high-contrast"] {
+  --ou-bg: #000000;
+  --ou-surface: #000000;
+  --ou-surface-translucent: #000000;
+  --ou-surface-subtle: #0a0a0a;
+  --ou-border: #ffffff;
+  --ou-border-strong: #ffffff;
+  --ou-text: #ffffff;
+  --ou-text-secondary: #ffffff;
+  --ou-text-muted: #eeeeee;
+  --ou-accent: #ffff00;
+  --ou-accent-subtle: rgba(255, 255, 0, 0.15);
+  --ou-accent-contrast: #000000;
+  --ou-focus-ring: #ffff00;
+  color-scheme: dark;
+}
+[data-theme="high-contrast"] * {
+  border-color: var(--ou-border) !important;
+}
+[data-theme="high-contrast"] :focus-visible {
+  outline-width: 4px;
+}

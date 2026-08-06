@@ -1,0 +1,12 @@
+/* src/styles/mcq/options.css */
+.ou-mcq-options { display: flex; flex-direction: column; gap: var(--ou-space-2); }
+.ou-mcq-option {
+  text-align: left;
+  padding: var(--ou-space-3) var(--ou-space-4);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-md);
+  background: var(--ou-surface);
+}
+.ou-mcq-option:hover:not(:disabled) { border-color: var(--ou-accent); }
+.ou-mcq-option--correct { border-color: var(--ou-success); background: color-mix(in srgb, var(--ou-success) 12%, var(--ou-surface)); }
+.ou-mcq-option--incorrect { border-color: var(--ou-danger); background: color-mix(in srgb, var(--ou-danger) 12%, var(--ou-surface)); }

@@ -1,0 +1,14 @@
+# Computer Science
+
+@subject {
+  id: computer-science
+  title: "Computer Science"
+  description: "The study of computation, algorithms, and the systems that run them."
+}
+
+@subSubjects {
+  algorithms
+  networking
+  operating-systems
+  programming
+}

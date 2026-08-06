@@ -1,0 +1,11 @@
+# Philosophy
+
+@subject {
+  id: philosophy
+  title: "Philosophy"
+  description: "Fundamental questions about knowledge, existence, and ethics."
+}
+
+@lessons {
+  lesson1
+}

@@ -1,0 +1,19 @@
+/* src/styles/themes/dark.css */
+[data-theme="dark"] {
+  --ou-bg: #000000;
+  --ou-surface: #1c1c1e;
+  --ou-surface-translucent: rgba(22, 22, 24, 0.8);
+  --ou-surface-subtle: #2c2c2e;
+  --ou-surface-raised: #2c2c2e;
+  --ou-border: rgba(255, 255, 255, 0.08);
+  --ou-border-strong: rgba(255, 255, 255, 0.15);
+  --ou-text: #f5f5f7;
+  --ou-text-secondary: #98989d;
+  --ou-text-muted: #636366;
+  --ou-accent: #2997ff;
+  --ou-accent-subtle: rgba(41, 151, 255, 0.15);
+  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.65);
+  color-scheme: dark;
+}

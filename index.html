@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenKnowledge — knowledge is everyone's right</title>
+  <meta name="description" content="OpenKnowledge: an open-source, text-first knowledge base. Free lessons, quizzes, translations, and progress tracking.">
+  <meta name="theme-color" content="#fbfbfd" id="theme-color-meta">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/icons/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/icons/icon-180.png">
+  <link rel="manifest" href="public/manifest.json">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Note: no Subresource-Integrity hash here — verify one against the
+       exact file served before adding it back; a wrong hash silently
+       blocks the whole stylesheet rather than just failing safe. -->
+
+  <!-- src/engines/zolto/zolto-engine.js imports the real, vendored
+       `zolto` package (src/engines/zolto/vendor/zolto/) — no bare
+       "zolto" specifier, no CDN, no import map needed. -->
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Fallback shown only if JS fails to load/execute; startApp() replaces this immediately on success. -->
+    <noscript>OpenKnowledge needs JavaScript enabled to run.</noscript>
+  </div>
+
+  <script type="module">
+    import { startApp } from "./src/app/bootstrap.js";
+    startApp("#app").catch((err) => {
+      console.error("Failed to start OpenKnowledge:", err);
+      document.getElementById("app").innerHTML =
+        '<div style="padding:2rem;text-align:center;font-family:sans-serif">' +
+        '<h1>Something went wrong starting the app</h1>' +
+        '<p>' + (err && err.message ? err.message : err) + '</p>' +
+        '<p>Check the browser console for details.</p></div>';
+    });
+  </script>
+</body>
+</html>

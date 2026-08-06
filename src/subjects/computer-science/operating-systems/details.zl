@@ -1,0 +1,12 @@
+# Operating Systems
+
+@subject {
+  id: operating-systems
+  parent: computer-science
+  title: "Operating Systems"
+  description: "The software that manages a computer's hardware, processes, and resources."
+}
+
+@lessons {
+  lesson1
+}

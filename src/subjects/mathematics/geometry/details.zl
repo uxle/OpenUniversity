@@ -1,0 +1,12 @@
+# Geometry
+
+@subject {
+  id: geometry
+  parent: mathematics
+  title: "Geometry"
+  description: "The study of shapes, sizes, angles, and the properties of space."
+}
+
+@lessons {
+  lesson1
+}

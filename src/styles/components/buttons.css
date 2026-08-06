@@ -1,0 +1,50 @@
+/* src/styles/components/buttons.css */
+.ou-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ou-space-2);
+  padding: var(--ou-space-2) var(--ou-space-4);
+  border-radius: var(--ou-radius-pill);
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background-color var(--ou-transition-fast), transform var(--ou-transition-fast);
+  white-space: nowrap;
+}
+.ou-btn:active { transform: scale(0.97); }
+.ou-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.ou-btn--primary { background: var(--ou-accent); color: var(--ou-accent-contrast); }
+.ou-btn--primary:hover:not(:disabled) { filter: brightness(1.08); }
+
+.ou-btn--secondary { background: var(--ou-surface); color: var(--ou-text); border-color: var(--ou-border); }
+.ou-btn--secondary:hover:not(:disabled) { background: var(--ou-bg); }
+
+.ou-btn--ghost { background: transparent; color: var(--ou-accent); }
+.ou-btn--ghost:hover:not(:disabled) { background: color-mix(in srgb, var(--ou-accent) 10%, transparent); }
+
+.ou-btn--danger { background: var(--ou-danger); color: #fff; }
+.ou-btn--sm { padding: var(--ou-space-1) var(--ou-space-3); font-size: var(--ou-fs-xs); }
+/* Exact 44×44px square, not padding-driven sizing: content-driven width
+   (padding + glyph width) made this an oval, not a circle, whenever the
+   icon glyph itself wasn't square — fa-ellipsis (three dots side by
+   side) is naturally much wider than tall, so uniform padding around it
+   still produced a wide box, and accessibility.css's old min-height/
+   min-width rule only forced the height to 44px, leaving the width free
+   to be pulled wider by the glyph. A fixed square (padding zeroed so it
+   can't reopen the same gap) guarantees both a true circle and the real
+   44px touch target regardless of which glyph is inside. */
+.ou-btn--icon { width: 44px; height: 44px; padding: 0; border-radius: 50%; }
+
+.ou-spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--ou-border);
+  border-top-color: var(--ou-accent);
+  border-radius: 50%;
+  animation: ou-spin 0.7s linear infinite;
+  display: inline-block;
+}
+@keyframes ou-spin { to { transform: rotate(360deg); } }
+
+.ou-icon--active { color: var(--ou-accent); }

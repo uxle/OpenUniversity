@@ -1,0 +1,136 @@
+{
+  "subjects": [
+    {
+      "id": "computer-science",
+      "title": "Computer Science",
+      "description": "The study of computation, algorithms, and the systems that run them.",
+      "lessonCount": 5,
+      "subSubjects": [
+        {
+          "id": "algorithms",
+          "title": "Algorithms",
+          "description": "Step-by-step methods for solving problems, and how to measure their efficiency.",
+          "lessonCount": 1
+        },
+        {
+          "id": "networking",
+          "title": "Networking",
+          "description": "How computers communicate and exchange data across networks.",
+          "lessonCount": 1
+        },
+        {
+          "id": "operating-systems",
+          "title": "Operating Systems",
+          "description": "The software that manages a computer's hardware, processes, and resources.",
+          "lessonCount": 1
+        },
+        {
+          "id": "programming",
+          "title": "Programming",
+          "description": "Writing instructions that tell computers what to do.",
+          "lessonCount": 1
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "title": "Economics",
+      "description": "How individuals, businesses, and societies allocate scarce resources.",
+      "lessonCount": 1,
+      "subSubjects": []
+    },
+    {
+      "id": "geography",
+      "title": "Geography",
+      "description": "The study of places, landscapes, and how people interact with them.",
+      "lessonCount": 1,
+      "subSubjects": []
+    },
+    {
+      "id": "history",
+      "title": "History",
+      "description": "The study of past events and how they shaped the present.",
+      "lessonCount": 1,
+      "subSubjects": []
+    },
+    {
+      "id": "languages",
+      "title": "Languages",
+      "description": "Learn the script, grammar, and structure of world languages.",
+      "lessonCount": 2,
+      "subSubjects": [
+        {
+          "id": "hindi",
+          "title": "Hindi",
+          "description": "Learn Hindi grammar and structure, starting from the Devanagari script and the Hindi alphabet (varnmala).",
+          "lessonCount": 1
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "title": "Mathematics",
+      "description": "The study of numbers, structures, patterns, and change.",
+      "lessonCount": 5,
+      "subSubjects": [
+        {
+          "id": "algebra",
+          "title": "Algebra",
+          "description": "Working with symbols and variables, and the rules for manipulating them.",
+          "lessonCount": 1
+        },
+        {
+          "id": "calculus",
+          "title": "Calculus",
+          "description": "The mathematics of change, motion, and accumulation.",
+          "lessonCount": 1
+        },
+        {
+          "id": "geometry",
+          "title": "Geometry",
+          "description": "The study of shapes, sizes, angles, and the properties of space.",
+          "lessonCount": 1
+        },
+        {
+          "id": "statistics",
+          "title": "Statistics",
+          "description": "Collecting, analyzing, and interpreting data.",
+          "lessonCount": 1
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophy",
+      "description": "Fundamental questions about knowledge, existence, and ethics.",
+      "lessonCount": 1,
+      "subSubjects": []
+    },
+    {
+      "id": "science",
+      "title": "Science",
+      "description": "Explore the natural world through scientific knowledge.",
+      "lessonCount": 4,
+      "subSubjects": [
+        {
+          "id": "biology",
+          "title": "Biology",
+          "description": "The study of living organisms and life processes.",
+          "lessonCount": 1
+        },
+        {
+          "id": "chemistry",
+          "title": "Chemistry",
+          "description": "The study of matter, its properties, and how it changes.",
+          "lessonCount": 1
+        },
+        {
+          "id": "physics",
+          "title": "Physics",
+          "description": "Study matter, energy, motion, forces and the laws of nature.",
+          "lessonCount": 1
+        }
+      ]
+    }
+  ]
+}

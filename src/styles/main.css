@@ -1,0 +1,40 @@
+/* src/styles/main.css — single entry point that aggregates the design system.
+   Import this one file; it pulls in the rest via @import (no build step
+   required — modern browsers resolve these directly). */
+@import "./reset.css";
+@import "./variables.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./responsive.css";
+@import "./accessibility.css";
+
+@import "./themes/light.css";
+@import "./themes/dark.css";
+@import "./themes/high-contrast.css";
+
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/navbar.css";
+@import "./components/bottom-nav.css";
+@import "./components/modal.css";
+@import "./components/toast.css";
+@import "./components/tabs.css";
+@import "./components/dropdown.css";
+@import "./components/progress.css";
+
+@import "./lesson/lesson.css";
+@import "./lesson/lesson-content.css";
+@import "./lesson/lesson-navigation.css";
+@import "./lesson/glossary.css";
+@import "./lesson/zolto-content.css";
+
+@import "./mcq/mcq.css";
+@import "./mcq/question.css";
+@import "./mcq/options.css";
+@import "./mcq/results.css";
+
+@import "./search/search.css";
+@import "./account/account.css";
+@import "./print.css" print;
+
+body { background: var(--ou-bg); color: var(--ou-text); }

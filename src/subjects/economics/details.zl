@@ -1,0 +1,11 @@
+# Economics
+
+@subject {
+  id: economics
+  title: "Economics"
+  description: "How individuals, businesses, and societies allocate scarce resources."
+}
+
+@lessons {
+  lesson1
+}

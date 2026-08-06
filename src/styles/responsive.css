@@ -1,0 +1,11 @@
+/* src/styles/responsive.css — with the sidebar gone (see layout.css), the
+   single-column shell already works at every width via fluid tokens and
+   min()/minmax(). Only a couple of fine-tuning rules remain. */
+
+@media (max-width: 380px) {
+  .ou-app-shell__main { padding-left: var(--ou-space-3); padding-right: var(--ou-space-3); }
+}
+
+@media (min-width: 640px) {
+  .ou-app-shell__main { padding: var(--ou-space-6) var(--ou-space-5); padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-6)); }
+}

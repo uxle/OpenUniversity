@@ -1,0 +1,12 @@
+# Biology
+
+@subject {
+  id: biology
+  parent: science
+  title: "Biology"
+  description: "The study of living organisms and life processes."
+}
+
+@lessons {
+  lesson1
+}

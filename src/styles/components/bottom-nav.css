@@ -1,0 +1,43 @@
+/* src/styles/components/bottom-nav.css — the app's primary navigation,
+   floating and visible at every screen width (not a "sidebar" component;
+   see layout.css for why the persistent desktop sidebar was removed).
+   New file — not in the original tree.md, added when the shell was
+   simplified to match the supplied reference design. */
+.ou-mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--ou-bottom-nav-height);
+  padding-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--ou-surface-translucent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid var(--ou-border);
+  z-index: var(--ou-z-sticky);
+}
+.ou-mobile-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  font-size: var(--ou-fs-xs);
+  font-weight: 500;
+  color: var(--ou-text-secondary);
+  touch-action: manipulation;
+  transition: color var(--ou-transition-fast);
+}
+.ou-mobile-nav__item i {
+  font-size: 1.15em;
+  transition: transform var(--ou-transition-fast);
+}
+.ou-mobile-nav__item:hover { color: var(--ou-text); }
+.ou-mobile-nav__item[aria-current="page"] { color: var(--ou-accent); font-weight: 600; }
+.ou-mobile-nav__item[aria-current="page"] i { transform: translateY(-2px); }

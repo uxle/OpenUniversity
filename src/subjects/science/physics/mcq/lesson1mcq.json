@@ -1,0 +1,18 @@
+{
+  "lessonId": "physics-motion-001",
+  "title": "Introduction to Motion",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is motion?",
+      "options": [
+        "Change in position over time",
+        "Change in color",
+        "Increase in mass",
+        "Remaining stationary"
+      ],
+      "correct": 0,
+      "rationale": "Motion is a change in the position of an object with respect to time."
+    }
+  ]
+}

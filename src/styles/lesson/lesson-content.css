@@ -1,0 +1,6 @@
+/* src/styles/lesson/lesson-content.css — wraps Zolto's compiled HTML output */
+.ou-lesson-content { line-height: 1.7; }
+.ou-lesson-content h2 { margin-top: var(--ou-space-6); }
+.ou-lesson-content h3 { margin-top: var(--ou-space-5); }
+.ou-lesson-content p { margin-top: var(--ou-space-3); }
+.ou-lesson-content > *:first-child { margin-top: 0; }

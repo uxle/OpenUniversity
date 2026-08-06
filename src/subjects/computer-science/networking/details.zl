@@ -1,0 +1,12 @@
+# Networking
+
+@subject {
+  id: networking
+  parent: computer-science
+  title: "Networking"
+  description: "How computers communicate and exchange data across networks."
+}
+
+@lessons {
+  lesson1
+}

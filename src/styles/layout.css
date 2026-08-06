@@ -1,0 +1,99 @@
+/* src/styles/layout.css — app shell layout.
+   No sidebar, no CSS grid: a sticky header, flowing main content, and a
+   fixed bottom nav visible at every screen width (matching the reference
+   design). This is deliberately simpler than an earlier sidebar+grid
+   version — that complexity was the root cause of most of a real mobile
+   bug report (header overflow, footer/nav collisions, squeezed desktop
+   layout on phones). Removing it removes the bug class, not just the bugs. */
+.ou-app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh; /* accounts for mobile browser chrome; falls back above */
+  background: var(--ou-bg);
+}
+.ou-app-shell__main {
+  /* Deliberately NOT flex:1 — see footer comment below for why. */
+  width: 100%;
+  max-width: var(--ou-max-width);
+  margin: 0 auto;
+  padding: var(--ou-space-5) var(--ou-space-4);
+}
+.ou-app-shell__footer {
+  text-align: center;
+  font-size: var(--ou-fs-xs);
+  color: var(--ou-text-muted);
+  padding: var(--ou-space-4) var(--ou-space-4) calc(var(--ou-bottom-nav-height) + var(--ou-space-5) + env(safe-area-inset-bottom));
+}
+/* Why <main> isn't flex:1: it used to be, so it always stretched to fill
+   the viewport on short pages — which pushed the footer to sit exactly
+   where the fixed bottom nav overlays, hiding the footer text behind it.
+   (Padding on a flex:1 element doesn't change its grown size, so an
+   earlier attempt to reserve space *inside* main's padding did nothing —
+   only the space *after* the last flowed element, here the footer's own
+   padding-bottom, actually keeps content clear of the fixed nav.) */
+
+/* Kept as an available inner width-constraint utility for content nested
+   inside <main> (forms etc.) — <main> itself now owns the primary
+   max-width/centering, so this is intentionally inert by default. */
+.ou-container { width: 100%; }
+
+/* src/pages/contribute.js — explicit flex-column grouping for the form
+   fields (belt-and-suspenders alongside the global text-input/textarea
+   display:block fix in accessibility.css: this also keeps the
+   "Validate" button visually grouped with the fields it validates,
+   separate from the output box below it). */
+.ou-contribute__form { display: flex; flex-direction: column; gap: var(--ou-space-3); align-items: flex-start; }
+.ou-contribute__output {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.ou-contribute__output:empty { display: none; }
+
+.ou-stack > * + * { margin-top: var(--ou-space-4); }
+.ou-stack--loose > * + * { margin-top: var(--ou-space-7); }
+.ou-cluster { display: flex; align-items: center; gap: var(--ou-space-3); flex-wrap: wrap; min-width: 0; }
+
+.ou-grid--quick-actions { grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr)); gap: var(--ou-space-3); }
+.ou-quick-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ou-space-2);
+  text-align: center;
+  padding: var(--ou-space-4);
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  color: var(--ou-text);
+}
+.ou-quick-action i { font-size: 1.3rem; color: var(--ou-accent); }
+
+/* Liquid grid: minmax() + auto-fill reflows column count continuously as
+   width changes — no breakpoint needed for 1 column to become N columns. */
+.ou-grid {
+  display: grid;
+  gap: var(--ou-space-5);
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+}
+
+/* Route transitions: any direct child mounted into <main> fades/lifts in
+   automatically on insertion — no JS needed. Covered by reset.css's
+   prefers-reduced-motion media query. */
+.ou-app-shell__main > * {
+  animation: ou-page-enter var(--ou-transition-base) both;
+}
+@keyframes ou-page-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ou-grid > * { animation: ou-page-enter var(--ou-transition-base) both; }
+.ou-grid > *:nth-child(1) { animation-delay: 20ms; }
+.ou-grid > *:nth-child(2) { animation-delay: 40ms; }
+.ou-grid > *:nth-child(3) { animation-delay: 60ms; }
+.ou-grid > *:nth-child(4) { animation-delay: 80ms; }
+.ou-grid > *:nth-child(5) { animation-delay: 100ms; }
+.ou-grid > *:nth-child(6) { animation-delay: 120ms; }
+.ou-grid > *:nth-child(7) { animation-delay: 140ms; }
+.ou-grid > *:nth-child(8) { animation-delay: 160ms; }

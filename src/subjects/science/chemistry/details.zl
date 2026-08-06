@@ -1,0 +1,12 @@
+# Chemistry
+
+@subject {
+  id: chemistry
+  parent: science
+  title: "Chemistry"
+  description: "The study of matter, its properties, and how it changes."
+}
+
+@lessons {
+  lesson1
+}

@@ -1,0 +1,26 @@
+# Introduction to Motion
+
+Motion is the change in position of an object over time.
+
+[definition]
+Motion describes how an object's position changes relative to a
+reference point.
+[/definition]
+
+@math label="eq:velocity"
+v = \frac{d}{t}
+@/math
+
+[important]
+Motion always depends on a reference frame.
+[/important]
+
+## Example
+
+A car travels 100 km in 2 hours.
+
+@math label="eq:velocity-example"
+v = \frac{100}{2}
+@/math
+
+**Answer:** 50 km/h

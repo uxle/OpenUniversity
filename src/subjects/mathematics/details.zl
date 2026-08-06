@@ -1,0 +1,14 @@
+# Mathematics
+
+@subject {
+  id: mathematics
+  title: "Mathematics"
+  description: "The study of numbers, structures, patterns, and change."
+}
+
+@subSubjects {
+  algebra
+  calculus
+  geometry
+  statistics
+}

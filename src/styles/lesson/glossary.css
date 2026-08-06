@@ -1,0 +1,4 @@
+/* src/styles/lesson/glossary.css */
+.ou-glossary { border-top: 1px solid var(--ou-border); padding-top: var(--ou-space-4); margin-top: var(--ou-space-6); }
+.ou-glossary__term { font-weight: 700; }
+.ou-glossary__def { color: var(--ou-text-secondary); margin-top: var(--ou-space-1); margin-bottom: var(--ou-space-3); }

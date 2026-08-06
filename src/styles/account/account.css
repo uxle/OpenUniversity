@@ -1,0 +1,15 @@
+/* src/styles/account/account.css */
+.ou-account-form { display: flex; flex-direction: column; gap: var(--ou-space-3); max-width: 360px; }
+.ou-account-form input,
+.ou-account-form textarea,
+.ou-note-editor__textarea {
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-sm);
+  background: var(--ou-surface);
+  color: var(--ou-text);
+  font-family: inherit;
+  resize: vertical;
+}
+.ou-note-editor__textarea { width: 100%; }
+.ou-profile-header { display: flex; align-items: center; gap: var(--ou-space-4); }

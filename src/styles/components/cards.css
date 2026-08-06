@@ -1,0 +1,66 @@
+/* src/styles/components/cards.css */
+.ou-card {
+  background: var(--ou-surface);
+  border: 1px solid var(--ou-border);
+  border-radius: var(--ou-radius-xl);
+  box-shadow: var(--ou-shadow-sm);
+  padding: var(--ou-space-5);
+  transition: box-shadow var(--ou-transition-base), transform var(--ou-transition-base), border-color var(--ou-transition-base);
+}
+.ou-card--interactive { cursor: pointer; display: block; }
+.ou-card--interactive:hover { box-shadow: var(--ou-shadow-md); transform: translateY(-4px); border-color: var(--ou-border-strong); }
+.ou-card--interactive:active { transform: scale(0.98); transition-duration: 80ms; }
+.ou-card__title { font-size: var(--ou-fs-lg); font-weight: 700; letter-spacing: -0.01em; margin-bottom: var(--ou-space-1); }
+.ou-card__subtitle { color: var(--ou-text-secondary); font-size: var(--ou-fs-sm); line-height: 1.45; }
+.ou-card__body { margin-top: var(--ou-space-3); }
+
+.ou-subject-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Title/description/metadata sized up specifically for subject cards
+   (not the shared .ou-card__title/.ou-card__subtitle used elsewhere,
+   e.g. progress-card) so the title clearly dominates the description,
+   which clearly dominates the "N lessons" line. */
+.ou-subject-card .ou-card__title { font-size: clamp(1.6rem, 5vw, 1.85rem); margin-bottom: var(--ou-space-2); }
+.ou-subject-card .ou-card__subtitle { font-size: 1rem; line-height: 1.5; }
+.ou-subject-card__icon {
+  width: 40px; height: 40px;
+  border-radius: var(--ou-radius-pill);
+  display: grid;
+  place-items: center;
+  font-size: var(--ou-fs-md);
+  margin-bottom: var(--ou-space-3);
+}
+.ou-subject-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--ou-space-4);
+  padding-top: var(--ou-space-3);
+  border-top: 1px solid var(--ou-border);
+  font-size: var(--ou-fs-sm);
+  color: var(--ou-text-secondary); /* was --ou-text-muted: ~2.9:1 contrast in
+    dark theme against the card surface, below WCAG AA's 4.5:1 for real
+    informational text (lesson count / "Explore") — not decorative like the
+    chevron/icon uses of --ou-text-muted elsewhere in this file, which are
+    fine as-is. */
+  font-weight: 500;
+}
+
+.ou-empty-state {
+  text-align: center;
+  padding: var(--ou-space-6) var(--ou-space-4);
+  color: var(--ou-text-muted);
+}
+
+.ou-empty-state__icon { font-size: 2rem; color: var(--ou-text-muted); margin-bottom: var(--ou-space-2); }
+
+.ou-progress-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-4);
+}
+.ou-progress-card__chevron { color: var(--ou-text-muted); flex-shrink: 0; }

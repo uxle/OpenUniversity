@@ -1,0 +1,15 @@
+/* src/styles/themes/light.css — default theme, explicit for clarity/override */
+[data-theme="light"] {
+  --ou-bg: #fbfbfd;
+  --ou-surface: #ffffff;
+  --ou-surface-translucent: rgba(255, 255, 255, 0.75);
+  --ou-surface-subtle: #f4f4f7;
+  --ou-border: rgba(0, 0, 0, 0.05);
+  --ou-border-strong: rgba(0, 0, 0, 0.1);
+  --ou-text: #1d1d1f;
+  --ou-text-secondary: #6e6e73;
+  --ou-text-muted: #a1a1a6;
+  --ou-accent: #0071e3;
+  --ou-accent-subtle: rgba(0, 113, 227, 0.08);
+  color-scheme: light;
+}

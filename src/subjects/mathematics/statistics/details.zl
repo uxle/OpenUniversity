@@ -1,0 +1,12 @@
+# Statistics
+
+@subject {
+  id: statistics
+  parent: mathematics
+  title: "Statistics"
+  description: "Collecting, analyzing, and interpreting data."
+}
+
+@lessons {
+  lesson1
+}
