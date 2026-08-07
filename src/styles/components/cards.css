@@ -64,3 +64,22 @@
   gap: var(--ou-space-4);
 }
 .ou-progress-card__chevron { color: var(--ou-text-muted); flex-shrink: 0; }
+
+.ou-quiz-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-4);
+  margin-top: var(--ou-space-5);
+}
+.ou-quiz-cta__icon {
+  width: 40px; height: 40px;
+  border-radius: var(--ou-radius-pill);
+  display: grid;
+  place-items: center;
+  font-size: var(--ou-fs-md);
+  flex-shrink: 0;
+  background: var(--ou-accent-subtle);
+  color: var(--ou-accent);
+}
+.ou-quiz-cta__body { flex: 1; min-width: 0; }
+.ou-quiz-cta__chevron { color: var(--ou-text-muted); flex-shrink: 0; }

@@ -15,6 +15,7 @@ import { createNotesPanel } from "../components/notes/notes-panel.js";
 import { createEmptyState } from "../components/common/empty-state.js";
 import { createExportPdfButton } from "../components/lesson/export-pdf-button.js";
 import { createLanguageSwitcher, createTranslationFallbackNotice } from "../components/lesson/language-switcher.js";
+import { createQuizCta } from "../components/lesson/quiz-cta.js";
 import { router } from "../core/router.js";
 
 export async function render(container, { subjectId, subSubjectId, lessonId }) {
@@ -37,28 +38,32 @@ export async function render(container, { subjectId, subSubjectId, lessonId }) {
 
       empty(contentSlot);
       document.title = `${lesson.title} — OpenKnowledge`;
+      const quizCta = await createQuizCta(subjectId, subSubjectId, lessonId, progress);
       contentSlot.append(
-        createEl("div", { class: "ou-reader-top-controls" }, [
-          createEl("a", { href: `#/subjects/${subjectId}/${subSubjectId}`, class: "ou-back-link" }, [
-            icon("chevron-left"), `Back to ${subSubject?.title || "lessons"}`,
+        ...[
+          createEl("div", { class: "ou-reader-top-controls" }, [
+            createEl("a", { href: `#/subjects/${subjectId}/${subSubjectId}`, class: "ou-back-link" }, [
+              icon("chevron-left"), `Back to ${subSubject?.title || "lessons"}`,
+            ]),
+            createEl("div", { class: "ou-cluster" }, [
+              createLanguageSwitcher(lang, renderLanguage),
+              createExportPdfButton(),
+            ]),
           ]),
-          createEl("div", { class: "ou-cluster" }, [
-            createLanguageSwitcher(lang, renderLanguage),
-            createExportPdfButton(),
+          createEl("div", { class: "ou-reader-card" }, [
+            createLessonHeader(lesson, subject?.title),
+            createEl("div", { class: "ou-cluster ou-reader-meta-row" }, [
+              createLessonProgressControl(subjectId, subSubjectId, lessonId, { completed: progress?.completed }),
+              createBookmarkButton(subjectId, subSubjectId, lessonId),
+            ]),
+            lesson.isFallback ? createTranslationFallbackNotice(lesson.requestedLang) : null,
+            createLessonContent(lesson.html),
           ]),
-        ]),
-        createEl("div", { class: "ou-reader-card" }, [
-          createLessonHeader(lesson, subject?.title),
-          createEl("div", { class: "ou-cluster ou-reader-meta-row" }, [
-            createLessonProgressControl(subjectId, subSubjectId, lessonId, { completed: progress?.completed }),
-            createBookmarkButton(subjectId, subSubjectId, lessonId),
-          ]),
-          lesson.isFallback ? createTranslationFallbackNotice(lesson.requestedLang) : null,
-          createLessonContent(lesson.html),
-        ]),
-        nav,
-        related,
-        notes,
+          quizCta,
+          nav,
+          related,
+          notes,
+        ].filter(Boolean),
       );
     } catch (err) {
       empty(contentSlot);
