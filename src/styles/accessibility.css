@@ -69,8 +69,25 @@ select {
   color: var(--ou-text);
   border: 1px solid var(--ou-border);
   border-radius: var(--ou-radius-sm);
-  padding: var(--ou-space-1) var(--ou-space-2);
+  padding: var(--ou-space-1) var(--ou-space-6) var(--ou-space-1) var(--ou-space-2);
+  /* appearance was never set anywhere in this codebase, so every <select>
+     rendered with the browser's own native dropdown chrome (appearance:
+     auto) layered underneath/inside whatever custom background, border,
+     and border-radius this rule and .ou-btn/.ou-btn--sm add — visually
+     that's two overlapping rounded shapes, most obvious on the language
+     switcher's pill-styled select. A custom chevron replaces the native
+     one so the dropdown affordance isn't lost. */
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2398989d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--ou-space-2) center;
+  background-size: 12px;
 }
+/* select.ou-btn/.ou-btn--sm set their own padding (button-pill spacing),
+   which would otherwise override the padding-right above and put the
+   custom arrow under the option text again — restore just that side. */
+select.ou-btn { padding-right: var(--ou-space-6); }
 a, button, select, input[type="checkbox"], input[type="radio"] {
   touch-action: manipulation;
   -webkit-tap-highlight-color: color-mix(in srgb, var(--ou-accent) 25%, transparent);

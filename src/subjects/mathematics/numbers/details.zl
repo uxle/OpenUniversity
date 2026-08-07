@@ -1,0 +1,12 @@
+# Numbers
+
+@subject {
+  id: numbers
+  parent: mathematics
+  title: "Numbers"
+  description: "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on."
+}
+
+@lessons {
+  numbers
+}

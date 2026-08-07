@@ -1,0 +1,140 @@
+# Numbers
+
+Long before anyone wrote a number down, people needed to answer one simple question: **how many?** How many sheep in the flock. How many days until the harvest. How many stones to mark a grave. A number is just an answer to "how many" or "how much" — a symbol that stands in for a quantity, so we don't have to carry the actual sheep around to compare flocks.
+
+[definition]
+A **number** is a symbol or word that represents a quantity, an amount, or a position in a sequence.
+[/definition]
+
+## 1. Counting is where numbers begin
+
+The oldest and most natural use of numbers is counting — matching each object to one, and only one, count word: *one, two, three…* This one-to-one matching is so basic that some ancient cultures counted with notches on a bone or knots on a rope before they ever had written number symbols at all.
+
+[example]
+🍎 🍎 🍎 🍎 🍎 — five apples. However they're arranged, however far apart, the count is still 5. The *number* 5 doesn't change; only the objects do.
+[/example]
+
+## 2. The number line — putting numbers in order
+
+Once we can count, the next natural step is to put numbers in order, evenly spaced, on a line. This single picture is one of the most useful tools in all of mathematics — it turns numbers into *positions* you can see and compare.
+
+@vector width=760 height=170 viewBox="0 0 760 170"
+
+artboard id="numberline" x=0 y=0 w=760 h=170
+  layer id="axis"
+    line x1=40 y1=90 x2=720 y2=90 stroke="#98989d" strokeWidth=3
+
+  layer id="ticks"
+    line x1=40 y1=78 x2=40 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=108 y1=78 x2=108 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=176 y1=78 x2=176 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=244 y1=78 x2=244 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=312 y1=78 x2=312 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=380 y1=78 x2=380 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=448 y1=78 x2=448 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=516 y1=78 x2=516 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=584 y1=78 x2=584 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=652 y1=78 x2=652 y2=102 stroke="#98989d" strokeWidth=2
+    line x1=720 y1=78 x2=720 y2=102 stroke="#98989d" strokeWidth=2
+
+  layer id="points"
+    circle cx=40 cy=90 r=9 fill="#ff9500"
+    circle cx=108 cy=90 r=6 fill="#0a84ff"
+    circle cx=176 cy=90 r=6 fill="#0a84ff"
+    circle cx=244 cy=90 r=6 fill="#0a84ff"
+    circle cx=312 cy=90 r=6 fill="#0a84ff"
+    circle cx=380 cy=90 r=6 fill="#0a84ff"
+    circle cx=448 cy=90 r=6 fill="#0a84ff"
+    circle cx=516 cy=90 r=6 fill="#0a84ff"
+    circle cx=584 cy=90 r=6 fill="#0a84ff"
+    circle cx=652 cy=90 r=6 fill="#0a84ff"
+    circle cx=720 cy=90 r=6 fill="#0a84ff"
+
+  layer id="labels"
+    text x=40 y=130 size=18 fill="#f5f5f7" align="middle"
+      0
+    @endtext
+    text x=108 y=130 size=16 fill="#f5f5f7" align="middle"
+      1
+    @endtext
+    text x=176 y=130 size=16 fill="#f5f5f7" align="middle"
+      2
+    @endtext
+    text x=244 y=130 size=16 fill="#f5f5f7" align="middle"
+      3
+    @endtext
+    text x=312 y=130 size=16 fill="#f5f5f7" align="middle"
+      4
+    @endtext
+    text x=380 y=130 size=16 fill="#f5f5f7" align="middle"
+      5
+    @endtext
+    text x=448 y=130 size=16 fill="#f5f5f7" align="middle"
+      6
+    @endtext
+    text x=516 y=130 size=16 fill="#f5f5f7" align="middle"
+      7
+    @endtext
+    text x=584 y=130 size=16 fill="#f5f5f7" align="middle"
+      8
+    @endtext
+    text x=652 y=130 size=16 fill="#f5f5f7" align="middle"
+      9
+    @endtext
+    text x=720 y=130 size=16 fill="#f5f5f7" align="middle"
+      10
+    @endtext
+@endartboard
+
+@/vector
+
+The orange dot marks **0** — not "nothing happened," but the starting point everything else is measured from. Moving right, each dot is one more than the last. That single idea — a fixed order, one step at a time — is the seed that all of arithmetic grows from.
+
+## 3. Not all numbers are the same kind
+
+As soon as people needed more than "how many whole things," they needed new *kinds* of numbers: numbers for nothing, numbers for less than nothing, numbers for parts of a whole. Each new kind was invented to answer a question the old kind couldn't.
+
+@diagram tree id="number-families" layout="tree" aria="Families of numbers, from natural numbers to real numbers"
+  Numbers -> "Natural Numbers"
+  Numbers -> "Whole Numbers"
+  Numbers -> Integers
+  Numbers -> "Rational Numbers"
+  Numbers -> "Irrational Numbers"
+@/diagram
+
+| Family | Answers the question | Examples |
+| --- | --- | --- |
+| Natural numbers | "How many whole things?" | 1, 2, 3, 4, 5, … |
+| Whole numbers | "How many, including none at all?" | 0, 1, 2, 3, 4, … |
+| Integers | "What if we go below zero?" | …, −2, −1, 0, 1, 2, … |
+| Rational numbers | "What about parts of a whole?" | $\frac{1}{2}$, $\frac{3}{4}$, 0.75 |
+| Irrational numbers | "What about numbers that never end or repeat?" | $\pi$, $\sqrt{2}$ |
+
+[important]
+Each family sits *inside* the next one. Every natural number is also a whole number. Every whole number is also an integer. Every integer is also a rational number. Nothing is thrown away going down the table — each new family just adds numbers the smaller one couldn't reach.
+[/important]
+
+We'll open the first drawer — **natural numbers** — properly in the next lesson.
+
+## 4. Reading and writing numbers: place value
+
+A single symbol can only mean so much on its own. What makes our number system powerful is **place value** — the same digit means something different depending on *where* it sits.
+
+@math
+352 = 3 \times 100 + 5 \times 10 + 2 \times 1
+@/math
+
+The digit 3 isn't "three" here — sitting in the hundreds place, it's worth three hundred. Move it one place to the right and it's worth thirty. This is why $352$ and $325$ aren't the same number at all, even though they use the exact same three digits.
+
+[definition]
+**Place value** is the value a digit has because of its position in a number, not just because of what digit it is.
+[/definition]
+
+## Summary
+
+- A number represents a quantity — it's an answer to "how many?"
+- The number line puts numbers in order, evenly spaced, so we can compare and measure with them.
+- Numbers come in families — natural, whole, integer, rational, irrational — each invented to answer a question the last one couldn't.
+- Place value means a digit's position changes its worth: the same digit can mean 3, 30, or 300.
+
+Next lesson: **Natural Numbers** — where counting really begins.

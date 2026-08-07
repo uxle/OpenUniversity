@@ -1,0 +1,136 @@
+{
+  "lessonId": "numbers",
+  "title": "Numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does a number actually represent?",
+      "zolto": "",
+      "options": [
+        "A quantity, amount, or position in a sequence",
+        "A type of letter used only in mathematics",
+        "A drawing of the object being counted",
+        "A word that means the same thing in every language"
+      ],
+      "correct": 0,
+      "rationale": "A number is a symbol that stands in for \"how many\" or \"how much\" — that's why 5 apples and 5 chairs can share the exact same number, even though the objects are completely different."
+    },
+    {
+      "id": 2,
+      "question": "You count 7 goats by pointing at each one and saying one count-word per goat, never skipping or repeating an animal. What is this method called?",
+      "zolto": "",
+      "options": [
+        "Estimation",
+        "One-to-one correspondence",
+        "Place value",
+        "Rounding"
+      ],
+      "correct": 1,
+      "rationale": "Matching exactly one count-word to exactly one object is one-to-one correspondence — the oldest and most basic way humans have ever counted, long before written number symbols existed."
+    },
+    {
+      "id": 3,
+      "question": "On a number line, what does the point marked 0 represent?",
+      "zolto": "",
+      "options": [
+        "That nothing exists at all",
+        "A mistake in the drawing",
+        "The starting point that every other number is measured from",
+        "The largest number on the line"
+      ],
+      "correct": 2,
+      "rationale": "0 isn't \"nothing happened\" — it's the fixed starting point. Every other position on the line is described by how far it is from that starting point."
+    },
+    {
+      "id": 4,
+      "question": "Which set of numbers includes 0, but does NOT include negative numbers?",
+      "zolto": "0, 1, 2, 3, \\ldots",
+      "options": [
+        "Natural numbers",
+        "Whole numbers",
+        "Integers",
+        "Irrational numbers"
+      ],
+      "correct": 1,
+      "rationale": "Whole numbers are natural numbers plus 0 (0, 1, 2, 3, …) — still no negatives. Negatives only enter with integers."
+    },
+    {
+      "id": 5,
+      "question": "Which family of numbers was invented specifically to answer \"what if we go below zero?\"",
+      "zolto": "\\ldots, -2, -1, 0, 1, 2, \\ldots",
+      "options": [
+        "Natural numbers",
+        "Whole numbers",
+        "Integers",
+        "Rational numbers"
+      ],
+      "correct": 2,
+      "rationale": "Integers extend whole numbers downward past zero: …, −2, −1, 0, 1, 2, … — the first number family that can represent \"less than nothing.\""
+    },
+    {
+      "id": 6,
+      "question": "3/4 belongs to which family of numbers?",
+      "zolto": "\\frac{3}{4}",
+      "options": [
+        "Natural numbers",
+        "Whole numbers",
+        "Rational numbers",
+        "Irrational numbers"
+      ],
+      "correct": 2,
+      "rationale": "A rational number can be written as one whole number divided by another (a fraction). 3/4 is exactly that, so it's rational — not a natural or whole number, since those can't represent parts of a whole."
+    },
+    {
+      "id": 7,
+      "question": "Which of these numbers is irrational?",
+      "zolto": "\\sqrt{2}",
+      "options": [
+        "1/2",
+        "0.75",
+        "√2",
+        "5"
+      ],
+      "correct": 2,
+      "rationale": "√2 goes on forever without ever repeating a pattern, so it can't be written as a simple fraction — that makes it irrational. 1/2, 0.75, and 5 can all be written as exact fractions, so they're rational."
+    },
+    {
+      "id": 8,
+      "question": "True or false: every whole number is also a rational number.",
+      "zolto": "7 = \\frac{7}{1}",
+      "options": [
+        "True — each number family sits inside the next one",
+        "False — whole numbers and rational numbers never overlap",
+        "True, but only for whole numbers greater than 10",
+        "False — only integers can be rational"
+      ],
+      "correct": 0,
+      "rationale": "Nothing gets thrown away moving from one family to the next. Natural numbers sit inside whole numbers, which sit inside integers, which sit inside rational numbers — every whole number 7 is also the rational number 7/1."
+    },
+    {
+      "id": 9,
+      "question": "In the number 352, what is the value of the digit 5?",
+      "zolto": "352 = 3 \\times 100 + 5 \\times 10 + 2 \\times 1",
+      "options": [
+        "5",
+        "50",
+        "500",
+        "5000"
+      ],
+      "correct": 1,
+      "rationale": "352 = 3×100 + 5×10 + 2×1. The 5 sits in the tens place, so it's worth 5 × 10 = 50 — not just \"five,\" because of where it sits."
+    },
+    {
+      "id": 10,
+      "question": "Why are 352 and 325 different numbers, even though they use the exact same three digits?",
+      "zolto": "352 \\neq 325",
+      "options": [
+        "They aren't actually different — it's just a writing style choice",
+        "Because place value gives each digit a different worth depending on its position",
+        "Because 325 uses a secret extra digit",
+        "Because one of them is irrational"
+      ],
+      "correct": 1,
+      "rationale": "Place value means position changes worth. In 352 the 3 is worth 300; in 325 the 3 is worth only 3. Same digits, different positions, different numbers."
+    }
+  ]
+}

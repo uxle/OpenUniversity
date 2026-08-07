@@ -18,8 +18,17 @@
 .ou-btn--primary { background: var(--ou-accent); color: var(--ou-accent-contrast); }
 .ou-btn--primary:hover:not(:disabled) { filter: brightness(1.08); }
 
-.ou-btn--secondary { background: var(--ou-surface); color: var(--ou-text); border-color: var(--ou-border); }
-.ou-btn--secondary:hover:not(:disabled) { background: var(--ou-bg); }
+.ou-btn--secondary {
+  /* background-color, not the background shorthand: shorthand resets
+     background-image/-position/-repeat/-size to their initial values,
+     which wiped out the custom select-arrow image (accessibility.css)
+     on the language-switcher select — this class loads after and wins
+     the cascade for any select.ou-btn--secondary. */
+  background-color: var(--ou-surface);
+  color: var(--ou-text);
+  border-color: var(--ou-border);
+}
+.ou-btn--secondary:hover:not(:disabled) { background-color: var(--ou-bg); }
 
 .ou-btn--ghost { background: transparent; color: var(--ou-accent); }
 .ou-btn--ghost:hover:not(:disabled) { background: color-mix(in srgb, var(--ou-accent) 10%, transparent); }

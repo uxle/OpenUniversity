@@ -71,7 +71,7 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 5,
+      "lessonCount": 6,
       "subSubjects": [
         {
           "id": "algebra",
@@ -89,6 +89,12 @@
           "id": "geometry",
           "title": "Geometry",
           "description": "The study of shapes, sizes, angles, and the properties of space.",
+          "lessonCount": 1
+        },
+        {
+          "id": "numbers",
+          "title": "Numbers",
+          "description": "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on.",
           "lessonCount": 1
         },
         {

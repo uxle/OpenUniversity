@@ -25,6 +25,9 @@ import {
   parseInteractive,
   renderInteractive,
 } from "./vendor/zolto/zolto.js";
+import { parseMath } from "./vendor/zolto/math-parser.js";
+import { renderMathHTML, mathToPlainText, MATH_CSS } from "./vendor/zolto/math-renderer.js";
+import { renderMathML } from "./vendor/zolto/math-mathml.js";
 
 /**
  * Compile a Zolto (.zl) lesson source string straight to HTML.
@@ -78,4 +81,49 @@ export function parseLessonInteractive(source) {
 
 export function renderLessonInteractive(nodes, opts = {}) {
   return renderInteractive(nodes, opts);
+}
+
+/**
+ * Render one math expression (the content that would sit between $…$ or
+ * inside @math…@/math — no delimiters) to the exact inline-math markup
+ * real Zolto lesson content uses, so a "zolto" field on an MCQ question
+ * (schemas/mcq.schema.json) looks identical to math written directly in
+ * a lesson. Reuses the engine's own math subsystem (parseMath/
+ * renderMathHTML/MATH_CSS) rather than a separate implementation, so any
+ * syntax that works in a lesson works here too, with no drift between
+ * the two.
+ *
+ * Never throws: malformed math renders as an inline error span (matching
+ * how the real engine handles bad $…$ syntax inside a lesson), and empty/
+ * whitespace-only/non-string input renders nothing at all — the caller
+ * doesn't need to check q.zolto against "" itself before calling this.
+ * @param {string} source
+ * @returns {string} HTML, or "" if there's nothing to render
+ */
+export function renderInlineMath(source) {
+  if (typeof source !== "string" || !source.trim()) return "";
+  injectMathStylesOnce();
+  const { ast, errors } = parseMath(source);
+  if (!ast || errors?.length) {
+    return `<span class="zl-merror" title="Math parse error">${escapeHtml(source)}</span>`;
+  }
+  const visual = renderMathHTML(ast);
+  const mathml = renderMathML(ast, "inline");
+  const ariaText = mathToPlainText(ast);
+  return `<span class="zl-math zl-math-inline" role="img" aria-label="${escapeAttr(ariaText)}">${visual}<span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">${mathml}</span></span>`;
+}
+
+function injectMathStylesOnce() {
+  if (typeof document === "undefined" || document.getElementById("zl-math-styles")) return;
+  const style = document.createElement("style");
+  style.id = "zl-math-styles";
+  style.textContent = MATH_CSS;
+  document.head.appendChild(style);
+}
+
+function escapeHtml(text) {
+  return String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function escapeAttr(text) {
+  return escapeHtml(text);
 }

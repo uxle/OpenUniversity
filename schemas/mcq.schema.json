@@ -20,6 +20,10 @@
         "properties": {
           "id": { "type": ["number", "string"] },
           "question": { "type": "string", "minLength": 1 },
+          "zolto": {
+            "type": "string",
+            "description": "Optional Zolto math source (the content that would sit between $…$ — no delimiters), rendered above the question via src/engines/zolto/zolto-engine.js renderInlineMath(). Use \"\" when a question has no relevant math expression, rather than omitting the field."
+          },
           "options": {
             "type": "array",
             "minItems": 2,

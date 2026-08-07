@@ -7,6 +7,7 @@
 }
 
 @subSubjects {
+  numbers
   algebra
   calculus
   geometry
