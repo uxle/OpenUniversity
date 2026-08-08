@@ -1,0 +1,66 @@
+# जीवविज्ञान परिचय एवं शाखाएँ (Introduction to Biology)
+
+> स्रोत: रोजगार विद अंकित (Rojgar With Ankit)
+
+## 1. जीवविज्ञान की परिभाषा एवं इतिहास (Definition & History)
+
+[definition]
+**जीवविज्ञान (Biology)** दो ग्रीक शब्दों से मिलकर बना है:
+- **Bios (बायोस)** = जीव / सजीव (Living organisms)
+- **Logos (लोगोस)** = अध्ययन (Study)
+
+शाब्दिक अर्थ: **सजीवों का अध्ययन** (Study of Living things)।
+[/definition]
+
+| तथ्य | विवरण |
+| --- | --- |
+| जीवविज्ञान के पिता (Father of Biology) | अरस्तू (Aristotle) |
+| 'Biology' शब्द का सर्वप्रथम प्रयोग | लैमार्क (Lamarck) एवं ट्रेविरेनस (Treviranus), 1802 |
+
+## 2. जीवविज्ञान की प्रमुख शाखाएँ (Branches of Biology)
+
+@diagram tree id="biology-branches" layout="tree" aria="Branches of biology"
+  Biology -> Zoology
+  Biology -> Botany
+@/diagram
+
+### (A) जंतु विज्ञान (Zoology)
+- **पिता (Father of Zoology)**: अरस्तू (Aristotle)
+- इसके अंतर्गत सभी प्रकार के जंतुओं तथा मानव शरीर का अध्ययन किया जाता है।
+
+### (B) वनस्पति विज्ञान (Botany)
+- **पिता (Father of Botany)**: थियोफ्रेस्टस (Theophrastus)
+- इसके अंतर्गत सभी पादपों (पेड़-पौधों) का अध्ययन किया जाता है।
+
+## 3. पाठ्यक्रम अवलोकन (Syllabus Overview)
+
+@tabs active=0
+@tab label="जंतु विज्ञान (Zoology)"
+- रक्त (Blood)
+- कोशिका (Cell)
+- पोषण (Nutrition)
+- मानव शरीर तंत्र (Human Systems):
+  - परिसंचरण तंत्र (Circulatory System)
+  - श्वसन तंत्र (Respiratory System)
+  - पाचन तंत्र (Digestive System)
+  - उत्सर्जन तंत्र (Excretory System)
+  - कंकाल तंत्र (Skeletal System)
+  - पेशीय तंत्र (Muscular System)
+  - तंत्रिका तंत्र (Nervous System)
+  - अन्तःस्रावी तंत्र (Endocrine System)
+  - प्रजनन तंत्र (Reproductive System)
+- रोग (Diseases)
+- जंतु वर्गीकरण (Animal Classification)
+@/tab
+@tab label="वनस्पति विज्ञान (Botany)"
+- पादप वर्गीकरण (Plant Classification)
+- पादप आकारिकी (Plant Morphology)
+- पादपों में जनन (Plant Reproduction)
+- पादप ऊतक एवं हार्मोन (Plant Tissues & Hormones)
+- महत्वपूर्ण वैज्ञानिक एवं खोजें (Important Scientists & Discoveries)
+@/tab
+@/tabs
+
+[important]
+आगे की सभी जीवविज्ञान पाठ इसी दो शाखाओं में बँटे हैं — जंतु विज्ञान (कोशिका, रक्त, तंत्र, वर्गीकरण) पहले, फिर वनस्पति विज्ञान (पादप वर्गीकरण, पादप शरीरक्रिया)।
+[/important]

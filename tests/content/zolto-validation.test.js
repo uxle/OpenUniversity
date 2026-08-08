@@ -33,7 +33,12 @@ test("admonition blocks are balanced ([x] has a matching [/x])", () => {
   const files = findZlFiles(path.join(root, "src/subjects"));
   for (const file of files) {
     const text = fs.readFileSync(file, "utf8");
-    const opens = [...text.matchAll(/\[([a-z]+)\]/g)].map((m) => m[1]);
+    // [type] or [type key="value" ...] — not just a bare [type] with no
+    // attributes, or any admonition using title="..." (a normal,
+    // documented feature) reads as unopened here while its closer still
+    // counts, guaranteeing a false mismatch. Mirrors the same fix in
+    // tools/validate-content.js.
+    const opens = [...text.matchAll(/\[([a-z]+)(?:\s[^\]\n]*)?\]/g)].map((m) => m[1]);
     const closes = [...text.matchAll(/\[\/([a-z]+)\]/g)].map((m) => m[1]);
     assert.deepEqual(opens.sort(), closes.sort(), `${path.relative(root, file)} has unbalanced admonitions`);
   }

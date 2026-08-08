@@ -13,6 +13,37 @@
    artifacts in earlier renders actually were. Precise class selectors
    don't have that collision. */
 .ou-lesson-content { font-size: var(--ou-fs-md); line-height: var(--ou-line-height); }
+/* Zolto's own Phase 3+ directive CSS (@card, @tabs, @steps, @columns, …) is
+   injected inline by the renderer and themed via var(--token, #hex-fallback)
+   — e.g. background:var(--bg-surface,#1a1d23). It never picks up this
+   app's own --ou-* tokens, so every one of those directives always
+   rendered with Zolto's hardcoded dark-fallback colors regardless of
+   OpenKnowledge's actual light/dark mode (confirmed via an actual
+   rendered @tabs block: a dark tab bar sitting inside an otherwise-light
+   lesson card). Bridging the two token sets here — rather than writing a
+   separate override rule per directive — fixes every current and future
+   Zolto directive that follows this same var(--x,fallback) convention in
+   one place, and stays correct if the app's own theme colors change
+   later since these are references, not copied values. */
+.ou-lesson-content {
+  --bg-base: var(--ou-bg);
+  --bg-surface: var(--ou-surface);
+  --bg-glass-soft: var(--ou-surface-subtle);
+  --bg-glass-hover: var(--ou-surface-raised, var(--ou-surface-subtle));
+  --border-base: var(--ou-border);
+  --border-subtle: var(--ou-border);
+  --border-strong: var(--ou-border-strong);
+  --primary: var(--ou-accent);
+  --text-primary: var(--ou-text);
+  --text-secondary: var(--ou-text-secondary);
+  --text-tertiary: var(--ou-text-muted);
+  --radius-sm: var(--ou-radius-sm);
+  --radius-md: var(--ou-radius-md);
+  --radius-pill: var(--ou-radius-pill);
+  --accent-green: var(--ou-success);
+  --accent-amber: var(--ou-warning);
+  --accent-red: var(--ou-danger);
+}
 .ou-lesson-content h1 { font-size: var(--ou-fs-xl); margin-top: var(--ou-space-6); }
 .ou-lesson-content h2 { font-size: var(--ou-fs-lg); margin-top: var(--ou-space-6); }
 .ou-lesson-content h3 { margin-top: var(--ou-space-5); }

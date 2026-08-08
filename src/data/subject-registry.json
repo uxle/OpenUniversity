@@ -116,13 +116,13 @@
       "id": "science",
       "title": "Science",
       "description": "Explore the natural world through scientific knowledge.",
-      "lessonCount": 4,
+      "lessonCount": 16,
       "subSubjects": [
         {
           "id": "biology",
           "title": "Biology",
           "description": "The study of living organisms and life processes.",
-          "lessonCount": 1
+          "lessonCount": 12
         },
         {
           "id": "chemistry",
@@ -134,7 +134,7 @@
           "id": "physics",
           "title": "Physics",
           "description": "Study matter, energy, motion, forces and the laws of nature.",
-          "lessonCount": 1
+          "lessonCount": 2
         }
       ]
     }

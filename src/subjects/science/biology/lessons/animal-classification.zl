@@ -1,0 +1,77 @@
+# जंतु वर्गीकरण (Animal Classification)
+
+> स्रोत: रोजगार विद अंकित (Rojgar With Ankit)
+
+## 1. वर्गीकरण का परिचय (Introduction to Classification)
+
+[definition]
+**वर्गीकरण (Classification / Taxonomy)** जीवों को उनकी समानताओं व असमानताओं के आधार पर विभिन्न समूहों में व्यवस्थित करने की प्रक्रिया है। इसके जनक **कैरोलस लिनियस (Carolus Linnaeus)** माने जाते हैं, जिन्होंने **द्विनाम पद्धति (Binomial Nomenclature)** दी।
+[/definition]
+
+[info title="द्विनाम पद्धति (Binomial Nomenclature)"]
+प्रत्येक जीव का वैज्ञानिक नाम दो भागों से मिलकर बनता है — **वंश (Genus)** + **जाति (Species)**। उदाहरण: मनुष्य का वैज्ञानिक नाम *Homo sapiens* है।
+[/info]
+
+## 2. वर्गीकरण के पदानुक्रम (Taxonomic Hierarchy)
+
+सबसे बड़े से सबसे छोटे समूह का क्रम:
+
+जगत (Kingdom) → संघ (Phylum) → वर्ग (Class) → गण (Order) → कुल (Family) → वंश (Genus) → जाति (Species)
+
+[important title="स्मरण-सूत्र (Mnemonic)"]
+**"King Philip Came Over For Good Soup"** — Kingdom, Phylum, Class, Order, Family, Genus, Species।
+[/important]
+
+## 3. पाँच जगत वर्गीकरण (Five Kingdom Classification)
+
+[definition]
+पाँच जगत वर्गीकरण प्रणाली **आर. एच. व्हिटेकर (R. H. Whittaker, 1969)** द्वारा दी गई थी।
+[/definition]
+
+@diagram tree id="five-kingdom" layout="tree" aria="Whittaker's five kingdom classification"
+  Kingdoms -> Monera
+  Kingdoms -> Protista
+  Kingdoms -> Fungi
+  Kingdoms -> Plantae
+  Kingdoms -> Animalia
+@/diagram
+
+| जगत | विशेषता | उदाहरण |
+| --- | --- | --- |
+| मोनेरा (Monera) | एककोशिकीय, केंद्रक-रहित (Prokaryotic) | जीवाणु (Bacteria), नील-हरित शैवाल |
+| प्रोटिस्टा (Protista) | एककोशिकीय, केंद्रक-युक्त (Eukaryotic) | अमीबा, पैरामीशियम |
+| कवक (Fungi) | बहुकोशिकीय, कोशिका भित्ति काइटीन की बनी | मशरूम, यीस्ट, फफूँद |
+| पादप (Plantae) | बहुकोशिकीय, स्वपोषी (Autotrophic), प्रकाश संश्लेषण करने वाले | पेड़-पौधे |
+| जंतु (Animalia) | बहुकोशिकीय, परपोषी (Heterotrophic) | सभी जंतु |
+
+## 4. जंतु जगत का वर्गीकरण (Classification within Animalia)
+
+जंतु जगत को दो प्रमुख भागों में बाँटा गया है:
+
+| समूह | परिभाषा | उदाहरण |
+| --- | --- | --- |
+| **कॉर्डेटा (Chordata)** | मेरुरज्जु (Notochord) उपस्थित | मछली, उभयचर, सरीसृप, पक्षी, स्तनधारी |
+| **नॉन-कॉर्डेटा (Non-Chordata)** | मेरुरज्जु अनुपस्थित | कीट, कृमि, मोलस्क आदि (कुल 8 संघ) |
+
+### नॉन-कॉर्डेटा के प्रमुख संघ (Major Non-Chordate Phyla)
+
+| संघ (Phylum) | उदाहरण |
+| --- | --- |
+| पोरीफेरा (Porifera) | स्पंज (Sponges) |
+| सीलेंट्रेटा / निडेरिया (Coelenterata) | हाइड्रा, जेलीफ़िश |
+| प्लेटीहेल्मिन्थीज़ (Platyhelminthes) | फीताकृमि (चपटे कृमि) |
+| निमेटोडा (Nematoda) | गोलकृमि (Roundworms) |
+| एनेलिडा (Annelida) | केंचुआ (Earthworm), जोंक |
+| आर्थ्रोपोडा (Arthropoda) | कीट, केकड़ा, मकड़ी — सबसे बड़ा जंतु संघ |
+| मोलस्का (Mollusca) | घोंघा, सीप, ऑक्टोपस |
+| एकाइनोडर्मेटा (Echinodermata) | तारामीन (Starfish), समुद्री अर्चिन |
+
+### कॉर्डेटा के प्रमुख वर्ग (Major Classes of Chordata)
+
+| वर्ग | विशेषता | उदाहरण |
+| --- | --- | --- |
+| पिसीज़ (Pisces) | जलीय, क्लोम (Gills) द्वारा श्वसन | मछली |
+| एम्फीबिया (Amphibia) | जल व थल दोनों पर जीवन | मेंढक |
+| रेप्टीलिया (Reptilia) | रेंगने वाले, शुष्क शल्कयुक्त त्वचा | साँप, छिपकली |
+| एवीज़ (Aves) | पंखयुक्त, अंडे देने वाले | पक्षी |
+| मैमेलिया (Mammalia) | बाल/रोम, दुग्ध ग्रंथियाँ | मनुष्य एवं अन्य स्तनधारी |
