@@ -1,6 +1,13 @@
 {
   "subjects": [
     {
+      "id": "civics",
+      "title": "Civics",
+      "description": "The Indian Constitution and political system — its history, institutions, rights, and governing bodies.",
+      "lessonCount": 18,
+      "subSubjects": []
+    },
+    {
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
