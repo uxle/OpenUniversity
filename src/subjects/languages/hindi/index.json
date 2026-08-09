@@ -1,3 +1,32 @@
 {
-  "lessons": ["varnmala"]
+  "lessons": [
+    "varnmala",
+    "sanghya",
+    "sarvnam",
+    "vachan",
+    "ling",
+    "karak",
+    "kaal",
+    "kriya",
+    "avyaya",
+    "samucchaybodhak",
+    "sandhi",
+    "samas",
+    "tatsam_tadbhav",
+    "paryayvachi",
+    "anekarthi",
+    "samshrut_bhinnarthak",
+    "muhavare_lokokti",
+    "alankar",
+    "ras",
+    "chhand",
+    "vachya",
+    "vakya",
+    "vakyansh_ek_shabd",
+    "vartani_prashasnik",
+    "vigyan_prodyogiki",
+    "vilom",
+    "viram_chinh",
+    "visheshana"
+  ]
 }

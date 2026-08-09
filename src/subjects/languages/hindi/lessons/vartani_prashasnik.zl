@@ -1,0 +1,154 @@
+# वर्तनी शुद्धि एवं प्रशासनिक शब्दावली
+
+## 1. वर्तनी शुद्धि (Spelling Correction)
+
+| अशुद्ध शब्द | शुद्ध शब्द | अशुद्ध शब्द | शुद्ध शब्द |
+| :--- | :--- | :--- | :--- |
+| न्यूनाधिक | न्यूनाधिक | पक्षीगण | पक्षिगण |
+| पद्मीराज | पक्षिराज | अंतकरण | अंतःकरण |
+| अंतर्चेतना | अंतश्चेतना | अंर्तद्वंद | अंतर्द्वंद्व |
+| अन्तर्ध्यान | अंतर्धान | अंताक्षरी | अंत्याक्षरी |
+| अँवैषण | अन्वेषण | अकस्मात् | अकस्मात |
+| अक्षुण्य | अक्षुण्ण | अक्षोहिणी | अक्षौहिणी |
+| आरण्य | अरण्य | आर्शिवाद | आशीर्वाद |
+| अच्छेर | अक्षर | अतिथी | अतिथि |
+| अतिश्योक्ति | अतिशयोक्ति | अधःवस्त्र | अधोवस्त्र |
+| अधिग्रहीत | अधगृहीत | अधिशाषी | अधिशासी |
+| अधोपतन | अधःपतन | अध्ययन | अध्ययन |
+| अध्यावसाय | अध्यवसाय | अनाधिकार | अनधिकार |
+| अनुगृह | अनुग्रह | अनुपातिक | आनुपातिक |
+| अनुसंगिक | आनुषांगिक | अनुसूया | अनसूया |
+| अनेकों | अनेक | अपरान्ह | अपराह्न |
+| अभिमाननी | अभिमानिनी | अभिष्ठ | अभीष्ट |
+| अभिसेक | अभिषेक | अभ्यांतर | अभ्यंतर |
+| अभ्यारण्य | अभयारण्य | अय्याश | ऐयाश |
+| अहरनिस | अहर्निश | अहिल्या | अहल्या |
+| अहोरात्रि | अहोरात्र | आसू | आँसू |
+| आईये | आइए | आइत | आढ़त |
+| आद्र | आर्द्र | आयु | आयु |
+| आल्हाद / आहलाद | आह्लाद | आवाहन | आह्वान |
+| आवो | आओ | आहूती | आहुति |
+| इतिहासिक / एतिहासिक | ऐतिहासिक | इशप्सत | ईप्सित |
+| इस्थिति | स्थिति | ईजहार | इजहार |
+| ईर्षा | ईर्ष्या | - | - |
+
+## 2. प्रशासनिक शब्दावली (Administrative Vocabulary)
+
+| English Term | Hindi Meaning | English Term | Hindi Meaning |
+| :--- | :--- | :--- | :--- |
+| Administrative | प्रशासनिक | Annexure | अनुलग्नक |
+| Authority | प्राधिकरण | Abrogation | निरसन |
+| Agreement | समझौता | Approval | अनुमोदन |
+| Authorized | अधिकृत | Account Book | लेखा पुस्तिका |
+| Abstract | सार | Accountant | लेखाकार |
+| Authentic | प्रामाणिक | Allegation | आरोप |
+| Allocation | आवंटन | Affidavit | शपथ पत्र |
+| Acceptance | स्वीकृति | Acknowledgement | प्राप्ति रसीद |
+| Adjournment motion | स्थगन प्रस्ताव | Accusation | अभियोग |
+| Audit | लेखा परीक्षा | Accountability | जवाबदेही |
+| Abeyance | स्थगन | Appendix | परिशिष्ट |
+| Abolition | उन्मूलन | Attest | सत्यापित करना |
+| Adjourn | स्थगित करना | As early as possible | यथाशीघ्र |
+| As far as possible | यथासंभव | Accountant General | महालेखाकार |
+| By-Law | उपविधि | Beneficiary | लाभार्थी |
+| Bureaucracy | नौकरशाही | Bill | विधेयक |
+| Balance Sheet | तुलन पत्र | Custody | अभिरक्षा |
+| Confidential | गोपनीय | Cognizable offence | संज्ञेय अपराध |
+| Charge Sheet | आरोप पत्र | Code of conduct | आचार संहिता |
+| Compliance | अनुपालन | Circular order | परिपत्र |
+| Domicile | मूल निवास | Deputation | प्रतिनियुक्ति |
+| Draft | मसौदा | Dismiss | बर्खास्त करना |
+| Ex-gratia | अनुग्रह राशि | Gazette | राजपत्र |
+| Indemnity Bond | क्षतिपूर्ति बंधपत्र | Jurisdiction | अधिकार क्षेत्र |
+| Liquidation | परिसमापन | Manifesto | घोषणा पत्र |
+| Memorandum | ज्ञापन | Minutes | कार्यवृत्त |
+| Nomination | नामांकन | Ordinance | अध्यादेश |
+| Probation | परिक्षाधीन | Sanction | स्वीकृति |
+| Status quo | यथास्थिति | Tribunal | न्यायाधिकरण |
+| Vigilance | सतर्कता | - | - |
+
+## 3. वस्तुनिष्ठ अभ्यास प्रश्न (MCQs)
+
+@interactive {
+  @quiz "वर्तनी एवं प्रशासनिक शब्दावली अभ्यास" {
+    @mcq "'Contempt' के लिए प्रयुक्त सही पारिभाषिक शब्द है:" {
+      @correct "अवमानना"
+      @choice "समेकित"
+      @choice "निष्ठा"
+      @choice "संबंधन"
+    }
+
+    @mcq "'Allocation' शब्द का सही हिंदी पारिभाषिक शब्द है:" {
+      @correct "नियतन (आवंटन)"
+      @choice "समायोजन"
+      @choice "आलेख"
+      @choice "घोषणा"
+    }
+
+    @mcq "'विसंगति' शब्द के लिए सही अंग्रेजी शब्द क्या होगा?" {
+      @correct "Discrepancy"
+      @choice "Discretion"
+      @choice "Dismiss"
+      @choice "Disorder"
+    }
+
+    @mcq "प्रशासनिक शब्दावली में 'Reference' का सही हिंदी रूप है:" {
+      @correct "संदर्भ"
+      @choice "प्रतिभूति"
+      @choice "पंजीयन"
+      @choice "परिवीक्षा"
+    }
+
+    @mcq "'Authentication' शब्द का हिंदी समानार्थक शब्द है:" {
+      @correct "प्रमाणीकरण"
+      @choice "प्रमाणित"
+      @choice "प्रामाणिक"
+      @choice "सही"
+    }
+
+    @mcq "'Amendment' के लिए सही पारिभाषिक शब्द है:" {
+      @correct "संशोधन"
+      @choice "परिवर्तन"
+      @choice "सहमति"
+      @choice "अनुमोदन"
+    }
+
+    @mcq "'REIMBURSE' के लिए सही पारिभाषिक शब्द है:" {
+      @correct "प्रतिपूर्ति"
+      @choice "आपूर्ति"
+      @choice "क्षतिपूर्ति"
+      @choice "संपूर्ण"
+    }
+
+    @mcq "'Cognizable Offence' का सही पारिभाषिक शब्द है:" {
+      @correct "संज्ञेय अपराध"
+      @choice "क्षमायोग्य अपराध"
+      @choice "अक्षम्य अपराध"
+      @choice "अघन्य अपराध"
+      @explain
+        संज्ञेय अपराध वह है जिसमें पुलिस बिना वारंट के गिरफ्तारी कर सकती है।
+      @end
+    }
+
+    @mcq "किस विकल्प में हिंदी पारिभाषिक रूप सही नहीं है?" {
+      @correct "Bad conduct = दुर्व्यवहार"
+      @choice "Good faith = सद्भाव"
+      @choice "Punitive = दंडात्मक"
+      @choice "Attachment = कुर्की"
+      @explain
+        Bad conduct का सही पारिभाषिक रूप दुराचार/कदाचार (Misconduct) है, दुर्व्यवहार नहीं।
+      @end
+    }
+
+    @mcq "किस विकल्प में हिंदी पारिभाषिक रूप सही है?" {
+      @correct "Sub judice = न्यायाधीन"
+      @choice "Minutes = कार्य योजना"
+      @choice "Vigilance = सतर्क"
+      @choice "Moral obligation = नैतिक समर्थन"
+      @explain
+        शेष विकल्प गलत हैं: Minutes = कार्यवृत्त, Vigilance = सतर्कता, Moral obligation = नैतिक दायित्व।
+      @end
+    }
+  }
+}
+@/interactive

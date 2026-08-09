@@ -57,13 +57,13 @@
       "id": "languages",
       "title": "Languages",
       "description": "Learn the script, grammar, and structure of world languages.",
-      "lessonCount": 2,
+      "lessonCount": 29,
       "subSubjects": [
         {
           "id": "hindi",
           "title": "Hindi",
           "description": "Learn Hindi grammar and structure, starting from the Devanagari script and the Hindi alphabet (varnmala).",
-          "lessonCount": 1
+          "lessonCount": 28
         }
       ]
     },
