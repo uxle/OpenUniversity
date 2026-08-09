@@ -1,0 +1,14 @@
+# AI Reasoning
+
+@subject {
+  id: ai-reasoning
+  parent: computer-science
+  title: "AI Reasoning"
+  description: "How intelligent systems convert natural language into structured, symbolic representations — then reason, calculate, and verify answers deterministically instead of guessing."
+}
+
+@lessons {
+  clock-reasoning
+  directions-and-distance-reasoning
+  blood-relation-reasoning
+}

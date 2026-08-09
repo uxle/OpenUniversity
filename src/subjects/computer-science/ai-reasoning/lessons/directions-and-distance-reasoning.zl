@@ -1,0 +1,2627 @@
+# Directions and Distance Reasoning
+
+## 1. Introduction
+
+[definition]
+**Directions and distance reasoning** is the ability of an intelligent system to understand where things are, how locations relate to each other, how far apart they are, and which direction leads from one location to another — by converting language into coordinates and vectors *before* doing any arithmetic.
+[/definition]
+
+Directions and distance reasoning is the ability of an intelligent system to understand where things are, how locations are related, how far apart they are, and which direction must be followed to reach one location from another.
+
+A human can understand:
+
+> “Walk 5 km north, then 3 km east. Where are you relative to the starting point?”
+
+and reason:
+
+```text
+North = +Y
+East  = +X
+
+Final position = (3, 5)
+```
+
+The straight-line distance is:
+
+```text
+√(3² + 5²) = √34 ≈ 5.83 km
+```
+
+The final direction is:
+
+```text
+North-East
+```
+
+A reliable AI should not solve this by guessing from language patterns. It should transform language into a structured spatial representation, perform mathematical reasoning, verify the result, and then generate a human-readable answer.
+
+The central principle is:
+
+> **Convert natural-language directions into a structured spatial model before calculating distance or direction.**
+
+## 2. What Is Direction?
+
+Direction describes the orientation from one location toward another.
+
+The four fundamental cardinal directions are:
+
+```text
+North
+South
+East
+West
+```
+
+Common abbreviations:
+
+```text
+N
+S
+E
+W
+```
+
+The four principal diagonal directions are:
+
+```text
+North-East  NE
+North-West  NW
+South-East  SE
+South-West  SW
+```
+
+Together they form the eight basic compass directions.
+
+## 3. The Compass Coordinate Model
+
+A standard 2D model maps each compass direction to a unit vector:
+
+@vector width=800 height=480
+artboard id="compass-rose" x=0 y=0 w=800 h=480
+
+layer id="ring"
+circle cx=400 cy=240 r=185 fill="#f8fafc" stroke="#cbd5e1" strokeWidth=2
+circle cx=400 cy=240 r=6 fill="#0f172a"
+@endlayer
+
+layer id="cardinal-rays"
+line x1=400 y1=240 x2=400 y2=70 stroke="#1e293b" strokeWidth=5
+line x1=400 y1=240 x2=570 y2=240 stroke="#1e293b" strokeWidth=5
+line x1=400 y1=240 x2=400 y2=410 stroke="#1e293b" strokeWidth=5
+line x1=400 y1=240 x2=230 y2=240 stroke="#1e293b" strokeWidth=5
+@endlayer
+
+layer id="diagonal-rays"
+line x1=400 y1=240 x2=520 y2=120 stroke="#64748b" strokeWidth=3
+line x1=400 y1=240 x2=520 y2=360 stroke="#64748b" strokeWidth=3
+line x1=400 y1=240 x2=280 y2=360 stroke="#64748b" strokeWidth=3
+line x1=400 y1=240 x2=280 y2=120 stroke="#64748b" strokeWidth=3
+@endlayer
+
+@endartboard
+@/vector
+
+*North is up (bold ray), East is right, and the four diagonals (thin rays) split the angle between them evenly.*
+
+Therefore: $N = (0, 1)$, $S = (0, -1)$, $E = (1, 0)$, $W = (-1, 0)$.
+
+Diagonal directions: $NE = (1, 1)$, $NW = (-1, 1)$, $SE = (1, -1)$, $SW = (-1, -1)$.
+
+This representation gives a computer a precise mathematical language for direction.
+
+## 4. Position
+
+A location can be represented as:
+
+```text
+Point {
+    x
+    y
+}
+```
+
+For example:
+
+```text
+A = (0, 0)
+```
+
+can be the starting point.
+
+If a person moves 5 km north:
+
+```text
+B = (0, 5)
+```
+
+If they then move 3 km east:
+
+```text
+C = (3, 5)
+```
+
+The final position is therefore:
+
+```text
+C = (3, 5)
+```
+
+relative to the starting point.
+
+## 5. Vectors
+
+Movement is naturally represented as a vector.
+
+For example:
+
+```text
+5 km north
+```
+
+becomes:
+
+```text
+v = (0, 5)
+```
+
+and:
+
+```text
+3 km east
+```
+
+becomes:
+
+```text
+v = (3, 0)
+```
+
+Multiple movements can be combined:
+
+```text
+v_total = v1 + v2 + v3 + ...
+```
+
+This allows a long natural-language route to become a mathematical problem.
+
+## 6. Direction and Distance Are Different
+
+This distinction is fundamental.
+
+For:
+
+```text
+10 km north
+```
+
+the direction is:
+
+```text
+North
+```
+
+and the distance is:
+
+```text
+10 km
+```
+
+A direction tells **where**.
+
+A distance tells **how far**.
+
+A complete movement is:
+
+```text
+Movement = direction + distance
+```
+
+For example:
+
+```text
+Movement(
+    direction = NORTH,
+    distance = 10 km
+)
+```
+
+## 7. Direction Table
+
+| Direction | Δx | Δy |
+|---|---:|---:|
+| North | 0 | +1 |
+| South | 0 | -1 |
+| East | +1 | 0 |
+| West | -1 | 0 |
+| North-East | +1 | +1 |
+| North-West | -1 | +1 |
+| South-East | +1 | -1 |
+| South-West | -1 | -1 |
+
+For diagonal movement, the actual distance must be handled separately.
+
+If “5 km north-east” means 5 km along the diagonal, its vector components are not simply `(5,5)`. For a 45° diagonal:
+
+```text
+x = 5 / √2
+y = 5 / √2
+```
+
+This distinction prevents a major class of reasoning errors.
+
+## 8. Absolute and Relative Directions
+
+### Absolute directions
+
+```text
+North
+South
+East
+West
+```
+
+These do not depend on the person's orientation.
+
+### Relative directions
+
+```text
+left
+right
+forward
+backward
+front
+behind
+```
+
+These depend on a reference frame.
+
+A strong spatial reasoner must distinguish them.
+
+## 9. Reference Frames
+
+Direction is meaningless without knowing the reference frame.
+
+For example:
+
+> “Turn right.”
+
+Right depends on which way the person is facing.
+
+If facing north:
+
+```text
+right = east
+```
+
+If facing east:
+
+```text
+right = south
+```
+
+Therefore, a spatial state should maintain:
+
+```text
+current_position
+current_heading
+```
+
+## 10. Heading
+
+Heading describes the direction an agent is facing.
+
+A convenient angular representation is:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+Then:
+
+```text
+right turn = +90°
+left turn  = -90°
+```
+
+Normalize using:
+
+```text
+angle mod 360°
+```
+
+Example:
+
+```text
+heading = 270°
+right turn = +90°
+
+270 + 90 = 360
+360 mod 360 = 0
+
+new heading = North
+```
+
+## 11. Eight-Direction Heading
+
+For eight compass directions:
+
+```text
+N  = 0°
+NE = 45°
+E  = 90°
+SE = 135°
+S  = 180°
+SW = 225°
+W  = 270°
+NW = 315°
+```
+
+Each neighboring direction differs by:
+
+```text
+45°
+```
+
+This is useful for coarse directional reasoning.
+
+## 12. Bearings
+
+Navigation commonly measures a bearing clockwise from north:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+Therefore:
+
+```text
+135° → South-East
+315° → North-West
+```
+
+Bearings allow continuous direction rather than restricting the system to eight categories.
+
+## 13. Position Difference
+
+Given two points:
+
+$A = (x_1, y_1)$ and $B = (x_2, y_2)$
+
+the displacement from A to B is:
+
+@math name="Displacement Components" label="eq:displacement"
+\Delta x = x_2 - x_1
+@/math
+
+@math label="eq:displacement-y"
+\Delta y = y_2 - y_1
+@/math
+
+Interpretation: $\Delta x > 0$ means east, $\Delta x < 0$ means west, $\Delta y > 0$ means north, $\Delta y < 0$ means south.
+
+If both components are non-zero, the direction is diagonal.
+
+## 14. Direction From Coordinates
+
+| Condition | Direction |
+|---|---|
+| $\Delta x = 0, \Delta y > 0$ | North |
+| $\Delta x = 0, \Delta y < 0$ | South |
+| $\Delta x > 0, \Delta y = 0$ | East |
+| $\Delta x < 0, \Delta y = 0$ | West |
+| $\Delta x > 0, \Delta y > 0$ | North-East |
+| $\Delta x < 0, \Delta y > 0$ | North-West |
+| $\Delta x > 0, \Delta y < 0$ | South-East |
+| $\Delta x < 0, \Delta y < 0$ | South-West |
+
+If $\Delta x = 0$ and $\Delta y = 0$, then the locations are the same — the correct result is **same location**, not an arbitrary direction.
+
+## 15. Euclidean Distance
+
+The straight-line distance between two points is:
+
+@math name="Euclidean Distance" label="eq:euclidean"
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+@/math
+
+For $A = (0,0)$ and $B = (3,4)$: $d = \sqrt{3^2 + 4^2} = \sqrt{25} = 5$.
+
+## 16. Manhattan Distance
+
+When movement is restricted to horizontal and vertical paths, use Manhattan distance instead:
+
+@math name="Manhattan Distance" label="eq:manhattan"
+d = |x_2-x_1| + |y_2-y_1|
+@/math
+
+For the same points, $A=(0,0)$ and $B=(3,4)$: $d = 3 + 4 = 7$, while the Euclidean distance is $5$.
+
+@vector width=800 height=480
+artboard id="distance-grid" x=0 y=0 w=800 h=480
+
+layer id="axes"
+line x1=100 y1=400 x2=520 y2=400 stroke="#94a3b8" strokeWidth=2
+line x1=200 y1=450 x2=200 y2=100 stroke="#94a3b8" strokeWidth=2
+@endlayer
+
+layer id="legs"
+line x1=200 y1=400 x2=380 y2=400 stroke="#f59e0b" strokeWidth=4
+line x1=380 y1=400 x2=380 y2=160 stroke="#f59e0b" strokeWidth=4
+@endlayer
+
+layer id="hypotenuse"
+line x1=200 y1=400 x2=380 y2=160 stroke="#0f172a" strokeWidth=5
+circle cx=200 cy=400 r=7 fill="#0f172a"
+circle cx=380 cy=160 r=7 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*A = origin, B = (3,4) at 60px per unit. The dark diagonal is the Euclidean distance ($d=5$); the two amber legs are the Manhattan path ($3+4=7$, one segment east then one north).*
+
+The correct metric depends on the problem.
+
+## 17. Path Distance vs Displacement
+
+Suppose:
+
+```text
+3 km east
+4 km north
+```
+
+The total path traveled is:
+
+```text
+3 + 4 = 7 km
+```
+
+The straight-line displacement is:
+
+```text
+√(3² + 4²) = 5 km
+```
+
+Therefore:
+
+```text
+path distance = 7 km
+displacement = 5 km
+```
+
+These must never be confused.
+
+## 18. Net Displacement
+
+Example:
+
+```text
+5 km north → (0,5)
+3 km east  → (3,0)
+2 km south → (0,-2)
+```
+
+Add:
+
+```text
+(0,5) + (3,0) + (0,-2)
+= (3,3)
+```
+
+Therefore:
+
+```text
+net displacement = (3,3)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Magnitude:
+
+```text
+√18 ≈ 4.24 km
+```
+
+## 19. Total Distance
+
+If the question asks:
+
+> “How far did the person travel?”
+
+sum the individual movement lengths.
+
+Example:
+
+```text
+5 km north
+3 km east
+2 km south
+```
+
+Total traveled:
+
+```text
+5 + 3 + 2 = 10 km
+```
+
+But the final displacement is:
+
+```text
+(3,3)
+```
+
+with magnitude:
+
+```text
+√18 ≈ 4.24 km
+```
+
+## 20. Cancellation
+
+Opposite movements cancel.
+
+Example:
+
+```text
+10 km east
+6 km west
+```
+
+Net movement:
+
+```text
+10 - 6 = 4 km east
+```
+
+Vector form:
+
+```text
+(10,0) + (-6,0)
+= (4,0)
+```
+
+## 21. Long Route Example
+
+Input:
+
+> “A person walks 8 km north, 5 km east, 3 km south, and 2 km west.”
+
+Convert:
+
+```text
+N8 = (0,8)
+E5 = (5,0)
+S3 = (0,-3)
+W2 = (-2,0)
+```
+
+Sum:
+
+```text
+x = 5 - 2 = 3
+y = 8 - 3 = 5
+```
+
+Final displacement:
+
+```text
+(3,5)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Straight-line distance:
+
+```text
+√(3² + 5²)
+= √34
+≈ 5.83 km
+```
+
+Total path:
+
+```text
+8 + 5 + 3 + 2 = 18 km
+```
+
+## 22. Relative Turns
+
+Suppose a person starts facing north.
+
+```text
+initial heading = North
+```
+
+Turn right:
+
+```text
+East
+```
+
+Turn right again:
+
+```text
+South
+```
+
+Turn left:
+
+```text
+East
+```
+
+This is easiest to model with angles rather than many special cases.
+
+## 23. Turn Algorithm
+
+Using:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+then:
+
+```text
+right:
+heading = heading + 90°
+
+left:
+heading = heading - 90°
+```
+
+Normalize:
+
+```text
+heading = heading mod 360°
+```
+
+This works for arbitrary sequences of turns.
+
+## 24. Example With Turns
+
+Input:
+
+> “A person is facing north. They turn right and walk 5 km, turn left, and walk 3 km.”
+
+Initial:
+
+```text
+heading = North
+position = (0,0)
+```
+
+Turn right:
+
+```text
+heading = East
+```
+
+Walk:
+
+```text
+position = (5,0)
+```
+
+Turn left:
+
+```text
+heading = North
+```
+
+Walk:
+
+```text
+position = (5,3)
+```
+
+Final direction from start:
+
+```text
+North-East
+```
+
+Distance:
+
+```text
+√(5² + 3²)
+= √34
+≈ 5.83 km
+```
+
+## 25. Movement Direction vs Heading
+
+These are different concepts.
+
+A person may:
+
+```text
+face west
+```
+
+while:
+
+```text
+move north
+```
+
+Therefore:
+
+```text
+heading ≠ movement direction
+```
+
+unless the statement explicitly says the person moves forward.
+
+This distinction is critical for navigation reasoning.
+
+## 26. Forward Movement
+
+If an instruction says:
+
+> “Walk forward 5 km.”
+
+then the movement direction is the current heading.
+
+If:
+
+```text
+heading = East
+```
+
+then:
+
+```text
+forward 5 km = (+5,0)
+```
+
+If:
+
+```text
+heading = North
+```
+
+then:
+
+```text
+forward 5 km = (0,+5)
+```
+
+This is a state-dependent operation.
+
+## 27. Spatial Relationships
+
+Natural language can state relationships such as:
+
+```text
+A is north of B
+A is east of B
+A is left of B
+A is behind B
+A is 5 km from B
+```
+
+Represent these as structured relations:
+
+```text
+Relation {
+    subject
+    relation
+    reference
+    distance
+    frame
+}
+```
+
+Example:
+
+```text
+subject = School
+relation = EAST_OF
+reference = Hospital
+distance = unknown
+```
+
+## 28. Unknown Distance
+
+Suppose:
+
+> “The school is east of the hospital.”
+
+The system knows:
+
+```text
+direction = East
+```
+
+but does not know:
+
+```text
+distance
+```
+
+It must not invent one.
+
+Representation:
+
+```text
+direction = EAST
+distance = UNKNOWN
+```
+
+This is a key principle:
+
+> **Unknown information must remain unknown.**
+
+## 29. Spatial Graphs
+
+Spatial relationships naturally form graphs.
+
+Example:
+
+```text
+Hospital
+   │
+   │ east
+   ↓
+School
+   │
+   │ north
+   ↓
+Park
+```
+
+The system can infer:
+
+```text
+Park is north-east of Hospital
+```
+
+even though this relationship was never explicitly stated.
+
+## 30. Coordinate Propagation
+
+Suppose:
+
+```text
+B is east of A.
+C is north of B.
+```
+
+Set:
+
+```text
+A = (0,0)
+```
+
+Then:
+
+```text
+B = (1,0)
+C = (1,1)
+```
+
+Therefore:
+
+```text
+C is north-east of A
+```
+
+If distances are known, the coordinates can preserve exact magnitudes.
+
+## 31. Multiple Entities
+
+Example:
+
+```text
+B is 5 km east of A.
+C is 4 km north of B.
+D is 3 km west of C.
+```
+
+Set:
+
+```text
+A = (0,0)
+```
+
+Then:
+
+```text
+B = (5,0)
+C = (5,4)
+D = (2,4)
+```
+
+Therefore:
+
+```text
+D is north-east of A
+```
+
+Distance:
+
+```text
+√(2² + 4²)
+= √20
+≈ 4.47 km
+```
+
+## 32. Spatial Constraints
+
+Represent:
+
+```text
+B = A + East(5 km)
+C = B + North(4 km)
+```
+
+Substitute:
+
+```text
+C = A + East(5 km) + North(4 km)
+```
+
+This becomes:
+
+```text
+C - A = (5,4)
+```
+
+The system can then calculate distance and direction.
+
+## 33. Constraint Solving
+
+Some problems contain unknowns.
+
+Example:
+
+```text
+A = (0,0)
+B = (x,4)
+distance(A,B) = 5
+```
+
+Then:
+
+```text
+x² + 4² = 5²
+x² + 16 = 25
+x² = 9
+x = ±3
+```
+
+Additional direction information can resolve the sign.
+
+If B is east of A:
+
+```text
+x = +3
+```
+
+Therefore:
+
+```text
+B = (3,4)
+```
+
+## 34. Direction From Angle
+
+For a displacement $(\Delta x, \Delta y)$, a continuous angle can be calculated using:
+
+@math name="Bearing from Displacement" label="eq:atan2"
+\theta = \operatorname{atan2}(\Delta y, \Delta x)
+@/math
+
+This is useful when the system needs precise orientation instead of only the eight coarse labels (N, NE, E, SE, ...). The system must define its angular convention explicitly.
+
+## 35. Polar Coordinates
+
+A point can also be represented as $(r, \theta)$, where $r$ is the distance and $\theta$ is the direction. For example, $r = 10$ km and $\theta = 45°$ represents a point 10 km away along that bearing.
+
+Conversion to Cartesian coordinates, for the mathematical angle convention:
+
+@math name="Polar to Cartesian (x)" label="eq:polar-to-cartesian-x"
+x = r\cos\theta
+@/math
+
+@math name="Polar to Cartesian (y)" label="eq:polar-to-cartesian-y"
+y = r\sin\theta
+@/math
+
+## 36. Cartesian vs Polar
+
+### Cartesian
+
+```text
+(x, y)
+```
+
+Best for:
+
+```text
+vector addition
+grid movement
+coordinate constraints
+```
+
+### Polar
+
+```text
+(r, θ)
+```
+
+Best for:
+
+```text
+distance + direction
+bearings
+radial movement
+```
+
+A strong system should support both.
+
+## 37. Spatial Language Parsing
+
+A parser should identify:
+
+### Entity
+
+```text
+person
+school
+home
+park
+hospital
+car
+```
+
+### Action
+
+```text
+walk
+move
+turn
+travel
+go
+```
+
+### Direction
+
+```text
+north
+left
+east
+behind
+```
+
+### Distance
+
+```text
+5 km
+300 m
+20 meters
+```
+
+### Reference
+
+```text
+from home
+toward school
+relative to hospital
+```
+
+### Sequence
+
+```text
+then
+after that
+next
+finally
+```
+
+## 38. Example Spatial AST
+
+Input:
+
+> “Walk 5 km north, then 3 km east.”
+
+AST:
+
+```text
+MOVEMENT_SEQUENCE
+│
+├── MOVE
+│   ├── direction: NORTH
+│   └── distance: 5 km
+│
+└── MOVE
+    ├── direction: EAST
+    └── distance: 3 km
+```
+
+The reasoning engine can evaluate:
+
+```text
+(0,0)
+   ↓ +N5
+(0,5)
+   ↓ +E3
+(3,5)
+```
+
+## 39. Spatial Intermediate Representation
+
+After parsing, convert language into a stable representation:
+
+```text
+SpatialIR {
+    position = (0,0)
+
+    operations = [
+        Move(NORTH, 5 km),
+        Move(EAST, 3 km)
+    ]
+}
+```
+
+The reasoning engine no longer needs to understand the original sentence.
+
+It only needs to execute:
+
+```text
+Move
+Turn
+Position
+Distance
+Direction
+Constraint
+```
+
+## 40. Complete Reasoning Pipeline
+
+A robust system can use a staged pipeline, each stage handing a cleaner representation to the next:
+
+@diagram flowchart id="direction-distance-pipeline" layout="hierarchical" aria="Direction and distance reasoning pipeline from raw input to final answer"
+node input [label="Input", shape="pill"]
+node detect [label="Text / Speech / Image"]
+node entity [label="Entity Detection"]
+node dirdetect [label="Direction Detection"]
+node distdetect [label="Distance Detection"]
+node refframe [label="Reference-Frame Detection"]
+node parse [label="Spatial Parsing"]
+node ast [label="Spatial AST"]
+node vector [label="Coordinate / Vector Conversion"]
+node constraint [label="Constraint Construction"]
+node reason [label="Spatial Reasoning"]
+node distcalc [label="Distance Calculation"]
+node dircalc [label="Direction Calculation"]
+node validate [label="Validation"]
+node answer [label="Answer Generation", shape="pill", fill="#22c55e"]
+
+edge input -> detect
+edge detect -> entity
+edge entity -> dirdetect
+edge dirdetect -> distdetect
+edge distdetect -> refframe
+edge refframe -> parse
+edge parse -> ast
+edge ast -> vector
+edge vector -> constraint
+edge constraint -> reason
+edge reason -> distcalc
+edge distcalc -> dircalc
+edge dircalc -> validate
+edge validate -> answer
+@/diagram
+
+## 41. Spatial Reasoning Engine
+
+A specialized engine could contain:
+
+```text
+SpatialReasoner/
+│
+├── lexer/
+│   └── spatial_tokens
+│
+├── parser/
+│   └── direction_parser
+│
+├── representation/
+│   ├── point
+│   ├── vector
+│   ├── direction
+│   ├── bearing
+│   ├── distance
+│   └── spatial_relation
+│
+├── coordinates/
+│   ├── cartesian
+│   ├── polar
+│   └── grid
+│
+├── arithmetic/
+│   ├── vector_add
+│   ├── vector_subtract
+│   └── distance
+│
+├── geometry/
+│   ├── angle
+│   ├── bearing
+│   └── projection
+│
+├── reasoning/
+│   ├── spatial_graph
+│   ├── constraints
+│   ├── route
+│   └── relative_position
+│
+├── navigation/
+│   ├── heading
+│   ├── turn
+│   └── path
+│
+├── validator/
+│   ├── unit_check
+│   ├── frame_check
+│   └── consistency_check
+│
+└── formatter/
+    ├── direction_output
+    ├── distance_output
+    └── explanation
+```
+
+## 42. Unit Conversion
+
+Distance can use:
+
+```text
+millimeter
+centimeter
+meter
+kilometer
+inch
+foot
+yard
+mile
+```
+
+Normalize units before arithmetic.
+
+Example:
+
+```text
+2 km + 500 m
+```
+
+becomes:
+
+```text
+2000 m + 500 m
+= 2500 m
+= 2.5 km
+```
+
+## 43. Unit-Aware Representation
+
+Do not store:
+
+```text
+distance = 5
+```
+
+without a unit.
+
+Use:
+
+```text
+Distance {
+    value = 5
+    unit = kilometer
+}
+```
+
+Then:
+
+```text
+5 km + 3 m
+```
+
+becomes:
+
+```text
+5000 m + 3 m
+= 5003 m
+```
+
+rather than the incorrect:
+
+```text
+8 km
+```
+
+## 44. Spatial Type System
+
+Useful types include:
+
+```text
+Point
+Vector
+Direction
+Bearing
+Distance
+Angle
+Position
+Displacement
+Path
+Region
+```
+
+Useful operations:
+
+```text
+Point + Vector → Point
+Point - Point → Vector
+Vector + Vector → Vector
+Distance + Distance → Distance
+Angle + Angle → Angle
+```
+
+This creates dimensional and semantic safety.
+
+## 45. Path Planning
+
+When multiple paths exist, represent locations as graph nodes and paths as edges.
+
+Example:
+
+```text
+A ──5── B
+│       │
+8       2
+│       │
+C ──3── D
+```
+
+Possible routes:
+
+```text
+A → B → D = 7
+A → C → D = 11
+```
+
+Shortest route:
+
+```text
+A → B → D
+```
+
+Algorithms such as:
+
+```text
+Breadth-First Search
+Dijkstra
+A*
+```
+
+can be used depending on whether edges have costs and what kind of search is required.
+
+## 46. Grid Reasoning
+
+Many reasoning problems use a grid.
+
+Starting from:
+
+```text
+(0,0)
+```
+
+use:
+
+```text
+N → y + 1
+E → x + 1
+S → y - 1
+W → x - 1
+```
+
+Example:
+
+```text
+N N E E S
+```
+
+Apply:
+
+```text
+N → (0,1)
+N → (0,2)
+E → (1,2)
+E → (2,2)
+S → (2,1)
+```
+
+Final:
+
+```text
+(2,1)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Euclidean displacement:
+
+```text
+√5 ≈ 2.24
+```
+
+Path length:
+
+```text
+5 units
+```
+
+## 47. Spatial Graph Reasoning
+
+A general spatial graph can contain:
+
+```text
+Node:
+    entity
+    position
+    attributes
+
+Edge:
+    relation
+    direction
+    distance
+    confidence
+```
+
+Example:
+
+```text
+Node A = School
+Node B = Hospital
+
+Edge:
+    from = School
+    to = Hospital
+    direction = North
+    distance = 2 km
+```
+
+The graph allows later questions to be answered without reparsing the original statements.
+
+## 48. Contradiction Detection
+
+Example:
+
+```text
+B is east of A.
+B is west of A.
+```
+
+If these refer to the same frame and conditions, the constraints conflict.
+
+The system should report:
+
+```text
+Spatial contradiction detected.
+```
+
+rather than silently choosing one.
+
+## 49. Consistency Checking
+
+Suppose:
+
+```text
+B = A + (5,0)
+C = B + (0,4)
+```
+
+Therefore:
+
+```text
+C = A + (5,4)
+```
+
+If another statement says:
+
+```text
+C = A + (2,4)
+```
+
+the system detects:
+
+```text
+expected C = (5,4)
+given C = (2,4)
+```
+
+and reports a constraint conflict.
+
+## 50. Uncertain Direction
+
+Natural language can be approximate:
+
+```text
+roughly north-east
+slightly east
+mostly north
+```
+
+The system should preserve uncertainty rather than pretending the direction is exact.
+
+Possible representation:
+
+```text
+direction = NORTH_EAST
+confidence = 0.7
+```
+
+or, for a more advanced system:
+
+```text
+angle_range = [35°, 55°]
+```
+
+The uncertainty model should be explicit.
+
+## 51. Map and Image Reasoning
+
+If the input is an image or map, the pipeline can be:
+
+```text
+IMAGE
+ ↓
+Object / Landmark Detection
+ ↓
+Road / Boundary Detection
+ ↓
+Reference Frame Detection
+ ↓
+Coordinate Extraction
+ ↓
+Spatial Graph
+ ↓
+Direction / Distance Reasoning
+```
+
+This extends symbolic spatial reasoning into computer vision.
+
+## 52. Landmark Reasoning
+
+Example:
+
+```text
+The hospital is north of the school.
+The park is east of the hospital.
+```
+
+Graph:
+
+```text
+School
+   │
+   │ North
+   ↓
+Hospital
+   │
+   │ East
+   ↓
+Park
+```
+
+Inference:
+
+```text
+Park is North-East of School
+```
+
+This is spatial transitive reasoning.
+
+## 53. 3D Direction Reasoning
+
+The same concept can be extended from 2D to 3D.
+
+Represent:
+
+```text
+(x, y, z)
+```
+
+For example:
+
+```text
+5 m north
+3 m east
+2 m upward
+```
+
+becomes:
+
+```text
+(3,5,2)
+```
+
+Distance:
+
+```text
+d = √(3² + 5² + 2²)
+  = √38
+```
+
+This is useful for:
+
+```text
+robotics
+games
+3D environments
+drones
+architecture
+physics
+```
+
+## 54. Coordinate Transformations
+
+A complex AI may use multiple coordinate frames:
+
+```text
+world frame
+agent frame
+camera frame
+screen frame
+```
+
+The system must explicitly know which frame an observation belongs to.
+
+Conceptually:
+
+```text
+world coordinates
+      ↓
+agent coordinates
+      ↓
+camera coordinates
+      ↓
+screen coordinates
+```
+
+This is essential for robotics and computer vision.
+
+## 55. Spatial Proof Trace
+
+For reliability, retain the derivation.
+
+Example:
+
+```text
+A = (0,0)
+
+B = A + (0,3)
+  = (0,3)
+
+C = B + (4,0)
+  = (4,3)
+
+C - A = (4,3)
+
+distance = √(4² + 3²)
+         = 5
+
+direction = NE
+```
+
+The AI can then explain exactly how it reached the answer.
+
+## 56. Verification
+
+Spatial calculations can be verified using reverse operations.
+
+If:
+
+```text
+A + displacement = B
+```
+
+then:
+
+```text
+B - displacement = A
+```
+
+Example:
+
+```text
+A = (2,3)
+displacement = (5,-1)
+
+B = (7,2)
+```
+
+Verify:
+
+```text
+B - (5,-1)
+= (7-5, 2-(-1))
+= (2,3)
+```
+
+The result is consistent.
+
+## 57. Triangle Inequality Check
+
+For any real route:
+
+```text
+straight-line distance <= path distance
+```
+
+For example:
+
+```text
+path distance = 16 km
+straight-line distance = 8.94 km
+```
+
+is valid.
+
+If a system produces:
+
+```text
+straight-line distance = 20 km
+path distance = 16 km
+```
+
+then a calculation or interpretation error exists.
+
+This is an excellent sanity check.
+
+## 58. Complete Example
+
+Input:
+
+> “A person starts at a point, walks 6 km north, then 8 km east, then 2 km south. How far are they from the starting point and in which direction?”
+
+### Step 1 — Parse
+
+```text
+6 km north
+8 km east
+2 km south
+```
+
+### Step 2 — Convert
+
+```text
+N6 = (0,6)
+E8 = (8,0)
+S2 = (0,-2)
+```
+
+### Step 3 — Add
+
+```text
+(0,6) + (8,0) + (0,-2)
+= (8,4)
+```
+
+### Step 4 — Distance
+
+```text
+d = √(8² + 4²)
+  = √80
+  = 4√5
+  ≈ 8.94 km
+```
+
+### Step 5 — Direction
+
+Both coordinates are positive:
+
+```text
+x > 0
+y > 0
+```
+
+Therefore:
+
+```text
+North-East
+```
+
+### Step 6 — Path Distance
+
+```text
+6 + 8 + 2 = 16 km
+```
+
+Final:
+
+```text
+Straight-line distance ≈ 8.94 km
+Direction = North-East
+Total distance traveled = 16 km
+```
+
+## 59. Example With Turns
+
+Input:
+
+> “A person faces east. They walk 4 km, turn left and walk 3 km, then turn right and walk 2 km.”
+
+Initial:
+
+```text
+position = (0,0)
+heading = East
+```
+
+Walk:
+
+```text
+position = (4,0)
+```
+
+Turn left:
+
+```text
+heading = North
+```
+
+Walk:
+
+```text
+position = (4,3)
+```
+
+Turn right:
+
+```text
+heading = East
+```
+
+Walk:
+
+```text
+position = (6,3)
+```
+
+Final displacement:
+
+```text
+(6,3)
+```
+
+Distance:
+
+```text
+√(6² + 3²)
+= √45
+≈ 6.71 km
+```
+
+Direction:
+
+```text
+North-East
+```
+
+## 60. Unknown Information
+
+Suppose:
+
+> “A is north of B. C is east of A.”
+
+The system can infer:
+
+```text
+C is north-east of B
+```
+
+but it cannot infer an exact distance unless distances are supplied.
+
+This is an important rule:
+
+> **Reason with known information, but never manufacture missing information.**
+
+## 61. Spatial State
+
+A navigation agent can maintain:
+
+```text
+SpatialState {
+    position
+    heading
+    path_distance
+    world_frame
+    confidence
+}
+```
+
+Example:
+
+```text
+position = (5,3)
+heading = East
+path_distance = 8 km
+```
+
+Each instruction updates the state.
+
+## 62. State Transitions
+
+For:
+
+```text
+Move(distance, direction)
+```
+
+the state transition is:
+
+```text
+new_position = old_position + displacement
+```
+
+For:
+
+```text
+Turn(angle)
+```
+
+the transition is:
+
+```text
+new_heading = old_heading + angle
+```
+
+For:
+
+```text
+WalkForward(distance)
+```
+
+the direction comes from:
+
+```text
+current_heading
+```
+
+This creates a deterministic spatial machine.
+
+## 63. Spatial State Machine
+
+```text
+             TURN
+              │
+              ↓
+        ┌───────────┐
+        │  HEADING  │
+        └─────┬─────┘
+              │
+          MOVE/FORWARD
+              │
+              ↓
+        ┌───────────┐
+        │  POSITION │
+        └─────┬─────┘
+              │
+              ↓
+       PATH DISTANCE
+```
+
+This is useful for navigation, games, robotics, and reasoning benchmarks.
+
+## 64. Common Errors
+
+### Error 1 — Confusing path and displacement
+
+```text
+3 km east + 4 km north
+```
+
+means:
+
+```text
+path = 7 km
+displacement = 5 km
+```
+
+### Error 2 — Ignoring heading
+
+```text
+right
+```
+
+has no fixed absolute direction without a reference frame.
+
+### Error 3 — Inventing distances
+
+```text
+A is north of B
+```
+
+does not mean:
+
+```text
+A is 1 km north of B
+```
+
+### Error 4 — Mixing coordinate conventions
+
+The system must define which axis represents north.
+
+### Error 5 — Losing units
+
+```text
+5 km + 3 m
+```
+
+must be normalized before arithmetic.
+
+### Error 6 — Confusing heading and movement
+
+An agent can face west while moving north.
+
+### Error 7 — Treating a diagonal distance as two full components
+
+“5 km north-east” is not automatically:
+
+```text
+(5,5)
+```
+
+if 5 km is the total diagonal distance.
+
+## 65. Validation Rules
+
+Useful rules include:
+
+```text
+RULE 1:
+Distance cannot be negative.
+
+RULE 2:
+A movement must have a direction and magnitude unless one is intentionally unknown.
+
+RULE 3:
+Opposite movements must cancel correctly.
+
+RULE 4:
+Point - Point = displacement.
+
+RULE 5:
+Point + displacement = Point.
+
+RULE 6:
+Path distance >= straight-line displacement.
+
+RULE 7:
+Same start and end point implies zero displacement.
+
+RULE 8:
+Relative directions require a reference frame.
+
+RULE 9:
+Unknown distance remains unknown.
+
+RULE 10:
+All distance calculations use compatible units.
+
+RULE 11:
+Heading and movement direction are separate concepts.
+
+RULE 12:
+The coordinate convention must remain consistent.
+```
+
+## 66. Why This Is Better Than Pattern Matching
+
+A model could memorize:
+
+```text
+5 km north + 3 km east → 5.83 km NE
+```
+
+but there are unlimited combinations.
+
+A symbolic spatial engine learns reusable rules:
+
+```text
+direction → vector
+movement → displacement
+displacement → position
+position difference → distance
+coordinate signs → direction
+```
+
+Then it can solve new problems it has never memorized.
+
+The important principle is:
+
+> **Learn reusable spatial rules rather than memorizing every possible answer.**
+
+## 67. Spatial Reasoning as Compilation
+
+A powerful architecture is:
+
+```text
+Natural Language
+       ↓
+Lexer
+       ↓
+Parser
+       ↓
+Spatial AST
+       ↓
+Semantic Analysis
+       ↓
+Spatial IR
+       ↓
+Vector / Coordinate Engine
+       ↓
+Constraint Solver
+       ↓
+Geometry Engine
+       ↓
+Verifier
+       ↓
+Answer Generator
+```
+
+The sentence describes the problem.
+
+The AST captures structure.
+
+The spatial IR captures meaning.
+
+The reasoning engine executes the spatial operations.
+
+The verifier checks the result.
+
+## 68. Example Compilation
+
+Input:
+
+```text
+"Walk 5 km north and then 3 km east."
+```
+
+AST:
+
+```text
+SEQUENCE
+├── MOVE(NORTH, 5 km)
+└── MOVE(EAST, 3 km)
+```
+
+Spatial IR:
+
+```text
+position = (0,0)
+
+operations:
+    translate(0,5)
+    translate(3,0)
+```
+
+Execution:
+
+```text
+(0,0)
+→ (0,5)
+→ (3,5)
+```
+
+Result:
+
+```text
+position = (3,5)
+distance = √34
+direction = NE
+path_distance = 8 km
+```
+
+## 69. Minimal Algorithm
+
+Conceptually:
+
+```text
+function solve_spatial(problem):
+
+    tokens = tokenize(problem)
+
+    entities = detect_spatial_entities(tokens)
+
+    ast = parse_spatial_structure(entities)
+
+    normalized = normalize_units_and_directions(ast)
+
+    state = create_spatial_state()
+
+    for operation in normalized.operations:
+        state = execute(operation, state)
+
+    result = analyze_final_state(state)
+
+    verified = verify(result, normalized)
+
+    if not verified:
+        return ERROR
+
+    return format(result)
+```
+
+## 70. Multi-Hop Reasoning
+
+Consider:
+
+```text
+A is north of B.
+B is east of C.
+C is south of D.
+D is west of E.
+```
+
+The system can choose a reference:
+
+```text
+E = (0,0)
+```
+
+Then propagate constraints:
+
+```text
+D = (1,0)
+C = (1,1)
+B = (2,1)
+A = (2,2)
+```
+
+Now any pair can be compared.
+
+For example:
+
+```text
+A - C = (1,1)
+```
+
+Therefore:
+
+```text
+A is north-east of C
+```
+
+This demonstrates why coordinate propagation is powerful.
+
+## 71. Spatial Contradiction Example
+
+Suppose:
+
+```text
+A is north of B.
+A is south of B.
+```
+
+The system should not arbitrarily select one.
+
+It should identify:
+
+```text
+CONTRADICTION
+```
+
+and preserve the conflicting constraints.
+
+A larger AI could then:
+
+```text
+ask for clarification
+check source reliability
+search for additional context
+or mark the conclusion uncertain
+```
+
+## 72. Spatial Confidence
+
+Each relation can carry confidence:
+
+```text
+Relation {
+    subject = A
+    reference = B
+    direction = NORTH
+    confidence = 0.98
+}
+```
+
+This becomes useful when information comes from:
+
+```text
+speech
+vision
+OCR
+uncertain language
+noisy sensors
+external documents
+```
+
+## 73. Image-Based Direction Reasoning
+
+If a diagram or map is supplied:
+
+```text
+IMAGE
+ ↓
+Detect objects
+ ↓
+Detect landmarks
+ ↓
+Detect arrows
+ ↓
+Detect compass
+ ↓
+Build coordinates
+ ↓
+Build spatial graph
+ ↓
+Reason
+```
+
+For example, if a diagram contains:
+
+```text
+      Park
+       ↑
+       |
+School → Hospital
+```
+
+the vision system can extract:
+
+```text
+Hospital east of School
+Park north of Hospital
+```
+
+Then the symbolic engine performs the rest.
+
+## 74. Spatial Reasoning and Other AI Modules
+
+Direction and distance reasoning can interact with:
+
+```text
+Time Reasoning
+Geometry
+Physics
+Planning
+Maps
+Memory
+Language
+Vision
+Robotics
+```
+
+For example:
+
+```text
+"Walk 5 km north for 1 hour."
+```
+
+combines:
+
+```text
+spatial:
+distance = 5 km
+direction = north
+
+temporal:
+duration = 1 hour
+```
+
+Then the physics module can derive:
+
+```text
+average speed = 5 km / 1 hour
+              = 5 km/h
+```
+
+This demonstrates how specialized reasoning modules can cooperate.
+
+## 75. Final Architecture
+
+A mature Direction and Distance Reasoning subsystem can be organized as:
+
+```text
+                    DIRECTION & DISTANCE
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+    PERCEPTION           LANGUAGE             KNOWLEDGE
+        │                    │                    │
+   Map/Image           Direction Parser      Compass Rules
+   Landmark Detection  Distance Parser       Geometry
+   Object Detection    Reference Parser       Unit System
+        │                    │                    │
+        └────────────────────┼────────────────────┘
+                             │
+                      SPATIAL AST / IR
+                             │
+               ┌─────────────┼─────────────┐
+               │             │             │
+            VECTORS      COORDINATES     GRAPH
+               │             │             │
+          Add/Subtract    Position       Relations
+          Displacement    Transform      Paths
+               │             │             │
+               └─────────────┼─────────────┘
+                             │
+                       GEOMETRY ENGINE
+                             │
+                ┌────────────┼────────────┐
+                │            │            │
+             Distance      Angle       Bearing
+                │            │            │
+                └────────────┼────────────┘
+                             │
+                        VALIDATOR
+                             │
+                    ┌────────┴────────┐
+                    │                 │
+                 Correct          Incorrect
+                    │                 │
+                    ↓                 ↓
+                Formatter         Recompute
+                    │
+                    ↓
+                  ANSWER
+```
+
+## 76. Summary
+
+Direction and distance reasoning combines:
+
+```text
+Language Understanding
++
+Reference Frames
++
+Compass Directions
++
+Headings
++
+Vectors
++
+Coordinates
++
+Distance Mathematics
++
+Geometry
++
+Graph Reasoning
++
+Constraint Solving
++
+Navigation
++
+Validation
+```
+
+The fundamental representation is:
+
+```text
+position = (x, y)
+```
+
+and movement is:
+
+```text
+displacement = (Δx, Δy)
+```
+
+Then:
+
+```text
+final_position = initial_position + total_displacement
+```
+
+Straight-line distance:
+
+```text
+d = √(Δx² + Δy²)
+```
+
+Grid/Manhattan distance:
+
+```text
+d = |Δx| + |Δy|
+```
+
+Direction comes from the signs of:
+
+```text
+Δx
+Δy
+```
+
+and precise orientation can be obtained using:
+
+```text
+atan2
+```
+
+The deepest architectural idea is:
+
+```text
+UNDERSTAND
+    ↓
+NORMALIZE
+    ↓
+REPRESENT
+    ↓
+PROPAGATE
+    ↓
+CALCULATE
+    ↓
+VERIFY
+    ↓
+EXPLAIN
+```
+
+For an intelligent AI, direction and distance should therefore not be treated as a collection of memorized question-answer patterns.
+
+Instead:
+
+```text
+"Walk 6 km north, then 8 km east."
+```
+
+becomes:
+
+```text
+MOVE(NORTH, 6 km)
+MOVE(EAST, 8 km)
+```
+
+which becomes:
+
+```text
+(0,6) + (8,0)
+= (8,6)
+```
+
+which produces:
+
+```text
+path distance = 14 km
+displacement = √100 = 10 km
+direction = North-East
+```
+
+The same reasoning engine can solve unlimited variations because it operates on the underlying **spatial rules**, not memorized answers.

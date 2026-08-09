@@ -1,0 +1,2636 @@
+# Clock Reasoning
+
+## 1. Introduction
+
+[definition]
+**Clock reasoning** is the ability of an intelligent system to understand, calculate, compare, and reason about time represented by a clock — converting a natural-language description of time into a structured representation *before* doing any arithmetic on it.
+[/definition]
+
+Clock reasoning is the ability of an intelligent system to understand, calculate, compare, and reason about time represented by a clock.
+
+A human can look at:
+
+> “The meeting starts at 2:35 PM and lasts 1 hour 45 minutes.”
+
+and immediately determine:
+
+> “It ends at 4:20 PM.”
+
+For a computer, this should be treated as a **structured reasoning problem**, not merely as text prediction.
+
+A good clock-reasoning system should understand:
+
+- hours
+- minutes
+- seconds
+- AM/PM
+- 12-hour clocks
+- 24-hour clocks
+- elapsed time
+- future and past time
+- time differences
+- clock angles
+- clock-hand positions
+- schedules
+- recurring times
+- midnight and noon
+- day boundaries
+- ambiguous expressions
+- natural-language descriptions of time
+- incomplete information
+- temporal relationships
+
+The central principle is:
+
+> **Convert language into a temporal representation before performing reasoning.**
+
+For example:
+
+```text
+The train leaves at 4:25 PM and arrives 2 hours 40 minutes later.
+```
+
+can become:
+
+```text
+START_TIME = 16:25
+DURATION = 02:40
+OPERATION = ADD_TIME
+```
+
+Then:
+
+```text
+16:25 + 02:40 = 19:05
+```
+
+Finally:
+
+```text
+7:05 PM
+```
+
+This separation between **understanding**, **representation**, **reasoning**, and **generation** makes the system much more reliable.
+
+## 2. What Is a Clock?
+
+A clock is a system for representing a position in time.
+
+A conventional analog clock contains:
+
+- 12 hour positions
+- an hour hand
+- a minute hand
+- optionally a second hand
+
+@vector width=800 height=480
+artboard id="clock-intro" x=0 y=0 w=800 h=480
+
+layer id="face-intro"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-intro"
+line x1=400 y1=240 x2=318 y2=183 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=530 y2=165 stroke="#334155" strokeWidth=7
+line x1=400 y1=240 x2=400 y2=110 stroke="#ef4444" strokeWidth=4
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*The three hands of an analog clock — hour (short, dark), minute (long, mid-grey), and second (thin, red) — shown here at 10:10.*
+
+A digital clock commonly represents time as:
+
+```text
+HH:MM:SS
+```
+
+For example:
+
+```text
+14:37:25
+```
+
+means:
+
+```text
+14 hours
+37 minutes
+25 seconds
+```
+
+or:
+
+```text
+2:37:25 PM
+```
+
+in a 12-hour representation.
+
+## 3. The Three Fundamental Units
+
+Clock reasoning primarily works with three units.
+
+### 3.1 Hour
+
+One hour contains:
+
+```text
+1 hour = 60 minutes
+```
+
+### 3.2 Minute
+
+One minute contains:
+
+```text
+1 minute = 60 seconds
+```
+
+### 3.3 Second
+
+The smallest commonly used clock unit is:
+
+```text
+1 second
+```
+
+Therefore:
+
+```text
+1 hour = 60 minutes = 3600 seconds
+```
+
+Conversions:
+
+```text
+minutes = hours × 60
+seconds = minutes × 60
+seconds = hours × 3600
+```
+
+## 4. The Best Internal Representation
+
+A reasoning system should not perform most calculations directly on strings such as:
+
+```text
+"7:45 PM"
+```
+
+Strings are useful for communication but poor for mathematical reasoning.
+
+Instead, convert time into a numerical representation.
+
+A particularly useful representation is:
+
+```text
+seconds_since_midnight
+```
+
+For example:
+
+```text
+7:45 PM
+```
+
+becomes:
+
+```text
+19:45:00
+```
+
+Then:
+
+```text
+19 × 3600 + 45 × 60 + 0
+= 71100 seconds
+```
+
+Now time becomes an ordinary numerical quantity.
+
+## 5. Time as a Number
+
+Represent:
+
+```text
+HH:MM:SS
+```
+
+as:
+
+```text
+T = H × 3600 + M × 60 + S
+```
+
+where:
+
+```text
+H = hour
+M = minute
+S = second
+```
+
+Example:
+
+```text
+03:25:40
+```
+
+becomes:
+
+```text
+3 × 3600 + 25 × 60 + 40
+= 10800 + 1500 + 40
+= 12340 seconds
+```
+
+This allows the engine to transform:
+
+```text
+03:25:40 + 02:47:35
+```
+
+into:
+
+```text
+12340 + 10055
+```
+
+and then convert the result back into clock notation.
+
+## 6. Normalized Time
+
+Clock values have boundaries.
+
+Minutes normally range from:
+
+```text
+0–59
+```
+
+Seconds normally range from:
+
+```text
+0–59
+```
+
+For example:
+
+```text
+10:80
+```
+
+should be normalized to:
+
+```text
+11:20
+```
+
+because:
+
+```text
+80 minutes = 1 hour 20 minutes
+```
+
+Similarly:
+
+```text
+4:125
+```
+
+becomes:
+
+```text
+6:05
+```
+
+because:
+
+```text
+125 minutes = 2 hours 5 minutes
+```
+
+A clock-reasoning engine therefore needs a **normalization stage**:
+
+```text
+raw time
+   ↓
+normalize seconds
+   ↓
+normalize minutes
+   ↓
+normalize hours
+   ↓
+handle day boundary
+   ↓
+canonical time
+```
+
+## 7. 12-Hour Clock
+
+A 12-hour clock represents a day using:
+
+```text
+1–12 AM
+1–12 PM
+```
+
+The important special cases are:
+
+```text
+12 AM = 00:00
+12 PM = 12:00
+```
+
+For PM times except 12 PM:
+
+```text
+24-hour hour = 12-hour hour + 12
+```
+
+Examples:
+
+```text
+3 PM  → 15:00
+7 PM  → 19:00
+11 PM → 23:00
+```
+
+Conversion table:
+
+| 12-hour | 24-hour |
+|---|---|
+| 12:00 AM | 00:00 |
+| 1:00 AM | 01:00 |
+| 7:30 AM | 07:30 |
+| 11:59 AM | 11:59 |
+| 12:00 PM | 12:00 |
+| 1:00 PM | 13:00 |
+| 7:30 PM | 19:30 |
+| 11:59 PM | 23:59 |
+
+## 8. 24-Hour Clock
+
+The 24-hour clock represents an entire day continuously:
+
+```text
+00:00 → midnight
+12:00 → noon
+23:59 → one minute before midnight
+```
+
+The valid range is:
+
+```text
+00:00:00
+```
+
+through:
+
+```text
+23:59:59
+```
+
+This representation is generally preferable for internal reasoning because it eliminates AM/PM ambiguity.
+
+## 9. Natural-Language Time Understanding
+
+Humans rarely speak only in numerical clock notation.
+
+They say:
+
+```text
+three o'clock
+half past three
+quarter past three
+quarter to four
+twenty minutes past five
+ten minutes to six
+noon
+midnight
+early morning
+afternoon
+tonight
+```
+
+The reasoning system therefore needs a **temporal language parser**.
+
+Examples:
+
+```text
+"half past 3"
+→ 03:30
+
+"quarter past 5"
+→ 05:15
+
+"quarter to 6"
+→ 05:45
+```
+
+The key semantic distinction is:
+
+```text
+past → add minutes
+to   → subtract from the next hour
+```
+
+## 10. Common Clock Expressions
+
+| Expression | Time |
+|---|---:|
+| five past three | 3:05 |
+| ten past three | 3:10 |
+| quarter past three | 3:15 |
+| half past three | 3:30 |
+| twenty-five to four | 3:35 |
+| quarter to four | 3:45 |
+| ten to four | 3:50 |
+
+The parser should understand the semantic structure rather than memorize every phrase independently.
+
+## 11. Clock Arithmetic
+
+Once time has been converted into a numerical representation, clock arithmetic becomes straightforward.
+
+The most important operations are:
+
+```text
+TIME + DURATION
+TIME - DURATION
+TIME - TIME
+```
+
+The first means “move forward in time.”
+
+The second means “move backward in time.”
+
+The third means “calculate elapsed time.”
+
+## 12. Adding Time
+
+Example:
+
+```text
+2:35 PM + 1 hour 45 minutes
+```
+
+Convert:
+
+```text
+2:35 PM → 14:35
+```
+
+Add:
+
+```text
+14:35
++1:45
+-----
+16:20
+```
+
+Therefore:
+
+```text
+4:20 PM
+```
+
+## 13. Adding Across an Hour
+
+Consider:
+
+```text
+10:45 + 30 minutes
+```
+
+Naïve addition gives:
+
+```text
+10:75
+```
+
+Normalize:
+
+```text
+75 minutes = 1 hour 15 minutes
+```
+
+Therefore:
+
+```text
+11:15
+```
+
+## 14. Adding Across Midnight
+
+Consider:
+
+```text
+11:30 PM + 2 hours
+```
+
+Convert:
+
+```text
+23:30
+```
+
+Add:
+
+```text
+23:30 + 02:00 = 25:30
+```
+
+Normalize across the day:
+
+```text
+25:30 - 24:00 = 01:30
+```
+
+Therefore:
+
+```text
+1:30 AM next day
+```
+
+A complete temporal result may therefore contain:
+
+```text
+time = 01:30
+day_offset = +1
+```
+
+## 15. Subtracting Time
+
+Example:
+
+```text
+5:20 PM - 2 hours 35 minutes
+```
+
+Convert:
+
+```text
+17:20
+```
+
+Subtract:
+
+```text
+17:20
+-2:35
+-----
+14:45
+```
+
+Therefore:
+
+```text
+2:45 PM
+```
+
+## 16. Borrowing During Subtraction
+
+Consider:
+
+```text
+5:10 - 2:35
+```
+
+The minute subtraction would be negative:
+
+```text
+10 - 35
+```
+
+Borrow one hour:
+
+```text
+5:10 = 4:70
+```
+
+Then:
+
+```text
+4:70
+-2:35
+-----
+2:35
+```
+
+Therefore:
+
+```text
+5:10 - 2:35 = 2:35
+```
+
+An implementation can avoid explicit borrowing by converting both times into seconds.
+
+## 17. Elapsed-Time Reasoning
+
+Problem:
+
+```text
+Start = 2:15 PM
+End   = 5:40 PM
+```
+
+Convert:
+
+```text
+14:15
+17:40
+```
+
+Subtract:
+
+```text
+17:40 - 14:15 = 3:25
+```
+
+Therefore:
+
+```text
+3 hours 25 minutes
+```
+
+## 18. Elapsed Time Across Midnight
+
+Consider:
+
+```text
+Start = 10:30 PM
+End   = 2:15 AM
+```
+
+From 10:30 PM to midnight:
+
+```text
+1 hour 30 minutes
+```
+
+From midnight to 2:15 AM:
+
+```text
+2 hours 15 minutes
+```
+
+Total:
+
+```text
+1:30 + 2:15 = 3:45
+```
+
+Therefore:
+
+```text
+3 hours 45 minutes
+```
+
+## 19. Modular Time
+
+A clock repeats every 24 hours:
+
+```text
+24 hours ≡ 0 hours
+```
+
+Therefore, time can use modular arithmetic:
+
+```text
+time mod 24 hours
+```
+
+Example:
+
+```text
+23:00 + 3 hours
+= 26:00
+```
+
+Normalize:
+
+```text
+26 mod 24 = 2
+```
+
+Result:
+
+```text
+02:00
+```
+
+## 20. Circular Distance
+
+A clock is a circle, not a straight line.
+
+There can be:
+
+```text
+clockwise distance
+```
+
+and:
+
+```text
+shortest circular distance
+```
+
+For example, from hour 2 to hour 10:
+
+```text
+clockwise distance = 8 positions
+shortest distance = 4 positions
+```
+
+The reasoning engine must know which interpretation the problem requires.
+
+## 21. Analog Clock Geometry
+
+A full circle is $360°$. There are 12 hour positions on the dial, so each one spans $360° / 12 = 30°$ of arc. Therefore, one hour position corresponds to **30°** of rotation.
+
+## 22. Minute-Hand Angle
+
+The minute hand sweeps the full $360°$ in 60 minutes — $360° / 60 = 6°$ per minute:
+
+@math name="Minute-Hand Angle" label="eq:minute-angle"
+\theta_m = 6M
+@/math
+
+At 20 minutes past the hour, $\theta_m = 6 \times 20 = 120°$.
+
+## 23. Hour-Hand Movement
+
+The hour hand moves continuously, not in jumps: $30°$ during each full hour, and $30° / 60 = 0.5°$ during each minute:
+
+@math name="Hour-Hand Angle" label="eq:hour-angle"
+\theta_h = 30H + 0.5M
+@/math
+
+At 3:20, $\theta_h = 30(3) + 0.5(20) = 90 + 10 = 100°$.
+
+## 24. Clock-Angle Formula
+
+For a time $H{:}M$, the difference between the hands is:
+
+@math name="Angle Between the Hands" label="eq:clock-angle"
+D = |30H - 5.5M|
+@/math
+
+and the smaller of the two possible angles is $\min(D, 360-D)$.
+
+For **3:20**: $D = |30(3) - 5.5(20)| = |90 - 110| = 20°$ — and since $20°$ is already the smaller angle, that's the answer.
+
+@vector width=800 height=480
+artboard id="clock-320" x=0 y=0 w=800 h=480
+
+layer id="face-c320"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-c320"
+line x1=400 y1=240 x2=498 y2=257 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=530 y2=315 stroke="#334155" strokeWidth=7
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*3:20 — hour hand at $100°$, minute hand at $120°$, a $20°$ gap between them.*
+
+## 25. Why the Hour Hand Matters
+
+A common mistake is to assume **3:30** means the hour hand sits exactly on the 3. It does not — the hour hand keeps moving between hour marks as the minutes pass:
+
+$\theta_h = 30(3) + 0.5(30) = 105°$, while the minute hand is at $\theta_m = 6(30) = 180°$. The angle between them is $180 - 105 = 75°$, not the $90°$ you'd get by wrongly assuming the hour hand stays put on the 3.
+
+@vector width=800 height=480
+artboard id="clock-330" x=0 y=0 w=800 h=480
+
+layer id="face-c330"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-c330"
+line x1=400 y1=240 x2=497 y2=266 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=400 y2=390 stroke="#334155" strokeWidth=7
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*3:30 — the minute hand points straight down, but the hour hand has already drifted a quarter of the way from 3 toward 4.*
+
+Accurate clock reasoning must model continuous movement.
+
+## 26. Second-Hand Reasoning
+
+The second hand moves $360° / 60 = 6°$ per second. Once seconds are included, the minute and hour hands are no longer static between whole minutes either:
+
+@math name="Minute Hand (with seconds)" label="eq:minute-angle-sec"
+\theta_m = 6M + 0.1S
+@/math
+
+@math name="Hour Hand (with seconds)" label="eq:hour-angle-sec"
+\theta_h = 30H + 0.5M + \frac{S}{120}
+@/math
+
+This allows precise modeling of all three hands.
+
+## 27. Finding When Two Hands Overlap
+
+The minute hand moves at $6°$/minute and the hour hand at $0.5°$/minute — a relative speed of $6 - 0.5 = 5.5°$/minute. For the minute hand to lap the hour hand (gain a full $360°$ on it) takes:
+
+@math label="eq:overlap-time"
+\frac{360}{5.5} = \frac{720}{11} = 65\frac{5}{11}
+@/math
+
+minutes, i.e. roughly **65.45 minutes** — about 1 hour, 5 minutes, 27 seconds. So the hands overlap approximately every 65.45 minutes, not every 60.
+
+@vector width=800 height=480
+artboard id="clock-overlap" x=0 y=0 w=800 h=480
+
+layer id="face-overlap"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-overlap"
+line x1=400 y1=240 x2=454 y2=156 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=481 y2=114 stroke="#334155" strokeWidth=7
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*≈ 1:05:27 — hour and minute hands overlap exactly, both pointing along the same ray from the center.*
+
+This demonstrates that clock reasoning can include kinematic reasoning.
+
+## 28. Temporal Relationships
+
+A reasoning system should represent relationships such as:
+
+```text
+BEFORE
+AFTER
+EQUAL
+DURING
+STARTS_AT
+ENDS_AT
+OVERLAPS
+BEFORE_OR_EQUAL
+AFTER_OR_EQUAL
+```
+
+Example:
+
+```text
+Meeting A: 10:00–11:00
+Meeting B: 11:30–12:30
+```
+
+The engine can infer:
+
+```text
+A BEFORE B
+GAP(A,B) = 30 minutes
+```
+
+## 29. Time Intervals
+
+Represent an interval as:
+
+```text
+[start, end)
+```
+
+Example:
+
+```text
+09:00–10:30
+```
+
+means:
+
+```text
+start = 09:00
+end = 10:30
+duration = 90 minutes
+```
+
+Half-open intervals are often useful in software because the ending point is excluded.
+
+## 30. Interval Overlap
+
+Suppose:
+
+```text
+A = 10:00–12:00
+B = 11:00–13:00
+```
+
+The overlap is:
+
+```text
+11:00–12:00
+```
+
+Therefore:
+
+```text
+overlap = 1 hour
+```
+
+The calculation can use:
+
+```text
+overlap_start = max(A_start, B_start)
+overlap_end   = min(A_end, B_end)
+```
+
+If:
+
+```text
+overlap_start < overlap_end
+```
+
+then an overlap exists.
+
+## 31. Scheduling Reasoning
+
+Clock reasoning becomes more powerful when combined with scheduling.
+
+Example:
+
+```text
+Wake up at 6:30 AM.
+Exercise for 45 minutes.
+Breakfast for 30 minutes.
+Leave at 8:00 AM.
+```
+
+The system can construct:
+
+```text
+06:30 → wake
+06:30–07:15 → exercise
+07:15–07:45 → breakfast
+07:45–08:00 → preparation
+08:00 → leave
+```
+
+It can then infer:
+
+```text
+15 minutes free
+```
+
+This is temporal planning rather than simple clock arithmetic.
+
+## 32. Relative Time
+
+Humans frequently describe time relative to another event:
+
+```text
+10 minutes after lunch
+2 hours before the meeting
+30 minutes after waking
+the day after tomorrow
+three days before the exam
+```
+
+The system should represent these relationships explicitly.
+
+Example:
+
+```text
+meeting = 15:00
+event = meeting - 30 minutes
+```
+
+Therefore:
+
+```text
+event = 14:30
+```
+
+## 33. Temporal Chains
+
+Consider:
+
+```text
+A happens at 10:00.
+B happens 30 minutes after A.
+C happens 45 minutes after B.
+D happens 20 minutes before C.
+```
+
+The reasoning engine derives:
+
+```text
+A = 10:00
+
+B = A + 00:30
+  = 10:30
+
+C = B + 00:45
+  = 11:15
+
+D = C - 00:20
+  = 10:55
+```
+
+This can be represented as a dependency graph:
+
+```text
+A
+│
+├── +30m → B
+│           │
+│           └── +45m → C
+│                       │
+│                       └── -20m → D
+```
+
+## 34. Temporal Graph Representation
+
+A sophisticated AI can represent temporal knowledge as a graph.
+
+Example:
+
+```text
+Node A:
+  event = "School starts"
+  time = 08:00
+
+Node B:
+  event = "Lunch"
+  time = 13:00
+```
+
+Relationship:
+
+```text
+B AFTER A
+duration = 5 hours
+```
+
+Graph:
+
+```text
+School Start
+     │
+     │ +5h
+     ↓
+   Lunch
+```
+
+This becomes useful for complex reasoning.
+
+## 35. Clock Reasoning Pipeline
+
+A robust system can use a staged pipeline, each stage handing a cleaner representation to the next:
+
+@diagram flowchart id="clock-pipeline" layout="hierarchical" aria="Clock reasoning pipeline from raw input to final output"
+node input [label="Input", shape="pill"]
+node detect [label="Text / Image / Speech"]
+node entity [label="Temporal Entity Detection"]
+node parser [label="Time Expression Parser"]
+node normalize [label="Temporal Normalization"]
+node canon [label="Canonical Representation"]
+node opdetect [label="Operation Detection"]
+node constraint [label="Constraint Construction"]
+node engine [label="Temporal Reasoning Engine"]
+node validate [label="Validation"]
+node format [label="Result Formatting"]
+node output [label="Output", shape="pill", fill="#22c55e"]
+
+edge input -> detect
+edge detect -> entity
+edge entity -> parser
+edge parser -> normalize
+edge normalize -> canon
+edge canon -> opdetect
+edge opdetect -> constraint
+edge constraint -> engine
+edge engine -> validate
+edge validate -> format
+edge format -> output
+@/diagram
+
+## 36. Temporal Entity Detection
+
+Example:
+
+```text
+"The train leaves at 4:35 PM and arrives after 2 hours."
+```
+
+Detected entities:
+
+```text
+TIME:
+4:35 PM
+
+DURATION:
+2 hours
+
+EVENT:
+train leaves
+
+EVENT:
+train arrives
+```
+
+The parser should not immediately calculate.
+
+First, identify the components.
+
+## 37. Semantic Representation
+
+The sentence can become:
+
+```text
+Event(
+    type = departure,
+    time = 16:35
+)
+
+Event(
+    type = arrival,
+    relation = AFTER(departure),
+    duration = 02:00
+)
+```
+
+This resembles an AST in a programming language.
+
+The AI is effectively compiling language into a **temporal AST**.
+
+## 38. Temporal AST
+
+For:
+
+```text
+"Leave at 4:35 PM and arrive 2 hours later."
+```
+
+the structure could be:
+
+```text
+TEMPORAL_SEQUENCE
+│
+├── EVENT
+│   ├── type: LEAVE
+│   └── time: 16:35
+│
+└── EVENT
+    ├── type: ARRIVE
+    ├── relation: AFTER
+    └── offset: +02:00
+```
+
+The reasoning engine evaluates:
+
+```text
+16:35 + 02:00
+```
+
+and produces:
+
+```text
+18:35
+```
+
+## 39. Constraint-Based Clock Reasoning
+
+Some problems do not directly provide the answer.
+
+Example:
+
+> The meeting ends at 5 PM and lasts 90 minutes. When did it start?
+
+Create:
+
+```text
+end = 17:00
+duration = 01:30
+```
+
+Constraint:
+
+```text
+start + duration = end
+```
+
+Therefore:
+
+```text
+start = end - duration
+```
+
+```text
+start = 17:00 - 01:30
+     = 15:30
+```
+
+This is better understood as constraint solving.
+
+## 40. Unknown-Time Problems
+
+Suppose:
+
+```text
+Start = ?
+Duration = 2h20m
+End = 18:40
+```
+
+Equation:
+
+```text
+X + 02:20 = 18:40
+```
+
+Therefore:
+
+```text
+X = 18:40 - 02:20
+  = 16:20
+```
+
+So:
+
+```text
+X = 16:20
+```
+
+## 41. Multiple Constraints
+
+Consider:
+
+```text
+A starts at 10:00.
+B starts 20 minutes after A.
+C starts 40 minutes after B.
+C ends at 12:00.
+```
+
+Derive:
+
+```text
+A = 10:00
+B = 10:20
+C = 11:00
+```
+
+Then:
+
+```text
+duration(C) = 12:00 - 11:00
+            = 1 hour
+```
+
+The system has derived information that was never explicitly stated.
+
+## 42. Ambiguity
+
+Natural language can be ambiguous.
+
+Example:
+
+> “Meet me at 8.”
+
+This could mean:
+
+```text
+08:00 AM
+```
+
+or:
+
+```text
+08:00 PM
+```
+
+The system should use context.
+
+For example:
+
+```text
+"I'll meet you for breakfast at 8."
+```
+
+strongly suggests:
+
+```text
+08:00 AM
+```
+
+while:
+
+```text
+"I'll meet you for dinner at 8."
+```
+
+suggests:
+
+```text
+08:00 PM
+```
+
+The system therefore needs:
+
+```text
+CONTEXT → DISAMBIGUATION
+```
+
+## 43. Confidence
+
+The system can assign confidence to interpretations.
+
+Example:
+
+```text
+"breakfast at 8"
+```
+
+Possible interpretations:
+
+```text
+08:00 AM → confidence 0.96
+08:00 PM → confidence 0.04
+```
+
+A representation could be:
+
+```text
+TimeHypothesis(
+    value = 08:00,
+    period = AM,
+    confidence = 0.96
+)
+```
+
+The system should retain uncertainty rather than pretending certainty.
+
+## 44. Missing Information
+
+Suppose:
+
+> “The movie starts at 7 and lasts two hours.”
+
+If AM/PM is unknown, do not automatically invent it.
+
+Represent:
+
+```text
+hour = 7
+minute = 0
+period = UNKNOWN
+```
+
+Then resolve using context if available.
+
+Important principle:
+
+> **Unknown is different from false.**
+
+## 45. Day Boundaries
+
+Consider:
+
+```text
+11:50 PM + 30 minutes
+```
+
+Result:
+
+```text
+12:20 AM
+```
+
+But this occurs on the next calendar day.
+
+Represent:
+
+```text
+time = 00:20
+day_offset = +1
+```
+
+## 46. Date + Clock Reasoning
+
+For complete temporal reasoning, represent:
+
+```text
+date + time
+```
+
+Example:
+
+```text
+2026-08-08 23:30
+```
+
+Add:
+
+```text
+2 hours
+```
+
+Result:
+
+```text
+2026-08-09 01:30
+```
+
+This prevents errors around midnight.
+
+## 47. Recurring Time
+
+Some expressions represent repetition:
+
+```text
+every day at 8 AM
+every Monday at 9 AM
+every 30 minutes
+every 2 hours
+```
+
+Represent them as temporal rules.
+
+Example:
+
+```text
+RULE
+frequency = DAILY
+time = 08:00
+```
+
+For:
+
+```text
+every 30 minutes
+```
+
+use:
+
+```text
+interval = 30 minutes
+```
+
+## 48. Periodic Reasoning
+
+A clock is inherently periodic.
+
+For a 24-hour cycle:
+
+```text
+T ≡ T + 24h
+```
+
+For a 12-hour analog display:
+
+```text
+T ≡ T + 12h
+```
+
+Therefore:
+
+```text
+3 o'clock
+```
+
+can represent:
+
+```text
+03:00
+15:00
+```
+
+unless AM/PM or context resolves the ambiguity.
+
+## 49. Clock Images
+
+Clock reasoning can begin from an image.
+
+Pipeline:
+
+```text
+IMAGE
+ ↓
+Clock Detection
+ ↓
+Center Detection
+ ↓
+Hand Detection
+ ↓
+Hand Classification
+ ↓
+Angle Measurement
+ ↓
+Time Reconstruction
+ ↓
+Temporal Reasoning
+```
+
+The system must identify:
+
+```text
+hour hand
+minute hand
+second hand
+```
+
+before calculating time.
+
+## 50. Analog-Hand Detection
+
+Hands can differ in:
+
+- length
+- thickness
+- shape
+- color
+- angle
+- attachment to the center
+
+A robust vision system should combine:
+
+```text
+length
++
+width
++
+angle
++
+center attachment
++
+context
+```
+
+rather than relying on a single property.
+
+## 51. From Angle to Time
+
+Suppose the minute hand is detected at:
+
+```text
+180°
+```
+
+Then:
+
+```text
+minutes = 180 / 6
+        = 30
+```
+
+If the hour hand is around:
+
+```text
+105°
+```
+
+then the time is approximately:
+
+```text
+3:30
+```
+
+because:
+
+```text
+3 × 30° = 90°
+```
+
+and the additional:
+
+```text
+15°
+```
+
+corresponds to 30 minutes.
+
+## 52. Reasoning About Clock Mistakes
+
+Example:
+
+```text
+2:50 + 30 minutes
+```
+
+An incorrect system might produce:
+
+```text
+2:80
+```
+
+A validator detects:
+
+```text
+minute >= 60
+```
+
+and rejects the invalid representation.
+
+Normalization produces:
+
+```text
+3:20
+```
+
+Validation should therefore occur after reasoning.
+
+## 53. Dimensional Consistency
+
+Clock reasoning should verify units.
+
+For:
+
+```text
+2 hours + 30 minutes
+```
+
+do not calculate:
+
+```text
+2 + 30 = 32 hours
+```
+
+Instead:
+
+```text
+2 hours = 120 minutes
+120 + 30 = 150 minutes
+```
+
+Therefore:
+
+```text
+2 hours 30 minutes
+```
+
+The system should track units explicitly.
+
+## 54. Temporal Unit Type System
+
+Useful internal types include:
+
+```text
+TimePoint
+Duration
+Date
+DateTime
+ClockAngle
+Frequency
+Interval
+```
+
+For example:
+
+```text
+14:30
+```
+
+is a:
+
+```text
+TimePoint
+```
+
+while:
+
+```text
+2 hours 30 minutes
+```
+
+is a:
+
+```text
+Duration
+```
+
+A type-aware system can prevent invalid operations.
+
+For example:
+
+```text
+TimePoint + Duration
+```
+
+is meaningful, while:
+
+```text
+TimePoint + TimePoint
+```
+
+usually is not.
+
+## 55. Example Internal Representation
+
+A complete time value could be:
+
+```text
+TimePoint {
+    hour: 14,
+    minute: 35,
+    second: 20,
+    day_offset: 0,
+    timezone: null,
+    precision: SECOND
+}
+```
+
+A duration:
+
+```text
+Duration {
+    hours: 2,
+    minutes: 45,
+    seconds: 0
+}
+```
+
+An interval:
+
+```text
+Interval {
+    start: 14:35:20,
+    end: 17:20:20
+}
+```
+
+## 56. Clock Reasoning Engine
+
+A complete engine could contain:
+
+```text
+ClockReasoner/
+│
+├── lexer/
+│   └── temporal_tokens
+│
+├── parser/
+│   └── time_parser
+│
+├── normalizer/
+│   ├── twelve_hour
+│   ├── twenty_four_hour
+│   └── duration_normalizer
+│
+├── representation/
+│   ├── time_point
+│   ├── duration
+│   ├── interval
+│   └── temporal_relation
+│
+├── arithmetic/
+│   ├── add
+│   ├── subtract
+│   ├── difference
+│   └── modulo
+│
+├── geometry/
+│   ├── hand_angle
+│   ├── clock_angle
+│   └── hand_intersection
+│
+├── reasoning/
+│   ├── constraints
+│   ├── temporal_graph
+│   ├── interval_reasoning
+│   └── scheduling
+│
+├── ambiguity/
+│   ├── am_pm
+│   ├── context
+│   └── confidence
+│
+├── validator/
+│   ├── range_check
+│   ├── unit_check
+│   └── consistency_check
+│
+└── formatter/
+    ├── twelve_hour
+    └── twenty_four_hour
+```
+
+## 57. Complete Reasoning Example
+
+Input:
+
+> “A train leaves at 11:40 PM. It travels for 2 hours and 35 minutes. When does it arrive?”
+
+### Step 1 — Detect time
+
+```text
+11:40 PM
+```
+
+### Step 2 — Detect duration
+
+```text
+2 hours 35 minutes
+```
+
+### Step 3 — Normalize
+
+```text
+11:40 PM → 23:40
+```
+
+### Step 4 — Convert to seconds
+
+```text
+23 × 3600 + 40 × 60
+= 85200 seconds
+```
+
+Duration:
+
+```text
+2 × 3600 + 35 × 60
+= 9300 seconds
+```
+
+### Step 5 — Add
+
+```text
+85200 + 9300 = 94500
+```
+
+### Step 6 — Handle day boundary
+
+One day is:
+
+```text
+86400 seconds
+```
+
+Therefore:
+
+```text
+94500 - 86400 = 8100
+```
+
+### Step 7 — Convert back
+
+```text
+8100 seconds = 2 hours 15 minutes
+```
+
+Therefore:
+
+```text
+02:15
+day_offset = +1
+```
+
+Final:
+
+```text
+2:15 AM the next day
+```
+
+## 58. Why This Architecture Is Better Than Pure Pattern Matching
+
+A language model could memorize:
+
+```text
+"11:40 PM + 2h35m = 2:15 AM"
+```
+
+but there are effectively unlimited combinations:
+
+```text
+01:03 + 17m
+04:52 + 9h
+22:47 - 3h18m
+...
+```
+
+A symbolic clock engine instead learns a small set of reusable rules:
+
+```text
+60 minutes = 1 hour
+24 hours = 1 day
+time + duration = later time
+time - duration = earlier time
+```
+
+Those rules generalize to countless problems.
+
+Key principle:
+
+> **Learn reusable rules and representations instead of memorizing every answer.**
+
+## 59. Clock Reasoning as Compilation
+
+A powerful architecture is:
+
+```text
+Natural Language
+      ↓
+Lexer
+      ↓
+Parser
+      ↓
+Temporal AST
+      ↓
+Semantic Analysis
+      ↓
+Temporal IR
+      ↓
+Reasoning Engine
+      ↓
+Verified Result
+      ↓
+Natural Language Generator
+```
+
+For:
+
+```text
+"Leave at 4:35 PM and arrive 2 hours later."
+```
+
+the temporal representation becomes:
+
+```text
+start_time = 16:35
+duration = 02:00
+operation = temporal_addition
+```
+
+The reasoning engine evaluates:
+
+```text
+16:35 + 02:00 = 18:35
+```
+
+## 60. Clock Reasoning as a Specialized Domain
+
+A general AI could contain:
+
+```text
+Reasoning Engine
+│
+├── Mathematics
+├── Physics
+├── Chemistry
+├── Geometry
+├── Language
+├── Calendar
+├── Clock
+├── Finance
+├── Logic
+└── Spatial Reasoning
+```
+
+The clock module does not need to understand everything.
+
+It needs a clean interface.
+
+Example:
+
+```text
+Clock.solve(expression)
+```
+
+could return:
+
+```text
+{
+    result: "02:15 AM",
+    day_offset: 1,
+    confidence: 1.0,
+    proof: [...]
+}
+```
+
+## 61. Proof / Reasoning Trace
+
+For reliability, retain the reasoning steps.
+
+Example:
+
+```text
+Input:
+11:40 PM + 2h35m
+
+Normalize:
+11:40 PM → 23:40
+
+Convert:
+23:40 → 85200 seconds
+
+Duration:
+2h35m → 9300 seconds
+
+Addition:
+85200 + 9300 = 94500
+
+Day normalization:
+94500 - 86400 = 8100
+
+Conversion:
+8100 → 02:15
+
+Day:
++1
+
+Answer:
+02:15 AM next day
+```
+
+This trace is useful for:
+
+- debugging
+- explanation
+- verification
+- teaching
+- error detection
+- self-correction
+
+## 62. Verification
+
+The engine should verify its answer independently.
+
+Example:
+
+```text
+11:40 PM + 2:35
+```
+
+Expected:
+
+```text
+2:15 AM next day
+```
+
+Reverse the operation:
+
+```text
+2:15 AM - 2:35
+```
+
+which should produce:
+
+```text
+11:40 PM
+```
+
+If it does not, the result is invalid.
+
+Principle:
+
+> **Every temporal calculation should be reversible whenever mathematically possible.**
+
+## 63. Error Detection
+
+The validator should detect:
+
+### Invalid hour
+
+```text
+25:10
+```
+
+### Invalid minute
+
+```text
+12:75
+```
+
+### Invalid second
+
+```text
+12:30:80
+```
+
+### Invalid AM/PM combination
+
+```text
+15:30 PM
+```
+
+### Non-normalized duration
+
+```text
+1 hour 90 minutes
+```
+
+which can be normalized to:
+
+```text
+2 hours 30 minutes
+```
+
+when the input specification allows normalization.
+
+## 64. Human-Friendly Output
+
+Internal reasoning should be precise.
+
+Output should be natural.
+
+Internal:
+
+```text
+timestamp = 2026-08-09T02:15:00
+```
+
+Human output:
+
+```text
+The train arrives at 2:15 AM the next day.
+```
+
+Separate:
+
+```text
+reasoning representation
+```
+
+from:
+
+```text
+presentation representation
+```
+
+## 65. Advanced Clock Reasoning
+
+Once basic reasoning works, the engine can support:
+
+- clock-angle problems
+- hand-overlap problems
+- hand-crossing problems
+- mirror-clock problems
+- elapsed-time problems
+- missing-time problems
+- interval scheduling
+- temporal constraints
+- recurring events
+- time zones
+- daylight-saving transitions
+- dates
+- historical time systems
+- astronomical time
+- countdowns
+- deadlines
+- temporal uncertainty
+- probabilistic time interpretation
+
+Implement these progressively rather than all at once.
+
+## 66. Time Zones
+
+For real-world reasoning, a time should normally include its time zone when the absolute instant matters.
+
+A complete representation can contain:
+
+```text
+local_time
+date
+timezone
+UTC_offset
+```
+
+Example:
+
+```text
+2026-08-08
+10:00
+Asia/Kolkata
+UTC+05:30
+```
+
+This allows conversion to another time zone.
+
+## 67. Absolute vs Local Time
+
+Distinguish:
+
+```text
+local time
+```
+
+from:
+
+```text
+absolute instant
+```
+
+For example:
+
+```text
+10:00 AM IST
+```
+
+and:
+
+```text
+04:30 UTC
+```
+
+can refer to the same absolute instant.
+
+The displayed clock time changes with the time zone; the instant does not.
+
+## 68. Temporal Precision
+
+Not every statement has second-level precision.
+
+Examples:
+
+```text
+at 5 PM
+```
+
+has roughly:
+
+```text
+hour-level precision
+```
+
+while:
+
+```text
+5:23:17 PM
+```
+
+has:
+
+```text
+second-level precision
+```
+
+Preserve the original precision:
+
+```text
+precision = HOUR
+precision = MINUTE
+precision = SECOND
+```
+
+This prevents the AI from inventing precision that was never supplied.
+
+## 69. Uncertainty Intervals
+
+Some expressions are approximate:
+
+> “I'll arrive around 5 PM.”
+
+Do not necessarily convert this into an exact timestamp.
+
+Represent it as an uncertain time, for example:
+
+```text
+approximately around 17:00
+```
+
+or, if the application defines a specific uncertainty model:
+
+```text
+[16:45, 17:15]
+```
+
+The uncertainty range should come from the application's rules rather than being arbitrarily invented.
+
+## 70. Core Rules
+
+A compact clock-reasoning rule set:
+
+```text
+RULE 1:
+60 seconds = 1 minute
+
+RULE 2:
+60 minutes = 1 hour
+
+RULE 3:
+24 hours = 1 day
+
+RULE 4:
+TimePoint + Duration = TimePoint
+
+RULE 5:
+TimePoint - Duration = TimePoint
+
+RULE 6:
+TimePoint - TimePoint = Duration
+
+RULE 7:
+Clock repeats periodically
+
+RULE 8:
+12 AM = 00:00
+
+RULE 9:
+12 PM = 12:00
+
+RULE 10:
+Minute hand = 6° × minute
+
+RULE 11:
+Hour hand = 30° × hour + 0.5° × minute
+
+RULE 12:
+Shortest hand angle =
+min(|H - M|, 360 - |H - M|)
+```
+
+## 71. Minimal Algorithm
+
+Conceptually:
+
+```text
+function solve_clock(problem):
+
+    tokens = tokenize(problem)
+
+    temporal_entities = detect_time_entities(tokens)
+
+    ast = parse_temporal_structure(temporal_entities)
+
+    normalized = normalize(ast)
+
+    constraints = build_constraints(normalized)
+
+    result = solve_constraints(constraints)
+
+    verified = verify(result, constraints)
+
+    if not verified:
+        return ERROR
+
+    return format(result)
+```
+
+This architecture keeps the system modular.
+
+## 72. Complete Multi-Step Example
+
+Input:
+
+> “A class starts at 9:35 AM. It lasts 1 hour 50 minutes. There is a 25-minute break, after which another class lasts 45 minutes. When does everything finish?”
+
+Parse:
+
+```text
+class_1_start = 09:35
+class_1_duration = 01:50
+break = 00:25
+class_2_duration = 00:45
+```
+
+Calculate:
+
+```text
+09:35 + 01:50 = 11:25
+11:25 + 00:25 = 11:50
+11:50 + 00:45 = 12:35
+```
+
+Final:
+
+```text
+12:35 PM
+```
+
+The system has transformed a paragraph into a sequence of deterministic temporal operations.
+
+## 73. The Deeper Principle
+
+Clock reasoning demonstrates an important architecture for intelligent machines.
+
+Humans use concepts such as:
+
+```text
+time
+duration
+before
+after
+past
+future
+day
+night
+```
+
+A machine can similarly construct symbolic concepts.
+
+Instead of:
+
+```text
+input → guessed answer
+```
+
+a reasoning system can use:
+
+```text
+input
+ ↓
+concept extraction
+ ↓
+symbolic representation
+ ↓
+rules
+ ↓
+calculation
+ ↓
+verification
+ ↓
+answer
+```
+
+This is a powerful pattern for structured reasoning.
+
+## 74. Final Architecture
+
+A mature Clock Reasoning subsystem can be organized as:
+
+```text
+                    CLOCK REASONING
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+   PERCEPTION          LANGUAGE          KNOWLEDGE
+        │                  │                  │
+   Clock Image        Time Parser       Clock Rules
+   Hand Detection     Duration Parser   Calendar Rules
+   Angle Detection    Context Parser    Time Units
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           │
+                    TEMPORAL IR / AST
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+          Arithmetic    Geometry    Constraints
+              │            │            │
+          Add/Subtract   Angles     Scheduling
+          Difference     Hands      Intervals
+              │            │            │
+              └────────────┼────────────┘
+                           │
+                       VALIDATOR
+                           │
+                  ┌────────┴────────┐
+                  │                 │
+              Correct            Incorrect
+                  │                 │
+                  ↓                 ↓
+              Formatter          Recompute
+                  │
+                  ↓
+               ANSWER
+```
+
+The most important idea is that **clock reasoning should not be one giant function**.
+
+It should be a collection of specialized components working together.
+
+## 75. Summary
+
+Clock reasoning combines:
+
+```text
+Language Understanding
++
+Temporal Representation
++
+Unit Conversion
++
+Arithmetic
++
+Circular Mathematics
++
+Geometry
++
+Constraint Solving
++
+Context
++
+Validation
+```
+
+A basic system needs:
+
+```text
+hours
+minutes
+seconds
+addition
+subtraction
+normalization
+```
+
+A more advanced system adds:
+
+```text
+AM/PM
+dates
+intervals
+temporal relationships
+scheduling
+```
+
+An advanced intelligent system can further add:
+
+```text
+analog-clock vision
+clock geometry
+uncertainty
+contextual interpretation
+time zones
+temporal graphs
+constraint solving
+proof traces
+self-verification
+```
+
+The key architecture is:
+
+```text
+UNDERSTAND
+    ↓
+REPRESENT
+    ↓
+REASON
+    ↓
+VERIFY
+    ↓
+EXPLAIN
+```
+
+This makes clock reasoning a small but powerful example of how a broader AI can combine **natural-language understanding with deterministic symbolic reasoning**.
+
+Instead of memorizing:
+
+```text
+"11:40 PM + 2h35m = 2:15 AM"
+```
+
+the AI learns the underlying structure:
+
+```text
+TIME + DURATION
+       ↓
+TEMPORAL ARITHMETIC
+       ↓
+DAY NORMALIZATION
+       ↓
+VERIFIED TIME
+```
+
+and can therefore solve essentially unlimited variations of the same class of problem.

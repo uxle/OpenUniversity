@@ -4,8 +4,14 @@
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 5,
+      "lessonCount": 8,
       "subSubjects": [
+        {
+          "id": "ai-reasoning",
+          "title": "AI Reasoning",
+          "description": "How intelligent systems convert natural language into structured, symbolic representations — then reason, calculate, and verify answers deterministically instead of guessing.",
+          "lessonCount": 3
+        },
         {
           "id": "algorithms",
           "title": "Algorithms",
