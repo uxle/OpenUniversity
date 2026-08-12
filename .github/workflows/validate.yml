@@ -1,3 +1,52 @@
-# .github/workflows/validate.yml
+# .github/workflows/validate.yml — content/toolchain validation.
+#
+# Runs the same sequence documented for local use (generate-registry ->
+# validate-content -> validate-zolto -> check-links -> check-duplicates)
+# on every push/PR, so a broken or malformed .zl/.json change can't land
+# unnoticed. Read-only checkout, no deploy step, no secrets — this job's
+# token is scoped down to the minimum (contents: read) as a matter of
+# course, even though nothing here would use broader access anyway.
+#
+# Third-party actions are pinned to a major-version tag (actions/checkout@v4,
+# actions/setup-node@v4) rather than a floating branch. For stricter
+# supply-chain hardening you can additionally pin each to its immutable
+# commit SHA (see https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions)
+# — this wasn't done here to avoid hand-transcribing a SHA that couldn't be
+# verified byte-for-byte in this environment; a stale/incorrect SHA is a
+# worse outcome than a well-known, actively-maintained major-version tag
+# from a first-party GitHub Actions org.
 name: Validate
-# TODO: define workflow/template
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate content & toolchain
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # No dependencies to install (see package.json's "notes.zolto" —
+      # Zolto is vendored, zero-install by design), so there's no `npm ci`
+      # step here on purpose.
+      - name: Run full validation toolchain
+        run: npm run validate:all

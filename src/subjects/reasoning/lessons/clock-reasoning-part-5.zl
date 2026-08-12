@@ -1,0 +1,298 @@
+# Clock Reasoning — Part 5 of 10
+
+[info title="Part 5 of 10"]
+Continuing from the previous part. back to Part 4 (`clock-reasoning-part-4`) · continue to Part 6 (`clock-reasoning-part-6`).
+[/info]
+
+## 34. Temporal Graph Representation
+
+A sophisticated AI can represent temporal knowledge as a graph.
+
+Example:
+
+```text
+Node A:
+  event = "School starts"
+  time = 08:00
+
+Node B:
+  event = "Lunch"
+  time = 13:00
+```
+
+Relationship:
+
+```text
+B AFTER A
+duration = 5 hours
+```
+
+Graph:
+
+```text
+School Start
+     │
+     │ +5h
+     ↓
+   Lunch
+```
+
+This becomes useful for complex reasoning.
+
+## 35. Clock Reasoning Pipeline
+
+A robust system can use a staged pipeline, each stage handing a cleaner representation to the next:
+
+@diagram flowchart id="clock-pipeline" layout="hierarchical" aria="Clock reasoning pipeline from raw input to final output"
+node input [label="Input", shape="pill"]
+node detect [label="Text / Image / Speech"]
+node entity [label="Temporal Entity Detection"]
+node parser [label="Time Expression Parser"]
+node normalize [label="Temporal Normalization"]
+node canon [label="Canonical Representation"]
+node opdetect [label="Operation Detection"]
+node constraint [label="Constraint Construction"]
+node engine [label="Temporal Reasoning Engine"]
+node validate [label="Validation"]
+node format [label="Result Formatting"]
+node output [label="Output", shape="pill", fill="#22c55e"]
+
+edge input -> detect
+edge detect -> entity
+edge entity -> parser
+edge parser -> normalize
+edge normalize -> canon
+edge canon -> opdetect
+edge opdetect -> constraint
+edge constraint -> engine
+edge engine -> validate
+edge validate -> format
+edge format -> output
+@/diagram
+
+## 36. Temporal Entity Detection
+
+Example:
+
+```text
+"The train leaves at 4:35 PM and arrives after 2 hours."
+```
+
+Detected entities:
+
+```text
+TIME:
+4:35 PM
+
+DURATION:
+2 hours
+
+EVENT:
+train leaves
+
+EVENT:
+train arrives
+```
+
+The parser should not immediately calculate.
+
+First, identify the components.
+
+## 37. Semantic Representation
+
+The sentence can become:
+
+```text
+Event(
+    type = departure,
+    time = 16:35
+)
+
+Event(
+    type = arrival,
+    relation = AFTER(departure),
+    duration = 02:00
+)
+```
+
+This resembles an AST in a programming language.
+
+The AI is effectively compiling language into a **temporal AST**.
+
+## 38. Temporal AST
+
+For:
+
+```text
+"Leave at 4:35 PM and arrive 2 hours later."
+```
+
+the structure could be:
+
+```text
+TEMPORAL_SEQUENCE
+│
+├── EVENT
+│   ├── type: LEAVE
+│   └── time: 16:35
+│
+└── EVENT
+    ├── type: ARRIVE
+    ├── relation: AFTER
+    └── offset: +02:00
+```
+
+The reasoning engine evaluates:
+
+```text
+16:35 + 02:00
+```
+
+and produces:
+
+```text
+18:35
+```
+
+## 39. Constraint-Based Clock Reasoning
+
+Some problems do not directly provide the answer.
+
+Example:
+
+> The meeting ends at 5 PM and lasts 90 minutes. When did it start?
+
+Create:
+
+```text
+end = 17:00
+duration = 01:30
+```
+
+Constraint:
+
+```text
+start + duration = end
+```
+
+Therefore:
+
+```text
+start = end - duration
+```
+
+```text
+start = 17:00 - 01:30
+     = 15:30
+```
+
+This is better understood as constraint solving.
+
+## 40. Unknown-Time Problems
+
+Suppose:
+
+```text
+Start = ?
+Duration = 2h20m
+End = 18:40
+```
+
+Equation:
+
+```text
+X + 02:20 = 18:40
+```
+
+Therefore:
+
+```text
+X = 18:40 - 02:20
+  = 16:20
+```
+
+So:
+
+```text
+X = 16:20
+```
+
+## 41. Multiple Constraints
+
+Consider:
+
+```text
+A starts at 10:00.
+B starts 20 minutes after A.
+C starts 40 minutes after B.
+C ends at 12:00.
+```
+
+Derive:
+
+```text
+A = 10:00
+B = 10:20
+C = 11:00
+```
+
+Then:
+
+```text
+duration(C) = 12:00 - 11:00
+            = 1 hour
+```
+
+The system has derived information that was never explicitly stated.
+
+## 42. Ambiguity
+
+Natural language can be ambiguous.
+
+Example:
+
+> “Meet me at 8.”
+
+This could mean:
+
+```text
+08:00 AM
+```
+
+or:
+
+```text
+08:00 PM
+```
+
+The system should use context.
+
+For example:
+
+```text
+"I'll meet you for breakfast at 8."
+```
+
+strongly suggests:
+
+```text
+08:00 AM
+```
+
+while:
+
+```text
+"I'll meet you for dinner at 8."
+```
+
+suggests:
+
+```text
+08:00 PM
+```
+
+The system therefore needs:
+
+```text
+CONTEXT → DISAMBIGUATION
+```

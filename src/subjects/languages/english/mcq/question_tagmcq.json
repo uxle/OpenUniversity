@@ -1,0 +1,34 @@
+{
+  "lessonId": "question_tag",
+  "title": "Question Tags Rules and Usage",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A Positive Sentence takes which type of Question Tag?",
+      "options": ["Positive Question Tag", "Negative Question Tag", "No tag at all", "Depends on the subject only"],
+      "correct": 1,
+      "rationale": "The basic principle is: Positive Sentence → Negative Question Tag, and Negative Sentence → Positive Question Tag."
+    },
+    {
+      "id": 2,
+      "question": "\"This is a school near my house, ___?\" Choose the correct question tag.",
+      "options": ["isn't it?", "isn't this?", "aren't they?", "wasn't it?"],
+      "correct": 0,
+      "rationale": "For 'This/That' (singular), the tag subject is 'it' — 'isn't it?' is correct."
+    },
+    {
+      "id": 3,
+      "question": "What is the question tag for 'Let's take food'?",
+      "options": ["will you?", "won't you?", "shall we?", "isn't it?"],
+      "correct": 2,
+      "rationale": "For 'Let's/Let us' sentences, the question tag is always 'shall we?'"
+    },
+    {
+      "id": 4,
+      "question": "What is the question tag for a Negative Imperative like \"Don't make a noise\"?",
+      "options": ["won't you?", "will you?", "shall we?", "don't you?"],
+      "correct": 1,
+      "rationale": "For Negative Imperative sentences, the tag is 'will you?' — 'Don't make a noise, will you?'"
+    }
+  ]
+}

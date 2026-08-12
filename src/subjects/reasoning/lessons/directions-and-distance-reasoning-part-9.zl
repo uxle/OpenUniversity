@@ -1,0 +1,254 @@
+# Directions and Distance Reasoning — Part 9 of 10
+
+[info title="Part 9 of 10"]
+Continuing from the previous part. back to Part 8 (`directions-and-distance-reasoning-part-8`) · continue to Part 10 (`directions-and-distance-reasoning-part-10`).
+[/info]
+
+## 68. Example Compilation
+
+Input:
+
+```text
+"Walk 5 km north and then 3 km east."
+```
+
+AST:
+
+```text
+SEQUENCE
+├── MOVE(NORTH, 5 km)
+└── MOVE(EAST, 3 km)
+```
+
+Spatial IR:
+
+```text
+position = (0,0)
+
+operations:
+    translate(0,5)
+    translate(3,0)
+```
+
+Execution:
+
+```text
+(0,0)
+→ (0,5)
+→ (3,5)
+```
+
+Result:
+
+```text
+position = (3,5)
+distance = √34
+direction = NE
+path_distance = 8 km
+```
+
+## 69. Minimal Algorithm
+
+Conceptually:
+
+```text
+function solve_spatial(problem):
+
+    tokens = tokenize(problem)
+
+    entities = detect_spatial_entities(tokens)
+
+    ast = parse_spatial_structure(entities)
+
+    normalized = normalize_units_and_directions(ast)
+
+    state = create_spatial_state()
+
+    for operation in normalized.operations:
+        state = execute(operation, state)
+
+    result = analyze_final_state(state)
+
+    verified = verify(result, normalized)
+
+    if not verified:
+        return ERROR
+
+    return format(result)
+```
+
+## 70. Multi-Hop Reasoning
+
+Consider:
+
+```text
+A is north of B.
+B is east of C.
+C is south of D.
+D is west of E.
+```
+
+The system can choose a reference:
+
+```text
+E = (0,0)
+```
+
+Then propagate constraints:
+
+```text
+D = (1,0)
+C = (1,1)
+B = (2,1)
+A = (2,2)
+```
+
+Now any pair can be compared.
+
+For example:
+
+```text
+A - C = (1,1)
+```
+
+Therefore:
+
+```text
+A is north-east of C
+```
+
+This demonstrates why coordinate propagation is powerful.
+
+## 71. Spatial Contradiction Example
+
+Suppose:
+
+```text
+A is north of B.
+A is south of B.
+```
+
+The system should not arbitrarily select one.
+
+It should identify:
+
+```text
+CONTRADICTION
+```
+
+and preserve the conflicting constraints.
+
+A larger AI could then:
+
+```text
+ask for clarification
+check source reliability
+search for additional context
+or mark the conclusion uncertain
+```
+
+## 72. Spatial Confidence
+
+Each relation can carry confidence:
+
+```text
+Relation {
+    subject = A
+    reference = B
+    direction = NORTH
+    confidence = 0.98
+}
+```
+
+This becomes useful when information comes from:
+
+```text
+speech
+vision
+OCR
+uncertain language
+noisy sensors
+external documents
+```
+
+## 73. Image-Based Direction Reasoning
+
+If a diagram or map is supplied:
+
+```text
+IMAGE
+ ↓
+Detect objects
+ ↓
+Detect landmarks
+ ↓
+Detect arrows
+ ↓
+Detect compass
+ ↓
+Build coordinates
+ ↓
+Build spatial graph
+ ↓
+Reason
+```
+
+For example, if a diagram contains:
+
+```text
+      Park
+       ↑
+       |
+School → Hospital
+```
+
+the vision system can extract:
+
+```text
+Hospital east of School
+Park north of Hospital
+```
+
+Then the symbolic engine performs the rest.
+
+## 74. Spatial Reasoning and Other AI Modules
+
+Direction and distance reasoning can interact with:
+
+```text
+Time Reasoning
+Geometry
+Physics
+Planning
+Maps
+Memory
+Language
+Vision
+Robotics
+```
+
+For example:
+
+```text
+"Walk 5 km north for 1 hour."
+```
+
+combines:
+
+```text
+spatial:
+distance = 5 km
+direction = north
+
+temporal:
+duration = 1 hour
+```
+
+Then the physics module can derive:
+
+```text
+average speed = 5 km / 1 hour
+              = 5 km/h
+```
+
+This demonstrates how specialized reasoning modules can cooperate.

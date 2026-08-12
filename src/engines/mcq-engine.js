@@ -402,10 +402,20 @@ class MCQEngine {
         q.options.forEach((optText, index) => {
             const btn = document.createElement("div");
             btn.className = "option-item";
-            btn.innerHTML = `
-                <span>${optText}</span>
-                <span class="status-badge"></span>
-            `;
+
+            // Built with createElement/textContent rather than innerHTML —
+            // optText comes from mcq.json question data, which (per the
+            // README's contribution workflow) can originate from community
+            // submissions, so it must never be interpolated into HTML
+            // unescaped. Every other dynamic value in this file already
+            // goes through textContent; this one didn't, and is the one
+            // place a malicious option string (e.g. "<img src=x onerror=..>")
+            // could have executed as script.
+            const label = document.createElement("span");
+            label.textContent = optText;
+            const badge = document.createElement("span");
+            badge.className = "status-badge";
+            btn.append(label, badge);
 
             btn.addEventListener("click", () => this.handleSelect(index, q.correct));
             this.optionsStack.appendChild(btn);

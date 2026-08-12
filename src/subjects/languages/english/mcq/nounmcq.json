@@ -1,0 +1,34 @@
+{
+  "lessonId": "noun",
+  "title": "Noun - Types, Rules, and Usage",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of noun does 'Honesty' belong to?",
+      "options": ["Common Noun", "Material Noun", "Abstract Noun", "Collective Noun"],
+      "correct": 2,
+      "rationale": "'Honesty' represents a quality or feeling, making it an Abstract Noun."
+    },
+    {
+      "id": 2,
+      "question": "Words like 'News', 'Mathematics', and 'Physics' look plural but take:",
+      "options": ["A plural verb always", "A singular verb, since they are singular in meaning", "No verb at all", "Either singular or plural, interchangeably"],
+      "correct": 1,
+      "rationale": "Nouns like News, Innings, Mathematics, Physics, Economics, and Politics look plural but are singular in meaning and take a singular verb, e.g., 'The news was not correct.'"
+    },
+    {
+      "id": 3,
+      "question": "According to the Repeated Noun Rule, \"Village after village ___ ruined.\" Choose the correct verb.",
+      "options": ["were", "was", "are", "have been"],
+      "correct": 1,
+      "rationale": "When a noun is repeated after a preposition, both nouns and the verb must be singular — 'was' is correct."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is a Collective Noun?",
+      "options": ["Gold", "Team", "Kindness", "Ramayana"],
+      "correct": 1,
+      "rationale": "'Team' refers to a group, making it a Collective Noun, distinct from Material (Gold), Abstract (Kindness), or Proper (Ramayana) nouns."
+    }
+  ]
+}

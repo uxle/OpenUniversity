@@ -1,0 +1,34 @@
+{
+  "lessonId": "adjective",
+  "title": "Adjectives - Types and Degrees of Comparison",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of Adjective is 'Indian' in the phrase 'Indian seas'?",
+      "options": ["Quantitative Adjective", "Proper Adjective", "Demonstrative Adjective", "Numeral Adjective"],
+      "correct": 1,
+      "rationale": "'Indian' is a Proper Adjective — it is derived from the Proper Noun 'India'."
+    },
+    {
+      "id": 2,
+      "question": "What is the Comparative Degree of 'Rich'?",
+      "options": ["Rich", "More rich", "Richer", "Richest"],
+      "correct": 2,
+      "rationale": "The Comparative Degree of 'Rich' is 'Richer', followed by 'Richest' as the Superlative Degree."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following correctly avoids a double comparative?",
+      "options": ["He is more faster than his brother.", "He is faster than his brother.", "He is more wiser than her.", "He is more taller than me."],
+      "correct": 1,
+      "rationale": "Double comparatives like 'more faster' or 'more wiser' are incorrect — the rule states to never combine 'more' with an '-er' comparative."
+    },
+    {
+      "id": 4,
+      "question": "In the comparative structure \"He is wiser than any other boy in his class\", what must follow 'any other'?",
+      "options": ["A plural noun", "A singular noun", "A verb", "An adverb"],
+      "correct": 1,
+      "rationale": "The structure 'Than any other' is followed by a Singular Noun, as in 'any other boy'."
+    }
+  ]
+}

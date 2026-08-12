@@ -1,0 +1,278 @@
+# Directions and Distance Reasoning — Part 3 of 10
+
+[info title="Part 3 of 10"]
+Continuing from the previous part. back to Part 2 (`directions-and-distance-reasoning-part-2`) · continue to Part 4 (`directions-and-distance-reasoning-part-4`).
+[/info]
+
+## 20. Cancellation
+
+Opposite movements cancel.
+
+Example:
+
+```text
+10 km east
+6 km west
+```
+
+Net movement:
+
+```text
+10 - 6 = 4 km east
+```
+
+Vector form:
+
+```text
+(10,0) + (-6,0)
+= (4,0)
+```
+
+## 21. Long Route Example
+
+Input:
+
+> “A person walks 8 km north, 5 km east, 3 km south, and 2 km west.”
+
+Convert:
+
+```text
+N8 = (0,8)
+E5 = (5,0)
+S3 = (0,-3)
+W2 = (-2,0)
+```
+
+Sum:
+
+```text
+x = 5 - 2 = 3
+y = 8 - 3 = 5
+```
+
+Final displacement:
+
+```text
+(3,5)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Straight-line distance:
+
+```text
+√(3² + 5²)
+= √34
+≈ 5.83 km
+```
+
+Total path:
+
+```text
+8 + 5 + 3 + 2 = 18 km
+```
+
+## 22. Relative Turns
+
+Suppose a person starts facing north.
+
+```text
+initial heading = North
+```
+
+Turn right:
+
+```text
+East
+```
+
+Turn right again:
+
+```text
+South
+```
+
+Turn left:
+
+```text
+East
+```
+
+This is easiest to model with angles rather than many special cases.
+
+## 23. Turn Algorithm
+
+Using:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+then:
+
+```text
+right:
+heading = heading + 90°
+
+left:
+heading = heading - 90°
+```
+
+Normalize:
+
+```text
+heading = heading mod 360°
+```
+
+This works for arbitrary sequences of turns.
+
+## 24. Example With Turns
+
+Input:
+
+> “A person is facing north. They turn right and walk 5 km, turn left, and walk 3 km.”
+
+Initial:
+
+```text
+heading = North
+position = (0,0)
+```
+
+Turn right:
+
+```text
+heading = East
+```
+
+Walk:
+
+```text
+position = (5,0)
+```
+
+Turn left:
+
+```text
+heading = North
+```
+
+Walk:
+
+```text
+position = (5,3)
+```
+
+Final direction from start:
+
+```text
+North-East
+```
+
+Distance:
+
+```text
+√(5² + 3²)
+= √34
+≈ 5.83 km
+```
+
+## 25. Movement Direction vs Heading
+
+These are different concepts.
+
+A person may:
+
+```text
+face west
+```
+
+while:
+
+```text
+move north
+```
+
+Therefore:
+
+```text
+heading ≠ movement direction
+```
+
+unless the statement explicitly says the person moves forward.
+
+This distinction is critical for navigation reasoning.
+
+## 26. Forward Movement
+
+If an instruction says:
+
+> “Walk forward 5 km.”
+
+then the movement direction is the current heading.
+
+If:
+
+```text
+heading = East
+```
+
+then:
+
+```text
+forward 5 km = (+5,0)
+```
+
+If:
+
+```text
+heading = North
+```
+
+then:
+
+```text
+forward 5 km = (0,+5)
+```
+
+This is a state-dependent operation.
+
+## 27. Spatial Relationships
+
+Natural language can state relationships such as:
+
+```text
+A is north of B
+A is east of B
+A is left of B
+A is behind B
+A is 5 km from B
+```
+
+Represent these as structured relations:
+
+```text
+Relation {
+    subject
+    relation
+    reference
+    distance
+    frame
+}
+```
+
+Example:
+
+```text
+subject = School
+relation = EAST_OF
+reference = Hospital
+distance = unknown
+```

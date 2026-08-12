@@ -1,0 +1,286 @@
+# Counting of Figures — Part 6 of 12
+
+[info title="Part 6 of 12"]
+Continuing from the previous part. back to Part 5 (`counting-of-figures-part-5`) · continue to Part 7 (`counting-of-figures-part-7`).
+[/info]
+
+## 68. Counting Diagonals
+
+A polygon with \(n\) vertices has:
+
+```text
+\boxed{
+\frac{n(n-3)}2
+}
+```
+
+diagonals.
+
+Examples:
+
+Triangle:
+
+```text
+0
+```
+
+Quadrilateral:
+
+```text
+2
+```
+
+Pentagon:
+
+```text
+5
+```
+
+Hexagon:
+
+```text
+9
+```
+
+---
+
+## 69. Why Diagonal Counting Matters
+
+A complex diagram may ask:
+
+> How many triangles are formed by diagonals?
+
+Then you need to count:
+
+```text
+outer sides
++
+diagonals
++
+their intersections
+```
+
+---
+
+## 70. Star and Overlapping Figures
+
+For star diagrams, use:
+
+```text
+1. Count obvious outer shape
+2. Count small triangles
+3. Count inverted triangles
+4. Count composite triangles
+5. Count polygons
+6. Check intersections
+```
+
+Never assume the visible star is the only figure.
+
+---
+
+## 71. Example: Star Logic
+
+Conceptually:
+
+```text
+      /\
+     /  \
+  __/____\__
+  \  /\  /
+   \/  \/
+```
+
+Potential figures include:
+
+```text
+small triangles
+inverted triangles
+medium triangles
+outer triangles
+```
+
+Exact counting depends on the actual line arrangement.
+
+---
+
+## 72. Overlapping Circles
+
+For circles, distinguish:
+
+```text
+number of circles
+number of enclosed regions
+number of intersection points
+number of overlapping lenses
+```
+
+These are different quantities.
+
+---
+
+## 73. Circle Counting
+
+Example:
+
+```text
+  ○   ○
+```
+
+Number of circles:
+
+```text
+2
+```
+
+If they overlap:
+
+```text
+  (○○)
+```
+
+There are still:
+
+```text
+2
+```
+
+circles, even though the enclosed regions may be more.
+
+---
+
+## 74. Circle vs Region
+
+Important:
+
+> A region enclosed by two arcs is not automatically another circle.
+
+A circle requires a complete circular boundary.
+
+---
+
+## 75. Counting Arcs
+
+If a circle is divided into arcs:
+
+```text
+A────B
+ \  /
+  \/
+```
+
+Count arcs separately only if the question asks for them.
+
+Do not count every curved boundary as a circle.
+
+---
+
+## 76. Counting Angles
+
+For line arrangements, an angle may be formed by two rays sharing a vertex.
+
+If several rays meet:
+
+```text
+   A
+   |
+B--O--C
+   |
+   D
+```
+
+There are many possible angles at O.
+
+Number of angle pairs from \(n\) rays:
+
+```text
+{n\choose2}
+```
+
+subject to the question's convention about straight angles and equivalent angles.
+
+---
+
+## 77. Counting Intersections
+
+For \(n\) lines in general position:
+
+```text
+I={n\choose2}
+```
+
+But if lines are:
+
+- parallel
+- concurrent
+- overlapping
+
+the actual count is lower.
+
+Always inspect the diagram.
+
+---
+
+## 78. Counting Regions vs Figures
+
+Do not confuse:
+
+```text
+regions
+```
+
+with:
+
+```text
+figures
+```
+
+A 3×3 grid has:
+
+- 9 smallest square regions
+- 14 total squares
+- 36 total rectangles
+
+These are three different answers.
+
+---
+
+## 79. Important 3×3 Grid Values
+
+For a 3×3 cell grid:
+
+```text
+Small squares = 9
+All squares = 14
+All rectangles = 36
+```
+
+Rectangles excluding squares:
+
+```text
+36-14=22
+```
+
+---
+
+## 80. Important 4×4 Grid Values
+
+For a 4×4 cell grid:
+
+```text
+All squares = 30
+All rectangles =
+{5\choose2}²
+=
+10²
+=
+100
+```
+
+Rectangles excluding squares:
+
+```text
+100-30=70
+```
+
+---

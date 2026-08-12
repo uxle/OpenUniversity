@@ -1,0 +1,286 @@
+# Coding-Decoding — In-Depth Guide — Part 9 of 22
+
+[info title="Part 9 of 22"]
+Continuing from the previous part. back to Part 8 (`coding-decoding-detailed-part-8`) · continue to Part 10 (`coding-decoding-detailed-part-10`).
+[/info]
+
+## 69. ASCII-Style Coding
+
+Advanced questions may encode letters using character values.
+
+For standard ASCII:
+
+```text
+A = 65
+B = 66
+...
+Z = 90
+
+a = 97
+b = 98
+...
+z = 122
+```
+
+This is generally more relevant to programming-based puzzles than ordinary reasoning exams.
+
+---
+
+## 70. Binary Character Coding
+
+A custom rule may convert alphabet position to binary.
+
+Example:
+
+```text
+A = 1 = 00001
+B = 2 = 00010
+C = 3 = 00011
+```
+
+Therefore:
+
+```text
+CAT
+C = 00011
+A = 00001
+T = 10100
+```
+
+Combined:
+
+```text
+000110000110100
+```
+
+---
+
+## 71. Hexadecimal-Style Coding
+
+A custom coding system might map:
+
+```text
+A=1
+...
+Z=26
+```
+
+then convert to hexadecimal.
+
+Example:
+
+```text
+A = 1 = 01
+B = 2 = 02
+...
+Z = 26 = 1A
+```
+
+This is advanced and uncommon in normal reasoning exams.
+
+---
+
+## 72. Matrix Coding
+
+A matrix can assign coordinates to letters.
+
+Example:
+
+```text
+      1  2  3  4  5
+   +-----------------
+1  | A  B  C  D  E
+2  | F  G  H  I  J
+3  | K  L  M  N  O
+4  | P  Q  R  S  T
+5  | U  V  W  X  Y
+6  | Z
+```
+
+Then:
+
+```text
+A = 11
+B = 12
+C = 13
+...
+```
+
+The first digit is row, second digit is column.
+
+---
+
+## 73. Polybius-Style Matrix
+
+A common 5×5 form combines I/J:
+
+```text
+    1 2 3 4 5
+  +-----------
+1 | A B C D E
+2 | F G H I K
+3 | L M N O P
+4 | Q R S T U
+5 | V W X Y Z
+```
+
+Then:
+
+```text
+A = 11
+B = 12
+C = 13
+...
+```
+
+This is useful for understanding matrix coding systems.
+
+---
+
+## 74. Matrix Coding Example
+
+Using:
+
+```text
+A B C D E
+F G H I K
+L M N O P
+Q R S T U
+V W X Y Z
+```
+
+Encode:
+
+```text
+CAT
+```
+
+Coordinates:
+
+```text
+C = 13
+A = 11
+T = 44
+```
+
+Therefore:
+
+```text
+CAT → 13 11 44
+```
+
+---
+
+## 75. Row-Column Vector Model
+
+Represent each letter as:
+
+```text
+L = (row, column)
+```
+
+Example:
+
+```text
+C = (1,3)
+T = (4,4)
+```
+
+So:
+
+```text
+CAT
+=
+(1,3)
+(1,1)
+(4,4)
+```
+
+This is a clean mathematical representation.
+
+---
+
+## 76. Vector Representation of Alphabet Coding
+
+Represent alphabet letters as one-dimensional vectors:
+
+```text
+A = [1]
+B = [2]
+C = [3]
+...
+Z = [26]
+```
+
+A word becomes a vector:
+
+```text
+CAT = [3, 1, 20]
+```
+
+A coding transformation may be:
+
+```text
+Coded = Original + ShiftVector
+```
+
+Example:
+
+```text
+Original = [3,1,20]
+Shift    = [1,2,3]
+
+Coded    = [4,3,23]
+```
+
+Therefore:
+
+```text
+CAT → D C W
+```
+
+---
+
+## 77. Transformation Vector
+
+For:
+
+```text
+CAT → DBW
+```
+
+calculate differences:
+
+```text
+C → D = +1
+A → B = +1
+T → W = +3
+```
+
+So:
+
+```text
+Shift vector = [1,1,3]
+```
+
+If another word has the same length, apply:
+
+```text
+coded = original + [1,1,3]
+```
+
+---
+
+## 78. Difference Table
+
+A very useful solving technique:
+
+| Position | Original | Code | Difference |
+|---:|---|---|---:|
+| 1 | C | D | +1 |
+| 2 | A | B | +1 |
+| 3 | T | W | +3 |
+
+This immediately exposes many hidden patterns.
+
+---

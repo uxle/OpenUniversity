@@ -1,0 +1,273 @@
+# Coding-Decoding — In-Depth Guide — Part 18 of 22
+
+[info title="Part 18 of 22"]
+Continuing from the previous part. back to Part 17 (`coding-decoding-detailed-part-17`) · continue to Part 19 (`coding-decoding-detailed-part-19`).
+[/info]
+
+## 154. Solved Example 16 — Shift Vector
+
+Given:
+
+```text
+CAT → DBW
+```
+
+Difference:
+
+```text
+C→D = +1
+A→B = +1
+T→W = +3
+```
+
+Vector:
+
+```text
+[+1,+1,+3]
+```
+
+Apply to:
+
+```text
+DOG
+```
+
+```text
+D+1 = E
+O+1 = P
+G+3 = J
+```
+
+Answer:
+
+```text
+EPJ
+```
+
+---
+
+## 155. Solved Example 17 — Alternating Shift
+
+Rule:
+
+```text
+odd positions +1
+even positions -1
+```
+
+Encode:
+
+```text
+ABCDE
+```
+
+```text
+A→B
+B→A
+C→D
+D→C
+E→F
+```
+
+Answer:
+
+```text
+BADCF
+```
+
+---
+
+## 156. Solved Example 18 — Reverse + Shift
+
+Rule:
+
+```text
+Reverse word
+then shift every letter +1
+```
+
+Encode:
+
+```text
+DOG
+```
+
+Reverse:
+
+```text
+GOD
+```
+
+Shift:
+
+```text
+G→H
+O→P
+D→E
+```
+
+Answer:
+
+```text
+HPE
+```
+
+---
+
+## 157. Solved Example 19 — Length-Based Shift
+
+Rule:
+
+```text
+Shift every letter by word length.
+```
+
+Encode:
+
+```text
+DOG
+```
+
+Length:
+
+```text
+3
+```
+
+Shift:
+
+```text
+D→G
+O→R
+G→J
+```
+
+Answer:
+
+```text
+GRJ
+```
+
+---
+
+## 158. Solved Example 20 — Vowel-Count Shift
+
+Rule:
+
+```text
+Shift every letter by the number of vowels.
+```
+
+Word:
+
+```text
+DOG
+```
+
+Vowels:
+
+```text
+O = 1
+```
+
+Shift +1:
+
+```text
+D→E
+O→P
+G→H
+```
+
+Answer:
+
+```text
+EPH
+```
+
+---
+
+## 159. Advanced Solved Example — Multi-Stage
+
+Suppose:
+
+```text
+CAT → GZX
+```
+
+Try mirror:
+
+```text
+CAT
+↓
+XZG
+```
+
+Then +1:
+
+```text
+YAH
+```
+
+Not GZX.
+
+Try reverse:
+
+```text
+TAC
+```
+
+Mirror:
+
+```text
+GZX
+```
+
+Therefore:
+
+```text
+CAT
+↓ reverse
+TAC
+↓ mirror
+GZX
+```
+
+Rule identified.
+
+---
+
+## 160. Coding-Decoding as a Graph
+
+A useful conceptual model:
+
+```text
+Original letters
+      |
+      v
+┌─────────────┐
+│ Transformation│
+└─────────────┘
+      |
+      v
+Coded letters
+```
+
+For complex rules:
+
+```text
+Input
+ ↓
+Node 1: Reverse
+ ↓
+Node 2: Mirror
+ ↓
+Node 3: Shift
+ ↓
+Node 4: Number conversion
+ ↓
+Output
+```
+
+This is useful for designing automated reasoning systems.
+
+---

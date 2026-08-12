@@ -1,0 +1,34 @@
+{
+  "lessonId": "prepositions",
+  "title": "Prepositions Rules and Fixed Combinations",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A Preposition is always followed by which case of pronoun?",
+      "options": ["Subjective Case", "Objective Case", "Possessive Case", "Reflexive Case"],
+      "correct": 1,
+      "rationale": "A Preposition is always followed by an Objective Case Pronoun (me, him, her, them, us), e.g., 'Look at me.'"
+    },
+    {
+      "id": 2,
+      "question": "'Between' is used for how many persons or items, compared to 'Among'?",
+      "options": ["Between = more than 2; Among = exactly 2", "Between = exactly 2; Among = more than 2", "Both are used only for exactly 2", "Both are used only for more than 2"],
+      "correct": 1,
+      "rationale": "'Between' is used for 2 persons or items, while 'Among' is used for more than 2."
+    },
+    {
+      "id": 3,
+      "question": "Which preposition indicates movement entering inside or transformation?",
+      "options": ["In", "On", "Into", "At"],
+      "correct": 2,
+      "rationale": "'Into' indicates movement entering inside or transformation, e.g., 'fell into the river' or 'translated into English'."
+    },
+    {
+      "id": 4,
+      "question": "Which fixed combination correctly uses 'Of'?",
+      "options": ["Aware to", "Aware of", "Aware in", "Aware at"],
+      "correct": 1,
+      "rationale": "'Aware of' is a fixed combination with 'Of', along with Beware of, Consist of, Proud of, and Fond of."
+    }
+  ]
+}

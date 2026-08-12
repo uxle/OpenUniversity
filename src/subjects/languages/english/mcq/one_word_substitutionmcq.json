@@ -1,0 +1,34 @@
+{
+  "lessonId": "one_word_substitution",
+  "title": "One Word Substitutions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "\"One who can use either hand with ease\" is called:",
+      "options": ["Ambidextrous", "Ascetic", "Bohemian", "Fastidious"],
+      "correct": 0,
+      "rationale": "'Ambidextrous' (दोनों हाथों से काम करने में कुशल) means one who can use either hand with ease."
+    },
+    {
+      "id": 2,
+      "question": "A person appointed by two parties to settle a dispute is called:",
+      "options": ["Fugitive", "Apostate", "Arbitrator", "Iconoclast"],
+      "correct": 2,
+      "rationale": "'Arbitrator' (मध्यस्थ / बिचौलिया) is a person appointed by two parties to settle a dispute."
+    },
+    {
+      "id": 3,
+      "question": "\"One who leaves his country to settle in another\" is called:",
+      "options": ["Immigrant", "Emigrant", "Fugitive", "Convalescent"],
+      "correct": 1,
+      "rationale": "'Emigrant' (देशत्यागी / प्रवासी) is one who leaves his own country to settle in another; an 'Immigrant' is one who comes into a country to settle."
+    },
+    {
+      "id": 4,
+      "question": "\"A husband ruled by his wife\" is described as:",
+      "options": ["Henpecked", "Gourmet", "Fatalist", "Sadist"],
+      "correct": 0,
+      "rationale": "'Henpecked' (जोरू का गुलाम) describes a husband ruled by his wife."
+    }
+  ]
+}

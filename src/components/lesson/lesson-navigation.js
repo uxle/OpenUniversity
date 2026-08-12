@@ -4,7 +4,11 @@ import { getAdjacentLessons } from "../../engines/navigation-engine.js";
 
 export async function createLessonNavigation(subjectId, subSubjectId, lessonId) {
   const { previous, next } = await getAdjacentLessons(subjectId, subSubjectId, lessonId);
-  const base = `#/subjects/${subjectId}/${subSubjectId}/lessons`;
+  // Flat subjects (no subSubjectId — see app/constants.js's ROUTES comment)
+  // link through SUBJECT_LESSON instead of LESSON, omitting that segment.
+  const base = subSubjectId
+    ? `#/subjects/${subjectId}/${subSubjectId}/lessons`
+    : `#/subjects/${subjectId}/lessons`;
 
   function link(id, label) {
     if (!id) return createEl("span");

@@ -1,0 +1,291 @@
+# Classification / Odd One Out — In-Depth Guide — Part 10 of 16
+
+[info title="Part 10 of 16"]
+Continuing from the previous part. back to Part 9 (`classification-detailed-part-9`) · continue to Part 11 (`classification-detailed-part-11`).
+[/info]
+
+## 132. Nested Shapes
+
+Example pattern:
+
+```text
+Circle inside square
+Circle inside triangle
+Circle inside pentagon
+Triangle inside circle
+```
+
+The last may differ because the inner/outer relationship is reversed.
+
+---
+
+## 133. Symmetry Method
+
+If:
+
+```text
+Figure A → 1 axis
+Figure B → 1 axis
+Figure C → 1 axis
+Figure D → 2 axes
+```
+
+D may be the outlier.
+
+---
+
+## 134. Classification Using Graphs
+
+For complex figures, treat each object as a graph:
+
+```text
+Nodes = shapes/elements
+Edges = connections
+```
+
+Example:
+
+```text
+A: 3 nodes, 2 connections
+B: 3 nodes, 2 connections
+C: 3 nodes, 2 connections
+D: 4 nodes, 3 connections
+```
+
+D differs structurally.
+
+---
+
+## 135. Classification and Invariants
+
+An **invariant** is a property that remains unchanged under a transformation.
+
+For example, rotation preserves:
+
+- number of sides
+- number of dots
+- connectivity
+
+So if three figures are rotations of each other, they share these invariants.
+
+The odd figure violates an invariant.
+
+---
+
+## 136. Invariant Diagram
+
+```text
+Figure A ─rotation─> Figure B
+      │
+      └── same number of elements
+
+Figure C ─rotation─> Figure D
+
+Odd figure:
+different invariant
+```
+
+---
+
+## 137. Advanced Classification Strategy
+
+For difficult questions, create a property table.
+
+Example:
+
+| Item | Even | Prime | Square | 3× | 5× |
+|---:|:---:|:---:|:---:|:---:|:---:|
+| 4 | ✓ | ✗ | ✓ | ✗ | ✗ |
+| 9 | ✗ | ✗ | ✓ | ✓ | ✗ |
+| 16 | ✓ | ✗ | ✓ | ✗ | ✗ |
+| 25 | ✗ | ✗ | ✓ | ✗ | ✓ |
+| 27 | ✗ | ✗ | ✗ | ✓ | ✗ |
+
+The dominant shared property is "perfect square" for the first four.
+
+27 is the outlier.
+
+---
+
+## 138. Outlier Score
+
+Conceptually, define:
+
+```text
+O(x)=1-\frac{\text{number of shared properties}}{\text{properties tested}}
+```
+
+The item with the highest meaningful outlier score is a candidate.
+
+This is a reasoning model, not an exam formula.
+
+---
+
+## 139. Cluster Model
+
+Suppose:
+
+```text
+A = animal + mammal
+B = animal + mammal
+C = animal + mammal
+D = plant + living
+```
+
+Three form one cluster.
+
+```text
+       A
+      / \
+     B---C
+
+          D
+```
+
+D is outside the cluster.
+
+---
+
+## 140. Hierarchical Classification
+
+Categories can be nested:
+
+```text
+Living
+├── Plants
+│   ├── Trees
+│   └── Flowers
+└── Animals
+    ├── Mammals
+    └── Birds
+```
+
+If three items belong to one branch and one to another, the branch difference may be the answer.
+
+---
+
+## 141. Category-Level Matching
+
+Important rule:
+
+> Compare items at the same level.
+
+Example:
+
+```text
+India : Country
+Delhi : City
+```
+
+These are different category levels.
+
+For classification, a better comparison is:
+
+```text
+India
+China
+Japan
+France
+```
+
+All are countries.
+
+---
+
+## 142. Classification by Relation
+
+Sometimes the items themselves are pairs:
+
+```text
+Bird : Nest
+Dog : Kennel
+Lion : Den
+Fish : Water
+```
+
+The first three are:
+
+```text
+Animal → Shelter/Home
+```
+
+Fish → Water is:
+
+```text
+Animal → Environment
+```
+
+Depending on the question, Fish may be the odd pair.
+
+---
+
+## 143. Pair Classification
+
+For paired items, do not classify each word separately.
+
+Classify the **relationship**.
+
+```text
+A : B
+C : D
+E : F
+G : H
+```
+
+Find the pair whose internal relation differs.
+
+---
+
+## 144. Pair-Relation Vector
+
+Represent:
+
+```text
+P=(X,Y,R)
+```
+
+where \(R\) is the relationship.
+
+Example:
+
+```text
+Bird : Nest
+R = lives in
+```
+
+```text
+Pen : Write
+R = used for
+```
+
+If three pairs have the same relation type and one does not, the different pair is the outlier.
+
+---
+
+## 145. Common Pair Relationships
+
+```text
+Person → Workplace
+Animal → Home
+Tool → Function
+Part → Whole
+Cause → Effect
+Country → Capital
+Object → Material
+Word → Synonym
+Number → Square
+Letter → Shift
+```
+
+---
+
+## 146. Classification vs Analogy
+
+| Classification | Analogy |
+|---|---|
+| Find the different item | Find missing relationship |
+| A, B, C, D | A:B :: C:? |
+| Grouping problem | Transformation/relation problem |
+| Focus on shared property | Focus on same relationship |
+
+---

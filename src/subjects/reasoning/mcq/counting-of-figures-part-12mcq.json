@@ -1,0 +1,34 @@
+{
+  "lessonId": "counting-of-figures-part-12",
+  "title": "Counting of Figures",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a figure-counting question, what does 'counting of figures' ask you to determine?",
+      "options": ["The number of colors used in the diagram", "The total number of valid geometrical figures hidden inside a larger diagram", "Only the number of triangles, regardless of other shapes", "The perimeter of the largest shape"],
+      "correct": 1,
+      "rationale": "Figure-counting questions ask for the total count of every valid figure (of a given type, or of all types) contained within a larger composite diagram, not just a single shape category or a measurement."
+    },
+    {
+      "id": 2,
+      "question": "For counting triangles formed by n non-parallel, non-concurrent lines through common intersection points, why is a systematic combinatorial count more reliable than counting by eye?",
+      "options": ["Combinatorial counting is always faster to write out", "Complex figures often contain overlapping figures made of combined smaller ones, which are easy to miss by visual scanning alone", "Visual counting is never allowed in exams", "Only combinatorial counts are considered valid answers"],
+      "correct": 1,
+      "rationale": "Larger composite figures often include figures formed by combining smaller adjacent regions, which are easy to overlook by eye — a systematic, formula- or pattern-based count catches these combined figures reliably."
+    },
+    {
+      "id": 3,
+      "question": "What is a common systematic strategy for counting figures of one specific type (e.g., only triangles) within a complex diagram?",
+      "options": ["Count only the outermost boundary shape", "Break the figure into its smallest regions, then systematically count single-region figures, then two-region combinations, then three-region combinations, and so on", "Assume the answer equals the number of intersection points", "Multiply the number of lines by the number of colors used"],
+      "correct": 1,
+      "rationale": "A reliable approach counts figures level by level — single smallest regions first, then combinations of two adjacent regions, then three, and so on — so no combined figure is missed."
+    },
+    {
+      "id": 4,
+      "question": "Why is it useful to build a 'mental model' or systematic labeling of a figure's regions before counting, rather than scanning the whole diagram at once?",
+      "options": ["It isn't useful — direct scanning is always faster and equally accurate", "Labeling regions lets you track exactly which combinations you have already counted, avoiding both missed and double-counted figures", "Labeling is only useful for counting squares, not triangles", "It replaces the need to look at the diagram at all"],
+      "correct": 1,
+      "rationale": "Without a systematic labeling or region-tracking approach, it's easy to either miss a valid combined figure or count the same figure twice — a mental model or explicit labeling keeps the count accurate."
+    }
+  ]
+}

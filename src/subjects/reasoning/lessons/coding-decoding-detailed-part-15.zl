@@ -1,0 +1,283 @@
+# Coding-Decoding — In-Depth Guide — Part 15 of 22
+
+[info title="Part 15 of 22"]
+Continuing from the previous part. back to Part 14 (`coding-decoding-detailed-part-14`) · continue to Part 16 (`coding-decoding-detailed-part-16`).
+[/info]
+
+## 126. Inverse of Reverse Alphabet
+
+If:
+
+```text
+A ↔ Z
+B ↔ Y
+...
+```
+
+the operation is its own inverse.
+
+Therefore:
+
+```text
+Encode twice
+= original
+```
+
+Example:
+
+```text
+CAT
+↓ mirror
+XZG
+↓ mirror
+CAT
+```
+
+This is called an involution.
+
+---
+
+## 127. Inverse of Reversal
+
+Word reversal is also self-inverse:
+
+```text
+APPLE
+↓
+ELPPA
+↓
+APPLE
+```
+
+So:
+
+```text
+reverse(reverse(word)) = word
+```
+
+---
+
+## 128. Inverse of Shift
+
+If encoding is:
+
+```text
++5
+```
+
+decoding is:
+
+```text
+-5
+```
+
+Example:
+
+```text
+A → F
+```
+
+Decode:
+
+```text
+F → A
+```
+
+---
+
+## 129. Multi-Step Inverse
+
+Suppose:
+
+```text
+Encode:
+reverse → mirror → +2
+```
+
+To decode, reverse the operations:
+
+```text
+Decode:
+-2 → mirror → reverse
+```
+
+This is a fundamental principle.
+
+---
+
+## 130. Composition of Coding Rules
+
+If:
+
+```text
+f = reverse
+g = +1
+```
+
+then:
+
+```text
+Encode = g(f(x))
+```
+
+Meaning:
+
+```text
+x
+↓
+reverse
+↓
++1
+↓
+code
+```
+
+The order matters.
+
+Generally:
+
+```text
+g(f(x)) ≠ f(g(x))
+```
+
+---
+
+## 131. Why Order Matters
+
+Example:
+
+```text
+CAT
+```
+
+Reverse first:
+
+```text
+TAC
+```
+
+then +1:
+
+```text
+UBD
+```
+
+But +1 first:
+
+```text
+DBU
+```
+
+then reverse:
+
+```text
+UBD
+```
+
+In this specific case the result happens to match because both operations commute in this setup, but many transformations do not.
+
+For example, position-dependent transformations usually do not commute.
+
+Always follow the demonstrated order.
+
+---
+
+## 132. Coding with ASCII / Unicode
+
+In programming-oriented puzzles, characters can be represented by code points.
+
+Example ASCII:
+
+```text
+'A' = 65
+'B' = 66
+'C' = 67
+```
+
+A transformation:
+
+```text
+code = ASCII + 3
+```
+
+would give:
+
+```text
+A → D
+```
+
+This is different from ordinary reasoning's A=1 system.
+
+---
+
+## 133. Important Warning: A=1 vs ASCII
+
+Do not mix:
+
+```text
+A = 1
+```
+
+with:
+
+```text
+A = 65
+```
+
+unless the question explicitly requires it.
+
+For standard reasoning:
+
+```text
+A=1 ... Z=26
+```
+
+is the default.
+
+---
+
+## 134. Common Exam Traps
+
+### Trap 1 — Assuming +1
+
+Not every:
+
+```text
+ABC → BCD
+```
+
+question uses +1 if other examples contradict it.
+
+### Trap 2 — Forgetting Z wrap
+
+```text
+Z+1 = A
+```
+
+### Trap 3 — Confusing mirror and shift
+
+```text
+A→Z
+```
+
+is mirror, not -1.
+
+### Trap 4 — Reversing the decoding direction
+
+If:
+
+```text
+A→D
+```
+
+then decoding D gives A, not E.
+
+### Trap 5 — Ignoring word length
+
+The rule may depend on length.
+
+### Trap 6 — Overcomplicating
+
+Always test simple rules first.
+
+---

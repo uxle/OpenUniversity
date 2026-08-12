@@ -1,0 +1,292 @@
+# Directions and Distance Reasoning — Part 7 of 10
+
+[info title="Part 7 of 10"]
+Continuing from the previous part. back to Part 6 (`directions-and-distance-reasoning-part-6`) · continue to Part 8 (`directions-and-distance-reasoning-part-8`).
+[/info]
+
+## 53. 3D Direction Reasoning
+
+The same concept can be extended from 2D to 3D.
+
+Represent:
+
+```text
+(x, y, z)
+```
+
+For example:
+
+```text
+5 m north
+3 m east
+2 m upward
+```
+
+becomes:
+
+```text
+(3,5,2)
+```
+
+Distance:
+
+```text
+d = √(3² + 5² + 2²)
+  = √38
+```
+
+This is useful for:
+
+```text
+robotics
+games
+3D environments
+drones
+architecture
+physics
+```
+
+## 54. Coordinate Transformations
+
+A complex AI may use multiple coordinate frames:
+
+```text
+world frame
+agent frame
+camera frame
+screen frame
+```
+
+The system must explicitly know which frame an observation belongs to.
+
+Conceptually:
+
+```text
+world coordinates
+      ↓
+agent coordinates
+      ↓
+camera coordinates
+      ↓
+screen coordinates
+```
+
+This is essential for robotics and computer vision.
+
+## 55. Spatial Proof Trace
+
+For reliability, retain the derivation.
+
+Example:
+
+```text
+A = (0,0)
+
+B = A + (0,3)
+  = (0,3)
+
+C = B + (4,0)
+  = (4,3)
+
+C - A = (4,3)
+
+distance = √(4² + 3²)
+         = 5
+
+direction = NE
+```
+
+The AI can then explain exactly how it reached the answer.
+
+## 56. Verification
+
+Spatial calculations can be verified using reverse operations.
+
+If:
+
+```text
+A + displacement = B
+```
+
+then:
+
+```text
+B - displacement = A
+```
+
+Example:
+
+```text
+A = (2,3)
+displacement = (5,-1)
+
+B = (7,2)
+```
+
+Verify:
+
+```text
+B - (5,-1)
+= (7-5, 2-(-1))
+= (2,3)
+```
+
+The result is consistent.
+
+## 57. Triangle Inequality Check
+
+For any real route:
+
+```text
+straight-line distance <= path distance
+```
+
+For example:
+
+```text
+path distance = 16 km
+straight-line distance = 8.94 km
+```
+
+is valid.
+
+If a system produces:
+
+```text
+straight-line distance = 20 km
+path distance = 16 km
+```
+
+then a calculation or interpretation error exists.
+
+This is an excellent sanity check.
+
+## 58. Complete Example
+
+Input:
+
+> “A person starts at a point, walks 6 km north, then 8 km east, then 2 km south. How far are they from the starting point and in which direction?”
+
+### Step 1 — Parse
+
+```text
+6 km north
+8 km east
+2 km south
+```
+
+### Step 2 — Convert
+
+```text
+N6 = (0,6)
+E8 = (8,0)
+S2 = (0,-2)
+```
+
+### Step 3 — Add
+
+```text
+(0,6) + (8,0) + (0,-2)
+= (8,4)
+```
+
+### Step 4 — Distance
+
+```text
+d = √(8² + 4²)
+  = √80
+  = 4√5
+  ≈ 8.94 km
+```
+
+### Step 5 — Direction
+
+Both coordinates are positive:
+
+```text
+x > 0
+y > 0
+```
+
+Therefore:
+
+```text
+North-East
+```
+
+### Step 6 — Path Distance
+
+```text
+6 + 8 + 2 = 16 km
+```
+
+Final:
+
+```text
+Straight-line distance ≈ 8.94 km
+Direction = North-East
+Total distance traveled = 16 km
+```
+
+## 59. Example With Turns
+
+Input:
+
+> “A person faces east. They walk 4 km, turn left and walk 3 km, then turn right and walk 2 km.”
+
+Initial:
+
+```text
+position = (0,0)
+heading = East
+```
+
+Walk:
+
+```text
+position = (4,0)
+```
+
+Turn left:
+
+```text
+heading = North
+```
+
+Walk:
+
+```text
+position = (4,3)
+```
+
+Turn right:
+
+```text
+heading = East
+```
+
+Walk:
+
+```text
+position = (6,3)
+```
+
+Final displacement:
+
+```text
+(6,3)
+```
+
+Distance:
+
+```text
+√(6² + 3²)
+= √45
+≈ 6.71 km
+```
+
+Direction:
+
+```text
+North-East
+```

@@ -1,0 +1,34 @@
+{
+  "lessonId": "directions-and-distance-reasoning",
+  "title": "Directions and Distance Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the compass coordinate model used in this lesson, if North = +Y and East = +X, walking 5 km north then 3 km east ends at which final position?",
+      "options": ["(5, 3)", "(3, 5)", "(-3, -5)", "(0, 8)"],
+      "correct": 1,
+      "rationale": "East contributes to the X-coordinate (3) and North contributes to the Y-coordinate (5), giving a final position of (3, 5)."
+    },
+    {
+      "id": 2,
+      "question": "What is the Euclidean distance between points A = (0,0) and B = (3,4)?",
+      "options": ["5", "7", "12", "25"],
+      "correct": 0,
+      "rationale": "Euclidean distance d = √((x2−x1)² + (y2−y1)²) = √(3² + 4²) = √25 = 5."
+    },
+    {
+      "id": 3,
+      "question": "For the same points A = (0,0) and B = (3,4), what is the Manhattan distance?",
+      "options": ["5", "7", "3", "4"],
+      "correct": 1,
+      "rationale": "Manhattan distance d = |x2−x1| + |y2−y1| = 3 + 4 = 7, used when movement is restricted to horizontal and vertical paths only."
+    },
+    {
+      "id": 4,
+      "question": "What is the key principle stressed for solving direction/distance problems reliably?",
+      "options": ["Guess the answer from language patterns", "Convert natural-language directions into a structured spatial model before calculating", "Always use Manhattan distance regardless of the movement type", "Ignore direction and only calculate total distance travelled"],
+      "correct": 1,
+      "rationale": "The lesson's central principle is to convert natural-language directions into a structured spatial model (coordinates/vectors) before performing any distance or direction calculation."
+    }
+  ]
+}

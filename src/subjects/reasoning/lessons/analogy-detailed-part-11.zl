@@ -1,0 +1,291 @@
+# Analogy — In-Depth Guide — Part 11 of 12
+
+[info title="Part 11 of 12"]
+Continuing from the previous part. back to Part 10 (`analogy-detailed-part-10`) · continue to Part 12 (`analogy-detailed-part-12`).
+[/info]
+
+## 130. Master Formula
+
+For conceptual analogy:
+
+```text
+R(A)=B
+```
+
+Therefore:
+
+```text
+R(C)=D
+```
+
+For numerical analogy:
+
+```text
+f(A)=B
+```
+
+Therefore:
+
+```text
+\boxed{D=f(C)}
+```
+
+For letter analogy:
+
+```text
+P(A)\xrightarrow{T}P(B)
+```
+
+Apply the same transformation:
+
+```text
+P(C)\xrightarrow{T}P(D)
+```
+
+---
+
+## 131. Final Exam Cheat Sheet
+
+```text
+ANALOGY
+│
+├── WORD
+│   ├── Synonym
+│   ├── Antonym
+│   ├── Cause → Effect
+│   ├── Object → Function
+│   ├── Worker → Workplace
+│   ├── Worker → Tool
+│   ├── Animal → Home
+│   ├── Animal → Young
+│   ├── Part → Whole
+│   ├── Material → Product
+│   └── Category
+│
+├── NUMBER
+│   ├── +
+│   ├── -
+│   ├── ×
+│   ├── ÷
+│   ├── Square
+│   ├── Cube
+│   ├── Root
+│   ├── Digit sum
+│   ├── Digit product
+│   └── Mixed formula
+│
+└── LETTER
+    ├── Position
+    ├── Shift
+    ├── Reverse
+    ├── Rearrangement
+    ├── Alternate shift
+    └── Numeric operation
+```
+
+---
+
+## 132. Practice Set — Level 1
+
+Find the missing item.
+
+1. Bird : Nest :: Dog : ?
+2. Pen : Write :: Knife : ?
+3. Doctor : Hospital :: Teacher : ?
+4. Cow : Calf :: Dog : ?
+5. King : Queen :: Man : ?
+6. Wheel : Car :: Page : ?
+7. Hot : Cold :: Day : ?
+8. Eye : See :: Ear : ?
+9. Gold : Jewellery :: Wood : ?
+10. Book : Library :: Animal : ?
+
+---
+
+## 133. Practice Set — Level 2
+
+11. 5 : 25 :: 8 : ?
+12. 3 : 27 :: 4 : ?
+13. 25 : 5 :: 81 : ?
+14. 23 : 6 :: 42 : ?
+15. 24 : 42 :: 31 : ?
+16. A : D :: C : ?
+17. C : F :: H : ?
+18. AB : BC :: DE : ?
+19. AZ : ZA :: BY : ?
+20. CAT : DBU :: DOG : ?
+
+---
+
+## 134. Practice Set — Level 3
+
+21. 4 : 20 :: 7 : ?
+22. 5 : 26 :: 9 : ?
+23. 123 : 6 :: 432 : ?
+24. 123 : 6 :: 234 : ?
+25. 6 : 42 :: 8 : ?
+26. 3 : 14 :: 7 : ?
+27. A : Z :: D : ?
+28. BD : DF :: FH : ?
+29. Book : Reading :: Food : ?
+30. Fire : Smoke :: Exercise : ?
+
+---
+
+## 135. Practice Set — Level 4
+
+31. Thermometer : Temperature :: Barometer : ?
+32. Carpenter : Saw :: Tailor : ?
+33. Bird : Nest :: Lion : ?
+34. Ganga : Gangotri :: Yamuna : ?
+35. India : Rupee :: Japan : ?
+36. India : New Delhi :: France : ?
+37. Heart : Circulation :: Lungs : ?
+38. Fish : School :: Lion : ?
+39. Dog : Bark :: Horse : ?
+40. Rose : Flower :: Mango : ?
+
+---
+
+## 136. Practice Answers
+
+### Level 1
+
+1. Kennel
+2. Cut
+3. School
+4. Puppy
+5. Woman
+6. Book
+7. Night
+8. Hear
+9. Furniture
+10. Zoo
+
+### Level 2
+
+11. 64
+12. 64
+13. 9
+14. 8
+15. 13
+16. F
+17. K
+18. EF
+19. YB
+20. EPH
+
+### Level 3
+
+21. 56
+22. 82
+23. 9
+24. 24
+25. 72
+26. 54
+27. W
+28. HJ
+29. Eating
+30. Fitness
+
+### Level 4
+
+31. Pressure
+32. Needle
+33. Den
+34. Yamunotri
+35. Yen
+36. Paris
+37. Respiration
+38. Pride
+39. Neigh
+40. Fruit
+
+---
+
+## 137. High-Level Practice — No Immediate Answers
+
+41. 7 : 50 :: 9 : ?
+42. 4 : 65 :: 6 : ?
+43. 12 : 144 :: 15 : ?
+44. 125 : 5 :: 216 : ?
+45. 234 : 24 :: 321 : ?
+46. ABC : BCD :: XYZ : ?
+47. ACE : BDF :: MOQ : ?
+48. CAT : TAC :: DOG : ?
+49. Teacher : School :: Doctor : ?
+50. Author : Book :: Painter : ?
+
+---
+
+## 138. Answer Verification for High-Level Practice
+
+41. 74 if rule is \(x^2+1\)
+
+42. 217 if rule is \(x^3+1\)
+
+43. 225
+
+44. 6
+
+45. 6
+
+46. YZA
+
+47. NPR
+
+48. GOD
+
+49. Hospital
+
+50. Painting
+
+> **Important:** Numerical analogy questions can be underdetermined if only one pair is provided. In an actual exam, use the answer choices and standard pattern conventions to identify the intended rule.
+
+---
+
+## 139. Analogy Mind Map
+
+```text
+                         ANALOGY
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+        WORD              NUMBER            LETTER
+          │                 │                 │
+     ┌────┼────┐       ┌────┼────┐       ┌────┼────┐
+     │    │    │       │    │    │       │    │    │
+   Meaning Function  + - × ÷ Power   Shift Reverse
+     │       │         │      │         │
+ Synonym   Tool       Ratio  Square   Position
+ Antonym   Place      Root   Cube     Rearrange
+ Cause     Part       Digits Mixed    Alternate
+ Effect    Whole
+```
+
+---
+
+## 140. Final Rules to Memorize
+
+1. **Find the relationship, not just the association.**
+2. **Direction matters.**
+3. **Use the same relation for both pairs.**
+4. **Prefer the simplest valid rule.**
+5. **Check category level and specificity.**
+6. **For numbers, test basic operations first.**
+7. **For letters, convert to positions when needed.**
+8. **Use options as evidence, not as a substitute for reasoning.**
+9. **Avoid overcomplicated formulas.**
+10. **If a question is ambiguous, use context and options.**
+
+---
+
+## 141. One-Line Memory Formula
+
+> **ANALOGY = Identify A→B relationship + Apply the same relationship to C→?**
+
+```text
+\boxed{A:B::C:D\quad\Rightarrow\quad R(A)=B,\ R(C)=D}
+```
+
+---

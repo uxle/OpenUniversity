@@ -23,10 +23,13 @@ export async function createRelatedLessons(subjectId, subSubjectId, currentLesso
   }));
   return createEl("div", { class: "ou-stack" }, [
     createEl("h3", {}, ["Related lessons"]),
-    createEl("ul", { role: "list" }, related.map(({ id, title }) =>
-      createEl("li", {}, [
-        createEl("a", { href: `#/subjects/${subjectId}/${subSubjectId}/lessons/${id}`, class: "ou-link" }, [title]),
-      ])
-    )),
+    createEl("ul", { role: "list" }, related.map(({ id, title }) => {
+      const href = subSubjectId
+        ? `#/subjects/${subjectId}/${subSubjectId}/lessons/${id}`
+        : `#/subjects/${subjectId}/lessons/${id}`;
+      return createEl("li", {}, [
+        createEl("a", { href, class: "ou-link" }, [title]),
+      ]);
+    })),
   ]);
 }

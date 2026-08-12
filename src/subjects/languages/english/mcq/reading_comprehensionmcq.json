@@ -1,0 +1,34 @@
+{
+  "lessonId": "reading_comprehension",
+  "title": "Reading Comprehension & Passage Strategy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the lesson's strategy, where is the main idea of a passage usually found?",
+      "options": ["Only in the middle paragraph", "Strongly stated or implied in the first or last paragraph", "Never explicitly stated anywhere", "Only in the passage title"],
+      "correct": 1,
+      "rationale": "The main idea is usually stated or strongly implied in the first or last paragraph, while other content supports it."
+    },
+    {
+      "id": 2,
+      "question": "When answering comprehension questions, your answer should be based on:",
+      "options": ["Your own outside knowledge of the topic", "Only what the passage itself states", "General assumptions about the subject", "The most commonly known fact about the topic"],
+      "correct": 1,
+      "rationale": "Even if you know more about the topic, your answer must be based only on what the passage says — comprehension tests reading skill, not general knowledge."
+    },
+    {
+      "id": 3,
+      "question": "Why should you be cautious of options containing words like 'always', 'never', or 'all'?",
+      "options": ["They are always the correct answer", "They are frequently incorrect unless the passage uses equally absolute language", "They should never appear in any passage", "They only appear in inference questions"],
+      "correct": 1,
+      "rationale": "Absolute words like 'always', 'never', 'all', or 'only' are frequently incorrect choices, since passages are usually more nuanced than that."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between a 'False' answer and a 'Not Given' answer in True/False/Not Given questions?",
+      "options": ["They mean exactly the same thing", "'Not Given' means the passage denies it; 'False' means it's simply absent", "'False' means the passage denies it; 'Not Given' means it's simply absent from the passage", "Both terms are used interchangeably in all exams"],
+      "correct": 2,
+      "rationale": "The lesson stresses not to confuse 'not mentioned' (Not Given) with 'false' (directly contradicted by the passage) — they are different answers."
+    }
+  ]
+}

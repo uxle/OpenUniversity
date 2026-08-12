@@ -1,0 +1,34 @@
+{
+  "lessonId": "modals",
+  "title": "Modals and Modal Auxiliary Verbs",
+  "questions": [
+    {
+      "id": 1,
+      "question": "'Used to' is used to express:",
+      "options": ["Present habitual actions", "Past habitual actions", "Future intentions", "Present ability"],
+      "correct": 1,
+      "rationale": "'Used to' expresses past habitual actions, e.g., 'I used to play cricket.'"
+    },
+    {
+      "id": 2,
+      "question": "Which structure expresses a present habit using 'used to'?",
+      "options": ["Subject + used to + V1", "Subject + did not use to + V1", "Is/Am/Are + used to + V1 + ing", "Subject + will use to + V1"],
+      "correct": 2,
+      "rationale": "The structure 'Is/Am/Are + used to + V1 + ing' denotes a present habit, e.g., 'I am used to getting up early morning.'"
+    },
+    {
+      "id": 3,
+      "question": "What does 'Could' typically express, apart from past ability?",
+      "options": ["A polite present request (with 'please')", "Certainty about the future", "A universal truth", "An obligation"],
+      "correct": 0,
+      "rationale": "'Could' expresses past ability/possibility, as well as a polite present request, e.g., 'Could you please give me a glass of water?'"
+    },
+    {
+      "id": 4,
+      "question": "'Lest' is always followed by which structure?",
+      "options": ["Should + V1", "Would + V1", "Will + V1", "Have + V3"],
+      "correct": 0,
+      "rationale": "'Lest' (कहीं ऐसा न हो कि) is always followed by 'Should + V1'."
+    }
+  ]
+}

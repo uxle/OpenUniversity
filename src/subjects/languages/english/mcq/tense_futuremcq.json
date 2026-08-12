@@ -1,0 +1,34 @@
+{
+  "lessonId": "tense_future",
+  "title": "Time & Tenses - Future Tense & Interrogatives",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which helping verb is used with 'I' and 'We' in the traditional Future Indefinite rule?",
+      "options": ["Will", "Shall", "Would", "Should"],
+      "correct": 1,
+      "rationale": "Traditionally, 'I' and 'We' take 'shall', while 'You', 'They', 'He', 'She', 'It', and names take 'will'."
+    },
+    {
+      "id": 2,
+      "question": "\"When you ___ me, I will help you.\" Choose the correct verb.",
+      "options": ["will help", "help", "helped", "shall help"],
+      "correct": 1,
+      "rationale": "In an if/when clause referring to the future, use Present Indefinite ('help'), not will/shall — the main clause takes Future Indefinite."
+    },
+    {
+      "id": 3,
+      "question": "What is the structure of Future Continuous Tense?",
+      "options": ["Subject + will/shall + be + V1 + ing", "Subject + will/shall + V1", "Subject + will/shall + have + V3", "Subject + was/were + V1 + ing"],
+      "correct": 0,
+      "rationale": "Future Continuous Tense follows: Subject + will/shall + be + V1 + ing, e.g., 'They will not be working without money.'"
+    },
+    {
+      "id": 4,
+      "question": "For a Yes/No interrogative future sentence, what is the correct pattern?",
+      "options": ["Helping Verb + Subject + Main Verb + Object?", "Subject + Helping Verb + Main Verb + Object?", "Question Word + Subject + Verb?", "Main Verb + Subject + Helping Verb?"],
+      "correct": 0,
+      "rationale": "Closed (Yes/No) interrogative sentences begin with the Helping Verb, followed by Subject + (not) + Main Verb + Object, e.g., 'Is he reading books?'"
+    }
+  ]
+}

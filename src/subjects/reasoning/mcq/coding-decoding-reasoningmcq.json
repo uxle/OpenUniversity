@@ -1,0 +1,34 @@
+{
+  "lessonId": "coding-decoding-reasoning",
+  "title": "Coding-Decoding Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In letter-shift coding, if CAT is coded as DBU, what rule is being applied?",
+      "options": ["Each letter is reversed", "Each letter is shifted forward by 1 position", "Each letter is replaced by its mirror letter", "Each letter is replaced by a number"],
+      "correct": 1,
+      "rationale": "C->D, A->B, T->U — each letter moves forward exactly one position in the alphabet, a uniform +1 shift."
+    },
+    {
+      "id": 2,
+      "question": "What happens when a letter-shift rule pushes a letter past Z (e.g., Y + 3)?",
+      "options": ["The letter is dropped entirely", "It wraps around to the start of the alphabet (A, B, C...)", "It becomes a number instead of a letter", "The question has no valid answer"],
+      "correct": 1,
+      "rationale": "The alphabet is treated as a loop of 26 letters, so shifting past Z wraps around back to A, then B, and so on."
+    },
+    {
+      "id": 3,
+      "question": "In substitution/mirror coding where A<->Z, B<->Y, C<->X and so on, what is true about each mapped pair's positions?",
+      "options": ["They are always equal", "They always sum to 27", "They always differ by exactly 13", "There is no fixed relationship"],
+      "correct": 1,
+      "rationale": "Mirror coding reflects each letter's position around the alphabet's center, so a letter at position p maps to position 27-p, meaning every mapped pair sums to 27."
+    },
+    {
+      "id": 4,
+      "question": "Why is it important to verify a coding rule against every letter of the given example, not just the first one or two?",
+      "options": ["It isn't important — the first letter is always enough", "Some questions apply a non-uniform rule, or an exception on one letter, that only shows up later in the word", "Longer words always use number coding instead", "It only matters for reverse coding"],
+      "correct": 1,
+      "rationale": "Some coding questions mix a shift with an exception on a specific letter (often the last or a repeated one) — checking only the first letters can lead to applying the wrong rule to the new word."
+    }
+  ]
+}

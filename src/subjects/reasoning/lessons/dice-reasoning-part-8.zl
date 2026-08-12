@@ -1,0 +1,289 @@
+# Dice Reasoning — Part 8 of 10
+
+[info title="Part 8 of 10"]
+Continuing from the previous part. back to Part 7 (`dice-reasoning-part-7`) · continue to Part 9 (`dice-reasoning-part-9`).
+[/info]
+
+## 64. Master Formula Sheet
+
+### Cube facts
+
+```text
+Faces      = 6
+Edges      = 12
+Vertices   = 8
+Faces/vertex = 3
+Edges/vertex = 3
+Adjacent faces per face = 4
+Opposite faces per face = 1
+```
+
+### Standard die
+
+```text
+1 ↔ 6
+2 ↔ 5
+3 ↔ 4
+```
+
+### Opposite sum
+
+```text
+7
+```
+
+only for the standard numbered arrangement.
+
+---
+
+## 65. Adjacency Formula
+
+For any face `x`:
+
+```text
+Adjacent(x) = AllFaces − {x, Opposite(x)}
+```
+
+Example:
+
+```text
+Faces = {1,2,3,4,5,6}
+Opposite(1) = 6
+
+Adjacent(1)
+= {1,2,3,4,5,6} − {1,6}
+= {2,3,4,5}
+```
+
+---
+
+## 66. Opposite Formula
+
+If the four adjacent faces of `x` are known:
+
+```text
+Opposite(x)
+=
+the only remaining face
+```
+
+Mathematically:
+
+```text
+O(x) = F − {x} − Adj(x)
+```
+
+where `F` is the six-face set.
+
+---
+
+## 67. Corner Formula
+
+A corner contains:
+
+```text
+3 faces
+```
+
+and none can be opposite.
+
+Thus:
+
+```text
+Corner(A,B,C)
+valid
+⇔
+A ≠ Opp(B)
+A ≠ Opp(C)
+B ≠ Opp(C)
+```
+
+---
+
+## 68. Advanced: Signed Direction Method
+
+Assign each face a signed axis:
+
+```text
++X / -X
++Y / -Y
++Z / -Z
+```
+
+Example:
+
+```text
+1 = +X
+6 = -X
+
+2 = +Y
+5 = -Y
+
+3 = +Z
+4 = -Z
+```
+
+Then any corner selects exactly one direction from each axis.
+
+Example:
+
+```text
+(+X,+Y,+Z)
+```
+
+corresponds to:
+
+```text
+(1,2,3)
+```
+
+while:
+
+```text
+(-X,+Y,-Z)
+```
+
+corresponds to:
+
+```text
+(6,2,4)
+```
+
+---
+
+## 69. Advanced: Cross-Product Orientation
+
+For 3D vector reasoning:
+
+```text
+right × up = front
+```
+
+or another equivalent orientation depending on your chosen coordinate convention.
+
+With a consistent coordinate system, the third face's direction is constrained by the first two.
+
+For programming:
+
+```text
+normal_front = cross(normal_right, normal_up)
+```
+
+The exact sign depends on the coordinate convention.
+
+This is useful for building a dice engine, not necessary for most school exams.
+
+---
+
+## 70. Programming Model for Dice
+
+A dice state can be stored as:
+
+```text
+top
+bottom
+front
+back
+left
+right
+```
+
+Example:
+
+```json
+{
+  "top": 1,
+  "bottom": 6,
+  "front": 2,
+  "back": 5,
+  "left": 4,
+  "right": 3
+}
+```
+
+A forward roll transforms:
+
+```text
+top    <- back
+front  <- top
+bottom <- front
+back   <- bottom
+```
+
+while left/right remain unchanged.
+
+---
+
+## 71. Pseudocode for a Forward Roll
+
+```text
+old_top    = top
+old_front  = front
+old_bottom = bottom
+old_back   = back
+
+top    = old_back
+front  = old_top
+bottom = old_front
+back   = old_bottom
+```
+
+Right/left stay unchanged.
+
+---
+
+## 72. Pseudocode for a Right Roll
+
+```text
+old_top    = top
+old_right  = right
+old_bottom = bottom
+old_left   = left
+
+top    = old_left
+right  = old_top
+bottom = old_right
+left   = old_bottom
+```
+
+Front/back stay unchanged.
+
+---
+
+## 73. Dice-State Diagram
+
+```text
+             TOP
+              |
+              v
+            FRONT
+              |
+              v
+           BOTTOM
+              |
+              v
+             BACK
+              |
+              └──────> TOP
+```
+
+This cycle represents one roll axis.
+
+Second axis:
+
+```text
+             TOP
+              |
+              v
+            RIGHT
+              |
+              v
+           BOTTOM
+              |
+              v
+            LEFT
+              |
+              └──────> TOP
+```
+
+---

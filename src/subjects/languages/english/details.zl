@@ -1,0 +1,33 @@
+# English
+
+@subject {
+  id: english
+  title: "English"
+  parent: languages
+  description: "Learn English grammar — sentence structure, tenses, parts of speech, and vocabulary building."
+}
+
+@lessons {
+  subject_verb_agreement_basics
+  subject_verb_agreement_advanced
+  verbs_finite_non_finite
+  vocabulary_synonyms
+  vocabulary_antonyms
+  tense_present
+  tense_past
+  tense_future
+  modals
+  one_word_substitution
+  idioms_and_phrases
+  noun
+  pronoun
+  adjective
+  adverb
+  question_tag
+  articles
+  prepositions
+  active_passive_voice
+  narration_direct_indirect
+  conjunctions
+  reading_comprehension
+}

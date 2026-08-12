@@ -1,0 +1,34 @@
+{
+  "lessonId": "active_passive_voice",
+  "title": "Active and Passive Voice - Rules and Transformations",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the basic structure of Passive Voice?",
+      "options": ["Subject + Helping Verb + Main Verb + Object", "Object + Helping Verb + V3 + by + Subject", "Subject + V2 + Object", "Object + V1 + by + Subject"],
+      "correct": 1,
+      "rationale": "Passive Voice structure is: Object + Helping Verb + V3 + by + Subject — the object of the active sentence becomes the subject."
+    },
+    {
+      "id": 2,
+      "question": "What is the Passive structure for Present Indefinite Tense?",
+      "options": ["is/am/are + V1", "is/am/are + V3", "was/were + V3", "has/have + been + V3"],
+      "correct": 1,
+      "rationale": "Present Indefinite Passive uses: is/am/are + V3 (past participle)."
+    },
+    {
+      "id": 3,
+      "question": "How is a Request converted for the Passive/Imperative special structure?",
+      "options": ["You are ordered to + V1 + Object", "You are requested to + V1 + Object", "Let + Object + be + V3", "You are advised to + V1 + Object"],
+      "correct": 1,
+      "rationale": "For Request-type imperatives, the structure is: You are requested to + V1 + Object."
+    },
+    {
+      "id": 4,
+      "question": "What is the Passive structure for Past Continuous Tense?",
+      "options": ["was/were + V1+ing", "was/were + being + V3", "had + been + V3", "will/shall + be + V3"],
+      "correct": 1,
+      "rationale": "Past Continuous Passive uses: was/were + being + V3, as opposed to the Active form was/were + V1+ing."
+    }
+  ]
+}

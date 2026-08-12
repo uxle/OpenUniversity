@@ -1,0 +1,34 @@
+{
+  "lessonId": "biology-introduction",
+  "title": "जीवविज्ञान परिचय एवं शाखाएँ (Introduction to Biology)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "'जीवविज्ञान (Biology)' के पिता किसे माना जाता है?",
+      "options": ["लैमार्क", "अरस्तू (Aristotle)", "थियोफ्रेस्टस", "ट्रेविरेनस"],
+      "correct": 1,
+      "rationale": "जीवविज्ञान के पिता अरस्तू (Aristotle) को माना जाता है।"
+    },
+    {
+      "id": 2,
+      "question": "'Biology' शब्द का सर्वप्रथम प्रयोग किसने किया था?",
+      "options": ["अरस्तू", "थियोफ्रेस्टस", "लैमार्क एवं ट्रेविरेनस", "रॉबर्ट हुक"],
+      "correct": 2,
+      "rationale": "'Biology' शब्द का सर्वप्रथम प्रयोग लैमार्क (Lamarck) एवं ट्रेविरेनस (Treviranus) ने 1802 में किया था।"
+    },
+    {
+      "id": 3,
+      "question": "वनस्पति विज्ञान (Botany) के पिता कौन हैं?",
+      "options": ["अरस्तू", "थियोफ्रेस्टस", "रॉबर्ट हुक", "लैमार्क"],
+      "correct": 1,
+      "rationale": "वनस्पति विज्ञान (Botany) के पिता थियोफ्रेस्टस (Theophrastus) हैं, जिसके अंतर्गत सभी पादपों का अध्ययन किया जाता है।"
+    },
+    {
+      "id": 4,
+      "question": "'Biology' शब्द किन दो ग्रीक शब्दों से मिलकर बना है?",
+      "options": ["Zoo + Logos", "Bios + Logos", "Bio + Botany", "Cyto + Logos"],
+      "correct": 1,
+      "rationale": "'Biology' शब्द Bios (सजीव) और Logos (अध्ययन) से मिलकर बना है, अर्थात् 'सजीवों का अध्ययन'।"
+    }
+  ]
+}

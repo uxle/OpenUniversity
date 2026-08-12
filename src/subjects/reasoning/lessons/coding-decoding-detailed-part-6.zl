@@ -1,0 +1,243 @@
+# Coding-Decoding — In-Depth Guide — Part 6 of 22
+
+[info title="Part 6 of 22"]
+Continuing from the previous part. back to Part 5 (`coding-decoding-detailed-part-5`) · continue to Part 7 (`coding-decoding-detailed-part-7`).
+[/info]
+
+## 46. First + Last Coding
+
+Example:
+
+```text
+CAT
+```
+
+First:
+
+```text
+C = 3
+```
+
+Last:
+
+```text
+T = 20
+```
+
+Possible code:
+
+```text
+3 + 20 = 23
+```
+
+or:
+
+```text
+3,20
+```
+
+The question's examples determine which one.
+
+---
+
+## 47. First × Last Coding
+
+Example:
+
+```text
+DOG
+```
+
+```text
+D = 4
+G = 7
+```
+
+Product:
+
+```text
+4 × 7 = 28
+```
+
+---
+
+## 48. First–Last Difference
+
+Example:
+
+```text
+APPLE
+```
+
+```text
+A = 1
+E = 5
+```
+
+Difference:
+
+```text
+5 - 1 = 4
+```
+
+---
+
+## 49. Middle-Letter Coding
+
+For odd-length words:
+
+```text
+APPLE
+```
+
+middle letter:
+
+```text
+P
+```
+
+position:
+
+```text
+16
+```
+
+So a code could be:
+
+```text
+16
+```
+
+For even-length words, the question must define whether to use:
+
+- left-middle
+- right-middle
+- both middle letters
+
+---
+
+## 50. Sentence Coding
+
+Example:
+
+```text
+"Ram eats mango" → 7 3 9
+"Ram eats apple" → 7 3 5
+```
+
+Common words:
+
+```text
+Ram
+eats
+```
+
+Common codes:
+
+```text
+7
+3
+```
+
+Therefore:
+
+```text
+Ram = 7
+eats = 3
+```
+
+This is called **common-code deduction**.
+
+---
+
+## 51. Chinese Coding Method
+
+This is a classic reasoning pattern.
+
+Suppose:
+
+```text
+"red big house" = ka mi po
+"red small car" = ka tu lo
+"big blue car" = mi na lo
+```
+
+Compare first two:
+
+```text
+red big house
+red small car
+```
+
+Common word:
+
+```text
+red
+```
+
+Common code:
+
+```text
+ka
+```
+
+Therefore:
+
+```text
+red = ka
+```
+
+Compare:
+
+```text
+red small car
+big blue car
+```
+
+Common word:
+
+```text
+car
+```
+
+Common code:
+
+```text
+lo
+```
+
+Therefore:
+
+```text
+car = lo
+```
+
+---
+
+## 52. Chinese Coding Algorithm
+
+Use this exact process:
+
+```text
+1. Write every sentence separately.
+2. Find common words.
+3. Find common codes.
+4. Match them.
+5. Remove known pairs.
+6. Repeat.
+7. Determine the unknown code.
+```
+
+Diagram:
+
+```text
+Sentence A ─┐
+            ├─ Common word
+Sentence B ─┘
+       ↓
+Common code
+       ↓
+Word = Code
+```
+
+---

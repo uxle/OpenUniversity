@@ -1,3 +1,36 @@
-# .github/workflows/test.yml
+# .github/workflows/test.yml — unit/engine test suite (tests/**/*.test.js,
+# Node's built-in test runner — see package.json's "test" script). Kept
+# separate from validate.yml so a content-only PR and a code-only PR each
+# show a focused pass/fail rather than one combined job.
 name: Test
-# TODO: define workflow/template
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Run test suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run tests
+        run: npm test

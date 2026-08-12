@@ -1,11 +1,35 @@
 // src/core/cache.js — in-memory cache with optional TTL, used by services
 // (zolto-service, content-service) to avoid re-fetching/re-compiling.
+//
+// Bounded by maxEntries (default 200): a long browsing session across the
+// platform's hundreds of lessons/languages would otherwise let this Map
+// grow without limit for the lifetime of the tab. Eviction is plain
+// least-recently-used, approximated by Map's own insertion-order
+// iteration — re-inserting a key on every get() moves it to the "most
+// recently used" end, so the first key in iteration order is always the
+// next one to evict.
 
-export function createCache({ ttlMs = null } = {}) {
+const DEFAULT_MAX_ENTRIES = 200;
+
+export function createCache({ ttlMs = null, maxEntries = DEFAULT_MAX_ENTRIES } = {}) {
   const store = new Map();
 
+  function touch(key, entry) {
+    // Re-insert so this key becomes the most-recently-used for eviction
+    // purposes (Map preserves insertion order; delete+set moves it to
+    // the end without changing the stored value).
+    store.delete(key);
+    store.set(key, entry);
+  }
+
   function set(key, value) {
-    store.set(key, { value, expiresAt: ttlMs ? Date.now() + ttlMs : null });
+    const entry = { value, expiresAt: ttlMs ? Date.now() + ttlMs : null };
+    store.delete(key);
+    store.set(key, entry);
+    while (store.size > maxEntries) {
+      const oldestKey = store.keys().next().value;
+      store.delete(oldestKey);
+    }
     return value;
   }
 
@@ -16,6 +40,7 @@ export function createCache({ ttlMs = null } = {}) {
       store.delete(key);
       return undefined;
     }
+    touch(key, entry);
     return entry.value;
   }
 

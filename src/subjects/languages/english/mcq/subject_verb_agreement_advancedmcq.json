@@ -1,0 +1,34 @@
+{
+  "lessonId": "subject_verb_agreement_advanced",
+  "title": "Subject-Verb Agreement - Advanced Rules",
+  "questions": [
+    {
+      "id": 1,
+      "question": "\"His friend as well as I ___ going to take part in it.\" Choose the correct verb.",
+      "options": ["am", "is", "are", "were"],
+      "correct": 1,
+      "rationale": "When subjects are connected by 'as well as', the verb agrees with the main subject ('His friend'), which is singular, so 'is' is correct."
+    },
+    {
+      "id": 2,
+      "question": "When subjects are joined by 'Either...or' or 'Neither...nor', the verb agrees with:",
+      "options": ["The first subject always", "The nearest subject to the verb", "Always a plural verb", "The subject with more syllables"],
+      "correct": 1,
+      "rationale": "With correlative conjunctions like 'Either...or' and 'Neither...nor', the verb agrees with the nearest subject — the one closest to the verb."
+    },
+    {
+      "id": 3,
+      "question": "\"The car along with five persons ___ come to this city.\" Choose the correct verb.",
+      "options": ["have", "has", "having", "had come"],
+      "correct": 1,
+      "rationale": "'Along with' is a connector, not a joining conjunction, so the verb agrees with the main subject 'The car' (singular) — 'has'."
+    },
+    {
+      "id": 4,
+      "question": "\"You together with your brother ___ able to face it.\" Choose the correct verb.",
+      "options": ["is", "was", "are", "has"],
+      "correct": 2,
+      "rationale": "The main subject is 'You', which takes 'are' — the connector phrase 'together with your brother' does not change the verb."
+    }
+  ]
+}

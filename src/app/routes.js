@@ -21,6 +21,11 @@ const routeTable = {
   [ROUTES.SUB_SUBJECT]: () => import("../pages/sub-subject.js"),
   [ROUTES.LESSON]: () => import("../pages/lesson.js"),
   [ROUTES.MCQ]: () => import("../pages/mcq.js"),
+  // Flat-subject variants reuse the same page modules — see the ROUTES
+  // comment in app/constants.js for why subSubjectId is safe to be
+  // undefined here.
+  [ROUTES.SUBJECT_LESSON]: () => import("../pages/lesson.js"),
+  [ROUTES.SUBJECT_MCQ]: () => import("../pages/mcq.js"),
   [ROUTES.SEARCH]: () => import("../pages/search.js"),
   [ROUTES.BOOKMARKS]: () => import("../pages/bookmarks.js"),
   [ROUTES.NOTES]: () => import("../pages/notes.js"),

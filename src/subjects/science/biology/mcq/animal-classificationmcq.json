@@ -1,0 +1,34 @@
+{
+  "lessonId": "animal-classification",
+  "title": "जंतु वर्गीकरण (Animal Classification)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "द्विनाम पद्धति (Binomial Nomenclature) किसने दी थी?",
+      "options": ["अर्नेस्ट हेकल", "कैरोलस लिनियस (Carolus Linnaeus)", "आर.एच. व्हिटेकर", "अरस्तू"],
+      "correct": 1,
+      "rationale": "वर्गीकरण के जनक कैरोलस लिनियस ने द्विनाम पद्धति (Binomial Nomenclature) दी, जिसमें प्रत्येक जीव का वैज्ञानिक नाम वंश (Genus) + जाति (Species) से बनता है।"
+    },
+    {
+      "id": 2,
+      "question": "वर्गीकरण के पदानुक्रम में 'गण' (Order) किन दो स्तरों के बीच आता है?",
+      "options": ["जगत और संघ के बीच", "वर्ग और कुल के बीच", "कुल और वंश के बीच", "वंश और जाति के बीच"],
+      "correct": 1,
+      "rationale": "वर्गीकरण का क्रम है: जगत → संघ → वर्ग → गण → कुल → वंश → जाति — इस प्रकार 'गण' वर्ग और कुल के बीच आता है।"
+    },
+    {
+      "id": 3,
+      "question": "पाँच जगत वर्गीकरण प्रणाली किसने दी थी?",
+      "options": ["कैरोलस लिनियस", "आर.एच. व्हिटेकर (R.H. Whittaker, 1969)", "अर्नेस्ट हेकल", "रेमंड लिंडमान"],
+      "correct": 1,
+      "rationale": "पाँच जगत वर्गीकरण प्रणाली आर.एच. व्हिटेकर (R.H. Whittaker) ने 1969 में दी थी।"
+    },
+    {
+      "id": 4,
+      "question": "मनुष्य का वैज्ञानिक नाम क्या है?",
+      "options": ["Homo erectus", "Homo sapiens", "Homo habilis", "Pan troglodytes"],
+      "correct": 1,
+      "rationale": "मनुष्य का वैज्ञानिक नाम Homo sapiens है, जो द्विनाम पद्धति का उदाहरण है — Homo (वंश) + sapiens (जाति)।"
+    }
+  ]
+}

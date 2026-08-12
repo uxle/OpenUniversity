@@ -1,0 +1,34 @@
+{
+  "lessonId": "adverb",
+  "title": "Adverbs - Rules and Practice",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An Adverb can modify which of the following?",
+      "options": ["Only a verb", "Only an adjective", "A verb, an adjective, or another adverb", "Only a noun"],
+      "correct": 2,
+      "rationale": "An Adverb modifies a verb, an adjective, or another adverb, e.g., 'He works very hard' (modifying the adverb 'hard')."
+    },
+    {
+      "id": 2,
+      "question": "What is the adverb form of 'Fast'?",
+      "options": ["Fastly", "Fast", "Fastness", "Fastily"],
+      "correct": 1,
+      "rationale": "'Fast' remains 'Fast' as an adverb — 'Fastly' is not a correct English word."
+    },
+    {
+      "id": 3,
+      "question": "What does 'Hardly' mean, as distinct from 'Hard'?",
+      "options": ["Very difficult", "Barely / scarcely", "Very fast", "Very strong"],
+      "correct": 1,
+      "rationale": "'Hardly' means 'barely', which is a completely different meaning from 'Hard' used as an adverb (e.g., 'works hard')."
+    },
+    {
+      "id": 4,
+      "question": "\"I have no other choice ___ to fight again.\" Choose the correct word.",
+      "options": ["but", "than", "except", "besides"],
+      "correct": 1,
+      "rationale": "'Other/Rather/Otherwise' are followed by 'Than' — 'I have no other choice than to fight again.'"
+    }
+  ]
+}

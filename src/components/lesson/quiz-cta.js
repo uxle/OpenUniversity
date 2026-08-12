@@ -29,7 +29,9 @@ export async function createQuizCta(subjectId, subSubjectId, lessonId, progress 
   if (!count) return null;
 
   const attempted = typeof progress?.score === "number" && progress.score !== null;
-  const href = `#/subjects/${subjectId}/${subSubjectId}/mcq/${lessonId}`;
+  const href = subSubjectId
+    ? `#/subjects/${subjectId}/${subSubjectId}/mcq/${lessonId}`
+    : `#/subjects/${subjectId}/mcq/${lessonId}`;
 
   return createEl("a", { href, class: "ou-card ou-card--interactive ou-quiz-cta" }, [
     createEl("div", { class: "ou-quiz-cta__icon" }, [icon("circle-question")]),

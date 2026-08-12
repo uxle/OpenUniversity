@@ -1,0 +1,295 @@
+# Directions and Distance Reasoning — Part 2 of 10
+
+[info title="Part 2 of 10"]
+Continuing from the previous part. back to Part 1 (`directions-and-distance-reasoning-part-1`) · continue to Part 3 (`directions-and-distance-reasoning-part-3`).
+[/info]
+
+## 9. Reference Frames
+
+Direction is meaningless without knowing the reference frame.
+
+For example:
+
+> “Turn right.”
+
+Right depends on which way the person is facing.
+
+If facing north:
+
+```text
+right = east
+```
+
+If facing east:
+
+```text
+right = south
+```
+
+Therefore, a spatial state should maintain:
+
+```text
+current_position
+current_heading
+```
+
+## 10. Heading
+
+Heading describes the direction an agent is facing.
+
+A convenient angular representation is:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+Then:
+
+```text
+right turn = +90°
+left turn  = -90°
+```
+
+Normalize using:
+
+```text
+angle mod 360°
+```
+
+Example:
+
+```text
+heading = 270°
+right turn = +90°
+
+270 + 90 = 360
+360 mod 360 = 0
+
+new heading = North
+```
+
+## 11. Eight-Direction Heading
+
+For eight compass directions:
+
+```text
+N  = 0°
+NE = 45°
+E  = 90°
+SE = 135°
+S  = 180°
+SW = 225°
+W  = 270°
+NW = 315°
+```
+
+Each neighboring direction differs by:
+
+```text
+45°
+```
+
+This is useful for coarse directional reasoning.
+
+## 12. Bearings
+
+Navigation commonly measures a bearing clockwise from north:
+
+```text
+North = 0°
+East  = 90°
+South = 180°
+West  = 270°
+```
+
+Therefore:
+
+```text
+135° → South-East
+315° → North-West
+```
+
+Bearings allow continuous direction rather than restricting the system to eight categories.
+
+## 13. Position Difference
+
+Given two points:
+
+$A = (x_1, y_1)$ and $B = (x_2, y_2)$
+
+the displacement from A to B is:
+
+@math name="Displacement Components" label="eq:displacement"
+\Delta x = x_2 - x_1
+@/math
+
+@math label="eq:displacement-y"
+\Delta y = y_2 - y_1
+@/math
+
+Interpretation: $\Delta x > 0$ means east, $\Delta x < 0$ means west, $\Delta y > 0$ means north, $\Delta y < 0$ means south.
+
+If both components are non-zero, the direction is diagonal.
+
+## 14. Direction From Coordinates
+
+| Condition | Direction |
+|---|---|
+| $\Delta x = 0, \Delta y > 0$ | North |
+| $\Delta x = 0, \Delta y < 0$ | South |
+| $\Delta x > 0, \Delta y = 0$ | East |
+| $\Delta x < 0, \Delta y = 0$ | West |
+| $\Delta x > 0, \Delta y > 0$ | North-East |
+| $\Delta x < 0, \Delta y > 0$ | North-West |
+| $\Delta x > 0, \Delta y < 0$ | South-East |
+| $\Delta x < 0, \Delta y < 0$ | South-West |
+
+If $\Delta x = 0$ and $\Delta y = 0$, then the locations are the same — the correct result is **same location**, not an arbitrary direction.
+
+## 15. Euclidean Distance
+
+The straight-line distance between two points is:
+
+@math name="Euclidean Distance" label="eq:euclidean"
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+@/math
+
+For $A = (0,0)$ and $B = (3,4)$: $d = \sqrt{3^2 + 4^2} = \sqrt{25} = 5$.
+
+## 16. Manhattan Distance
+
+When movement is restricted to horizontal and vertical paths, use Manhattan distance instead:
+
+@math name="Manhattan Distance" label="eq:manhattan"
+d = |x_2-x_1| + |y_2-y_1|
+@/math
+
+For the same points, $A=(0,0)$ and $B=(3,4)$: $d = 3 + 4 = 7$, while the Euclidean distance is $5$.
+
+@vector width=800 height=480
+artboard id="distance-grid" x=0 y=0 w=800 h=480
+
+layer id="axes"
+line x1=100 y1=400 x2=520 y2=400 stroke="#94a3b8" strokeWidth=2
+line x1=200 y1=450 x2=200 y2=100 stroke="#94a3b8" strokeWidth=2
+@endlayer
+
+layer id="legs"
+line x1=200 y1=400 x2=380 y2=400 stroke="#f59e0b" strokeWidth=4
+line x1=380 y1=400 x2=380 y2=160 stroke="#f59e0b" strokeWidth=4
+@endlayer
+
+layer id="hypotenuse"
+line x1=200 y1=400 x2=380 y2=160 stroke="#0f172a" strokeWidth=5
+circle cx=200 cy=400 r=7 fill="#0f172a"
+circle cx=380 cy=160 r=7 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*A = origin, B = (3,4) at 60px per unit. The dark diagonal is the Euclidean distance ($d=5$); the two amber legs are the Manhattan path ($3+4=7$, one segment east then one north).*
+
+The correct metric depends on the problem.
+
+## 17. Path Distance vs Displacement
+
+Suppose:
+
+```text
+3 km east
+4 km north
+```
+
+The total path traveled is:
+
+```text
+3 + 4 = 7 km
+```
+
+The straight-line displacement is:
+
+```text
+√(3² + 4²) = 5 km
+```
+
+Therefore:
+
+```text
+path distance = 7 km
+displacement = 5 km
+```
+
+These must never be confused.
+
+## 18. Net Displacement
+
+Example:
+
+```text
+5 km north → (0,5)
+3 km east  → (3,0)
+2 km south → (0,-2)
+```
+
+Add:
+
+```text
+(0,5) + (3,0) + (0,-2)
+= (3,3)
+```
+
+Therefore:
+
+```text
+net displacement = (3,3)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Magnitude:
+
+```text
+√18 ≈ 4.24 km
+```
+
+## 19. Total Distance
+
+If the question asks:
+
+> “How far did the person travel?”
+
+sum the individual movement lengths.
+
+Example:
+
+```text
+5 km north
+3 km east
+2 km south
+```
+
+Total traveled:
+
+```text
+5 + 3 + 2 = 10 km
+```
+
+But the final displacement is:
+
+```text
+(3,3)
+```
+
+with magnitude:
+
+```text
+√18 ≈ 4.24 km
+```

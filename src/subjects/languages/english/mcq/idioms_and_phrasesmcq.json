@@ -1,0 +1,34 @@
+{
+  "lessonId": "idioms_and_phrases",
+  "title": "English Vocabulary - Idioms and Phrases",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does 'At the drop of a hat' mean?",
+      "options": ["Immediately / Without delay", "In disorder / Confused", "A useless search", "To break silence"],
+      "correct": 0,
+      "rationale": "'At the drop of a hat' (तुरंत) means immediately or without delay."
+    },
+    {
+      "id": 2,
+      "question": "\"A blessing in disguise\" refers to:",
+      "options": ["A sudden shock", "Something good that seemed bad at first", "A useless / pointless search", "An unfit person for a position"],
+      "correct": 1,
+      "rationale": "'A blessing in disguise' (छिपा हुआ वरदान) refers to something that seemed bad initially but turns out to be good."
+    },
+    {
+      "id": 3,
+      "question": "What does 'Beat around the bush' mean?",
+      "options": ["Face a difficult situation bravely", "Avoid talking about the main topic", "Work late into the night", "Make a poor impression"],
+      "correct": 1,
+      "rationale": "'Beat around the bush' (घुमा-फिराकर बात करना) means to avoid talking directly about the main topic."
+    },
+    {
+      "id": 4,
+      "question": "What does 'Burn the midnight oil' mean?",
+      "options": ["Waste time uselessly", "Work or study late into the night", "End a long-standing feud", "Face negative consequences"],
+      "correct": 1,
+      "rationale": "'Burn the midnight oil' (देर रात तक मेहनत करना) means to work or study late into the night."
+    }
+  ]
+}

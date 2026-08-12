@@ -1,3 +1,71 @@
-# .github/workflows/deploy.yml
+# .github/workflows/deploy.yml — deploys the static site to GitHub Pages
+# on every push to main, gated on the same validate+test steps as the
+# other two workflows passing first (a broken build never gets published).
+#
+# ASSUMES GITHUB PAGES as the host. This app has no server component by
+# design (zero-dependency, hash-based routing needs no rewrite rules —
+# see src/core/router.js) so Pages is a natural fit, but if you deploy
+# elsewhere (Netlify, Vercel, your own host), replace the "deploy" job
+# below with that platform's action/CLI, or disable this workflow
+# (Settings -> Actions, or delete this file) — the validate/test workflows
+# are independent of this one and don't need it.
+#
+# To actually enable Pages: repo Settings -> Pages -> Build and deployment
+# -> Source: "GitHub Actions" (one-time setup; this workflow does the rest).
 name: Deploy
-# TODO: define workflow/template
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate, test, and package
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run full validation toolchain
+        run: npm run validate:all
+
+      - name: Run tests
+        run: npm test
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

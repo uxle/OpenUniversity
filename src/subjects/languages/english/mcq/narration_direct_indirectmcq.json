@@ -1,0 +1,34 @@
+{
+  "lessonId": "narration_direct_indirect",
+  "title": "Direct and Indirect Speech (Narration)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "If the Reporting Verb is in Present or Future Tense, what happens to the tense of the Reported Speech?",
+      "options": ["It always changes to past", "It does NOT change", "It becomes future tense", "It is removed entirely"],
+      "correct": 1,
+      "rationale": "If the Reporting Verb is in Present or Future Tense, the tense of the Reported Speech does NOT change."
+    },
+    {
+      "id": 2,
+      "question": "In the SON rule for pronoun changes, what does the letter 'N' represent?",
+      "options": ["1st Person changes according to Subject", "2nd Person changes according to Object", "3rd Person — No Change", "Negative sentences only"],
+      "correct": 2,
+      "rationale": "In the SON rule, 'N' stands for 3rd Person (He, She, It, They), which undergoes No Change when converting narration."
+    },
+    {
+      "id": 3,
+      "question": "If the Reporting Verb is in Past Tense, what does 'Is/Am/Are' become in Indirect Speech?",
+      "options": ["Was/Were", "Had been", "Would be", "Remains the same"],
+      "correct": 0,
+      "rationale": "When the Reporting Verb is in Past Tense, 'Is/Am/Are' changes to 'Was/Were' in Indirect Speech."
+    },
+    {
+      "id": 4,
+      "question": "When the Reporting Verb changes from 'said to' to Indirect Speech, what does it become?",
+      "options": ["Says", "Tells", "Told", "Will tell"],
+      "correct": 2,
+      "rationale": "'Said to' becomes 'told' when converting to Indirect Speech with a Past Tense reporting verb."
+    }
+  ]
+}

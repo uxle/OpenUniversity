@@ -1,0 +1,121 @@
+# Syllogism Reasoning
+
+> Syllogism reasoning gives you two or more statements taken to be true, and asks which conclusions *definitely* follow from them — using only the logic of the statements, never outside knowledge or assumptions.
+
+[important]
+The single biggest source of errors in syllogism is substituting real-world knowledge for the statement's exact wording. Even if a statement sounds false or strange in real life, you must treat it as 100% true and reason only from what it literally says.
+[/important]
+
+## 1. What Syllogism Means
+
+A syllogism question looks like this:
+
+```text
+Statements:
+All cats are dogs.
+All dogs are birds.
+
+Conclusions:
+I. All cats are birds.
+II. Some birds are cats.
+```
+
+You are not asked whether cats are really dogs. You are asked: **if** both statements were true, would each conclusion have to follow? Here, both conclusions do follow logically, however absurd the premise sounds.
+
+## 2. The Four Statement Types
+
+Every syllogism statement is one of exactly four logical forms:
+
+| Type | Form | Example | Meaning |
+|---|---|---|---|
+| A — Universal affirmative | All A are B | All pens are blue | Every A is inside B |
+| E — Universal negative | No A are B | No pens are blue | A and B have no overlap at all |
+| I — Particular affirmative | Some A are B | Some pens are blue | A and B overlap, at least partly |
+| O — Particular negative | Some A are not B | Some pens are not blue | At least one A is outside B |
+
+[tip]
+Memorise these four letters (A, E, I, O) — most syllogism theory, including the rules below, is stated in terms of which combination of A/E/I/O statements you're given.
+[/tip]
+
+## 3. Venn Diagram Representation
+
+Each statement type has one (or more) valid Venn-diagram pictures. "All A are B" only ever looks one way; "Some A are B" can look two different ways, and you must consider **both** before deciding a conclusion is definite.
+
+@diagram network id="syllogism-venn-all" layout="circular" aria="Venn diagram showing circle A entirely inside circle B, representing All A are B"
+node A [label="A", shape="circle"]
+node B [label="B", shape="circle"]
+edge A -> B [label="A entirely inside B"]
+@/diagram
+
+```text
+All A are B:      (B (A) )        -- A is a smaller circle fully inside B
+No A are B:       (A)  (B)        -- circles do not touch at all
+Some A are B:      overlap        -- circles overlap partially, OR
+                    A inside B    -- (this second case is often forgotten)
+Some A are not B: A sticks out    -- A circle partly or fully outside B
+```
+
+[warning]
+"Some A are B" is compatible with A being *completely* inside B — it does not mean "some, but not all." In formal logic, "some" only guarantees "at least one," never "not all." This is the single most commonly misread statement type.
+[/warning]
+
+## 4. Rules for Combining Two Statements
+
+1. **At least one universal (A/E) premise is required** for any definite conclusion — if both statements are "Some," no definite conclusion follows at all (two "some" statements can combine in too many different pictures).
+2. **A negative premise (E/O) always yields a negative conclusion, if any follows** — you can never get an "All" or "Some are" conclusion out of a statement that contains "No" or "not."
+3. **Two negative premises give no valid conclusion.** "No A are B" and "No B are C" tells you nothing definite about A and C.
+4. **The middle term must be distributed at least once** — the term shared between the two statements (here, B) must be the *subject of an "All"* or the subject/predicate of a "No" statement in at least one premise, or no conclusion connects A and C at all.
+
+## 5. Possibility vs Definite Conclusions
+
+Some questions ask for conclusions that "definitely follow," others ask which are merely "possible." A possibility conclusion only needs **one** valid Venn arrangement where it holds — it does not need to hold in every arrangement.
+
+```text
+All A are B. All C are B.
+-> "Some A are C" is only POSSIBLE (true in some arrangements, false in others), never definite.
+-> Do not mark it as a definite conclusion.
+```
+
+## 6. The Complementary Pairs Rule
+
+When two conclusions are of the form "All A are B" and "Some A are not B," or "Some A are B" and "No A are B," exactly one of the pair must be true (they can't both be false) — this is called a complementary pair, and at least one of the two is always part of the answer.
+
+## 7. Solved Examples
+
+**Example 1:**
+Statements: All roses are flowers. Some flowers are red.
+Conclusion I: Some roses are red.
+Conclusion II: Some flowers are roses.
+→ Conclusion II follows directly (from "All roses are flowers," some flowers must be roses — namely, the roses themselves). Conclusion I does **not** follow — the "red flowers" and the "roses" may be entirely different, non-overlapping subsets of flowers.
+
+**Example 2:**
+Statements: No teachers are students. All students are learners.
+Conclusion: Some learners are not teachers.
+→ Follows. Since all students are learners, and no teacher is a student, at least the student-learners are guaranteed not to be teachers.
+
+**Example 3 (complementary pair):**
+Conclusion I: All books are papers.
+Conclusion II: Some books are not papers.
+→ These are complementary — whichever Venn arrangement is true, exactly one of I or II must hold, so even without fully solving the diagram, you know the answer includes "either I or II follows."
+
+## 8. Common Mistakes to Avoid
+
+- **Do not** import real-world truth or falsity into the statements — treat every premise as true regardless of how it sounds.
+- **Do not** treat "Some A are B" as excluding "All A are B" — it doesn't.
+- **Do not** try to combine two "Some"/"Some" statements into a definite conclusion — rule 1 above rules this out.
+- **Do** draw (or mentally picture) every valid Venn arrangement for the given premises before deciding a conclusion is "definite" rather than merely "possible."
+
+## 9. Quick Reference
+
+| Premise combination | What you can conclude |
+|---|---|
+| All A are B + All B are C | All A are C |
+| All A are B + No B are C | No A are C |
+| Some A are B + All B are C | Some A are C |
+| Some A are B + No B are C | Some A are not C |
+| Some A are B + Some B are C | Nothing definite |
+| No A are B + No B are C | Nothing definite |
+
+[example]
+Working method: **(1)** classify each statement as A/E/I/O, **(2)** check rule 1 (need at least one universal premise), **(3)** sketch every valid Venn arrangement, not just the first one you picture, **(4)** a conclusion is "definite" only if it holds in *every* valid arrangement.
+[/example]

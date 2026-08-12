@@ -1,0 +1,286 @@
+# Coding-Decoding — In-Depth Guide — Part 10 of 22
+
+[info title="Part 10 of 22"]
+Continuing from the previous part. back to Part 9 (`coding-decoding-detailed-part-9`) · continue to Part 11 (`coding-decoding-detailed-part-11`).
+[/info]
+
+## 79. Difference Chart
+
+```text
+Original:  C   A   T
+           │   │   │
+Shift:    +1  +1  +3
+           │   │   │
+Code:      D   B   W
+```
+
+Always calculate:
+
+```text
+Code position - Original position
+```
+
+first.
+
+---
+
+## 80. Modular Difference
+
+Because alphabet wraps around:
+
+```text
+Z → A
+```
+
+the difference should be interpreted modulo 26.
+
+Example:
+
+```text
+Z → B
+```
+
+Normal numerical difference:
+
+```text
+2 - 26 = -24
+```
+
+But forward alphabet shift:
+
+```text
++2
+```
+
+Use:
+
+```text
+shift = (coded - original) mod 26
+```
+
+---
+
+## 81. Reverse Coding Difference
+
+For mirror coding:
+
+```text
+A → Z
+B → Y
+C → X
+```
+
+Differences look strange if you only use subtraction.
+
+Instead use:
+
+```text
+coded_position = 27 - original_position
+```
+
+This is the signature of mirror coding.
+
+---
+
+## 82. Alternating Pattern Detection
+
+When solving, write:
+
+```text
++1, -1, +1, -1, ...
+```
+
+or:
+
+```text
++2, +3, +2, +3, ...
+```
+
+or:
+
+```text
+×2, +1, ×2, +1, ...
+```
+
+Look for repetition.
+
+A pattern may be:
+
+```text
+A B A B A B
+```
+
+rather than:
+
+```text
+A A A A A A
+```
+
+---
+
+## 83. Position Table
+
+For a word:
+
+```text
+REASONING
+```
+
+create:
+
+| Position | Letter | Alphabet value |
+|---:|---|---:|
+| 1 | R | 18 |
+| 2 | E | 5 |
+| 3 | A | 1 |
+| 4 | S | 19 |
+| 5 | O | 15 |
+| 6 | N | 14 |
+| 7 | I | 9 |
+| 8 | N | 14 |
+| 9 | G | 7 |
+
+This makes complicated coding much easier.
+
+---
+
+## 84. Reverse Word + Alphabet Coding
+
+Possible transformation:
+
+```text
+Original
+  ↓
+Reverse letters
+  ↓
+Mirror alphabet
+  ↓
+Shift
+```
+
+For difficult questions, explicitly write every stage.
+
+Example:
+
+```text
+CAT
+↓
+TAC
+↓
+GZX
+```
+
+because:
+
+```text
+T → G
+A → Z
+C → X
+```
+
+---
+
+## 85. Substitution Coding
+
+In substitution coding, one object is represented by another.
+
+Example:
+
+```text
+If:
+"pen" is called "book"
+"book" is called "paper"
+"paper" is called "pencil"
+
+What do you write with?
+
+Actual object = pen
+Called = book
+```
+
+Therefore answer:
+
+```text
+book
+```
+
+The question is about the **new name**, not the actual object.
+
+---
+
+## 86. Substitution Coding Flow
+
+```text
+REAL OBJECT
+     ↓
+Question asks what it is called
+     ↓
+Find assigned replacement name
+     ↓
+Answer replacement name
+```
+
+---
+
+## 87. Substitution Example
+
+Given:
+
+```text
+Chair is called Table.
+Table is called Door.
+Door is called Window.
+Window is called Chair.
+```
+
+Question:
+
+> What do you sit on?
+
+Actual answer:
+
+```text
+Chair
+```
+
+But chair is called:
+
+```text
+Table
+```
+
+Therefore:
+
+```text
+Answer = Table
+```
+
+---
+
+## 88. Substitution Trap
+
+Question:
+
+> If "water" is called "fire", what do we drink?
+
+Actual object:
+
+```text
+water
+```
+
+Its assigned name:
+
+```text
+fire
+```
+
+Answer:
+
+```text
+fire
+```
+
+Do not answer based on real-world meaning.
+
+---

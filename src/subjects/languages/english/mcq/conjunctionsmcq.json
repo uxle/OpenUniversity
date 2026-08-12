@@ -1,0 +1,34 @@
+{
+  "lessonId": "conjunctions",
+  "title": "Conjunctions and Correlative Pairs",
+  "questions": [
+    {
+      "id": 1,
+      "question": "FANBOYS (For, And, Nor, But, Or, Yet, So) refers to which type of conjunctions?",
+      "options": ["Subordinating Conjunctions", "Correlative Conjunctions", "Coordinating Conjunctions", "Interrogative Conjunctions"],
+      "correct": 2,
+      "rationale": "FANBOYS is a mnemonic for Coordinating Conjunctions, which join two independent clauses of equal grammatical rank."
+    },
+    {
+      "id": 2,
+      "question": "'Until' and 'Unless' are negative words. What is the rule about using 'not' with them?",
+      "options": ["'Not' must always be used with them", "'Not' or 'never' should NOT be used inside the until/unless clause", "'Not' is optional", "They can only be used with 'not' in questions"],
+      "correct": 1,
+      "rationale": "Since 'Until' and 'Unless' are already negative words, 'not' or 'never' should not be used inside their clause — e.g., 'Wait here until I return' (not 'until I don't return')."
+    },
+    {
+      "id": 3,
+      "question": "'Lest' is always followed by which word?",
+      "options": ["May", "Will", "Should", "Would"],
+      "correct": 2,
+      "rationale": "'Lest' takes 'Should' — never 'may', 'will', or 'not'. E.g., 'Work hard lest you should fail.'"
+    },
+    {
+      "id": 4,
+      "question": "\"He talks as if he ___ a minister.\" Choose the correct verb for this unreal condition.",
+      "options": ["is", "was", "were", "will be"],
+      "correct": 2,
+      "rationale": "The unreal/hypothetical 'As if' structure uses 'were' for all subjects, not just plural ones."
+    }
+  ]
+}

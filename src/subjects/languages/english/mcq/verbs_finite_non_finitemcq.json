@@ -1,0 +1,34 @@
+{
+  "lessonId": "verbs_finite_non_finite",
+  "title": "Verbs - Finite and Non-Finite",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which type of verb changes according to tense, number, and person of the subject?",
+      "options": ["Finite verb", "Gerund", "Infinitive", "Participle"],
+      "correct": 0,
+      "rationale": "Finite verbs change according to tense, number, and person of the subject; non-finite verbs (gerunds, infinitives, participles) do not."
+    },
+    {
+      "id": 2,
+      "question": "What form does a Gerund take, and what role does it play in a sentence?",
+      "options": ["To + V1; acts as an adjective", "V1 + ing; functions as a noun", "V3; functions as an adjective", "V2; functions as an adverb"],
+      "correct": 1,
+      "rationale": "A Gerund is formed as V1 + ing and functions as a Noun in a sentence, e.g., 'Reading is a good habit.'"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following correctly uses a Gerund after a preposition?",
+      "options": ["He refrains from take tea at night.", "He refrains from taking tea at night.", "He refrains from to take tea at night.", "He refrains from took tea at night."],
+      "correct": 1,
+      "rationale": "A Gerund must always be used after a preposition — 'from taking' is correct."
+    },
+    {
+      "id": 4,
+      "question": "What is the structure of an Infinitive?",
+      "options": ["V1 + ing", "V2 alone", "To + V1", "Having + V3"],
+      "correct": 2,
+      "rationale": "An Infinitive takes the form 'To + V1', e.g., 'To read' — as in the earlier example 'Infinitive (To + V1)'."
+    }
+  ]
+}

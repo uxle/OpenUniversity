@@ -1,0 +1,34 @@
+{
+  "lessonId": "tense_present",
+  "title": "Time & Tenses - Present Tense",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Present Indefinite Tense is used for which of the following?",
+      "options": ["Ongoing actions only", "Daily routine, habitual actions, and universal truths", "Future plans", "Completed past actions"],
+      "correct": 1,
+      "rationale": "Present Indefinite Tense is used for Daily Routine, Habitual Actions, and Universal Truths."
+    },
+    {
+      "id": 2,
+      "question": "For a singular subject in Present Indefinite positive, what is added to the base verb?",
+      "options": ["-ing", "-ed", "-s or -es", "Nothing changes"],
+      "correct": 2,
+      "rationale": "For singular subjects (He, She, It, Name), the structure is Subject + V1 + s/es + Object."
+    },
+    {
+      "id": 3,
+      "question": "Which adverbs do NOT take 'do not/does not' in negative contexts?",
+      "options": ["Quickly, slowly, carefully", "Hardly, barely, scarcely, often, seldom, always, never", "Very, quite, rather", "Today, tomorrow, yesterday"],
+      "correct": 1,
+      "rationale": "Adverbs like hardly, barely, scarcely, often, seldom, always, and never do not take do not/does not — e.g., 'I hardly listen to anyone.'"
+    },
+    {
+      "id": 4,
+      "question": "Into how many sub-types is each tense category (Present, Past, Future) divided?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 2,
+      "rationale": "Each tense category contains four sub-types: Indefinite, Continuous, Perfect, and Perfect Continuous."
+    }
+  ]
+}

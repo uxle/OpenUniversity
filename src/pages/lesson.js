@@ -42,8 +42,11 @@ export async function render(container, { subjectId, subSubjectId, lessonId }) {
       contentSlot.append(
         ...[
           createEl("div", { class: "ou-reader-top-controls" }, [
-            createEl("a", { href: `#/subjects/${subjectId}/${subSubjectId}`, class: "ou-back-link" }, [
-              icon("chevron-left"), `Back to ${subSubject?.title || "lessons"}`,
+            createEl("a", {
+              href: subSubjectId ? `#/subjects/${subjectId}/${subSubjectId}` : `#/subjects/${subjectId}`,
+              class: "ou-back-link",
+            }, [
+              icon("chevron-left"), `Back to ${subSubject?.title || subject?.title || "lessons"}`,
             ]),
             createEl("div", { class: "ou-cluster" }, [
               createLanguageSwitcher(lang, renderLanguage),

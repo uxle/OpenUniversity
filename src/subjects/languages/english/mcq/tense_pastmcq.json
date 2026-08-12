@@ -1,0 +1,34 @@
+{
+  "lessonId": "tense_past",
+  "title": "Time & Tenses - Past Tense",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which structure is correct for Past Indefinite Tense (Positive)?",
+      "options": ["Subject + V1 + Object", "Subject + V2 + Object", "Subject + will + V1", "Subject + has + V3"],
+      "correct": 1,
+      "rationale": "Past Indefinite (Positive) uses Subject + V2 + Object, e.g., 'Mr. Ram purchased a bike two years ago.'"
+    },
+    {
+      "id": 2,
+      "question": "\"It is high time we ___ to school.\" Choose the correct verb.",
+      "options": ["go", "went", "will go", "have gone"],
+      "correct": 1,
+      "rationale": "Phrases like 'It is high time' are followed directly by Past Indefinite (V2) — 'went' is correct."
+    },
+    {
+      "id": 3,
+      "question": "Which of these is a key time indicator for Past Indefinite Tense?",
+      "options": ["Tomorrow", "Next week", "Yesterday", "Now"],
+      "correct": 2,
+      "rationale": "Key indicators for Past Indefinite include Ago, Last, Back, Yesterday, and 'In 1990' type phrases."
+    },
+    {
+      "id": 4,
+      "question": "What is the structure of Past Continuous Tense?",
+      "options": ["Subject + was/were + V1 + ing + Object", "Subject + V2 + Object", "Subject + had + V3", "Subject + will be + V1 + ing"],
+      "correct": 0,
+      "rationale": "Past Continuous Tense (used for ongoing past actions, रहा था/रही थी/रहे थे) follows: Subject + was/were + V1 + ing + Object."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "lessonId": "vocabulary_antonyms",
+  "title": "English Vocabulary - Antonyms",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the antonym of 'Slender'?",
+      "options": ["Stout, Chubby, Fatty", "Rare, Unusual", "Amateur, Fresher", "Titanic, Huge"],
+      "correct": 0,
+      "rationale": "'Slender' (दुबला-पतला) is the opposite of Stout, Chubby, or Fatty (मोटा, भारी)."
+    },
+    {
+      "id": 2,
+      "question": "What is the antonym of 'Omnipotent'?",
+      "options": ["Powerful, Strong", "Powerless, Fragile, Feeble, Weak", "Ordinary, Common", "Generous, Kind"],
+      "correct": 1,
+      "rationale": "'Omnipotent' (सर्वशक्तिशाली) is the opposite of Powerless, Fragile, Feeble, or Weak (कमजोर)."
+    },
+    {
+      "id": 3,
+      "question": "Which word means the opposite of 'Pacify / Assuage'?",
+      "options": ["Comfort, Soothe", "Inflame, Infuriate, Provoke", "Reduce, Decrease", "Conceal, Hide"],
+      "correct": 1,
+      "rationale": "'Pacify / Assuage' (शांत करना) is opposite in meaning to Inflame, Infuriate, or Provoke (भड़काना)।"
+    },
+    {
+      "id": 4,
+      "question": "'Veteran' is the opposite of:",
+      "options": ["Amateur, Fresher, Tyro", "Powerless, Feeble", "Ordinary, Common", "Fatal, Harmless"],
+      "correct": 0,
+      "rationale": "'Veteran' (अनुभवी) is the opposite of Amateur, Fresher, or Tyro (नौसिखिया)।"
+    }
+  ]
+}

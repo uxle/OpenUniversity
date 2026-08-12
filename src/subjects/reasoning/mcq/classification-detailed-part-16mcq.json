@@ -1,0 +1,34 @@
+{
+  "lessonId": "classification-detailed-part-16",
+  "title": "Classification / Odd One Out — In-Depth Guide",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the first step in the guide's classification-solving flow (Find GROUP -> Find PROPERTY -> Find EXCEPTION -> ANSWER)?",
+      "options": ["Immediately eliminate the longest word", "Identify the group the majority of items belong to", "Guess the odd one out by instinct", "Count the letters in every option first"],
+      "correct": 1,
+      "rationale": "The guide's solving flow starts by finding the shared group among the majority of items, then the specific property that defines it, before checking which single item breaks that property."
+    },
+    {
+      "id": 2,
+      "question": "When a classification group has no obvious shared meaning, what should you check instead?",
+      "options": ["Give up and pick the first option", "Structural properties, such as letter count or numeric properties like perfect squares/primes", "Whether the words rhyme", "The alphabetical order of the options"],
+      "correct": 1,
+      "rationale": "Many classification questions hide a structural or numeric pattern rather than a meaning-based one — checking letter counts, perfect squares, primes, and similar properties often reveals the real shared category."
+    },
+    {
+      "id": 3,
+      "question": "In the set 121, 144, 169, 200, 225, why is 200 the odd one out?",
+      "options": ["It is the only even number", "It is the only number that is not a perfect square", "It is the only three-digit number", "It is the largest number in the set"],
+      "correct": 1,
+      "rationale": "121, 144, 169, and 225 are perfect squares (11^2, 12^2, 13^2, 15^2); 200 is not a perfect square, breaking the shared structural property."
+    },
+    {
+      "id": 4,
+      "question": "If your first guess at the shared category leaves more than one item looking 'odd,' what should you do?",
+      "options": ["Pick either odd item at random", "Refine or narrow the category definition until exactly one item fails it", "Conclude the question has no valid answer", "Switch to checking only alphabetical order"],
+      "correct": 1,
+      "rationale": "A correct classification category should leave exactly one item as the exception — if more than one item seems to fail your guessed category, the category itself needs to be made more specific."
+    }
+  ]
+}

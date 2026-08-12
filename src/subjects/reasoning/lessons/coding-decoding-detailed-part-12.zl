@@ -1,0 +1,288 @@
+# Coding-Decoding — In-Depth Guide — Part 12 of 22
+
+[info title="Part 12 of 22"]
+Continuing from the previous part. back to Part 11 (`coding-decoding-detailed-part-11`) · continue to Part 13 (`coding-decoding-detailed-part-13`).
+[/info]
+
+## 99. Golden Rule: Simplest Consistent Rule
+
+If:
+
+```text
+CAT → DBU
+```
+
+do not invent:
+
+```text
+matrix
++ prime numbers
++ reversal
++ multiplication
+```
+
+when:
+
+```text
++1
+```
+
+already explains everything.
+
+Use:
+
+> The simplest rule that explains **all** examples.
+
+---
+
+## 100. Rule Verification
+
+Never stop after finding a rule from one letter.
+
+If:
+
+```text
+CAT → DBU
+```
+
+you think:
+
+```text
++1
+```
+
+Verify all three:
+
+```text
+C → D ✓
+A → B ✓
+T → U ✓
+```
+
+Then test another provided example if available.
+
+---
+
+## 101. Two-Example Verification
+
+Suppose:
+
+```text
+DOG → EPH
+CAT → DBU
+```
+
+Check:
+
+```text
+D→E +1
+O→P +1
+G→H +1
+
+C→D +1
+A→B +1
+T→U +1
+```
+
+Now the rule is strongly confirmed.
+
+---
+
+## 102. Contradiction Detection
+
+Suppose:
+
+```text
+CAT → DBU
+DOG → EPH
+```
+
+but a proposed rule says:
+
+```text
+first letter +1
+second letter +2
+third letter +1
+```
+
+Check:
+
+```text
+CAT
+C→D +1
+A→C +2
+T→U +1
+```
+
+This predicts:
+
+```text
+DCU
+```
+
+not:
+
+```text
+DBU
+```
+
+Therefore reject the rule.
+
+---
+
+## 103. Coding Solving Algorithm
+
+```mermaid
+flowchart TD
+    A[Read all examples] --> B[Separate input and output]
+    B --> C[Convert letters to positions]
+    C --> D[Calculate differences]
+    D --> E{Simple rule?}
+    E -->|Yes| F[Verify on every example]
+    E -->|No| G[Check reversal / rearrangement]
+    G --> H[Check alternating or position rules]
+    H --> I[Check word properties]
+    I --> J[Check mathematical transformation]
+    J --> F
+    F --> K{All examples fit?}
+    K -->|Yes| L[Apply rule]
+    K -->|No| G
+```
+
+---
+
+## 104. Master Solving Flowchart
+
+```text
+                 START
+                   |
+                   ↓
+           Read ALL examples
+                   |
+                   ↓
+        Separate INPUT / OUTPUT
+                   |
+                   ↓
+       ┌───────────────────────┐
+       │ Letter positions?     │
+       └──────────┬────────────┘
+                  ↓
+        Calculate differences
+                  |
+         ┌────────┴────────┐
+         ↓                 ↓
+    Constant shift?      No
+         |                 |
+        YES                ↓
+         |          Reverse alphabet?
+         |                 |
+         |          ┌──────┴──────┐
+         |          ↓             ↓
+         |         YES            NO
+         |          |             |
+         |          |      Position pattern?
+         |          |             |
+         └──────────┴─────────────┤
+                                   ↓
+                            Word properties?
+                                   |
+                                   ↓
+                            Math / sequence?
+                                   |
+                                   ↓
+                              VERIFY ALL
+                                   |
+                                   ↓
+                                ANSWER
+```
+
+---
+
+## 105. Advanced Pattern: Pairwise Operations
+
+Letters may be grouped:
+
+```text
+AB CD EF
+```
+
+Then each pair may be transformed.
+
+Example:
+
+```text
+AB → BA
+CD → DC
+EF → FE
+```
+
+Result:
+
+```text
+BADCFE
+```
+
+Another rule:
+
+```text
+A+B
+C+D
+E+F
+```
+
+could produce numbers.
+
+---
+
+## 106. Pair Sum Coding
+
+Example:
+
+```text
+ABCD
+```
+
+Positions:
+
+```text
+A=1
+B=2
+C=3
+D=4
+```
+
+Pair sums:
+
+```text
+A+B = 3
+C+D = 7
+```
+
+Code:
+
+```text
+3,7
+```
+
+---
+
+## 107. Pair Difference Coding
+
+```text
+ABCD
+```
+
+Absolute differences:
+
+```text
+|1-2| = 1
+|3-4| = 1
+```
+
+Code:
+
+```text
+1,1
+```
+
+---

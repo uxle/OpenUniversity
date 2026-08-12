@@ -1,0 +1,34 @@
+{
+  "lessonId": "subject_verb_agreement_basics",
+  "title": "Subject-Verb Agreement - Basics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is an example of a singular helping verb?",
+      "options": ["Are", "Have", "Is", "Were"],
+      "correct": 2,
+      "rationale": "'Is', 'Has', 'Does', and 'Was' are singular helping verbs, while 'Are', 'Have', 'Do', and 'Were' are plural."
+    },
+    {
+      "id": 2,
+      "question": "Main verbs in their base form are considered:",
+      "options": ["Singular", "Plural", "Neither singular nor plural", "Always past tense"],
+      "correct": 1,
+      "rationale": "Main verbs in their base form are plural; to make them singular, you add '-s' or '-es' (e.g., Teach → Teaches)."
+    },
+    {
+      "id": 3,
+      "question": "Choose the correct sentence.",
+      "options": ["He go to school.", "He goes to school.", "He going to school.", "He gone to school."],
+      "correct": 1,
+      "rationale": "Since 'He' is a singular subject, the main verb must take the singular '-es' form: 'goes'."
+    },
+    {
+      "id": 4,
+      "question": "Which of these is treated as a plural subject?",
+      "options": ["He", "It", "Name (e.g., Ram)", "They"],
+      "correct": 3,
+      "rationale": "'We', 'I', 'You', and 'They' are treated as plural subjects, while 'He', 'She', 'It', and singular names are singular subjects."
+    }
+  ]
+}

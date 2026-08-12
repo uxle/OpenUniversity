@@ -1,0 +1,288 @@
+# Coding-Decoding — In-Depth Guide — Part 2 of 22
+
+[info title="Part 2 of 22"]
+Continuing from the previous part. back to Part 1 (`coding-decoding-detailed-part-1`) · continue to Part 3 (`coding-decoding-detailed-part-3`).
+[/info]
+
+## 9. Letter Shift Coding
+
+The simplest coding method is shifting letters.
+
+Example:
+
+```text
+CAT → DBU
+```
+
+Convert:
+
+```text
+C → D = +1
+A → B = +1
+T → U = +1
+```
+
+Therefore the rule is:
+
+```text
+Every letter +1
+```
+
+Apply to:
+
+```text
+DOG
+```
+
+```text
+D → E
+O → P
+G → H
+```
+
+Answer:
+
+```text
+EPH
+```
+
+---
+
+## 10. +2 Coding
+
+Example:
+
+```text
+CAT → ECV
+```
+
+Because:
+
+```text
+C + 2 = E
+A + 2 = C
+T + 2 = V
+```
+
+Therefore:
+
+```text
+DOG → FQI
+```
+
+---
+
+## 11. -1 Coding
+
+Example:
+
+```text
+DOG → CNF
+```
+
+because:
+
+```text
+D → C
+O → N
+G → F
+```
+
+Rule:
+
+```text
+Each letter -1
+```
+
+---
+
+## 12. Different Shifts
+
+Sometimes every position has a different shift.
+
+Example:
+
+```text
+CAT → DBW
+```
+
+Compare:
+
+```text
+C → D = +1
+A → B = +1
+T → W = +3
+```
+
+The rule may depend on:
+
+- position
+- letter
+- vowel/consonant
+- alphabet position
+- alternating pattern
+
+Never assume all letters use the same shift.
+
+---
+
+## 13. Alternating Shift Coding
+
+Example:
+
+```text
+ABCDE → BZDCF
+```
+
+Maybe:
+
+```text
+Position 1: +1
+Position 2: -1
+Position 3: +1
+Position 4: -1
+Position 5: +1
+```
+
+Test:
+
+```text
+A → B
+B → A
+C → D
+D → C
+E → F
+```
+
+So:
+
+```text
+BADCF
+```
+
+The exact example must always be checked against the supplied pattern.
+
+---
+
+## 14. Position-Based Shift
+
+A common advanced pattern:
+
+```text
+1st letter +1
+2nd letter +2
+3rd letter +3
+4th letter +4
+...
+```
+
+Example:
+
+```text
+ABCD
+```
+
+Apply:
+
+```text
+A + 1 = B
+B + 2 = D
+C + 3 = F
+D + 4 = H
+```
+
+Therefore:
+
+```text
+ABCD → BDFH
+```
+
+---
+
+## 15. Reverse Position Shift
+
+Another pattern:
+
+```text
+1st letter +4
+2nd letter +3
+3rd letter +2
+4th letter +1
+```
+
+Example:
+
+```text
+ABCD
+```
+
+gives:
+
+```text
+A → E
+B → E
+C → E
+D → E
+```
+
+Result:
+
+```text
+EEEE
+```
+
+This illustrates why the position of a letter may matter more than its identity.
+
+---
+
+## 16. Wrap-Around Rule
+
+Alphabet shifts do not stop at Z.
+
+They usually wrap around.
+
+Example:
+
+```text
+Z + 1 = A
+```
+
+Likewise:
+
+```text
+Y + 3 = B
+```
+
+because:
+
+```text
+Y → Z → A → B
+```
+
+---
+
+## 17. Circular Alphabet Diagram
+
+```text
+             A
+        Z           B
+      Y               C
+     X                 D
+    W                   E
+    V                   F
+    U                   G
+     T                 H
+      S               I
+        R           J
+             ...
+```
+
+Think of the alphabet as a circle.
+
+Mathematically:
+
+```text
+new_position = ((old_position - 1 + shift) mod 26) + 1
+```
+
+---

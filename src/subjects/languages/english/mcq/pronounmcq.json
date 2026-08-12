@@ -1,0 +1,34 @@
+{
+  "lessonId": "pronoun",
+  "title": "Pronoun - Types, Cases, and Usage Rules",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which case should be used after prepositions, 'let', 'except', and 'like'?",
+      "options": ["Subjective Case", "Objective Case", "Possessive Adjective", "Reflexive Pronoun"],
+      "correct": 1,
+      "rationale": "Objective Case (me, him, her, us, them) is used after prepositions, 'let', 'except', and 'like', e.g., 'There is no disagreement between you and me.'"
+    },
+    {
+      "id": 2,
+      "question": "What is the key difference between a Possessive Adjective and a Possessive Pronoun?",
+      "options": ["They are identical in every way", "A Possessive Adjective requires a noun after it (my pen); a Possessive Pronoun does not (mine)", "Possessive Pronouns are only used in questions", "Possessive Adjectives are only used with plural nouns"],
+      "correct": 1,
+      "rationale": "Possessive Adjectives require a noun after them ('my pen'), whereas Possessive Pronouns stand alone ('mine')."
+    },
+    {
+      "id": 3,
+      "question": "\"It is ___ who am involved in solving this.\" Choose the correct pronoun.",
+      "options": ["me", "I", "myself", "mine"],
+      "correct": 1,
+      "rationale": "Subjective Case is used after 'It is' and in comparisons — 'I' is correct here, not the objective 'me'."
+    },
+    {
+      "id": 4,
+      "question": "What is the Reflexive Pronoun form of 'They'?",
+      "options": ["Them", "Their", "Theirs", "Themselves"],
+      "correct": 3,
+      "rationale": "According to the pronoun case chart, the Reflexive Pronoun for 'They' is 'Themselves'."
+    }
+  ]
+}

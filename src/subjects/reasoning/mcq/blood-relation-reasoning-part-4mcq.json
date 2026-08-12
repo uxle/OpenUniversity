@@ -1,0 +1,34 @@
+{
+  "lessonId": "blood-relation-reasoning",
+  "title": "Blood Relation Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "\"A is B's father. B is C's sister. How is A related to C?\" — What is A to C?",
+      "options": ["Uncle", "Father", "Grandfather", "Brother"],
+      "correct": 1,
+      "rationale": "Since A is B's parent and B and C are siblings, A is also the parent of C — specifically, A is C's father."
+    },
+    {
+      "id": 2,
+      "question": "\"M is the sister of N. N is the father of O.\" How is M related to O?",
+      "options": ["Mother", "Sister", "Aunt", "Cousin"],
+      "correct": 2,
+      "rationale": "M is the sibling of O's father (N), which makes M the aunt of O."
+    },
+    {
+      "id": 3,
+      "question": "\"X is the son of Y. Y is the daughter of Z.\" What is X to Z?",
+      "options": ["Sibling", "Grandchild", "Parent", "Nephew"],
+      "correct": 1,
+      "rationale": "Since Y is Z's child and X is Y's child, Z is X's grandparent — so X is Z's grandchild."
+    },
+    {
+      "id": 4,
+      "question": "A good blood-relation reasoning system should separately track which of the following?",
+      "options": ["Only names and ages", "Generation, gender, marriage, parent-child links, and sibling links", "Only first names in alphabetical order", "Only the number of people mentioned"],
+      "correct": 1,
+      "rationale": "The lesson stresses tracking generation, gender, marriage, parent-child links, and sibling links separately to reliably build a family graph."
+    }
+  ]
+}

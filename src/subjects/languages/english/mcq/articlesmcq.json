@@ -1,0 +1,34 @@
+{
+  "lessonId": "articles",
+  "title": "Articles - A, An, and The",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which article is correct before 'hour'?",
+      "options": ["A hour", "An hour", "The hour only", "No article needed"],
+      "correct": 1,
+      "rationale": "'An' is used before words beginning with a vowel SOUND — 'hour' starts with a silent 'h', so it has a vowel sound, hence 'an hour'."
+    },
+    {
+      "id": 2,
+      "question": "Which is the correct article rule for 'university'?",
+      "options": ["An university, since it starts with a vowel letter", "A university, since it starts with a consonant SOUND (yoo-)", "The university, always", "No article needed before university"],
+      "correct": 1,
+      "rationale": "'University' starts with a consonant sound ('yoo-'), so it takes 'a', not 'an', despite starting with the letter 'u'."
+    },
+    {
+      "id": 3,
+      "question": "Which of these requires 'The' according to the mandatory-use rules?",
+      "options": ["A river in general", "The Ganga (a specific river)", "Breakfast", "English (the language)"],
+      "correct": 1,
+      "rationale": "Specific geographical features like rivers (The Ganga), oceans, and mountain ranges require the definite article 'The'."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following correctly has NO article, per the rule on languages, professions, and hobbies?",
+      "options": ["He is learning the English.", "He is learning English.", "He is learning a English.", "He is learning an English."],
+      "correct": 1,
+      "rationale": "Articles are NOT used before languages, professions, hobbies, or diseases — 'He is learning English' is correct with zero article."
+    }
+  ]
+}

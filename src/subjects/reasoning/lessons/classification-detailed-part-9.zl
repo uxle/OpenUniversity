@@ -1,0 +1,292 @@
+# Classification / Odd One Out — In-Depth Guide — Part 9 of 16
+
+[info title="Part 9 of 16"]
+Continuing from the previous part. back to Part 8 (`classification-detailed-part-8`) · continue to Part 10 (`classification-detailed-part-10`).
+[/info]
+
+## 118. Classification by Physical Property
+
+Examples:
+
+```text
+Gold
+Copper
+Aluminium
+Rubber
+```
+
+Electrical conductivity separates rubber.
+
+Other possible properties:
+
+- density
+- magnetism
+- hardness
+- melting point
+- state of matter
+
+---
+
+## 119. Magnetic Classification
+
+```text
+Iron
+Nickel
+Cobalt
+Copper
+```
+
+Iron, nickel and cobalt are strongly ferromagnetic.
+
+Copper is not.
+
+**Answer: Copper**
+
+---
+
+## 120. Classification by Geometry
+
+```text
+Square
+Rectangle
+Rhombus
+Triangle
+```
+
+Square, rectangle and rhombus are quadrilaterals.
+
+Triangle has 3 sides.
+
+**Answer: Triangle**
+
+---
+
+## 121. Classification by Angles
+
+```text
+Acute triangle
+Right triangle
+Obtuse triangle
+Square
+```
+
+The first three are triangle types.
+
+Square is not a triangle.
+
+---
+
+## 122. Classification by Number of Diagonals
+
+Advanced geometry may classify polygons by diagonal count.
+
+For an \(n\)-sided polygon:
+
+```text
+D=\frac{n(n-3)}{2}
+```
+
+Example:
+
+Triangle:
+
+```text
+D=\frac{3(0)}2=0
+```
+
+Quadrilateral:
+
+```text
+D=\frac{4(1)}2=2
+```
+
+Pentagon:
+
+```text
+D=\frac{5(2)}2=5
+```
+
+---
+
+## 123. Classification by Symmetry
+
+Possible properties:
+
+```text
+Vertical symmetry
+Horizontal symmetry
+Rotational symmetry
+No symmetry
+```
+
+This is especially common in non-verbal reasoning.
+
+---
+
+## 124. Non-Verbal Classification
+
+Non-verbal classification presents figures instead of words/numbers.
+
+You compare:
+
+- shape
+- size
+- number of elements
+- orientation
+- shading
+- position
+- symmetry
+- rotation
+- reflection
+- enclosed regions
+
+---
+
+## 125. Shape Feature Vector
+
+Represent a figure as:
+
+```text
+F=[s,n,e,r,f,p]
+```
+
+where:
+
+- \(s\) = shape type
+- \(n\) = number of elements
+- \(e\) = edges
+- \(r\) = rotation
+- \(f\) = fill/shading
+- \(p\) = position
+
+The odd figure differs in one or more important features.
+
+---
+
+## 126. Non-Verbal Classification Workflow
+
+```text
+FIGURES
+  │
+  ▼
+Count elements
+  │
+  ▼
+Compare shapes
+  │
+  ▼
+Compare orientation
+  │
+  ▼
+Compare shading
+  │
+  ▼
+Compare position
+  │
+  ▼
+Check rotation/reflection
+  │
+  ▼
+Find unique figure
+```
+
+---
+
+## 127. Rotation vs Reflection
+
+Very important:
+
+#### Rotation
+
+The object turns.
+
+```text
+↑ → ↓ ←
+```
+
+#### Reflection
+
+The object becomes a mirror image.
+
+```text
+→ | ←
+```
+
+Do not treat them as the same transformation.
+
+---
+
+## 128. Counting Method
+
+For figures, count:
+
+```text
+○ circles
+△ triangles
+□ squares
+lines
+dots
+arrows
+shaded regions
+```
+
+If three figures have 4 elements and one has 5, the fifth may be the odd one.
+
+---
+
+## 129. Position Method
+
+Compare whether an element is:
+
+```text
+top
+bottom
+left
+right
+center
+inside
+outside
+```
+
+Example:
+
+```text
+●○
+●○
+○●
+●○
+```
+
+The third may be different if three share the same left-right arrangement.
+
+---
+
+## 130. Orientation Method
+
+Three arrows may point clockwise relative to another shape, while one points counterclockwise.
+
+Check:
+
+```text
+↑
+→
+↓
+←
+```
+
+---
+
+## 131. Shading Method
+
+Compare:
+
+```text
+filled
+empty
+half-filled
+striped
+```
+
+A single differently shaded figure can be the answer.
+
+---

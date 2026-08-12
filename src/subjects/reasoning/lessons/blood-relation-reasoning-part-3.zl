@@ -1,0 +1,296 @@
+# Blood Relation Reasoning — Part 3 of 4
+
+[info title="Part 3 of 4"]
+Continuing from the previous part. back to Part 2 (`blood-relation-reasoning-part-2`) · continue to Part 4 (`blood-relation-reasoning-part-4`).
+[/info]
+
+> Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom.
+
+[important]
+The core idea is simple: convert words like **father**, **mother**, **brother**, **uncle**, and **cousin** into a structured family model, then reason step by step.
+[/important]
+
+## 30. Step-by-Step Solver
+
+A blood relation solver should do this:
+
+```text
+1. Detect people
+2. Detect relation words
+3. Detect gender words
+4. Build direct links
+5. Propagate indirect links
+6. Infer generation
+7. Infer final relation
+8. Validate consistency
+9. Format the answer
+```
+
+## 31. Example Problem Set
+
+### Problem A
+
+> “A is the son of B. B is the brother of C. How is A related to C?”
+
+Reasoning:
+
+- B is sibling of C
+- A is child of B
+- Therefore A is C's nephew if C is female, or nephew if C is male?  
+  More carefully: A is the child of C's sibling, so A is **nephew** of C if A is male.
+
+If A's gender is male, answer is:
+
+[important]
+A is **nephew** of C.
+[/important]
+
+If A's gender is unknown, answer can be:
+
+[important]
+A is the **child of C's sibling**.
+[/important]
+
+## 32. Male/Female-Specific Relations
+
+Some relations depend on gender.
+
+| Relation | Gender of person |
+|---|---|
+| father | male |
+| mother | female |
+| son | male |
+| daughter | female |
+| brother | male |
+| sister | female |
+| husband | male |
+| wife | female |
+| uncle | male |
+| aunt | female |
+| nephew | male |
+| niece | female |
+
+If gender is unknown, prefer neutral terms like:
+
+- parent
+- child
+- sibling
+- spouse
+- grandparent
+- grandchild
+- cousin
+
+## 33. Grand Relations
+
+```text
+father of parent = grandfather
+mother of parent = grandmother
+child of child = grandchild
+sibling of parent = uncle or aunt
+child of sibling = nephew or niece or cousin
+```
+
+These are computed by generation distance.
+
+## 34. Generation Distance
+
+A useful model is:
+
+```text
+Same generation = 0
+Parent generation = +1
+Grandparent generation = +2
+Child generation = -1
+Grandchild generation = -2
+```
+
+Then:
+
+- father → +1
+- grandfather → +2
+- son → -1
+- grandson → -2
+
+This makes reasoning systematic.
+
+## 35. Generation Tree
+
+@diagram tree id="generation-tree" layout="hierarchical" aria="Generation distance from +2 to -2 relative to a person"
+node g2 [label="Generation +2"]
+node g1 [label="Generation +1"]
+node g0 [label="Generation 0"]
+node gm1 [label="Generation -1"]
+node gm2 [label="Generation -2"]
+node exg2 [label="Grandparents"]
+node exg1 [label="Parents"]
+node exg0a [label="Person"]
+node exg0b [label="Siblings"]
+node exgm1 [label="Children"]
+node exgm2 [label="Grandchildren"]
+
+edge g2 -> g1
+edge g1 -> g0
+edge g0 -> gm1
+edge gm1 -> gm2
+edge g2 -> exg2
+edge g1 -> exg1
+edge g0 -> exg0a
+edge g0 -> exg0b
+edge gm1 -> exgm1
+edge gm2 -> exgm2
+@/diagram
+
+## 36. Reasoning With a Family Graph
+
+If the system knows:
+
+- A is parent of B
+- B is parent of C
+
+Then:
+
+- A is grandparent of C
+- C is grandchild of A
+
+This is graph traversal, not memorization.
+
+## 37. More Complex Example
+
+> “R is the son of S. S is the sister of T. T is the father of U. How is R related to U?”
+
+### Step 1
+
+- S is sibling of T
+- T is father of U
+- R is child of S
+
+### Step 2
+
+- S and T are siblings
+- So R is child of U's aunt/uncle
+
+### Step 3
+
+- R is cousin of U
+
+### Answer
+
+[important]
+R is **cousin** of U.
+[/important]
+
+## 38. Two-Side Family Tree
+
+The same paternal/maternal split shown earlier applies here too:
+
+- **Grandfather** → Father → {Child, Sibling}; Grandfather → Uncle → Cousin
+- **Grandmother** → Mother → {Child, Sibling}
+
+This is helpful when a question asks about both paternal and maternal branches.
+
+## 39. Sibling and Half-Sibling Handling
+
+If two people share one parent, they may be half-siblings.
+
+A careful solver should support:
+
+- full sibling
+- half sibling
+- step sibling
+
+But if the question uses simple exam-style wording, usually "brother" and "sister" mean sibling unless the problem says otherwise.
+
+## 40. Step Relations
+
+Step relations come from marriage, not blood.
+
+Examples:
+
+- stepfather
+- stepmother
+- stepson
+- stepdaughter
+- stepbrother
+- stepsister
+
+[warning]
+Step relations are not blood relations. If your document is strictly about blood relation reasoning, keep them separate unless the problem explicitly includes them.
+[/warning]
+
+## 41. Marriage and In-Law Links
+
+Sometimes the input includes marriage.
+
+Examples:
+
+- A is married to B
+- B is mother of C
+
+Then A may be the step-parent or parent depending on the question wording.
+
+A good solver stores the spouse link separately from parent-child links.
+
+## 42. Relation Normalization
+
+Convert words into canonical forms:
+
+- dad → father
+- mom → mother
+- son → male child
+- daughter → female child
+- bro → brother
+- sis → sister
+- grandpa → grandfather
+- grandma → grandmother
+
+This improves matching and inference.
+
+## 43. Example With Normalization
+
+> “John is the bro of Mary. Mary is the mom of Sam.”
+
+Normalized:
+
+- John is brother of Mary
+- Mary is mother of Sam
+
+Inference:
+
+- John is Sam's maternal uncle
+
+## 44. Solving Method
+
+A good method is:
+
+```text
+A → relation → B
+B → relation → C
+C → relation → D
+```
+
+Then reduce the chain to a single inferred relation.
+
+Example:
+
+```text
+father + sibling + child
+```
+
+may become:
+
+```text
+uncle / aunt / cousin
+```
+
+depending on gender and generation.
+
+## 45. Relation Table for Quick Inference
+
+| Chain | Result |
+|---|---|
+| parent + parent | grandparent |
+| parent + sibling | uncle/aunt |
+| sibling + child | nephew/niece |
+| sibling + sibling | sibling |
+| spouse + child | parent/step-parent depending on context |
+| child + sibling | niece/nephew/cousin depending on chain |

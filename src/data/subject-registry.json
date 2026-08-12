@@ -11,14 +11,8 @@
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 8,
+      "lessonCount": 5,
       "subSubjects": [
-        {
-          "id": "ai-reasoning",
-          "title": "AI Reasoning",
-          "description": "How intelligent systems convert natural language into structured, symbolic representations — then reason, calculate, and verify answers deterministically instead of guessing.",
-          "lessonCount": 3
-        },
         {
           "id": "algorithms",
           "title": "Algorithms",
@@ -70,8 +64,14 @@
       "id": "languages",
       "title": "Languages",
       "description": "Learn the script, grammar, and structure of world languages.",
-      "lessonCount": 29,
+      "lessonCount": 51,
       "subSubjects": [
+        {
+          "id": "english",
+          "title": "English",
+          "description": "Learn English grammar — sentence structure, tenses, parts of speech, and vocabulary building.",
+          "lessonCount": 22
+        },
         {
           "id": "hindi",
           "title": "Hindi",
@@ -123,6 +123,13 @@
       "title": "Philosophy",
       "description": "Fundamental questions about knowledge, existence, and ethics.",
       "lessonCount": 1,
+      "subSubjects": []
+    },
+    {
+      "id": "reasoning",
+      "title": "Reasoning",
+      "description": "Logical and verbal reasoning for competitive exams — blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, sentence rearrangement, and structured problem-solving.",
+      "lessonCount": 102,
       "subSubjects": []
     },
     {

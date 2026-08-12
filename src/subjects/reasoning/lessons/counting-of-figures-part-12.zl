@@ -1,0 +1,90 @@
+# Counting of Figures — Part 12 of 12
+
+[info title="Part 12 of 12"]
+Continuing from the previous part. back to Part 11 (`counting-of-figures-part-11`).
+[/info]
+
+## 147. Mental Model
+
+Imagine the diagram is made of LEGO pieces.
+
+```text
+SMALL PIECES
+     ↓
+COMBINE
+     ↓
+MEDIUM FIGURES
+     ↓
+COMBINE AGAIN
+     ↓
+LARGE FIGURES
+```
+
+Your job is to count every valid figure produced at every level.
+
+---
+
+## 148. Ultimate Rule
+
+> **Never count what you see only. Count what the lines can form.**
+
+That is the central principle of figure-counting reasoning.
+
+---
+
+## 149. Final Revision Map
+
+```text
+                 COUNTING OF FIGURES
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+      LINES            GRIDS           COMPLEX
+        │                │                │
+     Segments         Squares         Triangles
+     Intersections    Rectangles      Quadrilaterals
+     Angles           Regions         Polygons
+        │                │             Composite
+        │                │             Overlapping
+        └────────────────┼────────────────┘
+                         │
+                         ▼
+                SIZE + ORIENTATION
+                         │
+                         ▼
+                    VALIDATE
+                         │
+                         ▼
+                   DEDUPLICATE
+                         │
+                         ▼
+                       TOTAL
+```
+
+---
+
+## 150. One-Line Formula Memory
+
+```text
+n points → segments = nC2
+
+n×n grid → squares = 1²+2²+...+n²
+
+m×n grid → rectangles = C(m+1,2)×C(n+1,2)
+
+n-gon → diagonals = n(n−3)/2
+
+n general lines → max intersections = nC2
+
+n general lines → max regions = n(n+1)/2 + 1
+```
+
+---
+
+## END OF CHAPTER
+
+### Next Recommended Chapter
+
+**Venn Diagrams — Maximum Detailed**
+
+It naturally follows figure counting because it introduces set-based visual reasoning, overlapping regions, inclusion-exclusion, and diagram interpretation.

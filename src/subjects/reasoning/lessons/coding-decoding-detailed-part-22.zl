@@ -1,0 +1,134 @@
+# Coding-Decoding — In-Depth Guide — Part 22 of 22
+
+[info title="Part 22 of 22"]
+Continuing from the previous part. back to Part 21 (`coding-decoding-detailed-part-21`).
+[/info]
+
+## 180. Final Exam Algorithm
+
+Memorize this sequence:
+
+```text
+                 CODING QUESTION
+                        |
+                        ↓
+               READ ALL EXAMPLES
+                        |
+                        ↓
+              INPUT → OUTPUT TABLE
+                        |
+                        ↓
+             CONVERT A-Z → 1-26
+                        |
+                        ↓
+               CALCULATE DIFFERENCE
+                        |
+              ┌─────────┴─────────┐
+              ↓                   ↓
+         Constant shift?         NO
+              |                   |
+             YES                  ↓
+              |              Mirror?
+              |                   |
+              |              Reverse?
+              |                   |
+              |          Position rearrangement?
+              |                   |
+              |          Alternating pattern?
+              |                   |
+              |          Word properties?
+              |                   |
+              |          Mathematical pattern?
+              |                   |
+              └──────────┬────────┘
+                         ↓
+                    VERIFY ALL
+                     EXAMPLES
+                         |
+                         ↓
+                   APPLY RULE
+                         |
+                         ↓
+                      ANSWER
+```
+
+---
+
+## 181. Final Checklist
+
+Before considering coding-decoding mastered, you should be able to:
+
+- [ ] Convert A–Z to 1–26 instantly.
+- [ ] Convert normal alphabet to reverse alphabet.
+- [ ] Detect +1, -1, +2, -2 shifts.
+- [ ] Handle Z/A wrap-around.
+- [ ] Detect alternating shifts.
+- [ ] Detect position-dependent shifts.
+- [ ] Detect word reversal.
+- [ ] Detect position rearrangement.
+- [ ] Calculate alphabet sums.
+- [ ] Calculate products and differences.
+- [ ] Use first/last/middle letters.
+- [ ] Use word length.
+- [ ] Use vowel/consonant patterns.
+- [ ] Solve Chinese coding.
+- [ ] Solve substitution coding.
+- [ ] Solve operator-symbol coding.
+- [ ] Decode matrix coding.
+- [ ] Understand binary-style coding.
+- [ ] Reverse a multi-step transformation.
+- [ ] Verify a rule against every example.
+- [ ] Reject rules that only fit one example.
+- [ ] Use option elimination efficiently.
+
+---
+
+## 182. Final Concept
+
+The deepest idea behind coding-decoding is:
+
+```text
+                OBSERVATION
+                     ↓
+              REPRESENTATION
+                     ↓
+              TRANSFORMATION
+                     ↓
+               RELATIONSHIP
+                     ↓
+                  PATTERN
+                     ↓
+                  RULE
+                     ↓
+              ENCODE / DECODE
+```
+
+Do not memorize hundreds of individual codes.
+
+Instead, learn to recognize the **transformation**.
+
+Once you can see:
+
+```text
++1
+-1
+mirror
+reverse
+rearrangement
+position shift
+sum
+product
+length
+frequency
+common-word mapping
+substitution
+conditional rule
+```
+
+most coding-decoding questions become mechanical.
+
+---
+
+## 183. One-Line Master Rule
+
+> **Convert the information into a measurable form, compare input with output, find the simplest rule that explains every example, verify it, and only then decode the question.**

@@ -1,0 +1,281 @@
+# Clock Reasoning — Part 4 of 10
+
+[info title="Part 4 of 10"]
+Continuing from the previous part. back to Part 3 (`clock-reasoning-part-3`) · continue to Part 5 (`clock-reasoning-part-5`).
+[/info]
+
+## 25. Why the Hour Hand Matters
+
+A common mistake is to assume **3:30** means the hour hand sits exactly on the 3. It does not — the hour hand keeps moving between hour marks as the minutes pass:
+
+$\theta_h = 30(3) + 0.5(30) = 105°$, while the minute hand is at $\theta_m = 6(30) = 180°$. The angle between them is $180 - 105 = 75°$, not the $90°$ you'd get by wrongly assuming the hour hand stays put on the 3.
+
+@vector width=800 height=480
+artboard id="clock-330" x=0 y=0 w=800 h=480
+
+layer id="face-c330"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-c330"
+line x1=400 y1=240 x2=497 y2=266 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=400 y2=390 stroke="#334155" strokeWidth=7
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*3:30 — the minute hand points straight down, but the hour hand has already drifted a quarter of the way from 3 toward 4.*
+
+Accurate clock reasoning must model continuous movement.
+
+## 26. Second-Hand Reasoning
+
+The second hand moves $360° / 60 = 6°$ per second. Once seconds are included, the minute and hour hands are no longer static between whole minutes either:
+
+@math name="Minute Hand (with seconds)" label="eq:minute-angle-sec"
+\theta_m = 6M + 0.1S
+@/math
+
+@math name="Hour Hand (with seconds)" label="eq:hour-angle-sec"
+\theta_h = 30H + 0.5M + \frac{S}{120}
+@/math
+
+This allows precise modeling of all three hands.
+
+## 27. Finding When Two Hands Overlap
+
+The minute hand moves at $6°$/minute and the hour hand at $0.5°$/minute — a relative speed of $6 - 0.5 = 5.5°$/minute. For the minute hand to lap the hour hand (gain a full $360°$ on it) takes:
+
+@math label="eq:overlap-time"
+\frac{360}{5.5} = \frac{720}{11} = 65\frac{5}{11}
+@/math
+
+minutes, i.e. roughly **65.45 minutes** — about 1 hour, 5 minutes, 27 seconds. So the hands overlap approximately every 65.45 minutes, not every 60.
+
+@vector width=800 height=480
+artboard id="clock-overlap" x=0 y=0 w=800 h=480
+
+layer id="face-overlap"
+circle cx=400 cy=240 r=180 fill="#f8fafc" stroke="#1e293b" strokeWidth=10
+
+line x1=400 y1=60 x2=400 y2=78 stroke="#1e293b" strokeWidth=7
+line x1=400 y1=420 x2=400 y2=402 stroke="#1e293b" strokeWidth=7
+line x1=220 y1=240 x2=238 y2=240 stroke="#1e293b" strokeWidth=7
+line x1=580 y1=240 x2=562 y2=240 stroke="#1e293b" strokeWidth=7
+
+line x1=273 y1=113 x2=282 y2=122 stroke="#64748b" strokeWidth=5
+line x1=527 y1=113 x2=518 y2=122 stroke="#64748b" strokeWidth=5
+line x1=273 y1=367 x2=282 y2=358 stroke="#64748b" strokeWidth=5
+line x1=527 y1=367 x2=518 y2=358 stroke="#64748b" strokeWidth=5
+@endlayer
+
+layer id="hands-overlap"
+line x1=400 y1=240 x2=454 y2=156 stroke="#0f172a" strokeWidth=11
+line x1=400 y1=240 x2=481 y2=114 stroke="#334155" strokeWidth=7
+circle cx=400 cy=240 r=11 fill="#0f172a"
+@endlayer
+
+@endartboard
+@/vector
+
+*≈ 1:05:27 — hour and minute hands overlap exactly, both pointing along the same ray from the center.*
+
+This demonstrates that clock reasoning can include kinematic reasoning.
+
+## 28. Temporal Relationships
+
+A reasoning system should represent relationships such as:
+
+```text
+BEFORE
+AFTER
+EQUAL
+DURING
+STARTS_AT
+ENDS_AT
+OVERLAPS
+BEFORE_OR_EQUAL
+AFTER_OR_EQUAL
+```
+
+Example:
+
+```text
+Meeting A: 10:00–11:00
+Meeting B: 11:30–12:30
+```
+
+The engine can infer:
+
+```text
+A BEFORE B
+GAP(A,B) = 30 minutes
+```
+
+## 29. Time Intervals
+
+Represent an interval as:
+
+```text
+[start, end)
+```
+
+Example:
+
+```text
+09:00–10:30
+```
+
+means:
+
+```text
+start = 09:00
+end = 10:30
+duration = 90 minutes
+```
+
+Half-open intervals are often useful in software because the ending point is excluded.
+
+## 30. Interval Overlap
+
+Suppose:
+
+```text
+A = 10:00–12:00
+B = 11:00–13:00
+```
+
+The overlap is:
+
+```text
+11:00–12:00
+```
+
+Therefore:
+
+```text
+overlap = 1 hour
+```
+
+The calculation can use:
+
+```text
+overlap_start = max(A_start, B_start)
+overlap_end   = min(A_end, B_end)
+```
+
+If:
+
+```text
+overlap_start < overlap_end
+```
+
+then an overlap exists.
+
+## 31. Scheduling Reasoning
+
+Clock reasoning becomes more powerful when combined with scheduling.
+
+Example:
+
+```text
+Wake up at 6:30 AM.
+Exercise for 45 minutes.
+Breakfast for 30 minutes.
+Leave at 8:00 AM.
+```
+
+The system can construct:
+
+```text
+06:30 → wake
+06:30–07:15 → exercise
+07:15–07:45 → breakfast
+07:45–08:00 → preparation
+08:00 → leave
+```
+
+It can then infer:
+
+```text
+15 minutes free
+```
+
+This is temporal planning rather than simple clock arithmetic.
+
+## 32. Relative Time
+
+Humans frequently describe time relative to another event:
+
+```text
+10 minutes after lunch
+2 hours before the meeting
+30 minutes after waking
+the day after tomorrow
+three days before the exam
+```
+
+The system should represent these relationships explicitly.
+
+Example:
+
+```text
+meeting = 15:00
+event = meeting - 30 minutes
+```
+
+Therefore:
+
+```text
+event = 14:30
+```
+
+## 33. Temporal Chains
+
+Consider:
+
+```text
+A happens at 10:00.
+B happens 30 minutes after A.
+C happens 45 minutes after B.
+D happens 20 minutes before C.
+```
+
+The reasoning engine derives:
+
+```text
+A = 10:00
+
+B = A + 00:30
+  = 10:30
+
+C = B + 00:45
+  = 11:15
+
+D = C - 00:20
+  = 10:55
+```
+
+This can be represented as a dependency graph:
+
+```text
+A
+│
+├── +30m → B
+│           │
+│           └── +45m → C
+│                       │
+│                       └── -20m → D
+```

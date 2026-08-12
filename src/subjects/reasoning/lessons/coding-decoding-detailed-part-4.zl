@@ -1,0 +1,264 @@
+# Coding-Decoding — In-Depth Guide — Part 4 of 22
+
+[info title="Part 4 of 22"]
+Continuing from the previous part. back to Part 3 (`coding-decoding-detailed-part-3`) · continue to Part 5 (`coding-decoding-detailed-part-5`).
+[/info]
+
+## 27. Prime Alphabet Positions
+
+Prime positions:
+
+```text
+2, 3, 5, 7, 11, 13, 17, 19, 23
+```
+
+Letters:
+
+```text
+B C E G K M Q S W
+```
+
+This may appear in advanced coding questions.
+
+---
+
+## 28. Composite Alphabet Positions
+
+Composite positions from 1–26:
+
+```text
+4,6,8,9,10,12,14,15,16,18,20,21,22,24,25,26
+```
+
+Letters:
+
+```text
+D F H I J L N O P R T U V X Y Z
+```
+
+Remember:
+
+```text
+1 is neither prime nor composite.
+```
+
+---
+
+## 29. Odd and Even Alphabet Positions
+
+Odd:
+
+```text
+A C E G I K M O Q S U W Y
+```
+
+Even:
+
+```text
+B D F H J L N P R T V X Z
+```
+
+This can be used for binary-like coding:
+
+```text
+Odd  = 1
+Even = 0
+```
+
+Example:
+
+```text
+ABC
+```
+
+positions:
+
+```text
+1,2,3
+```
+
+binary pattern:
+
+```text
+101
+```
+
+---
+
+## 30. Binary-Style Letter Coding
+
+A coding rule may be:
+
+```text
+Odd alphabet position = 1
+Even alphabet position = 0
+```
+
+Example:
+
+```text
+CODE
+```
+
+positions:
+
+```text
+C = 3 → 1
+O = 15 → 1
+D = 4 → 0
+E = 5 → 1
+```
+
+Therefore:
+
+```text
+CODE → 1101
+```
+
+---
+
+## 31. Reverse Position Coding
+
+Use:
+
+```text
+A = 26
+B = 25
+C = 24
+...
+Z = 1
+```
+
+Example:
+
+```text
+CAT
+```
+
+becomes:
+
+```text
+C = 24
+A = 26
+T = 7
+```
+
+Therefore:
+
+```text
+CAT → 24,26,7
+```
+
+---
+
+## 32. Sum of Reverse Positions
+
+For:
+
+```text
+CAT
+```
+
+reverse values:
+
+```text
+24 + 26 + 7 = 57
+```
+
+So:
+
+```text
+CAT → 57
+```
+
+---
+
+## 33. Mirror Coding
+
+Mirror coding uses:
+
+```text
+A ↔ Z
+B ↔ Y
+C ↔ X
+...
+```
+
+Example:
+
+```text
+CAT
+```
+
+becomes:
+
+```text
+C → X
+A → Z
+T → G
+```
+
+Therefore:
+
+```text
+CAT → XZG
+```
+
+---
+
+## 34. Mirror + Shift Coding
+
+Some difficult questions combine operations.
+
+Example:
+
+```text
+A → Z → A
+B → Y → Z
+C → X → Y
+```
+
+This could mean:
+
+```text
+mirror first
+then +1
+```
+
+Always split a complicated transformation into stages:
+
+```text
+Original
+  ↓
+Mirror
+  ↓
+Shift
+  ↓
+Reverse
+  ↓
+Final code
+```
+
+---
+
+## 35. Word Reversal Coding
+
+Sometimes letters are simply reversed.
+
+```text
+APPLE → ELPPA
+```
+
+The transformation:
+
+```text
+ABCDE → EDCBA
+```
+
+Example:
+
+```text
+MANGO → OGNAM
+```
+
+---

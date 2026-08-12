@@ -11,7 +11,10 @@ export async function buildBreadcrumb(subjectId, subSubjectId, lessonId) {
     if (subSubject) trail.push({ label: subSubject.title, path: `/subjects/${subjectId}/${subSubjectId}` });
   }
   if (lessonId) {
-    trail.push({ label: lessonId, path: `/subjects/${subjectId}/${subSubjectId}/lessons/${lessonId}` });
+    const lessonPath = subSubjectId
+      ? `/subjects/${subjectId}/${subSubjectId}/lessons/${lessonId}`
+      : `/subjects/${subjectId}/lessons/${lessonId}`;
+    trail.push({ label: lessonId, path: lessonPath });
   }
   return trail;
 }

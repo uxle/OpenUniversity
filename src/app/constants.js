@@ -32,6 +32,17 @@ export const ROUTES = {
   SUB_SUBJECT: "/subjects/:subjectId/:subSubjectId",
   LESSON: "/subjects/:subjectId/:subSubjectId/lessons/:lessonId",
   MCQ: "/subjects/:subjectId/:subSubjectId/mcq/:lessonId",
+  // "Flat" subjects (no subSubjects — e.g. reasoning, economics, geography,
+  // history: see src/subjects/*/index.json + details.zl) keep their
+  // lessons directly under the subject, with no sub-subject segment.
+  // content-service.js already treats subSubjectId as optional when
+  // building fetch paths; these routes are the matching optional-segment
+  // patterns on the UI side, reusing pages/lesson.js and pages/mcq.js
+  // unchanged (subSubjectId simply arrives as undefined). Router matching
+  // is exact-segment-count (see core/router.js), so these can't collide
+  // with SUB_SUBJECT/LESSON/MCQ above despite the shared prefix.
+  SUBJECT_LESSON: "/subjects/:subjectId/lessons/:lessonId",
+  SUBJECT_MCQ: "/subjects/:subjectId/mcq/:lessonId",
   SEARCH: "/search",
   BOOKMARKS: "/bookmarks",
   NOTES: "/notes",

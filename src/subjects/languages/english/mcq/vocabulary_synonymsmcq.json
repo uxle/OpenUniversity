@@ -1,0 +1,34 @@
+{
+  "lessonId": "vocabulary_synonyms",
+  "title": "English Vocabulary - Synonyms & Best Expressed Words",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which word is a synonym of 'Barbarian'?",
+      "options": ["Wild, Uncivilized, Uncouth", "Rich, Wealthy", "Honest, Principled", "Favourable, Friendly"],
+      "correct": 0,
+      "rationale": "'Barbarian' (असभ्य) means Wild, Uncivilized, or Uncouth."
+    },
+    {
+      "id": 2,
+      "question": "'Cajole' means the same as:",
+      "options": ["Provoke, Endanger", "Coax, Flatter", "Reduce, Decrease", "Reconsider, Revoke"],
+      "correct": 1,
+      "rationale": "'Cajole' (खुशामद करना / मनाना) is synonymous with Coax or Flatter."
+    },
+    {
+      "id": 3,
+      "question": "Which phrasal verb means 'to investigate'?",
+      "options": ["Look after", "Look at", "Look into", "Look for"],
+      "correct": 2,
+      "rationale": "'Look into' (जाँच करना) means to investigate, as distinct from 'Look after' (take care of) or 'Look for' (search)."
+    },
+    {
+      "id": 4,
+      "question": "'Laconic' most nearly means:",
+      "options": ["Concise, Brief, Short", "Dangerous, Risky", "Poor, Penniless", "Formless"],
+      "correct": 0,
+      "rationale": "'Laconic' (कम बोलने वाला / संक्षिप्त) means Concise, Brief, or Short."
+    }
+  ]
+}
