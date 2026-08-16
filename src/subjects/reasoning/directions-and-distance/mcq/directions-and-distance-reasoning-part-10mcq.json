@@ -1,0 +1,174 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-10",
+  "title": "Directions and Distance Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the compass coordinate model used in this lesson, if North = +Y and East = +X, walking 5 km north then 3 km east ends at which final position?",
+      "options": [
+        "(5, 3)",
+        "(3, 5)",
+        "(-3, -5)",
+        "(0, 8)"
+      ],
+      "correct": 1,
+      "rationale": "East contributes to the X-coordinate (3) and North contributes to the Y-coordinate (5), giving a final position of (3, 5)."
+    },
+    {
+      "id": 2,
+      "question": "What is the Euclidean distance between points A = (0,0) and B = (3,4)?",
+      "options": [
+        "5",
+        "7",
+        "12",
+        "25"
+      ],
+      "correct": 0,
+      "rationale": "Euclidean distance d = \u221a((x2\u2212x1)\u00b2 + (y2\u2212y1)\u00b2) = \u221a(3\u00b2 + 4\u00b2) = \u221a25 = 5."
+    },
+    {
+      "id": 3,
+      "question": "For the same points A = (0,0) and B = (3,4), what is the Manhattan distance?",
+      "options": [
+        "5",
+        "7",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "rationale": "Manhattan distance d = |x2\u2212x1| + |y2\u2212y1| = 3 + 4 = 7, used when movement is restricted to horizontal and vertical paths only."
+    },
+    {
+      "id": 4,
+      "question": "What is the key principle stressed for solving direction/distance problems reliably?",
+      "options": [
+        "Guess the answer from language patterns",
+        "Convert natural-language directions into a structured spatial model before calculating",
+        "Always use Manhattan distance regardless of the movement type",
+        "Ignore direction and only calculate total distance travelled"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's central principle is to convert natural-language directions into a structured spatial model (coordinates/vectors) before performing any distance or direction calculation."
+    },
+    {
+      "question": "What does the 'final architecture' bring together from the rest of this lesson?",
+      "options": [
+        "Only the compass direction table",
+        "Parsing, spatial representation-building, constraint solving, verification, and output formatting into one complete reasoning pipeline",
+        "Just the introductory definitions from Part 1",
+        "A single unrelated new concept"
+      ],
+      "correct": 1,
+      "rationale": "The final architecture combines every stage covered across the lesson \u2014 parsing, representation-building, constraint solving, verification, and output formatting \u2014 into one complete pipeline.",
+      "id": 5
+    },
+    {
+      "question": "What is the main takeaway from this lesson's summary about solving direction-and-distance problems reliably?",
+      "options": [
+        "Informal mental tracking is always sufficient",
+        "Reliable solving comes from systematically tracking positions, directions, and units through a consistent structured process, not from informal mental tracking",
+        "Only the compass table matters, nothing else",
+        "Verification is optional and rarely useful"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's consistent theme is that reliability comes from systematically tracking positions, directions, and units through a structured process, not from informal, ad hoc mental tracking.",
+      "id": 6
+    },
+    {
+      "question": "Why does the lesson repeatedly emphasize distinguishing displacement from total path distance?",
+      "options": [
+        "Because it makes the lesson longer",
+        "Because confusing the two is one of the most common sources of error in multi-step direction-and-distance problems",
+        "Because displacement is irrelevant to most problems",
+        "Because path distance is never actually tested"
+      ],
+      "correct": 1,
+      "rationale": "Confusing displacement (straight-line distance) with total path distance traveled is one of the most common errors in this domain, which is why the distinction is repeatedly emphasized.",
+      "id": 7
+    },
+    {
+      "question": "According to the final architecture, what should happen after a position or distance is computed, before it's presented as final?",
+      "options": [
+        "Nothing further is needed",
+        "It should be verified against the original constraints (including checks like the triangle inequality) before being presented as the final answer",
+        "It should be discarded and recalculated from scratch",
+        "It should automatically be converted into polar coordinates"
+      ],
+      "correct": 1,
+      "rationale": "The architecture requires verifying the computed position or distance against the original constraints, including validity checks like the triangle inequality, before presenting it as final.",
+      "id": 8
+    },
+    {
+      "question": "What common thread connects direction-and-distance reasoning to other reasoning topics like clock reasoning?",
+      "options": [
+        "There is no real connection between them",
+        "Both rely on a structured internal representation, unit consistency, and systematic step-by-step reasoning rather than informal calculation",
+        "They use exactly the same formulas",
+        "Only direction-and-distance reasoning uses any structured representation"
+      ],
+      "correct": 1,
+      "rationale": "Both clock and direction-and-distance reasoning rely on the same underlying discipline: a structured internal representation, consistent units, and systematic step-by-step reasoning.",
+      "id": 9
+    },
+    {
+      "question": "Why is the compass/coordinate model considered foundational even in the advanced (3D, multi-hop) sections of this lesson?",
+      "options": [
+        "It isn't actually used in the advanced sections",
+        "Because the advanced concepts still build on the same underlying direction and coordinate relationships introduced early on",
+        "Because the advanced sections replace it with a completely different model",
+        "Because it's only relevant to 2D problems"
+      ],
+      "correct": 1,
+      "rationale": "Even advanced concepts like 3D reasoning and multi-hop chains are still built on the same fundamental direction and coordinate relationships introduced in the early sections.",
+      "id": 10
+    },
+    {
+      "question": "What is the benefit of using vectors (direction + magnitude together) rather than tracking direction and distance as entirely separate values?",
+      "options": [
+        "There is no real benefit",
+        "Vectors let you combine multiple movements consistently (via addition) to compute a correct net displacement",
+        "Vectors remove the need for coordinates",
+        "Vectors only work for a single movement, never a sequence"
+      ],
+      "correct": 1,
+      "rationale": "Representing direction and magnitude together as a vector allows multiple movements to be combined consistently (via vector addition) to compute the correct net displacement.",
+      "id": 11
+    },
+    {
+      "question": "Why does this lesson build from simple compass definitions (Part 1) up to a full reasoning engine (Part 10)?",
+      "options": [
+        "The ordering is arbitrary and doesn't matter",
+        "Each later concept depends on the foundational ideas from earlier parts, so a solid grounding in basic direction/distance concepts is needed before tackling multi-constraint or multi-hop problems",
+        "Complex problems don't actually require the earlier concepts",
+        "It's only structured this way for length, not for learning"
+      ],
+      "correct": 1,
+      "rationale": "Every later concept builds on the foundational direction and distance ideas from earlier parts, so a solid grounding early on is necessary before tackling multi-constraint or multi-hop problems.",
+      "id": 12
+    },
+    {
+      "question": "What should you do if a derived position fails a consistency or triangle-inequality check?",
+      "options": [
+        "Present it as the answer anyway",
+        "Re-examine the reasoning steps and given constraints for an error, rather than presenting an unverified answer",
+        "Automatically assume the question was flawed",
+        "Round the value until it passes"
+      ],
+      "correct": 1,
+      "rationale": "A failed consistency or triangle-inequality check signals an error somewhere in the reasoning or a genuine inconsistency in the given constraints \u2014 it should prompt re-examination, not be ignored.",
+      "id": 13
+    },
+    {
+      "question": "What is the ultimate goal of the entire direction-and-distance reasoning pipeline described across all 10 parts?",
+      "options": [
+        "To memorize every possible direction fact",
+        "To reliably convert a natural-language spatial problem into a correct, verified final answer through a consistent, repeatable process",
+        "To replace compasses with GPS",
+        "To calculate distance only, with no attention to direction"
+      ],
+      "correct": 1,
+      "rationale": "The pipeline's overall purpose is to take a natural-language spatial problem and reliably produce a correct, verified final answer through the same consistent, repeatable process every time.",
+      "id": 14
+    }
+  ]
+}

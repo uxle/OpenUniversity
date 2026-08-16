@@ -718,6 +718,7 @@
     {
       "lessonId": "analogy-and-classification-reasoning",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy and Classification Reasoning",
       "subject": "reasoning",
       "keywords": [],
@@ -726,6 +727,7 @@
     {
       "lessonId": "analogy-detailed-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 1 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -734,6 +736,7 @@
     {
       "lessonId": "analogy-detailed-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 10 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -742,6 +745,7 @@
     {
       "lessonId": "analogy-detailed-part-11",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 11 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -750,6 +754,7 @@
     {
       "lessonId": "analogy-detailed-part-12",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 12 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -758,6 +763,7 @@
     {
       "lessonId": "analogy-detailed-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 2 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -766,6 +772,7 @@
     {
       "lessonId": "analogy-detailed-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 3 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -774,6 +781,7 @@
     {
       "lessonId": "analogy-detailed-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 4 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -782,6 +790,7 @@
     {
       "lessonId": "analogy-detailed-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 5 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -790,6 +799,7 @@
     {
       "lessonId": "analogy-detailed-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 6 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -798,6 +808,7 @@
     {
       "lessonId": "analogy-detailed-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 7 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -806,6 +817,7 @@
     {
       "lessonId": "analogy-detailed-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 8 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -814,46 +826,16 @@
     {
       "lessonId": "analogy-detailed-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Analogy — In-Depth Guide — Part 9 of 12",
       "subject": "reasoning",
       "keywords": [],
       "content": "Analogy — In-Depth Guide — Part 9 of 12 Continuing from the previous part. back to Part 8 ( analogy-detailed-part-8 ) · continue to Part 10 ( analogy-detailed-part-10 ). 103. Common Trap: Wrong Direction Correct: Relationship: Not stable, because: has a different relation. --- 104. Common Trap: Multiple Relations A pair may have many real-world relationships. Could mean: - car travels on road - road carries cars - road is associated with car Use the exact relationship implied by the question and"
     },
     {
-      "lessonId": "blood-relation-reasoning-part-1",
-      "subjectId": "reasoning",
-      "title": "Blood Relation Reasoning — Part 1 of 4",
-      "subject": "reasoning",
-      "keywords": [],
-      "content": "Blood Relation Reasoning — Part 1 of 4 This lesson is split into 4 parts so each stays a manageable length. This is Part 1 — continue to Part 2 ( blood-relation-reasoning-part-2 ) when you're done here. Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason"
-    },
-    {
-      "lessonId": "blood-relation-reasoning-part-2",
-      "subjectId": "reasoning",
-      "title": "Blood Relation Reasoning — Part 2 of 4",
-      "subject": "reasoning",
-      "keywords": [],
-      "content": "Blood Relation Reasoning — Part 2 of 4 Continuing from the previous part. back to Part 1 ( blood-relation-reasoning-part-1 ) · continue to Part 3 ( blood-relation-reasoning-part-3 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 15. E"
-    },
-    {
-      "lessonId": "blood-relation-reasoning-part-3",
-      "subjectId": "reasoning",
-      "title": "Blood Relation Reasoning — Part 3 of 4",
-      "subject": "reasoning",
-      "keywords": [],
-      "content": "Blood Relation Reasoning — Part 3 of 4 Continuing from the previous part. back to Part 2 ( blood-relation-reasoning-part-2 ) · continue to Part 4 ( blood-relation-reasoning-part-4 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 30. S"
-    },
-    {
-      "lessonId": "blood-relation-reasoning-part-4",
-      "subjectId": "reasoning",
-      "title": "Blood Relation Reasoning — Part 4 of 4",
-      "subject": "reasoning",
-      "keywords": [],
-      "content": "Blood Relation Reasoning — Part 4 of 4 Continuing from the previous part. back to Part 3 ( blood-relation-reasoning-part-3 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 46. Direct Example Tree A → B → C → D If: - A is parent of B -"
-    },
-    {
       "lessonId": "classification-detailed-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 1 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -862,6 +844,7 @@
     {
       "lessonId": "classification-detailed-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 10 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -870,6 +853,7 @@
     {
       "lessonId": "classification-detailed-part-11",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 11 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -878,6 +862,7 @@
     {
       "lessonId": "classification-detailed-part-12",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 12 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -886,6 +871,7 @@
     {
       "lessonId": "classification-detailed-part-13",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 13 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -894,6 +880,7 @@
     {
       "lessonId": "classification-detailed-part-14",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 14 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -902,6 +889,7 @@
     {
       "lessonId": "classification-detailed-part-15",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 15 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -910,6 +898,7 @@
     {
       "lessonId": "classification-detailed-part-16",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 16 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -918,6 +907,7 @@
     {
       "lessonId": "classification-detailed-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 2 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -926,6 +916,7 @@
     {
       "lessonId": "classification-detailed-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 3 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -934,6 +925,7 @@
     {
       "lessonId": "classification-detailed-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 4 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -942,6 +934,7 @@
     {
       "lessonId": "classification-detailed-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 5 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -950,6 +943,7 @@
     {
       "lessonId": "classification-detailed-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 6 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -958,6 +952,7 @@
     {
       "lessonId": "classification-detailed-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 7 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -966,6 +961,7 @@
     {
       "lessonId": "classification-detailed-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 8 of 16",
       "subject": "reasoning",
       "keywords": [],
@@ -974,14 +970,52 @@
     {
       "lessonId": "classification-detailed-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "analogy-and-classification",
       "title": "Classification / Odd One Out — In-Depth Guide — Part 9 of 16",
       "subject": "reasoning",
       "keywords": [],
       "content": "Classification / Odd One Out — In-Depth Guide — Part 9 of 16 Continuing from the previous part. back to Part 8 ( classification-detailed-part-8 ) · continue to Part 10 ( classification-detailed-part-10 ). 118. Classification by Physical Property Examples: Electrical conductivity separates rubber. Other possible properties: - density - magnetism - hardness - melting point - state of matter --- 119. Magnetic Classification Iron, nickel and cobalt are strongly ferromagnetic. Copper is not. Answer: "
     },
     {
+      "lessonId": "blood-relation-reasoning-part-1",
+      "subjectId": "reasoning",
+      "subSubjectId": "blood-relation",
+      "title": "Blood Relation Reasoning — Part 1 of 4",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Blood Relation Reasoning — Part 1 of 4 This lesson is split into 4 parts so each stays a manageable length. This is Part 1 — continue to Part 2 ( blood-relation-reasoning-part-2 ) when you're done here. Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason"
+    },
+    {
+      "lessonId": "blood-relation-reasoning-part-2",
+      "subjectId": "reasoning",
+      "subSubjectId": "blood-relation",
+      "title": "Blood Relation Reasoning — Part 2 of 4",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Blood Relation Reasoning — Part 2 of 4 Continuing from the previous part. back to Part 1 ( blood-relation-reasoning-part-1 ) · continue to Part 3 ( blood-relation-reasoning-part-3 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 15. E"
+    },
+    {
+      "lessonId": "blood-relation-reasoning-part-3",
+      "subjectId": "reasoning",
+      "subSubjectId": "blood-relation",
+      "title": "Blood Relation Reasoning — Part 3 of 4",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Blood Relation Reasoning — Part 3 of 4 Continuing from the previous part. back to Part 2 ( blood-relation-reasoning-part-2 ) · continue to Part 4 ( blood-relation-reasoning-part-4 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 30. S"
+    },
+    {
+      "lessonId": "blood-relation-reasoning-part-4",
+      "subjectId": "reasoning",
+      "subSubjectId": "blood-relation",
+      "title": "Blood Relation Reasoning — Part 4 of 4",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Blood Relation Reasoning — Part 4 of 4 Continuing from the previous part. back to Part 3 ( blood-relation-reasoning-part-3 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 46. Direct Example Tree A → B → C → D If: - A is parent of B -"
+    },
+    {
       "lessonId": "clock-reasoning-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 1 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -990,6 +1024,7 @@
     {
       "lessonId": "clock-reasoning-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 10 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -998,6 +1033,7 @@
     {
       "lessonId": "clock-reasoning-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 2 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1006,6 +1042,7 @@
     {
       "lessonId": "clock-reasoning-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 3 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1014,6 +1051,7 @@
     {
       "lessonId": "clock-reasoning-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 4 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1022,6 +1060,7 @@
     {
       "lessonId": "clock-reasoning-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 5 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1030,6 +1069,7 @@
     {
       "lessonId": "clock-reasoning-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 6 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1038,6 +1078,7 @@
     {
       "lessonId": "clock-reasoning-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 7 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1046,6 +1087,7 @@
     {
       "lessonId": "clock-reasoning-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 8 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1054,6 +1096,7 @@
     {
       "lessonId": "clock-reasoning-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "clock",
       "title": "Clock Reasoning — Part 9 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1062,6 +1105,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 1 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1070,6 +1114,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 10 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1078,6 +1123,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-11",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 11 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1086,6 +1132,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-12",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 12 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1094,6 +1141,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-13",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 13 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1102,6 +1150,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-14",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 14 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1110,6 +1159,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-15",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 15 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1118,6 +1168,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-16",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 16 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1126,6 +1177,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-17",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 17 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1134,6 +1186,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-18",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 18 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1142,6 +1195,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-19",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 19 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1150,6 +1204,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 2 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1158,6 +1213,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-20",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 20 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1166,6 +1222,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-21",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 21 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1174,6 +1231,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-22",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 22 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1182,6 +1240,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 3 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1190,6 +1249,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 4 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1198,6 +1258,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 5 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1206,6 +1267,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 6 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1214,6 +1276,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 7 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1222,6 +1285,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 8 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1230,6 +1294,7 @@
     {
       "lessonId": "coding-decoding-detailed-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding — In-Depth Guide — Part 9 of 22",
       "subject": "reasoning",
       "keywords": [],
@@ -1238,6 +1303,7 @@
     {
       "lessonId": "coding-decoding-reasoning",
       "subjectId": "reasoning",
+      "subSubjectId": "coding-decoding",
       "title": "Coding-Decoding Reasoning",
       "subject": "reasoning",
       "keywords": [],
@@ -1246,6 +1312,7 @@
     {
       "lessonId": "counting-of-figures-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 1 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1254,6 +1321,7 @@
     {
       "lessonId": "counting-of-figures-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 10 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1262,6 +1330,7 @@
     {
       "lessonId": "counting-of-figures-part-11",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 11 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1270,6 +1339,7 @@
     {
       "lessonId": "counting-of-figures-part-12",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 12 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1278,6 +1348,7 @@
     {
       "lessonId": "counting-of-figures-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 2 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1286,6 +1357,7 @@
     {
       "lessonId": "counting-of-figures-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 3 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1294,6 +1366,7 @@
     {
       "lessonId": "counting-of-figures-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 4 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1302,6 +1375,7 @@
     {
       "lessonId": "counting-of-figures-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 5 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1310,6 +1384,7 @@
     {
       "lessonId": "counting-of-figures-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 6 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1318,6 +1393,7 @@
     {
       "lessonId": "counting-of-figures-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 7 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1326,6 +1402,7 @@
     {
       "lessonId": "counting-of-figures-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 8 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1334,6 +1411,7 @@
     {
       "lessonId": "counting-of-figures-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "counting-of-figures",
       "title": "Counting of Figures — Part 9 of 12",
       "subject": "reasoning",
       "keywords": [],
@@ -1342,6 +1420,7 @@
     {
       "lessonId": "dice-reasoning-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 1 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1350,6 +1429,7 @@
     {
       "lessonId": "dice-reasoning-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 10 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1358,6 +1438,7 @@
     {
       "lessonId": "dice-reasoning-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 2 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1366,6 +1447,7 @@
     {
       "lessonId": "dice-reasoning-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 3 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1374,6 +1456,7 @@
     {
       "lessonId": "dice-reasoning-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 4 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1382,6 +1465,7 @@
     {
       "lessonId": "dice-reasoning-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 5 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1390,6 +1474,7 @@
     {
       "lessonId": "dice-reasoning-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 6 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1398,6 +1483,7 @@
     {
       "lessonId": "dice-reasoning-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 7 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1406,6 +1492,7 @@
     {
       "lessonId": "dice-reasoning-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 8 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1414,6 +1501,7 @@
     {
       "lessonId": "dice-reasoning-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "dice-reasoning",
       "title": "Dice Reasoning — Part 9 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1422,6 +1510,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-1",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 1 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1430,6 +1519,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-10",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 10 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1438,6 +1528,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-2",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 2 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1446,6 +1537,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-3",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 3 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1454,6 +1546,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-4",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 4 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1462,6 +1555,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-5",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 5 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1470,6 +1564,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-6",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 6 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1478,6 +1573,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-7",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 7 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1486,6 +1582,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-8",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 8 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1494,6 +1591,7 @@
     {
       "lessonId": "directions-and-distance-reasoning-part-9",
       "subjectId": "reasoning",
+      "subSubjectId": "directions-and-distance",
       "title": "Directions and Distance Reasoning — Part 9 of 10",
       "subject": "reasoning",
       "keywords": [],
@@ -1502,6 +1600,7 @@
     {
       "lessonId": "seating-arrangement-reasoning",
       "subjectId": "reasoning",
+      "subSubjectId": "seating-arrangement",
       "title": "Seating Arrangement Reasoning",
       "subject": "reasoning",
       "keywords": [],
@@ -1510,6 +1609,7 @@
     {
       "lessonId": "sentence-rearrangement",
       "subjectId": "reasoning",
+      "subSubjectId": "sentence-rearrangement",
       "title": "Lesson 22: Sentence Rearrangement (PQRS / Jumbled Sentences)",
       "subject": "reasoning",
       "keywords": [],
@@ -1518,6 +1618,7 @@
     {
       "lessonId": "series-reasoning",
       "subjectId": "reasoning",
+      "subSubjectId": "series",
       "title": "Number and Alphabet Series Reasoning",
       "subject": "reasoning",
       "keywords": [],
@@ -1526,6 +1627,7 @@
     {
       "lessonId": "syllogism-reasoning",
       "subjectId": "reasoning",
+      "subSubjectId": "syllogism",
       "title": "Syllogism Reasoning",
       "subject": "reasoning",
       "keywords": [],

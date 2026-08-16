@@ -1,0 +1,298 @@
+# Counting of Figures — Part 4 of 12
+
+[info title="Part 4 of 12"]
+Continuing from the previous part. back to Part 3 (`counting-of-figures-part-3`) · continue to Part 5 (`counting-of-figures-part-5`).
+[/info]
+
+## 39. Intersection Formula
+
+If \(n\) straight lines are drawn such that:
+
+- no two are parallel
+- no three pass through the same point
+
+then maximum intersections:
+
+```text
+\boxed{{n\choose2}}
+```
+
+or:
+
+```text
+\boxed{\frac{n(n-1)}2}
+```
+
+---
+
+## 40. Example: 4 Lines
+
+Maximum intersections:
+
+```text
+{4\choose2}=6
+```
+
+---
+
+## 41. Example: 5 Lines
+
+```text
+{5\choose2}=10
+```
+
+This is the maximum only under the required assumptions.
+
+---
+
+## 42. Maximum Regions from Lines
+
+If \(n\) lines are drawn in general position, the maximum number of regions is:
+
+```text
+\boxed{
+\frac{n(n+1)}2+1
+}
+```
+
+Examples:
+
+| Lines | Max regions |
+|---:|---:|
+| 0 | 1 |
+| 1 | 2 |
+| 2 | 4 |
+| 3 | 7 |
+| 4 | 11 |
+| 5 | 16 |
+| 6 | 22 |
+
+This is useful for advanced figure-counting questions.
+
+---
+
+## 43. Why Counting Gets Difficult
+
+A diagram can contain:
+
+```text
+small figures
+     +
+combined figures
+     +
+overlapping figures
+     +
+rotated figures
+     +
+hidden figures
+```
+
+Therefore:
+
+```text
+\boxed{
+Total\neq Visible\ Small\ Figures
+}
+```
+
+---
+
+## 44. The Layer Method
+
+Imagine the diagram has layers:
+
+```text
+Layer 1 → smallest
+Layer 2 → combinations
+Layer 3 → larger
+Layer 4 → complete figure
+```
+
+Count each layer separately.
+
+---
+
+## 45. Layer Diagram
+
+```text
+              OUTER FIGURE
+          ┌─────────────────┐
+          │   LARGE         │
+          │   FIGURES       │
+          │  ┌───────────┐  │
+          │  │ MEDIUM    │  │
+          │  │ ┌───────┐ │  │
+          │  │ │SMALL  │ │  │
+          │  │ └───────┘ │  │
+          │  └───────────┘  │
+          └─────────────────┘
+```
+
+---
+
+## 46. The Sweep Method
+
+For difficult diagrams, mentally scan:
+
+```text
+Top → Bottom
+Left → Right
+```
+
+Then repeat by size.
+
+Example:
+
+```text
+PASS 1 → small
+PASS 2 → medium
+PASS 3 → large
+PASS 4 → composite
+```
+
+---
+
+## 47. Marking Method
+
+On paper, label figures temporarily:
+
+```text
+T1
+T2
+T3
+T4
+```
+
+Then mark:
+
+```text
+✓ counted
+```
+
+This prevents double counting.
+
+---
+
+## 48. Bounding-Box Method
+
+For each candidate figure, identify its boundary.
+
+```text
+┌─────────┐
+│ figure  │
+└─────────┘
+```
+
+Ask:
+
+> Are all required boundary lines actually present?
+
+If even one boundary is missing, it is not a valid figure.
+
+---
+
+## 49. Boundary Validation
+
+A shape counts only if:
+
+```text
+Boundary 1 ✓
+Boundary 2 ✓
+Boundary 3 ✓
+Boundary 4 ✓
+Closed ✓
+```
+
+Otherwise:
+
+```text
+NOT A FIGURE
+```
+
+---
+
+## 50. Open vs Closed Shapes
+
+Example:
+
+```text
+┌─────┐
+│     │
+└─────
+```
+
+This is not a closed rectangle.
+
+A valid rectangle needs all four sides.
+
+---
+
+## 51. Hidden Boundary Trap
+
+Sometimes a boundary is shared by another figure.
+
+Do not ignore shared lines.
+
+A line can be part of:
+
+```text
+small figure
+AND
+large figure
+```
+
+at the same time.
+
+---
+
+## 52. Shared Line Principle
+
+```text
+┌───┬───┐
+│ A │ B │
+└───┴───┘
+```
+
+The middle line belongs to both small rectangles and may also help create the outer rectangle.
+
+One line can participate in multiple figures.
+
+---
+
+## 53. Double Counting Trap
+
+If you count:
+
+```text
+A
+B
+A+B
+```
+
+then A and B are separate figures and A+B is another figure.
+
+Do not count A+B twice through different descriptions.
+
+---
+
+## 54. Unique Boundary Principle
+
+Two candidate figures are the same if they have the same complete boundary, even if you discovered them through different routes.
+
+This is crucial in complex diagrams.
+
+---
+
+## 55. Counting by Boundary Sets
+
+Conceptually:
+
+```text
+F=\{e_1,e_2,\ldots,e_k\}
+```
+
+where \(e_i\) are boundary edges.
+
+Two paths that produce the same edge set represent the same figure.
+
+---

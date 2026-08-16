@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-3",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 3 of 22",
+  "questions": [
+    {
+      "question": "What does 'negative wrap-around' specifically handle?",
+      "options": [
+        "Shifting past Z going forward",
+        "Shifting backward past A, wrapping around to continue from Z",
+        "Only applies to number coding",
+        "A rule with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "Negative wrap-around specifically covers the case of shifting backward past A, which wraps around to continue counting down from Z.",
+      "id": 1
+    },
+    {
+      "question": "What is 'letter-to-number coding'?",
+      "options": [
+        "Converting numbers into letters",
+        "Replacing each letter with its alphabet position (or a value derived from it) as a number",
+        "A rule that ignores numbers entirely",
+        "Only used for vowels"
+      ],
+      "correct": 1,
+      "rationale": "Letter-to-number coding replaces each letter with a numeric value, typically its alphabet position or something derived from it.",
+      "id": 2
+    },
+    {
+      "question": "What does 'sum coding' typically compute for a word?",
+      "options": [
+        "The word's letter count only",
+        "The total sum of all its letters' alphabet positions",
+        "The product of all its letters' positions",
+        "The difference between its first and last letters"
+      ],
+      "correct": 1,
+      "rationale": "Sum coding adds together the alphabet-position values of every letter in the word to produce a single numeric code.",
+      "id": 3
+    },
+    {
+      "question": "What does 'product coding' compute, in contrast to sum coding?",
+      "options": [
+        "The same total as sum coding",
+        "The product (multiplication) of all the letters' alphabet positions, instead of their sum",
+        "Only the first letter's position",
+        "The word's length"
+      ],
+      "correct": 1,
+      "rationale": "Instead of adding the position values together, product coding multiplies them all together to produce the code.",
+      "id": 4
+    },
+    {
+      "question": "What does 'difference coding' typically compute?",
+      "options": [
+        "The sum of all letters' positions",
+        "The difference between the positions of two specific letters (often the first and last)",
+        "The product of two letters' positions",
+        "The total number of letters"
+      ],
+      "correct": 1,
+      "rationale": "Difference coding typically computes the numeric gap between two specific letters' positions, commonly the first and last letters of the word.",
+      "id": 5
+    },
+    {
+      "question": "What does 'average coding' compute for a word?",
+      "options": [
+        "The sum of its letters' positions",
+        "The average (mean) of all its letters' alphabet positions",
+        "Only the middle letter's position",
+        "The word's total letter count"
+      ],
+      "correct": 1,
+      "rationale": "Average coding computes the mean of all the letters' alphabet-position values, dividing their sum by the number of letters.",
+      "id": 6
+    },
+    {
+      "question": "What does 'sum of odd/even positions' refer to?",
+      "options": [
+        "Summing only the first and last letters",
+        "Separately summing the alphabet-position values of letters sitting at odd-numbered spots in the word versus even-numbered spots",
+        "A rule with no real distinction",
+        "Summing only vowels"
+      ],
+      "correct": 1,
+      "rationale": "This coding separately totals the position values of letters occupying odd word-positions (1st, 3rd, 5th...) versus even word-positions (2nd, 4th, 6th...).",
+      "id": 7
+    },
+    {
+      "question": "What is 'vowel-consonant coding'?",
+      "options": [
+        "A rule that ignores vowels entirely",
+        "A rule that treats vowels and consonants differently, such as applying a different transformation to each group",
+        "A rule that only applies to consonants",
+        "A rule identical to letter-shift coding"
+      ],
+      "correct": 1,
+      "rationale": "Vowel-consonant coding applies different transformation rules depending on whether each letter is a vowel or a consonant.",
+      "id": 8
+    },
+    {
+      "question": "What does 'letter type coding' generally classify letters by?",
+      "options": [
+        "Their physical appearance",
+        "A property such as vowel/consonant, or other categorical groupings, which determines how each letter is transformed",
+        "Their frequency in the dictionary",
+        "Their color, if written in color"
+      ],
+      "correct": 1,
+      "rationale": "Letter type coding classifies each letter by some categorical property (like vowel vs consonant), and that classification determines the transformation applied to it.",
+      "id": 9
+    },
+    {
+      "question": "Using sum coding, what is the position-sum of the word 'CAT' (C=3, A=1, T=20)?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct": 2,
+      "rationale": "3 (C) + 1 (A) + 20 (T) = 24.",
+      "id": 10
+    }
+  ]
+}

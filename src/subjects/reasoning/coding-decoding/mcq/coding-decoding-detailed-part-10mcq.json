@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-10",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 10 of 22",
+  "questions": [
+    {
+      "question": "What is a 'difference chart' used for?",
+      "options": [
+        "Listing letter frequencies only",
+        "Visually tabulating the differences between original and coded letter positions across an entire word or example",
+        "Counting vowels",
+        "A chart unrelated to coding"
+      ],
+      "correct": 1,
+      "rationale": "A difference chart visually tabulates the position gaps between original and coded letters across a whole example, aiding pattern detection.",
+      "id": 1
+    },
+    {
+      "question": "What is 'modular difference'?",
+      "options": [
+        "A difference calculated ignoring wrap-around",
+        "A difference calculated with wrap-around (modulo) taken into account, so it stays within the valid range of alphabet positions",
+        "A synonym for word length",
+        "A difference that is always zero"
+      ],
+      "correct": 1,
+      "rationale": "Modular difference accounts for the alphabet's wrap-around behavior, ensuring the calculated difference stays within the valid 1-26 position range.",
+      "id": 2
+    },
+    {
+      "question": "What does 'reverse coding difference' refer to?",
+      "options": [
+        "A difference unrelated to reverse coding",
+        "The difference in position values that results specifically from applying reverse (mirror) coding",
+        "A synonym for word reversal",
+        "A difference that never changes"
+      ],
+      "correct": 1,
+      "rationale": "This refers specifically to the position-value gap that results from applying reverse (mirror) coding to a letter, as opposed to a simple shift.",
+      "id": 3
+    },
+    {
+      "question": "What is 'alternating pattern detection' used for?",
+      "options": [
+        "Detecting a single, uniform shift only",
+        "Identifying when a coding rule alternates between two or more different transformations across successive letters",
+        "Counting the total number of letters",
+        "Detecting vowels only"
+      ],
+      "correct": 1,
+      "rationale": "This technique is specifically used to identify when a coding rule cycles between two or more different transformations rather than applying one constant rule.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'position table' used for?",
+      "options": [
+        "Listing only vowels",
+        "Providing a quick-reference listing of each letter alongside its alphabet position, useful for fast lookup",
+        "Listing word lengths only",
+        "A table with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "A position table provides a fast, quick-reference lookup of each letter's alphabet position, saving time compared to counting from A each time.",
+      "id": 5
+    },
+    {
+      "question": "What does 'reverse word + alphabet coding' combine?",
+      "options": [
+        "Only word reversal",
+        "Reversing the order of the word's letters AND applying an alphabet-based transformation (like a shift or mirror) to each letter",
+        "Only a letter shift, no reversal",
+        "A rule unrelated to either reversal or shifting"
+      ],
+      "correct": 1,
+      "rationale": "This combines two distinct steps: reversing the word's letter order, and additionally applying an alphabet-based transformation to each letter.",
+      "id": 6
+    },
+    {
+      "question": "What is 'substitution coding'?",
+      "options": [
+        "A synonym for a simple uniform shift",
+        "Replacing each letter with a different, fixed letter or symbol according to a defined key, not necessarily a simple shift",
+        "A rule with no defined key at all",
+        "A rule that only reverses word order"
+      ],
+      "correct": 1,
+      "rationale": "Substitution coding replaces each letter according to a specific, potentially arbitrary key \u2014 unlike a uniform shift, the mapping isn't necessarily a consistent offset.",
+      "id": 7
+    },
+    {
+      "question": "What does the 'substitution coding flow' describe?",
+      "options": [
+        "A random guessing process",
+        "The step-by-step process of applying a substitution key to transform each letter of the original word",
+        "The process of reversing a word",
+        "A flow unrelated to substitution"
+      ],
+      "correct": 1,
+      "rationale": "This describes the systematic, step-by-step process of looking up and applying a substitution key to transform each letter of the word.",
+      "id": 8
+    },
+    {
+      "question": "What does a 'substitution example' typically demonstrate?",
+      "options": [
+        "Reversing a word's order",
+        "Applying a specific substitution key to a real word to show the resulting coded output",
+        "Counting vowels in a word",
+        "A shift-based transformation only"
+      ],
+      "correct": 1,
+      "rationale": "A substitution example works through applying a specific given key to a real word, demonstrating the resulting coded output step by step.",
+      "id": 9
+    },
+    {
+      "question": "What is the 'substitution trap' this lesson likely warns about?",
+      "options": [
+        "Substitution coding is always simple",
+        "Assuming a substitution follows a simple shift pattern, when it's actually an arbitrary (non-uniform) mapping that must be read directly from the given key",
+        "Substitution never appears in exams",
+        "Substitution always uses reverse-alphabet mapping"
+      ],
+      "correct": 1,
+      "rationale": "The trap is assuming a substitution follows a simple, uniform shift pattern when it's actually an arbitrary, non-uniform mapping that must be read directly from the given key rather than assumed.",
+      "id": 10
+    }
+  ]
+}

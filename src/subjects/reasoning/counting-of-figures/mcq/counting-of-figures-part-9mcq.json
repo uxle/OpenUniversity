@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-9",
+  "title": "Counting of Figures \u2014 Part 9 of 12",
+  "questions": [
+    {
+      "question": "What does a 'search model' (e.g., triangle search model) treat figure counting as?",
+      "options": [
+        "A purely visual guessing exercise",
+        "A systematic search through all possible combinations of points/lines to find every valid instance of the target shape",
+        "A random sampling process",
+        "A process with no defined stopping point"
+      ],
+      "correct": 1,
+      "rationale": "A search model treats figure counting as systematically searching through all possible point/line combinations to find every valid instance of the target shape.",
+      "id": 1
+    },
+    {
+      "question": "What is the purpose of a 'coordinate model' in figure counting?",
+      "options": [
+        "To avoid using any numbers",
+        "Assigning coordinates to each vertex so figures can be validated mathematically (e.g., checking collinearity or area) rather than just visually",
+        "To only measure the figure's color intensity",
+        "To replace the need for labeling vertices"
+      ],
+      "correct": 1,
+      "rationale": "A coordinate model assigns numeric coordinates to vertices, enabling mathematical validation (like checking for collinearity or computing area) instead of relying purely on visual judgment.",
+      "id": 2
+    },
+    {
+      "question": "How can 'triangle area validation' using coordinates help confirm a candidate triangle is genuinely valid?",
+      "options": [
+        "It can't help \u2014 area is irrelevant to validity",
+        "If the computed area from the three points' coordinates is zero, the points are collinear and don't actually form a triangle",
+        "A zero area always means the triangle is valid",
+        "Area validation only works for right triangles"
+      ],
+      "correct": 1,
+      "rationale": "If three points are collinear (lie on the same straight line), the area formula computed from their coordinates evaluates to zero, revealing that they don't actually form a valid triangle.",
+      "id": 3
+    },
+    {
+      "question": "What does 'figure counting as search' emphasize about the counting process?",
+      "options": [
+        "That it cannot be automated in any way",
+        "That it can be treated as generating all valid candidate combinations and then filtering out the invalid ones, similar to a search algorithm",
+        "That only one candidate figure ever needs to be checked",
+        "That counting is unrelated to combinatorics"
+      ],
+      "correct": 1,
+      "rationale": "This framing treats figure counting like a search algorithm: generate all candidate combinations, then filter out the ones that don't actually form valid figures.",
+      "id": 4
+    },
+    {
+      "question": "What is 'candidate generation' in this search-based approach?",
+      "options": [
+        "Deleting all but one figure",
+        "Producing every possible combination of points/segments that could potentially form a valid figure, before checking which ones actually are valid",
+        "Only generating triangles, never other shapes",
+        "Randomly generating a single candidate and stopping"
+      ],
+      "correct": 1,
+      "rationale": "Candidate generation produces every possible combination that could plausibly form the target figure type, which is then filtered down through validation.",
+      "id": 5
+    },
+    {
+      "question": "What is 'deduplication' needed for in candidate generation?",
+      "options": [
+        "It isn't actually needed",
+        "Removing candidates that represent the exact same figure counted more than once, which can happen when different generation orders produce the same shape",
+        "Only removing invalid figures",
+        "Sorting candidates alphabetically"
+      ],
+      "correct": 1,
+      "rationale": "Deduplication removes cases where the same actual figure was generated more than once (e.g., via different starting points), preventing it from being double-counted.",
+      "id": 6
+    },
+    {
+      "question": "What does 'direction independence' mean when checking for duplicate figures?",
+      "options": [
+        "Direction never matters for figures",
+        "The same figure found by tracing its boundary in different directions (e.g., clockwise vs anticlockwise) should still be recognized as one single figure, not two",
+        "Every direction produces a genuinely different figure",
+        "Only clockwise-traced figures are valid"
+      ],
+      "correct": 1,
+      "rationale": "A figure traced clockwise and the same figure traced anticlockwise are still just one figure \u2014 direction independence ensures these aren't mistakenly counted as two separate figures.",
+      "id": 7
+    },
+    {
+      "question": "How can symmetry provide a 'shortcut' in figure counting?",
+      "options": [
+        "Symmetry never helps with counting",
+        "Counting figures in one symmetric section of a figure and then multiplying or reflecting that count, instead of manually counting the entire figure",
+        "By eliminating the need to count squares",
+        "By doubling every count automatically regardless of the figure"
+      ],
+      "correct": 1,
+      "rationale": "If a figure has symmetry, counting figures in just one symmetric section and then appropriately multiplying/reflecting that count can save significant time over counting the whole figure manually.",
+      "id": 8
+    },
+    {
+      "question": "What is the 'symmetry trap'?",
+      "options": [
+        "Symmetric figures are always duplicates",
+        "Assuming two figures are duplicates just because they look symmetric to each other, when they may actually be distinct valid figures in different positions",
+        "Symmetric figures should never be counted",
+        "A trap that only applies to circles"
+      ],
+      "correct": 1,
+      "rationale": "The symmetry trap is mistakenly treating two visually symmetric figures as duplicates and discarding one, when they are actually two distinct, separately valid figures in different positions.",
+      "id": 9
+    },
+    {
+      "question": "In a standard 3x3 square grid practice example, what is the total number of squares of all sizes?",
+      "options": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct": 2,
+      "rationale": "Using the earlier formula: 3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14 total squares.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-10",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 10 of 16",
+  "questions": [
+    {
+      "question": "What does 'Science Classification' broadly test?",
+      "options": [
+        "Only letter-based patterns",
+        "Whether a group of items share a common scientific category (from physics, chemistry, biology, etc.)",
+        "Only word synonyms",
+        "Only numeric properties"
+      ],
+      "correct": 1,
+      "rationale": "Science classification tests whether items share a common scientific category, drawing on knowledge across scientific disciplines.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Chemistry Classification' test specifically?",
+      "options": [
+        "A biological property",
+        "Whether a group of substances/elements share a common chemistry-based category (element type, compound class, etc.)",
+        "A computer-related property",
+        "A geography-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether substances or elements share a common chemistry-related category, such as being the same type of element or compound.",
+      "id": 2
+    },
+    {
+      "question": "What does 'Biology Classification' test?",
+      "options": [
+        "A chemistry-based property",
+        "Whether a group of organisms/biological items share a common biological category",
+        "A computer-related property",
+        "A geography-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether organisms or biological items share a common biological classification, such as taxonomic group or biological function.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Human Body Classification' test?",
+      "options": [
+        "A geography-based property",
+        "Whether a group of body parts/systems share a common anatomical or functional category",
+        "A computer-related property",
+        "A chemistry-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of body parts or systems share a common anatomical or functional category, identifying the one that belongs elsewhere.",
+      "id": 4
+    },
+    {
+      "question": "What does 'Computer Classification' test?",
+      "options": [
+        "A biology-based property",
+        "Whether a group of computing-related items share a common technical category (hardware, software, etc.)",
+        "A geography-based property",
+        "A chemistry-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether computing-related items share a common technical category, such as all being hardware components or all being software types.",
+      "id": 5
+    },
+    {
+      "question": "What does 'Programming Classification' test, specifically?",
+      "options": [
+        "A hardware-only property",
+        "Whether a group of programming-related terms share a common category (languages, paradigms, concepts, etc.)",
+        "A biology-based property",
+        "A geography-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether programming-related terms share a common category, such as all being programming languages or all being coding concepts.",
+      "id": 6
+    },
+    {
+      "question": "What does 'File-Type Classification' test?",
+      "options": [
+        "A hardware-only property",
+        "Whether a group of file extensions/types share a common category (document, image, executable, etc.)",
+        "A biology-based property",
+        "A chemistry-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether file types share a common category, such as all being image formats or all being document formats.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Operating System Classification' test?",
+      "options": [
+        "A hardware-only property",
+        "Whether a group of items relate to a common category of operating systems or their components",
+        "A biology-based property",
+        "A chemistry-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether items share a common category related to operating systems, identifying the one that belongs to a different category.",
+      "id": 8
+    },
+    {
+      "question": "What is the 'Tool vs Product Classification' distinction?",
+      "options": [
+        "That tools and products are always the same thing",
+        "Distinguishing whether an item functions as a tool (used to make something) versus being the resulting product itself",
+        "That only products can be classified",
+        "That only tools can be classified"
+      ],
+      "correct": 1,
+      "rationale": "This distinguishes items that function as tools (used to create or work on something) from items that are themselves the finished product \u2014 a subtle but important distinction.",
+      "id": 9
+    },
+    {
+      "question": "What is the 'Function-Based Trap'?",
+      "options": [
+        "Confusing two synonyms",
+        "Mistakenly classifying by superficial category when the true shared property is actually about function or use",
+        "A trap only relevant to numbers",
+        "A trap with no practical relevance"
+      ],
+      "correct": 1,
+      "rationale": "This trap involves classifying based on a superficial category resemblance, when the true shared property that matters is actually about function or use.",
+      "id": 10
+    }
+  ]
+}

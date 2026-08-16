@@ -1,0 +1,269 @@
+# Clock Reasoning — Part 2 of 10
+
+[info title="Part 2 of 10"]
+Continuing from the previous part. back to Part 1 (`clock-reasoning-part-1`) · continue to Part 3 (`clock-reasoning-part-3`).
+[/info]
+
+## 6. Normalized Time
+
+Clock values have boundaries.
+
+Minutes normally range from:
+
+```text
+0–59
+```
+
+Seconds normally range from:
+
+```text
+0–59
+```
+
+For example:
+
+```text
+10:80
+```
+
+should be normalized to:
+
+```text
+11:20
+```
+
+because:
+
+```text
+80 minutes = 1 hour 20 minutes
+```
+
+Similarly:
+
+```text
+4:125
+```
+
+becomes:
+
+```text
+6:05
+```
+
+because:
+
+```text
+125 minutes = 2 hours 5 minutes
+```
+
+A clock-reasoning engine therefore needs a **normalization stage**:
+
+```text
+raw time
+   ↓
+normalize seconds
+   ↓
+normalize minutes
+   ↓
+normalize hours
+   ↓
+handle day boundary
+   ↓
+canonical time
+```
+
+## 7. 12-Hour Clock
+
+A 12-hour clock represents a day using:
+
+```text
+1–12 AM
+1–12 PM
+```
+
+The important special cases are:
+
+```text
+12 AM = 00:00
+12 PM = 12:00
+```
+
+For PM times except 12 PM:
+
+```text
+24-hour hour = 12-hour hour + 12
+```
+
+Examples:
+
+```text
+3 PM  → 15:00
+7 PM  → 19:00
+11 PM → 23:00
+```
+
+Conversion table:
+
+| 12-hour | 24-hour |
+|---|---|
+| 12:00 AM | 00:00 |
+| 1:00 AM | 01:00 |
+| 7:30 AM | 07:30 |
+| 11:59 AM | 11:59 |
+| 12:00 PM | 12:00 |
+| 1:00 PM | 13:00 |
+| 7:30 PM | 19:30 |
+| 11:59 PM | 23:59 |
+
+## 8. 24-Hour Clock
+
+The 24-hour clock represents an entire day continuously:
+
+```text
+00:00 → midnight
+12:00 → noon
+23:59 → one minute before midnight
+```
+
+The valid range is:
+
+```text
+00:00:00
+```
+
+through:
+
+```text
+23:59:59
+```
+
+This representation is generally preferable for internal reasoning because it eliminates AM/PM ambiguity.
+
+## 9. Natural-Language Time Understanding
+
+Humans rarely speak only in numerical clock notation.
+
+They say:
+
+```text
+three o'clock
+half past three
+quarter past three
+quarter to four
+twenty minutes past five
+ten minutes to six
+noon
+midnight
+early morning
+afternoon
+tonight
+```
+
+The reasoning system therefore needs a **temporal language parser**.
+
+Examples:
+
+```text
+"half past 3"
+→ 03:30
+
+"quarter past 5"
+→ 05:15
+
+"quarter to 6"
+→ 05:45
+```
+
+The key semantic distinction is:
+
+```text
+past → add minutes
+to   → subtract from the next hour
+```
+
+## 10. Common Clock Expressions
+
+| Expression | Time |
+|---|---:|
+| five past three | 3:05 |
+| ten past three | 3:10 |
+| quarter past three | 3:15 |
+| half past three | 3:30 |
+| twenty-five to four | 3:35 |
+| quarter to four | 3:45 |
+| ten to four | 3:50 |
+
+The parser should understand the semantic structure rather than memorize every phrase independently.
+
+## 11. Clock Arithmetic
+
+Once time has been converted into a numerical representation, clock arithmetic becomes straightforward.
+
+The most important operations are:
+
+```text
+TIME + DURATION
+TIME - DURATION
+TIME - TIME
+```
+
+The first means “move forward in time.”
+
+The second means “move backward in time.”
+
+The third means “calculate elapsed time.”
+
+## 12. Adding Time
+
+Example:
+
+```text
+2:35 PM + 1 hour 45 minutes
+```
+
+Convert:
+
+```text
+2:35 PM → 14:35
+```
+
+Add:
+
+```text
+14:35
++1:45
+-----
+16:20
+```
+
+Therefore:
+
+```text
+4:20 PM
+```
+
+## 13. Adding Across an Hour
+
+Consider:
+
+```text
+10:45 + 30 minutes
+```
+
+Naïve addition gives:
+
+```text
+10:75
+```
+
+Normalize:
+
+```text
+75 minutes = 1 hour 15 minutes
+```
+
+Therefore:
+
+```text
+11:15
+```

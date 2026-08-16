@@ -1,0 +1,12 @@
+# Sentence Rearrangement
+
+@subject {
+  id: sentence-rearrangement
+  title: "Sentence Rearrangement"
+  parent: reasoning
+  description: "Reordering jumbled sentence parts into a coherent paragraph."
+}
+
+@lessons {
+  sentence-rearrangement
+}

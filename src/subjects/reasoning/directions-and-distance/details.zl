@@ -1,0 +1,21 @@
+# Directions & Distance
+
+@subject {
+  id: directions-and-distance
+  title: "Directions & Distance"
+  parent: reasoning
+  description: "Direction-sense and distance/displacement reasoning, in 10 parts."
+}
+
+@lessons {
+  directions-and-distance-reasoning-part-1
+  directions-and-distance-reasoning-part-2
+  directions-and-distance-reasoning-part-3
+  directions-and-distance-reasoning-part-4
+  directions-and-distance-reasoning-part-5
+  directions-and-distance-reasoning-part-6
+  directions-and-distance-reasoning-part-7
+  directions-and-distance-reasoning-part-8
+  directions-and-distance-reasoning-part-9
+  directions-and-distance-reasoning-part-10
+}

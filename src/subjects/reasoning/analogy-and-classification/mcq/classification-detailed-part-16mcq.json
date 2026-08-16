@@ -1,0 +1,174 @@
+{
+  "lessonId": "classification-detailed-part-16",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the first step in the guide's classification-solving flow (Find GROUP -> Find PROPERTY -> Find EXCEPTION -> ANSWER)?",
+      "options": [
+        "Immediately eliminate the longest word",
+        "Identify the group the majority of items belong to",
+        "Guess the odd one out by instinct",
+        "Count the letters in every option first"
+      ],
+      "correct": 1,
+      "rationale": "The guide's solving flow starts by finding the shared group among the majority of items, then the specific property that defines it, before checking which single item breaks that property."
+    },
+    {
+      "id": 2,
+      "question": "When a classification group has no obvious shared meaning, what should you check instead?",
+      "options": [
+        "Give up and pick the first option",
+        "Structural properties, such as letter count or numeric properties like perfect squares/primes",
+        "Whether the words rhyme",
+        "The alphabetical order of the options"
+      ],
+      "correct": 1,
+      "rationale": "Many classification questions hide a structural or numeric pattern rather than a meaning-based one \u2014 checking letter counts, perfect squares, primes, and similar properties often reveals the real shared category."
+    },
+    {
+      "id": 3,
+      "question": "In the set 121, 144, 169, 200, 225, why is 200 the odd one out?",
+      "options": [
+        "It is the only even number",
+        "It is the only number that is not a perfect square",
+        "It is the only three-digit number",
+        "It is the largest number in the set"
+      ],
+      "correct": 1,
+      "rationale": "121, 144, 169, and 225 are perfect squares (11^2, 12^2, 13^2, 15^2); 200 is not a perfect square, breaking the shared structural property."
+    },
+    {
+      "id": 4,
+      "question": "If your first guess at the shared category leaves more than one item looking 'odd,' what should you do?",
+      "options": [
+        "Pick either odd item at random",
+        "Refine or narrow the category definition until exactly one item fails it",
+        "Conclude the question has no valid answer",
+        "Switch to checking only alphabetical order"
+      ],
+      "correct": 1,
+      "rationale": "A correct classification category should leave exactly one item as the exception \u2014 if more than one item seems to fail your guessed category, the category itself needs to be made more specific."
+    },
+    {
+      "question": "What does 'Classification by Last-Digit Parity' test?",
+      "options": [
+        "Whether numbers share the same first digit",
+        "Whether a group of numbers' last digits are all consistently odd (or all even), with one breaking that pattern",
+        "Whether numbers are all prime",
+        "Whether numbers are all perfect squares"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether the last digits of a group of numbers are consistently odd or consistently even, identifying the number whose last digit breaks that parity pattern.",
+      "id": 5
+    },
+    {
+      "question": "What does 'Classification by First Digit' test, in contrast to last digit?",
+      "options": [
+        "The same property as last digit",
+        "Whether a group of numbers all share the same first (leading) digit, with one number starting differently",
+        "A digit-count property",
+        "A prime-factorization property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers all share the same leading digit, identifying the number that starts with a different digit.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Classification by Digit Order' test?",
+      "options": [
+        "A first-digit property only",
+        "Whether a group of numbers' digits follow a consistent internal order pattern (e.g., increasing), with one number breaking it",
+        "A last-digit property only",
+        "A prime-factorization property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether each number's own digits follow a consistent internal ordering pattern, such as increasing left to right, identifying the exception.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Classification by Digit Difference' test?",
+      "options": [
+        "A digit-sum property",
+        "Whether a group of numbers share a consistent difference between specific digits (e.g., first minus last), with one number breaking it",
+        "A digit-product property",
+        "A prime-position property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers share a consistent numeric gap between specific digit positions, identifying the number whose digit difference doesn't match.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Classification by Number of Letters' (applied to number NAMES) test?",
+      "options": [
+        "The numeric value directly",
+        "Whether the WRITTEN-OUT names of a group of numbers (like 'seven') share a common letter count, with one breaking that pattern",
+        "A digit-sum property",
+        "A prime-factorization property"
+      ],
+      "correct": 1,
+      "rationale": "This tests the letter count of numbers' spelled-out names (like 'seven' having 5 letters), identifying the number whose written name has a different letter count.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Classification by Number-Name Letters' build on from the 'Number Names' concept?",
+      "options": [
+        "Only the numeric digit value",
+        "The specific letters used in a number's spelled-out name, applying letter-based classification techniques to those written names",
+        "Only whether the number is even or odd",
+        "A property unrelated to number names"
+      ],
+      "correct": 1,
+      "rationale": "This applies letter-based classification techniques (like shared letters or patterns) to numbers' spelled-out names, rather than to their numeric digit values directly.",
+      "id": 10
+    },
+    {
+      "question": "What does the 'Advanced Classification Framework' near the end of the lesson consolidate?",
+      "options": [
+        "Only the most basic single-property checks",
+        "The full range of techniques covered (property types, elimination, feature vectors, invariants) into one comprehensive solving framework",
+        "A framework unrelated to classification",
+        "Only number-based techniques"
+      ],
+      "correct": 1,
+      "rationale": "This consolidates the full range of techniques covered throughout the lesson \u2014 property types, elimination, feature vectors, invariants \u2014 into one comprehensive framework.",
+      "id": 11
+    },
+    {
+      "question": "What does 'Classification Priority Order' establish?",
+      "options": [
+        "A random order to check properties in",
+        "A recommended sequence for checking candidate properties, generally starting with the simplest/most common types first",
+        "That only one property type should ever be checked",
+        "An order unrelated to solving efficiency"
+      ],
+      "correct": 1,
+      "rationale": "This establishes a recommended order for checking candidate properties, generally starting with the simplest and most commonly-tested types before moving to more complex ones.",
+      "id": 12
+    },
+    {
+      "question": "Why does 'the simplest rule usually win' in classification, as this lesson explains?",
+      "options": [
+        "Because complex rules are always wrong",
+        "Because a genuinely intended classification question is almost always built around a clear, straightforward shared property rather than an obscure one",
+        "Because simple rules are easier to guess randomly",
+        "Because complexity has no bearing on correctness"
+      ],
+      "correct": 1,
+      "rationale": "Well-constructed classification questions are almost always built around a clear, straightforward shared property, making the simplest consistent rule the most likely correct one.",
+      "id": 13
+    },
+    {
+      "question": "When is a 'complex rule' actually necessary, according to this lesson?",
+      "options": [
+        "Never \u2014 complex rules are always wrong",
+        "When no simple property is consistently supported by all-but-one items, requiring a more nuanced or combined property to explain the pattern",
+        "Complex rules are always preferred over simple ones",
+        "Only for letter-based classification"
+      ],
+      "correct": 1,
+      "rationale": "A complex rule becomes necessary only when no simple property can be found that's genuinely and consistently supported by all-but-one of the items.",
+      "id": 14
+    }
+  ]
+}

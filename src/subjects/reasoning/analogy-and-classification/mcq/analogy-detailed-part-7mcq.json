@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-7",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 7 of 12",
+  "questions": [
+    {
+      "question": "What does 'Option Elimination' involve in analogy solving?",
+      "options": [
+        "Guessing without checking any options",
+        "Ruling out answer options that clearly don't match the identified relationship, narrowing down to the correct one",
+        "Only considering the first option",
+        "Ignoring the relationship entirely"
+      ],
+      "correct": 1,
+      "rationale": "Option elimination systematically rules out choices that don't fit the identified relationship, narrowing the field down toward the correct answer.",
+      "id": 1
+    },
+    {
+      "question": "What is the 'Direction Trap' in analogy reasoning?",
+      "options": [
+        "Choosing an option with the correct relationship but in the reversed direction",
+        "A trap that only applies to geography analogies",
+        "Confusing north and south",
+        "A trap with no real effect on solving"
+      ],
+      "correct": 0,
+      "rationale": "The direction trap involves picking an option that has the right general relationship but applied in the reverse direction (e.g., Tool:User instead of User:Tool).",
+      "id": 2
+    },
+    {
+      "question": "What is the 'Category Trap'?",
+      "options": [
+        "Choosing an option from a completely different, unrelated category, even if some superficial similarity exists",
+        "A trap that never actually occurs",
+        "Confusing two synonyms",
+        "A trap only relevant to number analogies"
+      ],
+      "correct": 0,
+      "rationale": "The category trap involves choosing an option that seems superficially similar but actually belongs to a different, unrelated category from the true relationship.",
+      "id": 3
+    },
+    {
+      "question": "What is the 'Specificity Trap'?",
+      "options": [
+        "Choosing an answer that is too vague or too broad compared to the precise relationship in the given pair",
+        "A trap that only applies to letter analogies",
+        "Confusing similar-sounding words",
+        "A trap with no practical impact"
+      ],
+      "correct": 0,
+      "rationale": "The specificity trap involves choosing an answer whose relationship is too general or too narrow compared to the precise relationship established by the given pair.",
+      "id": 4
+    },
+    {
+      "question": "What is the 'Functional Relationship Trap'?",
+      "options": [
+        "Confusing a functional (use-based) relationship with a merely categorical one that looks similar",
+        "A trap unrelated to functions",
+        "A trap that only applies to number analogies",
+        "A trap with no real risk"
+      ],
+      "correct": 0,
+      "rationale": "This trap involves mistaking a mere category similarity for the true functional (use-based) relationship established by the original pair.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'Hierarchical Analogy' test?",
+      "options": [
+        "Two unrelated items",
+        "A relationship based on rank, level, or position within a hierarchy",
+        "A synonym relationship only",
+        "A number-based relationship only"
+      ],
+      "correct": 1,
+      "rationale": "A hierarchical analogy tests a relationship based on relative rank or level within a structured hierarchy, such as a chain of command or classification levels.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Degree of Hierarchy' refer to?",
+      "options": [
+        "The physical size of an item",
+        "How many levels apart two items are within a hierarchy",
+        "A synonym for word length",
+        "A number's square value"
+      ],
+      "correct": 1,
+      "rationale": "Degree of hierarchy measures how many levels separate two items within a hierarchical structure, which can itself define the analogy's relationship.",
+      "id": 7
+    },
+    {
+      "question": "What does a 'Sequence Analogy' test?",
+      "options": [
+        "A random unordered relationship",
+        "A relationship based on a defined ordered sequence (like days of the week or numeric order)",
+        "A synonym relationship",
+        "A relationship with no defined order"
+      ],
+      "correct": 1,
+      "rationale": "A sequence analogy tests relationships based on a defined ordered sequence, such as positions within a known list or progression.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Square + Difference' as an advanced number pattern combine?",
+      "options": [
+        "Only squaring, with no additional step",
+        "Squaring a number and then adding or subtracting a further difference",
+        "Only addition, with no squaring",
+        "A word-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "This combines two steps: first squaring the number, then applying an additional addition or subtraction to reach the final related value.",
+      "id": 9
+    },
+    {
+      "question": "What does a 'Prime Number Analogy' test?",
+      "options": [
+        "A relationship based on word meaning",
+        "A relationship based on whether numbers in the pair are prime",
+        "A relationship based on letter position",
+        "A relationship based on word length"
+      ],
+      "correct": 1,
+      "rationale": "A prime number analogy bases its relationship on primality \u2014 whether the numbers involved are prime \u2014 rather than a simple arithmetic operation.",
+      "id": 10
+    }
+  ]
+}

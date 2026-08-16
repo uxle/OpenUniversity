@@ -1,0 +1,149 @@
+# Classification / Odd One Out — In-Depth Guide — Part 16 of 16
+
+[info title="Part 16 of 16"]
+Continuing from the previous part. back to Part 15 (`classification-detailed-part-15`).
+[/info]
+
+## 207. Answers — Level 2
+
+11. 11
+12. 15
+13. 30
+14. 150
+15. 29
+16. H
+17. I
+18. EF
+19. ZXY
+20. 456
+
+---
+
+## 208. Answers — Level 3
+
+21. 35
+22. 50
+23. 21
+24. 31
+25. 58
+26. 654
+27. 58
+28. SEVEN
+29. Linux
+30. Water
+
+---
+
+## 209. Answers — Level 4
+
+34. Fish : Ocean — the first three represent animal → home/shelter more directly; Fish → Ocean is animal → habitat.
+
+38. Student : Book — the first three are person → workplace/place of activity; Student → Book is person → object.
+
+42. Chair : Table — the first three are parts/components associated with a larger object/vehicle structure, while Chair → Table is object-to-object association.
+
+> **Note:** Pair-classification questions can be context-sensitive. In an actual exam, the answer choices and exact wording determine the intended relationship.
+
+---
+
+## 210. Answers — Level 5
+
+43. 20
+44. 250
+45. 100
+46. 300
+47. 57
+48. 567 is **not** an outlier if the rule is simply consecutive digit blocks; this question intentionally demonstrates the importance of validating the rule.
+49. TIGER — if the intended property is 3-letter words for the first three.
+50. BANANA — if the intended property is exactly 3 vowels for Banana versus 2 in the first three.
+
+---
+
+## 211. Important Note About Ambiguous Questions
+
+Some classification questions can accidentally have more than one valid rule.
+
+For example:
+
+```text
+2, 3, 5, 9
+```
+
+Possible properties can be invented endlessly.
+
+Therefore, exam-quality classification requires:
+
+```text
+\boxed{\text{One strong, natural, syllabus-relevant rule}}
+```
+
+Do not accept a weak or artificially constructed pattern merely because it technically works.
+
+---
+
+## 212. Final Memory Map
+
+```text
+                 ODD ONE OUT
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+      WORD          NUMBER        FIGURE
+        │             │             │
+     Category       Parity        Shape
+     Meaning        Prime         Sides
+     Function       Square        Count
+     Relation       Cube          Position
+     Spelling       Factors       Rotation
+                    Digits        Reflection
+                    Sequence      Symmetry
+```
+
+---
+
+## 213. Ultimate Exam Rule
+
+> **Do not ask "Which one looks different?"**
+>
+> Ask:
+>
+> **"What exact property groups the maximum number of items together, and which item fails that property?"**
+
+That single question solves a large percentage of classification problems.
+
+---
+
+## 214. One-Line Formula
+
+```text
+\boxed{\text{Classification}=\text{Common Property}+\text{Outlier Detection}}
+```
+
+Or:
+
+```text
+Find GROUP
+    ↓
+Find PROPERTY
+    ↓
+Find EXCEPTION
+    ↓
+ANSWER
+```
+
+---
+
+## 215. End of Chapter
+
+**Recommended next reasoning chapters:**
+
+1. Series
+2. Number Series
+3. Alphabet Series
+4. Missing Number
+5. Venn Diagrams
+6. Syllogism
+7. Statement & Conclusion
+8. Direction & Distance
+9. Blood Relations
+10. Ranking & Order

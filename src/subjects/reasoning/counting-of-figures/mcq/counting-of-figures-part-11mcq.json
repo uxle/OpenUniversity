@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-11",
+  "title": "Counting of Figures \u2014 Part 11 of 12",
+  "questions": [
+    {
+      "question": "What is the purpose of a 'final cheat sheet' at the end of a lesson like this?",
+      "options": [
+        "To introduce brand-new material",
+        "To condense every important formula and rule from the lesson into one compact, easily-reviewable reference",
+        "To replace the need for practice sets",
+        "To only summarize the first two parts of the lesson"
+      ],
+      "correct": 1,
+      "rationale": "A final cheat sheet condenses all the important formulas and rules covered throughout the lesson into one compact, quickly-reviewable reference.",
+      "id": 1
+    },
+    {
+      "question": "Why does the lesson include separate 'Practice Set \u2014 Basic, Intermediate, Advanced' tiers?",
+      "options": [
+        "To make the lesson longer without added value",
+        "To let learners build up their skill progressively, rather than jumping straight to the hardest problems",
+        "Because basic and advanced problems use entirely different formulas",
+        "Tiered practice sets serve no pedagogical purpose"
+      ],
+      "correct": 1,
+      "rationale": "Tiered practice sets let learners build skill progressively, reinforcing fundamentals before tackling the most difficult, composite-figure-heavy problems.",
+      "id": 2
+    },
+    {
+      "question": "What is the value of including 'Answers' sections directly after each practice set?",
+      "options": [
+        "It removes the need to actually attempt the problems",
+        "It lets learners immediately check their work and catch mistakes while the problem is still fresh in mind",
+        "It has no real pedagogical value",
+        "It only benefits advanced learners"
+      ],
+      "correct": 1,
+      "rationale": "Immediate answer-checking lets learners catch and understand mistakes while the problem and their reasoning are still fresh, reinforcing the correct method faster.",
+      "id": 3
+    },
+    {
+      "question": "What might an 'Important Exam Warning' in this lesson likely caution against?",
+      "options": [
+        "Using formulas at all",
+        "Relying on a single memorized formula without checking whether the specific figure actually matches the formula's assumptions",
+        "Practicing with basic problems first",
+        "Using coordinate models"
+      ],
+      "correct": 1,
+      "rationale": "Consistent with the lesson's recurring theme, such a warning would caution against blindly applying a memorized formula to a figure that doesn't actually match its assumptions.",
+      "id": 4
+    },
+    {
+      "question": "What is meant by the lesson's 'Deep Concept' section, based on the lesson's overall theme?",
+      "options": [
+        "That figure counting cannot be taught systematically",
+        "That reliable figure counting comes from systematic, verifiable methods rather than visual intuition or memorized shortcuts alone",
+        "That only formulas matter, not understanding",
+        "That every figure-counting problem is unsolvable without a computer"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's consistent theme throughout is that systematic, verifiable methods \u2014 not visual intuition or blind memorization \u2014 are what make figure counting reliable.",
+      "id": 5
+    },
+    {
+      "question": "Why are 'quick reference values' (like squares in a 3x3 or 4x4 grid) useful to have memorized separately from the formulas themselves?",
+      "options": [
+        "They are not actually useful to know separately",
+        "They let you instantly verify common cases without recalculating the formula every time",
+        "They replace the need to understand any formula",
+        "They only apply to rectangles, not squares"
+      ],
+      "correct": 1,
+      "rationale": "Having common values memorized provides an instant way to verify a calculation against a known case, without needing to recompute the formula from scratch every time.",
+      "id": 6
+    },
+    {
+      "question": "What is the benefit of tiered practice sets (basic to advanced) paired with answers, as a study method?",
+      "options": [
+        "It has no measurable benefit",
+        "It reinforces correct technique at each difficulty level before compounding that technique in harder, more complex figures",
+        "It only benefits students who skip the basic tier",
+        "It replaces the need for the earlier formula sections entirely"
+      ],
+      "correct": 1,
+      "rationale": "Progressing through tiers with immediate answer-checking reinforces correct technique at each level before applying that same technique to increasingly complex figures.",
+      "id": 7
+    },
+    {
+      "question": "Why might a 'deep concept' section be placed near the very end of a long lesson rather than at the beginning?",
+      "options": [
+        "Its placement is arbitrary and has no reasoning behind it",
+        "Because it's meant to consolidate understanding after all the individual techniques and formulas have already been introduced and practiced",
+        "Because it introduces material unrelated to the rest of the lesson",
+        "Because deep concepts are always the easiest material"
+      ],
+      "correct": 1,
+      "rationale": "Placing conceptual consolidation near the end lets it draw on and unify everything already introduced and practiced, rather than being presented before the learner has the necessary context.",
+      "id": 8
+    },
+    {
+      "question": "What general principle underlies most of the 'quick reference values' given throughout this lesson?",
+      "options": [
+        "That every figure requires a unique, unrelated formula",
+        "That regular, well-structured figures (like grids) follow predictable formulas that can be verified and reused",
+        "That reference values are only useful for triangles",
+        "That formulas cannot be verified against specific cases"
+      ],
+      "correct": 1,
+      "rationale": "The quick reference values reflect the broader principle that regular, well-structured figures follow predictable formulas \u2014 these values are just specific, verifiable instances of those general formulas.",
+      "id": 9
+    },
+    {
+      "question": "Why is it useful to memorize a few key reference values (like 14 squares in a 3x3 grid) even if you also know the general formula?",
+      "options": [
+        "It isn't useful, the formula alone is always sufficient",
+        "It provides a fast sanity check against which to verify a longer calculation during time-pressured exam conditions",
+        "It replaces the need to ever use the formula again",
+        "It only matters for figures larger than 4x4"
+      ],
+      "correct": 1,
+      "rationale": "A memorized reference value provides an instant sanity check against a freshly-calculated result, which is especially valuable under exam time pressure.",
+      "id": 10
+    }
+  ]
+}

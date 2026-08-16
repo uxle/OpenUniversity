@@ -1,0 +1,126 @@
+{
+  "lessonId": "sentence-rearrangement",
+  "title": "Sentence Rearrangement (PQRS / Jumbled Sentences)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A sentence/part will almost never begin with which of the following?",
+      "options": [
+        "Subject (Noun/Pronoun)",
+        "V2, V3, or the Objective Case (me, him, them)",
+        "An article like 'A' or 'The'",
+        "A proper noun"
+      ],
+      "correct": 1,
+      "rationale": "A part opening with a past-tense/participle verb form (V2/V3) or an objective-case pronoun (me, him, them) almost never starts a sequence \u2014 these depend on something already introduced."
+    },
+    {
+      "id": 2,
+      "question": "According to the pronoun-antecedent rule, when can a part beginning with 'he', 'she', or 'they' be the opening part?",
+      "options": [
+        "Always \u2014 pronouns are neutral",
+        "Only if a noun it refers to has already appeared earlier \u2014 so it's very unlikely to be the opening part",
+        "Only if the pronoun is capitalized",
+        "Never, under any circumstance"
+      ],
+      "correct": 1,
+      "rationale": "A pronoun must refer back to a noun that has already appeared \u2014 since nothing has appeared before the opening part, a part starting with a bare pronoun is very unlikely to be first."
+    },
+    {
+      "id": 3,
+      "question": "Words like 'however', 'therefore', and 'moreover' are strong clues that a part is:",
+      "options": [
+        "The opening part",
+        "A middle or closing part, since they connect to something stated earlier",
+        "Irrelevant to sequencing",
+        "Always the second part specifically"
+      ],
+      "correct": 1,
+      "rationale": "Transition/contrast words connect to an idea already introduced, so a part beginning with one of these is almost never the first part of the sequence."
+    },
+    {
+      "id": 4,
+      "question": "What does the definite article ('the') vs indefinite article ('a/an') clue typically indicate?",
+      "options": [
+        "'The' introduces a noun for the first time; 'a/an' refers back to it",
+        "'A/an' usually introduces a noun first; 'the' refers back to it once already known",
+        "Articles have no bearing on sequencing",
+        "'The' always marks the final sentence"
+      ],
+      "correct": 1,
+      "rationale": "A noun is typically introduced with 'a/an' (indefinite) first, then referred to again with 'the' (definite) once it is already known to the reader \u2014 the indefinite mention usually comes first."
+    },
+    {
+      "question": "In Practice Set 2 (A: 'Reading books regularly improves vocabulary and comprehension.' B: 'Therefore, students should be encouraged to read more.' C: 'It also helps develop critical thinking skills.' D: 'These benefits are especially important during school years.'), which part opens the sequence, and why?",
+      "options": [
+        "B, because it states a conclusion",
+        "A, because it introduces the general claim with no pronoun or article dependency",
+        "D, because it lists benefits",
+        "C, because it uses 'it' referring back"
+      ],
+      "correct": 1,
+      "rationale": "A introduces the general claim about reading with a full noun phrase and no pronoun dependency, making it the natural opening sentence; C's 'it' and B's 'Therefore' both depend on something stated earlier.",
+      "id": 5
+    },
+    {
+      "question": "According to the pronoun-antecedent rule, why is a part beginning with 'He discovered...' unlikely to be the opening sentence?",
+      "options": [
+        "Because 'He' is grammatically incorrect",
+        "Because the pronoun 'He' must refer back to a noun introduced in an earlier part",
+        "Because sentences can never start with pronouns",
+        "Because 'discovered' is always a middle-sentence verb"
+      ],
+      "correct": 1,
+      "rationale": "A pronoun like 'he' needs an antecedent \u2014 a noun it refers back to \u2014 that must already have appeared earlier in the sequence, so a part opening with it is very unlikely to be first.",
+      "id": 6
+    },
+    {
+      "question": "Which pair correctly illustrates the definite vs indefinite article clue?",
+      "options": [
+        "'The boy was standing near the gate' before 'A boy then walked inside'",
+        "'A boy was standing near the gate' before 'The boy then walked inside'",
+        "Both orders are equally valid",
+        "Articles provide no useful clue for sequencing"
+      ],
+      "correct": 1,
+      "rationale": "A noun is typically introduced with the indefinite article ('a boy') and referred to again later with the definite article ('the boy'), once the reader already knows which boy is meant.",
+      "id": 7
+    },
+    {
+      "question": "Why is a part beginning with 'However, ...' almost never the first sentence in a sequence?",
+      "options": [
+        "'However' is grammatically incorrect at a sentence's start",
+        "Transition/contrast words like 'however' connect to an idea stated earlier, signalling a middle or closing part",
+        "'However' can only appear in questions",
+        "It has no bearing on sequencing"
+      ],
+      "correct": 1,
+      "rationale": "Transition and contrast words such as however, but, moreover, and therefore connect back to something already stated, so a part opening with one of them is almost never the first part of the sequence.",
+      "id": 8
+    },
+    {
+      "question": "In Example 4 (frogs falling into a pit), what clue signals that part C ('When the other frogs saw how deep the pit was') comes after part A ('A group of frogs was travelling...')?",
+      "options": [
+        "Part C uses the definite phrase 'the other frogs', referring back to the group introduced in A",
+        "Part C is alphabetically after A",
+        "Part C is longer than A",
+        "There is no clue connecting them"
+      ],
+      "correct": 0,
+      "rationale": "Part A introduces 'a group of frogs' (indefinite); part C's 'the other frogs' uses the definite article, referring back to the group already introduced in A \u2014 a clear definite-article dependency.",
+      "id": 9
+    },
+    {
+      "question": "What is the recommended final check after arranging all the jumbled parts?",
+      "options": [
+        "Submit immediately without re-checking",
+        "Re-read the fully assembled sentence or paragraph to confirm it reads naturally and makes complete grammatical and logical sense",
+        "Only check the first and last parts",
+        "Count the number of words in each part"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's common-mistakes section stresses re-reading the final assembled sequence once fully ordered, to confirm it reads naturally and makes full grammatical and logical sense from start to end.",
+      "id": 10
+    }
+  ]
+}

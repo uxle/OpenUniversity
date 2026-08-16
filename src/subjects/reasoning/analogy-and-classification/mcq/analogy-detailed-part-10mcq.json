@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-10",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 10 of 12",
+  "questions": [
+    {
+      "question": "What does an 'Animal Sound Analogy' test?",
+      "options": [
+        "An animal and its habitat",
+        "An animal and the specific sound it characteristically makes",
+        "An animal and its diet",
+        "An animal and its young"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between an animal and the specific sound term associated with it, such as Dog : Bark or Lion : Roar.",
+      "id": 1
+    },
+    {
+      "question": "What does an 'Animal Group Analogy' test, in contrast?",
+      "options": [
+        "An animal and its sound",
+        "An animal and the specific collective term for a group of that animal",
+        "An animal and its diet",
+        "An animal and its color"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between an animal and the specific collective noun for a group of them, such as Wolves : Pack or Lions : Pride.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'Disease -> Symptom' analogy test?",
+      "options": [
+        "A disease and its cure",
+        "A disease and a characteristic symptom associated with it",
+        "A disease and its discoverer",
+        "A disease and its treatment cost"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a disease and a symptom characteristically associated with it.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Person -> Profession' analogy test?",
+      "options": [
+        "A person and their age",
+        "A person's role or title and the profession associated with it",
+        "A person and their nationality",
+        "A person and their salary"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a professional title or role and the profession it belongs to, such as Surgeon : Medicine.",
+      "id": 4
+    },
+    {
+      "question": "What does a 'Person -> Discovery' analogy test?",
+      "options": [
+        "A person and their profession only",
+        "A specific person and something they are credited with discovering",
+        "A person and their nationality",
+        "A person and their age"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a specific person and something notable they are credited with discovering, such as Newton : Gravity.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'Country -> Capital' analogy test?",
+      "options": [
+        "A country and its currency",
+        "A country and its designated capital city",
+        "A country and its population",
+        "A country and its national animal"
+      ],
+      "correct": 1,
+      "rationale": "This classic analogy type tests the relationship between a country and its capital city, such as France : Paris.",
+      "id": 6
+    },
+    {
+      "question": "What does a 'Country -> Currency' analogy test, in contrast?",
+      "options": [
+        "A country and its capital",
+        "A country and its official currency",
+        "A country and its population",
+        "A country and its climate"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a country and its official currency, such as Japan : Yen.",
+      "id": 7
+    },
+    {
+      "question": "What does a 'State -> Capital' analogy test?",
+      "options": [
+        "A state and its country's capital",
+        "A state (a sub-national region) and its own specific capital city",
+        "A state and its currency",
+        "A state and its population"
+      ],
+      "correct": 1,
+      "rationale": "Similar to the country-capital pattern, this type tests the relationship between a state or province and its own designated capital city.",
+      "id": 8
+    },
+    {
+      "question": "What is the 'Common Trap: Similar but Not Equivalent'?",
+      "options": [
+        "Choosing an option with an identical relationship",
+        "Choosing an option that seems related but actually reflects a subtly different relationship than the original pair",
+        "A trap that never occurs in practice",
+        "A trap only relevant to number analogies"
+      ],
+      "correct": 1,
+      "rationale": "This trap involves selecting an option that seems superficially related but actually reflects a subtly different relationship than the one established by the original pair.",
+      "id": 9
+    },
+    {
+      "question": "What is the 'Common Trap: Broad Relationship'?",
+      "options": [
+        "Choosing an overly specific answer",
+        "Choosing an answer whose relationship is too general/broad compared to the precise relationship in the given pair",
+        "A trap unrelated to relationship specificity",
+        "A trap that only applies to letter analogies"
+      ],
+      "correct": 1,
+      "rationale": "This trap involves selecting an answer connected by an overly broad or general relationship, when the original pair's relationship was actually much more specific.",
+      "id": 10
+    }
+  ]
+}

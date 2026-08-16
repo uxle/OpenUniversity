@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-10",
+  "title": "Counting of Figures \u2014 Part 10 of 12",
+  "questions": [
+    {
+      "question": "Using the line segment formula, how many segments do 6 points on a line form?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "21"
+      ],
+      "correct": 1,
+      "rationale": "6 x 5 / 2 = 15 distinct segments.",
+      "id": 1
+    },
+    {
+      "question": "Using the line segment formula, how many segments do 7 points on a line form?",
+      "options": [
+        "15",
+        "18",
+        "21",
+        "24"
+      ],
+      "correct": 2,
+      "rationale": "7 x 6 / 2 = 21 distinct segments.",
+      "id": 2
+    },
+    {
+      "question": "Why does the lesson warn that 'memorization can fail' for advanced triangle counting formulas?",
+      "options": [
+        "Formulas always work regardless of the figure",
+        "Because complex or irregular figures often don't match the exact conditions a memorized formula assumes, leading to a wrong answer if applied blindly",
+        "Because triangle formulas don't actually exist",
+        "Because memorization is always faster than understanding"
+      ],
+      "correct": 1,
+      "rationale": "A memorized formula only applies correctly when a figure matches its underlying assumptions \u2014 applying it blindly to an irregular or non-matching figure produces a wrong answer.",
+      "id": 3
+    },
+    {
+      "question": "What is the recommended 'best strategy for exam' figure-counting questions, according to this lesson?",
+      "options": [
+        "Always guess a round number",
+        "Apply a known formula when the figure is regular, but fall back to a systematic manual counting method (checklist, labeling) when it isn't",
+        "Only ever use manual counting, never formulas",
+        "Skip figure-counting questions entirely"
+      ],
+      "correct": 1,
+      "rationale": "The recommended strategy is flexible: use a direct formula for regular, formula-matching figures, but rely on the systematic manual method for irregular ones.",
+      "id": 4
+    },
+    {
+      "question": "What is the purpose of a '30-second verification' step after arriving at a count?",
+      "options": [
+        "To waste time before submitting",
+        "A quick sanity check (like re-counting a subset or checking against a known formula) to catch an obviously wrong answer before finalizing it",
+        "To redraw the entire figure",
+        "To convert the answer into a different unit"
+      ],
+      "correct": 1,
+      "rationale": "A brief verification step \u2014 like spot-checking a subset of the count or comparing against a known formula \u2014 helps catch an obviously wrong answer before it's finalized.",
+      "id": 5
+    },
+    {
+      "question": "What does the 'final universal algorithm' aim to consolidate?",
+      "options": [
+        "Only the formulas for triangles",
+        "The full set of counting steps and checks covered throughout the lesson into one repeatable procedure applicable to any figure-counting problem",
+        "A single formula that replaces all others",
+        "Only the practice examples, not the theory"
+      ],
+      "correct": 1,
+      "rationale": "The final universal algorithm brings together every step and check covered throughout the lesson into one repeatable, general-purpose counting procedure.",
+      "id": 6
+    },
+    {
+      "question": "Why are 'common exam question types' highlighted separately in this lesson?",
+      "options": [
+        "They aren't actually relevant to exams",
+        "To help recognize which specific method or formula is likely to apply based on the style of question typically seen in exams",
+        "To discourage practicing with real exam questions",
+        "Because exam questions never repeat any pattern"
+      ],
+      "correct": 1,
+      "rationale": "Highlighting common question types helps a learner quickly recognize which method or formula is likely to apply, based on patterns seen in typical exam questions.",
+      "id": 7
+    },
+    {
+      "question": "What is the purpose of a 'figure counting master table'?",
+      "options": [
+        "To replace all previous explanations",
+        "To consolidate the various formulas (segments, squares, rectangles, intersections, regions) into one single quick-reference summary",
+        "To only list answers with no formulas",
+        "To discourage using formulas during practice"
+      ],
+      "correct": 1,
+      "rationale": "A master table brings together every formula covered \u2014 segments, squares, rectangles, intersections, regions \u2014 into one consolidated, easy-to-scan reference.",
+      "id": 8
+    },
+    {
+      "question": "Using the line segment formula, how many points on a line are needed to form exactly 21 segments?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "rationale": "Since n(n-1)/2 = 21 gives n = 7 (7 x 6 / 2 = 21), 7 points are needed.",
+      "id": 9
+    },
+    {
+      "question": "What is the general benefit of having formula charts (segment, intersection, region) available together, rather than scattered across the lesson?",
+      "options": [
+        "There is no real benefit",
+        "It allows quick lookup and comparison during practice or exam review without needing to re-derive each formula from scratch",
+        "It makes the formulas less accurate",
+        "It only helps with segment formulas, not the others"
+      ],
+      "correct": 1,
+      "rationale": "Consolidated formula charts allow fast lookup and comparison during practice or review, saving the time of re-deriving each formula individually from first principles.",
+      "id": 10
+    }
+  ]
+}

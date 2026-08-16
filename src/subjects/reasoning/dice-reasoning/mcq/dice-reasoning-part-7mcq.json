@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-7",
+  "title": "Dice Reasoning \u2014 Part 7 of 10",
+  "questions": [
+    {
+      "question": "What is the purpose of a 'Hidden Opposite Corner' solved example?",
+      "options": [
+        "To ignore hidden faces entirely",
+        "To demonstrate deducing a face that isn't directly visible in any given view, using the opposite-face and corner rules together",
+        "To count the die's total corners",
+        "To measure the die's size"
+      ],
+      "correct": 1,
+      "rationale": "This example demonstrates combining the opposite-face and corner-compatibility rules to deduce a face that was never directly visible in any of the given views.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'One Common Edge' solved example likely focus on?",
+      "options": [
+        "Two views that share no information at all",
+        "Using two views that share one common edge (two matching adjacent faces) to deduce the relationship of the remaining faces",
+        "Only single-view problems",
+        "The die's physical edges, not its faces"
+      ],
+      "correct": 1,
+      "rationale": "This example focuses on using two views sharing a common edge \u2014 two matching adjacent faces \u2014 as a strong anchor to deduce the relationships of the remaining faces.",
+      "id": 2
+    },
+    {
+      "question": "What would a 'Four Neighbours' solved example ask you to find?",
+      "options": [
+        "The face opposite a given face",
+        "All four faces adjacent to a given face (since a cube face has exactly four neighbours and one opposite face)",
+        "The total number of faces on the die",
+        "Only two of the adjacent faces"
+      ],
+      "correct": 1,
+      "rationale": "Since each face of a cube has exactly 4 adjacent faces (and 1 opposite face), this example works through identifying all four of those neighbours for a given face.",
+      "id": 3
+    },
+    {
+      "question": "How many faces are adjacent to any single given face of a cube?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 2,
+      "rationale": "Of the cube's 6 faces, 1 is opposite the given face and the remaining 4 are all adjacent to it.",
+      "id": 4
+    },
+    {
+      "question": "What does a 'Rolling' solved example (like Example 9) require you to track?",
+      "options": [
+        "The die's color changes",
+        "How the die's face positions change as it physically rolls in a given direction",
+        "The die's weight after rolling",
+        "Nothing \u2014 rolling doesn't affect face positions"
+      ],
+      "correct": 1,
+      "rationale": "A rolling example requires tracking exactly how the die's face positions update as it physically rolls in a specified direction, applying the rotation cycle rules.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'Two Rolls' solved example require, compared to a single roll?",
+      "options": [
+        "Exactly the same process as a single roll",
+        "Tracking the cumulative effect of two sequential rolls, applying the rotation rules twice in sequence",
+        "Ignoring the first roll entirely",
+        "Only tracking the final color of the die"
+      ],
+      "correct": 1,
+      "rationale": "A two-roll example requires applying the rotation rules twice in sequence, correctly tracking the die's state as it changes after each individual roll.",
+      "id": 6
+    },
+    {
+      "question": "What is the purpose of a 'Fast Method for Exam Options' technique?",
+      "options": [
+        "To skip the question entirely",
+        "Quickly eliminating clearly invalid answer options (e.g., those showing opposite faces as adjacent) before fully solving the problem",
+        "To randomly guess between remaining options",
+        "To only work for single-view questions"
+      ],
+      "correct": 1,
+      "rationale": "This technique quickly rules out obviously invalid options (like ones showing known-opposite faces as adjacent) before investing time in fully solving the problem from scratch.",
+      "id": 7
+    },
+    {
+      "question": "What does an 'Elimination Flowchart' provide?",
+      "options": [
+        "A random guessing method",
+        "A step-by-step decision path for ruling out invalid answer options based on known rules, arriving at the valid one(s) faster",
+        "A chart of die colors only",
+        "A chart unrelated to answer options"
+      ],
+      "correct": 1,
+      "rationale": "An elimination flowchart provides a structured, step-by-step decision path for systematically ruling out invalid options based on the established rules.",
+      "id": 8
+    },
+    {
+      "question": "What is the purpose of a 'Decision Tree' in this context?",
+      "options": [
+        "To decorate the lesson",
+        "To branch through the possible cases (e.g., is the proposed pair opposite? adjacent? compatible at a corner?) systematically to reach a conclusion",
+        "To replace the opposite-face rule",
+        "To only apply to letter dice"
+      ],
+      "correct": 1,
+      "rationale": "A decision tree systematically branches through the relevant possible cases \u2014 opposite? adjacent? corner-compatible? \u2014 to reach a reliable conclusion.",
+      "id": 9
+    },
+    {
+      "question": "Why are fast elimination techniques especially valuable in a multiple-choice dice reasoning question?",
+      "options": [
+        "They aren't actually valuable",
+        "Because ruling out clearly invalid options quickly narrows down the answer without needing to fully re-derive the entire die's layout from scratch",
+        "Because they replace the need to know any rules",
+        "Because multiple-choice questions never have invalid options"
+      ],
+      "correct": 1,
+      "rationale": "In a multiple-choice format, quickly ruling out impossible options via known rules can narrow down (or even directly reveal) the correct answer without a full from-scratch derivation.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+# Classification / Odd One Out — In-Depth Guide — Part 5 of 16
+
+[info title="Part 5 of 16"]
+Continuing from the previous part. back to Part 4 (`classification-detailed-part-4`) · continue to Part 6 (`classification-detailed-part-6`).
+[/info]
+
+## 58. Star Classification
+
+```text
+Sun
+Sirius
+Earth
+Polaris
+```
+
+Sun, Sirius and Polaris are stars.
+
+Earth is a planet.
+
+**Answer: Earth**
+
+---
+
+## 59. Geography Classification
+
+```text
+India
+China
+Japan
+Asia
+```
+
+India, China and Japan are countries.
+
+Asia is a continent.
+
+**Answer: Asia**
+
+---
+
+## 60. Capital Classification
+
+```text
+Delhi
+Paris
+Tokyo
+India
+```
+
+Delhi, Paris and Tokyo are capitals.
+
+India is a country.
+
+**Answer: India**
+
+---
+
+## 61. Currency Classification
+
+```text
+Rupee
+Yen
+Dollar
+Delhi
+```
+
+Rupee, yen and dollar are currencies.
+
+Delhi is a city.
+
+**Answer: Delhi**
+
+---
+
+## 62. Direction Classification
+
+The four main directions are:
+
+```text
+        North
+          ↑
+West ←    +    → East
+          ↓
+        South
+```
+
+If given:
+
+```text
+North
+South
+East
+North-East
+```
+
+North, South and East are cardinal directions.
+
+North-East is an intercardinal direction.
+
+**Answer: North-East**
+
+---
+
+## 63. Cardinal vs Intercardinal
+
+#### Cardinal
+
+```text
+N
+E
+S
+W
+```
+
+#### Intercardinal
+
+```text
+NE
+SE
+SW
+NW
+```
+
+This distinction can create classification questions.
+
+---
+
+## 64. Shape Classification
+
+A shape question may compare:
+
+```text
+Triangle
+Square
+Pentagon
+Circle
+```
+
+Triangle, square and pentagon have straight sides.
+
+Circle has no straight side.
+
+**Answer: Circle**
+
+---
+
+## 65. Polygon Classification
+
+```text
+Triangle
+Square
+Pentagon
+Circle
+```
+
+The first three are polygons.
+
+Circle is not a polygon.
+
+---
+
+## 66. Number of Sides
+
+```text
+Triangle → 3
+Square → 4
+Pentagon → 5
+Circle → 0
+```
+
+Circle is different.
+
+---
+
+## 67. 2D vs 3D Classification
+
+```text
+Square
+Triangle
+Circle
+Cube
+```
+
+Square, triangle and circle are 2D.
+
+Cube is 3D.
+
+**Answer: Cube**
+
+---
+
+## 68. Symmetry Classification
+
+Shapes may be classified by:
+
+- line symmetry
+- rotational symmetry
+- number of symmetry axes
+- reflection properties
+
+Example:
+
+```text
+Circle
+Square
+Rectangle
+Scalene triangle
+```
+
+A scalene triangle has no line of symmetry.
+
+---
+
+## 69. Mathematical Property Matrix
+
+For number questions, build a quick matrix:
+
+| Number | Even | Prime | Square | Cube | Multiple of 3 |
+|---:|:---:|:---:|:---:|:---:|:---:|
+| 4 | ✓ | ✗ | ✓ | ✗ | ✗ |
+| 9 | ✗ | ✗ | ✓ | ✗ | ✓ |
+| 16 | ✓ | ✗ | ✓ | ✗ | ✗ |
+| 25 | ✗ | ✗ | ✓ | ✗ | ✗ |
+| 27 | ✗ | ✗ | ✗ | ✓ | ✓ |
+
+This helps identify the intended property.
+
+---
+
+## 70. Classification Decision Tree
+
+```text
+                 START
+                   │
+                   ▼
+             What are items?
+                   │
+       ┌───────────┼───────────┐
+       ▼           ▼           ▼
+     Words       Numbers     Letters
+       │           │           │
+       ▼           ▼           ▼
+   Meaning      Arithmetic   Position
+   Category     Factors      Shift
+   Function     Parity       Vowels
+   Relation     Powers       Pattern
+       │           │           │
+       └───────────┼───────────┘
+                   ▼
+            Find common rule
+                   │
+                   ▼
+             Test ALL items
+                   │
+                   ▼
+             Find the outlier
+```
+
+---
+
+## 71. The Four-Stage Classification Method
+
+### Stage 1 — Observe
+
+Look at all options before deciding.
+
+### Stage 2 — Generate
+
+Generate possible properties:
+
+```text
+category
+meaning
+number property
+letter property
+shape
+function
+sequence
+```
+
+### Stage 3 — Validate
+
+A rule is valid only if:
+
+```text
+3/4 or 4/5 → fit
+1 → breaks
+```
+
+### Stage 4 — Answer
+
+Select the unique outlier.
+
+---

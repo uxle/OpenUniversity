@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-3",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 3 of 16",
+  "questions": [
+    {
+      "question": "What does 'Composite Number Classification' test, in contrast to prime classification?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers are all composite, with one being prime (breaking the pattern)",
+        "Whether numbers are all even",
+        "Whether numbers are all perfect cubes"
+      ],
+      "correct": 1,
+      "rationale": "Composite number classification tests whether a group of numbers are all composite, identifying the one number that is actually prime.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Perfect Square Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers are all perfect squares (n^2), with one number not being a perfect square",
+        "Whether numbers are all odd",
+        "Whether numbers are all composite"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers are all perfect squares, identifying the one number that is not a perfect square and breaks the pattern.",
+      "id": 2
+    },
+    {
+      "question": "In the set 4, 9, 16, 20, 25, which number is the odd one out under Perfect Square Classification?",
+      "options": [
+        "4",
+        "9",
+        "16",
+        "20"
+      ],
+      "correct": 3,
+      "rationale": "4, 9, 16, and 25 are all perfect squares (2^2, 3^2, 4^2, 5^2); 20 is not a perfect square.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Perfect Cube Classification' test?",
+      "options": [
+        "Whether numbers are all perfect squares",
+        "Whether a group of numbers are all perfect cubes (n^3), with one number breaking that pattern",
+        "Whether numbers are all prime",
+        "Whether numbers are all even"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers are all perfect cubes, identifying the one that is not a perfect cube.",
+      "id": 4
+    },
+    {
+      "question": "What does 'Multiples Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers are all multiples of some common number, with one not being a multiple of it",
+        "Whether numbers are all perfect squares",
+        "Whether numbers are all odd"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers are all multiples of a shared base number, identifying the one that isn't.",
+      "id": 5
+    },
+    {
+      "question": "What does 'Divisibility Classification' test, similarly?",
+      "options": [
+        "Whether numbers share a common digit sum",
+        "Whether a group of numbers are all divisible by some common number, with one not being divisible by it",
+        "Whether numbers are all prime",
+        "Whether numbers are all perfect cubes"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers is all evenly divisible by a specific number, identifying the exception that isn't.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Digit Sum Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers share a common digit sum, with one number having a different digit sum",
+        "Whether numbers are all perfect squares",
+        "Whether numbers are all even"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers all share the same digit sum (e.g., all sum to 9), identifying the one number whose digits sum to something different.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Digit Product Classification' test, in contrast to digit sum?",
+      "options": [
+        "The same property as digit sum",
+        "Whether a group of numbers share a common digit product, rather than a common digit sum",
+        "Whether numbers are all prime",
+        "Whether numbers are all odd"
+      ],
+      "correct": 1,
+      "rationale": "This tests a shared digit PRODUCT (multiplying the digits together) rather than a digit sum, identifying the number whose digit product differs.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Number of Factors' classification test?",
+      "options": [
+        "A shared digit sum",
+        "Whether a group of numbers all have the same count of factors, with one number having a different count",
+        "A shared prime status",
+        "A shared perfect-square status"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of numbers all have the same total number of factors, identifying the one number with a different factor count.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Prime Position Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers occupy prime-numbered positions in some sequence, with one not doing so",
+        "Whether numbers are all perfect squares",
+        "Whether numbers share a digit sum"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a set of numbers occupy positions in a sequence that are themselves prime numbers, identifying the one that doesn't.",
+      "id": 10
+    }
+  ]
+}

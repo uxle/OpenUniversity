@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-4",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 4 of 22",
+  "questions": [
+    {
+      "question": "Which alphabet positions are 'prime' among 2, 3, 5, 7, 11, 13 (letters B, C, E, G, K, M)?",
+      "options": [
+        "Only 2 and 3",
+        "All of them, since 2, 3, 5, 7, 11, and 13 are all prime numbers",
+        "None of them",
+        "Only the even ones"
+      ],
+      "correct": 1,
+      "rationale": "2, 3, 5, 7, 11, and 13 are all prime numbers, making B, C, E, G, K, and M the letters at prime alphabet positions in that range.",
+      "id": 1
+    },
+    {
+      "question": "What are 'composite alphabet positions'?",
+      "options": [
+        "Positions that are prime",
+        "Positions that are not prime and not 1 (i.e., have factors other than 1 and themselves)",
+        "Only even positions",
+        "Only positions above 20"
+      ],
+      "correct": 1,
+      "rationale": "Composite positions are those with factors other than 1 and themselves \u2014 the counterpart to prime positions, excluding position 1 (which is neither prime nor composite).",
+      "id": 2
+    },
+    {
+      "question": "What does 'odd and even alphabet positions' coding distinguish?",
+      "options": [
+        "Vowels from consonants",
+        "Letters at odd-numbered positions (A, C, E...) from letters at even-numbered positions (B, D, F...), often treating each group differently",
+        "Uppercase from lowercase letters",
+        "The first half of the alphabet from the second half"
+      ],
+      "correct": 1,
+      "rationale": "This coding groups letters by whether their alphabet position number is odd or even, and often applies a different rule to each group.",
+      "id": 3
+    },
+    {
+      "question": "What is 'binary-style letter coding'?",
+      "options": [
+        "Coding using only two letters",
+        "Representing each letter's position as a binary (base-2) number instead of a decimal one",
+        "A rule with no numeric component",
+        "Coding that only works for the letters A and B"
+      ],
+      "correct": 1,
+      "rationale": "Binary-style coding expresses a letter's numeric value (like its alphabet position) in base-2 (binary) notation rather than ordinary base-10.",
+      "id": 4
+    },
+    {
+      "question": "What does 'reverse position coding' use as a letter's value?",
+      "options": [
+        "Its normal alphabet position",
+        "Its position counted from the end of the alphabet (i.e., its reverse-alphabet position) rather than from the start",
+        "A random assigned value",
+        "The number of times it appears in the word"
+      ],
+      "correct": 1,
+      "rationale": "Reverse position coding uses a letter's reverse-alphabet position (counted from Z backward) as its value, rather than its normal position counted from A.",
+      "id": 5
+    },
+    {
+      "question": "What does 'sum of reverse positions' compute?",
+      "options": [
+        "The sum of normal alphabet positions",
+        "The total of all the letters' reverse-alphabet position values in a word",
+        "Only the first letter's reverse position",
+        "The product of reverse positions"
+      ],
+      "correct": 1,
+      "rationale": "This computes the sum of each letter's reverse-alphabet position (27 minus its normal position) across the whole word.",
+      "id": 6
+    },
+    {
+      "question": "What is 'mirror coding'?",
+      "options": [
+        "Reversing the order of the letters",
+        "Replacing each letter with its reverse-alphabet partner (the letter it's mirrored with around the center of the alphabet)",
+        "Doubling every letter's position",
+        "A rule with no relationship to the reverse alphabet"
+      ],
+      "correct": 1,
+      "rationale": "Mirror coding replaces each letter with its reverse-alphabet counterpart \u2014 the letter it mirrors with around the alphabet's center point.",
+      "id": 7
+    },
+    {
+      "question": "What does 'mirror + shift coding' combine?",
+      "options": [
+        "Two separate shifts with no mirroring",
+        "First mirroring each letter to its reverse-alphabet partner, then applying an additional shift to that result",
+        "Only word reversal, no letter transformation",
+        "A rule identical to plain mirror coding"
+      ],
+      "correct": 1,
+      "rationale": "This combines two steps: first mirror each letter to its reverse-alphabet partner, and then apply a further shift to that mirrored result.",
+      "id": 8
+    },
+    {
+      "question": "What is 'word reversal coding'?",
+      "options": [
+        "Reversing each individual letter's shape",
+        "Reversing the order of the letters in the word, without changing the letters themselves",
+        "Replacing letters with their mirror partners",
+        "Shifting each letter by the word's length"
+      ],
+      "correct": 1,
+      "rationale": "Word reversal coding simply reverses the order in which the letters appear, leaving the letters themselves unchanged.",
+      "id": 9
+    },
+    {
+      "question": "Under mirror coding, what does the letter D (position 4) map to?",
+      "options": [
+        "V",
+        "W",
+        "X",
+        "Y"
+      ],
+      "correct": 1,
+      "rationale": "D is position 4; its reverse-alphabet partner is at position 27-4=23, which is W.",
+      "id": 10
+    }
+  ]
+}

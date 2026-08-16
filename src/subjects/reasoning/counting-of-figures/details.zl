@@ -1,0 +1,23 @@
+# Counting of Figures
+
+@subject {
+  id: counting-of-figures
+  title: "Counting of Figures"
+  parent: reasoning
+  description: "Systematically counting triangles, squares, and other figures hidden in a composite diagram, in 12 parts."
+}
+
+@lessons {
+  counting-of-figures-part-1
+  counting-of-figures-part-2
+  counting-of-figures-part-3
+  counting-of-figures-part-4
+  counting-of-figures-part-5
+  counting-of-figures-part-6
+  counting-of-figures-part-7
+  counting-of-figures-part-8
+  counting-of-figures-part-9
+  counting-of-figures-part-10
+  counting-of-figures-part-11
+  counting-of-figures-part-12
+}

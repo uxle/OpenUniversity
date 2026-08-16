@@ -1,0 +1,271 @@
+# Dice Reasoning — Part 1 of 10
+
+[info title="Multi-part lesson"]
+This lesson is split into 10 parts so each stays a manageable length. This is Part 1 — continue to Part 2 (`dice-reasoning-part-2`) when you're done here.
+[/info]
+
+> Logical Reasoning / Non-Verbal Reasoning
+
+[info title="What this guide covers"]
+Master every common dice problem: ordinary dice, standard dice, opposite faces, adjacent faces, common faces, different positions, rotation, impossible combinations, missing faces, and fast exam shortcuts.
+[/info]
+
+## 1. What Is Dice Reasoning?
+
+A **die** is a cube with six faces.
+
+Each face has a number, symbol, letter, color, or another mark.
+
+Dice reasoning questions give one or more views of a die and ask you to determine relationships such as:
+
+- Which face is opposite another face?
+- Which faces are adjacent?
+- Which number can be opposite a given number?
+- Which face is on top/bottom?
+- Which number is missing?
+- Which of several diagrams is impossible?
+- Which option can be obtained by rotating the die?
+- What will be visible after a particular rotation?
+
+The important idea is:
+
+> A cube has **6 faces, 12 edges, and 8 vertices**.
+
+---
+
+## 2. Basic Cube Structure
+
+A cube has:
+
+```text
+                 TOP
+                  1
+             +---------+
+            /         /|
+           /         / |
+          +---------+  |
+          |         |  |
+LEFT      |  FRONT  |  | RIGHT
+          |         |  /
+          |         | /
+          +---------+/
+                 BACK
+```
+
+A more useful reasoning view:
+
+```text
+                    [TOP]
+                      ▲
+                      │
+            [LEFT] ─ [FRONT] ─ [RIGHT]
+                      │
+                      ▼
+                   [BOTTOM]
+
+                     [BACK]
+                  (behind FRONT)
+```
+
+The six faces are:
+
+| Position | Face |
+|---|---|
+| Top | T |
+| Bottom | B |
+| Front | F |
+| Back | K |
+| Right | R |
+| Left | L |
+
+The opposite pairs are:
+
+```text
+       TOP    ↔    BOTTOM
+       FRONT  ↔    BACK
+       RIGHT  ↔    LEFT
+```
+
+---
+
+## 3. Cube Facts You Must Memorize
+
+### 3.1 Number of faces
+
+```text
+6 faces
+```
+
+### 3.2 Number of edges
+
+```text
+12 edges
+```
+
+### 3.3 Number of vertices
+
+```text
+8 vertices
+```
+
+### 3.4 Faces meeting at one corner
+
+Exactly **3 faces** meet at every vertex.
+
+For example:
+
+```text
+             TOP
+              \
+               \ 
+                ●  ← one vertex
+               / \
+          FRONT   RIGHT
+```
+
+Therefore, if three faces are shown meeting at one corner, those three faces are all **mutually adjacent**.
+
+---
+
+## 4. Adjacency and Opposite Faces
+
+This is the foundation of almost every dice question.
+
+### Adjacent faces
+
+Two faces sharing an edge are adjacent.
+
+Each face has exactly **4 adjacent faces**.
+
+Example:
+
+```text
+             TOP
+          ↙   ↑   ↘
+       LEFT  FRONT RIGHT
+          ↘   ↓   ↙
+            BOTTOM
+```
+
+For `FRONT`:
+
+- TOP → adjacent
+- BOTTOM → adjacent
+- LEFT → adjacent
+- RIGHT → adjacent
+- BACK → opposite
+
+So:
+
+> A face has **4 adjacent faces + 1 opposite face**.
+
+---
+
+## 5. Opposite Face Rule
+
+Every face has exactly one opposite face.
+
+```text
+        1
+        │
+        ↕
+        6
+
+        2
+        │
+        ↕
+        5
+
+        3
+        │
+        ↕
+        4
+```
+
+For an ordinary numbered die, the standard arrangement is often:
+
+```text
+1 ↔ 6
+2 ↔ 5
+3 ↔ 4
+```
+
+because opposite faces sum to 7.
+
+### Important Warning
+
+Do **not** assume `1↔6, 2↔5, 3↔4` unless the question explicitly describes a normal/standard die or the given arrangement proves it.
+
+Reasoning questions may use a custom die:
+
+```text
+       1 ↔ 4
+       2 ↔ 6
+       3 ↔ 5
+```
+
+The diagrams determine the answer.
+
+---
+
+## 6. Why Opposite Faces Never Touch
+
+Imagine:
+
+```text
+             A
+             │
+      D ─────┼───── B
+             │
+             C
+```
+
+Actually, on a cube:
+
+- A face touches four faces.
+- The sixth face is completely opposite.
+- Opposite faces have **no common edge**.
+
+Therefore:
+
+> If two symbols are seen sharing an edge, they cannot be opposite.
+
+This is one of the fastest elimination rules.
+
+---
+
+## 7. Three-Face Corner Rule
+
+The most powerful rule for basic dice questions:
+
+> If three faces appear together around one corner, those three faces are adjacent to one another and none of them is opposite another.
+
+Suppose a view shows:
+
+```text
+        1
+       / \
+      /   \
+     2-----3
+```
+
+Then:
+
+- 1 is adjacent to 2
+- 1 is adjacent to 3
+- 2 is adjacent to 3
+
+So the opposite of 1 cannot be 2 or 3.
+
+Likewise:
+
+```text
+Opposite(1) ≠ 2
+Opposite(1) ≠ 3
+Opposite(2) ≠ 1
+Opposite(2) ≠ 3
+Opposite(3) ≠ 1
+Opposite(3) ≠ 2
+```
+
+---

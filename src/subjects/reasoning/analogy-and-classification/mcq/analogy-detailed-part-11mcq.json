@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-11",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 11 of 12",
+  "questions": [
+    {
+      "question": "What is the 'Common Trap: Wrong Direction'?",
+      "options": [
+        "Choosing an option that reverses the relationship's original direction",
+        "A trap unrelated to relationship direction",
+        "A trap only in number analogies",
+        "A trap that never actually occurs"
+      ],
+      "correct": 0,
+      "rationale": "This trap, related to the earlier Direction Trap, involves choosing an option that has the right general relationship but applies it in the reversed direction.",
+      "id": 1
+    },
+    {
+      "question": "What is the 'Common Trap: Multiple Relations'?",
+      "options": [
+        "A pair with no relationship at all",
+        "A situation where an item pair has more than one plausible relationship, making the intended one ambiguous without careful analysis",
+        "A trap that only applies to a single relationship type",
+        "A trap unrelated to analogy solving"
+      ],
+      "correct": 1,
+      "rationale": "This trap arises when a given pair could plausibly be connected by more than one relationship, requiring careful analysis to determine which one the question actually intends.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'Speed Strategy for Exams' balance, in analogy reasoning?",
+      "options": [
+        "Only accuracy, ignoring speed entirely",
+        "Quickly recognizing common relationship patterns while still verifying against the golden rule before finalizing an answer",
+        "Only speed, with no verification",
+        "Randomly guessing to save time"
+      ],
+      "correct": 1,
+      "rationale": "A good speed strategy balances quick pattern recognition with still properly verifying the relationship against the golden rule before committing to a final answer.",
+      "id": 3
+    },
+    {
+      "question": "What might a '10-Second Mental Checklist' include?",
+      "options": [
+        "A lengthy, multi-step derivation",
+        "A short list of the most common relationship categories to quickly check against a given pair",
+        "Only number-based checks",
+        "A checklist with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "This checklist provides a short, fast-to-run-through list of the most common relationship categories, helping quickly narrow down which type applies.",
+      "id": 4
+    },
+    {
+      "question": "What is the primary purpose of 'Solved Examples 1 through 11' in this part of the lesson?",
+      "options": [
+        "To introduce entirely new relationship types",
+        "To demonstrate the solving process applied to a range of realistic analogy problems, reinforcing the techniques already covered",
+        "To replace the need for the golden rule",
+        "To only test letter analogies"
+      ],
+      "correct": 1,
+      "rationale": "These worked examples demonstrate the solving process on a range of realistic problems, reinforcing the techniques and relationship types already introduced earlier in the lesson.",
+      "id": 5
+    },
+    {
+      "question": "Why does a lesson typically include MANY solved examples (11 or more) rather than just one or two?",
+      "options": [
+        "Extra examples have no additional value",
+        "Repeated exposure across varied examples helps reinforce pattern recognition across different relationship types",
+        "Because a single example is always sufficient",
+        "Because later examples repeat the exact same relationship"
+      ],
+      "correct": 1,
+      "rationale": "Working through many varied examples helps reinforce pattern recognition across the different relationship types, building the fluency needed to recognize them quickly.",
+      "id": 6
+    },
+    {
+      "question": "What should you do if a solved example's answer doesn't match your own derivation?",
+      "options": [
+        "Assume you are always right and move on",
+        "Re-examine your stated relationship and verification against the golden rule to find the discrepancy",
+        "Ignore the solved example entirely",
+        "Assume the example is always wrong"
+      ],
+      "correct": 1,
+      "rationale": "A mismatch signals a need to re-examine your own stated relationship and verification, since the systematic method (golden rule, full verification) is what should reliably produce the correct answer.",
+      "id": 7
+    },
+    {
+      "question": "Why is working through solved examples covering DIFFERENT relationship types (geography, science, numbers, letters) valuable?",
+      "options": [
+        "It has no added value over repeating one type",
+        "It builds broad familiarity across the full range of relationship categories likely to appear in real questions",
+        "Only one relationship type actually appears in exams",
+        "It only helps with number analogies"
+      ],
+      "correct": 1,
+      "rationale": "Since real exam questions can draw from any of the many relationship categories covered, practicing across a diverse range builds the broad familiarity needed to recognize whichever type appears.",
+      "id": 8
+    },
+    {
+      "question": "What connects a 'Speed Strategy' with the earlier 'Principle of Simplest Rule'?",
+      "options": [
+        "They are unrelated concepts",
+        "Both aim to make solving faster and more reliable by preferring straightforward, well-verified approaches over complex guesswork",
+        "Speed strategy replaces the need for any rule identification",
+        "The principle of simplest rule only applies to numbers"
+      ],
+      "correct": 1,
+      "rationale": "Both concepts share the goal of efficient, reliable solving \u2014 preferring straightforward, verifiable approaches (simplest rule, quick pattern checks) over complex, unverified guesswork.",
+      "id": 9
+    },
+    {
+      "question": "Why is a '10-Second Mental Checklist' only useful AFTER the underlying relationship categories have already been learned?",
+      "options": [
+        "It isn't actually dependent on prior learning",
+        "A quick checklist only works as a fast recall aid once you already know what each category means from deeper study",
+        "The checklist teaches the categories from scratch",
+        "Order of learning never matters"
+      ],
+      "correct": 1,
+      "rationale": "A fast checklist is a recall aid, not a teaching tool \u2014 it only works efficiently once the underlying relationship categories have already been properly learned through deeper study.",
+      "id": 10
+    }
+  ]
+}

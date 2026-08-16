@@ -1,0 +1,114 @@
+# Number and Alphabet Series Reasoning
+
+> A series question gives you a sequence of numbers or letters that follows a hidden pattern, and asks you to find the missing term, the next term, or the one term that breaks the pattern.
+
+[important]
+Series reasoning is pattern detection, not calculation. Before you calculate anything, look at the sequence and ask: is it going up, down, alternating, or repeating in blocks? That single glance usually tells you which pattern family to test first.
+[/important]
+
+## 1. What Series Reasoning Means
+
+You'll typically see one of three question shapes:
+
+- **Find the next term:** 2, 4, 6, 8, ?
+- **Find the missing term:** 3, 9, ?, 81, 243
+- **Find the odd one out (wrong term):** 5, 10, 15, 22, 25, 30 *(22 breaks the +5 pattern)*
+
+All three are solved the same way: find the rule connecting consecutive terms, then apply, fill, or check against it.
+
+## 2. Number Series: Common Pattern Families
+
+| Pattern family | Rule between terms | Example |
+|---|---|---|
+| Arithmetic (constant difference) | add/subtract a fixed number | 5, 10, 15, 20, 25 (+5) |
+| Geometric (constant ratio) | multiply/divide by a fixed number | 3, 6, 12, 24, 48 (×2) |
+| Square numbers | $n^2$ for increasing $n$ | 1, 4, 9, 16, 25 |
+| Cube numbers | $n^3$ for increasing $n$ | 1, 8, 27, 64, 125 |
+| Prime numbers | consecutive primes | 2, 3, 5, 7, 11, 13 |
+| Difference-of-differences | the *differences* themselves form a pattern | 2, 3, 5, 8, 12 (diffs: 1, 2, 3, 4) |
+| Alternating | two interleaved patterns, one on odd positions, one on even | 1, 10, 3, 8, 5, 6 (odd pos +2, even pos −2) |
+
+[tip]
+When a simple arithmetic/geometric rule doesn't fit, compute the **differences between consecutive terms** and look for a pattern in those differences instead — many series are "arithmetic on the differences," not on the terms themselves.
+[/tip]
+
+## 3. Solving Strategy for Number Series
+
+1. Compute the difference (or ratio) between each pair of consecutive terms.
+2. If the differences are constant → arithmetic series.
+3. If the ratios are constant → geometric series.
+4. If neither is constant, check whether the differences themselves form a simple pattern (this catches most "second-order" series).
+5. If it still doesn't fit, check for squares, cubes, or primes directly against each term's position.
+6. If none of the above work, suspect an **alternating** series — split it into two separate series (odd positions, even positions) and re-test each half from step 1.
+
+## 4. Alphabet Series: The Position Table
+
+Alphabet series use the same logic as number series, but on letter positions (A=1 ... Z=26) rather than the letters themselves.
+
+```text
+A  B  C  D  E  F  G  H  I  J  K  L  M
+1  2  3  4  5  6  7  8  9  10 11 12 13
+
+N  O  P  Q  R  S  T  U  V  W  X  Y  Z
+14 15 16 17 18 19 20 21 22 23 24 25 26
+```
+
+**Example:** B, D, F, H, ? → positions 2, 4, 6, 8, ? → +2 each time → position 10 → **J**
+
+[warning]
+Remember the alphabet wraps: after Z comes A again. A series like X, Z, B, D continues by wrapping around, not by going "past Z" into nothing — treat the 26 letters as a loop.
+[/warning]
+
+## 5. Alphabet Series: Skip Patterns
+
+Many alphabet series skip a fixed number of letters each step, rather than moving one at a time.
+
+```text
+A _ C _ E _ G   (skip 1 letter each time: A, C, E, G, ...)
+Z _ X _ V _ T   (skip 1 letter, moving backward: Z, X, V, T, ...)
+```
+
+Some questions give you groups of letters with an internal skip pattern *and* a separate pattern across the groups — check both levels before answering.
+
+## 6. Mixed (Number-Letter) Series
+
+A single series can interleave numbers and letters, most often as **letter, its position, letter, its position, ...** or by pairing a letter with a number that follows its own separate rule.
+
+```text
+A1 C3 E5 G7 ?   -> letters skip by 1 (A, C, E, G, I) and numbers are always odd, matching position
+Answer: I9
+```
+
+Treat this exactly like an alternating number series (Section 3, step 6): split it into the letter-subsequence and the number-subsequence, and solve each independently.
+
+## 7. Solved Examples
+
+**Example 1:** 7, 13, 25, 49, ? — differences are 6, 12, 24 (doubling each time) → next difference 48 → **97**
+
+**Example 2:** 4, 9, 16, 25, 36, ? — these are $2^2, 3^2, 4^2, 5^2, 6^2$ → next is $7^2$ = **49**
+
+**Example 3:** Find the wrong term: 3, 6, 12, 24, 46, 96 — ratios are ×2, ×2, ×2, then 46/24 is not 2, and 96/46 is not 2 either; testing ×2 throughout gives 3, 6, 12, 24, 48, 96 — so **46** is the wrong term (should be 48).
+
+**Example 4:** Z, W, T, Q, ? — positions 26, 23, 20, 17, ? → −3 each time → 14 → **N**
+
+## 8. Common Mistakes to Avoid
+
+- **Do not** stop at the first pattern that fits two terms — verify it against *every* term in the series before committing.
+- **Do not** forget to check for an alternating (two-interleaved-series) pattern when a single straightforward rule doesn't fit.
+- **Do not** miscount alphabet positions under time pressure — use the position table rather than counting on your fingers.
+- **Do** compute differences-of-differences before giving up on an arithmetic-style series that "almost" fits.
+
+## 9. Quick Reference
+
+| Symptom | Likely pattern |
+|---|---|
+| Constant gap between terms | Arithmetic |
+| Constant multiplying factor | Geometric |
+| Gaps themselves increase steadily | Second-order (differences-of-differences) |
+| Every other term looks unrelated to its neighbours | Alternating / two interleaved series |
+| Terms are 1, 4, 9, 16, 25... or 1, 8, 27, 64... | Squares / cubes |
+| One term visibly breaks an otherwise-clean pattern | Odd-one-out / wrong-term question |
+
+[example]
+The universal method: **(1)** scan for a constant difference or ratio first, **(2)** if that fails, take differences-of-differences, **(3)** if that fails, suspect an alternating series and split it in two, **(4)** always confirm the final rule against every term before answering.
+[/example]

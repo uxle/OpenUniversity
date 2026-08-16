@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-7",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 7 of 16",
+  "questions": [
+    {
+      "question": "What is 'The Four-Stage Classification Method'?",
+      "options": [
+        "A random single-step guess",
+        "A systematic process: identify the group, find the shared property, check each item against it, confirm the exception",
+        "A method that skips verification entirely",
+        "A method only for number-based classification"
+      ],
+      "correct": 1,
+      "rationale": "This method breaks classification down into four systematic stages: identifying the group, finding the shared property, checking each item against it, and confirming the true exception.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Rule Validation' require after identifying a candidate shared property?",
+      "options": [
+        "Skipping the check to save time",
+        "Confirming the candidate property genuinely holds for every item except the one exception",
+        "Only checking the first item",
+        "Assuming it is correct without checking"
+      ],
+      "correct": 1,
+      "rationale": "Rule validation requires confirming the candidate shared property actually holds true for every item in the group except the single genuine exception.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'False Rule Example' meant to illustrate?",
+      "options": [
+        "A rule that is always correct",
+        "A case where a rule seems to fit at first glance but actually fails when checked carefully against all items",
+        "A rule with no practical use",
+        "A rule that only applies to letters"
+      ],
+      "correct": 1,
+      "rationale": "This illustrates the danger of a rule that seems to fit initially but breaks down under careful, full verification against every item in the group.",
+      "id": 3
+    },
+    {
+      "question": "What is the difference between a 'Strong Rule' and a 'Weak Rule'?",
+      "options": [
+        "They are the same thing",
+        "A strong rule holds precisely for all-but-one items with a clear, unambiguous distinction; a weak rule is vague or only loosely supported",
+        "A weak rule is always more reliable",
+        "Strong rules only apply to numbers"
+      ],
+      "correct": 1,
+      "rationale": "A strong rule precisely and unambiguously distinguishes the exception from the rest; a weak rule is vague, coincidental, or only loosely supported by the data.",
+      "id": 4
+    },
+    {
+      "question": "What does the 'Minimal Rule Principle' recommend?",
+      "options": [
+        "Always choose the most complex distinguishing rule",
+        "Prefer the simplest rule that correctly and unambiguously identifies the exception",
+        "Randomly select any plausible rule",
+        "Ignore rule simplicity entirely"
+      ],
+      "correct": 1,
+      "rationale": "Consistent with the golden-rule theme across reasoning topics, this recommends preferring the simplest rule that correctly and unambiguously identifies the true exception.",
+      "id": 5
+    },
+    {
+      "question": "What is 'Ambiguous Classification'?",
+      "options": [
+        "A situation with a single, obvious answer",
+        "A situation where more than one item could plausibly be the exception, depending on which property is chosen",
+        "A rule that is always false",
+        "A classification with no items"
+      ],
+      "correct": 1,
+      "rationale": "Ambiguous classification occurs when more than one item could plausibly be considered the exception, depending on which candidate property is chosen \u2014 requiring careful disambiguation.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Option-Based Reasoning' involve in classification?",
+      "options": [
+        "Ignoring the answer options entirely",
+        "Testing which candidate item, when removed, leaves the cleanest and most well-supported shared property among the rest",
+        "Guessing randomly among the options",
+        "Only checking the first option given"
+      ],
+      "correct": 1,
+      "rationale": "Option-based reasoning tests each candidate exception directly, checking which one, when set aside, leaves the strongest and cleanest shared property among the remaining items.",
+      "id": 7
+    },
+    {
+      "question": "What is the purpose of a formal 'Classification Algorithm'?",
+      "options": [
+        "To make the process more complicated",
+        "To provide a repeatable, systematic sequence of steps for identifying and verifying the classification rule",
+        "To replace the need for any group of items",
+        "To only apply to word classification"
+      ],
+      "correct": 1,
+      "rationale": "A formal algorithm provides a repeatable, systematic sequence of steps for reliably identifying and verifying the correct classification rule.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Vector Representation' apply to classification?",
+      "options": [
+        "Ignoring all properties",
+        "Representing each item's relevant properties as a vector of values, making comparison across the group more systematic",
+        "Only word-based comparisons",
+        "A representation with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "This represents each item's relevant properties as a numeric vector, enabling systematic, mathematical comparison across the whole group.",
+      "id": 9
+    },
+    {
+      "question": "What is a 'Feature Vector Model'?",
+      "options": [
+        "A single unrelated value",
+        "A model where each item is represented by a set of measurable features/properties, used to compare and classify items systematically",
+        "A model that ignores all properties",
+        "A model only for numbers"
+      ],
+      "correct": 1,
+      "rationale": "A feature vector model represents each item by a structured set of measurable properties, enabling systematic comparison to identify which item's feature set diverges from the rest.",
+      "id": 10
+    }
+  ]
+}

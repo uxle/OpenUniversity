@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-2",
+  "title": "Clock Reasoning \u2014 Part 2 of 10",
+  "questions": [
+    {
+      "question": "What does 'normalizing' a time value mean in clock reasoning?",
+      "options": [
+        "Rounding it to the nearest hour",
+        "Converting it into one consistent internal form (e.g., total minutes) so all calculations use the same base unit",
+        "Deleting the seconds field",
+        "Converting it to a different time zone"
+      ],
+      "correct": 1,
+      "rationale": "Normalizing means converting a time into one consistent internal form so every calculation operates on the same base unit, avoiding unit-mixing errors.",
+      "id": 1
+    },
+    {
+      "question": "In a 24-hour clock, how is 3:00 PM represented?",
+      "options": [
+        "03:00",
+        "13:00",
+        "15:00",
+        "17:00"
+      ],
+      "correct": 2,
+      "rationale": "3:00 PM is 12 hours past midnight plus 3 more, giving 15:00 in 24-hour format.",
+      "id": 2
+    },
+    {
+      "question": "What is the correct 12-hour equivalent of 00:00 (24-hour format)?",
+      "options": [
+        "12:00 AM (midnight)",
+        "12:00 PM (noon)",
+        "1:00 AM",
+        "It has no 12-hour equivalent"
+      ],
+      "correct": 0,
+      "rationale": "00:00 in 24-hour format is midnight, written as 12:00 AM in 12-hour format \u2014 a common source of AM/PM confusion.",
+      "id": 3
+    },
+    {
+      "question": "Which phrase requires natural-language interpretation before arithmetic can be applied?",
+      "options": [
+        "4:15",
+        "15:00",
+        "'Quarter past four'",
+        "13:30"
+      ],
+      "correct": 2,
+      "rationale": "'Quarter past four' is a natural-language expression that must first be translated into a numeric time (4:15) before any arithmetic can be performed on it.",
+      "id": 4
+    },
+    {
+      "question": "What does 'half past' mean in common clock expressions?",
+      "options": [
+        "15 minutes past the stated hour",
+        "30 minutes past the stated hour",
+        "45 minutes past the stated hour",
+        "On the exact hour"
+      ],
+      "correct": 1,
+      "rationale": "'Half past' refers to 30 minutes past the stated hour \u2014 half of the 60-minute hour.",
+      "id": 5
+    },
+    {
+      "question": "What does 'quarter to five' mean?",
+      "options": [
+        "4:15",
+        "4:45",
+        "5:15",
+        "5:45"
+      ],
+      "correct": 1,
+      "rationale": "'Quarter to five' means 15 minutes before 5:00, which is 4:45.",
+      "id": 6
+    },
+    {
+      "question": "When adding time, what must you do if the minutes sum to 60 or more?",
+      "options": [
+        "Ignore the extra minutes",
+        "Carry over: subtract 60 from the minutes and add 1 to the hour",
+        "Round down to the nearest hour",
+        "Restart the calculation from zero"
+      ],
+      "correct": 1,
+      "rationale": "Just like carrying in ordinary addition, when minutes reach or exceed 60, you subtract 60 from the minute total and add 1 to the hour.",
+      "id": 7
+    },
+    {
+      "question": "Add 2:50 and 0:25 (H:MM). What is the result?",
+      "options": [
+        "3:05",
+        "3:15",
+        "3:25",
+        "2:75"
+      ],
+      "correct": 1,
+      "rationale": "50 + 25 = 75 minutes, which is 1 hour 15 minutes; adding that to 2 hours gives 3:15.",
+      "id": 8
+    },
+    {
+      "question": "What is required for correct clock arithmetic across a 12-hour (or 24-hour) boundary?",
+      "options": [
+        "Nothing extra is required",
+        "Wrap the hour value back using modulo 12 (or 24) after adding",
+        "Switch to a different unit system entirely",
+        "Recalculate the whole problem from midnight"
+      ],
+      "correct": 1,
+      "rationale": "Once the hour value reaches 12 (or 24), it must wrap back to 0 (or 1, depending on convention) using modular arithmetic, just as minutes wrap at 60.",
+      "id": 9
+    },
+    {
+      "question": "Why is a naive addition (just adding hours and minutes independently, with no carrying) not always correct?",
+      "options": [
+        "It is always correct",
+        "Minute overflow requires carrying into the hour value, similar to carrying in normal addition",
+        "Because hours and minutes can never both change",
+        "Because clocks don't support addition"
+      ],
+      "correct": 1,
+      "rationale": "Without carrying, a minute sum of 60 or more would produce an invalid time (like '3:75') instead of correctly rolling over into the next hour.",
+      "id": 10
+    }
+  ]
+}

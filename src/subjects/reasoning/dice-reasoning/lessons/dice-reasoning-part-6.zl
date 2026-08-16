@@ -1,0 +1,283 @@
+# Dice Reasoning — Part 6 of 10
+
+[info title="Part 6 of 10"]
+Continuing from the previous part. back to Part 5 (`dice-reasoning-part-5`) · continue to Part 7 (`dice-reasoning-part-7`).
+[/info]
+
+## 45. Labelled Cube Method
+
+For hard questions, draw all six positions:
+
+```text
+                 TOP
+                  A
+                  |
+       LEFT B ----+---- RIGHT D
+                  |
+                FRONT C
+                  |
+                 BACK E
+
+               BOTTOM F
+```
+
+Then fill in numbers.
+
+For example:
+
+```text
+TOP    = 1
+BOTTOM = 6
+FRONT  = 2
+BACK   = 5
+RIGHT  = 3
+LEFT   = 4
+```
+
+Now every question becomes a position-tracking problem.
+
+---
+
+## 46. Master Cube Diagram
+
+```text
+                         TOP (T)
+                          1
+                       +-----+
+                      /     /|
+                     /     / |
+               LEFT +-----+  | RIGHT
+                   /|  F  |  |
+                  / +-----+--+
+                 /  |
+                +---+
+              BOTTOM
+
+          BACK is behind FRONT
+```
+
+Position mapping:
+
+```text
+             T
+             |
+       L --- F --- R
+             |
+             B
+```
+
+Opposites:
+
+```text
+T ↔ B
+F ↔ K
+L ↔ R
+```
+
+Here `K` denotes Back to avoid confusion with B=Bottom.
+
+---
+
+## 47. Symbol Dice
+
+Dice do not have to use numbers.
+
+Example:
+
+```text
+▲  ●  ■  ★  ◆  ♥
+```
+
+Exactly the same reasoning applies.
+
+Suppose:
+
+```text
+View 1: ▲ ● ■
+View 2: ▲ ★ ●
+View 3: ▲ ◆ ★
+```
+
+You can still construct the adjacency table.
+
+The symbols are just labels.
+
+---
+
+## 48. Letter Dice
+
+Example:
+
+```text
+A B C D E F
+```
+
+If:
+
+```text
+A ↔ D
+B ↔ F
+C ↔ E
+```
+
+then:
+
+```text
+Opposite(A) = D
+Opposite(B) = F
+Opposite(C) = E
+```
+
+No special rule changes just because letters are used.
+
+---
+
+## 49. Color Dice
+
+Example:
+
+```text
+RED
+BLUE
+GREEN
+YELLOW
+BLACK
+WHITE
+```
+
+Again:
+
+- shared edge → adjacent
+- no shared edge → potentially opposite
+- opposite relation is unique
+
+---
+
+## 50. Common Question Types
+
+Dice reasoning questions usually fall into these categories:
+
+| Type | Main skill |
+|---|---|
+| Find opposite face | adjacency elimination |
+| Find adjacent faces | opposite-pair knowledge |
+| Identify impossible view | contradiction check |
+| Identify same die | rotation |
+| Find missing number | set/corner logic |
+| Dice net | folding |
+| Rolling die | rotation cycles |
+| Common-face views | shared-edge rule |
+| Standard die | sum-to-7 |
+| Mirror-like view | orientation/chirality |
+
+---
+
+## 51. Solved Example 1 — Find Opposite
+
+Given:
+
+```text
+View 1: 1, 2, 3
+View 2: 1, 4, 2
+View 3: 1, 5, 4
+```
+
+We know `1` touches:
+
+```text
+2, 3, 4, 5
+```
+
+There are four adjacent faces.
+
+The remaining face is:
+
+```text
+6
+```
+
+Therefore:
+
+```text
+1 ↔ 6
+```
+
+#### Answer
+
+**6 is opposite to 1.**
+
+---
+
+## 52. Solved Example 2 — Impossible View
+
+Known:
+
+```text
+2 ↔ 5
+```
+
+Option:
+
+```text
+Top = 2
+Front = 5
+Right = 1
+```
+
+Since 2 and 5 are opposite, they cannot share an edge.
+
+#### Answer
+
+**Impossible.**
+
+---
+
+## 53. Solved Example 3 — Find All Faces Adjacent to 3
+
+Given opposite pairs:
+
+```text
+1 ↔ 6
+2 ↔ 5
+3 ↔ 4
+```
+
+The faces adjacent to 3 are all faces except itself and its opposite:
+
+```text
+1, 2, 5, 6
+```
+
+#### Answer
+
+```text
+3 is adjacent to 1, 2, 5, 6.
+```
+
+---
+
+## 54. Solved Example 4 — Standard Die
+
+Question:
+
+> Which face is opposite 2 on a standard die?
+
+Use:
+
+```text
+Opposite faces sum to 7
+```
+
+Therefore:
+
+```text
+7 - 2 = 5
+```
+
+#### Answer
+
+```text
+5
+```
+
+---

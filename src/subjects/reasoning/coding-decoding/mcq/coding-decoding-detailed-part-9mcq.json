@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-9",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 9 of 22",
+  "questions": [
+    {
+      "question": "What does 'ASCII-style coding' base a letter's code on?",
+      "options": [
+        "Its position starting from 1",
+        "The letter's standard ASCII numeric value, rather than just its alphabet position",
+        "A random assigned symbol",
+        "Its reverse-alphabet position"
+      ],
+      "correct": 1,
+      "rationale": "ASCII-style coding uses the letter's standard ASCII numeric value (e.g., uppercase A = 65) rather than the simpler A=1 alphabet-position convention.",
+      "id": 1
+    },
+    {
+      "question": "What is 'binary character coding'?",
+      "options": [
+        "Coding using only the letters A and B",
+        "Representing each letter (often via its position or ASCII value) as a binary (base-2) number",
+        "A rule with no numeric basis",
+        "A synonym for hexadecimal coding"
+      ],
+      "correct": 1,
+      "rationale": "Binary character coding expresses a letter's numeric value in base-2 (binary) form, rather than ordinary decimal.",
+      "id": 2
+    },
+    {
+      "question": "What is 'hexadecimal-style coding'?",
+      "options": [
+        "Coding in base-10",
+        "Representing each letter's value in base-16 (hexadecimal) notation instead of decimal",
+        "A synonym for binary coding",
+        "A rule with no numeric value involved"
+      ],
+      "correct": 1,
+      "rationale": "Hexadecimal-style coding represents a letter's numeric value in base-16 notation, rather than the ordinary base-10 (decimal) system.",
+      "id": 3
+    },
+    {
+      "question": "What is 'matrix coding'?",
+      "options": [
+        "Coding with no grid involved",
+        "Placing letters into a grid and coding each one by its row-and-column position in that grid",
+        "A synonym for word reversal",
+        "Coding that ignores letter position entirely"
+      ],
+      "correct": 1,
+      "rationale": "Matrix coding arranges letters in a grid and encodes each letter using its specific row-and-column position within that grid.",
+      "id": 4
+    },
+    {
+      "question": "What is 'Polybius-style matrix' coding specifically known as?",
+      "options": [
+        "A modern digital-only cipher",
+        "A classic cipher method that arranges the alphabet in a square grid and codes each letter as its (row, column) coordinate pair",
+        "A synonym for reverse alphabet coding",
+        "A rule with no grid at all"
+      ],
+      "correct": 1,
+      "rationale": "The Polybius square is a classic historical cipher method that arranges the alphabet in a grid, coding each letter by its row-and-column coordinates.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'matrix coding example' typically walk through?",
+      "options": [
+        "Reversing a word's letters",
+        "Looking up a letter's position in a grid and reading off its row and column numbers as the code",
+        "Applying a simple +1 shift",
+        "Counting vowels in a word"
+      ],
+      "correct": 1,
+      "rationale": "A matrix coding example demonstrates the practical process of locating a letter in a grid and reading off its row/column coordinates as the resulting code.",
+      "id": 6
+    },
+    {
+      "question": "What is the 'row-column vector model'?",
+      "options": [
+        "A model with no coordinates at all",
+        "Representing a letter's grid position as a two-value vector (row, column), similar to coordinates",
+        "A synonym for word length coding",
+        "A model that only tracks the row, not the column"
+      ],
+      "correct": 1,
+      "rationale": "This model represents a letter's matrix position as a two-component vector combining its row and column values, similar to standard coordinates.",
+      "id": 7
+    },
+    {
+      "question": "What does 'vector representation of alphabet coding' generalize the idea of?",
+      "options": [
+        "Only matrix coding specifically",
+        "Expressing any coding transformation (shift, mirror, etc.) as a vector operation on a letter's position",
+        "A rule with no mathematical basis",
+        "Only reverse-alphabet coding"
+      ],
+      "correct": 1,
+      "rationale": "This generalizes the vector idea beyond just matrix coding, expressing shifts, mirrors, and other transformations uniformly as vector operations on a letter's position.",
+      "id": 8
+    },
+    {
+      "question": "What is a 'transformation vector'?",
+      "options": [
+        "A vector with no effect on values",
+        "A vector that, when applied to an original value, produces the transformed (coded) value",
+        "A synonym for word length",
+        "A vector used only for reversing words"
+      ],
+      "correct": 1,
+      "rationale": "A transformation vector is the specific vector that, when applied (e.g., added) to an original value, produces its transformed, coded value.",
+      "id": 9
+    },
+    {
+      "question": "What is a 'difference table' used for in this context?",
+      "options": [
+        "Listing word lengths only",
+        "Systematically listing the differences between original and coded values, to help spot the underlying transformation rule",
+        "Listing vowels and consonants",
+        "A table with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "A difference table systematically lists the gaps between original and coded values, making it easier to visually spot the consistent underlying transformation rule.",
+      "id": 10
+    }
+  ]
+}

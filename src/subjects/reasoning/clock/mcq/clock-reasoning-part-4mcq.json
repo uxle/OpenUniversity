@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-4",
+  "title": "Clock Reasoning \u2014 Part 4 of 10",
+  "questions": [
+    {
+      "question": "Why does the hour hand's continuous movement (not jumping instantly at each hour) matter for angle calculations?",
+      "options": [
+        "It doesn't matter, the hour hand only matters at exact hours",
+        "Because the hour hand moves gradually between hour marks, so its exact position depends on the minutes as well as the hour",
+        "Because the hour hand is actually stationary",
+        "Because only the minute hand's position matters for angle calculations"
+      ],
+      "correct": 1,
+      "rationale": "The hour hand drifts 0.5 degrees per minute between hour marks, so an accurate angle calculation must account for the current minutes, not just the hour.",
+      "id": 1
+    },
+    {
+      "question": "How many degrees per second does the second hand move?",
+      "options": [
+        "1 degree",
+        "3 degrees",
+        "6 degrees",
+        "12 degrees"
+      ],
+      "correct": 2,
+      "rationale": "The second hand completes 360 degrees in 60 seconds, so it moves 360/60 = 6 degrees per second \u2014 the same rate the minute hand moves per minute.",
+      "id": 2
+    },
+    {
+      "question": "At approximately what time (in minutes past 12) do the minute and hour hands first overlap after 12:00?",
+      "options": [
+        "Exactly 60 minutes",
+        "Approximately 65 5/11 minutes",
+        "Exactly 30 minutes",
+        "Approximately 72 minutes"
+      ],
+      "correct": 1,
+      "rationale": "The hands overlap roughly every 65 5/11 minutes, since the minute hand must 'catch up' the extra distance the slower-moving hour hand covers in the meantime.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'temporal relationship' describe in clock reasoning?",
+      "options": [
+        "The color of the clock face",
+        "How two events or times relate to each other \u2014 before, after, simultaneous, or overlapping",
+        "The manufacturer of the clock",
+        "Only the numeric difference between two times"
+      ],
+      "correct": 1,
+      "rationale": "A temporal relationship describes the qualitative connection between two events or times, such as whether one precedes, follows, or overlaps with the other.",
+      "id": 4
+    },
+    {
+      "question": "What defines a 'time interval'?",
+      "options": [
+        "A single point in time",
+        "A start time and an end time defining a duration",
+        "Only the duration, with no start or end",
+        "A recurring event with no fixed length"
+      ],
+      "correct": 1,
+      "rationale": "A time interval is defined by its start and end times, together specifying a duration between two points.",
+      "id": 5
+    },
+    {
+      "question": "When do two time intervals 'overlap'?",
+      "options": [
+        "Only when they start at exactly the same time",
+        "When one interval's start is before the other's end, and vice versa \u2014 they share some common time",
+        "Only when one interval fully contains the other",
+        "Intervals can never overlap by definition"
+      ],
+      "correct": 1,
+      "rationale": "Two intervals overlap whenever each one's start time is before the other's end time, meaning there is some shared span of time between them.",
+      "id": 6
+    },
+    {
+      "question": "What is the goal of 'scheduling reasoning' in this context?",
+      "options": [
+        "Drawing a calendar",
+        "Determining whether events can be arranged without time conflicts, given their intervals",
+        "Calculating clock-hand angles",
+        "Converting between 12-hour and 24-hour format"
+      ],
+      "correct": 1,
+      "rationale": "Scheduling reasoning uses interval overlap logic to determine whether a set of events can coexist without conflicting for the same time slot.",
+      "id": 7
+    },
+    {
+      "question": "What does 'relative time' refer to, as opposed to an absolute clock time?",
+      "options": [
+        "A time defined in relation to another event (e.g., '10 minutes after the meeting starts') rather than a fixed clock value",
+        "A time that changes randomly",
+        "A time zone-adjusted value",
+        "A synonym for elapsed time"
+      ],
+      "correct": 0,
+      "rationale": "Relative time expresses a moment in terms of its relationship to another event or reference point, rather than as a fixed, standalone clock value.",
+      "id": 8
+    },
+    {
+      "question": "What is a 'temporal chain'?",
+      "options": [
+        "A physical chain used on grandfather clocks",
+        "A sequence of events or times linked by relative time relationships (e.g., A happens, then B 20 minutes later, then C...)",
+        "A list of unrelated random times",
+        "A synonym for a single time interval"
+      ],
+      "correct": 1,
+      "rationale": "A temporal chain links a sequence of events through relative time relationships, where each event's time depends on the one before it.",
+      "id": 9
+    },
+    {
+      "question": "Why is representing temporal relationships explicitly (rather than just as a list of separate times) useful?",
+      "options": [
+        "It isn't useful \u2014 a plain list is always sufficient",
+        "It preserves the dependencies between events, letting you correctly propagate a change in one time through the rest of the chain",
+        "It removes the need for the clock-angle formula",
+        "It only matters for events on different days"
+      ],
+      "correct": 1,
+      "rationale": "Explicit relationships preserve how events depend on each other, so if one time shifts, the correct downstream effect on the rest of the chain can be recalculated.",
+      "id": 10
+    }
+  ]
+}

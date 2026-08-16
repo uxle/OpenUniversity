@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-1",
+  "title": "Clock Reasoning \u2014 Part 1 of 10",
+  "questions": [
+    {
+      "question": "What are the three fundamental units used to represent time on a clock?",
+      "options": [
+        "Hours, minutes, seconds",
+        "Hours, days, years",
+        "Minutes, degrees, radians",
+        "Seconds, weeks, months"
+      ],
+      "correct": 0,
+      "rationale": "The three fundamental units for clock reasoning are hours, minutes, and seconds, which nest inside each other (60 seconds per minute, 60 minutes per hour).",
+      "id": 1
+    },
+    {
+      "question": "Why is representing time as a single number (e.g., total minutes since midnight) useful for clock reasoning?",
+      "options": [
+        "It looks more impressive",
+        "It simplifies arithmetic by avoiding juggling separate hour/minute/second fields",
+        "It removes the need to know the current date",
+        "It is required by every programming language"
+      ],
+      "correct": 1,
+      "rationale": "A single normalized number lets you add, subtract, and compare times with plain arithmetic instead of handling carries between separate hour/minute/second fields manually.",
+      "id": 2
+    },
+    {
+      "question": "What does 'the best internal representation' for clock reasoning typically use as its base unit?",
+      "options": [
+        "Degrees",
+        "A single unit like minutes (or seconds) since a reference point, rather than separate H:M:S fields",
+        "Days",
+        "Random unique IDs per time value"
+      ],
+      "correct": 1,
+      "rationale": "Using one consistent base unit (like total minutes since a reference point) avoids the errors that come from tracking hours, minutes, and seconds as separate, loosely-related values.",
+      "id": 3
+    },
+    {
+      "question": "Why is treating a clock as cyclic/modular important even at the introductory level?",
+      "options": [
+        "It isn't important",
+        "Because time wraps around after 12 (or 24) hours, unlike a plain number line",
+        "Because clocks are always digital",
+        "Because modular arithmetic is only used for minutes, not hours"
+      ],
+      "correct": 1,
+      "rationale": "A clock's hour value resets every 12 or 24 hours \u2014 treating time as a plain, ever-increasing number without this wrap-around leads to invalid values like '25 hours'.",
+      "id": 4
+    },
+    {
+      "question": "Which of the following is NOT one of the three fundamental clock units?",
+      "options": [
+        "Hours",
+        "Minutes",
+        "Degrees",
+        "Seconds"
+      ],
+      "correct": 2,
+      "rationale": "Degrees measure angle, not a fundamental clock time unit \u2014 hours, minutes, and seconds are the three units time itself is measured in.",
+      "id": 5
+    },
+    {
+      "question": "What problem can arise if you keep hours, minutes, and seconds as three separate, unrelated variables instead of a unified representation?",
+      "options": [
+        "No problem \u2014 it's the recommended approach",
+        "Arithmetic across unit boundaries (like adding minutes that cross into a new hour) becomes error-prone",
+        "The clock will not display correctly",
+        "It becomes impossible to draw a diagram of the clock"
+      ],
+      "correct": 1,
+      "rationale": "Without a unified representation, operations that cross a unit boundary (e.g., minutes summing past 60) require manual, error-prone carrying logic scattered across separate variables.",
+      "id": 6
+    },
+    {
+      "question": "Convert 2 hours 45 minutes into total minutes.",
+      "options": [
+        "145",
+        "165",
+        "185",
+        "205"
+      ],
+      "correct": 1,
+      "rationale": "2 hours = 120 minutes; 120 + 45 = 165 minutes.",
+      "id": 7
+    },
+    {
+      "question": "If time is represented as 'minutes since midnight,' what value represents 1:30 PM?",
+      "options": [
+        "750",
+        "780",
+        "810",
+        "840"
+      ],
+      "correct": 2,
+      "rationale": "1:30 PM is 13:30 in 24-hour terms; 13 hours x 60 = 780, plus 30 minutes = 810.",
+      "id": 8
+    },
+    {
+      "question": "Why might seconds be omitted from the internal representation in many clock reasoning problems?",
+      "options": [
+        "Seconds don't actually exist on real clocks",
+        "Most reasoning questions only require hour/minute precision, so tracking seconds is often unnecessary overhead",
+        "Seconds can never be calculated correctly",
+        "Because minute-hand and second-hand movement are identical"
+      ],
+      "correct": 1,
+      "rationale": "Since most clock reasoning questions only need hour/minute precision, adding a seconds field is often unnecessary complexity unless the specific problem calls for it.",
+      "id": 9
+    },
+    {
+      "question": "What is the general benefit of introducing a formal 'unit system' before doing clock arithmetic?",
+      "options": [
+        "It has no real benefit, it's just convention",
+        "It prevents mixing incompatible units, such as treating 'half' inconsistently as 30 minutes in one place and 0.5 hours in another",
+        "It makes the clock diagram look nicer",
+        "It removes the need for the clock-angle formula later"
+      ],
+      "correct": 1,
+      "rationale": "A formal unit system prevents subtle bugs from mixing units inconsistently, which is exactly the kind of error a normalized internal representation is designed to avoid.",
+      "id": 10
+    }
+  ]
+}

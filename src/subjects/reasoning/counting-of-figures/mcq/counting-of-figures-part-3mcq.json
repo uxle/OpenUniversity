@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-3",
+  "title": "Counting of Figures \u2014 Part 3 of 12",
+  "questions": [
+    {
+      "question": "When a triangle is divided by one internal line from a vertex to the opposite side, how many total triangles are formed?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "rationale": "The one internal line creates 2 smaller triangles, plus the original outer triangle itself still counts, giving 3 total.",
+      "id": 1
+    },
+    {
+      "question": "What does 'triangle counting strategy' generally recommend?",
+      "options": [
+        "Only count the outer triangle",
+        "Systematically count basic (undivided) triangles first, then count composite triangles formed by combining adjacent basic triangles",
+        "Count triangles in a random order",
+        "Ignore any triangle that shares an edge with another"
+      ],
+      "correct": 1,
+      "rationale": "The recommended strategy counts basic triangles first, then works up to composite (combined) triangles built from adjacent basic ones.",
+      "id": 2
+    },
+    {
+      "question": "What is an 'inverted triangle' in a triangular grid?",
+      "options": [
+        "A triangle with no valid boundary",
+        "A triangle that points in the opposite direction to the main/outer triangle",
+        "A triangle formed only by diagonals",
+        "A triangle counted twice by mistake"
+      ],
+      "correct": 1,
+      "rationale": "In a triangular grid, some smaller triangles point 'upright' like the outer triangle, while others point 'inverted' (upside down) \u2014 both must be counted.",
+      "id": 3
+    },
+    {
+      "question": "What does an 'orientation chart' help track when counting triangles in a complex figure?",
+      "options": [
+        "The color of each triangle",
+        "Which direction (upright or inverted) each triangle points, since it's easy to miss inverted ones by visual scanning alone",
+        "The exact coordinates of each vertex",
+        "The order in which triangles were drawn"
+      ],
+      "correct": 1,
+      "rationale": "An orientation chart tracks each triangle's pointing direction, helping catch inverted triangles that are easy to overlook during a purely visual scan.",
+      "id": 4
+    },
+    {
+      "question": "What is the 'composite triangle rule'?",
+      "options": [
+        "Composite triangles are never valid",
+        "A larger triangle is valid to count only if all the smaller triangles/lines needed to form its complete boundary are actually present in the figure",
+        "Composite triangles must always be inverted",
+        "Composite triangles don't require any boundary lines"
+      ],
+      "correct": 1,
+      "rationale": "A composite (combined) triangle only counts if its entire boundary is genuinely present in the figure \u2014 not just visually implied.",
+      "id": 5
+    },
+    {
+      "question": "What must be true for a set of line segments to correctly form a valid quadrilateral when counting?",
+      "options": [
+        "They must all be the same length",
+        "The four segments must form a fully closed four-sided boundary with no gaps",
+        "They must all be diagonals",
+        "They must intersect at a single point"
+      ],
+      "correct": 1,
+      "rationale": "A valid quadrilateral requires four segments that together form a completely closed boundary, with no gap anywhere along its perimeter.",
+      "id": 6
+    },
+    {
+      "question": "What is the general strategy recommended for 'counting polygons' of a given type in a complex figure?",
+      "options": [
+        "Guess based on the figure's overall size",
+        "Identify the basic units first, then systematically combine adjacent units while validating that each combination forms a genuinely closed polygon",
+        "Only count polygons with an even number of sides",
+        "Count every possible combination of lines, regardless of whether they close"
+      ],
+      "correct": 1,
+      "rationale": "The same basic-then-composite strategy applies: identify basic units, then systematically test valid combinations while confirming each one actually forms a closed polygon.",
+      "id": 7
+    },
+    {
+      "question": "When counting line segments 'in a grid' rather than on a single line, what additional factor must be considered?",
+      "options": [
+        "Nothing changes compared to a single line",
+        "Segments can run horizontally, vertically, and sometimes diagonally, so each direction must be counted separately",
+        "Only horizontal segments exist in a grid",
+        "Grids never contain more than one segment"
+      ],
+      "correct": 1,
+      "rationale": "Unlike points on a single line, a grid has segments running in multiple directions (horizontal, vertical, sometimes diagonal), each of which needs its own count.",
+      "id": 8
+    },
+    {
+      "question": "What does the 'multiple-line segment method' address?",
+      "options": [
+        "Counting segments on a single isolated line only",
+        "Counting all possible segments when there are several lines that may intersect and create additional segment combinations",
+        "Removing all diagonal segments from consideration",
+        "Only counting the longest segment in the figure"
+      ],
+      "correct": 1,
+      "rationale": "This method handles the more complex case of multiple, possibly-intersecting lines, where additional segment combinations arise from the intersections.",
+      "id": 9
+    },
+    {
+      "question": "What is the maximum number of intersection points formed by n lines, no two parallel and no three meeting at a single point?",
+      "options": [
+        "n",
+        "2n",
+        "n(n-1)/2",
+        "n^2"
+      ],
+      "correct": 2,
+      "rationale": "This is the same 'choose 2' logic as the line-segment formula: each pair of lines contributes exactly one intersection point, giving C(n,2) = n(n-1)/2.",
+      "id": 10
+    }
+  ]
+}

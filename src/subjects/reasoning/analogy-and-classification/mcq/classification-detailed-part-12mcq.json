@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-12",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 12 of 16",
+  "questions": [
+    {
+      "question": "What does 'Classification by Angles' test?",
+      "options": [
+        "A geometric property based on number of sides",
+        "Whether a group of shapes share a common angle-based property (all right angles, all acute, etc.)",
+        "A material-based property",
+        "A biological property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether shapes share a common angle-based property, identifying the shape whose angles differ from the shared pattern.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Classification by Number of Diagonals' test?",
+      "options": [
+        "A material-based property",
+        "Whether a group of polygons share the same number of diagonals, with one polygon having a different count",
+        "A biological property",
+        "A use-based property"
+      ],
+      "correct": 1,
+      "rationale": "Using the diagonal-count formula, this tests whether polygons share the same number of diagonals, identifying the one whose diagonal count differs.",
+      "id": 2
+    },
+    {
+      "question": "What does 'Classification by Symmetry' test?",
+      "options": [
+        "A material-based property",
+        "Whether a group of shapes share a common symmetry property (line symmetry, rotational symmetry, etc.), with one lacking it",
+        "A use-based property",
+        "A biological property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether shapes share a common symmetry property, identifying the shape that lacks the same kind of symmetry.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Non-Verbal Classification' refer to?",
+      "options": [
+        "Classification based only on word meaning",
+        "Classification based on visual/figural properties (shapes, patterns) rather than words or numbers",
+        "Classification based only on numbers",
+        "A classification method with no visual component"
+      ],
+      "correct": 1,
+      "rationale": "Non-verbal classification is based on visual or figural properties \u2014 shapes and patterns \u2014 rather than word-based or purely numeric reasoning.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'Shape Feature Vector'?",
+      "options": [
+        "A vector with no shape-related data",
+        "A representation of a shape's key measurable features (sides, angles, symmetry, etc.) used to compare shapes systematically",
+        "A vector only for numbers",
+        "A vector unrelated to classification"
+      ],
+      "correct": 1,
+      "rationale": "A shape feature vector captures a shape's key measurable properties, enabling systematic comparison to identify the shape that differs from the rest.",
+      "id": 5
+    },
+    {
+      "question": "What does the 'Non-Verbal Classification Workflow' likely provide?",
+      "options": [
+        "A random guessing method",
+        "A systematic step-by-step process specifically for identifying the odd shape/figure out among a set of visual figures",
+        "A workflow only for word classification",
+        "A workflow with no defined steps"
+      ],
+      "correct": 1,
+      "rationale": "This provides a systematic, step-by-step process tailored specifically to solving non-verbal (figural) classification problems.",
+      "id": 6
+    },
+    {
+      "question": "What is the key difference between 'Rotation' and 'Reflection' in non-verbal classification?",
+      "options": [
+        "They are the same transformation",
+        "A rotation turns a figure around a point (preserving its arrangement), while a reflection mirrors it (reversing the arrangement)",
+        "Reflection is just a synonym for rotation",
+        "Neither transformation is relevant to classification"
+      ],
+      "correct": 1,
+      "rationale": "A rotation turns a figure around a point while preserving its internal arrangement, while a reflection mirrors the figure, reversing that arrangement \u2014 a key distinction when comparing figures.",
+      "id": 7
+    },
+    {
+      "question": "What does the 'Counting Method' apply to non-verbal classification?",
+      "options": [
+        "Ignoring the number of elements entirely",
+        "Counting specific elements (like sides, dots, or shapes) within each figure to find the one with a different count",
+        "Only measuring angles",
+        "Only checking colors"
+      ],
+      "correct": 1,
+      "rationale": "The counting method compares the count of specific elements (sides, dots, sub-shapes) within each figure, identifying the one whose count differs.",
+      "id": 8
+    },
+    {
+      "question": "What does the 'Position Method' check for in non-verbal classification?",
+      "options": [
+        "The color of each figure",
+        "Whether elements within each figure are positioned consistently (e.g., always in the same relative spot), with one figure breaking that pattern",
+        "Only the size of each figure",
+        "Only the number of sides"
+      ],
+      "correct": 1,
+      "rationale": "The position method checks whether the internal elements of each figure are consistently positioned relative to each other, identifying the figure that breaks that positional consistency.",
+      "id": 9
+    },
+    {
+      "question": "What does the 'Orientation Method' check for?",
+      "options": [
+        "The color of each figure",
+        "Whether each figure is consistently oriented (facing the same direction or rotated the same way), with one breaking that pattern",
+        "Only the size of each figure",
+        "Only the number of elements"
+      ],
+      "correct": 1,
+      "rationale": "The orientation method checks whether figures share a consistent facing direction or rotation, identifying the figure oriented differently from the rest.",
+      "id": 10
+    }
+  ]
+}

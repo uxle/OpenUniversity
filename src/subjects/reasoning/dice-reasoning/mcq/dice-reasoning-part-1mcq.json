@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-1",
+  "title": "Dice Reasoning \u2014 Part 1 of 10",
+  "questions": [
+    {
+      "question": "What is 'dice reasoning' primarily about?",
+      "options": [
+        "Calculating the volume of a cube",
+        "Determining hidden, opposite, or adjacent faces of a die from one or more given views",
+        "Measuring the physical weight of a die",
+        "Drawing a new die from scratch"
+      ],
+      "correct": 1,
+      "rationale": "Dice reasoning problems ask you to determine hidden, opposite, or adjacent face relationships of a die, based on one or more given views of it.",
+      "id": 1
+    },
+    {
+      "question": "How many faces does a standard cube (die) have?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "rationale": "A standard cube has 6 faces, conventionally numbered 1 through 6 on a typical die.",
+      "id": 2
+    },
+    {
+      "question": "How many faces meet at any single vertex (corner) of a cube?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": 1,
+      "rationale": "Exactly 3 faces meet at each corner of a cube, forming the basis of the three-face corner rule.",
+      "id": 3
+    },
+    {
+      "question": "What does 'adjacency' mean for two faces of a die?",
+      "options": [
+        "The two faces are opposite each other",
+        "The two faces share a common edge",
+        "The two faces have the same number",
+        "The two faces are never visible together"
+      ],
+      "correct": 1,
+      "rationale": "Two faces are adjacent if they share a common edge \u2014 as opposed to being opposite, where they share no edge or vertex at all.",
+      "id": 4
+    },
+    {
+      "question": "What is the 'opposite face rule'?",
+      "options": [
+        "Every face has two opposite faces",
+        "Each face of a cube has exactly one face directly opposite to it, and the two never touch or appear together in the same view",
+        "Opposite faces are always adjacent",
+        "A cube has no opposite faces"
+      ],
+      "correct": 1,
+      "rationale": "Each of a cube's 6 faces pairs with exactly one other face directly across from it \u2014 the two opposite faces never share an edge and never both appear in a single view.",
+      "id": 5
+    },
+    {
+      "question": "Why do opposite faces of a die never touch?",
+      "options": [
+        "They actually can touch in some cases",
+        "Because they lie on parallel, non-adjacent sides of the cube, with no shared edge or vertex between them",
+        "Because they are always the same color",
+        "Because dice are hollow"
+      ],
+      "correct": 1,
+      "rationale": "Opposite faces sit on parallel sides of the cube, geometrically separated with no shared edge or vertex connecting them.",
+      "id": 6
+    },
+    {
+      "question": "What does the 'three-face corner rule' describe?",
+      "options": [
+        "That a cube has no corners",
+        "At any corner of a cube, exactly three mutually adjacent faces meet, and no two of those three can be opposite each other",
+        "That opposite faces meet at every corner",
+        "That only two faces ever meet at a corner"
+      ],
+      "correct": 1,
+      "rationale": "At each of a cube's corners, exactly three faces meet, and since opposite faces can never be adjacent, no two of those three can be an opposite pair.",
+      "id": 7
+    },
+    {
+      "question": "If two faces are seen together in the same view of a die, what does that tell you about their relationship?",
+      "options": [
+        "They must be opposite faces",
+        "They cannot be opposite faces, since opposite faces never appear together in a single view",
+        "They must be the same face",
+        "Nothing can be concluded"
+      ],
+      "correct": 1,
+      "rationale": "Since opposite faces never appear together in a single view, seeing two faces together immediately rules out the possibility that they are opposite each other.",
+      "id": 8
+    },
+    {
+      "question": "How many pairs of opposite faces does a standard cube have?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": 1,
+      "rationale": "With 6 faces pairing up into opposite pairs, a cube has 6 / 2 = 3 pairs of opposite faces.",
+      "id": 9
+    },
+    {
+      "question": "Why is memorizing the basic cube facts (6 faces, 3 per corner, 3 opposite pairs) considered essential before solving dice problems?",
+      "options": [
+        "It isn't actually essential",
+        "Because these facts are used repeatedly as the foundation for every deduction in more advanced dice reasoning problems",
+        "Because exams only test these basic facts directly",
+        "Because dice reasoning doesn't build on these facts at all"
+      ],
+      "correct": 1,
+      "rationale": "Every more advanced deduction in dice reasoning \u2014 adjacency checks, corner compatibility, rotations \u2014 relies on these basic cube facts as its foundation.",
+      "id": 10
+    }
+  ]
+}

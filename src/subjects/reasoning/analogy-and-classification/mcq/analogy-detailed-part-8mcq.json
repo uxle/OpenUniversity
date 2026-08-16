@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-8",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 8 of 12",
+  "questions": [
+    {
+      "question": "What does a 'Factor Analogy' test?",
+      "options": [
+        "Word synonyms",
+        "A relationship based on the factors of a number (numbers that divide it evenly)",
+        "A relationship based on word length",
+        "A relationship based on letter position"
+      ],
+      "correct": 1,
+      "rationale": "A factor analogy bases its relationship on the factors of a given number \u2014 the numbers that divide it evenly.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'Square-Root Analogy' test?",
+      "options": [
+        "A relationship where the second number is the square root of the first",
+        "A relationship where the second number is the square of the first",
+        "A word-based relationship",
+        "A relationship based on letter position"
+      ],
+      "correct": 0,
+      "rationale": "A square-root analogy tests a relationship where the second number is the square root of the first, the inverse of a squaring relationship.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'Cube-Root Analogy' test, in contrast to Square-Root?",
+      "options": [
+        "The same square-root relationship",
+        "A relationship where the second number is the cube root of the first, rather than the square root",
+        "A word synonym relationship",
+        "A relationship based on word length"
+      ],
+      "correct": 1,
+      "rationale": "A cube-root analogy tests the inverse of a cubing relationship \u2014 the second number is the cube root of the first.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Fraction Analogy' test?",
+      "options": [
+        "Only whole numbers",
+        "A relationship expressed using fractions, such as a number and a specific fraction of it",
+        "A word-based relationship",
+        "A relationship based on letter position"
+      ],
+      "correct": 1,
+      "rationale": "A fraction analogy tests a relationship expressed through fractions, such as a number being related to a specific fraction (like half or a third) of it.",
+      "id": 4
+    },
+    {
+      "question": "What does a 'Percentage Analogy' test, similarly?",
+      "options": [
+        "Only whole numbers with no relationship",
+        "A relationship expressed as a percentage of the original number",
+        "A word synonym relationship",
+        "A letter-position relationship"
+      ],
+      "correct": 1,
+      "rationale": "A percentage analogy expresses the relationship as a specific percentage of the original number, functioning similarly to a fraction analogy.",
+      "id": 5
+    },
+    {
+      "question": "What does an 'Algebraic Analogy' test?",
+      "options": [
+        "A purely word-based relationship",
+        "A relationship expressed through a simple algebraic formula applied to the numbers involved",
+        "A letter-position relationship only",
+        "A relationship with no numeric component"
+      ],
+      "correct": 1,
+      "rationale": "An algebraic analogy expresses the relationship through a formula (like n^2 + n) applied to the given numbers, generalizing beyond simple arithmetic.",
+      "id": 6
+    },
+    {
+      "question": "What is the 'Multiple Valid Rules Problem'?",
+      "options": [
+        "A problem with no valid rule at all",
+        "A situation where more than one rule seems to fit the given pair, requiring careful disambiguation",
+        "A problem only relevant to letter analogies",
+        "A problem that never actually occurs"
+      ],
+      "correct": 1,
+      "rationale": "This refers to situations where multiple different rules initially seem to fit the given pair, requiring careful analysis to determine which one is actually intended.",
+      "id": 7
+    },
+    {
+      "question": "What does the 'Principle of Simplest Rule' recommend when multiple rules seem to fit?",
+      "options": [
+        "Always choose the most complex rule",
+        "Prefer the simplest rule that is fully consistent with the given information",
+        "Randomly select any fitting rule",
+        "Ignore the issue and pick any answer option"
+      ],
+      "correct": 1,
+      "rationale": "Consistent with the golden rule theme across reasoning topics, this principle recommends preferring the simplest rule that remains fully consistent with the given pair.",
+      "id": 8
+    },
+    {
+      "question": "What does an 'Advanced Two-Step Analogy' require?",
+      "options": [
+        "Only a single arithmetic operation",
+        "Correctly applying two sequential operations to relate the given pair",
+        "No arithmetic at all",
+        "Only a word-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "A two-step analogy requires identifying and correctly applying two sequential operations (e.g., multiply then add) to relate the pair.",
+      "id": 9
+    },
+    {
+      "question": "What does an 'Advanced Three-Step Analogy' require, compared to the two-step version?",
+      "options": [
+        "Fewer operations than the two-step version",
+        "An additional third sequential operation, making the relationship more complex to identify",
+        "The exact same process",
+        "No operations at all"
+      ],
+      "correct": 1,
+      "rationale": "The three-step version adds a further sequential operation on top of the two-step case, making the underlying relationship more complex to correctly identify and verify.",
+      "id": 10
+    }
+  ]
+}

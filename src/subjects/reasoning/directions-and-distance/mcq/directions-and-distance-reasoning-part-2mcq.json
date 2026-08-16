@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-2",
+  "title": "Directions and Distance Reasoning \u2014 Part 2 of 10",
+  "questions": [
+    {
+      "question": "What is a 'reference frame' in direction reasoning?",
+      "options": [
+        "A physical picture frame",
+        "The fixed coordinate system or starting orientation against which all other directions and positions are measured",
+        "A synonym for distance",
+        "Only used in 3D problems"
+      ],
+      "correct": 1,
+      "rationale": "A reference frame is the fixed coordinate system or starting orientation that all directions and positions in a problem are measured against.",
+      "id": 1
+    },
+    {
+      "question": "What does 'heading' refer to?",
+      "options": [
+        "The title of a reasoning question",
+        "The current direction someone or something is facing or moving",
+        "The total distance traveled so far",
+        "A synonym for position"
+      ],
+      "correct": 1,
+      "rationale": "Heading describes the current direction something is facing or moving in, which can change over the course of a multi-step problem.",
+      "id": 2
+    },
+    {
+      "question": "How many directions does the 'eight-direction heading' system include?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 2,
+      "rationale": "The eight-direction system includes N, NE, E, SE, S, SW, W, and NW \u2014 the four cardinal directions plus the four intercardinal directions.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'bearing'?",
+      "options": [
+        "A type of distance unit",
+        "A direction expressed as an angle, commonly measured clockwise from North",
+        "A synonym for displacement",
+        "A fixed physical landmark"
+      ],
+      "correct": 1,
+      "rationale": "A bearing expresses direction numerically as an angle, typically measured clockwise starting from North (0 degrees).",
+      "id": 4
+    },
+    {
+      "question": "What does 'position difference' measure between two points?",
+      "options": [
+        "Only the time between two events",
+        "The change in coordinates (and therefore direction and distance) from one point to the other",
+        "The number of turns taken",
+        "The elevation difference only"
+      ],
+      "correct": 1,
+      "rationale": "Position difference captures how coordinates change from one point to another, which is what lets you derive both the direction and distance between them.",
+      "id": 5
+    },
+    {
+      "question": "How can direction be determined from two coordinate points?",
+      "options": [
+        "It cannot be determined from coordinates alone",
+        "By comparing their relative x and y differences to determine the angle/compass direction between them",
+        "By measuring the time it takes to travel between them",
+        "By counting the number of turns in between"
+      ],
+      "correct": 1,
+      "rationale": "The relative difference in x and y coordinates between two points determines the angle (and therefore compass direction) from one to the other.",
+      "id": 6
+    },
+    {
+      "question": "What is 'Euclidean distance'?",
+      "options": [
+        "The distance measured only along horizontal and vertical paths",
+        "The straight-line distance between two points, calculated using the Pythagorean-style formula",
+        "A distance measured in degrees",
+        "The total path length actually walked"
+      ],
+      "correct": 1,
+      "rationale": "Euclidean distance is the straight-line ('as the crow flies') distance between two points, computed with the Pythagorean formula on their coordinate differences.",
+      "id": 7
+    },
+    {
+      "question": "What is 'Manhattan distance'?",
+      "options": [
+        "The straight-line distance between two points",
+        "The distance between two points measured only along horizontal and vertical paths (sum of absolute coordinate differences), not diagonally",
+        "A distance measured only in miles",
+        "The distance around a full circular loop"
+      ],
+      "correct": 1,
+      "rationale": "Manhattan distance sums the absolute horizontal and vertical differences between two points, modeling movement restricted to a grid rather than a direct diagonal line.",
+      "id": 8
+    },
+    {
+      "question": "What is the difference between 'path distance' and 'displacement'?",
+      "options": [
+        "They always have the same value",
+        "Path distance is the total distance actually traveled along a route; displacement is the straight-line distance from start to end point",
+        "Displacement is always longer than path distance",
+        "Path distance only applies to circular routes"
+      ],
+      "correct": 1,
+      "rationale": "Path distance totals every segment actually walked, while displacement is just the straight-line distance between the starting point and the final point, which is often shorter.",
+      "id": 9
+    },
+    {
+      "question": "If someone walks 3 km east then 4 km north, what is their straight-line displacement from the start?",
+      "options": [
+        "3 km",
+        "4 km",
+        "5 km",
+        "7 km"
+      ],
+      "correct": 2,
+      "rationale": "This forms a 3-4-5 right triangle, so the straight-line displacement (the hypotenuse) is 5 km, even though the total path distance walked was 7 km.",
+      "id": 10
+    }
+  ]
+}

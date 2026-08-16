@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-9",
+  "title": "Dice Reasoning \u2014 Part 9 of 10",
+  "questions": [
+    {
+      "question": "What is one 'common mistake' this lesson likely warns against in dice reasoning?",
+      "options": [
+        "Using too many reference diagrams",
+        "Assuming two faces are opposite just because they weren't seen together in one view, without confirming across all given views",
+        "Practicing with too many examples",
+        "Using the coordinate model too often"
+      ],
+      "correct": 1,
+      "rationale": "A common mistake is prematurely concluding two faces are opposite from a single view, rather than confirming that conclusion holds consistently across every given view.",
+      "id": 1
+    },
+    {
+      "question": "What is the purpose of a 'high-speed shortcut chart'?",
+      "options": [
+        "To slow down the solving process intentionally",
+        "To consolidate the fastest verified shortcuts (like immediate elimination rules) for quick use under exam time pressure",
+        "To replace the need for understanding rules entirely",
+        "To only apply to letter dice"
+      ],
+      "correct": 1,
+      "rationale": "This chart consolidates the fastest, already-verified shortcuts into one place, supporting quick application when solving under real exam time pressure.",
+      "id": 2
+    },
+    {
+      "question": "What are '5-second rules' likely meant to provide?",
+      "options": [
+        "Detailed, lengthy derivations",
+        "Extremely quick, memorized checks (like 'opposite faces never appear together') that can be applied almost instantly during an exam",
+        "Rules that take 5 minutes to apply",
+        "Rules only relevant to symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "These are meant to be near-instant, memorized checks \u2014 like the opposite-faces-never-together rule \u2014 that can be applied almost immediately without extended calculation.",
+      "id": 3
+    },
+    {
+      "question": "Why does the lesson include multiple tiers of practice sets (Basic, Intermediate, Advanced, Challenge)?",
+      "options": [
+        "To make the lesson unnecessarily long",
+        "To let learners build dice reasoning skill progressively, from simple single-view problems up to complex multi-roll or ambiguous cases",
+        "Because each tier uses entirely different, unrelated rules",
+        "Tiered practice has no real pedagogical benefit"
+      ],
+      "correct": 1,
+      "rationale": "Progressive tiers let learners build skill step by step, moving from simple single-view problems toward complex multi-roll or ambiguous cases as their understanding solidifies.",
+      "id": 4
+    },
+    {
+      "question": "What is the purpose of the 'Exam Strategy' section near the end of the practice sets?",
+      "options": [
+        "To introduce brand-new cube facts",
+        "To consolidate practical advice on how to approach dice reasoning questions efficiently under real exam conditions",
+        "To replace the need for the master formula sheet",
+        "To only apply to the challenge-tier practice set"
+      ],
+      "correct": 1,
+      "rationale": "This section consolidates practical, exam-oriented advice for efficiently approaching dice reasoning questions under real time-pressured conditions.",
+      "id": 5
+    },
+    {
+      "question": "Why might relying only on memorized shortcuts, without understanding the underlying opposite/adjacency rules, be risky?",
+      "options": [
+        "There is no risk at all in doing this",
+        "Because an unfamiliar or unusual die layout (not matching the standard assumption) could make a memorized shortcut give a wrong answer",
+        "Because shortcuts are always slower than full derivation",
+        "Because shortcuts only apply to symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "A memorized shortcut, like assuming opposite faces sum to 7, can fail on a non-standard die layout \u2014 understanding the underlying rules is what lets you recognize and adapt to such cases.",
+      "id": 6
+    },
+    {
+      "question": "What is the value of working through a 'Challenge' tier practice set after completing Basic, Intermediate, and Advanced?",
+      "options": [
+        "It has no additional value beyond the Advanced tier",
+        "It tests whether the learner can apply the rules flexibly to unusually difficult or unfamiliar problems, not just standard cases",
+        "It only repeats the Basic tier's questions",
+        "It removes the need to have completed the earlier tiers"
+      ],
+      "correct": 1,
+      "rationale": "The Challenge tier tests flexible application of the rules to unusual or difficult cases, going beyond what the standard progression through easier tiers alone would cover.",
+      "id": 7
+    },
+    {
+      "question": "Why is recognizing common mistakes explicitly useful, rather than only learning the correct rules?",
+      "options": [
+        "It isn't useful, only correct rules matter",
+        "Knowing the typical ways learners go wrong helps you actively watch for and avoid those same errors under exam pressure",
+        "It replaces the need to learn any rules at all",
+        "It only helps with symbol dice problems"
+      ],
+      "correct": 1,
+      "rationale": "Explicitly knowing the common failure patterns lets you actively watch for and avoid them, which is a different and complementary skill from simply knowing the correct rules.",
+      "id": 8
+    },
+    {
+      "question": "What does a well-rounded 'exam strategy' for dice reasoning likely combine?",
+      "options": [
+        "Only guessing based on gut feeling",
+        "Quick elimination shortcuts for obviously invalid options, combined with careful rule-based reasoning for the remaining candidates",
+        "Ignoring all given views except the first one",
+        "Skipping any question involving rotation"
+      ],
+      "correct": 1,
+      "rationale": "An effective strategy combines fast elimination of obviously invalid options with careful, rule-based reasoning to resolve the remaining, more ambiguous candidates.",
+      "id": 9
+    },
+    {
+      "question": "Why does this lesson build up from basic cube facts to speed techniques and tiered practice, rather than starting with practice problems immediately?",
+      "options": [
+        "The ordering is arbitrary and has no purpose",
+        "Because reliably fast problem-solving depends on first having a solid understanding of the underlying rules, which the practice then reinforces",
+        "Because practice problems don't actually require the earlier rules",
+        "Because speed techniques work independently of the basic rules"
+      ],
+      "correct": 1,
+      "rationale": "Reliable, fast problem-solving is built on a solid foundation of the underlying rules \u2014 the lesson's progression ensures that foundation is in place before layering on speed techniques and practice.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-3",
+  "title": "Clock Reasoning \u2014 Part 3 of 10",
+  "questions": [
+    {
+      "question": "When adding time crosses midnight (e.g., 11:40 PM + 30 minutes), what happens?",
+      "options": [
+        "The calculation is impossible",
+        "It rolls over to the next day, with the hour resetting using modulo 24",
+        "The result is simply capped at 11:59 PM",
+        "The date is ignored entirely"
+      ],
+      "correct": 1,
+      "rationale": "Crossing midnight means the hour value wraps around (modulo 24) and the date advances by one day \u2014 11:40 PM + 30 minutes becomes 12:10 AM the next day.",
+      "id": 1
+    },
+    {
+      "question": "When subtracting time and the minutes being subtracted are larger than the available minutes, what technique is used?",
+      "options": [
+        "Borrowing: take 60 minutes from the hour value before subtracting",
+        "Rounding the result up",
+        "Adding 100 minutes automatically",
+        "Declaring the subtraction invalid"
+      ],
+      "correct": 0,
+      "rationale": "Just like borrowing in ordinary subtraction, you borrow 60 minutes from the hour column (reducing the hour by 1) before completing the minute subtraction.",
+      "id": 2
+    },
+    {
+      "question": "What does 'elapsed time' measure?",
+      "options": [
+        "The current time only",
+        "The duration between a start time and an end time",
+        "The time zone offset",
+        "The number of clock hands"
+      ],
+      "correct": 1,
+      "rationale": "Elapsed time is the duration \u2014 the amount of time that has passed \u2014 between a given start time and end time.",
+      "id": 3
+    },
+    {
+      "question": "How do you calculate elapsed time when the end time is on the next day (crosses midnight)?",
+      "options": [
+        "It cannot be calculated",
+        "Add 24 hours (or the wrap-around amount) to the end time before subtracting the start time",
+        "Just subtract the hour digits and ignore minutes",
+        "Use only the minutes, ignoring the hour"
+      ],
+      "correct": 1,
+      "rationale": "When the end time is on the next day, adding 24 hours to it before subtracting the start time correctly accounts for the day boundary crossed.",
+      "id": 4
+    },
+    {
+      "question": "What does 'modular time' mean?",
+      "options": [
+        "Time measured only in modules of software",
+        "Time values wrap around using a fixed modulus (12, 24, or 60) rather than increasing without bound",
+        "Time that changes with the seasons",
+        "A synonym for elapsed time"
+      ],
+      "correct": 1,
+      "rationale": "Modular time means the values wrap around at a fixed point (60 for minutes/seconds, 12 or 24 for hours) instead of growing indefinitely.",
+      "id": 5
+    },
+    {
+      "question": "What is 'circular distance' between two times on a clock face?",
+      "options": [
+        "The straight-line ruler distance between the two hand tips",
+        "The shorter of the two possible arc distances between them going around the circle",
+        "Always exactly half the clock face",
+        "The sum of both hands' individual angles from 12"
+      ],
+      "correct": 1,
+      "rationale": "Circular distance takes the shorter of the two arcs connecting two points around the circular clock face, since you can measure the gap going either direction.",
+      "id": 6
+    },
+    {
+      "question": "In one full revolution, how many degrees does the minute hand travel?",
+      "options": [
+        "180 degrees",
+        "270 degrees",
+        "360 degrees",
+        "720 degrees"
+      ],
+      "correct": 2,
+      "rationale": "One full revolution of any clock hand covers the full circle, which is 360 degrees.",
+      "id": 7
+    },
+    {
+      "question": "How many degrees per minute does the minute hand move?",
+      "options": [
+        "3 degrees",
+        "6 degrees",
+        "12 degrees",
+        "30 degrees"
+      ],
+      "correct": 1,
+      "rationale": "The minute hand completes 360 degrees in 60 minutes, so it moves 360/60 = 6 degrees per minute.",
+      "id": 8
+    },
+    {
+      "question": "How many degrees per minute does the hour hand move?",
+      "options": [
+        "0.5 degrees",
+        "1 degree",
+        "5 degrees",
+        "30 degrees"
+      ],
+      "correct": 0,
+      "rationale": "The hour hand completes 360 degrees in 12 hours (720 minutes), so it moves 360/720 = 0.5 degrees per minute.",
+      "id": 9
+    },
+    {
+      "question": "What is the standard clock-angle formula for the angle between the hour and minute hands at H hours and M minutes?",
+      "options": [
+        "|15H - 6M| degrees",
+        "|30H - 5.5M| degrees",
+        "|60H - M| degrees",
+        "|H - M| x 30 degrees"
+      ],
+      "correct": 1,
+      "rationale": "The standard formula is |30H - 5.5M| degrees, combining the hour hand's 30 degrees-per-hour rate with its extra 0.5 degrees-per-minute drift, against the minute hand's 6 degrees-per-minute rate.",
+      "id": 10
+    }
+  ]
+}

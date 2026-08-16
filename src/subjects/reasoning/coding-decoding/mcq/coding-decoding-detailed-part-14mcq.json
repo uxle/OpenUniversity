@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-14",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 14 of 22",
+  "questions": [
+    {
+      "question": "What does a 'pattern signature example' typically demonstrate?",
+      "options": [
+        "A rule with no real example",
+        "Applying a repeated-letter or frequency-based signature to a real word to show how it distinguishes or codes it",
+        "Only word reversal",
+        "A rule unrelated to signatures"
+      ],
+      "correct": 1,
+      "rationale": "This example demonstrates, on a real word, how a repeated-letter or frequency-based signature can be used to distinguish or derive a code for it.",
+      "id": 1
+    },
+    {
+      "question": "What is 'symbol pattern coding'?",
+      "options": [
+        "A rule using only letters",
+        "A rule where recurring visual or symbolic patterns (not just letters) determine the code",
+        "A synonym for letter-shift coding",
+        "A rule with no symbols involved"
+      ],
+      "correct": 1,
+      "rationale": "Symbol pattern coding bases its rule on recurring visual or symbolic patterns, going beyond just plain letters.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'frequency table' used for in this context?",
+      "options": [
+        "Listing word lengths",
+        "Tallying how often each letter appears, to support frequency-based coding rules",
+        "Listing only vowels",
+        "A table unrelated to coding"
+      ],
+      "correct": 1,
+      "rationale": "A frequency table tallies how often each letter appears, providing the data needed to apply frequency-based coding rules.",
+      "id": 3
+    },
+    {
+      "question": "What does 'position parity coding' use as its basis?",
+      "options": [
+        "The letter's ASCII value",
+        "Whether a letter's position (in the word or alphabet) is odd or even",
+        "The word's total length",
+        "A random assigned value"
+      ],
+      "correct": 1,
+      "rationale": "Position parity coding bases its rule on whether a letter's position \u2014 in the word or the alphabet \u2014 is odd or even.",
+      "id": 4
+    },
+    {
+      "question": "What is 'vowel position coding'?",
+      "options": [
+        "A rule based on the number of vowels",
+        "A rule based specifically on WHERE vowels occur within a word (their positions), not just how many there are",
+        "A synonym for consonant count coding",
+        "A rule that ignores vowels entirely"
+      ],
+      "correct": 1,
+      "rationale": "Unlike vowel-count coding, vowel position coding focuses on exactly where the vowels are located within the word, not merely how many there are.",
+      "id": 5
+    },
+    {
+      "question": "What is 'mixed binary coding'?",
+      "options": [
+        "A rule using only decimal numbers",
+        "A rule combining binary (base-2) representations with another coding technique, such as vowel/consonant classification",
+        "A synonym for plain binary coding",
+        "A rule with no binary component"
+      ],
+      "correct": 1,
+      "rationale": "Mixed binary coding combines a binary (base-2) representation with another technique, such as classifying letters as vowels or consonants.",
+      "id": 6
+    },
+    {
+      "question": "What does it mean to treat 'coding as a function'?",
+      "options": [
+        "Ignoring the input entirely",
+        "Viewing the coding rule as f(input) = output, a formal mapping that can be reasoned about mathematically",
+        "A synonym for word reversal",
+        "Treating coding as random and unpredictable"
+      ],
+      "correct": 1,
+      "rationale": "Treating coding as a function means formally viewing the rule as a mapping f(input) = output, which can be reasoned about with mathematical precision.",
+      "id": 7
+    },
+    {
+      "question": "What is 'inverse coding'?",
+      "options": [
+        "Applying the same rule twice",
+        "The reverse operation that recovers the original input from a given coded output",
+        "A synonym for mirror coding",
+        "A rule that only works forward, never backward"
+      ],
+      "correct": 1,
+      "rationale": "Inverse coding is the reverse operation, recovering the original input value from its coded output.",
+      "id": 8
+    },
+    {
+      "question": "What is the key difference between 'encoding' and 'decoding'?",
+      "options": [
+        "They mean exactly the same thing",
+        "Encoding transforms an original input into its code; decoding reverses that process, recovering the original from the code",
+        "Decoding only applies to numbers",
+        "Encoding only applies to letters"
+      ],
+      "correct": 1,
+      "rationale": "Encoding transforms an original input into its coded form, while decoding is the reverse process of recovering the original input from that code.",
+      "id": 9
+    },
+    {
+      "question": "If a coding function is f(x) = x + 3 (a shift of +3), what is its inverse function?",
+      "options": [
+        "f^-1(x) = x + 3",
+        "f^-1(x) = x - 3",
+        "f^-1(x) = 3 - x",
+        "f^-1(x) = x / 3"
+      ],
+      "correct": 1,
+      "rationale": "The inverse of adding 3 is subtracting 3, so f^-1(x) = x - 3 correctly undoes the original +3 shift.",
+      "id": 10
+    }
+  ]
+}

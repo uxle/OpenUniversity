@@ -1,0 +1,272 @@
+# Coding-Decoding — In-Depth Guide — Part 7 of 22
+
+[info title="Part 7 of 22"]
+Continuing from the previous part. back to Part 6 (`coding-decoding-detailed-part-6`) · continue to Part 8 (`coding-decoding-detailed-part-8`).
+[/info]
+
+## 53. Chinese Coding Example
+
+Given:
+
+```text
+"sun rises east" = ka po mi
+"sun sets west"  = ka tu na
+"moon rises west" = lo po na
+```
+
+Compare first two:
+
+Common:
+
+```text
+sun
+```
+
+Common code:
+
+```text
+ka
+```
+
+Therefore:
+
+```text
+sun = ka
+```
+
+Compare first and third:
+
+Common:
+
+```text
+rises
+```
+
+Common code:
+
+```text
+po
+```
+
+Therefore:
+
+```text
+rises = po
+```
+
+Compare second and third:
+
+Common:
+
+```text
+west
+```
+
+Common code:
+
+```text
+na
+```
+
+Therefore:
+
+```text
+west = na
+```
+
+Remaining:
+
+```text
+east = mi
+sets = tu
+moon = lo
+```
+
+---
+
+## 54. Mixed Coding
+
+A code may contain multiple components.
+
+Example:
+
+```text
+CAT → C3A1T20
+```
+
+Here:
+
+```text
+letter + position
+```
+
+Another:
+
+```text
+CAT → 3-1-20
+```
+
+The separator is irrelevant unless the question says otherwise.
+
+---
+
+## 55. Letter + Number Coding
+
+Example:
+
+```text
+DOG
+D = 4
+O = 15
+G = 7
+```
+
+Possible code:
+
+```text
+D4 O15 G7
+```
+
+or:
+
+```text
+4157
+```
+
+Always inspect the examples.
+
+---
+
+## 56. Symbol Coding
+
+Suppose:
+
+```text
+A = @
+B = #
+C = $
+D = %
+```
+
+Then:
+
+```text
+BAD → #@%
+```
+
+This is direct substitution.
+
+---
+
+## 57. Operation Symbol Coding
+
+Sometimes symbols represent mathematical operations.
+
+Example:
+
+```text
++ means ×
+− means ÷
+× means +
+÷ means −
+```
+
+Then:
+
+```text
+8 + 2
+```
+
+actually means:
+
+```text
+8 × 2 = 16
+```
+
+The important rule:
+
+> Decode the operators first, then calculate.
+
+---
+
+## 58. Operator Coding Example
+
+Given:
+
+```text
++ = −
+− = ×
+× = ÷
+÷ = +
+```
+
+Question:
+
+```text
+12 + 3 × 2
+```
+
+Decode:
+
+```text
+12 − 3 ÷ 2
+```
+
+Then apply normal mathematical precedence:
+
+```text
+3 ÷ 2 = 1.5
+12 − 1.5 = 10.5
+```
+
+---
+
+## 59. Conditional Coding
+
+A code can depend on conditions.
+
+Example:
+
+```text
+If first letter is a vowel → +2
+If first letter is a consonant → −1
+```
+
+Then:
+
+```text
+APPLE
+```
+
+starts with A:
+
+```text
+A + 2 = C
+```
+
+while:
+
+```text
+BALL
+```
+
+starts with B:
+
+```text
+B − 1 = A
+```
+
+---
+
+## 60. Conditional Flowchart
+
+```mermaid
+flowchart TD
+    A[Input word] --> B{Condition}
+    B -->|Vowel first| C[Rule A]
+    B -->|Consonant first| D[Rule B]
+    C --> E[Final code]
+    D --> E
+```
+
+---

@@ -1,0 +1,12 @@
+# Number & Alphabet Series
+
+@subject {
+  id: series
+  title: "Number & Alphabet Series"
+  parent: reasoning
+  description: "Number series, alphabet series, and mixed series pattern-detection."
+}
+
+@lessons {
+  series-reasoning
+}

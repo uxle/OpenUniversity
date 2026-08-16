@@ -1,0 +1,126 @@
+{
+  "lessonId": "syllogism-reasoning",
+  "title": "Syllogism Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In formal syllogism logic, what does the statement \"Some A are B\" guarantee?",
+      "options": [
+        "At least one A is B, and definitely not all A are B",
+        "At least one A is B \u2014 it is still possible that all A are B",
+        "No A are B",
+        "All A are B"
+      ],
+      "correct": 1,
+      "rationale": "\"Some\" only guarantees \"at least one\" in formal logic \u2014 it does not exclude the possibility that all A are B. Reading it as \"not all\" is one of the most common syllogism mistakes."
+    },
+    {
+      "id": 2,
+      "question": "If both given statements in a syllogism are of the form \"Some A are B\" and \"Some B are C\", what can be concluded about A and C?",
+      "options": [
+        "Some A are definitely C",
+        "All A are definitely C",
+        "Nothing definite follows",
+        "No A are C"
+      ],
+      "correct": 2,
+      "rationale": "At least one universal (All/No) premise is required for any definite conclusion. Two particular (\"Some\") premises can combine in too many different Venn arrangements to guarantee anything about A and C."
+    },
+    {
+      "id": 3,
+      "question": "Statements: No teachers are students. All students are learners. Which conclusion definitely follows?",
+      "options": [
+        "All learners are students",
+        "Some learners are not teachers",
+        "No learners are teachers",
+        "All teachers are learners"
+      ],
+      "correct": 1,
+      "rationale": "Since all students are learners, and no teacher is a student, the student-learners are guaranteed not to be teachers \u2014 so at least some learners are not teachers."
+    },
+    {
+      "id": 4,
+      "question": "Two conclusions are: \"All books are papers\" and \"Some books are not papers.\" What does the complementary pairs rule tell you about them?",
+      "options": [
+        "Both must be false",
+        "Both must be true",
+        "At least one of the two must be true",
+        "Neither can ever be evaluated"
+      ],
+      "correct": 2,
+      "rationale": "These two conclusions form a complementary pair \u2014 across every possible Venn arrangement, at least one of them must hold, so the answer always includes 'either I or II follows.'"
+    },
+    {
+      "question": "Statements: All A are B. All C are B. What can be concluded about 'Some A are C'?",
+      "options": [
+        "It definitely follows",
+        "It is only possible, never definite",
+        "It is definitely false",
+        "No relationship can ever be inferred"
+      ],
+      "correct": 1,
+      "rationale": "Both A and C being subsets of B doesn't guarantee they overlap with each other \u2014 'Some A are C' is possible in some Venn arrangements but not guaranteed in all, so it is never a definite conclusion.",
+      "id": 5
+    },
+    {
+      "question": "Which premise combination can never yield a definite conclusion about the two end terms?",
+      "options": [
+        "All + All",
+        "All + No",
+        "Some + All",
+        "No + No"
+      ],
+      "correct": 3,
+      "rationale": "Two negative premises (No + No) give no valid conclusion \u2014 knowing A excludes B and B excludes C tells you nothing definite about the relationship between A and C.",
+      "id": 6
+    },
+    {
+      "question": "How many different Venn diagram pictures can correctly represent 'All A are B'?",
+      "options": [
+        "Only one \u2014 A entirely inside B",
+        "Two, depending on overlap",
+        "Three, depending on size",
+        "It cannot be pictured at all"
+      ],
+      "correct": 0,
+      "rationale": "'All A are B' has exactly one valid picture: circle A drawn completely inside circle B. 'Some A are B', by contrast, has two valid pictures.",
+      "id": 7
+    },
+    {
+      "question": "Statements: All pens are blue. No blue things are cheap. Conclusion: No pens are cheap. Does this follow?",
+      "options": [
+        "Yes, it follows",
+        "No, it doesn't follow",
+        "Only sometimes",
+        "Cannot be determined"
+      ],
+      "correct": 0,
+      "rationale": "This is an All + No combination: all pens are blue, and no blue things are cheap, so no pens can be cheap either \u2014 a valid definite conclusion.",
+      "id": 8
+    },
+    {
+      "question": "Statements: Some doctors are teachers. Some teachers are students. Conclusion: Some doctors are students. Does this follow?",
+      "options": [
+        "Yes, it definitely follows",
+        "No, two 'Some' premises never guarantee a definite conclusion",
+        "Only if all doctors are also students",
+        "It follows only in reverse (some students are doctors)"
+      ],
+      "correct": 1,
+      "rationale": "Some + Some is a particular-plus-particular combination, which can never guarantee a definite conclusion about the end terms \u2014 at least one universal (All/No) premise is required.",
+      "id": 9
+    },
+    {
+      "question": "Why must you treat every syllogism statement as true, even if it sounds false in real life?",
+      "options": [
+        "Because the exam always uses false statements",
+        "Because syllogism logic evaluates whether conclusions follow IF the premises are true, regardless of real-world accuracy",
+        "Because real-world knowledge is always wrong",
+        "Because syllogism questions are never about real topics"
+      ],
+      "correct": 1,
+      "rationale": "Syllogism reasoning tests whether a conclusion logically follows from the given premises, assuming they are true \u2014 importing real-world truth or falsity leads to incorrectly accepting or rejecting valid conclusions.",
+      "id": 10
+    }
+  ]
+}

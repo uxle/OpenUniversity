@@ -1,0 +1,279 @@
+# Coding-Decoding — In-Depth Guide — Part 14 of 22
+
+[info title="Part 14 of 22"]
+Continuing from the previous part. back to Part 13 (`coding-decoding-detailed-part-13`) · continue to Part 15 (`coding-decoding-detailed-part-15`).
+[/info]
+
+## 117. Pattern Signature Example
+
+Words:
+
+```text
+APPLE
+```
+
+Pattern:
+
+```text
+A P P L E
+1 2 2 3 4
+```
+
+Word:
+
+```text
+HELLO
+```
+
+Pattern:
+
+```text
+H E L L O
+1 2 3 3 4
+```
+
+Therefore they have different repetition structures.
+
+---
+
+## 118. Symbol Pattern Coding
+
+If:
+
+```text
+A = ○
+B = △
+C = □
+```
+
+then:
+
+```text
+ABC → ○△□
+```
+
+But if:
+
+```text
+same letters = same symbols
+```
+
+then:
+
+```text
+BANANA
+```
+
+must have the same repeated-symbol pattern:
+
+```text
+X Y Z Y Z Y
+```
+
+This is a useful consistency check.
+
+---
+
+## 119. Frequency Table
+
+For any word, build:
+
+| Letter | Frequency |
+|---|---:|
+| A | 1 |
+| P | 2 |
+| L | 1 |
+| E | 1 |
+
+This can reveal hidden numerical codes.
+
+---
+
+## 120. Position Parity Coding
+
+For each letter:
+
+```text
+odd alphabet position → O
+even alphabet position → E
+```
+
+Example:
+
+```text
+CODE
+```
+
+```text
+C=3 → O
+O=15 → O
+D=4 → E
+E=5 → O
+```
+
+Result:
+
+```text
+O O E O
+```
+
+Could be represented as:
+
+```text
+1 1 0 1
+```
+
+---
+
+## 121. Vowel Position Coding
+
+For:
+
+```text
+EDUCATION
+```
+
+mark:
+
+```text
+E = V
+D = C
+U = V
+C = C
+A = V
+T = C
+I = V
+O = V
+N = C
+```
+
+Pattern:
+
+```text
+V C V C V C V V C
+```
+
+This can be encoded as:
+
+```text
+1 0 1 0 1 0 1 1 0
+```
+
+---
+
+## 122. Mixed Binary Coding
+
+A word can be represented by multiple binary properties.
+
+For example:
+
+```text
+vowel = 1
+consonant = 0
+```
+
+and separately:
+
+```text
+odd position = 1
+even position = 0
+```
+
+So each letter can have a pair:
+
+```text
+A = vowel + odd
+  = 11
+
+B = consonant + even
+  = 00
+```
+
+This creates a 2-bit signature.
+
+---
+
+## 123. Coding as a Function
+
+Mathematically, coding is a function:
+
+```text
+f(input) = code
+```
+
+Example:
+
+```text
+f(x) = x + 1
+```
+
+for alphabet positions.
+
+Then:
+
+```text
+f(A) = B
+f(B) = C
+...
+f(Z) = A
+```
+
+This is a cyclic function.
+
+---
+
+## 124. Inverse Coding
+
+Some questions give the code and ask for the original.
+
+If:
+
+```text
+Original + 2 = Code
+```
+
+then:
+
+```text
+Original = Code - 2
+```
+
+Example:
+
+```text
+E → G
+```
+
+So:
+
+```text
+G → E
+```
+
+when decoding.
+
+---
+
+## 125. Encoding vs Decoding
+
+```text
+ENCODING:
+Original → Code
+
+DECODING:
+Code → Original
+```
+
+Diagram:
+
+```text
+        ENCODE
+A B C ─────────→ B C D
+
+        DECODE
+B C D ─────────→ A B C
+```
+
+Always identify the direction of the question.
+
+---

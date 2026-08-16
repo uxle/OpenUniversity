@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-8",
+  "title": "Directions and Distance Reasoning \u2014 Part 8 of 10",
+  "questions": [
+    {
+      "question": "What is an 'unknown information' case in spatial reasoning?",
+      "options": [
+        "A case where all information is given",
+        "A situation where a required direction, distance, or position isn't stated and can't be fully derived from what's given",
+        "A case that always has multiple valid answers",
+        "A synonym for contradiction"
+      ],
+      "correct": 1,
+      "rationale": "An unknown-information case occurs when a needed value isn't stated and also can't be fully derived from the other given information.",
+      "id": 1
+    },
+    {
+      "question": "What does 'spatial state' represent at a given point while solving a problem?",
+      "options": [
+        "Only the very first position given",
+        "The currently known positions, directions, and constraints at that stage of reasoning",
+        "The name of the reasoning topic",
+        "A fixed, unchanging snapshot taken once at the start"
+      ],
+      "correct": 1,
+      "rationale": "Spatial state captures everything currently known \u2014 positions, directions, and constraints \u2014 at a specific point in the reasoning process, and it updates as more information is processed.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'state transition' in this context?",
+      "options": [
+        "A physical movement in the real world",
+        "The update to the spatial state caused by processing a new piece of information (like a movement or a new constraint)",
+        "A synonym for coordinate transformation",
+        "An error in the reasoning process"
+      ],
+      "correct": 1,
+      "rationale": "A state transition is how the spatial state changes in response to processing a new piece of information, such as an additional movement or constraint.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'spatial state machine' used to model?",
+      "options": [
+        "A single fixed answer",
+        "The sequence of spatial states and the transitions between them as a problem's information is processed step by step",
+        "Only the starting position",
+        "A physical robot"
+      ],
+      "correct": 1,
+      "rationale": "A spatial state machine models how the spatial state evolves step by step as each new piece of information in the problem is processed in turn.",
+      "id": 4
+    },
+    {
+      "question": "What is one 'common error' this lesson likely warns against in direction-and-distance problems?",
+      "options": [
+        "Using too many landmarks",
+        "Confusing displacement (straight-line distance) with total path distance traveled",
+        "Using polar coordinates instead of Cartesian",
+        "Using too few compass directions"
+      ],
+      "correct": 1,
+      "rationale": "Confusing displacement with total path distance is one of the most common errors in this domain, since the two values can differ significantly for a winding route.",
+      "id": 5
+    },
+    {
+      "question": "What do 'validation rules' check for in a spatial reasoning solution?",
+      "options": [
+        "Spelling of place names",
+        "That the derived positions and distances are logically consistent with every given constraint",
+        "That the map uses a specific color scheme",
+        "That only cardinal directions were used"
+      ],
+      "correct": 1,
+      "rationale": "Validation rules confirm that the final derived positions and distances are logically consistent with every constraint given in the original problem.",
+      "id": 6
+    },
+    {
+      "question": "Why is a structured spatial reasoning approach generally better than pure pattern matching?",
+      "options": [
+        "Pattern matching is always superior",
+        "It generalizes to novel problem phrasings by applying consistent rules, rather than only recognizing previously-seen patterns",
+        "Structured approaches don't require any rules",
+        "There is no real difference between the two"
+      ],
+      "correct": 1,
+      "rationale": "A structured, rule-based approach generalizes to problems phrased in new ways, while pure pattern matching only handles phrasings it has effectively seen before.",
+      "id": 7
+    },
+    {
+      "question": "In what sense is 'spatial reasoning as compilation' a useful analogy?",
+      "options": [
+        "It is not a useful analogy",
+        "Parsing a spatial description into a structured representation and then evaluating it mirrors how a compiler processes source code",
+        "It means spatial reasoning requires writing actual code by hand",
+        "It only applies to grid-based problems"
+      ],
+      "correct": 1,
+      "rationale": "Just as a compiler translates source code into a structured form before executing it, spatial reasoning translates a natural-language description into a structured representation before evaluating it.",
+      "id": 8
+    },
+    {
+      "question": "What is the risk of relying only on memorized spatial question patterns?",
+      "options": [
+        "There is no risk at all",
+        "It fails when the exact combination of directions/turns hasn't been seen before, unlike a rule-based approach that generalizes",
+        "It always produces faster answers with equal accuracy",
+        "It works better for multi-hop problems specifically"
+      ],
+      "correct": 1,
+      "rationale": "Memorized patterns only reliably cover combinations of directions and turns seen before \u2014 a genuinely new combination can break a purely pattern-based approach.",
+      "id": 9
+    },
+    {
+      "question": "Why track spatial state explicitly rather than just computing a single final answer directly?",
+      "options": [
+        "It offers no real advantage",
+        "It allows intermediate positions and constraints to be checked and verified at each step, not just the final result",
+        "It removes the need for a spatial graph entirely",
+        "It only matters for 3D problems"
+      ],
+      "correct": 1,
+      "rationale": "Explicitly tracking state at each step allows intermediate positions to be checked and verified along the way, rather than only being able to inspect the single final result.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+# Dice Reasoning — Part 7 of 10
+
+[info title="Part 7 of 10"]
+Continuing from the previous part. back to Part 6 (`dice-reasoning-part-6`) · continue to Part 8 (`dice-reasoning-part-8`).
+[/info]
+
+## 55. Solved Example 5 — Hidden Opposite Corner
+
+Suppose a corner contains:
+
+```text
+1, 2, 3
+```
+
+and:
+
+```text
+1 ↔ 6
+2 ↔ 5
+3 ↔ 4
+```
+
+Then the diagonally opposite corner contains:
+
+```text
+6, 5, 4
+```
+
+#### Answer
+
+```text
+(6, 5, 4)
+```
+
+---
+
+## 56. Solved Example 6 — One Common Edge
+
+Suppose:
+
+```text
+View A = 1, 2, 3
+View B = 1, 2, 5
+```
+
+The common edge is:
+
+```text
+1—2
+```
+
+The two other faces are:
+
+```text
+3 and 5
+```
+
+Under the appropriate same-edge orientation, these lie on opposite sides, so:
+
+```text
+3 ↔ 5
+```
+
+This is one of the most useful advanced patterns.
+
+---
+
+## 57. Solved Example 7 — Four Neighbours
+
+Suppose the following combinations are known:
+
+```text
+(1,2,3)
+(1,3,4)
+(1,4,5)
+```
+
+Then 1 is adjacent to:
+
+```text
+2,3,4,5
+```
+
+So the remaining face 6 is opposite 1.
+
+---
+
+## 58. Solved Example 8 — Symbolic Die
+
+Views:
+
+```text
+(★, ●, ▲)
+(★, ■, ●)
+(★, ◆, ■)
+```
+
+For `★`:
+
+```text
+Adjacent = ●, ▲, ■, ◆
+```
+
+The only remaining symbol:
+
+```text
+♥
+```
+
+must be opposite ★.
+
+Therefore:
+
+```text
+★ ↔ ♥
+```
+
+---
+
+## 59. Solved Example 9 — Rolling
+
+Initial position:
+
+```text
+TOP = 1
+FRONT = 2
+RIGHT = 3
+```
+
+Roll forward once.
+
+The cycle is:
+
+```text
+TOP → FRONT
+FRONT → BOTTOM
+BOTTOM → BACK
+BACK → TOP
+```
+
+Therefore the new top becomes the old back.
+
+If:
+
+```text
+BACK = 5
+```
+
+then:
+
+```text
+NEW TOP = 5
+```
+
+---
+
+## 60. Solved Example 10 — Two Rolls
+
+Initial:
+
+```text
+TOP = 1
+FRONT = 2
+BOTTOM = 6
+BACK = 5
+```
+
+Roll forward twice.
+
+First roll:
+
+```text
+TOP = 5
+FRONT = 1
+BOTTOM = 2
+BACK = 6
+```
+
+Second roll:
+
+```text
+TOP = 6
+FRONT = 5
+BOTTOM = 1
+BACK = 2
+```
+
+Therefore after 180°:
+
+```text
+TOP = 6
+```
+
+---
+
+## 61. Fast Method for Exam Options
+
+When four options are given:
+
+### Step 1
+
+Check opposite pairs.
+
+```text
+If an option places opposites together
+→ reject immediately.
+```
+
+### Step 2
+
+Check corner compatibility.
+
+```text
+A valid corner cannot contain an opposite pair.
+```
+
+### Step 3
+
+Check adjacency.
+
+```text
+Every pair shown on connected edges must be adjacent.
+```
+
+### Step 4
+
+Only then perform detailed rotation/orientation analysis.
+
+This saves time.
+
+---
+
+## 62. Elimination Flowchart
+
+```mermaid
+flowchart TD
+    A[Start Dice Problem] --> B[Identify labels]
+    B --> C[Find known opposite pairs]
+    C --> D{Any opposite pair touching?}
+    D -- Yes --> E[Reject option]
+    D -- No --> F{Need exact orientation?}
+    F -- No --> G[Answer by adjacency/opposite rule]
+    F -- Yes --> H[Choose reference corner]
+    H --> I[Track cube rotation]
+    I --> J{Orientation matches?}
+    J -- Yes --> K[Valid]
+    J -- No --> E
+```
+
+---
+
+## 63. Decision Tree
+
+```text
+                 START
+                   |
+          ┌────────┴────────┐
+          |                 |
+   Opposite pairs known?   NO
+          |                 |
+         YES            collect views
+          |
+   Check touching faces
+          |
+    ┌─────┴─────┐
+    |           |
+ contradiction  valid
+    |           |
+  reject     need rotation?
+                |
+          ┌─────┴─────┐
+          |           |
+         NO          YES
+          |           |
+       answer    track orientation
+```
+
+---

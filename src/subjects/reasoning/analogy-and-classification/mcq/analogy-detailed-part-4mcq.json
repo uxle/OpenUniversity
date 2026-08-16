@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-4",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 4 of 12",
+  "questions": [
+    {
+      "question": "What does an 'Instrument -> Measurement' analogy test?",
+      "options": [
+        "An instrument and its price",
+        "An instrument and the specific quantity it is used to measure",
+        "An instrument and its inventor",
+        "An instrument and its color"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a measuring instrument and the specific quantity it measures, such as Thermometer : Temperature.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'Scientist -> Field' analogy test?",
+      "options": [
+        "A scientist and their nationality",
+        "A scientist and the specific field or discipline they are known for",
+        "A scientist and their age",
+        "A scientist and their salary"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a scientist and their associated field of study, such as Darwin : Biology.",
+      "id": 2
+    },
+    {
+      "question": "What does an 'Inventor -> Invention' analogy test?",
+      "options": [
+        "An inventor and their nationality",
+        "An inventor and the specific thing they are credited with inventing",
+        "An inventor and their salary",
+        "An inventor and their field only, not the specific invention"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between an inventor and the specific invention they are credited with, such as Edison : Light bulb.",
+      "id": 3
+    },
+    {
+      "question": "What is 'Number Analogy' generally based on?",
+      "options": [
+        "Word meanings",
+        "A mathematical relationship connecting a pair of numbers, applied to find a matching relationship for a new pair",
+        "Letter positions only",
+        "Random number selection"
+      ],
+      "correct": 1,
+      "rationale": "Number analogy applies a mathematical rule connecting a given pair of numbers to determine the corresponding value or pair for a new case.",
+      "id": 4
+    },
+    {
+      "question": "What are 'common number transformations' used in number analogy likely to include?",
+      "options": [
+        "Only word associations",
+        "Operations like addition, multiplication, squaring, or other consistent arithmetic rules",
+        "Only letter shifts",
+        "Only geographic relationships"
+      ],
+      "correct": 1,
+      "rationale": "Common number transformations include standard arithmetic operations \u2014 addition, multiplication, squaring, and similar consistent rules \u2014 applied to the given pair.",
+      "id": 5
+    },
+    {
+      "question": "What does an 'Addition Analogy' test?",
+      "options": [
+        "A multiplicative relationship",
+        "A pair of numbers related by a consistent addition rule (e.g., second = first + constant)",
+        "A squaring relationship",
+        "A word-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "An addition analogy tests a pair of numbers related by adding a consistent constant, such as 4 : 9 (add 5) matching 6 : 11.",
+      "id": 6
+    },
+    {
+      "question": "What does a 'Multiplication Analogy' test, in contrast?",
+      "options": [
+        "An additive relationship",
+        "A pair of numbers related by a consistent multiplication rule (e.g., second = first x constant)",
+        "A squaring relationship only",
+        "A subtraction-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "A multiplication analogy tests a pair of numbers related by a consistent multiplicative factor, such as 3 : 12 (x4) matching 5 : 20.",
+      "id": 7
+    },
+    {
+      "question": "What does a 'Square Analogy' test?",
+      "options": [
+        "An additive relationship",
+        "A pair where the second number is the square of the first (or a related squaring rule)",
+        "A cube relationship",
+        "A word-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "A square analogy tests a relationship where the second number is the square of the first, such as 4 : 16 (4^2) matching 5 : 25.",
+      "id": 8
+    },
+    {
+      "question": "What does a 'Cube Analogy' test, in contrast to a Square Analogy?",
+      "options": [
+        "The same squaring relationship",
+        "A pair where the second number is the cube of the first, rather than the square",
+        "An addition-based relationship",
+        "A word synonym relationship"
+      ],
+      "correct": 1,
+      "rationale": "A cube analogy tests a relationship where the second number is the cube (n^3) of the first, rather than the square (n^2).",
+      "id": 9
+    },
+    {
+      "question": "In a Square Analogy where 4 : 16, what would complete 6 : ?",
+      "options": [
+        "12",
+        "24",
+        "36",
+        "42"
+      ],
+      "correct": 2,
+      "rationale": "Following the squaring rule (n : n^2), 6 squared is 36.",
+      "id": 10
+    }
+  ]
+}

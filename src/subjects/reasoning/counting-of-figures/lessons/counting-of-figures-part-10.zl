@@ -1,0 +1,265 @@
+# Counting of Figures — Part 10 of 12
+
+[info title="Part 10 of 12"]
+Continuing from the previous part. back to Part 9 (`counting-of-figures-part-9`) · continue to Part 11 (`counting-of-figures-part-11`).
+[/info]
+
+## 124. Practice Example — Rectangles Excluding Squares
+
+```text
+36-14
+```
+
+```text
+\boxed{22}
+```
+
+---
+
+## 125. Practice Example — 5 Points
+
+```text
+A──B──C──D──E
+```
+
+Segments:
+
+```text
+{5\choose2}=10
+```
+
+Answer:
+
+```text
+\boxed{10}
+```
+
+---
+
+## 126. Practice Example — Six Points
+
+```text
+A──B──C──D──E──F
+```
+
+```text
+{6\choose2}
+=
+15
+```
+
+Answer:
+
+```text
+\boxed{15}
+```
+
+---
+
+## 127. Practice Example — Seven Points
+
+```text
+{7\choose2}
+=
+21
+```
+
+Answer:
+
+```text
+\boxed{21}
+```
+
+---
+
+## 128. Segment Formula Chart
+
+| Points | Segments |
+|---:|---:|
+| 2 | 1 |
+| 3 | 3 |
+| 4 | 6 |
+| 5 | 10 |
+| 6 | 15 |
+| 7 | 21 |
+| 8 | 28 |
+| 9 | 36 |
+| 10 | 45 |
+
+---
+
+## 129. Intersection Formula Chart
+
+Maximum intersections of \(n\) general-position lines:
+
+```text
+{n\choose2}
+```
+
+| Lines | Intersections |
+|---:|---:|
+| 2 | 1 |
+| 3 | 3 |
+| 4 | 6 |
+| 5 | 10 |
+| 6 | 15 |
+| 7 | 21 |
+| 8 | 28 |
+| 9 | 36 |
+| 10 | 45 |
+
+---
+
+## 130. Region Formula Chart
+
+Maximum regions from \(n\) lines:
+
+```text
+\frac{n(n+1)}2+1
+```
+
+| Lines | Regions |
+|---:|---:|
+| 1 | 2 |
+| 2 | 4 |
+| 3 | 7 |
+| 4 | 11 |
+| 5 | 16 |
+| 6 | 22 |
+| 7 | 29 |
+| 8 | 37 |
+
+---
+
+## 131. Common Exam Question Types
+
+1. Number of triangles
+2. Number of squares
+3. Number of rectangles
+4. Number of quadrilaterals
+5. Number of line segments
+6. Number of circles
+7. Number of polygons
+8. Number of intersections
+9. Number of regions
+10. Number of hidden figures
+11. Number of composite figures
+12. Number of identical shapes
+13. Number of different shapes
+
+---
+
+## 132. Figure Counting Master Table
+
+| Figure | Main method |
+|---|---|
+| Line segment | Choose 2 points |
+| Square grid | Sum square sizes |
+| Rectangle grid | Choose boundary lines |
+| Triangle | Size + orientation + combinations |
+| Quadrilateral | Boundary/path method |
+| Circle | Complete circular boundaries |
+| Polygon | Count valid closed boundaries |
+| Intersections | Pairwise line intersections |
+| Regions | Partition analysis |
+| Complex | Vertex-edge graph |
+
+---
+
+## 133. Advanced Triangle Counting Formula Warning
+
+There are formulas for special triangular grids, but **do not use a memorized formula unless the diagram exactly matches its assumptions**.
+
+For arbitrary diagrams:
+
+```text
+\boxed{\text{Manual structural counting is safer}}
+```
+
+---
+
+## 134. Why Memorization Can Fail
+
+Two diagrams can both look triangular but have different:
+
+- internal lines
+- orientations
+- intersections
+- spacing
+- subdivisions
+
+Therefore they can have completely different triangle counts.
+
+---
+
+## 135. Best Strategy for Exam
+
+```text
+REGULAR GRID
+→ Formula
+
+IRREGULAR FIGURE
+→ Label + Count
+
+COMPLEX CROSSING
+→ Graph/vertex method
+
+TRIANGLE MESH
+→ Size + orientation table
+
+SYMMETRIC FIGURE
+→ Half-count + center check
+```
+
+---
+
+## 136. 30-Second Verification
+
+After calculating:
+
+```text
+1. Did I count small?
+2. Did I count medium?
+3. Did I count large?
+4. Did I count inverted?
+5. Did I count composite?
+6. Did I count outer?
+7. Did I double-count?
+```
+
+---
+
+## 137. Final Universal Algorithm
+
+```text
+                 DIAGRAM
+                    │
+                    ▼
+             Mark all vertices
+                    │
+                    ▼
+             Identify all edges
+                    │
+                    ▼
+        ┌───────────┼───────────┐
+        ▼           ▼           ▼
+      SMALL       MEDIUM       LARGE
+        │           │           │
+        └───────────┼───────────┘
+                    ▼
+             Check combinations
+                    │
+                    ▼
+             Check orientation
+                    │
+                    ▼
+             Check outer figure
+                    │
+                    ▼
+              Remove duplicates
+                    │
+                    ▼
+                   TOTAL
+```
+
+---

@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-9",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 9 of 12",
+  "questions": [
+    {
+      "question": "What does a 'Pairwise Difference Matrix' organize?",
+      "options": [
+        "Word meanings",
+        "The differences between multiple pairs of numbers, laid out systematically to help spot a consistent pattern",
+        "Only letter positions",
+        "A single unrelated value"
+      ],
+      "correct": 1,
+      "rationale": "This matrix systematically organizes the differences across multiple number pairs, making it easier to visually spot a consistent underlying pattern.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'Number Analogy Flowchart' provide?",
+      "options": [
+        "A random guess generator",
+        "A step-by-step decision path for identifying which numeric relationship (difference, ratio, square, etc.) applies",
+        "A chart of country capitals",
+        "A synonym for the master pattern table"
+      ],
+      "correct": 1,
+      "rationale": "This flowchart provides a systematic decision path for narrowing down which specific numeric relationship type applies to a given pair.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'Letter Analogy Flowchart' provide, similarly?",
+      "options": [
+        "The same flowchart as the number analogy one",
+        "A step-by-step decision path specifically for identifying which letter-based relationship (shift, mirror, etc.) applies",
+        "A chart unrelated to letters",
+        "A flowchart only for word synonyms"
+      ],
+      "correct": 1,
+      "rationale": "This flowchart provides the same systematic decision-path approach, but tailored specifically to identifying letter-based relationship types.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Word Analogy Flowchart' provide, in the same spirit?",
+      "options": [
+        "A flowchart for numbers only",
+        "A step-by-step decision path for identifying which word-based relationship (synonym, cause-effect, etc.) applies",
+        "A flowchart unrelated to analogy",
+        "The exact same flowchart as the letter analogy one"
+      ],
+      "correct": 1,
+      "rationale": "This flowchart applies the same systematic approach specifically to word-based relationships, helping identify which category (synonym, antonym, cause-effect, etc.) fits.",
+      "id": 4
+    },
+    {
+      "question": "What does 'Analogy as Graph' model relationships as?",
+      "options": [
+        "Unconnected random points",
+        "Nodes representing items connected by edges representing their relationships, similar to other structured reasoning graphs",
+        "Only numeric values with no connections",
+        "A single isolated example"
+      ],
+      "correct": 1,
+      "rationale": "This models analogy relationships as a graph, with items as nodes and their relationships as connecting edges \u2014 the same structural approach used in other reasoning topics.",
+      "id": 5
+    },
+    {
+      "question": "What is a 'Relationship Vector' in this context?",
+      "options": [
+        "A physical measuring tool",
+        "A representation of the specific transformation or relationship connecting one item to another, similar to a transformation vector in coding-decoding",
+        "A synonym for word length",
+        "An unrelated mathematical concept"
+      ],
+      "correct": 1,
+      "rationale": "A relationship vector represents the specific transformation connecting two related items, paralleling the transformation vector concept from coding-decoding.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Semantic Distance' measure?",
+      "options": [
+        "The physical distance between two objects",
+        "How closely or distantly related two words' meanings are",
+        "The number of letters in a word",
+        "A number's square value"
+      ],
+      "correct": 1,
+      "rationale": "Semantic distance measures how close or far apart two words' meanings are, which can help assess whether a candidate answer's relationship truly matches.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Structural Analogy' emphasize, as opposed to purely semantic (meaning-based) analogy?",
+      "options": [
+        "Only word meaning",
+        "The abstract structural pattern of the relationship, which can apply even across superficially different domains",
+        "Only numeric relationships",
+        "A relationship with no structure at all"
+      ],
+      "correct": 1,
+      "rationale": "Structural analogy emphasizes the abstract pattern of the relationship itself, which can hold even when comparing items from very different domains, as long as the underlying structure matches.",
+      "id": 8
+    },
+    {
+      "question": "What does a 'Relationship Direction Matrix' organize?",
+      "options": [
+        "Random unrelated facts",
+        "The forward and reverse versions of common relationship types, to help avoid the direction trap",
+        "Only number-based relationships",
+        "A synonym for the master pattern table"
+      ],
+      "correct": 1,
+      "rationale": "This matrix organizes relationship types alongside both their forward and reverse directions, directly helping to avoid the direction trap covered earlier.",
+      "id": 9
+    },
+    {
+      "question": "What do 'Common Exam Relationships' likely consolidate?",
+      "options": [
+        "Only rare, unusual relationship types",
+        "A list of the most frequently tested relationship categories, to prioritize learning and recognition",
+        "A list of unrelated topics",
+        "Only number-based relationships"
+      ],
+      "correct": 1,
+      "rationale": "This section likely consolidates the most frequently tested relationship categories, helping prioritize which patterns are most valuable to recognize quickly.",
+      "id": 10
+    }
+  ]
+}

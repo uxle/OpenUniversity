@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-4",
+  "title": "Counting of Figures \u2014 Part 4 of 12",
+  "questions": [
+    {
+      "question": "Using the intersection formula, how many intersection points do 4 lines (no two parallel, no three concurrent) create at most?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": 2,
+      "rationale": "C(4,2) = 4 x 3 / 2 = 6 intersection points.",
+      "id": 1
+    },
+    {
+      "question": "Using the same formula, how many intersection points do 5 such lines create at most?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "12"
+      ],
+      "correct": 2,
+      "rationale": "C(5,2) = 5 x 4 / 2 = 10 intersection points.",
+      "id": 2
+    },
+    {
+      "question": "What is the formula for the maximum number of regions created by n lines in a plane (general position)?",
+      "options": [
+        "n^2",
+        "1 + n + C(n,2)",
+        "2^n",
+        "n(n-1)"
+      ],
+      "correct": 1,
+      "rationale": "Each new line, in general position, adds as many new regions as the number of existing lines it crosses plus one, leading to the closed form 1 + n + C(n,2).",
+      "id": 3
+    },
+    {
+      "question": "Why does figure counting get significantly more difficult as more lines/shapes are added?",
+      "options": [
+        "It doesn't get more difficult, it stays constant",
+        "The number of possible combinations of basic elements grows combinatorially, making visual/manual counting increasingly error-prone",
+        "More lines always means fewer figures",
+        "Additional lines never create new figures"
+      ],
+      "correct": 1,
+      "rationale": "As more lines or shapes are added, the number of possible combinations grows combinatorially (not linearly), which is exactly why a systematic method becomes essential.",
+      "id": 4
+    },
+    {
+      "question": "What does the 'layer method' involve?",
+      "options": [
+        "Ignoring all but the outermost layer of a figure",
+        "Breaking a complex figure into successive layers or levels and counting figures within and across each layer systematically",
+        "Drawing the figure in a different color for each layer",
+        "Only applies to circular figures"
+      ],
+      "correct": 1,
+      "rationale": "The layer method decomposes a complex figure into successive layers, counting figures within each layer and across layer boundaries systematically.",
+      "id": 5
+    },
+    {
+      "question": "What is the purpose of a 'sweep method' in figure counting?",
+      "options": [
+        "To erase parts of the figure",
+        "Systematically scanning across the figure (e.g., left to right) to catch every valid figure boundary in order, avoiding missed cases",
+        "To randomly sample sections of the figure",
+        "To count only the figure's area, not its boundary"
+      ],
+      "correct": 1,
+      "rationale": "A sweep method scans systematically across the figure in a fixed order, which helps ensure every valid figure boundary is encountered and none are missed.",
+      "id": 6
+    },
+    {
+      "question": "What does the 'marking method' help prevent?",
+      "options": [
+        "Drawing new lines by mistake",
+        "Re-counting the same figure twice, by marking/tracking figures already counted",
+        "Missing the outer boundary of the figure",
+        "Confusing squares with rectangles"
+      ],
+      "correct": 1,
+      "rationale": "By marking figures as they're counted, this method prevents the same valid figure from being accidentally counted again later in the process.",
+      "id": 7
+    },
+    {
+      "question": "What is a 'hidden boundary trap'?",
+      "options": [
+        "A boundary that is drawn twice",
+        "Mistakenly counting a figure whose boundary is only partially drawn, assuming a missing line segment is actually present",
+        "A boundary hidden behind another figure physically",
+        "A boundary that changes shape over time"
+      ],
+      "correct": 1,
+      "rationale": "This trap occurs when a figure looks complete at a glance but is actually missing part of its boundary \u2014 assuming it's complete without verifying leads to an incorrect count.",
+      "id": 8
+    },
+    {
+      "question": "What does the 'shared line principle' state?",
+      "options": [
+        "Shared lines make both figures invalid",
+        "Multiple figures can validly share the same line segment as part of their boundary, so a shared line shouldn't cause a figure to be miscounted or skipped",
+        "Only one figure may ever use a given line segment",
+        "Shared lines should always be counted as separate figures"
+      ],
+      "correct": 1,
+      "rationale": "The shared line principle clarifies that two or more distinct valid figures can legitimately share a common boundary segment \u2014 this shouldn't cause confusion or a miscount.",
+      "id": 9
+    },
+    {
+      "question": "What is the 'double counting trap'?",
+      "options": [
+        "Forgetting to count a figure at all",
+        "Accidentally counting the same valid figure more than once, usually because it was recognized from two different starting points or directions",
+        "Counting a figure that doesn't actually exist",
+        "Only counting figures of one specific size"
+      ],
+      "correct": 1,
+      "rationale": "This trap happens when the same figure is recognized and counted more than once, often because it was approached from two different starting points during the counting process.",
+      "id": 10
+    }
+  ]
+}

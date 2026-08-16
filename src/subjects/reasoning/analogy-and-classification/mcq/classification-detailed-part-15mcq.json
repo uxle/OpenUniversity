@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-15",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 15 of 16",
+  "questions": [
+    {
+      "question": "What does the 'Elimination Technique' involve in classification?",
+      "options": [
+        "Guessing the answer immediately",
+        "Systematically ruling out items that clearly fit the majority property, narrowing down to the true exception",
+        "Ignoring the majority property entirely",
+        "Randomly removing items"
+      ],
+      "correct": 1,
+      "rationale": "This technique systematically rules out items that clearly share the majority property, progressively narrowing down toward the genuine exception.",
+      "id": 1
+    },
+    {
+      "question": "What is 'Reverse Elimination'?",
+      "options": [
+        "The same process as regular elimination",
+        "Starting from a hypothesized exception and confirming that removing it leaves a clean, consistent shared property among the rest",
+        "A technique that never actually works",
+        "A technique unrelated to elimination"
+      ],
+      "correct": 1,
+      "rationale": "Reverse elimination starts from a hypothesized exception and verifies that removing it leaves a clean, well-supported shared property among the remaining items.",
+      "id": 2
+    },
+    {
+      "question": "What does an 'Exam Speed Framework' for classification balance?",
+      "options": [
+        "Only speed, ignoring accuracy",
+        "Quickly recognizing common property patterns while still validating the rule before committing to a final answer",
+        "Only accuracy, ignoring speed",
+        "Randomly guessing to save time"
+      ],
+      "correct": 1,
+      "rationale": "A good speed framework balances fast pattern recognition with still properly validating the identified rule before finalizing the answer.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Quick Property Checklist' provide?",
+      "options": [
+        "A lengthy multi-step derivation",
+        "A short list of the most common property categories to quickly check against a given group",
+        "Only number-based checks",
+        "A checklist with no practical use"
+      ],
+      "correct": 1,
+      "rationale": "This provides a fast, short list of the most common property categories, helping quickly narrow down which type of shared property likely applies.",
+      "id": 4
+    },
+    {
+      "question": "What is the primary purpose of 'Solved Examples 1 through 15' across this part of the lesson?",
+      "options": [
+        "To introduce entirely new property types",
+        "To demonstrate the solving process applied to a range of realistic classification problems, reinforcing the techniques already covered",
+        "To replace the need for the four-stage method",
+        "To only test number classification"
+      ],
+      "correct": 1,
+      "rationale": "These worked examples demonstrate the solving process on a range of realistic problems, reinforcing the various property types and techniques introduced earlier.",
+      "id": 5
+    },
+    {
+      "question": "Why does 'Solved Example 11 \u2014 Pair Classification' appear alongside 'Solved Example 12 \u2014 Letter Pairs' and similar variety?",
+      "options": [
+        "To repeat the exact same technique each time",
+        "To demonstrate the solving process across the different specific classification sub-types (pairs, letters, digits, computer, science) covered earlier",
+        "Because only one sub-type is actually tested in exams",
+        "Because variety has no pedagogical value"
+      ],
+      "correct": 1,
+      "rationale": "Covering a range of different sub-types in the solved examples reinforces the breadth of classification categories a learner needs to be able to recognize and solve.",
+      "id": 6
+    },
+    {
+      "question": "What is the value of working through 'Advanced Numerical Classification' examples after the earlier, more general examples?",
+      "options": [
+        "It has no additional value",
+        "It deepens skill specifically in numeric property detection (factors, digit properties, hidden patterns), which is often the most calculation-heavy sub-type",
+        "Numeric classification is never actually tested",
+        "It replaces the need for the earlier general examples"
+      ],
+      "correct": 1,
+      "rationale": "Advanced numerical examples deepen skill specifically in the calculation-heavy numeric sub-types, building on the general techniques already established.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Classification by Algebraic Form' test?",
+      "options": [
+        "A word-meaning property",
+        "Whether a group of numbers/expressions share a common algebraic structure (like all fitting n^2+1), with one breaking it",
+        "A geography-based property",
+        "A biology-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers or expressions share a common underlying algebraic formula or structure, identifying the one that doesn't fit that formula.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Classification by Prime Factorization' test?",
+      "options": [
+        "A simple digit sum property",
+        "Whether a group of numbers share a common pattern in their prime factorization, with one breaking that pattern",
+        "A word-meaning property",
+        "A geography-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers share a common pattern in how they break down into prime factors, identifying the number whose factorization differs.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Classification by Last Digit' test?",
+      "options": [
+        "A first-digit property",
+        "Whether a group of numbers all share the same last digit, with one number ending differently",
+        "A digit-count property",
+        "A prime-factorization property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers all share the same final digit, identifying the number that ends with a different digit.",
+      "id": 10
+    }
+  ]
+}

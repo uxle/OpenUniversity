@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-7",
+  "title": "Counting of Figures \u2014 Part 7 of 12",
+  "questions": [
+    {
+      "question": "What is the purpose of a 'grid formula chart' in this lesson?",
+      "options": [
+        "To replace the need to understand the formulas",
+        "To provide a quick-reference summary of the square/rectangle counting formulas for different grid sizes, rather than re-deriving them each time",
+        "To only list formulas for triangles",
+        "To show only worked examples, no formulas"
+      ],
+      "correct": 1,
+      "rationale": "A grid formula chart consolidates the square and rectangle counting formulas into a single quick-reference summary, saving time re-deriving them each time.",
+      "id": 1
+    },
+    {
+      "question": "What does 'counting by direction' help ensure when counting triangles in a grid?",
+      "options": [
+        "That only the largest triangle is counted",
+        "That triangles pointing in every valid orientation (not just the most obvious one) are all counted",
+        "That triangles are counted in alphabetical order",
+        "That only right-angled triangles are included"
+      ],
+      "correct": 1,
+      "rationale": "Counting by direction ensures triangles in every valid pointing orientation \u2014 not just the most visually obvious one \u2014 are included in the total.",
+      "id": 2
+    },
+    {
+      "question": "What is the 'rotation rule' likely used for in figure counting?",
+      "options": [
+        "Physically rotating the paper the figure is drawn on",
+        "Checking whether a candidate figure remains valid when considered from a different orientation, to catch figures easy to miss from only one viewing angle",
+        "Only applies to circular figures",
+        "Rotating the final numeric answer"
+      ],
+      "correct": 1,
+      "rationale": "The rotation rule involves checking a candidate figure from different orientations, which helps catch valid figures that are easy to overlook when only considering one fixed viewing angle.",
+      "id": 3
+    },
+    {
+      "question": "What is the difference between 'congruent' and 'the same figure' when counting?",
+      "options": [
+        "They mean exactly the same thing",
+        "Congruent figures are equal in shape and size but are still separate, distinct figures if located in different positions; only truly identical position and boundary makes them 'the same figure'",
+        "Congruent figures should never be counted at all",
+        "Congruent figures always overlap completely"
+      ],
+      "correct": 1,
+      "rationale": "Congruent figures share the same shape and size but occupy different positions, so each is counted separately \u2014 only an identical position and boundary makes two figures 'the same' one.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'nested figure'?",
+      "options": [
+        "A figure with no boundary",
+        "A smaller figure that lies completely inside a larger figure, sharing part or all of its boundary",
+        "A figure made entirely of dashed lines",
+        "A figure that changes size over time"
+      ],
+      "correct": 1,
+      "rationale": "A nested figure sits entirely within a larger figure, often sharing part or all of its boundary with the outer shape.",
+      "id": 5
+    },
+    {
+      "question": "What does 'shared vertices' refer to when counting figures?",
+      "options": [
+        "Vertices that are never valid",
+        "Multiple valid figures can meet at or share a common corner point without being the same figure",
+        "Only one figure may ever touch a given vertex",
+        "Vertices shared between figures should be ignored"
+      ],
+      "correct": 1,
+      "rationale": "Several distinct valid figures can legitimately meet at a shared corner point without that making them the same figure \u2014 this needs to be handled correctly during counting.",
+      "id": 6
+    },
+    {
+      "question": "What does 'shared edges' refer to?",
+      "options": [
+        "Edges that cannot be part of any figure",
+        "Multiple valid figures can share a common boundary line segment without being the same figure",
+        "Only squares can share edges",
+        "Shared edges automatically merge two figures into one"
+      ],
+      "correct": 1,
+      "rationale": "Just like shared vertices, multiple distinct figures can share a common edge as part of their boundary without becoming the same figure.",
+      "id": 7
+    },
+    {
+      "question": "What is the 'missing-line trap'?",
+      "options": [
+        "Drawing an extra unnecessary line",
+        "Mistakenly counting a figure whose complete boundary isn't actually present in the original diagram",
+        "Forgetting to label a vertex",
+        "Confusing a line with a curve"
+      ],
+      "correct": 1,
+      "rationale": "This trap involves counting a figure that looks complete but is actually missing part of its true boundary in the original diagram.",
+      "id": 8
+    },
+    {
+      "question": "What is the 'crossing-line trap'?",
+      "options": [
+        "Two lines that never actually cross",
+        "Mistakenly treating two lines that merely cross as if they formed a shared vertex or boundary, when they don't define a valid figure there",
+        "A trap that only applies to circles",
+        "Confusing a crossing point with the figure's center"
+      ],
+      "correct": 1,
+      "rationale": "This trap occurs when two lines simply crossing (intersecting) is mistaken for them forming a valid shared boundary or vertex for a new figure, when it isn't.",
+      "id": 9
+    },
+    {
+      "question": "Why does an intersection between two lines potentially 'create new triangles'?",
+      "options": [
+        "Intersections never create new figures",
+        "The intersection point can serve as a new vertex, allowing smaller triangles to form using it as a corner, which weren't present before the lines crossed",
+        "Intersections only ever create new squares",
+        "Intersections destroy any triangles already present"
+      ],
+      "correct": 1,
+      "rationale": "A new intersection point can act as a vertex for smaller triangles that use it as a corner, meaning crossing lines can genuinely add new valid triangles to the count.",
+      "id": 10
+    }
+  ]
+}

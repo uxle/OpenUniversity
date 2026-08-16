@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-7",
+  "title": "Clock Reasoning \u2014 Part 7 of 10",
+  "questions": [
+    {
+      "question": "What is a common clock mistake this lesson warns about regarding AM/PM?",
+      "options": [
+        "Confusing AM and PM, or mishandling the 12:00 boundary (12 AM vs 12 PM)",
+        "Forgetting the clock has a second hand",
+        "Reading the clock upside down",
+        "Using a digital instead of analog clock"
+      ],
+      "correct": 0,
+      "rationale": "AM/PM confusion, especially around the 12:00 boundary (where 12 AM is midnight and 12 PM is noon), is one of the most common sources of clock reasoning errors.",
+      "id": 1
+    },
+    {
+      "question": "What does 'dimensional consistency' mean in clock reasoning calculations?",
+      "options": [
+        "Making sure the clock face is perfectly round",
+        "Making sure you don't mix incompatible units (like adding a value in minutes directly to a value in hours) without converting first",
+        "Ensuring all answers are given in degrees",
+        "Checking that the clock has exactly two hands"
+      ],
+      "correct": 1,
+      "rationale": "Dimensional consistency means never combining values in different units without first converting them to a common unit, avoiding silently wrong results.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'temporal unit type system' designed to prevent?",
+      "options": [
+        "Clocks from running too fast",
+        "Silently mixing different time units (seconds, minutes, hours) in a calculation without proper conversion",
+        "Users from entering negative numbers",
+        "Time zones from existing"
+      ],
+      "correct": 1,
+      "rationale": "A typed system for time units catches unit-mismatch errors \u2014 like treating a value labeled 'seconds' as if it were 'minutes' \u2014 before they produce a wrong final answer.",
+      "id": 3
+    },
+    {
+      "question": "What does an 'example internal representation' typically store for a parsed time?",
+      "options": [
+        "Only the original sentence text",
+        "A normalized numeric value (like total minutes) plus any relevant unit/context metadata",
+        "A picture of a clock face",
+        "Nothing \u2014 parsed times aren't stored"
+      ],
+      "correct": 1,
+      "rationale": "The internal representation typically holds a normalized numeric value alongside metadata about its unit and context, so it can be reasoned over consistently.",
+      "id": 4
+    },
+    {
+      "question": "What role does a 'clock reasoning engine' play in this architecture?",
+      "options": [
+        "It only draws clock diagrams",
+        "It ties together parsing, normalization, constraint solving, and output formatting into one coherent process",
+        "It replaces the need for the clock-angle formula",
+        "It only handles time zone conversions"
+      ],
+      "correct": 1,
+      "rationale": "The reasoning engine is the overall system that chains together every stage \u2014 parsing, normalizing, solving constraints, and formatting the output \u2014 into one consistent pipeline.",
+      "id": 5
+    },
+    {
+      "question": "In a 'complete reasoning example,' why is it useful to trace every step explicitly?",
+      "options": [
+        "It isn't useful, only the final answer matters",
+        "It shows how each rule (normalization, arithmetic, constraint-solving) is applied in sequence, making errors easier to catch",
+        "It makes the example longer for no reason",
+        "It replaces the need for verification"
+      ],
+      "correct": 1,
+      "rationale": "Tracing each step explicitly lets you see exactly where a rule was applied, which makes it much easier to spot exactly where an error was introduced, if any.",
+      "id": 6
+    },
+    {
+      "question": "Why can skipping unit normalization before arithmetic cause errors?",
+      "options": [
+        "It never causes errors",
+        "Because operations on inconsistent units silently produce wrong-magnitude results",
+        "Because normalization is only cosmetic",
+        "Because arithmetic doesn't require units at all"
+      ],
+      "correct": 1,
+      "rationale": "Without normalization, mixing units (like treating 45 as minutes in one step and as hours in another) silently produces a numerically wrong, but not obviously invalid, result.",
+      "id": 7
+    },
+    {
+      "question": "What is one benefit of a typed internal representation over plain numbers for time values?",
+      "options": [
+        "It runs faster on all computers",
+        "It can catch unit-mismatch errors (e.g., treating seconds as minutes) before they produce a wrong final answer",
+        "It requires less memory",
+        "It removes the need for the clock-angle formula"
+      ],
+      "correct": 1,
+      "rationale": "A typed representation can flag when a value's unit doesn't match what an operation expects, catching a whole class of silent unit-mixing bugs.",
+      "id": 8
+    },
+    {
+      "question": "Why does the lesson recommend building a systematic engine rather than relying on ad hoc calculation for complex problems?",
+      "options": [
+        "Ad hoc calculation is always faster and equally reliable",
+        "Ad hoc calculation is more error-prone for multi-step, multi-constraint problems, while a systematic engine applies consistent rules at each stage",
+        "Systematic engines are only needed for time zone problems",
+        "There is no real difference between the two approaches"
+      ],
+      "correct": 1,
+      "rationale": "For multi-step, multi-constraint problems, ad hoc calculation is far more likely to introduce inconsistent handling somewhere along the way than a systematic, rule-based engine.",
+      "id": 9
+    },
+    {
+      "question": "What is the value of a 'complete reasoning example' in a lesson like this?",
+      "options": [
+        "It has no real value beyond padding the lesson",
+        "It demonstrates the full pipeline end-to-end on a realistic problem, showing how the individual concepts combine in practice",
+        "It replaces the need to learn the clock-angle formula",
+        "It only tests memorization of the example itself"
+      ],
+      "correct": 1,
+      "rationale": "Working through a complete example end-to-end shows how the individually-introduced concepts (parsing, normalization, constraints, verification) actually combine to solve a realistic problem.",
+      "id": 10
+    }
+  ]
+}

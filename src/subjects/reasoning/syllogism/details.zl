@@ -1,0 +1,12 @@
+# Syllogism
+
+@subject {
+  id: syllogism
+  title: "Syllogism"
+  parent: reasoning
+  description: "Statement-and-conclusion logic using the four A/E/I/O statement types."
+}
+
+@lessons {
+  syllogism-reasoning
+}

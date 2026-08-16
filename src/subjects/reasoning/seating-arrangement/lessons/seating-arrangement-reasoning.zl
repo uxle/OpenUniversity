@@ -1,0 +1,129 @@
+# Seating Arrangement Reasoning
+
+> Seating arrangement reasoning gives you a set of clues about where people sit — in a row, around a table, or in a grid — and asks you to reconstruct the full arrangement, then answer questions about it.
+
+[important]
+Never try to solve a seating arrangement entirely in your head. Sketch it, place the clues one at a time, and update the sketch as each new clue narrows the possibilities. Most errors come from skipping the sketch, not from misunderstanding the clues.
+[/important]
+
+## 1. What Seating Arrangement Tests
+
+A typical question gives 5–8 clues about a group of people and one shape (row, circle, square) they're seated in, such as:
+
+```text
+8 people sit in a row facing north.
+P sits third from the left.
+Q sits immediately to the right of P.
+R sits at one of the extreme ends.
+...
+```
+
+The goal is to place every person in exactly one seat, satisfying all clues at once — then answer "who sits next to X," "how many people sit between Y and Z," and similar questions.
+
+## 2. Linear Arrangement Basics
+
+In a straight row, positions are usually numbered left to right, and every person faces one fixed direction (commonly "north," meaning their left/right matches the reader's left/right on the page).
+
+[tip]
+Read the facing direction first. If everyone faces **south** instead of north, "left" and "right" flip relative to the page — a clue like "Q is to the left of P" then means Q is to the reader's *right* of P on your sketch.
+[/tip]
+
+## 3. Circular / Round-Table Arrangement
+
+In a circular arrangement, there is no fixed "start," so positions are described relative to each other (clockwise/anticlockwise, immediate neighbour, opposite) rather than by a fixed left/right.
+
+@diagram network id="round-table-example" layout="circular" aria="Six people seated around a circular table, labelled with clock-style positions"
+node p1 [label="Seat 1"]
+node p2 [label="Seat 2"]
+node p3 [label="Seat 3"]
+node p4 [label="Seat 4"]
+node p5 [label="Seat 5"]
+node p6 [label="Seat 6"]
+
+edge p1 -> p2
+edge p2 -> p3
+edge p3 -> p4
+edge p4 -> p5
+edge p5 -> p6
+edge p6 -> p1
+@/diagram
+
+[warning]
+"Facing the center" and "facing outward" reverse clockwise and anticlockwise relative to each other. A clue like "sitting to the immediate right" means something different for a center-facing group than for an outward-facing one — always confirm which way the group faces before applying a directional clue.
+[/warning]
+
+## 4. Facing Center vs Facing Outward
+
+```text
+Facing the center:    clockwise motion looks like it goes "left to right" from each person's own view
+Facing outward:       clockwise motion looks reversed from each person's own view
+```
+
+If the question doesn't say which way the group faces, most exams default to "facing the center" — but always check the question stem for an explicit statement before assuming.
+
+## 5. Clue Types You'll See
+
+| Clue phrase | What it fixes |
+|---|---|
+| "sits third from the left" | An absolute position (row only) |
+| "sits at one of the extreme ends" | One of exactly two possible positions (row only) |
+| "immediately to the right/left of" | A relative position, adjacent, one direction only |
+| "is a neighbour of" | Adjacent, either direction |
+| "sits exactly between X and Y" | An absolute middle position relative to two others |
+| "as many people between A and B as between C and D" | A relational count constraint, not a fixed position |
+| "sits opposite to" | Circular arrangement only — directly across the table |
+
+## 6. Building an Arrangement Step by Step
+
+1. Draw the shape (row of boxes, or a circle of seats) before reading any clue in detail.
+2. Place the clues that fix an **absolute** position first (extreme ends, "third from the left," "exactly between").
+3. Then place clues that are **relative** to an already-placed person (immediate neighbour, immediately right of).
+4. Save vague or count-based clues ("as many between... as between...") for last — they usually only work once most seats are already filled, since they eliminate options rather than fixing a position directly.
+5. If a clue creates two possible arrangements, keep both as branches and use the next clue to eliminate one.
+
+## 7. Double Row Arrangement
+
+Some questions use two parallel rows facing each other (e.g., one row facing north, the other facing south). Clues about "sits opposite to" then link a seat in one row directly to a seat in the other.
+
+```text
+Row 1 (facing south): 1  2  3  4
+Row 2 (facing north): 5  6  7  8
+Seat 1 is opposite Seat 5, Seat 2 opposite Seat 6, and so on.
+```
+
+[info]
+Because the two rows face each other, "left" and "right" are mirrored between them — what's to Row 1's left is to Row 2's right at the same opposite position.
+[/info]
+
+## 8. Solved Example
+
+Six people — A, B, C, D, E, F — sit around a circular table, facing the center.
+
+```text
+Clues:
+1. A sits third to the right of B.
+2. C is an immediate neighbour of both A and D.
+3. E sits second to the left of B.
+4. F sits between D and B.
+```
+
+Working: place B first at any seat (say seat 1, clockwise 1→6). "Third to the right of B" (clockwise) puts A at seat 4. "Second to the left of B" puts E at seat 5 (moving anticlockwise from seat 1 by two). Clue 4 says F is between D and B — since B is at seat 1, and seat 6 or seat 2 are B's immediate neighbours, F must occupy one of those with D on its other side. Clue 2 places C next to both A (seat 4) and D — testing the remaining seats (2, 3, 6) against this constraint pins down C, D, and F uniquely. *(This is exactly the trial-and-branch process from Section 6, step 5 — an absolute clue first, then relative clues to narrow the rest.)*
+
+## 9. Common Mistakes to Avoid
+
+- **Do not** assume "left" and "right" mean the same thing regardless of facing direction — always check which way people face first.
+- **Do not** treat "neighbour" as directional — it means adjacent on either side unless the clue specifically says "immediate right" or "immediate left."
+- **Do not** finalize an arrangement from only the absolute clues — always check every clue again once the grid is filled, since a later clue may reveal an earlier branch was wrong.
+- **Do** keep two (or more) candidate arrangements in mind when a clue is ambiguous, rather than guessing and moving on.
+
+## 10. Quick Reference
+
+| Arrangement shape | Key extra consideration |
+|---|---|
+| Single row | Fixed left/right, depends on facing direction |
+| Circle | No fixed start; use clockwise/anticlockwise and "opposite" |
+| Double row | Mirrored left/right between the two rows; "opposite" links rows |
+
+[example]
+Working method: **(1)** sketch the shape first, **(2)** place absolute-position clues, **(3)** place relative-position clues anchored to those, **(4)** use count/comparison clues last to break remaining ties, **(5)** re-check every clue against the finished sketch.
+[/example]

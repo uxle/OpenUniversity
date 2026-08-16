@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-5",
+  "title": "Counting of Figures \u2014 Part 5 of 12",
+  "questions": [
+    {
+      "question": "What does a 'graph representation' of a figure-counting problem use as its nodes and edges?",
+      "options": [
+        "Colors as nodes, shapes as edges",
+        "The figure's vertices as nodes and its line segments as edges",
+        "Only the figure's area as a single node",
+        "Random labels unrelated to the figure"
+      ],
+      "correct": 1,
+      "rationale": "A graph representation models the figure's vertices as nodes and its line segments as edges connecting them, the same idea used elsewhere in structured reasoning.",
+      "id": 1
+    },
+    {
+      "question": "What is the 'closed-path concept' central to in graph-based figure counting?",
+      "options": [
+        "Drawing decorative borders",
+        "A valid geometric figure corresponds to a closed path (cycle) in the graph representation",
+        "Only open, non-closed paths count as figures",
+        "Counting the number of nodes only"
+      ],
+      "correct": 1,
+      "rationale": "In this framework, a valid geometric figure corresponds to a closed path \u2014 a cycle \u2014 traced through the graph's nodes and edges.",
+      "id": 2
+    },
+    {
+      "question": "In graph terms, a triangle corresponds to what?",
+      "options": [
+        "A 2-cycle",
+        "A 3-cycle (a closed path of 3 edges/vertices)",
+        "A 4-cycle",
+        "An open path with no cycle"
+      ],
+      "correct": 1,
+      "rationale": "A triangle, having 3 vertices and 3 connecting edges forming a closed loop, corresponds to a 3-cycle in graph terms.",
+      "id": 3
+    },
+    {
+      "question": "In graph terms, a rectangle corresponds to what?",
+      "options": [
+        "A 3-cycle",
+        "A 4-cycle (a closed path of 4 edges/vertices)",
+        "A 5-cycle",
+        "A single edge"
+      ],
+      "correct": 1,
+      "rationale": "A rectangle, with its 4 vertices and 4 connecting edges forming a closed loop, corresponds to a 4-cycle.",
+      "id": 4
+    },
+    {
+      "question": "Why are 'graph cycles not always geometric figures'?",
+      "options": [
+        "All graph cycles are always valid figures",
+        "A cycle might not correspond to a straight-edged, non-self-intersecting geometric shape, so each candidate cycle must still be validated geometrically",
+        "Cycles only exist in triangular grids",
+        "Because graphs cannot represent geometric shapes at all"
+      ],
+      "correct": 1,
+      "rationale": "A cycle in the abstract graph doesn't automatically guarantee a valid geometric shape \u2014 it must still be checked against the actual geometric constraints of the figure.",
+      "id": 5
+    },
+    {
+      "question": "What is the purpose of a 'figure-counting checklist'?",
+      "options": [
+        "To replace the need for any formulas",
+        "To systematically verify each step (basic figures, composite figures, double-counting checks) hasn't been skipped before finalizing a count",
+        "To list every possible color a figure could be",
+        "To only be used after the count is already finalized"
+      ],
+      "correct": 1,
+      "rationale": "A checklist ensures every stage of the counting process \u2014 basic figures, composites, double-counting checks \u2014 has actually been carried out before the final answer is given.",
+      "id": 6
+    },
+    {
+      "question": "In a 2x3 grid of unit squares, how many 1x1 squares are there?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": 2,
+      "rationale": "A 2-row by 3-column grid contains 2 x 3 = 6 unit (1x1) squares.",
+      "id": 7
+    },
+    {
+      "question": "In that same 2x3 grid, how many 2x2 squares are there?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "rationale": "A 2x2 square can start at either of 2 possible horizontal positions within a 3-wide, 2-tall grid, giving 2 total 2x2 squares.",
+      "id": 8
+    },
+    {
+      "question": "So what is the total number of squares of all sizes in a 2x3 grid?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correct": 2,
+      "rationale": "6 unit squares plus 2 of size 2x2 gives a total of 8 squares.",
+      "id": 9
+    },
+    {
+      "question": "When 'counting rectangles excluding squares' in a grid, what must you do?",
+      "options": [
+        "Only count 1x1 shapes",
+        "Count all rectangles of every size, then subtract out the ones that happen to be squares (equal width and height)",
+        "Count only rectangles with an odd perimeter",
+        "Ignore the grid's boundary lines entirely"
+      ],
+      "correct": 1,
+      "rationale": "Since every square is technically a rectangle, excluding squares means counting all rectangles first and then subtracting the count of squares from that total.",
+      "id": 10
+    }
+  ]
+}

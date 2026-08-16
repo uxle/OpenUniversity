@@ -1,0 +1,145 @@
+# Clock Reasoning — Part 10 of 10
+
+[info title="Part 10 of 10"]
+Continuing from the previous part. back to Part 9 (`clock-reasoning-part-9`).
+[/info]
+
+## 74. Final Architecture
+
+A mature Clock Reasoning subsystem can be organized as:
+
+```text
+                    CLOCK REASONING
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+   PERCEPTION          LANGUAGE          KNOWLEDGE
+        │                  │                  │
+   Clock Image        Time Parser       Clock Rules
+   Hand Detection     Duration Parser   Calendar Rules
+   Angle Detection    Context Parser    Time Units
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           │
+                    TEMPORAL IR / AST
+                           │
+              ┌────────────┼────────────┐
+              │            │            │
+          Arithmetic    Geometry    Constraints
+              │            │            │
+          Add/Subtract   Angles     Scheduling
+          Difference     Hands      Intervals
+              │            │            │
+              └────────────┼────────────┘
+                           │
+                       VALIDATOR
+                           │
+                  ┌────────┴────────┐
+                  │                 │
+              Correct            Incorrect
+                  │                 │
+                  ↓                 ↓
+              Formatter          Recompute
+                  │
+                  ↓
+               ANSWER
+```
+
+The most important idea is that **clock reasoning should not be one giant function**.
+
+It should be a collection of specialized components working together.
+
+## 75. Summary
+
+Clock reasoning combines:
+
+```text
+Language Understanding
++
+Temporal Representation
++
+Unit Conversion
++
+Arithmetic
++
+Circular Mathematics
++
+Geometry
++
+Constraint Solving
++
+Context
++
+Validation
+```
+
+A basic system needs:
+
+```text
+hours
+minutes
+seconds
+addition
+subtraction
+normalization
+```
+
+A more advanced system adds:
+
+```text
+AM/PM
+dates
+intervals
+temporal relationships
+scheduling
+```
+
+An advanced intelligent system can further add:
+
+```text
+analog-clock vision
+clock geometry
+uncertainty
+contextual interpretation
+time zones
+temporal graphs
+constraint solving
+proof traces
+self-verification
+```
+
+The key architecture is:
+
+```text
+UNDERSTAND
+    ↓
+REPRESENT
+    ↓
+REASON
+    ↓
+VERIFY
+    ↓
+EXPLAIN
+```
+
+This makes clock reasoning a small but powerful example of how a broader AI can combine **natural-language understanding with deterministic symbolic reasoning**.
+
+Instead of memorizing:
+
+```text
+"11:40 PM + 2h35m = 2:15 AM"
+```
+
+the AI learns the underlying structure:
+
+```text
+TIME + DURATION
+       ↓
+TEMPORAL ARITHMETIC
+       ↓
+DAY NORMALIZATION
+       ↓
+VERIFIED TIME
+```
+
+and can therefore solve essentially unlimited variations of the same class of problem.

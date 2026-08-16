@@ -1,0 +1,126 @@
+{
+  "lessonId": "series-reasoning",
+  "title": "Number and Alphabet Series Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the series 2, 3, 5, 8, 12, ..., what pattern connects the terms?",
+      "options": [
+        "A constant difference of 1",
+        "A constant ratio of 1.5",
+        "The differences between terms increase by 1 each time (1, 2, 3, 4)",
+        "Each term is a perfect square"
+      ],
+      "correct": 2,
+      "rationale": "The differences are 1, 2, 3, 4 \u2014 increasing by 1 each step. This is a second-order (difference-of-differences) pattern rather than a simple arithmetic or geometric one."
+    },
+    {
+      "id": 2,
+      "question": "What should you suspect when no simple arithmetic, geometric, or difference-based rule fits a number series?",
+      "options": [
+        "The question has no valid answer",
+        "An alternating series \u2014 split it into two interleaved sub-series and test each separately",
+        "The series must involve only prime numbers",
+        "The series is definitely miswritten"
+      ],
+      "correct": 1,
+      "rationale": "Many series interleave two separate patterns on odd and even positions. Splitting the series into its two sub-sequences and testing each independently often reveals the hidden rule."
+    },
+    {
+      "id": 3,
+      "question": "In the alphabet series B, D, F, H, ?, what is the next letter?",
+      "options": [
+        "I",
+        "J",
+        "K",
+        "L"
+      ],
+      "correct": 1,
+      "rationale": "Positions are 2, 4, 6, 8 \u2014 increasing by 2 each time. The next position is 10, which is J."
+    },
+    {
+      "id": 4,
+      "question": "In the series X, Z, B, D, why doesn't the pattern break after Z?",
+      "options": [
+        "It does break \u2014 Z is the wrong term",
+        "The alphabet wraps around, so after Z the sequence continues from A",
+        "This is not a valid alphabet series",
+        "Z is always the last term allowed in any series"
+      ],
+      "correct": 1,
+      "rationale": "The alphabet is treated as a loop of 26 letters for series purposes, so a skip-pattern series can wrap from Z back to A and continue normally."
+    },
+    {
+      "question": "In the series 3, 6, 12, 24, 48, ?, what is the next term?",
+      "options": [
+        "72",
+        "84",
+        "96",
+        "108"
+      ],
+      "correct": 2,
+      "rationale": "The ratio between consecutive terms is constant at x2 (a geometric series), so 48 x 2 = 96.",
+      "id": 5
+    },
+    {
+      "question": "What is the next term in 1, 8, 27, 64, ?",
+      "options": [
+        "81",
+        "100",
+        "125",
+        "128"
+      ],
+      "correct": 2,
+      "rationale": "These are cubes of consecutive integers (1^3, 2^3, 3^3, 4^3), so the next term is 5^3 = 125.",
+      "id": 6
+    },
+    {
+      "question": "In the alphabet series A, C, E, G, ?, what comes next?",
+      "options": [
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "correct": 1,
+      "rationale": "The series skips one letter each time (A, C, E, G); continuing the skip-pattern gives I next.",
+      "id": 7
+    },
+    {
+      "question": "Find the wrong term: 3, 6, 12, 24, 46, 96",
+      "options": [
+        "12",
+        "24",
+        "46",
+        "96"
+      ],
+      "correct": 2,
+      "rationale": "Testing a constant x2 ratio throughout gives 3, 6, 12, 24, 48, 96 \u2014 so 46 breaks the pattern and should be 48.",
+      "id": 8
+    },
+    {
+      "question": "In the alternating series 1, 10, 3, 8, 5, 6, 7, ?, what is the next term?",
+      "options": [
+        "2",
+        "4",
+        "9",
+        "12"
+      ],
+      "correct": 1,
+      "rationale": "Splitting into two sub-series: odd positions (1, 3, 5, 7) increase by 2, even positions (10, 8, 6, ?) decrease by 2, so the next even-position term is 4.",
+      "id": 9
+    },
+    {
+      "question": "After ruling out a constant difference and a constant ratio, what should you check next according to the solving strategy?",
+      "options": [
+        "Whether the series is alphabetic",
+        "Whether the differences between terms form their own simple pattern",
+        "Whether the series is a trick question",
+        "Whether the series has an odd number of terms"
+      ],
+      "correct": 1,
+      "rationale": "Step 4 of the solving strategy is to check whether the differences themselves form a pattern, which catches most second-order series that don't fit a simple arithmetic or geometric rule.",
+      "id": 10
+    }
+  ]
+}

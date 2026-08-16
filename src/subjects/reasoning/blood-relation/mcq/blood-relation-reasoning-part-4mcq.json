@@ -1,0 +1,126 @@
+{
+  "lessonId": "blood-relation-reasoning-part-4",
+  "title": "Blood Relation Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "\"A is B's father. B is C's sister. How is A related to C?\" \u2014 What is A to C?",
+      "options": [
+        "Uncle",
+        "Father",
+        "Grandfather",
+        "Brother"
+      ],
+      "correct": 1,
+      "rationale": "Since A is B's parent and B and C are siblings, A is also the parent of C \u2014 specifically, A is C's father."
+    },
+    {
+      "id": 2,
+      "question": "\"M is the sister of N. N is the father of O.\" How is M related to O?",
+      "options": [
+        "Mother",
+        "Sister",
+        "Aunt",
+        "Cousin"
+      ],
+      "correct": 2,
+      "rationale": "M is the sibling of O's father (N), which makes M the aunt of O."
+    },
+    {
+      "id": 3,
+      "question": "\"X is the son of Y. Y is the daughter of Z.\" What is X to Z?",
+      "options": [
+        "Sibling",
+        "Grandchild",
+        "Parent",
+        "Nephew"
+      ],
+      "correct": 1,
+      "rationale": "Since Y is Z's child and X is Y's child, Z is X's grandparent \u2014 so X is Z's grandchild."
+    },
+    {
+      "id": 4,
+      "question": "A good blood-relation reasoning system should separately track which of the following?",
+      "options": [
+        "Only names and ages",
+        "Generation, gender, marriage, parent-child links, and sibling links",
+        "Only first names in alphabetical order",
+        "Only the number of people mentioned"
+      ],
+      "correct": 1,
+      "rationale": "The lesson stresses tracking generation, gender, marriage, parent-child links, and sibling links separately to reliably build a family graph."
+    },
+    {
+      "question": "What is a 'great-grandparent' in terms of generation distance?",
+      "options": [
+        "One generation up from you",
+        "Two generations up from you",
+        "Three generations up from you",
+        "The same generation as your grandparent"
+      ],
+      "correct": 2,
+      "rationale": "A great-grandparent is three generations up: parent -> grandparent -> great-grandparent.",
+      "id": 5
+    },
+    {
+      "question": "In an ambiguous blood relation problem where a statement could support two different valid family structures, what does the 'best answer strategy' recommend?",
+      "options": [
+        "Always pick the first option listed",
+        "Choose the answer that holds true in every valid arrangement consistent with the statements, or explicitly flag it as indeterminate if none does",
+        "Randomly guess between the two structures",
+        "Refuse to answer any ambiguous question"
+      ],
+      "correct": 1,
+      "rationale": "When multiple structures are consistent with the given statements, the best-answer strategy is to pick a conclusion only if it holds across every valid arrangement \u2014 the same 'definite vs possible' discipline used in syllogism reasoning.",
+      "id": 6
+    },
+    {
+      "question": "What is the purpose of a 'minimal internal representation' when solving a complex, multi-statement blood relation problem?",
+      "options": [
+        "To make the problem harder to solve",
+        "To strip each relation down to its essential structural data (who, what link, what generation) so the solver isn't re-parsing prose repeatedly",
+        "To remove all family members except two",
+        "It has no real purpose"
+      ],
+      "correct": 1,
+      "rationale": "A minimal internal representation keeps only the essential structural facts needed for reasoning, rather than repeatedly re-parsing the original sentence, which speeds up and reduces errors in composition.",
+      "id": 7
+    },
+    {
+      "question": "What do 'validation rules' check for in a blood relation solver's final answer?",
+      "options": [
+        "Spelling of names",
+        "That the derived relation is logically consistent with every statement given, with no contradictions introduced during composition",
+        "The total number of family members",
+        "Whether the question used the word 'blood relation'"
+      ],
+      "correct": 1,
+      "rationale": "Validation rules check the final derived relation against every original statement to make sure no contradiction was introduced anywhere during the composition process.",
+      "id": 8
+    },
+    {
+      "question": "According to the final solver architecture, what is the correct overall order of steps?",
+      "options": [
+        "Guess the answer, then check statements",
+        "Parse statements into direct relations, build/update the family graph, detect contradictions, compose the target relation, then validate the result",
+        "Only look at the last statement and the question",
+        "Build the family graph after already answering"
+      ],
+      "correct": 1,
+      "rationale": "The final solver architecture chains: parse each statement into direct relations, incrementally build the family graph, check for contradictions, compose the requested relation, and validate the result \u2014 in that order.",
+      "id": 9
+    },
+    {
+      "question": "What is the main takeaway from this lesson's summary about solving blood relation problems reliably?",
+      "options": [
+        "Guessing quickly is more reliable than building a structure",
+        "Reliable solving comes from systematically converting prose into a structured family graph and composing relations step by step, not from guessing based on how the question 'feels'",
+        "Only gender matters, not generation",
+        "Every blood relation question has exactly one statement"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's core theme throughout is that blood relation reasoning is reliably solved by systematically building a structured family model and composing relations step by step, rather than by intuition or guesswork.",
+      "id": 10
+    }
+  ]
+}

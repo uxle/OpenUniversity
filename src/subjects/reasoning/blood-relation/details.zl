@@ -1,0 +1,15 @@
+# Blood Relation
+
+@subject {
+  id: blood-relation
+  title: "Blood Relation"
+  parent: reasoning
+  description: "Family-tree and relationship reasoning, in 4 parts."
+}
+
+@lessons {
+  blood-relation-reasoning-part-1
+  blood-relation-reasoning-part-2
+  blood-relation-reasoning-part-3
+  blood-relation-reasoning-part-4
+}

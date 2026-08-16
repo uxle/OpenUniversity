@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-15",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 15 of 22",
+  "questions": [
+    {
+      "question": "What is the 'inverse of reverse alphabet' coding?",
+      "options": [
+        "A completely different, unrelated rule",
+        "Applying the same reverse-alphabet mapping again, since mirroring a letter twice returns the original letter",
+        "Reversing the word's letter order instead",
+        "There is no valid inverse for reverse-alphabet coding"
+      ],
+      "correct": 1,
+      "rationale": "Since mirroring a letter to its reverse-alphabet partner and then mirroring again returns the original letter, the reverse-alphabet mapping is its own inverse.",
+      "id": 1
+    },
+    {
+      "question": "What is the 'inverse of reversal' (word-reversal) coding?",
+      "options": [
+        "Applying a letter shift instead",
+        "Reversing the word's letter order again, since reversing twice restores the original order",
+        "There is no valid inverse",
+        "Applying mirror coding instead"
+      ],
+      "correct": 1,
+      "rationale": "Reversing a word's letter order twice restores the original order, making word-reversal coding its own inverse operation, just like reverse-alphabet mirroring.",
+      "id": 2
+    },
+    {
+      "question": "What is the 'inverse of shift' coding (e.g., inverse of +3)?",
+      "options": [
+        "Applying the same +3 shift again",
+        "Applying the opposite shift (-3), which undoes the original transformation",
+        "There is no valid inverse for shifts",
+        "Applying a mirror transformation instead"
+      ],
+      "correct": 1,
+      "rationale": "The inverse of a +3 shift is a -3 shift, which exactly undoes the original transformation and restores the original letter.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'multi-step inverse' require when a coding rule combines several steps?",
+      "options": [
+        "Undoing the steps in the same order they were applied",
+        "Undoing each individual step in the REVERSE order they were originally applied",
+        "Only undoing the first step",
+        "Ignoring all but the last step"
+      ],
+      "correct": 1,
+      "rationale": "To correctly reverse a multi-step transformation, each step must be undone in the reverse order from how it was originally applied \u2014 like unwrapping layers from the outside in.",
+      "id": 4
+    },
+    {
+      "question": "What does 'composition of coding rules' mean?",
+      "options": [
+        "Using only one rule at a time",
+        "Applying two or more coding rules in sequence, where the output of one becomes the input to the next",
+        "A synonym for verification",
+        "A rule with no sequence involved"
+      ],
+      "correct": 1,
+      "rationale": "Composition of coding rules means chaining two or more rules in sequence, where each rule's output feeds directly into the next rule as its input.",
+      "id": 5
+    },
+    {
+      "question": "Why does 'order matter' when composing multiple coding rules?",
+      "options": [
+        "It never actually matters",
+        "Applying the same rules in a different order can produce a completely different final result",
+        "Order only matters for number coding",
+        "Rules always commute regardless of order"
+      ],
+      "correct": 1,
+      "rationale": "Composed transformations are generally order-dependent \u2014 applying the same set of rules in a different sequence can produce an entirely different final result.",
+      "id": 6
+    },
+    {
+      "question": "What is the key difference between 'A=1' position coding and 'ASCII' coding?",
+      "options": [
+        "They are exactly the same convention",
+        "A=1 coding starts the alphabet at position 1, while standard ASCII values for uppercase letters start much higher (A=65), so mixing the two conventions produces wrong results",
+        "ASCII coding only works for lowercase letters",
+        "A=1 coding is only used for numbers, not letters"
+      ],
+      "correct": 1,
+      "rationale": "A=1 coding starts counting at 1, while ASCII assigns uppercase A the value 65 \u2014 mixing up these two different conventions in a calculation produces incorrect results.",
+      "id": 7
+    },
+    {
+      "question": "Why is the 'Important Warning: A=1 vs ASCII' section likely included?",
+      "options": [
+        "Because the two conventions are identical",
+        "To prevent a common error of applying ASCII-based reasoning to a problem that actually uses simple A=1 alphabet positions, or vice versa",
+        "Because ASCII is never actually used in these problems",
+        "Because A=1 coding is considered obsolete"
+      ],
+      "correct": 1,
+      "rationale": "This warning helps prevent the common error of mixing up the A=1 convention with ASCII values, which use entirely different starting numbers for the same letters.",
+      "id": 8
+    },
+    {
+      "question": "What is one type of 'common exam trap' in coding-decoding, based on this lesson's recurring themes?",
+      "options": [
+        "Verifying a rule against every letter",
+        "Assuming a single simple rule (like a uniform shift) applies throughout, when the actual rule has an exception or is more complex",
+        "Using a position table for reference",
+        "Checking for alphabet wrap-around"
+      ],
+      "correct": 1,
+      "rationale": "A recurring trap is assuming a simple, uniform rule applies throughout a whole example, when the actual rule contains an exception or is more complex than it first appears.",
+      "id": 9
+    },
+    {
+      "question": "If a coding rule combines 'shift +2' then 'reverse the word,' what is the correct order to reverse this transformation?",
+      "options": [
+        "Shift by -2, then reverse the word",
+        "First reverse the word again, then apply a shift of -2 (undoing the steps in reverse order)",
+        "Apply the exact same steps again in the same order",
+        "There is no way to reverse this transformation"
+      ],
+      "correct": 1,
+      "rationale": "Since the original steps were shift then reverse, undoing them requires the reverse order: first reverse the word again, then apply the opposite shift (-2).",
+      "id": 10
+    }
+  ]
+}

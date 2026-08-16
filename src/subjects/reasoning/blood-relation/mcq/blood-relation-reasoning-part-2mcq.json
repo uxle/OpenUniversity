@@ -1,0 +1,126 @@
+{
+  "lessonId": "blood-relation-reasoning-part-2",
+  "title": "Blood Relation Reasoning \u2014 Part 2 of 4",
+  "questions": [
+    {
+      "question": "What does 'spouse reasoning' add to a family graph that basic parent-child and sibling links don't capture?",
+      "options": [
+        "Nothing new",
+        "The marriage link connecting two people as husband and wife, which is needed to correctly trace in-law and combined-family relations",
+        "It replaces the need for generation tracking",
+        "It only applies to grandparents"
+      ],
+      "correct": 1,
+      "rationale": "Spouse (marriage) links are a separate relationship type from parent-child and sibling links, and are needed to correctly trace relationships that go through marriage, like in-laws.",
+      "id": 1
+    },
+    {
+      "question": "What distinguishes the 'maternal side' from the 'paternal side' of a family?",
+      "options": [
+        "Maternal side traces through the mother's relatives; paternal side traces through the father's relatives",
+        "They are the same thing",
+        "Maternal side only includes sisters",
+        "Paternal side only includes uncles"
+      ],
+      "correct": 0,
+      "rationale": "The maternal side of a family traces relatives through one's mother's line, while the paternal side traces relatives through one's father's line.",
+      "id": 2
+    },
+    {
+      "question": "In an ambiguous blood relation problem where a person's gender isn't explicitly stated, how can it sometimes be inferred?",
+      "options": [
+        "It can never be inferred",
+        "From gendered relation terms used elsewhere in the statement (like 'her son' or 'his daughter')",
+        "By assuming everyone is male by default",
+        "By counting the number of siblings"
+      ],
+      "correct": 1,
+      "rationale": "Gendered terms referring to a person elsewhere in the statement, such as pronouns or relation words like 'his'/'her', can be used to infer that person's gender even if not stated directly.",
+      "id": 3
+    },
+    {
+      "question": "What does 'relationship composition' mean in blood relation reasoning?",
+      "options": [
+        "Combining two or more known direct relations to derive a new, indirect relation between two people",
+        "Drawing a family tree with colors",
+        "Listing every person's name alphabetically",
+        "Ignoring intermediate relationships entirely"
+      ],
+      "correct": 0,
+      "rationale": "Relationship composition is the process of chaining known direct relations (e.g., 'mother' + 'sister') to derive the indirect relation between two people who aren't directly connected in the statement.",
+      "id": 4
+    },
+    {
+      "question": "If P is Q's mother, and Q is R's sister, what is P to R?",
+      "options": [
+        "P is R's mother",
+        "P is R's aunt",
+        "P is R's grandmother",
+        "P is R's sister"
+      ],
+      "correct": 0,
+      "rationale": "Since Q is R's sister, Q and R share the same mother \u2014 so P, being Q's mother, is also R's mother.",
+      "id": 5
+    },
+    {
+      "question": "What is 'contradiction detection' used for when building a family graph from a multi-statement problem?",
+      "options": [
+        "It has no practical use",
+        "Catching a new statement that conflicts with relationships already established, signalling an error in the assumed structure",
+        "Automatically solving the problem without reading it",
+        "Detecting spelling mistakes"
+      ],
+      "correct": 1,
+      "rationale": "As you add each statement to the family graph, checking for contradictions against already-established links catches invalid assumptions before they propagate further errors.",
+      "id": 6
+    },
+    {
+      "question": "Why might a blood relation problem describe an 'unknown relation' rather than stating it directly?",
+      "options": [
+        "To make the puzzle unsolvable",
+        "To require the solver to derive the exact relation through composition of the stated direct links",
+        "Because unknown relations are never asked about",
+        "Because it is a typo in the question"
+      ],
+      "correct": 1,
+      "rationale": "Many blood relation questions deliberately withhold the final relation, requiring you to derive it by composing the direct relationships given in the statements.",
+      "id": 7
+    },
+    {
+      "question": "What is the purpose of a 'symbolic representation' (e.g., using compact notation for relations) in solving complex blood relation problems?",
+      "options": [
+        "It has no purpose beyond appearance",
+        "It compresses verbose relation statements into a compact, unambiguous notation that's easier to trace and compose",
+        "It replaces the need for a family tree entirely",
+        "It only works for two-person problems"
+      ],
+      "correct": 1,
+      "rationale": "Symbolic notation lets you write multi-statement problems compactly and trace/compose relations more reliably than re-reading full sentences repeatedly, especially in longer chains.",
+      "id": 8
+    },
+    {
+      "question": "What does building a 'Blood Relation AST' (structured representation) allow you to do?",
+      "options": [
+        "Nothing useful for solving",
+        "Represent the parsed statements as a structured internal model that can be queried and reasoned over systematically, rather than re-reading prose each time",
+        "Replace all family terms with numbers only",
+        "Only applies to computer programs, not to solving by hand"
+      ],
+      "correct": 1,
+      "rationale": "Structuring the parsed relationships into an internal model lets you query and compose relations systematically instead of repeatedly re-reading and re-interpreting the original prose.",
+      "id": 9
+    },
+    {
+      "question": "In relationship composition, why does the order in which you chain relations matter?",
+      "options": [
+        "It never matters",
+        "Composing relations in the wrong order can produce an entirely different (and incorrect) final relationship",
+        "Order only matters for spouse links",
+        "Order only matters in circular arrangements, not blood relations"
+      ],
+      "correct": 1,
+      "rationale": "Relationship composition is directional \u2014 chaining 'mother of' then 'sister of' gives a different result than 'sister of' then 'mother of', so preserving the correct order is essential to deriving the right final relation.",
+      "id": 10
+    }
+  ]
+}

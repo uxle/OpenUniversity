@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-4",
+  "title": "Dice Reasoning \u2014 Part 4 of 10",
+  "questions": [
+    {
+      "question": "If three faces are visible in a view, and none of them are opposite pairs (which is guaranteed, since opposite faces never appear together), what must be true about the three hidden faces?",
+      "options": [
+        "They are unrelated to the visible faces",
+        "They include the three faces opposite to the ones visible, since each visible face's opposite must be hidden",
+        "They are always blank",
+        "They cannot be determined at all"
+      ],
+      "correct": 1,
+      "rationale": "Since each visible face's opposite can never also be visible, the opposite of every visible face must be among the three hidden faces.",
+      "id": 1
+    },
+    {
+      "question": "What does 'corner compatibility' check for when combining known face relationships?",
+      "options": [
+        "Whether the die is a perfect cube physically",
+        "Whether a proposed set of three mutually adjacent faces could actually meet validly at a real corner of the cube",
+        "The die's total surface area",
+        "Whether the die has any color at all"
+      ],
+      "correct": 1,
+      "rationale": "Corner compatibility verifies that a proposed trio of faces could genuinely all meet together at one of the cube's actual corners, given the known adjacency and opposite relationships.",
+      "id": 2
+    },
+    {
+      "question": "How many vertices (corners) does a cube have in total?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 2,
+      "rationale": "A cube has 8 vertices (corners), each where exactly 3 faces meet.",
+      "id": 3
+    },
+    {
+      "question": "What does the 'eight vertex combinations' heading likely refer to?",
+      "options": [
+        "Eight unrelated random face pairs",
+        "The eight distinct sets of three mutually adjacent faces, one for each corner of the cube",
+        "Eight different possible die colors",
+        "Eight different numbering systems for dice"
+      ],
+      "correct": 1,
+      "rationale": "Since a cube has 8 corners, and each corner is where a unique set of 3 mutually adjacent faces meet, there are 8 such valid three-face corner combinations.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'dice net'?",
+      "options": [
+        "A net used to physically catch a rolling die",
+        "A 2D unfolded layout of a cube's six faces that can be folded up to form the 3D die",
+        "A grid used only for counting figures",
+        "A type of dice game"
+      ],
+      "correct": 1,
+      "rationale": "A dice net is a flat, 2D arrangement of the cube's six faces that, when folded along the shared edges, forms the complete 3D die.",
+      "id": 5
+    },
+    {
+      "question": "What does the 'net opposite rule' help identify in an unfolded dice net?",
+      "options": [
+        "Which faces are the same color",
+        "Which two faces in the flat net layout will become opposite faces once the net is folded into a cube",
+        "The total area of the net",
+        "Which face is the largest"
+      ],
+      "correct": 1,
+      "rationale": "The net opposite rule identifies which pairs of faces, based on their positions in the flat unfolded layout, will end up opposite each other once the net is folded into a cube.",
+      "id": 6
+    },
+    {
+      "question": "What is the recommended 'mental method' for folding a net without physically constructing it?",
+      "options": [
+        "Guessing the final arrangement randomly",
+        "Mentally tracking how each face moves and which edges meet as you imagine folding the net step by step",
+        "Ignoring the net entirely and using only views",
+        "Physically cutting out the net every time"
+      ],
+      "correct": 1,
+      "rationale": "The mental folding method involves systematically imagining each fold step by step, tracking which edges come together and where each face ends up in the resulting cube.",
+      "id": 7
+    },
+    {
+      "question": "What makes a dice net 'invalid'?",
+      "options": [
+        "It has exactly six squares",
+        "The flat layout cannot actually be folded into a proper cube without faces overlapping or leaving a gap",
+        "It uses letters instead of numbers",
+        "It is drawn in a different color"
+      ],
+      "correct": 1,
+      "rationale": "An invalid net is one whose flat arrangement of six squares cannot actually fold into a complete, non-overlapping cube \u2014 not every arrangement of six squares is a valid cube net.",
+      "id": 8
+    },
+    {
+      "question": "In a standard cross-shaped dice net (one central square with four squares attached to its sides, plus one more attached to one of those), how are opposite faces typically positioned?",
+      "options": [
+        "Directly adjacent to each other in the net",
+        "Opposite faces are usually separated by exactly one square in a straight line across the net",
+        "Opposite faces are always diagonal to each other",
+        "Opposite faces cannot be determined from a net"
+      ],
+      "correct": 1,
+      "rationale": "In this common net layout, opposite faces are typically separated by exactly one square along a straight line of the net, once you know the standard folding pattern.",
+      "id": 9
+    },
+    {
+      "question": "Why is understanding dice nets useful for solving dice reasoning problems?",
+      "options": [
+        "It has no practical use for solving problems",
+        "It provides an alternative, systematic way to determine opposite and adjacent face relationships without relying solely on 3D visualization",
+        "It only helps with drawing, not reasoning",
+        "It replaces the need to know the opposite-face rule"
+      ],
+      "correct": 1,
+      "rationale": "Dice nets offer a systematic, 2D alternative for determining face relationships, which can be easier to reason about precisely than pure 3D mental visualization.",
+      "id": 10
+    }
+  ]
+}

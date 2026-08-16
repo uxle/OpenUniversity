@@ -1,0 +1,284 @@
+# Counting of Figures — Part 8 of 12
+
+[info title="Part 8 of 12"]
+Continuing from the previous part. back to Part 7 (`counting-of-figures-part-7`) · continue to Part 9 (`counting-of-figures-part-9`).
+[/info]
+
+## 96. Labeling Example
+
+Instead of:
+
+```text
+complex diagram
+```
+
+convert mentally to:
+
+```text
+A────B────C
+│  ╱ │ ╲  │
+D────E────F
+```
+
+Now count using named vertices.
+
+---
+
+## 97. Vertex-Path Method
+
+For each candidate triangle:
+
+```text
+A → B
+B → C
+C → A
+```
+
+If all three boundaries exist:
+
+```text
+ABC
+```
+
+is a triangle.
+
+---
+
+## 98. Candidate Validation
+
+For a triangle:
+
+```text
+3\text{ valid sides}
+```
+
+For a quadrilateral:
+
+```text
+4\text{ valid sides}
+```
+
+For a pentagon:
+
+```text
+5\text{ valid sides}
+```
+
+---
+
+## 99. Composite Figure Detection
+
+A composite figure uses multiple elementary regions.
+
+Example:
+
+```text
+┌─┬─┐
+│ │ │
+├─┼─┤
+│ │ │
+└─┴─┘
+```
+
+The large square is composed of 4 small squares.
+
+It still counts as a separate square.
+
+---
+
+## 100. Counting Without Visual Confusion
+
+Use:
+
+```text
+TOTAL =
+small
++ medium
++ large
++ composite
+- duplicates
+```
+
+Never subtract merely because a figure contains smaller figures. Containment does not make them duplicates.
+
+---
+
+## 101. Figure-Counting Algorithm
+
+```text
+INPUT DIAGRAM
+      │
+      ▼
+IDENTIFY VERTICES
+      │
+      ▼
+IDENTIFY LINES/EDGES
+      │
+      ▼
+CLASSIFY SHAPES
+      │
+      ├── Triangle
+      ├── Quadrilateral
+      ├── Square
+      ├── Rectangle
+      └── Other
+      │
+      ▼
+COUNT BY SIZE
+      │
+      ▼
+COUNT COMBINATIONS
+      │
+      ▼
+CHECK ORIENTATION
+      │
+      ▼
+REMOVE DUPLICATES
+      │
+      ▼
+TOTAL
+```
+
+---
+
+## 102. Common Mistakes
+
+### Mistake 1
+
+Counting only small figures.
+
+### Mistake 2
+
+Forgetting inverted figures.
+
+### Mistake 3
+
+Counting the same figure twice.
+
+### Mistake 4
+
+Counting an open shape as closed.
+
+### Mistake 5
+
+Ignoring shared lines.
+
+### Mistake 6
+
+Ignoring intersection points.
+
+### Mistake 7
+
+Confusing regions with figures.
+
+### Mistake 8
+
+Confusing squares with rectangles when wording excludes squares.
+
+---
+
+## 103. Mistake Prevention Chart
+
+| Problem | Solution |
+|---|---|
+| Missed large figures | Count by size |
+| Missed inverted figures | Count orientation |
+| Double counting | Mark boundaries |
+| Open shapes | Validate closure |
+| Complex intersections | Label vertices |
+| Grid confusion | Use formulas |
+| Square/rectangle confusion | Read wording |
+| Hidden composites | Combine adjacent regions |
+
+---
+
+## 104. Speed Technique
+
+For a simple diagram:
+
+```text
+5 sec → identify shape
+10 sec → small
+10 sec → medium
+10 sec → large
+5 sec → verify
+```
+
+For a grid, use formulas immediately.
+
+---
+
+## 105. When to Use a Formula
+
+Use formulas when the figure is a regular grid.
+
+Do **not** blindly apply grid formulas to irregular diagrams.
+
+For irregular diagrams:
+
+```text
+manual structural counting
+```
+
+is safer.
+
+---
+
+## 106. Regular vs Irregular
+
+#### Regular
+
+```text
+┌─┬─┬─┐
+├─┼─┼─┤
+├─┼─┼─┤
+└─┴─┴─┘
+```
+
+Use formulas.
+
+#### Irregular
+
+```text
+   /\
+  /__\
+ /|  /\
+/_|_/__\
+```
+
+Use manual counting.
+
+---
+
+## 107. Formula Selection Tree
+
+```text
+Is it a regular grid?
+        │
+     YES│NO
+        │
+        ▼
+ Use formula       Label vertices
+                       │
+                       ▼
+                  Count manually
+```
+
+---
+
+## 108. Advanced Counting Model
+
+Represent the diagram as:
+
+```text
+G=(V,E)
+```
+
+where:
+
+- \(V\) = vertices
+- \(E\) = edges
+
+A figure is a valid closed geometric cycle in \(G\).
+
+---

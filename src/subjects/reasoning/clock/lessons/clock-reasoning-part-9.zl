@@ -1,0 +1,267 @@
+# Clock Reasoning — Part 9 of 10
+
+[info title="Part 9 of 10"]
+Continuing from the previous part. back to Part 8 (`clock-reasoning-part-8`) · continue to Part 10 (`clock-reasoning-part-10`).
+[/info]
+
+## 66. Time Zones
+
+For real-world reasoning, a time should normally include its time zone when the absolute instant matters.
+
+A complete representation can contain:
+
+```text
+local_time
+date
+timezone
+UTC_offset
+```
+
+Example:
+
+```text
+2026-08-08
+10:00
+Asia/Kolkata
+UTC+05:30
+```
+
+This allows conversion to another time zone.
+
+## 67. Absolute vs Local Time
+
+Distinguish:
+
+```text
+local time
+```
+
+from:
+
+```text
+absolute instant
+```
+
+For example:
+
+```text
+10:00 AM IST
+```
+
+and:
+
+```text
+04:30 UTC
+```
+
+can refer to the same absolute instant.
+
+The displayed clock time changes with the time zone; the instant does not.
+
+## 68. Temporal Precision
+
+Not every statement has second-level precision.
+
+Examples:
+
+```text
+at 5 PM
+```
+
+has roughly:
+
+```text
+hour-level precision
+```
+
+while:
+
+```text
+5:23:17 PM
+```
+
+has:
+
+```text
+second-level precision
+```
+
+Preserve the original precision:
+
+```text
+precision = HOUR
+precision = MINUTE
+precision = SECOND
+```
+
+This prevents the AI from inventing precision that was never supplied.
+
+## 69. Uncertainty Intervals
+
+Some expressions are approximate:
+
+> “I'll arrive around 5 PM.”
+
+Do not necessarily convert this into an exact timestamp.
+
+Represent it as an uncertain time, for example:
+
+```text
+approximately around 17:00
+```
+
+or, if the application defines a specific uncertainty model:
+
+```text
+[16:45, 17:15]
+```
+
+The uncertainty range should come from the application's rules rather than being arbitrarily invented.
+
+## 70. Core Rules
+
+A compact clock-reasoning rule set:
+
+```text
+RULE 1:
+60 seconds = 1 minute
+
+RULE 2:
+60 minutes = 1 hour
+
+RULE 3:
+24 hours = 1 day
+
+RULE 4:
+TimePoint + Duration = TimePoint
+
+RULE 5:
+TimePoint - Duration = TimePoint
+
+RULE 6:
+TimePoint - TimePoint = Duration
+
+RULE 7:
+Clock repeats periodically
+
+RULE 8:
+12 AM = 00:00
+
+RULE 9:
+12 PM = 12:00
+
+RULE 10:
+Minute hand = 6° × minute
+
+RULE 11:
+Hour hand = 30° × hour + 0.5° × minute
+
+RULE 12:
+Shortest hand angle =
+min(|H - M|, 360 - |H - M|)
+```
+
+## 71. Minimal Algorithm
+
+Conceptually:
+
+```text
+function solve_clock(problem):
+
+    tokens = tokenize(problem)
+
+    temporal_entities = detect_time_entities(tokens)
+
+    ast = parse_temporal_structure(temporal_entities)
+
+    normalized = normalize(ast)
+
+    constraints = build_constraints(normalized)
+
+    result = solve_constraints(constraints)
+
+    verified = verify(result, constraints)
+
+    if not verified:
+        return ERROR
+
+    return format(result)
+```
+
+This architecture keeps the system modular.
+
+## 72. Complete Multi-Step Example
+
+Input:
+
+> “A class starts at 9:35 AM. It lasts 1 hour 50 minutes. There is a 25-minute break, after which another class lasts 45 minutes. When does everything finish?”
+
+Parse:
+
+```text
+class_1_start = 09:35
+class_1_duration = 01:50
+break = 00:25
+class_2_duration = 00:45
+```
+
+Calculate:
+
+```text
+09:35 + 01:50 = 11:25
+11:25 + 00:25 = 11:50
+11:50 + 00:45 = 12:35
+```
+
+Final:
+
+```text
+12:35 PM
+```
+
+The system has transformed a paragraph into a sequence of deterministic temporal operations.
+
+## 73. The Deeper Principle
+
+Clock reasoning demonstrates an important architecture for intelligent machines.
+
+Humans use concepts such as:
+
+```text
+time
+duration
+before
+after
+past
+future
+day
+night
+```
+
+A machine can similarly construct symbolic concepts.
+
+Instead of:
+
+```text
+input → guessed answer
+```
+
+a reasoning system can use:
+
+```text
+input
+ ↓
+concept extraction
+ ↓
+symbolic representation
+ ↓
+rules
+ ↓
+calculation
+ ↓
+verification
+ ↓
+answer
+```
+
+This is a powerful pattern for structured reasoning.

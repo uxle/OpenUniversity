@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-2",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 2 of 16",
+  "questions": [
+    {
+      "question": "What does 'animal classification' test?",
+      "options": [
+        "A shared numeric property",
+        "Whether a group of animals share a common category (species type, habitat, diet, etc.)",
+        "A shared letter pattern",
+        "A shared color only"
+      ],
+      "correct": 1,
+      "rationale": "Animal classification tests whether a group of animals shares a common biological or categorical property, identifying the one that doesn't belong.",
+      "id": 1
+    },
+    {
+      "question": "What does 'plant classification' test, similarly?",
+      "options": [
+        "A shared numeric property",
+        "Whether a group of plants share a common category (type, use, growth pattern, etc.)",
+        "A shared letter pattern",
+        "A shared price"
+      ],
+      "correct": 1,
+      "rationale": "Plant classification tests whether a group of plants shares a common categorical property, such as all being trees or all being flowering plants.",
+      "id": 2
+    },
+    {
+      "question": "What does 'food classification' test?",
+      "options": [
+        "A shared color only",
+        "Whether a group of foods share a common category (fruit, vegetable, grain, etc.)",
+        "A shared numeric value",
+        "A shared letter pattern"
+      ],
+      "correct": 1,
+      "rationale": "Food classification tests whether a group of foods shares a common food category, identifying the one item from a different category.",
+      "id": 3
+    },
+    {
+      "question": "What does 'vehicle classification' test?",
+      "options": [
+        "A shared color",
+        "Whether a group of vehicles share a common category (mode of transport, fuel type, etc.)",
+        "A shared numeric value",
+        "A shared letter count"
+      ],
+      "correct": 1,
+      "rationale": "Vehicle classification tests whether a group of vehicles shares a common categorical property, such as all being land vehicles or all being powered the same way.",
+      "id": 4
+    },
+    {
+      "question": "What does 'tool classification' test?",
+      "options": [
+        "A shared price",
+        "Whether a group of tools share a common category or use",
+        "A shared color only",
+        "A shared numeric value"
+      ],
+      "correct": 1,
+      "rationale": "Tool classification tests whether a group of tools shares a common category or characteristic use, identifying the one that doesn't fit.",
+      "id": 5
+    },
+    {
+      "question": "What does 'part-whole classification' test?",
+      "options": [
+        "A shared color",
+        "Whether a group of items are all parts of the same type of whole, with one being a part of something different",
+        "A shared numeric value",
+        "A shared letter pattern"
+      ],
+      "correct": 1,
+      "rationale": "Part-whole classification tests whether a group of components all belong to the same type of larger whole, finding the one that belongs to a different whole.",
+      "id": 6
+    },
+    {
+      "question": "What does 'material classification' test?",
+      "options": [
+        "A shared color only",
+        "Whether a group of items are made of the same category of material (metal, wood, plastic, etc.)",
+        "A shared price",
+        "A shared numeric value"
+      ],
+      "correct": 1,
+      "rationale": "Material classification tests whether a group of items shares a common material category, identifying the one made of a different kind of material.",
+      "id": 7
+    },
+    {
+      "question": "What does 'number classification' broadly test?",
+      "options": [
+        "Only word-based properties",
+        "Whether a group of numbers share a common numeric property (odd, prime, perfect square, etc.)",
+        "Only letter-based properties",
+        "A shared color"
+      ],
+      "correct": 1,
+      "rationale": "Number classification tests whether a group of numbers shares a common numeric property, identifying the one number that breaks that shared pattern.",
+      "id": 8
+    },
+    {
+      "question": "In the set 3, 5, 7, 8, 11, which number is the odd one out based on 'Odd Numbers' classification?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ],
+      "correct": 3,
+      "rationale": "3, 5, 7, and 11 are all odd numbers; 8 is even, breaking the shared odd-number property.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Prime Number Classification' test?",
+      "options": [
+        "Whether numbers are all even",
+        "Whether a group of numbers are all prime, with one number being composite (non-prime)",
+        "Whether numbers are all odd",
+        "Whether numbers are all perfect squares"
+      ],
+      "correct": 1,
+      "rationale": "Prime number classification tests whether a group of numbers are all prime, identifying the one number that is actually composite and breaks the pattern.",
+      "id": 10
+    }
+  ]
+}

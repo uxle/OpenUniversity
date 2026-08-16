@@ -1,0 +1,293 @@
+# Analogy — In-Depth Guide — Part 5 of 12
+
+[info title="Part 5 of 12"]
+Continuing from the previous part. back to Part 4 (`analogy-detailed-part-4`) · continue to Part 6 (`analogy-detailed-part-6`).
+[/info]
+
+## 53. Position Difference Method
+
+For:
+
+```text
+A : D
+```
+
+Positions:
+
+```text
+1\rightarrow4
+```
+
+Difference:
+
+```text
++3
+```
+
+For:
+
+```text
+M : P
+```
+
+```text
+13\rightarrow16
+```
+
+Again:
+
+```text
++3
+```
+
+Therefore:
+
+```text
+A : D :: M : P
+```
+
+---
+
+## 54. Word-Length Analogy
+
+Sometimes the relationship depends on length.
+
+```text
+CAT : 3 :: TIGER : ?
+```
+
+TIGER has 5 letters.
+
+Answer = **5**
+
+This type should be used only when the question structure clearly indicates word length.
+
+---
+
+## 55. Letter Count
+
+```text
+APPLE : 2 vowels :: ORANGE : ?
+```
+
+APPLE:
+
+```text
+A, E = 2 vowels
+```
+
+ORANGE:
+
+```text
+O, A, E = 3 vowels
+```
+
+Answer = **3**.
+
+---
+
+## 56. Odd/Even Letter Position
+
+A question may compare positions:
+
+```text
+A=1
+B=2
+C=3
+...
+```
+
+Then determine:
+
+- odd/even
+- prime/composite
+- multiples
+- difference
+- sum
+
+---
+
+## 57. Coding-Based Analogy
+
+Analogy may combine coding-decoding with reasoning.
+
+Example:
+
+```text
+CAT : DBU :: DOG : ?
+```
+
+Each letter is +1:
+
+```text
+C → D
+A → B
+T → U
+
+D → E
+O → P
+G → H
+```
+
+Answer:
+
+```text
+EPH
+```
+
+---
+
+## 58. Classification vs Analogy
+
+Do not confuse them.
+
+#### Classification
+
+Find the odd item:
+
+```text
+Apple, Mango, Banana, Carrot
+```
+
+Answer = Carrot.
+
+#### Analogy
+
+Find a related item:
+
+```text
+Bird : Nest :: Lion : ?
+```
+
+Answer = Den.
+
+---
+
+## 59. Analogy vs Coding-Decoding
+
+| Analogy | Coding-Decoding |
+|---|---|
+| Finds relationship | Finds encoded representation |
+| Usually A:B::C:? | Usually word/symbol → code |
+| Relationship is central | Encoding rule is central |
+| Can be semantic | Often symbolic/numerical |
+
+They can overlap.
+
+---
+
+## 60. Analogy Solving Algorithm
+
+Use this decision tree:
+
+```text
+              START
+                │
+                ▼
+        Identify A and B
+                │
+                ▼
+     What connects A → B?
+                │
+       ┌────────┼────────┐
+       ▼        ▼        ▼
+     Word     Number   Letter
+       │        │        │
+       ▼        ▼        ▼
+  Meaning    Formula   Position
+       │        │        │
+       └────────┼────────┘
+                ▼
+        Apply same rule
+              to C
+                │
+                ▼
+             Answer
+```
+
+---
+
+## 61. Step-by-Step Solving Method
+
+### Step 1 — Read the complete pair
+
+Do not jump directly to options.
+
+### Step 2 — Determine category
+
+Ask:
+
+- word?
+- number?
+- letter?
+- object?
+- person?
+- place?
+- scientific fact?
+
+### Step 3 — Determine direction
+
+Is it:
+
+```text
+Cause → Effect
+```
+
+or
+
+```text
+Effect → Cause
+```
+
+?
+
+### Step 4 — Find the simplest relationship
+
+Prefer:
+
+```text
+×2
++5
+square
+opposite
+used by
+lives in
+part of
+```
+
+before complicated combinations.
+
+### Step 5 — Apply exactly the same rule
+
+Do not change the rule midway.
+
+---
+
+## 62. Relationship Checklist
+
+When stuck, ask:
+
+```text
+1. Is it synonym?
+2. Is it antonym?
+3. Is it cause-effect?
+4. Is it object-function?
+5. Is it worker-workplace?
+6. Is it worker-tool?
+7. Is it animal-home?
+8. Is it animal-young?
+9. Is it male-female?
+10. Is it part-whole?
+11. Is it material-product?
+12. Is it country-capital?
+13. Is it country-currency?
+14. Is it organ-function?
+15. Is it instrument-measurement?
+16. Is it number operation?
+17. Is it letter shift?
+18. Is it reverse alphabet?
+19. Is it digit operation?
+20. Is it degree/intensity?
+```
+
+---

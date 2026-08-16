@@ -1,0 +1,40 @@
+# Analogy & Classification
+
+@subject {
+  id: analogy-and-classification
+  title: "Analogy & Classification"
+  parent: reasoning
+  description: "Word/number analogy and odd-one-out classification — a quick primer plus separate in-depth guides for each."
+}
+
+@lessons {
+  analogy-and-classification-reasoning
+  analogy-detailed-part-1
+  analogy-detailed-part-2
+  analogy-detailed-part-3
+  analogy-detailed-part-4
+  analogy-detailed-part-5
+  analogy-detailed-part-6
+  analogy-detailed-part-7
+  analogy-detailed-part-8
+  analogy-detailed-part-9
+  analogy-detailed-part-10
+  analogy-detailed-part-11
+  analogy-detailed-part-12
+  classification-detailed-part-1
+  classification-detailed-part-2
+  classification-detailed-part-3
+  classification-detailed-part-4
+  classification-detailed-part-5
+  classification-detailed-part-6
+  classification-detailed-part-7
+  classification-detailed-part-8
+  classification-detailed-part-9
+  classification-detailed-part-10
+  classification-detailed-part-11
+  classification-detailed-part-12
+  classification-detailed-part-13
+  classification-detailed-part-14
+  classification-detailed-part-15
+  classification-detailed-part-16
+}

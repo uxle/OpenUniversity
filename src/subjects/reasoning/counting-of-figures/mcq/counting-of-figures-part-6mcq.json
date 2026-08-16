@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-6",
+  "title": "Counting of Figures \u2014 Part 6 of 12",
+  "questions": [
+    {
+      "question": "What is the formula for the number of diagonals in a convex polygon with n sides?",
+      "options": [
+        "n(n-1)/2",
+        "n(n-3)/2",
+        "n^2 - n",
+        "n(n+1)/2"
+      ],
+      "correct": 1,
+      "rationale": "Subtracting the n sides themselves from all C(n,2) point-pairs gives n(n-3)/2 diagonals.",
+      "id": 1
+    },
+    {
+      "question": "Using that formula, how many diagonals does a hexagon (n = 6) have?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "15"
+      ],
+      "correct": 1,
+      "rationale": "6 x (6-3) / 2 = 6 x 3 / 2 = 9 diagonals.",
+      "id": 2
+    },
+    {
+      "question": "Why does diagonal counting matter in figure-counting problems?",
+      "options": [
+        "Diagonals never affect the figure count",
+        "Diagonals can create additional intersection points and sub-figures inside a polygon that must also be accounted for",
+        "Diagonals only matter for circles",
+        "Diagonals always double the total figure count"
+      ],
+      "correct": 1,
+      "rationale": "Diagonals drawn inside a polygon create new intersection points and divide the polygon into additional sub-figures, all of which need to be included in a full count.",
+      "id": 3
+    },
+    {
+      "question": "What complicates counting figures in 'star and overlapping figures' problems?",
+      "options": [
+        "Stars never contain any valid figures",
+        "The overlapping lines create many additional intersection points and smaller sub-regions that must each be carefully identified",
+        "Overlapping figures always cancel each other out",
+        "Star figures are always symmetric and require no counting"
+      ],
+      "correct": 1,
+      "rationale": "The many overlapping lines in a star figure create numerous extra intersection points and smaller regions, each of which must be carefully identified as part of a full count.",
+      "id": 4
+    },
+    {
+      "question": "When two circles overlap, how many regions do they divide the plane into (inside the circles' outlines, generic case)?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "rationale": "Two overlapping circles create 3 regions: the two non-overlapping crescent areas, plus the shared overlapping region in the middle.",
+      "id": 5
+    },
+    {
+      "question": "What is the key difference between 'circle counting' and 'counting regions' in an overlapping-circles figure?",
+      "options": [
+        "They are exactly the same thing",
+        "Circle counting counts how many circle shapes are present, while region counting counts how many distinct enclosed areas the circles' boundaries divide the plane into",
+        "Region counting only applies to squares",
+        "Circle counting always gives a larger number than region counting"
+      ],
+      "correct": 1,
+      "rationale": "Circle counting tallies the circle shapes themselves, while region counting tallies the distinct enclosed areas their boundaries create \u2014 these are different questions with different answers.",
+      "id": 6
+    },
+    {
+      "question": "What is the difference between 'counting regions' and 'counting figures'?",
+      "options": [
+        "There is no difference between the two",
+        "A region is any enclosed area, while a 'figure' typically refers to a specific recognizable shape (like a triangle or square) among those regions",
+        "Figures are always larger than regions",
+        "Regions can never be figures"
+      ],
+      "correct": 1,
+      "rationale": "A region is simply any enclosed area created by the diagram's lines, while a 'figure' usually refers to a specific recognizable shape \u2014 not every region is necessarily a named figure.",
+      "id": 7
+    },
+    {
+      "question": "How many unit squares (1x1) exist in a 3x3 grid?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "rationale": "A 3-row by 3-column grid of unit cells contains 3 x 3 = 9 unit squares.",
+      "id": 8
+    },
+    {
+      "question": "What is the total number of squares of all sizes in a 3x3 grid (from the earlier formula)?",
+      "options": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct": 2,
+      "rationale": "3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14 total squares of all sizes.",
+      "id": 9
+    },
+    {
+      "question": "What is the total number of squares of all sizes in a 4x4 grid (from the earlier formula)?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "36"
+      ],
+      "correct": 2,
+      "rationale": "4^2 + 3^2 + 2^2 + 1^2 = 16 + 9 + 4 + 1 = 30 total squares of all sizes.",
+      "id": 10
+    }
+  ]
+}

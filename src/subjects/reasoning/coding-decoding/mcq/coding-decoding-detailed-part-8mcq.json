@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-8",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 8 of 22",
+  "questions": [
+    {
+      "question": "What is 'multi-condition coding'?",
+      "options": [
+        "A rule with exactly one condition",
+        "A rule involving two or more conditions that must be checked together to determine the correct transformation",
+        "A synonym for simple shift coding",
+        "A rule with no conditions at all"
+      ],
+      "correct": 1,
+      "rationale": "Multi-condition coding requires checking two or more conditions together (rather than just one) to determine which transformation to apply.",
+      "id": 1
+    },
+    {
+      "question": "How does 'coding using word length' determine a word's code?",
+      "options": [
+        "Based on the word's first letter",
+        "Based on the total number of letters the word contains",
+        "Based on the number of vowels only",
+        "Based on the word's meaning"
+      ],
+      "correct": 1,
+      "rationale": "This coding derives the code directly from the total letter count of the word.",
+      "id": 2
+    },
+    {
+      "question": "Is 'coding using number of letters' essentially the same idea as word length coding?",
+      "options": [
+        "No, they are unrelated",
+        "Yes, both use the letter count of the word as the basis for the code",
+        "No, letter count coding uses only vowels",
+        "No, they use completely different bases"
+      ],
+      "correct": 1,
+      "rationale": "Both terms describe the same underlying idea: basing the code on how many letters the word contains.",
+      "id": 3
+    },
+    {
+      "question": "What does 'coding by vowel count' use as the basis for a word's code?",
+      "options": [
+        "The total letter count",
+        "The number of vowels (A, E, I, O, U) the word contains",
+        "The number of consonants only",
+        "The first vowel's position"
+      ],
+      "correct": 1,
+      "rationale": "This coding derives the code from how many vowels the word contains, rather than its total letter count.",
+      "id": 4
+    },
+    {
+      "question": "What does 'coding by consonant count' use, in contrast?",
+      "options": [
+        "The number of vowels",
+        "The number of consonants (non-vowel letters) the word contains",
+        "The total letter count",
+        "The last letter's position"
+      ],
+      "correct": 1,
+      "rationale": "This coding type derives the code from the count of consonants, the complementary letter category to vowels.",
+      "id": 5
+    },
+    {
+      "question": "What does 'position number coding' typically use as a letter's value?",
+      "options": [
+        "Its ASCII value",
+        "Its position number in the alphabet",
+        "A randomly assigned number",
+        "Its frequency in the word"
+      ],
+      "correct": 1,
+      "rationale": "Position number coding uses each letter's standard alphabet position (A=1, B=2, ...) as its numeric value.",
+      "id": 6
+    },
+    {
+      "question": "What does a 'difference pattern' refer to in this context?",
+      "options": [
+        "A single unrelated number",
+        "A consistent numeric difference observed between successive coded values, which can reveal the underlying rule",
+        "The word's total length",
+        "A pattern that only applies to vowels"
+      ],
+      "correct": 1,
+      "rationale": "A difference pattern is a consistent numeric gap observed between successive values in a coded sequence, which can help reveal the underlying transformation rule.",
+      "id": 7
+    },
+    {
+      "question": "What is 'mathematical coding' broadly characterized by?",
+      "options": [
+        "Ignoring numbers entirely",
+        "Using an explicit arithmetic formula or operation to transform letters or words into their code",
+        "Only using letter shifts",
+        "A rule with no formula involved"
+      ],
+      "correct": 1,
+      "rationale": "Mathematical coding is characterized by using an explicit, formula-based arithmetic operation to derive the code from the original letters or words.",
+      "id": 8
+    },
+    {
+      "question": "How many vowels does the word 'REASONING' contain (among A, E, I, O, U)?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "rationale": "REASONING contains the vowels E, A, O, and I \u2014 4 vowels in total.",
+      "id": 9
+    },
+    {
+      "question": "Why must you count vowels and consonants carefully rather than estimating in vowel/consonant-count coding?",
+      "options": [
+        "Estimating is always accurate enough",
+        "Because the code depends on the exact count, so even a single miscounted letter produces an incorrect code",
+        "Because vowel count never affects the result",
+        "Because consonants are never actually counted"
+      ],
+      "correct": 1,
+      "rationale": "Since the code is derived directly from the exact count, even one miscounted vowel or consonant will produce an incorrect final code.",
+      "id": 10
+    }
+  ]
+}

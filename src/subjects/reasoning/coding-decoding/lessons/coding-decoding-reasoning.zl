@@ -1,0 +1,141 @@
+# Coding-Decoding Reasoning
+
+> Coding-decoding reasoning tests whether you can find the hidden rule that turns a word or number into a "code," then apply that same rule to a new word or number.
+
+[important]
+Every coding-decoding question has exactly one hidden rule. Your job is not to memorise codes — it is to **reverse-engineer the rule** from the given example, then apply it forward to the new case.
+[/important]
+
+## 1. What Coding-Decoding Means
+
+A coding question gives you a mapping like:
+
+- If **CAT** is coded as **DBU**, how is **DOG** coded?
+
+You are not expected to know a "CAT → DBU dictionary." You are expected to notice that each letter has been shifted forward by one position (C→D, A→B, T→U), then apply that same shift to DOG (D→E, O→P, G→H), giving **EPH**.
+
+[tip]
+Coding-decoding is really a **function-finding** exercise: given `f(input) = output`, find `f`, then compute `f(new input)`.
+[/tip]
+
+## 2. Core Tool: The Letter-Position Table
+
+Almost every coding trick relies on knowing each letter's position in the alphabet, both forward and backward.
+
+| Letter | A | B | C | D | E | F | G | H | I | J | K | L | M |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Forward | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+| Backward | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 |
+
+| Letter | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Forward | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 |
+| Backward | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 |
+
+A useful shortcut: **forward position + backward position = 27** for every letter. So if you know one, you can compute the other instantly instead of counting.
+
+## 3. Letter-Shift (Caesar-Style) Coding
+
+The most common type: every letter moves forward or backward by a fixed number of steps.
+
+```text
+Rule: shift each letter forward by N
+CAT (+1) -> DBU
+CAT (+2) -> EBV
+CAT (-1) -> BZS   (wraps: A - 1 -> Z)
+```
+
+[info]
+Watch for **wrap-around**: shifting past Z goes back to A, and shifting before A wraps to Z. Treat the alphabet as a loop of 26, not a straight line.
+[/info]
+
+## 4. Substitution Coding
+
+Here, letters (or letter-pairs) are swapped for other letters or symbols according to a fixed key, not a uniform shift.
+
+```text
+Example key: A<->Z, B<->Y, C<->X, ... (reverse the alphabet)
+CAT -> XZG
+```
+
+This is the same idea as the letter-shift, just with a different rule: reflect each letter's position around the center of the alphabet (position `p` maps to position `27 - p`).
+
+## 5. Number Coding
+
+Words are converted using a numeric rule instead of new letters — most often, replace each letter with its alphabet position, then apply arithmetic.
+
+```text
+Example: code = (position of each letter) + 2, written as digits
+CAT -> C=3, A=1, T=20 -> +2 each -> 5, 3, 22 -> "5-3-22"
+```
+
+Number coding questions may also code a whole word as a **single number** — usually the sum of letter positions, or the count of letters times a constant. Always test your hypothesis against every letter of the example before trusting it.
+
+## 6. Coding by Analogy
+
+Two full words are given as a matched pair, and you must code a third word the same way the second was derived from the first.
+
+```text
+If DELHI is coded as EFMIJ, how is MUMBAI coded?
+D->E, E->F, L->M, H->I, I->J   (each letter +1)
+So MUMBAI -> N V N C B J
+```
+
+[warning]
+Always verify the rule against **every** letter in the example pair, not just the first one or two — some questions mix a shift with an exception on one letter (commonly the last letter, or a repeated letter), and skipping the check is the single most common way to lose marks here.
+[/warning]
+
+## 7. Reverse / Mirror Coding
+
+The code is the original word's letters read in reverse order — sometimes combined with a shift.
+
+```text
+FLOWER coded in reverse -> REWOLF
+FLOWER coded in reverse, then +1 each -> SFXPMG
+```
+
+## 8. Coding in a Number Grid / Matrix
+
+A less common but still tested variant: letters are placed in a grid, and each letter's "code" is its row-column coordinate pair.
+
+@diagram flowchart id="coding-matrix" layout="grid" aria="5 by 5 letter grid used for coordinate-based coding"
+node r0 [label="1 2 3 4 5"]
+node r1 [label="A B C D E"]
+node r2 [label="F G H I J"]
+node r3 [label="K L M N O"]
+node r4 [label="P Q R S T"]
+node r5 [label="U V W X Y/Z"]
+@/diagram
+
+In this style, a letter's code is often written as `(row, column)` or `(column, row)` — always check a worked example in the question to see which order is used, since both conventions appear in practice.
+
+## 9. Solved Examples
+
+**Example 1:** If ROSE is coded as SPTF, how is LOTUS coded?
+Rule: each letter +1. L→M, O→P, T→U, U→V, S→T → **MPUVT**
+
+**Example 2:** If in a certain code, MONKEY is written as XPMLDX, how is TIGER coded following a similar but not identical letter-by-letter pattern? *(Always re-derive the rule per letter — some exam questions use a non-uniform rule like this one, where each letter's shift differs; don't assume every question is a single global shift.)*
+
+**Example 3:** If PAPER is coded as 6291, 1, 6291, 5, 9 using a fixed letter-to-digit key, decode 5-9-1 using the same key. *(This tests whether you can invert the key, not just apply it forward.)*
+
+## 10. Common Mistakes to Avoid
+
+- **Do not** assume every question uses a simple uniform shift — always verify the rule against the *entire* example word, letter by letter.
+- **Do not** forget alphabet wrap-around (Z + 1 = A, A − 1 = Z).
+- **Do not** confuse a letter's forward position with its backward position — recompute or use the `27 − p` shortcut rather than guessing.
+- **Do** write out the full alphabet with positions on scratch paper if a question involves several different letters — trying to do it mentally invites off-by-one errors.
+
+## 11. Quick Reference
+
+| Coding type | What changes | How to spot it |
+|---|---|---|
+| Letter-shift | Every letter moves by the same fixed amount | Compare position differences letter by letter — should be constant |
+| Substitution/mirror | Letters reflect around the alphabet's center | Position sums to 27 for each pair |
+| Number coding | Letters become digits via a formula | Output is numeric, not alphabetic |
+| Analogy coding | A rule derived from one word-pair applied to a new word | Two full words given, third to be coded |
+| Reverse coding | Word read backward, possibly plus a shift | Output looks like the input's letters in reverse |
+| Matrix coding | Letters replaced by grid coordinates | Output is a pair of numbers per letter |
+
+[example]
+Whatever the type, the working method is always the same three steps: **(1)** compare input and output letter-by-letter to isolate the rule, **(2)** confirm it holds for every letter, not just the first, **(3)** apply the confirmed rule to the new word.
+[/example]

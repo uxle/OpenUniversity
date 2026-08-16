@@ -1,0 +1,291 @@
+# Directions and Distance Reasoning — Part 6 of 10
+
+[info title="Part 6 of 10"]
+Continuing from the previous part. back to Part 5 (`directions-and-distance-reasoning-part-5`) · continue to Part 7 (`directions-and-distance-reasoning-part-7`).
+[/info]
+
+## 44. Spatial Type System
+
+Useful types include:
+
+```text
+Point
+Vector
+Direction
+Bearing
+Distance
+Angle
+Position
+Displacement
+Path
+Region
+```
+
+Useful operations:
+
+```text
+Point + Vector → Point
+Point - Point → Vector
+Vector + Vector → Vector
+Distance + Distance → Distance
+Angle + Angle → Angle
+```
+
+This creates dimensional and semantic safety.
+
+## 45. Path Planning
+
+When multiple paths exist, represent locations as graph nodes and paths as edges.
+
+Example:
+
+```text
+A ──5── B
+│       │
+8       2
+│       │
+C ──3── D
+```
+
+Possible routes:
+
+```text
+A → B → D = 7
+A → C → D = 11
+```
+
+Shortest route:
+
+```text
+A → B → D
+```
+
+Algorithms such as:
+
+```text
+Breadth-First Search
+Dijkstra
+A*
+```
+
+can be used depending on whether edges have costs and what kind of search is required.
+
+## 46. Grid Reasoning
+
+Many reasoning problems use a grid.
+
+Starting from:
+
+```text
+(0,0)
+```
+
+use:
+
+```text
+N → y + 1
+E → x + 1
+S → y - 1
+W → x - 1
+```
+
+Example:
+
+```text
+N N E E S
+```
+
+Apply:
+
+```text
+N → (0,1)
+N → (0,2)
+E → (1,2)
+E → (2,2)
+S → (2,1)
+```
+
+Final:
+
+```text
+(2,1)
+```
+
+Direction:
+
+```text
+North-East
+```
+
+Euclidean displacement:
+
+```text
+√5 ≈ 2.24
+```
+
+Path length:
+
+```text
+5 units
+```
+
+## 47. Spatial Graph Reasoning
+
+A general spatial graph can contain:
+
+```text
+Node:
+    entity
+    position
+    attributes
+
+Edge:
+    relation
+    direction
+    distance
+    confidence
+```
+
+Example:
+
+```text
+Node A = School
+Node B = Hospital
+
+Edge:
+    from = School
+    to = Hospital
+    direction = North
+    distance = 2 km
+```
+
+The graph allows later questions to be answered without reparsing the original statements.
+
+## 48. Contradiction Detection
+
+Example:
+
+```text
+B is east of A.
+B is west of A.
+```
+
+If these refer to the same frame and conditions, the constraints conflict.
+
+The system should report:
+
+```text
+Spatial contradiction detected.
+```
+
+rather than silently choosing one.
+
+## 49. Consistency Checking
+
+Suppose:
+
+```text
+B = A + (5,0)
+C = B + (0,4)
+```
+
+Therefore:
+
+```text
+C = A + (5,4)
+```
+
+If another statement says:
+
+```text
+C = A + (2,4)
+```
+
+the system detects:
+
+```text
+expected C = (5,4)
+given C = (2,4)
+```
+
+and reports a constraint conflict.
+
+## 50. Uncertain Direction
+
+Natural language can be approximate:
+
+```text
+roughly north-east
+slightly east
+mostly north
+```
+
+The system should preserve uncertainty rather than pretending the direction is exact.
+
+Possible representation:
+
+```text
+direction = NORTH_EAST
+confidence = 0.7
+```
+
+or, for a more advanced system:
+
+```text
+angle_range = [35°, 55°]
+```
+
+The uncertainty model should be explicit.
+
+## 51. Map and Image Reasoning
+
+If the input is an image or map, the pipeline can be:
+
+```text
+IMAGE
+ ↓
+Object / Landmark Detection
+ ↓
+Road / Boundary Detection
+ ↓
+Reference Frame Detection
+ ↓
+Coordinate Extraction
+ ↓
+Spatial Graph
+ ↓
+Direction / Distance Reasoning
+```
+
+This extends symbolic spatial reasoning into computer vision.
+
+## 52. Landmark Reasoning
+
+Example:
+
+```text
+The hospital is north of the school.
+The park is east of the hospital.
+```
+
+Graph:
+
+```text
+School
+   │
+   │ North
+   ↓
+Hospital
+   │
+   │ East
+   ↓
+Park
+```
+
+Inference:
+
+```text
+Park is North-East of School
+```
+
+This is spatial transitive reasoning.

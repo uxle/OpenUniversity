@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-11",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 11 of 22",
+  "questions": [
+    {
+      "question": "What is 'sentence/word replacement' coding?",
+      "options": [
+        "Replacing individual letters only",
+        "Replacing entire words (not individual letters) with other assigned code words, as in the Chinese coding method",
+        "A rule that ignores whole words",
+        "A synonym for letter substitution"
+      ],
+      "correct": 1,
+      "rationale": "This coding replaces whole words with other assigned code words, rather than transforming individual letters \u2014 the same idea underlying the Chinese coding method.",
+      "id": 1
+    },
+    {
+      "question": "What is 'number substitution'?",
+      "options": [
+        "Replacing letters with numbers",
+        "Replacing each digit or number with a different, fixed number or symbol according to a key",
+        "A rule that ignores numbers entirely",
+        "A synonym for word length coding"
+      ],
+      "correct": 1,
+      "rationale": "Number substitution replaces digits or numbers with different fixed numbers or symbols, following a defined key \u2014 the numeric counterpart to letter substitution.",
+      "id": 2
+    },
+    {
+      "question": "What is 'direction coding'?",
+      "options": [
+        "Coding based on word length",
+        "A coding scheme where compass directions (or other directional terms) are substituted according to a fixed rule",
+        "A synonym for matrix coding",
+        "A rule with no directional component"
+      ],
+      "correct": 1,
+      "rationale": "Direction coding substitutes compass directions (or similar directional terms) according to a defined rule, blending coding logic with directional reasoning.",
+      "id": 3
+    },
+    {
+      "question": "How might 'coding-decoding and direction' combine two reasoning topics?",
+      "options": [
+        "They cannot be combined",
+        "A question could code direction-and-distance-style movement information using the same encode/decode logic used for letters or numbers",
+        "Direction reasoning always replaces coding entirely",
+        "They are actually unrelated topics with no overlap"
+      ],
+      "correct": 1,
+      "rationale": "Such questions apply the same encode/decode logic used for letters or numbers to direction-and-distance-style movement information, blending the two reasoning domains.",
+      "id": 4
+    },
+    {
+      "question": "What does 'number coding with operations' involve?",
+      "options": [
+        "Ignoring arithmetic entirely",
+        "Applying explicit arithmetic operations (addition, multiplication, etc.) to numbers as part of deriving the code",
+        "Only reversing digit order",
+        "A rule that never uses numbers"
+      ],
+      "correct": 1,
+      "rationale": "This coding type explicitly applies arithmetic operations to numbers as part of the process of deriving the final code.",
+      "id": 5
+    },
+    {
+      "question": "What is 'polynomial coding'?",
+      "options": [
+        "A code with no formula",
+        "A code derived from a polynomial expression (like n^2 + n) applied to a letter's position or a number",
+        "A synonym for prime coding",
+        "A rule that ignores position values"
+      ],
+      "correct": 1,
+      "rationale": "Polynomial coding derives its code by applying a polynomial expression, such as n^2 + n, to a letter's position or a given number.",
+      "id": 6
+    },
+    {
+      "question": "What is 'prime coding'?",
+      "options": [
+        "A code based on word length",
+        "A coding rule based on whether a position or value is a prime number",
+        "A synonym for Fibonacci coding",
+        "A rule that ignores numeric properties"
+      ],
+      "correct": 1,
+      "rationale": "Prime coding bases its rule on whether a given position or value is prime, applying different treatment to prime versus non-prime values.",
+      "id": 7
+    },
+    {
+      "question": "What is 'Fibonacci coding'?",
+      "options": [
+        "A rule based on prime numbers",
+        "A coding rule based on the Fibonacci sequence (1, 1, 2, 3, 5, 8, ...) applied to positions or values",
+        "A synonym for polynomial coding",
+        "A rule with no numeric sequence involved"
+      ],
+      "correct": 1,
+      "rationale": "Fibonacci coding applies the Fibonacci sequence (1, 1, 2, 3, 5, 8...) to positions or values as the basis for its transformation.",
+      "id": 8
+    },
+    {
+      "question": "What is 'factorial coding'?",
+      "options": [
+        "A rule based on the Fibonacci sequence",
+        "A coding rule based on the factorial (n!) of a position or value",
+        "A synonym for prime coding",
+        "A rule that never uses multiplication"
+      ],
+      "correct": 1,
+      "rationale": "Factorial coding bases its transformation on the factorial (n!) of a given position or value.",
+      "id": 9
+    },
+    {
+      "question": "What does 'pattern recognition priority' mean when multiple coding rules seem to fit?",
+      "options": [
+        "Always choose the most complex rule available",
+        "Preferring the simplest rule that is consistently confirmed by ALL given examples, over a more complex one that only partially fits",
+        "Randomly select any rule that fits partially",
+        "Ignore verification once a rule seems to fit"
+      ],
+      "correct": 1,
+      "rationale": "When multiple rules seem plausible, priority goes to the simplest rule that holds consistently across every given example, rather than a more complex one that only partially matches.",
+      "id": 10
+    }
+  ]
+}

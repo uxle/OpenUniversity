@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-20",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 20 of 22",
+  "questions": [
+    {
+      "question": "What is the purpose of 'Practice Set A \u2014 Basic'?",
+      "options": [
+        "To test only the most advanced techniques",
+        "To reinforce fundamental, single-technique coding rules before moving to more complex combinations",
+        "To skip straight to mixed coding",
+        "To only test word length coding"
+      ],
+      "correct": 1,
+      "rationale": "Practice Set A focuses on reinforcing fundamental, single-technique coding rules, building a solid base before more complex combinations are introduced.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Practice Set B \u2014 Intermediate' likely introduce, compared to Set A?",
+      "options": [
+        "Only easier variations of Set A",
+        "Combinations of two techniques, or slightly less common rule types, building on the basics",
+        "No new material at all",
+        "Only word length coding"
+      ],
+      "correct": 1,
+      "rationale": "Set B builds on the basics by introducing combinations of two techniques or slightly less common rule types, a step up in complexity from Set A.",
+      "id": 2
+    },
+    {
+      "question": "What does 'Practice Set C \u2014 Advanced' likely require?",
+      "options": [
+        "Only the simplest single-step rules",
+        "Correctly identifying and applying more complex or multi-step coding rules under less obvious conditions",
+        "No verification at all",
+        "Ignoring all previously learned rules"
+      ],
+      "correct": 1,
+      "rationale": "Set C requires correctly identifying and applying more complex, multi-step rules, often under less obvious or more challenging conditions.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Practice Set D \u2014 Challenge' likely test?",
+      "options": [
+        "Only basic single-technique rules",
+        "The ability to flexibly apply the full range of techniques to unusual or tricky problems, not just standard cases",
+        "Nothing beyond Set A",
+        "Only word length coding"
+      ],
+      "correct": 1,
+      "rationale": "The Challenge tier tests flexible application of the full range of techniques to unusual or tricky problems, beyond just standard, expected cases.",
+      "id": 4
+    },
+    {
+      "question": "Why does this lesson use four progressively harder practice tiers rather than one mixed set?",
+      "options": [
+        "The ordering is arbitrary and has no purpose",
+        "To let learners build confidence and skill systematically before tackling the hardest, most ambiguous problems",
+        "Because harder problems don't build on easier ones",
+        "Because mixing difficulty levels is always more effective"
+      ],
+      "correct": 1,
+      "rationale": "Progressive tiers let learners build confidence and skill systematically, ensuring a solid foundation before tackling the hardest, most ambiguous problems.",
+      "id": 5
+    },
+    {
+      "question": "What foundational skill from earlier parts does EVERY practice tier ultimately rely on?",
+      "options": [
+        "Guessing without verification",
+        "Correctly identifying the coding rule by comparing input and output systematically, and verifying it against all given data",
+        "Ignoring alphabet wrap-around",
+        "Only checking a single example"
+      ],
+      "correct": 1,
+      "rationale": "Every tier, regardless of difficulty, ultimately relies on the same foundational skill: systematically identifying the rule and verifying it fully against all given data.",
+      "id": 6
+    },
+    {
+      "question": "Why is it recommended to complete Practice Set A before attempting Practice Set D?",
+      "options": [
+        "The sets are entirely unrelated",
+        "Because later, harder problems build on and combine the simpler techniques introduced and reinforced in the earlier sets",
+        "Because Set D never actually uses techniques from Set A",
+        "Because Set A is more difficult than Set D"
+      ],
+      "correct": 1,
+      "rationale": "The harder practice sets build on and combine the simpler techniques first introduced and reinforced in the earlier sets, making the earlier practice a necessary foundation.",
+      "id": 7
+    },
+    {
+      "question": "What is one likely reason an 'Advanced' tier problem might use 'mixed coding' (combining two or more techniques)?",
+      "options": [
+        "To make the problem impossible to solve",
+        "To test whether the learner can correctly identify and apply more than one rule together, not just recognize a single simple pattern",
+        "Because mixed coding is actually simpler than single-technique coding",
+        "Because Advanced problems never use single techniques"
+      ],
+      "correct": 1,
+      "rationale": "Mixed coding at the Advanced tier tests whether a learner can correctly identify and combine multiple rules together, a more demanding skill than recognizing one simple pattern alone.",
+      "id": 8
+    },
+    {
+      "question": "In a Basic-tier problem using a simple +1 shift, what would DOG become?",
+      "options": [
+        "CNF",
+        "EPH",
+        "DPG",
+        "COG"
+      ],
+      "correct": 1,
+      "rationale": "Shifting each letter of DOG forward by 1: D->E, O->P, G->H, giving EPH.",
+      "id": 9
+    },
+    {
+      "question": "Why is timing yourself while working through these practice tiers a useful exam-preparation habit?",
+      "options": [
+        "Timing has no relevance to solving accuracy",
+        "It helps build the speed needed to apply the high-speed detection techniques reliably under real time-pressured exam conditions",
+        "It replaces the need to actually verify rules",
+        "It only matters for the Basic tier"
+      ],
+      "correct": 1,
+      "rationale": "Timed practice builds the speed and fluency needed to reliably apply the high-speed detection techniques under the real time pressure of an actual exam.",
+      "id": 10
+    }
+  ]
+}

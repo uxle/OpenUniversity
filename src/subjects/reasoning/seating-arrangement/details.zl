@@ -1,0 +1,12 @@
+# Seating Arrangement
+
+@subject {
+  id: seating-arrangement
+  title: "Seating Arrangement"
+  parent: reasoning
+  description: "Linear, circular, and double-row seating arrangement puzzles."
+}
+
+@lessons {
+  seating-arrangement-reasoning
+}

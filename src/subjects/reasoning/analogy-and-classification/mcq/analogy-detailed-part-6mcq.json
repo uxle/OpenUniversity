@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-6",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 6 of 12",
+  "questions": [
+    {
+      "question": "What does 'Position Difference Method' apply to letter analogy?",
+      "options": [
+        "Word meanings only",
+        "Computing the numeric gap between letters' alphabet positions as the basis of the relationship",
+        "Only geographic relationships",
+        "Random letter selection"
+      ],
+      "correct": 1,
+      "rationale": "This method computes the numeric difference between letters' alphabet positions, using that gap as the basis for the analogy's relationship.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'Word-Length Analogy' test?",
+      "options": [
+        "The meaning of the words",
+        "A relationship based on the number of letters each word contains",
+        "The words' first letters only",
+        "The words' vowel count only"
+      ],
+      "correct": 1,
+      "rationale": "This analogy type bases its relationship on the total letter count of each word, rather than meaning or individual letters.",
+      "id": 2
+    },
+    {
+      "question": "How does 'Letter Count' relate to Word-Length Analogy?",
+      "options": [
+        "They are unrelated concepts",
+        "Letter count is the specific measure used as the basis for a word-length analogy",
+        "Letter count only applies to numbers",
+        "Letter count ignores word length entirely"
+      ],
+      "correct": 1,
+      "rationale": "Letter count is the specific underlying measure that a word-length analogy is built on \u2014 counting how many letters each word has.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Odd/Even Letter Position' test in this context?",
+      "options": [
+        "Word meaning only",
+        "A relationship based on whether a letter's position is odd or even",
+        "The number of vowels only",
+        "A synonym for word length"
+      ],
+      "correct": 1,
+      "rationale": "This tests a relationship based specifically on whether a letter's alphabet position is odd or even, similar to parity-based coding rules.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'Coding-Based Analogy'?",
+      "options": [
+        "An analogy unrelated to coding-decoding",
+        "An analogy that incorporates coding-decoding-style transformations (like shifts) as part of the relationship",
+        "A synonym for word synonym analogy",
+        "An analogy that ignores letters entirely"
+      ],
+      "correct": 1,
+      "rationale": "A coding-based analogy blends analogy reasoning with coding-decoding techniques, such as applying a letter shift as part of the relationship.",
+      "id": 5
+    },
+    {
+      "question": "What is the key difference between 'Classification' and 'Analogy'?",
+      "options": [
+        "They are the exact same skill",
+        "Analogy finds a matching relationship between pairs; classification finds the single item that does NOT share a group's common property",
+        "Classification only applies to numbers",
+        "Analogy only applies to letters"
+      ],
+      "correct": 1,
+      "rationale": "Analogy is about matching a relationship between pairs, while classification is about finding the one item that breaks a shared property among a group \u2014 related but distinct skills.",
+      "id": 6
+    },
+    {
+      "question": "What is the key difference between 'Analogy' and 'Coding-Decoding'?",
+      "options": [
+        "They are identical skills",
+        "Analogy matches a relationship between pairs; coding-decoding finds a hidden transformation rule turning an input into an output",
+        "Coding-decoding only applies to letters",
+        "Analogy only applies to numbers"
+      ],
+      "correct": 1,
+      "rationale": "While both involve relationships and rules, analogy specifically matches a relationship between two given pairs, while coding-decoding finds and applies a transformation rule from input to output.",
+      "id": 7
+    },
+    {
+      "question": "What is the purpose of an 'Analogy Solving Algorithm'?",
+      "options": [
+        "To replace the need for identifying any relationship",
+        "To provide a systematic, repeatable sequence of steps for identifying and verifying an analogy's relationship",
+        "To only work for number analogies",
+        "To skip verification entirely"
+      ],
+      "correct": 1,
+      "rationale": "A solving algorithm provides a systematic, repeatable process for identifying the relationship and verifying it, rather than relying on guesswork.",
+      "id": 8
+    },
+    {
+      "question": "What does the 'Step-by-Step Solving Method' likely emphasize first?",
+      "options": [
+        "Guessing the answer immediately",
+        "Stating the relationship of the given pair explicitly before testing any option",
+        "Skipping straight to the options",
+        "Ignoring the given pair"
+      ],
+      "correct": 1,
+      "rationale": "Consistent with the golden rule, the step-by-step method starts by explicitly stating the given pair's relationship before testing any answer option against it.",
+      "id": 9
+    },
+    {
+      "question": "What is a 'Relationship Checklist' used for?",
+      "options": [
+        "Listing unrelated facts",
+        "Systematically working through common relationship types to help identify which one applies to a given pair",
+        "Only listing number-based relationships",
+        "Replacing the need for the golden rule"
+      ],
+      "correct": 1,
+      "rationale": "A relationship checklist systematically runs through common relationship categories, helping you efficiently identify which one applies to the pair at hand.",
+      "id": 10
+    }
+  ]
+}

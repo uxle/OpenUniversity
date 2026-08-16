@@ -1,0 +1,126 @@
+{
+  "lessonId": "blood-relation-reasoning-part-1",
+  "title": "Blood Relation Reasoning \u2014 Part 1 of 4",
+  "questions": [
+    {
+      "question": "In blood relation reasoning, what does the term 'nephew' mean?",
+      "options": [
+        "Son of a sibling",
+        "Daughter of a sibling",
+        "Brother of a parent",
+        "Child of an uncle or aunt"
+      ],
+      "correct": 0,
+      "rationale": "Nephew is the son of one's sibling, as distinct from niece (daughter of a sibling).",
+      "id": 1
+    },
+    {
+      "question": "What is a 'cousin' in blood relation terms?",
+      "options": [
+        "Sibling of a parent",
+        "Child of an uncle or aunt",
+        "Spouse of a sibling",
+        "Parent of a grandparent"
+      ],
+      "correct": 1,
+      "rationale": "A cousin is the child of an uncle or aunt \u2014 someone from the same generation but a different immediate family branch.",
+      "id": 2
+    },
+    {
+      "question": "Why should generation, gender, marriage, and parent-child/sibling links be tracked separately when modeling a family?",
+      "options": [
+        "It isn't necessary \u2014 one combined label is enough",
+        "Because keeping them separate prevents confusing similar-sounding relations and supports accurate step-by-step reasoning",
+        "Because exams only ask about gender",
+        "Because parent-child links are the only ones that matter"
+      ],
+      "correct": 1,
+      "rationale": "Tracking these dimensions separately, rather than one vague label, is what lets you reason step by step without conflating relations that sound similar but differ in gender, generation, or link type.",
+      "id": 3
+    },
+    {
+      "question": "What is the key rule about gender and relation being different?",
+      "options": [
+        "Gender and relation are always the same thing",
+        "A relation term can imply gender (like 'brother'), but the underlying link (sibling) is what actually matters for tracing family structure",
+        "Gender never matters in blood relation puzzles",
+        "Relation terms never specify gender"
+      ],
+      "correct": 1,
+      "rationale": "Terms like brother/sister both describe the same underlying sibling link with different genders attached \u2014 the structural link matters for tracing relationships, with gender as an additional attribute.",
+      "id": 4
+    },
+    {
+      "question": "How is a family graph typically represented?",
+      "options": [
+        "As a single flat list of names",
+        "As a graph where each person is a node and each relationship is an edge",
+        "As a table of random numbers",
+        "Family graphs cannot be represented visually"
+      ],
+      "correct": 1,
+      "rationale": "A family tree is a graph: each node represents a person, and each edge represents a relationship (parent-child, sibling, or spouse) connecting them.",
+      "id": 5
+    },
+    {
+      "question": "What defines a sibling relationship?",
+      "options": [
+        "Two people who share at least one parent",
+        "Two people who are married",
+        "Two people from different generations",
+        "Two people with the same surname"
+      ],
+      "correct": 0,
+      "rationale": "Siblings are people who share at least one parent \u2014 the sibling link connects people at the same generation under a common parent.",
+      "id": 6
+    },
+    {
+      "question": "What is the relationship between an uncle and their nephew's parent?",
+      "options": [
+        "No relation at all",
+        "The uncle is a sibling of the nephew's parent",
+        "The uncle is the nephew's grandparent",
+        "The uncle is the nephew's cousin"
+      ],
+      "correct": 1,
+      "rationale": "An uncle is defined as the brother of a parent \u2014 so the uncle and the nephew's parent are siblings of each other.",
+      "id": 7
+    },
+    {
+      "question": "In blood relation problems, what is a 'direct' relation as opposed to an 'indirect' one?",
+      "options": [
+        "Direct relations involve marriage only",
+        "A direct relation is a single-step link (like parent-child or sibling); an indirect relation is derived by chaining multiple direct links together",
+        "There is no difference between the two",
+        "Indirect relations are always incorrect"
+      ],
+      "correct": 1,
+      "rationale": "Direct relations are single links (parent-child, sibling, spouse), while indirect relations (like 'uncle' or 'cousin') are composed by chaining two or more direct links together.",
+      "id": 8
+    },
+    {
+      "question": "If P is the father of Q, and Q is the father of R, what generation gap exists between P and R?",
+      "options": [
+        "Same generation",
+        "One generation apart",
+        "Two generations apart",
+        "Cannot be determined"
+      ],
+      "correct": 2,
+      "rationale": "P is Q's parent (one generation up) and Q is R's parent (another generation up), so P is R's grandparent \u2014 two generations apart.",
+      "id": 9
+    },
+    {
+      "question": "Which of these terms is generation-neutral (doesn't by itself tell you the generation gap)?",
+      "options": [
+        "Grandfather",
+        "Father",
+        "Cousin",
+        "Grandmother"
+      ],
+      "correct": 2,
+      "rationale": "'Cousin' describes someone in the same generation as you but says nothing by itself about direct generational distance the way 'father' or 'grandfather' do \u2014 its generation is inferred from the underlying parent-child chain.",
+      "id": 10
+    }
+  ]
+}

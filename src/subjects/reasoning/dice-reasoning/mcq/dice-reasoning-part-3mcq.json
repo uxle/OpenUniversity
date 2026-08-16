@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-3",
+  "title": "Dice Reasoning \u2014 Part 3 of 10",
+  "questions": [
+    {
+      "question": "What does treating 'rotation as a vector transformation' allow you to do?",
+      "options": [
+        "Nothing useful for dice reasoning",
+        "Mathematically compute how face directions change after a rotation, rather than visualizing it purely by intuition",
+        "Only applies to 2D shapes, not cubes",
+        "Eliminates the need to know any cube facts"
+      ],
+      "correct": 1,
+      "rationale": "Modeling rotation as a vector transformation lets you compute the resulting face directions precisely, rather than relying purely on mental visualization.",
+      "id": 1
+    },
+    {
+      "question": "What is described as 'the most important exam pattern' in dice reasoning?",
+      "options": [
+        "A single view of a die with no further information",
+        "Being given three different views of the same die and having to deduce hidden face relationships from them",
+        "A die with no numbers on it",
+        "A question with no valid answer"
+      ],
+      "correct": 1,
+      "rationale": "The classic and most common exam pattern presents three different views of the same die, requiring the solver to cross-reference them to deduce hidden relationships.",
+      "id": 2
+    },
+    {
+      "question": "What does an 'adjacent-face table' organize?",
+      "options": [
+        "A list of die colors",
+        "A reference listing which faces are adjacent to each given face, based on the views provided",
+        "The die's manufacturing details",
+        "A random list of numbers"
+      ],
+      "correct": 1,
+      "rationale": "An adjacent-face table systematically organizes which faces are known to be adjacent to each face, built up from the information given across multiple views.",
+      "id": 3
+    },
+    {
+      "question": "What is the 'opposite-face table method' used for?",
+      "options": [
+        "Listing every face's color",
+        "Systematically tracking and deducing which face is opposite each other face, based on cross-referencing multiple views",
+        "Measuring the cube's dimensions",
+        "Randomly assigning opposite pairs"
+      ],
+      "correct": 1,
+      "rationale": "This method builds a systematic table cross-referencing multiple views to deduce and track which faces are opposite which, rather than guessing.",
+      "id": 4
+    },
+    {
+      "question": "What does the 'common face rule' state when comparing two views of a die?",
+      "options": [
+        "Two views can never share a common face",
+        "If two views share exactly one common face shown in the same position/orientation, that shared face can be used to align and compare the rest of the two views",
+        "Shared faces always indicate an invalid pair of views",
+        "Common faces are irrelevant to solving the problem"
+      ],
+      "correct": 1,
+      "rationale": "A shared face in the same position across two views acts as an anchor, letting you align and directly compare the remaining faces of both views.",
+      "id": 5
+    },
+    {
+      "question": "Why is the 'same two faces \u2014 detailed explanation' section likely important?",
+      "options": [
+        "Because sharing two faces provides no extra information",
+        "Because two views sharing two common faces provide a much stronger constraint for determining the third (differing) faces' relationship than sharing only one",
+        "Because two shared faces always means the views are invalid",
+        "Because it only applies to symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "Sharing two common faces between views is a much stronger constraint than sharing just one, since it more tightly pins down the possible relationship of the remaining differing face.",
+      "id": 6
+    },
+    {
+      "question": "Why is 'one face common' between two views generally NOT enough to draw a firm conclusion?",
+      "options": [
+        "It is always enough on its own",
+        "Because a single shared face doesn't fully fix the relative orientation of the other faces, leaving multiple possible arrangements consistent with it",
+        "Because a single shared face is always an error",
+        "Because standard dice never share exactly one face between views"
+      ],
+      "correct": 1,
+      "rationale": "A single shared face still leaves the die free to be rotated around that face, meaning several different arrangements of the remaining faces remain consistent with it.",
+      "id": 7
+    },
+    {
+      "question": "What does the rule 'opposite face cannot be adjacent' allow you to immediately rule out?",
+      "options": [
+        "Nothing, this rule has no practical use",
+        "Any proposed answer or arrangement that shows two known-opposite faces as touching or adjacent, since that's geometrically impossible",
+        "Any answer with an even-numbered face",
+        "Only answers involving symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "This rule provides an instant elimination check: any candidate answer showing two known-opposite faces as adjacent can be immediately ruled out as geometrically impossible.",
+      "id": 8
+    },
+    {
+      "question": "What is the 'hidden face principle'?",
+      "options": [
+        "That dice have no hidden faces",
+        "In any single view of a die, exactly three faces are hidden (not visible), and reasoning must account for what can and cannot be deduced about them",
+        "That all six faces are always visible at once",
+        "That hidden faces are irrelevant to solving any problem"
+      ],
+      "correct": 1,
+      "rationale": "Since only 3 of a cube's 6 faces are visible in any single view, the other 3 are hidden \u2014 the hidden face principle is about correctly reasoning about what can (and can't) be concluded about them.",
+      "id": 9
+    },
+    {
+      "question": "In a single view showing 3 faces of a standard cube, how many faces remain hidden?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "rationale": "6 total faces minus the 3 visible faces leaves exactly 3 hidden faces.",
+      "id": 10
+    }
+  ]
+}

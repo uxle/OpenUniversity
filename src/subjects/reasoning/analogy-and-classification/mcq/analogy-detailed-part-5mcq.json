@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-5",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 5 of 12",
+  "questions": [
+    {
+      "question": "What does a 'Mixed Operation' number analogy involve?",
+      "options": [
+        "Only a single simple operation",
+        "A rule combining more than one arithmetic operation (e.g., multiply then add) to relate the pair",
+        "No arithmetic operation at all",
+        "Only word-based reasoning"
+      ],
+      "correct": 1,
+      "rationale": "A mixed operation analogy combines two or more arithmetic steps (such as multiplying then adding) to relate the given pair of numbers.",
+      "id": 1
+    },
+    {
+      "question": "What does the 'Difference Method' check for in a number analogy?",
+      "options": [
+        "The ratio between the two numbers",
+        "A constant difference between the two numbers in the pair",
+        "The sum of their digits",
+        "Whether both numbers are prime"
+      ],
+      "correct": 1,
+      "rationale": "The difference method checks whether a consistent, constant difference connects the two numbers in the given pair.",
+      "id": 2
+    },
+    {
+      "question": "What does the 'Ratio Method' check for, in contrast to the Difference Method?",
+      "options": [
+        "A constant additive difference",
+        "A constant multiplicative ratio between the two numbers in the pair",
+        "The digit sum",
+        "Whether the numbers are consecutive"
+      ],
+      "correct": 1,
+      "rationale": "The ratio method checks whether a consistent multiplicative ratio (rather than an additive difference) connects the two numbers.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Digit-Sum Analogy' compute?",
+      "options": [
+        "The product of the two numbers",
+        "The sum of a number's individual digits, used as part of the relationship",
+        "The number of digits only",
+        "A completely unrelated value"
+      ],
+      "correct": 1,
+      "rationale": "A digit-sum analogy uses the sum of a number's individual digits (e.g., for 47, 4+7=11) as part of the relationship connecting the pair.",
+      "id": 4
+    },
+    {
+      "question": "What does a 'Digit-Product Analogy' compute, in contrast?",
+      "options": [
+        "The sum of the digits",
+        "The product of a number's individual digits, used as part of the relationship",
+        "The total number of digits",
+        "An unrelated random value"
+      ],
+      "correct": 1,
+      "rationale": "A digit-product analogy multiplies a number's individual digits together (e.g., for 47, 4x7=28), using that as part of the relationship.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'Reverse Number Analogy' involve?",
+      "options": [
+        "Adding the digits together",
+        "Reversing the digit order of a number as part of the relationship (e.g., 123 becomes 321)",
+        "Squaring the number",
+        "A word-based relationship"
+      ],
+      "correct": 1,
+      "rationale": "This analogy type reverses the order of a number's digits as part of the relationship, such as 123 relating to 321.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Letter Analogy' apply the same underlying logic of?",
+      "options": [
+        "Only word synonyms",
+        "Alphabet position-based rules (similar to number analogy, but using letter positions)",
+        "Only geographic relationships",
+        "Only classification logic"
+      ],
+      "correct": 1,
+      "rationale": "Letter analogy applies the same kind of positional/arithmetic logic as number analogy, but operates on letters' alphabet positions instead of plain numbers.",
+      "id": 7
+    },
+    {
+      "question": "What does the 'Alphabet Position Chart' provide for letter analogy?",
+      "options": [
+        "A list of synonyms",
+        "A quick-reference listing of each letter alongside its alphabet position, for fast lookup",
+        "A list of antonyms",
+        "A chart of country capitals"
+      ],
+      "correct": 1,
+      "rationale": "This chart provides a fast-reference lookup of each letter's alphabet position, useful for quickly working through letter analogy problems.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Reverse Alphabet' in letter analogy refer to?",
+      "options": [
+        "Reversing the order of letters in a word",
+        "Mapping each letter to its mirror partner (position p to position 27-p)",
+        "Shifting each letter by a fixed amount",
+        "A synonym for word length"
+      ],
+      "correct": 1,
+      "rationale": "Reverse alphabet, in this context, refers to the same mirror mapping used elsewhere: pairing a letter at position p with its partner at position 27-p.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Letter Shift' in letter analogy refer to?",
+      "options": [
+        "Reversing the alphabet",
+        "Moving each letter forward or backward by a fixed number of alphabet positions",
+        "Reversing word order",
+        "Counting vowels only"
+      ],
+      "correct": 1,
+      "rationale": "Letter shift refers to moving each letter forward or backward by a consistent fixed number of positions in the alphabet, the same idea used in coding-decoding.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-5",
+  "title": "Clock Reasoning \u2014 Part 5 of 10",
+  "questions": [
+    {
+      "question": "What is a 'temporal graph representation' used for?",
+      "options": [
+        "Drawing decorative clock faces",
+        "Modeling events and times as nodes and their relationships as edges, similar to how a family graph models people and relationships",
+        "Only representing time zones",
+        "Replacing the clock-angle formula"
+      ],
+      "correct": 1,
+      "rationale": "A temporal graph models events/times as nodes and their relationships as edges \u2014 the same node-and-edge idea used for family graphs in blood relation reasoning.",
+      "id": 1
+    },
+    {
+      "question": "What is the first stage of a 'clock reasoning pipeline'?",
+      "options": [
+        "Producing the final answer",
+        "Detecting and extracting the temporal entities (times, durations, events) mentioned in the input",
+        "Verifying the answer",
+        "Converting to a different time zone"
+      ],
+      "correct": 1,
+      "rationale": "The pipeline begins with identifying which parts of the input actually refer to times, durations, or events, before any calculation or reasoning can proceed.",
+      "id": 2
+    },
+    {
+      "question": "What does 'temporal entity detection' involve?",
+      "options": [
+        "Detecting which parts of a natural-language input refer to times, durations, or events",
+        "Measuring the physical size of a clock",
+        "Only detecting numbers, regardless of context",
+        "Converting Roman numerals on a clock face"
+      ],
+      "correct": 0,
+      "rationale": "Temporal entity detection is the process of picking out the time-related expressions in natural language before they can be parsed and reasoned over.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'temporal AST' (structured representation)?",
+      "options": [
+        "A physical clock component",
+        "A structured internal model of the parsed times/events and their relationships, similar in spirit to the Blood Relation AST",
+        "A type of time zone",
+        "A shorthand for 'after sunset time'"
+      ],
+      "correct": 1,
+      "rationale": "Just as blood relation reasoning builds an internal structured model of relationships, clock reasoning builds a temporal AST representing parsed times and their relationships.",
+      "id": 4
+    },
+    {
+      "question": "What characterizes 'constraint-based clock reasoning'?",
+      "options": [
+        "Directly calculating a time with one formula only",
+        "Solving for an unknown time by satisfying a set of given relational constraints, rather than direct calculation",
+        "Ignoring any relationships between events",
+        "Only applies to 24-hour format problems"
+      ],
+      "correct": 1,
+      "rationale": "Constraint-based reasoning finds a time value that satisfies all the given relational constraints simultaneously, rather than computing it with one direct formula.",
+      "id": 5
+    },
+    {
+      "question": "What is an 'unknown-time problem'?",
+      "options": [
+        "A problem with no solution",
+        "A question where a time is not given directly but must be deduced from other stated relationships",
+        "A problem about time zones only",
+        "A problem that only involves the hour hand"
+      ],
+      "correct": 1,
+      "rationale": "In an unknown-time problem, the target time isn't stated directly \u2014 it must be derived by reasoning through the relationships given in the problem.",
+      "id": 6
+    },
+    {
+      "question": "What happens when a problem has 'multiple constraints' on an unknown time?",
+      "options": [
+        "Only the first constraint needs to be satisfied",
+        "All constraints must be satisfied simultaneously for the deduced time to be valid",
+        "The constraints are averaged together",
+        "Multiple constraints always make a problem unsolvable"
+      ],
+      "correct": 1,
+      "rationale": "When multiple constraints are given, a valid solution must satisfy every one of them at once, not just the easiest one to check.",
+      "id": 7
+    },
+    {
+      "question": "What does 'ambiguity' mean in the context of clock reasoning?",
+      "options": [
+        "A situation where more than one time value is consistent with the given information",
+        "A clock with no hands",
+        "A time given in an unfamiliar time zone",
+        "A synonym for elapsed time"
+      ],
+      "correct": 0,
+      "rationale": "Ambiguity occurs when the given information doesn't narrow the answer down to a single unique time \u2014 more than one value remains consistent with everything stated.",
+      "id": 8
+    },
+    {
+      "question": "Why is a semantic representation (rather than the raw sentence) preferred for solving constraint-based time problems?",
+      "options": [
+        "It looks more technical",
+        "It separates the meaning (entities and relationships) from the wording, making it easier to apply logical/constraint-solving methods",
+        "It removes the need to read the question",
+        "It only works for single-constraint problems"
+      ],
+      "correct": 1,
+      "rationale": "A semantic representation strips away wording variation and keeps just the meaningful entities and relationships, which is what constraint-solving methods actually operate on.",
+      "id": 9
+    },
+    {
+      "question": "If two constraints on an unknown time contradict each other, what does that indicate?",
+      "options": [
+        "The reasoning system made an unrelated error",
+        "The problem's stated information is inconsistent, so no valid time satisfies all constraints",
+        "The answer is always the average of the two",
+        "One of the constraints should simply be ignored"
+      ],
+      "correct": 1,
+      "rationale": "A genuine contradiction between constraints means the stated information itself is inconsistent \u2014 there is no time value that can satisfy both simultaneously.",
+      "id": 10
+    }
+  ]
+}

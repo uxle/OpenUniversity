@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-1",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 1 of 12",
+  "questions": [
+    {
+      "question": "What is analogy reasoning, at its core?",
+      "options": [
+        "Memorizing dictionary definitions",
+        "Identifying the relationship between one pair of items and finding a second pair that shares the same relationship",
+        "Sorting items into random groups",
+        "Counting the number of letters in each word"
+      ],
+      "correct": 1,
+      "rationale": "Analogy reasoning is about identifying the specific relationship in a given pair, then finding another pair connected by that same relationship.",
+      "id": 1
+    },
+    {
+      "question": "What does the 'mathematical representation' A : B :: C : ? mean?",
+      "options": [
+        "A equals B, and C equals the answer",
+        "A is related to B the same way C is related to the unknown answer",
+        "A is unrelated to B",
+        "The colon symbols represent subtraction"
+      ],
+      "correct": 1,
+      "rationale": "This notation reads as 'A is to B as C is to what,' expressing that the same relationship linking A and B should also link C to the answer.",
+      "id": 2
+    },
+    {
+      "question": "What are the 'main types of analogy' generally split into?",
+      "options": [
+        "Only word analogies",
+        "Word analogies, number analogies, and letter analogies, among others",
+        "Only number analogies",
+        "Only classification analogies"
+      ],
+      "correct": 1,
+      "rationale": "Analogy questions span several main types, including word-based, number-based, and letter-based analogies, each requiring a different kind of relationship detection.",
+      "id": 3
+    },
+    {
+      "question": "What is 'the golden rule' of solving analogies, consistent with the theme across reasoning topics?",
+      "options": [
+        "Guess based on which option sounds best",
+        "State the relationship of the given pair explicitly before testing any answer option",
+        "Always pick the shortest option",
+        "Ignore the given pair and focus only on the options"
+      ],
+      "correct": 1,
+      "rationale": "As in other reasoning topics, the golden rule is to explicitly state the relationship of the given pair first, then test each option against that exact relationship.",
+      "id": 4
+    },
+    {
+      "question": "In 'word analogy,' what is being compared?",
+      "options": [
+        "Only numbers",
+        "Two words connected by some relationship, with a second pair sharing that same relationship",
+        "Only letters",
+        "Random unrelated symbols"
+      ],
+      "correct": 1,
+      "rationale": "Word analogy compares two words linked by a specific relationship, requiring a second matching pair connected the same way.",
+      "id": 5
+    },
+    {
+      "question": "In the 'Object -> Place' analogy type, what relationship is tested?",
+      "options": [
+        "An object and a person who owns it",
+        "An object and the place where it is typically found or kept",
+        "An object and its color",
+        "An object and its price"
+      ],
+      "correct": 1,
+      "rationale": "This analogy type tests the relationship between an object and the specific place it is typically found or kept, such as Book : Library.",
+      "id": 6
+    },
+    {
+      "question": "In the 'Worker -> Workplace' analogy type, what relationship is tested?",
+      "options": [
+        "A worker and their favorite tool",
+        "A worker and the place where they typically work",
+        "A worker and their salary",
+        "A worker and their age"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a worker/profession and their typical workplace, such as Doctor : Hospital.",
+      "id": 7
+    },
+    {
+      "question": "In the 'Worker -> Tool' analogy type, what relationship is tested?",
+      "options": [
+        "A worker and their workplace",
+        "A worker and the tool they characteristically use",
+        "A worker and their salary",
+        "A worker and their supervisor"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a worker and the tool most characteristically associated with their profession, such as Carpenter : Hammer.",
+      "id": 8
+    },
+    {
+      "question": "In the 'Tool -> User' analogy type, how does the relationship direction compare to 'Worker -> Tool'?",
+      "options": [
+        "It's identical in direction",
+        "It is the reverse direction \u2014 starting from the tool and identifying its typical user",
+        "It has no relationship to Worker -> Tool",
+        "It only applies to kitchen tools"
+      ],
+      "correct": 1,
+      "rationale": "Tool -> User reverses the direction of Worker -> Tool, starting from the tool itself and identifying the person who characteristically uses it.",
+      "id": 9
+    },
+    {
+      "question": "In the 'Animal -> Home' analogy type, what relationship is tested?",
+      "options": [
+        "An animal and its diet",
+        "An animal and the structure or place it typically lives in",
+        "An animal and its predator",
+        "An animal and its color"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between an animal and the specific structure or place it typically lives in, such as Bird : Nest or Bee : Hive.",
+      "id": 10
+    }
+  ]
+}

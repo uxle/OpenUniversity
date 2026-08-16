@@ -1,0 +1,174 @@
+{
+  "lessonId": "dice-reasoning-part-10",
+  "title": "Dice Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the guide's solving algorithm for dice problems, what is the first step after identifying the labels on each given view?",
+      "options": [
+        "Immediately guess the answer from the options",
+        "Find any known opposite face pairs across the given views",
+        "Assume all dice are numbered identically to a standard die",
+        "Skip straight to checking rotation"
+      ],
+      "correct": 1,
+      "rationale": "The solving flowchart moves from identifying labels straight to finding known opposite-face pairs, since opposite pairs (faces that never appear together in any single view) are the most reliable and reusable deduction."
+    },
+    {
+      "id": 2,
+      "question": "If two faces of a die appear together (both visible) in even one given view, what can you conclude about them?",
+      "options": [
+        "They must be opposite faces",
+        "They cannot be opposite faces, since opposite faces never appear together in the same view",
+        "They are always adjacent to every other face",
+        "Nothing can be concluded"
+      ],
+      "correct": 1,
+      "rationale": "A standard cube's opposite faces are on parallel sides and can never both be visible in the same single view \u2014 so two faces seen together in one view rule out the possibility that they are opposite."
+    },
+    {
+      "id": 3,
+      "question": "According to the solving flowchart, when should you reject an answer option?",
+      "options": [
+        "Whenever the option contains an unfamiliar face label",
+        "When the option shows a known opposite pair touching/adjacent to each other, which is impossible",
+        "Whenever the option shows the die rotated at all",
+        "Options should never be rejected before full rotation tracking"
+      ],
+      "correct": 1,
+      "rationale": "Since opposite faces can never be adjacent on a cube, an answer option depicting a known opposite pair as touching is immediately invalid and can be rejected without needing full rotation tracking."
+    },
+    {
+      "id": 4,
+      "question": "When is tracking the die's exact rotation/orientation necessary, according to the solving method?",
+      "options": [
+        "For every dice question, without exception",
+        "Only when the question requires an exact orientation match, not just an adjacency/opposite-rule check",
+        "Never \u2014 opposite-pair logic alone always suffices",
+        "Only when fewer than two views are given"
+      ],
+      "correct": 1,
+      "rationale": "The flowchart branches: if the question only needs an adjacency/opposite-rule answer, that check is enough; full rotation tracking is only needed when an exact orientation match is required."
+    },
+    {
+      "question": "What is the purpose of a 'printable one-page cheat sheet' at the end of this lesson?",
+      "options": [
+        "To introduce material not covered elsewhere",
+        "To condense every essential dice reasoning rule and formula into a single compact reference for quick review",
+        "To replace the need for the practice sets",
+        "To only summarize the first two parts of the lesson"
+      ],
+      "correct": 1,
+      "rationale": "A one-page cheat sheet condenses every essential rule and formula from across the entire lesson into one compact, easily-reviewable reference.",
+      "id": 5
+    },
+    {
+      "question": "Why might this lesson include visual diagrams of the cube, its opposite pairs, and its coordinate axes?",
+      "options": [
+        "Diagrams have no educational value here",
+        "To reinforce the spatial relationships covered throughout the lesson visually, supporting learners who benefit from seeing the structure directly",
+        "To replace the need for any written rules",
+        "Because diagrams are only useful for symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "Visual diagrams reinforce the spatial relationships already covered in writing, which is especially valuable for learners who benefit from seeing the cube's structure directly.",
+      "id": 6
+    },
+    {
+      "question": "What is the purpose of a 'comparison chart' near the end of the lesson?",
+      "options": [
+        "To compare unrelated topics",
+        "To summarize side-by-side how different question types (opposite, adjacency, rolling, nets) are approached, for quick comparison",
+        "To replace the master formula sheet entirely",
+        "To only compare colors of dice"
+      ],
+      "correct": 1,
+      "rationale": "A comparison chart lays out side by side how the different question types covered throughout the lesson are each approached, supporting quick comparison and review.",
+      "id": 7
+    },
+    {
+      "question": "What is a 'mental visualization drill' meant to build?",
+      "options": [
+        "Physical dexterity with real dice",
+        "The ability to mentally rotate and track a die's faces quickly and accurately without needing an external diagram",
+        "Knowledge of dice manufacturing",
+        "Nothing useful for exam performance"
+      ],
+      "correct": 1,
+      "rationale": "These drills build the ability to mentally rotate and track face positions quickly and accurately, without needing to rely on an external diagram every time.",
+      "id": 8
+    },
+    {
+      "question": "What is the purpose of a 'final master summary'?",
+      "options": [
+        "To introduce entirely new rules",
+        "To consolidate every major rule and technique covered across all 10 parts into one comprehensive review",
+        "To only summarize the practice sets",
+        "To replace the need for the cheat sheet"
+      ],
+      "correct": 1,
+      "rationale": "A final master summary draws together every major rule and technique from all 10 parts into one comprehensive, consolidated review.",
+      "id": 9
+    },
+    {
+      "question": "What is a 'final memory map' likely intended to show?",
+      "options": [
+        "A physical map of dice factories",
+        "How all the individual concepts and rules covered throughout the lesson connect to and build on each other",
+        "Only the answers to the practice sets",
+        "An unrelated diagram"
+      ],
+      "correct": 1,
+      "rationale": "A memory map shows how all the individual concepts and rules taught throughout the lesson connect together and build on one another, supporting holistic recall.",
+      "id": 10
+    },
+    {
+      "question": "What is the purpose of ending the lesson with a 'master test'?",
+      "options": [
+        "To discourage further study",
+        "To let the learner assess whether they can reliably apply everything covered across the full lesson to new problems",
+        "To only test the very first part of the lesson",
+        "To replace all prior practice sets"
+      ],
+      "correct": 1,
+      "rationale": "A closing master test lets the learner self-assess whether they can reliably apply everything covered across the entire lesson to new, unseen problems.",
+      "id": 11
+    },
+    {
+      "question": "Why does the lesson conclude with visualization drills and a master test rather than new rules?",
+      "options": [
+        "Because there was no more content to teach at all",
+        "Because by this point, every necessary rule has already been taught, and the focus shifts to consolidation, practice, and self-assessment",
+        "Because rules are considered unimportant at this stage",
+        "Because the lesson ran out of space"
+      ],
+      "correct": 1,
+      "rationale": "By the closing sections, every necessary rule has already been introduced \u2014 the focus appropriately shifts to consolidation, applied practice, and self-assessment.",
+      "id": 12
+    },
+    {
+      "question": "What is the benefit of practicing 'mental visualization' specifically for dice reasoning, beyond just knowing the rules?",
+      "options": [
+        "There is no additional benefit",
+        "It builds the speed and confidence needed to apply the rules quickly under real exam time pressure, rather than needing to consciously re-derive each step",
+        "It replaces the need to know the rules at all",
+        "It only helps with symbol dice, not numbered dice"
+      ],
+      "correct": 1,
+      "rationale": "Knowing the rules is necessary but not sufficient for speed \u2014 mental visualization practice builds the fluency needed to apply those rules quickly and confidently under real time pressure.",
+      "id": 13
+    },
+    {
+      "question": "What is the overarching lesson of this entire 10-part chapter on dice reasoning?",
+      "options": [
+        "That dice reasoning is purely a matter of luck",
+        "That reliably solving dice reasoning problems comes from systematically applying cube geometry rules (opposite faces, adjacency, corner compatibility), reinforced through practice, not from guessing based on visual impression alone",
+        "That only memorized shortcuts matter, not understanding",
+        "That dice reasoning only applies to a narrow set of unusual exam questions"
+      ],
+      "correct": 1,
+      "rationale": "The chapter's consistent central lesson is that reliable dice reasoning comes from systematically applying the cube's geometric rules, reinforced through deliberate practice \u2014 not from guesswork based on visual impression alone.",
+      "id": 14
+    }
+  ]
+}

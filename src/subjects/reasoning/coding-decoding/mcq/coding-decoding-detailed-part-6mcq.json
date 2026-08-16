@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-6",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 6 of 22",
+  "questions": [
+    {
+      "question": "What does 'first + last coding' compute?",
+      "options": [
+        "The word's total length",
+        "The sum of the alphabet positions of the word's first and last letters",
+        "The product of the first and last letters' positions",
+        "Only the first letter's position"
+      ],
+      "correct": 1,
+      "rationale": "First + last coding adds together the alphabet-position values of just the word's first and last letters.",
+      "id": 1
+    },
+    {
+      "question": "What does 'first x last coding' compute, in contrast?",
+      "options": [
+        "The same sum as first + last coding",
+        "The product of the alphabet positions of the word's first and last letters",
+        "The difference between them",
+        "The average of all letters in the word"
+      ],
+      "correct": 1,
+      "rationale": "Instead of adding the first and last letters' positions, this variation multiplies them together to produce the code.",
+      "id": 2
+    },
+    {
+      "question": "What does 'first-last difference' compute?",
+      "options": [
+        "The sum of the first and last letters' positions",
+        "The difference between the alphabet positions of the word's first and last letters",
+        "The word's total length",
+        "The average of all letters"
+      ],
+      "correct": 1,
+      "rationale": "This computes the numeric gap (difference) between the alphabet positions of the word's first and last letters.",
+      "id": 3
+    },
+    {
+      "question": "What does 'middle-letter coding' use as a word's code?",
+      "options": [
+        "The word's first letter",
+        "The letter (or letters) positioned in the middle of the word",
+        "The word's last letter",
+        "The total letter count"
+      ],
+      "correct": 1,
+      "rationale": "Middle-letter coding bases the code on whichever letter (or letters, for even-length words) sits in the middle of the word.",
+      "id": 4
+    },
+    {
+      "question": "What is 'sentence coding'?",
+      "options": [
+        "Coding that only works on single letters",
+        "Applying a coding rule across an entire sentence rather than just a single word, often word by word",
+        "A rule that ignores whole sentences",
+        "Only relevant to the Chinese coding method"
+      ],
+      "correct": 1,
+      "rationale": "Sentence coding extends the coding logic beyond a single word, applying a rule across an entire sentence, typically transforming it word by word.",
+      "id": 5
+    },
+    {
+      "question": "What is the 'Chinese coding method' generally known for in coding-decoding reasoning?",
+      "options": [
+        "A rule based on Chinese characters directly",
+        "A technique where each word in a sentence is assigned an arbitrary code word, and the mapping must be deduced from multiple coded sentences sharing common words",
+        "A synonym for letter-shift coding",
+        "A method that only uses numbers"
+      ],
+      "correct": 1,
+      "rationale": "In this classic technique, whole words are replaced with arbitrary code words, and the solver must compare multiple coded sentences with overlapping real words to deduce which code word means what.",
+      "id": 6
+    },
+    {
+      "question": "What does the 'Chinese coding algorithm' involve as its core step?",
+      "options": [
+        "Applying a single alphabet shift",
+        "Comparing multiple coded sentences to find which code word consistently corresponds to which real word, by process of elimination",
+        "Reversing every word in the sentence",
+        "Counting letters in each sentence"
+      ],
+      "correct": 1,
+      "rationale": "The core technique is comparing several coded sentences that share common real words, using process of elimination to isolate which code word corresponds to which real word.",
+      "id": 7
+    },
+    {
+      "question": "Using first+last coding, what is the code for 'CAT' (C=3, T=20)?",
+      "options": [
+        "17",
+        "20",
+        "23",
+        "60"
+      ],
+      "correct": 2,
+      "rationale": "3 (C) + 20 (T) = 23.",
+      "id": 8
+    },
+    {
+      "question": "Using first x last coding, what is the code for 'CAT' (C=3, T=20)?",
+      "options": [
+        "17",
+        "23",
+        "40",
+        "60"
+      ],
+      "correct": 3,
+      "rationale": "3 (C) x 20 (T) = 60.",
+      "id": 9
+    },
+    {
+      "question": "Why does the Chinese coding method require comparing MULTIPLE coded sentences rather than just one?",
+      "options": [
+        "One sentence is always sufficient",
+        "Because a single sentence only pairs whole coded sentences with whole real sentences; comparing several with overlapping words is needed to isolate which code corresponds to which individual word",
+        "Because Chinese coding never uses more than one sentence",
+        "Because multiple sentences are required only for very long words"
+      ],
+      "correct": 1,
+      "rationale": "A single sentence pair only tells you which set of code words matches which set of real words as a whole \u2014 you need overlapping words across multiple sentences to isolate the mapping for each individual word.",
+      "id": 10
+    }
+  ]
+}

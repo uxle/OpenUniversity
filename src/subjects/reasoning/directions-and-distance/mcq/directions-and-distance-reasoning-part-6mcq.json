@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-6",
+  "title": "Directions and Distance Reasoning \u2014 Part 6 of 10",
+  "questions": [
+    {
+      "question": "What is a 'spatial type system' designed to catch?",
+      "options": [
+        "Spelling errors in place names",
+        "Mismatches like mixing distance units or confusing a direction value with a distance value during a calculation",
+        "Only errors in 3D problems",
+        "Errors in unrelated reasoning topics"
+      ],
+      "correct": 1,
+      "rationale": "A spatial type system flags mismatches such as accidentally treating a direction value as if it were a distance, or combining distances in different units.",
+      "id": 1
+    },
+    {
+      "question": "What is 'path planning' concerned with?",
+      "options": [
+        "Drawing decorative maps",
+        "Determining a valid route between two points, possibly under given constraints",
+        "Only calculating straight-line displacement",
+        "Measuring elapsed time only"
+      ],
+      "correct": 1,
+      "rationale": "Path planning focuses on finding a valid route from one point to another, potentially subject to constraints like avoiding certain paths or following a grid.",
+      "id": 2
+    },
+    {
+      "question": "What is 'grid reasoning' used for?",
+      "options": [
+        "Solving spatial problems where positions are represented on a discrete grid rather than continuous coordinates",
+        "Only measuring Euclidean distance",
+        "Converting units",
+        "Detecting contradictions in blood relation problems"
+      ],
+      "correct": 0,
+      "rationale": "Grid reasoning applies when positions are modeled on a discrete grid (like city blocks) rather than continuous real-valued coordinates.",
+      "id": 3
+    },
+    {
+      "question": "What does 'spatial graph reasoning' allow you to do?",
+      "options": [
+        "Nothing beyond drawing the graph",
+        "Trace relationships and derive unknown positions by following edges (relationships) between nodes (entities) in the graph",
+        "Only calculate distances, never directions",
+        "Replace the need for coordinate propagation"
+      ],
+      "correct": 1,
+      "rationale": "Spatial graph reasoning lets you trace through the graph's edges to derive an unknown entity's position from its known relationships to other entities.",
+      "id": 4
+    },
+    {
+      "question": "What is the purpose of 'contradiction detection' in spatial reasoning?",
+      "options": [
+        "It has no practical purpose",
+        "Catching a new spatial statement that conflicts with previously established positions or directions",
+        "Detecting spelling errors only",
+        "Automatically fixing all errors without review"
+      ],
+      "correct": 1,
+      "rationale": "Contradiction detection catches a newly-added statement that conflicts with positions or directions already established, flagging a problem before it propagates further.",
+      "id": 5
+    },
+    {
+      "question": "What does 'consistency checking' verify?",
+      "options": [
+        "That every entity has a name",
+        "That all the given spatial constraints can be satisfied together without contradiction",
+        "That the map is drawn to scale",
+        "That only one entity is involved in the problem"
+      ],
+      "correct": 1,
+      "rationale": "Consistency checking confirms that every given spatial constraint can be simultaneously satisfied, rather than containing a hidden contradiction.",
+      "id": 6
+    },
+    {
+      "question": "What is an 'uncertain direction' problem?",
+      "options": [
+        "A problem with no solution",
+        "One where the exact direction isn't precisely stated, requiring the reasoner to work with a range of possibilities",
+        "A problem only involving distance, not direction",
+        "A problem where the compass is broken"
+      ],
+      "correct": 1,
+      "rationale": "In an uncertain-direction problem, the exact direction isn't pinned down precisely, so the reasoner must work with a range of possible directions consistent with what's given.",
+      "id": 7
+    },
+    {
+      "question": "What is required for 'map and image reasoning'?",
+      "options": [
+        "Nothing, maps cannot be reasoned about",
+        "Extracting positions, directions, and distances from a visual representation like a map or diagram",
+        "Only reading text labels on the map",
+        "Measuring the physical size of the printed map"
+      ],
+      "correct": 1,
+      "rationale": "Map and image reasoning requires extracting the actual spatial information (positions, directions, distances) encoded visually in a map or diagram.",
+      "id": 8
+    },
+    {
+      "question": "What is 'landmark reasoning' based on?",
+      "options": [
+        "Using known reference points (landmarks) to determine or describe the position of other entities",
+        "Ignoring all reference points entirely",
+        "Only using time-based reasoning",
+        "Randomly assigning positions"
+      ],
+      "correct": 0,
+      "rationale": "Landmark reasoning uses known, fixed reference points to determine or describe the positions of other entities relative to them.",
+      "id": 9
+    },
+    {
+      "question": "Why is consistency checking especially important in longer, multi-constraint spatial problems?",
+      "options": [
+        "It isn't especially important for longer problems",
+        "Because an error introduced early can silently propagate and invalidate later derived positions if not caught",
+        "Because longer problems never contain constraints",
+        "Because it removes the need for a spatial graph"
+      ],
+      "correct": 1,
+      "rationale": "In longer, multi-constraint problems, an early undetected error can silently propagate through every subsequent derived position, making consistency checking increasingly important as the chain grows.",
+      "id": 10
+    }
+  ]
+}

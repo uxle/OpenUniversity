@@ -1,0 +1,126 @@
+{
+  "lessonId": "counting-of-figures-part-2",
+  "title": "Counting of Figures \u2014 Part 2 of 12",
+  "questions": [
+    {
+      "question": "What is the total number of squares of all sizes in a 3x3 grid of unit squares?",
+      "options": [
+        "9",
+        "12",
+        "14",
+        "16"
+      ],
+      "correct": 2,
+      "rationale": "Summing squares of each size: 3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14.",
+      "id": 1
+    },
+    {
+      "question": "What is the total number of squares of all sizes in a 4x4 grid of unit squares?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "36"
+      ],
+      "correct": 2,
+      "rationale": "Summing squares of each size: 4^2 + 3^2 + 2^2 + 1^2 = 16 + 9 + 4 + 1 = 30.",
+      "id": 2
+    },
+    {
+      "question": "What is the general formula for the total number of squares (all sizes) in an n x n grid of unit squares?",
+      "options": [
+        "n^2",
+        "n(n+1)/2",
+        "n(n+1)(2n+1)/6",
+        "2n - 1"
+      ],
+      "correct": 2,
+      "rationale": "The total is the sum of squares 1^2 + 2^2 + ... + n^2, which has the closed form n(n+1)(2n+1)/6.",
+      "id": 3
+    },
+    {
+      "question": "In a 2x3 rectangular grid (2 rows, 3 columns of unit squares), how many 1x1 squares are there?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correct": 2,
+      "rationale": "A 2-row by 3-column grid of unit cells contains 2 x 3 = 6 unit squares.",
+      "id": 4
+    },
+    {
+      "question": "What is the key difference between counting 'squares' and counting 'rectangles' in a grid?",
+      "options": [
+        "They are exactly the same count",
+        "Squares require equal width and height, while rectangles allow any width-height combination, so every square is a rectangle but not vice versa",
+        "Rectangles are always larger than squares",
+        "Squares can only appear in odd-sized grids"
+      ],
+      "correct": 1,
+      "rationale": "A square is a special case of a rectangle with equal width and height \u2014 so counting rectangles includes all squares plus every non-square rectangle.",
+      "id": 5
+    },
+    {
+      "question": "What is the formula for counting the total number of rectangles (including squares) in a grid with 'a' vertical boundary lines and 'b' horizontal boundary lines?",
+      "options": [
+        "a x b",
+        "C(a,2) x C(b,2)",
+        "a^2 + b^2",
+        "(a-1)(b-1)"
+      ],
+      "correct": 1,
+      "rationale": "Any rectangle is uniquely determined by choosing 2 of the 'a' vertical lines and 2 of the 'b' horizontal lines as its sides, giving C(a,2) x C(b,2).",
+      "id": 6
+    },
+    {
+      "question": "Why does counting rectangles by choosing boundary lines work as a method?",
+      "options": [
+        "It doesn't actually work reliably",
+        "Because any rectangle is uniquely determined by choosing 2 vertical lines and 2 horizontal lines from the grid as its sides",
+        "Because it only counts the largest rectangle",
+        "Because it ignores squares entirely"
+      ],
+      "correct": 1,
+      "rationale": "Every valid rectangle corresponds to exactly one choice of 2 vertical and 2 horizontal grid lines as its four sides, making this a reliable one-to-one counting method.",
+      "id": 7
+    },
+    {
+      "question": "In a grid with 4 vertical lines and 3 horizontal lines, how many total rectangles can be formed?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "24"
+      ],
+      "correct": 2,
+      "rationale": "C(4,2) x C(3,2) = 6 x 3 = 18 total rectangles.",
+      "id": 8
+    },
+    {
+      "question": "What is a 'basic triangle' in this lesson's terminology?",
+      "options": [
+        "The largest triangle in the figure",
+        "The smallest, undivided triangular region in a figure, not made up of smaller sub-triangles",
+        "Any triangle with a right angle",
+        "A triangle formed only by diagonals"
+      ],
+      "correct": 1,
+      "rationale": "A basic triangle is the smallest, undivided triangular region \u2014 the fundamental building block that composite (larger) triangles are formed from.",
+      "id": 9
+    },
+    {
+      "question": "Why do grid formulas (like the squares formula) work reliably across different grid sizes?",
+      "options": [
+        "They only work for one specific grid size",
+        "Because they systematically count every valid position and size of a shape based on the grid's fixed structure, rather than relying on case-by-case visual counting",
+        "Because grids never actually vary in size",
+        "Because they ignore the grid's boundary lines"
+      ],
+      "correct": 1,
+      "rationale": "Grid formulas are derived from the grid's consistent structure, so they systematically account for every valid size and position of a shape regardless of how large the grid is.",
+      "id": 10
+    }
+  ]
+}

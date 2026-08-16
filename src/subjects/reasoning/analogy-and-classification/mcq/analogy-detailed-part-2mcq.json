@@ -1,0 +1,126 @@
+{
+  "lessonId": "analogy-detailed-part-2",
+  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 2 of 12",
+  "questions": [
+    {
+      "question": "In the 'Animal -> Young One' analogy type, what relationship is tested?",
+      "options": [
+        "An animal and its habitat",
+        "An animal and the specific term for its offspring",
+        "An animal and its predator",
+        "An animal and its sound"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between an adult animal and the specific term for its young, such as Cat : Kitten or Dog : Puppy.",
+      "id": 1
+    },
+    {
+      "question": "In the 'Male -> Female' analogy type, what relationship is tested?",
+      "options": [
+        "An animal and its home",
+        "The male term for a species or role and its corresponding female term",
+        "An animal and its young",
+        "A worker and their tool"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between the male and female terms for the same species or role, such as Lion : Lioness.",
+      "id": 2
+    },
+    {
+      "question": "In the 'Young One -> Adult' analogy type, how does this compare to 'Animal -> Young One'?",
+      "options": [
+        "It is the same relationship in the same direction",
+        "It is the reverse direction, starting from the young animal's term and identifying the adult term",
+        "It has no relationship to Animal -> Young One",
+        "It only applies to birds"
+      ],
+      "correct": 1,
+      "rationale": "This reverses the direction of Animal -> Young One, starting from the young animal's specific term and asking for the corresponding adult term.",
+      "id": 3
+    },
+    {
+      "question": "In the 'Part -> Whole' analogy type, what relationship is tested?",
+      "options": [
+        "A whole item and one of its components",
+        "A component and the whole item it belongs to",
+        "Two unrelated objects",
+        "A worker and their tool"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a component/part and the complete whole it belongs to, such as Wheel : Car.",
+      "id": 4
+    },
+    {
+      "question": "How does 'Whole -> Part' differ from 'Part -> Whole'?",
+      "options": [
+        "They are identical relationships",
+        "It reverses the direction, starting from the whole item and identifying one of its components",
+        "Whole -> Part only applies to animals",
+        "There is no valid reverse direction"
+      ],
+      "correct": 1,
+      "rationale": "Whole -> Part reverses the direction of Part -> Whole, starting from the complete item (like Car) and identifying one of its components (like Wheel).",
+      "id": 5
+    },
+    {
+      "question": "In the 'Material -> Product' analogy type, what relationship is tested?",
+      "options": [
+        "A raw material and something commonly made from it",
+        "A finished product and its price",
+        "A material and its color",
+        "A worker and their tool"
+      ],
+      "correct": 1,
+      "rationale": "This type tests the relationship between a raw material and a product commonly made from it, such as Wood : Furniture.",
+      "id": 6
+    },
+    {
+      "question": "How does 'Product -> Material' differ from 'Material -> Product'?",
+      "options": [
+        "They are the same relationship",
+        "It reverses the direction, starting from the finished product and identifying its raw material",
+        "Product -> Material only applies to metals",
+        "There is no valid reverse direction"
+      ],
+      "correct": 1,
+      "rationale": "Product -> Material reverses the direction, starting with the finished product (like Furniture) and identifying the raw material it's made from (like Wood).",
+      "id": 7
+    },
+    {
+      "question": "What does a 'Synonym Analogy' test?",
+      "options": [
+        "Two words with opposite meanings",
+        "Two words with the same or very similar meaning, matched to another same-meaning pair",
+        "Two unrelated words",
+        "Two words that rhyme"
+      ],
+      "correct": 1,
+      "rationale": "Synonym analogy tests pairs of words with the same or closely similar meaning, such as Happy : Joyful.",
+      "id": 8
+    },
+    {
+      "question": "What does an 'Antonym Analogy' test, in contrast?",
+      "options": [
+        "Two words with similar meanings",
+        "Two words with opposite meanings, matched to another opposite-meaning pair",
+        "Two unrelated words",
+        "Two words that sound alike"
+      ],
+      "correct": 1,
+      "rationale": "Antonym analogy tests pairs of words with opposite meanings, such as Hot : Cold, requiring a second pair with the same opposite relationship.",
+      "id": 9
+    },
+    {
+      "question": "What does a 'Degree Analogy' test?",
+      "options": [
+        "Two words with opposite meanings",
+        "The same underlying quality expressed at two different intensities, such as Warm : Hot",
+        "Two completely unrelated qualities",
+        "A worker and their tool"
+      ],
+      "correct": 1,
+      "rationale": "Degree analogy tests words describing the same quality at different levels of intensity, such as Warm : Hot, where both describe temperature but at different degrees.",
+      "id": 10
+    }
+  ]
+}

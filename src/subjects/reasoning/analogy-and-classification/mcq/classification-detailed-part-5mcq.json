@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-5",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 5 of 16",
+  "questions": [
+    {
+      "question": "What does 'Reverse Alphabet Classification' test?",
+      "options": [
+        "A simple forward letter shift",
+        "Whether a group of letters or letter pairs share a reverse-alphabet (mirror) relationship, with one breaking it",
+        "A vowel/consonant split",
+        "A digit sum property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group shares a reverse-alphabet (mirror) relationship, identifying the letter or pair that doesn't follow that same mirrored pattern.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Word-Length Classification' test?",
+      "options": [
+        "Word meaning",
+        "Whether a group of words share a common letter count, with one word having a different length",
+        "Letter position only",
+        "A digit-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of words all share the same total letter count, identifying the one word with a different length.",
+      "id": 2
+    },
+    {
+      "question": "How does 'Letter Count Classification' relate to Word-Length Classification?",
+      "options": [
+        "They are unrelated ideas",
+        "They test the same underlying property \u2014 the number of letters in each word",
+        "Letter count only applies to numbers",
+        "Word length ignores letter count entirely"
+      ],
+      "correct": 1,
+      "rationale": "Both terms describe the same underlying idea: classifying based on how many letters each word contains.",
+      "id": 3
+    },
+    {
+      "question": "What does 'Repeated-Letter Classification' test?",
+      "options": [
+        "Whether words are all the same length",
+        "Whether a group of words all contain a repeated letter, with one word having no repeated letters (or vice versa)",
+        "Whether words are all synonyms",
+        "Whether words share the same first letter"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether words share the property of containing a repeated letter, identifying the one word that breaks that shared pattern.",
+      "id": 4
+    },
+    {
+      "question": "What does 'Unique-Letter Classification' test, in contrast?",
+      "options": [
+        "The same property as repeated-letter classification",
+        "Whether a group of words all have entirely unique (non-repeating) letters, with one word breaking that pattern",
+        "Whether words are all synonyms",
+        "Whether words share the same length"
+      ],
+      "correct": 1,
+      "rationale": "This tests the opposite property from repeated-letter classification \u2014 whether every letter in each word is unique, with no repeats \u2014 identifying the exception.",
+      "id": 5
+    },
+    {
+      "question": "What does 'Alphabetical Order Classification' test?",
+      "options": [
+        "Word meaning only",
+        "Whether a group of words' letters are arranged in alphabetical order internally, with one word breaking that pattern",
+        "A digit-based property",
+        "A synonym/antonym relationship"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether each word's own letters appear in alphabetical order (like 'aim'), identifying the one word that doesn't follow this internal ordering.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Reverse Alphabetical Order' classification test, similarly?",
+      "options": [
+        "The same property as alphabetical order",
+        "Whether each word's letters appear in REVERSE alphabetical order internally, with one word breaking that pattern",
+        "A digit-based property",
+        "A synonym relationship"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether each word's own letters appear in reverse alphabetical order, identifying the exception that doesn't follow this pattern.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Word Semantic Classification' test?",
+      "options": [
+        "Only letter-based properties",
+        "Whether a group of words share a common meaning-based category, with one word belonging to a different meaning category",
+        "Only numeric properties",
+        "Only word length"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether words share a common meaning-based (semantic) category, identifying the one word whose meaning doesn't fit that shared category.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Synonym Classification' test?",
+      "options": [
+        "Words with opposite meanings",
+        "Whether a group of words are all synonyms (similar meaning) of each other, with one word not sharing that meaning",
+        "A letter-count property",
+        "A digit-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of words are all synonyms of each other, identifying the one word whose meaning doesn't match the shared synonym group.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Antonym Classification' test, in contrast?",
+      "options": [
+        "Words with similar meanings",
+        "A group where most items form opposite-meaning pairs, with one item breaking that antonym pattern",
+        "A letter-count property",
+        "A digit-based property"
+      ],
+      "correct": 1,
+      "rationale": "This tests a pattern based on opposite (antonym) meanings among the group, identifying the item that breaks the expected antonym relationship.",
+      "id": 10
+    }
+  ]
+}

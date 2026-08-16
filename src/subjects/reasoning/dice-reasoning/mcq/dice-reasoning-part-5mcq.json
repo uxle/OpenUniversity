@@ -1,0 +1,126 @@
+{
+  "lessonId": "dice-reasoning-part-5",
+  "title": "Dice Reasoning \u2014 Part 5 of 10",
+  "questions": [
+    {
+      "question": "What does a 'right roll' of a die do to its faces?",
+      "options": [
+        "Nothing, faces stay fixed",
+        "Rotates the die 90 degrees to the right, moving the top face to the right side, the right face to the bottom, and so on in a cycle",
+        "Swaps only the top and bottom faces",
+        "Rotates the die around a vertical axis only"
+      ],
+      "correct": 1,
+      "rationale": "A right roll rotates the die 90 degrees to the right around its front-back axis, cycling top -> right -> bottom -> left -> top.",
+      "id": 1
+    },
+    {
+      "question": "What does a 'left roll' do, compared to a right roll?",
+      "options": [
+        "Exactly the same thing as a right roll",
+        "Rotates the die 90 degrees in the opposite direction, cycling the faces the reverse way around the same axis",
+        "Only rotates the die vertically",
+        "Has no effect on the die's faces"
+      ],
+      "correct": 1,
+      "rationale": "A left roll cycles the same set of faces (top, right, bottom, left) but in the reverse direction compared to a right roll.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'backward roll' (or forward roll) rotate the die around, compared to left/right rolls?",
+      "options": [
+        "The exact same axis as left/right rolls",
+        "A different axis \u2014 front-to-back rather than left-to-right \u2014 cycling the top, front, and bottom faces instead",
+        "No axis at all",
+        "Only the die's color, not its faces"
+      ],
+      "correct": 1,
+      "rationale": "Forward/backward rolls rotate around the left-right axis, cycling the top, front, bottom, and back faces \u2014 a different set from the left/right roll's top-right-bottom-left cycle.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'rotation cycle memory chart' used for?",
+      "options": [
+        "Tracking the die's color changes",
+        "Summarizing which face moves to which position for each type of roll (right, left, forward, backward), as a quick reference",
+        "Listing the die's manufacturing date",
+        "Only used for symbol dice, not numbered ones"
+      ],
+      "correct": 1,
+      "rationale": "This chart consolidates exactly how each roll type (right, left, forward, backward) cycles the faces, providing a quick reference instead of re-deriving it each time.",
+      "id": 4
+    },
+    {
+      "question": "After a 180-degree rotation around a given axis, what happens to the face that was on top?",
+      "options": [
+        "It stays on top",
+        "It moves to the position directly opposite where it started (e.g., top becomes bottom)",
+        "It becomes hidden permanently",
+        "It swaps with a random side face"
+      ],
+      "correct": 1,
+      "rationale": "A full 180-degree rotation around an axis moves a face to the position diametrically opposite its starting point \u2014 top becomes bottom, for instance.",
+      "id": 5
+    },
+    {
+      "question": "What is a 'rotation invariant' in dice reasoning?",
+      "options": [
+        "A face that changes with every rotation",
+        "A property (like which faces are opposite each other) that stays the same no matter how the die is rotated",
+        "A die that cannot be rotated",
+        "A rule that only applies to symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "A rotation invariant is a property, like the set of opposite-face pairs, that remains fixed regardless of how the die is physically rotated.",
+      "id": 6
+    },
+    {
+      "question": "What does an 'impossible position test' check for?",
+      "options": [
+        "Whether the die has the correct number of faces",
+        "Whether a proposed arrangement of faces could ever actually occur through valid rotations of the real die, ruling out impossible answer options",
+        "The physical weight of the die",
+        "Whether the die's color is valid"
+      ],
+      "correct": 1,
+      "rationale": "This test checks whether a proposed face arrangement could actually be reached through valid rotations of the real die, which is a powerful way to eliminate impossible answer options.",
+      "id": 7
+    },
+    {
+      "question": "What does a 'two-face adjacency test' verify?",
+      "options": [
+        "Whether two faces are the same color",
+        "Whether two specific faces can validly be adjacent to each other, based on what's already known about the die's layout",
+        "The total number of faces on the die",
+        "Whether the die is a standard numbered die"
+      ],
+      "correct": 1,
+      "rationale": "This test verifies whether two specific faces can validly be adjacent, checked against the adjacency and opposite relationships already established for the die.",
+      "id": 8
+    },
+    {
+      "question": "What does a 'three-face compatibility test' check, beyond a two-face adjacency test?",
+      "options": [
+        "Nothing additional \u2014 they check the same thing",
+        "Whether three specific faces could all validly meet together at the same corner, not just whether each pair is individually adjacent",
+        "Only the color of the three faces",
+        "Whether the three faces are all even numbers"
+      ],
+      "correct": 1,
+      "rationale": "This test goes further than pairwise adjacency, checking whether all three faces together could genuinely meet at one shared corner of the cube.",
+      "id": 9
+    },
+    {
+      "question": "What is the purpose of using a 'reference corner' for orientation?",
+      "options": [
+        "To make the problem more confusing",
+        "To have one fixed, known point of reference from which all other face positions and rotations can be consistently tracked",
+        "To eliminate the need for any rotation rules",
+        "To only apply to symbol dice"
+      ],
+      "correct": 1,
+      "rationale": "A fixed reference corner provides a consistent anchor point, letting all subsequent rotations and face positions be tracked relative to it rather than drifting inconsistently.",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-6",
+  "title": "Clock Reasoning \u2014 Part 6 of 10",
+  "questions": [
+    {
+      "question": "What does a 'confidence' measure represent in constraint-based clock reasoning?",
+      "options": [
+        "The brand reliability of the clock",
+        "How certain the reasoning system is that a deduced time is correct, especially under ambiguity",
+        "The exact number of constraints given",
+        "The speed of the calculation"
+      ],
+      "correct": 1,
+      "rationale": "Confidence reflects how certain a deduced answer is, which becomes especially relevant when the given information is ambiguous or incomplete.",
+      "id": 1
+    },
+    {
+      "question": "How should a clock reasoning system handle 'missing information'?",
+      "options": [
+        "Guess a plausible-sounding value",
+        "Flag that the time cannot be fully determined, rather than guessing a specific value",
+        "Default to 12:00 automatically",
+        "Ignore the question entirely"
+      ],
+      "correct": 1,
+      "rationale": "When information is missing, a careful system should flag that the time can't be fully determined rather than silently guessing and presenting a false certainty.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'day boundary' issue in clock reasoning?",
+      "options": [
+        "A physical boundary printed on some clock faces",
+        "A time calculation that crosses from one calendar day into the next (e.g., near midnight)",
+        "An error that only affects 12-hour format",
+        "A limit on how many hours a clock can display"
+      ],
+      "correct": 1,
+      "rationale": "Day boundary issues arise whenever a calculation crosses midnight, requiring both the time and the date to be updated correctly together.",
+      "id": 3
+    },
+    {
+      "question": "Why does 'date + clock reasoning' require tracking more than just the time of day?",
+      "options": [
+        "It doesn't \u2014 the date is irrelevant to clock reasoning",
+        "Because some calculations (like elapsed time across midnight) also change the date, not just the clock time",
+        "Because dates are measured in degrees too",
+        "Because there is no such thing as date + clock reasoning"
+      ],
+      "correct": 1,
+      "rationale": "Once a calculation crosses midnight, the date itself changes alongside the time, so both must be tracked together for a correct result.",
+      "id": 4
+    },
+    {
+      "question": "What is 'recurring time' reasoning about?",
+      "options": [
+        "A clock that has stopped working",
+        "Events that happen repeatedly at a fixed interval or pattern (e.g., every day at 6 PM)",
+        "Elapsed time between exactly two events",
+        "Time zones only"
+      ],
+      "correct": 1,
+      "rationale": "Recurring time reasoning deals with events that repeat on a regular schedule, rather than a single one-off occurrence.",
+      "id": 5
+    },
+    {
+      "question": "What is 'periodic reasoning' used for?",
+      "options": [
+        "Determining future or past occurrences of a recurring event based on its period",
+        "Calculating the angle between clock hands",
+        "Converting between AM and PM",
+        "Detecting broken clocks"
+      ],
+      "correct": 0,
+      "rationale": "Periodic reasoning uses a recurring event's known period (interval) to project when it will occur next, or when it occurred previously.",
+      "id": 6
+    },
+    {
+      "question": "What is required to interpret a 'clock image' (a picture of an analog clock face)?",
+      "options": [
+        "Nothing \u2014 clock images cannot be interpreted programmatically",
+        "Detecting the positions of the hour and minute hands and converting their angles back into a time value",
+        "Only reading the numbers printed on the face",
+        "Measuring the clock's physical diameter"
+      ],
+      "correct": 1,
+      "rationale": "Interpreting a clock image requires detecting where the hands point (their angles) and then converting those angles back into an hour/minute value.",
+      "id": 7
+    },
+    {
+      "question": "What does 'analog-hand detection' refer to?",
+      "options": [
+        "Detecting whether a clock is digital or analog",
+        "Identifying the exact angular positions of the clock hands from a visual representation",
+        "Counting the number of hands a clock has",
+        "Detecting the clock's manufacturer"
+      ],
+      "correct": 1,
+      "rationale": "Analog-hand detection is the step of precisely identifying each hand's angle from an image, which then feeds into the angle-to-time conversion.",
+      "id": 8
+    },
+    {
+      "question": "Given a minute hand's angle from 12, how do you convert it back to a minute value?",
+      "options": [
+        "Multiply the angle by 6",
+        "Divide the angle by 6, since the minute hand moves 6 degrees per minute",
+        "Divide the angle by 0.5",
+        "Subtract the angle from 360"
+      ],
+      "correct": 1,
+      "rationale": "Since the minute hand moves 6 degrees per minute, dividing its angle from 12 by 6 recovers the corresponding minute value.",
+      "id": 9
+    },
+    {
+      "question": "Why is going 'from angle to time' considered the reverse operation of the clock-angle formula?",
+      "options": [
+        "It isn't related to the clock-angle formula at all",
+        "The clock-angle formula computes an angle from a given time, while this step recovers the time from a given angle",
+        "Both operations always produce the same numeric result",
+        "Because angles and times use the same units"
+      ],
+      "correct": 1,
+      "rationale": "The clock-angle formula goes from time to angle; converting a detected hand angle back into a time value is the inverse of that same relationship.",
+      "id": 10
+    }
+  ]
+}

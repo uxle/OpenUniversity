@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-4",
+  "title": "Directions and Distance Reasoning \u2014 Part 4 of 10",
+  "questions": [
+    {
+      "question": "What is an 'unknown distance' problem?",
+      "options": [
+        "A problem with no possible solution",
+        "A question where the distance between two points must be derived from other given relationships, rather than being stated directly",
+        "A problem that only involves direction, never distance",
+        "A problem where the distance is always zero"
+      ],
+      "correct": 1,
+      "rationale": "In an unknown-distance problem, the distance isn't given directly \u2014 it must be deduced by reasoning through the other stated relationships.",
+      "id": 1
+    },
+    {
+      "question": "What is a 'spatial graph' used to represent?",
+      "options": [
+        "Only a single point",
+        "Entities and their spatial relationships (direction/distance) as nodes and edges, similar to other reasoning graphs",
+        "A graph of elapsed time",
+        "A list of compass directions only"
+      ],
+      "correct": 1,
+      "rationale": "A spatial graph models entities as nodes and their spatial relationships as edges, mirroring the node-and-edge approach used for family and temporal graphs elsewhere in reasoning.",
+      "id": 2
+    },
+    {
+      "question": "What does 'coordinate propagation' mean?",
+      "options": [
+        "Deleting a point's coordinates",
+        "Calculating a new entity's coordinates by applying a known direction and distance from an already-positioned entity",
+        "Converting coordinates into text",
+        "Ignoring distance when placing a new point"
+      ],
+      "correct": 1,
+      "rationale": "Coordinate propagation derives a new point's coordinates by applying a stated direction and distance relative to a point whose coordinates are already known.",
+      "id": 3
+    },
+    {
+      "question": "Why might a problem describe 'multiple entities' and their relationships rather than just two?",
+      "options": [
+        "To make the problem shorter",
+        "To require chaining several spatial relationships together to determine an unknown position or distance",
+        "Multiple entities are never used in these problems",
+        "Because only two entities can ever be related"
+      ],
+      "correct": 1,
+      "rationale": "With multiple entities, you often need to chain several known relationships together step by step to determine an unknown position or distance.",
+      "id": 4
+    },
+    {
+      "question": "What is a 'spatial constraint'?",
+      "options": [
+        "A physical wall in a diagram",
+        "A stated relationship (direction, distance, or relative position) that any valid solution must satisfy",
+        "A limit on how many entities a problem can have",
+        "A synonym for displacement"
+      ],
+      "correct": 1,
+      "rationale": "A spatial constraint is a given relationship \u2014 direction, distance, or relative position \u2014 that the final solution's positions must be consistent with.",
+      "id": 5
+    },
+    {
+      "question": "What does 'constraint solving' involve in spatial reasoning?",
+      "options": [
+        "Ignoring constraints that seem irrelevant",
+        "Finding a set of positions consistent with every given spatial constraint simultaneously",
+        "Solving only the first constraint given",
+        "Randomly guessing positions until one works"
+      ],
+      "correct": 1,
+      "rationale": "Constraint solving means finding positions for all entities that satisfy every given spatial constraint at once, not just some of them.",
+      "id": 6
+    },
+    {
+      "question": "How can direction be derived 'from angle' between two points?",
+      "options": [
+        "It cannot be derived this way",
+        "By converting the angle formed by their coordinate difference into a compass direction or bearing",
+        "By measuring the time between them",
+        "By counting the number of entities involved"
+      ],
+      "correct": 1,
+      "rationale": "The angle formed by the coordinate difference between two points can be converted directly into a compass direction or numeric bearing.",
+      "id": 7
+    },
+    {
+      "question": "What are 'polar coordinates'?",
+      "options": [
+        "A coordinate system using only x and y values",
+        "A coordinate system defining a point by its distance from an origin and an angle, rather than by x/y coordinates",
+        "A synonym for Manhattan distance",
+        "Coordinates that only work near the North or South Pole"
+      ],
+      "correct": 1,
+      "rationale": "Polar coordinates define a point using a distance from a fixed origin and an angle, rather than the perpendicular x/y offsets used in Cartesian coordinates.",
+      "id": 8
+    },
+    {
+      "question": "What is the key difference between 'Cartesian' and 'polar' coordinates?",
+      "options": [
+        "They are the same system with different names",
+        "Cartesian uses perpendicular x/y axes; polar uses a distance and angle from a fixed origin point",
+        "Polar coordinates cannot represent negative distances",
+        "Cartesian coordinates only work in 3D"
+      ],
+      "correct": 1,
+      "rationale": "Cartesian coordinates locate a point using perpendicular x/y axes, while polar coordinates locate the same point using a distance and an angle from an origin.",
+      "id": 9
+    },
+    {
+      "question": "Why might polar coordinates be more natural for some direction-and-distance problems than Cartesian coordinates?",
+      "options": [
+        "They never are \u2014 Cartesian is always better",
+        "Because such problems are often stated directly in terms of a direction (angle) and a distance, matching the polar form more closely",
+        "Because polar coordinates don't require an origin",
+        "Because polar coordinates are only used for time, not space"
+      ],
+      "correct": 1,
+      "rationale": "Since many direction-and-distance problems are phrased directly as 'X km in direction Y,' that maps naturally onto the distance-and-angle structure of polar coordinates.",
+      "id": 10
+    }
+  ]
+}

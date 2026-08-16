@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-1",
+  "title": "Directions and Distance Reasoning \u2014 Part 1 of 10",
+  "questions": [
+    {
+      "question": "What is 'direction' in direction-and-distance reasoning?",
+      "options": [
+        "The orientation or heading from one point toward another, independent of how far apart they are",
+        "A synonym for distance",
+        "Only relevant when using a physical compass",
+        "The total path length traveled"
+      ],
+      "correct": 0,
+      "rationale": "Direction describes orientation \u2014 which way one point lies relative to another \u2014 regardless of how far apart the two points actually are.",
+      "id": 1
+    },
+    {
+      "question": "What does the compass coordinate model use as its four primary directions?",
+      "options": [
+        "Up, Down, Left, Right",
+        "North, South, East, West",
+        "Forward, Backward, Clockwise, Anticlockwise",
+        "Near, Far, High, Low"
+      ],
+      "correct": 1,
+      "rationale": "The compass model is built on the four cardinal directions \u2014 North, South, East, and West \u2014 from which all other directions (like North-East) are derived.",
+      "id": 2
+    },
+    {
+      "question": "What does 'position' represent in this reasoning model?",
+      "options": [
+        "A direction only, with no location",
+        "A specific location, often as coordinates, distinguishing it from a direction or distance alone",
+        "The total distance traveled",
+        "A synonym for heading"
+      ],
+      "correct": 1,
+      "rationale": "Position represents a specific, fixed location (such as coordinates), which is distinct from direction (orientation) or distance (magnitude) alone.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'vector' used for in direction-and-distance reasoning?",
+      "options": [
+        "Representing only a distance, with no direction",
+        "Representing both a direction and a magnitude (distance) together as a single quantity",
+        "Storing a person's name",
+        "Measuring elapsed time"
+      ],
+      "correct": 1,
+      "rationale": "A vector combines direction and magnitude into one quantity, which is useful for combining multiple movements to find a net result.",
+      "id": 4
+    },
+    {
+      "question": "Why are 'direction' and 'distance' considered different, even though they're often given together?",
+      "options": [
+        "They are actually the same thing",
+        "Direction describes orientation (which way), while distance describes magnitude (how far) \u2014 a problem can specify one without the other",
+        "Distance always implies a specific direction",
+        "Direction only matters in 3D problems"
+      ],
+      "correct": 1,
+      "rationale": "Direction and distance capture different information \u2014 a problem could state a direction with no distance, or a distance with no direction, so they must be tracked as separate concepts.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'direction table' typically list?",
+      "options": [
+        "A schedule of train departures",
+        "The standard compass directions and the turns/relationships between them (e.g., the opposite of North is South)",
+        "A list of distances only",
+        "A list of famous landmarks"
+      ],
+      "correct": 1,
+      "rationale": "A direction table lays out the compass directions and how they relate to each other, such as opposite pairs and adjacent directions, as a quick reference.",
+      "id": 6
+    },
+    {
+      "question": "What is the difference between 'absolute' and 'relative' direction?",
+      "options": [
+        "There is no real difference",
+        "Absolute direction is a fixed compass direction (like North); relative direction is described relative to the mover's current facing (like 'turn left')",
+        "Absolute direction only applies to distances",
+        "Relative direction is always measured in kilometers"
+      ],
+      "correct": 1,
+      "rationale": "Absolute direction is a fixed compass reference, while relative direction depends on which way the person or object is currently facing, such as 'turn left' or 'turn right'.",
+      "id": 7
+    },
+    {
+      "question": "If you are facing North and turn 90 degrees clockwise, which direction do you now face?",
+      "options": [
+        "West",
+        "South",
+        "East",
+        "North-East"
+      ],
+      "correct": 2,
+      "rationale": "A 90-degree clockwise turn from North lands on East, following the standard compass rotation.",
+      "id": 8
+    },
+    {
+      "question": "What is the opposite compass direction of South-West?",
+      "options": [
+        "North-West",
+        "South-East",
+        "North-East",
+        "North"
+      ],
+      "correct": 2,
+      "rationale": "South-West and North-East are directly opposite each other on the compass, 180 degrees apart.",
+      "id": 9
+    },
+    {
+      "question": "Why is distinguishing absolute vs relative direction important when solving multi-step direction problems?",
+      "options": [
+        "It isn't important, they can be used interchangeably",
+        "Because a sequence of relative turns needs to be tracked against a starting absolute direction to know the final absolute heading",
+        "Because relative directions are never used in exams",
+        "Because absolute directions only apply to distance calculations"
+      ],
+      "correct": 1,
+      "rationale": "Since relative turns (like 'turn left') only make sense in relation to a current heading, you need to track the absolute starting direction to correctly determine the final absolute heading after a sequence of turns.",
+      "id": 10
+    }
+  ]
+}

@@ -11,7 +11,7 @@
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 5,
+      "lessonCount": 4,
       "subSubjects": [
         {
           "id": "algorithms",
@@ -84,7 +84,7 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 6,
+      "lessonCount": 5,
       "subSubjects": [
         {
           "id": "algebra",
@@ -128,15 +128,82 @@
     {
       "id": "reasoning",
       "title": "Reasoning",
-      "description": "Logical and verbal reasoning for competitive exams — blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, sentence rearrangement, and structured problem-solving.",
+      "description": "Logical and verbal reasoning for competitive exams — organized by topic: blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, and sentence rearrangement.",
       "lessonCount": 102,
-      "subSubjects": []
+      "subSubjects": [
+        {
+          "id": "analogy-and-classification",
+          "title": "Analogy & Classification",
+          "description": "Word/number analogy and odd-one-out classification — a quick primer plus separate in-depth guides for each.",
+          "lessonCount": 29
+        },
+        {
+          "id": "blood-relation",
+          "title": "Blood Relation",
+          "description": "Family-tree and relationship reasoning, in 4 parts.",
+          "lessonCount": 4
+        },
+        {
+          "id": "clock",
+          "title": "Clock Reasoning",
+          "description": "Clock angle, hand-overlap, and time-based reasoning, in 10 parts.",
+          "lessonCount": 10
+        },
+        {
+          "id": "coding-decoding",
+          "title": "Coding-Decoding",
+          "description": "Letter-shift, substitution, number, and matrix coding — from a quick primer to a full 22-part in-depth guide.",
+          "lessonCount": 23
+        },
+        {
+          "id": "counting-of-figures",
+          "title": "Counting of Figures",
+          "description": "Systematically counting triangles, squares, and other figures hidden in a composite diagram, in 12 parts.",
+          "lessonCount": 12
+        },
+        {
+          "id": "dice-reasoning",
+          "title": "Dice Reasoning",
+          "description": "Standard and non-standard dice — opposite faces, rotations, and open-cube nets, in 10 parts.",
+          "lessonCount": 10
+        },
+        {
+          "id": "directions-and-distance",
+          "title": "Directions & Distance",
+          "description": "Direction-sense and distance/displacement reasoning, in 10 parts.",
+          "lessonCount": 10
+        },
+        {
+          "id": "seating-arrangement",
+          "title": "Seating Arrangement",
+          "description": "Linear, circular, and double-row seating arrangement puzzles.",
+          "lessonCount": 1
+        },
+        {
+          "id": "sentence-rearrangement",
+          "title": "Sentence Rearrangement",
+          "description": "Reordering jumbled sentence parts into a coherent paragraph.",
+          "lessonCount": 1
+        },
+        {
+          "id": "series",
+          "title": "Number & Alphabet Series",
+          "description": "Number series, alphabet series, and mixed series pattern-detection.",
+          "lessonCount": 1
+        },
+        {
+          "id": "syllogism",
+          "title": "Syllogism",
+          "description": "Statement-and-conclusion logic using the four A/E/I/O statement types.",
+          "lessonCount": 1
+        }
+      ]
     },
     {
       "id": "science",
       "title": "Science",
       "description": "Explore the natural world through scientific knowledge.",
-      "lessonCount": 16,
+      "lessonCount": 15,
       "subSubjects": [
         {
           "id": "biology",

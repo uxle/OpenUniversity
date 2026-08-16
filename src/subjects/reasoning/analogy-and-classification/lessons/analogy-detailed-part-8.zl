@@ -1,0 +1,297 @@
+# Analogy — In-Depth Guide — Part 8 of 12
+
+[info title="Part 8 of 12"]
+Continuing from the previous part. back to Part 7 (`analogy-detailed-part-7`) · continue to Part 9 (`analogy-detailed-part-9`).
+[/info]
+
+## 87. Analogy as Graph
+
+Represent each concept as a node.
+
+```text
+[Bird] ──lives in──> [Nest]
+
+[Lion] ──lives in──> [Den]
+```
+
+The task is to find another edge with the same relationship.
+
+Formally:
+
+```text
+(Bird,Nest,R)
+```
+
+must correspond to:
+
+```text
+(Lion,Den,R)
+```
+
+---
+
+## 88. Relationship Vector
+
+Represent a relation as:
+
+```text
+R=(direction,type,strength,domain)
+```
+
+Example:
+
+```text
+Doctor → Hospital
+```
+
+could be:
+
+```text
+R = (
+  direction = forward,
+  type = workplace,
+  domain = profession,
+  strength = direct
+)
+```
+
+Then:
+
+```text
+Teacher + R = School
+```
+
+---
+
+## 89. Semantic Distance
+
+A good analogy has approximately equal relational structure:
+
+```text
+d(A,B)\approx d(C,D)
+```
+
+Here \(d\) does not necessarily mean physical distance. It can mean **semantic relationship**.
+
+Example:
+
+```text
+Bird : Nest
+Lion : Den
+```
+
+Both represent:
+
+```text
+Animal → Natural/typical shelter
+```
+
+---
+
+## 90. Structural Analogy
+
+Two pairs can have completely different objects but the same structure.
+
+```text
+Pen : Writing
+Knife : Cutting
+```
+
+Structure:
+
+```text
+Tool → Function
+```
+
+The actual objects differ, but the relation is identical.
+
+---
+
+## 91. Relationship Direction Matrix
+
+| Pair | Direction |
+|---|---|
+| Bird → Nest | Animal → Home |
+| Nest → Bird | Home → Animal |
+| Pen → Writing | Tool → Function |
+| Writing → Pen | Function → Tool |
+| Fire → Smoke | Cause → Effect |
+| Smoke → Fire | Effect → Cause |
+| Wheel → Car | Part → Whole |
+| Car → Wheel | Whole → Part |
+
+---
+
+## 92. Common Exam Relationships
+
+Memorize these high-frequency patterns:
+
+```text
+Animal → Home
+Animal → Young one
+Animal → Sound
+Animal → Group
+Object → Function
+Tool → User
+Worker → Workplace
+Worker → Tool
+Country → Capital
+Country → Currency
+State → Capital
+Material → Product
+Part → Whole
+Cause → Effect
+Disease → Symptom
+Organ → Function
+Instrument → Measurement
+Person → Profession
+Person → Discovery
+Person → Invention
+Word → Synonym
+Word → Antonym
+Number → Operation
+Letter → Position
+```
+
+---
+
+## 93. Animal Sound Analogy
+
+```text
+Dog : Bark :: Cat : Meow
+```
+
+Examples:
+
+```text
+Cow → Moo
+Lion → Roar
+Horse → Neigh
+Snake → Hiss
+Crow → Caw
+```
+
+---
+
+## 94. Animal Group Analogy
+
+```text
+Bee : Swarm :: Lion : Pride
+```
+
+Examples:
+
+```text
+Fish → School
+Wolf → Pack
+Cow → Herd
+Bird → Flock
+```
+
+---
+
+## 95. Disease → Symptom
+
+```text
+Malaria : Fever :: Allergy : Sneezing
+```
+
+Use factual knowledge carefully.
+
+---
+
+## 96. Person → Profession
+
+```text
+Einstein : Physicist :: Darwin : Biologist
+```
+
+---
+
+## 97. Person → Discovery
+
+Examples may involve:
+
+```text
+Scientist → Discovery
+Scientist → Theory
+Inventor → Invention
+```
+
+These questions test general knowledge as well as reasoning.
+
+---
+
+## 98. Country → Capital
+
+```text
+India : New Delhi :: Japan : Tokyo
+```
+
+---
+
+## 99. Country → Currency
+
+```text
+India : Rupee :: Japan : Yen
+```
+
+---
+
+## 100. State → Capital
+
+```text
+Haryana : Chandigarh :: Rajasthan : Jaipur
+```
+
+---
+
+## 101. Common Trap: Similar but Not Equivalent
+
+Example:
+
+```text
+Doctor : Hospital :: Teacher : Student
+```
+
+Both are related, but not by the same relation.
+
+Correct:
+
+```text
+Doctor : Hospital :: Teacher : School
+```
+
+Because:
+
+```text
+profession → workplace
+```
+
+---
+
+## 102. Common Trap: Broad Relationship
+
+Suppose:
+
+```text
+Bird : Nest
+```
+
+Possible choices:
+
+```text
+A. Dog : Kennel
+B. Dog : Animal
+C. Dog : Bone
+D. Dog : Food
+```
+
+A is strongest because:
+
+```text
+Bird → home
+Dog → home
+```
+
+---

@@ -1,0 +1,126 @@
+{
+  "lessonId": "classification-detailed-part-4",
+  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 4 of 16",
+  "questions": [
+    {
+      "question": "What does 'Consecutive Number Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers forms a consecutive sequence, with one number breaking that consecutive pattern",
+        "Whether numbers share a digit sum",
+        "Whether numbers are all perfect cubes"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers form an unbroken consecutive sequence, identifying the one number that breaks the expected consecutive pattern.",
+      "id": 1
+    },
+    {
+      "question": "What does 'Arithmetic Pattern Classification' test?",
+      "options": [
+        "Whether numbers are all prime",
+        "Whether a group of numbers follows a consistent arithmetic progression, with one number breaking that pattern",
+        "Whether numbers share a digit product",
+        "Whether numbers are all perfect squares"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers follow a consistent arithmetic progression (constant difference), identifying the one number that doesn't fit that progression.",
+      "id": 2
+    },
+    {
+      "question": "What does a 'Square Difference Pattern' test?",
+      "options": [
+        "A simple arithmetic progression",
+        "Whether the differences between consecutive numbers in a group follow a pattern related to squares",
+        "Whether numbers are all prime",
+        "Whether numbers are all composite"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether the gaps between consecutive numbers follow a square-related pattern (like 1, 4, 9, 16...), identifying the value that breaks it.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'Cube Pattern' test, similarly?",
+      "options": [
+        "A square-based pattern",
+        "Whether a group of numbers or their differences follow a pattern related to cubes",
+        "Whether numbers are all prime",
+        "Whether numbers share a digit sum"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers (or the differences between them) follow a cube-related pattern, identifying the value that breaks it.",
+      "id": 4
+    },
+    {
+      "question": "What does 'Fibonacci Classification' test?",
+      "options": [
+        "A simple arithmetic pattern",
+        "Whether a group of numbers follows the Fibonacci sequence pattern, with one breaking it",
+        "Whether numbers are all prime",
+        "Whether numbers are all perfect squares"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether numbers follow the Fibonacci pattern (each number being the sum of the two before it), identifying the value that breaks this rule.",
+      "id": 5
+    },
+    {
+      "question": "What does 'Letter Classification' broadly test?",
+      "options": [
+        "Only numeric properties",
+        "Whether a group of letters (or words based on their letters) share a common alphabet-based property",
+        "Only word meanings",
+        "A shared color"
+      ],
+      "correct": 1,
+      "rationale": "Letter classification tests whether a group shares a common property based on the letters themselves, such as alphabet position or type.",
+      "id": 6
+    },
+    {
+      "question": "What does 'Vowel Classification' test?",
+      "options": [
+        "Whether letters are all consonants",
+        "Whether a group of letters are all vowels, with one being a consonant (breaking the pattern)",
+        "Whether letters are all at odd positions",
+        "Whether letters are all at even positions"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of letters are all vowels (A, E, I, O, U), identifying the one letter that is actually a consonant.",
+      "id": 7
+    },
+    {
+      "question": "What does 'Consonant Classification' test, in contrast?",
+      "options": [
+        "Whether letters are all vowels",
+        "Whether a group of letters are all consonants, with one being a vowel (breaking the pattern)",
+        "Whether letters are all prime-positioned",
+        "Whether letters share a digit sum"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of letters are all consonants, identifying the one letter that is actually a vowel.",
+      "id": 8
+    },
+    {
+      "question": "What does 'Alphabet Position Parity' classification test?",
+      "options": [
+        "Whether letters are all vowels",
+        "Whether a group of letters all occupy odd (or all even) alphabet positions, with one breaking that pattern",
+        "Whether letters are all consonants",
+        "Whether letters share the same first letter"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of letters all share the same position parity (all odd-positioned or all even-positioned), identifying the exception.",
+      "id": 9
+    },
+    {
+      "question": "What does 'Alphabet Shift Classification' test?",
+      "options": [
+        "A vowel/consonant distinction only",
+        "Whether a group of letter pairs share a consistent alphabet shift amount, with one pair breaking that consistent shift",
+        "A digit sum property",
+        "A prime number property"
+      ],
+      "correct": 1,
+      "rationale": "This tests whether a group of letter pairs are all related by the same consistent alphabet shift, identifying the pair that doesn't follow that same shift amount.",
+      "id": 10
+    }
+  ]
+}

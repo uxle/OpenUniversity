@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-7",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 7 of 22",
+  "questions": [
+    {
+      "question": "In a Chinese-coding example where 'cats eat fish' = 'dog cow bird' and 'fish eat mice' = 'bird cow lion', which code word means 'eat'?",
+      "options": [
+        "dog",
+        "cow",
+        "bird",
+        "lion"
+      ],
+      "correct": 1,
+      "rationale": "'cow' is the code word common to both coded sentences, aligning with 'eat', the real word common to both original sentences.",
+      "id": 1
+    },
+    {
+      "question": "What is 'mixed coding'?",
+      "options": [
+        "A rule using only one technique",
+        "A rule that combines more than one coding technique together (e.g., a letter shift combined with a numeric transformation)",
+        "A synonym for word reversal",
+        "A rule with no defined structure at all"
+      ],
+      "correct": 1,
+      "rationale": "Mixed coding combines two or more distinct coding techniques together, such as a letter shift applied alongside a numeric transformation.",
+      "id": 2
+    },
+    {
+      "question": "What does 'letter + number coding' typically produce as an output?",
+      "options": [
+        "Only letters",
+        "A code that combines both letters and numbers, rather than only one or the other",
+        "Only numbers",
+        "Only symbols"
+      ],
+      "correct": 1,
+      "rationale": "This coding type produces an output that mixes both letters and numbers together, rather than sticking to just one or the other.",
+      "id": 3
+    },
+    {
+      "question": "What is 'symbol coding'?",
+      "options": [
+        "Coding that uses only letters",
+        "Replacing letters with non-alphabetic, non-numeric symbols according to a fixed key",
+        "A synonym for number coding",
+        "A rule with no fixed key"
+      ],
+      "correct": 1,
+      "rationale": "Symbol coding substitutes letters with symbols (like @, #, $) rather than other letters or numbers, following a fixed substitution key.",
+      "id": 4
+    },
+    {
+      "question": "What is 'operation symbol coding'?",
+      "options": [
+        "Coding using only letters",
+        "Using mathematical operation symbols (+, -, x, /) as part of the code, often to indicate a transformation to apply",
+        "A rule with no numeric component",
+        "A synonym for symbol coding with no operations"
+      ],
+      "correct": 1,
+      "rationale": "This coding incorporates mathematical operator symbols into the code itself, often signaling what transformation should be applied.",
+      "id": 5
+    },
+    {
+      "question": "What might an 'operator coding example' test your understanding of?",
+      "options": [
+        "Word length only",
+        "Correctly interpreting what a given operator symbol instructs you to do to the letters or numbers in the code",
+        "The color of the letters",
+        "Only the alphabet's reverse mapping"
+      ],
+      "correct": 1,
+      "rationale": "Operator coding examples test whether you can correctly interpret what a given mathematical operator symbol instructs you to do with the letters or numbers involved.",
+      "id": 6
+    },
+    {
+      "question": "What is 'conditional coding'?",
+      "options": [
+        "A rule that never changes",
+        "A coding rule that applies differently depending on a condition (e.g., whether a letter is a vowel, or whether its position is odd or even)",
+        "A synonym for letter shift coding",
+        "A rule that ignores all conditions"
+      ],
+      "correct": 1,
+      "rationale": "Conditional coding applies a different transformation depending on whether a specific condition is met, such as a letter being a vowel or occupying an odd position.",
+      "id": 7
+    },
+    {
+      "question": "What does a 'conditional flowchart' help visualize?",
+      "options": [
+        "The alphabet in a straight line",
+        "The branching logic of a conditional coding rule, showing which transformation applies under which condition",
+        "Only word length data",
+        "A single, unconditional rule"
+      ],
+      "correct": 1,
+      "rationale": "A conditional flowchart visualizes the decision branches of a conditional rule, clarifying exactly which transformation applies under each possible condition.",
+      "id": 8
+    },
+    {
+      "question": "In conditional coding, why is checking the condition FIRST essential, before applying any transformation?",
+      "options": [
+        "Conditions don't actually matter",
+        "Because applying the wrong branch's rule (based on a condition that wasn't actually met) produces an incorrect code",
+        "Because conditions are always true",
+        "Because the transformation is the same regardless of the condition"
+      ],
+      "correct": 1,
+      "rationale": "Since different conditions trigger different transformations, checking the condition first is essential \u2014 applying the wrong branch's rule produces an incorrect result.",
+      "id": 9
+    },
+    {
+      "question": "Why is 'mixed coding' generally considered more advanced than single-technique coding?",
+      "options": [
+        "It actually uses fewer steps",
+        "It requires correctly identifying and applying more than one rule in the right sequence, rather than just one straightforward transformation",
+        "It never appears in real exam questions",
+        "It only applies to number coding"
+      ],
+      "correct": 1,
+      "rationale": "Mixed coding demands correctly identifying multiple distinct rules AND applying them in the right order, making it more complex than a single straightforward transformation.",
+      "id": 10
+    }
+  ]
+}

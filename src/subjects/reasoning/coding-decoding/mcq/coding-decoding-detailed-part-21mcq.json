@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-21",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 21 of 22",
+  "questions": [
+    {
+      "question": "What does 'Practice Set E \u2014 Expert' likely require, beyond the Challenge tier?",
+      "options": [
+        "Only the most basic single-step rules",
+        "Confidently applying the full range of techniques, including multi-stage and ambiguous cases, with minimal guidance",
+        "No verification of any kind",
+        "Ignoring everything learned in earlier parts"
+      ],
+      "correct": 1,
+      "rationale": "The Expert tier requires confidently applying the full range of techniques covered throughout the lesson, including multi-stage and ambiguous cases, with minimal guidance.",
+      "id": 1
+    },
+    {
+      "question": "What is the goal of a 'Mega Practice \u2014 Identify the Rule' exercise?",
+      "options": [
+        "To compute full final answers only",
+        "Practicing purely the skill of recognizing which coding rule applies, across a wide variety of examples, without necessarily computing the full final answer",
+        "To skip rule identification entirely",
+        "To only practice word reversal"
+      ],
+      "correct": 1,
+      "rationale": "This exercise isolates and focuses specifically on the skill of rule recognition across many varied examples, without necessarily requiring the full final answer to be computed each time.",
+      "id": 2
+    },
+    {
+      "question": "What is the purpose of a 'Master Cheat Sheet' at this stage of the lesson?",
+      "options": [
+        "To introduce entirely new material",
+        "To condense every coding rule type and technique covered throughout the entire lesson into one compact, quick-reference summary",
+        "To replace the practice sets",
+        "To only cover the first few parts of the lesson"
+      ],
+      "correct": 1,
+      "rationale": "The Master Cheat Sheet condenses every rule type and technique covered across the entire 22-part lesson into one compact, easily-reviewable summary.",
+      "id": 3
+    },
+    {
+      "question": "What is a 'Final Memory Map' intended to show?",
+      "options": [
+        "An unrelated diagram",
+        "How all the individual coding rule types and techniques covered throughout the lesson relate to and build on each other",
+        "Only the answers to the practice sets",
+        "A single isolated rule"
+      ],
+      "correct": 1,
+      "rationale": "The Final Memory Map shows how all the individual rule types and techniques covered throughout the lesson connect together and build on one another.",
+      "id": 4
+    },
+    {
+      "question": "What might a 'Universal Coding Formula' attempt to express?",
+      "options": [
+        "A single formula that only works for shift coding",
+        "A general, abstract way of describing any coding rule as a function transforming an input into an output, unifying the many specific rule types covered",
+        "A formula unrelated to coding rules",
+        "A formula only usable for number coding"
+      ],
+      "correct": 1,
+      "rationale": "The Universal Coding Formula attempts to express the general, abstract idea that any coding rule is a function transforming an input into an output \u2014 unifying the many specific rule types under one framework.",
+      "id": 5
+    },
+    {
+      "question": "Why is practicing 'rule identification' separately from full problem-solving valuable?",
+      "options": [
+        "It has no real value on its own",
+        "It isolates and strengthens the specific skill of pattern recognition, which is the most critical and often most time-consuming step in solving these problems",
+        "It replaces the need to ever compute a final answer",
+        "It only helps with the easiest problems"
+      ],
+      "correct": 1,
+      "rationale": "Rule identification is often the most critical and time-consuming step \u2014 isolating and practicing it separately strengthens this specific skill directly.",
+      "id": 6
+    },
+    {
+      "question": "Why might an 'Expert' tier practice set deliberately include ambiguous or under-specified examples?",
+      "options": [
+        "Because ambiguous examples are always mistakes",
+        "To train the learner to recognize genuine ambiguity and handle it appropriately, rather than assuming every problem has a single, cleanly determined answer",
+        "Because ambiguous examples are easier to solve",
+        "Because the Expert tier never includes challenging cases"
+      ],
+      "correct": 1,
+      "rationale": "Deliberately including ambiguous cases trains the learner to recognize genuine ambiguity and respond appropriately, rather than always assuming a single clean answer must exist.",
+      "id": 7
+    },
+    {
+      "question": "What is the benefit of a 'Universal Coding Formula' framing, even though real problems use many different specific rules?",
+      "options": [
+        "It replaces the need to learn any specific rule types",
+        "It provides a unifying mental model (input -> rule -> output) that helps organize and recall the many specific techniques as variations of one general idea",
+        "It has no practical benefit at all",
+        "It only applies to a single narrow rule type"
+      ],
+      "correct": 1,
+      "rationale": "Even though many specific rule types exist, the unifying input -> rule -> output framing helps organize and recall them all as variations on one general, coherent idea.",
+      "id": 8
+    },
+    {
+      "question": "Why does this lesson place the 'Master Cheat Sheet' and 'Final Memory Map' near the very end, after all the practice sets?",
+      "options": [
+        "Their placement is arbitrary and has no purpose",
+        "Because consolidation and quick-reference tools are most useful once the underlying techniques have already been learned and practiced",
+        "Because they introduce brand-new techniques",
+        "Because earlier parts don't need to be reviewed"
+      ],
+      "correct": 1,
+      "rationale": "Consolidation tools like the cheat sheet and memory map are most valuable once the underlying techniques have already been learned and practiced, making the end of the lesson the natural place for them.",
+      "id": 9
+    },
+    {
+      "question": "What does progressing through Practice Sets A through E, then into consolidation tools, reflect about this lesson's overall teaching approach?",
+      "options": [
+        "A random, unplanned structure",
+        "A deliberate progression from foundational understanding, through graduated practice, to final consolidation and fast recall",
+        "An approach with no clear structure",
+        "A structure focused only on the hardest problems"
+      ],
+      "correct": 1,
+      "rationale": "This progression reflects a deliberate teaching structure: building foundational understanding first, then graduated practice, and finally consolidation for fast, reliable recall.",
+      "id": 10
+    }
+  ]
+}

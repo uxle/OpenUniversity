@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-13",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 13 of 22",
+  "questions": [
+    {
+      "question": "What does 'adjacent-letter difference' compute?",
+      "options": [
+        "The word's total length",
+        "The difference in alphabet position between each pair of consecutive letters in a word",
+        "The sum of all letters",
+        "The reverse-alphabet position of the first letter"
+      ],
+      "correct": 1,
+      "rationale": "Adjacent-letter difference computes the position gap between each pair of consecutive letters as you move through the word.",
+      "id": 1
+    },
+    {
+      "question": "What does 'first-half / second-half coding' do to a word?",
+      "options": [
+        "Deletes half the word",
+        "Splits it into its first and second halves and applies a rule based on comparing or transforming those two halves",
+        "Reverses only the first half",
+        "Ignores the second half entirely"
+      ],
+      "correct": 1,
+      "rationale": "This coding splits the word into two halves and applies a rule that compares or transforms those two halves relative to each other.",
+      "id": 2
+    },
+    {
+      "question": "What is 'symmetry coding'?",
+      "options": [
+        "A rule that ignores letter order",
+        "A rule that checks or exploits symmetrical patterns in a word's letters (e.g., letters equidistant from the center)",
+        "A synonym for word reversal",
+        "A rule that only applies to palindromes"
+      ],
+      "correct": 1,
+      "rationale": "Symmetry coding checks for or exploits symmetrical relationships within a word, such as letters equidistant from its center.",
+      "id": 3
+    },
+    {
+      "question": "What is 'center-out coding'?",
+      "options": [
+        "A rule applied only to the first letter",
+        "A transformation applied starting from the middle letter(s) of a word and working outward toward both ends",
+        "A synonym for first-half coding",
+        "A rule with no defined starting point"
+      ],
+      "correct": 1,
+      "rationale": "Center-out coding begins its transformation at the word's middle letter(s) and works outward toward both ends, rather than left to right.",
+      "id": 4
+    },
+    {
+      "question": "What is 'alphabetical distance' between two letters?",
+      "options": [
+        "Their sum",
+        "The absolute difference between their positions in the alphabet",
+        "Their product",
+        "Always exactly 1"
+      ],
+      "correct": 1,
+      "rationale": "Alphabetical distance is simply the absolute value of the difference between two letters' alphabet positions.",
+      "id": 5
+    },
+    {
+      "question": "What is 'circular alphabet distance', as opposed to plain alphabetical distance?",
+      "options": [
+        "Exactly the same as plain alphabetical distance",
+        "The shortest distance between two letters when the alphabet is treated as a loop (wrapping from Z back to A)",
+        "Always double the plain distance",
+        "A distance that ignores wrap-around entirely"
+      ],
+      "correct": 1,
+      "rationale": "Circular alphabet distance accounts for the alphabet's loop structure, taking the shorter of the two possible paths (direct or wrap-around) between two letters.",
+      "id": 6
+    },
+    {
+      "question": "What does 'coding with letter distance' use as the basis for a code?",
+      "options": [
+        "The letters' absolute positions",
+        "The alphabetical (or circular) distance between specific letters, rather than their absolute positions",
+        "The word's total length",
+        "The letters' ASCII values"
+      ],
+      "correct": 1,
+      "rationale": "This coding bases the code on the distance between specific letters, rather than on their individual absolute alphabet positions.",
+      "id": 7
+    },
+    {
+      "question": "What is 'letter frequency coding'?",
+      "options": [
+        "A rule based on alphabet position only",
+        "A rule based on how many times a particular letter appears within a word or sentence",
+        "A synonym for word length coding",
+        "A rule that ignores repeated letters"
+      ],
+      "correct": 1,
+      "rationale": "Letter frequency coding bases its rule on the count of how many times a specific letter appears within the word or sentence.",
+      "id": 8
+    },
+    {
+      "question": "What is a 'repeated-letter signature'?",
+      "options": [
+        "A signature based on word length",
+        "A pattern based on which letters repeat (and how often) within a word, used as a distinguishing feature for coding",
+        "A signature that ignores repetition",
+        "A synonym for the reverse alphabet"
+      ],
+      "correct": 1,
+      "rationale": "A repeated-letter signature captures the specific pattern of which letters repeat and how often within a word, using that as a distinguishing coding feature.",
+      "id": 9
+    },
+    {
+      "question": "What is the alphabetical distance between B (position 2) and G (position 7)?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "rationale": "The absolute difference between position 7 (G) and position 2 (B) is 7 - 2 = 5.",
+      "id": 10
+    }
+  ]
+}

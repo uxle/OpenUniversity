@@ -1,0 +1,21 @@
+# Clock Reasoning
+
+@subject {
+  id: clock
+  title: "Clock Reasoning"
+  parent: reasoning
+  description: "Clock angle, hand-overlap, and time-based reasoning, in 10 parts."
+}
+
+@lessons {
+  clock-reasoning-part-1
+  clock-reasoning-part-2
+  clock-reasoning-part-3
+  clock-reasoning-part-4
+  clock-reasoning-part-5
+  clock-reasoning-part-6
+  clock-reasoning-part-7
+  clock-reasoning-part-8
+  clock-reasoning-part-9
+  clock-reasoning-part-10
+}

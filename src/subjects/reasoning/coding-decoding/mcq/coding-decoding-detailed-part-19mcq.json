@@ -1,0 +1,126 @@
+{
+  "lessonId": "coding-decoding-detailed-part-19",
+  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 19 of 22",
+  "questions": [
+    {
+      "question": "What does the 'vector transformation model' generalize coding rules as?",
+      "options": [
+        "Random, unrelated operations",
+        "Mathematical operations (like addition or reflection) applied to a letter's position, represented as vectors",
+        "A rule with no mathematical basis",
+        "Only word reversal operations"
+      ],
+      "correct": 1,
+      "rationale": "This model generalizes coding rules as mathematical vector operations \u2014 like addition (shift) or reflection (mirror) \u2014 applied to a letter's numeric position.",
+      "id": 1
+    },
+    {
+      "question": "What does the 'matrix transformation model' extend this to?",
+      "options": [
+        "Only simple letter shifts",
+        "Representing coding transformations that involve grid/matrix positions (like Polybius-style coding) using matrix operations",
+        "A model with no grid component",
+        "Only word-length-based rules"
+      ],
+      "correct": 1,
+      "rationale": "The matrix transformation model extends the vector idea to grid-based transformations, like Polybius-style coding, using formal matrix operations.",
+      "id": 2
+    },
+    {
+      "question": "What is the purpose of 'coding rule classification'?",
+      "options": [
+        "To make rules harder to identify",
+        "Organizing the many coding rule types covered into clear categories, to help quickly recognize which category a new problem belongs to",
+        "To eliminate the need for any rules",
+        "To only classify number-based rules"
+      ],
+      "correct": 1,
+      "rationale": "Classification organizes the many rule types into clear categories, helping you quickly recognize which category a new, unseen problem likely belongs to.",
+      "id": 3
+    },
+    {
+      "question": "What does a 'master pattern table' consolidate?",
+      "options": [
+        "Only the golden rule",
+        "A comprehensive reference matching common input-output patterns to their corresponding coding rule types",
+        "Only matrix-based rules",
+        "A single unrelated example"
+      ],
+      "correct": 1,
+      "rationale": "A master pattern table consolidates a comprehensive reference of common input-output patterns mapped to their corresponding coding rule types.",
+      "id": 4
+    },
+    {
+      "question": "What does the 'What NOT to Do' section most likely warn against?",
+      "options": [
+        "Verifying a rule against all examples",
+        "Common errors like assuming a rule from only partial verification, or forgetting alphabet wrap-around",
+        "Using a position table",
+        "Comparing multiple examples"
+      ],
+      "correct": 1,
+      "rationale": "Consistent with the lesson's recurring themes, this section likely warns against common errors like insufficient verification or forgetting alphabet wrap-around.",
+      "id": 5
+    },
+    {
+      "question": "What does 'information sufficiency' ask you to assess in a coding-decoding question?",
+      "options": [
+        "The word's total length",
+        "Whether the given examples actually provide enough information to uniquely determine the rule and answer",
+        "Only the first letter's position",
+        "The number of vowels present"
+      ],
+      "correct": 1,
+      "rationale": "Information sufficiency assesses whether the given examples genuinely contain enough information to uniquely pin down the rule and answer, or whether the problem is underdetermined.",
+      "id": 6
+    },
+    {
+      "question": "What is 'ambiguous coding'?",
+      "options": [
+        "A rule that is always uniquely determined",
+        "A situation where more than one coding rule is consistent with the given examples, so the answer isn't uniquely determined",
+        "A synonym for substitution coding",
+        "A rule with no possible solution"
+      ],
+      "correct": 1,
+      "rationale": "Ambiguous coding occurs when multiple different rules are all consistent with the given examples, meaning the correct answer can't be uniquely pinned down from the information given.",
+      "id": 7
+    },
+    {
+      "question": "What does 'option-based solving' involve?",
+      "options": [
+        "Ignoring the answer options entirely",
+        "Testing the given answer options directly against the deduced rule, rather than deriving the answer purely from scratch",
+        "Only guessing randomly among the options",
+        "Deriving the rule without ever checking the options"
+      ],
+      "correct": 1,
+      "rationale": "Option-based solving involves testing the given multiple-choice options directly against your deduced rule, which can sometimes be faster than deriving the full answer independently.",
+      "id": 8
+    },
+    {
+      "question": "What does 'negative information' refer to in a coding-decoding problem?",
+      "options": [
+        "Information that is always false",
+        "Information about what a code does NOT represent, which can still help narrow down the correct rule by elimination",
+        "A synonym for wrap-around",
+        "Information that should always be ignored"
+      ],
+      "correct": 1,
+      "rationale": "Negative information tells you what a code does NOT correspond to, which \u2014 like elimination in other reasoning topics \u2014 can still help narrow down the correct rule.",
+      "id": 9
+    },
+    {
+      "question": "What does a good 'exam time strategy' for coding-decoding balance?",
+      "options": [
+        "Only speed, with no verification at all",
+        "Quickly recognizing common patterns using memorized techniques, while still verifying the rule properly before committing to a final answer",
+        "Only careful verification, ignoring speed entirely",
+        "Randomly guessing to save time"
+      ],
+      "correct": 1,
+      "rationale": "A good exam strategy balances the speed of recognizing common patterns with memorized techniques against the need to still properly verify the rule before finalizing an answer.",
+      "id": 10
+    }
+  ]
+}

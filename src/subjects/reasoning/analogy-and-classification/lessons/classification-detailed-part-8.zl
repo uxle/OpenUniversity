@@ -1,0 +1,295 @@
+# Classification / Odd One Out — In-Depth Guide — Part 8 of 16
+
+[info title="Part 8 of 16"]
+Continuing from the previous part. back to Part 7 (`classification-detailed-part-7`) · continue to Part 9 (`classification-detailed-part-9`).
+[/info]
+
+## 100. General Knowledge Classification
+
+Questions may depend on factual categories.
+
+Example:
+
+```text
+Mercury
+Venus
+Earth
+Moon
+```
+
+Mercury, Venus and Earth are planets.
+
+Moon is a satellite.
+
+Answer = **Moon**.
+
+---
+
+## 101. Science Classification
+
+```text
+Oxygen
+Nitrogen
+Hydrogen
+Water
+```
+
+Oxygen, nitrogen and hydrogen are elements.
+
+Water is a compound.
+
+**Answer: Water**
+
+---
+
+## 102. Chemistry Classification
+
+```text
+Gold
+Silver
+Copper
+Sodium chloride
+```
+
+Gold, silver and copper are elements/metals.
+
+Sodium chloride is a compound.
+
+---
+
+## 103. Biology Classification
+
+```text
+Heart
+Lungs
+Kidney
+Femur
+```
+
+Heart, lungs and kidney are organs.
+
+Femur is a bone.
+
+---
+
+## 104. Human Body Classification
+
+```text
+Eye
+Ear
+Nose
+Heart
+```
+
+Eye, ear and nose are sensory organs.
+
+Heart is primarily a circulatory organ.
+
+**Answer: Heart**
+
+---
+
+## 105. Computer Classification
+
+```text
+Keyboard
+Mouse
+Monitor
+Windows
+```
+
+Keyboard, mouse and monitor are hardware devices.
+
+Windows is software/operating system.
+
+**Answer: Windows**
+
+---
+
+## 106. Programming Classification
+
+```text
+Python
+Rust
+C++
+HTML
+```
+
+Python, Rust and C++ are general-purpose programming languages.
+
+HTML is a markup language.
+
+**Answer: HTML**
+
+---
+
+## 107. File-Type Classification
+
+```text
+PNG
+JPG
+SVG
+MP3
+```
+
+PNG, JPG and SVG are image formats.
+
+MP3 is audio.
+
+**Answer: MP3**
+
+---
+
+## 108. Operating System Classification
+
+```text
+Linux
+Windows
+macOS
+Chrome
+```
+
+Linux, Windows and macOS are operating systems.
+
+Chrome is a web browser.
+
+**Answer: Chrome**
+
+---
+
+## 109. Tool vs Product Classification
+
+```text
+Hammer
+Saw
+Drill
+Table
+```
+
+Hammer, saw and drill are tools.
+
+Table is furniture.
+
+---
+
+## 110. Function-Based Trap
+
+```text
+Phone
+Camera
+Television
+Spoon
+```
+
+Phone, camera and television are electronic devices.
+
+Spoon is not.
+
+---
+
+## 111. Material-Based Trap
+
+```text
+Chair
+Table
+Cupboard
+Iron
+```
+
+Chair, table and cupboard are furniture.
+
+Iron is a material/metal.
+
+---
+
+## 112. Classification by Use
+
+```text
+Pen
+Pencil
+Eraser
+Knife
+```
+
+Pen, pencil and eraser are commonly associated with writing/stationery.
+
+Knife is a cutting tool.
+
+---
+
+## 113. Classification by Location
+
+```text
+Fish
+Whale
+Dolphin
+Camel
+```
+
+Fish, whale and dolphin are associated with aquatic environments.
+
+Camel is terrestrial.
+
+---
+
+## 114. Classification by Diet
+
+```text
+Cow
+Goat
+Deer
+Lion
+```
+
+Cow, goat and deer are herbivores.
+
+Lion is carnivorous.
+
+**Answer: Lion**
+
+---
+
+## 115. Classification by Biological Group
+
+```text
+Whale
+Dolphin
+Bat
+Dog
+```
+
+Whale, dolphin and dog are mammals, and bat is also a mammal, so there is no outlier.
+
+This is an important lesson:
+
+> **Do not assume the first apparent category is correct.**
+
+---
+
+## 116. Classification by Taxonomic Level
+
+```text
+Rose
+Mango
+Neem
+Tiger
+```
+
+Rose, mango and neem are plants.
+
+Tiger is animal.
+
+---
+
+## 117. Classification by Reproduction
+
+Advanced science questions can distinguish:
+
+- oviparous
+- viviparous
+- asexual reproduction
+- seed-producing plants
+
+The correct rule must be based on the question's intended syllabus.
+
+---

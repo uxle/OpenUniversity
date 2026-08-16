@@ -1,0 +1,292 @@
+# Counting of Figures — Part 2 of 12
+
+[info title="Part 2 of 12"]
+Continuing from the previous part. back to Part 1 (`counting-of-figures-part-1`) · continue to Part 3 (`counting-of-figures-part-3`).
+[/info]
+
+## 12. 3 × 3 Square Grid
+
+```text
+┌──┬──┬──┐
+│  │  │  │
+├──┼──┼──┤
+│  │  │  │
+├──┼──┼──┤
+│  │  │  │
+└──┴──┴──┘
+```
+
+#### 1×1 squares
+
+```text
+9
+```
+
+#### 2×2 squares
+
+```text
+4
+```
+
+#### 3×3 square
+
+```text
+1
+```
+
+Total:
+
+```text
+9+4+1=\boxed{14}
+```
+
+---
+
+## 13. 4 × 4 Square Grid
+
+Number of squares:
+
+```text
+1^2+2^2+3^2+4^2
+```
+
+```text
+=1+4+9+16
+```
+
+```text
+\boxed{30}
+```
+
+---
+
+## 14. Formula for an \(n\times n\) Grid
+
+```text
+\boxed{
+\frac{n(n+1)(2n+1)}6
+}
+```
+
+Example:
+
+```text
+n=4
+```
+
+```text
+\frac{4(5)(9)}6
+=
+30
+```
+
+---
+
+## 15. Square Grid Table
+
+| Grid | Total squares |
+|---|---:|
+| 1×1 | 1 |
+| 2×2 | 5 |
+| 3×3 | 14 |
+| 4×4 | 30 |
+| 5×5 | 55 |
+| 6×6 | 91 |
+| 7×7 | 140 |
+| 8×8 | 204 |
+| 9×9 | 285 |
+| 10×10 | 385 |
+
+---
+
+## 16. Rectangular Grid
+
+For an \(m\times n\) grid, the total number of rectangles is:
+
+```text
+\boxed{
+\frac{m(m+1)n(n+1)}4
+}
+```
+
+Equivalent form:
+
+```text
+\boxed{
+{m+1\choose2}{n+1\choose2}
+}
+```
+
+---
+
+## 17. Example: 2 × 3 Grid
+
+```text
+┌──┬──┬──┐
+│  │  │  │
+├──┼──┼──┤
+│  │  │  │
+└──┴──┴──┘
+```
+
+There are 3 columns and 2 rows.
+
+Rectangles:
+
+```text
+{3+1\choose2}{2+1\choose2}
+```
+
+```text
+= {4\choose2}{3\choose2}
+```
+
+```text
+=6\times3
+```
+
+```text
+\boxed{18}
+```
+
+---
+
+## 18. Squares Inside a Rectangular Grid
+
+For a \(2\times3\) grid:
+
+#### 1×1 squares
+
+```text
+2\times3=6
+```
+
+#### 2×2 squares
+
+```text
+1\times2=2
+```
+
+Total:
+
+```text
+\boxed{8}
+```
+
+---
+
+## 19. Rectangle vs Square
+
+Important:
+
+> Every square is a rectangle geometrically, but reasoning questions may ask **rectangles excluding squares**.
+
+Therefore always read the wording.
+
+For a 2×3 grid:
+
+```text
+Total rectangles = 18
+Squares = 8
+```
+
+Rectangles excluding squares:
+
+```text
+18-8=\boxed{10}
+```
+
+---
+
+## 20. Rectangle Counting by Boundary Lines
+
+A rectangle is created by choosing:
+
+- 2 vertical boundary lines
+- 2 horizontal boundary lines
+
+If there are \(V\) vertical lines and \(H\) horizontal lines:
+
+```text
+\boxed{
+{V\choose2}{H\choose2}
+}
+```
+
+---
+
+## 21. Example
+
+Suppose:
+
+```text
+V = 4
+H = 3
+```
+
+Then:
+
+```text
+{4\choose2}{3\choose2}
+=
+6\times3
+=
+18
+```
+
+---
+
+## 22. Why Grid Formulas Work
+
+Every rectangle is determined by:
+
+```text
+Left boundary
+Right boundary
+Top boundary
+Bottom boundary
+```
+
+Therefore:
+
+```text
+Choose 2 vertical lines
+×
+Choose 2 horizontal lines
+```
+
+---
+
+## 23. Triangle Counting
+
+Triangle counting is harder because triangles can be:
+
+- Small
+- Medium
+- Large
+- Inverted
+- Composite
+- Overlapping
+- Rotated
+
+---
+
+## 24. Basic Triangle
+
+```text
+    A
+   / \
+  /   \
+ /_____\
+B       C
+```
+
+There is:
+
+```text
+\boxed{1}
+```
+
+triangle.
+
+---

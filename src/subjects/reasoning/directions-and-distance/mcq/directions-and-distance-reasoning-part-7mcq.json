@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning-part-7",
+  "title": "Directions and Distance Reasoning \u2014 Part 7 of 10",
+  "questions": [
+    {
+      "question": "What does '3D direction reasoning' add beyond standard compass-based problems?",
+      "options": [
+        "Nothing new",
+        "A third dimension (such as elevation or altitude), in addition to the usual horizontal direction",
+        "It removes the need for distance",
+        "It only applies to underground problems"
+      ],
+      "correct": 1,
+      "rationale": "3D direction reasoning introduces a vertical dimension (elevation/altitude) on top of the standard horizontal compass directions.",
+      "id": 1
+    },
+    {
+      "question": "What is a 'coordinate transformation'?",
+      "options": [
+        "Deleting a point's coordinates",
+        "Converting a position from one coordinate system or reference frame into another",
+        "A synonym for distance",
+        "Only used for time conversions"
+      ],
+      "correct": 1,
+      "rationale": "A coordinate transformation converts a position's representation from one coordinate system or reference frame into an equivalent one in a different system.",
+      "id": 2
+    },
+    {
+      "question": "What is a 'spatial proof trace'?",
+      "options": [
+        "A physical trail marker",
+        "A step-by-step record of how a spatial conclusion (like a direction or distance) was derived",
+        "A synonym for a spatial graph",
+        "A type of map projection"
+      ],
+      "correct": 1,
+      "rationale": "A spatial proof trace records the sequence of steps taken to derive a spatial conclusion, supporting both verification and explanation.",
+      "id": 3
+    },
+    {
+      "question": "What is the purpose of a 'verification' step in spatial reasoning?",
+      "options": [
+        "To make the process take longer",
+        "Confirming the derived answer is consistent with all the original spatial constraints",
+        "To convert units automatically",
+        "To generate a random alternative answer"
+      ],
+      "correct": 1,
+      "rationale": "Verification checks the derived answer against every original spatial constraint to confirm it is genuinely consistent, not just superficially plausible.",
+      "id": 4
+    },
+    {
+      "question": "What does the 'triangle inequality check' verify about a set of distances?",
+      "options": [
+        "That all distances are equal",
+        "That no one distance between two points exceeds the sum of the distances via a third point, which would be geometrically impossible",
+        "That every distance is a whole number",
+        "That directions are all cardinal (N/S/E/W)"
+      ],
+      "correct": 1,
+      "rationale": "The triangle inequality states that the direct distance between two points can never exceed the sum of the distances through a third point \u2014 a violation signals an impossible or inconsistent set of distances.",
+      "id": 5
+    },
+    {
+      "question": "Why is the triangle inequality a useful validation tool in distance reasoning?",
+      "options": [
+        "It has no practical use",
+        "It can immediately flag an impossible or inconsistent set of stated distances",
+        "It only applies to time problems",
+        "It replaces the need for coordinates entirely"
+      ],
+      "correct": 1,
+      "rationale": "Checking the triangle inequality gives a quick, purely mathematical way to catch a set of stated distances that couldn't possibly all be true together.",
+      "id": 6
+    },
+    {
+      "question": "What is demonstrated by a 'complete example' combining several prior direction-and-distance concepts?",
+      "options": [
+        "Nothing beyond what's already been said",
+        "How the parsing, representation, and constraint-solving steps combine to solve a realistic multi-step problem",
+        "Only how to draw a compass rose",
+        "That verification is unnecessary for real problems"
+      ],
+      "correct": 1,
+      "rationale": "A complete example shows how the individually-introduced concepts \u2014 parsing, representation-building, constraint solving \u2014 combine in practice to solve a realistic, non-trivial problem.",
+      "id": 7
+    },
+    {
+      "question": "In an 'example with turns,' why must both the sequence and the magnitude of each turn be tracked accurately?",
+      "options": [
+        "Neither actually matters for the final answer",
+        "Because an error in either the order or the degree of a turn changes the final heading and therefore the final position",
+        "Because only the first turn matters",
+        "Because turns don't affect distance calculations"
+      ],
+      "correct": 1,
+      "rationale": "Both the order in which turns occur and their exact degree matter \u2014 getting either wrong changes the final heading, and therefore the final computed position.",
+      "id": 8
+    },
+    {
+      "question": "Why might a spatial reasoning problem require converting between coordinate systems mid-solution?",
+      "options": [
+        "This never happens in practice",
+        "Because different parts of the problem may naturally be described in different reference frames (e.g., local vs global)",
+        "Because coordinate systems are purely cosmetic",
+        "Because conversions are only needed at the very start"
+      ],
+      "correct": 1,
+      "rationale": "Different parts of a problem might naturally be expressed in different reference frames, requiring a conversion partway through to combine them consistently.",
+      "id": 9
+    },
+    {
+      "question": "What is the benefit of an explicit proof trace when solving a complex, multi-step spatial problem?",
+      "options": [
+        "There is no real benefit",
+        "It allows each individual step to be checked, making it easier to locate exactly where an error occurred",
+        "It automatically corrects any mistakes",
+        "It removes the need for the triangle inequality check"
+      ],
+      "correct": 1,
+      "rationale": "An explicit trace exposes every intermediate step, making it much easier to pinpoint exactly where an error was introduced if the final answer turns out to be wrong.",
+      "id": 10
+    }
+  ]
+}

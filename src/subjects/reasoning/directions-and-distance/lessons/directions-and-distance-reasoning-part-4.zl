@@ -1,0 +1,244 @@
+# Directions and Distance Reasoning — Part 4 of 10
+
+[info title="Part 4 of 10"]
+Continuing from the previous part. back to Part 3 (`directions-and-distance-reasoning-part-3`) · continue to Part 5 (`directions-and-distance-reasoning-part-5`).
+[/info]
+
+## 28. Unknown Distance
+
+Suppose:
+
+> “The school is east of the hospital.”
+
+The system knows:
+
+```text
+direction = East
+```
+
+but does not know:
+
+```text
+distance
+```
+
+It must not invent one.
+
+Representation:
+
+```text
+direction = EAST
+distance = UNKNOWN
+```
+
+This is a key principle:
+
+> **Unknown information must remain unknown.**
+
+## 29. Spatial Graphs
+
+Spatial relationships naturally form graphs.
+
+Example:
+
+```text
+Hospital
+   │
+   │ east
+   ↓
+School
+   │
+   │ north
+   ↓
+Park
+```
+
+The system can infer:
+
+```text
+Park is north-east of Hospital
+```
+
+even though this relationship was never explicitly stated.
+
+## 30. Coordinate Propagation
+
+Suppose:
+
+```text
+B is east of A.
+C is north of B.
+```
+
+Set:
+
+```text
+A = (0,0)
+```
+
+Then:
+
+```text
+B = (1,0)
+C = (1,1)
+```
+
+Therefore:
+
+```text
+C is north-east of A
+```
+
+If distances are known, the coordinates can preserve exact magnitudes.
+
+## 31. Multiple Entities
+
+Example:
+
+```text
+B is 5 km east of A.
+C is 4 km north of B.
+D is 3 km west of C.
+```
+
+Set:
+
+```text
+A = (0,0)
+```
+
+Then:
+
+```text
+B = (5,0)
+C = (5,4)
+D = (2,4)
+```
+
+Therefore:
+
+```text
+D is north-east of A
+```
+
+Distance:
+
+```text
+√(2² + 4²)
+= √20
+≈ 4.47 km
+```
+
+## 32. Spatial Constraints
+
+Represent:
+
+```text
+B = A + East(5 km)
+C = B + North(4 km)
+```
+
+Substitute:
+
+```text
+C = A + East(5 km) + North(4 km)
+```
+
+This becomes:
+
+```text
+C - A = (5,4)
+```
+
+The system can then calculate distance and direction.
+
+## 33. Constraint Solving
+
+Some problems contain unknowns.
+
+Example:
+
+```text
+A = (0,0)
+B = (x,4)
+distance(A,B) = 5
+```
+
+Then:
+
+```text
+x² + 4² = 5²
+x² + 16 = 25
+x² = 9
+x = ±3
+```
+
+Additional direction information can resolve the sign.
+
+If B is east of A:
+
+```text
+x = +3
+```
+
+Therefore:
+
+```text
+B = (3,4)
+```
+
+## 34. Direction From Angle
+
+For a displacement $(\Delta x, \Delta y)$, a continuous angle can be calculated using:
+
+@math name="Bearing from Displacement" label="eq:atan2"
+\theta = \operatorname{atan2}(\Delta y, \Delta x)
+@/math
+
+This is useful when the system needs precise orientation instead of only the eight coarse labels (N, NE, E, SE, ...). The system must define its angular convention explicitly.
+
+## 35. Polar Coordinates
+
+A point can also be represented as $(r, \theta)$, where $r$ is the distance and $\theta$ is the direction. For example, $r = 10$ km and $\theta = 45°$ represents a point 10 km away along that bearing.
+
+Conversion to Cartesian coordinates, for the mathematical angle convention:
+
+@math name="Polar to Cartesian (x)" label="eq:polar-to-cartesian-x"
+x = r\cos\theta
+@/math
+
+@math name="Polar to Cartesian (y)" label="eq:polar-to-cartesian-y"
+y = r\sin\theta
+@/math
+
+## 36. Cartesian vs Polar
+
+### Cartesian
+
+```text
+(x, y)
+```
+
+Best for:
+
+```text
+vector addition
+grid movement
+coordinate constraints
+```
+
+### Polar
+
+```text
+(r, θ)
+```
+
+Best for:
+
+```text
+distance + direction
+bearings
+radial movement
+```
+
+A strong system should support both.

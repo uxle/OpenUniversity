@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning-part-9",
+  "title": "Clock Reasoning \u2014 Part 9 of 10",
+  "questions": [
+    {
+      "question": "What complication do 'time zones' add to clock reasoning?",
+      "options": [
+        "None \u2014 time zones don't affect clock reasoning",
+        "The same instant in time can correspond to different local clock readings depending on location",
+        "They only affect the date, never the time",
+        "They only matter for digital clocks"
+      ],
+      "correct": 1,
+      "rationale": "Time zones mean a single absolute instant can be read as a different local clock time depending on where you are, which must be accounted for in cross-location problems.",
+      "id": 1
+    },
+    {
+      "question": "What is the difference between 'absolute' and 'local' time?",
+      "options": [
+        "There is no real difference",
+        "Absolute time is a fixed, location-independent reference point; local time is that same instant expressed according to a specific time zone's offset",
+        "Absolute time only applies to GMT",
+        "Local time is always 12 hours ahead of absolute time"
+      ],
+      "correct": 1,
+      "rationale": "Absolute time is a single, location-independent reference; local time is that same instant re-expressed using a particular location's time zone offset.",
+      "id": 2
+    },
+    {
+      "question": "What does 'temporal precision' refer to?",
+      "options": [
+        "The exact brand of the clock used",
+        "The level of detail (e.g., to the second, minute, or hour) at which a time value is specified or required",
+        "Whether a clock is analog or digital",
+        "The angle between the clock hands"
+      ],
+      "correct": 1,
+      "rationale": "Temporal precision describes how finely a time is specified or needed \u2014 down to the second, the minute, or only the hour, for instance.",
+      "id": 3
+    },
+    {
+      "question": "What is an 'uncertainty interval' in clock reasoning?",
+      "options": [
+        "A malfunctioning clock",
+        "A range of possible times, used when the exact time isn't precisely known or stated",
+        "The interval between AM and PM",
+        "A fixed 60-minute block"
+      ],
+      "correct": 1,
+      "rationale": "An uncertainty interval represents a range of possible times when the exact value isn't precisely known, rather than forcing a single (possibly wrong) exact answer.",
+      "id": 4
+    },
+    {
+      "question": "What is the purpose of stating a set of 'core rules' late in a lesson like this?",
+      "options": [
+        "To introduce entirely new material",
+        "To consolidate the many individual concepts covered into a short, memorable checklist for quick reference",
+        "To replace the need for the earlier sections",
+        "To make the lesson longer without adding value"
+      ],
+      "correct": 1,
+      "rationale": "A late-lesson core-rules summary condenses everything covered so far into a compact, quickly-reviewable checklist rather than requiring a full re-read.",
+      "id": 5
+    },
+    {
+      "question": "What does a 'minimal algorithm' for clock reasoning aim to provide?",
+      "options": [
+        "The most complicated possible solution",
+        "The smallest consistent set of steps needed to solve any standard clock reasoning problem, stripped of unnecessary detail",
+        "A shortcut that skips verification entirely",
+        "A method that only works for one specific problem"
+      ],
+      "correct": 1,
+      "rationale": "A minimal algorithm distills the reasoning process down to the smallest consistent set of steps that reliably solves any standard problem in the domain.",
+      "id": 6
+    },
+    {
+      "question": "Why work through a 'complete multi-step example' near the end of a lesson?",
+      "options": [
+        "It has no pedagogical value",
+        "To show how all the individual rules and steps combine to solve a realistic, non-trivial problem end-to-end",
+        "To replace the need for the core rules summary",
+        "Because simple examples are no longer useful at this stage"
+      ],
+      "correct": 1,
+      "rationale": "A complete multi-step example demonstrates how everything taught throughout the lesson comes together to solve a realistic problem from start to finish.",
+      "id": 7
+    },
+    {
+      "question": "What is 'the deeper principle' this lesson points to as the real skill being tested?",
+      "options": [
+        "Memorizing every possible clock question",
+        "That clock reasoning is fundamentally about consistent unit conversion and modular arithmetic, not memorized tricks",
+        "That only the clock-angle formula matters",
+        "That time zones are the only truly important topic"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's recurring theme is that reliable clock reasoning comes from consistently applying unit conversion and modular arithmetic, not from memorizing isolated tricks.",
+      "id": 8
+    },
+    {
+      "question": "Why must time zone conversions account for more than just adding/subtracting a fixed offset in some real-world cases?",
+      "options": [
+        "They never need more than a fixed offset",
+        "Because factors like daylight saving time can change the offset depending on the date",
+        "Because time zones don't actually have offsets",
+        "Because local time never differs from absolute time"
+      ],
+      "correct": 1,
+      "rationale": "Daylight saving time and similar seasonal adjustments mean a time zone's offset from a reference time can change depending on the date, not just the location.",
+      "id": 9
+    },
+    {
+      "question": "When precision is lower than what a question requires (e.g., only the hour is known but minutes are needed), what should a careful reasoner do?",
+      "options": [
+        "Assume the minutes are always zero",
+        "Acknowledge the missing precision rather than assuming an exact but unstated value",
+        "Guess a random minute value",
+        "Refuse to answer any part of the question"
+      ],
+      "correct": 1,
+      "rationale": "Rather than silently assuming an unstated value (which could be wrong), a careful reasoner should acknowledge that the available precision doesn't support a fully exact answer.",
+      "id": 10
+    }
+  ]
+}
