@@ -17,9 +17,12 @@
   width: 100%;
   max-width: var(--ou-max-width);
   margin: 0 auto;
-  padding: var(--ou-space-5) var(--ou-space-4);
+  /* Fluid whitespace (design direction: whitespace is the primary
+     arrangement tool): comfortable on desktop, calm-but-not-cramped on
+     phones, reflowing continuously with the viewport via clamp(). */
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 4vw, 2rem);
   /* Reserve space for the fixed bottom nav so content is never occluded */
-  padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-5) + env(safe-area-inset-bottom));
+  padding-bottom: calc(var(--ou-bottom-nav-height) + clamp(1.25rem, 3vw, 2rem) + env(safe-area-inset-bottom));
 }
 .ou-app-shell__footer {
   text-align: center;
@@ -88,10 +91,11 @@
 }
 
 /* Liquid grid: minmax() + auto-fill reflows column count continuously as
-   width changes — no breakpoint needed for 1 column to become N columns. */
+   width changes — no breakpoint needed for 1 column to become N columns.
+   Gap is fluid too: 16px between cards on phones, 24px on desktop. */
 .ou-grid {
   display: grid;
-  gap: var(--ou-space-5);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
 }
 

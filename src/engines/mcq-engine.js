@@ -126,8 +126,6 @@ class MCQEngine {
                 width: 100%;
                 max-width: 520px;
                 background: var(--bg-card);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
                 border: 1px solid rgba(255, 255, 255, 0.6);
                 border-radius: var(--radius-card);
                 padding: 2rem;

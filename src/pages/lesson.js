@@ -157,7 +157,7 @@ export async function render(container, { subjectId, subSubjectId, lessonId }, n
         ]),
         createEl("div", { class: "ou-cluster" }, [
           createLanguageSwitcher(lang, renderLanguage),
-          createExportPdfButton(),
+          createExportPdfButton({ subjectId, subSubjectId, lessonId, lang }),
         ]),
       ]),
       readerCard,

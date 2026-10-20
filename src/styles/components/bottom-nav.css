@@ -22,9 +22,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: var(--ou-surface-translucent);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  /* Design direction: solid surface — no translucency, no backdrop blur. */
+  background: var(--ou-bg);
   border-top: 1px solid var(--ou-border);
   z-index: var(--ou-z-sticky);
 }
@@ -46,15 +45,17 @@
     opacity var(--ou-transition-fast);
   position: relative;
 }
-/* Active indicator pill — slides under the active icon */
+/* Active indicator — soft stadium (rounded RECTANGLE), not the old 32×32
+   circle: same rounded-rectangle design language as the header buttons,
+   cards and the PDF export. Sits behind the active icon. */
 .ou-mobile-nav__item[aria-current="page"]::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 24px;
   background: var(--ou-accent-subtle);
   border-radius: var(--ou-radius-pill);
   z-index: -1;

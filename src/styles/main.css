@@ -19,6 +19,7 @@
 @import "./components/accents.css";
 @import "./components/navbar.css";
 @import "./components/bottom-nav.css";
+@import "./components/menu-sheet.css";
 @import "./components/modal.css";
 @import "./components/toast.css";
 @import "./components/tabs.css";

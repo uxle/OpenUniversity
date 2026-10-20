@@ -32,7 +32,7 @@ export const ICON_NAMES = [
   /* navigation & chrome */
   "house", "book", "book-open", "compass", "magnifying-glass", "ellipsis",
   "chevron-left", "chevron-right", "chevron-down", "chevron-up",
-  "arrow-up", "arrow-right", "xmark", "terminal",
+  "arrow-up", "arrow-right", "xmark", "terminal", "bars",
   /* subjects */
   "landmark", "laptop", "earth-americas", "chart-line", "brain",
   "language", "circle-nodes", "circle-play", "play",

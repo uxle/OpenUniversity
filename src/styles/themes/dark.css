@@ -7,7 +7,6 @@
 [data-theme="dark"] {
   --ou-bg: #000000;
   --ou-surface: #1c1c1e;
-  --ou-surface-translucent: rgba(22, 22, 24, 0.82);
   --ou-surface-subtle: #2c2c2e;
   --ou-surface-raised: #2c2c2e;
   --ou-border: rgba(255, 255, 255, 0.09);

@@ -14,9 +14,10 @@
      otherwise the brand/logo and action buttons sat under the notch. */
   padding-left: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-left));
   padding-right: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-right));
-  background: var(--ou-surface-translucent);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  /* Design direction: NO transparency/frosted glass anywhere — solid
+     surface, hairline border. (The old rgba surface + backdrop blur is
+     gone; the blur pipeline also cost paint time on low-end phones.) */
+  background: var(--ou-bg);
   border-bottom: 1px solid var(--ou-border);
   position: sticky;
   top: 0;
@@ -57,34 +58,43 @@
 .ou-navbar__brand:hover .ou-navbar__logo {
   transform: rotate(-4deg) scale(1.05);
 }
-.ou-navbar__actions { display: flex; align-items: center; gap: var(--ou-space-2); flex-shrink: 0; }
+.ou-navbar__actions { display: flex; align-items: center; gap: var(--ou-space-1); flex-shrink: 0; }
 
 @media (min-width: 480px) {
   .ou-navbar__brand { font-size: var(--ou-fs-lg); }
 }
 
 /* ── Header search / command-palette trigger ─────────────────────────
-   Desktop: a compact "Search  ⌃K" pill that opens the command palette.
-   Narrow screens: collapses to an icon-only 44px touch target. */
+   Narrow screens: a BARE icon — no border, no background, no circle
+   ("search icon must not sit inside a circle"); the soft rounded-square
+   hover/press state comes from the .ou-btn base + --bare-like styling
+   here. Desktop (≥720px): the compact "Search  ⌃K" pill returns. */
 .ou-navbar__search-trigger {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--ou-space-2);
-  padding: var(--ou-space-2) var(--ou-space-3);
-  border-radius: var(--ou-radius-pill);
-  color: var(--ou-text-muted);
-  font-size: var(--ou-fs-sm);
-  /* Was 36px: on phones the collapsed icon-only pill measured 39×36 —
-     below the 44px touch-target minimum the rest of the header already
-     meets (.ou-btn--icon). 44px fits the 56px header and costs nothing
-     on desktop (same guidance as accessibility.css's unconditional rule). */
+  padding: 0;
+  width: 44px;
   min-height: 44px;
-  transition: color var(--ou-transition-fast), border-color var(--ou-transition-fast),
-              box-shadow var(--ou-transition-fast);
+  border-radius: var(--ou-radius-md);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text-secondary);
+  font-size: var(--ou-fs-sm);
+  transition: color var(--ou-transition-fast), background-color var(--ou-transition-fast),
+              border-color var(--ou-transition-fast), box-shadow var(--ou-transition-fast);
 }
-.ou-navbar__search-trigger:hover {
+.ou-navbar__search-trigger:hover,
+.ou-navbar__search-trigger:focus-visible {
   color: var(--ou-text);
-  border-color: var(--ou-border-strong);
+  background: var(--ou-surface-subtle);
+  border-color: transparent;
+  box-shadow: none;
+}
+.ou-navbar__search-trigger:active {
+  background: var(--ou-accent-subtle);
 }
 .ou-navbar__search-label { display: none; }
 .ou-navbar__kbd {
@@ -100,6 +110,22 @@
   line-height: 1.4;
 }
 @media (min-width: 720px) {
+  .ou-navbar__search-trigger {
+    width: auto;
+    padding: var(--ou-space-2) var(--ou-space-3);
+    border-radius: var(--ou-radius-pill);
+    background: var(--ou-surface);
+    border-color: var(--ou-border-strong);
+    box-shadow: var(--ou-shadow-xs);
+    color: var(--ou-text-muted);
+  }
+  .ou-navbar__search-trigger:hover,
+  .ou-navbar__search-trigger:focus-visible {
+    color: var(--ou-text);
+    background: var(--ou-surface-subtle);
+    border-color: var(--ou-border-strong);
+    box-shadow: var(--ou-shadow-sm);
+  }
   .ou-navbar__search-label { display: inline; }
   .ou-navbar__kbd { display: inline-block; }
 }

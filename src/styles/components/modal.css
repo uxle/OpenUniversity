@@ -1,10 +1,9 @@
 /* src/styles/components/modal.css */
 .ou-modal-overlay {
   position: fixed; inset: 0;
-  /* Tinted blur backdrop instead of plain rgba for depth */
+  /* Flat functional scrim: dims the page behind the dialog. Design
+     direction: no blur / frosted glass anywhere. */
   background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px) saturate(120%);
-  -webkit-backdrop-filter: blur(6px) saturate(120%);
   display: flex; align-items: center; justify-content: center;
   z-index: var(--ou-z-modal);
   /* Safe-area aware so the modal never hugs the notch edges in landscape. */

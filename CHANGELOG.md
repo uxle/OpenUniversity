@@ -5,6 +5,32 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Changed — fluid mobile UI pass: menu bar, shapes, whitespace
+- **Header rearranged (mobile)** — actions are now right-aligned bare icons in a fixed
+  order: search · light/dark · menu (menu at the top-right corner). No circles anywhere
+  in the menu bar: icon buttons are chrome-less glyphs whose hover/press state is a soft
+  SOLID rounded square (new `.ou-btn--bare`); `.ou-btn--icon` switched from
+  `border-radius: 50%` to `radius-md` app-wide.
+- **Full-screen menu** — the old "More" dropdown is replaced by `menu-sheet.js`: a
+  full-screen solid menu on phones/tablets (primary + secondary destinations, 56px rows,
+  current route highlighted) that becomes a right-side sheet ≥900px. Theme toggle sits in
+  the sheet's top-right corner (store-synced with the header toggle so both icons never
+  drift); Escape/scrim/route-change close it, focus is trapped and returned, body scroll
+  locks while open.
+- **Zero transparency / frosted glass** — header, bottom nav, modal overlay, command
+  palette scrim and the MCQ engine embed no longer use translucent surfaces or
+  `backdrop-filter`; the now-unused `--ou-surface-translucent` token was removed from all
+  themes. Functional scrims stay flat rgba tints.
+- **Rounded-rectangle language** — subject-card and quiz-CTA icon badges changed from
+  circles to rounded squares; the bottom-nav active indicator is now a 40×24 stadium
+  instead of a 32×32 circle.
+- **Fluid whitespace** — main content padding, grid gap and card padding reflow
+  continuously via `clamp()` (16px on phones → 24px on desktop) instead of fixed
+  steps; the search trigger is a bare 44px icon on phones and regains the
+  "Search ⌘K" pill at ≥720px.
+- `bars` joined the self-hosted FA solid subset (67 glyphs; `tools/build-icon-font.py`
+  re-run); service worker cache bumped to `openknowledge-v8-fluid-menu`.
+
 ### Added — Font Awesome solid icons, self-hosted
 - Icons are Font Awesome 6 Free **solid** again, but without the old CDN dependency:
   `tools/build-icon-font.py` subsets `fa-solid-900` to the ~66 glyphs the app uses

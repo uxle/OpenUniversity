@@ -4,7 +4,9 @@
   border: 1px solid var(--ou-border);
   border-radius: var(--ou-radius-xl);
   box-shadow: var(--ou-shadow-sm);
-  padding: var(--ou-space-5);
+  /* Fluid whitespace: roomy 24px on desktop, tight-but-breathing 16px on
+     phones — no breakpoint, the clamp does the reflow continuously. */
+  padding: clamp(1rem, 3.5vw, 1.5rem);
   transition:
     box-shadow var(--ou-transition-base),
     transform var(--ou-transition-base),
@@ -60,7 +62,9 @@
 }
 .ou-subject-card__icon {
   width: 44px; height: 44px;
-  border-radius: var(--ou-radius-pill);
+  /* Rounded SQUARE, not a circle — the app-wide rounded-rectangle
+     language (header buttons, menu sheet, PDF export). */
+  border-radius: var(--ou-radius-lg);
   display: grid;
   place-items: center;
   font-size: var(--ou-fs-lg);
@@ -133,7 +137,7 @@
 }
 .ou-quiz-cta__icon {
   width: 44px; height: 44px;
-  border-radius: var(--ou-radius-pill);
+  border-radius: var(--ou-radius-lg); /* rounded square, not a circle */
   display: grid;
   place-items: center;
   font-size: var(--ou-fs-md);

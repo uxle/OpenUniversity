@@ -197,7 +197,6 @@ table { border-collapse: collapse; width: 100%; }
   /* Color — light (default) */
   --ou-bg: #ffffff;
   --ou-surface: #ffffff;              /* solid card background */
-  --ou-surface-translucent: rgba(255, 255, 255, 0.75); /* header/bottom-nav blur */
   --ou-surface-subtle: #f5f5f7;
   --ou-surface-raised: #ffffff;       /* elevated card above ou-surface, e.g. modal */
   --ou-border: rgba(0, 0, 0, 0.06);
@@ -334,6 +333,7 @@ html {
 .fa-arrow-trend-up::before { content: "\e098"; }
 .fa-arrow-up::before { content: "\f062"; }
 .fa-ban::before { content: "\f05e"; }
+.fa-bars::before { content: "\f0c9"; }
 .fa-bolt::before { content: "\f0e7"; }
 .fa-book::before { content: "\f02d"; }
 .fa-book-open::before { content: "\f518"; }
@@ -509,9 +509,12 @@ h1, h2, h3 { text-wrap: balance; }
   width: 100%;
   max-width: var(--ou-max-width);
   margin: 0 auto;
-  padding: var(--ou-space-5) var(--ou-space-4);
+  /* Fluid whitespace (design direction: whitespace is the primary
+     arrangement tool): comfortable on desktop, calm-but-not-cramped on
+     phones, reflowing continuously with the viewport via clamp(). */
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1rem, 4vw, 2rem);
   /* Reserve space for the fixed bottom nav so content is never occluded */
-  padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-5) + env(safe-area-inset-bottom));
+  padding-bottom: calc(var(--ou-bottom-nav-height) + clamp(1.25rem, 3vw, 2rem) + env(safe-area-inset-bottom));
 }
 .ou-app-shell__footer {
   text-align: center;
@@ -580,10 +583,11 @@ h1, h2, h3 { text-wrap: balance; }
 }
 
 /* Liquid grid: minmax() + auto-fill reflows column count continuously as
-   width changes — no breakpoint needed for 1 column to become N columns. */
+   width changes — no breakpoint needed for 1 column to become N columns.
+   Gap is fluid too: 16px between cards on phones, 24px on desktop. */
 .ou-grid {
   display: grid;
-  gap: var(--ou-space-5);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
   grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
 }
 
@@ -806,7 +810,6 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
 [data-theme="light"] {
   --ou-bg: #ffffff;
   --ou-surface: #ffffff;
-  --ou-surface-translucent: rgba(255, 255, 255, 0.78);
   --ou-surface-subtle: #f5f5f7;
   --ou-surface-raised: #ffffff;
   --ou-border: rgba(0, 0, 0, 0.06);
@@ -843,7 +846,6 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
 [data-theme="dark"] {
   --ou-bg: #000000;
   --ou-surface: #1c1c1e;
-  --ou-surface-translucent: rgba(22, 22, 24, 0.82);
   --ou-surface-subtle: #2c2c2e;
   --ou-surface-raised: #2c2c2e;
   --ou-border: rgba(255, 255, 255, 0.09);
@@ -888,7 +890,6 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
 [data-theme="high-contrast"] {
   --ou-bg: #000000;
   --ou-surface: #000000;
-  --ou-surface-translucent: #000000;
   --ou-surface-subtle: #0a0a0a;
   --ou-border: #ffffff;
   --ou-border-strong: #ffffff;
@@ -964,6 +965,27 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
   border-color: var(--ou-border-strong);
 }
 
+/* Bare — chrome-less icon button for the header/menu bar: no border, no
+   background at rest ("remove all circles in the menu bar"), only a soft
+   SOLID rounded-square hover/press affordance. Defined AFTER --secondary
+   so it wins the cascade when a caller passes both. */
+.ou-btn--bare {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text-secondary);
+}
+.ou-btn--bare:hover:not(:disabled),
+.ou-btn--bare:focus-visible {
+  background-color: var(--ou-surface-subtle);
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text);
+}
+.ou-btn--bare:active:not(:disabled) {
+  background-color: var(--ou-accent-subtle);
+}
+
 /* Ghost */
 .ou-btn--ghost { background: transparent; color: var(--ou-accent); }
 .ou-btn--ghost:hover:not(:disabled) {
@@ -995,13 +1017,17 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
    content-driven width (padding + glyph width) made this an oval, not a
    circle, whenever the icon glyph itself wasn't square. A fixed square
    (padding zeroed so it can't reopen the same gap) guarantees both a
-   true circle and the real 44px touch target regardless of glyph. */
+   true square and the real 44px touch target regardless of glyph.
+
+   Design direction (mobile UI pass): NO circles anywhere — icon buttons
+   are soft rounded squares (radius-md), matching the rounded-rectangle
+   language used across cards, pills and the PDF export. */
 .ou-btn--icon {
   width: 44px; height: 44px;
   padding: 0;
-  border-radius: 50%;
+  border-radius: var(--ou-radius-md);
 }
-.ou-btn--icon:active { transform: scale(0.88); }
+.ou-btn--icon:active { transform: scale(0.92); }
 
 /* Loading state — shows spinner, hides content */
 .ou-btn--loading {
@@ -1040,7 +1066,9 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
   border: 1px solid var(--ou-border);
   border-radius: var(--ou-radius-xl);
   box-shadow: var(--ou-shadow-sm);
-  padding: var(--ou-space-5);
+  /* Fluid whitespace: roomy 24px on desktop, tight-but-breathing 16px on
+     phones — no breakpoint, the clamp does the reflow continuously. */
+  padding: clamp(1rem, 3.5vw, 1.5rem);
   transition:
     box-shadow var(--ou-transition-base),
     transform var(--ou-transition-base),
@@ -1096,7 +1124,9 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
 }
 .ou-subject-card__icon {
   width: 44px; height: 44px;
-  border-radius: var(--ou-radius-pill);
+  /* Rounded SQUARE, not a circle — the app-wide rounded-rectangle
+     language (header buttons, menu sheet, PDF export). */
+  border-radius: var(--ou-radius-lg);
   display: grid;
   place-items: center;
   font-size: var(--ou-fs-lg);
@@ -1169,7 +1199,7 @@ a, button, select, input[type="checkbox"], input[type="radio"] {
 }
 .ou-quiz-cta__icon {
   width: 44px; height: 44px;
-  border-radius: var(--ou-radius-pill);
+  border-radius: var(--ou-radius-lg); /* rounded square, not a circle */
   display: grid;
   place-items: center;
   font-size: var(--ou-fs-md);
@@ -1339,9 +1369,10 @@ mark,
      otherwise the brand/logo and action buttons sat under the notch. */
   padding-left: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-left));
   padding-right: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-right));
-  background: var(--ou-surface-translucent);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  /* Design direction: NO transparency/frosted glass anywhere — solid
+     surface, hairline border. (The old rgba surface + backdrop blur is
+     gone; the blur pipeline also cost paint time on low-end phones.) */
+  background: var(--ou-bg);
   border-bottom: 1px solid var(--ou-border);
   position: sticky;
   top: 0;
@@ -1382,34 +1413,43 @@ mark,
 .ou-navbar__brand:hover .ou-navbar__logo {
   transform: rotate(-4deg) scale(1.05);
 }
-.ou-navbar__actions { display: flex; align-items: center; gap: var(--ou-space-2); flex-shrink: 0; }
+.ou-navbar__actions { display: flex; align-items: center; gap: var(--ou-space-1); flex-shrink: 0; }
 
 @media (min-width: 480px) {
   .ou-navbar__brand { font-size: var(--ou-fs-lg); }
 }
 
 /* ── Header search / command-palette trigger ─────────────────────────
-   Desktop: a compact "Search  ⌃K" pill that opens the command palette.
-   Narrow screens: collapses to an icon-only 44px touch target. */
+   Narrow screens: a BARE icon — no border, no background, no circle
+   ("search icon must not sit inside a circle"); the soft rounded-square
+   hover/press state comes from the .ou-btn base + --bare-like styling
+   here. Desktop (≥720px): the compact "Search  ⌃K" pill returns. */
 .ou-navbar__search-trigger {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--ou-space-2);
-  padding: var(--ou-space-2) var(--ou-space-3);
-  border-radius: var(--ou-radius-pill);
-  color: var(--ou-text-muted);
-  font-size: var(--ou-fs-sm);
-  /* Was 36px: on phones the collapsed icon-only pill measured 39×36 —
-     below the 44px touch-target minimum the rest of the header already
-     meets (.ou-btn--icon). 44px fits the 56px header and costs nothing
-     on desktop (same guidance as accessibility.css's unconditional rule). */
+  padding: 0;
+  width: 44px;
   min-height: 44px;
-  transition: color var(--ou-transition-fast), border-color var(--ou-transition-fast),
-              box-shadow var(--ou-transition-fast);
+  border-radius: var(--ou-radius-md);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text-secondary);
+  font-size: var(--ou-fs-sm);
+  transition: color var(--ou-transition-fast), background-color var(--ou-transition-fast),
+              border-color var(--ou-transition-fast), box-shadow var(--ou-transition-fast);
 }
-.ou-navbar__search-trigger:hover {
+.ou-navbar__search-trigger:hover,
+.ou-navbar__search-trigger:focus-visible {
   color: var(--ou-text);
-  border-color: var(--ou-border-strong);
+  background: var(--ou-surface-subtle);
+  border-color: transparent;
+  box-shadow: none;
+}
+.ou-navbar__search-trigger:active {
+  background: var(--ou-accent-subtle);
 }
 .ou-navbar__search-label { display: none; }
 .ou-navbar__kbd {
@@ -1425,6 +1465,22 @@ mark,
   line-height: 1.4;
 }
 @media (min-width: 720px) {
+  .ou-navbar__search-trigger {
+    width: auto;
+    padding: var(--ou-space-2) var(--ou-space-3);
+    border-radius: var(--ou-radius-pill);
+    background: var(--ou-surface);
+    border-color: var(--ou-border-strong);
+    box-shadow: var(--ou-shadow-xs);
+    color: var(--ou-text-muted);
+  }
+  .ou-navbar__search-trigger:hover,
+  .ou-navbar__search-trigger:focus-visible {
+    color: var(--ou-text);
+    background: var(--ou-surface-subtle);
+    border-color: var(--ou-border-strong);
+    box-shadow: var(--ou-shadow-sm);
+  }
   .ou-navbar__search-label { display: inline; }
   .ou-navbar__kbd { display: inline-block; }
 }
@@ -1454,9 +1510,8 @@ mark,
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: var(--ou-surface-translucent);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  /* Design direction: solid surface — no translucency, no backdrop blur. */
+  background: var(--ou-bg);
   border-top: 1px solid var(--ou-border);
   z-index: var(--ou-z-sticky);
 }
@@ -1478,15 +1533,17 @@ mark,
     opacity var(--ou-transition-fast);
   position: relative;
 }
-/* Active indicator pill — slides under the active icon */
+/* Active indicator — soft stadium (rounded RECTANGLE), not the old 32×32
+   circle: same rounded-rectangle design language as the header buttons,
+   cards and the PDF export. Sits behind the active icon. */
 .ou-mobile-nav__item[aria-current="page"]::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 24px;
   background: var(--ou-accent-subtle);
   border-radius: var(--ou-radius-pill);
   z-index: -1;
@@ -1521,14 +1578,170 @@ mark,
   color: var(--ou-accent);
 }
 
+/* ./components/menu-sheet.css — inlined by bundle-css */
+/* src/styles/components/menu-sheet.css — the full-screen navigation menu
+   (right-side bars button in the header).
+
+   Design contract:
+   - SOLID surfaces only: page background, no blur, no translucent layers.
+   - No circles: every affordance is a soft rounded rectangle (radius-md).
+     Icon buttons are bare glyphs; hover/press paints a rounded square.
+   - Whitespace first: generous section gaps and 56px rows, one column,
+     left-aligned — hierarchy comes from arrangement, not decoration.
+   - Fluid: full-screen on phones/tablets, right-side sheet ≥900px, same
+     DOM, no fork. */
+
+.ou-menu {
+  position: fixed;
+  inset: 0;
+  z-index: var(--ou-z-modal);
+}
+.ou-menu[hidden] { display: none; }
+
+/* Flat functional scrim (desktop sheet only — it dims the page, it does
+   not style it; deliberately opaque tint, zero blur). */
+.ou-menu__scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  animation: ou-fade-in var(--ou-transition-fast) both;
+}
+
+.ou-menu__panel {
+  position: absolute;
+  inset: 0;
+  background: var(--ou-bg);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  animation: ou-menu-panel-in var(--ou-transition-base) both;
+}
+@keyframes ou-menu-panel-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Sheet bar: brand-ish label left; theme toggle + close right ─────
+   The light/dark toggle is a bare icon in the top-right corner. */
+.ou-menu__bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-3);
+  min-height: var(--ou-header-height);
+  padding-left: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-left));
+  padding-right: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-right));
+  background: var(--ou-bg);
+  border-bottom: 1px solid var(--ou-border);
+  flex-shrink: 0;
+}
+.ou-menu__brand {
+  font-weight: 700;
+  font-size: var(--ou-fs-md);
+  letter-spacing: -0.02em;
+  color: var(--ou-text);
+}
+.ou-menu__bar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-1);
+  flex-shrink: 0;
+}
+
+/* ── Nav column: whitespace-first list of calm rows ─────────────────── */
+.ou-menu__nav {
+  display: flex;
+  flex-direction: column;
+  padding: var(--ou-space-4) clamp(1rem, 4vw, 2rem);
+  padding-bottom: calc(var(--ou-space-7) + env(safe-area-inset-bottom));
+  /* Roomy fluid column: content stays readable, never a stretched line
+     on desktop where the sheet is only 400px wide anyway. */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+}
+.ou-menu__section-label {
+  font-size: var(--ou-fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ou-text-muted);
+  margin: var(--ou-space-5) var(--ou-space-2) var(--ou-space-2);
+}
+.ou-menu__section-label:first-child { margin-top: var(--ou-space-2); }
+
+.ou-menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-4);
+  min-height: 56px;
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border-radius: var(--ou-radius-md);
+  color: var(--ou-text);
+  font-size: var(--ou-fs-md);
+  font-weight: 600;
+  transition: background-color var(--ou-transition-fast), color var(--ou-transition-fast);
+}
+.ou-menu__link > i:first-child {
+  font-size: 1.05rem;
+  color: var(--ou-text-secondary);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.ou-menu__link span { flex: 1; min-width: 0; }
+.ou-menu__chev {
+  color: var(--ou-text-muted);
+  font-size: 0.8rem;
+  transition: transform var(--ou-transition-fast), color var(--ou-transition-fast);
+}
+.ou-menu__link:hover {
+  background: var(--ou-surface-subtle);
+}
+.ou-menu__link:hover .ou-menu__chev {
+  transform: translateX(2px);
+  color: var(--ou-text-secondary);
+}
+.ou-menu__link:active { background: var(--ou-accent-subtle); }
+.ou-menu__link[aria-current="page"] {
+  background: var(--ou-surface-subtle);
+  color: var(--ou-accent);
+}
+.ou-menu__link[aria-current="page"] > i:first-child { color: var(--ou-accent); }
+
+/* Body scroll lock while the sheet is open (set by menu-sheet.js). */
+body.ou-menu-open { overflow: hidden; }
+
+/* ── Desktop: same component becomes a right-side sheet ─────────────── */
+@media (min-width: 900px) {
+  .ou-menu__panel {
+    inset: 0 0 0 auto;
+    width: min(400px, 92vw);
+    border-radius: var(--ou-radius-xl) 0 0 var(--ou-radius-xl);
+    box-shadow: var(--ou-shadow-lg);
+    animation-name: ou-menu-sheet-in;
+  }
+  @keyframes ou-menu-sheet-in {
+    from { opacity: 0; transform: translateX(48px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+}
+
+/* Print: the menu never appears on paper. */
+@media print {
+  .ou-menu { display: none !important; }
+}
+
 /* ./components/modal.css — inlined by bundle-css */
 /* src/styles/components/modal.css */
 .ou-modal-overlay {
   position: fixed; inset: 0;
-  /* Tinted blur backdrop instead of plain rgba for depth */
+  /* Flat functional scrim: dims the page behind the dialog. Design
+     direction: no blur / frosted glass anywhere. */
   background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px) saturate(120%);
-  -webkit-backdrop-filter: blur(6px) saturate(120%);
   display: flex; align-items: center; justify-content: center;
   z-index: var(--ou-z-modal);
   /* Safe-area aware so the modal never hugs the notch edges in landscape. */
@@ -1882,8 +2095,7 @@ mark,
   inset: 0;
   z-index: calc(var(--ou-z-modal) + 10);
   background: rgba(0, 0, 0, 0.32);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /* Flat scrim — no backdrop blur (design direction: zero frosted glass). */
   display: flex;
   justify-content: center;
   align-items: flex-start;

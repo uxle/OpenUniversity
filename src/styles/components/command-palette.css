@@ -7,8 +7,7 @@
   inset: 0;
   z-index: calc(var(--ou-z-modal) + 10);
   background: rgba(0, 0, 0, 0.32);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /* Flat scrim — no backdrop blur (design direction: zero frosted glass). */
   display: flex;
   justify-content: center;
   align-items: flex-start;

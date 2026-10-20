@@ -30,6 +30,7 @@
 .fa-arrow-trend-up::before { content: "\e098"; }
 .fa-arrow-up::before { content: "\f062"; }
 .fa-ban::before { content: "\f05e"; }
+.fa-bars::before { content: "\f0c9"; }
 .fa-bolt::before { content: "\f0e7"; }
 .fa-book::before { content: "\f02d"; }
 .fa-book-open::before { content: "\f518"; }

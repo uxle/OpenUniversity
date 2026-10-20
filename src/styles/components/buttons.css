@@ -52,6 +52,27 @@
   border-color: var(--ou-border-strong);
 }
 
+/* Bare — chrome-less icon button for the header/menu bar: no border, no
+   background at rest ("remove all circles in the menu bar"), only a soft
+   SOLID rounded-square hover/press affordance. Defined AFTER --secondary
+   so it wins the cascade when a caller passes both. */
+.ou-btn--bare {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text-secondary);
+}
+.ou-btn--bare:hover:not(:disabled),
+.ou-btn--bare:focus-visible {
+  background-color: var(--ou-surface-subtle);
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--ou-text);
+}
+.ou-btn--bare:active:not(:disabled) {
+  background-color: var(--ou-accent-subtle);
+}
+
 /* Ghost */
 .ou-btn--ghost { background: transparent; color: var(--ou-accent); }
 .ou-btn--ghost:hover:not(:disabled) {
@@ -83,13 +104,17 @@
    content-driven width (padding + glyph width) made this an oval, not a
    circle, whenever the icon glyph itself wasn't square. A fixed square
    (padding zeroed so it can't reopen the same gap) guarantees both a
-   true circle and the real 44px touch target regardless of glyph. */
+   true square and the real 44px touch target regardless of glyph.
+
+   Design direction (mobile UI pass): NO circles anywhere — icon buttons
+   are soft rounded squares (radius-md), matching the rounded-rectangle
+   language used across cards, pills and the PDF export. */
 .ou-btn--icon {
   width: 44px; height: 44px;
   padding: 0;
-  border-radius: 50%;
+  border-radius: var(--ou-radius-md);
 }
-.ou-btn--icon:active { transform: scale(0.88); }
+.ou-btn--icon:active { transform: scale(0.92); }
 
 /* Loading state — shows spinner, hides content */
 .ou-btn--loading {

@@ -1,0 +1,155 @@
+/* src/styles/components/menu-sheet.css — the full-screen navigation menu
+   (right-side bars button in the header).
+
+   Design contract:
+   - SOLID surfaces only: page background, no blur, no translucent layers.
+   - No circles: every affordance is a soft rounded rectangle (radius-md).
+     Icon buttons are bare glyphs; hover/press paints a rounded square.
+   - Whitespace first: generous section gaps and 56px rows, one column,
+     left-aligned — hierarchy comes from arrangement, not decoration.
+   - Fluid: full-screen on phones/tablets, right-side sheet ≥900px, same
+     DOM, no fork. */
+
+.ou-menu {
+  position: fixed;
+  inset: 0;
+  z-index: var(--ou-z-modal);
+}
+.ou-menu[hidden] { display: none; }
+
+/* Flat functional scrim (desktop sheet only — it dims the page, it does
+   not style it; deliberately opaque tint, zero blur). */
+.ou-menu__scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  animation: ou-fade-in var(--ou-transition-fast) both;
+}
+
+.ou-menu__panel {
+  position: absolute;
+  inset: 0;
+  background: var(--ou-bg);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  animation: ou-menu-panel-in var(--ou-transition-base) both;
+}
+@keyframes ou-menu-panel-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Sheet bar: brand-ish label left; theme toggle + close right ─────
+   The light/dark toggle is a bare icon in the top-right corner. */
+.ou-menu__bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-3);
+  min-height: var(--ou-header-height);
+  padding-left: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-left));
+  padding-right: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-right));
+  background: var(--ou-bg);
+  border-bottom: 1px solid var(--ou-border);
+  flex-shrink: 0;
+}
+.ou-menu__brand {
+  font-weight: 700;
+  font-size: var(--ou-fs-md);
+  letter-spacing: -0.02em;
+  color: var(--ou-text);
+}
+.ou-menu__bar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-1);
+  flex-shrink: 0;
+}
+
+/* ── Nav column: whitespace-first list of calm rows ─────────────────── */
+.ou-menu__nav {
+  display: flex;
+  flex-direction: column;
+  padding: var(--ou-space-4) clamp(1rem, 4vw, 2rem);
+  padding-bottom: calc(var(--ou-space-7) + env(safe-area-inset-bottom));
+  /* Roomy fluid column: content stays readable, never a stretched line
+     on desktop where the sheet is only 400px wide anyway. */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 560px;
+}
+.ou-menu__section-label {
+  font-size: var(--ou-fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ou-text-muted);
+  margin: var(--ou-space-5) var(--ou-space-2) var(--ou-space-2);
+}
+.ou-menu__section-label:first-child { margin-top: var(--ou-space-2); }
+
+.ou-menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-4);
+  min-height: 56px;
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border-radius: var(--ou-radius-md);
+  color: var(--ou-text);
+  font-size: var(--ou-fs-md);
+  font-weight: 600;
+  transition: background-color var(--ou-transition-fast), color var(--ou-transition-fast);
+}
+.ou-menu__link > i:first-child {
+  font-size: 1.05rem;
+  color: var(--ou-text-secondary);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.ou-menu__link span { flex: 1; min-width: 0; }
+.ou-menu__chev {
+  color: var(--ou-text-muted);
+  font-size: 0.8rem;
+  transition: transform var(--ou-transition-fast), color var(--ou-transition-fast);
+}
+.ou-menu__link:hover {
+  background: var(--ou-surface-subtle);
+}
+.ou-menu__link:hover .ou-menu__chev {
+  transform: translateX(2px);
+  color: var(--ou-text-secondary);
+}
+.ou-menu__link:active { background: var(--ou-accent-subtle); }
+.ou-menu__link[aria-current="page"] {
+  background: var(--ou-surface-subtle);
+  color: var(--ou-accent);
+}
+.ou-menu__link[aria-current="page"] > i:first-child { color: var(--ou-accent); }
+
+/* Body scroll lock while the sheet is open (set by menu-sheet.js). */
+body.ou-menu-open { overflow: hidden; }
+
+/* ── Desktop: same component becomes a right-side sheet ─────────────── */
+@media (min-width: 900px) {
+  .ou-menu__panel {
+    inset: 0 0 0 auto;
+    width: min(400px, 92vw);
+    border-radius: var(--ou-radius-xl) 0 0 var(--ou-radius-xl);
+    box-shadow: var(--ou-shadow-lg);
+    animation-name: ou-menu-sheet-in;
+  }
+  @keyframes ou-menu-sheet-in {
+    from { opacity: 0; transform: translateX(48px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+}
+
+/* Print: the menu never appears on paper. */
+@media print {
+  .ou-menu { display: none !important; }
+}
