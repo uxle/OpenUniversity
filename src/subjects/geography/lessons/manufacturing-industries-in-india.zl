@@ -1,0 +1,156 @@
+# Manufacturing Industries in India
+
+> Manufacturing turns raw materials into finished goods and multiplies
+> the value a country earns from its endowment. This lesson classifies
+> Indian industries, locates the great clusters, and examines pollution
+> control and the policy reforms reshaping the sector.
+
+## 1. What Manufacturing Means and Why It Counts
+
+[definition]
+**Manufacturing** is the process of transforming raw materials into
+more valuable finished goods with the help of machines, power, and
+labour — literally "made by hand" in its root sense, though today it
+means made by machine.
+[/definition]
+
+- Manufacturing adds value: raw cotton worth a few rupees becomes
+  cloth worth hundreds, and ore becomes export-grade steel.
+- It creates organised, comparatively well-paid jobs and spreads
+  industrial skills; the sector contributes roughly one-sixth of
+  gross value added, with policy aiming to raise that share.
+- Industry creates demand for mining, energy, and transport, linking
+  every economic sector into one chain.
+
+## 2. Classifying Industries
+
+@diagram tree id="industry-classification" layout="tree" aria="Basis-wise classification of industries"
+  Industries -> "By raw material"
+  Industries -> "By size"
+  Industries -> "By ownership"
+  "By raw material" -> "Agro-based: textiles and sugar"
+  "By raw material" -> "Mineral-based: iron and steel, cement"
+  "By raw material" -> "Forest and marine based"
+  "By size" -> "Cottage and small scale"
+  "By size" -> "Large scale"
+  "By ownership" -> "Public, private, joint, cooperative"
+@/diagram
+
+[tip]
+A **public sector** industry is owned by the government (SAIL steel
+plants), a **private sector** one by individuals or companies (TISCO),
+and a **cooperative** one by its members, such as the sugar
+cooperatives of Maharashtra and Amul's dairy network.
+[/tip]
+
+## 3. Agro-Based Industries: Textiles and Sugar
+
+**Cotton textiles** form India's oldest modern industry; the first
+mill opened in Mumbai in 1854.
+
+| Centre | Why it grew | Nickname |
+| --- | --- | --- |
+| Mumbai | Humid climate, black-soil cotton hinterland, port and capital | Cottonopolis of India |
+| Ahmedabad | Cheap labour and power beside the cotton tracts of Gujarat | Manchester of India |
+| Coimbatore | Spinning and powerloom hub fed by Tamil Nadu cotton | Textile city of the south |
+
+**Jute textiles** cluster in the Hugli basin of West Bengal, where
+raw fibre, river water, cheap labour, and the Kolkata port lie side
+by side. **Sugar mills** crush cane seasonally in Uttar Pradesh and
+Maharashtra, and their by-products — bagasse, molasses, and press
+mud — feed paper, ethanol, and cattle-feed industries; blending
+ethanol with petrol is now a national programme.
+
+[warning]
+Mumbai's mills declined as land prices soared and machinery aged, so
+the industry drifted to Gujarat, Tamil Nadu, and powerloom towns such
+as Surat — industrial geography is never frozen in place.
+[/warning]
+
+## 4. Mineral-Based Industries: Steel, Aluminium, Cement, Automobiles
+
+The first integrated steel plant — **TISCO at Sakchi (Jamshedpur),
+1907** — still anchors a belt on the Chhotanagpur plateau, where iron
+ore, coal, limestone, water, labour, and rail lines meet.
+
+| Plant | State | Started |
+| --- | --- | --- |
+| Jamshedpur (TISCO) | Jharkhand | 1907 |
+| Bhilai | Chhattisgarh | 1959 |
+| Rourkela | Odisha | 1962 |
+| Durgapur | West Bengal | 1962 |
+| Bokaro | Jharkhand | 1972 |
+
+- **Aluminium** smelters (NALCO at Koraput, Hindalco at Renukoot) sit
+  near bauxite and cheap power because smelting is electricity-hungry.
+- **Cement** plants track the limestone belts of Rajasthan, Andhra
+  Pradesh, and Gujarat; the first plant opened at Chennai in 1904.
+- **Automobiles** cluster at Chennai — dubbed the Detroit of India —
+  and at Gurugram-Manesar, Pune, and Sanand.
+
+[important]
+Locational logic: weight-losing industries such as steel, sugar, and
+cement pull toward raw materials, while weight-gaining or assembly
+industries such as autos and electronics pull toward markets and
+ports.
+[/important]
+
+## 5. Industrial Clusters and Location Factors
+
+The classic location factors are raw material, power, market, labour,
+transport, capital, water, and government policy.
+
+| Cluster | Specialities |
+| --- | --- |
+| Mumbai-Pune | Textiles, machinery, pharmaceuticals, petrochemicals |
+| Hugli region | Jute, engineering, paper, tea trade |
+| Bengaluru-Chennai | Electronics, software, automobiles |
+| Gujarat corridor | Chemicals, petrochemicals, textiles |
+| Delhi NCR | Automobiles, electronics, light engineering |
+
+[example]
+Jamshedpur was sited where the rivers Subarnarekha and Kharkai meet,
+close to Jharia coal and Singhbhum ore — every classic location
+factor within a day's march.
+[/example]
+
+## 6. Industrial Pollution and Its Control
+
+| Pollution type | Typical source | Control measure |
+| --- | --- | --- |
+| Air | Smoke and sulphur dioxide from smelters | Scrubbers, filters, taller stacks, cleaner fuels |
+| Water | Dyes and effluents from tanneries and paper mills | Effluent treatment plants before discharge |
+| Thermal | Hot cooling water into rivers | Cooling ponds and towers |
+| Noise and solid waste | Machinery, fly ash | Barriers, recycling, ash bricks |
+
+## 7. Policy Reforms and New Directions
+
+- Industrial licensing was largely abolished in **1991**, opening the
+  sector to competition and foreign investment.
+- Special Economic Zones (SEZ Act, 2005) offer export-ready estates;
+  **Make in India** (2014) and Production-Linked Incentive schemes
+  push electronics, mobiles, autos, and pharmaceuticals.
+- Micro, small, and medium enterprises (MSMEs) employ the largest
+  number of people after agriculture and feed big-firm supply chains.
+
+@chart donut title="Weights in the Index of Industrial Production" labels:
+Manufacturing
+Mining
+Electricity
+
+data:
+77.6
+14.4
+8.0
+@/chart
+
+## 8. Quick Revision
+
+| Industry | Centre | Memory hook |
+| --- | --- | --- |
+| Cotton textile | Mumbai, Ahmedabad, Coimbatore | First mill, Mumbai, 1854 |
+| Jute | Hugli basin, West Bengal | Delta fibre and the Kolkata port |
+| Iron and steel | Jamshedpur, Bhilai, Rourkela | TISCO 1907; plateau of ore and coal |
+| Aluminium | Koraput, Renukoot | Bauxite plus cheap power |
+| Cement | Rajasthan, Andhra Pradesh, Gujarat | Follows limestone, since 1904 |
+| Automobiles | Chennai, Gurugram, Pune, Sanand | Chennai, the Detroit of India |

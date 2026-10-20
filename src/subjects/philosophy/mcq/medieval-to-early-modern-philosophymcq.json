@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "Aquinas' five ways (quinque viae) argue by moving from:",
-      "options": ["Scripture passages to doctrine", "Observed effects — motion, causes, contingency — to their first ground", "Inner experience to certainty", "Definitions to syllogisms"],
-      "correct": 1,
+      "options": [
+        "Observed effects — motion, causes, contingency — to their first ground",
+        "Scripture passages to doctrine",
+        "Inner experience to certainty",
+        "Definitions to syllogisms"
+      ],
+      "correct": 0,
       "rationale": "In the Summa Theologiae, each way starts from a feature of the world (motion, efficient causes, contingency, degrees of perfection, design) and traces it to a first source."
     },
     {
       "id": 2,
       "question": "'What then is time? If no one asks me, I know; if I wish to explain it, I do not know.' This is:",
-      "options": ["Hume on causation", "Augustine on time", "Descartes on doubt", "Ockham on universals"],
-      "correct": 1,
+      "options": [
+        "Hume on causation",
+        "Descartes on doubt",
+        "Augustine on time",
+        "Ockham on universals"
+      ],
+      "correct": 2,
       "rationale": "Augustine's meditation on time in the Confessions analyses it as a distension of the soul — past memory, present attention, future expectation."
     },
     {
       "id": 3,
       "question": "Ockham's razor states that:",
-      "options": ["Universals are real entities", "Entities should not be multiplied beyond necessity", "Faith precedes reason", "The simplest religion is truest"],
+      "options": [
+        "Universals are real entities",
+        "Entities should not be multiplied beyond necessity",
+        "Faith precedes reason",
+        "The simplest religion is truest"
+      ],
       "correct": 1,
       "rationale": "The nominalist Ockham taught parsimony: prefer the explanation positing the fewest entities. He also held universals are mere names."
     },
     {
       "id": 4,
       "question": "Descartes' methodic doubt ends at the indubitable first certainty:",
-      "options": ["God's existence", "Cogito ergo sum — I think, therefore I am", "The reality of extension", "Clear and distinct sensations"],
-      "correct": 1,
+      "options": [
+        "God's existence",
+        "Clear and distinct sensations",
+        "The reality of extension",
+        "Cogito ergo sum — I think, therefore I am"
+      ],
+      "correct": 3,
       "rationale": "Doubting is thinking, and thinking requires a thinker — the cogito survives universal doubt, grounding the Meditations (1641) and his mind–body dualism."
     },
     {
       "id": 5,
       "question": "Spinoza's metaphysics holds that:",
-      "options": ["There are two substances, mind and body", "There is one substance, called God or Nature (deus sive natura)", "Reality consists of windowless monads", "Matter does not exist"],
-      "correct": 1,
+      "options": [
+        "There is one substance, called God or Nature (deus sive natura)",
+        "There are two substances, mind and body",
+        "Reality consists of windowless monads",
+        "Matter does not exist"
+      ],
+      "correct": 0,
       "rationale": "Spinoza's substance monism: one infinite substance with infinitely many attributes, of which we know thought and extension; mind and body are two attributes of the same thing."
     },
     {
       "id": 6,
       "question": "Leibniz's monads are described as 'windowless' because:",
-      "options": ["They are too small to see", "They do not causally interact; their harmony is pre-established by God", "They are made of glass", "They exist only in dreams"],
-      "correct": 1,
+      "options": [
+        "They are too small to see",
+        "They are made of glass",
+        "They do not causally interact; their harmony is pre-established by God",
+        "They exist only in dreams"
+      ],
+      "correct": 2,
       "rationale": "Simple substances with no parts, monads unfold their states independently, coordinated by God's pre-established harmony in the best of all possible worlds."
     },
     {
       "id": 7,
       "question": "Locke's claim that the mind at birth is a tabula rasa means:",
-      "options": ["The mind contains innate mathematical truths", "The mind is a blank slate written on by sensation and reflection", "The mind perceives God directly", "Memory is perfect"],
+      "options": [
+        "The mind contains innate mathematical truths",
+        "The mind is a blank slate written on by sensation and reflection",
+        "The mind perceives God directly",
+        "Memory is perfect"
+      ],
       "correct": 1,
       "rationale": "In the Essay Concerning Human Understanding (1689), all ideas derive from experience — no innate ideas, against the rationalists."
     },
     {
       "id": 8,
       "question": "Berkeley's formula esse est percipi asserts that:",
-      "options": ["Existence precedes essence", "To be is to be perceived", "Knowledge is power", "Nothing comes from nothing"],
-      "correct": 1,
+      "options": [
+        "Existence precedes essence",
+        "Nothing comes from nothing",
+        "Knowledge is power",
+        "To be is to be perceived"
+      ],
+      "correct": 3,
       "rationale": "For Berkeley we perceive only ideas, never matter; things exist as perceived — ultimately sustained by God's perception."
     },
     {
       "id": 9,
       "question": "Hume's analysis of causation concludes that:",
-      "options": ["Causal power is directly perceived", "We observe only constant conjunction — B following A — and habit supplies the felt necessity", "Causes are logical consequences of effects", "God is the first cause"],
+      "options": [
+        "Causal power is directly perceived",
+        "We observe only constant conjunction — B following A — and habit supplies the felt necessity",
+        "Causes are logical consequences of effects",
+        "God is the first cause"
+      ],
       "correct": 1,
       "rationale": "No observation reveals a necessary connection, only succession; the 'connection' is habit of mind. Hume likewise dissolved the self into a bundle of perceptions."
     },
     {
       "id": 10,
       "question": "Hobbes' Leviathan justifies absolute sovereignty because the state of nature is:",
-      "options": ["A golden age of natural harmony", "A war of all against all, making life 'solitary, poor, nasty, brutish, and short'", "Governed by natural rights", "A peaceful anarchy"],
+      "options": [
+        "A golden age of natural harmony",
+        "A war of all against all, making life 'solitary, poor, nasty, brutish, and short'",
+        "Governed by natural rights",
+        "A peaceful anarchy"
+      ],
       "correct": 1,
       "rationale": "From fear, contractors surrender their power to an absolute sovereign; Locke's Two Treatises and Rousseau's Social Contract later moderate the idea."
     }

@@ -1,0 +1,230 @@
+# Matrices and Determinants: Organising Numbers into Grids
+
+> A matrix is a rectangular grid of numbers treated as a single object —
+> the natural language for tables of data, transformations, and systems
+> of equations. Determinants distil each square matrix into one number
+> that decides whether the matrix can be inverted.
+
+## 1. What Is a Matrix?
+
+[definition]
+A **matrix** is a rectangular array of numbers arranged in $m$ rows and
+$n$ columns, said to have **order** $m \times n$. The entry in row $i$,
+column $j$ is written $a_{ij}$.
+[/definition]
+
+@math label="eq:mt-example"
+A = \begin{pmatrix} 2 & 0 & 1 \\ 3 & 4 & 5 \end{pmatrix}
+@/math
+
+Here $A$ has order $2 \times 3$ and, for example, $a_{23} = 5$ — row 2,
+column 3. Rows first, columns second: saying "3 by 2" for this matrix
+is the standard order slip.
+
+## 2. Types of Matrices
+
+@diagram tree id="mt-types" layout="tree" aria="Family tree of matrix types from rectangular to special squares"
+  "Matrices" -> "Row: 1 x n"
+  "Matrices" -> "Column: n x 1"
+  "Matrices" -> "Rectangular: m x n"
+  "Matrices" -> "Square: n x n"
+  "Square: n x n" -> "Diagonal: zeros off the main line"
+  "Square: n x n" -> "Identity: ones on the main line"
+  "Square: n x n" -> "Symmetric: equals its transpose"
+@/diagram
+
+| Type | Defining feature | Example |
+| --- | --- | --- |
+| Row matrix | one row | $\begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$ |
+| Column matrix | one column | $3 \times 1$ stack |
+| Square matrix | rows = columns | $2 \times 2$, $3 \times 3$ |
+| Diagonal matrix | non-diagonal entries all 0 | $\begin{pmatrix} 3 & 0 \\ 0 & 7 \end{pmatrix}$ |
+| Identity $I$ | diagonal 1s, rest 0 | $\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$ |
+| Zero matrix | every entry 0 | all-purpose "nothing" |
+| Symmetric | $A = A^{T}$ (mirror across the diagonal) | $\begin{pmatrix} 1 & 2 \\ 2 & 5 \end{pmatrix}$ |
+
+The identity matrix plays the role of the number 1: multiplying any
+compatible matrix by $I$ leaves it unchanged.
+
+## 3. Addition and Scalar Multiplication
+
+Two matrices add only when they share the same order — then add entry
+by entry. A **scalar** (single number) multiplies every entry:
+
+@math label="eq:mt-scalar"
+3 \times \begin{pmatrix} 1 & 2 \\ 0 & 4 \end{pmatrix} = \begin{pmatrix} 3 & 6 \\ 0 & 12 \end{pmatrix}
+@/math
+
+[example]
+With $A = \begin{pmatrix} 1 & 5 \\ 2 & 0 \end{pmatrix}$ and
+$B = \begin{pmatrix} 4 & -1 \\ 3 & 3 \end{pmatrix}$:
+$A + B = \begin{pmatrix} 5 & 4 \\ 5 & 3 \end{pmatrix}$ and
+$A - B = \begin{pmatrix} -3 & 6 \\ -1 & -3 \end{pmatrix}$. A $2 \times 2$
+plus a $2 \times 3$ is simply undefined — no partial adding.
+[/example]
+
+## 4. Matrix Multiplication: Rows Meet Columns
+
+Multiplication is where matrices stop behaving like numbers. The entry
+$c_{ij}$ of $AB$ is the dot product of *row $i$ of $A$* with *column
+$j$ of $B$*:
+
+@math label="eq:mt-multiply-rule"
+c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots
+@/math
+
+Compatibility rule: $A_{m \times n}$ times $B_{n \times p}$ works only
+because the inner numbers match, and gives $C_{m \times p}$.
+
+[example]
+Let $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and
+$B = \begin{pmatrix} 2 & 0 \\ 1 & 3 \end{pmatrix}$. Then
+
+@math label="eq:mt-product"
+AB = \begin{pmatrix} 1\cdot2 + 2\cdot1 & 1\cdot0 + 2\cdot3 \\ 3\cdot2 + 4\cdot1 & 3\cdot0 + 4\cdot3 \end{pmatrix} = \begin{pmatrix} 4 & 6 \\ 10 & 12 \end{pmatrix}
+@/math
+
+but $BA = \begin{pmatrix} 2 & 4 \\ 10 & 14 \end{pmatrix}$ — the same
+ingredients, a different product.
+[/example]
+
+[warning]
+Matrix multiplication is **not commutative**: generally $AB \neq BA$.
+Both orders may even be incompatible at once (a $2 \times 3$ and a
+$3 \times 2$ pair work one way each). Always check which order the
+question demands.
+[/warning]
+
+## 5. Determinants: One Number per Square Matrix
+
+Only square matrices have a determinant. For order 2:
+
+@math label="eq:mt-det2"
+|A| = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
+@/math
+
+For order 3, expand along the first row using **cofactors** — each
+entry times the determinant of the small matrix left after deleting
+its row and column, with alternating signs $+ - +$:
+
+@math label="eq:mt-det3"
+|M| = a_{11}M_{11} - a_{12}M_{12} + a_{13}M_{13}
+@/math
+
+[example]
+For $M = \begin{pmatrix} 2 & 1 & 3 \\ 0 & 4 & 5 \\ 1 & 0 & 6 \end{pmatrix}$:
+
+@math label="eq:mt-det3-worked"
+|M| = 2(24 - 0) - 1(0 - 5) + 3(0 - 4) = 48 + 5 - 12 = 41
+@/math
+
+The bracketed mini-determinants come from crossing out one row and one
+column at a time.
+[/example]
+
+## 6. Singular and Non-Singular Matrices
+
+| Determinant | Name | Consequence |
+| --- | --- | --- |
+| $|A| \neq 0$ | non-singular | inverse exists |
+| $|A| = 0$ | singular | no inverse; rows/columns dependent |
+
+[example]
+$\begin{pmatrix} 2 & 4 \\ 1 & 2 \end{pmatrix}$ is singular: $|A| = 2
+\times 2 - 4 \times 1 = 0$. Indeed its second row is half the first —
+the determinant collapsing to zero is exactly that dependence showing
+up numerically.
+[/example]
+
+[important]
+Check $|A| \neq 0$ *before* hunting for an inverse or applying Cramer's
+rule. A zero determinant means the associated equations share a line —
+either no solution or infinitely many, never a unique one.
+[/important]
+
+## 7. The Inverse Matrix
+
+$A^{-1}$ undoes $A$: $A A^{-1} = A^{-1} A = I$. For order 2 there is a
+fingers-and-toes recipe — swap the diagonal, negate the other pair,
+divide by the determinant:
+
+@math label="eq:mt-inverse"
+A^{-1} = \frac{1}{|A|} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}
+@/math
+
+[example]
+Invert $A = \begin{pmatrix} 2 & 1 \\ 5 & 3 \end{pmatrix}$. Here
+$|A| = 6 - 5 = 1$, so
+$A^{-1} = \begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix}$. Check:
+$A A^{-1} = \begin{pmatrix} 6-5 & -2+2 \\ 15-15 & -5+6 \end{pmatrix} =
+\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I$. Verified.
+[/example]
+
+For $3 \times 3$ matrices the same idea runs via the **adjoint** (the
+transposed cofactor matrix) divided by the determinant — same
+structure, more bookkeeping.
+
+[tip]
+A determinant of 1 gives an inverse with no fractions — examiners pick
+such matrices on purpose. Compute $|A|$ first and let it steer how
+carefully you track signs.
+[/tip]
+
+## 8. Cramer's Rule: Solving Systems by Determinant
+
+For the system $a_1x + b_1y = c_1$, $a_2x + b_2y = c_2$, build three
+determinants — $D$ from the coefficients, $D_x$ with the $x$-column
+replaced by the constants, $D_y$ likewise for $y$:
+
+@math label="eq:mt-cramer"
+x = \frac{D_x}{D}, \qquad y = \frac{D_y}{D} \qquad (D \neq 0)
+@/math
+
+[example]
+Solve $2x + y = 7$ and $3x - y = 3$.
+
+@math label="eq:mt-cramer-worked"
+D = \begin{vmatrix} 2 & 1 \\ 3 & -1 \end{vmatrix} = -5, \quad D_x = \begin{vmatrix} 7 & 1 \\ 3 & -1 \end{vmatrix} = -10, \quad D_y = \begin{vmatrix} 2 & 7 \\ 3 & 3 \end{vmatrix} = -15
+@/math
+
+So $x = \frac{-10}{-5} = 2$ and $y = \frac{-15}{-5} = 3$. Check: $2(2)
++ 3 = 7$ and $3(2) - 3 = 3$. Both hold.
+[/example]
+
+| Determinant pattern | Meaning of the system |
+| --- | --- |
+| $D \neq 0$ | unique solution |
+| $D = 0$, one of $D_x, D_y \neq 0$ | no solution (parallel lines) |
+| $D = D_x = D_y = 0$ | infinitely many (same line) |
+
+The grid grows fast: an $n \times n$ matrix already stores $n^2$
+entries, which is why matrices earn their keep as *single* objects
+rather than loose bags of numbers.
+
+@chart bar title="Entries stored by an n x n matrix" labels:
+1x1
+2x2
+3x3
+4x4
+5x5
+
+data:
+1
+4
+9
+16
+25
+@/chart
+
+## 9. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| Order of $\begin{pmatrix} 2 & 0 & 1 \\ 3 & 4 & 5 \end{pmatrix}$ | rows x columns | $2 \times 3$ |
+| $|A|$ for $\begin{pmatrix} 2 & 1 \\ 5 & 3 \end{pmatrix}$ | $ad - bc$ | 1 |
+| $AB$ for the section 4 pair | row meets column | $\begin{pmatrix} 4 & 6 \\ 10 & 12 \end{pmatrix}$ |
+| $AB$ vs $BA$ | non-commutative | generally unequal |
+| Determinant of $\begin{pmatrix} 2 & 4 \\ 1 & 2 \end{pmatrix}$ | dependent rows | 0 (singular) |
+| Inverse of $\begin{pmatrix} 2 & 1 \\ 5 & 3 \end{pmatrix}$ | swap, negate, divide | $\begin{pmatrix} 3 & -1 \\ -5 & 2 \end{pmatrix}$ |
+| $2x + y = 7$, $3x - y = 3$ | Cramer's rule | $x = 2$, $y = 3$ |
+| $D = D_x = D_y = 0$ | consistency table | infinitely many solutions |

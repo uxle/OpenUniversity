@@ -1,0 +1,15 @@
+# Web Development
+
+@subject {
+  id: web-development
+  parent: computer-science
+  title: "Web Development"
+  description: "How the web works and how pages are built — HTML structure, CSS layout, and JavaScript interactivity."
+}
+
+@lessons {
+  how-the-web-works
+  html-structure-and-semantics
+  css-styling-and-layout
+  javascript-and-the-dom
+}

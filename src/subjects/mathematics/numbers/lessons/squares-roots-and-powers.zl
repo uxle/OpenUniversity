@@ -1,0 +1,231 @@
+# Squares, Roots, and Powers: Exponents in Action
+
+> Squaring turns repeated multiplication into two symbols: $7^2$ says
+> "seven sevens" at a glance. Roots undo the squaring, indices generalise
+> it to any power — and a short list of laws governs every calculation.
+
+## 1. Squares and Cubes: The Base Camp
+
+A **square** multiplies a number by itself; a **cube** multiplies it by
+itself twice more: $n^2 = n \times n$ and $n^3 = n \times n \times n$.
+Squaring is *area thinking* (a 5 cm square tile covers $25$ cm$^2$) and
+cubing is *volume thinking* (the same side as a cube gives $125$ cm$^3$).
+
+| $n$ | 1 | 4 | 7 | 9 | 11 | 13 | 15 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $n^2$ | 1 | 16 | 49 | 81 | 121 | 169 | 225 |
+| $n^3$ | 1 | 64 | 343 | 729 | 1331 | 2197 | 3375 |
+
+[definition]
+A **perfect square** is a whole number that is the square of a whole
+number. Its last digit can only be 0, 1, 4, 5, 6 or 9 — never 2, 3, 7
+or 8.
+[/definition]
+
+[example]
+Is 2601 a perfect square? $50^2 = 2500$ and $51^2 = 2601$, so yes —
+$2601 = 51^2$. But 2603 can never be one: its last digit 3 rules it out
+before any computing starts.
+[/example]
+
+## 2. Square Roots: Undoing the Square
+
+If $a = b^2$ (with $b \geq 0$), then $b$ is the **square root** of $a$,
+written $b = \sqrt{a}$. The symbol always means the *principal* (non-
+negative) root; the two roots of 49 are $\pm 7$, but $\sqrt{49} = 7$.
+
+Roots behave nicely with multiplication and division:
+
+@math label="eq:pw-root-rules"
+\sqrt{ab} = \sqrt{a} \times \sqrt{b}, \qquad \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}
+@/math
+
+For numbers that are not perfect squares, *sandwich* the root between
+neighbouring squares: since $49 < 50 < 64$, we know $7 < \sqrt{50} < 8$ —
+and $\sqrt{50} \approx 7.07$.
+
+[warning]
+The root does **not** distribute over addition: $\sqrt{16 + 9} =
+\sqrt{25} = 5$, not $4 + 3 = 7$. Multiply inside, yes; add inside, no.
+[/warning]
+
+## 3. Surds and Rationalising the Denominator
+
+A **surd** is an irrational root left in root form, like $\sqrt{2}$ or
+$\sqrt{5}$. Simplify surds by pulling out square factors:
+$\sqrt{72} = \sqrt{36 \times 2} = 6\sqrt{2}$.
+
+*Rationalising* removes surds from a denominator. For a single surd,
+multiply top and bottom by it: $\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}$.
+For a two-term denominator, multiply by the **conjugate** — the same
+expression with the sign flipped:
+
+@math label="eq:pw-conjugate"
+\frac{1}{\sqrt{3} - \sqrt{2}} = \frac{\sqrt{3} + \sqrt{2}}{(\sqrt{3})^2 - (\sqrt{2})^2} = \frac{\sqrt{3} + \sqrt{2}}{3 - 2} = \sqrt{3} + \sqrt{2}
+@/math
+
+[example]
+Rationalise $\frac{5}{3\sqrt{5}}$. Multiply numerator and denominator
+by $\sqrt{5}$:
+
+@math label="eq:pw-rationalise-example"
+\frac{5}{3\sqrt{5}} \times \frac{\sqrt{5}}{\sqrt{5}} = \frac{5\sqrt{5}}{3 \times 5} = \frac{\sqrt{5}}{3}
+@/math
+[/example]
+
+## 4. The Laws of Exponents
+
+Index notation $a^n$ means $n$ factors of $a$: the **base** is $a$, the
+**index** (or exponent) is $n$. Everything about powers flows from five
+laws — once they are second nature, no power calculation is hard.
+
+@math label="eq:pw-core-laws"
+a^m \times a^n = a^{m+n}, \qquad \frac{a^m}{a^n} = a^{m-n}, \qquad (a^m)^n = a^{mn}
+@/math
+
+| Law | Statement | Example |
+| --- | --- | --- |
+| Product | $a^m \times a^n = a^{m+n}$ | $2^3 \times 2^4 = 2^7 = 128$ |
+| Quotient | $a^m \div a^n = a^{m-n}$ | $3^6 \div 3^4 = 3^2 = 9$ |
+| Power of a power | $(a^m)^n = a^{mn}$ | $(5^2)^3 = 5^6$ |
+| Power of a product | $(ab)^n = a^n b^n$ | $(2x)^3 = 8x^3$ |
+| Power of a quotient | $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ | $\left(\frac{2}{3}\right)^2 = \frac{4}{9}$ |
+| Zero index | $a^0 = 1$ for $a \neq 0$ | $7^0 = 1$ |
+
+[tip]
+When bases multiply, add indices; when powers raise, multiply indices.
+Chanting this pair while practising fixes the most common mix-up —
+multiplying instead of adding in $2^3 \times 2^4$.
+[/tip]
+
+@diagram tree id="pw-index-family" layout="tree" aria="The four index forms and what each one means"
+  "Index forms of a" -> "Positive: a^m, m factors of a"
+  "Index forms of a" -> "Zero: a^0 = 1"
+  "Index forms of a" -> "Negative: a^(-m) = 1/a^m"
+  "Index forms of a" -> "Fractional: a^(m/n) = nth root, then power"
+@/diagram
+
+## 5. Zero and Negative Indices
+
+Watch the pattern as the index falls by one — each value is half the
+one before it:
+
+| $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ | $2^{-1}$ | $2^{-2}$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| 16 | 8 | 4 | 2 | 1 | $\frac{1}{2}$ | $\frac{1}{4}$ |
+
+Dividing must continue smoothly past $2^1$, which forces $2^0 = 1$ and
+makes the negative index mean "flip the base":
+
+@math label="eq:pw-negative-index"
+a^{-m} = \frac{1}{a^m} \qquad (a \neq 0)
+@/math
+
+[example]
+Evaluate $3^{-2}$ and $\left(\frac{2}{3}\right)^{-2}$. The first flips
+into the denominator: $3^{-2} = \frac{1}{3^2} = \frac{1}{9}$. The second
+flips the fraction, then squares: $\left(\frac{2}{3}\right)^{-2} =
+\left(\frac{3}{2}\right)^2 = \frac{9}{4}$.
+[/example]
+
+[warning]
+A negative index flips the base — it does **not** make the value
+negative: $3^{-2} = \frac{1}{9}$, never $-9$.
+[/warning]
+
+## 6. Fractional Indices
+
+Fractional indices are roots in disguise. The denominator of the
+fraction names the root; the numerator names the power:
+
+@math label="eq:pw-fractional-index"
+a^{\frac{1}{2}} = \sqrt{a}, \qquad a^{\frac{1}{3}} = \sqrt[3]{a}, \qquad a^{\frac{2}{3}} = \left(\sqrt[3]{a}\right)^2
+@/math
+
+[example]
+Evaluate $8^{\frac{2}{3}}$, $27^{-\frac{2}{3}}$ and $16^{\frac{3}{4}}$.
+Take roots first, powers second — the numbers stay small:
+
+- $8^{\frac{2}{3}} = \left(\sqrt[3]{8}\right)^2 = 2^2 = 4$
+- $27^{-\frac{2}{3}} = \frac{1}{\left(\sqrt[3]{27}\right)^2} = \frac{1}{3^2} = \frac{1}{9}$
+- $16^{\frac{3}{4}} = \left(\sqrt[4]{16}\right)^3 = 2^3 = 8$
+[/example]
+
+[tip]
+Always take the root before applying the power when working by hand:
+$16^{\frac{3}{4}}$ is easy as $(\sqrt[4]{16})^3 = 8$, but $16^3$ first
+means a 4096 cube root. Root first, power second.
+[/tip]
+
+## 7. Powers in Action: Exponential Growth
+
+Powers do not just tidy arithmetic — they describe growth that feeds on
+itself. Compare doubling ($2^n$) with steady squaring ($n^2$): the two
+run neck and neck for a moment, then the exponential explodes away.
+
+@chart line title="2^n vs n^2 — exponential wins" labels:
+1
+2
+3
+4
+5
+6
+7
+8
+
+series:
+  - name: "2 to the n"
+    data: 2 4 8 16 32 64 128 256
+  - name: "n squared"
+    data: 1 4 9 16 25 36 49 64
+@/chart
+
+[info]
+The same notation writes very large and very small numbers compactly:
+$5\,600\,000 = 5.6 \times 10^6$ and $0.00042 = 4.2 \times 10^{-4}$.
+Negative indices here mean "small", exactly as the laws demand.
+[/info]
+
+[important]
+Exponential growth beats any polynomial eventually — however long the
+head start $n^2$ enjoys. This is why compound interest outruns simple
+interest and why doubling folds tear a phone book in surprisingly few
+steps.
+[/important]
+
+## 8. Worked Examples: Putting the Laws to Work
+
+**Example 1 — combine the product and quotient laws.**
+Simplify $\frac{2^3 \times 2^5}{2^4}$. Add first, then subtract:
+$\frac{2^8}{2^4} = 2^{8-4} = 2^4 = 16$.
+
+**Example 2 — negative and fractional together.**
+Evaluate $81^{-\frac{3}{4}}$. Flip for the negative index, root for the
+denominator: $\frac{1}{81^{3/4}} = \frac{1}{\left(\sqrt[4]{81}\right)^3}
+= \frac{1}{27}$.
+
+**Example 3 — rationalise with a conjugate.**
+Simplify $\frac{6}{\sqrt{7} - \sqrt{5}}$. Multiply by the conjugate:
+
+@math label="eq:pw-worked-conjugate"
+\frac{6(\sqrt{7} + \sqrt{5})}{(\sqrt{7})^2 - (\sqrt{5})^2} = \frac{6(\sqrt{7} + \sqrt{5})}{7 - 5} = 3(\sqrt{7} + \sqrt{5})
+@/math
+
+**Example 4 — laws on letters.**
+Simplify $\left(x^4 \times x^{-1}\right)^2$. Inside the bracket:
+$x^{4-1} = x^3$; raising to the power 2 doubles the index: $x^6$.
+
+## 9. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| $12^2$ | square | 144 |
+| $\sqrt{144}$ | principal root | 12 |
+| Last digit of a perfect square | digit check | 0, 1, 4, 5, 6, 9 only |
+| $\frac{1}{\sqrt{2}}$ | rationalise | $\frac{\sqrt{2}}{2}$ |
+| $\frac{1}{\sqrt{3} - \sqrt{2}}$ | conjugate | $\sqrt{3} + \sqrt{2}$ |
+| $2^3 \times 2^4$ | product law | $2^7 = 128$ |
+| $5^0$ | zero index | 1 |
+| $3^{-2}$ | negative index | $\frac{1}{9}$ |
+| $8^{\frac{2}{3}}$ | fractional index | 4 |
+| $27^{-\frac{2}{3}}$ | flip, root, power | $\frac{1}{9}$ |

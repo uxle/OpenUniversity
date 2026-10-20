@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "The Alagh Committee (1979) set India's poverty line on the basis of:",
-      "options": ["Monthly income in rupees", "Calorie intake norms", "Multidimensional deprivations", "Housing quality"],
-      "correct": 1,
+      "options": [
+        "Calorie intake norms",
+        "Monthly income in rupees",
+        "Multidimensional deprivations",
+        "Housing quality"
+      ],
+      "correct": 0,
       "rationale": "The first official poverty line used per-capita calorie norms — 2,400 kcal rural and 2,100 kcal urban per day."
     },
     {
       "id": 2,
       "question": "Which committee most recently revised India's consumption-based poverty line, recommending about ₹972 (rural) and ₹1,407 (urban) per month?",
-      "options": ["Alagh Committee", "Lakdawala Committee", "Tendulkar Committee", "Rangarajan Committee"],
+      "options": [
+        "Alagh Committee",
+        "Lakdawala Committee",
+        "Tendulkar Committee",
+        "Rangarajan Committee"
+      ],
       "correct": 3,
       "rationale": "The Rangarajan Committee (2014) set higher monthly per-capita spending norms than the earlier Tendulkar line."
     },
     {
       "id": 3,
       "question": "Based on the Tendulkar methodology, India's poverty ratio:",
-      "options": ["Rose from 22% to 45% between 1993-94 and 2011-12", "Fell from about 45% in 1993-94 to about 22% in 2011-12", "Stayed constant at 22%", "Fell to about 2% by 2011-12"],
+      "options": [
+        "Rose from 22% to 45% between 1993-94 and 2011-12",
+        "Fell from about 45% in 1993-94 to about 22% in 2011-12",
+        "Stayed constant at 22%",
+        "Fell to about 2% by 2011-12"
+      ],
       "correct": 1,
       "rationale": "Fast growth cut the poverty ratio roughly in half over those two decades — about 27 crore people exiting poverty."
     },
     {
       "id": 4,
       "question": "The Multidimensional Poverty Index uses which three dimensions?",
-      "options": ["Income, wealth, and inheritance", "Health, education, and living standards", "Employment, wages, and savings", "Food, fuel, and finance"],
-      "correct": 1,
+      "options": [
+        "Income, wealth, and inheritance",
+        "Food, fuel, and finance",
+        "Employment, wages, and savings",
+        "Health, education, and living standards"
+      ],
+      "correct": 3,
       "rationale": "The UNDP–OPHI MPI measures nutrition, child mortality, schooling, attendance, and six living-standard indicators — deprivations, not income."
     },
     {
       "id": 5,
       "question": "A Gini coefficient of 0 indicates:",
-      "options": ["One household owns all income", "Perfect income equality", "Maximum possible inequality", "Zero poverty"],
-      "correct": 1,
+      "options": [
+        "Perfect income equality",
+        "One household owns all income",
+        "Maximum possible inequality",
+        "Zero poverty"
+      ],
+      "correct": 0,
       "rationale": "The Gini runs from 0 (everyone receives an equal share) to 1 (a single person receives everything), summarising the Lorenz curve's sag."
     },
     {
       "id": 6,
       "question": "MGNREGA, enacted in 2005, guarantees:",
-      "options": ["A monthly income to every citizen", "100 days of wage employment per rural household", "Free housing in cities", "Subsidised fertiliser to all farmers"],
-      "correct": 1,
+      "options": [
+        "A monthly income to every citizen",
+        "Free housing in cities",
+        "100 days of wage employment per rural household",
+        "Subsidised fertiliser to all farmers"
+      ],
+      "correct": 2,
       "rationale": "The Mahatma Gandhi National Rural Employment Guarantee Act is a legal right to 100 days of paid work per rural household each year."
     },
     {
       "id": 7,
       "question": "The National Food Security Act (2013) entitles about two-thirds of India's population to:",
-      "options": ["Free higher education", "Subsidised food grains", "Guaranteed urban jobs", "Crop insurance"],
+      "options": [
+        "Free higher education",
+        "Subsidised food grains",
+        "Guaranteed urban jobs",
+        "Crop insurance"
+      ],
       "correct": 1,
       "rationale": "NFSA creates a right to subsidised food grains covering roughly two-thirds of the population — the food leg of the anti-poverty architecture."
     },
     {
       "id": 8,
       "question": "An old weaver cannot find work after mills automate. This is:",
-      "options": ["Frictional unemployment", "Structural unemployment", "Cyclical unemployment", "Seasonal unemployment"],
+      "options": [
+        "Frictional unemployment",
+        "Structural unemployment",
+        "Cyclical unemployment",
+        "Seasonal unemployment"
+      ],
       "correct": 1,
       "rationale": "Structural unemployment is a skills mismatch — jobs exist but the worker's skills no longer fit them."
     },
     {
       "id": 9,
       "question": "Five family members cultivate a small farm that two could manage with no loss of output. This is:",
-      "options": ["Open unemployment", "Disguised unemployment", "Frictional unemployment", "Cyclical unemployment"],
+      "options": [
+        "Open unemployment",
+        "Disguised unemployment",
+        "Frictional unemployment",
+        "Cyclical unemployment"
+      ],
       "correct": 1,
       "rationale": "In disguised unemployment, extra workers' marginal product is near zero — they appear employed but add almost nothing; migration loses nothing."
     },
     {
       "id": 10,
       "question": "In India's labour statistics, 'Usual Status' measures activity with reference to:",
-      "options": ["Each day of the past week", "The past week", "The past year", "The past five years"],
+      "options": [
+        "Each day of the past week",
+        "The past week",
+        "The past year",
+        "The past five years"
+      ],
       "correct": 2,
       "rationale": "Usual Status uses a one-year reference period, capturing the long-term picture; Current Weekly Status uses the past week."
     }

@@ -19,12 +19,13 @@
 // caches are deleted on activate; clients are claimed so the first
 // page after an update is already controllerless-safe.
 
-const CACHE_VERSION = "openknowledge-v4-inkaccent";
+const CACHE_VERSION = "openknowledge-v6-fa-solid-mobile";
 const PRECACHE = [
   "./",
   "./index.html",
   "./src/styles/main.bundle.css",
   "./src/app/bootstrap.js",
+  "./public/fonts/fa-solid-900.min.woff2",
   "./public/manifest.json",
   "./public/icons/icon-192.png",
   "./public/icons/icon-512.png",

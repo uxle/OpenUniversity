@@ -12,6 +12,10 @@
   background: var(--ou-surface);
   font-size: var(--ou-fs-md);
   font-weight: 500;
+  /* Primary quiz touch surface: guarantee the 44px+ target even for
+     short answers like "WHERE", and kill the 300ms click delay. */
+  min-height: 48px;
+  touch-action: manipulation;
   /* Directional nudge + border/shadow transition */
   transition:
     border-color var(--ou-transition-fast),

@@ -1,0 +1,126 @@
+{
+  "lessonId": "functions-and-modularity",
+  "title": "Functions and Modularity: Reusable, Readable Code",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The DRY principle states that:",
+      "options": [
+        "Code should run without water cooling",
+        "Every piece of knowledge should live in exactly one place",
+        "Repeating code improves clarity",
+        "Functions should always be tested twice"
+      ],
+      "correct": 1,
+      "rationale": "Don't Repeat Yourself means one definition, many callers — so a bug is fixed once and every caller benefits."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between parameters and arguments?",
+      "options": [
+        "Parameters are the names in the definition; arguments are the values passed in the call",
+        "Parameters are values; arguments are names",
+        "They are synonyms spelled differently",
+        "Arguments exist only for keyword calls"
+      ],
+      "correct": 0,
+      "rationale": "The recipe lists ingredients (parameters); the kitchen receives the food (arguments) — definition-side names versus call-side values."
+    },
+    {
+      "id": 3,
+      "question": "Inside a function, *args collects extra positional arguments into a:",
+      "options": [
+        "list",
+        "dict",
+        "tuple",
+        "set"
+      ],
+      "correct": 2,
+      "rationale": "*args gathers surplus positional arguments into a tuple; **kwargs gathers surplus keyword arguments into a dict."
+    },
+    {
+      "id": 4,
+      "question": "Inside a function, **kwargs collects extra keyword arguments into a:",
+      "options": [
+        "tuple",
+        "dict",
+        "list",
+        "string"
+      ],
+      "correct": 1,
+      "rationale": "Double-star parameters catch name=value pairs, so kwargs behaves like a dictionary of keyword extras."
+    },
+    {
+      "id": 5,
+      "question": "What is the correct order of the LEGB scope rule?",
+      "options": [
+        "Local, Enclosing, Global, Built-in",
+        "Global, Local, Enclosing, Built-in",
+        "Local, Global, Enclosing, Built-in",
+        "Built-in, Local, Enclosing, Global"
+      ],
+      "correct": 0,
+      "rationale": "Python searches Local first, then the Enclosing function, then the Global (module) scope, then Built-ins — the first match wins."
+    },
+    {
+      "id": 6,
+      "question": "A function that ends without executing a return statement returns:",
+      "options": [
+        "0",
+        "An empty string",
+        "None",
+        "A syntax error"
+      ],
+      "correct": 2,
+      "rationale": "A function with no return (or a bare return) yields None — the classic cause of 'the variable is None' bugs."
+    },
+    {
+      "id": 7,
+      "question": "What does a docstring do?",
+      "options": [
+        "Comments the function out of the program",
+        "Is stored in __doc__ and shown by help() and IDEs",
+        "Declares the function's parameter types",
+        "Runs the function's doctests automatically"
+      ],
+      "correct": 1,
+      "rationale": "A string on the first line of a function becomes its __doc__ attribute, surfaced by help() and documentation tools."
+    },
+    {
+      "id": 8,
+      "question": "The main danger of `from module import *` is that it:",
+      "options": [
+        "Runs the import twice as slowly",
+        "Prevents modules from being cached",
+        "Disables type hints in the file",
+        "Can silently overwrite your own names with the module's"
+      ],
+      "correct": 3,
+      "rationale": "Star imports dump every public name into your namespace, so a collision overwrites your name without any error until something misbehaves."
+    },
+    {
+      "id": 9,
+      "question": "A Python package is:",
+      "options": [
+        "A directory of modules containing an __init__.py, imported with dots",
+        "Any single .py file",
+        "A zip archive installed with pip",
+        "A module with more than ten functions"
+      ],
+      "correct": 0,
+      "rationale": "A package is a folder of modules with __init__.py that enables dotted imports such as myapp.io.readers; a single .py file is a module."
+    },
+    {
+      "id": 10,
+      "question": "The global keyword is needed inside a function to:",
+      "options": [
+        "Read a global variable",
+        "Delete a global variable",
+        "Rebind (assign to) a module-level name",
+        "Make the variable constant"
+      ],
+      "correct": 2,
+      "rationale": "Reading a global needs no declaration, but assignment creates a local unless you declare global x to rebind the module-level name."
+    }
+  ]
+}

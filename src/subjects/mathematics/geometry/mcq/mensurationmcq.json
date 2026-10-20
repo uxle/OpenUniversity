@@ -1,0 +1,76 @@
+{
+  "lessonId": "mensuration",
+  "title": "Mensuration: Surface Areas and Volumes of Solids",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The total surface area of a cube of edge 4 cm is:",
+      "options": ["64 cm²", "96 cm²", "48 cm²", "16 cm²"],
+      "correct": 1,
+      "rationale": "A cube has 6 square faces: TSA = 6a² = 6 × 16 = 96 cm²; 64 cm³ would be its volume."
+    },
+    {
+      "id": 2,
+      "question": "The volume of a cylinder of radius 7 cm and height 10 cm (π = 22/7) is:",
+      "options": ["1540 cm³", "440 cm³", "770 cm³", "2200 cm³"],
+      "correct": 0,
+      "rationale": "V = πr²h = (22/7) × 49 × 10 = 1540 cm³; 440 cm² is its curved surface area."
+    },
+    {
+      "id": 3,
+      "question": "A cone has radius 3 cm and height 4 cm. Its slant height is:",
+      "options": ["7 cm", "√7 cm", "5 cm", "25 cm"],
+      "correct": 2,
+      "rationale": "l = √(r² + h²) = √(9 + 16) = √25 = 5 cm — the 3-4-5 triangle formed by radius, height, and slant."
+    },
+    {
+      "id": 4,
+      "question": "The curved surface area of a cylinder of radius 7 cm and height 10 cm (π = 22/7) is:",
+      "options": ["440 cm²", "748 cm²", "1540 cm²", "220 cm²"],
+      "correct": 0,
+      "rationale": "CSA = 2πrh = 2 × (22/7) × 7 × 10 = 440 cm²; 748 cm² is the total surface area including both lids."
+    },
+    {
+      "id": 5,
+      "question": "A cone and a cylinder have the same base radius and height. The cone's volume is what fraction of the cylinder's?",
+      "options": ["1/2", "1/3", "2/3", "1/4"],
+      "correct": 1,
+      "rationale": "Cone volume is (1/3)πr²h against the cylinder's πr²h — three cone-fills exactly fill the cylinder."
+    },
+    {
+      "id": 6,
+      "question": "The total surface area of a sphere of radius 7 cm (π = 22/7) is:",
+      "options": ["154 cm²", "308 cm²", "462 cm²", "616 cm²"],
+      "correct": 3,
+      "rationale": "TSA = 4πr² = 4 × (22/7) × 49 = 4 × 154 = 616 cm²; 462 cm² is the total surface area of a hemisphere."
+    },
+    {
+      "id": 7,
+      "question": "The total surface area of a solid hemisphere of radius r is:",
+      "options": ["2πr²", "3πr²", "4πr²", "πr²"],
+      "correct": 1,
+      "rationale": "Curved half-sphere 2πr² plus the flat circular lid πr² gives 3πr²."
+    },
+    {
+      "id": 8,
+      "question": "A solid sphere of radius 6 cm is melted into a cone of base radius 6 cm. The cone's height is:",
+      "options": ["12 cm", "16 cm", "24 cm", "48 cm"],
+      "correct": 2,
+      "rationale": "Volume is conserved: (4/3)π(216) = (1/3)π(36)h, so 288π = 12πh and h = 24 cm."
+    },
+    {
+      "id": 9,
+      "question": "The volume of a sphere of radius 3 cm is:",
+      "options": ["27π cm³", "36π cm³", "12π cm³", "108π cm³"],
+      "correct": 1,
+      "rationale": "V = (4/3)πr³ = (4/3)π × 27 = 36π cm³; 27π would be r³ times π without the 4/3 factor."
+    },
+    {
+      "id": 10,
+      "question": "If the radius of a sphere is doubled, its volume becomes:",
+      "options": ["2 times", "4 times", "6 times", "8 times"],
+      "correct": 3,
+      "rationale": "Volume scales with the cube of the radius: 2³ = 8, so doubling r multiplies volume by 8 (surface area only by 4)."
+    }
+  ]
+}

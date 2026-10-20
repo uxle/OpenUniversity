@@ -1,16 +1,16 @@
 {
   "lessonId": "directions-and-distance-reasoning-part-3",
-  "title": "Directions and Distance Reasoning \u2014 Part 3 of 10",
+  "title": "Directions and Distance Reasoning — Part 3 of 10",
   "questions": [
     {
       "question": "What does 'cancellation' mean when tracing a multi-step movement path?",
       "options": [
-        "Stopping the problem early",
         "Movements in opposite directions partially or fully cancel out, reducing the net displacement in that direction",
+        "Stopping the problem early",
         "Ignoring every second movement",
         "Converting distance into direction"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "When a path includes movement in one direction followed later by movement in the opposite direction, those movements partially or fully cancel out in the net displacement calculation.",
       "id": 1
     },
@@ -18,12 +18,12 @@
       "question": "In a 'long route example' with many turns, why is tracking net displacement more useful than tracking every individual step?",
       "options": [
         "Individual steps are always more useful",
-        "Because only the net displacement determines the final position and straight-line distance from the start",
         "Because individual steps cannot be tracked at all",
+        "Because only the net displacement determines the final position and straight-line distance from the start",
         "Because net displacement ignores all turns"
       ],
-      "correct": 1,
-      "rationale": "For finding the final position and straight-line distance from the start, only the net displacement matters \u2014 the specific sequence of intermediate steps doesn't change that final result.",
+      "correct": 2,
+      "rationale": "For finding the final position and straight-line distance from the start, only the net displacement matters — the specific sequence of intermediate steps doesn't change that final result.",
       "id": 2
     },
     {
@@ -42,11 +42,11 @@
       "question": "What does a 'turn algorithm' need to track to correctly update heading after a sequence of turns?",
       "options": [
         "Only the very first heading",
-        "The current heading and the cumulative effect of each turn (degrees and direction) applied to it",
+        "Nothing — turns don't affect heading",
         "Only the total distance traveled",
-        "Nothing \u2014 turns don't affect heading"
+        "The current heading and the cumulative effect of each turn (degrees and direction) applied to it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A turn algorithm must maintain the current heading and correctly apply each subsequent turn's degree and direction to it in sequence.",
       "id": 4
     },
@@ -66,12 +66,12 @@
       "question": "What is the difference between 'movement direction' and 'heading'?",
       "options": [
         "They are always identical",
-        "Movement direction is the direction of actual travel; heading is the direction currently faced, which can differ if moving sideways or backward",
         "Heading only applies to circular paths",
+        "Movement direction is the direction of actual travel; heading is the direction currently faced, which can differ if moving sideways or backward",
         "Movement direction is a synonym for distance"
       ],
-      "correct": 1,
-      "rationale": "Movement direction describes which way you're actually traveling, while heading describes which way you're facing \u2014 these can differ, for example when moving backward.",
+      "correct": 2,
+      "rationale": "Movement direction describes which way you're actually traveling, while heading describes which way you're facing — these can differ, for example when moving backward.",
       "id": 6
     },
     {
@@ -90,12 +90,12 @@
       "question": "What do 'spatial relationships' describe between two or more entities?",
       "options": [
         "Their names only",
-        "How their positions relate to each other, such as one being north of, closer to, or between others",
+        "Whether they are the same color",
         "Only their distance from the origin",
-        "Whether they are the same color"
+        "How their positions relate to each other, such as one being north of, closer to, or between others"
       ],
-      "correct": 1,
-      "rationale": "Spatial relationships describe how entities' positions relate to one another \u2014 north/south of, closer/farther, between, and similar relative descriptions.",
+      "correct": 3,
+      "rationale": "Spatial relationships describe how entities' positions relate to one another — north/south of, closer/farther, between, and similar relative descriptions.",
       "id": 8
     },
     {

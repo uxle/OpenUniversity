@@ -1,0 +1,224 @@
+# How the Web Works: From URL to Rendered Page
+
+> You type a URL, press Enter, and a rendered page appears within a
+> few hundred milliseconds. This lesson follows that journey end to
+> end: DNS, TCP and TLS, HTTP, caching, and the rendering pipeline.
+
+## 1. Clients, Servers, and the Round Trip
+
+The web runs on one repeating conversation: a **client** asks and a **server** answers. A **URL** names exactly what you want and where to find it. `https://www.example.com/products?page=2` reads as: use the *scheme* `https`, contact the *host* `www.example.com`, ask for the *path* `/products`, and let the *query string* `page=2` refine the ask.
+
+[definition]
+The **client** is the software that initiates a request — your browser, a mobile app, or a tool like `curl`. The **server** is the machine and software that listens, processes, and responds. HTTP itself is *stateless*: every request arrives with no memory of the previous one, so identity and context must travel explicitly in cookies, tokens, or URLs.
+[/definition]
+
+@diagram flowchart id="url-to-page" layout="hierarchical" aria="The journey from typing a URL to a rendered page"
+node start label="User types a URL" shape="pill"
+node dns label="DNS lookup: name to IP address" shape="round-rect"
+node tcp label="TCP and TLS handshake" shape="round-rect"
+node req label="HTTP request sent" shape="round-rect"
+node fresh label="Fresh cached copy exists?" shape="diamond"
+node serve label="Server processes and responds" shape="round-rect"
+node render label="Browser parses and renders" shape="round-rect"
+
+start -> dns
+dns -> tcp
+tcp -> req
+req -> fresh
+fresh -> render label="yes"
+fresh -> serve label="no"
+serve -> render
+@/diagram
+
+Every arrow hides real work and real latency: a lookup, a handshake, a queue on an overloaded server, or a reflow in the browser. Web performance is largely the art of shaving milliseconds off these steps — or removing whole steps with caches.
+
+## 2. DNS: Translating Names into Addresses
+
+Routers forward packets to **IP addresses**; humans remember names. The **Domain Name System (DNS)** is the distributed, hierarchical database that maps one to the other. Your browser first checks its own cache and the operating system's; on a miss it asks a **recursive resolver** (typically your ISP's, or a public one such as 1.1.1.1 or 8.8.8.8), which walks the hierarchy on your behalf.
+
+@diagram tree id="dns-hierarchy" layout="tree" aria="How a recursive resolver walks the DNS hierarchy for www.example.com"
+  "Recursive resolver" -> "Root servers (.)"
+  "Root servers (.)" -> "TLD servers (.com)"
+  "TLD servers (.com)" -> "Authoritative server (example.com)"
+  "Authoritative server (example.com)" -> "Answer: A record 93.184.216.34"
+@/diagram
+
+| Record | Answers the question | Example |
+| --- | --- | --- |
+| `A` | Which IPv4 address serves this name? | `example.com` → `93.184.216.34` |
+| `AAAA` | Which IPv6 address serves this name? | `example.com` → `2606:2800:...` |
+| `CNAME` | Which other name should be resolved instead? | `www.example.com` → `example.com` |
+| `MX` | Which mail servers accept this domain's mail? | `example.com` → `mail.example.com` |
+| `NS` | Which name servers are authoritative here? | `example.com` → `ns1.example.com` |
+
+Answers are cached for the **TTL (time to live)** stated in the record. That is why a DNS change can take minutes to days to propagate: old answers keep living in caches until each TTL expires.
+
+[tip]
+DNS returns *addresses*, not pages. If DNS resolution fails, the browser reports "server not found" and never sends an HTTP request at all — a fast way to classify whether a problem is network-wide or site-specific.
+[/tip]
+
+## 3. TCP and TLS: Opening a Secure Channel
+
+With an IP address in hand, the browser opens a **TCP** connection — typically to port 443 for HTTPS — with the **three-way handshake**: the client sends `SYN`, the server answers `SYN-ACK`, the client confirms with `ACK`. TCP then guarantees ordered, reliable delivery, retransmitting whatever is lost.
+
+Because the URL said `https`, a **TLS handshake** follows on the same connection: the server presents a **certificate** proving the hostname's identity (signed by a certificate authority the browser trusts), both sides agree on cipher suites, and session keys are derived. Only then does HTTP traffic flow — now encrypted and tamper-evident.
+
+| Step | Who speaks | What happens |
+| --- | --- | --- |
+| `SYN` | Client | "Let's talk; here is my sequence number" |
+| `SYN-ACK` | Server | "Acknowledged; here is mine" |
+| `ACK` | Client | "Confirmed — connection open" |
+| `ClientHello` | Client | Supported TLS versions and cipher suites |
+| `ServerHello` | Server | Chosen suite and its certificate |
+| Key exchange | Both | Session keys derived; the channel is encrypted |
+
+[warning]
+HTTPS encrypts the *transport*, not the site's intentions. A padlock means the connection to that host is encrypted and the certificate matches the hostname — it says nothing about whether the host itself is trustworthy.
+[/warning]
+
+The newer **HTTP/3** runs over **QUIC**, a UDP-based protocol that folds the TLS handshake into connection setup and cuts round trips — one reason modern sites feel faster on flaky mobile networks.
+
+## 4. HTTP: The Request-Response Protocol
+
+Once the channel is open, the browser speaks **HTTP**. A request is a few lines of text: a *method*, a *path*, the protocol version, headers, and an optional body.
+
+```http
+GET /products?page=2 HTTP/1.1
+Host: www.example.com
+Accept: text/html
+Cookie: session=8f3a2
+```
+
+The server replies with a status line, headers, and usually a body:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=60
+
+<!doctype html>
+<html lang="en"> ... </html>
+```
+
+| Method | Meaning | Safe? | Idempotent? |
+| --- | --- | --- | --- |
+| `GET` | Retrieve a resource | Yes | Yes |
+| `HEAD` | Like `GET`, but headers only | Yes | Yes |
+| `POST` | Create or submit data | No | No |
+| `PUT` | Replace a resource entirely | No | Yes |
+| `PATCH` | Modify part of a resource | No | No |
+| `DELETE` | Remove a resource | No | Yes |
+
+*Safe* means "does not change server state"; *idempotent* means "repeating the request has the same effect as doing it once". Browsers, proxies, and caches lean on both properties when deciding what may be pre-fetched, retried, or stored.
+
+[example]
+A search page should use `GET` (`/search?q=lakes`) so results are linkable and cacheable; a payment should use `POST` so it is not pre-fetched by the browser, replayed by a crawler, or cached anywhere.
+[/example]
+
+## 5. Status Codes: The Server's Verdict
+
+Every response opens with a three-digit **status code** telling the client how the request fared. The first digit names the class; the rest are details.
+
+| Class | Meaning | Common members |
+| --- | --- | --- |
+| 1xx | Informational | `100 Continue`, `101 Switching Protocols` |
+| 2xx | Success | `200 OK`, `201 Created`, `204 No Content` |
+| 3xx | Redirect | `301 Moved Permanently`, `302 Found`, `304 Not Modified` |
+| 4xx | Client error | `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `429 Too Many Requests` |
+| 5xx | Server error | `500 Internal Server Error`, `502 Bad Gateway`, `503 Service Unavailable` |
+
+[tip]
+Memorize the classic pairs. `301` vs `302`: a permanent move passes bookmarks and SEO weight onward, a temporary one does not. `401` vs `403`: you are *not logged in* versus you are *logged in but not allowed*. `400` vs `500`: *your request was malformed* versus *our code crashed*.
+[/tip]
+
+@chart donut title="Illustrative status-code mix on a healthy high-traffic site (percent of responses)" labels:
+200 OK
+304 Not Modified
+3xx redirects
+4xx client errors
+5xx server errors
+
+data:
+86
+8
+4
+1.5
+0.5
+@/chart
+
+A healthy site's traffic is dominated by `200` and `304` — and the latter means "your cached copy is still good", which is exactly the story of the next section.
+
+## 6. Caching: Memory at Every Hop
+
+Fetching over a network is slow; remembering is fast. Web caching happens at several layers: the **browser cache** on your device, **CDN edge servers** placed near users, and **reverse proxies** in front of origin servers. The `Cache-Control` response header is the contract that governs them all.
+
+| Directive | Effect |
+| --- | --- |
+| `max-age=3600` | Fresh for one hour; no revalidation needed before that |
+| `no-cache` | May be stored, but must be revalidated with the server before each use |
+| `no-store` | Never store anything — for banking pages and private data |
+| `must-revalidate` | Once stale, do not serve without checking the server |
+| `public` / `private` | May / may not be stored by shared caches such as CDNs |
+
+Freshness alone would force full downloads on every expiry, so HTTP also supports cheap **validation**: the server stamps a response with an `ETag` — a fingerprint of the content. The next time the client asks, it sends the tag back in `If-None-Match`; if the content is unchanged, the server replies not with the body but with a tiny `304 Not Modified`.
+
+```http
+GET /logo.png HTTP/1.1
+If-None-Match: "v41"
+
+HTTP/1.1 304 Not Modified
+ETag: "v41"
+```
+
+[warning]
+The classic deployment bug: a long `max-age` on files that change. Users keep seeing last month's site until caches expire. The standard cure is *cache busting* — version the URL itself (`app.a41f2.js`), cache those names for a year, and let each deploy produce a new name.
+[/warning]
+
+## 7. Rendering: From Bytes to Pixels
+
+The response body arrives as bytes; the browser turns them into pixels through the **critical rendering path**. The HTML parser builds the **DOM** (Document Object Model); the CSS parser builds the **CSSOM** (CSS Object Model). The two combine into the **render tree** — visible nodes with their computed styles. **Layout** assigns each node geometry (position and size), **paint** fills in pixels, and **composite** stacks layers onto the screen.
+
+@diagram tree id="render-pipeline" layout="tree" aria="The browser rendering pipeline from downloaded bytes to composited pixels"
+  "Downloaded bytes" -> "DOM tree (parsed HTML)"
+  "Downloaded bytes" -> "CSSOM tree (parsed CSS)"
+  "DOM tree (parsed HTML)" -> "Render tree"
+  "CSSOM tree (parsed CSS)" -> "Render tree"
+  "Render tree" -> "Layout (geometry)"
+  "Layout (geometry)" -> "Paint (pixels)"
+  "Paint (pixels)" -> "Composite (layers)"
+@/diagram
+
+Rendering is *incremental*, not one-shot: typing in a search box, hovering a button, or a script edit re-runs layout and paint for the affected parts. Scripts complicate the pipeline because JavaScript can read the DOM and change anything, so a classic `script` tag in the head **blocks HTML parsing** until its file downloads and runs — the reason `defer` and `async` exist (covered in the DOM lesson).
+
+[important]
+HTML and render-blocking CSS stand between the user and the first paint. Keeping the initial HTML small and shipping only the CSS the first screen needs is the single most effective rendering optimization available.
+[/important]
+
+## 8. Who Renders: Client-Side vs Server-Side
+
+Where should the page be assembled? **Server-side rendering (SSR)** sends finished HTML the browser can paint immediately. **Client-side rendering (CSR)** ships a thin HTML shell plus JavaScript, which fetches data (often as JSON) and builds the DOM in the browser. **Static site generation (SSG)** pre-renders pages at build time and serves plain files from a CDN.
+
+| Aspect | SSR | CSR | SSG |
+| --- | --- | --- | --- |
+| First paint | Fast | Slow — waits for JS | Fastest |
+| After first load | Full round trips | Smooth, app-like | Fast |
+| SEO | Good — content is in the HTML | Harder — content needs rendering | Good |
+| Server cost per view | High | Low | Near zero |
+| Best for | Dynamic, personalized pages | Apps behind a login | Blogs, docs, marketing |
+
+[info]
+Modern frameworks mix the modes: static where content is stable, server-rendered where it is dynamic, small client-side islands where interactivity is needed. A CSR page that has finished loading is *hydrated* — the delivered HTML gets wired to live JavaScript event listeners.
+[/info]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| DNS | Distributed directory mapping names to IP addresses, cached per TTL |
+| TCP handshake | SYN, SYN-ACK, ACK — ordered, reliable delivery |
+| TLS | Certificates for identity, keys for encryption — HTTPS is HTTP over TLS |
+| HTTP | Stateless request-response; methods carry intent, status codes carry verdicts |
+| Status classes | 2xx success, 3xx redirect, 4xx your fault, 5xx server's fault |
+| Caching | Freshness (`max-age`) avoids fetches; validation (`ETag`, `304`) avoids re-downloads |
+| Rendering path | DOM plus CSSOM → render tree → layout → paint → composite |
+| SSR vs CSR | Server sends ready HTML; client builds it from JSON — first paint traded for interactivity |

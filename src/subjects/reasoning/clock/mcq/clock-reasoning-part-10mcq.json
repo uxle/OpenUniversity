@@ -6,71 +6,71 @@
       "id": 1,
       "question": "How many degrees of arc does one hour position on a clock face correspond to?",
       "options": [
-        "6\u00b0",
-        "15\u00b0",
-        "30\u00b0",
-        "60\u00b0"
+        "6°",
+        "15°",
+        "30°",
+        "60°"
       ],
       "correct": 2,
-      "rationale": "A full circle (360\u00b0) is divided across 12 hour positions: 360\u00b0 / 12 = 30\u00b0 per hour position."
+      "rationale": "A full circle (360°) is divided across 12 hour positions: 360° / 12 = 30° per hour position."
     },
     {
       "id": 2,
-      "question": "The minute hand sweeps 360\u00b0 in 60 minutes. How many degrees does it move per minute?",
+      "question": "The minute hand sweeps 360° in 60 minutes. How many degrees does it move per minute?",
       "options": [
-        "3\u00b0",
-        "6\u00b0",
-        "12\u00b0",
-        "30\u00b0"
+        "3°",
+        "12°",
+        "6°",
+        "30°"
       ],
-      "correct": 1,
-      "rationale": "360\u00b0 / 60 minutes = 6\u00b0 per minute, so at 20 minutes past the hour the minute hand sits at 6 \u00d7 20 = 120\u00b0."
+      "correct": 2,
+      "rationale": "360° / 60 minutes = 6° per minute, so at 20 minutes past the hour the minute hand sits at 6 × 20 = 120°."
     },
     {
       "id": 3,
-      "question": "What is the angle between the hour and minute hands at 3:20, using D = |30H \u2212 5.5M|?",
+      "question": "What is the angle between the hour and minute hands at 3:20, using D = |30H − 5.5M|?",
       "options": [
-        "10\u00b0",
-        "20\u00b0",
-        "90\u00b0",
-        "100\u00b0"
+        "10°",
+        "20°",
+        "90°",
+        "100°"
       ],
       "correct": 1,
-      "rationale": "D = |30(3) \u2212 5.5(20)| = |90 \u2212 110| = 20\u00b0, and 20\u00b0 is already the smaller of the two possible angles."
+      "rationale": "D = |30(3) − 5.5(20)| = |90 − 110| = 20°, and 20° is already the smaller of the two possible angles."
     },
     {
       "id": 4,
       "question": "Why is it a mistake to assume the hour hand sits exactly on the '3' at 3:30?",
       "options": [
         "The hour hand only moves once every hour",
-        "The hour hand moves continuously between hour marks as minutes pass (0.5\u00b0 per minute)",
+        "The minute hand also stays fixed on the hour marks",
         "Clocks with hour hands are always analog and inaccurate",
-        "The minute hand also stays fixed on the hour marks"
+        "The hour hand moves continuously between hour marks as minutes pass (0.5° per minute)"
       ],
-      "correct": 1,
-      "rationale": "The hour hand moves continuously, 0.5\u00b0 per minute \u2014 at 3:30, \u03b8_h = 30(3) + 0.5(30) = 105\u00b0, not exactly on the 3 (90\u00b0)."
+      "correct": 3,
+      "rationale": "The hour hand moves continuously, 0.5° per minute — at 3:30, θ_h = 30(3) + 0.5(30) = 105°, not exactly on the 3 (90°)."
     },
     {
       "question": "What does the 'final architecture' bring together from the rest of the lesson?",
       "options": [
-        "Only the clock-angle formula",
         "Parsing, normalization, constraint solving, verification, and human-friendly output into one complete reasoning pipeline",
+        "Only the clock-angle formula",
         "Just the introductory definitions from Part 1",
         "A single unrelated new concept"
       ],
-      "correct": 1,
-      "rationale": "The final architecture is the complete pipeline: every stage covered across the lesson \u2014 parsing, normalization, constraint solving, verification, and output formatting \u2014 working together.",
+      "correct": 0,
+      "rationale": "The final architecture is the complete pipeline: every stage covered across the lesson — parsing, normalization, constraint solving, verification, and output formatting — working together.",
       "id": 5
     },
     {
       "question": "What is the main takeaway from this lesson's summary about solving clock reasoning problems reliably?",
       "options": [
         "Memorized shortcuts are always sufficient",
-        "Reliable solving comes from consistent unit normalization and systematic rule application, not shortcuts or memorized patterns",
         "Only the clock-angle formula matters, nothing else",
+        "Reliable solving comes from consistent unit normalization and systematic rule application, not shortcuts or memorized patterns",
         "Verification is optional and rarely useful"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The consistent theme throughout is that reliability comes from systematic unit normalization and rule application, not from memorized shortcuts that don't generalize.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "According to the final architecture, what should happen after a time value is computed, before it's presented as the final answer?",
       "options": [
         "Nothing further is needed",
-        "It should be verified against the original constraints and then converted into human-friendly output",
+        "It should be converted into a different time zone automatically",
         "It should be discarded and recalculated from scratch",
-        "It should be converted into a different time zone automatically"
+        "It should be verified against the original constraints and then converted into human-friendly output"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The architecture requires verifying the computed value against the original constraints and then converting it into a human-readable format before presenting it as final.",
       "id": 8
     },
     {
       "question": "What common thread connects clock reasoning to other reasoning topics like blood relations and seating arrangement?",
       "options": [
-        "There is no real connection between them",
         "All rely on building a structured internal model of the problem and reasoning over it systematically, rather than reasoning informally by wording alone",
+        "There is no real connection between them",
         "They all use exactly the same formulas",
         "Only clock reasoning uses any kind of internal representation"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Across all these reasoning topics, the reliable approach is the same: build a structured internal model of the problem and reason over that model systematically.",
       "id": 9
     },
@@ -114,11 +114,11 @@
       "question": "Why is understanding the clock-angle formula considered foundational even in the advanced sections of this lesson?",
       "options": [
         "It isn't actually used in the advanced sections",
-        "Because many later concepts (overlap, interval reasoning) are still built on the same underlying degrees-per-minute relationships",
         "Because the advanced sections replace it with a new formula",
+        "Because many later concepts (overlap, interval reasoning) are still built on the same underlying degrees-per-minute relationships",
         "Because it's only relevant to digital clocks"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Concepts like hand-overlap timing are direct applications of the same degrees-per-minute relationships the clock-angle formula is built on, making it foundational throughout.",
       "id": 10
     },
@@ -138,11 +138,11 @@
       "question": "Why does this lesson build up from simple definitions (Part 1) to a full reasoning engine (Part 10) rather than jumping straight to complex problems?",
       "options": [
         "The ordering is arbitrary and doesn't matter",
-        "Each layer depends on the concepts before it, so a solid foundation in basic units and arithmetic is required before tackling multi-constraint or ambiguous problems",
+        "It's only structured this way for length, not for learning",
         "Complex problems don't actually require the earlier concepts",
-        "It's only structured this way for length, not for learning"
+        "Each layer depends on the concepts before it, so a solid foundation in basic units and arithmetic is required before tackling multi-constraint or ambiguous problems"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Every later concept builds on the units, arithmetic, and representation ideas introduced early on, so skipping the foundation would make the advanced material much harder to follow correctly.",
       "id": 12
     },
@@ -155,7 +155,7 @@
         "Round the value until it passes"
       ],
       "correct": 1,
-      "rationale": "A failed verification signals an error somewhere in the reasoning steps or an inconsistency in the constraints \u2014 it should prompt re-examination, not be ignored or forced to pass.",
+      "rationale": "A failed verification signals an error somewhere in the reasoning steps or an inconsistency in the constraints — it should prompt re-examination, not be ignored or forced to pass.",
       "id": 13
     },
     {

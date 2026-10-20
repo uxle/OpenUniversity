@@ -6,13 +6,13 @@
       "id": 1,
       "question": "In letter-shift coding, if CAT is coded as DBU, what rule is being applied?",
       "options": [
-        "Each letter is reversed",
         "Each letter is shifted forward by 1 position",
+        "Each letter is reversed",
         "Each letter is replaced by its mirror letter",
         "Each letter is replaced by a number"
       ],
-      "correct": 1,
-      "rationale": "C->D, A->B, T->U \u2014 each letter moves forward exactly one position in the alphabet, a uniform +1 shift."
+      "correct": 0,
+      "rationale": "C->D, A->B, T->U — each letter moves forward exactly one position in the alphabet, a uniform +1 shift."
     },
     {
       "id": 2,
@@ -42,13 +42,13 @@
       "id": 4,
       "question": "Why is it important to verify a coding rule against every letter of the given example, not just the first one or two?",
       "options": [
-        "It isn't important \u2014 the first letter is always enough",
-        "Some questions apply a non-uniform rule, or an exception on one letter, that only shows up later in the word",
+        "It isn't important — the first letter is always enough",
+        "It only matters for reverse coding",
         "Longer words always use number coding instead",
-        "It only matters for reverse coding"
+        "Some questions apply a non-uniform rule, or an exception on one letter, that only shows up later in the word"
       ],
-      "correct": 1,
-      "rationale": "Some coding questions mix a shift with an exception on a specific letter (often the last or a repeated one) \u2014 checking only the first letters can lead to applying the wrong rule to the new word."
+      "correct": 3,
+      "rationale": "Some coding questions mix a shift with an exception on a specific letter (often the last or a repeated one) — checking only the first letters can lead to applying the wrong rule to the new word."
     },
     {
       "question": "Using the rule 'position + 2, written as a digit', how would the letter C (position 3) be coded?",
@@ -66,11 +66,11 @@
       "question": "What is FLOWER coded as under simple reverse (mirror-of-order) coding, with no letter shift?",
       "options": [
         "ERWOLF",
-        "REWOLF",
         "ROWELF",
+        "REWOLF",
         "FLOWER"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Reverse coding simply reads the word's letters backward: F-L-O-W-E-R reversed is R-E-W-O-L-F, i.e., REWOLF.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "If DELHI is coded as EFMIJ (each letter shifted +1), how is MUMBAI coded under the same rule?",
       "options": [
         "LTLAZH",
-        "NVNCBJ",
+        "NUNBBJ",
         "MTMAAH",
-        "NUNBBJ"
+        "NVNCBJ"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Shifting each letter of MUMBAI forward by 1: M->N, U->V, M->N, B->C, A->B, I->J, giving NVNCBJ.",
       "id": 8
     },
     {
       "question": "What is one of the most common mistakes in letter-shift coding problems?",
       "options": [
-        "Using too many example words",
         "Forgetting alphabet wrap-around (e.g., that Z + 1 = A)",
+        "Using too many example words",
         "Checking the rule against every letter",
         "Writing out the alphabet with positions"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Forgetting that the alphabet wraps around at Z (back to A) is one of the most common sources of error in letter-shift coding.",
       "id": 9
     },

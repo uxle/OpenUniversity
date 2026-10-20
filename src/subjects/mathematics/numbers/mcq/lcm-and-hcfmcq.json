@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "What are HCF(12, 18) and LCM(12, 18)?",
-      "options": ["HCF 3, LCM 36", "HCF 6, LCM 36", "HCF 6, LCM 72", "HCF 2, LCM 54"],
-      "correct": 1,
+      "options": [
+        "HCF 6, LCM 36",
+        "HCF 3, LCM 36",
+        "HCF 6, LCM 72",
+        "HCF 2, LCM 54"
+      ],
+      "correct": 0,
       "rationale": "Common factors of 12 and 18 are 1, 2, 3, 6 — the highest is 6. The first shared multiple is 36. Check: 6 × 36 = 216 = 12 × 18."
     },
     {
       "id": 2,
       "question": "Using prime factorisation, what is HCF(24, 36)?",
-      "options": ["6", "12", "18", "72"],
-      "correct": 1,
+      "options": [
+        "6",
+        "18",
+        "12",
+        "72"
+      ],
+      "correct": 2,
       "rationale": "24 = 2³ × 3 and 36 = 2² × 3²; the HCF takes the lowest power of each common prime: 2² × 3 = 12."
     },
     {
       "id": 3,
       "question": "Using prime factorisation, what is LCM(24, 36)?",
-      "options": ["72", "144", "36", "12"],
+      "options": [
+        "72",
+        "144",
+        "36",
+        "12"
+      ],
       "correct": 0,
       "rationale": "The LCM takes the highest power of each prime seen: 2³ × 3² = 8 × 9 = 72. The golden relation confirms it: 12 × 72 = 864 = 24 × 36."
     },
     {
       "id": 4,
       "question": "For which numbers does the relation HCF × LCM = product of the numbers hold?",
-      "options": ["Any count of numbers", "Exactly two numbers", "Exactly three numbers", "Only co-prime numbers"],
-      "correct": 1,
+      "options": [
+        "Any count of numbers",
+        "Only co-prime numbers",
+        "Exactly three numbers",
+        "Exactly two numbers"
+      ],
+      "correct": 3,
       "rationale": "The relation is valid only for two numbers. It fails for three: HCF(2, 3, 4) = 1 and LCM(2, 3, 4) = 12, but 1 × 12 ≠ 24."
     },
     {
       "id": 5,
       "question": "Two bells toll every 6 s and 8 s, starting together. After how many seconds do they next toll together?",
-      "options": ["12 s", "24 s", "48 s", "14 s"],
-      "correct": 1,
+      "options": [
+        "24 s",
+        "12 s",
+        "48 s",
+        "14 s"
+      ],
+      "correct": 0,
       "rationale": "\"Together again\" signals the LCM: 6 = 2 × 3 and 8 = 2³, so LCM = 2³ × 3 = 24 seconds."
     },
     {
       "id": 6,
       "question": "A rectangular floor is 24 m by 36 m. What is the side of the largest square tile that fits exactly, with no cutting?",
-      "options": ["6 m", "8 m", "12 m", "24 m"],
+      "options": [
+        "6 m",
+        "8 m",
+        "12 m",
+        "24 m"
+      ],
       "correct": 2,
       "rationale": "\"Largest measure dividing exactly\" signals the HCF. HCF(24, 36) = 12, so 12 m tiles cover the floor as 2 × 3 = 6 tiles."
     },
     {
       "id": 7,
       "question": "In the division ladder method, the LCM equals:",
-      "options": ["Product of the common divisors only", "Product of divisors and the leftover co-prime bottoms", "The larger of the two numbers", "Sum of the two numbers"],
+      "options": [
+        "Product of the common divisors only",
+        "Product of divisors and the leftover co-prime bottoms",
+        "The larger of the two numbers",
+        "Sum of the two numbers"
+      ],
       "correct": 1,
       "rationale": "For 24 and 36 the ladder divides by 2, 2, 3 (divisors) leaving 2 and 3; LCM = 2 × 2 × 3 × 2 × 3 = 72, while HCF = divisors only = 12."
     },
     {
       "id": 8,
       "question": "The numbers 4 and 9 are co-prime. Their LCM is:",
-      "options": ["13", "36", "1", "4.5"],
+      "options": [
+        "13",
+        "36",
+        "1",
+        "4.5"
+      ],
       "correct": 1,
       "rationale": "Co-prime numbers have HCF 1, so their LCM is simply their product: 4 × 9 = 36."
     },
     {
       "id": 9,
       "question": "Which statement is always true?",
-      "options": ["The LCM divides the HCF", "The HCF divides the LCM", "HCF = LCM for any pair", "The LCM is smaller than both numbers"],
+      "options": [
+        "The LCM divides the HCF",
+        "The HCF divides the LCM",
+        "HCF = LCM for any pair",
+        "The LCM is smaller than both numbers"
+      ],
       "correct": 1,
       "rationale": "The HCF divides each number, and each number divides the LCM, so the HCF must divide the LCM — e.g. 12 divides 72 for 24 and 36."
     },
     {
       "id": 10,
       "question": "Two runners start together on a circular track and take 60 s and 90 s per lap. When do they next meet at the start line together?",
-      "options": ["150 s", "180 s", "90 s", "5400 s"],
+      "options": [
+        "150 s",
+        "180 s",
+        "90 s",
+        "5400 s"
+      ],
       "correct": 1,
       "rationale": "Meeting together on a circular track is an LCM question: LCM(60, 90) = 180 seconds — the same mathematics as bells tolling together."
     }

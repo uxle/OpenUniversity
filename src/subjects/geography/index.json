@@ -1,3 +1,22 @@
 {
-  "lessons": ["lesson1", "interior-of-the-earth", "rocks-and-minerals", "landforms-and-geomorphic-processes", "earthquakes-and-volcanoes", "atmosphere-and-insolation", "pressure-and-winds", "monsoon-climate-of-india", "oceans-relief-and-properties", "ocean-currents-and-tides", "indian-rivers-and-lakes", "soils-and-natural-vegetation", "world-population-and-settlement"]
+  "lessons": [
+    "lesson1",
+    "interior-of-the-earth",
+    "rocks-and-minerals",
+    "landforms-and-geomorphic-processes",
+    "earthquakes-and-volcanoes",
+    "atmosphere-and-insolation",
+    "pressure-and-winds",
+    "monsoon-climate-of-india",
+    "oceans-relief-and-properties",
+    "ocean-currents-and-tides",
+    "indian-rivers-and-lakes",
+    "soils-and-natural-vegetation",
+    "world-population-and-settlement",
+    "agriculture-in-india",
+    "mineral-and-energy-resources",
+    "manufacturing-industries-in-india",
+    "transport-communication-and-trade",
+    "natural-hazards-and-disaster-management"
+  ]
 }

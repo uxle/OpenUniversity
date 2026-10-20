@@ -1,33 +1,33 @@
 {
   "lessonId": "coding-decoding-detailed-part-18",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 18 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 18 of 22",
   "questions": [
     {
-      "question": "In 'Solved Example 16 \u2014 Shift Vector,' what technique is applied?",
+      "question": "In 'Solved Example 16 — Shift Vector,' what technique is applied?",
       "options": [
-        "Word reversal only",
         "Representing the shift as a vector (a signed numeric transformation) and applying it consistently to each letter's position",
+        "Word reversal only",
         "Matrix coding only",
         "Vowel counting only"
       ],
-      "correct": 1,
-      "rationale": "This example represents the shift as a vector \u2014 a signed numeric transformation \u2014 applied consistently across each letter's position.",
+      "correct": 0,
+      "rationale": "This example represents the shift as a vector — a signed numeric transformation — applied consistently across each letter's position.",
       "id": 1
     },
     {
-      "question": "In 'Solved Example 17 \u2014 Alternating Shift,' what technique is applied?",
+      "question": "In 'Solved Example 17 — Alternating Shift,' what technique is applied?",
       "options": [
         "A single constant shift",
-        "Applying a shift amount that alternates in a set pattern across successive letters, rather than a single constant shift",
         "Word reversal only",
+        "Applying a shift amount that alternates in a set pattern across successive letters, rather than a single constant shift",
         "Reverse-alphabet mapping only"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This example demonstrates alternating shift coding, where the shift amount cycles through a set pattern rather than staying constant.",
       "id": 2
     },
     {
-      "question": "In 'Solved Example 18 \u2014 Reverse + Shift,' what is combined?",
+      "question": "In 'Solved Example 18 — Reverse + Shift,' what is combined?",
       "options": [
         "Only a shift, no reversal",
         "Reversing the word's letter order, then applying an additional shift to each letter",
@@ -39,38 +39,38 @@
       "id": 3
     },
     {
-      "question": "In 'Solved Example 19 \u2014 Length-Based Shift,' what determines the shift amount?",
+      "question": "In 'Solved Example 19 — Length-Based Shift,' what determines the shift amount?",
       "options": [
         "The number of vowels",
-        "The length (number of letters) of the word itself",
+        "The word's first letter",
         "A fixed constant shift",
-        "The word's first letter"
+        "The length (number of letters) of the word itself"
       ],
-      "correct": 1,
-      "rationale": "In this example, the shift amount is tied directly to the word's own length \u2014 a longer word gets a correspondingly different shift than a shorter one.",
+      "correct": 3,
+      "rationale": "In this example, the shift amount is tied directly to the word's own length — a longer word gets a correspondingly different shift than a shorter one.",
       "id": 4
     },
     {
-      "question": "In 'Solved Example 20 \u2014 Vowel-Count Shift,' what determines the shift amount, in contrast?",
+      "question": "In 'Solved Example 20 — Vowel-Count Shift,' what determines the shift amount, in contrast?",
       "options": [
-        "The word's length",
         "The number of vowels contained in the word",
+        "The word's length",
         "A fixed constant shift",
         "The word's last letter"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Unlike Example 19's length-based shift, this example ties the shift amount to how many vowels the word contains.",
       "id": 5
     },
     {
-      "question": "What does the 'Advanced Solved Example \u2014 Multi-Stage' demonstrate?",
+      "question": "What does the 'Advanced Solved Example — Multi-Stage' demonstrate?",
       "options": [
         "A single simple shift",
-        "Applying several different coding rules in sequence, where each stage's output becomes the next stage's input",
         "Word reversal only",
+        "Applying several different coding rules in sequence, where each stage's output becomes the next stage's input",
         "A rule with no defined stages"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This advanced example demonstrates a multi-stage transformation, chaining several distinct coding rules where each stage's output feeds into the next.",
       "id": 6
     },
@@ -83,18 +83,18 @@
         "A random unrelated diagram"
       ],
       "correct": 1,
-      "rationale": "This models coding transformations as a graph, with values as nodes and transformation rules as connecting edges \u2014 the same structural idea used elsewhere in reasoning (blood relations, clock reasoning).",
+      "rationale": "This models coding transformations as a graph, with values as nodes and transformation rules as connecting edges — the same structural idea used elsewhere in reasoning (blood relations, clock reasoning).",
       "id": 7
     },
     {
       "question": "Why is representing coding-decoding as a graph useful for multi-stage problems?",
       "options": [
         "It has no practical benefit",
-        "It lets you trace a path through several transformation steps systematically, rather than trying to track everything mentally at once",
+        "It replaces the need for verification",
         "It only works for single-step problems",
-        "It replaces the need for verification"
+        "It lets you trace a path through several transformation steps systematically, rather than trying to track everything mentally at once"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A graph representation lets you systematically trace a path through multiple transformation steps, rather than attempting to hold every intermediate stage in your head at once.",
       "id": 8
     },

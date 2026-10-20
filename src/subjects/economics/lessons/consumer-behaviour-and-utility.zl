@@ -1,0 +1,239 @@
+# Consumer Behaviour and Utility: Why We Buy What We Buy
+
+> Every purchase is a small vote about what makes us better off. This
+> lesson builds the theory of the consumer step by step: from utility
+> and its measurement to indifference curves, budget lines, and surplus.
+
+## 1. What Is Utility?
+
+[definition]
+**Utility** is the want-satisfying power of a good or service — the
+satisfaction, however subjective, that a consumer expects from
+consuming it. It is *expected* satisfaction, not usefulness: a packet
+of cigarettes has utility to a smoker even though it harms health.
+[/definition]
+
+Utility is personal and depends on time, place, and circumstance. A
+cup of cutting chai at a Mumbai railway platform in the monsoon has
+far more utility than the same cup on a hot afternoon. Economics
+treats utility as *subjective* — the same good can carry different
+utility to two people, which is why prices alone cannot measure it.
+
+## 2. Two Approaches: Cardinal and Ordinal
+
+Economists split into two camps over whether satisfaction can be
+measured like weight or temperature.
+
+@diagram tree id="utility-approaches" layout="tree" aria="Cardinal and ordinal approaches to consumer theory"
+  "Theory of Consumer Behaviour" -> "Cardinal approach (Marshall)"
+  "Theory of Consumer Behaviour" -> "Ordinal approach (Hicks and Allen)"
+  "Cardinal approach (Marshall)" -> "Total and marginal utility in utils"
+  "Cardinal approach (Marshall)" -> "Law of equi-marginal utility"
+  "Ordinal approach (Hicks and Allen)" -> "Indifference curves"
+  "Ordinal approach (Hicks and Allen)" -> "Budget line and optimum choice"
+@/diagram
+
+| Feature | Cardinal approach | Ordinal approach |
+| --- | --- | --- |
+| Can utility be measured? | Yes, in imaginary units ("utils") | No, only ranked: better, worse, equal |
+| Key economist | Alfred Marshall (1890) | J. R. Hicks and R. G. D. Allen (1934) |
+| Main tools | TU, MU curves | Indifference curves and budget line |
+| Equilibrium condition | MU of last rupee equal in all uses | MRS equals price ratio |
+
+The ordinal approach won the profession because satisfaction is
+obviously not measurable in numbers — you cannot say tea gives
+exactly *twice* the utility of coffee. But ranking choices is easy
+and enough to predict behaviour.
+
+## 3. Total Utility and Marginal Utility
+
+[definition]
+**Total utility (TU)** is the satisfaction from consuming all units of
+a good taken together. **Marginal utility (MU)** is the *addition* to
+total utility from consuming one more unit: MU = change in TU
+divided by change in quantity.
+[/definition]
+
+Watch the two move together as a student drinks successive cups of
+tea on a winter evening:
+
+| Cup | Marginal utility (utils) | Total utility (utils) |
+| --- | --- | --- |
+| 1 | 20 | 20 |
+| 2 | 14 | 34 |
+| 3 | 8 | 42 |
+| 4 | 2 | 44 |
+| 5 | 0 | 44 |
+| 6 | -4 | 40 |
+
+@chart line title="Marginal and total utility of successive cups of tea (utils)" labels:
+1
+2
+3
+4
+5
+6
+
+series:
+  - name: "Marginal utility"
+    data: 20 14 8 2 0 -4
+  - name: "Total utility"
+    data: 20 34 42 44 44 40
+@/chart
+
+Three relationships follow directly:
+
+- While **MU is positive**, TU keeps rising (slower and slower).
+- When **MU = 0**, TU is at its maximum — the **point of satiety**.
+- When **MU turns negative**, TU *falls* — the sixth cup is a regret.
+
+## 4. The Law of Diminishing Marginal Utility
+
+[definition]
+As a consumer takes **successive equal units of the same commodity at
+the same time**, the marginal utility of each additional unit keeps
+falling. The first plate of biryani delights; the fifth, after a long
+day, barely tempts.
+[/definition]
+
+The law rests on assumptions worth listing, because exam questions
+probe them: units must be **homogeneous** (same size and quality),
+consumption must be **continuous**, units must be of **reasonable
+size** (sips of water, not a teaspoon at a time), the consumer's
+**tastes must stay constant**, and the consumer must be **rational**.
+
+[warning]
+The law is a tendency, not a universal rule. It fails for hobbies and
+collections (a stamp collector values the fiftieth rare stamp more
+than the second), for addictive consumption, and for very small
+initial doses of intensely wanted goods. For most ordinary goods over
+a normal consumption span, however, diminishing MU is reliable — and
+it is the bedrock of the downward-sloping demand curve.
+[/warning]
+
+[tip]
+Memory hook: *diminishing MU explains "variety is the spice of
+life"* — and it explains why Indian FMCG firms sell ₹1 and ₹5 shampoo
+sachets. A small, cheap unit fits the shrinking marginal utility of a
+low-income consumer's budget.
+[/tip]
+
+## 5. Consumer Equilibrium: The Law of Equi-Marginal Utility
+
+A consumer with a fixed money income faces many goods. Marshall's
+rule: allocate spending so that the **marginal utility per rupee is
+equal in every use**.
+
+[important]
+Equilibrium requires **MUx / Px = MUy / Py** (extended to all goods).
+If the ratio is higher for X than Y, shifting one rupee from Y to X
+raises total utility — so the consumer keeps shifting until the
+ratios are equal.
+[/important]
+
+Worked example. Income ₹30, price of good X is ₹2, price of good Y is
+₹3. Suppose MU schedules are such that at 6 units of X and 6 units of
+Y the per-rupee utilities are 6 and 6. Check affordability: 6 × 2 + 6
+× 3 = ₹30 — the budget is exactly spent and no rearrangement can
+raise total utility. Now suppose prices of X fall to ₹1. MUx/Px
+rises above MUy/Py, so the consumer buys more X and less Y — which is
+precisely why the demand curve slopes downward.
+
+## 6. Indifference Curves and the Marginal Rate of Substitution
+
+The ordinal approach represents preferences with **indifference
+curves** — each curve shows combinations of two goods giving the
+consumer *equal* satisfaction.
+
+@diagram tree id="ic-properties" layout="tree" aria="Properties of indifference curves"
+  "Indifference curve properties" -> "Downward sloping to the right"
+  "Indifference curve properties" -> "Convex to the origin"
+  "Indifference curve properties" -> "Higher curve shows higher satisfaction"
+  "Indifference curve properties" -> "Two curves never intersect"
+@/diagram
+
+The **slope** of an indifference curve at any point is the **marginal
+rate of substitution (MRS)** — the amount of good Y the consumer is
+willing to give up for one more unit of good X with utility
+unchanged. Convexity means MRS *diminishes*: the more X you already
+hold, the less Y you will sacrifice for yet another unit of X. If
+MRS stayed constant the curve would be a straight line; perfect
+substitutes and perfect complements are the two special cases that
+exam questions love.
+
+[warning]
+A common error: believing two indifference curves can cross. They
+cannot. At a crossing point the common bundle would have to yield two
+different levels of satisfaction at once — a logical contradiction.
+[/warning]
+
+## 7. The Budget Line and the Consumer's Optimum
+
+[definition]
+The **budget line** (price line) shows all combinations of two goods
+that exactly exhaust the consumer's income at given prices:
+**Px·X + Py·Y = M**. Its slope equals **Px / Py** — the market's rate
+of exchange between the goods.
+[/definition]
+
+Two movements matter:
+
+- **Income change**: a rise in income shifts the budget line
+  *parallel* outward; a fall shifts it inward. Slope is unchanged
+  because prices have not moved.
+- **Price change**: a fall in Px *pivots* the line outward along the
+  X-axis, flattening the slope; the Y-intercept stays put.
+
+Consumer equilibrium is where an indifference curve is *tangent* to
+the budget line: **MRS = Px/Py**. At that point the consumer's
+willingness to trade (MRS) exactly matches the market's terms of
+trade (price ratio). Anywhere else, a shift of spending towards the
+good with the higher "bang per rupee" increases satisfaction.
+
+[example]
+Suppose a college student has ₹120 for snacks, samosas cost ₹20 and
+cold coffee ₹60. The slope is 20/60 = 1/3: three samosas trade for
+one cold coffee. If a campus discount cuts cold coffee to ₹40, the
+line pivots outward on the coffee axis and the student typically
+buys more coffee — a price effect composed of a substitution effect
+(relative price cheaper) and an income effect (real purchasing power
+higher).
+[/example]
+
+## 8. Consumer Surplus and Real-World Insights
+
+[definition]
+**Consumer surplus** is the difference between what a consumer is
+*willing to pay* for a good and what is *actually paid*. Marshall:
+the surplus of satisfaction a consumer enjoys because the market
+price is below the maximum willingness to pay.
+[/definition]
+
+[example]
+A cricket fan would pay up to ₹2,000 for an India match ticket but
+the printed price is ₹800. The consumer surplus is ₹1,200. Consumers
+of essentials such as salt enjoy enormous surplus relative to a
+price of a few rupees — the good's total utility is huge while its
+marginal utility, and hence its price, is tiny.
+[/example]
+
+That last observation resolves the classic **water–diamond paradox**
+of Adam Smith's era: water has immense total utility but low marginal
+utility (it is abundant), so its price is low; diamonds are scarce,
+so their marginal utility — and price — is high. Price tracks
+*marginal* value, not total importance.
+
+## 9. Quick Revision
+
+| Concept | One-line summary |
+| --- | --- |
+| Utility | Want-satisfying power; subjective |
+| Cardinal vs ordinal | Measurable in utils vs only rankable |
+| MU = 0 | TU maximum — point of satiety |
+| Law of DMU | Successive units give shrinking MU |
+| Equi-marginal rule | MUx/Px = MUy/Py at equilibrium |
+| Indifference curve | Equal-satisfaction combinations; convex, non-intersecting |
+| MRS | Slope of IC; diminishes along the curve |
+| Budget line | Px·X + Py·Y = M; slope Px/Py |
+| Tangency condition | MRS = Px/Py |
+| Consumer surplus | Willingness to pay minus actual price |

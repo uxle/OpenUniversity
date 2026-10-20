@@ -1,0 +1,76 @@
+{
+  "lessonId": "sequences-and-series",
+  "title": "Sequences and Series: Patterns in Numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the 20th term of the AP 7, 11, 15, ...?",
+      "options": ["79", "76", "87", "83"],
+      "correct": 3,
+      "rationale": "With a = 7 and d = 4, the nth-term formula gives a20 = 7 + 19 × 4 = 83. Using 20 instead of (n − 1) steps is the classic slip."
+    },
+    {
+      "id": 2,
+      "question": "Which term of the AP 7, 11, 15, ... equals 79?",
+      "options": ["18th", "19th", "20th", "17th"],
+      "correct": 1,
+      "rationale": "Solve 7 + (n − 1) × 4 = 79: the gap is 72, which is 18 steps of 4, so n = 19. The term is the 19th."
+    },
+    {
+      "id": 3,
+      "question": "What is 1 + 2 + 3 + ... + 100?",
+      "options": ["10100", "5000", "5050", "4950"],
+      "correct": 2,
+      "rationale": "Pairing the ends gives 50 pairs each summing to 101: 50 × 101 = 5050. Equivalently n/2 × (first + last) = 50 × 101."
+    },
+    {
+      "id": 4,
+      "question": "What is the 10th term of the GP 3, 6, 12, ...?",
+      "options": ["1536", "768", "3072", "512"],
+      "correct": 0,
+      "rationale": "With a = 3 and r = 2, a10 = 3 × 2^9 = 3 × 512 = 1536. Nine doublings happen after the first term, not ten."
+    },
+    {
+      "id": 5,
+      "question": "What is 8 + 4 + 2 + 1 + ... continued forever?",
+      "options": ["32", "16", "8", "12"],
+      "correct": 1,
+      "rationale": "With a = 8 and r = 1/2 (|r| < 1), the infinite sum converges: S∞ = a/(1 − r) = 8/(1/2) = 16."
+    },
+    {
+      "id": 6,
+      "question": "Which of these is a geometric progression?",
+      "options": ["2, 6, 18, 54, ...", "2, 5, 8, 11, ...", "1, 4, 9, 16, ...", "1, 1, 2, 3, 5, ..."],
+      "correct": 0,
+      "rationale": "Each term of 2, 6, 18, 54 is 3 times the one before — a constant ratio. The others are an AP, a squares sequence, and a Fibonacci-type sequence."
+    },
+    {
+      "id": 7,
+      "question": "What is the arithmetic mean (AM) of 4 and 9?",
+      "options": ["6", "6.5", "7", "13"],
+      "correct": 1,
+      "rationale": "AM = (a + b)/2 = (4 + 9)/2 = 6.5. Adding and halving always meets or beats the geometric mean."
+    },
+    {
+      "id": 8,
+      "question": "What is the geometric mean (GM) of 4 and 9?",
+      "options": ["6.5", "6.25", "13", "6"],
+      "correct": 3,
+      "rationale": "GM = √(4 × 9) = √36 = 6. The AM–GM inequality confirms 6 ≤ 6.5, with equality only when the two numbers are equal."
+    },
+    {
+      "id": 9,
+      "question": "Written as a fraction, 0.777... (7 repeating forever) equals:",
+      "options": ["77/100", "7/10", "7/8", "7/9"],
+      "correct": 3,
+      "rationale": "It is an infinite GP: 0.7 + 0.07 + ... with a = 0.7 and r = 0.1, so S∞ = 0.7/0.9 = 7/9."
+    },
+    {
+      "id": 10,
+      "question": "A ball dropped from 16 m rebounds to half its height each bounce. What total distance does it travel before stopping?",
+      "options": ["32 m", "24 m", "48 m", "64 m"],
+      "correct": 2,
+      "rationale": "First fall 16 m, then every bounce is travelled twice: 16 + 2(8 + 4 + 2 + ...) = 16 + 2 × 16 = 48 m, using S∞ = 8/(1 − 1/2)."
+    }
+  ]
+}

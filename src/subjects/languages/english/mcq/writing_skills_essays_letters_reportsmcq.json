@@ -1,0 +1,76 @@
+{
+  "lessonId": "writing_skills_essays_letters_reports",
+  "title": "Writing Skills - Essays, Letters, and Reports",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The correct order of the three main parts of an examination essay is:",
+      "options": ["Body, Introduction, Conclusion", "Conclusion, Body, Introduction", "Introduction, Body, Conclusion", "Introduction, Conclusion, Body"],
+      "correct": 2,
+      "rationale": "An essay opens with an introduction (hook + thesis), develops arguments in the body, and closes with a conclusion that weighs, not adds."
+    },
+    {
+      "id": 2,
+      "question": "In essay writing, the PEE pattern for each body paragraph stands for:",
+      "options": ["Practice, Editing, Explanation", "Point, Evidence, Explanation", "Plan, Essay, End", "Preface, Example, Ending"],
+      "correct": 1,
+      "rationale": "Each body paragraph states a Point, supports it with Evidence, and then Explains how the evidence proves the point."
+    },
+    {
+      "id": 3,
+      "question": "A formal letter that begins 'Dear Sir' or 'Dear Madam' must close with:",
+      "options": ["Yours faithfully", "Yours sincerely", "Yours lovingly", "With love"],
+      "correct": 0,
+      "rationale": "Dear Sir/Madam (unnamed reader) pairs with 'Yours faithfully'; 'Yours sincerely' is reserved for letters addressed to a named person."
+    },
+    {
+      "id": 4,
+      "question": "Which element is NEVER used in an informal letter to a friend?",
+      "options": ["The date", "A subject line", "A warm closing such as 'With love'", "The sender's address"],
+      "correct": 1,
+      "rationale": "Subject lines belong to formal letters only; informal letters use address, date, salutation, body, and a warm closing."
+    },
+    {
+      "id": 5,
+      "question": "A newspaper report is characteristically written in:",
+      "options": ["first person, present tense", "second person, future tense", "first person, past tense", "third person, past tense"],
+      "correct": 3,
+      "rationale": "Reports narrate completed events impersonally: the third person and past tense dominate, with feelings left out."
+    },
+    {
+      "id": 6,
+      "question": "To stay safely within a 150-word letter limit, you should aim for roughly:",
+      "options": ["60 to 80 words", "within about ten per cent of 150 words", "exactly 150 words with no flexibility", "250 words for full marks"],
+      "correct": 1,
+      "rationale": "Examiners penalise answers far below or beyond the limit; landing within about ten per cent of it is the safe target."
+    },
+    {
+      "id": 7,
+      "question": "The 'lead' — the first paragraph of a report — must contain:",
+      "options": ["the writer's personal opinion", "what, where, when, and who", "a poem or quotation", "only the headline repeated"],
+      "correct": 1,
+      "rationale": "The lead packs every essential fact (what, where, when, who) into one line, following the inverted-pyramid principle."
+    },
+    {
+      "id": 8,
+      "question": "The linking word 'however' signals which relationship between sentences?",
+      "options": ["addition", "contrast", "result", "sequence"],
+      "correct": 1,
+      "rationale": "'However' and 'nevertheless' belong to the contrast family; 'moreover' adds, 'therefore' shows result."
+    },
+    {
+      "id": 9,
+      "question": "Which practice is correct for an essay's conclusion?",
+      "options": ["Introduce a brand-new argument with fresh statistics", "Apologise for the essay's weaknesses", "Restate the thesis in fresh words with a balanced verdict", "Simply repeat the introduction word for word"],
+      "correct": 2,
+      "rationale": "The conclusion weighs the material already presented and gives a verdict; new arguments belong in the body."
+    },
+    {
+      "id": 10,
+      "question": "A formal letter addressed to a named official — 'Dear Ms Verma' — should close with:",
+      "options": ["Yours faithfully", "Yours lovingly", "Thanks and cheers", "Yours sincerely"],
+      "correct": 3,
+      "rationale": "A named reader pairs with 'Yours sincerely'; the faithful/sincere pairing is the one rule examiners always check."
+    }
+  ]
+}

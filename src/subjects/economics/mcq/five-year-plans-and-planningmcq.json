@@ -1,0 +1,126 @@
+{
+  "lessonId": "five-year-plans-and-planning",
+  "title": "Planning in India: From Five-Year Plans to NITI Aayog",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Planning Commission was established on:",
+      "options": [
+        "15 March 1950 by a cabinet resolution",
+        "26 January 1950 by the Constitution",
+        "15 August 1947 by the Constituent Assembly",
+        "1 January 2015 by Parliament"
+      ],
+      "correct": 0,
+      "rationale": "It was created by a Government of India cabinet resolution on 15 March 1950 — not by statute — with the Prime Minister as chair; NITI Aayog replaced it via a resolution of 1 January 2015."
+    },
+    {
+      "id": 2,
+      "question": "The First Five-Year Plan (1951-56) was based on which model and gave top priority to:",
+      "options": [
+        "Mahalanobis model; heavy industry",
+        "Gandhian model; village industries",
+        "Harrod-Domar model; agriculture and irrigation",
+        "Keynesian model; exports"
+      ],
+      "correct": 2,
+      "rationale": "The First Plan followed the Harrod-Domar framework and targeted agriculture, irrigation, and power, achieving about 3.6% growth against a 2.1% target."
+    },
+    {
+      "id": 3,
+      "question": "The Second Five-Year Plan is identified with:",
+      "options": [
+        "The Green Revolution",
+        "The Mahalanobis model and rapid heavy industrialisation",
+        "Poverty removal programmes",
+        "The Rolling Plan concept"
+      ],
+      "correct": 1,
+      "rationale": "P. C. Mahalanobis designed the Second Plan (1956-61) around heavy industry, reinforced by the Industrial Policy Resolution of 1956 and new steel plants at Bhilai, Rourkela, and Durgapur."
+    },
+    {
+      "id": 4,
+      "question": "The first 'plan holiday' (1966-69) was caused by:",
+      "options": [
+        "The 1991 balance-of-payments crisis",
+        "The Green Revolution's failures",
+        "The Janata government's Rolling Plan",
+        "Wars of 1962 and 1965 and two severe droughts"
+      ],
+      "correct": 3,
+      "rationale": "The Third Plan collapsed under defence spending from the China and Pakistan wars plus the 1965-66 droughts; the plan lapsed into three Annual Plans and the rupee was devalued in 1966."
+    },
+    {
+      "id": 5,
+      "question": "The Rolling Plan concept (1978-80) was introduced by:",
+      "options": [
+        "The Janata government",
+        "The Congress government under Indira Gandhi",
+        "The Planning Commission under Nehru",
+        "NITI Aayog"
+      ],
+      "correct": 0,
+      "rationale": "The Janata government terminated the Fifth Plan in 1978 and substituted a rolling plan revised every year — distinct from the 1966-69 and 1990-92 annual-plan interruptions."
+    },
+    {
+      "id": 6,
+      "question": "Which pairing of plan and theme is correct?",
+      "options": [
+        "Fourth Plan — Garibi Hatao and self-reliance",
+        "Sixth Plan — direct attack on poverty (IRDP, NREP)",
+        "Eighth Plan — first plan after Independence",
+        "Tenth Plan — rolling plan"
+      ],
+      "correct": 1,
+      "rationale": "The Sixth Plan (1980-85) institutionalised poverty programmes like IRDP and NREP; 'growth with stability' marked the Fourth Plan, and the Eighth was the first reform-era plan (1992-97)."
+    },
+    {
+      "id": 7,
+      "question": "The last Five-Year Plan of India was the:",
+      "options": [
+        "Tenth (2002-07)",
+        "Eleventh (2007-12)",
+        "Twelfth (2012-17)",
+        "There was no final plan"
+      ],
+      "correct": 2,
+      "rationale": "The Twelfth Plan (2012-17), themed 'faster, more inclusive and sustainable growth', ended in 2017 without a successor because the Planning Commission had been dissolved."
+    },
+    {
+      "id": 8,
+      "question": "A key institutional difference between the Planning Commission and NITI Aayog is that NITI Aayog:",
+      "options": [
+        "Allocates plan funds to ministries",
+        "Approves states' annual budgets",
+        "Is a think tank with no fund-allocation powers",
+        "Is chaired by the Finance Minister"
+      ],
+      "correct": 2,
+      "rationale": "NITI Aayog distributes no plan grants — plan transfers gave way to Finance Commission devolution — and works through evidence, indices, and the Governing Council of Chief Ministers."
+    },
+    {
+      "id": 9,
+      "question": "NITI Aayog's National MPI reports multidimensional poverty falling from about 24.85% (2015-16) to:",
+      "options": [
+        "About 19% (2017-18)",
+        "About 14.96% (2019-21)",
+        "About 9% (2019-21)",
+        "About 30% (2019-21)"
+      ],
+      "correct": 1,
+      "rationale": "NITI Aayog's baseline report put National MPI poverty at 24.85% in 2015-16 and 14.96% in 2019-21 — about 13.5 crore people exiting multidimensional poverty."
+    },
+    {
+      "id": 10,
+      "question": "The Aspirational Districts Programme (2018) of NITI Aayog covers:",
+      "options": [
+        "All 750+ districts of India",
+        "112 of the least developed districts",
+        "Only the eight North-Eastern states",
+        "Districts with the highest per-capita income"
+      ],
+      "correct": 1,
+      "rationale": "The programme monitors 112 lagging districts monthly on health, nutrition, education, and infrastructure, using competitive rankings to drive convergence."
+    }
+  ]
+}

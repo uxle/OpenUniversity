@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-9",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 9 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 9 of 16",
   "questions": [
     {
       "question": "What does 'Palindrome Classification' test?",
       "options": [
-        "Whether words are all synonyms",
         "Whether a group of words/numbers all read the same forwards and backwards, with one breaking that pattern",
+        "Whether words are all synonyms",
         "Whether numbers are all prime",
         "Whether words share a common length only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether items are palindromes (reading the same forwards and backwards), identifying the one that isn't.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Repeated Digit Classification' test?",
       "options": [
         "Whether numbers are all prime",
-        "Whether a group of numbers all contain a repeated digit, with one number having no repeated digits",
         "Whether numbers are all even",
+        "Whether a group of numbers all contain a repeated digit, with one number having no repeated digits",
         "Whether numbers share a digit sum"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether numbers share the property of containing a repeated digit, identifying the exception with all-unique digits.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Letter Pair Classification' test?",
       "options": [
         "A single isolated letter property",
-        "Whether a group of letter pairs share a consistent relationship (like a fixed shift), with one pair breaking it",
+        "A digit-based property",
         "A word meaning property",
-        "A digit-based property"
+        "Whether a group of letter pairs share a consistent relationship (like a fixed shift), with one pair breaking it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether a set of letter pairs share a consistent relationship, such as a fixed alphabet shift, identifying the pair that doesn't follow it.",
       "id": 4
     },
     {
       "question": "What does 'Word Pattern Classification' test?",
       "options": [
-        "Only word meaning",
         "Whether a group of words share a common structural pattern (like a repeated syllable structure), with one breaking it",
+        "Only word meaning",
         "Only numeric properties",
         "A gender-based property"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether words share a common structural pattern, identifying the word that breaks that shared structural rule.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Common Prefix' classification test?",
       "options": [
         "A shared suffix",
-        "Whether a group of words all share the same starting letters (prefix), with one word having a different prefix",
         "A shared digit sum",
+        "Whether a group of words all share the same starting letters (prefix), with one word having a different prefix",
         "A shared meaning only"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether words share a common prefix (starting letters), identifying the word that starts differently.",
       "id": 6
     },
@@ -90,12 +90,12 @@
       "question": "What is the key distinction 'Meaning vs Spelling' highlights in classification?",
       "options": [
         "That meaning and spelling are always identical properties",
-        "That a group might be connected by meaning-based similarity or by spelling-based similarity, and these are different bases for classification",
+        "That meaning never matters in classification",
         "That spelling never matters in classification",
-        "That meaning never matters in classification"
+        "That a group might be connected by meaning-based similarity or by spelling-based similarity, and these are different bases for classification"
       ],
-      "correct": 1,
-      "rationale": "This distinguishes classification based on shared meaning from classification based on shared spelling patterns \u2014 two genuinely different bases that shouldn't be conflated.",
+      "correct": 3,
+      "rationale": "This distinguishes classification based on shared meaning from classification based on shared spelling patterns — two genuinely different bases that shouldn't be conflated.",
       "id": 8
     },
     {

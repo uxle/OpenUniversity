@@ -1,0 +1,207 @@
+# The Binomial Theorem: Expanding Powers Efficiently
+
+> Multiplying $(a+b)$ by itself twice is easy; by itself twenty times is
+> impossible by hand. The binomial theorem writes down any such power
+> directly — every coefficient computed from a formula, no multiplying
+> out required.
+
+## 1. Why Not Just Multiply?
+
+Multiply out the first few powers and a pattern of coefficients
+emerges:
+
+@math label="eq:bt-first-powers"
+(a+b)^2 = a^2 + 2ab + b^2
+@/math
+
+@math label="eq:bt-third-power"
+(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+@/math
+
+The powers of $a$ fall from $n$ to 0 while the powers of $b$ rise from
+0 to $n$; only the coefficients need explaining. Brute force for
+$(a+b)^{20}$ would take dozens of nested multiplications — the theorem
+replaces all of it with one line.
+
+[note]
+A power with index $n$ always expands into exactly $n + 1$ terms: $(a+b)^3$
+has 4 terms, $(a+b)^6$ has 7. Counting terms is a fast check on any
+expansion.
+[/note]
+
+## 2. Pascal's Triangle
+
+Write the coefficients of $(a+b)^n$ row by row and Pascal's triangle
+appears: each entry is the sum of the two diagonally above, the edges
+are always 1.
+
+| $n$ | Row |
+| --- | --- |
+| 0 | 1 |
+| 1 | 1 1 |
+| 2 | 1 2 1 |
+| 3 | 1 3 3 1 |
+| 4 | 1 4 6 4 1 |
+| 5 | 1 5 10 10 5 1 |
+
+These are the combination numbers: row $n$ reads
+${}^{n}C_{0}, {}^{n}C_{1}, \ldots, {}^{n}C_{n}$ — the number of ways to
+pick $r$ of the $n$ factors to contribute their $b$.
+
+@chart bar title="Coefficients of (a+b)^5: row 5 of Pascal's triangle" labels:
+b^0
+b^1
+b^2
+b^3
+b^4
+b^5
+
+data:
+1
+5
+10
+10
+5
+1
+@/chart
+
+## 3. The Binomial Theorem
+
+[definition]
+For any positive integer $n$,
+
+@math label="eq:bt-theorem"
+(a+b)^n = \sum_{r=0}^{n} {}^{n}C_{r}\, a^{n-r} b^{r}
+@/math
+
+Each term pairs a coefficient ${}^{n}C_{r}$ with $a$ falling in power
+and $b$ rising.
+[/definition]
+
+[example]
+Expand $(x + 2)^5$. Take row 5 — 1, 5, 10, 10, 5, 1 — and attach the
+powers of $x$ (falling) and 2 (rising):
+
+@math label="eq:bt-expansion"
+(x+2)^5 = x^5 + 10x^4 + 40x^3 + 80x^2 + 80x + 32
+@/math
+
+For instance the $x^3$ term is ${}^{5}C_{2}\, x^3 \cdot 2^2 = 10 \times
+4\,x^3 = 40x^3$.
+[/example]
+
+@diagram tree id="bt-term-anatomy" layout="tree" aria="Anatomy of one binomial term and the role of each factor"
+  "One term: nCr a^(n-r) b^r" -> "nCr: the coefficient, counted from Pascal"
+  "One term: nCr a^(n-r) b^r" -> "a^(n-r): a's power falls as r rises"
+  "One term: nCr a^(n-r) b^r" -> "b^r: b's power rises with r"
+@/diagram
+
+## 4. The General Term
+
+The $(r+1)$-th term of the expansion of $(a+b)^n$ is the master key —
+it answers "what is the coefficient of …?" without expanding anything:
+
+@math label="eq:bt-general"
+T_{r+1} = {}^{n}C_{r}\, a^{n-r}\, b^{r}
+@/math
+
+[example]
+Find the coefficient of $x^3$ in $(x + 2)^5$. Set the $a$-power:
+$x^{5-r} = x^3$ gives $r = 2$. Then $T_3 = {}^{5}C_{2}\, x^3 \cdot 2^2$,
+so the coefficient is $10 \times 4 = 40$ — matching the full expansion
+above, but reached without writing it.
+[/example]
+
+[warning]
+The $(r+1)$ offset is the classic slip: $r$ is counted from **zero**,
+so the first term is $T_1$ with $r = 0$. Writing $T_r$ instead of
+$T_{r+1}$ shifts every answer by one term.
+[/warning]
+
+## 5. Middle Term or Middle Terms
+
+The middle depends on whether $n$ is even or odd:
+
+| $n$ | Middle term(s) |
+| --- | --- |
+| Even | one term: $T_{\frac{n}{2} + 1}$ |
+| Odd | two terms: $T_{\frac{n+1}{2}}$ and $T_{\frac{n+3}{2}}$ |
+
+[example]
+Find the middle term of $(2x + 3)^4$. Here $n = 4$ is even, so the
+middle is $T_3$ (that is, $r = 2$):
+
+@math label="eq:bt-middle"
+T_3 = {}^{4}C_{2}\,(2x)^2\,(3)^2 = 6 \times 4x^2 \times 9 = 216x^2
+@/math
+
+Do not forget the powers of the *numbers*: squaring both $2x$ and 3
+before multiplying.
+[/example]
+
+[tip]
+Because ${}^{n}C_{r} = {}^{n}C_{n-r}$, the coefficients run out and
+back like a palindrome — 1, 5, 10, 10, 5, 1. The largest coefficient
+always sits in the middle, which doubles as a sanity check.
+[/tip]
+
+## 6. Term Independent of a Variable
+
+"Independent of $x$" means the $x$-powers cancel exactly — set their
+total exponent to zero and solve for $r$.
+
+[example]
+Find the constant term of $\left(x^2 + \frac{1}{x}\right)^6$.
+The general term is
+
+@math label="eq:bt-constant"
+T_{r+1} = {}^{6}C_{r}\, x^{2(6-r)}\, x^{-r} = {}^{6}C_{r}\, x^{12 - 3r}
+@/math
+
+Setting $12 - 3r = 0$ gives $r = 4$, so the constant term is
+${}^{6}C_{4} = 15$.
+[/example]
+
+[important]
+Fractions and negatives inside the bracket are handled by the same
+rule — only the exponent bookkeeping changes. Write $x^{2(6-r)}$ and
+$x^{-r}$ *before* combining powers; combining too early is where sign
+errors breed.
+[/important]
+
+## 7. Tricks with Coefficients
+
+Substitution turns whole expansions into quick answers:
+
+| Substitute | What you get |
+| --- | --- |
+| $a = b = 1$ | sum of all coefficients |
+| $b = -a$ | alternating sum of coefficients |
+| small $x$ | fast approximation |
+
+[example]
+Sum the coefficients of $(1 + x)^6$: putting $x = 1$ gives $2^6 = 64$.
+The alternating sum is $(1 - 1)^6 = 0$. And for small $x$, $(1+x)^n
+\approx 1 + nx$: so $(1.02)^5 \approx 1 + 5(0.02) = 1.10$, refined with
+the $x^2$ term to $1.10 + 10(0.0004) = 1.104$ — the true value is
+1.10408.
+[/example]
+
+[info]
+The same theorem works with a minus sign: replace $b$ by $-b$ and the
+signs alternate, since $(-b)^r$ flips for odd $r$. Expansions like
+$(x - 3)^4$ need no new machinery.
+[/info]
+
+## 8. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| Terms in $(a+b)^n$ | index rule | $n + 1$ |
+| Coefficients of $(a+b)^5$ | Pascal row 5 | 1, 5, 10, 10, 5, 1 |
+| $(x+2)^5$: coefficient of $x^4$ | ${}^{5}C_{1} \cdot 2$ | 10 |
+| $(x+2)^5$: coefficient of $x^3$ | ${}^{5}C_{2} \cdot 2^2$ | 40 |
+| Middle term of $(2x+3)^4$ | $T_3$ | $216x^2$ |
+| Constant term of $(x^2 + 1/x)^6$ | solve $12 - 3r = 0$ | 15 |
+| Sum of coefficients of $(1+x)^6$ | substitute $x = 1$ | 64 |
+| $(1.02)^5$ to 3 d.p. | $1 + nx$ + correction | 1.104 |

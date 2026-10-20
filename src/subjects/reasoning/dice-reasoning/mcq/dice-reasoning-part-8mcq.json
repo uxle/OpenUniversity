@@ -1,16 +1,16 @@
 {
   "lessonId": "dice-reasoning-part-8",
-  "title": "Dice Reasoning \u2014 Part 8 of 10",
+  "title": "Dice Reasoning — Part 8 of 10",
   "questions": [
     {
       "question": "What is the purpose of a 'master formula sheet' in this lesson?",
       "options": [
-        "To replace the need for understanding any rules",
         "To consolidate the key adjacency, opposite, and corner rules into one compact, quick-reference summary",
+        "To replace the need for understanding any rules",
         "To only list formulas for symbol dice",
         "To introduce entirely new, unrelated rules"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A master formula sheet brings together the core adjacency, opposite, and corner-compatibility rules into a single, compact reference for quick use.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What might an 'adjacency formula' formalize?",
       "options": [
         "A random guess about face colors",
-        "A rule or check for determining whether two given faces are adjacent, based on their known positions or labels",
         "The die's manufacturing process",
+        "A rule or check for determining whether two given faces are adjacent, based on their known positions or labels",
         "A formula unrelated to faces at all"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "An adjacency formula formalizes the check for whether two specific faces are adjacent, based on their established positions or labels.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What is the purpose of a 'corner formula'?",
       "options": [
         "To calculate the cube's volume",
-        "To formalize the check for whether three given faces can validly meet together at a single corner of the cube",
+        "To determine the die's color scheme",
         "To count the number of edges",
-        "To determine the die's color scheme"
+        "To formalize the check for whether three given faces can validly meet together at a single corner of the cube"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A corner formula formalizes the compatibility check for whether three specific faces could genuinely all meet together at one of the cube's corners.",
       "id": 4
     },
     {
       "question": "What does the 'signed direction method' (an advanced technique) likely use to track face orientation?",
       "options": [
-        "Random labels with no structure",
         "Positive and negative directions along coordinate axes, similar to the vector/coordinate model introduced earlier",
+        "Random labels with no structure",
         "Only the die's color",
         "The physical weight of each face"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This advanced technique extends the earlier coordinate model, using positive and negative signed directions along the axes to precisely track each face's orientation.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is 'cross-product orientation' used for?",
       "options": [
         "Measuring the die's surface area",
-        "Using the vector cross-product to mathematically determine the correct orientation or facing direction of a die's faces",
         "Counting the number of faces",
+        "Using the vector cross-product to mathematically determine the correct orientation or facing direction of a die's faces",
         "Only relevant to 2D dice nets"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The cross-product, a standard vector operation, can be used to mathematically determine a face's correct orientation or facing direction with precision.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What would 'pseudocode for a forward roll' describe?",
       "options": [
         "The color-changing logic of the die",
-        "The step-by-step logic for updating the die's tracked face positions after a forward roll, in a form similar to simplified code",
+        "The formula for the die's total surface area",
         "How to physically manufacture a die",
-        "The formula for the die's total surface area"
+        "The step-by-step logic for updating the die's tracked face positions after a forward roll, in a form similar to simplified code"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This pseudocode describes, in simplified code-like steps, exactly how the tracked face positions should update after a forward roll is applied.",
       "id": 8
     },

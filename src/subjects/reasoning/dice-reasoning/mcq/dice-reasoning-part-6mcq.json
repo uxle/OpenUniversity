@@ -1,16 +1,16 @@
 {
   "lessonId": "dice-reasoning-part-6",
-  "title": "Dice Reasoning \u2014 Part 6 of 10",
+  "title": "Dice Reasoning — Part 6 of 10",
   "questions": [
     {
       "question": "What is the 'labelled cube method'?",
       "options": [
-        "Ignoring face labels entirely",
         "Assigning consistent labels (like numbers or letters) to each face of a cube to make tracking relationships and rotations unambiguous",
+        "Ignoring face labels entirely",
         "Only labeling the top face",
         "Randomly relabeling faces each time"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This method assigns consistent, fixed labels to each face, removing ambiguity when tracking relationships and rotations across multiple steps.",
       "id": 1
     },
@@ -18,12 +18,12 @@
       "question": "What is a 'master cube diagram' used for?",
       "options": [
         "Only decorative purposes",
-        "Providing one clear, complete reference diagram showing all face relationships (adjacent and opposite) at a glance",
         "Measuring the cube's exact dimensions",
+        "Providing one clear, complete reference diagram showing all face relationships (adjacent and opposite) at a glance",
         "Replacing the need for any rules"
       ],
-      "correct": 1,
-      "rationale": "A master cube diagram consolidates all the face relationships \u2014 adjacency and opposite pairs \u2014 into a single, comprehensive visual reference.",
+      "correct": 2,
+      "rationale": "A master cube diagram consolidates all the face relationships — adjacency and opposite pairs — into a single, comprehensive visual reference.",
       "id": 2
     },
     {
@@ -42,40 +42,40 @@
       "question": "What is a 'letter dice' problem?",
       "options": [
         "A die that spells out full words",
-        "A die whose faces show letters instead of numbers, again requiring the same adjacency/opposite rules applied to the letters shown",
+        "A die used only in language classes",
         "A die with no valid faces",
-        "A die used only in language classes"
+        "A die whose faces show letters instead of numbers, again requiring the same adjacency/opposite rules applied to the letters shown"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Letter dice show letters on each face instead of numbers, but they follow the exact same geometric reasoning rules as any other die.",
       "id": 4
     },
     {
       "question": "Why do symbol, letter, and color dice all use the exact same underlying reasoning rules as numbered dice?",
       "options": [
-        "They actually use completely different rules",
         "Because the reasoning rules (opposite faces, adjacency, corner compatibility) depend only on the cube's geometry, not on what is printed on each face",
+        "They actually use completely different rules",
         "Because all dice secretly have hidden numbers",
         "Because only numbered dice can be reasoned about"
       ],
-      "correct": 1,
-      "rationale": "The core geometric rules of a cube \u2014 which faces are opposite, adjacent, or meet at a corner \u2014 depend purely on the cube's shape, not on what symbols happen to be printed on its faces.",
+      "correct": 0,
+      "rationale": "The core geometric rules of a cube — which faces are opposite, adjacent, or meet at a corner — depend purely on the cube's shape, not on what symbols happen to be printed on its faces.",
       "id": 5
     },
     {
-      "question": "What is the goal of a 'Solved Example \u2014 Find Opposite' problem?",
+      "question": "What is the goal of a 'Solved Example — Find Opposite' problem?",
       "options": [
         "To find the die's total weight",
-        "To determine, from the given views, which specific face is opposite a stated face",
         "To draw a new die net",
+        "To determine, from the given views, which specific face is opposite a stated face",
         "To count how many views were given"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This example type walks through determining exactly which face is opposite a specified face, based on cross-referencing the given views.",
       "id": 6
     },
     {
-      "question": "What is the goal of a 'Solved Example \u2014 Impossible View' problem?",
+      "question": "What is the goal of a 'Solved Example — Impossible View' problem?",
       "options": [
         "To find the die's correct color",
         "To identify which of several proposed views could not actually be a valid view of the real die",
@@ -87,14 +87,14 @@
       "id": 7
     },
     {
-      "question": "What would a 'Solved Example \u2014 Find All Faces Adjacent to X' problem ask you to determine?",
+      "question": "What would a 'Solved Example — Find All Faces Adjacent to X' problem ask you to determine?",
       "options": [
         "Only the face opposite X",
-        "Every face that could be adjacent to a specific given face, based on the information provided",
+        "Whether X is a valid face at all",
         "The color of face X",
-        "Whether X is a valid face at all"
+        "Every face that could be adjacent to a specific given face, based on the information provided"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This example type works through identifying the complete set of faces adjacent to a specific given face, based on the relationships established from the given views.",
       "id": 8
     },

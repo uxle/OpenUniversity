@@ -1,0 +1,235 @@
+# Applications of Calculus: Maxima, Minima, and Areas
+
+> Differentiation measures how fast things change; integration adds the
+> changes back up. Together they answer two practical questions better
+> than any other tool: what is the best value, and how large the region?
+
+## 1. What the Sign of the Derivative Tells You
+
+| Sign of f′(x) | Behaviour of f | Graph |
+| --- | --- | --- |
+| positive | increasing | rising left to right |
+| negative | decreasing | falling left to right |
+| zero at a point | critical point | possible peak, valley, or terrace |
+
+[definition]
+A **critical point** is an interior point c where f′(c) = 0 or the
+derivative fails to exist. Local maxima and minima can only occur at
+critical points — or at the endpoints of a closed interval.
+[/definition]
+
+[example]
+For f(x) = x², the derivative is f′(x) = 2x: negative for x < 0 and
+positive for x > 0. The graph falls into x = 0 and rises out of it, so
+the vertex (0, 0) is a local (and global) minimum.
+[/example]
+
+## 2. The First Derivative Test
+
+Walk through a critical point and watch the sign of f′ change: positive
+to negative marks a **local maximum**; negative to positive marks a
+**local minimum**; no sign change means neither — a terrace, like
+x³ has at x = 0.
+
+[example]
+Find the minimum of f(x) = x² − 8x + 7.
+Step 1: f′(x) = 2x − 8, which is zero at x = 4.
+Step 2: for x < 4 the derivative is negative (falling); for x > 4 it
+is positive (rising).
+Step 3: the sign changes from − to +, so x = 4 is a minimum, and
+f(4) = 16 − 32 + 7 = −9.
+[/example]
+
+## 3. The Second Derivative Test
+
+The second derivative measures concavity — the direction the curve
+bends — and sorts critical points without a sign walk:
+
+@math label="eq:second-derivative-test"
+f''(c) > 0 \text{ (minimum)} \qquad f''(c) < 0 \text{ (maximum)}
+@/math
+
+[example]
+Classify the critical points of f(x) = 2x³ − 9x² + 12x.
+Step 1: f′(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2), so the critical
+points are x = 1 and x = 2.
+Step 2: f″(x) = 12x − 18; f″(1) = −6 < 0, so x = 1 is a local maximum
+with f(1) = 5.
+Step 3: f″(2) = 6 > 0, so x = 2 is a local minimum with f(2) = 4.
+[/example]
+
+[important]
+The second derivative test is silent when f″(c) = 0 — the point might
+be a maximum, a minimum, or neither. When that happens, fall back to
+the first derivative test.
+[/important]
+
+## 4. Endpoints Matter: Closed Intervals
+
+On a closed interval, the global maximum and minimum may sit at the
+ends, where the derivative need not vanish. The recipe: evaluate f at
+every critical point and at both endpoints, then compare.
+
+[example]
+Find the global extremes of f(x) = x³ − 3x on the interval from −2
+to 2.
+Step 1: f′(x) = 3x² − 3 = 3(x − 1)(x + 1), so the critical points are
+x = −1 and x = 1.
+Step 2: evaluate everything: f(−2) = −2, f(−1) = 2, f(1) = −2,
+f(2) = 2.
+Step 3: the global maximum is 2 (at x = −1 and again at the endpoint
+x = 2) and the global minimum is −2 (at x = 1 and x = −2).
+[/example]
+
+## 5. Optimisation: The Fencing Problem
+
+@diagram tree id="optimisation-workflow" layout="tree" aria="Workflow for solving optimisation problems with derivatives"
+  "Optimisation workflow" -> "1. Name the variables and sketch"
+  "Optimisation workflow" -> "2. Write the objective in one variable"
+  "Optimisation workflow" -> "3. Differentiate and set derivative to zero"
+  "Optimisation workflow" -> "4. Classify with the second derivative"
+  "Optimisation workflow" -> "5. Answer in context with units"
+@/diagram
+
+[example]
+A farmer has 40 m of fence for a rectangular pen. Which dimensions give
+the largest area?
+Step 1: let one side be x; then the other is 20 − x (the perimeter is
+2x + 2y = 40).
+Step 2: the area is
+
+@math label="eq:fence-area"
+A(x) = x(20 - x) = 20x - x^2
+@/math
+
+Step 3: A′(x) = 20 − 2x, which is zero at x = 10.
+Step 4: A″(x) = −2 < 0, so x = 10 is a maximum.
+Step 5: the best pen is 10 m by 10 m — a square — with area
+A(10) = 100 m².
+[/example]
+
+[warning]
+Never forget the constraint. Writing A(x) = x·y with two unknowns goes
+nowhere; use the perimeter condition to eliminate y first. And check
+the answer makes physical sense: negative or zero side lengths are not
+pens.
+[/warning]
+
+The area chart for A(x) = x(20 − x) rises to its peak at x = 10 and
+falls symmetrically — the parabola's vertex is exactly what the
+derivative found:
+
+@chart line title="Fenced area A = x(20 − x) for 40 m of fence" labels:
+0
+5
+10
+15
+20
+
+data:
+0
+75
+100
+75
+0
+@/chart
+
+## 6. Optimisation: The Open Box
+
+[example]
+Squares of side x are cut from the corners of a 20 cm × 20 cm sheet,
+and the flaps folded up to form an open box. Maximise the volume.
+Step 1: the base is 20 − 2x on each side, the depth is x, so
+
+@math label="eq:box-volume"
+V(x) = x(20 - 2x)^2
+@/math
+
+Step 2: expand: V(x) = 400x − 80x² + 4x³.
+Step 3: V′(x) = 400 − 160x + 12x² = 4(3x − 10)(x − 10), so the
+critical points are x = 10/3 and x = 10.
+Step 4: x = 10 gives V = 0 (an empty box) — reject it; and
+V″(10/3) = −160 + 24 × 10/3 = −80 < 0, confirming a maximum.
+Step 5: cut 10/3 ≈ 3.33 cm squares, giving
+V = (10/3)(40/3)² = 16000/27 ≈ 592.6 cm³.
+[/example]
+
+[tip]
+In box problems the sensible range of x is 0 < x < half the sheet side;
+restricting to that window instantly discards roots like x = 10 that
+are mathematically valid but physically useless.
+[/tip]
+
+## 7. Area Under a Curve
+
+Integration adds up infinitely many thin rectangles of width dx:
+
+@math label="eq:definite-integral"
+\int_0^3 x^2 \, dx = 9
+@/math
+
+[example]
+Area under y = x² from x = 0 to x = 3.
+Step 1: the antiderivative of x² is x³/3.
+Step 2: evaluate: 3³/3 − 0³/3 = 27/3 = 9 square units.
+[/example]
+
+Cross-check with a straight line: y = 2x from 0 to 4 encloses a
+triangle of base 4 and height 8. The integral gives 16, and so does
+½ × 4 × 8 — integration agrees exactly with geometry wherever
+geometry can reach.
+
+[tip]
+For straight-line boundaries, compute the area with triangles and
+trapeziums from coordinate geometry — then use the integral as a
+check. For curved boundaries, the integral is the only tool that
+works.
+[/tip]
+
+## 8. Between Curves and Moving Objects
+
+When one curve sits above another, subtract before integrating:
+
+@math label="eq:area-between"
+\int_0^1 (x - x^2) \, dx = \frac{1}{2} - \frac{1}{3} = \frac{1}{6}
+@/math
+
+That is the area trapped between y = x and y = x² over the first unit —
+a region no ruler could measure.
+
+[example]
+A particle moves with velocity v(t) = 3t². How far does it travel from
+t = 0 to t = 2?
+Step 1: displacement is the integral of velocity:
+∫ from 0 to 2 of 3t² dt = t³ evaluated from 0 to 2 = 8.
+Step 2: the particle covers 8 m. If the velocity changed sign, the
+distance travelled would need |v|, while the displacement uses v —
+motion in opposite directions cancels in displacement only.
+[/example]
+
+[info]
+The same integral that prices a fence also drives engineering: beam
+deflection, battery charge, drug dosage, and probability densities are
+all areas under curves — calculus is the universal accounting system
+for accumulating change.
+[/info]
+
+## 9. Quick Revision
+
+| Problem | Method | Answer |
+| --- | --- | --- |
+| Minimise x² − 8x + 7 | first derivative test | minimum at x = 4, value −9 |
+| Classify 2x³ − 9x² + 12x | second derivative test | max 5 at x = 1, min 4 at x = 2 |
+| Extremes of x³ − 3x on −2 to 2 | check critical points and endpoints | max 2, min −2 |
+| Largest pen from 40 m of fence | A = x(20 − x), A′ = 0 | 10 m × 10 m, 100 m² |
+| Open box from a 20 cm sheet | V = x(20 − 2x)² | cut 10/3 cm, V ≈ 592.6 cm³ |
+| Area under x² from 0 to 3 | antiderivative x³/3 | 9 |
+| Area between y = x and y = x², 0 to 1 | subtract then integrate | 1/6 |
+| Displacement for v = 3t², 0 to 2 | integrate velocity | 8 m |
+
+[summary]
+Find critical points with f′, classify them with f″, remember the
+endpoints, and answer optimisation questions in context with units;
+then let the definite integral measure what geometry cannot — areas
+under and between curves, and the distance hidden inside a velocity.
+[/summary]

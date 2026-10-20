@@ -1,0 +1,126 @@
+{
+  "lessonId": "cause-and-effect-and-course-of-action",
+  "title": "Cause and Effect and Course of Action",
+  "questions": [
+    {
+      "id": 1,
+      "question": "(A) \"Heavy rainfall lashed the coastal city for three days.\" (B) \"The city recorded widespread waterlogging and traffic disruption.\" Which verdict is correct?",
+      "options": [
+        "(B) is the cause and (A) is its effect",
+        "(A) is the cause and (B) is its effect",
+        "Both are independent causes",
+        "Both are effects of a common cause"
+      ],
+      "correct": 1,
+      "rationale": "The rain comes first, the mechanism (rain filling drains and flooding roads) needs no extra event, and the direction of action runs from rain to city conditions. So A causes B."
+    },
+    {
+      "id": 2,
+      "question": "(A) \"The wholesale price of onions doubled within a month.\" (B) \"Household consumption of onions fell this month.\" Which verdict is correct?",
+      "options": [
+        "(A) is the cause and (B) is its effect",
+        "(B) is the cause and (A) is its effect",
+        "Both are effects of a common cause",
+        "Both are independent causes"
+      ],
+      "correct": 0,
+      "rationale": "A sharp price rise is a standard immediate cause of reduced consumption; no third factor is needed to connect the two facts. The time order and mechanism both run from price to consumption."
+    },
+    {
+      "id": 3,
+      "question": "(A) \"The city recorded a sharp rise in dengue cases.\" (B) \"Sales of mosquito repellents rose sharply in the same period.\" Which verdict is correct?",
+      "options": [
+        "(A) is the cause and (B) is its effect",
+        "(B) is the cause and (A) is its effect",
+        "Both are independent causes",
+        "Both are effects of a common cause"
+      ],
+      "correct": 3,
+      "rationale": "Dengue cases and repellent purchases do not drive each other convincingly; both rise together when mosquito breeding increases after the monsoon. Two linked symptoms with no mechanism between them are sibling effects of one common cause."
+    },
+    {
+      "id": 4,
+      "question": "(A) \"The company's sales fell for the third quarter in a row.\" (B) \"The company launched an aggressive advertising campaign.\" Which verdict is correct?",
+      "options": [
+        "(B) is the cause and (A) is its effect",
+        "Both are effects of a common cause",
+        "(A) is the cause and (B) is its effect",
+        "Both are independent causes"
+      ],
+      "correct": 2,
+      "rationale": "The campaign is a response to falling sales, so although the effect appears second in the pair, causation runs from the problem to the reaction. Response statements are always effects of the situation they answer."
+    },
+    {
+      "id": 5,
+      "question": "(A) \"India won the cricket series three-nil.\" (B) \"The government announced a new education policy.\" Which verdict is correct?",
+      "options": [
+        "Both are independent causes",
+        "(A) is the cause and (B) is its effect",
+        "Both are effects of a common cause",
+        "(B) is the cause and (A) is its effect"
+      ],
+      "correct": 0,
+      "rationale": "No mechanism connects a cricket result to an education policy in either direction, and no shared parent naturally explains both. The thematic distance marks them as independent."
+    },
+    {
+      "id": 6,
+      "question": "Statement: \"Many students of the local college fail the English paper every year.\" Course I: \"The college should arrange remedial English classes for weak students.\" Course II: \"The college should abolish the English paper.\"",
+      "options": [
+        "Neither I nor II follows",
+        "Only II follows",
+        "Only I follows",
+        "Both I and II follow"
+      ],
+      "correct": 2,
+      "rationale": "Remedial classes are relevant, feasible for a college, and attack the root cause, so I follows. Abolishing the paper removes the exam rather than the weakness — extreme and evasive — so II does not follow."
+    },
+    {
+      "id": 7,
+      "question": "Statement: \"A deep pothole on the national highway has caused several accidents.\" Course I: \"The pothole should be repaired immediately and warning signs placed nearby.\" Course II: \"All vehicular traffic on the highway should be banned until further notice.\"",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": 0,
+      "rationale": "Repair plus interim warning signs is immediate relief combined with a fix, exactly proportionate to one defect. Banning all traffic on a national highway is wildly disproportionate, so II fails."
+    },
+    {
+      "id": 8,
+      "question": "Statement: \"Cases of dengue are rising sharply in the city.\" Course I: \"The municipal body should intensify fogging and anti-larval drives and run an awareness campaign.\" Course II: \"People should avoid visiting the city.\"",
+      "options": [
+        "Both I and II follow",
+        "Only II follows",
+        "Neither I nor II follows",
+        "Only I follows"
+      ],
+      "correct": 3,
+      "rationale": "Fogging and anti-larval drives attack the mosquito vector while the campaign informs the public — relevant, feasible, proportionate. Telling outsiders to avoid the city evades the problem instead of solving it, so II fails."
+    },
+    {
+      "id": 9,
+      "question": "Statement: \"The railway station is severely overcrowded during peak hours, leading to stampede-like situations.\" Course I: \"Additional ticket counters and public-address systems should be provided during peak hours.\" Course II: \"Railway travel should be discouraged to reduce crowds.\"",
+      "options": [
+        "Only I follows",
+        "Both I and II follow",
+        "Neither I nor II follows",
+        "Only II follows"
+      ],
+      "correct": 0,
+      "rationale": "Extra counters and announcements ease the crush directly and are feasible for the railway authority. Discouraging an essential service is unrealistic and evasive, so II does not follow."
+    },
+    {
+      "id": 10,
+      "question": "Statement: \"Ravi scored very low marks in the pre-board examination.\" Course I: \"Ravi should be expelled from the school.\" Course II: \"The question paper was too difficult and should be rescored.\"",
+      "options": [
+        "Only I follows",
+        "Both I and II follow",
+        "Neither I nor II follows",
+        "Only II follows"
+      ],
+      "correct": 2,
+      "rationale": "Expulsion is disproportionate and unjust for a single poor result, and rescoring invents a cause (a difficult paper) with no support in the statement. Hence neither course of action follows."
+    }
+  ]
+}

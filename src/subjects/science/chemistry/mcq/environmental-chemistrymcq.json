@@ -1,0 +1,101 @@
+{
+  "lessonId": "environmental-chemistry",
+  "title": "Environmental Chemistry: Pollution, Climate, and Green Chemistry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a secondary pollutant?",
+      "options": ["Carbon monoxide", "Sulphur dioxide", "Ground-level ozone", "Particulate matter"],
+      "correct": 2,
+      "rationale": "Ground-level ozone is not emitted directly; it forms in the air when sunlight acts on NOx and hydrocarbons — that makes it secondary."
+    },
+    {
+      "id": 2,
+      "question": "Carbon monoxide is poisonous because:",
+      "options": [
+        "It dissolves lung tissue",
+        "It binds haemoglobin about 200 times more strongly than oxygen",
+        "It destroys vitamin K in the blood",
+        "It raises blood pH sharply"
+      ],
+      "correct": 1,
+      "rationale": "CO's grip on haemoglobin is roughly 200 times oxygen's, forming carboxyhaemoglobin and starving the body of oxygen."
+    },
+    {
+      "id": 3,
+      "question": "Clean water has a BOD value:",
+      "options": ["Below about 5 ppm", "Between 50 and 100 ppm", "Above 100 ppm", "Exactly zero at all times"],
+      "correct": 0,
+      "rationale": "BOD under about 5 ppm indicates little organic load; values above roughly 100 ppm signal heavy pollution — microbes are consuming lots of oxygen."
+    },
+    {
+      "id": 4,
+      "question": "Eutrophication of a lake is triggered chiefly by:",
+      "options": [
+        "Thermal discharge from power plants",
+        "Heavy metal dumping",
+        "Oil spills on the surface",
+        "Nitrogen and phosphorus runoff causing algal blooms"
+      ],
+      "correct": 3,
+      "rationale": "Fertiliser nutrients feed an algal bloom; when the algae die and decompose, dissolved oxygen crashes and aquatic life suffocates."
+    },
+    {
+      "id": 5,
+      "question": "Biomagnification of DDT in a food chain means its concentration:",
+      "options": [
+        "Breaks down faster at each level",
+        "Stays constant along the chain",
+        "Concentrates as it moves up to higher trophic levels",
+        "Affects only plants"
+      ],
+      "correct": 2,
+      "rationale": "DDT is persistent and fat-soluble, so it accumulates and multiplies at each step up the chain — famously thinning birds' eggshells."
+    },
+    {
+      "id": 6,
+      "question": "The largest share of man-made greenhouse gas emissions (by CO₂-equivalent) is:",
+      "options": ["Methane", "Nitrous oxide", "Carbon dioxide", "SF₆"],
+      "correct": 2,
+      "rationale": "CO₂ contributes about 76% of emissions in CO₂-equivalent terms, ahead of methane (~16%), N₂O (~6%) and F-gases (~2%)."
+    },
+    {
+      "id": 7,
+      "question": "How does a single chlorine atom released from a CFC damage the ozone layer?",
+      "options": [
+        "It reacts once and is consumed",
+        "It acts as a catalyst, destroying thousands of ozone molecules",
+        "It reflects UV radiation back to space",
+        "It converts ozone into new CFCs"
+      ],
+      "correct": 1,
+      "rationale": "In the cycle Cl + O₃ → ClO + O₂ and ClO + O → Cl + O₂, the chlorine returns untouched to strike again — a catalyst of destruction."
+    },
+    {
+      "id": 8,
+      "question": "The Montreal Protocol, which phased out CFCs, was signed in:",
+      "options": ["1972", "1997", "2015", "1987"],
+      "correct": 3,
+      "rationale": "The Montreal Protocol of 1987 — the first treaty ratified by every UN member — drove the global CFC phase-out that is healing the ozone layer."
+    },
+    {
+      "id": 9,
+      "question": "Rain is called acid rain when its pH is:",
+      "options": ["Below about 5.6", "Exactly 7.0", "Above 8.5", "Between 9 and 10"],
+      "correct": 0,
+      "rationale": "Natural rain is already slightly acidic (pH ≈ 5.6) from dissolved CO₂; SO₂ and NOₓ push the pH below this, forming H₂SO₄ and HNO₃."
+    },
+    {
+      "id": 10,
+      "question": "The central idea of green chemistry is to:",
+      "options": [
+        "Treat hazardous waste after production",
+        "Design products and processes that reduce or eliminate hazardous substances from the start",
+        "Bury all waste in deep landfills",
+        "Ban all chemical industries"
+      ],
+      "correct": 1,
+      "rationale": "Green chemistry prevents pollution at the design stage — waste prevention, atom economy, safer solvents, catalysis — instead of cleaning up later."
+    }
+  ]
+}

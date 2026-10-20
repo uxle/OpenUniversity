@@ -6,7 +6,7 @@
 
 ### Knowledge is everyone's right.
 
-**A free, open-source, text-first knowledge base — 302 lessons, 3,104+ quiz questions,
+**A free, open-source, text-first knowledge base — 369 lessons, 3,773+ quiz questions,
 10 subjects. No accounts, no ads, no paywalls. Works offline.**
 
 ![Tests](https://img.shields.io/badge/tests-37%20passing-1d1d1f?style=flat-square)
@@ -31,14 +31,16 @@ No video courses required. No build step. No CDN. Clone it, open it, learn.
 
 ## ✨ Highlights
 
-- **302 text-first lessons** across 10 subjects — written to be understood, not skimmed
-- **3,104+ MCQs** with per-option rationales, instant feedback and a results summary
+- **369 text-first lessons** across 10 subjects — written to be understood, not skimmed
+- **3,773+ MCQs** with per-option rationales, instant feedback and a results summary
 - **Works offline** — service worker caches the app and content; installable as a PWA
 - **Command palette** (Ctrl/Cmd + K) — jump to any lesson, subject or action
 - **Per-lesson translation**, PDF export, reading-time estimates, keyboard lesson navigation
 - **Progress tracking, bookmarks, personal notes** — all stored locally, private by default
 - **Light, dark and high-contrast themes**, automatic via `prefers-color-scheme`
-- **Zero runtime dependencies** — no CDN, no icon fonts, no framework; pure web platform
+- **Zero runtime dependencies** — no CDN, no framework; pure web platform. Icons are
+  Font Awesome 6 Free **solid**, self-hosted and subsetted to the glyphs the app uses
+  (`public/fonts/fa-solid-900.min.woff2`, ~6 KB — rebuild with `tools/build-icon-font.py`)
 - **Accessible by design** — skip links, focus rings, AA contrast, screen-reader labels
 - **37/37 automated tests**, content validated on every commit (`npm run validate:all`)
 
@@ -109,12 +111,12 @@ npm test               # 37 tests across content, engines and services
 
 | Subject | Lessons | | Subject | Lessons |
 |---|---:|---|---|---:|
-| Reasoning | 109 | | Computer Science | 20 |
-| Languages | 51 | | Mathematics | 19 |
-| Science | 34 | | Economics | 13 |
-| Civics | 18 | | Geography | 13 |
-| History | 14 | | Philosophy | 11 |
-| | | | **Total** | **302** |
+| Reasoning | 116 | | Computer Science | 35 |
+| Languages | 58 | | Mathematics | 30 |
+| Science | 39 | | Economics | 18 |
+| Civics | 22 | | Geography | 18 |
+| History | 19 | | Philosophy | 14 |
+| | | | **Total** | **369** |
 
 Lessons are written in **Zolto** — a tiny, testable content format (tables, math,
 callouts, examples) stored as plain text under `src/subjects/`. Every lesson has a

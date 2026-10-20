@@ -100,7 +100,7 @@
   font-weight: 600;
   color: var(--ou-text-secondary);
 }
-.ou-hero-stat svg { color: var(--ou-accent); }
+.ou-hero-stat svg, .ou-hero-stat i { color: var(--ou-accent); }
 
 /* Input-shaped button that opens the command palette. */
 .ou-hero-search {
@@ -118,6 +118,8 @@
   text-align: left;
   cursor: pointer;
   box-shadow: var(--ou-shadow-xs);
+  /* Primary home-page action: guarantee a real touch target. */
+  min-height: 44px;
   transition: border-color var(--ou-transition-fast), box-shadow var(--ou-transition-fast),
               transform var(--ou-transition-fast);
 }
@@ -126,7 +128,7 @@
   box-shadow: var(--ou-shadow-glow-accent);
   transform: translateY(-1px);
 }
-.ou-hero-search svg { color: var(--ou-accent); flex-shrink: 0; }
+.ou-hero-search svg, .ou-hero-search i { color: var(--ou-accent); flex-shrink: 0; }
 .ou-hero-search__placeholder {
   flex: 1;
   min-width: 0;

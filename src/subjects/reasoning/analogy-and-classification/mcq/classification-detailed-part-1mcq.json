@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-1",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 1 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 1 of 16",
   "questions": [
     {
       "question": "What is 'classification' reasoning, at its core?",
       "options": [
-        "Finding a matching pair",
         "Identifying which single item in a group does not share the property common to the rest",
+        "Finding a matching pair",
         "Sorting items alphabetically",
         "Counting the items in a group"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Classification is about finding the one item in a group that does not share the property common to the majority of the other items.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "In the basic example Apple, Banana, Carrot, Grape, what makes Carrot the odd one out?",
       "options": [
         "It starts with a different letter",
-        "It is a vegetable while the others are fruits",
         "It has more letters",
+        "It is a vegetable while the others are fruits",
         "It is a random guess"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Apple, Banana, and Grape are all fruits; Carrot is a vegetable, breaking the shared fruit category.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "Why is classification 'not just what looks different'?",
       "options": [
         "Because visual difference is always the correct basis",
-        "Because the odd one out is defined by a specific shared property being broken, not by superficial visual dissimilarity",
+        "Because looks and properties are always the same thing",
         "Because classification never involves visual look at all",
-        "Because looks and properties are always the same thing"
+        "Because the odd one out is defined by a specific shared property being broken, not by superficial visual dissimilarity"
       ],
-      "correct": 1,
-      "rationale": "The correct odd one out is defined by breaking a specific, identifiable shared property \u2014 not simply by looking different on the surface, which can be misleading.",
+      "correct": 3,
+      "rationale": "The correct odd one out is defined by breaking a specific, identifiable shared property — not simply by looking different on the surface, which can be misleading.",
       "id": 4
     },
     {
       "question": "What are some of the 'main types of classification' likely to include?",
       "options": [
-        "Only word-based classification",
         "Word, category, functional, and numeric classification, among others",
+        "Only word-based classification",
         "Only numeric classification",
         "Only classification based on color"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Classification spans several types, including word-based, category-based, functional, and numeric classification, each requiring different detection strategies.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'word classification' typically test?",
       "options": [
         "Only numbers",
-        "Whether a group of words share a common word-level property, with one breaking it",
         "Only letters",
+        "Whether a group of words share a common word-level property, with one breaking it",
         "Random unrelated symbols"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Word classification tests whether a group of words shares a common property (meaning, category, structure), identifying the one that doesn't fit.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'functional classification' test?",
       "options": [
         "A shared category name only",
-        "Whether items share a common function or use, such as all being used for cutting",
+        "A shared physical size",
         "A shared numeric value",
-        "A shared physical size"
+        "Whether items share a common function or use, such as all being used for cutting"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Functional classification tests whether items share a common function or use, identifying the one item that serves a different purpose.",
       "id": 8
     },

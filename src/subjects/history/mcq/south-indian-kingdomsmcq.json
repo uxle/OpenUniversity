@@ -1,0 +1,76 @@
+{
+  "lessonId": "south-indian-kingdoms",
+  "title": "The South Indian Kingdoms: Pallavas, Cholas, and Their Neighbours",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Pallava king wrote the satirical farce Mattavilasa Prahasana and began rock-cut temple building at Mandagapattu?",
+      "options": ["Simhavishnu", "Mahendravarman I", "Narasimhavarman I", "Rajasimha"],
+      "correct": 1,
+      "rationale": "Mahendravarman I (c. 600-630) was the scholar-king author of Mattavilasa Prahasana; his Mandagapattu temple was built 'without brick, timber, metal, or mortar' — the first rock-cut phase."
+    },
+    {
+      "id": 2,
+      "question": "Narasimhavarman I earned the title Vatapikonda after:",
+      "options": ["Defeating the Pandyas at Madurai", "Capturing the Chalukya capital Vatapi in 642", "Conquering Sri Lanka", "Repelling Xuanzang's patron at Kanchi"],
+      "correct": 1,
+      "rationale": "In 642 his general Paranjothi stormed Vatapi (Badami) and killed Pulakeshin II, earning Narasimhavarman I the title 'conqueror of Vatapi'."
+    },
+    {
+      "id": 3,
+      "question": "In Pallava architecture, the vimana is best described as:",
+      "options": ["The gateway tower of the temple", "The pyramidal tower above the sanctum", "The pillared dance hall", "The temple tank"],
+      "correct": 1,
+      "rationale": "The vimana is the tower over the sanctum — the true crown of the temple, tallest at Thanjavur; the gopuram is the entrance gateway that later dynasties grew to record heights."
+    },
+    {
+      "id": 4,
+      "question": "The imperial Chola line from which the great empire grew was founded when Vijayalaya captured:",
+      "options": ["Madurai around 850", "Thanjavur around 850", "Kanchipuram around 897", "Polonnaruwa around 993"],
+      "correct": 1,
+      "rationale": "Vijayalaya seized Thanjavur from the Muttaraiyar feudatories about 850 and built the Nishumbhasudani temple, reviving Chola power."
+    },
+    {
+      "id": 5,
+      "question": "Rajendra I took the title Gangaikonda after his expedition to:",
+      "options": ["Srivijaya in 1025", "The river Ganga against the Pala Mahipala I", "Kandalur Salai against the Chera fleet", "The Maldives"],
+      "correct": 1,
+      "rationale": "The Gangetic expedition against Mahipala I won Rajendra the title 'conqueror of the Ganga'; he marked it with his new capital Gangaikondacholapuram and the Cholagangam tank."
+    },
+    {
+      "id": 6,
+      "question": "Rajendra I's naval expedition of about 1025 was directed against:",
+      "options": ["The Arab merchants of the Malabar coast", "The kingdom of Srivijaya in Southeast Asia", "The Chalukyas of Kalyani", "The kingdom of Kotte in Sri Lanka"],
+      "correct": 1,
+      "rationale": "In about 1025 Chola fleets struck Srivijaya — Palembang and Kadaram (Kedah) — to protect the merchant guilds' sea route to China."
+    },
+    {
+      "id": 7,
+      "question": "The Uttaramerur inscriptions describe village elections conducted by which method?",
+      "options": ["Show of hands in the temple", "Kudavolai — drawing palm tickets from a pot", "Royal nomination by the mandalam chief", "Auction of committee posts"],
+      "correct": 1,
+      "rationale": "Under the kudavolai ('pot-ticket') system, names of qualified candidates were written on palm tickets and drawn by lot before the sabha, with term limits and an audit."
+    },
+    {
+      "id": 8,
+      "question": "In Chola village administration, the assembly of merchants and townspeople was called the:",
+      "options": ["Ur", "Sabha", "Nagaram", "Variyam"],
+      "correct": 2,
+      "rationale": "The nagaram was the assembly of merchants in trade centres; the ur governed ordinary villages and the sabha governed brahmadeya villages; variyams were the sabha's committees."
+    },
+    {
+      "id": 9,
+      "question": "The Brihadisvara temple at Thanjavur, consecrated in 1010, was built by:",
+      "options": ["Rajaraja I", "Rajendra I", "Kulottunga I", "Rajaraja II"],
+      "correct": 0,
+      "rationale": "Rajaraja I raised the Rajarajeshvaram (Brihadisvara) between 1003 and 1010; it is one of the three UNESCO 'Great Living Chola Temples', with Gangaikondacholapuram and Darasuram."
+    },
+    {
+      "id": 10,
+      "question": "Under the Cholas, the land tax (kadamai) generally took what share of produce?",
+      "options": ["One-sixth", "One-fourth", "About one-third", "One-half"],
+      "correct": 2,
+      "rationale": "Chola land revenue demanded roughly one-third of produce, collected in brahmadeya villages by the assemblies themselves, besides vetti (compulsory labour)."
+    }
+  ]
+}

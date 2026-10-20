@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "The number of goals scored in a match is what type of data?",
-      "options": ["Qualitative", "Discrete quantitative", "Continuous quantitative", "Categorical"],
-      "correct": 1,
+      "options": [
+        "Discrete quantitative",
+        "Qualitative",
+        "Continuous quantitative",
+        "Categorical"
+      ],
+      "correct": 0,
       "rationale": "Goals are countable whole numbers, so the data are discrete quantitative — unlike continuous data such as height or time, which are measured."
     },
     {
       "id": 2,
       "question": "In the frequency table (4 marks ×3, 6 marks ×5, 8 marks ×8, 10 marks ×4), what is the mean?",
-      "options": ["7", "7.3", "8", "7.5"],
-      "correct": 1,
+      "options": [
+        "7",
+        "8",
+        "7.3",
+        "7.5"
+      ],
+      "correct": 2,
       "rationale": "Mean = Σfx/Σf = (3×4 + 5×6 + 8×8 + 4×10)/20 = 146/20 = 7.3 marks."
     },
     {
       "id": 3,
       "question": "Which average is most appropriate for reporting household incomes in a city?",
-      "options": ["Mean", "Median", "Mode", "Range"],
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
       "correct": 1,
       "rationale": "A few very large incomes drag the mean upward, while the median — a positional average — barely moves. This robustness is why median income is reported."
     },
     {
       "id": 4,
       "question": "One billionaire joins a village of 100 farmers. Which average changes the most?",
-      "options": ["The median", "The mean", "The mode", "All change equally"],
-      "correct": 1,
+      "options": [
+        "The median",
+        "All change equally",
+        "The mode",
+        "The mean"
+      ],
+      "correct": 3,
       "rationale": "The mean counts size, so one huge value drags it far above what anyone earns; the median counts only position and moves by about one place."
     },
     {
       "id": 5,
       "question": "For the data 3, 5, 6, 7, 9, 10, 12: Q1 = 5 and Q3 = 10. What is the IQR?",
-      "options": ["9", "5", "7", "2.5"],
-      "correct": 1,
+      "options": [
+        "5",
+        "9",
+        "7",
+        "2.5"
+      ],
+      "correct": 0,
       "rationale": "IQR = Q3 − Q1 = 10 − 5 = 5, the width of the middle half of the data. (9 is the range, 12 − 3.)"
     },
     {
       "id": 6,
       "question": "Datasets A and B both have mean 6, but SD(A) ≈ 1.41 and SD(B) ≈ 3.69. What does this tell you?",
-      "options": ["B's values cluster more tightly around 6", "B's values are more spread out around 6", "B has a larger mean", "A has no spread"],
+      "options": [
+        "B's values cluster more tightly around 6",
+        "B's values are more spread out around 6",
+        "B has a larger mean",
+        "A has no spread"
+      ],
       "correct": 1,
       "rationale": "Standard deviation measures spread around the mean: same centre, but B's values deviate much more — standard deviation detects differences the mean cannot."
     },
     {
       "id": 7,
       "question": "In a pie chart of 30 students' transport choices, 12 students walk. What angle should the 'walk' sector have?",
-      "options": ["120°", "144°", "36°", "60°"],
+      "options": [
+        "120°",
+        "144°",
+        "36°",
+        "60°"
+      ],
       "correct": 1,
       "rationale": "The pie angle equals the fraction of the total times 360°: 12/30 × 360° = 144°. All sector angles must total 360°."
     },
     {
       "id": 8,
       "question": "What is the key difference between a bar chart and a histogram?",
-      "options": ["Histograms use colors, bar charts do not", "Bar charts suit continuous data with touching bars; histograms suit discrete categories", "Bar charts suit discrete categories with gaps; histograms suit continuous classes with no gaps", "There is no difference"],
+      "options": [
+        "Histograms use colors, bar charts do not",
+        "Bar charts suit continuous data with touching bars; histograms suit discrete categories",
+        "Bar charts suit discrete categories with gaps; histograms suit continuous classes with no gaps",
+        "There is no difference"
+      ],
       "correct": 2,
       "rationale": "Bar charts display discrete categories separated by gaps; histograms display continuous class intervals with no gaps, and area carries frequency."
     },
     {
       "id": 9,
       "question": "Ice-cream sales and drowning incidents rise together every summer. What is the correct interpretation?",
-      "options": ["Ice cream causes drowning", "Drowning causes ice-cream sales", "Hot weather likely drives both — a confounding variable", "Pure coincidence with no explanation"],
+      "options": [
+        "Ice cream causes drowning",
+        "Drowning causes ice-cream sales",
+        "Hot weather likely drives both — a confounding variable",
+        "Pure coincidence with no explanation"
+      ],
       "correct": 2,
       "rationale": "Correlation is not causation: a confounding variable (hot weather) can raise both quantities without either causing the other. Only controlled experiments establish causation."
     },
     {
       "id": 10,
       "question": "Hours of practice and typing errors move in opposite directions. This is an example of:",
-      "options": ["Positive correlation", "Negative correlation", "No correlation", "Mutually exclusive events"],
+      "options": [
+        "Positive correlation",
+        "Negative correlation",
+        "No correlation",
+        "Mutually exclusive events"
+      ],
       "correct": 1,
       "rationale": "When one variable rises while the other falls, the scatter plot shows negative correlation — practice hours up, errors down."
     }

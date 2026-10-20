@@ -1,0 +1,86 @@
+{
+  "lessonId": "sql-fundamentals",
+  "title": "SQL Fundamentals: Selecting, Filtering, and Joining",
+  "questions": [
+    {
+      "id": 1,
+      "question": "You want to keep only the groups whose COUNT(*) is at least 2, after aggregation. Which clause do you use?",
+      "options": ["WHERE", "LIMIT", "HAVING", "DISTINCT"],
+      "correct": 2,
+      "rationale": "HAVING filters groups after GROUP BY and aggregates are computed, while WHERE filters individual rows before grouping — aggregates are not even allowed in WHERE."
+    },
+    {
+      "id": 2,
+      "question": "Which predicate correctly finds students whose city is missing?",
+      "options": ["WHERE city = NULL", "WHERE city IS NULL", "WHERE city == NULL", "WHERE city LIKE NULL"],
+      "correct": 1,
+      "rationale": "Any comparison with NULL yields unknown, not true, so city = NULL never matches; SQL provides IS NULL as the only correct test for a missing value."
+    },
+    {
+      "id": 3,
+      "question": "On the sample course table (Databases, Networks, AI, Compilers), what does SELECT title FROM course WHERE title LIKE '%s' return?",
+      "options": ["Databases and Networks", "AI only", "All four courses", "Compilers only"],
+      "correct": 0,
+      "rationale": "The % wildcard matches any run of characters, so '%s' keeps titles ending in s — Databases and Networks."
+    },
+    {
+      "id": 4,
+      "question": "Five students live in three different cities. How many rows does SELECT DISTINCT city FROM student return?",
+      "options": ["5", "8", "3", "15"],
+      "correct": 2,
+      "rationale": "DISTINCT collapses duplicate output rows, so the three distinct city values — one row each — are returned, answering which cities exist rather than who lives there."
+    },
+    {
+      "id": 5,
+      "question": "On the sample data (5 students, 5 enrolments, Eshan enrolled in nothing), how many rows does SELECT ... FROM student s LEFT JOIN enrolment e ON s.student_id = e.student_id return?",
+      "options": ["4", "6", "5", "20"],
+      "correct": 1,
+      "rationale": "The inner-join pairs are 5, and the LEFT JOIN adds Eshan's row with NULLs in every enrolment column because his row is kept even without a match."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between COUNT(*) and COUNT(city)?",
+      "options": [
+        "They are always identical",
+        "COUNT(*) counts rows; COUNT(city) skips rows where city is NULL",
+        "COUNT(city) is faster in every case",
+        "COUNT(*) counts distinct values only"
+      ],
+      "correct": 1,
+      "rationale": "COUNT(*) counts every row of the group, while COUNT(column) counts only rows where that column is not NULL — a distinction that matters whenever the column can be missing."
+    },
+    {
+      "id": 7,
+      "question": "In a SELECT with WHERE, GROUP BY, and HAVING, which clause is evaluated first?",
+      "options": ["SELECT", "GROUP BY", "HAVING", "FROM"],
+      "correct": 3,
+      "rationale": "Logical evaluation runs FROM first to assemble the row source, then WHERE, GROUP BY, HAVING, and only then SELECT projects the output columns."
+    },
+    {
+      "id": 8,
+      "question": "On the sample data (5 students, 5 enrolments, all enrolments match a student), how many rows does an INNER JOIN of student and enrolment on student_id return?",
+      "options": ["25", "10", "5", "6"],
+      "correct": 2,
+      "rationale": "An INNER JOIN keeps only matched pairs; all five enrolment rows match a student, so the result has exactly 5 rows — one per enrolment."
+    },
+    {
+      "id": 9,
+      "question": "Which query lists students enrolled in course C1 using a subquery?",
+      "options": [
+        "SELECT name FROM student WHERE student_id IN (SELECT student_id FROM enrolment WHERE course_id = 'C1')",
+        "SELECT name FROM student WHERE course_id = 'C1'",
+        "SELECT name FROM enrolment WHERE student_id IN student",
+        "SELECT name FROM student GROUP BY course_id = 'C1'"
+      ],
+      "correct": 0,
+      "rationale": "The IN subquery first collects the student_ids from enrolment where course_id is C1, then the outer query keeps matching students — Aisha, Boris, and Chen on the sample data."
+    },
+    {
+      "id": 10,
+      "question": "A developer joins a 5-row and a 4-row table but forgets the ON clause. How many rows come back?",
+      "options": ["9", "4", "5", "20"],
+      "correct": 3,
+      "rationale": "Without an ON condition the inner join degenerates into a CROSS JOIN, pairing every row with every row: 5 times 4 is 20 — the tell-tale sign of a missing join predicate."
+    }
+  ]
+}

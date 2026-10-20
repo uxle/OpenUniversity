@@ -1,0 +1,207 @@
+# Philosophy of Mind: What Is Consciousness?
+
+> You know what it is like to taste coffee; physics lists only
+> masses, charges, and fields. This lesson examines the mind–body
+> problem: how mental life relates to the brain — and what AI now
+> forces us to decide about minds like and unlike our own.
+
+## 1. The Mind–Body Problem
+
+Mental states feel private, unified, and qualitative; brains are
+public, divisible, and measurable. That these are somehow *the same
+thing* is the puzzle philosophy of mind exists to solve — or
+dissolve.
+
+| Fact about experience | Fact about the brain |
+| --- | --- |
+| Felt from the inside | Observed from the outside |
+| One unified point of view | Billions of separable neurons |
+| Irreducibly qualitative ("red looks like *this*") | Described only in physical vocabulary |
+
+@diagram tree id="mind-body-positions" layout="tree" aria="Main positions on the mind-body problem grouped into dualist, physicalist, and functionalist families"
+  "Mind-body positions" -> "Dualism"
+  "Mind-body positions" -> "Physicalism"
+  "Mind-body positions" -> "Behaviourism"
+  "Mind-body positions" -> "Functionalism"
+  "Dualism" -> "Substance"
+  "Dualism" -> "Property"
+  "Physicalism" -> "Reductive"
+  "Physicalism" -> "Non-reductive"
+@/diagram
+
+[definition]
+**Consciousness**, in the philosophical sense, is *phenomenal*
+consciousness: the fact that there is something it is like to be you
+— Thomas Nagel's phrase, from "What Is It Like to Be a Bat?" (1974).
+A bat echolocating has experiences; a thermostat, on most views,
+does not — the line between them is the battlefield.
+[/definition]
+
+## 2. Substance Dualism: Descartes' Split
+
+René Descartes (1596–1650) argued that mind and body are **distinct
+substances**: the body is extended matter, the mind is thinking
+stuff, known with certainty (*cogito, ergo sum*). Interaction, he
+claimed, runs through the pineal gland.
+
+| Strength | Problem |
+| --- | --- |
+| Honours the first-person certainty of experience | Causation: how does an unextended mind move matter? |
+| Preserves free will and the soul | Violates the physical world's causal closure |
+| Matches ordinary intuition ("I am not my body") | Brain damage and split-brain evidence tie mind to brain |
+
+[warning]
+The standard objection came from Princess Elisabeth of Bohemia in
+1643: if the mind is non-spatial, what force could it exert, through
+what mechanism? "The mind moves the body" names the mystery; it does
+not solve it.
+[/warning]
+
+## 3. Physicalism: Mind as Brain
+
+**Physicalism** (materialism) holds that everything is physical, so
+every mental state is identical with, or realised by, a physical
+state. The type-identity theory of Place and Smart claimed each
+mental *type* is a brain *type*; **reductionism** translates mental
+talk into neuroscience; **non-reductive** physicalism lets mental
+explanations stand while depending on the physical.
+
+| Variety | Claim | Shared liability |
+| --- | --- | --- |
+| Reductive identity | Pain *is* C-fibre firing (or its local equivalent) | Multiple realisability — aliens and AI may feel without our neurons |
+| Eliminativism | Folk concepts like "belief" will go the way of phlogiston | Explains away what needed explaining |
+| Non-reductive | The mental depends on, but is not reducible to, the physical | Risks epiphenomenalism — mind as a shadow |
+
+Philosophers' sympathies show the state of play:
+
+@chart donut title="PhilPapers 2020 survey: is the mind physical?" labels:
+Physicalism
+Non-physicalism
+Other or undecided
+
+data:
+52
+32
+16
+@/chart
+
+[info]
+A majority, but hardly a rout: a third of professional philosophers
+reject physicalism — which is why the alternatives below remain live
+options, not museum pieces.
+[/info]
+
+## 4. Behaviourism: Mind as Disposition
+
+**Logical (analytical) behaviourism** — Ryle, Hempel — tried to
+*dissolve* the problem: mental talk just *means* talk about
+behaviour and dispositions to behave. To believe it will rain *is*
+to be disposed to carry an umbrella; there is no ghostly inner item
+to locate.
+
+| Appeal | Fatal objection |
+| --- | --- |
+| No occult entities; fits the scientific method | No mental state can be defined purely in behaviour |
+| Matches how we ascribe minds to others | Pretence, suppression, and a pain-reporting robot break the translation |
+
+Hilary Putnam's **super-spartans** — people who feel pain but never
+show it — drove the point home: behaviour without inner states is
+conceivable, so inner states cannot be *defined* as behaviour.
+Behaviourism survives today as a method (psychology may *study*
+behaviour), not as a definition of the mental.
+
+## 5. Functionalism: Mind as Software
+
+**Functionalism** (Putnam, Lewis) defines mental states by their
+**causal role**: what typically causes them, what they cause, and
+how they relate to other states. Pain = the state typically caused
+by tissue damage that causes withdrawal and distress — *whatever
+substance plays that role*. Silicon, neurons, or alien biochemistry
+are all eligible.
+
+| Theory | Mind is like… | Key objection |
+| --- | --- | --- |
+| Dualism | A rider on a horse | The interaction problem |
+| Behaviourism | The horse's visible gait | Inner life is not just behaviour |
+| Identity theory | The horse's musculature | Multiple realisability |
+| Functionalism | The gait *pattern*, portable across bodies | Inverted or absent qualia — same role, different feel? |
+
+Functionalism is the working philosophy of cognitive science and AI:
+if mind is organisation rather than substance, then a sufficiently
+well-organised computer could, in principle, think.
+
+## 6. The Chinese Room
+
+John Searle (1980) imagined himself in a room, shuffling Chinese
+symbols by rule books so clever that outsiders swear the room
+understands Chinese. Searle's claim: he manipulates symbols
+**without understanding a word** — syntax is not semantics.
+
+| Stance | Reply |
+| --- | --- |
+| Systems reply | The *room as a whole*, not the man, understands |
+| Robot reply | Ground the symbols in sensors and action; meaning follows |
+| Searle's counter | Even the whole system still only pushes tokens |
+
+[important]
+The Chinese Room targets **strong AI** — the claim that a correctly
+programmed machine literally *has* a mind — not the practical
+success of AI. It is an argument about whether symbol manipulation
+suffices for understanding, and it remains the reference point for
+every "does the chatbot really mean it?" debate.
+[/important]
+
+## 7. Zombies and Qualia
+
+A **philosophical zombie** (Chalmers) is a molecule-for-molecule
+duplicate of you with no inner experience at all — it behaves,
+speaks of pain, writes poems, and yet *nothing is like anything* for
+it. If such a being is genuinely conceivable, Chalmers argues, then
+experience is an extra fact over and above the physical — a lever
+against physicalism.
+
+**Qualia** are the felt qualities of experience: the redness of red,
+the sting of chilli. Frank Jackson's **knowledge argument**: Mary,
+the colour scientist raised in a black-and-white room, knows every
+physical fact about colour — yet on first seeing red she seems to
+learn something new. So, the argument concludes, physical facts do
+not exhaust the mental.
+
+| Objection to Mary | Reply |
+| --- | --- |
+| She gains an *ability*, not knowledge (ability hypothesis) | But knowing *what red is like* seems to be knowledge |
+| She gains acquaintance, not new facts | Then what counts as "a fact" reopens the whole case |
+
+## 8. The Hard Problem — and What AI Forces Us to Decide
+
+David Chalmers (1995) split the science of mind in two. **Easy
+problems** — attention, memory, behavioural report, self-modelling —
+are hard engineering but tractable: explain the mechanisms and you
+are done. The **hard problem** asks why any of that processing is
+*accompanied by experience at all*.
+
+| Position | Answer to the hard problem |
+| --- | --- |
+| Physicalism | Experience is physical; the apparent gap is conceptual |
+| Illusionism (Frankish) | There is nothing to explain — the "phenomenal" is a user illusion |
+| Panpsychism | Experience is a fundamental feature of matter itself |
+| Dualism | Experience is non-physical; the hard problem is real |
+
+AI sharpens the question from speculation into engineering. Large
+language models pass behavioural tests no zombie could fail —
+reporting, reasoning, pleading — yet whether there is "something it
+is like" to be one is precisely what functionalism says yes to and
+Searle says no to. Our theories of mind are no longer academic: they
+govern how we treat machines, and how we treat each other when
+neuroscience can read brains.
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Mind–body problem | How does felt experience relate to physical brains? |
+| Descartes | Two substances; killer objection: interaction |
+| Behaviourism | Mind = dispositions to behave; dead as definition, alive as method |
+| Functionalism | Mental states = causal roles; multiply realisable |
+| Chinese Room | Syntax is not semantics — targets strong AI |
+| Hard problem | Why is processing accompanied by experience at all? |

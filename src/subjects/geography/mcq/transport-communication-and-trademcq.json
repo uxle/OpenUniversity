@@ -1,0 +1,76 @@
+{
+  "lessonId": "transport-communication-and-trade",
+  "title": "Transport, Communication, and Trade: Connecting People and Markets",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Golden Quadrilateral connects which four metropolitan cities?",
+      "options": ["Delhi, Jaipur, Ahmedabad, Mumbai", "Kolkata, Patna, Varanasi, Delhi", "Delhi, Mumbai, Chennai, Kolkata", "Chennai, Bengaluru, Hyderabad, Mumbai"],
+      "correct": 2,
+      "rationale": "The Golden Quadrilateral is a roughly 5,800 km express loop joining Delhi, Mumbai, Chennai, and Kolkata."
+    },
+    {
+      "id": 2,
+      "question": "Under India's highway numbering, odd-numbered National Highways generally run:",
+      "options": ["East to west", "North to south", "In concentric rings", "Only within one state"],
+      "correct": 1,
+      "rationale": "Odd numbers mark north-south routes increasing from east to west, while even numbers mark east-west routes increasing from north to south."
+    },
+    {
+      "id": 3,
+      "question": "India's first passenger train ran in 1853 between:",
+      "options": ["Bombay and Thane", "Howrah and Delhi", "Chennai and Arkonam", "Kolkata and Haldia"],
+      "correct": 0,
+      "rationale": "On 16 April 1853 the first train covered the 34 km from Bori Bunder in Bombay to Thane."
+    },
+    {
+      "id": 4,
+      "question": "The broad gauge of Indian Railways measures:",
+      "options": ["1.000 metre", "0.762 metre", "2.500 metres", "1.676 metres"],
+      "correct": 3,
+      "rationale": "Broad gauge is 1.676 m; metre gauge is 1.000 m and narrow gauge about 0.762 m, all converging under Project Unigauge."
+    },
+    {
+      "id": 5,
+      "question": "National Waterway-1, about 1,620 km long, runs along which river?",
+      "options": ["Brahmaputra", "Godavari", "Ganga", "Mahanadi"],
+      "correct": 2,
+      "rationale": "NW-1 stretches from Prayagraj to Haldia on the Ganga; NW-2 is on the Brahmaputra and NW-3 in Kerala."
+    },
+    {
+      "id": 6,
+      "question": "Which is India's largest natural harbour?",
+      "options": ["Kandla", "Mumbai", "Kochi", "Paradip"],
+      "correct": 1,
+      "rationale": "Mumbai port is the largest natural harbour; Nhava Sheva beside it handles the most containers."
+    },
+    {
+      "id": 7,
+      "question": "Roughly what share of India's overseas trade by volume moves by sea?",
+      "options": ["About 95 percent", "About 50 percent", "About 30 percent", "About 10 percent"],
+      "correct": 0,
+      "rationale": "Ocean shipping carries around 95 percent of trade by volume, which is why ports sit at the heart of trade policy."
+    },
+    {
+      "id": 8,
+      "question": "The Hazira-Vijaipur-Jagdishpur (HVJ) pipeline is famous for carrying:",
+      "options": ["Crude iron ore slurry", "Kerosene to villages", "Coal gas for steel plants", "Natural gas to fertilizer plants"],
+      "correct": 3,
+      "rationale": "The HVJ system moves natural gas from Hazira across the country, feeding fertilizer and industrial units."
+    },
+    {
+      "id": 9,
+      "question": "The six-digit PIN code of the Indian postal system was introduced in:",
+      "options": ["1947", "1972", "1985", "1991"],
+      "correct": 1,
+      "rationale": "The Postal Index Number code dates to 1972; its digits run from region and sub-region to the sorting district and post office."
+    },
+    {
+      "id": 10,
+      "question": "Which single item tops India's import bill?",
+      "options": ["Rice", "Gems and jewellery", "Crude petroleum", "Tea"],
+      "correct": 2,
+      "rationale": "Crude petroleum is the largest import, a key reason the goods trade balance stays negative despite strong exports."
+    }
+  ]
+}

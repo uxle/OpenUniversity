@@ -1,0 +1,15 @@
+# Cybersecurity
+
+@subject {
+  id: cybersecurity
+  parent: computer-science
+  title: "Cybersecurity"
+  description: "How systems and users are attacked, and the principles — CIA triad, cryptography, defence in depth — that keep them safe."
+}
+
+@lessons {
+  cybersecurity-fundamentals
+  cryptography-basics
+  network-attacks-and-defence
+  digital-safety-and-digital-footprint
+}

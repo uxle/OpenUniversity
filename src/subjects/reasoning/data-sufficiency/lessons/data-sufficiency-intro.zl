@@ -1,0 +1,270 @@
+# Data Sufficiency: Deciding With Less
+
+> Data sufficiency flips the usual exam game: the answer itself is not the
+> goal — deciding whether the given information is enough to reach it is.
+> This lesson builds the option logic, the AD/BCE fork, and the discipline
+> of deciding without solving.
+
+[important]
+Data sufficiency measures a decision, not a computation. Every question
+asks one thing: does the information pin down a unique answer? You win
+by classifying the data quickly, and you lose by solving for values the
+options never ask for.
+[/important]
+
+## 1. What Data Sufficiency Tests
+
+[definition]
+**Data sufficiency (DS)** is a question format that presents a stem with an
+unknown — a value, a yes/no fact, or a relationship — followed by two
+statements, I and II. Your task is to judge whether the stem can be
+answered *uniquely* using I alone, II alone, both, or neither.
+[/definition]
+
+Every DS question has three parts:
+
+| Part | What it does | Example |
+| --- | --- | --- |
+| Stem | states the unknown precisely | What is Ravi's present age? |
+| Statement I | adds one piece of data | Ravi is 12 years older than Meena. |
+| Statement II | adds a second piece | Five years ago Meena was half of Ravi's age. |
+
+The skills being tested are narrow and trainable:
+
+- reading the stem precisely — what exactly is unknown?
+- translating each statement into constraints (equations, positions, relations)
+- counting constraints against unknowns
+- resisting the urge to compute the final value
+
+[tip]
+Say the stem as a question with a blank in it. "What is Ravi's age?" has
+one blank. "Is Ravi older than Meena?" has a yes/no blank. The kind of
+blank decides what *counts* as sufficient data.
+[/tip]
+
+## 2. The Two Option Families
+
+Exams phrase the five possible verdicts in two standard ways. Learn both
+by heart — misreading an option line is the cheapest way to lose a mark
+in this topic.
+
+| Verdict | Older / SSC-style wording | Banking / newer wording |
+| --- | --- | --- |
+| I alone works | If statement I alone is sufficient but II alone is not | Statement I alone is sufficient, II is not |
+| II alone works | If statement II alone is sufficient but I alone is not | Statement II alone is sufficient, I is not |
+| Either alone works | If either statement alone is sufficient | Either statement alone is sufficient |
+| Both needed | If both statements together are needed | Both statements together are needed |
+| Neither works | If neither statement is sufficient | Neither is sufficient even together |
+
+Older papers keep four options and fold "neither" away; newer banking
+papers often carry five options including "neither". Either way, the
+*decision ladder* behind the options never changes.
+
+[note]
+The two statements are always true and never contradict each other in a
+well-formed question. If your reading of I clashes with your reading of
+II, re-read the stem before suspecting the paper.
+[/note]
+
+## 3. The AD/BCE Fork: Always Test Statement I First
+
+The single biggest time-saver in DS is a fixed order of testing. Check
+**statement I alone first**, then **statement II alone**, then combine.
+This order creates the classic **AD/BCE fork**:
+
+- If I alone is sufficient, the answer can only be **A** (I alone) or
+  **D** (both needed) — II no longer matters for the verdict, only for
+  the split between A and D.
+- If I alone is *not* sufficient, the answer must be **B**, **C** or
+  **E** — and D is eliminated instantly.
+
+@diagram flowchart id="ds-decision-flow" layout="hierarchical" aria="Data sufficiency decision process from stem to final option"
+node start label="Read the stem: know the exact blank" shape="pill"
+node s1 label="Is I alone sufficient?" shape="diamond"
+node s2 label="Is II alone sufficient?" shape="diamond"
+node both label="Are I and II together sufficient?" shape="diamond"
+node a label="Answer: I alone" shape="round-rect"
+node b label="Answer: II alone" shape="round-rect"
+node d label="Answer: both together" shape="round-rect"
+node e label="Answer: neither" shape="round-rect"
+
+start -> s1
+s1 -> a
+s1 -> s2
+s2 -> b
+s2 -> both
+both -> d
+both -> e
+@/diagram
+
+[definition]
+The **AD/BCE fork** is the priority ladder of data sufficiency: test I
+alone before II, and let the first result cut the option list roughly in
+half before you look at the second statement.
+[/definition]
+
+Notice what the fork does *not* say. It never asks you to find the
+actual answer — only whether each branch pins the stem down uniquely.
+
+## 4. Sufficiency Is Not Solving
+
+The most expensive habit in DS is solving completely. Consider:
+
+**What is the value of x?**
+- **I.** 3x + 2y = 18
+- **II.** y is a positive integer
+
+Statement I has one equation and two unknowns — structurally it cannot
+pin x, no matter how pretty the numbers look. You can declare I
+insufficient in about five seconds without computing anything. Statement
+II says nothing about the link between x and y by itself. Together?
+For *every* positive integer y there is an x = (18 − 2y)/3, and several
+values work — so not even both suffice.
+
+[warning]
+The "solve everything" trap: candidates who begin by solving for x and y
+burn two minutes per question and still misclassify. The exam pays for
+the verdict — *sufficient or not* — never for the value.
+[/warning]
+
+The reverse also holds: when data *is* sufficient, you may never learn
+the value. If I says x is the number of days in February in a leap year,
+you can mark "I alone" and move on; the value 29 is irrelevant to the
+option chosen.
+
+## 5. The DS Topic Tree
+
+DS questions pull their content from a short list of families. Knowing
+the family tells you which *type* of check to run — equation counting
+for arithmetic, uniqueness of arrangement for reasoning.
+
+@diagram tree id="ds-family-tree" layout="tree" aria="Families of data sufficiency questions"
+  "Data sufficiency" -> "Arithmetic DS"
+  "Data sufficiency" -> "Reasoning DS"
+  "Arithmetic DS" -> "Ages"
+  "Arithmetic DS" -> "Percentages"
+  "Arithmetic DS" -> "Ratio, profit-loss, TSD"
+  "Arithmetic DS" -> "Simple equations"
+  "Reasoning DS" -> "Seating and puzzles"
+  "Reasoning DS" -> "Blood relations"
+  "Reasoning DS" -> "Coding-decoding"
+  "Reasoning DS" -> "Ordering and ranking"
+@/diagram
+
+Arithmetic DS asks "do the equations determine the numbers?" and is
+covered in the next lesson. Reasoning DS asks "do the clues determine a
+unique arrangement, code or relation?" and is covered in the third.
+
+## 6. Reading the Stem: What Counts as an Answer
+
+Sufficiency means *uniqueness*, and uniqueness depends on the kind of
+blank the stem leaves.
+
+| Stem type | Sufficient means | Example of a unique answer |
+| --- | --- | --- |
+| Value ("What is x?") | exactly one value possible | x = 63, never x = 63 or 36 |
+| Yes/No ("Is x > 5?") | a definite yes or a definite no | "definitely no" is fully sufficient |
+| Relation ("How are A and B related?") | one named relation | uncle, not "uncle or aunt" |
+| Count ("How many are between them?") | one number | 6, never 6 or 8 |
+
+[definition]
+A statement is **sufficient** when the stem's answer is forced to a
+single possibility; it is **insufficient** when at least two different
+answers remain possible, even if you personally cannot construct them.
+[/definition]
+
+Two hidden assumptions appear again and again: ages move in whole years
+unless stated otherwise, and "two-digit number" means the ten's digit is
+at least 1. Good candidates spend their first five seconds on the stem
+exactly because such phrases change the verdict.
+
+## 7. Two Quick Walkthroughs
+
+**Walkthrough 1 — a yes/no stem.** Is x greater than 5?
+- **I.** x > 7
+- **II.** x > 3
+
+Statement I forces x past 7, so "yes" is certain — I alone is
+sufficient. Statement II leaves x = 4 (no) and x = 6 (yes) both alive —
+insufficient. The AD/BCE fork says: I worked, so the answer is I alone.
+No value of x was ever needed.
+
+**Walkthrough 2 — a value stem.** What is the two-digit number?
+- **I.** The sum of its digits is 9.
+- **II.** The ten's digit exceeds the unit's digit by 3.
+
+I alone allows 18, 27, 36, 45, 54, 63, 72, 81, 90 — insufficient. II
+alone allows 30, 41, 52, 63, 74, 85, 96 — insufficient. Together, only
+63 appears in both lists — both statements are needed. Notice the
+technique: we never derived the digits; we intersected two possibility
+lists.
+
+[example]
+Exam method: **(1)** restate the stem as a blank, **(2)** test I alone
+against the blank, **(3)** test II alone, **(4)** combine only if both
+alone failed, **(5)** mark the option the ladder lands on.
+[/example]
+
+## 8. Traps, Timing and Exam Craft
+
+A well-set DS paper spreads its answers across the options, so pattern
+guessing ("both is safest") has no edge. A typical 40-question set looks
+roughly like this:
+
+@chart donut title="Typical answer spread in a 40-question DS set (illustrative)" labels:
+I alone
+II alone
+Either alone
+Both together
+Neither
+
+data:
+10
+8
+9
+11
+2
+@/chart
+
+| Trap | What it looks like | Defence |
+| --- | --- | --- |
+| "I looks easier" bias | jumping to mark I-related options | judge each statement on constraints, not looks |
+| Solving completely | deriving x, y, z before answering | ask "can two answers survive?" instead |
+| Marking "both" too early | I failed, so you combine without checking II alone | statement II may finish the job by itself |
+| Yes/no stems read wrongly | treating "definitely no" as insufficient | a forced answer of either polarity is sufficient |
+| Hidden assumptions missed | ignoring "whole years", "distinct digits", "facing north" | re-read the stem before marking |
+
+[tip]
+Budget **30–45 seconds per DS question**. The decision ladder is short
+by design: five seconds on the stem, fifteen on statement I, ten on
+statement II, ten on combining or marking. If a statement needs a full
+page of algebra to even assess, you are usually solving when you should
+be counting.
+[/tip]
+
+[warning]
+Never mark "both statements together" merely because each statement
+alone failed. Two insufficient statements can still fail together — one
+equation and one unrelated fact determine nothing, no matter how you
+pair them.
+[/warning]
+
+## 9. Quick Revision
+
+| Point | One-line recap |
+| --- | --- |
+| Core skill | decide if data pins a unique answer, not compute it |
+| Priority ladder | I alone, then II alone, then combine |
+| AD/BCE fork | I sufficient: A or D; I insufficient: B, C or E |
+| Sufficient | exactly one answer survives the stem's blank |
+| Yes/no stems | definite yes *or* definite no both count |
+| Option families | older 4-option and newer 5-option wordings |
+| Time budget | 30–45 seconds per question |
+| Biggest trap | solving for values instead of counting possibilities |
+
+[summary]
+Data sufficiency is a classification game. Read the stem, test statement
+I alone, test statement II alone, combine only when forced, and mark the
+verdict the ladder produces. Sufficiency is about uniqueness of the
+answer — never about the answer's value.
+[/summary]

@@ -1,0 +1,168 @@
+# Mineral and Energy Resources of India
+
+> Under India's fields and seabed lie the ores, coal seams, oil pools,
+> and energy flows that power its industry. This lesson classifies these
+> resources, locates the chief belts, and weighs conventional against
+> renewable sources.
+
+## 1. Reading the Subsurface Wealth
+
+[definition]
+A **mineral** is a naturally occurring substance with a definite
+chemical composition that can be mined for profit; an **energy
+resource** is any material or natural flow used to generate power.
+[/definition]
+
+@diagram tree id="resource-families" layout="tree" aria="Classification of mineral and energy resources"
+  "Mineral and energy resources" -> "Metallic minerals"
+  "Mineral and energy resources" -> "Non-metallic minerals"
+  "Mineral and energy resources" -> "Conventional energy"
+  "Mineral and energy resources" -> "Non-conventional energy"
+  "Metallic minerals" -> "Ferrous: iron ore and manganese"
+  "Metallic minerals" -> "Non-ferrous: bauxite, copper, gold"
+  "Non-metallic minerals" -> "Mica, limestone, gypsum"
+  "Conventional energy" -> "Coal, petroleum, natural gas"
+  "Conventional energy" -> "Hydro and nuclear power"
+  "Non-conventional energy" -> "Solar, wind, tidal, geothermal, biomass"
+@/diagram
+
+[tip]
+**Ferrous** minerals contain iron and give the steel industry its
+backbone; **non-ferrous** minerals such as bauxite and copper supply
+lighter metals and electrical wiring.
+[/tip]
+
+## 2. Iron Ore and Manganese: The Ferrous Backbone
+
+Iron occurs as magnetite (the finest ore, up to about 70 percent
+iron), haematite (50-60 percent iron and the most used), limonite,
+and siderite.
+
+| Belt | Region | Notable centres |
+| --- | --- | --- |
+| Odisha-Jharkhand | Eastern plateau | Badampahar, Mayurbhanj, Singhbhum |
+| Durg-Bastar-Chandrapur | Chhattisgarh and Maharashtra | Bailadila hills, ore railed to Visakhapatnam for export |
+| Ballari-Chitradurga | Karnataka | Kudremukh deposits, mining halted in 2005 for ecological reasons |
+| Maharashtra-Goa | Western coast | Ratnagiri and North Goa |
+
+- Odisha is India's largest iron ore producer, followed by
+  Chhattisgarh and Karnataka.
+- **Manganese**, a ferro-alloy that hardens steel, is mined chiefly
+  in Odisha, Karnataka, and Madhya Pradesh.
+
+[important]
+Bailadila's high-grade haematite travels by rail to Visakhapatnam and
+sails out as export cargo — a neat example of a resource belt, a rail
+corridor, and a port forming one economic chain.
+[/important]
+
+## 3. Non-Ferrous and Non-Metallic Minerals
+
+| Mineral | Uses | Chief areas |
+| --- | --- | --- |
+| Bauxite | Ore of the light, corrosion-proof metal aluminium | Odisha (Kalahandi, Koraput), Gujarat, Amarkantak plateau |
+| Copper | Wiring and alloys | Khetri (Rajasthan), Balaghat (Madhya Pradesh), Singhbhum (Jharkhand) |
+| Mica | Electrical insulation in the electronics industry | Koderma belt (Jharkhand), Nellore (Andhra Pradesh) |
+| Limestone | Cement making and flux in smelting | Widespread in Rajasthan, Andhra Pradesh, Gujarat |
+| Gold | Jewellery and finance | Hutti (Karnataka); the Kolar mines closed in 2001 |
+| Diamond | Gem cutting | Panna (Madhya Pradesh) |
+
+[example]
+India imports most of its copper and gold but is nearly
+self-sufficient in iron ore, bauxite, and mica — a pattern that
+shapes both its export basket and its import bill.
+[/example]
+
+## 4. Coal: The Gondwana Gift
+
+- About 98 percent of India's coal reserves lie in **Gondwana** rocks
+  of the Damodar, Son, Godavari, and Mahanadi valleys, mostly
+  metallurgical bituminous coal formed some 200 million years ago.
+- **Jharia** in Jharkhand holds the richest coking coal; other great
+  fields are Bokaro, Raniganj (West Bengal, mined since 1774),
+  Talcher, and Korba.
+- **Tertiary** coals of Meghalaya, Assam, and Arunachal are young,
+  high in sulphur, and fit mainly for power; **lignite** is dug at
+  Neyveli in Tamil Nadu.
+
+## 5. Petroleum, Natural Gas, and Electricity
+
+| Source | Leading sites | Note |
+| --- | --- | --- |
+| Petroleum | Digboi (oldest refinery, 1901), Mumbai High offshore field, Ankleshwar and Kalol in Gujarat, Krishna-Godavari basin | Jamnagar hosts one of the world's largest refinery complexes |
+| Natural gas | Mumbai High, Bassein, Krishna-Godavari basin | Carried by the Hazira-Vijaipur-Jagdishpur pipeline; fertiliser feedstock |
+| Thermal power | Coal-fired stations sited near mines | Produce the bulk of India's electricity |
+| Hydro power | Bhakra (Sutlej), Hirakud (Mahanadi), Nagarjuna Sagar (Krishna), Tehri (Bhagirathi), India's highest dam | Clean but monsoon-dependent |
+| Nuclear | Tarapur, Rawatbhata, Kalpakkam, Kakrapar, Narora, Kaiga, Kudankulam | Uranium from Jaduguda; thorium from Kerala's monazite sands |
+
+@chart donut title="Approximate share of installed power capacity" labels:
+Coal and lignite
+Renewables (solar and wind)
+Large hydro
+Natural gas
+Nuclear and others
+
+data:
+49
+30
+11
+6
+4
+@/chart
+
+[warning]
+Coal-fired plants emit ash and greenhouse gases, so India is shifting
+capacity toward solar and wind while fitting supercritical boilers
+and flue-gas scrubbers to clean up the coal generation it keeps.
+[/warning]
+
+## 6. Renewable Energy: Solar, Wind, and Beyond
+
+- **Solar**: the Bhadla park in Rajasthan is among the world's
+  largest; the National Solar Mission (2010) and the target of about
+  500 GW of non-fossil capacity by 2030 drive rooftop and park
+  projects.
+- **Wind**: Tamil Nadu (Muppandal), Gujarat, and Maharashtra lead,
+  helped by passes along the Western Ghats that funnel strong coastal
+  winds inland.
+- **Biomass and biogas**: gobar gas plants turn farm waste into
+  cooking fuel and leave slurry that serves as manure.
+- **Tidal and geothermal potential**: the Gulf of Kachchh and the
+  Sundarbans for tides; hot springs at Manikaran (Himachal Pradesh)
+  and the Puga valley (Ladakh) for geothermal heat.
+
+[info]
+Rapid deployment has made India one of the world's largest markets
+for renewable capacity additions, and solar tariffs have fallen by
+more than three-fourths in a decade.
+[/info]
+
+## 7. Conservation: Stretching Every Unit
+
+- Recycle scrap metal — recycled aluminium consumes far less energy
+  than smelting fresh metal from bauxite.
+- Use low-grade ores and better technology so leaner deposits become
+  viable instead of being abandoned as waste.
+- Adopt energy-efficient appliances (BEE star labels), LED lighting,
+  and public transport to cut demand at the source.
+- Mine under environmental clearance with reclamation and safety
+  laws, so future generations keep their share — the essence of
+  **sustainable development**.
+
+[example]
+The UJALA scheme distributed hundreds of millions of LED bulbs,
+saving kilowatt-hours at national scale — proof that conservation is
+the cheapest new power plant a country can build.
+[/example]
+
+## 8. Quick Revision
+
+| Resource | Leading areas | Key fact |
+| --- | --- | --- |
+| Iron ore | Odisha, Chhattisgarh, Karnataka | Magnetite runs up to about 70 percent iron |
+| Bauxite | Odisha and Gujarat | Ore of aluminium; smelting needs cheap power |
+| Coal | Jharia, Bokaro, Raniganj, Talcher | Gondwana coking coal of the Damodar valley |
+| Petroleum | Mumbai High, Digboi, Ankleshwar | Crude refined at Jamnagar, Mathura, Barauni |
+| Nuclear | Tarapur to Kudankulam | Thorium reserves from Kerala's monazite sands |
+| Solar | Bhadla, Rajasthan | National Solar Mission, 2010 |
+| Wind | Muppandal, Tamil Nadu | West-coast passes funnel strong winds |

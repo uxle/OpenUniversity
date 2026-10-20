@@ -1,0 +1,126 @@
+{
+  "lessonId": "verbal-reasoning-intro",
+  "title": "Verbal Reasoning: Words, Statements, and Inference",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What exactly does a Statement and Assumption question ask you to judge?",
+      "options": [
+        "The claim that definitely follows after the statement",
+        "The unstated premise the author must believe for the statement to make sense",
+        "Which of two events caused the other",
+        "Whether the statement is factually true in the real world"
+      ],
+      "correct": 1,
+      "rationale": "An assumption is the hidden premise the author must already believe before writing the statement. Conclusions and causes are different judgement families, and the real-world truth of the statement is never in question."
+    },
+    {
+      "id": 2,
+      "question": "In exam logic, the statement \"some students are athletes\" guarantees which of the following?",
+      "options": [
+        "Some students are not athletes",
+        "All students are athletes",
+        "At least one student is an athlete — and it is still possible that all students are athletes",
+        "No students are athletes"
+      ],
+      "correct": 2,
+      "rationale": "\"Some\" means only \"at least one\"; it never denies the possibility that \"all\" holds. Reading \"some\" as \"some but not all\" is the classic verbal reasoning error."
+    },
+    {
+      "id": 3,
+      "question": "An option that introduces a new fact the statement never mentioned receives which verdict in the elimination method?",
+      "options": [
+        "Supported",
+        "Contradicted",
+        "Either follows or not",
+        "Out of scope"
+      ],
+      "correct": 3,
+      "rationale": "Options are tested as Supported, Contradicted, or Out of scope. An option that invents facts the statement is silent about is out of scope and must be eliminated."
+    },
+    {
+      "id": 4,
+      "question": "Statement: \"Only members may enter the reading room.\" Which option definitely follows?",
+      "options": [
+        "Non-members may not enter the reading room",
+        "Members may not use the other rooms",
+        "All visitors to the building are members",
+        "The reading room is always full of members"
+      ],
+      "correct": 0,
+      "rationale": "\"Only members\" makes membership a necessary condition, so anyone who is not a member is excluded — option A is the exact meaning. The other options add facts about other rooms, visitors, or crowds that the statement never gives."
+    },
+    {
+      "id": 5,
+      "question": "Statement: \"Regular exercise may reduce the risk of heart disease.\" Why is the option \"Regular exercise will reduce the risk of heart disease\" wrong?",
+      "options": [
+        "It reverses the direction of the claim",
+        "It upgrades \"may\" (possibility) into \"will\" (certainty)",
+        "It contradicts the statement outright",
+        "It is true in the real world, so it cannot be tested"
+      ],
+      "correct": 1,
+      "rationale": "A supported option must match the statement's strength or be weaker. Converting a possibility (may) into a certainty (will) strengthens the claim, so the option fails."
+    },
+    {
+      "id": 6,
+      "question": "Which term describes a belief that is hidden but required before the statement makes sense?",
+      "options": [
+        "Conclusion",
+        "Inference",
+        "Assumption",
+        "Implication"
+      ],
+      "correct": 2,
+      "rationale": "An assumption lives before the statement — the author must believe it for the text to work. Conclusions and inferences come after the statement, and an implication is only a suggestion inside the wording."
+    },
+    {
+      "id": 7,
+      "question": "Based on the typical exam distribution, which verbal topic usually carries the most questions in the reasoning section?",
+      "options": [
+        "Statement and Conclusion",
+        "Cause and Effect",
+        "Statement and Argument",
+        "Course of Action"
+      ],
+      "correct": 0,
+      "rationale": "The lesson's bar chart shows Statement and Conclusion with the largest typical share (about 5 questions). It is also the topic where elimination removes wrong options fastest."
+    },
+    {
+      "id": 8,
+      "question": "In the statement \"Only graduates are eligible for this post\", the word \"only\" establishes graduation as:",
+      "options": [
+        "A sufficient condition — every graduate is eligible",
+        "A necessary condition — a non-graduate is not eligible",
+        "Both necessary and sufficient",
+        "An irrelevant detail about the post"
+      ],
+      "correct": 1,
+      "rationale": "\"Only X\" makes X necessary: no one outside X qualifies. But necessary is not sufficient — graduates may still fail other requirements, so option A overstates what \"only\" gives."
+    },
+    {
+      "id": 9,
+      "question": "Which single verdict must an option receive in order to be accepted as correct?",
+      "options": [
+        "Contradicted",
+        "Out of scope",
+        "Supported",
+        "Plausible in real life"
+      ],
+      "correct": 2,
+      "rationale": "Only options fully supported by the statement's exact wording survive. Contradicted and out-of-scope options are eliminated, and real-world plausibility is never a test."
+    },
+    {
+      "id": 10,
+      "question": "For the statement \"You should carry an umbrella — the forecast says rain\", the belief \"the forecast is generally reliable\" is:",
+      "options": [
+        "The conclusion",
+        "The implication",
+        "An out-of-scope fact",
+        "The assumption"
+      ],
+      "correct": 3,
+      "rationale": "The advice only makes sense if the speaker trusts the forecast — an unstated premise needed before the statement works, which is exactly an assumption. The conclusion is the advice itself, stated after the text."
+    }
+  ]
+}

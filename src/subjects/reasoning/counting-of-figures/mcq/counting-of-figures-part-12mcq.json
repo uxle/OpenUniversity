@@ -6,12 +6,12 @@
       "id": 1,
       "question": "In a figure-counting question, what does 'counting of figures' ask you to determine?",
       "options": [
-        "The number of colors used in the diagram",
         "The total number of valid geometrical figures hidden inside a larger diagram",
+        "The number of colors used in the diagram",
         "Only the number of triangles, regardless of other shapes",
         "The perimeter of the largest shape"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Figure-counting questions ask for the total count of every valid figure (of a given type, or of all types) contained within a larger composite diagram, not just a single shape category or a measurement."
     },
     {
@@ -19,12 +19,12 @@
       "question": "For counting triangles formed by n non-parallel, non-concurrent lines through common intersection points, why is a systematic combinatorial count more reliable than counting by eye?",
       "options": [
         "Combinatorial counting is always faster to write out",
-        "Complex figures often contain overlapping figures made of combined smaller ones, which are easy to miss by visual scanning alone",
         "Visual counting is never allowed in exams",
+        "Complex figures often contain overlapping figures made of combined smaller ones, which are easy to miss by visual scanning alone",
         "Only combinatorial counts are considered valid answers"
       ],
-      "correct": 1,
-      "rationale": "Larger composite figures often include figures formed by combining smaller adjacent regions, which are easy to overlook by eye \u2014 a systematic, formula- or pattern-based count catches these combined figures reliably."
+      "correct": 2,
+      "rationale": "Larger composite figures often include figures formed by combining smaller adjacent regions, which are easy to overlook by eye — a systematic, formula- or pattern-based count catches these combined figures reliably."
     },
     {
       "id": 3,
@@ -36,29 +36,29 @@
         "Multiply the number of lines by the number of colors used"
       ],
       "correct": 1,
-      "rationale": "A reliable approach counts figures level by level \u2014 single smallest regions first, then combinations of two adjacent regions, then three, and so on \u2014 so no combined figure is missed."
+      "rationale": "A reliable approach counts figures level by level — single smallest regions first, then combinations of two adjacent regions, then three, and so on — so no combined figure is missed."
     },
     {
       "id": 4,
       "question": "Why is it useful to build a 'mental model' or systematic labeling of a figure's regions before counting, rather than scanning the whole diagram at once?",
       "options": [
-        "It isn't useful \u2014 direct scanning is always faster and equally accurate",
-        "Labeling regions lets you track exactly which combinations you have already counted, avoiding both missed and double-counted figures",
+        "It isn't useful — direct scanning is always faster and equally accurate",
+        "It replaces the need to look at the diagram at all",
         "Labeling is only useful for counting squares, not triangles",
-        "It replaces the need to look at the diagram at all"
+        "Labeling regions lets you track exactly which combinations you have already counted, avoiding both missed and double-counted figures"
       ],
-      "correct": 1,
-      "rationale": "Without a systematic labeling or region-tracking approach, it's easy to either miss a valid combined figure or count the same figure twice \u2014 a mental model or explicit labeling keeps the count accurate."
+      "correct": 3,
+      "rationale": "Without a systematic labeling or region-tracking approach, it's easy to either miss a valid combined figure or count the same figure twice — a mental model or explicit labeling keeps the count accurate."
     },
     {
       "question": "What is the purpose of building a 'mental model' for figure counting, as emphasized at the very end of this lesson?",
       "options": [
-        "To avoid ever practicing with real examples",
         "To internalize the systematic counting process well enough to apply it quickly and reliably without needing to consciously re-derive each step",
+        "To avoid ever practicing with real examples",
         "To replace the need for any formulas whatsoever",
         "To only apply to the very simplest figures"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A well-internalized mental model lets the systematic counting process be applied quickly and reliably, without consciously re-deriving each individual step every time.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What is likely meant by the lesson's 'ultimate rule' for figure counting, given its recurring theme throughout?",
       "options": [
         "Always guess the largest possible number",
-        "Never count a figure without being able to justify its complete, valid boundary \u2014 visual impression alone is not sufficient",
         "Only count figures that are perfectly symmetric",
+        "Never count a figure without being able to justify its complete, valid boundary — visual impression alone is not sufficient",
         "Ignore any figure with more than four sides"
       ],
-      "correct": 1,
-      "rationale": "Consistent with the lesson's recurring theme, the ultimate rule is that every counted figure must have a justifiable, complete boundary \u2014 visual impression alone isn't sufficient grounds to count it.",
+      "correct": 2,
+      "rationale": "Consistent with the lesson's recurring theme, the ultimate rule is that every counted figure must have a justifiable, complete boundary — visual impression alone isn't sufficient grounds to count it.",
       "id": 6
     },
     {
@@ -90,36 +90,36 @@
       "question": "What is the benefit of condensing multiple formulas into 'one-line formula memory' aids?",
       "options": [
         "It has no practical benefit",
-        "It makes the most essential formulas fast to recall exactly when needed, without searching back through the full lesson",
+        "It only works for the segment-counting formula",
         "It replaces the need to understand why each formula works",
-        "It only works for the segment-counting formula"
+        "It makes the most essential formulas fast to recall exactly when needed, without searching back through the full lesson"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Compact one-line memory aids make it fast to recall an essential formula in the moment, without needing to search back through the entire lesson to find it.",
       "id": 8
     },
     {
       "question": "Why does this lesson end with condensed memory aids (mental model, ultimate rule, revision map) rather than new formulas?",
       "options": [
-        "Because there was no more content left to teach",
         "Because by this point, all the necessary techniques have already been taught, and the goal is now consolidation and fast recall",
+        "Because there was no more content left to teach",
         "Because formulas are considered unimportant by this stage",
         "Because the lesson ran out of space for more formulas"
       ],
-      "correct": 1,
-      "rationale": "By the end of the lesson, every necessary technique has already been introduced \u2014 the closing sections shift focus to consolidating that material for fast, reliable recall.",
+      "correct": 0,
+      "rationale": "By the end of the lesson, every necessary technique has already been introduced — the closing sections shift focus to consolidating that material for fast, reliable recall.",
       "id": 9
     },
     {
       "question": "According to the lesson's overall progression (from basic definitions to a 'final universal algorithm' and now a mental model), what is the intended learning outcome?",
       "options": [
         "To memorize the lesson word for word",
-        "To be able to reliably and quickly count figures in any diagram using a consistent, internalized systematic method, rather than case-by-case guessing",
         "To only be able to solve the exact practice examples given",
+        "To be able to reliably and quickly count figures in any diagram using a consistent, internalized systematic method, rather than case-by-case guessing",
         "To avoid ever using a formula in practice"
       ],
-      "correct": 1,
-      "rationale": "The overall progression aims to build a reliable, internalized, systematic method for counting figures in any diagram \u2014 not just memorization of the specific examples covered.",
+      "correct": 2,
+      "rationale": "The overall progression aims to build a reliable, internalized, systematic method for counting figures in any diagram — not just memorization of the specific examples covered.",
       "id": 10
     },
     {
@@ -131,19 +131,19 @@
         "Because visually complete figures are always genuinely valid"
       ],
       "correct": 1,
-      "rationale": "A figure can look complete at a glance while actually missing part of its true boundary \u2014 validating it before counting is what catches this and prevents an incorrect count.",
+      "rationale": "A figure can look complete at a glance while actually missing part of its true boundary — validating it before counting is what catches this and prevents an incorrect count.",
       "id": 11
     },
     {
       "question": "What role do the earlier 'practice sets with answers' play in supporting the final 'mental model' stage?",
       "options": [
         "They play no role in building the mental model",
-        "They give hands-on repetition that helps the systematic method become second nature, which is what a reliable mental model requires",
+        "They replace the need for the final revision map",
         "They are only useful for memorizing formulas, not method",
-        "They replace the need for the final revision map"
+        "They give hands-on repetition that helps the systematic method become second nature, which is what a reliable mental model requires"
       ],
-      "correct": 1,
-      "rationale": "Hands-on repetition through the practice sets is what turns the systematic method into something that can be applied quickly and reliably \u2014 exactly what a solid mental model requires.",
+      "correct": 3,
+      "rationale": "Hands-on repetition through the practice sets is what turns the systematic method into something that can be applied quickly and reliably — exactly what a solid mental model requires.",
       "id": 12
     },
     {
@@ -155,7 +155,7 @@
         "Because formulas never actually match any real figure"
       ],
       "correct": 1,
-      "rationale": "A formula's correctness depends on the figure matching its underlying assumptions \u2014 without understanding this, it's easy to misapply a memorized formula to an irregular figure where it doesn't actually hold.",
+      "rationale": "A formula's correctness depends on the figure matching its underlying assumptions — without understanding this, it's easy to misapply a memorized formula to an irregular figure where it doesn't actually hold.",
       "id": 13
     },
     {
@@ -167,7 +167,7 @@
         "That figure counting is only relevant to a narrow set of exam questions"
       ],
       "correct": 1,
-      "rationale": "The chapter's central, recurring lesson is that reliable figure counting comes from systematic, verifiable methods \u2014 formulas where they genuinely apply, and careful manual counting otherwise \u2014 rather than from visual intuition alone.",
+      "rationale": "The chapter's central, recurring lesson is that reliable figure counting comes from systematic, verifiable methods — formulas where they genuinely apply, and careful manual counting otherwise — rather than from visual intuition alone.",
       "id": 14
     }
   ]

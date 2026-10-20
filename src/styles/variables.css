@@ -77,7 +77,11 @@
   /* Typography — "liquid": the ROOT font-size itself is fluid (clamp()),
      so every rem-based size below scales smoothly with viewport width
      with zero per-token clamp() math. Simpler and easier to maintain
-     than clamping each size individually. */
+     than clamping each size individually.
+     Floor is 16px, not 15px: at 15px every 0.75rem label (bottom-nav
+     tabs, badges, form hints) rendered at ~11.3px — below comfortable
+     mobile legibility (and Apple's ~11pt tab-label guidance). 16px floor
+     = 12px floor for xs text, 16px body on the smallest phones. */
   --ou-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
   --ou-font-mono: "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   --ou-fs-xs: 0.75rem;
@@ -106,7 +110,9 @@
   --ou-z-toast: 400;
 }
 
-/* Fluid root size — everything using rem inherits this automatically. */
+/* Fluid root size — everything using rem inherits this automatically.
+   16px floor: see the typography comment above (mobile legibility + it
+   matches the iOS auto-zoom threshold for inputs). */
 html {
-  font-size: clamp(15px, 0.9vw + 10px, 18px);
+  font-size: clamp(16px, 0.9vw + 10px, 18px);
 }

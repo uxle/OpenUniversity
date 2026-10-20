@@ -6,12 +6,12 @@
       "id": 1,
       "question": "In the guide's solving algorithm for dice problems, what is the first step after identifying the labels on each given view?",
       "options": [
-        "Immediately guess the answer from the options",
         "Find any known opposite face pairs across the given views",
+        "Immediately guess the answer from the options",
         "Assume all dice are numbered identically to a standard die",
         "Skip straight to checking rotation"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The solving flowchart moves from identifying labels straight to finding known opposite-face pairs, since opposite pairs (faces that never appear together in any single view) are the most reliable and reusable deduction."
     },
     {
@@ -19,12 +19,12 @@
       "question": "If two faces of a die appear together (both visible) in even one given view, what can you conclude about them?",
       "options": [
         "They must be opposite faces",
-        "They cannot be opposite faces, since opposite faces never appear together in the same view",
         "They are always adjacent to every other face",
+        "They cannot be opposite faces, since opposite faces never appear together in the same view",
         "Nothing can be concluded"
       ],
-      "correct": 1,
-      "rationale": "A standard cube's opposite faces are on parallel sides and can never both be visible in the same single view \u2014 so two faces seen together in one view rule out the possibility that they are opposite."
+      "correct": 2,
+      "rationale": "A standard cube's opposite faces are on parallel sides and can never both be visible in the same single view — so two faces seen together in one view rule out the possibility that they are opposite."
     },
     {
       "id": 3,
@@ -43,22 +43,22 @@
       "question": "When is tracking the die's exact rotation/orientation necessary, according to the solving method?",
       "options": [
         "For every dice question, without exception",
-        "Only when the question requires an exact orientation match, not just an adjacency/opposite-rule check",
-        "Never \u2014 opposite-pair logic alone always suffices",
-        "Only when fewer than two views are given"
+        "Only when fewer than two views are given",
+        "Never — opposite-pair logic alone always suffices",
+        "Only when the question requires an exact orientation match, not just an adjacency/opposite-rule check"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The flowchart branches: if the question only needs an adjacency/opposite-rule answer, that check is enough; full rotation tracking is only needed when an exact orientation match is required."
     },
     {
       "question": "What is the purpose of a 'printable one-page cheat sheet' at the end of this lesson?",
       "options": [
-        "To introduce material not covered elsewhere",
         "To condense every essential dice reasoning rule and formula into a single compact reference for quick review",
+        "To introduce material not covered elsewhere",
         "To replace the need for the practice sets",
         "To only summarize the first two parts of the lesson"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A one-page cheat sheet condenses every essential rule and formula from across the entire lesson into one compact, easily-reviewable reference.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "Why might this lesson include visual diagrams of the cube, its opposite pairs, and its coordinate axes?",
       "options": [
         "Diagrams have no educational value here",
-        "To reinforce the spatial relationships covered throughout the lesson visually, supporting learners who benefit from seeing the structure directly",
         "To replace the need for any written rules",
+        "To reinforce the spatial relationships covered throughout the lesson visually, supporting learners who benefit from seeing the structure directly",
         "Because diagrams are only useful for symbol dice"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Visual diagrams reinforce the spatial relationships already covered in writing, which is especially valuable for learners who benefit from seeing the cube's structure directly.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "What is a 'mental visualization drill' meant to build?",
       "options": [
         "Physical dexterity with real dice",
-        "The ability to mentally rotate and track a die's faces quickly and accurately without needing an external diagram",
+        "Nothing useful for exam performance",
         "Knowledge of dice manufacturing",
-        "Nothing useful for exam performance"
+        "The ability to mentally rotate and track a die's faces quickly and accurately without needing an external diagram"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "These drills build the ability to mentally rotate and track face positions quickly and accurately, without needing to rely on an external diagram every time.",
       "id": 8
     },
     {
       "question": "What is the purpose of a 'final master summary'?",
       "options": [
-        "To introduce entirely new rules",
         "To consolidate every major rule and technique covered across all 10 parts into one comprehensive review",
+        "To introduce entirely new rules",
         "To only summarize the practice sets",
         "To replace the need for the cheat sheet"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A final master summary draws together every major rule and technique from all 10 parts into one comprehensive, consolidated review.",
       "id": 9
     },
@@ -114,11 +114,11 @@
       "question": "What is a 'final memory map' likely intended to show?",
       "options": [
         "A physical map of dice factories",
-        "How all the individual concepts and rules covered throughout the lesson connect to and build on each other",
         "Only the answers to the practice sets",
+        "How all the individual concepts and rules covered throughout the lesson connect to and build on each other",
         "An unrelated diagram"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A memory map shows how all the individual concepts and rules taught throughout the lesson connect together and build on one another, supporting holistic recall.",
       "id": 10
     },
@@ -138,12 +138,12 @@
       "question": "Why does the lesson conclude with visualization drills and a master test rather than new rules?",
       "options": [
         "Because there was no more content to teach at all",
-        "Because by this point, every necessary rule has already been taught, and the focus shifts to consolidation, practice, and self-assessment",
+        "Because the lesson ran out of space",
         "Because rules are considered unimportant at this stage",
-        "Because the lesson ran out of space"
+        "Because by this point, every necessary rule has already been taught, and the focus shifts to consolidation, practice, and self-assessment"
       ],
-      "correct": 1,
-      "rationale": "By the closing sections, every necessary rule has already been introduced \u2014 the focus appropriately shifts to consolidation, applied practice, and self-assessment.",
+      "correct": 3,
+      "rationale": "By the closing sections, every necessary rule has already been introduced — the focus appropriately shifts to consolidation, applied practice, and self-assessment.",
       "id": 12
     },
     {
@@ -155,7 +155,7 @@
         "It only helps with symbol dice, not numbered dice"
       ],
       "correct": 1,
-      "rationale": "Knowing the rules is necessary but not sufficient for speed \u2014 mental visualization practice builds the fluency needed to apply those rules quickly and confidently under real time pressure.",
+      "rationale": "Knowing the rules is necessary but not sufficient for speed — mental visualization practice builds the fluency needed to apply those rules quickly and confidently under real time pressure.",
       "id": 13
     },
     {
@@ -167,7 +167,7 @@
         "That dice reasoning only applies to a narrow set of unusual exam questions"
       ],
       "correct": 1,
-      "rationale": "The chapter's consistent central lesson is that reliable dice reasoning comes from systematically applying the cube's geometric rules, reinforced through deliberate practice \u2014 not from guesswork based on visual impression alone.",
+      "rationale": "The chapter's consistent central lesson is that reliable dice reasoning comes from systematically applying the cube's geometric rules, reinforced through deliberate practice — not from guesswork based on visual impression alone.",
       "id": 14
     }
   ]

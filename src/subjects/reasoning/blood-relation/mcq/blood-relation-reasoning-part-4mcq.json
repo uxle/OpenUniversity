@@ -4,15 +4,15 @@
   "questions": [
     {
       "id": 1,
-      "question": "\"A is B's father. B is C's sister. How is A related to C?\" \u2014 What is A to C?",
+      "question": "\"A is B's father. B is C's sister. How is A related to C?\" — What is A to C?",
       "options": [
-        "Uncle",
         "Father",
+        "Uncle",
         "Grandfather",
         "Brother"
       ],
-      "correct": 1,
-      "rationale": "Since A is B's parent and B and C are siblings, A is also the parent of C \u2014 specifically, A is C's father."
+      "correct": 0,
+      "rationale": "Since A is B's parent and B and C are siblings, A is also the parent of C — specifically, A is C's father."
     },
     {
       "id": 2,
@@ -36,18 +36,18 @@
         "Nephew"
       ],
       "correct": 1,
-      "rationale": "Since Y is Z's child and X is Y's child, Z is X's grandparent \u2014 so X is Z's grandchild."
+      "rationale": "Since Y is Z's child and X is Y's child, Z is X's grandparent — so X is Z's grandchild."
     },
     {
       "id": 4,
       "question": "A good blood-relation reasoning system should separately track which of the following?",
       "options": [
         "Only names and ages",
-        "Generation, gender, marriage, parent-child links, and sibling links",
+        "Only the number of people mentioned",
         "Only first names in alphabetical order",
-        "Only the number of people mentioned"
+        "Generation, gender, marriage, parent-child links, and sibling links"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The lesson stresses tracking generation, gender, marriage, parent-child links, and sibling links separately to reliably build a family graph."
     },
     {
@@ -66,12 +66,12 @@
       "question": "In an ambiguous blood relation problem where a statement could support two different valid family structures, what does the 'best answer strategy' recommend?",
       "options": [
         "Always pick the first option listed",
-        "Choose the answer that holds true in every valid arrangement consistent with the statements, or explicitly flag it as indeterminate if none does",
         "Randomly guess between the two structures",
+        "Choose the answer that holds true in every valid arrangement consistent with the statements, or explicitly flag it as indeterminate if none does",
         "Refuse to answer any ambiguous question"
       ],
-      "correct": 1,
-      "rationale": "When multiple structures are consistent with the given statements, the best-answer strategy is to pick a conclusion only if it holds across every valid arrangement \u2014 the same 'definite vs possible' discipline used in syllogism reasoning.",
+      "correct": 2,
+      "rationale": "When multiple structures are consistent with the given statements, the best-answer strategy is to pick a conclusion only if it holds across every valid arrangement — the same 'definite vs possible' discipline used in syllogism reasoning.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What do 'validation rules' check for in a blood relation solver's final answer?",
       "options": [
         "Spelling of names",
-        "That the derived relation is logically consistent with every statement given, with no contradictions introduced during composition",
+        "Whether the question used the word 'blood relation'",
         "The total number of family members",
-        "Whether the question used the word 'blood relation'"
+        "That the derived relation is logically consistent with every statement given, with no contradictions introduced during composition"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Validation rules check the final derived relation against every original statement to make sure no contradiction was introduced anywhere during the composition process.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "Build the family graph after already answering"
       ],
       "correct": 1,
-      "rationale": "The final solver architecture chains: parse each statement into direct relations, incrementally build the family graph, check for contradictions, compose the requested relation, and validate the result \u2014 in that order.",
+      "rationale": "The final solver architecture chains: parse each statement into direct relations, incrementally build the family graph, check for contradictions, compose the requested relation, and validate the result — in that order.",
       "id": 9
     },
     {

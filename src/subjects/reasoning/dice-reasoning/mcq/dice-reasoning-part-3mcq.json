@@ -1,16 +1,16 @@
 {
   "lessonId": "dice-reasoning-part-3",
-  "title": "Dice Reasoning \u2014 Part 3 of 10",
+  "title": "Dice Reasoning — Part 3 of 10",
   "questions": [
     {
       "question": "What does treating 'rotation as a vector transformation' allow you to do?",
       "options": [
-        "Nothing useful for dice reasoning",
         "Mathematically compute how face directions change after a rotation, rather than visualizing it purely by intuition",
+        "Nothing useful for dice reasoning",
         "Only applies to 2D shapes, not cubes",
         "Eliminates the need to know any cube facts"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Modeling rotation as a vector transformation lets you compute the resulting face directions precisely, rather than relying purely on mental visualization.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is described as 'the most important exam pattern' in dice reasoning?",
       "options": [
         "A single view of a die with no further information",
-        "Being given three different views of the same die and having to deduce hidden face relationships from them",
         "A die with no numbers on it",
+        "Being given three different views of the same die and having to deduce hidden face relationships from them",
         "A question with no valid answer"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The classic and most common exam pattern presents three different views of the same die, requiring the solver to cross-reference them to deduce hidden relationships.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What is the 'opposite-face table method' used for?",
       "options": [
         "Listing every face's color",
-        "Systematically tracking and deducing which face is opposite each other face, based on cross-referencing multiple views",
+        "Randomly assigning opposite pairs",
         "Measuring the cube's dimensions",
-        "Randomly assigning opposite pairs"
+        "Systematically tracking and deducing which face is opposite each other face, based on cross-referencing multiple views"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This method builds a systematic table cross-referencing multiple views to deduce and track which faces are opposite which, rather than guessing.",
       "id": 4
     },
     {
       "question": "What does the 'common face rule' state when comparing two views of a die?",
       "options": [
-        "Two views can never share a common face",
         "If two views share exactly one common face shown in the same position/orientation, that shared face can be used to align and compare the rest of the two views",
+        "Two views can never share a common face",
         "Shared faces always indicate an invalid pair of views",
         "Common faces are irrelevant to solving the problem"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A shared face in the same position across two views acts as an anchor, letting you align and directly compare the remaining faces of both views.",
       "id": 5
     },
     {
-      "question": "Why is the 'same two faces \u2014 detailed explanation' section likely important?",
+      "question": "Why is the 'same two faces — detailed explanation' section likely important?",
       "options": [
         "Because sharing two faces provides no extra information",
-        "Because two views sharing two common faces provide a much stronger constraint for determining the third (differing) faces' relationship than sharing only one",
         "Because two shared faces always means the views are invalid",
+        "Because two views sharing two common faces provide a much stronger constraint for determining the third (differing) faces' relationship than sharing only one",
         "Because it only applies to symbol dice"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Sharing two common faces between views is a much stronger constraint than sharing just one, since it more tightly pins down the possible relationship of the remaining differing face.",
       "id": 6
     },
@@ -107,7 +107,7 @@
         "That hidden faces are irrelevant to solving any problem"
       ],
       "correct": 1,
-      "rationale": "Since only 3 of a cube's 6 faces are visible in any single view, the other 3 are hidden \u2014 the hidden face principle is about correctly reasoning about what can (and can't) be concluded about them.",
+      "rationale": "Since only 3 of a cube's 6 faces are visible in any single view, the other 3 are hidden — the hidden face principle is about correctly reasoning about what can (and can't) be concluded about them.",
       "id": 9
     },
     {

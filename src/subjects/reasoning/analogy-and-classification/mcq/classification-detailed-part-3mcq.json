@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-3",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 3 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 3 of 16",
   "questions": [
     {
       "question": "What does 'Composite Number Classification' test, in contrast to prime classification?",
       "options": [
-        "Whether numbers are all prime",
         "Whether a group of numbers are all composite, with one being prime (breaking the pattern)",
+        "Whether numbers are all prime",
         "Whether numbers are all even",
         "Whether numbers are all perfect cubes"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Composite number classification tests whether a group of numbers are all composite, identifying the one number that is actually prime.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Perfect Square Classification' test?",
       "options": [
         "Whether numbers are all prime",
-        "Whether a group of numbers are all perfect squares (n^2), with one number not being a perfect square",
         "Whether numbers are all odd",
+        "Whether a group of numbers are all perfect squares (n^2), with one number not being a perfect square",
         "Whether numbers are all composite"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether a group of numbers are all perfect squares, identifying the one number that is not a perfect square and breaks the pattern.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Perfect Cube Classification' test?",
       "options": [
         "Whether numbers are all perfect squares",
-        "Whether a group of numbers are all perfect cubes (n^3), with one number breaking that pattern",
+        "Whether numbers are all even",
         "Whether numbers are all prime",
-        "Whether numbers are all even"
+        "Whether a group of numbers are all perfect cubes (n^3), with one number breaking that pattern"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether a group of numbers are all perfect cubes, identifying the one that is not a perfect cube.",
       "id": 4
     },
     {
       "question": "What does 'Multiples Classification' test?",
       "options": [
-        "Whether numbers are all prime",
         "Whether a group of numbers are all multiples of some common number, with one not being a multiple of it",
+        "Whether numbers are all prime",
         "Whether numbers are all perfect squares",
         "Whether numbers are all odd"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether a group of numbers are all multiples of a shared base number, identifying the one that isn't.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Divisibility Classification' test, similarly?",
       "options": [
         "Whether numbers share a common digit sum",
-        "Whether a group of numbers are all divisible by some common number, with one not being divisible by it",
         "Whether numbers are all prime",
+        "Whether a group of numbers are all divisible by some common number, with one not being divisible by it",
         "Whether numbers are all perfect cubes"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether a group of numbers is all evenly divisible by a specific number, identifying the exception that isn't.",
       "id": 6
     },

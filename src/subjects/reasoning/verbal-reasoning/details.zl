@@ -1,0 +1,15 @@
+# Verbal Reasoning
+
+@subject {
+  id: verbal-reasoning
+  parent: reasoning
+  title: "Verbal Reasoning"
+  description: "Statement-based reasoning for competitive exams — assumptions, conclusions, cause and effect, and course of action."
+}
+
+@lessons {
+  verbal-reasoning-intro
+  statement-and-assumption
+  statement-and-conclusion
+  cause-and-effect-and-course-of-action
+}

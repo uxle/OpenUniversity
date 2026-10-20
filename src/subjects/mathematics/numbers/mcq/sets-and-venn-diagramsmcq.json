@@ -1,0 +1,76 @@
+{
+  "lessonId": "sets-and-venn-diagrams",
+  "title": "Sets and Venn Diagrams: Grouping Things Precisely",
+  "questions": [
+    {
+      "id": 1,
+      "question": "If A = {2, 4, 6, 8}, which statement is true?",
+      "options": ["5 ∈ A", "4 ∈ A", "{4} ∈ A", "9 ∈ A"],
+      "correct": 1,
+      "rationale": "4 is an element of A, written 4 ∈ A. Note that {4} is a set containing 4 — a subset of A, not an element of it."
+    },
+    {
+      "id": 2,
+      "question": "How many subsets does a set with 4 elements have?",
+      "options": ["8", "15", "16", "4"],
+      "correct": 2,
+      "rationale": "Each element is either in or out of a subset — a binary choice — so the count is 2^4 = 16. The formula n(P(A)) = 2^n covers every size from empty to full."
+    },
+    {
+      "id": 3,
+      "question": "How many PROPER subsets does {a, b, c} have?",
+      "options": ["8", "7", "6", "3"],
+      "correct": 1,
+      "rationale": "A 3-element set has 2^3 = 8 subsets; a proper subset excludes the set itself, leaving 8 − 1 = 7."
+    },
+    {
+      "id": 4,
+      "question": "With A = {1, 2, 3, 4} and B = {3, 4, 5}, what is A − B?",
+      "options": ["{3, 4}", "{5}", "{1, 2}", "{1, 2, 5}"],
+      "correct": 2,
+      "rationale": "The difference A − B keeps elements of A that are not in B: strip away the shared 3 and 4 to leave {1, 2}."
+    },
+    {
+      "id": 5,
+      "question": "With U = {1, 2, 3, 4, 5, 6} and A = {1, 2, 3, 4}, what is A'?",
+      "options": ["{5, 6}", "{3, 4}", "{1, 2}", "{6}"],
+      "correct": 0,
+      "rationale": "The complement holds everything in the universe that is missing from A: 5 and 6. Complements always depend on the chosen U."
+    },
+    {
+      "id": 6,
+      "question": "By De Morgan's laws, (A ∪ B)' equals:",
+      "options": ["A' ∪ B'", "A − B", "A' ∩ B'", "B − A"],
+      "correct": 2,
+      "rationale": "The complement of a union is the intersection of the complements: 'not (A or B)' means 'not A and not B'. The twin law swaps the roles: (A ∩ B)' = A' ∪ B'."
+    },
+    {
+      "id": 7,
+      "question": "In a class of 40, 25 take mathematics, 20 take physics, and 8 take both. How many take at least one subject?",
+      "options": ["45", "33", "37", "17"],
+      "correct": 2,
+      "rationale": "Inclusion–exclusion: n(M ∪ P) = 25 + 20 − 8 = 37. Adding without subtracting the 8 shared students double-counts them."
+    },
+    {
+      "id": 8,
+      "question": "In that same class, how many students take neither subject?",
+      "options": ["8", "3", "5", "0"],
+      "correct": 1,
+      "rationale": "The union covered 37 of the 40 students, so 40 − 37 = 3 sit outside both circles — the Venn rectangle's leftover region."
+    },
+    {
+      "id": 9,
+      "question": "Of 100 students: 45 play cricket, 38 football, 30 hockey; 12 play cricket and football, 10 cricket and hockey, 8 football and hockey; 4 play all three. How many play at least one sport?",
+      "options": ["87", "113", "83", "91"],
+      "correct": 0,
+      "rationale": "Three-set inclusion–exclusion: 45 + 38 + 30 − 12 − 10 − 8 + 4 = 87. Pairwise overlaps are subtracted, but the triple overlap — subtracted three times — must be added back once."
+    },
+    {
+      "id": 10,
+      "question": "In that survey, how many students play at least two sports?",
+      "options": ["18", "22", "26", "4"],
+      "correct": 1,
+      "rationale": "'Exactly two' counts (12−4) + (10−4) + (8−4) = 18, but 'at least two' pulls the all-three centre back in: 18 + 4 = 22."
+    }
+  ]
+}

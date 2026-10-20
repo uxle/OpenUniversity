@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-2",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 2 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 2 of 22",
   "questions": [
     {
       "question": "In '+2 coding', how is each letter transformed?",
       "options": [
-        "Shifted backward by 2 positions",
         "Shifted forward by exactly 2 positions in the alphabet",
+        "Shifted backward by 2 positions",
         "Multiplied by 2",
         "Reversed, then shifted by 2"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "+2 coding shifts every letter forward by exactly 2 positions in the alphabet.",
       "id": 1
     },
@@ -42,23 +42,23 @@
       "question": "What does 'different shifts' refer to, as a coding variation?",
       "options": [
         "Every letter always shifts by the same fixed amount",
-        "A rule where different letters (or letter groups) are shifted by different amounts, rather than one uniform shift",
+        "A rule only used for numbers, not letters",
         "A rule that never uses shifting",
-        "A rule only used for numbers, not letters"
+        "A rule where different letters (or letter groups) are shifted by different amounts, rather than one uniform shift"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Unlike a single uniform shift, this variation applies different shift amounts to different letters or groups of letters within the same word.",
       "id": 4
     },
     {
       "question": "What is 'alternating shift coding'?",
       "options": [
-        "A shift that never changes",
         "A rule where the shift amount alternates (e.g., +1, then +2, then +1, then +2) across successive letters",
+        "A shift that never changes",
         "A rule that only shifts vowels",
         "A rule that reverses the word instead of shifting"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "In alternating shift coding, the amount of shift cycles through a repeating pattern (like +1, +2, +1, +2...) as you move through the letters of the word.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What does 'position-based shift' mean?",
       "options": [
         "The shift amount is always +1",
-        "The amount each letter shifts depends on its own position in the word (e.g., the nth letter shifts by n)",
         "The shift only applies to the first letter",
+        "The amount each letter shifts depends on its own position in the word (e.g., the nth letter shifts by n)",
         "Position never affects the shift amount"
       ],
-      "correct": 1,
-      "rationale": "In position-based shift coding, a letter's shift amount is tied to where it sits in the word \u2014 for example, the 3rd letter might shift by 3.",
+      "correct": 2,
+      "rationale": "In position-based shift coding, a letter's shift amount is tied to where it sits in the word — for example, the 3rd letter might shift by 3.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What does the 'wrap-around rule' state?",
       "options": [
         "Shifting past Z simply produces an invalid result",
-        "Shifting past Z continues from A again (and shifting before A continues from Z), treating the alphabet as a loop",
+        "The alphabet has no beginning or end",
         "Wrap-around only applies to numbers, not letters",
-        "The alphabet has no beginning or end"
+        "Shifting past Z continues from A again (and shifting before A continues from Z), treating the alphabet as a loop"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The wrap-around rule treats the 26-letter alphabet as a loop: shifting past Z continues from A, and shifting before A continues from Z.",
       "id": 8
     },

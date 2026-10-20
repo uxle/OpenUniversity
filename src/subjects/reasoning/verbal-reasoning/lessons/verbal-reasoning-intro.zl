@@ -1,0 +1,250 @@
+# Verbal Reasoning: Words, Statements, and Inference
+
+> Verbal reasoning asks you to read a short piece of text and judge what
+> it assumes, what it concludes, and what causes what — using only the
+> words on the page. This opening lesson maps the sub-subject, shows how
+> exams spread its marks, and builds the three core reading skills.
+
+[important]
+Every verbal reasoning topic runs on one discipline: the exact wording of
+the given statement outranks your knowledge, intuition, and opinion. An
+option that is true in the real world can still be wrong in the exam if
+the statement itself does not say it.
+[/important]
+
+## 1. What Verbal Reasoning Tests
+
+Verbal reasoning is the branch of reasoning built on *language* rather
+than numbers, shapes, or diagrams. The exam gives a compact block of text
+— a statement, a notice, an advertisement, a government policy, or a pair
+of claims — and then asks you to pass a judgement on it.
+
+| Question family | The judgement asked |
+| --- | --- |
+| Statement and Assumption | Is this hidden premise genuinely behind the statement? |
+| Statement and Conclusion | Does this conclusion definitely follow from the text? |
+| Cause and Effect | Is the first statement the cause of the second, the reverse, or neither? |
+| Course of Action | Is this proposed step a sound, feasible response to the problem? |
+
+Each question looks small; each punishes loose reading. A single word —
+*only*, *all*, *some*, *may* — can flip the correct answer from one option
+to another, so precision, not speed of reading, is what is being tested.
+
+## 2. The Topic Map of This Sub-Subject
+
+@diagram tree id="verbal-topics-tree" layout="tree" aria="Topic map of the verbal reasoning sub-subject"
+  Verbal Reasoning -> Statement and Assumption
+  Verbal Reasoning -> Statement and Conclusion
+  Verbal Reasoning -> Cause and Effect
+  Verbal Reasoning -> Course of Action
+  Statement and Assumption -> Notices and circulars
+  Statement and Assumption -> Advertisements
+  Statement and Assumption -> Warnings and policies
+  Statement and Conclusion -> Single statement
+  Statement and Conclusion -> Two or more statements
+  Cause and Effect -> Direct cause-effect pairs
+  Cause and Effect -> Common-cause traps
+  Course of Action -> Immediate relief steps
+  Course of Action -> Long-term fixes
+@/diagram
+
+The four families share one skill — literal reading — but demand four
+different judgements. Keep them separate in your head, because the same
+sentence can be a *valid assumption* and an *invalid conclusion* at the
+same time, depending on which question is asked about it.
+
+[definition]
+**Verbal reasoning**: reasoning performed on statements given in plain
+language, where every judgement must be justified by the literal meaning
+of the given text alone — no outside facts, no probabilities, no appeals
+to what usually happens in life.
+[/definition]
+
+## 3. How Exams Distribute the Marks
+
+In SSC, banking, and railway pattern papers, verbal judgement questions
+typically appear as a fixed block inside the reasoning section. A
+representative spread looks like this:
+
+@chart bar title="Typical questions per verbal topic in a reasoning section"
+labels:
+Statement and Assumption
+Statement and Conclusion
+Cause and Effect
+Course of Action
+Statement and Argument
+
+data:
+4
+5
+3
+3
+2
+@/chart
+
+Two habits follow from this chart. First, the block is worth roughly
+15 marks, so skipping it entirely is expensive. Second, Statement and
+Conclusion usually carries the most questions, and it is also the topic
+where elimination kills wrong options fastest — a double reason to master
+it well.
+
+[tip]
+Attempt order inside the block: Cause and Effect and Course of Action
+first, because their two-line statements deliver verdicts quickly; then
+Statement and Assumption; then Statement and Conclusion, checking each
+option one by one against the text.
+[/tip]
+
+## 4. Core Skill 1: Close Reading of Keywords
+
+Before judging any option, underline the qualifiers — the words that fix
+the strength of every claim in the statement and in the options.
+
+| Keyword | Strength | What it actually licenses |
+| --- | --- | --- |
+| all, every, always, only | maximum | a universal claim; fails if a single exception exists |
+| none, never | maximum negative | a universal denial |
+| some, few, many, generally | moderate | at least one; does NOT deny the rest |
+| may, might, can | weak | possibility only, never a certainty |
+| should, ought to | advisory | a recommendation, not a fact |
+
+[warning]
+The three most misread words in verbal reasoning are *some* (it means
+"at least one", not "some but not all"), *only* (it excludes everything
+outside the term that follows it), and *may* (possibility is not
+certainty). Options that quietly upgrade "may" into "will" are almost
+always wrong.
+[/warning]
+
+## 5. Core Skill 2: Elimination Discipline
+
+Verbal judgement questions are solved fastest backwards. Instead of
+asking "which option is right?", test each option and give it one of
+three verdicts:
+
+1. **Supported** — the statement says this, at this strength or stronger.
+2. **Contradicted** — the statement denies this outright.
+3. **Out of scope** — the statement is silent; the option invents new
+   facts, changes the strength, or reverses the direction of the claim.
+
+An option can survive only as **Supported**. Any "Out of scope" or
+"Contradicted" verdict eliminates it immediately, no matter how sensible
+it sounds in the real world.
+
+@diagram flowchart id="elimination-flow" layout="hierarchical" aria="Three-verdict elimination flow for verbal options"
+node start label="Read the statement" shape="pill"
+node test label="Test one option" shape="round-rect"
+node q1 label="Does the statement say it?" shape="diamond"
+node q2 label="Does the statement deny it?" shape="diamond"
+node sup label="Supported" shape="round-rect"
+node con label="Contradicted" shape="round-rect"
+node scope label="Out of scope" shape="round-rect"
+
+start -> test
+test -> q1
+q1 -> sup label="yes"
+q1 -> q2 label="no"
+q2 -> con label="yes"
+q2 -> scope label="no, it is silent"
+@/diagram
+
+[tip]
+When two options both survive, compare their strength: the option that
+claims *more* than the statement does is nearly always the wrong one.
+Verbal reasoning rewards the modest option, not the confident one.
+[/tip]
+
+[example]
+Elimination in action — statement: "The museum opens at 10 a.m. on
+weekdays."
+- Option: "The museum opens before noon on weekdays." *Supported* —
+  10 a.m. is before noon, a strictly weaker restatement.
+- Option: "The museum opens at 10 a.m. on weekends." *Out of scope* —
+  the statement is silent about weekends.
+- Option: "The museum never opens on weekdays." *Contradicted* — the
+  statement says the opposite.
+Only the first option survives; the other two die without further
+thought.
+[/example]
+
+## 6. Inference, Implication, Assumption, and Conclusion
+
+These four words are not synonyms, and the exam relies on the
+differences between them.
+
+| Term | Where it lives | Meaning |
+| --- | --- | --- |
+| Assumption | before the statement | the unstated premise the author must already believe |
+| Implication | inside the statement | what the words suggest without saying directly |
+| Inference | after the statement | a judgement you derive from what is written |
+| Conclusion | after the statement | the claim that must be true if the statement is true |
+
+Work one example through all four ideas: "You should carry an umbrella —
+the forecast says rain."
+
+- **Assumption**: the forecast is generally reliable (unstated, needed
+  before the advice makes sense).
+- **Implication**: the speaker expects rain (suggested, never said).
+- **Inference**: rain is likely today (derivable from the forecast).
+- **Conclusion**: carrying an umbrella today is advisable (the advice
+  itself, restated as a followable claim).
+
+[info]
+Why this distinction earns marks: Statement and Assumption rejects options that merely restate the
+conclusion; Statement and Conclusion rejects options that merely restate
+an assumption. Mixing the two directions is the single most common way
+candidates lose this block of marks.
+[/info]
+
+## 7. Solved Mini-Examples
+
+**Example 1 (assumption vs conclusion).**
+Statement: "The university has extended the library hours to midnight."
+- Asked as an assumption — "The university expects students to need
+  late-evening study time." *Implicit.* The extension is pointless
+  unless the authority believes late demand exists.
+- Asked as a conclusion — "All students will now study until midnight."
+  *Does not follow.* Extended hours say nothing about what every
+  student will actually do.
+
+**Example 2 (keyword flip).**
+Statement: "Only members may enter the reading room."
+- Option: "Non-members may not enter the reading room." *Follows.*
+  "Only members" excludes everyone else — this is the exact meaning.
+- Option: "Members may not use the other rooms." *Out of scope.* The
+  statement is silent about every other room in the building.
+
+**Example 3 (temporal overlap is not causation).**
+Statement: "Sales fell sharply in the quarter in which the price was
+raised." Option: "The price rise caused the fall." *Not certain.* The
+quarter only fixes the *time*; overlap in time is suggestive, but a
+genuine cause-effect question supplies two complete statements to judge.
+
+**Example 4 (strength change).**
+Statement: "Regular exercise *may* reduce the risk of heart disease."
+Option: "Regular exercise *will* reduce the risk of heart disease."
+*Wrong.* The option upgrades "may" to "will"; a supported option must be
+at the same strength as the statement or weaker.
+
+## 8. Quick Revision
+
+| Concept | One-line rule |
+| --- | --- |
+| Golden rule | Judge every option against the statement's exact wording only |
+| Assumption | Unstated premise needed before the statement makes sense |
+| Conclusion | Claim that must follow after the statement |
+| Implicit vs explicit | Explicit is written down; implicit is hidden but required |
+| Out of scope | Option adds facts the statement never gave — eliminate |
+| Keyword "some" | At least one; never denies "all" |
+| Keyword "only" | Excludes everything outside the named term |
+| Keyword "may" | Possibility; never upgrade it to certainty |
+| Elimination verdicts | Supported / Contradicted / Out of scope |
+| Mark strategy | The verbal block is worth about 15 marks; elimination beats guessing |
+
+[summary]
+Verbal reasoning is literal reading under exam pressure: know the four
+judgement families (assumption before, conclusion after, cause-effect
+pairs, courses of action), read qualifiers ruthlessly, and eliminate any
+option that adds information, changes strength, or reverses direction.
+The next three lessons drill each family with fully solved questions.
+[/summary]

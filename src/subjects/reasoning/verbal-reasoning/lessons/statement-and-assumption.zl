@@ -1,0 +1,244 @@
+# Statement and Assumption
+
+> A statement makes sense only if its author silently believes a few
+> things that the statement never spells out. This lesson defines those
+> hidden beliefs as assumptions, sorts them into types, and drills the
+> exam verdict — definitely implicit or definitely not — with eight
+> fully solved questions.
+
+[important]
+An assumption is neither what the statement proves nor what the reader
+should do. It is the *premise the author must already believe* for the
+statement to make sense at all. Sit in the author's chair, not the
+reader's, before judging any option.
+[/important]
+
+## 1. What an Assumption Is
+
+Every notice, advertisement, or announcement is written for a purpose,
+and that purpose rests on beliefs the writer leaves unsaid. Those
+unsaid, necessary beliefs are the assumptions.
+
+[definition]
+**Assumption**: something taken for granted — an unstated premise that
+must be true for the given statement to be sensible, relevant, or
+justified. It is never written directly in the statement; if the
+statement itself says it, it is explicit and not an assumption.
+[/definition]
+
+A typical exam question looks like this:
+
+```text
+Statement: "Buy Shakti soap — it removes stains in one wash."
+Assumption I:   A single wash is enough for a buyer to judge a soap.
+Assumption II:  People read advertisements before buying soap.
+```
+
+You must decide for each assumption whether it is *implicit* — genuinely
+and definitely hidden behind the statement — or not. Here, Assumption I
+is implicit (the claim "one wash" is meaningless unless one wash can be
+noticed), while Assumption II is not definitely required: the ad targets
+buyers, but it does not need the belief that they read ads first.
+
+## 2. Implicit vs Explicit
+
+| Term | Meaning | Example |
+| --- | --- | --- |
+| Explicit | written in the statement itself | "the library opens at 8 a.m." |
+| Implicit | hidden, but required for the statement to work | "the library is closed before 8 a.m." |
+
+Only implicit material counts as an assumption. This is why an option
+that merely *repeats* the statement is a trap: restating the text is not
+assuming something behind it.
+
+[warning]
+An assumption must be *necessary*, not merely *possible*. If the
+statement still makes perfect sense without a belief, that belief is not
+an assumption — it is only one of many optional thoughts. Ask: "Would
+the author still have written this sentence if he did not believe X?"
+If yes, X is not implicit.
+[/warning]
+
+## 3. Types of Assumptions
+
+@diagram tree id="assumption-types-tree" layout="tree" aria="Four common types of implicit assumptions"
+  Assumptions -> Necessity
+  Assumptions -> Motivation
+  Assumptions -> Message
+  Assumptions -> Comparison
+  Necessity -> "the announced facility or action is needed"
+  Motivation -> "people desire the promised benefit"
+  Message -> "the audience will notice and understand the text"
+  Comparison -> "the offered option is good, sufficient, or better"
+@/diagram
+
+Most exam assumptions fall into one of these four bins. Recognising the
+bin gives you the option's likely wording before you even read it: an
+advertisement usually assumes desire, a notice assumes need, an appeal
+assumes cooperation, and a course announcement assumes sufficiency.
+
+The statement texts that carry these questions are also predictable. A
+count over a typical 20-question practice set looks like this:
+
+@chart bar title="Assumption questions by statement source in a 20-question practice set"
+labels:
+Notices and orders
+Advertisements
+Warnings
+Appeals
+Policy announcements
+
+data:
+6
+5
+4
+3
+2
+@/chart
+
+Notices and advertisements together supply more than half the block, so
+the solved examples in the next two sections concentrate on exactly
+those two sources.
+
+## 4. The Judgement Test
+
+Run every option through the same three steps:
+
+1. **Find the hidden link** the author needs: who is expected to do
+   what, and why would they do it?
+2. **Match the option to the link** at the same strength — no wider,
+   no narrower.
+3. **Apply the necessity check**: remove the belief from the author's
+   mind; if the statement still stands untouched, the option is not
+   implicit.
+
+@diagram flowchart id="assumption-judgement-flow" layout="hierarchical" aria="Decision flow for judging an assumption"
+node start label="Read the statement" shape="pill"
+node link label="Find the hidden link the author needs" shape="round-rect"
+node compare label="Does the option match the link exactly?" shape="diamond"
+node yes label="Implicit" shape="round-rect"
+node no label="Not implicit" shape="round-rect"
+
+start -> link
+link -> compare
+compare -> yes label="yes"
+compare -> no label="no"
+@/diagram
+
+[tip]
+Watch for *negative* assumptions — beliefs phrased as "not", "unless",
+or "otherwise". A warning sign "Do not enter — the bridge is weak"
+assumes that people *might* otherwise enter. The presence of the danger
+implies the possibility of the act; that possibility is the assumption.
+[/tip]
+
+## 5. Solved Examples: Notices and Advertisements
+
+**Example 1.**
+Statement: "Use Brightwhite toothpaste for whiter teeth in just seven
+days." Assumption: "People desire whiter teeth." → *Implicit.* An
+advertisement argues from a benefit, and the benefit only motivates
+buyers who already desire it; without this belief the ad has no pull.
+
+**Example 2.**
+Statement: "All employees must attend the fire-safety drill on Friday."
+Assumption: "Compulsion is an acceptable way to secure attendance." →
+*Implicit.* The word "must" orders compliance, and an order is issued
+only by an authority that accepts compulsion as legitimate for the end
+in view.
+
+**Example 3.**
+Statement: "Buy one, get one free — offer valid this week only."
+Assumption: "Customers are more likely to buy when an offer has a
+deadline." → *Implicit.* "This week only" manufactures urgency; the
+phrase would be pointless unless the seller believed urgency increases
+purchases.
+
+**Example 4.**
+Statement: "Shop at MegaMart — prices lower than any other store in
+town." Assumption: "No other store in town matches MegaMart's prices."
+→ *Not implicit.* This option *repeats* the explicit comparison written
+in the statement; it is stated, so it is not an assumption.
+
+## 6. Solved Examples: Warnings, Appeals, and Policies
+
+**Example 5.**
+Statement: "Do not go near the river; the water level is rising."
+Assumption: "People might otherwise go near the river." → *Implicit.*
+A warning is wasted on an act nobody could commit; the very act of
+warning assumes the possibility of the act being warned against.
+
+**Example 6.**
+Statement: "The government has increased the scholarship amount for
+meritorious students." Assumption: "Higher scholarships encourage
+meritorious students." → *Implicit.* A policy change claims a benefit;
+the authority must believe the change produces that benefit, otherwise
+the decision has no justification.
+
+**Example 7.**
+Statement: "Save water — every drop counts. — Municipal Corporation."
+Assumption: "Citizens can reduce their water usage." → *Implicit.* An
+appeal to citizens assumes they are capable of responding to it; an
+appeal addressed to the powerless would be meaningless.
+
+**Example 8.**
+Statement: "Enrol in the crash course to score 90+ in the board exam."
+Assumption: "The crash course is sufficient help for reaching that
+score." → *Implicit.* The invitation promises a target through the
+course; the writer must believe the course can carry a student to it.
+
+[example]
+Verification method for every solved item above: negate the assumption
+and reread the statement. "People do NOT desire whiter teeth" destroys
+the advertisement; "compulsion is NOT acceptable" destroys the order.
+A belief whose negation wrecks the statement is exactly what makes it
+implicit. If negation leaves the statement standing, the option is not
+implicit.
+[/example]
+
+## 7. Traps: Too Broad, Too Narrow, Wrong Direction
+
+| Trap | Signature | Example of the wrong option |
+| --- | --- | --- |
+| Too broad | pushes beyond everyone/everywhere | "all citizens obey all notices" |
+| Too narrow | shrinks a general claim to one case | "only students need the library" |
+| Restatement | copies words from the statement | the explicit claim re-labelled "assumption" |
+| Wrong direction | gives the reader's belief, not the author's | "buyers should check prices elsewhere" |
+| Out of scope | imports an unrelated fact | "soap is cheaper than shampoo" |
+
+[warning]
+The two most common errors are treating the *conclusion* as an
+assumption and demanding *certainty about the world*. An assumption is
+judged relative to the statement, not relative to reality: it can sound
+false or exaggerated and still be implicit, because the author clearly
+believed it.
+[/warning]
+
+[info]
+Both-implicit questions: when the question asks "which assumption(s) is/are implicit?", test each
+independently. Answer patterns: both, only I, only II, or neither — and
+"both" is a perfectly normal answer, so never force exactly one to be
+correct.
+[/info]
+
+## 8. Quick Revision
+
+| Concept | One-line rule |
+| --- | --- |
+| Assumption | unstated premise the author must believe |
+| Explicit vs implicit | written text is explicit; only the hidden premise is an assumption |
+| Necessity check | if negating the belief wrecks the statement, it is implicit |
+| Warnings | assume the warned act is possible |
+| Advertisements | assume the audience desires the benefit |
+| Orders and notices | assume the need and the legitimacy of compulsion |
+| Appeals | assume the audience is able to respond |
+| Restatement trap | an option that repeats the statement is never an assumption |
+| Strength | match the option to the statement exactly; reject wider or narrower |
+| Direction | the belief belongs to the author, not the reader |
+
+[summary]
+Statement and Assumption questions ask what the author silently believes.
+Find the hidden link, match the option at exactly the same strength,
+and verify with the negation test. Reject restatements, out-of-scope
+facts, and options that shift the belief from the author to the reader.
+[/summary]

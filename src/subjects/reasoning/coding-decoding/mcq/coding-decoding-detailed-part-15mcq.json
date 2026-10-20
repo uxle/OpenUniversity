@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-15",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 15 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 15 of 22",
   "questions": [
     {
       "question": "What is the 'inverse of reverse alphabet' coding?",
       "options": [
-        "A completely different, unrelated rule",
         "Applying the same reverse-alphabet mapping again, since mirroring a letter twice returns the original letter",
+        "A completely different, unrelated rule",
         "Reversing the word's letter order instead",
         "There is no valid inverse for reverse-alphabet coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Since mirroring a letter to its reverse-alphabet partner and then mirroring again returns the original letter, the reverse-alphabet mapping is its own inverse.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is the 'inverse of reversal' (word-reversal) coding?",
       "options": [
         "Applying a letter shift instead",
-        "Reversing the word's letter order again, since reversing twice restores the original order",
         "There is no valid inverse",
+        "Reversing the word's letter order again, since reversing twice restores the original order",
         "Applying mirror coding instead"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Reversing a word's letter order twice restores the original order, making word-reversal coding its own inverse operation, just like reverse-alphabet mirroring.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does a 'multi-step inverse' require when a coding rule combines several steps?",
       "options": [
         "Undoing the steps in the same order they were applied",
-        "Undoing each individual step in the REVERSE order they were originally applied",
+        "Ignoring all but the last step",
         "Only undoing the first step",
-        "Ignoring all but the last step"
+        "Undoing each individual step in the REVERSE order they were originally applied"
       ],
-      "correct": 1,
-      "rationale": "To correctly reverse a multi-step transformation, each step must be undone in the reverse order from how it was originally applied \u2014 like unwrapping layers from the outside in.",
+      "correct": 3,
+      "rationale": "To correctly reverse a multi-step transformation, each step must be undone in the reverse order from how it was originally applied — like unwrapping layers from the outside in.",
       "id": 4
     },
     {
       "question": "What does 'composition of coding rules' mean?",
       "options": [
-        "Using only one rule at a time",
         "Applying two or more coding rules in sequence, where the output of one becomes the input to the next",
+        "Using only one rule at a time",
         "A synonym for verification",
         "A rule with no sequence involved"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Composition of coding rules means chaining two or more rules in sequence, where each rule's output feeds directly into the next rule as its input.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "Why does 'order matter' when composing multiple coding rules?",
       "options": [
         "It never actually matters",
-        "Applying the same rules in a different order can produce a completely different final result",
         "Order only matters for number coding",
+        "Applying the same rules in a different order can produce a completely different final result",
         "Rules always commute regardless of order"
       ],
-      "correct": 1,
-      "rationale": "Composed transformations are generally order-dependent \u2014 applying the same set of rules in a different sequence can produce an entirely different final result.",
+      "correct": 2,
+      "rationale": "Composed transformations are generally order-dependent — applying the same set of rules in a different sequence can produce an entirely different final result.",
       "id": 6
     },
     {
@@ -83,18 +83,18 @@
         "A=1 coding is only used for numbers, not letters"
       ],
       "correct": 1,
-      "rationale": "A=1 coding starts counting at 1, while ASCII assigns uppercase A the value 65 \u2014 mixing up these two different conventions in a calculation produces incorrect results.",
+      "rationale": "A=1 coding starts counting at 1, while ASCII assigns uppercase A the value 65 — mixing up these two different conventions in a calculation produces incorrect results.",
       "id": 7
     },
     {
       "question": "Why is the 'Important Warning: A=1 vs ASCII' section likely included?",
       "options": [
         "Because the two conventions are identical",
-        "To prevent a common error of applying ASCII-based reasoning to a problem that actually uses simple A=1 alphabet positions, or vice versa",
+        "Because A=1 coding is considered obsolete",
         "Because ASCII is never actually used in these problems",
-        "Because A=1 coding is considered obsolete"
+        "To prevent a common error of applying ASCII-based reasoning to a problem that actually uses simple A=1 alphabet positions, or vice versa"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This warning helps prevent the common error of mixing up the A=1 convention with ASCII values, which use entirely different starting numbers for the same letters.",
       "id": 8
     },

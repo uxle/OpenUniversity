@@ -1,0 +1,101 @@
+{
+  "lessonId": "transactions-and-concurrency",
+  "title": "Transactions and Concurrency: ACID, Locks, and Isolation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A transfer transaction debits account A and then crashes before crediting account B. Which ACID property guarantees A's money is restored?",
+      "options": ["Durability", "Isolation", "Atomicity", "Consistency"],
+      "correct": 2,
+      "rationale": "Atomicity makes the transaction all-or-nothing: the partial work is rolled back via the undo log, so the debit disappears along with the failed credit. Durability only protects committed work."
+    },
+    {
+      "id": 2,
+      "question": "T2 reads a balance that T1 has updated but not yet committed, and then T1 rolls back. T2 has just made a:",
+      "options": ["Dirty read", "Lost update", "Phantom read", "Repeatable read"],
+      "correct": 0,
+      "rationale": "A dirty read is reading uncommitted data — here a value that vanishes when T1 rolls back. READ COMMITTED and above prevent it."
+    },
+    {
+      "id": 3,
+      "question": "T2 runs the same range query twice and, between the two executions, T1 inserts a matching row that now appears in the results. Which anomaly is this?",
+      "options": ["Non-repeatable read", "Dirty read", "Lost update", "Phantom read"],
+      "correct": 3,
+      "rationale": "A phantom read is new rows appearing in a repeated predicate-based query. A non-repeatable read changes an existing row's value instead; only SERIALIZABLE fully prevents phantoms."
+    },
+    {
+      "id": 4,
+      "question": "What is the weakest SQL isolation level that prevents non-repeatable reads?",
+      "options": ["READ UNCOMMITTED", "REPEATABLE READ", "READ COMMITTED", "SERIALIZABLE"],
+      "correct": 1,
+      "rationale": "READ COMMITTED still allows rereads of a row to differ, REPEATABLE READ pins each row's first-seen version — it is the lowest level that stops non-repeatable reads (though phantoms can persist)."
+    },
+    {
+      "id": 5,
+      "question": "Two transactions both request a shared (S) lock on the same row. What happens?",
+      "options": [
+        "The second request deadlocks",
+        "Both are granted, since readers do not conflict with readers",
+        "The second waits until the first commits",
+        "The engine escalates both to exclusive locks"
+      ],
+      "correct": 1,
+      "rationale": "Shared locks are compatible with each other — many concurrent readers may hold them. Only a shared-versus-exclusive or exclusive-versus-exclusive combination conflicts."
+    },
+    {
+      "id": 6,
+      "question": "Under two-phase locking, what does the shrinking phase mean?",
+      "options": [
+        "The transaction locks fewer rows than it reads",
+        "The transaction releases locks early to help others",
+        "After releasing its first lock, the transaction may acquire no new locks",
+        "The engine automatically downgrades exclusive locks to shared"
+      ],
+      "correct": 2,
+      "rationale": "2PL splits a transaction into a growing phase of acquisitions and a shrinking phase of releases; no new lock may be acquired after the first release, which is what makes the schedule serialisable."
+    },
+    {
+      "id": 7,
+      "question": "Requiring every transaction to acquire locks in a fixed global order (always A before B) prevents deadlock by eliminating which condition?",
+      "options": ["Circular wait", "Mutual exclusion", "No preemption", "Hold-and-wait"],
+      "correct": 0,
+      "rationale": "With a single global ordering, a cycle in the wait-for graph cannot form — circular wait is the Coffman condition most cheaply attacked, since the others are inherent to locking."
+    },
+    {
+      "id": 8,
+      "question": "What is the headline benefit of MVCC (multiversion concurrency control)?",
+      "options": [
+        "It eliminates the need for a write-ahead log",
+        "It raises the isolation level to SERIALIZABLE automatically",
+        "Readers never block writers and writers never block readers",
+        "It prevents all deadlocks"
+      ],
+      "correct": 2,
+      "rationale": "MVCC keeps multiple row versions so each transaction reads a consistent snapshot while writers add new versions — readers and writers proceed without waiting on each other; deadlocks and logging are separate concerns."
+    },
+    {
+      "id": 9,
+      "question": "Which statement states the write-ahead logging (WAL) rule?",
+      "options": [
+        "Data pages must reach disk before the log",
+        "The log record describing a change must reach stable storage before the changed data page",
+        "Logs are written only at checkpoints",
+        "COMMIT may return before the log is flushed"
+      ],
+      "correct": 1,
+      "rationale": "Durability works because the log reaches stable storage first: after a crash, recovery can redo committed work from the log even though the data pages were still dirty in the buffer pool."
+    },
+    {
+      "id": 10,
+      "question": "Compared with READ COMMITTED, SERIALIZABLE isolation additionally prevents:",
+      "options": [
+        "Dirty reads only",
+        "Lost updates only",
+        "Nothing, they are equivalent",
+        "Phantom reads, plus all other anomaly combinations"
+      ],
+      "correct": 3,
+      "rationale": "SERIALIZABLE is the top of the ladder: it guarantees transactions behave as if executed one at a time, eliminating dirty reads, non-repeatable reads, phantoms, and every other interleaving anomaly."
+    }
+  ]
+}

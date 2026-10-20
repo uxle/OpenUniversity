@@ -1,6 +1,6 @@
 {
   "lessonId": "dice-reasoning-part-2",
-  "title": "Dice Reasoning \u2014 Part 2 of 10",
+  "title": "Dice Reasoning — Part 2 of 10",
   "questions": [
     {
       "question": "What does the 'three-face set method' use to deduce information about a die?",
@@ -18,11 +18,11 @@
       "question": "What is 'fast opposite-face detection' based on?",
       "options": [
         "Randomly guessing which faces are opposite",
-        "If a face never appears in any of the given views alongside a specific other face, and all other faces have been accounted for, the two are likely opposite",
         "Always assuming the highest and lowest numbers are opposite",
+        "If a face never appears in any of the given views alongside a specific other face, and all other faces have been accounted for, the two are likely opposite",
         "Measuring the physical distance between faces"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "By process of elimination across multiple views, if two faces are never seen together and every other pairing has been accounted for, they can be quickly identified as opposite.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What does 'clockwise order' of three faces around a corner describe?",
       "options": [
         "The order in which the faces were painted",
-        "The sequence in which the three visible faces appear when read in a clockwise direction around that shared corner",
+        "The order the faces are listed in the question",
         "The alphabetical order of the face labels",
-        "The order the faces are listed in the question"
+        "The sequence in which the three visible faces appear when read in a clockwise direction around that shared corner"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Clockwise order describes the specific rotational sequence of the three faces as viewed around their shared corner, which distinguishes different valid arrangements.",
       "id": 4
     },
     {
       "question": "Why does the clockwise vs anticlockwise order of faces around a corner matter?",
       "options": [
-        "It never actually matters",
         "It distinguishes between two dice that show the same three faces but are actually mirror images (different arrangements) of each other",
+        "It never actually matters",
         "It only matters for symbol dice, not numbered ones",
         "It determines the die's physical size"
       ],
-      "correct": 1,
-      "rationale": "Two dice can show the identical three faces at a corner but in opposite rotational order \u2014 that difference means they are mirror-image (distinct) arrangements, not the same die.",
+      "correct": 0,
+      "rationale": "Two dice can show the identical three faces at a corner but in opposite rotational order — that difference means they are mirror-image (distinct) arrangements, not the same die.",
       "id": 5
     },
     {
       "question": "What is the difference between a 'rotation' and a 'reflection' of a die?",
       "options": [
         "They are the same thing",
-        "A rotation preserves the die's actual arrangement (it's still the same physical die, just turned), while a reflection produces a mirror-image arrangement that is a genuinely different die layout",
         "A reflection is just a rotation by 90 degrees",
+        "A rotation preserves the die's actual arrangement (it's still the same physical die, just turned), while a reflection produces a mirror-image arrangement that is a genuinely different die layout",
         "Rotations only apply to symbol dice"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A rotation simply reorients the same physical die; a reflection produces a mirror-image layout that represents a fundamentally different (non-identical) die arrangement.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "What is a 'vector/coordinate model' of a cube used for?",
       "options": [
         "Measuring the cube's weight",
-        "Assigning coordinate axes to the cube's faces or directions, allowing rotations and face relationships to be reasoned about mathematically rather than just visually",
+        "Replacing the need to know opposite face pairs",
         "Only used for symbol dice",
-        "Replacing the need to know opposite face pairs"
+        "Assigning coordinate axes to the cube's faces or directions, allowing rotations and face relationships to be reasoned about mathematically rather than just visually"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A coordinate model assigns axes to the cube's faces/directions, enabling rotations and relationships to be reasoned about with mathematical precision rather than relying solely on visualization.",
       "id": 8
     },
     {
       "question": "In a coordinate model, how might the three pairs of opposite faces of a cube be naturally represented?",
       "options": [
-        "As three unrelated random points",
         "As the positive and negative directions along three perpendicular axes (x, y, z)",
+        "As three unrelated random points",
         "As a single combined axis",
         "As angles measured in degrees only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The three opposite-face pairs map naturally onto the positive and negative directions of three perpendicular coordinate axes (x, y, z).",
       "id": 9
     },

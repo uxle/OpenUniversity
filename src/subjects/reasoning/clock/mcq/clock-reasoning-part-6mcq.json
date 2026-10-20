@@ -1,16 +1,16 @@
 {
   "lessonId": "clock-reasoning-part-6",
-  "title": "Clock Reasoning \u2014 Part 6 of 10",
+  "title": "Clock Reasoning — Part 6 of 10",
   "questions": [
     {
       "question": "What does a 'confidence' measure represent in constraint-based clock reasoning?",
       "options": [
-        "The brand reliability of the clock",
         "How certain the reasoning system is that a deduced time is correct, especially under ambiguity",
+        "The brand reliability of the clock",
         "The exact number of constraints given",
         "The speed of the calculation"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Confidence reflects how certain a deduced answer is, which becomes especially relevant when the given information is ambiguous or incomplete.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "How should a clock reasoning system handle 'missing information'?",
       "options": [
         "Guess a plausible-sounding value",
-        "Flag that the time cannot be fully determined, rather than guessing a specific value",
         "Default to 12:00 automatically",
+        "Flag that the time cannot be fully determined, rather than guessing a specific value",
         "Ignore the question entirely"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "When information is missing, a careful system should flag that the time can't be fully determined rather than silently guessing and presenting a false certainty.",
       "id": 2
     },
@@ -41,24 +41,24 @@
     {
       "question": "Why does 'date + clock reasoning' require tracking more than just the time of day?",
       "options": [
-        "It doesn't \u2014 the date is irrelevant to clock reasoning",
-        "Because some calculations (like elapsed time across midnight) also change the date, not just the clock time",
+        "It doesn't — the date is irrelevant to clock reasoning",
+        "Because there is no such thing as date + clock reasoning",
         "Because dates are measured in degrees too",
-        "Because there is no such thing as date + clock reasoning"
+        "Because some calculations (like elapsed time across midnight) also change the date, not just the clock time"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Once a calculation crosses midnight, the date itself changes alongside the time, so both must be tracked together for a correct result.",
       "id": 4
     },
     {
       "question": "What is 'recurring time' reasoning about?",
       "options": [
-        "A clock that has stopped working",
         "Events that happen repeatedly at a fixed interval or pattern (e.g., every day at 6 PM)",
+        "A clock that has stopped working",
         "Elapsed time between exactly two events",
         "Time zones only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Recurring time reasoning deals with events that repeat on a regular schedule, rather than a single one-off occurrence.",
       "id": 5
     },
@@ -77,7 +77,7 @@
     {
       "question": "What is required to interpret a 'clock image' (a picture of an analog clock face)?",
       "options": [
-        "Nothing \u2014 clock images cannot be interpreted programmatically",
+        "Nothing — clock images cannot be interpreted programmatically",
         "Detecting the positions of the hour and minute hands and converting their angles back into a time value",
         "Only reading the numbers printed on the face",
         "Measuring the clock's physical diameter"
@@ -90,11 +90,11 @@
       "question": "What does 'analog-hand detection' refer to?",
       "options": [
         "Detecting whether a clock is digital or analog",
-        "Identifying the exact angular positions of the clock hands from a visual representation",
+        "Detecting the clock's manufacturer",
         "Counting the number of hands a clock has",
-        "Detecting the clock's manufacturer"
+        "Identifying the exact angular positions of the clock hands from a visual representation"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Analog-hand detection is the step of precisely identifying each hand's angle from an image, which then feeds into the angle-to-time conversion.",
       "id": 8
     },

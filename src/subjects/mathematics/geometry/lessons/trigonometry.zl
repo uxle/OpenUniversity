@@ -1,0 +1,218 @@
+# Trigonometry: Measuring with Triangles
+
+> One known side and one known angle unlock every other side and angle
+> of a right triangle. Three ratios, one table, and a handful of
+> identities have guided surveyors and sailors for two thousand years.
+
+## 1. The Three Basic Ratios
+
+In a right triangle, the sides of an acute angle θ are named the
+**opposite** (directly across from θ), the **adjacent** (next to θ but
+not the hypotenuse), and the **hypotenuse** (the longest side, opposite
+the right angle).
+
+| Ratio | Definition | Memory cue |
+| --- | --- | --- |
+| sin θ | opposite / hypotenuse | SOH |
+| cos θ | adjacent / hypotenuse | CAH |
+| tan θ | opposite / adjacent | TOA |
+
+[definition]
+For an acute angle θ in a right triangle, sine, cosine, and tangent are
+the three ratios opposite/hypotenuse, adjacent/hypotenuse, and
+opposite/adjacent. Together with the reciprocal ratios they form the
+complete toolkit of right-triangle trigonometry.
+[/definition]
+
+[example]
+A right triangle has legs 3 (opposite θ) and 4 (adjacent to θ), with
+hypotenuse 5. Then sin θ = 3/5, cos θ = 4/5, and tan θ = 3/4 — three
+numbers that completely describe the triangle's shape.
+[/example]
+
+The ratios depend only on the angle, not the triangle's size: a
+3-4-5 triangle and a 30-40-50 triangle give identical ratios, because
+scaling a triangle scales all three sides equally.
+
+## 2. The Reciprocal Ratios
+
+| Reciprocal | Name | Relation |
+| --- | --- | --- |
+| cosec θ | cosecant | 1 / sin θ |
+| sec θ | secant | 1 / cos θ |
+| cot θ | cotangent | 1 / tan θ = cos θ / sin θ |
+
+For the 3-4-5 triangle above: cosec θ = 5/3, sec θ = 5/4, and
+cot θ = 4/3. Each reciprocal simply flips its parent ratio.
+
+## 3. The Standard Angles Table
+
+| θ | 0° | 30° | 45° | 60° | 90° |
+| --- | --- | --- | --- | --- | --- |
+| sin θ | 0 | 1/2 | 1/√2 | √3/2 | 1 |
+| cos θ | 1 | √3/2 | 1/√2 | 1/2 | 0 |
+| tan θ | 0 | 1/√3 | 1 | √3 | undefined |
+
+[tip]
+The sine row hides one pattern: √0/2, √1/2, √2/2, √3/2, √4/2.
+Reading that same pattern backwards gives the cosine row, and
+tan = sin/cos finishes the table — three rows from one trick.
+[/tip]
+
+## 4. Finding an Unknown Side
+
+[example]
+A 10 m ladder leans against a wall at 60° to the ground. How high up
+does it reach?
+Step 1: the ladder is the hypotenuse; the height is the side opposite
+the 60° angle.
+Step 2: choose sine, because it links opposite and hypotenuse:
+sin 60° = height / 10.
+Step 3: height = 10 × sin 60° = 10 × (√3/2) = 5√3 ≈ 8.66 m.
+[/example]
+
+[example]
+The shadow of a pole is 20 m long when the sun's elevation is 30°.
+The height is opposite and the shadow adjacent, so use tangent:
+height = 20 × tan 30° = 20 × (1/√3) = 20/√3 ≈ 11.55 m.
+[/example]
+
+[warning]
+Sketch and label the triangle before touching numbers. Mark the known
+side, the wanted side, and the angle — then pick the one ratio that
+connects all three. Most trigonometry errors come from grabbing the
+wrong ratio, not from arithmetic.
+[/warning]
+
+## 5. Finding an Unknown Angle
+
+When the sides are known, read the table backwards using inverse
+functions. If tan θ = 3/4, then θ = arctan(0.75) ≈ 36.9°; calculators
+write the inverse keys as sin⁻¹, cos⁻¹, and tan⁻¹.
+
+[example]
+A wheelchair ramp rises 1 m over a horizontal run of 12 m.
+Step 1: tan θ = 1/12 ≈ 0.083.
+Step 2: θ = arctan(0.083) ≈ 4.8° — a gentle grade, comfortably inside
+typical accessibility guidelines.
+[/example]
+
+[note]
+Keep the calculator in degree mode for survey and navigation problems.
+A radian-mode slip turns every answer into a plausible-looking wrong
+number, so check the mode before each exam question.
+[/note]
+
+## 6. The Pythagorean Identity
+
+@math label="eq:pythagorean-identity"
+\sin^2\theta + \cos^2\theta = 1
+@/math
+
+It follows straight from the definitions:
+(opp/hyp)² + (adj/hyp)² = (opp² + adj²)/hyp² = hyp²/hyp² = 1, where the
+middle step is Pythagoras' theorem on the right triangle itself.
+
+[example]
+Given sin θ = 5/13 with θ acute, find the other ratios.
+Step 1: cos²θ = 1 − sin²θ = 1 − 25/169 = 144/169.
+Step 2: cos θ = 12/13 (positive, since θ is acute).
+Step 3: tan θ = sin/cos = (5/13)/(12/13) = 5/12 — the 5-12-13
+triangle in disguise.
+[/example]
+
+Dividing the identity through by cos²θ produces the second Pythagorean
+identity 1 + tan²θ = sec²θ; dividing by sin²θ produces
+1 + cot²θ = cosec²θ.
+
+@diagram tree id="identity-family" layout="tree" aria="Family tree of the basic trigonometric identities"
+  "Basic identities" -> "Pythagorean: sin^2 + cos^2 = 1"
+  "Pythagorean: sin^2 + cos^2 = 1" -> "1 + tan^2 = sec^2"
+  "Pythagorean: sin^2 + cos^2 = 1" -> "1 + cot^2 = cosec^2"
+  "Basic identities" -> "Ratio identity: tan = sin / cos"
+  "Basic identities" -> "Complementary: sin(90 - A) = cos A"
+@/diagram
+
+## 7. Complementary Angles
+
+The two acute angles of a right triangle add to 90°, and every side is
+opposite one of them and adjacent to the other. Swapping the labels
+swaps the ratios:
+
+sin(90° − θ) = cos θ  and  cos(90° − θ) = sin θ  and
+tan(90° − θ) = cot θ.
+
+[example]
+Simplify sin θ · cos(90° − θ) + cos θ · sin(90° − θ).
+Step 1: replace cos(90° − θ) by sin θ and sin(90° − θ) by cos θ.
+Step 2: the expression becomes sin²θ + cos²θ.
+Step 3: by the Pythagorean identity the value is exactly 1.
+[/example]
+
+So sin 20° = cos 70°, cos 35° = sin 55°, and any pair of "matching"
+terms across 90° collapses — a shortcut examiners love to test.
+
+## 8. Heights and Distances
+
+The **angle of elevation** is measured up from the horizontal line of
+the observer; the **angle of depression** is measured down from it.
+Both are measured from the horizontal, never from the vertical, and
+both set up the right triangle that trigonometry then solves.
+
+[example]
+From two points 40 m apart on a straight road, the top of a tower has
+elevations 60° (near point B) and 30° (far point A). Let the tower
+height be h and the near distance be x.
+Step 1: near triangle — tan 60° = h/x, so x = h/√3.
+Step 2: far triangle — tan 30° = h/(x + 40), so x + 40 = h√3.
+Step 3: substitute: h/√3 + 40 = h√3, so 40 = h(√3 − 1/√3) = 2h/√3.
+Step 4: h = 40√3/2 = 20√3 ≈ 34.6 m.
+[/example]
+
+@chart line title="sin θ for the standard angles" labels:
+0°
+30°
+45°
+60°
+90°
+
+data:
+0
+0.5
+0.71
+0.87
+1
+@/chart
+
+The chart shows sine climbing smoothly from 0 to 1: near 0° a small
+change of angle changes sin θ a lot, while near 90° the same change
+barely moves it — one reason precision matters most at shallow
+elevations.
+
+[important]
+Angles of elevation and depression are always measured from the
+horizontal. A line of sight "70° from the wall" is only a 20° elevation
+from the ground — reading the angle from the wrong baseline flips the
+whole problem.
+[/important]
+
+## 9. Quick Revision
+
+| Item | Result |
+| --- | --- |
+| sin 30°, cos 60° | both 1/2 |
+| Ladder 10 m at 60° | height 5√3 ≈ 8.66 m |
+| Shadow 20 m, elevation 30° | height ≈ 11.55 m |
+| tan θ = 3/4 | θ ≈ 36.9° |
+| sin θ = 5/13 (θ acute) | cos θ = 12/13, tan θ = 5/12 |
+| sin²θ + cos²θ | 1 |
+| sin 20° | equals cos 70° |
+| Tower, views 60° and 30°, points 40 m apart | h = 20√3 ≈ 34.6 m |
+
+[summary]
+SOH-CAH-TOA defines the three ratios, the standard-angle table fills
+them in at 0°, 30°, 45°, 60°, and 90°, the Pythagorean and
+complementary identities connect the ratios, and every
+heights-and-distances problem is a right triangle hiding in the
+landscape waiting to be labelled.
+[/summary]

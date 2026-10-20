@@ -1,0 +1,288 @@
+# Cause and Effect and Course of Action
+
+> Two statements are put side by side: is the first the cause of the
+> second, the reverse, or neither? Then a problem is described: which
+> proposed step is a sound and feasible response? This lesson gives the
+> decision rules for both judgement types and solves ten questions
+> end to end.
+
+[important]
+In cause and effect questions, both statements are facts — you never
+doubt them, you only order them. In course of action questions, both
+proposals are opinions — you judge them for relevance, feasibility, and
+proportion, never for truth.
+[/important]
+
+## 1. The Cause and Effect Format
+
+The question gives two statements, marked (A) and (B), and five standard
+answer options:
+
+| Option | Meaning |
+| --- | --- |
+| 1 | (A) is the cause and (B) is its effect |
+| 2 | (B) is the cause and (A) is its effect |
+| 3 | Both are independent causes |
+| 4 | Both are effects of one common cause |
+| 5 | Both are effects of independent causes |
+
+Most papers trim this to four options, but the judgements are the same.
+Your task is to place the two facts in a causal story that the exam
+accepts as the natural one.
+
+## 2. Marks of a Cause
+
+A cause usually carries three signatures:
+
+1. **Time order** — the cause comes first, or at least not after.
+2. **Transfer** — the cause changes something that the effect describes.
+3. **Natural link** — a plausible mechanism connects them without
+   inventing extra events.
+
+[definition]
+**Immediate cause**: the event directly before the effect, the last
+straw. **Root cause**: the deeper condition that made the immediate
+cause effective. Exams usually accept the immediate cause as "the"
+cause; only when both options name conditions at different depths does
+the distinction matter.
+[/definition]
+
+A practical reading habit: identify the *subject* of each statement and
+ask which subject acts upon the other. "Heavy rain lashed the city" acts
+on the city's drainage and traffic; "the city saw waterlogging" does not
+act back on the rain. Direction of action usually reveals direction of
+causation.
+
+[tip]
+When statement (B) is a *response* — a decision, a campaign, a bonus —
+treat it as the effect of the problem it responds to, even if it is
+listed first. Actions taken by authorities are almost always effects of
+the situation described in the other statement.
+[/tip]
+
+## 3. The Common-Cause Trap
+
+Two facts can rise together without one pushing the other: both may be
+children of a third, unstated event. The classic signals are pairs of
+*symptoms* of the same season, same policy, or same underlying condition.
+
+@chart donut title="Typical distribution of verdicts across 100 cause-and-effect practice questions"
+labels:
+A causes B
+B causes A
+Independent causes
+Effects of a common cause
+
+data:
+40
+25
+15
+20
+@/chart
+
+The chart carries a warning: roughly one question in five is a
+common-cause item, yet candidates pick "independent" for almost all of
+them. If the two statements are thematically linked but no mechanism
+connects them, look for the shared parent before declaring them
+independent.
+
+[warning]
+Correlation is not causation. Two effects of one cause are *not*
+independent (option 3) and *not* cause-effect (options 1-2): the exam's
+favourite distractor is forcing a direct causal link between two sibling
+effects, such as "dengue cases rose" and "repellent sales rose".
+[/warning]
+
+## 4. Solved Examples: Cause and Effect
+
+**Example 1.**
+(A) "Heavy rainfall lashed the coastal city for three days."
+(B) "The city recorded widespread waterlogging and traffic disruption."
+→ *A is the cause, B is the effect.* Time order is correct, the
+mechanism (rain fills drains, floods roads) needs no extra event, and
+the direction of action runs from rain to city conditions.
+
+**Example 2.**
+(A) "The wholesale price of onions doubled within a month."
+(B) "Household consumption of onions fell this month."
+→ *A is the cause, B is the effect.* A sharp price rise is a standard
+immediate cause of reduced consumption; no third factor is needed to
+connect them.
+
+**Example 3.**
+(A) "The city recorded a sharp rise in dengue cases."
+(B) "Sales of mosquito repellents rose sharply in the same period."
+→ *Both are effects of a common cause.* Dengue cases and repellent
+purchases do not drive each other convincingly; both rise together when
+mosquito breeding increases after the monsoon. The sibling-effects
+pattern is the giveaway.
+
+**Example 4.**
+(A) "The company's sales fell for the third quarter in a row."
+(B) "The company launched an aggressive advertising campaign."
+→ *A is the cause, B is the effect.* The campaign is a *response* to
+falling sales, so although the effect appears second, causation runs
+from the problem to the reaction. Identify response statements first.
+
+**Example 5.**
+(A) "India won the cricket series three-nil."
+(B) "The government announced a new education policy."
+→ *Both are independent causes.* No mechanism links a cricket result to
+an education policy in either direction, and no shared parent naturally
+explains both; the thematic distance is the signal for "independent".
+
+## 5. Course of Action: What the Question Asks
+
+A course of action question states a problem and proposes steps; you
+must say whether each step "follows" — that is, whether a sensible
+authority would adopt it for the stated problem.
+
+@diagram tree id="course-of-action-criteria" layout="tree" aria="Three criteria for judging a course of action"
+  Course of Action -> Relevant
+  Course of Action -> Feasible
+  Course of Action -> Proportionate
+  Relevant -> "attacks the stated problem or its root cause"
+  Feasible -> "practically possible for the authority named"
+  Proportionate -> "matches the size of the problem"
+@/diagram
+
+[definition]
+**Course of action**: a practical step proposed in response to the
+stated problem. It follows if it is *relevant* (aimed at the problem or
+its root cause), *feasible* (realistically executable), and
+*proportionate* (not wildly extreme for the size of the problem).
+[/definition]
+
+## 6. The Judgement Criteria
+
+Two families of proposals recur, and both can be correct together:
+
+- **Immediate relief** — stops the harm now: repair the pothole, post
+  warning signs, open extra counters.
+- **Long-term fix** — removes the root cause: build a drain, train
+  teachers, add permanent infrastructure.
+
+A proposal that offers *both* horizons is the strongest candidate. Run
+the elimination questions in order:
+
+@diagram flowchart id="coa-judgement-flow" layout="hierarchical" aria="Decision flow for judging a course of action"
+node start label="Read the problem statement" shape="pill"
+node rel label="Does the step address this problem?" shape="diamond"
+node fea label="Can the authority actually do it?" shape="diamond"
+node pro label="Is the step proportionate?" shape="diamond"
+node yes label="Follows" shape="round-rect"
+node no label="Does not follow" shape="round-rect"
+
+start -> rel
+rel -> no label="no"
+rel -> fea label="yes"
+fea -> no label="no"
+fea -> pro label="yes"
+pro -> yes label="yes"
+pro -> no label="no"
+@/diagram
+
+[tip]
+Kill-list for course of action options: *extreme* steps (banning
+everything, closing the institution), *evasive* steps (telling people
+to avoid the city, shifting the problem elsewhere), *authority-blind*
+steps (proposals the named body cannot execute), and *symptom-only*
+steps when a root-cause step is offered alongside them.
+[/tip]
+
+## 7. Solved Examples: Course of Action
+
+**Example 6.**
+Statement: "Many students of the local college fail the English paper
+every year."
+- Course I: "The college should arrange remedial English classes for
+  weak students." *Follows* — relevant, feasible for a college, and it
+  attacks the root cause.
+- Course II: "The college should abolish the English paper." *Does not
+  follow* — extreme and evasive; it removes the exam, not the weakness.
+
+**Example 7.**
+Statement: "A deep pothole on the national highway has caused several
+accidents."
+- Course I: "The pothole should be repaired immediately and warning
+  signs placed nearby." *Follows* — immediate relief plus interim
+  warning, exactly proportionate.
+- Course II: "All vehicular traffic on the highway should be banned
+  until further notice." *Does not follow* — wildly disproportionate
+  for one repairable defect.
+
+**Example 8.**
+Statement: "Cases of dengue are rising sharply in the city."
+- Course I: "The municipal body should intensify fogging and anti-larval
+  drives and run an awareness campaign." *Follows* — targets the vector
+  and informs the public.
+- Course II: "People should avoid visiting the city." *Does not
+  follow* — evasion; it asks outsiders to flee instead of attacking
+  the breeding grounds.
+
+**Example 9.**
+Statement: "The railway station is severely overcrowded during peak
+hours, leading to stampede-like situations."
+- Course I: "Additional ticket counters and public-address systems
+  should be provided during peak hours." *Follows* — feasible for the
+  railway authority and directly eases the crush.
+- Course II: "Railway travel should be discouraged to reduce crowds."
+  *Does not follow* — unrealistic and evasive for an essential service.
+
+**Example 10.**
+Statement: "Ravi scored very low marks in the pre-board examination."
+- Course I: "Ravi should be expelled from the school." *Does not
+  follow* — disproportionate and unjust for a single poor result.
+- Course II: "The question paper was too difficult and should be
+  rescored." *Does not follow* — invents a cause with no support in
+  the statement; one student's score proves nothing about the paper.
+  Hence *neither* course of action follows.
+
+[example]
+Answering method: **(1)** restate the problem in one line, **(2)**
+test each course against the three criteria — relevant, feasible,
+proportionate, **(3)** prefer the course that combines immediate relief
+with a long-term fix, **(4)** expect "neither follows" in roughly one
+question out of five, so never force a positive answer.
+[/example]
+
+## 8. Traps and Exam Discipline
+
+| Trap | Signature | Correct handling |
+| --- | --- | --- |
+| Sibling effects | two symptoms of one season or policy | choose "common cause", not a direct link |
+| Response statements | a campaign, bonus, or decision | treat as the effect of the problem |
+| Extreme courses | bans, closures, expulsions | reject as disproportionate |
+| Evasive courses | "avoid the city", "discourage travel" | reject; they flee the problem |
+| Invented causes | blames something the statement never said | reject in both question types |
+
+[info]
+Why both types sit in one lesson: cause and effect trains the *analytic* half of verbal judgement (what
+produced what), while course of action trains the *practical* half (what
+to do about it). Exams pair them because a candidate who mistakes
+symptoms for causes will also endorse the wrong remedy — the skill chain
+is one chain.
+[/info]
+
+## 9. Quick Revision
+
+| Concept | One-line rule |
+| --- | --- |
+| Cause-effect verdicts | A causes B / B causes A / independent / common cause |
+| Time order | the cause is never later than the effect |
+| Response rule | decisions and campaigns are effects of the problem they answer |
+| Common cause | two linked symptoms with no mechanism between them |
+| Immediate vs root | prefer the deeper fix; accept relief plus repair |
+| Course criteria | relevant, feasible, proportionate |
+| Strongest course | combines immediate relief with long-term repair |
+| Reject instantly | extreme, evasive, authority-blind proposals |
+| Neither follows | a real possibility — about one question in five |
+| Both statements are facts | never doubt the statements; only order them |
+
+[summary]
+Cause and effect questions order facts: check time, mechanism, and
+response statements, and reserve "common cause" for linked symptoms.
+Course of action questions judge proposals: demand relevance,
+feasibility, and proportion, and eliminate extreme or evasive steps.
+Ten solved questions above show both disciplines in action.
+[/summary]

@@ -1,17 +1,17 @@
 {
   "lessonId": "analogy-detailed-part-8",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 8 of 12",
+  "title": "Analogy — In-Depth Guide — Part 8 of 12",
   "questions": [
     {
       "question": "What does a 'Factor Analogy' test?",
       "options": [
-        "Word synonyms",
         "A relationship based on the factors of a number (numbers that divide it evenly)",
+        "Word synonyms",
         "A relationship based on word length",
         "A relationship based on letter position"
       ],
-      "correct": 1,
-      "rationale": "A factor analogy bases its relationship on the factors of a given number \u2014 the numbers that divide it evenly.",
+      "correct": 0,
+      "rationale": "A factor analogy bases its relationship on the factors of a given number — the numbers that divide it evenly.",
       "id": 1
     },
     {
@@ -35,30 +35,30 @@
         "A relationship based on word length"
       ],
       "correct": 1,
-      "rationale": "A cube-root analogy tests the inverse of a cubing relationship \u2014 the second number is the cube root of the first.",
+      "rationale": "A cube-root analogy tests the inverse of a cubing relationship — the second number is the cube root of the first.",
       "id": 3
     },
     {
       "question": "What does a 'Fraction Analogy' test?",
       "options": [
         "Only whole numbers",
-        "A relationship expressed using fractions, such as a number and a specific fraction of it",
+        "A relationship based on letter position",
         "A word-based relationship",
-        "A relationship based on letter position"
+        "A relationship expressed using fractions, such as a number and a specific fraction of it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A fraction analogy tests a relationship expressed through fractions, such as a number being related to a specific fraction (like half or a third) of it.",
       "id": 4
     },
     {
       "question": "What does a 'Percentage Analogy' test, similarly?",
       "options": [
-        "Only whole numbers with no relationship",
         "A relationship expressed as a percentage of the original number",
+        "Only whole numbers with no relationship",
         "A word synonym relationship",
         "A letter-position relationship"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A percentage analogy expresses the relationship as a specific percentage of the original number, functioning similarly to a fraction analogy.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does an 'Algebraic Analogy' test?",
       "options": [
         "A purely word-based relationship",
-        "A relationship expressed through a simple algebraic formula applied to the numbers involved",
         "A letter-position relationship only",
+        "A relationship expressed through a simple algebraic formula applied to the numbers involved",
         "A relationship with no numeric component"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "An algebraic analogy expresses the relationship through a formula (like n^2 + n) applied to the given numbers, generalizing beyond simple arithmetic.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does the 'Principle of Simplest Rule' recommend when multiple rules seem to fit?",
       "options": [
         "Always choose the most complex rule",
-        "Prefer the simplest rule that is fully consistent with the given information",
+        "Ignore the issue and pick any answer option",
         "Randomly select any fitting rule",
-        "Ignore the issue and pick any answer option"
+        "Prefer the simplest rule that is fully consistent with the given information"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Consistent with the golden rule theme across reasoning topics, this principle recommends preferring the simplest rule that remains fully consistent with the given pair.",
       "id": 8
     },

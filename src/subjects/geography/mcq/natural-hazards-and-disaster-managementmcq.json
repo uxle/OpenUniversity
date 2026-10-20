@@ -1,0 +1,76 @@
+{
+  "lessonId": "natural-hazards-and-disaster-management",
+  "title": "Natural Hazards and Disaster Management",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A hazard becomes a disaster when:",
+      "options": ["It occurs at night", "It overwhelms a community's capacity to cope", "It happens in winter", "It is predicted in advance"],
+      "correct": 1,
+      "rationale": "A disaster is a hazard plus vulnerability: losses are widespread only when the event exceeds what people can handle themselves."
+    },
+    {
+      "id": 2,
+      "question": "Which is the most severe seismic zone into which India is divided?",
+      "options": ["Zone V", "Zone IV", "Zone III", "Zone II"],
+      "correct": 0,
+      "rationale": "The Bureau of Indian Standards uses zones II to V, with Zone V the most severe, covering the north-east, Kutch, Himalaya, and Andaman and Nicobar."
+    },
+    {
+      "id": 3,
+      "question": "The devastating Bhuj earthquake occurred on which date?",
+      "options": ["26 December 2004", "30 September 1993", "26 January 2001", "16 April 1853"],
+      "correct": 2,
+      "rationale": "The Bhuj (Kutch) quake struck on Republic Day, 26 January 2001, measuring about 7.7 and killing roughly 20,000 people."
+    },
+    {
+      "id": 4,
+      "question": "Why does India's east coast suffer more cyclones than the west coast?",
+      "options": ["Its seas are colder", "The Bay of Bengal breeds far more storms than the Arabian Sea", "The Western Ghats block all storms", "The east coast has no ports"],
+      "correct": 1,
+      "rationale": "Warm Bay of Bengal waters generate many more cyclones than the Arabian Sea, striking Odisha, Andhra Pradesh, Tamil Nadu, and West Bengal."
+    },
+    {
+      "id": 5,
+      "question": "In a coastal cyclone, what kills most people?",
+      "options": ["Strong winds alone", "The storm surge of seawater pushed ashore", "Lightning", "Fog"],
+      "correct": 1,
+      "rationale": "The storm surge floods low coasts and drowns far more people than wind, which is why coastal evacuation saves the most lives."
+    },
+    {
+      "id": 6,
+      "question": "After the 2004 tsunami, India set up its tsunami early warning centre in which year and city?",
+      "options": ["2007 at Hyderabad", "2005 at Chennai", "2010 at Visakhapatnam", "2001 at New Delhi"],
+      "correct": 0,
+      "rationale": "The Indian Tsunami Early Warning Centre began in 2007 at Hyderabad, run by INCOIS, to issue alerts for the Indian Ocean."
+    },
+    {
+      "id": 7,
+      "question": "The NDMA, created under the Disaster Management Act of 2005, is chaired by:",
+      "options": ["The Union Home Secretary", "The Chief of the Army Staff", "The Prime Minister", "The Director General of IMD"],
+      "correct": 2,
+      "rationale": "The National Disaster Management Authority is chaired by the Prime Minister, with state and district authorities below it."
+    },
+    {
+      "id": 8,
+      "question": "Which phases of the disaster management cycle come before the event?",
+      "options": ["Response and recovery", "Mitigation and preparedness", "Relief and rescue", "Rehabilitation and reconstruction"],
+      "correct": 1,
+      "rationale": "Mitigation and preparedness act in advance — zoning, codes, drills, warnings — while response and recovery follow the impact."
+    },
+    {
+      "id": 9,
+      "question": "The Sendai Framework for disaster risk reduction covers which period?",
+      "options": ["2005-2015", "1990-2000", "2020-2040", "2015-2030"],
+      "correct": 3,
+      "rationale": "The Sendai Framework runs from 2015 to 2030 and guides national strategies, including India's, for cutting disaster risk."
+    },
+    {
+      "id": 10,
+      "question": "The recommended indoor action during earthquake shaking is:",
+      "options": ["Run down the stairs", "Stand in a doorway", "Drop-Cover-Hold under a sturdy table", "Jump out of a window"],
+      "correct": 2,
+      "rationale": "Drop-Cover-Hold on under strong furniture protects head and body; running or standing in doorways causes most injuries."
+    }
+  ]
+}

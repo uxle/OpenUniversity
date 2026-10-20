@@ -19,6 +19,7 @@ import { getPreference, setPreference } from "../storage/user-storage.js";
 import { createHeader } from "../components/layout/header.js";
 import { createFooter } from "../components/layout/footer.js";
 import { createMobileNavigation } from "../components/layout/mobile-navigation.js";
+import { createCommandPalette } from "../components/common/command-palette.js";
 import { initErrorToasts } from "../components/common/toast.js";
 
 const log = createLogger("bootstrap");
@@ -47,12 +48,20 @@ export async function startApp(containerSelector = "#app") {
 
   const outlet = createEl("main", { class: "ou-app-shell__main", id: "route-outlet", tabindex: "-1" });
   const bottomNav = createMobileNavigation();
+  // The command palette is a singleton overlay: create it once here and
+  // hand it to the header (trigger button) while mounting its element in
+  // the shell. Before this wiring existed the module was NEVER imported:
+  // the home hero button emitted PALETTE_OPEN to nobody, Ctrl+K was dead,
+  // and the header's search pill fell back to plain navigation with the
+  // palette's CSS sitting unused in the bundle.
+  const palette = createCommandPalette();
   const shell = createEl("div", { class: "ou-app-shell" }, [
     createEl("a", { href: "#route-outlet", class: "ou-skip-link" }, ["Skip to content"]),
-    createHeader(),
+    createHeader(palette),
     outlet,
     createFooter(),
     bottomNav,
+    palette.el,
   ]);
   mount(root, shell);
 

@@ -1,0 +1,235 @@
+# Python Fundamentals: Syntax, Types, and Control Flow
+
+> Python is the language most people meet first — and the one they
+> keep reaching for. This lesson builds the foundation: how names bind
+> to values, which types Python ships with, and how if, for, and
+> while give every program its shape.
+
+## 1. Why Python Reads Like Pseudocode
+
+Python is **interpreted** (runs line by line), **dynamically typed**
+(types are checked at run time, not declared in advance), and
+deliberately **readable** — blocks are marked by indentation, not
+braces. The result is code that often reads like a plain-English
+plan, which is why Python dominates teaching, scripting, data
+science, and AI work.
+
+The price is speed and strictness: Python is typically slower than
+compiled languages, and type mistakes surface only when the code
+runs. What you save in keystrokes you pay back in discipline — tests
+and type hints matter more, not less.
+
+@chart bar title="Lines of code for the same file-reading task (typical, illustrative)" labels:
+Python
+JavaScript
+Java
+C
+
+data:
+10
+18
+30
+55
+@/chart
+
+## 2. Variables and Dynamic Typing
+
+A **variable** in Python is a *name bound to an object* — not a box
+with a fixed type. The type lives with the value; the name may be
+rebound to anything, at any time.
+
+```python
+age = 21              # the name age -> int object 21
+age = "twenty-one"    # now age -> a str; Python does not complain
+print(type(age))      # <class 'str'>
+```
+
+[definition]
+**Dynamic typing** means type checking happens at run time and names
+carry no type of their own. This is not "untyped": every object has
+a type; you simply declare none.
+[/definition]
+
+Names are `snake_case` by convention, are case-sensitive, and may
+contain letters, digits, and underscores — but cannot start with a
+digit and cannot be a keyword (`if`, `class`, `lambda`).
+
+[warning]
+Freedom has a cost: a typo like `total = totla + n` creates a *new*
+variable instead of raising an error, and the mistake appears only
+when the wrong value is finally used. Run code early, run it often.
+[/warning]
+
+## 3. The Core Built-in Types
+
+Python ships with a small set of types that cover almost everything.
+
+| Type | Examples | Mutable? | Typical use |
+| --- | --- | --- | --- |
+| `int` | `42`, `-7`, unbounded size | No | Counting, indexes |
+| `float` | `3.14`, `2e-3` | No | Measurement (approximate!) |
+| `bool` | `True`, `False` | No | Decisions |
+| `str` | `"hello"` | No | Text (immutable sequence) |
+| `list` | `[1, 2, 3]` | Yes | Ordered collections that grow |
+| `tuple` | `(1, 2, 3)` | No | Fixed records, dict keys |
+| `dict` | `{"id": 7}` | Yes | Key-to-value lookup |
+| `set` | `{1, 2, 3}` | Yes | Uniqueness, membership |
+| `NoneType` | `None` | No | "Nothing here yet" |
+
+@diagram tree id="python-type-family" layout="tree" aria="Python core types grouped into numeric, sequence, mapping, set, and other"
+  "Python types" -> "Numeric"
+  "Python types" -> "Sequence"
+  "Python types" -> "Mapping"
+  "Python types" -> "Set"
+  "Numeric" -> "int, float, complex"
+  "Sequence" -> "list, tuple, str, range"
+  "Mapping" -> "dict"
+  "Set" -> "set, frozenset"
+@/diagram
+
+[info]
+Mutability is the hidden divider: `list`, `dict`, and `set` can
+change in place; `int`, `float`, `str`, and `tuple` cannot. Section 8
+shows how this single fact produces Python's most famous bug.
+[/info]
+
+## 4. Indentation Is Syntax: if / elif / else
+
+In Python a **block** is defined by consistent indentation — four
+spaces by convention. There are no braces to lean on, so the shape
+of the code *is* the structure of the program.
+
+```python
+score = 76
+if score >= 90:
+    grade = "A"
+elif score >= 75:
+    grade = "B"
+else:
+    grade = "C"
+print(grade)          # B
+```
+
+Conditions need no parentheses, and Python judges **truthiness**:
+`0`, `0.0`, `""`, `[]`, `{}`, and `None` behave as false; almost
+everything else behaves as true.
+
+[important]
+Never mix tabs and spaces — the file may *look* aligned, but Python
+will raise a `TabError` or, worse, silently nest a block differently
+than it appears. Configure your editor to insert four spaces.
+[/important]
+
+## 5. Loops: for and while
+
+Python's `for` iterates over the *items of a collection*, not over
+counters:
+
+```python
+for word in ["sun", "mon", "tue"]:
+    print(word.upper())          # SUN  MON  TUE
+
+for i in range(1, 6, 2):         # start 1, stop before 6, step 2
+    print(i)                     # 1  3  5
+```
+
+`while` repeats as long as a condition holds — the right tool when
+the number of repetitions is unknown in advance:
+
+```python
+n = 1
+while n * n < 100:
+    n += 1                       # there is no n++ in Python
+print(n)                         # 10
+```
+
+[tip]
+`break` leaves the loop now; `continue` skips to the next round. A
+loop's `else` clause runs only if the loop finished *without* a
+`break` — a clean way to say "searched everything, found nothing".
+[/tip]
+
+## 6. Collections Compared: list vs tuple vs dict vs set
+
+Choosing the right container is half of writing good Python.
+
+| Collection | Literal | Ordered? | Mutable? | Duplicates? | Shines at |
+| --- | --- | --- | --- | --- | --- |
+| `list` | `[1, 2]` | Yes | Yes | Yes | Ordered data, append/pop |
+| `tuple` | `(1, 2)` | Yes | No | Yes | Fixed records, dict keys |
+| `dict` | `{"a": 1}` | Insertion order | Yes | Keys unique | O(1) lookup by key |
+| `set` | `{1, 2}` | No | Yes | No | O(1) membership, dedup |
+
+[example]
+Roll number to name? Use a `dict`. A roster where repeats must
+vanish? Use a `set`. Coordinates of a point that must never change?
+Use a `tuple`. A shopping basket that grows and shrinks? Use a
+`list`.
+[/example]
+
+## 7. List Comprehensions
+
+A **list comprehension** builds a list from an iterable in one
+declarative line — loop, filter, and transform at once:
+
+```python
+squares = [n * n for n in range(1, 6)]          # [1, 4, 9, 16, 25]
+evens   = [n for n in range(10) if n % 2 == 0]  # [0, 2, 4, 6, 8]
+lengths = {w: len(w) for w in ["hi", "hello"]}  # dict comprehension
+unique  = {c for c in "banana"}                 # set comprehension
+```
+
+The general reading: *transform each item, for each item in the
+iterable, if the condition holds*. Comprehensions exist for dicts and
+sets too, and nest — though nesting past one level is a readability
+debt.
+
+[tip]
+If a comprehension needs two `for`s and an `if` before you can
+understand it, write a normal loop instead. Readability always wins;
+the comprehension is a tool, not a badge.
+[/tip]
+
+## 8. Common Pitfalls Every Beginner Hits
+
+| Pitfall | What happens | Fix |
+| --- | --- | --- |
+| Mutable default argument | One list shared across all calls | Default to `None`, create inside |
+| `5 / 2` vs `5 // 2` | `/` gives `2.5`; `//` floors to `2` — and `-7 // 2` is `-4` | Pick deliberately |
+| `is` vs `==` | `is` compares identity, not equality | Use `==`; keep `is` for `None` |
+| `0.1 + 0.2` | Gives `0.30000000000000004` | Compare with `math.isclose` |
+| Mutating while looping | Items get skipped in a shrinking list | Loop over a copy |
+
+The mutable default deserves a full look — it is the classic
+interview question:
+
+```python
+def add_item(item, basket=[]):    # BUG: evaluated once, at def time
+    basket.append(item)
+    return basket
+
+def add_item_safe(item, basket=None):
+    if basket is None:
+        basket = []               # fresh list on every call
+    basket.append(item)
+    return basket
+```
+
+[warning]
+The default value is created **once**, when the function is defined —
+not on each call. Every caller who omits `basket` shares the *same*
+list, so results leak across calls in ways that are miserable to
+debug. This is why functions and modularity matter early: the bug
+lives in the call convention, not the loop.
+[/warning]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Dynamic typing | Types live on values and are checked at run time |
+| Indentation | Four spaces define blocks — it is syntax, not style |
+| Truthiness | `0`, `""`, `[]`, `{}`, `None` are false; most else is true |
+| Container choice | list = ordered, tuple = fixed, dict = lookup, set = unique |
+| Comprehension | transform for item in iterable, if condition |
+| Mutable default | Never default to a mutable value — use `None` |

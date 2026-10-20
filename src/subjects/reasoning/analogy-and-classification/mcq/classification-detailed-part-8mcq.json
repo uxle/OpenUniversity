@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-8",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 8 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 8 of 16",
   "questions": [
     {
       "question": "What is a 'Numerical Feature Vector', specifically?",
       "options": [
-        "A vector with no numbers at all",
         "A feature vector where each property is expressed as a number, allowing direct numeric comparison across items",
+        "A vector with no numbers at all",
         "A vector only for word classification",
         "A single random number"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A numerical feature vector expresses each item's properties as numbers, enabling direct, precise numeric comparison to spot the outlier.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Classification as Clustering' frame the task as?",
       "options": [
         "A random sorting process",
-        "Grouping items by similarity, where the outlier is the item that doesn't fit well into the main cluster",
         "Only relevant to number classification",
+        "Grouping items by similarity, where the outlier is the item that doesn't fit well into the main cluster",
         "A task unrelated to grouping"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This frames classification as a clustering problem: items naturally group by shared properties, and the outlier is the one item that doesn't fit well into that main cluster.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Pairwise Comparison' involve?",
       "options": [
         "Comparing all items to a single fixed item only",
-        "Systematically comparing every pair of items in the group to identify shared and differing properties",
+        "Ignoring comparisons entirely",
         "Comparing only the first and last item",
-        "Ignoring comparisons entirely"
+        "Systematically comparing every pair of items in the group to identify shared and differing properties"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Pairwise comparison systematically checks every pair of items against each other, building a full picture of shared and differing properties across the group.",
       "id": 4
     },
     {
       "question": "What does 'Numerical Pairwise Comparison' apply this idea to, specifically?",
       "options": [
-        "Only word-based items",
         "Comparing numeric properties (like value, digit sum, or factors) between every pair of numbers in the group",
+        "Only word-based items",
         "Only letter-based items",
         "A comparison with no numeric basis"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This applies the pairwise comparison idea specifically to numeric properties, comparing values, digit sums, or other numeric features across every pair of numbers.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Sequence-Based Classification' test?",
       "options": [
         "A single isolated property",
-        "Whether a group of numbers follows an expected sequential pattern, with one number breaking the sequence",
         "A word-based property only",
+        "Whether a group of numbers follows an expected sequential pattern, with one number breaking the sequence",
         "A gender-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether numbers follow an expected sequential pattern (like consecutive or arithmetic), identifying the value that breaks that sequence.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does a 'Difference Table' help identify in classification?",
       "options": [
         "Word meanings only",
-        "The numeric gaps between consecutive or paired values, helping reveal a hidden pattern or the item that breaks it",
+        "A synonym relationship",
         "A gender-based property",
-        "A synonym relationship"
+        "The numeric gaps between consecutive or paired values, helping reveal a hidden pattern or the item that breaks it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A difference table lays out the numeric gaps between values systematically, helping reveal an underlying pattern and the value that breaks it.",
       "id": 8
     },

@@ -1,0 +1,314 @@
+# Data Sufficiency in Reasoning Problems
+
+> Reasoning DS replaces arithmetic with arrangements: seats, relations,
+> codes and ranks. A statement suffices when the clues leave exactly one
+> possibility standing — this lesson shows how many fixed seats, symbols
+> or anchor pairs that takes, topic by topic.
+
+[important]
+In reasoning DS you are not computing a number — you are counting
+arrangements. Build every possibility a statement allows; the moment
+more than one survives, that statement (or combination) is insufficient.
+[/important]
+
+## 1. How Reasoning DS Differs
+
+@diagram tree id="reasoning-ds-tree" layout="tree" aria="Reasoning data sufficiency topic families"
+  "Reasoning DS" -> "Seating arrangements"
+  "Reasoning DS" -> "Blood relations"
+  "Reasoning DS" -> "Coding-decoding"
+  "Reasoning DS" -> "Ordering and ranking"
+  "Reasoning DS" -> "Direction sense"
+  "Seating arrangements" -> "Rows"
+  "Seating arrangements" -> "Circles"
+@/diagram
+
+The stem hands you a puzzle with a question mark — who is opposite C,
+how is M related to K, what is the code for "blue". The statements hand
+you clues. The verdict measures *constraint*, not cleverness:
+
+| Arithmetic DS | Reasoning DS |
+| --- | --- |
+| unknowns are numbers | unknowns are positions, links or labels |
+| check: equations vs unknowns | check: arrangements vs uniqueness |
+| one equation, two unknowns = insufficient | one relative clue, no anchor = insufficient |
+| combine = solve the system | combine = merge the clue set and rebuild |
+
+## 2. The Uniqueness Test
+
+[definition]
+A clue set is **sufficient** exactly when it admits one and only one
+answer to the stem. Two valid arrangements that disagree on the asked
+seat, code or relation mean the set is insufficient — even if both
+arrangements agree on everything *else*.
+[/definition]
+
+@diagram flowchart id="uniqueness-flow" layout="hierarchical" aria="Uniqueness test flow for reasoning data sufficiency"
+node start label="Read the stem: which seat, code or relation is asked?" shape="pill"
+node b1 label="Build the arrangement from statement I" shape="round-rect"
+node u1 label="Exactly one possibility survives?" shape="diamond"
+node b2 label="Rebuild using statement II alone" shape="round-rect"
+node u2 label="Exactly one possibility survives?" shape="diamond"
+node bc label="Merge I and II and rebuild" shape="round-rect"
+node uc label="Exactly one possibility survives?" shape="diamond"
+node out label="Mark the matching option" shape="round-rect"
+
+start -> b1
+b1 -> u1
+u1 -> out
+u1 -> b2
+b2 -> u2
+u2 -> out
+u2 -> bc
+bc -> uc
+uc -> out
+@/diagram
+
+[tip]
+Draw before you decide. A five-seat row or a six-seat circle takes ten
+seconds to sketch, and every surviving arrangement becomes visible.
+Verdicts announced from memory of the words alone are the ones that go
+wrong.
+[/tip]
+
+## 3. Seating Arrangements: How Many Fixed Seats Are Enough
+
+A row clue is "fixed" when it pins a person to one seat (extreme left,
+middle, second from right). Relative clues (to the left of, between)
+only pin seats when an anchor exists. Sufficiency arrives when the asked
+seat is fixed.
+
+**Example 1 — neither suffices.** Five friends A, B, C, D, E sit in a row
+facing north. Who sits in the middle?
+- **I.** A is at the extreme left and E is at the extreme right.
+- **II.** B is immediately to the left of E, and C sits between A and B.
+
+I alone: A _ _ _ E — the middle is open. II alone: B lands at seat 4,
+but C between A (seat 1) and B (seat 4) can sit at seat 2 *or* seat 3.
+Two arrangements survive in each case — and even merged:
+
+```text
+A C D B E   -> middle is D
+A D C B E   -> middle is C
+```
+
+Both fit every clue and disagree on the answer. Verdict: **neither is
+sufficient even together**.
+
+**Example 2 — both together.** Five people P, Q, R, S, T sit in a row
+facing north. Who sits second from the right?
+- **I.** T is at the extreme left and Q is at the extreme right.
+- **II.** S sits exactly in the middle, and P is immediately to the left of S.
+
+I alone: T _ _ _ Q — insufficient. II alone: P _ S _ _ — three people
+still float. Merged: T P S R Q, so seat 4 (second from right) is **P** —
+one arrangement survives. Verdict: **both together**.
+
+**Example 3 — either alone, and rotation does not matter.** Six persons
+A–F sit around a circular table facing the centre. Who sits opposite C?
+- **I.** A sits opposite D, and B sits opposite E.
+- **II.** E sits third to the right of C.
+
+I alone: two opposite pairs are set, so the remaining pair (C, F) must
+face each other — sufficient. II alone: in a six-seat circle, third to
+the right is *directly opposite*, so C faces E — sufficient. Verdict:
+**either alone**. Notice the circle may be rotated freely; who sits
+opposite whom survives rotation.
+
+[warning]
+Relative seats need anchors. "C sits between A and B" fixes nothing
+unless the gap is one seat or an anchor fixes one end. A chain of
+relative clues with no extreme or numbered seat can survive forever and
+still be insufficient.
+[/warning]
+
+## 4. Blood Relations and Symbol Notation
+
+Relation puzzles pin two things: the *link* (parent, sibling, child) and
+the *gender*. Symbol notation compresses the links; the gender comes
+only from the symbols — never from the names.
+
+| Symbol | Meaning | Sufficiency value |
+| --- | --- | --- |
+| A + B | A is male | needed to say father, uncle, son |
+| A − B | A is female | needed to say mother, aunt, daughter |
+| A → B | A is the parent of B | the core link |
+| A ↔ B | A and B are a married couple | links two families |
+
+**Example 1 — I alone.** How is M related to K?
+- **I.** K is the sister of L, and M is the mother of L.
+- **II.** M has exactly two children, K and L.
+
+I alone: M is L's mother and K is L's sister, so M is K's mother too —
+link and gender both pinned. Sufficient. II alone: M is K's *parent*,
+but M's gender is unstated — mother or father both survive.
+Verdict: **I alone**.
+
+**Example 2 — II alone.** How is A related to B?
+- **I.** B is the son of C, and C is the sister of A.
+- **II.** A is the brother of C, and B is the son of C.
+
+I alone: A is C's sibling but A's gender is unknown — uncle *or* aunt.
+Insufficient. II alone: A is male and C's sibling, B is C's son, so A is
+B's uncle. Sufficient. Verdict: **II alone**.
+
+[note]
+A relation that ends in "uncle or aunt" or "son or daughter" is the
+signature of a missing gender symbol. If the asked relation has a
+gendered word, some statement must mark gender — or the verdict is
+insufficient.
+[/note]
+
+## 5. Coding and Decoding
+
+In word-to-code questions, a sentence pair works like an equation set:
+shared words take shared codes, and a code becomes *named* only when
+every other word in the sentence is accounted for.
+
+**Example 1 — both together.** What is the code for "blue"?
+- **I.** "sky is blue" is written as "pa qe ri".
+- **II.** "blue ink dries" is written as "ri ta ve".
+
+I alone: blue is one of pa/qe/ri — unnameable. II alone: same problem.
+Merged: "blue" is the only word common to both sentences and "ri" is
+the only code common to both, so blue = ri. Verdict: **both together**.
+
+**Example 2 — I alone, using an internal anchor.** What is the code for
+"rain"?
+- **I.** "rain falls here" is written as "do re me", and "snow falls here" is written as "do re fa".
+- **II.** "heavy rain came" is written as "me so la".
+
+I alone contains *two* sentences: shared words "falls here" take the
+shared codes "do re", leaving "me" unmatched in the first and "fa"
+unmatched in the second — so rain = me. One statement, fully sufficient.
+II alone has three words against three codes and no anchor. Verdict:
+**I alone**.
+
+[tip]
+Count unmatched words against unmatched codes. A code is named the
+moment the sentence has exactly one unexplained word — that is what
+statement II achieves in Example 2 and what merging achieves in
+Example 1.
+[/tip]
+
+## 6. Ordering and Ranking
+
+Rank questions convert freely between ends: position from the top =
+total − position from the bottom + 1. Sufficiency needs either both ends
+named, or one end and the total.
+
+**Example 1 — either alone.** What is Ravi's rank from the top in a class
+of 40?
+- **I.** Ravi is 23rd from the bottom.
+- **II.** Ravi is 8 ranks below Sunil, and Sunil is 10th from the top.
+
+I alone: 40 − 23 + 1 = 18th — sufficient. II alone: 10 + 8 = 18th —
+sufficient. Verdict: **either alone**.
+
+**Example 2 — both together, with the order fixed.** How many students
+are in the row?
+- **I.** A is 15th from the left end.
+- **II.** B is 20th from the right end, lies to the right of A, with exactly 6 students between them.
+
+I alone: no right-end data. II alone: A's position floats. Merged:
+A at 15, six students after, so B at 22 from the left; B is 20th from
+the right, so total = 22 + 20 − 1 = 41. Verdict: **both together**.
+
+[warning]
+Where a "between" count appears without the *order* of the two people,
+the total has two possible values. If statement II had not said that B
+lies to the right of A, the merged data would allow two totals — and
+the verdict would drop to neither.
+[/warning]
+
+## 7. Direction Sense
+
+Direction DS is geometry without numbers: a chain of relative bearings
+fixes the asked direction whenever every step is axis-aligned.
+
+**Example — either alone.** In which direction is B with respect to A?
+- **I.** B is north of C, and C is east of A.
+- **II.** B is 4 km north of D, and D is 3 km north of A.
+
+I alone: go east from A to reach C, then north to reach B — B is
+north-east of A, whatever the distances. Sufficient. II alone: the path
+A → D → B runs due north twice — B is north of A. Sufficient. Verdict:
+**either alone**.
+
+[info]
+Distances matter only when the stem asks for *distance* (or the path
+bends). For a pure direction stem, the bearings alone decide — a
+statement full of kilometres can still be sufficient or insufficient
+for reasons that have nothing to do with the numbers.
+[/info]
+
+## 8. Traps and Timing
+
+A well-set reasoning DS section also spreads its verdicts, with
+"neither" appearing more often than in arithmetic because broken clue
+chains are easy to plant:
+
+@chart donut title="Typical answer spread in a 40-question reasoning DS set (illustrative)" labels:
+I alone
+II alone
+Either alone
+Both together
+Neither
+
+data:
+9
+9
+8
+10
+4
+@/chart
+
+| Trap | What it looks like | Defence |
+| --- | --- | --- |
+| First-fit arrest | stopping at the first arrangement that fits | enumerate *all* survivors before judging |
+| Gender from names | assuming Meena must be female | gender exists only where a symbol states it |
+| Relative without anchor | "B is to the left of C" in a free row | demand an extreme, middle or numbered seat |
+| Rotated circle panic | circle drawing looks different each try | rotate to a canonical start; opposite pairs survive |
+| "Between" ambiguity | two people fit "between A and B" | check the gap size, not the phrase |
+| Unanchored sentence pair | three words, three codes, no overlap | a code is nameable only with a shared anchor |
+
+[tip]
+Budget **30–45 seconds per question**. Spend the first five writing the
+frame — five blanks for a row, six dots for a circle, two columns for a
+code pair — then place clues and count survivors. If a statement leaves
+a two-case fork, that fork *is* the verdict: insufficient.
+[/tip]
+
+[warning]
+Do not mark "both together" the moment merging *reduces* the
+possibilities. Reduction is not uniqueness — a clue set that cuts six
+arrangements to two has improved but still failed the stem.
+[/warning]
+
+## 9. Quick Revision
+
+| Topic | What makes a statement sufficient | Common verdict |
+| --- | --- | --- |
+| Seating (rows) | asked seat pinned; all others irrelevant | both together |
+| Seating (circles) | opposite pairs or a counted offset | either or both |
+| Blood relations | link plus gender both pinned | depends on symbols |
+| Coding-decoding | one unmatched word against one unmatched code | both together |
+| Ordering and ranking | two ends, or one end plus the total | either |
+| Direction sense | axis-aligned chain to the asked bearing | either |
+
+| Point | One-line recap |
+| --- | --- |
+| Master rule | exactly one surviving arrangement = sufficient |
+| Test order | I alone, then II alone, then merge |
+| Gender rule | relations stay ambiguous without a gender symbol |
+| Code rule | shared word pairs name codes; orphans do not |
+| Rank rule | top = total − bottom + 1 |
+| Time budget | 30–45 seconds, drawn not memorised |
+
+[summary]
+Reasoning DS is a uniqueness game played on paper. Sketch the frame,
+lay each statement's clues on it, and count the arrangements that
+survive the stem's question. Rows need anchors, relations need gender,
+codes need shared pairs, ranks need two ends — and a verdict is earned
+only when one possibility is left standing.
+[/summary]

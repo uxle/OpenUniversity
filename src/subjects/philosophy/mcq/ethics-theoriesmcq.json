@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "Which level of ethics asks what moral claims mean and whether moral truths are objective?",
-      "options": ["Applied ethics", "Normative ethics", "Metaethics", "Descriptive ethics"],
+      "options": [
+        "Applied ethics",
+        "Normative ethics",
+        "Metaethics",
+        "Descriptive ethics"
+      ],
       "correct": 2,
       "rationale": "Metaethics studies the meaning and status of moral talk; normative ethics builds theories of right action, and applied ethics handles cases."
     },
     {
       "id": 2,
       "question": "Bentham's hedonic calculus measures pleasures by:",
-      "options": ["Intensity, duration, certainty, propinquity, fecundity, purity, and extent", "Their conformity to duty", "Their agreement with scripture", "The virtue they express"],
+      "options": [
+        "Intensity, duration, certainty, propinquity, fecundity, purity, and extent",
+        "Their conformity to duty",
+        "Their agreement with scripture",
+        "The virtue they express"
+      ],
       "correct": 0,
       "rationale": "Bentham's felicific calculus ranks pleasures on seven dimensions, with each person counting for one and nobody for more than one."
     },
     {
       "id": 3,
       "question": "Mill distinguished higher from lower pleasures, illustrating with the line:",
-      "options": ["Pleasure is the absence of pain", "Better to be Socrates dissatisfied than a fool satisfied", "Virtue is its own reward", "Might makes right"],
+      "options": [
+        "Pleasure is the absence of pain",
+        "Better to be Socrates dissatisfied than a fool satisfied",
+        "Virtue is its own reward",
+        "Might makes right"
+      ],
       "correct": 1,
       "rationale": "Mill ranked mental pleasures above bodily ones in quality, answering the objection that utilitarianism is a doctrine fit only for swine."
     },
     {
       "id": 4,
       "question": "The difference between act and rule utilitarianism is that:",
-      "options": ["Act utilitarianism rejects pleasure as the standard", "Rule utilitarianism assesses rules by the consequences of their general adoption", "Rule utilitarianism is Kantian", "Act utilitarianism only applies to governments"],
-      "correct": 1,
+      "options": [
+        "Act utilitarianism rejects pleasure as the standard",
+        "Act utilitarianism only applies to governments",
+        "Rule utilitarianism is Kantian",
+        "Rule utilitarianism assesses rules by the consequences of their general adoption"
+      ],
+      "correct": 3,
       "rationale": "Act utilitarians rate each act by its own consequences; rule utilitarians rate the rules whose general adoption has the best consequences."
     },
     {
       "id": 5,
       "question": "For Kant, the imperative 'Keep promises — always' differs from 'If you want to be trusted, keep promises' because the former is:",
-      "options": ["Hypothetical", "Categorical", "Consequentialist", "A virtue"],
-      "correct": 1,
+      "options": [
+        "Categorical",
+        "Hypothetical",
+        "Consequentialist",
+        "A virtue"
+      ],
+      "correct": 0,
       "rationale": "Hypothetical imperatives bind conditionally on desires (if you want X); the categorical imperative commands unconditionally on universalizable maxims."
     },
     {
       "id": 6,
       "question": "Which principle is one of Rawls' two principles of justice as fairness?",
-      "options": ["The greatest good of the greatest number", "The difference principle — inequalities allowed only if they benefit the worst off", "The categorical imperative", "The veil of virtue"],
-      "correct": 1,
+      "options": [
+        "The greatest good of the greatest number",
+        "The categorical imperative",
+        "The difference principle — inequalities allowed only if they benefit the worst off",
+        "The veil of virtue"
+      ],
+      "correct": 2,
       "rationale": "Chosen from an original position behind a veil of ignorance (A Theory of Justice, 1971): equal basic liberties, and inequalities only when they advantage the least well off."
     },
     {
       "id": 7,
       "question": "Aristotle's doctrine of the mean places courage between:",
-      "options": ["Honesty and dishonesty", "Cowardice and rashness", "Stinginess and wastefulness", "Surliness and flattery"],
+      "options": [
+        "Honesty and dishonesty",
+        "Cowardice and rashness",
+        "Stinginess and wastefulness",
+        "Surliness and flattery"
+      ],
       "correct": 1,
       "rationale": "Each virtue is a mean relative to us between deficiency and excess: courage sits between cowardice and rashness, generosity between stinginess and wastefulness."
     },
     {
       "id": 8,
       "question": "Phronesis, the master virtue in Aristotle's ethics, is:",
-      "options": ["Theoretical wisdom about the heavens", "Practical wisdom — the skill of finding the right act in context", "Pleasure in contemplation", "Obedience to law"],
-      "correct": 1,
+      "options": [
+        "Theoretical wisdom about the heavens",
+        "Obedience to law",
+        "Pleasure in contemplation",
+        "Practical wisdom — the skill of finding the right act in context"
+      ],
+      "correct": 3,
       "rationale": "Because no rule anticipates every case, phronesis is the virtue that locates the mean and the right action in the circumstances."
     },
     {
       "id": 9,
       "question": "Carol Gilligan's care ethics, in In a Different Voice (1982), emphasises:",
-      "options": ["Impartial calculation of utilities", "Relationships and responsiveness over abstract rule-following", "Divine commands", "Social contracts between self-interested parties"],
+      "options": [
+        "Impartial calculation of utilities",
+        "Relationships and responsiveness over abstract rule-following",
+        "Divine commands",
+        "Social contracts between self-interested parties"
+      ],
       "correct": 1,
       "rationale": "Gilligan argued that morality grows out of caring relationships and responsiveness to particular others, challenging purely rule- and principle-centred accounts."
     },
     {
       "id": 10,
       "question": "In the trolley case, what is the standard deontological verdict on diverting the trolley to kill one instead of five?",
-      "options": ["Pull the switch; the arithmetic is decisive", "Do not pull; diverting the trolley uses the one person as a means to save the rest", "Pull, if the one is old", "There is no deontological view"],
+      "options": [
+        "Pull the switch; the arithmetic is decisive",
+        "Do not pull; diverting the trolley uses the one person as a means to save the rest",
+        "Pull, if the one is old",
+        "There is no deontological view"
+      ],
       "correct": 1,
       "rationale": "The utilitarian pulls (five over one); the Kantian objects that turning the trolley treats the one as a mere means — the case separates the theories."
     }

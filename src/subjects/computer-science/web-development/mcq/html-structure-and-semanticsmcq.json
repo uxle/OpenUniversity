@@ -1,0 +1,126 @@
+{
+  "lessonId": "html-structure-and-semantics",
+  "title": "HTML: Structure and Semantics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the doctype declaration at the top of an HTML document do?",
+      "options": [
+        "Imports a page template from the server",
+        "Switches browsers into standards mode",
+        "Loads the page's CSS stylesheet",
+        "Declares the human language of the page"
+      ],
+      "correct": 1,
+      "rationale": "The doctype tells the browser to render in standards mode rather than emulating legacy quirks; the language is declared separately on the html element with lang."
+    },
+    {
+      "id": 2,
+      "question": "Which element should wrap the unique content of the page, appearing exactly once per document?",
+      "options": [
+        "header",
+        "nav",
+        "main",
+        "aside"
+      ],
+      "correct": 2,
+      "rationale": "main marks the one central content area and maps to the main landmark, letting screen-reader users jump past repeated headers and navigation."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a void element — no content and no closing tag?",
+      "options": [
+        "p",
+        "div",
+        "img",
+        "ul"
+      ],
+      "correct": 2,
+      "rationale": "img is void: it carries only attributes such as src and alt. Elements like p, div, and ul wrap content and must be closed."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between article and section?",
+      "options": [
+        "They are interchangeable synonyms",
+        "article is self-contained content that could stand alone (a post, a product card); section is a themed chapter of the page it lives on",
+        "section is used only for images and media",
+        "article must always be nested inside nav"
+      ],
+      "correct": 1,
+      "rationale": "An article makes sense syndicated or on its own page, while a section groups related content within the page and normally starts with its own heading."
+    },
+    {
+      "id": 5,
+      "question": "What is the correct alt attribute for a purely decorative background flourish image?",
+      "options": [
+        "alt=\"image\"",
+        "alt=\"decoration\"",
+        "No alt attribute at all",
+        "alt=\"\" (empty)"
+      ],
+      "correct": 3,
+      "rationale": "An empty alt tells screen readers to skip the image entirely; omitting the attribute instead makes them announce the filename, and descriptive alt would be noise."
+    },
+    {
+      "id": 6,
+      "question": "What does a label element connected to a form control through matching for and id values provide?",
+      "options": [
+        "Styling for the input field",
+        "A programmatic association: clicking the label focuses the control and screen readers announce it as the field's name",
+        "Server-side validation of the field",
+        "Automatic submission of the form"
+      ],
+      "correct": 1,
+      "rationale": "The label-for link is the accessible name of the control; it also enlarges the clickable target, which helps every user."
+    },
+    {
+      "id": 7,
+      "question": "When should a form use method=\"post\" rather than \"get\"?",
+      "options": [
+        "When the form changes server state or carries sensitive data such as passwords",
+        "For search pages so the results are bookmarkable",
+        "Never — get is always the correct method",
+        "Only when JavaScript is enabled in the browser"
+      ],
+      "correct": 0,
+      "rationale": "GET puts data in the URL where it is cached and logged, so anything sensitive or state-changing must go in the POST body; GET is right for bookmarkable searches."
+    },
+    {
+      "id": 8,
+      "question": "Why prefer strong over b for important text?",
+      "options": [
+        "Because b is deprecated and no longer renders",
+        "Because strong makes text larger",
+        "Because they are identical in meaning, only the name differs",
+        "Because strong conveys real importance that screen readers announce, while b is purely visual"
+      ],
+      "correct": 3,
+      "rationale": "Semantic elements carry meaning to assistive technology; b and i are presentational and communicate nothing beyond their look."
+    },
+    {
+      "id": 9,
+      "question": "What is the recommended rule for heading levels (h1 to h6)?",
+      "options": [
+        "Exactly one h1 per page, descending levels without skipping any",
+        "As many h1 elements as there are font sizes needed",
+        "Use h1 only inside the header element",
+        "Choose heading levels by the color and size you want"
+      ],
+      "correct": 0,
+      "rationale": "Headings form the document outline that screen-reader users navigate by; one h1 with no skipped levels keeps that map intact, while size is CSS's job."
+    },
+    {
+      "id": 10,
+      "question": "What is the 'first rule of ARIA' in accessible web development?",
+      "options": [
+        "Add ARIA roles to every element for safety",
+        "ARIA attributes replace the need for alt text",
+        "Prefer native semantic elements; reach for ARIA only when no native equivalent exists",
+        "ARIA is relevant only to form controls"
+      ],
+      "correct": 2,
+      "rationale": "A native button already announces itself, is focusable, and handles Enter and Space; ARIA can patch roles onto non-semantic markup but should never be the first choice."
+    }
+  ]
+}

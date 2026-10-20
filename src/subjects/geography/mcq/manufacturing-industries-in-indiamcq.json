@@ -1,0 +1,76 @@
+{
+  "lessonId": "manufacturing-industries-in-india",
+  "title": "Manufacturing Industries in India",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Manufacturing is best defined as:",
+      "options": ["Extracting ores from the ground", "Selling goods across borders", "Transforming raw materials into finished goods with machines and labour", "Growing crops for the market"],
+      "correct": 2,
+      "rationale": "Manufacturing adds value by processing raw materials into finished goods, which distinguishes it from mining, farming, and trade."
+    },
+    {
+      "id": 2,
+      "question": "India's first cotton textile mill opened in 1854 in which city?",
+      "options": ["Ahmedabad", "Mumbai", "Coimbatore", "Kanpur"],
+      "correct": 1,
+      "rationale": "The first mill was set up in Mumbai, whose humid climate, cotton hinterland, port, and capital earned it the name Cottonopolis of India."
+    },
+    {
+      "id": 3,
+      "question": "Which Indian city is nicknamed the 'Manchester of India' for its cotton mills?",
+      "options": ["Ahmedabad", "Surat", "Jamshedpur", "Kochi"],
+      "correct": 0,
+      "rationale": "Ahmedabad grew beside the black-soil cotton tracts of Gujarat with cheap labour and power, mirroring Manchester in England."
+    },
+    {
+      "id": 4,
+      "question": "India's first integrated iron and steel plant, TISCO, was set up in 1907 at:",
+      "options": ["Bhilai", "Durgapur", "Rourkela", "Sakchi (Jamshedpur)"],
+      "correct": 3,
+      "rationale": "TISCO began at Sakchi in 1907, on the Chhotanagpur plateau where iron ore, coal, limestone, water, and railways come together."
+    },
+    {
+      "id": 5,
+      "question": "Aluminium smelters are usually located near cheap electricity because:",
+      "options": ["Ore has to be shipped overseas", "Smelting is extremely electricity-hungry", "The metal spoils near ports", "Labour is the only cost that matters"],
+      "correct": 1,
+      "rationale": "Reducing bauxite to aluminium needs enormous power, so plants like NALCO's at Koraput pair bauxite with cheap electricity."
+    },
+    {
+      "id": 6,
+      "question": "Jute mills concentrate in the Hugli basin chiefly because of:",
+      "options": ["Nearby iron ore and limestone", "Cool climate required for spinning", "Raw jute, river water, cheap labour, and the Kolkata port", "Government orders banning other regions"],
+      "correct": 2,
+      "rationale": "The Ganga delta supplies the fibre, and the Hugli provides water for retting, labour, power, and a port for export."
+    },
+    {
+      "id": 7,
+      "question": "In the Index of Industrial Production, which group carries the greatest weight?",
+      "options": ["Manufacturing", "Electricity", "Mining", "Construction"],
+      "correct": 0,
+      "rationale": "Manufacturing carries about 77.6 percent of the IIP weights, far ahead of mining (about 14.4) and electricity (about 8)."
+    },
+    {
+      "id": 8,
+      "question": "Cement plants in India tend to follow the belts of which raw material?",
+      "options": ["Bauxite", "Mica", "Coking coal", "Limestone"],
+      "correct": 3,
+      "rationale": "Cement is made from limestone with coal and gypsum, so plants cluster in Rajasthan, Andhra Pradesh, and Gujarat."
+    },
+    {
+      "id": 9,
+      "question": "Which city is known as the 'Detroit of India' for its automobile industry?",
+      "options": ["Gurugram", "Pune", "Sanand", "Chennai"],
+      "correct": 3,
+      "rationale": "Chennai hosts a dense cluster of car and component makers, earning the nickname Detroit of India."
+    },
+    {
+      "id": 10,
+      "question": "A landmark reform of 1991 for Indian industry was:",
+      "options": ["The SEZ Act", "Nationalisation of banks", "Near-abolition of industrial licensing", "Start of the Green Revolution"],
+      "correct": 2,
+      "rationale": "The 1991 liberalisation largely scrapped industrial licensing and opened the sector to competition and foreign investment."
+    }
+  ]
+}

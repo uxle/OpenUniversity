@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-6",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 6 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 6 of 22",
   "questions": [
     {
       "question": "What does 'first + last coding' compute?",
       "options": [
-        "The word's total length",
         "The sum of the alphabet positions of the word's first and last letters",
+        "The word's total length",
         "The product of the first and last letters' positions",
         "Only the first letter's position"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "First + last coding adds together the alphabet-position values of just the word's first and last letters.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'first x last coding' compute, in contrast?",
       "options": [
         "The same sum as first + last coding",
-        "The product of the alphabet positions of the word's first and last letters",
         "The difference between them",
+        "The product of the alphabet positions of the word's first and last letters",
         "The average of all letters in the word"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Instead of adding the first and last letters' positions, this variation multiplies them together to produce the code.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'middle-letter coding' use as a word's code?",
       "options": [
         "The word's first letter",
-        "The letter (or letters) positioned in the middle of the word",
+        "The total letter count",
         "The word's last letter",
-        "The total letter count"
+        "The letter (or letters) positioned in the middle of the word"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Middle-letter coding bases the code on whichever letter (or letters, for even-length words) sits in the middle of the word.",
       "id": 4
     },
     {
       "question": "What is 'sentence coding'?",
       "options": [
-        "Coding that only works on single letters",
         "Applying a coding rule across an entire sentence rather than just a single word, often word by word",
+        "Coding that only works on single letters",
         "A rule that ignores whole sentences",
         "Only relevant to the Chinese coding method"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Sentence coding extends the coding logic beyond a single word, applying a rule across an entire sentence, typically transforming it word by word.",
       "id": 5
     },
@@ -119,7 +119,7 @@
         "Because multiple sentences are required only for very long words"
       ],
       "correct": 1,
-      "rationale": "A single sentence pair only tells you which set of code words matches which set of real words as a whole \u2014 you need overlapping words across multiple sentences to isolate the mapping for each individual word.",
+      "rationale": "A single sentence pair only tells you which set of code words matches which set of real words as a whole — you need overlapping words across multiple sentences to isolate the mapping for each individual word.",
       "id": 10
     }
   ]

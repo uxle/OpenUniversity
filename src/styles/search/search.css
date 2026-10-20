@@ -29,7 +29,12 @@
   border: none;
   background: transparent;
   outline: none;
-  font-size: var(--ou-fs-md);
+  /* max(16px, …): the global input rule in accessibility.css guards
+     against iOS Safari's auto-zoom-on-focus (<16px inputs zoom the whole
+     page), but THIS selector outranked it with a bare var(--ou-fs-md)
+     (15px at small viewports) — focusing search on an iPhone zoomed the
+     layout. Keep the guard here too. */
+  font-size: max(16px, var(--ou-fs-md));
   color: var(--ou-text);
   min-width: 0;
 }
@@ -42,6 +47,9 @@
   overflow-x: auto;
   scrollbar-width: none;
   padding-bottom: 2px;
+  /* Momentum panning on iOS; keep vertical page-scroll intact. */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
 }
 .ou-pill-row::-webkit-scrollbar { display: none; }
 .ou-pill {
@@ -54,6 +62,11 @@
   font-weight: 500;
   white-space: nowrap;
   touch-action: manipulation;
+  /* Was ~31px tall: a full row of filter chips is a primary touch
+     surface on phones and every pill missed the 44px target by 13px.
+     Padding keeps the pill visual compact; min-height guarantees the
+     tap area on every device. */
+  min-height: 44px;
   transition:
     background-color var(--ou-transition-fast),
     border-color var(--ou-transition-fast),

@@ -1,0 +1,237 @@
+# Lesson 26: Spotting Errors and Sentence Improvement
+
+> Error-spotting rewards pattern recognition, not instinct: the same
+> twenty traps recur in every paper, dressed in new sentences. This
+> lesson collects those traps — agreement, tense, pronoun, preposition,
+> and modifier faults — into rule-plus-example pairs and a solved table
+> you can drill until each trap announces itself on sight.
+
+## 1. How Error-Spotting Questions Work
+
+The standard item prints a sentence split into three or four labelled
+parts and asks which part contains the error; a fifth option says
+*no error*. Sentence improvement gives you a sentence segment and four
+alternative renderings, asking for the best one.
+
+A three-pass method keeps you fast and calm:
+
+1. **Read the whole sentence for sense** — many "errors" resolve once
+   the intended meaning is clear.
+2. **Check the verb chain first** — agreement, tense, and form errors
+   live in the verb, and the verb is where half of all errors sit.
+3. **Check the small words** — prepositions, pronouns, articles, and
+   conjunctions carry the rest.
+
+@diagram tree id="error-taxonomy" layout="tree" aria="Taxonomy of error types tested in competitive exams"
+  "Common error families" -> "Subject-verb agreement"
+  "Common error families" -> "Tense and verb form"
+  "Common error families" -> "Pronoun use"
+  "Common error families" -> "Preposition and collocation"
+  "Common error families" -> "Modifiers and word order"
+  "Common error families" -> "Redundancy and word choice"
+@/diagram
+
+[tip]
+If two parts look suspicious, pick the one with the **verb**: verbs are
+rule-governed and examiners know it. Doubt about a preposition is often
+a doubt about a fixed collocation — memorise the partner, not the rule.
+[/tip]
+
+## 2. Subject-Verb Agreement Traps
+
+The verb agrees with the true grammatical subject, not with the noun
+that happens to sit nearest to it. Intervening phrases are the setter's
+favourite camouflage.
+
+| Trap | Wrong | Right |
+| --- | --- | --- |
+| Phrase between subject and verb | The quality of the mangoes were poor. | The quality of the mangoes **was** poor. |
+| Each and every take a singular verb | Each of the boys were present. | Each of the boys **was** present. |
+| Either ... or: verb agrees with the nearer subject | Neither the teacher nor the students was late. | Neither the teacher nor the students **were** late. |
+| One of the + plural noun + singular verb | One of my friends are a doctor. | One of my friends **is** a doctor. |
+| Collective noun as one unit | The committee were divided in its opinion. | The committee **was** divided in its opinion. |
+| Amount treated as one sum | Ten kilometres are a long walk. | Ten kilometres **is** a long walk. |
+| Pair nouns take a plural verb | My spectacles is broken. | My spectacles **are** broken. |
+| A number of vs the number of | A number of students was absent. | A number of students **were** absent. |
+
+[warning]
+*A number of* means "several" and takes a plural verb, but *the number
+of* is the subject "number" itself and takes a singular verb: *The
+number of accidents has fallen.* Distinguish these by the article, not
+by the following noun.
+[/warning]
+
+## 3. Tense and Verb-Form Traps
+
+| Trap | Wrong | Right |
+| --- | --- | --- |
+| Since + point of time with perfect tense | He is living here since 2010. | He **has been living** here since 2010. |
+| No sooner ... than (not when) | No sooner did he arrive when the bell rang. | No sooner did he arrive **than** the bell rang. |
+| Hardly ... when | Hardly had he sat down than the phone rang. | Hardly had he sat down **when** the phone rang. |
+| Sequence of tenses | He said that earth revolved round the sun. | He said that earth **revolves** round the sun (universal truth). |
+| Double past markers | I did not went to school. | I **did not go** to school. |
+| Conditional chain | If he will come, I will meet him. | If he **comes**, I will meet him. |
+| Gerund after preposition | She is fond to dance. | She is fond of **dancing**. |
+| Perfect infinitive after wish for the past | I wish I meet him yesterday. | I wish I **had met** him yesterday. |
+
+[example]
+Spot the error: *No sooner (a)/ the chief guest arrived (b)/ than the
+anthem began (c)/ no error (d).*
+*No sooner* demands an inverted auxiliary: *No sooner **did** the chief
+guest arrive than ...* — the error is in part (b), which lacks the
+auxiliary *did* before the subject.
+[/example]
+
+## 4. Pronoun Errors
+
+| Trap | Wrong | Right |
+| --- | --- | --- |
+| Reflexive for emphasis after as, than, but | He is as tall as myself. | He is as tall as **I (am)**. |
+| Its (possessive) vs their for a collective | The jury gave its verdicts separately. | The jury gave **their** verdicts separately (acting individually). |
+| One ... one's | One should do their duty. | One should do **one's** duty. |
+| Comparisons after than | She is taller than me in our class (formal writing). | She is taller than **I (am)**. |
+| Who (subject) vs whom (object) | Whom do you think won the prize? | **Who** do you think won the prize? |
+| Possessive with gerund | I was surprised at he going there. | I was surprised at **his** going there. |
+| Order of pronouns (231 rule for faults) | I, you and he are at fault. | **You, he and I** are at fault. |
+
+[important]
+The famous **231 rule**: in a *confession* (taking blame) the order is
+second person, third person, then first — *You, he and I will be
+punished*; in a *credit* (good act) the order is 123 — *I, you and he
+will be rewarded*. Only pronouns of different persons are reordered;
+*you and I*, both subjects, simply keep *you* first.
+[/important]
+
+## 5. Preposition and Collocation Errors
+
+These errors have no logic to rescue you; only the fixed pair helps.
+The wrong partner *feels* right because a near-synonym takes a different
+preposition.
+
+| Wrong | Right | Why |
+| --- | --- | --- |
+| discussed about the matter | discussed the matter | discuss takes a direct object |
+| comprises of five chapters | comprises five chapters | comprise = consist of |
+| married with a doctor | married to a doctor | married pairs with to |
+| inferior than | inferior to | Latin comparatives take to |
+| prefer tea than coffee | prefer tea to coffee | prefer pairs with to |
+| abides by the rules | abides by the rules (correct) | check the fixed partner, not instinct |
+| desirous for | desirous of | desirous pairs with of |
+| deprived from | deprived of | deprive pairs with of |
+| ignorant about the law | ignorant of the law | ignorant pairs with of |
+| congratulate him for his success | congratulate him on his success | congratulate pairs with on |
+
+## 6. Modifier and Word-Order Errors
+
+A **dangling modifier** opens a sentence describing an actor, and then
+the sentence's subject turns out to be someone else entirely.
+
+* Wrong: *Walking through the park, the flowers looked beautiful.*
+  (the flowers were not walking)
+* Right: *Walking through the park, **I found** the flowers beautiful.*
+
+* Wrong: *He only died last week.* (reads as: he did nothing but die)
+* Right: *He died **only** last week.* — place *only* immediately
+  before what it limits.
+
+| Misplaced element | Confusing sentence | Clear sentence |
+| --- | --- | --- |
+| only | She only sings on Sundays. | She sings on Sundays only. |
+| almost | The child almost ate the whole cake. | The child ate almost the whole cake. |
+| participial opener | Being a rainy day, we stayed home. | It being a rainy day, we stayed home. |
+| relative clause | The dog bit the man with a leash. | The dog with a leash bit the man. |
+
+## 7. Fifteen Solved Examples
+
+| No. | Sentence with labelled parts | Error and correction |
+| --- | --- | --- |
+| 1 | One of my (a)/ cousin (b)/ lives in Jaipur (c) | (b) cousins — one of the + plural noun |
+| 2 | The Ganga (a)/ is one of (b)/ the holiest river of India (c) | (c) rivers — superlative needs plural |
+| 3 | He as well as (a)/ his friends (b)/ were invited (c) | (c) was — as well as ignores the second noun |
+| 4 | She has been (a)/ working here (b)/ since five years (c) | (c) for five years — duration takes for |
+| 5 | I did not (a)/ go to the office (b)/ because I was ill (c) | no error — all parts correct |
+| 6 | Each of the (a)/ answers were (b)/ checked twice (c) | (b) was — each takes a singular verb |
+| 7 | The scenery (a)/ of Kashmir (b)/ are beautiful (c) | (c) is — scenery is uncountable |
+| 8 | He is superior (a)/ than his colleague (b)/ in experience (c) | (b) to his colleague — superior takes to |
+| 9 | Neither of the two (a)/ answers are (b)/ acceptable (c) | (b) is — neither of takes a singular verb |
+| 10 | The teacher gave (a)/ us many advices (b)/ before the exam (c) | (b) advice — uncountable, no plural |
+| 11 | If I (a)/ will see him, (b)/ I shall tell him (c) | (b) see him — no will in the if-clause |
+| 12 | He is one of (a)/ the best batsman (b)/ in the team (c) | (b) batsmen — one of the + plural |
+| 13 | I met (a)/ an European (b)/ at the fair (c) | (b) a European — European begins with a y-sound |
+| 14 | She is looking (a)/ forward to meet (b)/ you soon (c) | (b) to meeting — to is a preposition here |
+| 15 | The committee (a)/ have issued (b)/ its report (c) | (b) has issued — one body, singular verb |
+
+Drill these pairs by covering the third column and reconstructing the
+correction aloud; the pattern, not the sentence, is what you are
+memorising.
+
+@chart bar title="Share of error-spotting items by family in a typical paper" labels:
+Agreement
+Tense and verb form
+Preposition and collocation
+Pronoun
+Modifier
+Word choice
+
+data:
+25
+20
+18
+13
+12
+12
+@/chart
+
+## 8. Sentence Improvement Method
+
+Improvement items ask not for a *correct* sentence but for the **best**
+of the four options — and "no improvement" is a real option about
+twice in every ten items.
+
+1. Keep the **meaning** fixed: an option that changes the sense is
+   wrong however elegant its grammar.
+2. Prefer the option that removes **redundancy**: *return back*,
+   *revert back*, *final conclusion*, *cousin brother*, *repeat again*
+   — each says the same thing twice.
+3. Prefer the option with a **stronger single verb** over verb plus
+   noun: *decided* beats *took a decision*.
+4. Watch dangling openers first in the segment; they are the most
+   common improvement target.
+5. If the given segment is already correct and concise, choose
+   **no improvement** — changing for the sake of changing loses marks.
+
+[example]
+Improve: *The reason for his absence is because he was ill.*
+Option analysis: "reason ... because" is redundant — the reason is
+*that* he was ill, not *because*. The improved sentence is *The reason
+for his absence is that he was ill.*
+[/example]
+
+[warning]
+Never choose an option merely because it introduces a "fancier" word.
+Improvement tests precision and economy, not decoration; the plainest
+grammatically clean option is usually the intended answer.
+[/warning]
+
+## 9. Quick Revision
+
+| Trigger in the sentence | Likely trap | Fix to remember |
+| --- | --- | --- |
+| of the mangoes after a singular head | agreement with nearest noun | verb agrees with the head noun |
+| each, every, either, neither | plural verb | singular verb |
+| one of the ... | singular noun after it | plural noun, singular verb |
+| since 2010 | simple present | present perfect |
+| no sooner | when | than, with inversion |
+| as well as, along with | plural verb | verb agrees with the first subject |
+| superior, inferior, senior, junior | than | to |
+| reason ... because | double conjunction | reason ... that |
+| return back, repeat again | redundancy | single word |
+| -ing opener | dangling modifier | match the subject |
+
+[summary]
+Error-spotting is a fixed syllabus: verbs first (agreement and tense),
+then pronouns, prepositions, and modifiers. Memorise the paired traps —
+*each ... was*, *one of the + plural + is*, *since* with perfect,
+*no sooner ... than*, *superior to* — and for improvement items protect
+meaning, kill redundancy, and respect the honest "no improvement".
+[/summary]

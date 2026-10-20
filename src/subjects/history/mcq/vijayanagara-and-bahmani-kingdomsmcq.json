@@ -1,0 +1,76 @@
+{
+  "lessonId": "vijayanagara-and-bahmani-kingdoms",
+  "title": "The Vijayanagara and Bahmani Kingdoms",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Vijayanagara was founded in 1336 on the Tungabhadra by which two Sangama brothers?",
+      "options": ["Saluva and Narasa", "Harihara and Bukka", "Deva Raya and Vira Vijaya", "Rama Raya and Tirumala"],
+      "correct": 1,
+      "rationale": "Harihara I and Bukka I of the Sangama family founded the city in 1336; tradition says the sage Vidyaranya guided their reconversion and the state's founding."
+    },
+    {
+      "id": 2,
+      "question": "The Bahmani sultanate was founded in 1347 by:",
+      "options": ["Ala-ud-din Hasan Bahman Shah (Hasan Gangu)", "Ahmad Shah Wali", "Firuz Shah Bahmani", "Mahmud Gawan"],
+      "correct": 0,
+      "rationale": "Ala-ud-din Hasan Bahman Shah, known as Hasan Gangu, broke from Delhi in 1347 and ruled from Gulbarga (Ahsanabad)."
+    },
+    {
+      "id": 3,
+      "question": "Abdur Razzaq, who described Vijayanagara as a city 'such that the eye has not seen', came as envoy from:",
+      "options": ["The Ottoman Sultan", "Shah Rukh of Herat in Persia", "The Ming Emperor of China", "The Caliph of Egypt"],
+      "correct": 1,
+      "rationale": "Abdur Razzaq was Timurid Shah Rukh's envoy from Herat; he visited Deva Raya II's court in 1443 and wrote his account in the Matla-us-Sadain."
+    },
+    {
+      "id": 4,
+      "question": "Krishnadevaraya's famous Telugu work on devotion and kingship is:",
+      "options": ["Manucharitamu", "Amuktamalyada", "Madhura Vijayam", "Kalingattupparani"],
+      "correct": 1,
+      "rationale": "Krishnadevaraya himself composed the Amuktamalyada in Telugu, containing a celebrated chapter of statecraft; Manucharitamu was by his court poet Allasani Peddana."
+    },
+    {
+      "id": 5,
+      "question": "The Raichur battle of 1520, witnessed by Domingo Paes, ended in victory for Krishnadevaraya over:",
+      "options": ["Prataparudra Gajapati of Orissa", "Ismail Adil Shah of Bijapur", "Hussain Nizam Shah of Ahmadnagar", "Quli Qutb Shah of Golconda"],
+      "correct": 1,
+      "rationale": "At Raichur in 1520 Krishnadevaraya crushed Ismail Adil Shah's army — the Portuguese visitor Domingo Paes watched the fight and praised Hampi as the best-provided city in the world."
+    },
+    {
+      "id": 6,
+      "question": "The battle of Talikota (Rakshasa-Tangadi) in 1565 was fought against an alliance of:",
+      "options": ["Bijapur, Ahmadnagar, and Golconda", "Bidar, Berar, and Golconda", "The Bahmani kingdom and the Mughals", "Madurai, Tanjore, and Jinji nayakas"],
+      "correct": 0,
+      "rationale": "The Deccan sultanates of Bijapur, Ahmadnagar, and Golconda united, destroyed Rama Raya's army, beheaded him, and sacked Hampi — ending Vijayanagara's greatness."
+    },
+    {
+      "id": 7,
+      "question": "Mahmud Gawan's administrative reform increased the Bahmani provinces (tarafs) from four to:",
+      "options": ["Six", "Eight", "Ten", "Twelve"],
+      "correct": 1,
+      "rationale": "Gawan reorganised the kingdom into eight tarafs, enlarged crown lands, and moved nobles to cash salaries — reforms that provoked the Deccani faction into forging the letter that cost him his life in 1481."
+    },
+    {
+      "id": 8,
+      "question": "The Bahmani capital was shifted from Gulbarga to Bidar by:",
+      "options": ["Ala-ud-din Hasan", "Firuz Shah", "Ahmad Shah Wali", "Muhammad Shah III"],
+      "correct": 2,
+      "rationale": "Ahmad Shah Wali (1422-1436) moved the capital to Bidar around 1424 and conducted devastating campaigns against Vijayanagara and Warangal."
+    },
+    {
+      "id": 9,
+      "question": "Under the nayankara system of Vijayanagara, military chiefs held revenue assignments of land known as:",
+      "options": ["Iqta", "Amaram", "Jagir", "Brahmadeya"],
+      "correct": 1,
+      "rationale": "Nayakas held amaram — revenue assignments — on condition of maintaining troops for the raya; iqta was the Sultanate's parallel institution and brahmadeya a Chola land grant."
+    },
+    {
+      "id": 10,
+      "question": "The famous stone chariot and halls of musical pillars belong to which temple at Hampi?",
+      "options": ["Virupaksha temple", "Hazara Rama temple", "Vitthala temple", "Achyutaraya temple"],
+      "correct": 2,
+      "rationale": "The Vitthala temple, expanded under Krishnadevaraya, houses the stone chariot and pillared halls whose columns sound musical notes; Hazara Rama was the royal chapel with Ramayana friezes."
+    }
+  ]
+}

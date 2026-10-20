@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-14",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 14 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 14 of 16",
   "questions": [
     {
       "question": "What does 'Classification by Relation' test?",
       "options": [
-        "A single isolated property",
         "Whether a group of item PAIRS share a common relationship, with one pair having a different underlying relationship",
+        "A single isolated property",
         "Only individual item properties",
         "A property unrelated to pairs"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether a group of paired items shares a common relationship (like part-whole or cause-effect), identifying the pair with a different relationship.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Pair Classification' specifically test?",
       "options": [
         "Individual items in isolation",
-        "Whether a set of item pairs are all connected by the same type of relationship, with one pair breaking that pattern",
         "Only numeric values",
+        "Whether a set of item pairs are all connected by the same type of relationship, with one pair breaking that pattern",
         "Only word meanings"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Pair classification looks at pairs of items (not single items) and tests whether they all share the same connecting relationship, finding the pair that doesn't.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What do 'Common Pair Relationships' likely catalog?",
       "options": [
         "Only number-based relationships",
-        "A reference of frequently-tested pair relationship types (part-whole, cause-effect, etc.) relevant to pair classification",
+        "An unrelated random list",
         "Only word synonyms",
-        "An unrelated random list"
+        "A reference of frequently-tested pair relationship types (part-whole, cause-effect, etc.) relevant to pair classification"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This catalogs the commonly-tested types of pair relationships, providing a quick reference for recognizing which relationship type connects a given set of pairs.",
       "id": 4
     },
     {
       "question": "What is the key difference between 'Classification' and 'Analogy'?",
       "options": [
-        "They are identical skills",
         "Classification finds the one item that breaks a shared group property; analogy finds a new pair that matches a given pair's relationship",
+        "They are identical skills",
         "Analogy only applies to numbers",
         "Classification only applies to letters"
       ],
-      "correct": 1,
-      "rationale": "Classification identifies the outlier that breaks a shared property among a group, while analogy matches a relationship from a given pair onto a new pair \u2014 related but distinct skills.",
+      "correct": 0,
+      "rationale": "Classification identifies the outlier that breaks a shared property among a group, while analogy matches a relationship from a given pair onto a new pair — related but distinct skills.",
       "id": 5
     },
     {
       "question": "What is the key difference between 'Classification' and 'Series'?",
       "options": [
         "They are identical skills",
-        "Classification finds a static group's outlier; series reasoning finds the next/missing term in an ordered sequence",
         "Series only applies to letters",
+        "Classification finds a static group's outlier; series reasoning finds the next/missing term in an ordered sequence",
         "Classification only applies to numbers"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Classification deals with a static, unordered group and its odd one out, while series reasoning deals with an ordered sequence and predicting its next or missing term.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What do 'Common Exam Traps' in classification likely consolidate?",
       "options": [
         "Only correct techniques",
-        "The recurring mistake patterns (like the function-based and material-based traps) covered earlier in the lesson, gathered into one reference",
+        "Only number-based traps",
         "A list unrelated to classification errors",
-        "Only number-based traps"
+        "The recurring mistake patterns (like the function-based and material-based traps) covered earlier in the lesson, gathered into one reference"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This consolidates the various trap patterns covered throughout the lesson into one convenient, quick-reference summary.",
       "id": 8
     },

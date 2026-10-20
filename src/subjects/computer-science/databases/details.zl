@@ -1,0 +1,15 @@
+# Databases
+
+@subject {
+  id: databases
+  parent: computer-science
+  title: "Databases"
+  description: "How structured data is stored, queried, and protected — tables, SQL, schema design, and transactions."
+}
+
+@lessons {
+  intro-databases-and-dbms
+  sql-fundamentals
+  er-model-and-normalisation
+  transactions-and-concurrency
+}

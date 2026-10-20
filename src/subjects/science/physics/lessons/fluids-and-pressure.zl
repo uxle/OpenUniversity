@@ -1,0 +1,236 @@
+# Fluids at Rest: Pressure, Buoyancy, and Bernoulli
+
+> Liquids and gases are fluids: they flow, and even at rest they push
+> on everything around them. This lesson builds fluid pressure from the
+> ground up — Pascal's law and the hydraulic press, density and relative
+> density, Archimedes and the laws of floatation, and Bernoulli's
+> principle with its everyday applications and honest caveats.
+
+## 1. Pressure in Fluids
+
+[definition]
+**Pressure** is the force acting normally (perpendicularly) on unit
+area: $P = F/A$. Its SI unit is the **pascal (Pa)** — 1 Pa = 1 N/m².
+Because a fluid yields by flowing, a **fluid at rest** pushes equally
+in all directions at a given point.
+[/definition]
+
+Three facts summarise the pressure of a fluid at rest:
+
+| Fact | Consequence |
+| --- | --- |
+| Pressure at a point acts equally in all directions | a deep diver feels the squeeze from every side |
+| Pressure increases with depth | dam walls are built thicker at the bottom |
+| Pressure depends on depth and density, not container shape | all tubes of a communicating-vessel set stand level |
+
+The pressure at depth h in a liquid of density ρ is
+
+@math label="eq:fluid-pressure"
+P = P_{0} + \rho g h
+@/math
+
+where $P_0$ is the pressure at the free surface (usually atmospheric)
+and $g \approx 9.8\ \mathrm{m/s^{2}}$.
+
+[example]
+At 10 m below the surface of water (ρ = 1000 kg/m³) the extra pressure
+is $\rho g h = 1000 \times 9.8 \times 10 = 98000$ Pa — roughly one
+extra atmosphere for every 10 m of depth. That is why divers' ears
+hurt even a few metres down.
+[/example]
+
+## 2. Density and Relative Density
+
+[definition]
+**Density** is mass per unit volume, $\rho = m/V$, in kg/m³ (or g/cm³,
+with 1 g/cm³ = 1000 kg/m³). **Relative density** (specific gravity)
+compares a substance with water:
+
+Relative density = density of substance ÷ density of water
+
+It is a pure number with **no unit**, since the two densities cancel.
+[/definition]
+
+@chart bar title="Densities of common substances (kg/m³)"
+labels:
+Cork
+Ice
+Water
+Steel
+Mercury
+
+data:
+240
+920
+1000
+7800
+13600
+@/chart
+
+A body with relative density greater than 1 tends to sink in water;
+one below 1 tends to float. A **hydrometer** measures relative density
+by how deep it sinks — used to test milk, battery acid, and spirit
+strength.
+
+## 3. Pascal's Law and Hydraulic Machines
+
+[definition]
+**Pascal's law**: pressure applied to an enclosed fluid is transmitted
+undiminished to every part of the fluid and to the walls of the
+container, always acting at right angles to the surfaces.
+[/definition]
+
+Since $P = F/A$ is the same everywhere, a small force on a small
+piston can lift a large load on a large piston — the **hydraulic
+press**. Take a 100 N push on a piston of area 0.01 m²: it creates a
+pressure of 10,000 Pa, which lifts a 5,000 N car resting on a 0.5 m²
+piston. The force multiplication is the piston-area ratio:
+
+@math label="eq:hydraulic"
+F_{2} = F_{1} \times \frac{A_{2}}{A_{1}}
+@/math
+
+| Device | What it does | Where you meet it |
+| --- | --- | --- |
+| Hydraulic press | multiplies force by A₂/A₁ | baling scrap metal, forging |
+| Hydraulic brakes | passes pedal pressure evenly | every car, pedal to four wheels |
+| Hydraulic lift or jack | raises heavy loads | garages, service stations |
+| Hydraulic excavator | transmits pressure to rams | construction machinery |
+
+[tip]
+The gain in force is not free energy: the small piston must travel a
+much larger distance, so work in equals work out (friction apart).
+Machines multiply force *or* distance — never both.
+[/tip]
+
+@diagram tree id="pascal-applications" layout="tree" aria="Applications of Pascal's law"
+  "Pascal's law" -> "Hydraulic press"
+  "Pascal's law" -> "Hydraulic brakes"
+  "Pascal's law" -> "Hydraulic lift and jack"
+  "Pascal's law" -> "Hydraulic excavator"
+@/diagram
+
+## 4. Atmospheric Pressure
+
+The air above us weighs, pressing with about 101,325 Pa at sea level —
+**one atmosphere**, enough to support a 76 cm column of mercury in a
+**barometer**. A falling mercury height signals falling pressure and
+likely rain.
+
+| Everyday proof | How it works |
+| --- | --- |
+| Drinking straw | sucking lowers pressure inside the straw; air pressure pushes the drink up |
+| Rubber sucker | squeezing out air lets atmospheric pressure pin it to the wall |
+| Syringe | pulling the piston lowers the pressure; the liquid is pushed in |
+| Why we are not crushed | pressure inside our bodies balances the outside pressure |
+
+[warning]
+A vacuum does not *suck*. Sipping a straw creates low pressure inside
+it; it is the atmospheric pressure outside that does the pushing.
+[/warning]
+
+## 5. Archimedes' Principle
+
+[definition]
+**Archimedes' principle**: when a body is wholly or partially immersed
+in a fluid, the fluid pushes it upward with a force — the **buoyant
+force** or **upthrust** — equal to the weight of the fluid the body
+displaces.
+[/definition]
+
+[example]
+A stone that weighs 8 N in air weighs only 6.5 N when hung in water:
+the 1.5 N loss of weight is the upthrust. The stone therefore displaces
+water weighing 1.5 N — about 153 g, a volume near 153 cm³.
+[/example]
+
+The upthrust grows with the **volume submerged**, the **density of the
+fluid** (floating is easier in sea water than fresh), and **g**. Once a
+body is fully immersed, going deeper adds *no* further upthrust.
+
+## 6. Floatation: Why Some Things Sink
+
+Whether an object floats is a contest between its weight downward and
+the upthrust upward:
+
+| Condition | Result |
+| --- | --- |
+| Weight greater than the maximum upthrust | body sinks (steel nail in water) |
+| Weight equals upthrust, partly submerged | body floats in equilibrium (ship) |
+| Weight equals upthrust, wholly submerged | body floats at any depth (fish, submarine) |
+| Body density less than fluid density | floats; submerged fraction = relative density |
+| Body density greater than fluid density | sinks |
+
+The **law of floatation**: a floating body displaces fluid whose
+*weight equals its own weight*. An iceberg's relative density is about
+0.92, so roughly nine-tenths of it lies below the surface — only the
+tip shows. Ships are built hollow so their *average* density is less
+than water, and **Plimsoll lines** on the hull mark the deepest safe
+loading in waters of different density.
+
+[important]
+An iron ship floats while an iron nail sinks: the ship's shape
+displaces a huge volume of water, so the upthrust can match its great
+weight. Floating depends on average density, not on the material alone.
+[/important]
+
+## 7. Bernoulli's Principle
+
+[definition]
+**Bernoulli's principle**: where a fluid flows faster its pressure is
+lower, and where it flows slower its pressure is higher. It holds for
+streamlined, non-viscous, incompressible flow of a fluid whose density
+stays constant from point to point.
+[/definition]
+
+@math label="eq:bernoulli"
+P + \frac{1}{2}\rho v^{2} + \rho g h = \mathrm{constant}
+@/math
+
+Each term is an energy per unit volume: pressure energy, kinetic
+energy, and gravitational potential energy. A **venturimeter** turns
+the pressure drop in a narrowed pipe into a measure of flow speed.
+
+[warning]
+Bernoulli's principle is routinely oversold. "Faster air always has
+lower pressure" is not a law of nature — it holds under the streamlined
+conditions above. Aeroplane lift is better explained by Newton's third
+law: the wing deflects air downward, and the air pushes the wing up.
+[/warning]
+
+## 8. Bernoulli at Work: Aerofoils, Atomisers, and Surprises
+
+| Application | How Bernoulli enters |
+| --- | --- |
+| Aerofoil (wing) | the curved upper surface speeds the airflow, lowering pressure above; together with the wing's angle of attack this lifts the plane |
+| Atomiser or perfume sprayer | the bulb speeds air across the tube; the low pressure draws liquid up and scatters it |
+| Chimney draft | wind across the top lowers pressure, drawing smoke up |
+| Spinning ball (Magnus effect) | spin quickens the airflow on one side; the ball swerves — the swing of a cricket ball |
+| Two speeding vehicles | fast air between them is at low pressure; they are drawn together — keep lane distance |
+| Roof in a storm | high wind above the roof lowers its pressure; air inside lifts the roof off |
+
+[note]
+Blow over the top of a strip of paper and it *rises*: the fast jet
+lowers the pressure above while ordinary atmospheric pressure below
+stays put — the cheapest classroom demonstration of Bernoulli.
+[/note]
+
+[info]
+Blood flowing through a narrowed artery speeds up and its pressure
+drops — the same physics inside us. Doppler ultrasound exploits these
+pressure and speed changes to detect blockages.
+[/info]
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Pressure | P = F/A; unit pascal (N/m²) |
+| Pressure at depth | P = P₀ + ρgh — grows with depth and density |
+| Pascal's law | enclosed fluid transmits pressure undiminished → press, brakes, lifts |
+| Relative density | density ÷ density of water; unit-less; hydrometer measures it |
+| Archimedes | upthrust = weight of displaced fluid |
+| Floatation | floats when weight = upthrust, i.e. average density below the fluid's |
+| Bernoulli | faster flow → lower pressure, for streamlined non-viscous flow |
+| Applications | aerofoil lift, atomiser, chimney draft, Magnus effect |
+| Caveat | Bernoulli is conditional; lift is also Newton's third law at work |

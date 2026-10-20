@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "India's flexible inflation-targeting framework, adopted via a 2016 RBI Act amendment, targets:",
-      "options": ["WPI inflation of 2%", "CPI inflation of 4% with a 2–6% band", "GDP growth of 8%", "Money supply growth of 15%"],
-      "correct": 1,
+      "options": [
+        "CPI inflation of 4% with a 2–6% band",
+        "WPI inflation of 2%",
+        "GDP growth of 8%",
+        "Money supply growth of 15%"
+      ],
+      "correct": 0,
       "rationale": "The amended RBI Act (Section 45ZA) fixes the target as 4% CPI inflation with a tolerance band of two percentage points on either side."
     },
     {
       "id": 2,
       "question": "The Monetary Policy Committee consists of:",
-      "options": ["Three members, all from the RBI", "Six members — three from the RBI and three government nominees", "Nine members drawn from banks", "Only the Finance Minister and the RBI Governor"],
-      "correct": 1,
+      "options": [
+        "Three members, all from the RBI",
+        "Nine members drawn from banks",
+        "Six members — three from the RBI and three government nominees",
+        "Only the Finance Minister and the RBI Governor"
+      ],
+      "correct": 2,
       "rationale": "The MPC has six members: the RBI Governor (chair), the Deputy Governor for monetary policy, one RBI officer, and three government-nominated experts, deciding by majority vote."
     },
     {
       "id": 3,
       "question": "The repo rate is the rate at which:",
-      "options": ["Banks lend to their best customers", "The RBI lends short-term to banks against securities", "The RBI borrows from the government", "Banks lend to each other overnight"],
+      "options": [
+        "Banks lend to their best customers",
+        "The RBI lends short-term to banks against securities",
+        "The RBI borrows from the government",
+        "Banks lend to each other overnight"
+      ],
       "correct": 1,
       "rationale": "Repo is the RBI's short-term collateralised lending rate to banks — the main policy lever that sets the cost of credit in the economy."
     },
     {
       "id": 4,
       "question": "If the RBI raises the CRR, the immediate effect is that:",
-      "options": ["Banks have more funds to lend", "The credit multiplier shrinks and lendable deposits fall", "Government borrowing becomes cheaper", "The rupee automatically depreciates"],
-      "correct": 1,
+      "options": [
+        "Banks have more funds to lend",
+        "The rupee automatically depreciates",
+        "Government borrowing becomes cheaper",
+        "The credit multiplier shrinks and lendable deposits fall"
+      ],
+      "correct": 3,
       "rationale": "A higher CRR locks more deposits as cash with the RBI, lowering the money multiplier (1/CRR) and contracting credit — a tightening move."
     },
     {
       "id": 5,
       "question": "Under open market operations, the RBI fights inflation by:",
-      "options": ["Buying government securities from banks", "Selling government securities to banks", "Printing new currency notes", "Raising the SLR to 100%"],
-      "correct": 1,
+      "options": [
+        "Selling government securities to banks",
+        "Buying government securities from banks",
+        "Printing new currency notes",
+        "Raising the SLR to 100%"
+      ],
+      "correct": 0,
       "rationale": "Selling securities absorbs money from the banking system; buying injects liquidity — so sales are the tight-money, anti-inflation move."
     },
     {
       "id": 6,
       "question": "The Standing Deposit Facility (SDF), introduced in 2022, is notable because it:",
-      "options": ["Lends to banks without collateral", "Absorbs banks' surplus funds without needing collateral", "Replaces the repo rate as the main policy rate", "Applies only to foreign banks"],
-      "correct": 1,
+      "options": [
+        "Lends to banks without collateral",
+        "Replaces the repo rate as the main policy rate",
+        "Absorbs banks' surplus funds without needing collateral",
+        "Applies only to foreign banks"
+      ],
+      "correct": 2,
       "rationale": "The SDF absorbs surplus liquidity without collateral, replacing the fixed-rate reverse repo as the liquidity corridor's floor."
     },
     {
       "id": 7,
       "question": "Raising the margin requirement on loans against sensitive commodities is an example of:",
-      "options": ["A quantitative tool", "A qualitative (selective) tool of monetary policy", "Fiscal policy", "Debt management"],
+      "options": [
+        "A quantitative tool",
+        "A qualitative (selective) tool of monetary policy",
+        "Fiscal policy",
+        "Debt management"
+      ],
       "correct": 1,
       "rationale": "Margin requirements, selective credit controls, credit rationing, and moral suasion are qualitative instruments aimed at particular markets."
     },
     {
       "id": 8,
       "question": "Moral suasion as a monetary tool means the RBI:",
-      "options": ["Legally compels banks to cut lending", "Persuades banks through meetings, letters, and public statements", "Fines banks for excess credit", "Nationalises erring banks"],
+      "options": [
+        "Legally compels banks to cut lending",
+        "Persuades banks through meetings, letters, and public statements",
+        "Fines banks for excess credit",
+        "Nationalises erring banks"
+      ],
       "correct": 1,
       "rationale": "Moral suasion is informal pressure — guidance without formal orders — a classic qualitative instrument."
     },
     {
       "id": 9,
       "question": "In the transmission mechanism, a repo rate increase first affects:",
-      "options": ["Retail prices directly", "Banks' cost of funds, which passes into lending rates", "The government's tax collections", "The exchange rate only"],
+      "options": [
+        "Retail prices directly",
+        "Banks' cost of funds, which passes into lending rates",
+        "The government's tax collections",
+        "The exchange rate only"
+      ],
       "correct": 1,
       "rationale": "The chain runs: repo rises → banks' funding cost rises → lending rates reset → credit and demand cool → inflation eases, over several quarters."
     },
     {
       "id": 10,
       "question": "Which combination represents an easy money policy?",
-      "options": ["Lower repo rate and purchase of securities", "Higher CRR and sale of securities", "Higher repo rate with higher margin requirements", "Higher bank rate with credit rationing"],
+      "options": [
+        "Lower repo rate and purchase of securities",
+        "Higher CRR and sale of securities",
+        "Higher repo rate with higher margin requirements",
+        "Higher bank rate with credit rationing"
+      ],
       "correct": 0,
       "rationale": "Easy (cheap) money cuts rates, lowers reserve ratios, and buys securities to expand credit — used against recession, not inflation."
     }

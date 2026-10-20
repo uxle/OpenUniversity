@@ -1,0 +1,76 @@
+{
+  "lessonId": "trigonometry",
+  "title": "Trigonometry: Measuring with Triangles",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a right triangle, the side opposite angle θ is 3 and the hypotenuse is 5. Then sin θ equals:",
+      "options": ["3/4", "3/5", "4/5", "5/3"],
+      "correct": 1,
+      "rationale": "Sine is opposite over hypotenuse, so sin θ = 3/5; 4/5 would be the cosine and 5/3 the cosecant."
+    },
+    {
+      "id": 2,
+      "question": "The value of cos 60° is:",
+      "options": ["1/2", "√3/2", "√2/2", "1"],
+      "correct": 0,
+      "rationale": "From the standard angles table, cos 60° = 1/2 (and sin 60° = √3/2)."
+    },
+    {
+      "id": 3,
+      "question": "The value of tan 45° is:",
+      "options": ["0", "1/2", "1", "√3"],
+      "correct": 2,
+      "rationale": "sin 45° = cos 45°, so their ratio tan 45° = 1 — the only standard angle where opposite and adjacent are equal."
+    },
+    {
+      "id": 4,
+      "question": "A 10 m ladder leans against a wall at 60° to the ground. The height it reaches is:",
+      "options": ["5 m", "8.66 m", "10 m", "7.07 m"],
+      "correct": 1,
+      "rationale": "height = 10 × sin 60° = 10 × (√3/2) = 5√3 ≈ 8.66 m; the ladder itself is the hypotenuse."
+    },
+    {
+      "id": 5,
+      "question": "If sin θ = 5/13 with θ acute, then cos θ equals:",
+      "options": ["12/13", "13/12", "8/13", "5/12"],
+      "correct": 0,
+      "rationale": "cos²θ = 1 − sin²θ = 1 − 25/169 = 144/169, so cos θ = 12/13 — the 5-12-13 triangle."
+    },
+    {
+      "id": 6,
+      "question": "For every angle θ, sin²θ + cos²θ equals:",
+      "options": ["0", "2", "1", "tan θ"],
+      "correct": 2,
+      "rationale": "This is the Pythagorean identity: the two squared ratios partition the hypotenuse, so they always sum to 1."
+    },
+    {
+      "id": 7,
+      "question": "sin 20° is equal to:",
+      "options": ["cos 70°", "cos 20°", "sin 70°", "tan 70°"],
+      "correct": 0,
+      "rationale": "Complementary angles swap sine and cosine: sin θ = cos(90° − θ), and 20° + 70° = 90°."
+    },
+    {
+      "id": 8,
+      "question": "A pole casts a 20 m shadow when the sun's elevation is 30°. The pole's height is:",
+      "options": ["20√3 m", "10 m", "40 m", "20/√3 m"],
+      "correct": 3,
+      "rationale": "height = shadow × tan 30° = 20 × (1/√3) = 20/√3 ≈ 11.55 m; the shadow is the adjacent side."
+    },
+    {
+      "id": 9,
+      "question": "The reciprocal ratio sec θ is defined as:",
+      "options": ["1/sin θ", "1/tan θ", "1/cos θ", "1/cot θ"],
+      "correct": 2,
+      "rationale": "Secant is the reciprocal of cosine: sec θ = 1/cos θ; 1/sin θ is cosecant and 1/tan θ is cotangent."
+    },
+    {
+      "id": 10,
+      "question": "From two points 40 m apart on a road, a tower's elevations are 60° and 30°. The tower's height is:",
+      "options": ["20√3 m ≈ 34.6 m", "40√3 m", "20/√3 m", "10√3 m"],
+      "correct": 0,
+      "rationale": "Solving tan 60° = h/x and tan 30° = h/(x + 40) together gives h(√3 − 1/√3) = 40, so h = 20√3 ≈ 34.6 m."
+    }
+  ]
+}

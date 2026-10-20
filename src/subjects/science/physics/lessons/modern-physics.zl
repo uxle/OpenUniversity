@@ -1,0 +1,236 @@
+# Modern Physics: Quanta, Atoms, and Nuclei
+
+> Around 1900 physics changed gears: energy arrived in lumps called
+> quanta, light began to behave like particles, and the nucleus gave up
+> radioactivity, fission, and fusion. This lesson follows the quantum
+> idea from Planck's equation to E = mc² and the electron microscope.
+
+## 1. The Quantum Idea
+
+[definition]
+In 1900 Max Planck proposed that matter emits or absorbs energy not
+continuously but in packets called **quanta**. The energy of one
+quantum is
+
+$E = h\nu$
+
+where ν is the frequency of the radiation and **h** is Planck's
+constant, $h = 6.63 \times 10^{-34}$ J s.
+[/definition]
+
+Classical physics could not explain why a hot body's colour shifts with
+temperature (red-hot, then white-hot) or why light below a certain
+frequency frees no electrons at all — Planck's lumps could. Energy is
+*quantised*: charges sit on the rungs of an energy ladder, not on a
+smooth ramp.
+
+## 2. The Photoelectric Effect
+
+[definition]
+The **photoelectric effect** is the ejection of electrons from a metal
+surface when light of sufficiently high frequency falls on it. Einstein
+explained it in 1905 with **photons**: light of frequency ν delivers
+energy in quanta $h\nu$, one photon meeting one electron. The work won
+him the Nobel Prize, not relativity.
+[/definition]
+
+| Observation | Photon answer |
+| --- | --- |
+| No emission below a threshold frequency, however bright the light | a photon must carry at least the work function φ |
+| Emission is instant even in feeble light | one photon either has enough energy or does not |
+| Maximum kinetic energy depends on frequency, not intensity | $K_{max} = h\nu - \phi$ |
+| Brighter light gives more electrons at the same speed | more photons, each delivering hν |
+
+The **work function** φ is the minimum energy needed to free an
+electron from the metal; the **threshold frequency** follows from
+$\nu_{0} = \phi/h$.
+
+[example]
+Light of frequency $1.0 \times 10^{15}$ Hz strikes a metal whose work
+function is 2.0 eV. The photon energy is $h\nu = 6.63 \times 10^{-19}$ J
+≈ 4.15 eV, so $K_{max} = 4.15 - 2.0 = 2.15$ eV. Dimming the light
+frees fewer electrons — never slower ones.
+[/example]
+
+[tip]
+Exams love the swap: intensity controls the *number* of photoelectrons,
+frequency controls their *maximum kinetic energy*. Reversing these two
+is the classic mistake.
+[/tip]
+
+## 3. Bohr Model of the Atom
+
+Rutherford's nuclear atom had a fatal flaw: an orbiting electron should
+radiate energy continuously and spiral into the nucleus in a blink. In
+1913 Niels Bohr patched it with quantum rules:
+
+1. Electrons move only in certain fixed orbits (stationary states) and
+   do not radiate while in them.
+2. Each orbit carries a definite energy; for hydrogen
+   $E_{n} = -13.6/n^{2}$ eV.
+3. Radiation is emitted or absorbed only in a jump between levels:
+   $h\nu = E_{2} - E_{1}$.
+4. The angular momentum of an orbit is quantised: $mvr = nh/2\pi$.
+
+[example]
+The visible Balmer lines of hydrogen come from jumps that *end* on the
+n = 2 level. The fall from n = 3 to n = 2 emits the red H-alpha line at
+656 nm — the fingerprint every hydrogen discharge lamp shows.
+[/example]
+
+Bohr's model triumphed for hydrogen but faltered on multi-electron
+atoms and fine structure — full quantum mechanics later went deeper.
+
+## 4. Atomic Number, Isotopes, and Isobars
+
+@diagram tree id="atom-structure" layout="tree" aria="Structure of the atom with nucleus and electrons"
+  "Atom" -> "Nucleus (protons and neutrons)"
+  "Atom" -> "Electrons in shells"
+  "Nucleus (protons and neutrons)" -> "Protons: charge +1"
+  "Nucleus (protons and neutrons)" -> "Neutrons: neutral"
+@/diagram
+
+| Quantity | Symbol | Meaning |
+| --- | --- | --- |
+| Atomic number | Z | number of protons — fixes the element's identity |
+| Mass number | A | protons plus neutrons |
+| Neutron number | N | A − Z |
+
+[definition]
+**Isotopes** share the same Z but differ in A — the same element with
+different neutron counts. **Isobars** share the same A but differ in Z
+— different elements of equal mass.
+[/definition]
+
+| Nuclide | Nucleus | Use |
+| --- | --- | --- |
+| Protium ¹H | 1 proton | ordinary hydrogen |
+| Deuterium ²H | proton + neutron | heavy water (D₂O), a reactor moderator |
+| Tritium ³H | proton + 2 neutrons | tracer and fusion fuel |
+| Carbon-12 | 6p + 6n | the standard for atomic masses |
+| Carbon-14 | 6p + 8n | radiocarbon dating |
+
+## 5. Radioactivity: Alpha, Beta, Gamma
+
+[definition]
+**Radioactivity** is the spontaneous disintegration of unstable nuclei
+with emission of particles or radiation. Becquerel discovered it in
+1896 when uranium salts fogged an unexposed photographic plate; Marie
+and Pierre Curie went on to isolate polonium and radium.
+[/definition]
+
+| Property | Alpha (α) | Beta (β) | Gamma (γ) |
+| --- | --- | --- | --- |
+| Nature | helium nucleus ⁴₂He | fast electron | high-energy photon |
+| Charge | +2 | −1 | 0 |
+| Penetration | stopped by paper | stopped by a few mm of aluminium | reduced by thick lead |
+| Effect on nucleus | A − 4, Z − 2 | A unchanged, Z + 1 | A and Z unchanged |
+| Ionising power | strongest | moderate | weakest |
+
+@diagram tree id="decay-modes" layout="tree" aria="Three decay modes and their nuclear changes"
+  "Radioactive decay" -> "Alpha: A-4, Z-2"
+  "Radioactive decay" -> "Beta: A same, Z+1"
+  "Radioactive decay" -> "Gamma: no nuclear change"
+@/diagram
+
+[warning]
+Alpha is the *most* ionising yet the *least* penetrating; gamma is the
+reverse. Students swap these constantly. Rutherford separated the three
+with electric and magnetic fields: alpha bends one way, beta the other,
+gamma not at all.
+[/warning]
+
+## 6. Half-Life
+
+[definition]
+The **half-life** (t½) is the time in which half the nuclei of a sample
+decay. Decay is statistical: no one can say when a *particular* nucleus
+will break, only how fast the population thins out.
+[/definition]
+
+@chart line title="Fraction of sample remaining vs half-lives elapsed (%)"
+labels:
+0
+1
+2
+3
+4
+
+data:
+100
+50
+25
+12.5
+6.25
+@/chart
+
+[example]
+An 80 g sample has a half-life of 5 days. After 15 days — three
+half-lives — only 80 → 40 → 20 → 10 g remains. After 25 days, five
+half-lives, just 2.5 g survives.
+[/example]
+
+Carbon-14 (t½ = 5,730 years) dates once-living matter; iodine-131 with
+its 8-day half-life suits short medical doses that fade quickly.
+
+## 7. E = mc²: Fission and Fusion
+
+@math label="eq:mass-energy"
+E = mc^{2}
+@/math
+
+Einstein's mass–energy equivalence: a **mass defect** m — the missing
+mass when nucleons bind into a nucleus — appears as energy with the
+enormous conversion factor c². Converting just 1 g of matter releases
+about 9 × 10¹³ J, dwarfing every chemical reaction.
+
+| | Fission | Fusion |
+| --- | --- | --- |
+| What happens | a heavy nucleus splits into two | light nuclei merge into one |
+| Trigger | neutron absorption | extreme temperature and pressure |
+| Fuel | U-235, Pu-239 | hydrogen isotopes (D, T) |
+| Where | reactors, atomic bombs | the Sun and stars, hydrogen bomb |
+| Waste | long-lived radioactive waste | mainly helium — cleaner |
+| Control | steady in reactors (moderators, control rods) | not yet tamed on Earth (ITER) |
+
+[example]
+A neutron splits ²³⁵U into barium and krypton plus three fresh
+neutrons, which can split further nuclei — a **chain reaction**. In a
+reactor, moderators (water, heavy water) slow the neutrons and control
+rods (cadmium, boron) absorb the excess; a bomb is the same reaction
+left uncontrolled.
+[/example]
+
+## 8. Wave–Particle Duality and Applications
+
+De Broglie flipped the coin in 1924: if waves act like particles,
+particles should act like waves, with wavelength
+
+$\lambda = h/p$
+
+Electrons diffract exactly so — the principle of the **electron
+microscope**, which resolves far finer detail than light because an
+electron's wavelength is thousands of times smaller.
+
+| Application | Physics it uses |
+| --- | --- |
+| Radiocarbon dating | carbon-14 half-life |
+| Cancer radiotherapy | gamma beams from Co-60 |
+| Smoke detectors | alpha particles from americium-241 |
+| Sterilising medical tools | gamma radiation |
+| Nuclear power | controlled fission plus E = mc² |
+| Electron microscope | de Broglie waves |
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Quantum energy | E = hν; h = 6.63 × 10⁻³⁴ J s |
+| Photoelectric | Kmax = hν − φ; intensity → number, frequency → energy |
+| Bohr levels | En = −13.6/n² eV for hydrogen |
+| Isotopes and isobars | same Z vs same A |
+| Alpha, beta, gamma | A−4 Z−2 / Z+1 / no nuclear change |
+| Half-life | half the sample decays each t½ |
+| Mass–energy | E = mc²; mass defect → energy |
+| Fission vs fusion | heavy splits vs light merges |
+| Duality | matter waves: λ = h/p |

@@ -1,0 +1,76 @@
+{
+  "lessonId": "cryptography-basics",
+  "title": "Cryptography: Keeping Secrets in Public",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many keys does symmetric encryption use?",
+      "options": ["One shared secret key", "Two unrelated public keys", "A public and private pair", "No keys at all"],
+      "correct": 0,
+      "rationale": "Symmetric cryptography uses the same single secret key to encrypt and decrypt, which is why securely sharing that key is its hard problem."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a valid AES key length?",
+      "options": ["56 bits", "128 bits", "512 bits", "1024 bits"],
+      "correct": 1,
+      "rationale": "AES is defined for 128, 192, and 256-bit keys; 56 bits belongs to retired DES, and 512/1024-bit symmetric keys do not exist in the standard."
+    },
+    {
+      "id": 3,
+      "question": "The security of RSA rests on the difficulty of which mathematical problem?",
+      "options": ["Sorting large lists quickly", "Finding collision-free hashes", "Factoring the product of two very large primes", "Solving systems of linear equations"],
+      "correct": 2,
+      "rationale": "RSA keys are products of two huge primes; recovering the private key from the public one is believed to require factoring that product."
+    },
+    {
+      "id": 4,
+      "question": "Which statement about cryptographic hash functions is true?",
+      "options": ["They are reversible using the key", "They produce fixed-length one-way digests", "They encrypt data for confidentiality", "They need a public and private key"],
+      "correct": 1,
+      "rationale": "A hash digests any input into a fixed-length fingerprint that cannot be reversed; confidentiality is the job of encryption, not hashing."
+    },
+    {
+      "id": 5,
+      "question": "Why are random salts added to passwords before hashing for storage?",
+      "options": ["To compress the password", "To defeat precomputed rainbow tables", "To speed up verification", "To encrypt the password reversibly"],
+      "correct": 1,
+      "rationale": "A per-password salt makes every hash unique, so attackers cannot use precomputed tables and must guess each password individually, ideally against a slow hash like bcrypt."
+    },
+    {
+      "id": 6,
+      "question": "To digitally sign a document, the signer applies their:",
+      "options": ["Recipient's public key", "Own private key", "Recipient's private key", "Own public key only"],
+      "correct": 1,
+      "rationale": "Signatures are created with the signer's private key so that anyone can verify them with the matching public key; encrypting to a recipient uses their public key instead."
+    },
+    {
+      "id": 7,
+      "question": "How does hybrid encryption as used in TLS combine the two families?",
+      "options": ["Asymmetric cryptography agrees a session key, then symmetric AES encrypts the traffic", "Symmetric keys are exchanged first, then RSA encrypts the data", "Only asymmetric encryption is used throughout", "Hashing replaces encryption after the handshake"],
+      "correct": 0,
+      "rationale": "Asymmetric cryptography solves key exchange and authentication for the handshake, then fast symmetric encryption handles the bulk session data."
+    },
+    {
+      "id": 8,
+      "question": "What does a digital certificate issued by a CA actually bind together?",
+      "options": ["A password to a salt", "An IP address to a MAC address", "A user to their biometric", "A domain name to a public key"],
+      "correct": 3,
+      "rationale": "A certificate is a CA-signed statement binding a domain to its public key, letting browsers verify they are talking to the real server."
+    },
+    {
+      "id": 9,
+      "question": "Kerckhoffs's principle states that a cryptosystem should assume:",
+      "options": ["The algorithm stays secret forever", "Only the key is secret, the algorithm is public", "Keys can be written on sticky notes", "Longer algorithms are always stronger"],
+      "correct": 1,
+      "rationale": "Security must depend solely on keeping the key secret, because algorithms eventually leak while keys can be changed."
+    },
+    {
+      "id": 10,
+      "question": "Why is MD5 considered unsuitable for security purposes today?",
+      "options": ["It is too slow for modern hardware", "Practical collision attacks can produce two inputs with the same digest", "It is an asymmetric algorithm", "It cannot hash files larger than 1 GB"],
+      "correct": 1,
+      "rationale": "Researchers can craft different documents sharing one MD5 digest, breaking the collision resistance that integrity checks depend on; SHA-256 or better is used instead."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "digital-safety-and-digital-footprint",
+  "title": "Digital Safety, Privacy, and Your Digital Footprint",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of these is part of your passive digital footprint?",
+      "options": ["A blog post you write", "Tracking cookies collected as you browse", "A comment you type on a video", "An email you send to a friend"],
+      "correct": 1,
+      "rationale": "Passive traces are collected without deliberate action on your part — cookies, IP logs, and location pings — while posts and comments are active footprints."
+    },
+    {
+      "id": 2,
+      "question": "For passwords, which principle contributes most to crack resistance?",
+      "options": ["Changing it every week", "Length combined with uniqueness and randomness", "Using your birthday as a base", "Adding one exclamation mark to a dictionary word"],
+      "correct": 1,
+      "rationale": "Every extra random character multiplies the search space enormously, and uniqueness stops one breach from unlocking all your accounts."
+    },
+    {
+      "id": 3,
+      "question": "Why should you never reuse passwords across important sites?",
+      "options": ["Sites forbid it by law", "Reused passwords trigger account locks everywhere", "One site's breach leaks credentials tried on every other site you use", "Password managers cannot store duplicates"],
+      "correct": 2,
+      "rationale": "Credential stuffing replays leaked email-password pairs against other services, so uniqueness confines a breach to the site that was hit."
+    },
+    {
+      "id": 4,
+      "question": "A password manager's core job is to:",
+      "options": ["Encrypt your hard disk", "Generate and store strong unique passwords behind one master password", "Block phishing emails at the server", "Scan downloads for viruses"],
+      "correct": 1,
+      "rationale": "The vault generates random per-site passwords and autofills them, so you only need to protect one strong master password."
+    },
+    {
+      "id": 5,
+      "question": "A login that asks for your password and a six-digit code from an authenticator app uses which factor combination?",
+      "options": ["Knowledge plus inherence", "Possession plus inherence", "Knowledge plus possession", "Two forms of knowledge"],
+      "correct": 2,
+      "rationale": "The password is something you know and the app-generated code is something you possess — two different families, which is what makes it genuine MFA."
+    },
+    {
+      "id": 6,
+      "question": "Which second-factor method is considered the most phishing-resistant?",
+      "options": ["SMS one-time codes", "Email recovery codes", "Hardware security keys such as FIDO2 keys", "Security questions"],
+      "correct": 2,
+      "rationale": "Hardware keys cryptographically bind the login to the genuine site domain, so a lookalike phishing page cannot capture and replay the response."
+    },
+    {
+      "id": 7,
+      "question": "The main weakness of SMS-based one-time codes is:",
+      "options": ["They expire too slowly", "SIM-swap attacks let criminals receive your messages", "They only work on rooted phones", "They cost the user money per login"],
+      "correct": 1,
+      "rationale": "In a SIM swap the attacker transfers your number to their SIM and receives your codes, which is why authenticator apps and security keys are preferred."
+    },
+    {
+      "id": 8,
+      "question": "India's principal cyber law, which gives legal recognition to electronic records and defines offences like identity theft under Section 66C, is the:",
+      "options": ["Indian Penal Code, 1860", "Information Technology Act, 2000", "Digital Personal Data Protection Act, 2023", "Telegraph Act, 1885"],
+      "correct": 1,
+      "rationale": "The IT Act 2000, amended in 2008, is India's baseline cyber statute; the DPDP Act 2023 supplements it for personal-data handling."
+    },
+    {
+      "id": 9,
+      "question": "CERT-In, constituted in 2004 under Section 70B of the IT Act, is responsible for:",
+      "options": ["Manufacturing routers for government offices", "National cyber incident response, alerts, and advisories", "Issuing driving licences online", "Setting electricity tariffs"],
+      "correct": 1,
+      "rationale": "CERT-In is India's national incident response agency — it issues advisories, coordinates breach response, and mandates six-hour incident reporting for service providers."
+    },
+    {
+      "id": 10,
+      "question": "Data minimisation as a privacy habit means:",
+      "options": ["Sharing the least data needed, with the fewest parties, for the shortest time", "Deleting your email account monthly", "Using the shortest possible passwords", "Posting everything in one large archive"],
+      "correct": 0,
+      "rationale": "The footprint you never create cannot leak or be profiled, so limiting data shared in scope, audience, and retention is the core habit."
+    }
+  ]
+}

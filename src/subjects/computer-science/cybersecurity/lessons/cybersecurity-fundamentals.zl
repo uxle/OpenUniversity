@@ -1,0 +1,214 @@
+# Cybersecurity Fundamentals: The CIA Triad and the Threat Landscape
+
+> Cybersecurity is the practice of protecting computers, networks, and
+> data from unauthorised access, attack, and damage. This lesson covers
+> the CIA triad, the malware family tree, and social engineering.
+
+## 1. Assets, Threats, Vulnerabilities, and Risk
+
+Every security conversation starts with four words that students
+routinely confuse. Fix the vocabulary first and the rest follows.
+
+| Term | Meaning | Example |
+| --- | --- | --- |
+| Asset | anything valuable enough to protect | customer database, laptop, reputation |
+| Threat | anything that could harm an asset | ransomware gang, disgruntled insider |
+| Vulnerability | a weakness a threat can exploit | unpatched server, weak password |
+| Risk | likelihood times impact of a threat exploiting a vulnerability | "phishing is common and our staff untrained" |
+
+[definition]
+Risk management is the continuous process of identifying assets,
+listing threats and vulnerabilities, estimating risk, and then
+reducing risk with controls to an acceptable level.
+[/definition]
+
+A control is any safeguard — technical, procedural, or physical — that
+reduces risk. Firewalls, backup policies, and security training are
+all controls aimed at different parts of the same equation.
+
+## 2. The CIA Triad
+
+The classic model of security goals has three corners:
+
+| Goal | Question it answers | Typical controls |
+| --- | --- | --- |
+| Confidentiality | only the right people can read | encryption, access control, classification |
+| Integrity | data is not altered unnoticed | hashing, checksums, digital signatures |
+| Availability | data and services work when needed | backups, redundancy, DDoS protection |
+
+[definition]
+The CIA triad — Confidentiality, Integrity, Availability — is the
+three-part yardstick for security goals. Every control you will ever
+meet protects one or more of these corners.
+[/definition]
+
+[warning]
+Encryption only delivers confidentiality. An encrypted file that a
+malware process silently corrupts is confidential but has lost
+integrity, and an encrypted server that is offline has lost
+availability. Never answer "encryption" for every CIA question —
+match the goal to the control.
+[/warning]
+
+## 3. Beyond CIA: Authentication, Authorisation, Non-Repudiation
+
+Three supporting goals complete the picture, often written as AAA.
+
+- **Authentication** — proving *who* you are: passwords, OTPs,
+  biometrics, security keys.
+- **Authorisation** — deciding *what* an authenticated identity may
+  do: file permissions, role-based access.
+- **Accountability** — being able to trace actions back to an
+  identity: audit logs.
+- **Non-repudiation** — a sender cannot later deny having sent or
+  signed something, usually achieved with digital signatures.
+
+[tip]
+Exam trap: authentication is about identity, authorisation is about
+permission. A user can authenticate successfully and still be
+forbidden to open a file — that is authorisation doing its job.
+[/tip]
+
+[example]
+Alice signs a contract with her private key and Bob verifies it with
+her public key. The signature proves integrity (nothing changed),
+authenticates Alice, and gives non-repudiation — she cannot plausibly
+deny signing, because only her private key could have produced it.
+[/example]
+
+## 4. Malware: The Family Tree
+
+**Malware** is any software written to harm or misuse a system. The
+families are best remembered by two questions: *how does it spread*
+and *what does it do*?
+
+@diagram tree id="malware-family-tree" layout="tree" aria="Major malware families grouped by spread mechanism and payload"
+  "Malware" -> "Virus — needs a host file"
+  "Malware" -> "Worm — spreads by itself"
+  "Malware" -> "Trojan — hides in useful software"
+  "Malware" -> "Ransomware — encrypts and extorts"
+  "Malware" -> "Spyware — watches and records"
+  "Malware" -> "Adware — forces ads and trackers"
+@/diagram
+
+| Family | How it spreads | What it does | Notable example |
+| --- | --- | --- | --- |
+| Virus | attaches to a host file, runs when the host runs | corrupts files, spreads on sharing | Michelangelo, 1992 |
+| Worm | copies itself across networks unaided | consumes bandwidth, drops payloads | Morris worm, 1988 |
+| Trojan | masquerades as useful software | opens backdoors, installs other malware | Emotet |
+| Ransomware | via phishing, worms, or exposed services | encrypts data, demands payment | WannaCry, 2017 |
+| Spyware | bundled downloads, drive-by installs | records keystrokes, exfiltrates data | Pegasus |
+| Adware | free apps and bundles | floods ads, tracks behaviour | bundled browser toolbars |
+
+[info title="The worm that started it all"]
+The Morris worm of 1988 infected roughly ten percent of the early
+internet and led to the first conviction under the US Computer Fraud
+and Abuse Act. It spread by exploiting known flaws plus weak
+passwords — a playbook still used today.
+[/info]
+
+## 5. Ransomware and Spyware Up Close
+
+Ransomware deserves special attention because it now dominates
+headlines. Modern strains use **double extortion**: first they steal a
+copy of the data, then encrypt it, then demand payment to unlock — and
+a second payment to keep the stolen copy private.
+
+[warning]
+Paying the ransom is discouraged: it funds crime, marks you as a
+paying customer, and guarantees nothing. The controls that actually
+work are patched software, least-privilege accounts, and backups that
+are offline or immutable so the malware cannot encrypt them too.
+[/warning]
+
+Spyware and **keyloggers** quietly capture what you type and where you
+click. Anti-spyware defences mirror the basics: download software only
+from official stores, watch browser extensions, and treat an unusually
+hot or busy device as a hint that something is watching.
+
+## 6. Social Engineering: Hacking Humans
+
+The cheapest way past a firewall is a person. **Social engineering**
+manipulates psychology — urgency, authority, fear, curiosity — rather
+than technology.
+
+| Technique | Channel | Signature move |
+| --- | --- | --- |
+| Phishing | mass email | fake bank login page |
+| Spear phishing | targeted email | references your real project or boss |
+| Vishing | voice call | fake "bank fraud department" |
+| Smishing | SMS | "parcel held, pay a small fee" |
+| Pretexting | any channel | invented persona and scenario |
+| Baiting | physical or download | infected USB labelled "salary list" |
+| Tailgating | office door | follows a badged employee inside |
+| Quid pro quo | call or message | fake IT help in exchange for credentials |
+
+[example]
+In business email compromise, an attacker registers a lookalike
+domain — say, rnicrosoft.com — and emails the accounts team as the
+"CEO", demanding an urgent transfer. No malware, no exploit: pure
+pretexting with authority and urgency.
+[/example]
+
+[tip]
+Three red flags cover most phishing: **urgency** ("act within 24
+hours"), **authority** ("the CEO demands this"), and **secrecy**
+("do not tell anyone"). When all three appear together, verify
+through a known independent channel before doing anything.
+[/tip]
+
+## 7. Measuring the Threat Landscape
+
+Real breach data keeps repeating one lesson: the human element —
+phishing, stolen credentials, and simple error — features in the
+majority of incidents, ahead of exotic zero-days.
+
+@chart donut title="Approximate root causes of data breaches (illustrative)" labels:
+Phishing and social engineering
+Stolen or weak credentials
+Malware and ransomware
+Unpatched software vulnerabilities
+Insider misuse and simple error
+
+data:
+30
+25
+20
+15
+10
+@/chart
+
+Another landscape term worth knowing is the **APT** — Advanced
+Persistent Threat. An APT is a well-resourced group, often
+state-linked, that stays inside a network for months, moving quietly
+toward a specific goal rather than smashing and grabbing.
+
+## 8. Principles That Scale
+
+Four timeless principles turn the vocabulary above into practice:
+
+| Principle | Rule of thumb |
+| --- | --- |
+| Least privilege | give every account only the access it needs |
+| Defence in depth | stack controls so one failure is not fatal |
+| Separation of duties | no single person can both create and approve |
+| Keep it patched and backed up | close known holes; rehearse restoration |
+
+For backups, remember the **3-2-1 rule**: three copies of important
+data, on two different media, with one copy off-site — and at least
+one copy unreachable by the network that ransomware walks through.
+
+## 9. Quick Revision
+
+| Concept | Remember this |
+| --- | --- |
+| Risk | threat meets vulnerability on an asset |
+| CIA triad | confidentiality, integrity, availability |
+| Non-repudiation | digital signatures stop later denial |
+| Virus vs worm | virus needs a host, worm self-spreads |
+| Trojan | malicious logic disguised as useful software |
+| Ransomware | encrypts, extorts; double extortion steals first |
+| Spyware | silent observation, keylogging |
+| Social engineering | urgency, authority, secrecy are the tells |
+| Vishing vs smishing | voice call vs SMS phishing |
+| 3-2-1 rule | three copies, two media, one off-site |

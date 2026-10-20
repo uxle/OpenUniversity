@@ -13,6 +13,17 @@
   justify-content: center;
   align-items: flex-start;
   padding: 12vh var(--ou-space-4) var(--ou-space-5);
+  /* On phones the soft keyboard covers the bottom half — anchor the
+     panel to the visible top and let it use more height, otherwise the
+     input row itself can sit behind the keyboard. */
+}
+@media (max-width: 640px) {
+  .ou-cmdk {
+    padding-top: max(4vh, env(safe-area-inset-top));
+  }
+  .ou-cmdk__panel {
+    max-height: min(75dvh, 480px);
+  }
 }
 .ou-cmdk[hidden] { display: none; }
 
@@ -49,7 +60,10 @@
   border: none !important;
   background: transparent !important;
   padding: var(--ou-space-2) 0 !important;
-  font-size: 1.05rem;
+  /* max(16px, …): iOS Safari auto-zooms the page when focusing any
+     input with font-size < 16px — the palette input at 1.05rem (~15.8px)
+     triggered that on every open. */
+  font-size: max(16px, 1.05rem);
   color: var(--ou-text);
   outline: none;
 }
@@ -64,6 +78,8 @@
   color: var(--ou-text-muted);
   border-radius: var(--ou-radius-sm);
   padding: 2px var(--ou-space-2);
+  /* Real tap target for closing on touch (where there is no Esc key). */
+  min-height: 32px;
   font-size: var(--ou-fs-xs);
   cursor: pointer;
 }
@@ -93,12 +109,15 @@
   color: var(--ou-text);
   min-height: 44px; /* touch-target rule */
 }
-.ou-cmdk__item svg { color: var(--ou-text-muted); flex-shrink: 0; font-size: 1.05rem; }
+/* Icon inside palette rows — now an FA <i> glyph (was svg); keep both
+   selectors so any future inline-svg icon still matches. */
+.ou-cmdk__item svg, .ou-cmdk__item i { color: var(--ou-text-muted); flex-shrink: 0; font-size: 1.05rem; }
 .ou-cmdk__item[aria-selected="true"] {
   background: var(--ou-accent-subtle);
   color: var(--ou-accent);
 }
-.ou-cmdk__item[aria-selected="true"] svg { color: var(--ou-accent); }
+.ou-cmdk__item[aria-selected="true"] svg,
+.ou-cmdk__item[aria-selected="true"] i { color: var(--ou-accent); }
 
 .ou-cmdk__label {
   flex: 1;

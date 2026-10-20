@@ -1,6 +1,6 @@
 {
   "lessonId": "clock-reasoning-part-7",
-  "title": "Clock Reasoning \u2014 Part 7 of 10",
+  "title": "Clock Reasoning — Part 7 of 10",
   "questions": [
     {
       "question": "What is a common clock mistake this lesson warns about regarding AM/PM?",
@@ -18,11 +18,11 @@
       "question": "What does 'dimensional consistency' mean in clock reasoning calculations?",
       "options": [
         "Making sure the clock face is perfectly round",
-        "Making sure you don't mix incompatible units (like adding a value in minutes directly to a value in hours) without converting first",
         "Ensuring all answers are given in degrees",
+        "Making sure you don't mix incompatible units (like adding a value in minutes directly to a value in hours) without converting first",
         "Checking that the clock has exactly two hands"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Dimensional consistency means never combining values in different units without first converting them to a common unit, avoiding silently wrong results.",
       "id": 2
     },
@@ -35,42 +35,42 @@
         "Time zones from existing"
       ],
       "correct": 1,
-      "rationale": "A typed system for time units catches unit-mismatch errors \u2014 like treating a value labeled 'seconds' as if it were 'minutes' \u2014 before they produce a wrong final answer.",
+      "rationale": "A typed system for time units catches unit-mismatch errors — like treating a value labeled 'seconds' as if it were 'minutes' — before they produce a wrong final answer.",
       "id": 3
     },
     {
       "question": "What does an 'example internal representation' typically store for a parsed time?",
       "options": [
         "Only the original sentence text",
-        "A normalized numeric value (like total minutes) plus any relevant unit/context metadata",
+        "Nothing — parsed times aren't stored",
         "A picture of a clock face",
-        "Nothing \u2014 parsed times aren't stored"
+        "A normalized numeric value (like total minutes) plus any relevant unit/context metadata"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The internal representation typically holds a normalized numeric value alongside metadata about its unit and context, so it can be reasoned over consistently.",
       "id": 4
     },
     {
       "question": "What role does a 'clock reasoning engine' play in this architecture?",
       "options": [
-        "It only draws clock diagrams",
         "It ties together parsing, normalization, constraint solving, and output formatting into one coherent process",
+        "It only draws clock diagrams",
         "It replaces the need for the clock-angle formula",
         "It only handles time zone conversions"
       ],
-      "correct": 1,
-      "rationale": "The reasoning engine is the overall system that chains together every stage \u2014 parsing, normalizing, solving constraints, and formatting the output \u2014 into one consistent pipeline.",
+      "correct": 0,
+      "rationale": "The reasoning engine is the overall system that chains together every stage — parsing, normalizing, solving constraints, and formatting the output — into one consistent pipeline.",
       "id": 5
     },
     {
       "question": "In a 'complete reasoning example,' why is it useful to trace every step explicitly?",
       "options": [
         "It isn't useful, only the final answer matters",
-        "It shows how each rule (normalization, arithmetic, constraint-solving) is applied in sequence, making errors easier to catch",
         "It makes the example longer for no reason",
+        "It shows how each rule (normalization, arithmetic, constraint-solving) is applied in sequence, making errors easier to catch",
         "It replaces the need for verification"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Tracing each step explicitly lets you see exactly where a rule was applied, which makes it much easier to spot exactly where an error was introduced, if any.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What is one benefit of a typed internal representation over plain numbers for time values?",
       "options": [
         "It runs faster on all computers",
-        "It can catch unit-mismatch errors (e.g., treating seconds as minutes) before they produce a wrong final answer",
+        "It removes the need for the clock-angle formula",
         "It requires less memory",
-        "It removes the need for the clock-angle formula"
+        "It can catch unit-mismatch errors (e.g., treating seconds as minutes) before they produce a wrong final answer"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A typed representation can flag when a value's unit doesn't match what an operation expects, catching a whole class of silent unit-mixing bugs.",
       "id": 8
     },

@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "Kant's 'Copernican revolution' in philosophy consists in:",
-      "options": ["Denying that we can know anything", "Asking how objects must conform to our cognition, since the mind supplies the forms of experience", "Proving God's existence", "Reducing mind to matter"],
-      "correct": 1,
+      "options": [
+        "Asking how objects must conform to our cognition, since the mind supplies the forms of experience",
+        "Denying that we can know anything",
+        "Proving God's existence",
+        "Reducing mind to matter"
+      ],
+      "correct": 0,
       "rationale": "Instead of assuming knowledge must copy objects (Hume's problem), Kant argues the mind structures experience with space, time, and the categories — explaining synthetic a priori judgements."
     },
     {
       "id": 2,
       "question": "For Kant, the things-in-themselves, thinkable but never knowable, are called:",
-      "options": ["Phenomena", "Noumena", "Monads", "The Forms"],
-      "correct": 1,
+      "options": [
+        "Phenomena",
+        "Monads",
+        "Noumena",
+        "The Forms"
+      ],
+      "correct": 2,
       "rationale": "Phenomena are things as structured by our cognition; noumena are things as they are apart from knowers — beyond experience."
     },
     {
       "id": 3,
       "question": "Which of these expresses a formulation of Kant's categorical imperative?",
-      "options": ["Seek the greatest happiness of the greatest number", "Act only on maxims you can will as universal law", "Follow the command of God", "Cultivate your excellence"],
+      "options": [
+        "Seek the greatest happiness of the greatest number",
+        "Act only on maxims you can will as universal law",
+        "Follow the command of God",
+        "Cultivate your excellence"
+      ],
       "correct": 1,
       "rationale": "Kant gives two leading formulas: universalize your maxim, and treat humanity never merely as a means but always as an end."
     },
     {
       "id": 4,
       "question": "Hegel's master–slave dialectic shows that:",
-      "options": ["Slavery is a natural institution", "Genuine self-consciousness requires mutual recognition between equals", "The master is fully self-sufficient", "History has no direction"],
-      "correct": 1,
+      "options": [
+        "Slavery is a natural institution",
+        "History has no direction",
+        "The master is fully self-sufficient",
+        "Genuine self-consciousness requires mutual recognition between equals"
+      ],
+      "correct": 3,
       "rationale": "The master's recognition from an unfree slave is worthless — domination undermines itself. Hegel's dialectic (abstract-negative-concrete, popularly thesis-antithesis-synthesis) drives the development of Spirit."
     },
     {
       "id": 5,
       "question": "Marx 'turned Hegel right side up' by claiming that:",
-      "options": ["Spirit rather than matter is primary", "Material economic structures shape law, religion, and ideas", "History ended with the Prussian state", "Religion is the heart of a heartless world only"],
-      "correct": 1,
+      "options": [
+        "Material economic structures shape law, religion, and ideas",
+        "Spirit rather than matter is primary",
+        "History ended with the Prussian state",
+        "Religion is the heart of a heartless world only"
+      ],
+      "correct": 0,
       "rationale": "Historical materialism: the economic base shapes the ideological superstructure, and history is class struggle — the dialectic applied to matter, not Spirit."
     },
     {
       "id": 6,
       "question": "Nietzsche's proclamation 'God is dead' means:",
-      "options": ["A literal theological claim", "The shared moral horizon grounded in belief in God has collapsed", "He personally lost his faith as a child", "Atheism should be illegal"],
-      "correct": 1,
+      "options": [
+        "A literal theological claim",
+        "He personally lost his faith as a child",
+        "The shared moral horizon grounded in belief in God has collapsed",
+        "Atheism should be illegal"
+      ],
+      "correct": 2,
       "rationale": "The death of God is a cultural diagnosis: the collapse of the foundation of European values — met with the will to power and perspectivism instead of new consolations."
     },
     {
       "id": 7,
       "question": "Sartre's formula 'existence precedes essence' asserts that:",
-      "options": ["Human nature is fixed by God", "We first exist, then define ourselves through free choices", "Essence is an illusion", "Only the body is real"],
+      "options": [
+        "Human nature is fixed by God",
+        "We first exist, then define ourselves through free choices",
+        "Essence is an illusion",
+        "Only the body is real"
+      ],
       "correct": 1,
       "rationale": "With no pre-given human nature, we are radically free and responsible; fleeing this freedom by hiding in roles is bad faith (Being and Nothingness, 1943)."
     },
     {
       "id": 8,
       "question": "Simone de Beauvoir's The Second Sex (1949) opens its argument with which claim?",
-      "options": ["Women are naturally suited to domestic life", "One is not born, but rather becomes, a woman", "Gender is purely biological", "Freedom is an illusion"],
-      "correct": 1,
+      "options": [
+        "Women are naturally suited to domestic life",
+        "Freedom is an illusion",
+        "Gender is purely biological",
+        "One is not born, but rather becomes, a woman"
+      ],
+      "correct": 3,
       "rationale": "De Beauvoir applies existentialism to gender: femininity is a constructed situation that a situated freedom must navigate."
     },
     {
       "id": 9,
       "question": "Camus's 'absurd' is best defined as:",
-      "options": ["The claim that life is meaningless so anything is permitted", "The clash between our demand for meaning and the universe's silence", "A logical contradiction in Hegel", "The impossibility of knowledge"],
+      "options": [
+        "The claim that life is meaningless so anything is permitted",
+        "The clash between our demand for meaning and the universe's silence",
+        "A logical contradiction in Hegel",
+        "The impossibility of knowledge"
+      ],
       "correct": 1,
       "rationale": "The Myth of Sisyphus (1942) answers the absurd not with suicide but with revolt, freedom, and passion — one must imagine Sisyphus happy."
     },
     {
       "id": 10,
       "question": "Popper's criterion of demarcation holds that a theory is scientific only if:",
-      "options": ["It is confirmed by every observation", "It can in principle be falsified by a failed prediction", "A majority of scientists accept it", "It fits within the ruling paradigm"],
+      "options": [
+        "It is confirmed by every observation",
+        "It can in principle be falsified by a failed prediction",
+        "A majority of scientists accept it",
+        "It fits within the ruling paradigm"
+      ],
       "correct": 1,
       "rationale": "For Popper, falsifiability separates science from non-science; science grows by conjectures and refutations. Kuhn, by contrast, described paradigm-governed normal science and revolutionary shifts."
     }

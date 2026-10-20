@@ -1,0 +1,76 @@
+{
+  "lessonId": "surveys-and-sampling-methods",
+  "title": "Surveys and Sampling: How Data Is Collected Fairly",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The entire group of individuals a study is about is called the:",
+      "options": ["sample", "population", "stratum", "cluster"],
+      "correct": 1,
+      "rationale": "The population is every unit of interest; the sample is only the subset actually studied."
+    },
+    {
+      "id": 2,
+      "question": "The list from which a sample is actually drawn is the:",
+      "options": ["sampling frame", "parameter", "quota", "census"],
+      "correct": 0,
+      "rationale": "The sampling frame is the accessible list of units; when it omits part of the population, undercoverage bias results."
+    },
+    {
+      "id": 3,
+      "question": "To take a systematic sample of 25 students from a list of 200, the sampling interval k is:",
+      "options": ["4", "10", "25", "8"],
+      "correct": 3,
+      "rationale": "k = N/n = 200/25 = 8, so every 8th name after a random start between 1 and 8 is selected."
+    },
+    {
+      "id": 4,
+      "question": "A school has 800, 700, and 500 students in grades 9, 10, and 11. A proportional stratified sample of 100 gives grade 10:",
+      "options": ["25 students", "40 students", "35 students", "50 students"],
+      "correct": 2,
+      "rationale": "Each stratum contributes n × (stratum size / N) = 100 × 700/2000 = 35; grades 9 and 11 get 40 and 25."
+    },
+    {
+      "id": 5,
+      "question": "A researcher wants to guarantee that each of several known, contrasting subgroups appears in fair proportion. The best method is:",
+      "options": ["convenience sampling", "cluster sampling", "stratified sampling", "snowball sampling"],
+      "correct": 2,
+      "rationale": "Stratified sampling divides the population into non-overlapping strata and samples each in proportion to its size."
+    },
+    {
+      "id": 6,
+      "question": "A health team surveys households scattered across 50 villages by randomly choosing 5 villages and studying households inside them. This is:",
+      "options": ["stratified sampling", "cluster sampling", "systematic sampling", "simple random sampling"],
+      "correct": 1,
+      "rationale": "Whole natural groups (clusters) are selected at random and units are studied within them — cluster sampling."
+    },
+    {
+      "id": 7,
+      "question": "A number computed from a sample, such as the sample mean, is used to estimate the corresponding:",
+      "options": ["parameter", "sampling frame", "bias", "margin of error"],
+      "correct": 0,
+      "rationale": "A statistic estimates the population parameter; the gap between them is sampling error, which shrinks as the sample grows."
+    },
+    {
+      "id": 8,
+      "question": "The 1936 Literary Digest poll gathered 2.4 million ballots yet predicted the wrong US president, mainly because:",
+      "options": ["the sample was far too small", "its voter list reached wealthier citizens far more often (selection bias)", "the questions were worded ambiguously", "the votes were counted incorrectly"],
+      "correct": 1,
+      "rationale": "A huge but biased sample loses to an unbiased small one: the frame systematically under-represented lower-income voters."
+    },
+    {
+      "id": 9,
+      "question": "Asking \"Do you agree the canteen should finally serve healthy food?\" is an example of:",
+      "options": ["undercoverage", "non-response bias", "response (wording) bias", "sampling error"],
+      "correct": 2,
+      "rationale": "The word \"finally\" pushes respondents towards agreement — the question's wording itself shapes the answer."
+    },
+    {
+      "id": 10,
+      "question": "Increasing the size of a properly drawn random sample will reduce:",
+      "options": ["selection bias", "sampling error", "wording bias", "non-response bias"],
+      "correct": 1,
+      "rationale": "Bigger random samples reduce sampling error, but bias comes from how the sample was chosen and asked — size cannot fix it."
+    }
+  ]
+}

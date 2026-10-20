@@ -1,0 +1,126 @@
+{
+  "lessonId": "data-sufficiency-reasoning",
+  "title": "Data Sufficiency in Reasoning Problems",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Five friends A, B, C, D and E sit in a row facing north. Who sits in the middle? I. A is at the extreme left and E is at the extreme right. II. B is immediately to the left of E, and C sits between A and B.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Neither statement is sufficient even together"
+      ],
+      "correct": 3,
+      "rationale": "Even merged, C between A (seat 1) and B (seat 4) can sit at seat 2 or seat 3, giving both A-C-D-B-E (middle D) and A-D-C-B-E (middle C). Two arrangements survive, so the answer is not unique."
+    },
+    {
+      "id": 2,
+      "question": "Six persons A to F sit around a circular table facing the centre. Who sits opposite C? I. A sits opposite D, and B sits opposite E. II. E sits third to the right of C.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I fixes two opposite pairs, so the leftover pair must be C and F. Statement II works because third to the right in a six-seat circle is directly opposite, making E the answer. Each alone pins the asked seat."
+    },
+    {
+      "id": 3,
+      "question": "How is M related to K? I. K is the sister of L, and M is the mother of L. II. M has exactly two children, K and L.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "Statement I pins both link and gender: M is L's mother and K is L's sister, so M is K's mother. Statement II leaves M's gender unstated, so M could be K's mother or father."
+    },
+    {
+      "id": 4,
+      "question": "How is A related to B? I. B is the son of C, and C is the sister of A. II. A is the brother of C, and B is the son of C.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 1,
+      "rationale": "Statement I leaves A's gender unknown, so A could be B's uncle or aunt. Statement II marks A male ('brother') and B as C's son, so A is definitely B's uncle."
+    },
+    {
+      "id": 5,
+      "question": "In a certain code language, what is the code for 'blue'? I. 'sky is blue' is written as 'pa qe ri'. II. 'blue ink dries' is written as 'ri ta ve'.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 3,
+      "rationale": "Each sentence alone leaves 'blue' one of three unmatched codes. Merged, 'blue' is the only word common to both sentences and 'ri' is the only code common to both, so blue = ri."
+    },
+    {
+      "id": 6,
+      "question": "In a certain code language, what is the code for 'rain'? I. 'rain falls here' is written as 'do re me', and 'snow falls here' is written as 'do re fa'. II. 'heavy rain came' is written as 'me so la'.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "Statement I carries its own anchor: 'falls here' is shared with codes 'do re', leaving 'me' unmatched for 'rain'. Statement II has three words against three codes and no anchor, so it cannot name a code."
+    },
+    {
+      "id": 7,
+      "question": "What is Ravi's rank from the top in a class of 40? I. Ravi is 23rd from the bottom. II. Ravi is 8 ranks below Sunil, and Sunil is 10th from the top.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I: 40 - 23 + 1 = 18th. Statement II: 10 + 8 = 18th. Each gives a complete route to the same rank, so either alone suffices."
+    },
+    {
+      "id": 8,
+      "question": "How many students are there in the row? I. A is 15th from the left end. II. B is 20th from the right end, lies to the right of A, with exactly 6 students between them.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 3,
+      "rationale": "Neither statement fixes both ends alone. Merged: A at 15, six students after, so B at 22 from the left; B is 20th from the right, giving total = 22 + 20 - 1 = 41."
+    },
+    {
+      "id": 9,
+      "question": "In which direction is point B with respect to point A? I. B is north of C, and C is east of A. II. B is 4 km north of D, and D is 3 km north of A.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I: east then north puts B strictly north-east of A regardless of distances. Statement II: a chain of two northward steps puts B directly north of A. Each fixes the asked bearing."
+    },
+    {
+      "id": 10,
+      "question": "How is F related to E? I. 'E @ F' holds, and '@' means 'is the mother of'. II. 'F # E' holds, and '#' means 'is the son of'.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 1,
+      "rationale": "Statement I makes F a child of E but leaves F's gender open, so son or daughter both survive. Statement II states F is a male child of E, so F is E's son."
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 {
   "lessonId": "clock-reasoning-part-4",
-  "title": "Clock Reasoning \u2014 Part 4 of 10",
+  "title": "Clock Reasoning — Part 4 of 10",
   "questions": [
     {
       "question": "Why does the hour hand's continuous movement (not jumping instantly at each hour) matter for angle calculations?",
       "options": [
-        "It doesn't matter, the hour hand only matters at exact hours",
         "Because the hour hand moves gradually between hour marks, so its exact position depends on the minutes as well as the hour",
+        "It doesn't matter, the hour hand only matters at exact hours",
         "Because the hour hand is actually stationary",
         "Because only the minute hand's position matters for angle calculations"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The hour hand drifts 0.5 degrees per minute between hour marks, so an accurate angle calculation must account for the current minutes, not just the hour.",
       "id": 1
     },
@@ -23,7 +23,7 @@
         "12 degrees"
       ],
       "correct": 2,
-      "rationale": "The second hand completes 360 degrees in 60 seconds, so it moves 360/60 = 6 degrees per second \u2014 the same rate the minute hand moves per minute.",
+      "rationale": "The second hand completes 360 degrees in 60 seconds, so it moves 360/60 = 6 degrees per second — the same rate the minute hand moves per minute.",
       "id": 2
     },
     {
@@ -42,23 +42,23 @@
       "question": "What does a 'temporal relationship' describe in clock reasoning?",
       "options": [
         "The color of the clock face",
-        "How two events or times relate to each other \u2014 before, after, simultaneous, or overlapping",
+        "Only the numeric difference between two times",
         "The manufacturer of the clock",
-        "Only the numeric difference between two times"
+        "How two events or times relate to each other — before, after, simultaneous, or overlapping"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A temporal relationship describes the qualitative connection between two events or times, such as whether one precedes, follows, or overlaps with the other.",
       "id": 4
     },
     {
       "question": "What defines a 'time interval'?",
       "options": [
-        "A single point in time",
         "A start time and an end time defining a duration",
+        "A single point in time",
         "Only the duration, with no start or end",
         "A recurring event with no fixed length"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A time interval is defined by its start and end times, together specifying a duration between two points.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "When do two time intervals 'overlap'?",
       "options": [
         "Only when they start at exactly the same time",
-        "When one interval's start is before the other's end, and vice versa \u2014 they share some common time",
         "Only when one interval fully contains the other",
+        "When one interval's start is before the other's end, and vice versa — they share some common time",
         "Intervals can never overlap by definition"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Two intervals overlap whenever each one's start time is before the other's end time, meaning there is some shared span of time between them.",
       "id": 6
     },
@@ -113,7 +113,7 @@
     {
       "question": "Why is representing temporal relationships explicitly (rather than just as a list of separate times) useful?",
       "options": [
-        "It isn't useful \u2014 a plain list is always sufficient",
+        "It isn't useful — a plain list is always sufficient",
         "It preserves the dependencies between events, letting you correctly propagate a change in one time through the rest of the chain",
         "It removes the need for the clock-angle formula",
         "It only matters for events on different days"

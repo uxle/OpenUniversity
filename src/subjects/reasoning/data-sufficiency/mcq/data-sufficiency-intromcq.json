@@ -1,0 +1,126 @@
+{
+  "lessonId": "data-sufficiency-intro",
+  "title": "Data Sufficiency: Deciding With Less",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary skill that data sufficiency questions test?",
+      "options": [
+        "Whether the given information is enough to decide the answer, without fully solving it",
+        "The speed with which long calculations can be completed",
+        "The ability to memorise formulas for ages and percentages",
+        "The ability to write formal proofs for each statement"
+      ],
+      "correct": 0,
+      "rationale": "Data sufficiency asks one question per item: does the information pin down a unique answer? The verdict, not the value, is what the option list rewards."
+    },
+    {
+      "id": 2,
+      "question": "In the AD/BCE fork, if statement I alone turns out to be sufficient, which answer options remain possible?",
+      "options": [
+        "Only 'I alone is sufficient' or 'both together are needed'",
+        "Only 'II alone is sufficient' or 'either alone is sufficient'",
+        "'Neither is sufficient' or 'both together are needed'",
+        "All five options remain equally possible"
+      ],
+      "correct": 0,
+      "rationale": "If I alone works, the answer is either A (I alone) or D (both needed); only statement II decides between them. If I alone fails, the answer must be B, C or E."
+    },
+    {
+      "id": 3,
+      "question": "What does the principle 'sufficiency is not solving' mean?",
+      "options": [
+        "You must always find the exact value before marking an option",
+        "You decide whether the data forces a unique answer, often without computing the value at all",
+        "You should skip any question whose value you cannot compute quickly",
+        "You should approximate the answer when the calculation is long"
+      ],
+      "correct": 1,
+      "rationale": "The exam pays for the verdict — sufficient or not. For example, '3x + 2y = 18' can be declared insufficient instantly because one equation cannot fix two unknowns, with no solving at all."
+    },
+    {
+      "id": 4,
+      "question": "Is x greater than 5? I. x > 7. II. x > 3.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "Statement I forces a definite 'yes' since every x > 7 exceeds 5. Statement II allows x = 4 (no) and x = 6 (yes), so it leaves the question open."
+    },
+    {
+      "id": 5,
+      "question": "What is the value of x? I. 3x + 2y = 18. II. y is a positive integer.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Neither statement is sufficient even together"
+      ],
+      "correct": 3,
+      "rationale": "Statement I is one equation in two unknowns and II adds no constraint linking y to x. Even merged, y = 3 gives x = 4 while y = 6 gives x = 2, so no unique value survives."
+    },
+    {
+      "id": 6,
+      "question": "What is Ravi's present age? I. Ravi is 12 years older than Meena. II. Five years ago, Meena was half of Ravi's age.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 3,
+      "rationale": "Each statement alone is one equation in two unknowns. Together they give R = M + 12 and M - 5 = (R - 5)/2, so M = 17 and R = 29 (check: five years ago 12 was half of 24)."
+    },
+    {
+      "id": 7,
+      "question": "What is 30% of a certain number? I. 50% of the number is 240. II. The number is 40 more than 440.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I gives the number as 240/0.5 = 480, and statement II gives it as 440 + 40 = 480; either route yields 30% = 144. The statements agree, confirming 'either'."
+    },
+    {
+      "id": 8,
+      "question": "Is the positive integer n even? I. n is a multiple of 3. II. n is a multiple of 5.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Neither statement is sufficient even together"
+      ],
+      "correct": 3,
+      "rationale": "Multiples of 3 or of 5 can be odd or even. Even merged, n = 15 (odd) and n = 30 (even) both satisfy both statements, so no definite answer exists."
+    },
+    {
+      "id": 9,
+      "question": "What is the cost price of the article? I. Selling it for Rs 690 gives a 15% profit on the cost price. II. The profit earned on the sale was Rs 90.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "Statement I gives CP = 690/1.15 = Rs 600. Statement II alone gives only the profit amount with neither price, so the cost stays free."
+    },
+    {
+      "id": 10,
+      "question": "What is the recommended time budget for one data sufficiency question in an exam?",
+      "options": [
+        "30 to 45 seconds, spent deciding rather than solving",
+        "3 to 4 minutes of careful full calculation",
+        "Under 10 seconds, guessing from the option pattern",
+        "Timing is irrelevant as long as the answer is right"
+      ],
+      "correct": 0,
+      "rationale": "The decision ladder is short by design: about five seconds on the stem, fifteen on statement I, ten on statement II, and ten to combine or mark. Pattern guessing has no edge in a well-set paper."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "lessonId": "analogy-detailed-part-11",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 11 of 12",
+  "title": "Analogy — In-Depth Guide — Part 11 of 12",
   "questions": [
     {
       "question": "What is the 'Common Trap: Wrong Direction'?",
@@ -18,11 +18,11 @@
       "question": "What is the 'Common Trap: Multiple Relations'?",
       "options": [
         "A pair with no relationship at all",
-        "A situation where an item pair has more than one plausible relationship, making the intended one ambiguous without careful analysis",
         "A trap that only applies to a single relationship type",
+        "A situation where an item pair has more than one plausible relationship, making the intended one ambiguous without careful analysis",
         "A trap unrelated to analogy solving"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This trap arises when a given pair could plausibly be connected by more than one relationship, requiring careful analysis to determine which one the question actually intends.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What might a '10-Second Mental Checklist' include?",
       "options": [
         "A lengthy, multi-step derivation",
-        "A short list of the most common relationship categories to quickly check against a given pair",
+        "A checklist with no practical use",
         "Only number-based checks",
-        "A checklist with no practical use"
+        "A short list of the most common relationship categories to quickly check against a given pair"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This checklist provides a short, fast-to-run-through list of the most common relationship categories, helping quickly narrow down which type applies.",
       "id": 4
     },
     {
       "question": "What is the primary purpose of 'Solved Examples 1 through 11' in this part of the lesson?",
       "options": [
-        "To introduce entirely new relationship types",
         "To demonstrate the solving process applied to a range of realistic analogy problems, reinforcing the techniques already covered",
+        "To introduce entirely new relationship types",
         "To replace the need for the golden rule",
         "To only test letter analogies"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "These worked examples demonstrate the solving process on a range of realistic problems, reinforcing the techniques and relationship types already introduced earlier in the lesson.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "Why does a lesson typically include MANY solved examples (11 or more) rather than just one or two?",
       "options": [
         "Extra examples have no additional value",
-        "Repeated exposure across varied examples helps reinforce pattern recognition across different relationship types",
         "Because a single example is always sufficient",
+        "Repeated exposure across varied examples helps reinforce pattern recognition across different relationship types",
         "Because later examples repeat the exact same relationship"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Working through many varied examples helps reinforce pattern recognition across the different relationship types, building the fluency needed to recognize them quickly.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "Why is working through solved examples covering DIFFERENT relationship types (geography, science, numbers, letters) valuable?",
       "options": [
         "It has no added value over repeating one type",
-        "It builds broad familiarity across the full range of relationship categories likely to appear in real questions",
+        "It only helps with number analogies",
         "Only one relationship type actually appears in exams",
-        "It only helps with number analogies"
+        "It builds broad familiarity across the full range of relationship categories likely to appear in real questions"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Since real exam questions can draw from any of the many relationship categories covered, practicing across a diverse range builds the broad familiarity needed to recognize whichever type appears.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "The principle of simplest rule only applies to numbers"
       ],
       "correct": 1,
-      "rationale": "Both concepts share the goal of efficient, reliable solving \u2014 preferring straightforward, verifiable approaches (simplest rule, quick pattern checks) over complex, unverified guesswork.",
+      "rationale": "Both concepts share the goal of efficient, reliable solving — preferring straightforward, verifiable approaches (simplest rule, quick pattern checks) over complex, unverified guesswork.",
       "id": 9
     },
     {
@@ -119,7 +119,7 @@
         "Order of learning never matters"
       ],
       "correct": 1,
-      "rationale": "A fast checklist is a recall aid, not a teaching tool \u2014 it only works efficiently once the underlying relationship categories have already been properly learned through deeper study.",
+      "rationale": "A fast checklist is a recall aid, not a teaching tool — it only works efficiently once the underlying relationship categories have already been properly learned through deeper study.",
       "id": 10
     }
   ]

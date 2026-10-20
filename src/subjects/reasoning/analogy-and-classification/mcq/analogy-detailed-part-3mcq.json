@@ -1,16 +1,16 @@
 {
   "lessonId": "analogy-detailed-part-3",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 3 of 12",
+  "title": "Analogy — In-Depth Guide — Part 3 of 12",
   "questions": [
     {
       "question": "What does a 'Cause -> Effect' analogy test?",
       "options": [
-        "Two unrelated events",
         "A cause and the effect it directly produces, such as Fire : Smoke",
+        "Two unrelated events",
         "An effect and an unrelated cause",
         "A worker and their tool"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This type tests the relationship between a cause and the effect it directly produces, such as Fire : Smoke.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "How does 'Effect -> Cause' differ from 'Cause -> Effect'?",
       "options": [
         "They test the same direction",
-        "It reverses the direction, starting from the effect and identifying its cause",
         "It only applies to natural disasters",
+        "It reverses the direction, starting from the effect and identifying its cause",
         "There is no valid reverse relationship"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Effect -> Cause reverses the direction, starting with the effect (like Smoke) and identifying what caused it (like Fire).",
       "id": 2
     },
@@ -42,36 +42,36 @@
       "question": "What does an 'Object -> Characteristic' analogy test?",
       "options": [
         "An object and its price",
-        "An object and a defining characteristic or property associated with it",
+        "Two unrelated objects",
         "An object and its owner",
-        "Two unrelated objects"
+        "An object and a defining characteristic or property associated with it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This type tests the relationship between an object and a defining characteristic commonly associated with it.",
       "id": 4
     },
     {
       "question": "How does 'Object -> Quality' compare to 'Object -> Characteristic'?",
       "options": [
-        "They are entirely unrelated concepts",
         "Both test an object paired with an associated descriptive property, though phrased slightly differently",
+        "They are entirely unrelated concepts",
         "Quality only applies to liquids",
         "Characteristic only applies to solids"
       ],
-      "correct": 1,
-      "rationale": "Both analogy types test the same general idea \u2014 an object paired with a descriptive property associated with it \u2014 just phrased with slightly different terminology.",
+      "correct": 0,
+      "rationale": "Both analogy types test the same general idea — an object paired with a descriptive property associated with it — just phrased with slightly different terminology.",
       "id": 5
     },
     {
       "question": "What does a 'Geography Analogy' typically test?",
       "options": [
         "Relationships between chemical elements",
-        "Relationships between geographic entities, such as countries, capitals, or landmarks",
         "Only animal habitats",
+        "Relationships between geographic entities, such as countries, capitals, or landmarks",
         "Only mathematical sequences"
       ],
-      "correct": 1,
-      "rationale": "Geography analogies test relationships among geographic entities \u2014 such as country-capital pairs, rivers, or landmarks.",
+      "correct": 2,
+      "rationale": "Geography analogies test relationships among geographic entities — such as country-capital pairs, rivers, or landmarks.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What does a 'Scientific Analogy' typically test?",
       "options": [
         "Only geography relationships",
-        "Relationships between scientific concepts, such as instruments, fields, or discoveries",
+        "Only number sequences",
         "Only word synonyms",
-        "Only number sequences"
+        "Relationships between scientific concepts, such as instruments, fields, or discoveries"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Scientific analogies test relationships within scientific domains, such as an instrument and what it measures, or a scientist and their field.",
       "id": 8
     },

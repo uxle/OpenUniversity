@@ -1,0 +1,76 @@
+{
+  "lessonId": "applications-of-calculus",
+  "title": "Applications of Calculus: Maxima, Minima, and Areas",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The function f(x) = x² − 8x + 7 attains its minimum at:",
+      "options": ["x = 4", "x = 8", "x = −4", "x = 0"],
+      "correct": 0,
+      "rationale": "f′(x) = 2x − 8 = 0 gives x = 4, and f″(x) = 2 > 0 confirms a minimum there."
+    },
+    {
+      "id": 2,
+      "question": "At a local maximum, the sign of f′ changes from:",
+      "options": ["negative to positive", "positive to negative", "zero to zero", "negative to negative"],
+      "correct": 1,
+      "rationale": "The graph rises before the peak and falls after it, so f′ goes from positive to negative; the reverse marks a minimum."
+    },
+    {
+      "id": 3,
+      "question": "For f(x) = 2x³ − 9x² + 12x, the local maximum value is:",
+      "options": ["2", "5", "0", "12"],
+      "correct": 1,
+      "rationale": "f′ = 6(x − 1)(x − 2) and f″(1) = −6 < 0, so the maximum is f(1) = 2 − 9 + 12 = 5."
+    },
+    {
+      "id": 4,
+      "question": "On the interval from −2 to 2, the global minimum of f(x) = x³ − 3x is:",
+      "options": ["2", "0", "−2", "−8"],
+      "correct": 2,
+      "rationale": "Critical points x = ±1 plus endpoints give f(−2) = −2, f(−1) = 2, f(1) = −2, f(2) = 2; the least value is −2."
+    },
+    {
+      "id": 5,
+      "question": "A farmer fences a rectangle with 40 m of fencing. The largest possible area is:",
+      "options": ["64 m²", "80 m²", "100 m²", "400 m²"],
+      "correct": 2,
+      "rationale": "A(x) = x(20 − x), and A′(x) = 20 − 2x = 0 gives x = 10; the square 10 m × 10 m has area 100 m²."
+    },
+    {
+      "id": 6,
+      "question": "An open box is made by cutting squares of side x from a 20 cm × 20 cm sheet. The volume-maximising cut is:",
+      "options": ["2 cm", "5 cm", "10 cm", "10/3 cm"],
+      "correct": 3,
+      "rationale": "V(x) = x(20 − 2x)², and V′ = 4(3x − 10)(x − 10) = 0 gives x = 10/3 (x = 10 collapses the box)."
+    },
+    {
+      "id": 7,
+      "question": "The area under y = x² from x = 0 to x = 3 is:",
+      "options": ["3", "6", "9", "27"],
+      "correct": 2,
+      "rationale": "∫₀³ x² dx = x³/3 evaluated from 0 to 3 = 27/3 = 9 square units."
+    },
+    {
+      "id": 8,
+      "question": "The area enclosed between y = x and y = x² from x = 0 to x = 1 is:",
+      "options": ["1/2", "1/6", "1/3", "2/3"],
+      "correct": 1,
+      "rationale": "∫₀¹ (x − x²) dx = 1/2 − 1/3 = 1/6; subtract the curves before integrating."
+    },
+    {
+      "id": 9,
+      "question": "A particle moves with velocity v(t) = 3t². Its displacement from t = 0 to t = 2 is:",
+      "options": ["4 m", "6 m", "12 m", "8 m"],
+      "correct": 3,
+      "rationale": "Displacement is ∫₀² 3t² dt = t³ from 0 to 2 = 8 m."
+    },
+    {
+      "id": 10,
+      "question": "If f″(c) > 0 at a critical point c where f′(c) = 0, then c is:",
+      "options": ["a local maximum", "a local minimum", "an inflection point", "impossible to classify"],
+      "correct": 1,
+      "rationale": "Positive second derivative means the curve bends upward — a valley — so the critical point is a local minimum."
+    }
+  ]
+}

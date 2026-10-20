@@ -1,16 +1,16 @@
 {
   "lessonId": "clock-reasoning-part-8",
-  "title": "Clock Reasoning \u2014 Part 8 of 10",
+  "title": "Clock Reasoning — Part 8 of 10",
   "questions": [
     {
       "question": "Why is a structured architecture generally more reliable than pure pattern matching for clock reasoning?",
       "options": [
-        "Pattern matching is always more reliable",
         "Pattern matching only recognizes phrasings it has seen before, while a structured architecture can generalize by applying consistent rules to any valid input",
+        "Pattern matching is always more reliable",
         "Structured architectures don't require any rules at all",
         "There is no real difference between the two"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Pattern matching breaks down on unfamiliar phrasings, while a rule-based structured architecture generalizes because it applies the same consistent logic regardless of exact wording.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "In what sense is 'clock reasoning as compilation' a useful analogy?",
       "options": [
         "It isn't a useful analogy",
-        "Parsing natural language into a structured representation, then evaluating it, mirrors how a compiler translates and executes source code",
         "It means clock reasoning literally requires a programming language",
+        "Parsing natural language into a structured representation, then evaluating it, mirrors how a compiler translates and executes source code",
         "It only applies to digital clocks"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Just as a compiler translates source code into a structured form before executing it, clock reasoning translates natural language into a structured representation before evaluating it.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What is a 'proof' or 'reasoning trace' in this context?",
       "options": [
         "A legal document",
-        "A step-by-step record of how the final answer was derived, useful for verification and explanation",
+        "A random string of numbers",
         "A photograph of the clock",
-        "A random string of numbers"
+        "A step-by-step record of how the final answer was derived, useful for verification and explanation"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A reasoning trace records each step taken to reach the final answer, which supports both verifying correctness and explaining the answer to someone else.",
       "id": 4
     },
     {
       "question": "What is the purpose of a 'verification' step after deriving a time answer?",
       "options": [
-        "To make the process take longer on purpose",
         "Checking the derived answer against the original constraints to confirm it's actually consistent with everything stated",
+        "To make the process take longer on purpose",
         "To convert the answer into a different time zone",
         "To round the answer to the nearest hour"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Verification re-checks the derived time against every original constraint, confirming the answer is genuinely consistent with everything given, not just plausible-looking.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'error detection' add to a clock reasoning system?",
       "options": [
         "Nothing useful",
-        "The ability to catch invalid or contradictory inputs rather than silently producing a wrong answer",
         "Faster calculation speed only",
+        "The ability to catch invalid or contradictory inputs rather than silently producing a wrong answer",
         "The ability to detect broken physical clocks"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Error detection lets the system recognize invalid or contradictory input and flag it, instead of silently producing an answer that looks valid but is actually wrong.",
       "id": 6
     },
@@ -83,18 +83,18 @@
         "Because human-friendly output removes the need for verification"
       ],
       "correct": 1,
-      "rationale": "An internal value like '810 minutes since midnight' isn't directly usable \u2014 it must be converted back into a familiar format like '1:30 PM' for a human reader.",
+      "rationale": "An internal value like '810 minutes since midnight' isn't directly usable — it must be converted back into a familiar format like '1:30 PM' for a human reader.",
       "id": 7
     },
     {
       "question": "What kind of problems does 'advanced clock reasoning' typically add on top of basic arithmetic?",
       "options": [
         "Simpler, single-step problems only",
-        "Multi-constraint, ambiguous, or compound problems requiring the full pipeline (parsing, constraints, verification) rather than a single direct calculation",
+        "Problems limited to whole hours only",
         "Problems that don't involve any clock hands",
-        "Problems limited to whole hours only"
+        "Multi-constraint, ambiguous, or compound problems requiring the full pipeline (parsing, constraints, verification) rather than a single direct calculation"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Advanced clock reasoning moves beyond single-formula calculations into multi-constraint or ambiguous problems that require the entire reasoning pipeline to solve reliably.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "It works better for multi-constraint problems"
       ],
       "correct": 1,
-      "rationale": "Memorized patterns only cover phrasings seen before \u2014 a genuinely novel combination of wording or constraints will break a pattern-matching approach, but not a properly generalized rule-based one.",
+      "rationale": "Memorized patterns only cover phrasings seen before — a genuinely novel combination of wording or constraints will break a pattern-matching approach, but not a properly generalized rule-based one.",
       "id": 9
     },
     {

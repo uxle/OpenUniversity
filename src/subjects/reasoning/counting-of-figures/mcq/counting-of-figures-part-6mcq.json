@@ -1,16 +1,16 @@
 {
   "lessonId": "counting-of-figures-part-6",
-  "title": "Counting of Figures \u2014 Part 6 of 12",
+  "title": "Counting of Figures — Part 6 of 12",
   "questions": [
     {
       "question": "What is the formula for the number of diagonals in a convex polygon with n sides?",
       "options": [
-        "n(n-1)/2",
         "n(n-3)/2",
+        "n(n-1)/2",
         "n^2 - n",
         "n(n+1)/2"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Subtracting the n sides themselves from all C(n,2) point-pairs gives n(n-3)/2 diagonals.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "Using that formula, how many diagonals does a hexagon (n = 6) have?",
       "options": [
         "6",
-        "9",
         "12",
+        "9",
         "15"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "6 x (6-3) / 2 = 6 x 3 / 2 = 9 diagonals.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What complicates counting figures in 'star and overlapping figures' problems?",
       "options": [
         "Stars never contain any valid figures",
-        "The overlapping lines create many additional intersection points and smaller sub-regions that must each be carefully identified",
+        "Star figures are always symmetric and require no counting",
         "Overlapping figures always cancel each other out",
-        "Star figures are always symmetric and require no counting"
+        "The overlapping lines create many additional intersection points and smaller sub-regions that must each be carefully identified"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The many overlapping lines in a star figure create numerous extra intersection points and smaller regions, each of which must be carefully identified as part of a full count.",
       "id": 4
     },
     {
       "question": "When two circles overlap, how many regions do they divide the plane into (inside the circles' outlines, generic case)?",
       "options": [
-        "2",
         "3",
+        "2",
         "4",
         "5"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Two overlapping circles create 3 regions: the two non-overlapping crescent areas, plus the shared overlapping region in the middle.",
       "id": 5
     },
@@ -71,7 +71,7 @@
         "Circle counting always gives a larger number than region counting"
       ],
       "correct": 1,
-      "rationale": "Circle counting tallies the circle shapes themselves, while region counting tallies the distinct enclosed areas their boundaries create \u2014 these are different questions with different answers.",
+      "rationale": "Circle counting tallies the circle shapes themselves, while region counting tallies the distinct enclosed areas their boundaries create — these are different questions with different answers.",
       "id": 6
     },
     {
@@ -83,7 +83,7 @@
         "Regions can never be figures"
       ],
       "correct": 1,
-      "rationale": "A region is simply any enclosed area created by the diagram's lines, while a 'figure' usually refers to a specific recognizable shape \u2014 not every region is necessarily a named figure.",
+      "rationale": "A region is simply any enclosed area created by the diagram's lines, while a 'figure' usually refers to a specific recognizable shape — not every region is necessarily a named figure.",
       "id": 7
     },
     {

@@ -1,0 +1,249 @@
+# Lesson 27: Cloze Tests and Sentence Fill-ins
+
+> A cloze test deletes selected words from a passage and asks you to
+> restore them from the four options given for each blank. Because every
+> blank is surrounded by clues, the test measures how well you read, not
+> how many words you memorised. This lesson gives you the strategy, the
+> clue types, and two fully solved mini passages.
+
+## 1. What Is a Cloze Test?
+
+[definition]
+A **cloze test** is a passage in which certain words — usually every
+seventh or eighth word, or chosen by the setter — are replaced by
+numbered blanks, and each blank must be filled from its own set of four
+options. The name comes from *closure*: the mind's urge to complete a
+broken pattern.
+[/definition]
+
+* A typical exam passage runs 80 to 200 words with 5 to 10 blanks.
+* Sentence fill-ins are the shorter cousin: one sentence, one blank,
+  the same logic on a smaller canvas.
+* The passages are usually narrative (a story or anecdote) or expository
+  (an explanation of a process or idea); the two styles hide different
+  clue types.
+
+[info]
+Cloze items carry double marks in disguise: a wrong option poisons the
+sentence locally, but a wrong *connector* (however, therefore) poisons
+the logic of two sentences. Connectors are the highest-value blanks on
+the page.
+[/info]
+
+## 2. A Five-Step Solving Strategy
+
+1. **Read the whole passage first, blanks and all.** One quick pass to
+   grasp the theme, the tense, and the tone. Do not look at the options
+   yet — options are designed to hypnotise.
+2. **Classify each blank**: does the sentence need a noun, a verb, a
+   connector, a preposition, or an adjective? Often three of the four
+   options die from part-of-speech alone.
+3. **Hunt the clue** in the neighbourhood: a word *before* the blank
+   (collocation), a word *after* it (grammar), or the logic *between*
+   the two sentences (connector).
+4. **Predict, then match.** Say your own word for the blank before
+   reading the options; then choose the option closest to your
+   prediction. This prevents options from suggesting themselves.
+5. **Re-read the completed passage** — every blank must sound like part
+   of one voice, one tense, one tone.
+
+[tip]
+Never leave a blank unattempted if there is no negative marking: even
+with partial understanding, two options can usually be eliminated, which
+turns a blind guess into a fifty-fifty chance.
+[/tip]
+
+## 3. Context Clues: The Three Kinds
+
+@diagram tree id="clue-types" layout="tree" aria="The three families of context clues in a cloze passage"
+  "Context clues" -> "Grammar clues"
+  "Context clues" -> "Sense clues"
+  "Context clues" -> "Collocation clues"
+  "Grammar clues" -> "article + blank + noun"
+  "Grammar clues" -> "has/have + blank (past participle)"
+  "Grammar clues" -> "preposition + blank (noun or gerund)"
+  "Sense clues" -> "synonym or repetition nearby"
+  "Sense clues" -> "contrast signalled by however"
+  "Sense clues" -> "cause signalled by therefore"
+  "Collocation clues" -> "heavy ... rain"
+  "Collocation clues" -> "pay ... attention"
+  "Collocation clues" -> "look forward to ... hearing"
+@/diagram
+
+* **Grammar clues** decide the word class. After *a* or *the* comes a
+  noun; after *has/have* comes a past participle; after a preposition
+  comes a noun or a gerund.
+* **Sense clues** decide the meaning. If the sentence says *he never
+  gave up*, a later blank about the same person needs a positive word.
+* **Collocation clues** decide the partner: *heavy* goes with *rain*,
+  *pay* goes with *attention*, *fast* goes with *asleep*.
+
+[example]
+*The committee has not yet (1) ____ a final decision.*
+Grammar clue: *has* + blank + *a ... decision* demands a past
+participle. Collocation clue: the fixed partner of *decision* is
+*take* or *reach* or *make*. Prediction: *taken*. Any option that is a
+noun, or a present tense, dies immediately.
+[/example]
+
+## 4. Part-of-Speech Elimination
+
+The fastest marks come from killing options before reading their
+meanings. Run this checklist on every blank:
+
+| Blank follows | Blank must be | Options to strike |
+| --- | --- | --- |
+| the, a, an | noun (or adjective + noun) | verbs, adverbs |
+| has, have, had | past participle (in perfect tense) | base forms, -ing forms |
+| is, are, was, were | -ing form, participle, or adjective | bare nouns unless after the |
+| preposition | noun or gerund | bare verbs |
+| modal (can, must) | base verb | everything else |
+| very, quite | adjective or adverb | nouns |
+| noun | verb (the subject needs one) | spare nouns |
+
+[warning]
+Beware the **double-part blank**: in *the plans were put ____*, the
+blank needs a particle (*off*, *out*, *down*), not a preposition object.
+Scan both sides of the blank before deciding its class — the right side
+often ends the word class debate.
+[/warning]
+
+## 5. Connectors: The Logic Blanks
+
+Connector blanks test the *relationship between sentences*, so read
+both sentences, not just the blank's own line.
+
+| Logic between sentences | Connector family | Typical options |
+| --- | --- | --- |
+| opposite direction | contrast | however, nevertheless, but, yet |
+| same direction | addition | moreover, also, besides, in addition |
+| result | consequence | therefore, thus, consequently, hence |
+| reason | cause | because, since, as |
+| time order | sequence | then, subsequently, meanwhile |
+| condition | conditional | if, unless, provided |
+| example | illustration | for instance, for example |
+| concession | unexpected fact | although, despite, in spite of |
+
+[tip]
+*Unless* already contains a negative: *unless you hurry* means *if you
+do not hurry*. An option pair like *if / unless* is solved by checking
+whether the clause after it is already affirmative or negative — the
+double negative trap catches thousands of candidates every year.
+[/tip]
+
+## 6. Solved Mini Passage One (Narrative)
+
+**Passage.** Last summer, Arun joined a trek to the Valley of Flowers.
+On the second day, the weather (1) ____ without warning, and the group
+found itself walking through (2) ____ rain. Arun's shoes, which he had
+bought only a week earlier, began to (3) ____. The guide advised the
+trekkers to (4) ____ shelter until the storm (5) ____, and by evening
+the sky had (6) ____ cleared.
+
+| Blank | Analysis | Answer |
+| --- | --- | --- |
+| 1 | weather + verb; storm context needs a change verb | **turned** (turned bad / changed) |
+| 2 | blank + rain; collocation: heavy rain | **heavy** |
+| 3 | shoes began to ____; wet shoes give trouble | **give** (give way) or **fall** apart |
+| 4 | advised to ____ shelter; collocation | **take** (take shelter) |
+| 5 | until the storm ____; past tense verb | **passed** (or subsided) |
+| 6 | had ____ cleared; adverb strengthening | **completely** (or finally) |
+
+Notice how six blanks produced six different clue types: a verb of
+change, a collocation, a phrasal completion, another collocation, a
+tense-governed verb, and an adverb. One passage, the whole syllabus.
+
+## 7. Solved Mini Passage Two (Expository)
+
+**Passage.** Bees are essential (1) ____ agriculture. They pollinate
+crops, and (2) ____ pollination, fruit yields would fall sharply.
+Scientists estimate that nearly a third of the food we eat (3) ____
+on pollinators. Worryingly, bee populations have been (4) ____ in
+many regions, chiefly (5) ____ pesticide use and habitat loss.
+(6) ____, several countries have begun restricting the chemicals most
+harmful to bees.
+
+| Blank | Analysis | Answer |
+| --- | --- | --- |
+| 1 | essential + blank + agriculture; preposition | **to** (essential to) |
+| 2 | would fall without it; negative condition | **without** |
+| 3 | a third of food + verb, present general truth | **depends** (singular subject) |
+| 4 | have been + ____ + in many regions; participle | **declining** |
+| 5 | chiefly + ____ + causes; preposition of reason | **due to** (or because of) |
+| 6 | new sentence, result of the worry; connector | **Therefore** |
+
+The expository passage leans harder on grammar and logic: subject-verb
+agreement in blank 3, and a consequence connector in blank 6. When the
+tone is scientific, expect precision blanks; when the tone is story-
+like, expect sense and collocation blanks.
+
+## 8. Common Trap Blanks and Exam Practice
+
+Four traps account for most lost marks in cloze items:
+
+1. **The near-synonym pair**: *say / tell*, *reach / arrive*, *lose /
+   miss*. Only one fits the grammar (*tell him* but *say to him*;
+   *reach Delhi* but *arrive in Delhi*).
+2. **The tense echo**: a narrative set in the past wants past-tense
+   verbs in *every* verb blank unless logic forces otherwise — check
+   the passage's master tense before choosing.
+3. **The connector trap**: *although* and *but* both signal contrast,
+   but *although* joins clauses while *but* needs a clause, not a noun
+   phrase (*but the rain* is wrong; *but it rained* is right).
+4. **The idiom blank**: *in the long run*, *at the eleventh hour*,
+   *on the verge of* — only the exact preposition works, and the
+   wrong options are always near-miss prepositions.
+
+@chart bar title="Blank types in a typical cloze passage (out of 10 blanks)" labels:
+Verbs
+Nouns and adjectives
+Prepositions and particles
+Connectors
+Adverbs
+
+data:
+3
+2
+2
+2
+1
+@/chart
+
+[example]
+Sentence fill-in drill.
+*She was praised for her ____ handling of the crisis.*
+Step 1: blank + noun → adjective needed.
+Step 2: positive context (praised) → positive adjective.
+Step 3: collocation with *handling* → *tactful* fits; *tactic* (a
+noun) and *tactical* (about planned moves) are the bait options.
+[/example]
+
+[warning]
+After filling all blanks, re-read the passage once at natural speed.
+If any completed sentence sounds like a stranger in the passage —
+different tense, different tone — you have filled by option-matching,
+not by reading. That final pass is worth one to two marks in every
+paper.
+[/warning]
+
+## 9. Quick Revision
+
+| Blank type | First check | Typical right answer |
+| --- | --- | --- |
+| After has/have/had | past participle | taken, reached, cleared |
+| After preposition | noun or gerund | to meeting, of leaving |
+| Blank + noun | collocation | heavy rain, take shelter |
+| Between two sentences | logic relationship | therefore, however, moreover |
+| Narrative master tense | past-tense echo | turned, passed |
+| Near-synonym pair | grammar fit | tell him, reach Delhi |
+| Essential to / due to | fixed preposition | to, to |
+| Double negative zone | unless, hardly | if / unless read carefully |
+
+[summary]
+Cloze tests are reading tests in disguise: read the whole passage
+first, classify every blank by part of speech, hunt grammar, sense,
+and collocation clues in the neighbourhood, predict before peeking at
+the options, and finish with a full-speed re-read. Connectors carry the
+passage's logic, near-synonym pairs are settled by grammar, and the
+master tense of the narrative rules every verb blank.
+[/summary]

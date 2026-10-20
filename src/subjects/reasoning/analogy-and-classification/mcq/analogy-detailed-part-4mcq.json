@@ -1,16 +1,16 @@
 {
   "lessonId": "analogy-detailed-part-4",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 4 of 12",
+  "title": "Analogy — In-Depth Guide — Part 4 of 12",
   "questions": [
     {
       "question": "What does an 'Instrument -> Measurement' analogy test?",
       "options": [
-        "An instrument and its price",
         "An instrument and the specific quantity it is used to measure",
+        "An instrument and its price",
         "An instrument and its inventor",
         "An instrument and its color"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This type tests the relationship between a measuring instrument and the specific quantity it measures, such as Thermometer : Temperature.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does a 'Scientist -> Field' analogy test?",
       "options": [
         "A scientist and their nationality",
-        "A scientist and the specific field or discipline they are known for",
         "A scientist and their age",
+        "A scientist and the specific field or discipline they are known for",
         "A scientist and their salary"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This type tests the relationship between a scientist and their associated field of study, such as Darwin : Biology.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What is 'Number Analogy' generally based on?",
       "options": [
         "Word meanings",
-        "A mathematical relationship connecting a pair of numbers, applied to find a matching relationship for a new pair",
+        "Random number selection",
         "Letter positions only",
-        "Random number selection"
+        "A mathematical relationship connecting a pair of numbers, applied to find a matching relationship for a new pair"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Number analogy applies a mathematical rule connecting a given pair of numbers to determine the corresponding value or pair for a new case.",
       "id": 4
     },
     {
       "question": "What are 'common number transformations' used in number analogy likely to include?",
       "options": [
-        "Only word associations",
         "Operations like addition, multiplication, squaring, or other consistent arithmetic rules",
+        "Only word associations",
         "Only letter shifts",
         "Only geographic relationships"
       ],
-      "correct": 1,
-      "rationale": "Common number transformations include standard arithmetic operations \u2014 addition, multiplication, squaring, and similar consistent rules \u2014 applied to the given pair.",
+      "correct": 0,
+      "rationale": "Common number transformations include standard arithmetic operations — addition, multiplication, squaring, and similar consistent rules — applied to the given pair.",
       "id": 5
     },
     {
       "question": "What does an 'Addition Analogy' test?",
       "options": [
         "A multiplicative relationship",
-        "A pair of numbers related by a consistent addition rule (e.g., second = first + constant)",
         "A squaring relationship",
+        "A pair of numbers related by a consistent addition rule (e.g., second = first + constant)",
         "A word-based relationship"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "An addition analogy tests a pair of numbers related by adding a consistent constant, such as 4 : 9 (add 5) matching 6 : 11.",
       "id": 6
     },

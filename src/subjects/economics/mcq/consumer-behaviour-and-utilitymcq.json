@@ -1,0 +1,126 @@
+{
+  "lessonId": "consumer-behaviour-and-utility",
+  "title": "Consumer Behaviour and Utility: Why We Buy What We Buy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In consumer theory, utility refers to:",
+      "options": [
+        "The want-satisfying power of a good, however subjective",
+        "The usefulness of a good to society",
+        "The money value of a good in the market",
+        "The physical durability of a good"
+      ],
+      "correct": 0,
+      "rationale": "Utility is the expected satisfaction a consumer derives from a good; it is subjective and need not coincide with social usefulness — a harmful product can still have utility to its user."
+    },
+    {
+      "id": 2,
+      "question": "The cardinal approach to utility is associated with:",
+      "options": [
+        "Hicks and Allen",
+        "Lionel Robbins",
+        "Alfred Marshall",
+        "Adam Smith"
+      ],
+      "correct": 2,
+      "rationale": "Marshall's cardinal approach measured utility in imaginary 'utils'; Hicks and Allen later developed the ordinal approach, which only ranks preferences."
+    },
+    {
+      "id": 3,
+      "question": "When marginal utility is zero, total utility:",
+      "options": [
+        "Also equals zero",
+        "Reaches its maximum (point of satiety)",
+        "Starts rising at a faster rate",
+        "Becomes negative"
+      ],
+      "correct": 1,
+      "rationale": "TU rises while MU is positive, peaks exactly where MU = 0, and falls once MU turns negative — so MU = 0 marks satiety."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is a stated assumption of the law of diminishing marginal utility?",
+      "options": [
+        "Units are of unequal size",
+        "The good is a rare collectible",
+        "The consumer is irrational",
+        "Consumption is continuous and tastes are constant"
+      ],
+      "correct": 3,
+      "rationale": "The law requires homogeneous units, continuous consumption, reasonable size, constant tastes, and rationality; collections and addiction are the standard exceptions."
+    },
+    {
+      "id": 5,
+      "question": "A consumer is in equilibrium (cardinal approach) when:",
+      "options": [
+        "MUx/Px equals MUy/Py",
+        "MU of every good is equal regardless of price",
+        "Px equals Py",
+        "Total utility of X equals total utility of Y"
+      ],
+      "correct": 0,
+      "rationale": "The equi-marginal principle equalises marginal utility per rupee across goods; if MUx/Px > MUy/Py, shifting a rupee from Y to X raises total satisfaction."
+    },
+    {
+      "id": 6,
+      "question": "Two indifference curves can never intersect because:",
+      "options": [
+        "They are downward sloping",
+        "At the crossing point one bundle would yield two different satisfaction levels",
+        "MRS would become negative",
+        "The budget line would be violated"
+      ],
+      "correct": 1,
+      "rationale": "A common point implies the same bundle lies on two curves with different satisfaction levels — a logical contradiction, hence non-intersection is a property of ICs."
+    },
+    {
+      "id": 7,
+      "question": "The slope of a budget line is given by:",
+      "options": [
+        "Px/Py",
+        "MRS",
+        "Py/Px",
+        "MUx/MUy"
+      ],
+      "correct": 0,
+      "rationale": "With Px·X + Py·Y = M, the line's slope is Px/Py — the market's rate of exchange; the slope of the indifference curve (MRS) equals this only at the tangency optimum."
+    },
+    {
+      "id": 8,
+      "question": "If a consumer's income rises while prices are unchanged, the budget line:",
+      "options": [
+        "Pivots outward on one axis",
+        "Shifts parallel outward",
+        "Shifts parallel inward",
+        "Becomes steeper"
+      ],
+      "correct": 1,
+      "rationale": "Income changes shift the budget line parallel because the slope (Px/Py) depends only on prices; a price change would pivot the line instead."
+    },
+    {
+      "id": 9,
+      "question": "Consumer surplus is defined as:",
+      "options": [
+        "Profit earned by sellers above cost",
+        "Total utility minus total expenditure in money terms",
+        "What a consumer is willing to pay minus what is actually paid",
+        "The rebate given during festival sales"
+      ],
+      "correct": 2,
+      "rationale": "Marshall's consumer surplus is the excess of willingness to pay over the actual price — the surplus satisfaction enjoyed because price is below maximum valuation."
+    },
+    {
+      "id": 10,
+      "question": "The water–diamond paradox is resolved by noting that price reflects:",
+      "options": [
+        "Total utility, not marginal utility",
+        "Marginal utility, not total utility",
+        "Average utility across all users",
+        "The cost of production only"
+      ],
+      "correct": 1,
+      "rationale": "Water has huge total utility but, being abundant, low marginal utility and hence a low price; scarce diamonds have high marginal utility — price tracks marginal, not total, value."
+    }
+  ]
+}

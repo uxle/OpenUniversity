@@ -1,17 +1,17 @@
 {
   "lessonId": "analogy-detailed-part-12",
-  "title": "Analogy \u2014 In-Depth Guide",
+  "title": "Analogy — In-Depth Guide",
   "questions": [
     {
       "id": 1,
       "question": "Before checking answer options in an analogy question, what should you do first according to the guide's method?",
       "options": [
-        "Pick the option that feels most related",
         "State the relationship of the given pair as an explicit rule or sentence",
+        "Pick the option that feels most related",
         "Eliminate the shortest option",
         "Assume it is always a synonym relationship"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The guide's core method is to name the relationship explicitly (e.g., 'the structure the first item lives in') before testing options, since a vague sense of relatedness leads to picking loosely-associated but incorrect answers."
     },
     {
@@ -19,11 +19,11 @@
       "question": "In the vector-view model of analogy (A, B represented as feature vectors), how is the relationship between A and B represented?",
       "options": [
         "As their sum",
-        "As a transformation vector R = B - A, applied to the second pair",
         "As their product",
+        "As a transformation vector R = B - A, applied to the second pair",
         "Vectors are not used to represent analogy relationships"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The guide's vector view represents the relationship as R = B - A, then applies the same transformation to the second pair (D = C + R), which is especially useful for numerical analogies."
     },
     {
@@ -43,22 +43,22 @@
       "question": "Why might more than one answer option seem to 'sort of' fit an analogy at first glance?",
       "options": [
         "Analogy questions always have multiple correct answers",
-        "The relationship identified may still be too vague or general \u2014 a more specific relationship usually narrows it to one option",
+        "Only classification questions can have this issue",
         "It means the question is flawed",
-        "Only classification questions can have this issue"
+        "The relationship identified may still be too vague or general — a more specific relationship usually narrows it to one option"
       ],
-      "correct": 1,
-      "rationale": "When several options seem to fit, it usually means the stated relationship is too general (e.g., 'both animals' instead of 'predator and its typical prey') \u2014 refining it to a more specific rule narrows the answer to exactly one option."
+      "correct": 3,
+      "rationale": "When several options seem to fit, it usually means the stated relationship is too general (e.g., 'both animals' instead of 'predator and its typical prey') — refining it to a more specific rule narrows the answer to exactly one option."
     },
     {
       "question": "What does the 'Analogy Master Table' consolidate?",
       "options": [
-        "Only number-based relationships",
         "A comprehensive reference of all major relationship categories covered throughout the lesson, for quick lookup",
+        "Only number-based relationships",
         "A single isolated example",
         "Only letter-based relationships"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The Analogy Master Table consolidates every major relationship category covered across the lesson into one comprehensive, quick-reference resource.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What does the 'Universal Analogy Template' attempt to provide?",
       "options": [
         "A single formula only for numbers",
-        "A general, reusable framework (state the relationship, test it, verify it) applicable to any analogy type",
         "A template only for word analogies",
+        "A general, reusable framework (state the relationship, test it, verify it) applicable to any analogy type",
         "A rule with no general applicability"
       ],
-      "correct": 1,
-      "rationale": "This template provides a general, reusable framework \u2014 state the relationship, test it against options, verify it \u2014 that applies across any specific analogy type.",
+      "correct": 2,
+      "rationale": "This template provides a general, reusable framework — state the relationship, test it against options, verify it — that applies across any specific analogy type.",
       "id": 6
     },
     {
@@ -90,40 +90,40 @@
       "question": "What does the 'Master Formula' at this stage of the lesson likely represent?",
       "options": [
         "A single narrow formula for one relationship type only",
-        "A distilled, general statement of the core analogy-solving principle, unifying the many specific techniques covered",
+        "A formula that replaces the need to identify any relationship",
         "A formula unrelated to analogy solving",
-        "A formula that replaces the need to identify any relationship"
+        "A distilled, general statement of the core analogy-solving principle, unifying the many specific techniques covered"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The Master Formula distills the core analogy-solving principle into one general, unifying statement, consolidating the many specific techniques covered throughout the lesson.",
       "id": 8
     },
     {
       "question": "What is the purpose of a 'Final Exam Cheat Sheet'?",
       "options": [
-        "To introduce brand-new relationship types",
         "To condense every essential rule, trap, and technique from the lesson into one compact, quick-reference summary",
+        "To introduce brand-new relationship types",
         "To replace the practice sets",
         "To only summarize the first two parts"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The Final Exam Cheat Sheet condenses every essential concept from across the entire lesson into one compact, easily-reviewable summary.",
       "id": 9
     },
     {
-      "question": "Why does the lesson include four tiers of 'Practice Set \u2014 Level 1' through 'Level 4'?",
+      "question": "Why does the lesson include four tiers of 'Practice Set — Level 1' through 'Level 4'?",
       "options": [
         "To make the lesson unnecessarily long",
-        "To let learners build analogy-solving skill progressively, from simple to increasingly challenging cases",
         "Because each level uses entirely unrelated skills",
+        "To let learners build analogy-solving skill progressively, from simple to increasingly challenging cases",
         "Because only Level 4 is actually relevant to exams"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Progressive practice levels let learners build skill systematically, moving from simple cases toward increasingly challenging ones as understanding solidifies.",
       "id": 10
     },
     {
-      "question": "What is the value of 'High-Level Practice \u2014 No Immediate Answers,' compared to the earlier tiered practice sets?",
+      "question": "What is the value of 'High-Level Practice — No Immediate Answers,' compared to the earlier tiered practice sets?",
       "options": [
         "It has no additional value",
         "It trains the learner to work through problems without immediately checking the answer, building independent problem-solving confidence",
@@ -138,11 +138,11 @@
       "question": "What is the purpose of 'Answer Verification for High-Level Practice' appearing separately, after the practice itself?",
       "options": [
         "To replace the need to attempt the practice set",
-        "To let learners check their independently-derived answers only after genuinely attempting the problems themselves",
+        "It serves no distinct purpose from the earlier practice answers",
         "To provide the answers before the practice set",
-        "It serves no distinct purpose from the earlier practice answers"
+        "To let learners check their independently-derived answers only after genuinely attempting the problems themselves"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Separating verification from the practice set itself ensures learners genuinely attempt the problems independently first, checking their work only afterward.",
       "id": 12
     },
@@ -162,12 +162,12 @@
       "question": "What is the overarching lesson of this entire 12-part chapter on analogy reasoning?",
       "options": [
         "That analogy reasoning is purely a matter of guesswork",
-        "That reliably solving analogy problems comes from explicitly identifying the relationship, testing it rigorously against options, and watching for known traps \u2014 not from surface-level pattern matching alone",
+        "That reliably solving analogy problems comes from explicitly identifying the relationship, testing it rigorously against options, and watching for known traps — not from surface-level pattern matching alone",
         "That only number-based analogies matter",
         "That verification can safely be skipped once an answer seems plausible"
       ],
       "correct": 1,
-      "rationale": "The chapter's consistent central lesson is that reliable analogy solving comes from explicitly identifying and rigorously verifying the relationship, actively watching for known traps \u2014 not from superficial, surface-level pattern matching.",
+      "rationale": "The chapter's consistent central lesson is that reliable analogy solving comes from explicitly identifying and rigorously verifying the relationship, actively watching for known traps — not from superficial, surface-level pattern matching.",
       "id": 14
     }
   ]

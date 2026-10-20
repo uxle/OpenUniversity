@@ -5,71 +5,121 @@
     {
       "id": 1,
       "question": "In a graph G = (V, E), what does V stand for?",
-      "options": ["The set of edges", "The set of vertices", "The set of weights", "The set of cycles"],
-      "correct": 1,
+      "options": [
+        "The set of vertices",
+        "The set of edges",
+        "The set of weights",
+        "The set of cycles"
+      ],
+      "correct": 0,
       "rationale": "A graph G = (V, E) is a set of vertices and a set of edges joining pairs of them; the degree of a vertex counts the edges that touch it."
     },
     {
       "id": 2,
       "question": "How much space does an adjacency list need?",
-      "options": ["O(V²)", "O(V + E)", "O(E²)", "O(log V)"],
-      "correct": 1,
+      "options": [
+        "O(V²)",
+        "O(E²)",
+        "O(V + E)",
+        "O(log V)"
+      ],
+      "correct": 2,
       "rationale": "An adjacency list stores one neighbour list per vertex for O(V + E) space, which is why it is the default for sparse real-world graphs."
     },
     {
       "id": 3,
       "question": "Which data structure powers breadth-first search?",
-      "options": ["A stack", "A queue", "A heap", "A hash table"],
+      "options": [
+        "A stack",
+        "A queue",
+        "A heap",
+        "A hash table"
+      ],
       "correct": 1,
       "rationale": "BFS uses a queue (FIFO) to explore level by level — the start, then its neighbours, then their neighbours."
     },
     {
       "id": 4,
       "question": "On the lesson graph (edges A–B, A–C, B–D, C–D, C–E), what is the BFS visit order from A?",
-      "options": ["A, B, D, C, E", "A, B, C, D, E", "A, C, E, B, D", "A, D, B, C, E"],
+      "options": [
+        "A, B, D, C, E",
+        "A, B, C, D, E",
+        "A, C, E, B, D",
+        "A, D, B, C, E"
+      ],
       "correct": 1,
       "rationale": "BFS explores level by level: A first, then its neighbours B and C, then D and E — giving A, B, C, D, E."
     },
     {
       "id": 5,
       "question": "On the same graph, trying neighbours alphabetically, what is the DFS order from A?",
-      "options": ["A, B, C, D, E", "A, B, D, C, E", "A, C, D, B, E", "A, E, C, D, B"],
+      "options": [
+        "A, B, C, D, E",
+        "A, B, D, C, E",
+        "A, C, D, B, E",
+        "A, E, C, D, B"
+      ],
       "correct": 1,
       "rationale": "DFS dives down one branch fully: A to B to D to C, then backtracks to reach E — order A, B, D, C, E."
     },
     {
       "id": 6,
       "question": "In an unweighted graph, which traversal finds shortest paths?",
-      "options": ["DFS", "BFS", "Kruskal's algorithm", "Topological sort"],
-      "correct": 1,
+      "options": [
+        "DFS",
+        "Kruskal's algorithm",
+        "BFS",
+        "Topological sort"
+      ],
+      "correct": 2,
       "rationale": "BFS reaches every vertex in fewest-edges-first order, so it delivers shortest paths in unweighted graphs; weighted graphs need Dijkstra."
     },
     {
       "id": 7,
       "question": "Which constraint does Dijkstra's algorithm require?",
-      "options": ["All vertices must be connected", "Edge weights must be non-negative", "The graph must be directed", "The graph must be a tree"],
+      "options": [
+        "All vertices must be connected",
+        "Edge weights must be non-negative",
+        "The graph must be directed",
+        "The graph must be a tree"
+      ],
       "correct": 1,
       "rationale": "Dijkstra requires non-negative weights: a negative edge can make an already-settled vertex improvable, breaking the greedy assumption."
     },
     {
       "id": 8,
       "question": "What does Bellman-Ford offer that Dijkstra does not?",
-      "options": ["Faster asymptotic runtime", "It handles negative edges and detects negative cycles", "It works only on DAGs", "It needs no edge weights"],
-      "correct": 1,
+      "options": [
+        "Faster asymptotic runtime",
+        "It needs no edge weights",
+        "It works only on DAGs",
+        "It handles negative edges and detects negative cycles"
+      ],
+      "correct": 3,
       "rationale": "Bellman-Ford allows negative edges and detects negative cycles in O(V·E) time — slower, but it works when weights can go below zero."
     },
     {
       "id": 9,
       "question": "Kruskal's minimum spanning tree algorithm works by:",
-      "options": ["Growing one tree from a start vertex", "Sorting all edges and adding each cheapest edge that does not close a cycle", "Running BFS from every vertex", "Repeatedly settling the closest vertex"],
-      "correct": 1,
+      "options": [
+        "Sorting all edges and adding each cheapest edge that does not close a cycle",
+        "Growing one tree from a start vertex",
+        "Running BFS from every vertex",
+        "Repeatedly settling the closest vertex"
+      ],
+      "correct": 0,
       "rationale": "Kruskal sorts all edges and adds each cheapest edge that does not close a cycle, using union-find to test for cycles fast."
     },
     {
       "id": 10,
       "question": "Topological sorting applies to which kind of graph?",
-      "options": ["Any undirected graph", "A directed acyclic graph (DAG)", "A weighted cycle", "A complete graph"],
-      "correct": 1,
+      "options": [
+        "Any undirected graph",
+        "A weighted cycle",
+        "A directed acyclic graph (DAG)",
+        "A complete graph"
+      ],
+      "correct": 2,
       "rationale": "A topological order lists vertices of a DAG so every edge points forward — prerequisites always come before dependents."
     }
   ]

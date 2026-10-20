@@ -1,0 +1,126 @@
+{
+  "lessonId": "javascript-and-the-dom",
+  "title": "JavaScript and the DOM: Making Pages Interactive",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the defer attribute on a script tag do?",
+      "options": [
+        "Blocks HTML parsing until the script has run",
+        "Downloads the script in parallel and executes it after parsing, in document order",
+        "Executes the script the moment its download finishes, in any order",
+        "Runs the script before the HTML is parsed"
+      ],
+      "correct": 1,
+      "rationale": "defer downloads in parallel without blocking the parser, then runs after the document is parsed and in the order the tags appear — the modern default."
+    },
+    {
+      "id": 2,
+      "question": "What does document.querySelector(\"#todo li\") return?",
+      "options": [
+        "The first element matching that CSS selector, or null if none matches",
+        "An array of every matching element",
+        "An HTML string of the matches",
+        "It always returns all matches as a NodeList"
+      ],
+      "correct": 0,
+      "rationale": "querySelector returns the first match only; querySelectorAll is the variant that returns every match as a NodeList."
+    },
+    {
+      "id": 3,
+      "question": "Which property is the safe choice for displaying user-provided text?",
+      "options": [
+        "innerHTML",
+        "outerHTML",
+        "textContent",
+        "document.write"
+      ],
+      "correct": 2,
+      "rationale": "textContent inserts plain text with no markup parsing, so injected HTML cannot execute; innerHTML and document.write parse the string and enable XSS."
+    },
+    {
+      "id": 4,
+      "question": "In what order do the phases of event propagation unfold for an ordinary click?",
+      "options": [
+        "Bubbling first, then capture",
+        "Only the target's listeners run",
+        "A random order chosen per event",
+        "Capture travels down to the target, then the event bubbles back up to window"
+      ],
+      "correct": 3,
+      "rationale": "The event descends during capture, fires at the target, then bubbles upward — and ordinary addEventListener handlers run in the bubble phase."
+    },
+    {
+      "id": 5,
+      "question": "What is the main benefit of event delegation?",
+      "options": [
+        "It makes CSS selectors faster",
+        "One listener on an ancestor covers present and future children via bubbling",
+        "It automatically prevents all default browser actions",
+        "It removes the need for the DOM entirely"
+      ],
+      "correct": 1,
+      "rationale": "Because events bubble, a single parent listener can inspect event.target and serve every descendant, including elements added after binding."
+    },
+    {
+      "id": 6,
+      "question": "Inside an event handler, what is the difference between event.target and event.currentTarget?",
+      "options": [
+        "target is where the event originated; currentTarget is the element the listener is attached to",
+        "They are always the same element",
+        "currentTarget is always the clicked text node",
+        "target exists only during the capture phase"
+      ],
+      "correct": 0,
+      "rationale": "In delegated handlers the listener sits on the ancestor (currentTarget) while the click may land on a deep child (target), which is why handlers use target.closest(selector)."
+    },
+    {
+      "id": 7,
+      "question": "A fetch request receives a 404 response. What happens?",
+      "options": [
+        "The promise rejects and the catch block runs",
+        "The browser navigates to its error page",
+        "The promise resolves; you must check response.ok to detect the failure",
+        "response.json() throws a SyntaxError"
+      ],
+      "correct": 2,
+      "rationale": "fetch only rejects on network-level failures; HTTP error statuses still resolve, so handlers must verify response.ok or response.status themselves."
+    },
+    {
+      "id": 8,
+      "question": "What does await actually do inside an async function?",
+      "options": [
+        "It starts a new background thread",
+        "It freezes the entire browser main thread",
+        "It cancels the promise if it takes too long",
+        "It pauses this async function until the promise settles, letting other events run meanwhile"
+      ],
+      "correct": 3,
+      "rationale": "await suspends only the async function, not the page: the single-threaded event loop keeps processing clicks and rendering until the result arrives."
+    },
+    {
+      "id": 9,
+      "question": "What is layout thrashing?",
+      "options": [
+        "Writing too many CSS classes in one stylesheet",
+        "Interleaving DOM reads and writes, forcing the browser into repeated reflows",
+        "Using querySelector too many times on one page",
+        "Attaching too many listeners to a single element"
+      ],
+      "correct": 1,
+      "rationale": "Each measurement after a style write invalidates layout and forces a synchronous reflow; batching reads and writes (or animating transform and opacity) avoids it."
+    },
+    {
+      "id": 10,
+      "question": "Which practice makes animations smooth instead of triggering constant layout work?",
+      "options": [
+        "Animating the top and left properties",
+        "Driving frames with setInterval",
+        "Animating only transform and opacity, which skip layout",
+        "Raising the element's z-index"
+      ],
+      "correct": 2,
+      "rationale": "transform and opacity are handled by the compositor without re-running layout or paint, so they animate cheaply even on slow devices."
+    }
+  ]
+}

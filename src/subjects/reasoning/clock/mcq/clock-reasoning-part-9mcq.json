@@ -1,16 +1,16 @@
 {
   "lessonId": "clock-reasoning-part-9",
-  "title": "Clock Reasoning \u2014 Part 9 of 10",
+  "title": "Clock Reasoning — Part 9 of 10",
   "questions": [
     {
       "question": "What complication do 'time zones' add to clock reasoning?",
       "options": [
-        "None \u2014 time zones don't affect clock reasoning",
         "The same instant in time can correspond to different local clock readings depending on location",
+        "None — time zones don't affect clock reasoning",
         "They only affect the date, never the time",
         "They only matter for digital clocks"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Time zones mean a single absolute instant can be read as a different local clock time depending on where you are, which must be accounted for in cross-location problems.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is the difference between 'absolute' and 'local' time?",
       "options": [
         "There is no real difference",
-        "Absolute time is a fixed, location-independent reference point; local time is that same instant expressed according to a specific time zone's offset",
         "Absolute time only applies to GMT",
+        "Absolute time is a fixed, location-independent reference point; local time is that same instant expressed according to a specific time zone's offset",
         "Local time is always 12 hours ahead of absolute time"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Absolute time is a single, location-independent reference; local time is that same instant re-expressed using a particular location's time zone offset.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "The angle between the clock hands"
       ],
       "correct": 1,
-      "rationale": "Temporal precision describes how finely a time is specified or needed \u2014 down to the second, the minute, or only the hour, for instance.",
+      "rationale": "Temporal precision describes how finely a time is specified or needed — down to the second, the minute, or only the hour, for instance.",
       "id": 3
     },
     {
       "question": "What is an 'uncertainty interval' in clock reasoning?",
       "options": [
         "A malfunctioning clock",
-        "A range of possible times, used when the exact time isn't precisely known or stated",
+        "A fixed 60-minute block",
         "The interval between AM and PM",
-        "A fixed 60-minute block"
+        "A range of possible times, used when the exact time isn't precisely known or stated"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "An uncertainty interval represents a range of possible times when the exact value isn't precisely known, rather than forcing a single (possibly wrong) exact answer.",
       "id": 4
     },
     {
       "question": "What is the purpose of stating a set of 'core rules' late in a lesson like this?",
       "options": [
-        "To introduce entirely new material",
         "To consolidate the many individual concepts covered into a short, memorable checklist for quick reference",
+        "To introduce entirely new material",
         "To replace the need for the earlier sections",
         "To make the lesson longer without adding value"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A late-lesson core-rules summary condenses everything covered so far into a compact, quickly-reviewable checklist rather than requiring a full re-read.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does a 'minimal algorithm' for clock reasoning aim to provide?",
       "options": [
         "The most complicated possible solution",
-        "The smallest consistent set of steps needed to solve any standard clock reasoning problem, stripped of unnecessary detail",
         "A shortcut that skips verification entirely",
+        "The smallest consistent set of steps needed to solve any standard clock reasoning problem, stripped of unnecessary detail",
         "A method that only works for one specific problem"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A minimal algorithm distills the reasoning process down to the smallest consistent set of steps that reliably solves any standard problem in the domain.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What is 'the deeper principle' this lesson points to as the real skill being tested?",
       "options": [
         "Memorizing every possible clock question",
-        "That clock reasoning is fundamentally about consistent unit conversion and modular arithmetic, not memorized tricks",
+        "That time zones are the only truly important topic",
         "That only the clock-angle formula matters",
-        "That time zones are the only truly important topic"
+        "That clock reasoning is fundamentally about consistent unit conversion and modular arithmetic, not memorized tricks"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The lesson's recurring theme is that reliable clock reasoning comes from consistently applying unit conversion and modular arithmetic, not from memorizing isolated tricks.",
       "id": 8
     },

@@ -1,0 +1,167 @@
+# Natural Hazards and Disaster Management
+
+> Earthquakes strike without warning, cyclones announce themselves for
+> days, and floods can rise in hours. This lesson sorts the hazards,
+> maps India's vulnerable zones, and walks through the disaster
+> management cycle that turns vulnerability into resilience.
+
+## 1. Hazard and Disaster: A Critical Difference
+
+[definition]
+A **hazard** is a potentially damaging natural event or process; a
+**disaster** is what happens when such an event overwhelms a
+community's capacity to cope, causing widespread loss of life,
+property, and livelihood.
+[/definition]
+
+- An earthquake in an empty desert is a hazard; the same quake under
+  a crowded city is a disaster.
+- **Vulnerability** — the exposure of people and buildings — decides
+  the scale of loss as much as the hazard itself, so risk grows where
+  unsafe construction meets a dangerous coast or fault line.
+
+## 2. Families of Natural Hazards
+
+@diagram tree id="hazard-families" layout="tree" aria="Families of natural hazards with examples"
+  "Natural hazards" -> Geophysical
+  "Natural hazards" -> Hydrological
+  "Natural hazards" -> Meteorological
+  "Natural hazards" -> Climatological
+  "Natural hazards" -> Biological
+  Geophysical -> "Earthquakes, tsunamis, landslides, volcanoes"
+  Hydrological -> "Floods, flash floods, avalanches"
+  Meteorological -> "Cyclones, thunderstorms, heatwaves"
+  Climatological -> "Droughts, wildfires"
+  Biological -> "Epidemics, pest attacks"
+@/diagram
+
+## 3. Earthquakes and India's Seismic Map
+
+[important]
+The Bureau of Indian Standards divides the country into four seismic
+zones — II, III, IV, and V — with Zone V the most severe; roughly
+three-fifths of the landmass lies in moderate to high risk zones.
+[/important]
+
+| Zone | Risk | Typical areas |
+| --- | --- | --- |
+| V | Highest | Entire north-east, Kutch, Himachal, Uttarakhand, north Bihar, Andaman and Nicobar |
+| IV | High | Delhi and remaining Himalayan tracts |
+| III | Moderate | Kathiawar peninsula and much of the Deccan rim |
+| II | Low | Stable peninsular interior |
+
+Historic shocks: the Latur-Killari quake of 1993 took about 9,000
+lives in the stable Deccan, far from any plate boundary, and the
+**Bhuj earthquake of 26 January 2001** (magnitude about 7.7, some
+20,000 dead) forced a nationwide rewrite of building codes.
+
+## 4. Cyclones, Floods, and Droughts
+
+- Tropical cyclones form over warm seas; the Bay of Bengal breeds
+  far more storms than the Arabian Sea, so the east coast — Odisha,
+  Andhra Pradesh, Tamil Nadu, West Bengal — is hit hardest.
+- Cyclonic storms begin near 62 km/h winds, and **super cyclones**
+  exceed about 220 km/h; the storm surge, not wind alone, is the
+  great killer of coastal populations.
+- The India Meteorological Department and a WMO/ESCAP panel of
+  countries name the storms, and warnings use green, yellow, orange,
+  and red colour codes.
+- Floods: about 40 million hectares are flood-prone; the Brahmaputra
+  and the shifting Kosi, the "sorrow of Bihar", flood every year,
+  while cities such as Mumbai (2005) and Chennai (2015) showed how
+  clogged drains turn heavy rain into urban disaster.
+- Drought: roughly one-third of India is drought-prone; a shortfall
+  is meteorological at first and becomes agricultural when soils and
+  crops dry out.
+
+@chart bar title="Approximate lives lost in major Indian disasters" labels:
+Latur quake 1993
+Odisha cyclone 1999
+Bhuj quake 2001
+Tsunami 2004
+Cyclone Phailin 2013
+
+data:
+9000
+10000
+20000
+10700
+45
+@/chart
+
+[example]
+Compare Odisha's super cyclone of 1999 with Phailin in 2013: storms
+of comparable power, yet evacuating about a million people cut
+Phailin's toll to a few dozen — proof that preparedness saves more
+lives than any dam or embankment.
+[/example]
+
+## 5. Landslides, Tsunamis, and Other Quiet Killers
+
+- Landslides concentrate in the Himalaya and the Western Ghats, where
+  steep slopes, tremors, and road-cutting meet heavy rain (Malin,
+  2014; Wayanad, 2024).
+- The Indian Ocean tsunami of 26 December 2004, born of a magnitude
+  about 9.1 quake off Sumatra, killed some 10,700 people in India —
+  mostly in Tamil Nadu, Kerala, Andhra Pradesh, and the Andamans —
+  and led to the Indian Tsunami Early Warning Centre of 2007 at
+  Hyderabad.
+- Lightning and heatwaves now rank among the deadliest everyday
+  hazards; simple rules — shelter indoors, keep hydrated, avoid open
+  fields during storms — save thousands of lives each year.
+
+## 6. The Disaster Management Cycle
+
+@diagram tree id="dm-cycle" layout="tree" aria="The four phases of the disaster management cycle"
+  "Disaster management cycle" -> Mitigation
+  "Disaster management cycle" -> Preparedness
+  "Disaster management cycle" -> Response
+  "Disaster management cycle" -> Recovery
+  Mitigation -> "Land-use zoning, building codes, embankments"
+  Preparedness -> "Early warning, mock drills, relief stockpiles"
+  Response -> "Search and rescue, relief camps, medical aid"
+  Recovery -> "Rehabilitation and rebuilding back better"
+@/diagram
+
+- The **Disaster Management Act, 2005** created the NDMA, chaired by
+  the Prime Minister, above State (SDMA) and District (DDMA)
+  authorities, supported by specialised NDRF battalions trained for
+  search and rescue.
+- India follows the **Sendai Framework (2015-2030)** for reducing
+  disaster risk and marks the International Day for Disaster Risk
+  Reduction every 13 October.
+
+[tip]
+Remember the cycle order — mitigation and preparedness come *before*
+the event, response and recovery *after* it; examiners love asking
+which phase a given action belongs to.
+[/tip]
+
+## 7. Community Resilience: Case Studies
+
+- Odisha built hundreds of cyclone shelters and one of the first
+  state disaster authorities after 1999; its evacuation model is now
+  cited across the world.
+- Kerala's floods of 2018 showed the power of community rescue: the
+  fishing fleet became the state's "own army" and coordination ran
+  through strong local networks.
+- Schemes such as Aapda Mitra train community volunteers, and school
+  safety mock drills recognise that the first responder is usually
+  the person standing beside you.
+
+[warning]
+During an earthquake, doorways and rushing downstairs are myths of
+safety; Drop-Cover-Hold on under a sturdy table indoors, and move to
+open ground only after the shaking stops, watching for aftershocks.
+[/warning]
+
+## 8. Quick Revision
+
+| Hazard | India's hotspots | Key safety or policy tool |
+| --- | --- | --- |
+| Earthquake | Zone V: north-east, Kutch, Himalaya | BIS building codes, Drop-Cover-Hold |
+| Cyclone | East coast facing the Bay of Bengal | IMD colour warnings, cyclone shelters |
+| Flood | Brahmaputra-Kosi plains and cities | Embankments, drainage, flood-plain zoning |
+| Drought | About one-third of the country | Watershed works, drought-resistant crops |
+| Landslide | Himalaya and Western Ghats | Slope treatment and hazard zonation |
+| Tsunami | East coast and Andaman and Nicobar | Indian warning centre at Hyderabad, 2007 |

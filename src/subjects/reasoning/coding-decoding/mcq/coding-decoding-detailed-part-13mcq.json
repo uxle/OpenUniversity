@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-13",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 13 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 13 of 22",
   "questions": [
     {
       "question": "What does 'adjacent-letter difference' compute?",
       "options": [
-        "The word's total length",
         "The difference in alphabet position between each pair of consecutive letters in a word",
+        "The word's total length",
         "The sum of all letters",
         "The reverse-alphabet position of the first letter"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Adjacent-letter difference computes the position gap between each pair of consecutive letters as you move through the word.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'first-half / second-half coding' do to a word?",
       "options": [
         "Deletes half the word",
-        "Splits it into its first and second halves and applies a rule based on comparing or transforming those two halves",
         "Reverses only the first half",
+        "Splits it into its first and second halves and applies a rule based on comparing or transforming those two halves",
         "Ignores the second half entirely"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This coding splits the word into two halves and applies a rule that compares or transforms those two halves relative to each other.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What is 'center-out coding'?",
       "options": [
         "A rule applied only to the first letter",
-        "A transformation applied starting from the middle letter(s) of a word and working outward toward both ends",
+        "A rule with no defined starting point",
         "A synonym for first-half coding",
-        "A rule with no defined starting point"
+        "A transformation applied starting from the middle letter(s) of a word and working outward toward both ends"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Center-out coding begins its transformation at the word's middle letter(s) and works outward toward both ends, rather than left to right.",
       "id": 4
     },
     {
       "question": "What is 'alphabetical distance' between two letters?",
       "options": [
-        "Their sum",
         "The absolute difference between their positions in the alphabet",
+        "Their sum",
         "Their product",
         "Always exactly 1"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Alphabetical distance is simply the absolute value of the difference between two letters' alphabet positions.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is 'circular alphabet distance', as opposed to plain alphabetical distance?",
       "options": [
         "Exactly the same as plain alphabetical distance",
-        "The shortest distance between two letters when the alphabet is treated as a loop (wrapping from Z back to A)",
         "Always double the plain distance",
+        "The shortest distance between two letters when the alphabet is treated as a loop (wrapping from Z back to A)",
         "A distance that ignores wrap-around entirely"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Circular alphabet distance accounts for the alphabet's loop structure, taking the shorter of the two possible paths (direct or wrap-around) between two letters.",
       "id": 6
     },

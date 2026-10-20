@@ -1,0 +1,76 @@
+{
+  "lessonId": "squares-roots-and-powers",
+  "title": "Squares, Roots, and Powers: Exponents in Action",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is 2^3 × 2^4?",
+      "options": ["2^12 = 4096", "2^7 = 128", "4^7 = 16384", "2^1 = 2"],
+      "correct": 1,
+      "rationale": "Multiplying powers with the same base adds the indices: 3 + 4 = 7, so the product is 2^7 = 128. Multiplying the indices is the power-of-a-power rule, which does not apply here."
+    },
+    {
+      "id": 2,
+      "question": "What is 5^0?",
+      "options": ["0", "1", "5", "Undefined"],
+      "correct": 1,
+      "rationale": "Any non-zero base raised to the power zero equals 1. The halving pattern 16, 8, 4, 2 forces 2^0 = 1, and the quotient law agrees: a^m ÷ a^m = a^0 = 1."
+    },
+    {
+      "id": 3,
+      "question": "What is 3^(-2)?",
+      "options": ["-9", "-1/9", "1/9", "9"],
+      "correct": 2,
+      "rationale": "A negative index flips the base into the denominator without changing its sign: 3^(-2) = 1/3^2 = 1/9. Writing -9 confuses a negative exponent with a negative value."
+    },
+    {
+      "id": 4,
+      "question": "What is 8^(2/3)?",
+      "options": ["16", "64", "2", "4"],
+      "correct": 3,
+      "rationale": "The denominator 3 names the root: cube root of 8 is 2, then the numerator 2 squares it: 2^2 = 4. Taking the root first keeps the arithmetic small."
+    },
+    {
+      "id": 5,
+      "question": "Simplify √72.",
+      "options": ["8√3", "2√18", "6√2", "36√2"],
+      "correct": 2,
+      "rationale": "Pull out the largest square factor: 72 = 36 × 2, so √72 = √36 × √2 = 6√2. Choice 36√2 wrongly puts the square factor outside the root."
+    },
+    {
+      "id": 6,
+      "question": "Rationalise 1/(√3 − √2).",
+      "options": ["√3 − √2", "√3 + √2", "1", "5"],
+      "correct": 1,
+      "rationale": "Multiply top and bottom by the conjugate √3 + √2: the denominator becomes (√3)^2 − (√2)^2 = 3 − 2 = 1, leaving √3 + √2."
+    },
+    {
+      "id": 7,
+      "question": "Which of these is a perfect square?",
+      "options": ["1521", "1523", "1527", "1530"],
+      "correct": 0,
+      "rationale": "1521 = 39^2. The numbers 1523 and 1527 end in 3 and 7, digits no perfect square can end in, and 1530 falls between 39^2 and 40^2 = 1600."
+    },
+    {
+      "id": 8,
+      "question": "Between which two consecutive integers does √50 lie?",
+      "options": ["6 and 7", "5 and 6", "8 and 9", "7 and 8"],
+      "correct": 3,
+      "rationale": "Sandwich the root between neighbouring squares: 49 < 50 < 64, so 7 < √50 < 8. In fact √50 ≈ 7.07."
+    },
+    {
+      "id": 9,
+      "question": "What is (2/5)^(-2)?",
+      "options": ["25/4", "4/25", "-4/25", "10/25"],
+      "correct": 0,
+      "rationale": "A negative index on a fraction flips it first: (2/5)^(-2) = (5/2)^2 = 25/4. Squaring first and flipping later gives the same answer; forgetting the flip gives 4/25."
+    },
+    {
+      "id": 10,
+      "question": "What is 81^(-3/4)?",
+      "options": ["27", "1/3", "-27", "1/27"],
+      "correct": 3,
+      "rationale": "Take the fourth root of 81 to get 3, cube it to get 27, then the negative index flips: 1/27. Root first, power second, flip last."
+    }
+  ]
+}

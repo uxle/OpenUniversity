@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-14",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 14 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 14 of 22",
   "questions": [
     {
       "question": "What does a 'pattern signature example' typically demonstrate?",
       "options": [
-        "A rule with no real example",
         "Applying a repeated-letter or frequency-based signature to a real word to show how it distinguishes or codes it",
+        "A rule with no real example",
         "Only word reversal",
         "A rule unrelated to signatures"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This example demonstrates, on a real word, how a repeated-letter or frequency-based signature can be used to distinguish or derive a code for it.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is 'symbol pattern coding'?",
       "options": [
         "A rule using only letters",
-        "A rule where recurring visual or symbolic patterns (not just letters) determine the code",
         "A synonym for letter-shift coding",
+        "A rule where recurring visual or symbolic patterns (not just letters) determine the code",
         "A rule with no symbols involved"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Symbol pattern coding bases its rule on recurring visual or symbolic patterns, going beyond just plain letters.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'position parity coding' use as its basis?",
       "options": [
         "The letter's ASCII value",
-        "Whether a letter's position (in the word or alphabet) is odd or even",
+        "A random assigned value",
         "The word's total length",
-        "A random assigned value"
+        "Whether a letter's position (in the word or alphabet) is odd or even"
       ],
-      "correct": 1,
-      "rationale": "Position parity coding bases its rule on whether a letter's position \u2014 in the word or the alphabet \u2014 is odd or even.",
+      "correct": 3,
+      "rationale": "Position parity coding bases its rule on whether a letter's position — in the word or the alphabet — is odd or even.",
       "id": 4
     },
     {
       "question": "What is 'vowel position coding'?",
       "options": [
-        "A rule based on the number of vowels",
         "A rule based specifically on WHERE vowels occur within a word (their positions), not just how many there are",
+        "A rule based on the number of vowels",
         "A synonym for consonant count coding",
         "A rule that ignores vowels entirely"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Unlike vowel-count coding, vowel position coding focuses on exactly where the vowels are located within the word, not merely how many there are.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is 'mixed binary coding'?",
       "options": [
         "A rule using only decimal numbers",
-        "A rule combining binary (base-2) representations with another coding technique, such as vowel/consonant classification",
         "A synonym for plain binary coding",
+        "A rule combining binary (base-2) representations with another coding technique, such as vowel/consonant classification",
         "A rule with no binary component"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Mixed binary coding combines a binary (base-2) representation with another technique, such as classifying letters as vowels or consonants.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What is 'inverse coding'?",
       "options": [
         "Applying the same rule twice",
-        "The reverse operation that recovers the original input from a given coded output",
+        "A rule that only works forward, never backward",
         "A synonym for mirror coding",
-        "A rule that only works forward, never backward"
+        "The reverse operation that recovers the original input from a given coded output"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Inverse coding is the reverse operation, recovering the original input value from its coded output.",
       "id": 8
     },

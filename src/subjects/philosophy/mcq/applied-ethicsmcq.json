@@ -1,0 +1,126 @@
+{
+  "lessonId": "applied-ethics",
+  "title": "Applied Ethics: Dilemmas of Life, Technology, and Society",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which set lists the four principles of bioethics identified by Beauchamp and Childress?",
+      "options": [
+        "Liberty, equality, fraternity, dignity",
+        "Autonomy, beneficence, non-maleficence, justice",
+        "Utility, duty, virtue, care",
+        "Consent, privacy, profit, fairness"
+      ],
+      "correct": 1,
+      "rationale": "Principlism works with four pillars — respect for autonomy, beneficence, non-maleficence, and justice — which collide in concrete cases."
+    },
+    {
+      "id": 2,
+      "question": "For consent to be genuinely informed, it must involve:",
+      "options": [
+        "Understanding of the options and consequences, given voluntarily and free of coercion — not merely a signed form",
+        "A signature witnessed by two adults",
+        "Agreement with the doctor's recommendation",
+        "Payment for the procedure in advance"
+      ],
+      "correct": 0,
+      "rationale": "Informed consent is the operational test of autonomy: comprehension plus voluntariness. A signed form without understanding fails the test."
+    },
+    {
+      "id": 3,
+      "question": "Why do many people approve diverting the trolley (killing one) but disapprove pushing the man off the footbridge (killing one)?",
+      "options": [
+        "The numbers of deaths differ between the cases",
+        "Pushing is illegal while diverting is not",
+        "There is no morally relevant difference — the cases are identical",
+        "In the footbridge case the harm is used as a means, which the doctrine of double effect forbids"
+      ],
+      "correct": 3,
+      "rationale": "Double effect distinguishes harm foreseen as a side effect of diverting the trolley from harm intended as the means of stopping it — the standard explanation of the asymmetry."
+    },
+    {
+      "id": 4,
+      "question": "Passive euthanasia is best defined as:",
+      "options": [
+        "Administering a lethal injection at the patient's request",
+        "Withholding or withdrawing life-sustaining treatment and allowing the disease to take its course",
+        "Travelling abroad to obtain assisted dying",
+        "Increasing pain medication with no possibility of hastening death"
+      ],
+      "correct": 1,
+      "rationale": "Passive euthanasia omits or withdraws treatment, letting the underlying condition cause death; active euthanasia directly administers death."
+    },
+    {
+      "id": 5,
+      "question": "The main trade-off of a 'sickest first' organ allocation rule is that it:",
+      "options": [
+        "Ignores medical need entirely",
+        "Rewards patients who arrive early rather than the needy",
+        "May rescue the most dying patients while wasting organs on cases with little chance of benefit",
+        "Gives every patient an exactly equal chance"
+      ],
+      "correct": 2,
+      "rationale": "Prioritising urgency can spend a scarce organ where benefit is low; utilitarian 'best prognosis' rules face the mirror-image objection of discriminating against the old and very sick."
+    },
+    {
+      "id": 6,
+      "question": "The primary source of AI bias in deployed systems is usually:",
+      "options": [
+        "Patterns of historical injustice in the training data, reproduced and amplified by the model",
+        "Random hardware failures",
+        "Deliberate sabotage by programmers",
+        "Electricity costs during training"
+      ],
+      "correct": 0,
+      "rationale": "Models learn statistical patterns from the past — biased hiring records or policing data — and present those patterns as objective mathematics."
+    },
+    {
+      "id": 7,
+      "question": "Why can't an AI system satisfy every fairness definition at once?",
+      "options": [
+        "Computers are not fast enough to compute them all",
+        "The datasets are always too small",
+        "Fairness criteria such as group parity and equalised odds mathematically conflict when base rates differ between groups",
+        "Laws forbid measuring fairness directly"
+      ],
+      "correct": 2,
+      "rationale": "Impossibility results (Kleinberg et al.) show the criteria cannot hold simultaneously except in degenerate cases — so which fairness to use is a political, contestable choice."
+    },
+    {
+      "id": 8,
+      "question": "The 'accountability gap' in AI ethics refers to the fact that:",
+      "options": [
+        "AI systems cannot be audited at all",
+        "When an AI causes harm, responsibility diffuses — the developer points to the deployer, the deployer to the data",
+        "Only governments may be held responsible for software",
+        "Users must sign contracts to use AI systems"
+      ],
+      "correct": 1,
+      "rationale": "Each actor in the chain can deflect blame ('the model decided'), which is why ethics demands accountability be built in by design — logs, audits, named owners."
+    },
+    {
+      "id": 9,
+      "question": "Ecocentrism, as in Aldo Leopold's land ethic, holds that moral value belongs to:",
+      "options": [
+        "Humans only",
+        "All sentient beings individually",
+        "Every individual living organism",
+        "Whole ecological systems and species, not only their individual members"
+      ],
+      "correct": 3,
+      "rationale": "Leopold enlarges the moral community to soils, waters, plants, and animals collectively — 'a thing is right when it tends to preserve the integrity of the biotic community'."
+    },
+    {
+      "id": 10,
+      "question": "According to the standard threshold defended by most ethicists, external whistle-blowing is justified when:",
+      "options": [
+        "The harm is serious, internal channels are exhausted or complicit, and the evidence is documented",
+        "The employee finds any workplace practice annoying",
+        "The employee has already resigned for unrelated reasons",
+        "Never — loyalty to the employer is absolute"
+      ],
+      "correct": 0,
+      "rationale": "The threshold balances loyalty against public protection: serious harm, failed internal channels, and documented evidence together convert silence into complicity."
+    }
+  ]
+}

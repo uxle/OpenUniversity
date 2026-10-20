@@ -1,0 +1,126 @@
+{
+  "lessonId": "intro-databases-and-dbms",
+  "title": "What Is a Database? Data, Tables, and the DBMS",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which statement best distinguishes a DBMS from a database?",
+      "options": [
+        "They are synonyms for the same thing",
+        "The database is the organised stored data; the DBMS is the software that manages access to it",
+        "A DBMS stores data on clients; a database stores it on servers",
+        "A database manages programs; a DBMS manages files"
+      ],
+      "correct": 1,
+      "rationale": "The database is the organised, persistent collection of interrelated data, while the DBMS (MySQL, PostgreSQL, Oracle, MongoDB) is the software layer that searches, updates, and protects it."
+    },
+    {
+      "id": 2,
+      "question": "Renaming a column in a data file breaks every application that reads that file. Which classic file-system problem is this?",
+      "options": [
+        "Redundancy",
+        "Inconsistency",
+        "Program-data dependence",
+        "Weak security"
+      ],
+      "correct": 2,
+      "rationale": "Program-data dependence means the application code is coupled to the file's physical layout. A DBMS stores the schema separately so programs describe what they want, not where data lives."
+    },
+    {
+      "id": 3,
+      "question": "In formal relational terminology, a tuple is best described as:",
+      "options": [
+        "A column of a table",
+        "A row of a table",
+        "The number of columns in a table",
+        "The allowed values of a column"
+      ],
+      "correct": 1,
+      "rationale": "A tuple is a row (one record), an attribute is a column, degree is the column count, and the domain is a column's allowed values."
+    },
+    {
+      "id": 4,
+      "question": "(student_id, name) uniquely identifies every row of STUDENT, but student_id alone already does. What is (student_id, name)?",
+      "options": [
+        "A candidate key",
+        "A foreign key",
+        "A superkey but not a candidate key",
+        "A primary key"
+      ],
+      "correct": 2,
+      "rationale": "Any column set that uniquely identifies a row is a superkey; a candidate key must additionally be minimal. Since student_id alone suffices, the pair is not minimal and so is only a superkey."
+    },
+    {
+      "id": 5,
+      "question": "A foreign key constraint that stops an enrolment from pointing at a nonexistent student enforces:",
+      "options": [
+        "Referential integrity",
+        "Data independence",
+        "Normalisation",
+        "Aggregation"
+      ],
+      "correct": 0,
+      "rationale": "Referential integrity is the rule that a foreign key's values must match a primary or unique key in the referenced table, preventing dangling references."
+    },
+    {
+      "id": 6,
+      "question": "Adding a B-tree index to a table without changing any application code illustrates:",
+      "options": [
+        "Logical data independence",
+        "Physical data independence",
+        "Conceptual schema redesign",
+        "Denormalisation"
+      ],
+      "correct": 1,
+      "rationale": "Physical data independence means storage structures (indexes, partitions, devices) can change without touching the conceptual schema or the programs above it. Changing the tables themselves would be logical."
+    },
+    {
+      "id": 7,
+      "question": "In the ANSI-SPARC three-level architecture, details such as file layout, indexes, and compression belong to which level?",
+      "options": [
+        "External level",
+        "Conceptual level",
+        "Internal level",
+        "Application level"
+      ],
+      "correct": 2,
+      "rationale": "The internal level is what the engine sees — files, indexes, and compression. The conceptual level holds the whole logical schema and the external level holds tailored user views."
+    },
+    {
+      "id": 8,
+      "question": "A web app stores millions of short-lived shopping-cart sessions, each fetched and written by a single key, as fast as possible. Which database family fits best?",
+      "options": [
+        "Graph database",
+        "Column-family store",
+        "Relational database",
+        "Key-value store"
+      ],
+      "correct": 3,
+      "rationale": "Key-value stores like Redis excel at simple, extremely fast lookup and write of opaque values by key — the classic caching and session workload."
+    },
+    {
+      "id": 9,
+      "question": "What is the role of the buffer pool inside a DBMS?",
+      "options": [
+        "It parses SQL statements into a plan",
+        "It caches frequently used disk pages in RAM to avoid repeated disk reads",
+        "It enforces foreign key constraints",
+        "It queues transactions for execution"
+      ],
+      "correct": 1,
+      "rationale": "The storage manager keeps a buffer pool of pages in memory; hits in the pool avoid a disk access. Parsing belongs to the query processor and constraint checks to the transaction layer."
+    },
+    {
+      "id": 10,
+      "question": "In an ENROLMENT table, which key most naturally identifies each row?",
+      "options": [
+        "grade, because it appears in every row",
+        "course_id alone",
+        "student_id alone",
+        "The composite key (student_id, course_id)"
+      ],
+      "correct": 3,
+      "rationale": "A student takes many courses and a course holds many students, so neither id alone is unique per row; the pair together is the minimal identifier — a composite primary key."
+    }
+  ]
+}

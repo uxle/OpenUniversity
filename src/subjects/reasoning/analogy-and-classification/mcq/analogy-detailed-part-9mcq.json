@@ -1,16 +1,16 @@
 {
   "lessonId": "analogy-detailed-part-9",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 9 of 12",
+  "title": "Analogy — In-Depth Guide — Part 9 of 12",
   "questions": [
     {
       "question": "What does a 'Pairwise Difference Matrix' organize?",
       "options": [
-        "Word meanings",
         "The differences between multiple pairs of numbers, laid out systematically to help spot a consistent pattern",
+        "Word meanings",
         "Only letter positions",
         "A single unrelated value"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This matrix systematically organizes the differences across multiple number pairs, making it easier to visually spot a consistent underlying pattern.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does a 'Number Analogy Flowchart' provide?",
       "options": [
         "A random guess generator",
-        "A step-by-step decision path for identifying which numeric relationship (difference, ratio, square, etc.) applies",
         "A chart of country capitals",
+        "A step-by-step decision path for identifying which numeric relationship (difference, ratio, square, etc.) applies",
         "A synonym for the master pattern table"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This flowchart provides a systematic decision path for narrowing down which specific numeric relationship type applies to a given pair.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What does a 'Word Analogy Flowchart' provide, in the same spirit?",
       "options": [
         "A flowchart for numbers only",
-        "A step-by-step decision path for identifying which word-based relationship (synonym, cause-effect, etc.) applies",
+        "The exact same flowchart as the letter analogy one",
         "A flowchart unrelated to analogy",
-        "The exact same flowchart as the letter analogy one"
+        "A step-by-step decision path for identifying which word-based relationship (synonym, cause-effect, etc.) applies"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This flowchart applies the same systematic approach specifically to word-based relationships, helping identify which category (synonym, antonym, cause-effect, etc.) fits.",
       "id": 4
     },
     {
       "question": "What does 'Analogy as Graph' model relationships as?",
       "options": [
-        "Unconnected random points",
         "Nodes representing items connected by edges representing their relationships, similar to other structured reasoning graphs",
+        "Unconnected random points",
         "Only numeric values with no connections",
         "A single isolated example"
       ],
-      "correct": 1,
-      "rationale": "This models analogy relationships as a graph, with items as nodes and their relationships as connecting edges \u2014 the same structural approach used in other reasoning topics.",
+      "correct": 0,
+      "rationale": "This models analogy relationships as a graph, with items as nodes and their relationships as connecting edges — the same structural approach used in other reasoning topics.",
       "id": 5
     },
     {
       "question": "What is a 'Relationship Vector' in this context?",
       "options": [
         "A physical measuring tool",
-        "A representation of the specific transformation or relationship connecting one item to another, similar to a transformation vector in coding-decoding",
         "A synonym for word length",
+        "A representation of the specific transformation or relationship connecting one item to another, similar to a transformation vector in coding-decoding",
         "An unrelated mathematical concept"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A relationship vector represents the specific transformation connecting two related items, paralleling the transformation vector concept from coding-decoding.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'Structural Analogy' emphasize, as opposed to purely semantic (meaning-based) analogy?",
       "options": [
         "Only word meaning",
-        "The abstract structural pattern of the relationship, which can apply even across superficially different domains",
+        "A relationship with no structure at all",
         "Only numeric relationships",
-        "A relationship with no structure at all"
+        "The abstract structural pattern of the relationship, which can apply even across superficially different domains"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Structural analogy emphasizes the abstract pattern of the relationship itself, which can hold even when comparing items from very different domains, as long as the underlying structure matches.",
       "id": 8
     },

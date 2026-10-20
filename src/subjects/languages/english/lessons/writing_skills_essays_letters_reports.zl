@@ -1,0 +1,322 @@
+# Lesson 25: Writing Skills - Essays, Letters, and Reports
+
+> Good writing in an exam is architecture, not inspiration: a planned
+> structure, the right register for the reader, and disciplined word
+> limits. This lesson walks through the essay skeleton, the full format
+> of formal and informal letters with a complete specimen, the newspaper
+> report format, and the linking words that hold every paragraph together.
+
+## 1. The Writing Process and Word Limits
+
+[definition]
+**Register** is the level of formality a piece of writing adopts for its
+reader. An essay for an examiner, a letter to a Principal, and a text to
+a friend each demand a different register — and choosing the wrong one
+is the costliest mistake in any writing task.
+[/definition]
+
+Every writing task passes through the same four stages, and skipping the
+first two is why most answers go over the word limit:
+
+1. **Plan** — decide the stance and jot a three-point outline; two
+   minutes here save ten at the end.
+2. **Draft** — write in paragraphs without polishing every sentence.
+3. **Revise** — check the flow of ideas and the linkers between them.
+4. **Edit** — hunt for grammar, spelling, and punctuation slips, then
+   count or estimate the words.
+
+| Task | Typical word limit | Marks weight in boards |
+| --- | --- | --- |
+| Long essay (descriptive or argumentative) | 250 to 300 words | highest |
+| Formal letter (editor, Principal, official) | 120 to 150 words | medium |
+| Informal letter (relative, friend) | 100 to 120 words | medium |
+| Newspaper report | 100 to 120 words | medium |
+| Article or speech | 120 to 150 words | medium |
+
+[tip]
+Examiners stop reading beyond the limit, but they also penalise answers
+far *below* it. Aim to land within ten per cent of the limit: plan one
+paragraph per point and one example per paragraph, and the count
+manages itself.
+[/tip]
+
+## 2. The Essay: Structure
+
+An essay is not one long paragraph. It is a chain of paragraphs, each
+with one job, held together by signposting.
+
+@diagram tree id="essay-structure" layout="tree" aria="Structure tree of a standard examination essay"
+  "Essay" -> "Introduction"
+  "Essay" -> "Body"
+  "Essay" -> "Conclusion"
+  "Introduction" -> "Hook: a fact, question, or quotation"
+  "Introduction" -> "Background in one or two lines"
+  "Introduction" -> "Thesis: your position in one sentence"
+  "Body" -> "Paragraph 1: point + explanation + example"
+  "Body" -> "Paragraph 2: point + explanation + example"
+  "Body" -> "Paragraph 3: counter-view and rebuttal"
+  "Conclusion" -> "Restate the thesis in fresh words"
+  "Conclusion" -> "Balanced verdict or a call to action"
+@/diagram
+
+* The **introduction** must never begin with "In this essay I will
+  discuss"; open with a crisp fact or a short question instead.
+* Each **body paragraph** follows the PEE pattern — **Point, Evidence,
+  Explanation**: state the point, give an example or statistic, then
+  explain how the evidence proves the point.
+* The **conclusion** introduces no new argument; it weighs what is on
+  the page and closes with a memorable verdict.
+
+[example]
+Topic: *Should mobile phones be allowed in schools?*
+Introduction (hook): A 2023 survey found that 88 per cent of teenagers
+own a smartphone, yet most schools still ban it from classrooms.
+Thesis: Phones belong in school life as controlled tools, not banned
+temptations.
+Body 1: educational uses — dictionary, revision apps, project research.
+Body 2: discipline costs — distraction, cheating, cyberbullying risks.
+Body 3: the middle path — phone lockers, monitored use, teacher-led
+digital literacy.
+Conclusion: a ban trains obedience; guided use trains judgement — and
+education should aim at the latter.
+[/example]
+
+## 3. Types of Essays
+
+| Type | What it asks of you | Dominant tense and voice | Sample topics |
+| --- | --- | --- | --- |
+| Argumentative | take a side and defend it with reasons and counter-views | present, impersonal | Social media: boon or bane |
+| Descriptive | paint a person, place, or scene through the senses | present or past | A railway platform at midnight |
+| Narrative | tell a story with a beginning, a twist, and an end | past, first person often | The day I almost missed the exam |
+| Expository | explain a process or concept objectively | present, third person | How vaccines protect a community |
+| Reflective | explore an idea or experience and its meaning | mixed, personal | What failure taught me |
+
+[important]
+Read the topic word by word before choosing the type. *Impact of
+artificial intelligence on jobs* demands an expository-argumentative
+hybrid, while *A walk in the monsoon rain* would be marked harshly if
+you argued about rainfall statistics instead of describing.
+[/important]
+
+## 4. Paragraphs and Linking Words
+
+A paragraph is a unit of **one idea**. Three habits create strong
+paragraphs: open with a topic sentence, support it with two or three
+sentences, and link forward with a connector. Linking words fall into
+functional families — learn one or two from each family, not all.
+
+| Function | Linking words |
+| --- | --- |
+| Adding | moreover, furthermore, in addition, besides |
+| Contrasting | however, nevertheless, on the contrary, whereas |
+| Cause and result | therefore, consequently, as a result, hence |
+| Sequencing | firstly, subsequently, meanwhile, finally |
+| Exemplifying | for instance, to illustrate, notably |
+| Concluding | in conclusion, on balance, to sum up |
+
+[warning]
+Do not begin consecutive sentences with the same linker — *However ... However ... However* reads like a stuck record. Vary the family:
+*However* in one paragraph, *Nevertheless* in the next, and plain
+*but* inside a sentence where the tone is lighter.
+[/warning]
+
+## 5. Formal Letters: Format and Specimen
+
+Formal letters go to officials, editors, and principals: the reader is
+a role, not a friend. The format carries marks — every element below is
+a scored component.
+
+```text
+Sender's address                              (top left, no name)
+                                              12 November 2025
+Receiver's designation and address
+                                              Subject: one clear line
+                                              Sir / Madam,
+     Body paragraph 1 — who I am and why I write
+     Body paragraph 2 — the request or complaint, with details
+     Body paragraph 3 — courteous closing expectation
+                                              Yours faithfully,
+                                              R. Sharma
+```
+
+The pairing rule confuses everyone once, then never again: **Dear Sir
+or Madam pairs with Yours faithfully**, while a named reader
+(*Dear Ms Verma*) pairs with **Yours sincerely**. Never
+*Yours lovingly* in a formal letter, and never a contraction
+(*don't, can't*) — spell them out.
+
+[example]
+Specimen — a letter to the Principal.
+
+12, Nehru Road
+Dehradun
+12 November 2025
+
+The Principal
+St. Xavier's School
+Dehradun
+
+Subject: Request for three days' leave for medical reasons
+
+Madam,
+
+I am Riya Sharma, a student of Class X-B, roll number 14. I am
+writing to request leave from 14 to 16 November 2025.
+
+I have been advised a minor surgery on my right hand, and the
+surgeon has fixed the operation for 14 November. The doctors expect
+recovery within three days, and I shall join classes on 17 November
+with the medical certificate enclosed.
+
+I request you to kindly grant me leave for these three days. I shall
+collect the notes of missed lessons from my classmates and complete
+all pending work.
+
+Yours faithfully,
+Riya Sharma
+Class X-B, Roll No. 14
+[/example]
+
+## 6. Informal Letters: Tone and Specimen
+
+Informal letters go to family and friends: the format relaxes, the
+language warms, and the subject line disappears.
+
+| Feature | Formal letter | Informal letter |
+| --- | --- | --- |
+| Opening address | Dear Sir / Dear Madam | Dear Asha, / My dear Papa, |
+| Subject line | compulsory | never used |
+| Contractions | avoided (do not) | natural (don't) |
+| Closing | Yours faithfully / sincerely | Yours lovingly / With love |
+| Reader | an official or a role | a known person |
+| Content | one clear purpose | news, feelings, enquiries |
+
+The specimen below shows the relaxed register: short sentences, direct
+questions, personal news — and still a clear three-part shape of
+greeting, news, and closing enquiry.
+
+[example]
+Specimen — a letter to a friend.
+
+45, Civil Lines
+Kanpur
+12 November 2025
+
+Dear Asha,
+
+You will not believe what happened at the district debate on
+Saturday — our team won the trophy, and I was judged best speaker!
+
+The topic was on banning homework, and I spoke against the motion.
+The final round was nerve-wracking: the rival speaker quoted
+statistics faster than I could note them. But the judges liked our
+closing lines, and the applause would not stop.
+
+Tell me about your basketball final. Did the ankle heal completely?
+Write back soon — and start planning your visit for the winter
+break.
+
+With love,
+Meera
+[/example]
+
+## 7. Reports: Format and Specimen
+
+A **report** answers what happened, where, when, and who was involved —
+in the third person and the past tense, with the writer's feelings left
+out. Newspapers print reports; students write them for 100 to 120 words.
+
+```text
+HEADLINE    — 5 to 8 words, present tense acceptable, no article waste
+By: Ravi Kumar, Staff Reporter
+
+Place, Date — dateline in brackets
+     Paragraph 1 — the lead: what, where, when, who (one sentence)
+     Paragraph 2 — details and quotations from officials
+     Paragraph 3 — aftermath, action taken, and current status
+```
+
+[example]
+Specimen — a newspaper report.
+
+Inter-School Science Exhibition Draws Record Crowd
+
+By: Ravi Kumar, Staff Reporter
+
+Lucknow, 11 November 2025: The 18th Inter-School Science Exhibition
+opened at the Bal Vidya Mandir grounds on Monday, drawing over four
+thousand visitors on the first day.
+
+Thirty-two schools presented working models, including a solar-
+powered water purifier designed by students of Class IX. "The aim is
+to make science touchable, not just teachable," said the chief
+guest, Dr. S. Iyer of IIT Kanpur.
+
+The exhibition closes on Wednesday, after which three models will be
+selected for the state-level round in December.
+[/example]
+
+[info]
+The report's first paragraph is called the **lead** because it leads
+with every fact a reader needs if they stop after one line — the
+inverted-pyramid principle used by every newsroom in the world.
+[/info]
+
+## 8. Common Mistakes and Exam Strategy
+
+@chart bar title="Marks lost in board writing tasks, by cause (per 100 marks)" labels:
+Wrong register
+Missed format element
+Over the word limit
+Weak conclusion
+Grammar slips
+
+data:
+22
+30
+28
+12
+8
+@/chart
+
+The chart shows the harsh truth: format and length discipline together
+cost more marks than language accuracy. Fix the controllable first.
+
+1. **Register clash**: writing *Dear Madam, Thanks a lot, cheers!* in a
+   formal letter, or a subject line in a letter to your grandmother.
+2. **Missing format elements**: no date, no subject, no byline — these
+   are free marks lost.
+3. **One-block answers**: essays written as a single 300-word paragraph
+   score poorly on coherence; break at every change of idea.
+4. **New arguments in the conclusion**: the conclusion weighs, it does
+   not open new fronts.
+5. **Tense drift in reports**: a report narrates finished events, so
+   the past tense rules; the present appears only in headlines and
+   quotations.
+
+[tip]
+Memorise the five format skeletons — essay, formal letter, informal
+letter, report, article — as fill-in templates. In the exam hall, write
+the skeleton first on the margin, then pour content into it. Format
+becomes unlosable marks.
+[/tip]
+
+## 9. Quick Revision
+
+| Task | Skeleton | Register clue | Closing word |
+| --- | --- | --- | --- |
+| Essay | intro, body PEE paragraphs, conclusion | impersonal, formal | verdict |
+| Formal letter | address, date, receiver, subject, salutation, body, subscription | respectful, no contractions | Yours faithfully |
+| Informal letter | address, date, dear name, body, with love | warm, contractions fine | Yours lovingly |
+| Report | headline, byline, dateline, lead, details, status | third person, past tense | current status line |
+| Any task | plan, draft, revise, edit | match the reader | within ten per cent of limit |
+
+[summary]
+Writing marks come from structure and discipline. Plan before writing;
+build essays as introduction, PEE body paragraphs, and a verdict-style
+conclusion; keep formal letters fully dressed with subject line and
+*Yours faithfully*, informal letters warm and unformatted; write
+reports in the third-person past tense with a fact-dense lead; and let
+linking words stitch paragraphs while the word limit disciplines every
+sentence.
+[/summary]

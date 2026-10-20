@@ -1,33 +1,33 @@
 {
   "lessonId": "coding-decoding-detailed-part-17",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 17 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 17 of 22",
   "questions": [
     {
-      "question": "In 'Solved Example 7 \u2014 First Letter,' what determines the code?",
+      "question": "In 'Solved Example 7 — First Letter,' what determines the code?",
       "options": [
-        "The word's last letter",
         "The word's first letter (possibly transformed further by an additional rule)",
+        "The word's last letter",
         "The word's total length",
         "The number of vowels in the word"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This example demonstrates first-letter coding, where the code is based on the word's first letter, potentially with a further transformation applied.",
       "id": 1
     },
     {
-      "question": "In 'Solved Example 8 \u2014 Last Letter,' what determines the code, in contrast?",
+      "question": "In 'Solved Example 8 — Last Letter,' what determines the code, in contrast?",
       "options": [
         "The word's first letter",
-        "The word's last letter (possibly transformed further)",
         "The word's middle letter",
+        "The word's last letter (possibly transformed further)",
         "The word's total length"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This example mirrors Example 7, but bases the code on the word's final letter instead of its first.",
       "id": 2
     },
     {
-      "question": "In 'Solved Example 9 \u2014 Common Code,' what technique is likely demonstrated?",
+      "question": "In 'Solved Example 9 — Common Code,' what technique is likely demonstrated?",
       "options": [
         "Ignoring all given examples",
         "Comparing two or more examples to find a rule that is consistently confirmed across all of them",
@@ -39,43 +39,43 @@
       "id": 3
     },
     {
-      "question": "In 'Solved Example 10 \u2014 Chinese Coding,' what technique is applied?",
+      "question": "In 'Solved Example 10 — Chinese Coding,' what technique is applied?",
       "options": [
         "A simple letter shift",
-        "Cross-referencing multiple coded sentences that share common words, to isolate which code word matches which real word",
+        "Word length coding",
         "Matrix-based coding",
-        "Word length coding"
+        "Cross-referencing multiple coded sentences that share common words, to isolate which code word matches which real word"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This example applies the Chinese coding technique, cross-referencing overlapping coded sentences to isolate which code word matches which real word.",
       "id": 4
     },
     {
-      "question": "In 'Solved Example 11 \u2014 Substitution,' what technique is applied?",
+      "question": "In 'Solved Example 11 — Substitution,' what technique is applied?",
       "options": [
-        "A uniform alphabet shift",
         "Replacing each letter with a different letter or symbol according to a given, possibly non-uniform, substitution key",
+        "A uniform alphabet shift",
         "Word reversal only",
         "Vowel counting only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This example applies substitution coding, using a given key to replace each letter, which may follow a non-uniform (non-shift) mapping.",
       "id": 5
     },
     {
-      "question": "In 'Solved Example 12 \u2014 Operator Coding,' what technique is applied?",
+      "question": "In 'Solved Example 12 — Operator Coding,' what technique is applied?",
       "options": [
         "Ignoring all mathematical symbols",
-        "Interpreting a given mathematical operator symbol as an instruction for how to transform the letters or numbers",
         "A simple letter shift only",
+        "Interpreting a given mathematical operator symbol as an instruction for how to transform the letters or numbers",
         "Matrix coding only"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This example demonstrates operator coding, where a given mathematical symbol must be correctly interpreted as an instruction for transforming the letters or numbers.",
       "id": 6
     },
     {
-      "question": "In 'Solved Example 13 \u2014 Odd/Even Binary,' what basis is used for the code?",
+      "question": "In 'Solved Example 13 — Odd/Even Binary,' what basis is used for the code?",
       "options": [
         "Vowel/consonant classification",
         "Whether each letter's position is odd or even, mapped to a binary-style code",
@@ -87,19 +87,19 @@
       "id": 7
     },
     {
-      "question": "In 'Solved Example 14 \u2014 Vowel/Consonant Binary,' what basis is used, in contrast?",
+      "question": "In 'Solved Example 14 — Vowel/Consonant Binary,' what basis is used, in contrast?",
       "options": [
         "Odd/even position",
-        "Whether each letter is a vowel or a consonant, mapped to a binary-style code",
+        "The reverse-alphabet mapping",
         "The word's total length",
-        "The reverse-alphabet mapping"
+        "Whether each letter is a vowel or a consonant, mapped to a binary-style code"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Unlike Example 13's odd/even basis, this example bases its binary code on whether each letter is a vowel or a consonant.",
       "id": 8
     },
     {
-      "question": "In 'Solved Example 15 \u2014 Matrix,' what technique is applied?",
+      "question": "In 'Solved Example 15 — Matrix,' what technique is applied?",
       "options": [
         "A uniform letter shift",
         "Looking up each letter's row-and-column position in a grid to determine its code",

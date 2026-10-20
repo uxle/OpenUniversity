@@ -1,0 +1,126 @@
+{
+  "lessonId": "philosophy-of-mind",
+  "title": "Philosophy of Mind: What Is Consciousness?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the mind–body problem?",
+      "options": [
+        "The question of how to build faster computers",
+        "The question of whether bodies really exist",
+        "The question of how felt, private mental experience relates to physical brain states",
+        "The question of whether psychology is a genuine science"
+      ],
+      "correct": 2,
+      "rationale": "The problem is the apparent gap between subjective, qualitative experience and the public, measurable physical brain — how can they be the same thing?"
+    },
+    {
+      "id": 2,
+      "question": "Princess Elisabeth of Bohemia's famous objection to Descartes was that:",
+      "options": [
+        "The pineal gland is too small to matter",
+        "It is unintelligible how a non-spatial mind could causally affect a physical body",
+        "Animals clearly have minds, which Descartes denied",
+        "Dreams prove that the body can exist without the mind"
+      ],
+      "correct": 1,
+      "rationale": "Her 1643 letters press the interaction problem: if the mind is unextended and immaterial, what mechanism could let it push matter around?"
+    },
+    {
+      "id": 3,
+      "question": "Logical behaviourism claims that mental statements:",
+      "options": [
+        "Mean statements about behaviour and dispositions to behave, with no inner item behind them",
+        "Refer to private objects only the subject can inspect",
+        "Are identical with statements about brain tissue",
+        "Should be replaced by mathematical models of neurons"
+      ],
+      "correct": 0,
+      "rationale": "Analytical behaviourism tried to define mental states as behavioural dispositions — dissolving the inner life rather than locating it."
+    },
+    {
+      "id": 4,
+      "question": "Functionalism defines a mental state such as pain by:",
+      "options": [
+        "Its exact pattern of C-fibre firing",
+        "Its brain chemistry alone",
+        "The verbal reports it produces",
+        "Its causal role: typical causes, typical effects, and relations to other states"
+      ],
+      "correct": 3,
+      "rationale": "Functionalism abstracts from substance: pain is whatever state is caused by damage and causes withdrawal and distress — so it is multiply realisable in silicon or aliens."
+    },
+    {
+      "id": 5,
+      "question": "What does Searle's Chinese Room argument try to show?",
+      "options": [
+        "Manipulating symbols by syntax does not by itself yield genuine understanding",
+        "Chinese is harder for computers than English",
+        "No machine can ever behave intelligently",
+        "Understanding is just very fast arithmetic"
+      ],
+      "correct": 0,
+      "rationale": "Searle grants perfect symbol-shuffling behaviour yet denies understanding inside the room — syntax alone, he argues, never adds up to semantics."
+    },
+    {
+      "id": 6,
+      "question": "In philosophy of mind, 'qualia' are:",
+      "options": [
+        "The measurable electrical signals of neurons",
+        "The grammar of a language",
+        "The felt, qualitative qualities of experience — what red looks like, what chilli stings like",
+        "The evolutionary functions of behaviour"
+      ],
+      "correct": 2,
+      "rationale": "Qualia are the 'what it is like' characters of experience — precisely the features that seem left out of purely physical descriptions."
+    },
+    {
+      "id": 7,
+      "question": "What is a philosophical zombie, as used by Chalmers?",
+      "options": [
+        "A reanimated corpse that acts on instinct",
+        "A being physically identical to you but with no inner experience, imagined to show experience is an extra fact",
+        "A robot programmed to report pain it does not have",
+        "A person who sleeps without dreaming"
+      ],
+      "correct": 1,
+      "rationale": "The zombie is behaviourally and physically indistinguishable yet nothing is 'like anything' for it — conceivability of this duplicate is Chalmers' lever against physicalism."
+    },
+    {
+      "id": 8,
+      "question": "Chalmers' 'hard problem of consciousness' asks:",
+      "options": [
+        "How attention can be modelled in software",
+        "Why brains need so much energy",
+        "How memory consolidation happens during sleep",
+        "Why any physical processing is accompanied by subjective experience at all"
+      ],
+      "correct": 3,
+      "rationale": "The easy problems explain functions like attention and report; the hard problem is why those mechanisms feel like something from the inside."
+    },
+    {
+      "id": 9,
+      "question": "Frank Jackson's Mary (the colour scientist in a black-and-white room) is meant to show that:",
+      "options": [
+        "Colour perception is innate rather than learned",
+        "Physicalism is trivially true",
+        "If Mary learns something new on seeing red, physical facts do not exhaust all the facts about the mind",
+        "Scientists should leave the laboratory more often"
+      ],
+      "correct": 2,
+      "rationale": "Mary knows every physical fact about colour, yet first seeing red seems to teach her what red is like — so, the argument concludes, the physical story is incomplete."
+    },
+    {
+      "id": 10,
+      "question": "In the 2020 PhilPapers survey, what was the profession's majority position on the mind?",
+      "options": [
+        "Most accepted substance dualism",
+        "A majority accepted or leaned toward physicalism (about 52%, with a third against)",
+        "Most endorsed logical behaviourism",
+        "Most were undecided and declined to answer"
+      ],
+      "correct": 1,
+      "rationale": "About 52% accepted or leaned toward physicalism versus roughly 32% for non-physicalism — a majority, but far from a consensus."
+    }
+  ]
+}

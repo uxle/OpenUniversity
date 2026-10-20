@@ -1,0 +1,76 @@
+{
+  "lessonId": "agriculture-in-india",
+  "title": "Agriculture in India: Crops, Seasons, and Farming Systems",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The zaid cropping season in India runs during which months?",
+      "options": ["June to October", "October to March", "April to June", "December to February"],
+      "correct": 2,
+      "rationale": "Zaid is the short summer season between rabi harvest and kharif sowing, irrigated and used for watermelons, cucumbers, vegetables, and fodder."
+    },
+    {
+      "id": 2,
+      "question": "Wheat in India is chiefly a crop of which season?",
+      "options": ["Kharif", "Zaid", "All the year round", "Rabi"],
+      "correct": 3,
+      "rationale": "Wheat is sown in October-November, grows through the cool winter, and is harvested in March-April, which makes it a rabi crop."
+    },
+    {
+      "id": 3,
+      "question": "Which temperature range suits wheat best at the ripening stage?",
+      "options": ["21-26 degrees C", "35-40 degrees C", "5-10 degrees C", "over 45 degrees C"],
+      "correct": 0,
+      "rationale": "Wheat needs about 10-15 degrees C while growing but warmer 21-26 degrees C weather for ripening; too much heat shrivels the grain."
+    },
+    {
+      "id": 4,
+      "question": "Cotton in India grows best on which type of soil?",
+      "options": ["Sandy desert soil", "Black (regur) soil", "Laterite soil", "Peaty soil"],
+      "correct": 1,
+      "rationale": "Black regur soil of the Deccan retains moisture and is formed from lava, which is why Gujarat, Maharashtra, and Telangana lead cotton output."
+    },
+    {
+      "id": 5,
+      "question": "Which state produces most of India's jute, the 'golden fibre'?",
+      "options": ["Punjab", "Kerala", "West Bengal", "Gujarat"],
+      "correct": 2,
+      "rationale": "The hot, humid Ganga-Brahmaputra delta of West Bengal provides loamy alluvium, water for retting, and cheap labour ideal for jute."
+    },
+    {
+      "id": 6,
+      "question": "Ragi, a hardy nutri-cereal, is grown mainly in which state?",
+      "options": ["Karnataka", "Assam", "Bihar", "Haryana"],
+      "correct": 0,
+      "rationale": "Ragi is concentrated in the dry southern interior, with Karnataka the leading producer; jowar leads in Maharashtra and bajra in Rajasthan."
+    },
+    {
+      "id": 7,
+      "question": "The Green Revolution of the mid-1960s was built on which package of inputs?",
+      "options": ["Organic manure and shade trees", "HYV seeds, chemical fertilisers, and assured irrigation", "Shifting cultivation and jhum cycles", "Only expansion of cultivated area"],
+      "correct": 1,
+      "rationale": "High-yielding varieties of wheat and rice combined with fertilisers, irrigation, and price support converted India from food importer to self-sufficiency."
+    },
+    {
+      "id": 8,
+      "question": "The White Revolution is associated with which programme and personality?",
+      "options": ["Fisheries missions led by M. S. Swaminathan", "The oilseeds Technology Mission", "HYV maize in Punjab", "Operation Flood of 1970, led by Verghese Kurien"],
+      "correct": 3,
+      "rationale": "Operation Flood, launched in 1970 with Anand in Gujarat as its base, made India the world's largest milk producer under Verghese Kurien."
+    },
+    {
+      "id": 9,
+      "question": "What is the approximate average size of an agricultural land holding in India?",
+      "options": ["About 1.1 hectares", "About 5 hectares", "About 10 hectares", "About 25 hectares"],
+      "correct": 0,
+      "rationale": "Successive agriculture censuses show the average holding falling to roughly 1.1 hectares, which limits mechanisation and bargaining power."
+    },
+    {
+      "id": 10,
+      "question": "According to recent foodgrain production figures, which crop contributes the most million tonnes?",
+      "options": ["Pulses", "Rice", "Coarse cereals", "Wheat"],
+      "correct": 1,
+      "rationale": "Rice at roughly 136 million tonnes tops the foodgrain basket, ahead of wheat at about 111 million tonnes."
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+# Human Development and Sustainable Development
+
+> National income tells you the size of an economy; human development
+> asks whether its people live longer, learn more, and earn better —
+> and sustainable development asks whether today's progress steals
+> from tomorrow. This lesson covers both frameworks and India's record.
+
+## 1. Why GDP Is Not Enough
+
+GDP measures the volume of goods and services, not the lives those
+goods build. Two countries can share the same per-capita income while
+one starves its children and the other schools them. High income
+itself is only *instrumental* — valuable for what it enables.
+
+[definition]
+**Human development** is the process of enlarging people's choices and
+capabilities — especially a **long and healthy life, knowledge, and a
+decent standard of living**. The idea was launched by Pakistani
+economist **Mahbub ul Haq** with Indian Nobel laureate **Amartya Sen**
+(capabilities approach); the first **Human Development Report (HDR)**
+appeared in **1990** with its famous opening: "People are the real
+wealth of a nation."
+[/definition]
+
+The shift matters for policy: if development is capability, then
+public spending on health, education, and sanitation is not "welfare
+leakage" but core investment — a direct challenge to treating
+schools as a residual after factories.
+
+## 2. The Human Development Index (HDI)
+
+The UNDP's HDI compresses three dimensions into one number between 0
+and 1, using the **geometric mean** of three sub-indices (the method
+since 2010):
+
+@diagram tree id="hdi-structure" layout="tree" aria="Dimensions and indicators of the Human Development Index"
+  HDI -> "Health: life expectancy at birth"
+  HDI -> "Education: expected and mean years of schooling"
+  HDI -> "Standard of living: GNI per capita (PPP)"
+  "Education: expected and mean years of schooling" -> "Expected: 0-18 years"
+  "Education: expected and mean years of schooling" -> "Mean: 0-15 years"
+  "Standard of living: GNI per capita (PPP)" -> "Log scale, US$100-75,000"
+@/diagram
+
+| Dimension | Indicator | Goalposts |
+| --- | --- | --- |
+| Health | Life expectancy at birth | 20 to 85 years |
+| Education | Expected years of schooling | 0 to 18 years |
+| Education | Mean years of schooling | 0 to 15 years |
+| Living standard | GNI per capita (PPP $) | 100 to 75,000 (logarithm) |
+
+Income enters on a **logarithm** so that an extra dollar matters most
+to the poorest — the HDI deliberately tapers the weight of riches.
+Values are banded: below 0.550 is **low**, 0.550-0.699 **medium**,
+0.700-0.799 **high**, and 0.800+ **very high** human development.
+
+India's trajectory, reading HDR values (approximate):
+
+@chart line title="India's HDI value (about), selected years" labels:
+1990
+2000
+2010
+2022
+
+series:
+  - name: "HDI"
+    data: 0.43 0.50 0.59 0.64
+@/chart
+
+India sits in the **medium** band — about 0.64, ranked in the low
+130s among 193 countries in recent Reports (Sri Lanka is high-band;
+Nepal and Bangladesh trail close behind, with Bangladesh closing
+fast). Within India, Kerala has always topped state-level HDI
+computations, with Bihar at the bottom — a within-country gap larger
+than many international ones.
+
+[warning]
+A classic error: reading HDI as an average of the whole population's
+well-being. HDI uses national averages, so deep inequality can hide
+behind a respectable mean. That is exactly why UNDP later introduced
+the inequality-adjusted indices below.
+[/warning]
+
+## 3. Beyond HDI: A Family of Indices
+
+| Index | What it adds | Note for India |
+| --- | --- | --- |
+| IHDI | HDI discounted by inequality in each dimension | India's loss is roughly a fifth — large |
+| Gender Development Index (GDI) | Female HDI relative to male HDI | Ratio below 1 signals a gender gap |
+| Gender Inequality Index (GII) | Maternal mortality, adolescent births, parliamentary seats, schooling | India's GII value is about 0.44 |
+| Global MPI (UNDP-OPHI) | Ten indicators of deprivation across health, education, living standards | India: 55.1% poor (2005-06) to 16.4% (2019-21) |
+
+The **Multidimensional Poverty Index** deserves special attention
+because it replaces income with *deprivations*: a household is poor
+if it is deprived in a weighted third of the ten indicators — say,
+malnourishment plus no electricity plus a dirt floor. UNDP estimates
+about **415 million Indians exited multidimensional poverty between
+2005-06 and 2019-21**, the fastest such decline ever recorded for a
+country of this size. NITI Aayog's **National MPI** (twelve
+indicators, adding Maternity care and Banking) reports a fall from
+24.85 per cent (2015-16) to 14.96 per cent (2019-21).
+
+## 4. India's Human Development Ledger
+
+Basic social indicators behind the HDI numbers:
+
+| Indicator | Approximate value | Source/era |
+| --- | --- | --- |
+| Life expectancy at birth | About 70 years | SRS, 2016-20 |
+| Infant mortality rate | About 28 per 1,000 live births | SRS |
+| Literacy rate | 74% (Census 2011); about 78% in later surveys | Census / NSO |
+| Mean years of schooling | About 6.5-7 years | HDR |
+| GNI per capita | About US$7,000 (PPP) | HDR |
+
+Programmes that moved the needle: the **Right to Education Act
+(2009)** and Sarva Shiksha Abhiyan for schooling; **Ayushman Bharat
+(2018)** for hospitalisation cover; the **National Food Security Act
+(2013)** guaranteeing subsidised grain to two-thirds of the
+population; **Jal Jeevan Mission** for tap-water connections; and
+**POSHAN Abhiyaan** against child malnutrition. Each maps to an HDI
+dimension — health, knowledge, or living standards.
+
+## 5. Sustainable Development: Meaning and Milestones
+
+[definition]
+**Sustainable development** is development that **meets the needs of
+the present without compromising the ability of future generations to
+meet their own needs** — the definition of the 1987 Brundtland
+Report, *Our Common Future*.
+[/definition]
+
+The concept grew through a chain of milestones, each worth memorising:
+
+| Year | Event | Contribution |
+| --- | --- | --- |
+| 1972 | Stockholm Conference | First UN environment conference; UNEP created |
+| 1987 | Brundtland Report | Canonical definition; intergenerational equity |
+| 1992 | Rio Earth Summit | Agenda 21; climate and biodiversity conventions |
+| 1997 | Kyoto Protocol | Binding emission cuts for developed countries |
+| 2000 | Millennium Development Goals | 8 goals for 2000-2015 |
+| 2012 | Rio+20 | Mandate to design the SDGs |
+| 2015 | 2030 Agenda | SDGs adopted, effective 1 January 2016 |
+
+The MDGs were goals for *developing* countries, largely funded and
+prodded by donors; the SDGs are **universal** — 17 goals and 169
+targets that apply to Germany and Ghana alike, binding the three
+axes of economy, society, and environment.
+
+## 6. The 17 SDGs and the Five Ps
+
+The 2030 Agenda organises the goals under five headings, the **Five
+Ps**:
+
+@diagram tree id="sdg-five-ps" layout="tree" aria="The 17 SDGs grouped under the five Ps"
+  "2030 Agenda (17 goals, 169 targets)" -> People
+  "2030 Agenda (17 goals, 169 targets)" -> Planet
+  "2030 Agenda (17 goals, 169 targets)" -> Prosperity
+  "2030 Agenda (17 goals, 169 targets)" -> Peace
+  "2030 Agenda (17 goals, 169 targets)" -> Partnership
+  People -> "SDGs 1-5: poverty, hunger, health, education, gender"
+  Planet -> "SDGs 6, 12-15: water, climate, life on land and sea"
+  Prosperity -> "SDGs 7-11: energy, work, industry, cities"
+  Partnership -> "SDG 17: finance, technology, trade cooperation"
+@/diagram
+
+[tip]
+Memory aid: *People, Planet, Prosperity, Peace, Partnership* —
+"two Ps in the middle hold the people and the planet together."
+Sample goals to memorise with numbers: SDG 1 no poverty, SDG 4
+quality education, SDG 5 gender equality, SDG 13 climate action,
+SDG 17 partnerships.
+[/tip]
+
+Note that the SDGs are **indivisible and integrated**: you cannot
+deliver clean water (SDG 6) without decent sanitation and health
+(SDG 3), and climate action (SDG 13) conditions almost everything
+else. Trade-offs exist too — cheap coal power raises incomes today
+and temperatures tomorrow.
+
+## 7. India's SDG and Climate Architecture
+
+NITI Aayog is the nodal agency for the 2030 Agenda. Its **SDG India
+Index** localises the goals to states and districts: the national
+score climbed from 57 (2018 baseline) to 66 (2020-21) and 71
+(2023-24), with Kerala consistently first and the Aspirational
+Districts Programme tracking 112 of the most laggard districts
+monthly.
+
+India's climate commitments, made under the Paris Agreement (2015)
+and updated in 2022 — its Nationally Determined Contributions:
+
+- Cut the **emissions intensity of GDP by 45 per cent by 2030**
+  from 2005 levels.
+- Achieve about **50 per cent of installed electric power capacity
+  from non-fossil sources by 2030**.
+- Create an additional **carbon sink of 2.5-3 billion tonnes** of
+  CO2-equivalent through forests.
+
+At the **COP26 summit in Glasgow (November 2021)**, the Prime
+Minister additionally pledged **net-zero emissions by 2070**, with
+interim elements including 500 GW of non-fossil capacity by 2030.
+Installed non-fossil capacity has since crossed about 200 GW,
+placing India among the world's largest renewable-energy markets.
+
+## 8. How the Two Frameworks Meet
+
+Human development and sustainable development are not rival
+syllabus topics; they are two lenses on one question — *development
+of what, for whom, and until when?*
+
+- SDG 3 (health), SDG 4 (education), SDG 6 (water), and SDG 7
+  (energy) are literally the HDI's dimensions plus access inputs.
+- Both frameworks reject income-centrism: one replaces it with
+  capabilities, the other with intergenerational responsibility.
+- Both demand **distribution-sensitive** data — hence IHDI for the
+  HDI and "leave no one behind" as the SDG slogan.
+- India's development story ties them together: poverty exit at
+  record speed (human development) achieved partly by electrifying
+  villages and expanding cooking-gas connections — gains that must
+  now be reconciled with decarbonisation (sustainability).
+
+[info]
+A useful exam lens: **HDI = people now; sustainability = people
+later; the SDGs = the bridge**, with SDG 1-8 repairing today's
+shortfalls and SDG 12-15 protecting tomorrow's resource base. Green
+GDP, environmental accounting, and ESG investing are the measurement
+instruments on that bridge.
+[/info]
+
+## 9. Quick Revision
+
+| Item | Fact |
+| --- | --- |
+| HDI dimensions | Health, education, standard of living |
+| HDI aggregation | Geometric mean of three sub-indices |
+| HDI bands | Low <0.550; medium 0.550-0.699; high 0.700-0.799; very high 0.800+ |
+| India's HDI | About 0.64; medium band; rank in low 130s of 193 |
+| HDR originators | Mahbub ul Haq with Amartya Sen; first HDR 1990 |
+| MPI | 10 indicators; India 55.1% (2005-06) to 16.4% (2019-21) |
+| Brundtland definition | 1987; needs of present without robbing the future |
+| SDGs | Adopted 2015; 17 goals, 169 targets; effective 2016 |
+| Five Ps | People, Planet, Prosperity, Peace, Partnership |
+| India NDC | 45% intensity cut and 50% non-fossil capacity by 2030; net zero 2070 |

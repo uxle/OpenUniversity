@@ -1,0 +1,208 @@
+# Environmental Chemistry: Pollution, Climate, and Green Chemistry
+
+> The environment is chemistry running at planetary scale: the air we
+> breathe, the water we drink, the soil that feeds us. This lesson maps
+> the major pollutants and their sources, the science of the greenhouse
+> effect and acid rain, and the green-chemistry playbook for preventing
+> pollution at the design stage instead of cleaning up afterwards.
+
+## 1. Segments of the Environment
+
+@diagram tree id="environment-segments" layout="tree" aria="Four segments of the environment"
+  "Environment" -> "Atmosphere (air)"
+  "Environment" -> "Hydrosphere (water)"
+  "Environment" -> "Lithosphere (soil and rock)"
+  "Environment" -> "Biosphere (living things)"
+@/diagram
+
+[definition]
+A **pollutant** is any substance or form of energy whose concentration
+in the environment is unfavourable to life, or whose presence there is
+simply out of place. Pollutants arrive from **point sources** (a
+factory outfall pipe) or **non-point sources** (fertiliser runoff
+washed from a whole catchment).
+[/definition]
+
+| Classification | Examples |
+| --- | --- |
+| Biodegradable | sewage, paper, crop residues |
+| Non-biodegradable | plastics, heavy metals, DDT |
+| Primary pollutants | emitted directly: CO, SO₂, NO, particulates |
+| Secondary pollutants | formed in the air: ground-level ozone, PAN, acid rain |
+
+## 2. Air Pollution: The Major Pollutants
+
+| Pollutant | Main sources | Harmful effects |
+| --- | --- | --- |
+| Carbon monoxide (CO) | incomplete fuel burning, vehicles | binds haemoglobin about 200 times better than O₂ — oxygen starvation |
+| Sulphur dioxide (SO₂) | coal power plants, smelters | throat and lung irritation, acid rain |
+| Oxides of nitrogen (NOₓ) | hot combustion in engines | smog, acid rain, breathing trouble |
+| Particulate matter (PM2.5, PM10) | dust, smoke, diesel exhaust | deep lung penetration, heart disease |
+| Tropospheric ozone (O₃) | secondary: sunlight on NOₓ + hydrocarbons | photochemical smog, crop damage |
+| Chlorofluorocarbons (CFCs) | old refrigerants, aerosol propellants | destroy stratospheric ozone |
+
+[note]
+PM2.5 means particles under 2.5 micrometres across — fine enough to
+slip past the airways' defences deep into the lungs, which is why daily
+AQI bulletins single it out.
+[/note]
+
+## 3. Water Pollution and the Oxygen Ledger
+
+| Pollutant | Source | Effect |
+| --- | --- | --- |
+| Sewage and organic waste | homes, food processing | microbes consume dissolved O₂ — fish suffocate |
+| Fertiliser runoff (N, P) | farms | algal blooms, eutrophication |
+| Heavy metals (Hg, Pb, Cd) | batteries, plating, e-waste | nerve damage; Minamata disease from mercury |
+| Pesticides (DDT) | agriculture | biomagnification up the food chain |
+| Pathogens | untreated sewage | cholera, typhoid, jaundice |
+| Thermal discharge | power plants | warm water holds less dissolved oxygen |
+
+[definition]
+**BOD (Biochemical Oxygen Demand)** is the oxygen, in milligrams,
+consumed by micro-organisms while decomposing the organic matter in one
+litre of water over five days at 20 °C. **COD (Chemical Oxygen
+Demand)** is the oxygen equivalent consumed by *all* oxidisable matter,
+using strong chemical oxidants.
+[/definition]
+
+Clean water carries a BOD below about 5 ppm; heavily polluted water can
+exceed 100 ppm. COD always exceeds BOD because chemicals, not only
+microbes, do the consuming.
+
+## 4. Eutrophication and Soil Pollution
+
+Eutrophication is fertiliser-fed water turning green and then dead:
+
+1. nutrient runoff enriches a lake with nitrogen and phosphorus;
+2. algae bloom across the surface and block the light below;
+3. the algae die; decomposers multiply and strip dissolved oxygen;
+4. fish and other aerobic life suffocate — the lake ages prematurely.
+
+Soil pollution adds its own signature: persistent pesticides (DDT
+breaks down over decades), heavy metals from industry and e-waste, and
+excess nitrogen. DDT concentrates at each step up the food chain —
+**biomagnification** — which famously thinned the eggshells of falcons
+and eagles.
+
+## 5. The Greenhouse Effect and Global Warming
+
+The **greenhouse effect** is natural and good: gases that pass
+sunlight in but absorb outgoing infrared keep Earth about 33 °C
+warmer than an airless world would be. The problem is the
+*enhancement* — burning fossil fuels keeps thickening that blanket.
+
+| Gas | Global warming potential (100-year) | Main sources |
+| --- | --- | --- |
+| CO₂ | 1 (the reference) | fossil fuels, deforestation, cement |
+| CH₄ | about 28 | ruminants, paddy fields, landfills, gas leaks |
+| N₂O | about 265 | nitrogen fertilisers, combustion |
+| SF₆ and F-gases | up to about 23,500 | electrical switchgear, refrigerants |
+
+@chart donut title="Approximate share of man-made greenhouse gas emissions (%), CO₂-equivalent"
+labels:
+CO2
+Methane
+N2O
+F-gases
+
+data:
+76
+16
+6
+2
+@/chart
+
+Consequences roll out from there: sea-level rise through thermal
+expansion and ice melt, fiercer heatwaves and cloudbursts, coral
+bleaching, and shifting crop belts. The international response runs
+from the UNFCCC (1992) through the Kyoto Protocol (1997) to the Paris
+Agreement (2015), which aims to hold warming well below 2 °C.
+
+## 6. Ozone Depletion
+
+Stratospheric ozone (roughly 15–35 km up) absorbs the harshest UV-B.
+CFCs were the saboteur: UV knocks a chlorine atom loose, and one such
+atom can destroy thousands of ozone molecules.
+
+[example]
+The catalytic cycle: $Cl + O_3 \rightarrow ClO + O_2$, then
+$ClO + O \rightarrow Cl + O_2$ — the chlorine atom returns untouched,
+ready to attack the next ozone molecule. The catalyst is the poison.
+[/example]
+
+The Antarctic **ozone hole**, announced in 1985, drove the **Montreal
+Protocol (1987)** — the first treaty ratified by every UN member — and
+with CFCs phased out the layer is now slowly healing.
+
+[info]
+Ground-level ozone is a pollutant; stratospheric ozone is a shield.
+The same molecule, opposite reputations, different altitudes.
+[/info]
+
+## 7. Acid Rain
+
+Natural rain is already faintly acidic (pH about 5.6, from dissolved
+CO₂). Acid rain means pH below about 5.6, driven by SO₂ and NOₓ
+converting to sulphuric and nitric acid:
+
+@math label="eq:acid-rain"
+2SO_2 + O_2 \rightarrow 2SO_3,\quad SO_3 + H_2O \rightarrow H_2SO_4
+@/math
+
+| Victim | Damage |
+| --- | --- |
+| Marble and limestone buildings | "marble cancer": CaCO₃ + H₂SO₄ → a flaking gypsum crust (Taj Mahal) |
+| Lakes and streams | pH falls; fish eggs fail to hatch |
+| Forests | nutrients leached away; freed aluminium harms roots |
+| Soils | microbes and earthworms suffer |
+
+[tip]
+When a question mentions marble, statues, or the Taj Mahal, answer
+acid rain; when it mentions refrigerants or the ozone hole, answer
+CFCs. Mixing these two is a very common slip.
+[/tip]
+
+## 8. Green Chemistry and Waste Management
+
+[definition]
+**Green chemistry** designs chemical products and processes that
+reduce or eliminate the use and generation of hazardous substances —
+prevention at the design stage rather than treatment afterwards.
+[/definition]
+
+| Principle (condensed) | Practice |
+| --- | --- |
+| Prevention | no waste beats treating waste |
+| Atom economy | route as many reactant atoms as possible into the product |
+| Safer solvents | water, or no solvent at all, where possible |
+| Renewable feedstocks | biomass instead of petrochemicals |
+| Catalysis | catalysts rather than stoichiometric reagents |
+| Design for degradation | products that break down harmlessly |
+
+The waste-management hierarchy runs the same way — reduce, reuse,
+recycle, then recover energy, and only finally dispose. India's Solid
+Waste Management Rules (2016) push source segregation into wet, dry,
+and domestic-hazardous fractions at the doorstep.
+
+@diagram tree id="waste-hierarchy" layout="tree" aria="Waste management hierarchy from reduce to dispose"
+  "Waste management" -> "Reduce"
+  "Waste management" -> "Reuse"
+  "Waste management" -> "Recycle"
+  "Waste management" -> "Recover (energy)"
+  "Waste management" -> "Dispose (landfill)"
+@/diagram
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Primary vs secondary pollutants | emitted directly vs formed in the air |
+| CO hazard | binds haemoglobin about 200 times more than O₂ |
+| BOD | oxygen used by microbes in 5 days at 20 °C; clean water below 5 ppm |
+| Eutrophication | nutrients → algal bloom → oxygen crash |
+| Greenhouse gases | CO₂, CH₄ (about 28×), N₂O (about 265×), SF₆ (huge) |
+| Ozone | stratospheric shield, ground-level pollutant; Montreal Protocol 1987 |
+| Acid rain | pH below 5.6, from SO₂ and NOₓ |
+| Green chemistry | prevent waste, atom economy, catalysts, renewables |
+| Waste order | reduce → reuse → recycle → recover → dispose |

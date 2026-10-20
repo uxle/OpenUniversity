@@ -1,0 +1,76 @@
+{
+  "lessonId": "matrices-and-determinants",
+  "title": "Matrices and Determinants: Organising Numbers into Grids",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A matrix has 3 rows and 4 columns. What is its order?",
+      "options": ["4 × 3", "12 × 1", "3 × 4", "7 × 7"],
+      "correct": 2,
+      "rationale": "Order is always rows × columns, so a 3-row, 4-column matrix is 3 × 4 — rows first, columns second."
+    },
+    {
+      "id": 2,
+      "question": "What is the determinant of [[2, 1], [5, 3]]?",
+      "options": ["11", "1", "-1", "6"],
+      "correct": 1,
+      "rationale": "For a 2 × 2 matrix, |A| = ad − bc = 2 × 3 − 1 × 5 = 6 − 5 = 1. Since the determinant is non-zero, the matrix is invertible."
+    },
+    {
+      "id": 3,
+      "question": "A is 2 × 3 and B is 3 × 2. Which products are defined?",
+      "options": ["Only A × B", "Only B × A", "Neither", "Both A × B and B × A"],
+      "correct": 3,
+      "rationale": "A × B works (inner sizes 3 = 3) giving 2 × 2; B × A also works (inner sizes 2 = 2) giving 3 × 3. The two products have different orders and different values."
+    },
+    {
+      "id": 4,
+      "question": "For A = [[1, 2], [3, 4]] and B = [[2, 0], [1, 3]], what is AB?",
+      "options": ["[[4, 6], [10, 12]]", "[[2, 4], [10, 14]]", "[[3, 2], [4, 7]]", "[[2, 0], [3, 12]]"],
+      "correct": 0,
+      "rationale": "Each entry is row of A times column of B: top-left 1×2 + 2×1 = 4, top-right 1×0 + 2×3 = 6, bottom-left 3×2 + 4×1 = 10, bottom-right 3×0 + 4×3 = 12."
+    },
+    {
+      "id": 5,
+      "question": "The fact that AB ≠ BA for these matrices shows that matrix multiplication is:",
+      "options": ["Non-commutative", "Non-associative", "Not distributive", "Undefined for square matrices"],
+      "correct": 0,
+      "rationale": "AB and BA differ even though both are defined, so the order of multiplication matters — matrix multiplication is not commutative. Associativity and distributivity do still hold."
+    },
+    {
+      "id": 6,
+      "question": "The matrix [[2, 4], [1, 2]] is:",
+      "options": ["Invertible", "Singular", "The identity", "Diagonal"],
+      "correct": 1,
+      "rationale": "Its determinant is 2 × 2 − 4 × 1 = 0, so it is singular — the second row is half the first, and no inverse exists."
+    },
+    {
+      "id": 7,
+      "question": "What is the inverse of [[2, 1], [5, 3]]?",
+      "options": ["[[3, −1], [−5, 2]]", "[[3, 1], [5, 2]]", "[[−3, 1], [5, −2]]", "[[2, −1], [−5, 3]]"],
+      "correct": 0,
+      "rationale": "Swap the diagonal (2, 3 → 3, 2), negate the off-diagonal (1, 5 → −1, −5) and divide by |A| = 1. Check: the product with A is the identity."
+    },
+    {
+      "id": 8,
+      "question": "For 2x + y = 7 and 3x − y = 3, Cramer's rule gives D = −5, Dx = −10, Dy = −15. What is the solution?",
+      "options": ["x = 3, y = 2", "x = −2, y = −3", "x = 2, y = 3", "x = 0.5, y = 3"],
+      "correct": 2,
+      "rationale": "Divide each replaced determinant by D: x = −10/−5 = 2 and y = −15/−5 = 3. Check: 2(2) + 3 = 7 and 3(2) − 3 = 3."
+    },
+    {
+      "id": 9,
+      "question": "A system of two linear equations has D = 0 but Dy ≠ 0. What does this mean?",
+      "options": ["Infinitely many solutions", "A unique solution", "No solution", "y must be 0"],
+      "correct": 2,
+      "rationale": "D = 0 means the lines are parallel or identical; a non-zero replaced determinant (Dy ≠ 0) rules out the identical case, so the lines never meet — no solution."
+    },
+    {
+      "id": 10,
+      "question": "For an invertible matrix A, what is A × A^(-1)?",
+      "options": ["The identity matrix I", "The zero matrix", "A squared", "The transpose of A"],
+      "correct": 0,
+      "rationale": "The inverse undoes the matrix: A A^(-1) = A^(-1) A = I, the matrix with 1s on the diagonal and 0s elsewhere — the multiplication analogue of the number 1."
+    }
+  ]
+}

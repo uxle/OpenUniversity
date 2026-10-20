@@ -1,0 +1,250 @@
+# Functions and Modularity: Reusable, Readable Code
+
+> A function gives a thought a name. This lesson turns scattered
+> scripts into structured programs: defining functions, passing data
+> through parameters, understanding scope, and organising code into
+> modules and packages you can reuse for years.
+
+## 1. Why Functions Exist: Decomposition and DRY
+
+Two forces shape every codebase. **Decomposition** says: break the
+problem into small, nameable pieces. **DRY** — *Don't Repeat
+Yourself* — says: every piece of knowledge should live in exactly one
+place. Functions serve both: they name an operation once and let
+every caller share the same, tested implementation.
+
+| Without functions | With functions |
+| --- | --- |
+| The same six lines copied in ten places | One function, ten calls |
+| A bug is fixed ten times (or nine, and forgotten) | Fix once, every caller benefits |
+| One endless scroll of code | Code skimmed by meaningful names |
+
+The payoff is measurable: short, single-purpose functions are easier
+to test, easier to name, and measurably less defect-prone than long
+ones.
+
+@chart bar title="Defect density vs function length (illustrative defects per KLOC)" labels:
+Under 10 lines
+10-20 lines
+20-40 lines
+Over 40 lines
+
+data:
+1.0
+1.7
+2.6
+4.3
+@/chart
+
+## 2. def, return, and the Shape of a Function
+
+```python
+def bmi(weight_kg, height_m):
+    """Return body mass index rounded to one decimal place."""
+    if height_m <= 0:
+        raise ValueError("height must be positive")
+    return round(weight_kg / height_m ** 2, 1)
+
+print(bmi(60, 1.65))     # 22.0
+```
+
+A `def` statement creates a function object and binds a name to it;
+the body runs only when called. **`return`** sends a value back *and
+exits immediately*. A function with no `return` (or a bare `return`)
+returns `None` — the classic cause of "my function prints the answer,
+but the variable is None".
+
+[definition]
+A **pure function** depends only on its inputs and returns a value
+without touching anything outside itself. Pure functions are trivial
+to test and safe to run in parallel; impure ones (printing, writing
+files, editing globals) belong at the edges of a program.
+[/definition]
+
+## 3. Parameters vs Arguments
+
+**Parameters** are the names in the definition; **arguments** are the
+values in the call — the recipe lists ingredients, the kitchen
+receives the food.
+
+```python
+def greet(name, punctuation="!"):     # parameters
+    return f"Hello, {name}{punctuation}"
+
+greet("Ada")                          # positional argument
+greet(punctuation="?", name="Ada")    # keyword arguments, any order
+greet("Ada", punctuation="!!")        # mixed: positional first, always
+```
+
+Rules worth memorising: positional arguments come before keyword
+arguments; a parameter with a default may be omitted; parameters
+without defaults are mandatory. Defaults are evaluated **once**, at
+definition time — remember the mutable-default trap.
+
+[note]
+A function should do one job, and its name should say the job. If
+you cannot name it precisely — `process_data` — it is probably two
+functions wearing one coat.
+[/note]
+
+## 4. *args and **kwargs: Variable Signatures
+
+Sometimes a function must accept *any* number of inputs — a logger,
+a formatter, a wrapper. `*args` collects extra positional arguments
+into a tuple; `**kwargs` collects extra keyword arguments into a
+dict.
+
+```python
+def report(title, *scores, **labels):
+    print(title, scores, labels)
+
+report("Quiz", 8, 9, 7, topic="loops", total=10)
+# Quiz (8, 9, 7) {'topic': 'loops', 'total': 10}
+```
+
+The same stars work in the *opposite* direction — unpacking:
+
+```python
+point = (3, 4)
+distance = math.hypot(*point)          # hypot(3, 4)
+config = {"sep": " | "}
+print("a", "b", **config)              # print("a", "b", sep=" | ")
+```
+
+[tip]
+Conventional parameter order: `def f(positional, default=1, *args,
+keyword_only, **kwargs)`. Anything after `*args` must be passed by
+keyword — a cheap way to force readable calls at the cost of one
+comma.
+[/tip]
+
+## 5. Scope: The LEGB Rule
+
+When a name is looked up, Python searches four scopes **in order**:
+**L**ocal (inside the current function), **E**nclosing (an outer
+function), **G**lobal (module level), **B**uilt-in (`len`, `print`).
+First hit wins — which is why an inner variable can *shadow* an
+outer one.
+
+```python
+rate = 0.9                       # Global
+
+def outer():
+    rate = 0.8                   # Enclosing
+    def inner():
+        rate = 0.7               # Local — wins the lookup
+        return rate
+    return inner()
+
+print(outer())                   # 0.7
+```
+
+Assigning to a name *creates a local variable* unless you declare
+otherwise. `global x` rebinds a module-level name; `nonlocal x`
+rebinds one in the enclosing function. Reading follows LEGB; writing
+stays local by default.
+
+[warning]
+Functions that read and write globals are hard to test and reason
+about — any caller's result depends on hidden state set elsewhere.
+Pass what a function needs as parameters and return what it
+produces; treat `global` as a code smell, not a feature.
+[/warning]
+
+## 6. Docstrings and Type Hints
+
+A **docstring** is a string literal on the first line of a function —
+stored in `__doc__`, shown by `help()`, read by editors and
+documentation tools.
+
+```python
+def moving_average(values, window):
+    """Return the average of each `window`-sized slice.
+
+    >>> moving_average([1, 2, 3, 4], 2)
+    [1.5, 2.5, 3.5]
+    """
+    return [sum(values[i:i + window]) / window
+            for i in range(len(values) - window + 1)]
+```
+
+Type hints add machine-checkable declarations:
+`def bmi(weight_kg: float, height_m: float) -> float:`. Python
+ignores them at run time, but tools such as `mypy` catch whole
+categories of bugs before the program ever runs.
+
+| Tool | Reads | Gives you |
+| --- | --- | --- |
+| Docstring | `help(f)`, IDE pop-ups, doctests | Purpose, usage, runnable examples |
+| Type hints | `mypy`, IDE completion | Checked calls, fewer type bugs |
+
+## 7. Modules and Import Strategies
+
+Any `.py` file is a **module**: `utils.py` defines module `utils`.
+`import` runs the file once and binds a namespace — imports are also
+how you reach the standard library (`math`, `json`, `random`) and
+the wider ecosystem.
+
+```python
+import math                       # math.sqrt(2)
+from datetime import date          # date.today() — direct name
+import numpy as np                 # conventional alias
+from os import path as p           # precise and aliased
+```
+
+| Style | Call looks like | Use when |
+| --- | --- | --- |
+| `import module` | `module.func()` | Default choice — origin is explicit |
+| `from module import func` | `func()` | A few well-known names |
+| `from module import *` | `func()` | Almost never — pollutes the namespace |
+| `import module as m` | `m.func()` | Community aliases (`np`, `pd`) |
+
+[important]
+`from x import *` can silently overwrite your own names with the
+module's — a bug that appears only when a name collides. Explicit
+imports keep every call site honest about where a name comes from.
+[/important]
+
+## 8. Packages and Program Composition
+
+A **package** is a directory of modules with an `__init__.py`,
+enabling dotted imports: `myapp.io.readers`. Packages are how a
+program stops being one file and becomes an architecture.
+
+@diagram tree id="package-layout" layout="tree" aria="A small project laid out as a package with core and io subpackages and tests"
+  "myapp/" -> "__init__.py"
+  "myapp/" -> "core/"
+  "myapp/" -> "io/"
+  "myapp/" -> "tests/"
+  "core/" -> "utils.py"
+  "core/" -> "models.py"
+  "io/" -> "readers.py"
+@/diagram
+
+```python
+# myapp/core/utils.py
+def clamp(value, low, high):
+    """Return value forced into the range low..high."""
+    return max(low, min(value, high))
+
+# anywhere else in the project
+from myapp.core.utils import clamp
+```
+
+Good programs follow **composition**: functions calling functions and
+objects built from other objects — small parts stacked, rather than
+deep inheritance trees or one giant `main`. Keep each module about
+one job, keep the import graph free of cycles, and guard the entry
+point with `if __name__ == "__main__":` so a module can run as a
+script *and* be imported safely.
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| DRY | One definition, many callers — fix bugs once |
+| Parameters vs arguments | Names in `def` vs values in the call |
+| `*args` / `**kwargs` | Tuple of extra positionals / dict of keyword extras |
+| LEGB | Local, Enclosing, Global, Built-in — first match wins |
+| Docstring | First-line string read by `help()` — write it always |
+| Package | Directory with `__init__.py`, imported with dots |

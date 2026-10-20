@@ -1,0 +1,205 @@
+# Permutations and Combinations: Counting Without Listing
+
+> Listing every arrangement works until the numbers grow — arrange 10
+> people and the list already has 3,628,800 lines. Permutations and
+> combinations are the counting shortcuts that answer such questions on
+> one line of arithmetic.
+
+## 1. The Multiplication Principle
+
+[definition]
+If one choice can be made in $m$ ways and, independently, a second in
+$n$ ways, the pair can be made in $m \times n$ ways. This **fundamental
+counting principle** extends to any number of independent stages.
+[/definition]
+
+[example]
+Three shirts and four trousers give $3 \times 4 = 12$ outfits. A number
+plate with 2 letters then 3 digits (repeats allowed) has
+$26 \times 26 \times 10 \times 10 \times 10 = 676{,}000$ plates — built
+stage by stage, never listed.
+[/example]
+
+## 2. Factorials: The Counting Engine
+
+The number of ways to arrange $n$ distinct objects in a row is
+$n \times (n-1) \times \cdots \times 2 \times 1$, written $n!$: pick
+the first from $n$, the second from $n-1$, and so on.
+
+| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $n!$ | 1 | 1 | 2 | 6 | 24 | 120 | 720 | 5040 |
+
+[note]
+$0! = 1$ by definition, not convention alone: exactly one way to
+arrange nothing. It is also what makes the formulas below work when
+$r = 0$ or $r = n$.
+[/note]
+
+Factorials grow violently: $10!$ already exceeds 3.5 million, which is
+why "list them all" fails so quickly.
+
+## 3. Permutations: When Order Matters
+
+A **permutation** is an arrangement of $r$ objects chosen from $n$
+distinct ones, where different orders count as different outcomes.
+
+@math label="eq:pc-npr"
+{}^{n}P_{r} = \frac{n!}{(n-r)!}
+@/math
+
+[example]
+Arrange 3 of 5 different books on a shelf:
+$^{5}P_{3} = \frac{5!}{2!} = 5 \times 4 \times 3 = 60$. A 4-digit PIN
+using distinct digits: $^{10}P_{4} = 10 \times 9 \times 8 \times 7 =
+5040$ — no listing, just shrinking stages.
+[/example]
+
+[warning]
+"Order matters" is not always obvious. ABCD and DCAB are *different*
+PINs but the *same* team chosen from four friends. Lock codes, race
+podiums, seat rows and words all care about order; committees, squads
+and handshakes do not.
+[/warning]
+
+## 4. Permutations with Identical Objects
+
+Swap two identical objects and nothing visibly changes — every distinct
+arrangement has been counted once for each ordering of the identical
+items. Divide them out:
+
+@math label="eq:pc-identical"
+\text{arrangements} = \frac{n!}{p! \; q! \; \cdots}
+@/math
+
+where $p, q, \ldots$ are the multiplicities of each repeated object.
+
+[example]
+MISSISSIPPI has 11 letters: I four times, S four times, P twice.
+Arrangements $= \frac{11!}{4! \, 4! \, 2!} = \frac{39{,}916{,}800}{1{,}152} =
+34{,}650$. Compare LEVEL (L twice, E twice): $\frac{5!}{2! \, 2!} = 30$.
+[/example]
+
+## 5. Circular Arrangements
+
+In a ring, rotating everyone produces the same seating — only *relative*
+position matters. Fix one person to kill the rotations; the remaining
+$n - 1$ people permute freely:
+
+@math label="eq:pc-circular"
+\text{circular arrangements} = (n-1)!
+@/math
+
+[example]
+Seat 5 friends around a round table: $(5-1)! = 24$ ways. If reflections
+also count as the same — a necklace of 6 beads — divide by 2:
+$\frac{(6-1)!}{2} = 60$ distinct necklaces.
+[/example]
+
+[tip]
+Circular formulas apply only when positions are *unlabelled*. At a
+table with numbered seats, rotation produces genuinely different
+seatings — so it is back to ordinary $n!$.
+[/tip]
+
+## 6. Combinations: When Order Does Not
+
+A **combination** is a selection of $r$ objects from $n$ where order is
+ignored. Every combination of $r$ items can be shuffled $r!$ ways, so
+permutations overcount by exactly that factor:
+
+@math label="eq:pc-ncr"
+{}^{n}C_{r} = \frac{n!}{r!\,(n-r)!} = \frac{{}^{n}P_{r}}{r!}
+@/math
+
+[example]
+A committee of 3 from 8 people: $^{8}C_{3} = \frac{8 \times 7 \times
+6}{3 \times 2 \times 1} = 56$. Handshakes among 10 people: a handshake
+is an *unordered pair*, so $^{10}C_{2} = 45$.
+[/example]
+
+[important]
+Symmetry saves time: $^{n}C_{r} = {}^{n}C_{n-r}$, because choosing who
+is in equals choosing who is out. $^{10}C_{8}$ is easier as $^{10}C_{2}
+= 45$, and $^{100}C_{98} = {}^{100}C_{2} = 4950$.
+[/important]
+
+@diagram tree id="pc-decision" layout="tree" aria="Decision tree for choosing the right counting formula"
+  "Counting problem" -> "Order matters: permutations"
+  "Order matters: permutations" -> "All n arranged: n!"
+  "Order matters: permutations" -> "Choose r of n: nPr"
+  "Order matters: permutations" -> "Repeated objects: divide by p! q!"
+  "Order matters: permutations" -> "Around a circle: n-1 factorial"
+  "Counting problem" -> "Order ignored: combinations"
+  "Order ignored: combinations" -> "Choose r of n: nCr"
+  "Order ignored: combinations" -> "Identical items into boxes: n+r-1 choose r-1"
+@/diagram
+
+## 7. Pascal's Triangle and Combination Identities
+
+Row $n$ of Pascal's triangle is ${}^{n}C_{0}, {}^{n}C_{1}, \ldots,
+{}^{n}C_{n}$ — each entry is the sum of the two above it, expressing
+the identity ${}^{n}C_{r} + {}^{n}C_{r-1} = {}^{n+1}C_{r}$.
+
+@chart bar title="Row 6 of Pascal's triangle: C(6, r)" labels:
+6C0
+6C1
+6C2
+6C3
+6C4
+6C5
+6C6
+
+data:
+1
+6
+15
+20
+15
+6
+1
+@/chart
+
+Two more identities worth knowing cold: ${}^{n}C_{0} = {}^{n}C_{n} = 1$
+and ${}^{n}C_{1} = n$. The row always sums to $2^n$ — the number of
+subsets of an $n$-element set, connecting straight back to set theory.
+
+## 8. Distribution Problems
+
+Handing out objects splits by whether the objects are identical:
+
+| Situation | Formula | Example |
+| --- | --- | --- |
+| $n$ distinct items, $r$ receivers | $r^n$ | 4 toys to 2 kids: $2^4 = 16$ |
+| $n$ identical items, $r$ receivers | ${}^{n+r-1}C_{r-1}$ | 7 sweets to 3 kids: $^{9}C_{2} = 36$ |
+
+The identical case counts the ways to place $r - 1$ dividers in the
+gaps between $n$ items: 7 sweets in a row and 2 dividers create three
+non-negative shares, giving ${}^{9}C_{2} = 36$ distributions.
+
+[example]
+How many ways can 5 identical chocolates go to 3 children so each gets
+at least one? Give one to each child first, then distribute the
+remaining 2 freely: ${}^{2+3-1}C_{3-1} = {}^{4}C_{2} = 6$ ways.
+[/example]
+
+[summary]
+Two questions choose the tool every time: *does order matter?* (yes —
+permutation, no — combination) and *are objects distinct?* (repeats
+divide by factorials; circles drop one object; identical handouts add
+dividers).
+[/summary]
+
+## 9. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| Arrange 3 of 5 books | $^{5}P_{3}$ | 60 |
+| 4-digit PIN, distinct digits | $^{10}P_{4}$ | 5040 |
+| MISSISSIPPI arrangements | $\frac{11!}{4!\,4!\,2!}$ | 34650 |
+| 5 people, round table | $(5-1)!$ | 24 |
+| Committee of 3 from 8 | $^{8}C_{3}$ | 56 |
+| Handshakes among 10 people | $^{10}C_{2}$ | 45 |
+| $^{10}C_{8}$ fast route | $^{10}C_{2}$ | 45 |
+| 7 identical sweets to 3 kids | $^{9}C_{2}$ | 36 |
+| Sum of row 6 of Pascal | $2^6$ | 64 |

@@ -1,0 +1,210 @@
+# Sets and Venn Diagrams: Grouping Things Precisely
+
+> A set is a collection with a sharp edge: either an object belongs or
+> it does not — there is no "sort of". Venn diagrams turn that sharpness
+> into pictures, so counting overlapping groups stops being guesswork.
+
+## 1. What Is a Set?
+
+[definition]
+A **set** is a well-defined collection of distinct objects. Each object
+is an **element** (or member), written with $\in$: if
+$A = \{2, 4, 6, 8\}$ then $4 \in A$ and $5 \notin A$.
+[/definition]
+
+"Well-defined" means membership can be decided without opinion. "The
+three best batsmen in the class" is *not* a set; "the students who
+scored above 80" is. There are two standard ways to write a set:
+
+| Style | Notation | Example |
+| --- | --- | --- |
+| Roster form | list the elements | $A = \{2, 4, 6, 8\}$ |
+| Set-builder form | state the rule | $A = \{x : x \text{ is even and } x < 10\}$ |
+
+Both describe the same collection. Order never matters and repeats
+collapse: $\{1, 2, 2, 3\}$ is just $\{1, 2, 3\}$.
+
+## 2. Types of Sets
+
+| Type | Meaning | Example |
+| --- | --- | --- |
+| Empty set $\emptyset$ | no elements | $\{x : x^2 = -1, x \text{ real}\}$ |
+| Singleton | exactly one element | $\{\text{prime between } 6 \text{ and } 8\} = \{7\}$ |
+| Finite | countable in principle | days of the week |
+| Infinite | endless | natural numbers |
+| Equal sets | exactly the same elements | $\{1,2\} = \{2,1\}$ |
+| Equivalent sets | same *number* of elements | $\{a,b\}$ and $\{5,9\}$ |
+
+Every set is a subset of itself, and $\emptyset$ is a subset of every
+set — two facts that power all the counting formulas ahead.
+
+## 3. Subsets and the Power Set
+
+[definition]
+$A$ is a **subset** of $B$ (written $A \subseteq B$) if every element
+of $A$ is also in $B$. The **power set** of $A$ is the set of *all*
+subsets of $A$.
+[/definition]
+
+A set with $n$ elements has $2^n$ subsets, because each element faces a
+binary choice: in the subset or out. For $A = \{a, b, c\}$:
+
+@math label="eq:st-power-set"
+n(A) = 3 \;\Rightarrow\; n(P(A)) = 2^3 = 8
+@/math
+
+The eight subsets: $\emptyset$; $\{a\}$, $\{b\}$, $\{c\}$;
+$\{a,b\}$, $\{a,c\}$, $\{b,c\}$; $\{a,b,c\}$. Seven are **proper**
+subsets (all except $A$ itself).
+
+[example]
+How many subsets does a 5-element set have? $2^5 = 32$ — and building
+them by hand is unnecessary. Each element doubles the options, which is
+why the count grows so fast.
+[/example]
+
+[warning]
+Distinguish a set from its elements: $\{1, 2\}$ has 2 elements, but
+$\{\{1,2\}, 3\}$ has 2 elements where one *is a set*. Likewise
+$\emptyset$ has no elements, yet $\{\emptyset\}$ has exactly one — the
+empty set itself.
+[/warning]
+
+## 4. Set Operations
+
+With a universe $U = \{1, 2, 3, 4, 5, 6\}$, take $A = \{1, 2, 3, 4\}$
+and $B = \{3, 4, 5\}$:
+
+| Operation | Symbol | Reads as | Result |
+| --- | --- | --- | --- |
+| Union | $A \cup B$ | in $A$ or $B$ (or both) | $\{1, 2, 3, 4, 5\}$ |
+| Intersection | $A \cap B$ | in both | $\{3, 4\}$ |
+| Difference | $A - B$ | in $A$, not in $B$ | $\{1, 2\}$ |
+| Complement | $A'$ | in $U$, not in $A$ | $\{5, 6\}$ |
+
+@diagram tree id="st-operations" layout="tree" aria="The four set operations and what region each selects"
+  "Operations on A and B" -> "Union A cup B: everything in either"
+  "Operations on A and B" -> "Intersection A cap B: the overlap"
+  "Operations on A and B" -> "Difference A - B: A's outer region"
+  "Operations on A and B" -> "Complement A': outside A"
+@/diagram
+
+[info]
+The universe $U$ is contextual. In a class survey $U$ is the class; in
+number theory it might be the integers. Change $U$ and complements
+change size — unions and intersections do not.
+[/info]
+
+## 5. De Morgan's Laws
+
+Complement turns "or" into "and" and vice versa — the pair of rules
+called **De Morgan's laws**:
+
+@math label="eq:st-de-morgan"
+(A \cup B)' = A' \cap B', \qquad (A \cap B)' = A' \cup B'
+@/math
+
+Verify with the sets above: $A \cup B = \{1,2,3,4,5\}$, so
+$(A \cup B)' = \{6\}$. Meanwhile $A' = \{5,6\}$ and $B' = \{1,2,6\}$,
+and indeed $A' \cap B' = \{6\}$. The second law checks out the same
+way: $(A \cap B)' = \{3\}' = \{1,2,4,5,6\}$ and
+$A' \cup B' = \{1,2,4,5,6\}$.
+
+[tip]
+In plain words: "not (A or B)" means "not A **and** not B". This is the
+logic behind "no card and no cash" — failing both is failing either.
+[/tip]
+
+## 6. Counting with Two Sets
+
+Overlaps make naive adding double-count. In a class of 40, if 25 take
+mathematics and 20 take physics, the total is *not* 45 — the 8 students
+taking both were counted twice. The inclusion–exclusion principle
+corrects it:
+
+@math label="eq:st-two-set"
+n(A \cup B) = n(A) + n(B) - n(A \cap B)
+@/math
+
+So $n(M \cup P) = 25 + 20 - 8 = 37$ take at least one subject, leaving
+$40 - 37 = 3$ taking neither. The Venn picture sorts the class into
+four regions: only M ($25 - 8 = 17$), only P ($20 - 8 = 12$), both
+(8), neither (3).
+
+[example]
+Of 60 people, 35 like tea and 28 like coffee; 12 like both. How many
+like exactly one drink? Union: $35 + 28 - 12 = 51$. Exactly one is
+"union minus both": $51 - 12 = 39$. (Only tea 23 plus only coffee 16
+confirms it.)
+[/example]
+
+## 7. Three-Set Venn Word Problems
+
+Three circles create eight regions. Fill the diagram **from the centre
+outwards** — the innermost count first. For sets $A$, $B$, $C$:
+
+@math label="eq:st-three-set"
+n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(A \cap C) - n(B \cap C) + n(A \cap B \cap C)
+@/math
+
+Worked survey: of 100 students, 45 play cricket (C), 38 football (F),
+30 hockey (H); 12 play C and F, 10 play C and H, 8 play F and H; 4 play
+all three.
+
+1. **Centre first:** all three $= 4$.
+2. **Exactly two:** $C\,F$ only $= 12 - 4 = 8$; $C\,H$ only $= 10 - 4 = 6$;
+   $F\,H$ only $= 8 - 4 = 4$.
+3. **Only one sport:** only C $= 45 - 8 - 6 - 4 = 27$; only F $=
+   38 - 8 - 4 - 4 = 22$; only H $= 30 - 6 - 4 - 4 = 16$.
+4. **Union:** $27 + 22 + 16 + 8 + 6 + 4 + 4 = 87$.
+5. **Neither:** $100 - 87 = 13$.
+
+[tip]
+Start every three-set problem at the centre (all three), subtract
+outwards, and finish with a full-region total check against the given
+population. If the regions do not sum to the total, a number went in
+twice.
+[/tip]
+
+## 8. Reading the Regions
+
+The survey above, region by region — the "exactly two" bar is easy to
+underestimate because each of its pieces is small:
+
+@chart bar title="100 students by Venn region" labels:
+Only cricket
+Only football
+Only hockey
+Exactly two
+All three
+Neither
+
+data:
+27
+22
+16
+18
+4
+13
+@/chart
+
+[important]
+"At least two sports" $= 18 + 4 = 22$; "exactly two" $= 18$. The phrase
+*at least* always pulls the all-three region back into the count —
+misreading it is the most common mark-loser in Venn problems.
+[/important]
+
+## 9. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| Subsets of an $n$-element set | power-set rule | $2^n$ |
+| Proper subsets of $\{a,b,c\}$ | exclude the set itself | 7 |
+| $A = \{1,2,3,4\}$, $B = \{3,4,5\}$: $A - B$ | difference | $\{1, 2\}$ |
+| $(A \cup B)'$ | De Morgan | $A' \cap B'$ |
+| Two-set union | add, subtract overlap | $n(A)+n(B)-n(A \cap B)$ |
+| Class 40: 25 M, 20 P, 8 both | inclusion–exclusion | 37 take at least one |
+| Neither subject | total minus union | 3 |
+| Three-set union | subtract pairs, add centre | full formula in section 7 |
+| Survey of 100: neither sport | regions sum to 87 | 13 |
+| "At least two" of 18 + 4 | include the centre | 22 |

@@ -1,0 +1,76 @@
+{
+  "lessonId": "lpg-reforms-of-1991",
+  "title": "The LPG Reforms of 1991: Liberalisation, Privatisation, and Globalisation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "At the trough of the 1991 crisis, India's foreign exchange reserves stood at about:",
+      "options": ["US$12 billion", "US$5 billion", "US$1.2 billion", "US$50 billion"],
+      "correct": 2,
+      "rationale": "Reserves fell to roughly US$1.2 billion in mid-1991 — barely two to three weeks of imports — which is why gold was airlifted abroad as collateral."
+    },
+    {
+      "id": 2,
+      "question": "During the 1991 crisis, India pledged about 67 tonnes of gold mainly to:",
+      "options": ["The World Bank and IDA", "The Union Bank of Switzerland and the Bank of England", "The IMF and ADB", "The Federal Reserve Bank of New York"],
+      "correct": 1,
+      "rationale": "About 20 tonnes went to the Union Bank of Switzerland and about 47 tonnes to the Bank of England, raising roughly US$400 million for debt service."
+    },
+    {
+      "id": 3,
+      "question": "The New Economic Policy was announced on:",
+      "options": ["15 August 1990", "24 July 1991", "1 January 1992", "1 June 1991"],
+      "correct": 1,
+      "rationale": "The Industrial Policy Statement of 24 July 1991, under PM Narasimha Rao and FM Manmohan Singh, launched the LPG package after the IMF stand-by arrangement."
+    },
+    {
+      "id": 4,
+      "question": "The 1991 industrial delicensing exempted licensing for all industries except:",
+      "options": ["18 specified industries", "5 specified industries", "35 specified industries", "All industries without exception"],
+      "correct": 0,
+      "rationale": "Licensing was abolished for all but 18 industries, a list later cut to 15 and then 9; today only a handful of strategic lines still require licences."
+    },
+    {
+      "id": 5,
+      "question": "The twin rupee devaluations of 1 and 3 July 1991 amounted to a combined depreciation of roughly:",
+      "options": ["9 per cent", "11 per cent", "18-19 per cent", "36.5 per cent"],
+      "correct": 2,
+      "rationale": "About 9% on 1 July plus about 11% on 3 July compounded to roughly 18-19%, because the second step applied to the already-devalued rate. (The 36.5% devaluation was in June 1966.)"
+    },
+    {
+      "id": 6,
+      "question": "The rupee became convertible on the current account in:",
+      "options": ["July 1991", "March 1993", "August 1994", "January 2000"],
+      "correct": 2,
+      "rationale": "India accepted IMF Article VIII obligations in August 1994 for current-account convertibility; capital-account convertibility was deliberately withheld after the Tarapore Committee's advice."
+    },
+    {
+      "id": 7,
+      "question": "Which sequence of reform milestones is chronologically correct?",
+      "options": ["WTO membership 1995 — SEBI Act 1992 — current account convertibility 1994", "SEBI Act 1992 — current account convertibility 1994 — WTO membership 1995", "Current account convertibility 1994 — SEBI Act 1992 — WTO 1995", "SEBI Act 1992 — WTO 1995 — current account 1994"],
+      "correct": 1,
+      "rationale": "SEBI's statutory Act came in 1992, the NSE followed in 1994 along with current-account convertibility, and India signed the WTO agreement in 1994 with effect from 1995."
+    },
+    {
+      "id": 8,
+      "question": "The Narasimham Committee (1991) is associated with reform of:",
+      "options": ["The tax system", "The banking and financial sector", "Public sector disinvestment", "Foreign trade policy"],
+      "correct": 1,
+      "rationale": "It recommended lowering pre-emptions — CRR fell from about 15% to single digits, SLR from 38.5% to 25% — plus interest-rate deregulation; tax reform was the Chelliah Committee's brief."
+    },
+    {
+      "id": 9,
+      "question": "Disinvestment in India began in 1991-92 with the sale of:",
+      "options": ["Majority control of 40 PSUs", "Minority stakes of about 8-10% in about 40 PSUs", "Only loss-making PSUs to workers' cooperatives", "All Maharatna companies"],
+      "correct": 1,
+      "rationale": "The first phase diluted 8-10% of equity in about 40 PSUs to institutions, raising roughly ₹3,000 crore over two years, without transferring management control."
+    },
+    {
+      "id": 10,
+      "question": "On the Tendulkar poverty line, India's poverty ratio fell from about 45% in 1993-94 to:",
+      "options": ["About 38% in 2004-05", "About 30% in 2009-10", "About 22% in 2011-12", "About 10% in 2011-12"],
+      "correct": 2,
+      "rationale": "The Tendulkar estimates show poverty at roughly 45% (1993-94) and 22% (2011-12) — the sharpest decline in Indian history, coinciding with post-reform growth."
+    }
+  ]
+}

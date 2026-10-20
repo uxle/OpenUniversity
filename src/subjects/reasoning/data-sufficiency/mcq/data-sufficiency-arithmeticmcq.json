@@ -1,0 +1,126 @@
+{
+  "lessonId": "data-sufficiency-arithmetic",
+  "title": "Data Sufficiency in Arithmetic",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the value of x? I. 2x + 3 = 17. II. x squared = 49.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "Statement I is linear in one unknown and gives x = 7 uniquely. Statement II gives x = 7 or x = -7, so two values survive and it is insufficient."
+    },
+    {
+      "id": 2,
+      "question": "What is Meena's present age? I. Meena's age is one-fourth of her father's age. II. Her father is 48 years old.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 3,
+      "rationale": "Statement I is a relation with no anchor and II gives only the father's age. Together they give Meena = 48/4 = 12, so both are needed."
+    },
+    {
+      "id": 3,
+      "question": "What is the son's present age? I. The son's age is one-third of his father's, and the father is 45. II. Five years ago the son was one-fourth of his father's age, and the father is 45.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I gives 45/3 = 15. Statement II gives S - 5 = 40/4 = 10, so S = 15. Two complete routes to the same age make each statement sufficient alone."
+    },
+    {
+      "id": 4,
+      "question": "What is the speed of the bus? I. The bus is twice as fast as a cyclist. II. The cyclist covers 30 km in one hour.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 1,
+      "rationale": "Statement I is a relative claim with no anchor. Statement II fixes the cyclist at 30 km/h, so the bus is 60 km/h — sufficient alone without statement I."
+    },
+    {
+      "id": 5,
+      "question": "How many red balls are in the bag? I. The bag holds 60 balls in all, and red : blue is 2 : 3. II. The blue balls are 50% more numerous than the red balls.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "A ratio plus a total fixes the parts: red = (2/5) x 60 = 24. Statement II is one equation (B = 1.5R) in two unknowns with no total, so it cannot suffice alone."
+    },
+    {
+      "id": 6,
+      "question": "What was the selling price of the article? I. The discount given was Rs 100, which was 10% of the marked price. II. The profit was 20% on a cost price of Rs 750.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Statement I: marked price 1000 minus discount 100 gives SP = Rs 900. Statement II: 750 x 1.2 = Rs 900. Both routes land on the same price, so either alone suffices."
+    },
+    {
+      "id": 7,
+      "question": "What is the speed of the train? I. It crosses a pole in 12 seconds. II. It crosses a 240-metre-long platform in 24 seconds.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 3,
+      "rationale": "Each statement alone introduces the train's length as a second unknown (v = L/12 and L + 240 = 24v). Together: L = 12v gives 12v + 240 = 24v, so v = 20 m/s."
+    },
+    {
+      "id": 8,
+      "question": "What is the value of x? I. x + y = 12 and x - y = 4. II. xy = 32.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 0,
+      "rationale": "One statement can carry two equations: statement I holds a pair that solves to x = 8 and y = 4. Statement II alone is one equation in two unknowns, so it is insufficient."
+    },
+    {
+      "id": 9,
+      "question": "What is the distance between A and B? I. A car covers it in 4 hours at 45 km/h. II. A bus covers it in 3 hours at 60 km/h.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Both statements together are needed, but neither alone"
+      ],
+      "correct": 2,
+      "rationale": "Each statement gives two of the three quantities: 4 x 45 = 180 km and 3 x 60 = 180 km. Either completes distance = speed x time, so either alone suffices."
+    },
+    {
+      "id": 10,
+      "question": "What is the speed of the train? I. The train is 240 metres long. II. The train crosses a platform in 30 seconds.",
+      "options": [
+        "Statement I alone is sufficient, but statement II alone is not",
+        "Statement II alone is sufficient, but statement I alone is not",
+        "Either statement alone is sufficient",
+        "Neither statement is sufficient even together"
+      ],
+      "correct": 3,
+      "rationale": "Crossing a platform takes (train length + platform length)/speed. Even merged, the platform's length is never given, so speed = (240 + P)/30 stays undetermined."
+    }
+  ]
+}

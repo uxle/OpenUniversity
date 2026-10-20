@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport-fit=cover is REQUIRED for every env(safe-area-inset-*) rule
+       in the CSS to return non-zero values on notched/rounded phones —
+       without it the bottom nav's safe-area padding silently no-ops and
+       nav controls sit under the iOS home indicator in landscape/PWA. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
   <title>OpenKnowledge — knowledge is everyone's right</title>
   <meta name="description" content="OpenKnowledge: an open-source, text-first knowledge base. Free lessons, quizzes, translations, and progress tracking.">
@@ -25,6 +29,10 @@
 
   <!-- Preload main stylesheet for faster first paint -->
   <link rel="preload" href="src/styles/main.bundle.css" as="style">
+  <!-- Preload the self-hosted FA solid subset (few KB) so icons never
+       flash as tofu on first paint. crossorigin is REQUIRED even for
+       same-origin fonts (font fetches are always CORS-mode). -->
+  <link rel="preload" href="public/fonts/fa-solid-900.min.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Preload bootstrap module so the browser fetches it early -->
   <link rel="modulepreload" href="./src/app/bootstrap.js">
 
@@ -33,8 +41,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="public/icons/icon-180.png">
   <link rel="manifest" href="public/manifest.json">
 
-  <!-- Icons are inline SVG (src/utils/icons.js) — no icon font, no CDN,
-       no flash of missing glyphs, works fully offline. -->
+  <!-- Icons are Font Awesome 6 Free SOLID, self-hosted and subsetted to
+       the glyphs this app uses (public/fonts/fa-solid-900.min.woff2, a
+       few KB — see tools/build-icon-font.py). No icon-font CDN, no flash
+       of missing glyphs, works fully offline; names live in
+       src/utils/icons.js and reach the DOM via src/utils/icon.js as
+       <i class="fa-solid fa-…">. -->
 
   <!-- src/engines/zolto/zolto-engine.js imports the real, vendored
        `zolto` package (src/engines/zolto/vendor/zolto/) — no bare
@@ -66,9 +78,9 @@
           margin: 4rem auto;
         ">
           <div style="
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-          ">⚠️</div>
+            width: 2.5rem; height: 2.5rem;
+            margin: 0 auto 1rem;
+          "><svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
           <h1 style="
             font-size: 1.375rem;
             font-weight: 700;

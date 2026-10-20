@@ -1,0 +1,198 @@
+# Cryptography: Keeping Secrets in Public
+
+> Cryptography lets two people who have never met exchange secrets
+> over a wire tapped by strangers. This lesson covers symmetric and
+> asymmetric ciphers, hashing, signatures, and the TLS handshake.
+
+## 1. Plaintext, Ciphertext, and Kerckhoffs's Principle
+
+**Encryption** transforms readable **plaintext** into scrambled
+**ciphertext** using an algorithm and a **key**; **decryption** runs
+the reverse. The algorithm is public knowledge — the secrecy lives
+entirely in the key.
+
+[definition]
+Kerckhoffs's principle: a cryptosystem should remain secure even if
+everything about it, except the key, is public. Security by secrecy
+of the algorithm fails the moment the code leaks; security by key
+secrecy survives publication.
+[/definition]
+
+[warning]
+Never invent your own cipher. Amateur "secret algorithms" are broken
+in minutes; modern schemes like AES have survived decades of public
+attack precisely because they are published and scrutinised.
+[/warning]
+
+## 2. Symmetric Encryption: One Shared Key
+
+In symmetric cryptography both sides hold the **same secret key**:
+one key encrypts and decrypts. The workhorse standard is **AES** (the
+Advanced Encryption Standard), defined for key sizes of 128, 192, and
+256 bits, and fast enough to encrypt disk and network traffic in real
+time. Its predecessor **DES** (56-bit key) and triple-DES are
+retired — brute force caught up with them.
+
+| Property | Detail |
+| --- | --- |
+| Keys | one shared secret key |
+| Speed | very fast; hardware-accelerated |
+| Best at | bulk data — files, disks, session traffic |
+| Hard problem | how do two strangers share the key secretly? |
+| Standards | AES (128/192/256-bit), ChaCha20 |
+
+The shared-key problem is the reason asymmetric cryptography exists:
+you cannot whisper the key across the internet without someone
+listening.
+
+## 3. Asymmetric Encryption: Public and Private Keys
+
+Asymmetric (public-key) cryptography uses a **key pair**: a public
+key you can post on a billboard and a private key you never share.
+Whatever one key locks, only its partner unlocks.
+
+@diagram tree id="crypto-family-tree" layout="tree" aria="Modern cryptography families from symmetric ciphers to hashing and signatures"
+  "Modern cryptography" -> "Symmetric — AES, ChaCha20"
+  "Modern cryptography" -> "Asymmetric — RSA, ECC, Diffie-Hellman"
+  "Modern cryptography" -> "Hashing — SHA-256, SHA-3"
+  "Asymmetric — RSA, ECC, Diffie-Hellman" -> "Digital signatures"
+  "Asymmetric — RSA, ECC, Diffie-Hellman" -> "Certificates and TLS"
+@/diagram
+
+| Property | Symmetric (AES) | Asymmetric (RSA, ECC) |
+| --- | --- | --- |
+| Keys | one shared secret | public and private pair |
+| Relative speed | fast | hundreds of times slower |
+| Solves | bulk confidentiality | key exchange, signatures |
+| Key size for similar strength | 128 bits | RSA 3072 bits, ECC 256 bits |
+
+**RSA** draws its strength from the difficulty of factoring the
+product of two huge primes; **ECC** (elliptic-curve cryptography)
+achieves similar strength with far shorter keys. Both are too slow
+for bulk data, so real systems use them only for the essentials.
+
+## 4. Key Exchange: Strangers Agreeing in the Open
+
+The **Diffie–Hellman key exchange** solves the shared-key problem.
+Each party publishes a public value, keeps a secret value, and both
+compute the same shared number — yet an eavesdropper who sees every
+public message still cannot compute it. The modern variant uses
+elliptic curves (ECDHE) for speed and forward secrecy.
+
+Real protocols are **hybrid**: asymmetric cryptography negotiates a
+fresh *session key*, then fast symmetric AES encrypts the actual
+conversation. That is exactly what TLS does on every HTTPS page.
+
+[tip]
+Exam shorthand: asymmetric for the handshake, symmetric for the
+conversation. If a question mixes "RSA" with "bulk data", the answer
+is hybrid encryption, not RSA alone.
+[/tip]
+
+## 5. Hashing Is Not Encryption
+
+A **cryptographic hash function** (SHA-256, SHA-3) digests any input
+into a fixed-length fingerprint. Hashing is one-way: you cannot
+decrypt a hash, and any change to the input produces a completely
+different digest.
+
+| Property | Encryption | Hashing |
+| --- | --- | --- |
+| Reversible? | yes, with the key | no — one-way |
+| Output size | roughly input size | fixed length |
+| Purpose | confidentiality | integrity, fingerprints, password storage |
+| Examples | AES, ChaCha20, RSA | SHA-256, SHA-3 |
+
+[important]
+Systems never store your password — they store its hash with a random
+**salt**. The salt defeats precomputed rainbow tables, and slow
+purpose-built hashes (bcrypt, scrypt, Argon2) make offline guessing
+expensive. Plain fast hashes like MD5 or SHA-1 are considered broken
+for this purpose, mainly because collision attacks on them are now
+practical.
+[/important]
+
+## 6. Digital Signatures
+
+A digital signature inverts everyday encryption: the signer encrypts
+a document's hash with their **private** key, and anyone verifies it
+with the signer's **public** key. Verification answers three
+questions at once — did the document change (integrity), is it really
+from the claimed sender (authentication), and can the sender deny it
+later (non-repudiation)?
+
+[example]
+A software vendor signs an installer. Your OS downloads the file,
+verifies the signature against the vendor's public key, and warns you
+if even one byte was altered in transit or by an attacker.
+[/example]
+
+Note the direction carefully: to *sign*, use your own private key; to
+*send secretly to someone*, use their public key. Swapping these is a
+classic exam trap.
+
+## 7. Certificates and the HTTPS Handshake
+
+A **digital certificate** is a signed document binding a domain name
+to a public key, issued by a **Certificate Authority (CA)** that
+browsers already trust. The browser checks the chain: root CA, then
+intermediate, then the site certificate — plus validity dates and the
+hostname match.
+
+@diagram flowchart id="tls-handshake" layout="hierarchical" aria="Simplified TLS handshake from ClientHello to encrypted session"
+node hello label="ClientHello: supported ciphers, random values" shape="pill"
+node cert label="ServerHello and certificate" shape="round-rect"
+node verify label="Chain valid and hostname matches?" shape="diamond"
+node alert label="Browser shows security warning" shape="round-rect"
+node exchange label="ECDHE key agreement produces session key" shape="round-rect"
+node secure label="AES-encrypted application data flows" shape="pill"
+
+hello -> cert
+cert -> verify
+verify -> alert label="no"
+verify -> exchange label="yes"
+exchange -> secure
+@/diagram
+
+The padlock therefore means two things: traffic is encrypted, and the
+server's identity was vouched for by a chain ending at a trusted root
+CA. A self-signed or mismatched certificate breaks the chain — which
+is why browsers shout.
+
+## 8. Strength, Key Sizes, and the Future
+
+Strength is about how long brute force would take. Each extra bit
+doubles the search space, so symmetric keys grow one bit at a time
+while RSA keys must grow far faster to stay equal.
+
+@chart bar title="Comparable key lengths for similar security (bits)" labels:
+Symmetric AES
+Elliptic curve ECC
+RSA
+
+data:
+128
+256
+3072
+@/chart
+
+On the horizon, **quantum computers** threaten RSA and ECC by
+factoring and solving discrete logarithms quickly; cryptographers are
+standardising **post-quantum** algorithms whose hardness survives
+quantum attack. Symmetric AES-256 and hash functions are considered
+far more resilient — just needing longer output sizes.
+
+## 9. Quick Revision
+
+| Concept | Remember this |
+| --- | --- |
+| Kerckhoffs's principle | secrecy lives in the key, not the algorithm |
+| AES | symmetric, 128/192/256-bit, fast bulk encryption |
+| RSA and ECC | asymmetric; factoring and elliptic-curve hardness |
+| Hybrid TLS | asymmetric handshake, symmetric session |
+| Diffie–Hellman | strangers derive a shared secret in the open |
+| Hash vs encryption | one-way fingerprint vs reversible with key |
+| Salt plus slow hash | how passwords should be stored |
+| Digital signature | private key signs, public key verifies |
+| Certificate | CA-signed binding of domain to public key |
+| Quantum threat | endangers RSA/ECC, not AES-256 |

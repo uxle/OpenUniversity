@@ -1,0 +1,317 @@
+# SQL Fundamentals: Selecting, Filtering, and Joining
+
+> SQL is the one language every relational database speaks. This
+> lesson walks through SELECT, WHERE, ORDER BY, aggregates, and the
+> JOIN family using three tiny tables you can hold in your head — and
+> check every result row by hand.
+
+## 1. One Language, Five Jobs
+
+[definition]
+SQL (Structured Query Language) is the standard language of relational
+databases, divided by purpose into sublanguages: DDL defines
+structures, DML changes data, DQL queries it, DCL controls access, and
+TCL manages transactions.
+[/definition]
+
+@diagram tree id="sql-sublanguages" layout="tree" aria="SQL sublanguages and their commands"
+  SQL -> "DDL: define"
+  SQL -> "DML: change"
+  SQL -> "DQL: query"
+  SQL -> "DCL: guard"
+  SQL -> "TCL: transact"
+  "DDL: define" -> "CREATE, ALTER, DROP"
+  "DML: change" -> "INSERT, UPDATE, DELETE"
+  "DQL: query" -> SELECT
+  "DCL: guard" -> "GRANT, REVOKE"
+  "TCL: transact" -> "COMMIT, ROLLBACK"
+@/diagram
+
+A SELECT statement has a fixed clause order — and, famously, a
+different *logical evaluation* order:
+
+| Written order | Clause | Job | Evaluated |
+| --- | --- | --- | --- |
+| 1 | SELECT | choose output columns | 5th |
+| 2 | FROM | name the source tables | 1st |
+| 3 | WHERE | filter rows | 2nd |
+| 4 | GROUP BY | form groups | 3rd |
+| 5 | HAVING | filter groups | 4th |
+| 6 | ORDER BY | sort the result | 6th |
+| 7 | LIMIT | keep the first few rows | 7th |
+
+## 2. The Running Example: Three Small Tables
+
+Everything below runs against these tables; every claimed result can
+be verified by eye.
+
+**student** — five rows:
+
+| student_id | name | city | year |
+| --- | --- | --- | --- |
+| 1 | Aisha | Delhi | 2 |
+| 2 | Boris | Mumbai | 1 |
+| 3 | Chen | Delhi | 3 |
+| 4 | Divya | Chennai | 2 |
+| 5 | Eshan | Chennai | 1 |
+
+**course** — four rows:
+
+| course_id | title | credits |
+| --- | --- | --- |
+| C1 | Databases | 4 |
+| C2 | Networks | 3 |
+| C3 | AI | 4 |
+| C4 | Compilers | 3 |
+
+**enrolment** — five rows:
+
+| student_id | course_id | grade |
+| --- | --- | --- |
+| 1 | C1 | A |
+| 1 | C2 | B |
+| 2 | C1 | B |
+| 3 | C1 | A |
+| 4 | C3 | B |
+
+[note]
+Two deliberate gaps power the join examples later: Eshan is enrolled
+in nothing, and Compilers (C4) has no students. Watch what each join
+does with them.
+[/note]
+
+## 3. SELECT: Choosing Columns
+
+Projection picks *columns* from a table:
+
+```sql
+SELECT name, city FROM student;
+
+SELECT DISTINCT city FROM student;      -- Delhi, Mumbai, Chennai
+
+SELECT name AS student_name,
+       year  AS batch                   -- rename output headers
+FROM student;
+```
+
+SELECT can also compute: `SELECT name, year + 1 AS next_year FROM
+student;` produces a derived column without storing anything new.
+DISTINCT collapses duplicates — with five students in three cities it
+returns three rows, because it answers "which cities exist" rather
+than "who lives where".
+
+## 4. WHERE: Choosing Rows
+
+| Operator | Meaning | Example |
+| --- | --- | --- |
+| =, <>, <, >, <=, >= | comparison | year >= 2 |
+| BETWEEN ... AND | inclusive range | credits BETWEEN 3 AND 4 |
+| IN (...) | membership in a list | city IN ('Delhi', 'Mumbai') |
+| LIKE | pattern match; % = any run, _ = one char | name LIKE 'A%' |
+| IS NULL | test for missing value | city IS NULL |
+| AND, OR, NOT | combine predicates | year = 2 AND city = 'Delhi' |
+
+```sql
+SELECT name FROM student
+WHERE year = 2
+  AND (city = 'Delhi' OR city = 'Mumbai');    -- Aisha
+
+SELECT title FROM course
+WHERE title LIKE '%s';                        -- Databases, Networks
+
+SELECT name FROM student
+WHERE city IS NULL;                           -- nobody here
+```
+
+[warning]
+Never write `city = NULL`. Comparisons with NULL yield *unknown*, not
+true, so the row is filtered out — the only correct test is IS NULL.
+Likewise `NOT IN` with a NULL in the list makes every row fail, a
+classic silent-wrong-answer bug.
+[/warning]
+
+## 5. ORDER BY, LIMIT, and the Behaviour of NULLs
+
+```sql
+SELECT name, city, year FROM student
+ORDER BY city ASC, year DESC;
+-- Chennai: Divya(2), Eshan(1); Delhi: Chen(3), Aisha(2); Mumbai: Boris
+
+SELECT name, year FROM student
+ORDER BY year DESC
+LIMIT 2 OFFSET 1;         -- skip the top student, keep the next two
+```
+
+Multiple sort keys apply left to right: ties in city are broken by
+year descending. LIMIT plus OFFSET is the backbone of pagination,
+though deep offsets get slow because the engine still has to produce
+and discard the skipped rows.
+
+NULLs sort position is engine-specific — PostgreSQL puts them last
+ascending by default, MySQL first — so order-critical queries say
+`NULLS LAST` (or equivalent) explicitly.
+
+## 6. Aggregates, GROUP BY, and HAVING
+
+Aggregate functions collapse many rows into one value: COUNT, SUM,
+AVG, MIN, MAX.
+
+```sql
+SELECT COUNT(*)        AS total,
+       COUNT(DISTINCT city) AS cities,
+       MIN(year)       AS youngest_batch
+FROM student;
+-- 5, 3, 1
+```
+
+GROUP BY partitions rows into buckets and aggregates per bucket.
+Walk it in three steps for `SELECT city, COUNT(*) AS students FROM
+student GROUP BY city;`:
+
+1. Partition the five rows: Delhi gets Aisha and Chen, Mumbai gets
+   Boris, Chennai gets Divya and Eshan.
+2. Collapse each bucket to one row.
+3. Output: Delhi 2, Mumbai 1, Chennai 2.
+
+WHERE filters *rows before* grouping; HAVING filters *groups after*:
+
+```sql
+SELECT city, COUNT(*) AS students
+FROM student
+WHERE year >= 2          -- drops Boris and Eshan
+GROUP BY city
+HAVING COUNT(*) >= 2;    -- keeps Delhi only
+```
+
+[warning]
+Two classic errors: putting a column in SELECT that is neither grouped
+nor aggregated (`SELECT city, name, COUNT(*) ...` fails), and writing
+`WHERE COUNT(*) >= 2` — aggregates are not allowed in WHERE; use
+HAVING. Remember: COUNT(*) counts rows, COUNT(col) skips NULLs in that
+column.
+[/warning]
+
+## 7. JOINs: Putting Tables Back Together
+
+Normalisation splits tables to remove redundancy; joins recombine them
+at query time. All joins pair rows across a shared key:
+
+```sql
+SELECT s.name, e.course_id, e.grade
+FROM student s
+INNER JOIN enrolment e ON s.student_id = e.student_id;
+-- Aisha C1 A; Aisha C2 B; Boris C1 B; Chen C1 A; Divya C3 B
+```
+
+An INNER JOIN keeps only matched pairs. Outer joins keep unmatched
+rows too, padded with NULLs — this is where Eshan and Compilers
+reappear:
+
+```sql
+SELECT s.name, e.course_id
+FROM student s
+LEFT JOIN enrolment e ON s.student_id = e.student_id;
+-- the five pairs above, plus: Eshan NULL
+```
+
+Which join to reach for is a two-question decision:
+
+@diagram flowchart id="which-join" layout="hierarchical" aria="Deciding between join types"
+node start label="Two tables share a key" shape="pill"
+node d1 label="Keep left rows with no match?" shape="diamond"
+node d2 label="Keep right rows with no match?" shape="diamond"
+node inner label="INNER JOIN" shape="round-rect"
+node left label="LEFT JOIN" shape="round-rect"
+node full label="FULL OUTER JOIN" shape="round-rect"
+
+start -> d1
+d1 -> d2 label="no"
+d1 -> left label="yes"
+d2 -> inner label="no"
+d2 -> full label="yes"
+@/diagram
+
+Counting result rows on the sample data makes the differences vivid:
+
+@chart bar title="Rows returned by each join on the sample data" labels:
+INNER
+LEFT (student to enrolment)
+RIGHT (student to enrolment)
+FULL OUTER
+CROSS
+
+data:
+5
+6
+5
+6
+20
+@/chart
+
+[tip]
+A CROSS JOIN (no ON condition) pairs every row with every row — 5
+students times 4 courses is 20 rows. Forgetting your ON clause
+silently turns an inner join into a cross join; a 5-row answer
+suddenly becoming 20 is the tell-tale symptom.
+[/tip]
+
+A table can join to itself — find pairs of students sharing a city:
+
+```sql
+SELECT a.name, b.name
+FROM student a
+JOIN student b
+  ON a.city = b.city AND a.student_id < b.student_id;
+-- Aisha + Chen (Delhi), Divya + Eshan (Chennai)
+```
+
+## 8. Subqueries, Set Operations, and Style
+
+A subquery is a query nested inside another — most often inside WHERE:
+
+```sql
+SELECT name FROM student
+WHERE student_id IN (SELECT student_id
+                     FROM enrolment
+                     WHERE course_id = 'C1');   -- Aisha, Boris, Chen
+
+SELECT title, credits FROM course
+WHERE credits > (SELECT AVG(credits) FROM course);  -- above 3.5
+```
+
+Set operations combine whole results, not rows: UNION (merge, distinct),
+UNION ALL (merge, keep duplicates — faster), INTERSECT, and EXCEPT
+(rows in the first but not the second). Both sides must return the
+same number of compatible columns.
+
+[important]
+Three habits prevent most beginner SQL bugs: qualify every column
+with its table alias when more than one table is involved; test every
+predicate against NULL behaviour, not just the happy path; and when a
+row count surprises you, re-derive it by hand on a small table — the
+sample data above exists precisely for that.
+[/important]
+
+## 9. Quick Revision
+
+| Concept | One-line recap |
+| --- | --- |
+| Clause order | SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT |
+| Evaluation order | FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY |
+| DISTINCT | collapse duplicate output rows |
+| WHERE vs HAVING | filter rows before grouping; filter groups after |
+| Aggregates | COUNT(*) counts rows, COUNT(col) skips NULLs |
+| INNER JOIN | matched pairs only |
+| LEFT JOIN | plus unmatched left rows padded with NULLs |
+| CROSS JOIN | every pair; usually an accidental missing ON |
+| Set operations | UNION, UNION ALL, INTERSECT, EXCEPT |
+| NULL rules | IS NULL to test; beware NOT IN with NULLs |
+
+[summary]
+SELECT projects columns, WHERE filters rows, GROUP BY plus aggregates
+summarise buckets, and HAVING filters those buckets — evaluated FROM
+first, SELECT late. Joins rebuild relationships: INNER keeps matches,
+LEFT and RIGHT keep one side's strays, FULL keeps both, CROSS pairs
+everything. Subqueries and set operations compose results, and the
+fastest debugger is a five-row sample table checked by hand.
+[/summary]

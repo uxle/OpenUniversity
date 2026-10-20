@@ -1,0 +1,76 @@
+{
+  "lessonId": "phrasal_verbs_and_collocations",
+  "title": "Phrasal Verbs and Collocations",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the sentence 'The plane took off at dawn', the phrasal verb 'took off' means:",
+      "options": ["left the ground (began to fly)", "removed the clothing", "rejected the offer", "started a new hobby"],
+      "correct": 0,
+      "rationale": "Intransitive 'take off' means to rise from the ground or begin a flight; the remove/hobby senses appear in 'take off a coat' and 'take up a hobby'."
+    },
+    {
+      "id": 2,
+      "question": "Which of these phrasal verbs is inseparable, so that 'the baby after look' style splitting is impossible?",
+      "options": ["call off", "turn off", "look after", "give up"],
+      "correct": 2,
+      "rationale": "'Look after' is an inseparable transitive verb: the object must follow the whole phrase ('look after the baby'), never split it."
+    },
+    {
+      "id": 3,
+      "question": "With a separable phrasal verb, a pronoun object must:",
+      "options": ["come after the particle", "go between the verb and the particle", "be dropped entirely", "change into a noun"],
+      "correct": 1,
+      "rationale": "The pronoun test: 'turn it off' is correct, 'turn off it' is wrong — pronouns sit inside separable phrasal verbs."
+    },
+    {
+      "id": 4,
+      "question": "Choose the correct completion: 'I look forward to ____ you.'",
+      "options": ["meet", "have met", "met", "meeting"],
+      "correct": 3,
+      "rationale": "In 'look forward to', the 'to' is a preposition, and prepositions take the gerund: 'look forward to meeting you'."
+    },
+    {
+      "id": 5,
+      "question": "Which is the correct natural collocation?",
+      "options": ["heavy rain", "strong rain", "powerful rain", "thick rain"],
+      "correct": 0,
+      "rationale": "Rain collocates with 'heavy'; 'strong' pairs with tea, wind, or coffee. The wrong partner sounds non-native even when grammatical."
+    },
+    {
+      "id": 6,
+      "question": "Fill in: 'We must ____ a decision before Friday.'",
+      "options": ["do", "make", "perform", "give"],
+      "correct": 1,
+      "rationale": "'Make a decision' is the fixed collocation; 'do' covers activities (do homework, do a favour), while 'make' covers results."
+    },
+    {
+      "id": 7,
+      "question": "Choose the correct collocation: 'He was ____ asleep when the phone rang.'",
+      "options": ["quick", "soon", "fast", "speed"],
+      "correct": 2,
+      "rationale": "'Fast asleep' is the fixed adjective-noun/adverb-adjective collocation; 'quick' or 'soon asleep' are not English."
+    },
+    {
+      "id": 8,
+      "question": "The three-word phrasal verb 'run out of' means:",
+      "options": ["to exhaust the supply of", "to escape punishment", "to tolerate patiently", "to admire greatly"],
+      "correct": 0,
+      "rationale": "'Run out of time/patience/petrol' = to use up the whole supply. Tolerate is 'put up with'; escape penalty is 'get away with'."
+    },
+    {
+      "id": 9,
+      "question": "Choose the correct option: 'The meeting was ____ owing to the strike.'",
+      "options": ["called on", "called off", "called for", "called up"],
+      "correct": 1,
+      "rationale": "'Call off' means cancel. 'Call on' = visit, 'call for' = demand, 'call up' = telephone — none fits the sense."
+    },
+    {
+      "id": 10,
+      "question": "In formal writing, the single-word formal equivalent of the phrasal verb 'put off' is:",
+      "options": ["cancel", "reject", "deny", "postpone"],
+      "correct": 3,
+      "rationale": "'Put off' = postpone to a later time; phrasal verbs are informal, and formal registers prefer the Latinate single word."
+    }
+  ]
+}

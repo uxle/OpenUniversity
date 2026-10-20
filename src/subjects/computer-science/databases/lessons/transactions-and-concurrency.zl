@@ -1,0 +1,288 @@
+# Transactions and Concurrency: ACID, Locks, and Isolation
+
+> A bank transfer touches two accounts; a crash halfway must leave no
+> trace. This lesson covers the transaction — the unit of correctness
+> — and how a DBMS delivers ACID while letting hundreds of users work
+> at the same moment without trampling each other.
+
+## 1. The Transaction Idea
+
+[definition]
+A **transaction** is a logical unit of work — one or more statements
+treated as all-or-nothing. Either every change it makes is applied and
+made permanent, or none of them is. SQL delimits it with BEGIN,
+COMMIT, and ROLLBACK.
+[/definition]
+
+The canonical example: move 100 from account A to account B. Two
+updates must succeed together or fail together:
+
+```sql
+BEGIN;
+
+UPDATE account SET balance = balance - 100 WHERE id = 'A';
+UPDATE account SET balance = balance + 100 WHERE id = 'B';
+
+COMMIT;    -- both updates become permanent
+-- or ROLLBACK;  -- both disappear, A keeps its 100
+```
+
+Without transactions, a crash between the two UPDATEs creates money
+out of thin air — out of A, into nowhere.
+
+@diagram flowchart id="transaction-lifecycle" layout="hierarchical" aria="Life cycle of a transaction from begin to commit or rollback"
+node begin label="BEGIN" shape="pill"
+node work label="Run SQL statements" shape="round-rect"
+node err label="Error or constraint violated?" shape="diamond"
+node rb label="ROLLBACK: undo every change" shape="round-rect"
+node cm label="COMMIT: changes become durable" shape="round-rect"
+
+begin -> work
+work -> err
+err -> rb label="yes"
+err -> cm label="no"
+rb -> begin label="application may retry"
+@/diagram
+
+## 2. The Four ACID Properties
+
+| Property | Promise | Usually delivered by |
+| --- | --- | --- |
+| Atomicity | all changes or none — no halfway | undo log; rollback reverts partial work |
+| Consistency | the database moves from one valid state to another | constraints checked at commit |
+| Isolation | concurrent transactions behave as if run one at a time | locks or multiversioning |
+| Durability | once COMMIT returns, the change survives any crash | write-ahead log flushed to disk |
+
+[example]
+Atomicity covers statement order: if the second UPDATE hits a
+constraint (account B does not exist), the first is undone
+automatically. Consistency is what the *business* wants — total money
+unchanged — and it is a partnership: the schema provides the
+constraints, the transaction makes them hold at every commit.
+[/example]
+
+[important]
+A transaction is the unit of correctness and the unit of failure.
+Everything in this lesson — locks, isolation levels, logs — exists to
+make the ACID promises cheap enough to keep under real concurrency.
+[/important]
+
+## 3. What Can Go Wrong: Concurrency Anomalies
+
+When two transactions interleave carelessly, five classic anomalies
+appear:
+
+| Anomaly | What happens | Miniature story |
+| --- | --- | --- |
+| Dirty read | T2 reads data T1 has written but not committed | T1 adds 100, T2 sees it, T1 rolls back — T2 acted on money that never existed |
+| Non-repeatable read | T2 reads the same row twice and gets different values | T1 updated and committed between the two reads |
+| Phantom read | T2 re-runs the same query and new rows appear | T1 inserted a matching row in between |
+| Lost update | two transactions read, then both write | both increment a counter from 100; one overwrites the other's +10 |
+| Read skew | T2 sees a mixture from different moments | reads account A before transfer and B after |
+
+The dirty read, in slow motion:
+
+| Time | T1 (transfer) | T2 (auditor) |
+| --- | --- | --- |
+| t1 | UPDATE A: 500 to 400 (uncommitted) | |
+| t2 | | SELECT balance of A — sees 400 |
+| t3 | ROLLBACK | |
+| t4 | | reports 400 — a balance that never existed |
+
+[warning]
+Dirty reads are not exotic: they are exactly what the lowest isolation
+level permits. Any decision — an audit, a fraud alert, a stock trade —
+made on uncommitted data may be about data that is about to vanish.
+[/warning]
+
+## 4. Isolation Levels: Choosing Your Bugs
+
+The SQL standard defines four isolation levels; each eliminates more
+anomalies at the price of concurrency:
+
+| Level | Dirty read | Non-repeatable read | Phantom read |
+| --- | --- | --- | --- |
+| READ UNCOMMITTED | possible | possible | possible |
+| READ COMMITTED | prevented | possible | possible |
+| REPEATABLE READ | prevented | prevented | possible |
+| SERIALIZABLE | prevented | prevented | prevented |
+
+```sql
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+BEGIN;
+SELECT * FROM account WHERE customer_id = 7;  -- stable snapshot
+...
+COMMIT;
+```
+
+Anomalies prevented (illustrative throughput, orders per second):
+
+@chart bar title="Concurrency cost of higher isolation (illustrative)" labels:
+READ UNCOMMITTED
+READ COMMITTED
+REPEATABLE READ
+SERIALIZABLE
+
+data:
+10000
+6800
+4600
+1900
+@/chart
+
+[info]
+Defaults differ by engine: PostgreSQL runs READ COMMITTED, MySQL's
+InnoDB defaults to REPEATABLE READ. Most engines implement
+SERIALIZABLE either with strict two-phase locking or with serializable
+snapshot isolation, which detects and aborts dangerous combinations of
+readers.
+[/info]
+
+[tip]
+Exam questions hand you an anomaly and ask for the *weakest* level
+that prevents it. Count upward: dirty read needs READ COMMITTED,
+non-repeatable read needs REPEATABLE READ, phantoms need SERIALIZABLE.
+[/tip]
+
+## 5. Locks and Two-Phase Locking
+
+The classic defence is locking: a transaction declares what it will do
+to a data item before touching it.
+
+| Held \ Requested | Shared (S) | Exclusive (X) |
+| --- | --- | --- |
+| Shared (S) | compatible | conflicts |
+| Exclusive (X) | conflicts | conflicts |
+
+- **Shared lock** — "I want to read." Many readers may hold it at once.
+- **Exclusive lock** — "I want to write." It tolerates no company, so
+  `SELECT ... FOR UPDATE` takes one and makes read-modify-write safe:
+
+```sql
+BEGIN;
+SELECT balance FROM account WHERE id = 'A' FOR UPDATE;
+-- balance is now protected until commit
+UPDATE account SET balance = balance - 100 WHERE id = 'A';
+COMMIT;
+```
+
+**Two-phase locking (2PL)** makes lock discipline safe: a transaction
+has a *growing* phase in which it only acquires locks and a *shrinking*
+phase in which it only releases; no new lock may be acquired after the
+first release. **Strict 2PL**, the common variant, holds all exclusive
+locks until commit, which also protects other transactions from
+reading uncommitted data.
+
+@diagram tree id="concurrency-toolbox" layout="tree" aria="Families of concurrency control"
+  "Concurrency control" -> "Pessimistic: lock first"
+  "Concurrency control" -> "Multiversion: MVCC"
+  "Concurrency control" -> "Optimistic: validate at commit"
+  "Pessimistic: lock first" -> "Shared and exclusive locks"
+  "Pessimistic: lock first" -> "Two-phase locking"
+  "Multiversion: MVCC" -> "Snapshot per transaction"
+  "Optimistic: validate at commit" -> "Read, validate, write"
+@/diagram
+
+Locks also come in granularities — whole database, table, page, or
+single row — and engines escalate from fine to coarse when a
+transaction holds too many small locks.
+
+## 6. Deadlocks: Causes and Cures
+
+Locks buy safety and can buy paralysis: T1 holds A's lock and wants
+B's; T2 holds B's and wants A's. Neither can proceed — a **deadlock**.
+Four conditions must all hold (the Coffman conditions): mutual
+exclusion, hold-and-wait, no preemption, and — the one to attack —
+*circular wait*.
+
+The engine detects this either by finding a cycle in the **wait-for
+graph** (T1 waits for T2 waits for T1) or by timing out, and then
+chooses a **victim** to abort:
+
+```text
+T1: holds lock(A), waits for lock(B)
+T2: holds lock(B), waits for lock(A)     -- cycle: deadlock
+
+Engine: rolls back T2 (cheapest victim), returns error to T2's app
+```
+
+[warning]
+The aborted transaction does not quietly vanish — its application
+receives a deadlock error and must retry the whole transaction.
+Applications that ignore that error lose updates; applications that
+retry with jitter break the cyclic pattern that caused it.
+[/warning]
+
+Prevention is cheaper than cure: acquire locks in a fixed global
+order (always A before B) and circular wait becomes impossible. Short
+transactions and indexes that shrink the number of lockable rows also
+shrink the deadlock surface.
+
+## 7. MVCC: Snapshots Instead of Queues
+
+**Multiversion concurrency control** (MVCC) takes a different route to
+isolation: keep multiple versions of each row so readers never block
+writers and writers never block readers.
+
+- Each row version records the transaction that created and superseded
+  it (PostgreSQL's xmin/xmax are exactly this).
+- A transaction sees a consistent **snapshot**: the version that was
+  committed when it started (READ COMMITTED re-checks per statement).
+- Writers add new versions rather than overwriting; a background
+  vacuum process later discards versions no one can see.
+
+The cost: long-running transactions pin old versions alive, so a
+forgotten open transaction can balloon storage until it commits or is
+killed. And plain snapshot isolation can still miss a conflict between
+two writers who read the same old value — serializable snapshot
+isolation (SSI) tracks and aborts such *write skew* cases.
+
+## 8. Making Durability Real: Logs, WAL, and Checkpoints
+
+Durability is a logging story. The rule of **write-ahead logging**
+(WAL): the log record describing a change must reach stable storage
+*before* the changed data page does.
+
+- On **COMMIT**, the engine flushes the transaction's log records and
+  only then reports success — the data pages may still be sitting
+  dirty in the buffer pool.
+- After a crash, recovery replays the log: **redo** committed
+  transactions whose pages never made it to disk, **undo** the
+  uncommitted ones.
+- Periodic **checkpoints** flush dirty pages and truncate the log, so
+  recovery never replays history from the dawn of time.
+
+[example]
+Commit returns in two milliseconds, the power fails in five — and the
+balance is still correct, because the log, not the data file, carried
+the commitment. That is durability as an engineering guarantee, not an
+adjective.
+[/example]
+
+## 9. Quick Revision
+
+| Concept | One-line recap |
+| --- | --- |
+| Transaction | all-or-nothing unit of work: BEGIN, COMMIT, ROLLBACK |
+| Atomicity | no halfway states; undo log rolls back partial work |
+| Consistency | constraints hold before and after every commit |
+| Isolation | concurrency behaves as if serial |
+| Durability | committed data survives crashes via the write-ahead log |
+| Dirty read | reading uncommitted data that may later be rolled back |
+| Non-repeatable read / phantom | same row changes / same query returns new rows |
+| Isolation ladder | READ COMMITTED, REPEATABLE READ, SERIALIZABLE — each kills more anomalies |
+| 2PL | grow locks, then shrink; strict 2PL holds X locks to commit |
+| Deadlock | circular wait; detect, pick a victim, retry |
+| MVCC | versioned rows and snapshots; readers never block writers |
+
+[summary]
+A transaction wraps multiple statements in all-or-nothing semantics,
+and ACID names the four promises: atomicity, consistency, isolation,
+durability. Concurrency without discipline produces dirty reads,
+non-repeatable reads, phantoms, and lost updates; the isolation-level
+ladder buys back safety at the cost of parallelism. Engines enforce it
+with shared and exclusive locks under two-phase locking, with MVCC
+snapshots that let readers and writers coexist, and they handle
+deadlocks by detection, victim rollback, and retry — all resting on a
+write-ahead log that makes COMMIT truly durable.
+[/summary]

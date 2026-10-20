@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-2",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 2 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 2 of 16",
   "questions": [
     {
       "question": "What does 'animal classification' test?",
       "options": [
-        "A shared numeric property",
         "Whether a group of animals share a common category (species type, habitat, diet, etc.)",
+        "A shared numeric property",
         "A shared letter pattern",
         "A shared color only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Animal classification tests whether a group of animals shares a common biological or categorical property, identifying the one that doesn't belong.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'plant classification' test, similarly?",
       "options": [
         "A shared numeric property",
-        "Whether a group of plants share a common category (type, use, growth pattern, etc.)",
         "A shared letter pattern",
+        "Whether a group of plants share a common category (type, use, growth pattern, etc.)",
         "A shared price"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Plant classification tests whether a group of plants shares a common categorical property, such as all being trees or all being flowering plants.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'vehicle classification' test?",
       "options": [
         "A shared color",
-        "Whether a group of vehicles share a common category (mode of transport, fuel type, etc.)",
+        "A shared letter count",
         "A shared numeric value",
-        "A shared letter count"
+        "Whether a group of vehicles share a common category (mode of transport, fuel type, etc.)"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Vehicle classification tests whether a group of vehicles shares a common categorical property, such as all being land vehicles or all being powered the same way.",
       "id": 4
     },
     {
       "question": "What does 'tool classification' test?",
       "options": [
-        "A shared price",
         "Whether a group of tools share a common category or use",
+        "A shared price",
         "A shared color only",
         "A shared numeric value"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Tool classification tests whether a group of tools shares a common category or characteristic use, identifying the one that doesn't fit.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'part-whole classification' test?",
       "options": [
         "A shared color",
-        "Whether a group of items are all parts of the same type of whole, with one being a part of something different",
         "A shared numeric value",
+        "Whether a group of items are all parts of the same type of whole, with one being a part of something different",
         "A shared letter pattern"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Part-whole classification tests whether a group of components all belong to the same type of larger whole, finding the one that belongs to a different whole.",
       "id": 6
     },

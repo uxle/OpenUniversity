@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-10",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 10 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 10 of 16",
   "questions": [
     {
       "question": "What does 'Science Classification' broadly test?",
       "options": [
-        "Only letter-based patterns",
         "Whether a group of items share a common scientific category (from physics, chemistry, biology, etc.)",
+        "Only letter-based patterns",
         "Only word synonyms",
         "Only numeric properties"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Science classification tests whether items share a common scientific category, drawing on knowledge across scientific disciplines.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Chemistry Classification' test specifically?",
       "options": [
         "A biological property",
-        "Whether a group of substances/elements share a common chemistry-based category (element type, compound class, etc.)",
         "A computer-related property",
+        "Whether a group of substances/elements share a common chemistry-based category (element type, compound class, etc.)",
         "A geography-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether substances or elements share a common chemistry-related category, such as being the same type of element or compound.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Human Body Classification' test?",
       "options": [
         "A geography-based property",
-        "Whether a group of body parts/systems share a common anatomical or functional category",
+        "A chemistry-based property",
         "A computer-related property",
-        "A chemistry-based property"
+        "Whether a group of body parts/systems share a common anatomical or functional category"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether a group of body parts or systems share a common anatomical or functional category, identifying the one that belongs elsewhere.",
       "id": 4
     },
     {
       "question": "What does 'Computer Classification' test?",
       "options": [
-        "A biology-based property",
         "Whether a group of computing-related items share a common technical category (hardware, software, etc.)",
+        "A biology-based property",
         "A geography-based property",
         "A chemistry-based property"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether computing-related items share a common technical category, such as all being hardware components or all being software types.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Programming Classification' test, specifically?",
       "options": [
         "A hardware-only property",
-        "Whether a group of programming-related terms share a common category (languages, paradigms, concepts, etc.)",
         "A biology-based property",
+        "Whether a group of programming-related terms share a common category (languages, paradigms, concepts, etc.)",
         "A geography-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether programming-related terms share a common category, such as all being programming languages or all being coding concepts.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'Operating System Classification' test?",
       "options": [
         "A hardware-only property",
-        "Whether a group of items relate to a common category of operating systems or their components",
+        "A chemistry-based property",
         "A biology-based property",
-        "A chemistry-based property"
+        "Whether a group of items relate to a common category of operating systems or their components"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether items share a common category related to operating systems, identifying the one that belongs to a different category.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "That only tools can be classified"
       ],
       "correct": 1,
-      "rationale": "This distinguishes items that function as tools (used to create or work on something) from items that are themselves the finished product \u2014 a subtle but important distinction.",
+      "rationale": "This distinguishes items that function as tools (used to create or work on something) from items that are themselves the finished product — a subtle but important distinction.",
       "id": 9
     },
     {

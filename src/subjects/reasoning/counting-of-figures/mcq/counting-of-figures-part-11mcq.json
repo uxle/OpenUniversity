@@ -1,28 +1,28 @@
 {
   "lessonId": "counting-of-figures-part-11",
-  "title": "Counting of Figures \u2014 Part 11 of 12",
+  "title": "Counting of Figures — Part 11 of 12",
   "questions": [
     {
       "question": "What is the purpose of a 'final cheat sheet' at the end of a lesson like this?",
       "options": [
-        "To introduce brand-new material",
         "To condense every important formula and rule from the lesson into one compact, easily-reviewable reference",
+        "To introduce brand-new material",
         "To replace the need for practice sets",
         "To only summarize the first two parts of the lesson"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A final cheat sheet condenses all the important formulas and rules covered throughout the lesson into one compact, quickly-reviewable reference.",
       "id": 1
     },
     {
-      "question": "Why does the lesson include separate 'Practice Set \u2014 Basic, Intermediate, Advanced' tiers?",
+      "question": "Why does the lesson include separate 'Practice Set — Basic, Intermediate, Advanced' tiers?",
       "options": [
         "To make the lesson longer without added value",
-        "To let learners build up their skill progressively, rather than jumping straight to the hardest problems",
         "Because basic and advanced problems use entirely different formulas",
+        "To let learners build up their skill progressively, rather than jumping straight to the hardest problems",
         "Tiered practice sets serve no pedagogical purpose"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Tiered practice sets let learners build skill progressively, reinforcing fundamentals before tackling the most difficult, composite-figure-heavy problems.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What might an 'Important Exam Warning' in this lesson likely caution against?",
       "options": [
         "Using formulas at all",
-        "Relying on a single memorized formula without checking whether the specific figure actually matches the formula's assumptions",
+        "Using coordinate models",
         "Practicing with basic problems first",
-        "Using coordinate models"
+        "Relying on a single memorized formula without checking whether the specific figure actually matches the formula's assumptions"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Consistent with the lesson's recurring theme, such a warning would caution against blindly applying a memorized formula to a figure that doesn't actually match its assumptions.",
       "id": 4
     },
     {
       "question": "What is meant by the lesson's 'Deep Concept' section, based on the lesson's overall theme?",
       "options": [
-        "That figure counting cannot be taught systematically",
         "That reliable figure counting comes from systematic, verifiable methods rather than visual intuition or memorized shortcuts alone",
+        "That figure counting cannot be taught systematically",
         "That only formulas matter, not understanding",
         "That every figure-counting problem is unsolvable without a computer"
       ],
-      "correct": 1,
-      "rationale": "The lesson's consistent theme throughout is that systematic, verifiable methods \u2014 not visual intuition or blind memorization \u2014 are what make figure counting reliable.",
+      "correct": 0,
+      "rationale": "The lesson's consistent theme throughout is that systematic, verifiable methods — not visual intuition or blind memorization — are what make figure counting reliable.",
       "id": 5
     },
     {
       "question": "Why are 'quick reference values' (like squares in a 3x3 or 4x4 grid) useful to have memorized separately from the formulas themselves?",
       "options": [
         "They are not actually useful to know separately",
-        "They let you instantly verify common cases without recalculating the formula every time",
         "They replace the need to understand any formula",
+        "They let you instantly verify common cases without recalculating the formula every time",
         "They only apply to rectangles, not squares"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Having common values memorized provides an instant way to verify a calculation against a known case, without needing to recompute the formula from scratch every time.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "Why might a 'deep concept' section be placed near the very end of a long lesson rather than at the beginning?",
       "options": [
         "Its placement is arbitrary and has no reasoning behind it",
-        "Because it's meant to consolidate understanding after all the individual techniques and formulas have already been introduced and practiced",
+        "Because deep concepts are always the easiest material",
         "Because it introduces material unrelated to the rest of the lesson",
-        "Because deep concepts are always the easiest material"
+        "Because it's meant to consolidate understanding after all the individual techniques and formulas have already been introduced and practiced"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Placing conceptual consolidation near the end lets it draw on and unify everything already introduced and practiced, rather than being presented before the learner has the necessary context.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "That formulas cannot be verified against specific cases"
       ],
       "correct": 1,
-      "rationale": "The quick reference values reflect the broader principle that regular, well-structured figures follow predictable formulas \u2014 these values are just specific, verifiable instances of those general formulas.",
+      "rationale": "The quick reference values reflect the broader principle that regular, well-structured figures follow predictable formulas — these values are just specific, verifiable instances of those general formulas.",
       "id": 9
     },
     {

@@ -1,0 +1,126 @@
+{
+  "lessonId": "css-styling-and-layout",
+  "title": "CSS: Styling and Layout",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Two rules target the same element with the same specificity, setting the same property differently. Which wins?",
+      "options": [
+        "The one written earlier in the stylesheet",
+        "The one written later in source order",
+        "The one containing more declarations",
+        "The browser picks one at random"
+      ],
+      "correct": 1,
+      "rationale": "When origin and specificity tie, the cascade falls through to source order: the last matching declaration wins."
+    },
+    {
+      "id": 2,
+      "question": "Which selector wins: #signup or .card p?",
+      "options": [
+        "#signup, because an id (1-0-0) outweighs any number of classes and elements",
+        ".card p, because it is more specific about structure",
+        "They tie and source order decides",
+        "It depends on which element is being styled"
+      ],
+      "correct": 0,
+      "rationale": "Specificity compares ids first, then classes, then elements: 1-0-0 beats 0-1-1 regardless of source order."
+    },
+    {
+      "id": 3,
+      "question": "With box-sizing: border-box, what does a declared width include?",
+      "options": [
+        "The content only",
+        "The content plus the margin",
+        "The content plus padding plus border",
+        "Everything including the margin"
+      ],
+      "correct": 2,
+      "rationale": "border-box makes the declared width the outer edge of the border, carving padding and border out of it; margin always stays outside the box."
+    },
+    {
+      "id": 4,
+      "question": "A paragraph with margin-bottom: 20px sits above one with margin-top: 30px. How much vertical space separates them?",
+      "options": [
+        "50px, the margins add up",
+        "20px, the smaller margin wins",
+        "10px, the margins cancel",
+        "30px — adjacent vertical margins collapse to the larger of the two"
+      ],
+      "correct": 3,
+      "rationale": "Adjacent block margins collapse: the gap is the maximum of the two, which is why styling one margin direction avoids surprises."
+    },
+    {
+      "id": 5,
+      "question": "In a flex container, which axis does justify-content control?",
+      "options": [
+        "The cross axis",
+        "The main axis",
+        "Both axes at once",
+        "Neither — it controls z-order"
+      ],
+      "correct": 1,
+      "rationale": "justify-content distributes items along the main axis (horizontal by default), while align-items handles the perpendicular cross axis."
+    },
+    {
+      "id": 6,
+      "question": "In CSS grid, what does the fr unit mean?",
+      "options": [
+        "A fixed rem-based measurement",
+        "Frames per second of the layout animation",
+        "A fraction of the leftover free space",
+        "A font-relative ratio"
+      ],
+      "correct": 2,
+      "rationale": "fr distributes free space proportionally, so 1fr 2fr gives the second track twice the leftover width after fixed tracks are laid out."
+    },
+    {
+      "id": 7,
+      "question": "What does writing CSS mobile-first mean in practice?",
+      "options": [
+        "Base styles for small screens, then add min-width media queries as space allows",
+        "Design for desktop first, then patch with max-width queries",
+        "Build a separate website for each device class",
+        "Use only pixel units so phones scale automatically"
+      ],
+      "correct": 0,
+      "rationale": "Mobile-first starts from the narrow layout and layers on enhancements with min-width queries, which keeps the base CSS simple and respects the viewport meta."
+    },
+    {
+      "id": 8,
+      "question": "What is the essential difference between flexbox and grid?",
+      "options": [
+        "Flexbox is two-dimensional while grid is one-dimensional",
+        "Grid is one-dimensional while flexbox is two-dimensional",
+        "They cannot be combined on the same page",
+        "Flexbox lays out one axis at a time, while grid arranges rows and columns together"
+      ],
+      "correct": 3,
+      "rationale": "Flexbox is a one-dimensional tool (a row or a column, content-driven), grid is two-dimensional (tracks defined up front), and the two are typically combined."
+    },
+    {
+      "id": 9,
+      "question": "What does the fallback value in var(--brand, #333) do?",
+      "options": [
+        "Uses #333 when --brand is not defined in scope",
+        "Always overrides --brand with #333",
+        "Raises an error because two values are present",
+        "Defines --brand permanently as #333"
+      ],
+      "correct": 0,
+      "rationale": "The second argument of var is used only when the custom property is missing, which makes components robust to partial theming."
+    },
+    {
+      "id": 10,
+      "question": "How does position: sticky behave?",
+      "options": [
+        "Always pinned to the viewport, ignoring the flow",
+        "Removed from the flow like absolute",
+        "It scrolls with the flow until a threshold is crossed, then behaves like fixed",
+        "It is identical to position: relative"
+      ],
+      "correct": 2,
+      "rationale": "Sticky stays in normal flow until the scroll position passes the set offset, then sticks — the classic table header or section title behavior."
+    }
+  ]
+}

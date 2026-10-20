@@ -6,12 +6,12 @@
       "id": 1,
       "question": "In the compass coordinate model used in this lesson, if North = +Y and East = +X, walking 5 km north then 3 km east ends at which final position?",
       "options": [
-        "(5, 3)",
         "(3, 5)",
+        "(5, 3)",
         "(-3, -5)",
         "(0, 8)"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "East contributes to the X-coordinate (3) and North contributes to the Y-coordinate (5), giving a final position of (3, 5)."
     },
     {
@@ -24,7 +24,7 @@
         "25"
       ],
       "correct": 0,
-      "rationale": "Euclidean distance d = \u221a((x2\u2212x1)\u00b2 + (y2\u2212y1)\u00b2) = \u221a(3\u00b2 + 4\u00b2) = \u221a25 = 5."
+      "rationale": "Euclidean distance d = √((x2−x1)² + (y2−y1)²) = √(3² + 4²) = √25 = 5."
     },
     {
       "id": 3,
@@ -36,41 +36,41 @@
         "4"
       ],
       "correct": 1,
-      "rationale": "Manhattan distance d = |x2\u2212x1| + |y2\u2212y1| = 3 + 4 = 7, used when movement is restricted to horizontal and vertical paths only."
+      "rationale": "Manhattan distance d = |x2−x1| + |y2−y1| = 3 + 4 = 7, used when movement is restricted to horizontal and vertical paths only."
     },
     {
       "id": 4,
       "question": "What is the key principle stressed for solving direction/distance problems reliably?",
       "options": [
         "Guess the answer from language patterns",
-        "Convert natural-language directions into a structured spatial model before calculating",
+        "Ignore direction and only calculate total distance travelled",
         "Always use Manhattan distance regardless of the movement type",
-        "Ignore direction and only calculate total distance travelled"
+        "Convert natural-language directions into a structured spatial model before calculating"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The lesson's central principle is to convert natural-language directions into a structured spatial model (coordinates/vectors) before performing any distance or direction calculation."
     },
     {
       "question": "What does the 'final architecture' bring together from the rest of this lesson?",
       "options": [
-        "Only the compass direction table",
         "Parsing, spatial representation-building, constraint solving, verification, and output formatting into one complete reasoning pipeline",
+        "Only the compass direction table",
         "Just the introductory definitions from Part 1",
         "A single unrelated new concept"
       ],
-      "correct": 1,
-      "rationale": "The final architecture combines every stage covered across the lesson \u2014 parsing, representation-building, constraint solving, verification, and output formatting \u2014 into one complete pipeline.",
+      "correct": 0,
+      "rationale": "The final architecture combines every stage covered across the lesson — parsing, representation-building, constraint solving, verification, and output formatting — into one complete pipeline.",
       "id": 5
     },
     {
       "question": "What is the main takeaway from this lesson's summary about solving direction-and-distance problems reliably?",
       "options": [
         "Informal mental tracking is always sufficient",
-        "Reliable solving comes from systematically tracking positions, directions, and units through a consistent structured process, not from informal mental tracking",
         "Only the compass table matters, nothing else",
+        "Reliable solving comes from systematically tracking positions, directions, and units through a consistent structured process, not from informal mental tracking",
         "Verification is optional and rarely useful"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The lesson's consistent theme is that reliability comes from systematically tracking positions, directions, and units through a structured process, not from informal, ad hoc mental tracking.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "According to the final architecture, what should happen after a position or distance is computed, before it's presented as final?",
       "options": [
         "Nothing further is needed",
-        "It should be verified against the original constraints (including checks like the triangle inequality) before being presented as the final answer",
+        "It should automatically be converted into polar coordinates",
         "It should be discarded and recalculated from scratch",
-        "It should automatically be converted into polar coordinates"
+        "It should be verified against the original constraints (including checks like the triangle inequality) before being presented as the final answer"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The architecture requires verifying the computed position or distance against the original constraints, including validity checks like the triangle inequality, before presenting it as final.",
       "id": 8
     },
     {
       "question": "What common thread connects direction-and-distance reasoning to other reasoning topics like clock reasoning?",
       "options": [
-        "There is no real connection between them",
         "Both rely on a structured internal representation, unit consistency, and systematic step-by-step reasoning rather than informal calculation",
+        "There is no real connection between them",
         "They use exactly the same formulas",
         "Only direction-and-distance reasoning uses any structured representation"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Both clock and direction-and-distance reasoning rely on the same underlying discipline: a structured internal representation, consistent units, and systematic step-by-step reasoning.",
       "id": 9
     },
@@ -114,11 +114,11 @@
       "question": "Why is the compass/coordinate model considered foundational even in the advanced (3D, multi-hop) sections of this lesson?",
       "options": [
         "It isn't actually used in the advanced sections",
-        "Because the advanced concepts still build on the same underlying direction and coordinate relationships introduced early on",
         "Because the advanced sections replace it with a completely different model",
+        "Because the advanced concepts still build on the same underlying direction and coordinate relationships introduced early on",
         "Because it's only relevant to 2D problems"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Even advanced concepts like 3D reasoning and multi-hop chains are still built on the same fundamental direction and coordinate relationships introduced in the early sections.",
       "id": 10
     },
@@ -138,11 +138,11 @@
       "question": "Why does this lesson build from simple compass definitions (Part 1) up to a full reasoning engine (Part 10)?",
       "options": [
         "The ordering is arbitrary and doesn't matter",
-        "Each later concept depends on the foundational ideas from earlier parts, so a solid grounding in basic direction/distance concepts is needed before tackling multi-constraint or multi-hop problems",
+        "It's only structured this way for length, not for learning",
         "Complex problems don't actually require the earlier concepts",
-        "It's only structured this way for length, not for learning"
+        "Each later concept depends on the foundational ideas from earlier parts, so a solid grounding in basic direction/distance concepts is needed before tackling multi-constraint or multi-hop problems"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Every later concept builds on the foundational direction and distance ideas from earlier parts, so a solid grounding early on is necessary before tackling multi-constraint or multi-hop problems.",
       "id": 12
     },
@@ -155,7 +155,7 @@
         "Round the value until it passes"
       ],
       "correct": 1,
-      "rationale": "A failed consistency or triangle-inequality check signals an error somewhere in the reasoning or a genuine inconsistency in the given constraints \u2014 it should prompt re-examination, not be ignored.",
+      "rationale": "A failed consistency or triangle-inequality check signals an error somewhere in the reasoning or a genuine inconsistency in the given constraints — it should prompt re-examination, not be ignored.",
       "id": 13
     },
     {

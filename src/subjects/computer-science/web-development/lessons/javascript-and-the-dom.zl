@@ -1,0 +1,202 @@
+# JavaScript and the DOM: Making Pages Interactive
+
+> HTML is the skeleton and CSS the appearance; JavaScript is the
+> nervous system that reacts to the user. This lesson covers the
+> language essentials, the DOM tree, events and delegation, fetching
+> data, and the performance pitfalls every front-end developer hits.
+
+## 1. JavaScript's Job in the Browser
+
+JavaScript is the only language browsers execute natively. It is **single-threaded** (one call stack — a long loop freezes the page), **dynamically typed**, and **event-driven**: the engine idles until something happens, runs a handler, then sleeps again.
+
+Loading a script the default way — a plain `script` tag — **blocks HTML parsing**: the parser halts until the file downloads and runs. Two attributes fix this:
+
+| Attribute | Download | Execution | Use when |
+| --- | --- | --- | --- |
+| *(none)* | Blocks the parser | Immediately, in order | Rarely |
+| `async` | In parallel | As soon as downloaded; order not guaranteed | Independent scripts, analytics |
+| `defer` | In parallel | After parsing, in document order | Almost always |
+
+@chart bar title="Illustrative time until the page becomes interactive, by script loading strategy (ms)" labels:
+Blocking in head
+Blocking at end of body
+async
+defer
+
+data:
+1400
+950
+600
+560
+@/chart
+
+[tip]
+Modern default: put scripts in the head with `defer` — downloading starts early, parsing is never blocked, and execution order is preserved. Reserve `async` for scripts that answer to no one.
+[/tip]
+
+## 2. Language Basics in a Nutshell
+
+Declare variables with `const` by default and `let` when reassignment is needed — both are block-scoped; the older `var` is function-scoped and best avoided. The primitive types are `string`, `number`, `boolean`, `null`, and `undefined`, plus objects (arrays, functions, plain objects) and the later additions `bigint` and `symbol`.
+
+```js
+const names = ["Ada", "Grace", "Linus"];
+const shouts = names.map(n => n.toUpperCase() + "!");  // arrow function
+
+const user = { name: "Ada", role: "admin" };
+const { name, role } = user;                           // destructuring
+const greeting = `Hello, ${name} (${role})`;           // template literal
+```
+
+Functions are values: declared with `function` or written as arrow expressions. Compare with `===`, never `==` — loose equality silently converts types (`"1" == 1` is true, `"1" === 1` is false) and is a classic source of bugs.
+
+## 3. The DOM: A Live Tree
+
+As the parser reads the HTML, it builds the **DOM (Document Object Model)** — a tree of node objects the language can read and edit. It is *live*: change a node and the screen updates without a reload. The entry point is the global `document` object.
+
+@diagram tree id="dom-tree" layout="tree" aria="A small DOM tree with document, html, head and body branches"
+  "document" -> "html"
+  "html" -> "head"
+  "html" -> "body"
+  "body" -> "h1"
+  "body" -> "ul id todo"
+  "ul id todo" -> "li (first item)"
+  "ul id todo" -> "li (second item)"
+@/diagram
+
+[definition]
+The **DOM** is not the HTML source file. It is the parsed, repaired, live object tree in memory — the browser's corrected version of your markup, which is why invalid nesting can surprise you when you inspect it in the developer tools.
+[/definition]
+
+## 4. Selecting and Changing Elements
+
+```js
+const list  = document.querySelector("#todo");        // first match of a CSS selector
+const items = document.querySelectorAll("#todo li");  // all matches, as a NodeList
+const title = document.getElementById("title");       // oldest and fastest for ids
+
+title.textContent = "Today";       // safe: sets plain text
+list.classList.add("is-open");     // toggle CSS classes rather than fight inline styles
+list.style.background = "#eef";    // inline style — handy, but classes scale better
+```
+
+The crucial distinction: `textContent` reads and writes **plain text** safely, while `innerHTML` **parses HTML** — powerful for trusted templates, dangerous with anything containing user input.
+
+[warning]
+Never write user input into `innerHTML`. A comment field fed a crafted image tag with an `onerror` script attribute becomes executable code inside your page — the **XSS (cross-site scripting)** attack. For text use `textContent`; for building elements use `createElement`.
+[/warning]
+
+## 5. Events and Event Listeners
+
+Interactivity means reacting to **events** — clicks, key presses, form submissions, scrolling. Register handlers with `addEventListener`; the browser calls your function with an **event object** describing what happened.
+
+```js
+const button = document.querySelector("#save");
+
+button.addEventListener("click", (event) => {
+  console.log(event.type);    // "click"
+  console.log(event.target);  // the element that was clicked
+  event.preventDefault();     // stop the default action, e.g. form submission
+});
+```
+
+A click does not happen in one place. The event travels in three phases: down from `window` through the ancestors (**capture**), arrival at the element that was clicked (**target**), then travel back up (**bubbling**). Ordinary listeners fire in the bubble phase.
+
+@diagram flowchart id="event-propagation" layout="hierarchical" aria="The three phases of event propagation: capture, target, bubble"
+node click label="User clicks the button" shape="pill"
+node capture label="Capture phase: window down to parent" shape="round-rect"
+node target label="Target phase: the button's own listeners" shape="round-rect"
+node bubble label="Bubble phase: back up to window" shape="round-rect"
+node done label="Default action, unless prevented" shape="round-rect"
+
+click -> capture
+capture -> target
+target -> bubble
+bubble -> done
+@/diagram
+
+[important]
+`preventDefault()` cancels the browser's *default action* — following a link, submitting a form. `stopPropagation()` cancels the event's *journey* to other listeners. They solve different problems, and `stopPropagation` is a last resort that usually hides a design flaw.
+[/important]
+
+## 6. Event Delegation
+
+Because events bubble, one listener on an ancestor can serve every descendant — present and future. Listen on the list, find what was actually clicked with `event.target`, and walk up the tree with `closest`:
+
+```js
+document.querySelector("#todo").addEventListener("click", (event) => {
+  const btn = event.target.closest("button.delete");
+  if (!btn) return;              // the click was elsewhere in the list
+  btn.closest("li").remove();
+});
+```
+
+| Benefit | Why it follows |
+| --- | --- |
+| Fewer listeners | One on the parent replaces hundreds on children |
+| Dynamic children covered | Items added later need no re-binding |
+| Less memory | Listeners on every node are a classic leak source |
+
+[tip]
+In delegated handlers, distinguish the layers: `event.target` is where the event originated, `event.currentTarget` is the element the listener is attached to. Almost always you want `event.target.closest(selector)`.
+[/tip]
+
+## 7. Fetch, JSON, and Asynchronous Data
+
+`fetch` requests a URL and returns a **Promise** — a placeholder for a future result. Promises chain with `then`, or, more readably, pause with `await` inside an `async` function:
+
+```js
+async function loadUsers() {
+  const response = await fetch("/api/users");
+  if (!response.ok) {                    // 404 and 500 land HERE, not in catch
+    throw new Error(`HTTP ${response.status}`);
+  }
+  const users = await response.json();   // parse the JSON body — also async
+  return users;
+}
+```
+
+Two habits save hours. First, **`fetch` resolves even on HTTP errors** — only network failures reject the promise — so check `response.ok` before trusting the body. Second, `response.json()` is itself asynchronous; forgetting the second `await` hands you a Promise object instead of data.
+
+JSON — produced by `JSON.stringify`, consumed by `JSON.parse` — is the lingua franca of web APIs: a text encoding of objects and arrays that both humans and machines tolerate.
+
+[tip]
+Fire independent requests in parallel with `Promise.all([fetch(a), fetch(b)])` instead of awaiting them one by one — the total wait becomes the slowest request, not the sum of all of them.
+[/tip]
+
+## 8. Performance and Common Pitfalls
+
+Two costs dominate rendering. **Reflow (layout)** recomputes geometry — expensive; **repaint** redraws pixels — cheaper. Alternating reads (measure `offsetHeight`) and writes (set a style) forces the browser to reflow between every step — **layout thrashing**:
+
+```js
+// Thrashing: read, write, read, write ...
+items.forEach(el => { el.style.height = el.offsetWidth * 2 + "px"; });
+
+// Batched: one write via a class, one reflow total
+list.classList.add("items--large");
+```
+
+Other recurring traps:
+
+| Pitfall | Symptom | Cure |
+| --- | --- | --- |
+| Listener on every item, items often replaced | Slow lists, leaked nodes | Event delegation |
+| `setInterval` never cleared | Callback keeps running after leaving the page | `clearInterval` in cleanup paths |
+| Animating `top` or `width` | Janky, constant layout work | Animate only `transform` and `opacity` |
+| Untrusted HTML injection | XSS | `textContent` and `createElement` |
+
+[important]
+The DOM is the most expensive API in the page. Every avoidable touch — a style write, a node insertion, a measurement — is a render-pipeline event. Batch changes, prefer classes over inline styles, and measure with the browser profiler before optimizing blind.
+[/important]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Script loading | `defer` — download in parallel, run after parsing in order; the default choice |
+| `const` vs `let` | Block-scoped bindings; prefer `const`, avoid `var` |
+| The DOM | Live, repaired tree of nodes; the HTML source is only its recipe |
+| Selection | `querySelector` with CSS selectors; `textContent` over `innerHTML` |
+| Event phases | Capture down, target, bubble up; ordinary listeners fire on bubble |
+| Delegation | One ancestor listener plus `event.target.closest` serves dynamic children |
+| Fetch | Resolves on HTTP errors too — check `response.ok`; `response.json` is async |
+| Thrashing | Interleaved reads and writes force reflows — batch writes through classes |

@@ -1,0 +1,76 @@
+{
+  "lessonId": "binomial-theorem",
+  "title": "The Binomial Theorem: Expanding Powers Efficiently",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many terms does the expansion of (a + b)^8 contain?",
+      "options": ["8", "16", "9", "7"],
+      "correct": 2,
+      "rationale": "The powers of b run from 0 up to n, so an index-n power expands into exactly n + 1 terms: 8 + 1 = 9 terms."
+    },
+    {
+      "id": 2,
+      "question": "What are the coefficients in the expansion of (a + b)^4?",
+      "options": ["1 4 6 4 1", "1 3 3 1", "1 4 4 1", "1 5 10 10 5 1"],
+      "correct": 0,
+      "rationale": "Row 4 of Pascal's triangle is 1, 4, 6, 4, 1 — each entry the sum of the two above it, and palindromic by symmetry C(4, r) = C(4, 4 − r)."
+    },
+    {
+      "id": 3,
+      "question": "What is the coefficient of x^3 in (x + 2)^5?",
+      "options": ["80", "10", "40", "20"],
+      "correct": 2,
+      "rationale": "Match powers: x^(5−r) = x^3 gives r = 2, so the term is C(5,2) x^3 · 2^2 = 10 × 4 x^3. The coefficient is 40 — the power of 2 must not be forgotten."
+    },
+    {
+      "id": 4,
+      "question": "Which is the general term T_(r+1) in the expansion of (a + b)^n?",
+      "options": ["C(n, r) · a^r · b^(n−r)", "C(n, r) · a^(n−r) · b^r", "C(n, r+1) · a^n · b^r", "r! · a^(n−r) · b^r"],
+      "correct": 1,
+      "rationale": "The (r+1)-th term pairs C(n, r) with a falling to power n − r while b rises to r. Swapping the two powers describes (b + a)^n read backwards."
+    },
+    {
+      "id": 5,
+      "question": "What is the middle term of (2x + 3)^4?",
+      "options": ["54x^2", "96x^2", "216x^2", "81x^2"],
+      "correct": 2,
+      "rationale": "n = 4 is even, so the middle is T3 (r = 2): C(4,2) · (2x)^2 · 3^2 = 6 × 4x^2 × 9 = 216x^2. Squaring both the 2 and the 3 is essential."
+    },
+    {
+      "id": 6,
+      "question": "What is the term independent of x in (x^2 + 1/x)^6?",
+      "options": ["15", "20", "6", "10"],
+      "correct": 0,
+      "rationale": "The x-power is 2(6 − r) − r = 12 − 3r; setting it to zero gives r = 4, so the constant term is C(6,4) = 15."
+    },
+    {
+      "id": 7,
+      "question": "What is the sum of all coefficients in the expansion of (1 + x)^6?",
+      "options": ["64", "32", "6", "0"],
+      "correct": 0,
+      "rationale": "Substitute x = 1: the sum of coefficients equals (1 + 1)^6 = 2^6 = 64. Equivalently, Pascal's row 6 sums to 64."
+    },
+    {
+      "id": 8,
+      "question": "Substituting x = −1 into (1 + x)^6 gives the alternating sum of its coefficients. What is it?",
+      "options": ["64", "1", "-1", "0"],
+      "correct": 3,
+      "rationale": "(1 − 1)^6 = 0^6 = 0, so the even-position and odd-position coefficients cancel exactly. In general (a − b)^n always has coefficient sum 0 when a = b."
+    },
+    {
+      "id": 9,
+      "question": "Using the first two terms of the binomial expansion, (1.02)^5 is approximately:",
+      "options": ["1.10", "1.104", "1.25", "1.02"],
+      "correct": 1,
+      "rationale": "For small x, (1 + x)^n ≈ 1 + nx: 1 + 5(0.02) = 1.10, and adding the x^2 term 10(0.0004) = 0.004 refines it to 1.104 (true value 1.10408)."
+    },
+    {
+      "id": 10,
+      "question": "In the expansion of (x − 3)^4, how do the signs of the terms behave?",
+      "options": ["All positive", "Alternating +, −, +, −, +", "All negative", "Alternating from the second term only"],
+      "correct": 1,
+      "rationale": "Writing b = −3, each term carries (−3)^r, which flips sign for odd r — so the five terms alternate +, −, +, −, +."
+    }
+  ]
+}

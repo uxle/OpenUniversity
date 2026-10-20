@@ -16,6 +16,12 @@
   color: var(--ou-accent);
   font-size: var(--ou-fs-sm);
   font-weight: 600;
+  /* Touch target: the link measured ~21px tall on phones — the ONLY way
+     back to the sub-subject page from a lesson, so it needs a real tap
+     area. Padding-block widens it without moving surrounding layout. */
+  min-height: 44px;
+  padding-block: var(--ou-space-2);
+  margin-block: calc(var(--ou-space-2) * -1);
   transition: opacity var(--ou-transition-fast), transform var(--ou-transition-fast);
 }
 .ou-back-link i {

@@ -1,16 +1,16 @@
 {
   "lessonId": "blood-relation-reasoning-part-3",
-  "title": "Blood Relation Reasoning \u2014 Part 3 of 4",
+  "title": "Blood Relation Reasoning — Part 3 of 4",
   "questions": [
     {
       "question": "What is the first step in a systematic step-by-step blood relation solver?",
       "options": [
-        "Guess the final answer directly",
         "Parse each statement into individual direct relations before attempting to combine any of them",
+        "Guess the final answer directly",
         "Skip statements that seem irrelevant",
         "Assume the family has exactly four members"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A systematic solver first parses every statement into its individual direct relations before attempting any composition, avoiding premature or incorrect combinations.",
       "id": 1
     },
@@ -18,12 +18,12 @@
       "question": "What does 'generation distance' measure between two people in a family graph?",
       "options": [
         "The number of years between their birthdays",
-        "The number of parent-child links separating them in the family graph",
         "The physical distance between their homes",
+        "The number of parent-child links separating them in the family graph",
         "Whether they share the same first letter in their name"
       ],
-      "correct": 1,
-      "rationale": "Generation distance counts how many parent-child links separate two people in the graph \u2014 for example, grandparent to grandchild is a generation distance of two.",
+      "correct": 2,
+      "rationale": "Generation distance counts how many parent-child links separate two people in the graph — for example, grandparent to grandchild is a generation distance of two.",
       "id": 2
     },
     {
@@ -42,24 +42,24 @@
       "question": "What is the key difference between a 'sibling' and a 'half-sibling'?",
       "options": [
         "There is no difference",
-        "Full siblings share both parents; half-siblings share only one parent",
+        "Sibling only applies to sisters, half-sibling only to brothers",
         "Half-siblings are always older",
-        "Sibling only applies to sisters, half-sibling only to brothers"
+        "Full siblings share both parents; half-siblings share only one parent"
       ],
-      "correct": 1,
-      "rationale": "Full siblings share both parents, while half-siblings share exactly one parent \u2014 a distinction that matters when a family graph includes a parent who has children from more than one relationship.",
+      "correct": 3,
+      "rationale": "Full siblings share both parents, while half-siblings share exactly one parent — a distinction that matters when a family graph includes a parent who has children from more than one relationship.",
       "id": 4
     },
     {
       "question": "What is a 'step relation' (e.g., step-mother, step-brother)?",
       "options": [
-        "A biological blood relation like any other",
         "A relation created through a parent's remarriage, without a direct biological link to the step-relative",
+        "A biological blood relation like any other",
         "A relation that only exists in fiction, never in reasoning questions",
         "Another term for cousin"
       ],
-      "correct": 1,
-      "rationale": "Step relations arise from a parent's remarriage \u2014 a step-mother, for instance, is a parent's spouse with no direct biological link, distinct from a biological ('blood') relation.",
+      "correct": 0,
+      "rationale": "Step relations arise from a parent's remarriage — a step-mother, for instance, is a parent's spouse with no direct biological link, distinct from a biological ('blood') relation.",
       "id": 5
     },
     {
@@ -119,7 +119,7 @@
         "It replaces the need for gender tracking"
       ],
       "correct": 1,
-      "rationale": "Explicitly tracking generation distance helps distinguish between relations that sound similar but differ in generation \u2014 for example, an uncle (one generation up, sibling of a parent) versus a grand-uncle (two generations up, sibling of a grandparent).",
+      "rationale": "Explicitly tracking generation distance helps distinguish between relations that sound similar but differ in generation — for example, an uncle (one generation up, sibling of a parent) versus a grand-uncle (two generations up, sibling of a grandparent).",
       "id": 10
     }
   ]

@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-1",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 1 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 1 of 22",
   "questions": [
     {
       "question": "What is the 'core idea' behind all coding-decoding questions?",
       "options": [
-        "Memorize every possible code",
         "Find the hidden transformation rule linking input to output, then apply it to a new case",
+        "Memorize every possible code",
         "Always assume a +1 shift",
         "Guess based on word length only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Every coding-decoding question boils down to finding the hidden rule connecting a given input to its output, then applying that same rule to a new case.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "Why are several major 'types' of coding-decoding typically distinguished (letter, number, substitution, matrix, etc.)?",
       "options": [
         "There is really only one type",
-        "Because each type uses a fundamentally different kind of transformation rule, requiring different detection strategies",
         "Because exams never mix types",
+        "Because each type uses a fundamentally different kind of transformation rule, requiring different detection strategies",
         "Because letter-based coding is the only type actually tested"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Different coding types (letter-based, number-based, substitution, matrix, etc.) use fundamentally different transformation rules, so recognizing which type applies is an important first step.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "In 'reverse alphabet vector' terms, what does a letter's reverse-alphabet partner satisfy?",
       "options": [
         "Position x partner's position = 27",
-        "Position + partner's position = 27",
+        "There's no fixed numeric relationship",
         "Position - partner's position = 27",
-        "There's no fixed numeric relationship"
+        "Position + partner's position = 27"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Since the alphabet has 26 letters, a letter at position p and its reverse-alphabet partner at position (27-p) always sum to 27.",
       "id": 4
     },
     {
       "question": "What is a 'fast alphabet group', as a memory aid?",
       "options": [
-        "A random cluster of unrelated letters",
         "A memorized cluster of nearby letters and positions used to quickly compute shifts without counting from A each time",
+        "A random cluster of unrelated letters",
         "A group of only vowels",
         "A group of only consonants"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Fast alphabet groups are memorized clusters of letters and their positions, used as quick mental anchors instead of counting from A every time.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "Why are 'important alphabet pairs' (like A-Z, M-N) worth memorizing?",
       "options": [
         "They have no practical use",
-        "They act as quick anchor points for calculating any letter's position or reverse-position rapidly",
         "They are only used in reverse coding",
+        "They act as quick anchor points for calculating any letter's position or reverse-position rapidly",
         "They only apply to vowels"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Key reference pairs like A-Z (1 and 26) or M-N (13 and 14, the alphabet's midpoint) provide fast anchor points for calculating other positions relative to them.",
       "id": 6
     },

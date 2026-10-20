@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-16",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 16 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 16 of 22",
   "questions": [
     {
       "question": "What is the purpose of a 'high-speed rule detection table'?",
       "options": [
-        "To slow down problem-solving intentionally",
         "To provide a quick-reference guide matching common input-output patterns to their likely coding rule, speeding up identification",
+        "To slow down problem-solving intentionally",
         "To replace the need for verification entirely",
         "To only apply to matrix coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This table provides a fast-lookup reference matching common input-output patterns to their likely rule type, speeding up the identification process.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What might a '10-second solving technique' be best suited for?",
       "options": [
         "Only the most complex multi-stage problems",
-        "Quickly recognizing very simple, common coding types (like a uniform shift) almost on sight",
         "Problems requiring extensive verification",
+        "Quickly recognizing very simple, common coding types (like a uniform shift) almost on sight",
         "Ambiguous, unsolvable problems"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A 10-second technique is best suited for near-instant recognition of very simple, common patterns, like a straightforward uniform letter shift.",
       "id": 2
     },
@@ -42,40 +42,40 @@
       "question": "What would a '60-second advanced technique' likely be reserved for?",
       "options": [
         "Simple, single-step shifts",
-        "More complex or multi-step coding rules that require careful step-by-step verification before finalizing",
+        "Problems that have no valid solution",
         "Cases with no verification needed",
-        "Problems that have no valid solution"
+        "More complex or multi-step coding rules that require careful step-by-step verification before finalizing"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The 60-second technique is reserved for more complex, multi-step rules that genuinely require careful, deliberate verification before finalizing an answer.",
       "id": 4
     },
     {
-      "question": "In 'Solved Example 1 \u2014 Constant Shift,' what is being demonstrated?",
+      "question": "In 'Solved Example 1 — Constant Shift,' what is being demonstrated?",
       "options": [
-        "Reversing a word's letter order",
         "Identifying and applying a single, uniform alphabet shift consistently across an entire word",
+        "Reversing a word's letter order",
         "Matrix-based coding",
         "Vowel-count based coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This example demonstrates the most basic case: identifying a single, uniform shift amount and applying it consistently to every letter in the word.",
       "id": 5
     },
     {
-      "question": "In 'Solved Example 2 \u2014 Reverse Alphabet,' what rule is applied?",
+      "question": "In 'Solved Example 2 — Reverse Alphabet,' what rule is applied?",
       "options": [
         "A uniform +1 shift",
-        "Mirroring each letter to its reverse-alphabet partner (position p to position 27-p)",
         "Word reversal only",
+        "Mirroring each letter to its reverse-alphabet partner (position p to position 27-p)",
         "Vowel-consonant classification"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This example applies the reverse-alphabet (mirror) rule, mapping each letter's position p to its partner at position 27-p.",
       "id": 6
     },
     {
-      "question": "In 'Solved Example 3 \u2014 Word Reversal,' what transformation is demonstrated?",
+      "question": "In 'Solved Example 3 — Word Reversal,' what transformation is demonstrated?",
       "options": [
         "A letter shift",
         "Reversing the order of the letters in the word, without changing the letters themselves",
@@ -87,19 +87,19 @@
       "id": 7
     },
     {
-      "question": "In 'Solved Example 4 \u2014 Position Shift,' what is shifted, as opposed to Example 1's letter shift?",
+      "question": "In 'Solved Example 4 — Position Shift,' what is shifted, as opposed to Example 1's letter shift?",
       "options": [
         "The letters' identity in the alphabet",
-        "The letters' positions within the word, rather than their identity in the alphabet",
+        "The word's total length",
         "Nothing is actually shifted",
-        "The word's total length"
+        "The letters' positions within the word, rather than their identity in the alphabet"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Unlike Example 1's alphabet-based letter shift, this example shifts where letters sit within the word itself, not which letters they are.",
       "id": 8
     },
     {
-      "question": "In 'Solved Example 5 \u2014 Alphabet Sum,' what is computed?",
+      "question": "In 'Solved Example 5 — Alphabet Sum,' what is computed?",
       "options": [
         "The word's total length",
         "The total sum of the alphabet positions of all the letters in the word",
@@ -111,7 +111,7 @@
       "id": 9
     },
     {
-      "question": "In 'Solved Example 6 \u2014 Word Length,' what is the code based on?",
+      "question": "In 'Solved Example 6 — Word Length,' what is the code based on?",
       "options": [
         "The first letter only",
         "The total number of letters in the word",

@@ -1,28 +1,28 @@
 {
   "lessonId": "coding-decoding-detailed-part-21",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 21 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 21 of 22",
   "questions": [
     {
-      "question": "What does 'Practice Set E \u2014 Expert' likely require, beyond the Challenge tier?",
+      "question": "What does 'Practice Set E — Expert' likely require, beyond the Challenge tier?",
       "options": [
-        "Only the most basic single-step rules",
         "Confidently applying the full range of techniques, including multi-stage and ambiguous cases, with minimal guidance",
+        "Only the most basic single-step rules",
         "No verification of any kind",
         "Ignoring everything learned in earlier parts"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The Expert tier requires confidently applying the full range of techniques covered throughout the lesson, including multi-stage and ambiguous cases, with minimal guidance.",
       "id": 1
     },
     {
-      "question": "What is the goal of a 'Mega Practice \u2014 Identify the Rule' exercise?",
+      "question": "What is the goal of a 'Mega Practice — Identify the Rule' exercise?",
       "options": [
         "To compute full final answers only",
-        "Practicing purely the skill of recognizing which coding rule applies, across a wide variety of examples, without necessarily computing the full final answer",
         "To skip rule identification entirely",
+        "Practicing purely the skill of recognizing which coding rule applies, across a wide variety of examples, without necessarily computing the full final answer",
         "To only practice word reversal"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This exercise isolates and focuses specifically on the skill of rule recognition across many varied examples, without necessarily requiring the full final answer to be computed each time.",
       "id": 2
     },
@@ -42,36 +42,36 @@
       "question": "What is a 'Final Memory Map' intended to show?",
       "options": [
         "An unrelated diagram",
-        "How all the individual coding rule types and techniques covered throughout the lesson relate to and build on each other",
+        "A single isolated rule",
         "Only the answers to the practice sets",
-        "A single isolated rule"
+        "How all the individual coding rule types and techniques covered throughout the lesson relate to and build on each other"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The Final Memory Map shows how all the individual rule types and techniques covered throughout the lesson connect together and build on one another.",
       "id": 4
     },
     {
       "question": "What might a 'Universal Coding Formula' attempt to express?",
       "options": [
-        "A single formula that only works for shift coding",
         "A general, abstract way of describing any coding rule as a function transforming an input into an output, unifying the many specific rule types covered",
+        "A single formula that only works for shift coding",
         "A formula unrelated to coding rules",
         "A formula only usable for number coding"
       ],
-      "correct": 1,
-      "rationale": "The Universal Coding Formula attempts to express the general, abstract idea that any coding rule is a function transforming an input into an output \u2014 unifying the many specific rule types under one framework.",
+      "correct": 0,
+      "rationale": "The Universal Coding Formula attempts to express the general, abstract idea that any coding rule is a function transforming an input into an output — unifying the many specific rule types under one framework.",
       "id": 5
     },
     {
       "question": "Why is practicing 'rule identification' separately from full problem-solving valuable?",
       "options": [
         "It has no real value on its own",
-        "It isolates and strengthens the specific skill of pattern recognition, which is the most critical and often most time-consuming step in solving these problems",
         "It replaces the need to ever compute a final answer",
+        "It isolates and strengthens the specific skill of pattern recognition, which is the most critical and often most time-consuming step in solving these problems",
         "It only helps with the easiest problems"
       ],
-      "correct": 1,
-      "rationale": "Rule identification is often the most critical and time-consuming step \u2014 isolating and practicing it separately strengthens this specific skill directly.",
+      "correct": 2,
+      "rationale": "Rule identification is often the most critical and time-consuming step — isolating and practicing it separately strengthens this specific skill directly.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What is the benefit of a 'Universal Coding Formula' framing, even though real problems use many different specific rules?",
       "options": [
         "It replaces the need to learn any specific rule types",
-        "It provides a unifying mental model (input -> rule -> output) that helps organize and recall the many specific techniques as variations of one general idea",
+        "It only applies to a single narrow rule type",
         "It has no practical benefit at all",
-        "It only applies to a single narrow rule type"
+        "It provides a unifying mental model (input -> rule -> output) that helps organize and recall the many specific techniques as variations of one general idea"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Even though many specific rule types exist, the unifying input -> rule -> output framing helps organize and recall them all as variations on one general, coherent idea.",
       "id": 8
     },

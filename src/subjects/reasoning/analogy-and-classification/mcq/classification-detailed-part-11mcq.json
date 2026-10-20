@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-11",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 11 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 11 of 16",
   "questions": [
     {
       "question": "What is the 'Material-Based Trap'?",
       "options": [
-        "Confusing two synonyms",
         "Mistakenly classifying by function or category, when the true shared property is actually about the material something is made of",
+        "Confusing two synonyms",
         "A trap only relevant to numbers",
         "A trap with no practical relevance"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This trap involves overlooking that the true shared classification property is the material an item is made from, rather than its function or category.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Classification by Use' test?",
       "options": [
         "A material-based property",
-        "Whether a group of items share a common practical use, with one item having a different use",
         "A geography-based property",
+        "Whether a group of items share a common practical use, with one item having a different use",
         "A biology-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether items share a common practical use or purpose, identifying the item used for something different.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Classification by Diet' test?",
       "options": [
         "A location-based property",
-        "Whether a group of animals share a common diet category (herbivore, carnivore, etc.), with one breaking that pattern",
+        "A material-based property",
         "A use-based property",
-        "A material-based property"
+        "Whether a group of animals share a common diet category (herbivore, carnivore, etc.), with one breaking that pattern"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether animals share a common diet category, such as all being herbivores, identifying the one with a different diet.",
       "id": 4
     },
     {
       "question": "What does 'Classification by Biological Group' test?",
       "options": [
-        "A diet-based property only",
         "Whether a group of organisms share a common broader biological grouping (mammals, reptiles, etc.)",
+        "A diet-based property only",
         "A use-based property",
         "A material-based property"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether organisms share a common broader biological group, such as all being mammals, identifying the one from a different group.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Classification by Taxonomic Level' test, more specifically?",
       "options": [
         "A diet-based property only",
-        "Whether a group of biological terms share the same specific level of taxonomic classification (species, genus, family, etc.)",
         "A use-based property",
+        "Whether a group of biological terms share the same specific level of taxonomic classification (species, genus, family, etc.)",
         "A location-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether biological terms operate at the same specific taxonomic level (like all being genus names), identifying the one at a different level.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'Classification by Physical Property' test?",
       "options": [
         "A biological grouping only",
-        "Whether a group of items share a common physical property (density, magnetism, state of matter, etc.)",
+        "A location-based property only",
         "A use-based property only",
-        "A location-based property only"
+        "Whether a group of items share a common physical property (density, magnetism, state of matter, etc.)"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether items share a common physical property, such as density or state of matter, identifying the item that differs physically.",
       "id": 8
     },

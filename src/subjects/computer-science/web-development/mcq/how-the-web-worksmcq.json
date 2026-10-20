@@ -1,0 +1,126 @@
+{
+  "lessonId": "how-the-web-works",
+  "title": "How the Web Works: From URL to Rendered Page",
+  "questions": [
+    {
+      "id": 1,
+      "question": "When you enter an unfamiliar URL and press Enter, what is the browser's first networking step?",
+      "options": [
+        "Sending the HTTP request straight to the server",
+        "A DNS lookup to resolve the hostname into an IP address",
+        "Opening a TLS session for encryption",
+        "Downloading the page's CSS files"
+      ],
+      "correct": 1,
+      "rationale": "No request can be routed until the hostname becomes an IP address, so after checking local caches the browser always performs a DNS lookup first."
+    },
+    {
+      "id": 2,
+      "question": "A DNS record has a TTL of 3600. What does that number control?",
+      "options": [
+        "How long the TLS certificate stays valid",
+        "The TCP handshake timeout",
+        "How long the server keeps an idle connection open",
+        "How long the record may be cached before it must be re-queried"
+      ],
+      "correct": 3,
+      "rationale": "TTL (time to live) states the seconds a resolver or browser may reuse the cached answer, which is why DNS changes propagate only as old TTLs expire."
+    },
+    {
+      "id": 3,
+      "question": "What is the correct order of the TCP three-way handshake?",
+      "options": [
+        "SYN-ACK, SYN, ACK",
+        "ACK, SYN, SYN-ACK",
+        "SYN, SYN-ACK, ACK",
+        "SYN, ACK, SYN-ACK"
+      ],
+      "correct": 2,
+      "rationale": "The client sends SYN, the server answers SYN-ACK, and the client confirms with ACK, establishing ordered reliable delivery."
+    },
+    {
+      "id": 4,
+      "question": "What does TLS add on top of the raw TCP connection?",
+      "options": [
+        "Server identity via certificates plus encryption of the channel",
+        "Faster packet routing between networks",
+        "Guaranteed ordering of packets",
+        "Compression of all HTTP headers"
+      ],
+      "correct": 0,
+      "rationale": "TCP already provides ordering and reliability; TLS layers identity verification (certificates signed by authorities) and encryption on top, producing HTTPS."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between status codes 401 and 403?",
+      "options": [
+        "401 means forbidden forever; 403 means retry later",
+        "401 is a server error; 403 is a client error",
+        "401 means you are not authenticated (who are you?); 403 means authenticated but not allowed",
+        "They are interchangeable aliases for the same error"
+      ],
+      "correct": 2,
+      "rationale": "401 Unauthorized asks for credentials (log in first), while 403 Forbidden says identity is known but permission is denied."
+    },
+    {
+      "id": 6,
+      "question": "Which redirect status tells clients to update stored links and passes bookmarks and SEO weight onward?",
+      "options": [
+        "302 Found",
+        "304 Not Modified",
+        "301 Moved Permanently",
+        "307 Temporary Redirect"
+      ],
+      "correct": 2,
+      "rationale": "301 signals a permanent move, so clients and search engines transfer ranking and stored links to the new URL; 302 and 307 are temporary."
+    },
+    {
+      "id": 7,
+      "question": "What does the Cache-Control directive no-cache actually mean?",
+      "options": [
+        "Never store the response anywhere",
+        "Store the response, but revalidate with the server before each use",
+        "Cache only in the browser, not in CDNs",
+        "Download every resource twice for safety"
+      ],
+      "correct": 1,
+      "rationale": "no-cache is about validation, not storage: the copy may be kept but must be checked (e.g. with ETag) before reuse; no-store is the directive that forbids storage."
+    },
+    {
+      "id": 8,
+      "question": "A browser sends If-None-Match with ETag \"v41\" and the content has not changed. What does the server return?",
+      "options": [
+        "200 OK with the full body again",
+        "404 Not Found",
+        "412 Precondition Failed",
+        "304 Not Modified with the body omitted"
+      ],
+      "correct": 3,
+      "rationale": "A matching ETag lets the server answer with the tiny 304 Not Modified response, saving the download while confirming the cached copy is current."
+    },
+    {
+      "id": 9,
+      "question": "The browser's render tree is built by combining which two structures?",
+      "options": [
+        "The DOM tree and the CSSOM tree",
+        "The TCP session and the TLS session",
+        "The HTML source and the JavaScript heap",
+        "The cache manifest and the HTTP headers"
+      ],
+      "correct": 0,
+      "rationale": "Parsing HTML builds the DOM, parsing CSS builds the CSSOM, and the render tree joins visible DOM nodes with their computed styles before layout and paint."
+    },
+    {
+      "id": 10,
+      "question": "Which statement captures the SEO trade-off between client-side and server-side rendering?",
+      "options": [
+        "CSR is always better for SEO because crawlers execute all JavaScript",
+        "SEO depends only on the status codes the server returns",
+        "SSR delivers finished, crawlable HTML, while CSR builds content in the browser and needs extra work for crawlers",
+        "SSG has the worst SEO of the three approaches"
+      ],
+      "correct": 2,
+      "rationale": "SSR and SSG send complete HTML that crawlers read directly; CSR ships a shell and relies on JavaScript to fill in content, which complicates indexing."
+    }
+  ]
+}

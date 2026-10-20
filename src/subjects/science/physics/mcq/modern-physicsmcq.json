@@ -1,0 +1,101 @@
+{
+  "lessonId": "modern-physics",
+  "title": "Modern Physics: Quanta, Atoms, and Nuclei",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The energy of a single quantum of radiation of frequency ν is:",
+      "options": ["E = mc²", "E = hν", "E = ½mv²", "E = mgh"],
+      "correct": 1,
+      "rationale": "Planck's relation E = hν assigns each quantum an energy proportional to frequency, with h = 6.63 × 10⁻³⁴ J s."
+    },
+    {
+      "id": 2,
+      "question": "In the photoelectric effect, increasing the intensity of light of the same frequency:",
+      "options": [
+        "Ejects faster electrons",
+        "Ejects slower electrons",
+        "Ejects more electrons at the same maximum kinetic energy",
+        "Changes nothing at all"
+      ],
+      "correct": 2,
+      "rationale": "Intensity sets the number of photons, hence the number of photoelectrons; the frequency alone fixes each electron's maximum kinetic energy."
+    },
+    {
+      "id": 3,
+      "question": "Light of photon energy 4.15 eV falls on a metal whose work function is 2.0 eV. The maximum kinetic energy of the photoelectrons is:",
+      "options": ["2.15 eV", "4.15 eV", "6.15 eV", "2.0 eV"],
+      "correct": 0,
+      "rationale": "Kmax = hν − φ = 4.15 − 2.0 = 2.15 eV — the surplus energy after freeing the electron from the metal."
+    },
+    {
+      "id": 4,
+      "question": "According to Bohr's model, an atom emits radiation only when:",
+      "options": [
+        "An electron radiates while circling in a fixed orbit",
+        "The nucleus shrinks",
+        "An electron sits at rest",
+        "An electron jumps from a higher to a lower energy level"
+      ],
+      "correct": 3,
+      "rationale": "Electrons in stationary states do not radiate; light of frequency ν with hν = E₂ − E₁ appears only in a jump between levels."
+    },
+    {
+      "id": 5,
+      "question": "Isotopes are atoms that have:",
+      "options": [
+        "The same mass number but different atomic numbers",
+        "The same atomic number but different mass numbers",
+        "The same number of neutrons",
+        "Different numbers of protons and equal neutron counts"
+      ],
+      "correct": 1,
+      "rationale": "Isotopes share the atomic number Z (same element) but differ in mass number A because of different neutron counts; equal-A pairs are isobars."
+    },
+    {
+      "id": 6,
+      "question": "When a nucleus emits an alpha particle, its mass number and atomic number become:",
+      "options": ["A − 4 and Z − 2", "A unchanged and Z + 1", "A − 1 and Z unchanged", "A and Z unchanged"],
+      "correct": 0,
+      "rationale": "An alpha particle is a helium nucleus carrying 2 protons and 2 neutrons, so A drops by 4 and Z by 2."
+    },
+    {
+      "id": 7,
+      "question": "A radioactive sample of 80 g has a half-life of 5 days. After 15 days the mass remaining is:",
+      "options": ["40 g", "10 g", "20 g", "5 g"],
+      "correct": 1,
+      "rationale": "15 days is three half-lives: 80 → 40 → 20 → 10 g."
+    },
+    {
+      "id": 8,
+      "question": "The Sun's energy is produced mainly by:",
+      "options": [
+        "Fission of uranium",
+        "Burning of coal-like fuel",
+        "Fusion of hydrogen nuclei into helium",
+        "Radioactive decay of helium"
+      ],
+      "correct": 2,
+      "rationale": "In the Sun's core, hydrogen nuclei fuse into helium at extreme temperature and pressure, converting a tiny mass defect into vast energy."
+    },
+    {
+      "id": 9,
+      "question": "Einstein's equation E = mc² expresses that:",
+      "options": [
+        "Energy equals mass times gravity",
+        "Light carries no energy",
+        "Mass can be converted into energy and vice versa",
+        "Mass increases with speed squared"
+      ],
+      "correct": 2,
+      "rationale": "Mass–energy equivalence: a mass m disappearing (the mass defect) releases energy E = mc² with the huge factor c² ≈ 9 × 10¹⁶."
+    },
+    {
+      "id": 10,
+      "question": "De Broglie's matter-wave hypothesis gives a moving particle a wavelength of:",
+      "options": ["λ = h/p", "λ = p/h", "λ = hp", "λ = hν"],
+      "correct": 0,
+      "rationale": "λ = h/p links a particle's momentum p to its wave nature — the principle behind the electron microscope."
+    }
+  ]
+}

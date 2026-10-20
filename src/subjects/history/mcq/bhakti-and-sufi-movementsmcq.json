@@ -1,0 +1,76 @@
+{
+  "lessonId": "bhakti-and-sufi-movements",
+  "title": "The Bhakti and Sufi Movements: Faith as a Social Force",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Divya Prabandham, called the 'Tamil Veda', is the collected hymn book of which saints?",
+      "options": ["The Nayanars", "The Alvars", "The Siddhas", "The Varkaris"],
+      "correct": 1,
+      "rationale": "The Divya Prabandham gathers the Vaishnava hymns of the twelve Alvars, compiled by Nathamuni; the Nayanars were the parallel Shaiva saints of the Tevaram tradition."
+    },
+    {
+      "id": 2,
+      "question": "Shankara, who founded mathas at Sringeri, Puri, Dwarka, and Badrinath, taught the doctrine of:",
+      "options": ["Dvaita", "Vishishtadvaita", "Advaita", "Shuddhadvaita"],
+      "correct": 2,
+      "rationale": "Shankara (c. 788-820) taught Advaita — the identity of soul and Brahman, with the world of appearances illusory; Ramanuja, Madhva, and Vallabha later countered with their own schools."
+    },
+    {
+      "id": 3,
+      "question": "Ramanuja's Vishishtadvaita made the spiritual path rest chiefly on:",
+      "options": ["Ritual sacrifice", "Devotion and surrender (prapatti) to God", "Silent meditation alone", "Ascetic withdrawal from temples"],
+      "correct": 1,
+      "rationale": "Ramanuja (1017-1137) taught qualified non-dualism and made loving devotion with surrender to a personal God — served in temple worship — the road to liberation."
+    },
+    {
+      "id": 4,
+      "question": "Kabir's verses, attacking both mullah and pandit, are collected in which work?",
+      "options": ["Bijak", "Japji Sahib", "Sursagar", "Ramcharitmanas"],
+      "correct": 0,
+      "rationale": "The Bijak is the scripture of the Kabirpanth, collecting the weaver-saint's nirguna verses; his hymns also appear in the Sikh Adi Granth."
+    },
+    {
+      "id": 5,
+      "question": "Guru Nanak was born in 1469 at:",
+      "options": ["Pakpattan", "Talwandi (Nankana Sahib)", "Kartarpur", "Pandharpur"],
+      "correct": 1,
+      "rationale": "Nanak was born at Talwandi, now Nankana Sahib in Pakistan; he built the Sikh discipline of naam japo, kirat karo, and vand chhako, with sangat and langar."
+    },
+    {
+      "id": 6,
+      "question": "Tulsidas's Ramcharitmanas, the most recited retelling of the Rama story, is written in:",
+      "options": ["Sanskrit", "Braj bhasha", "Awadhi", "Marathi"],
+      "correct": 2,
+      "rationale": "Tulsidas (1532-1623) composed the Ramcharitmanas in Awadhi, the language of the eastern Hindi region; Surdas sang Krishna in Braj bhasha."
+    },
+    {
+      "id": 7,
+      "question": "The Varkari saints Namadeva and Tukaram undertook annual pilgrimage to which deity's shrine?",
+      "options": ["Vitthala of Pandharpur", "Jagannath of Puri", "Venkateshwara of Tirupati", "Krishna of Dwaraka"],
+      "correct": 0,
+      "rationale": "The Maharashtra Varkari tradition walks each year to Pandharpur to the god Vitthala; Namadeva's abhangas entered the Adi Granth and Tukaram was the movement's last great singer."
+    },
+    {
+      "id": 8,
+      "question": "Khwaja Muinuddin Chishti, whose dargah at Ajmer remains India's most visited shrine, died in:",
+      "options": ["1191", "1236", "1265", "1325"],
+      "correct": 1,
+      "rationale": "Muinuddin Chishti settled at Ajmer about 1191 and died there in 1236; his spiritual chain ran through Bakhtiar Kaki and Baba Farid to Nizamuddin Auliya (d. 1325)."
+    },
+    {
+      "id": 9,
+      "question": "Bahauddin Zakariya, who accepted state service and opposed devotional music, led which Sufi order from Multan?",
+      "options": ["Chishti", "Suhrawardi", "Qadiri", "Naqshbandi"],
+      "correct": 1,
+      "rationale": "Bahauddin Zakariya (d. 1262) headed the Suhrawardi order at Multan, accepting rulers' patronage as a tool of influence — in contrast to Chishti aloofness from courts."
+    },
+    {
+      "id": 10,
+      "question": "In Sufi practice, sama refers to:",
+      "options": ["Silent remembrance of God's names", "Audition — devotional music and dance", "The disciple's pledge to the pir", "The saint's death anniversary festival"],
+      "correct": 1,
+      "rationale": "Sama is the audition of devotional music, approved by Chishtis and associated with qawwali (perfected by Amir Khusrau); zikr is remembrance, bait the pledge, and urs the death anniversary."
+    }
+  ]
+}

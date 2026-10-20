@@ -1,0 +1,126 @@
+{
+  "lessonId": "political-philosophy-justice-and-rights",
+  "title": "Political Philosophy: Justice, Rights, and the State",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to Hobbes, why would rational individuals submit to a near-absolute sovereign?",
+      "options": [
+        "To express the general will of the people",
+        "To protect property rights against taxation",
+        "To escape the war of all against all and secure basic order",
+        "To guarantee free elections every five years"
+      ],
+      "correct": 2,
+      "rationale": "In Hobbes' state of nature life is 'nasty, brutish, and short', so rational people trade nearly all liberty to a sovereign in exchange for peace and security."
+    },
+    {
+      "id": 2,
+      "question": "Locke argues that legitimate government exists to:",
+      "options": [
+        "Maximise the total welfare of society",
+        "Protect natural rights to life, liberty, and property — and may be overthrown if it fails",
+        "Enforce the teachings of the established church",
+        "Abolish all private property"
+      ],
+      "correct": 1,
+      "rationale": "For Locke government is a limited trust: it exists to secure pre-existing natural rights, and the people retain a right of revolution when it betrays that trust."
+    },
+    {
+      "id": 3,
+      "question": "For Rousseau, laws are legitimate when they express:",
+      "options": [
+        "The general will of the people as a whole",
+        "The commands of an absolute monarch",
+        "A contract between rich and poor",
+        "The customs of the oldest families"
+      ],
+      "correct": 0,
+      "rationale": "Rousseau grounds sovereignty in the general will: citizens obey laws they collectively author, so obedience is self-rule rather than subjection."
+    },
+    {
+      "id": 4,
+      "question": "Rawls' difference principle permits social and economic inequalities only when they:",
+      "options": [
+        "Maximise average income",
+        "Reward the naturally talented",
+        "Benefit the least advantaged members of society",
+        "Are approved by a majority vote"
+      ],
+      "correct": 2,
+      "rationale": "Behind the veil of ignorance you would allow inequalities only if they improve the position of the worst off — insuring yourself against being among them."
+    },
+    {
+      "id": 5,
+      "question": "Which statement correctly distinguishes negative from positive liberty?",
+      "options": [
+        "Negative liberty is freedom from interference; positive liberty is the effective capability to act",
+        "Negative liberty applies to states; positive liberty applies to individuals",
+        "Negative liberty is political; positive liberty is only economic",
+        "Negative liberty means obeying nature; positive liberty means obeying the sovereign"
+      ],
+      "correct": 0,
+      "rationale": "Berlin's distinction: negative liberty asks 'who stops me?', positive liberty asks 'can I actually do it?' — rights on paper versus real power to use them."
+    },
+    {
+      "id": 6,
+      "question": "Mill's harm principle holds that society may coerce an individual only:",
+      "options": [
+        "When the majority's welfare requires it",
+        "When it is for the individual's own good",
+        "When the individual's conduct gives offence",
+        "To prevent harm to others"
+      ],
+      "correct": 3,
+      "rationale": "For Mill the only justified ground for coercion is preventing harm to others; paternalism and mere offence do not qualify."
+    },
+    {
+      "id": 7,
+      "question": "What distinguishes a natural right from a legal right?",
+      "options": [
+        "Natural rights are granted by legislatures; legal rights are not",
+        "Natural rights are claimed to hold by reason of humanity, independent of enactment; legal rights exist only by statute",
+        "Legal rights always override natural rights",
+        "Natural rights apply only to citizens"
+      ],
+      "correct": 1,
+      "rationale": "A natural right (like freedom of conscience) is argued to exist even where suppressed; a legal right (like a parking entitlement) exists only because the law says so."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is one of Rawls' principles of justice?",
+      "options": [
+        "Maximise the growth of national wealth",
+        "Strict equality of outcome for all citizens",
+        "Fair equality of opportunity for offices and positions",
+        "Merit without regard to social conditions"
+      ],
+      "correct": 2,
+      "rationale": "Rawls' second principle combines fair equality of opportunity with the difference principle; he is not a strict egalitarian and does not rank raw growth first."
+    },
+    {
+      "id": 9,
+      "question": "Which sequence matches the values promised in the Preamble of the Indian Constitution?",
+      "options": [
+        "Liberty, Justice, Equality, Fraternity",
+        "Justice, Liberty, Equality, Fraternity",
+        "Equality, Fraternity, Justice, Liberty",
+        "Fraternity, Equality, Liberty, Justice"
+      ],
+      "correct": 1,
+      "rationale": "The Preamble secures Justice (social, economic, political), Liberty (of thought, expression, belief, faith, worship), Equality (of status and opportunity), and Fraternity — dignity and unity."
+    },
+    {
+      "id": 10,
+      "question": "The distinction between a federal and a unitary state concerns:",
+      "options": [
+        "Who rules — democracy versus autocracy",
+        "How many citizens the state has",
+        "How power is distributed between central and regional governments",
+        "Whether the state has an official religion"
+      ],
+      "correct": 2,
+      "rationale": "Federal versus unitary is the structural axis of power-sharing, separate from the axis of who rules — a federal state can be authoritarian and a unitary state democratic."
+    }
+  ]
+}

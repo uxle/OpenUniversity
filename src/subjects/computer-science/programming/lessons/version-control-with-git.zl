@@ -1,0 +1,229 @@
+# Version Control with Git: Tracking Every Change
+
+> Every serious codebase is a history, not a file. Git records who
+> changed what, when, and why — letting you experiment fearlessly,
+> collaborate safely, and travel back in time when tomorrow's code
+> breaks yesterday's work.
+
+## 1. Why Version Control Matters
+
+Before version control, teams emailed zips (`final_v2_REAL.zip`) and
+lived in fear of overwriting a colleague's work. A **version control
+system (VCS)** stores a project as a chain of snapshots: each
+**commit** records the exact state of every file, plus who changed it
+and why.
+
+| Pain without a VCS | Git's answer |
+| --- | --- |
+| "Which version is current?" | Every change is a hashed, named commit |
+| A change broke working code | `git restore` / `git revert` rewind safely |
+| Two people edit the same file | Branches merge automatically where possible |
+| Why was this line written? | `git log` and `git blame` give the history |
+
+Git is **distributed**: every clone holds the full history, so you
+can commit on a train with no internet and sync later.
+
+## 2. Getting Started: init, config, clone
+
+```bash
+git config --global user.name "Ada Lovelace"
+git config --global user.email "ada@example.com"
+
+git init                       # start tracking the current folder
+git clone https://github.com/org/project.git   # copy an existing repo
+```
+
+`git init` creates a hidden `.git/` directory — the database that
+stores all history. Deleting it turns your project back into a plain
+folder; nothing in your working files is lost.
+
+[info]
+`git config --global init.defaultBranch main` names your default
+branch `main` (the modern convention) instead of the older `master`.
+[/info]
+
+## 3. The Three Areas: status, add, commit
+
+Git has three places your work can live, and every everyday command
+moves files between them.
+
+@diagram tree id="git-three-areas" layout="tree" aria="Git areas: working directory, staging area, local repository, and remote repository"
+  "Git areas" -> "Working directory"
+  "Git areas" -> "Staging area"
+  "Git areas" -> "Local repository"
+  "Git areas" -> "Remote repository"
+@/diagram
+
+```bash
+git status                     # what changed, what is staged
+git add report.py              # stage one file (working -> staging)
+git add .                      # stage everything in the folder
+git commit -m "Add report generator"   # snapshot (staging -> history)
+```
+
+The **staging area** (index) is Git's superpower: it lets you commit
+*selected* changes — one logical change per commit, even if you
+edited five files for three different reasons.
+
+@chart bar title="Commands a developer runs on a typical day (illustrative counts)" labels:
+status
+add
+commit
+push
+pull
+log
+
+data:
+14
+9
+9
+7
+7
+5
+@/chart
+
+[definition]
+A **commit** is an immutable snapshot of the staged files, plus the
+author, timestamp, message, and a pointer to the previous commit.
+Its hash (a short SHA-1 string) is its name forever.
+[/definition]
+
+## 4. Reading History — and Undoing Mistakes
+
+```bash
+git log --oneline              # compact history
+git log --oneline --graph --all   # history with a branch picture
+git diff                       # unstaged changes, line by line
+git restore report.py          # discard uncommitted edits to a file
+git revert a1b2c3d             # new commit that undoes an old one
+```
+
+[important]
+Prefer `revert` over rewriting published history: it makes a *new*
+commit that cancels an old one, so teammates' histories stay
+consistent. `git reset --hard` rewrites your local past — never run
+it on commits that others already have.
+[/important]
+
+## 5. Branching: Cheap Experiments
+
+A **branch** is just a movable label pointing at a commit — creating
+one costs nothing, which is why Git users branch for every feature,
+fix, or even a risky idea they may abandon.
+
+```bash
+git switch -c feature/login    # create and move to a new branch
+# ... edit, add, commit, repeat ...
+git switch main                # return to the main line
+git merge feature/login        # bring the feature in
+git branch -d feature/login    # tidy up
+```
+
+@diagram flowchart id="branch-workflow" layout="hierarchical" aria="Feature branch workflow from task to merged and pushed code"
+node start label="Pick a task" shape="pill"
+node branch label="git switch -c feature/x" shape="round-rect"
+node edit label="Edit, add, commit repeatedly" shape="round-rect"
+node clean label="Tests pass?" shape="diamond"
+node merge label="git switch main; git merge feature/x" shape="round-rect"
+node push label="git push and open a pull request" shape="pill"
+node fix label="Fix code, commit again" shape="round-rect"
+
+start -> branch
+branch -> edit
+edit -> clean
+clean -> fix label="no"
+fix -> edit
+clean -> merge label="yes"
+merge -> push
+@/diagram
+
+## 6. Merging and Merge Conflicts: A Walkthrough
+
+Merging stitches two lines of history together. Git merges
+automatically when changes touch different lines — but when both
+branches edit the **same lines differently**, it stops and asks you
+to decide. The conflicted file shows both versions:
+
+```text
+<<<<<<< HEAD
+Ship the report as PDF.
+=======
+Ship the report as HTML.
+>>>>>>> feature/format
+```
+
+Resolution is editing the file to the text you actually want,
+removing the `<<<<<<<`, `=======`, and `>>>>>>>` markers, then
+staging:
+
+```bash
+git add report.txt
+git commit                     # completes the merge
+```
+
+[tip]
+Conflict markers mark *both* versions — HEAD is your current branch,
+and the label after `>>>>>>>` is the incoming one. Read both sides,
+keep what makes sense (sometimes both), and never keep the markers
+themselves: a file containing `<<<<<<<` will not compile or run.
+[/tip]
+
+## 7. Remotes: push, pull, fetch — and Git vs GitHub
+
+A **remote** is another copy of the repository, usually a server.
+`origin` is the conventional name for the one you cloned from.
+
+```bash
+git remote add origin https://github.com/me/project.git
+git push -u origin main        # upload commits, set upstream
+git pull                       # fetch remote commits + merge them
+git fetch                      # download only; inspect before merging
+```
+
+[warning]
+**Git is not GitHub.** Git is the open-source version control tool
+that runs on your machine; GitHub is a commercial hosting service
+that stores repositories online and adds issues, pull requests, and
+code review. `git clone` works against any Git server — GitLab and
+self-hosted servers included.
+[/warning]
+
+## 8. .gitignore and Commit Message Discipline
+
+Commit what is *yours* — source and configuration — not what the
+machine generated. A `.gitignore` file at the repo root lists
+patterns Git should never track:
+
+```text
+__pycache__/
+*.pyc
+.env
+node_modules/
+dist/
+```
+
+Good commit messages complete the sentence "This commit will…":
+
+| Message | Verdict |
+| --- | --- |
+| `Fix bug` | Useless — which bug? how? |
+| `Fix off-by-one in loop bounds of parse_rows()` | Specific and searchable |
+| Fifty unrelated files, one message | One commit should be one logical change |
+
+[tip]
+Write the message for the teammate reading `git log` in six months —
+often that teammate is you, and the subject line is all they will
+see. Keep the subject under about 50 characters, written in the
+imperative, and reserve the body for the *why*, not the what.
+[/tip]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Commit | Immutable snapshot + author + message + parent |
+| Three areas | Working directory -> staging (`add`) -> history (`commit`) |
+| Branch | Movable label on a commit — create one per feature |
+| Merge conflict | Same lines changed twice: edit, unmark, add, commit |
+| Remote | `origin` on GitHub etc.; `push` up, `pull` down |
+| Git vs GitHub | Tool vs hosting service — never confuse them |

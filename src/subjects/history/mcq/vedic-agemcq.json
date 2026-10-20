@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "Which Veda is essentially a book of melodies and is regarded as the root of Indian music?",
-      "options": ["Rigveda", "Samaveda", "Yajurveda", "Atharvaveda"],
-      "correct": 1,
+      "options": [
+        "Samaveda",
+        "Rigveda",
+        "Yajurveda",
+        "Atharvaveda"
+      ],
+      "correct": 0,
       "rationale": "The Samaveda sets Rigvedic verses to saman (melodies) for the Udgatri priest to sing — the origin of Indian musical tradition."
     },
     {
       "id": 2,
       "question": "The Battle of Ten Kings (Dasarajna) was fought on the banks of which river?",
-      "options": ["Sarasvati", "Parushni (Ravi)", "Vitasta (Jhelum)", "Ganga"],
-      "correct": 1,
+      "options": [
+        "Sarasvati",
+        "Vitasta (Jhelum)",
+        "Parushni (Ravi)",
+        "Ganga"
+      ],
+      "correct": 2,
       "rationale": "Sudas of the Bharatas defeated a ten-tribe confederacy on the Parushni, identified with the modern Ravi, in the great Rigvedic conflict."
     },
     {
       "id": 3,
       "question": "The Rigvedic word 'gavishti', used for war, literally means:",
-      "options": ["Search for land", "Search for cows", "Path of honour", "March of thunder"],
+      "options": [
+        "Search for land",
+        "Search for cows",
+        "Path of honour",
+        "March of thunder"
+      ],
       "correct": 1,
       "rationale": "Gavishti literally means 'search for cows' — in a pastoral economy where cattle were the core of wealth, war was about herds."
     },
     {
       "id": 4,
       "question": "In Early Vedic polity, which body was the wider assembly that chose and advised the rajan?",
-      "options": ["Sabha", "Samiti", "Vidatha", "Gana"],
-      "correct": 1,
+      "options": [
+        "Sabha",
+        "Gana",
+        "Vidatha",
+        "Samiti"
+      ],
+      "correct": 3,
       "rationale": "The samiti was the broader assembly that selected and advised the tribal chief, while the sabha was the council of elders; the vidatha was older still and admitted women."
     },
     {
       "id": 5,
       "question": "Iron, known to Later Vedic people as 'krishna ayas', appears in the archaeological record of the doab from about:",
-      "options": ["1500 BCE", "1000 BCE", "600 BCE", "300 BCE"],
-      "correct": 1,
+      "options": [
+        "1000 BCE",
+        "1500 BCE",
+        "600 BCE",
+        "300 BCE"
+      ],
+      "correct": 0,
       "rationale": "Iron (krishna ayas) appears from about 1000 BCE at sites such as Atranjikhera, alongside Painted Grey Ware, marking the Later Vedic eastward expansion."
     },
     {
       "id": 6,
       "question": "The Purusha Sukta, which gives the mythic origin of the four varnas, is found in:",
-      "options": ["Rigveda mandala 10", "Shatapatha Brahmana", "Mundaka Upanishad", "Atharvaveda mandala 20"],
+      "options": [
+        "Rigveda mandala 10",
+        "Shatapatha Brahmana",
+        "Mundaka Upanishad",
+        "Atharvaveda mandala 20"
+      ],
       "correct": 0,
       "rationale": "The Purusha Sukta (Rigveda 10.90) describes the four varnas emerging from the sacrificed cosmic man — the ideological seed of the varna order."
     },
     {
       "id": 7,
       "question": "Which of these was a grand royal ritual of the Later Vedic age in which a horse roamed free for a year?",
-      "options": ["Vajapeya", "Ashvamedha", "Rajasuya", "Agnistoma"],
+      "options": [
+        "Vajapeya",
+        "Ashvamedha",
+        "Rajasuya",
+        "Agnistoma"
+      ],
       "correct": 1,
       "rationale": "In the ashvamedha a royal stallion roamed for a year under escort; lands it crossed had to accept the king's supremacy or fight."
     },
     {
       "id": 8,
       "question": "The famous philosophical debates of King Janaka's court took place in the kingdom of:",
-      "options": ["Kuru", "Panchala", "Videha", "Kosala"],
+      "options": [
+        "Kuru",
+        "Panchala",
+        "Videha",
+        "Kosala"
+      ],
       "correct": 2,
       "rationale": "Janaka of Videha hosted Yajnavalkya and the women debaters Gargi and Maitreyi — debates that fed directly into the Upanishads."
     },
     {
       "id": 9,
       "question": "India's national motto 'Satyameva Jayate' is taken from which text?",
-      "options": ["Brihadaranyaka Upanishad", "Mundaka Upanishad", "Shatapatha Brahmana", "Rigveda"],
+      "options": [
+        "Brihadaranyaka Upanishad",
+        "Mundaka Upanishad",
+        "Shatapatha Brahmana",
+        "Rigveda"
+      ],
       "correct": 1,
       "rationale": "'Satyameva Jayate' — truth alone triumphs — comes from the Mundaka Upanishad, part of the 108 texts in the traditional Muktika list."
     },
     {
       "id": 10,
       "question": "How many Vedangas are there, and what do they collectively do?",
-      "options": ["Four, governing the four varnas", "Six, auxiliary disciplines for studying the Veda", "Eight, stages of life", "Ten, divisions of the Rigveda"],
+      "options": [
+        "Four, governing the four varnas",
+        "Six, auxiliary disciplines for studying the Veda",
+        "Eight, stages of life",
+        "Ten, divisions of the Rigveda"
+      ],
       "correct": 1,
       "rationale": "The six Vedangas — Shiksha, Kalpa, Vyakarana, Nirukta, Chhanda, Jyotisha — are the 'limbs' that help preserve and study the Veda."
     }

@@ -6,12 +6,12 @@
       "id": 1,
       "question": "What is the difference between a logical and a physical address?",
       "options": [
-        "Logical addresses are longer than physical ones",
         "A logical address is what the program sees; the physical address is the real RAM location the MMU maps it to",
+        "Logical addresses are longer than physical ones",
         "Physical addresses exist only on disk",
         "They are identical in every modern OS"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The program uses logical (virtual) addresses; the MMU translates each to a physical RAM location at run time, enabling isolation and relocation."
     },
     {
@@ -19,11 +19,11 @@
       "question": "Free memory exists but is scattered into small, non-contiguous holes that cannot satisfy a request. This is called:",
       "options": [
         "Internal fragmentation",
-        "External fragmentation",
         "Thrashing",
+        "External fragmentation",
         "Belady's anomaly"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "External fragmentation is free memory broken into scattered holes; its cures are compaction (shuffling processes together) or paging."
     },
     {
@@ -43,23 +43,23 @@
       "question": "With a 20 ns TLB lookup, 100 ns memory access, and an 80% TLB hit ratio, what is the effective access time?",
       "options": [
         "120 ns",
-        "140 ns",
+        "100 ns",
         "220 ns",
-        "100 ns"
+        "140 ns"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Hit cost = 20 + 100 = 120 ns; miss cost = 20 + 100 + 100 = 220 ns; effective time = 0.8 × 120 + 0.2 × 220 = 140 ns."
     },
     {
       "id": 5,
       "question": "What is the final step when servicing a page fault?",
       "options": [
-        "Kill the process that faulted",
         "Restart the faulting instruction so the process never notices",
+        "Kill the process that faulted",
         "Flush the TLB and reboot",
         "Move the page to disk"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "After loading the page and updating the page table, the OS restarts the faulting instruction — the transparent restart is what makes demand paging work."
     },
     {

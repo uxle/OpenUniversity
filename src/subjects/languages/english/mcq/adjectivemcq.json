@@ -5,77 +5,132 @@
     {
       "id": 1,
       "question": "Which type of Adjective is 'Indian' in the phrase 'Indian seas'?",
-      "options": ["Quantitative Adjective", "Proper Adjective", "Demonstrative Adjective", "Numeral Adjective"],
-      "correct": 1,
+      "options": [
+        "Proper Adjective",
+        "Quantitative Adjective",
+        "Demonstrative Adjective",
+        "Numeral Adjective"
+      ],
+      "correct": 0,
       "rationale": "'Indian' is a Proper Adjective — it is derived from the Proper Noun 'India'."
     },
     {
       "id": 2,
       "question": "What is the Comparative Degree of 'Rich'?",
-      "options": ["Rich", "More rich", "Richer", "Richest"],
+      "options": [
+        "Rich",
+        "More rich",
+        "Richer",
+        "Richest"
+      ],
       "correct": 2,
       "rationale": "The Comparative Degree of 'Rich' is 'Richer', followed by 'Richest' as the Superlative Degree."
     },
     {
       "id": 3,
       "question": "Which of the following correctly avoids a double comparative?",
-      "options": ["He is more faster than his brother.", "He is faster than his brother.", "He is more wiser than her.", "He is more taller than me."],
+      "options": [
+        "He is more faster than his brother.",
+        "He is faster than his brother.",
+        "He is more wiser than her.",
+        "He is more taller than me."
+      ],
       "correct": 1,
       "rationale": "Double comparatives like 'more faster' or 'more wiser' are incorrect — the rule states to never combine 'more' with an '-er' comparative."
     },
     {
       "id": 4,
       "question": "In the comparative structure \"He is wiser than any other boy in his class\", what must follow 'any other'?",
-      "options": ["A plural noun", "A singular noun", "A verb", "An adverb"],
-      "correct": 1,
+      "options": [
+        "A plural noun",
+        "An adverb",
+        "A verb",
+        "A singular noun"
+      ],
+      "correct": 3,
       "rationale": "The structure 'Than any other' is followed by a Singular Noun, as in 'any other boy'."
     },
     {
       "id": 5,
       "question": "Which sentence correctly applies the rule for the Superlative Degree (Rule 3)?",
-      "options": ["He is wisest boy in the class.", "He is the wisest boy in the class.", "He is a wisest boy in the class.", "He is more wise boy in the class."],
-      "correct": 1,
+      "options": [
+        "He is the wisest boy in the class.",
+        "He is wisest boy in the class.",
+        "He is a wisest boy in the class.",
+        "He is more wise boy in the class."
+      ],
+      "correct": 0,
       "rationale": "The Superlative Degree always takes the article 'the' before it — e.g., 'He is the wisest boy in the class.'"
     },
     {
       "id": 6,
       "question": "Which sentence follows Rule 4 about verbs of sensation?",
-      "options": ["The food tastes deliciously.", "You look sadly today.", "The food tastes delicious.", "He seems angrily after the match."],
+      "options": [
+        "The food tastes deliciously.",
+        "You look sadly today.",
+        "The food tastes delicious.",
+        "He seems angrily after the match."
+      ],
       "correct": 2,
       "rationale": "Verbs of sensation (taste, feel, appear, look, seem, become) take Adjectives, not Adverbs — so 'tastes delicious' is correct and 'tastes deliciously' is wrong."
     },
     {
       "id": 7,
       "question": "Complete per Rule 2: 'The players of my team are faster than ___ of your team.'",
-      "options": ["that", "those", "these", "their"],
+      "options": [
+        "that",
+        "those",
+        "these",
+        "their"
+      ],
       "correct": 1,
       "rationale": "For plural nouns, relative comparison uses 'Than those of' — 'the players ... are faster than those of your team'; singular nouns take 'than that of'."
     },
     {
       "id": 8,
       "question": "'Enough' belongs to which type of adjective?",
-      "options": ["Proper Adjective", "Quantitative Adjective", "Numeral Adjective (Definite)", "Possessive Adjective"],
-      "correct": 1,
+      "options": [
+        "Proper Adjective",
+        "Possessive Adjective",
+        "Numeral Adjective (Definite)",
+        "Quantitative Adjective"
+      ],
+      "correct": 3,
       "rationale": "Words indicating quantity — much, little, some, enough, sufficient — are Quantitative Adjectives."
     },
     {
       "id": 9,
       "question": "'Little' (as in little/a little/the little) is used with which kind of noun?",
-      "options": ["Countable plural nouns", "Uncountable nouns", "Proper nouns", "Collective nouns only"],
-      "correct": 1,
+      "options": [
+        "Uncountable nouns",
+        "Countable plural nouns",
+        "Proper nouns",
+        "Collective nouns only"
+      ],
+      "correct": 0,
       "rationale": "Little, A Little, and The Little are used with Uncountable Nouns; Few, A Few, and The Few go with Countable Plural Nouns."
     },
     {
       "id": 10,
       "question": "In the sentence 'Those mangoes are ripe.', 'Those' is which type of adjective?",
-      "options": ["Possessive Adjective", "Demonstrative Adjective", "Quantitative Adjective", "Proper Adjective"],
+      "options": [
+        "Possessive Adjective",
+        "Demonstrative Adjective",
+        "Quantitative Adjective",
+        "Proper Adjective"
+      ],
       "correct": 1,
       "rationale": "This, That, These, Those used before a noun are Demonstrative Adjectives; possessive adjectives are my, our, your, his, her, their."
     },
     {
       "id": 11,
       "question": "According to Rule 1, the Comparative Degree is followed by 'than' + which case?",
-      "options": ["Objective Case", "Subjective Case", "Possessive Case", "Past participle"],
+      "options": [
+        "Objective Case",
+        "Subjective Case",
+        "Possessive Case",
+        "Past participle"
+      ],
       "correct": 1,
       "rationale": "The Comparative Degree is followed by 'than' + Subjective Case, as in 'wiser than any other boy'."
     }

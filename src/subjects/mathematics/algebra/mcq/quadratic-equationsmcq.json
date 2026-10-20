@@ -5,72 +5,122 @@
     {
       "id": 1,
       "question": "Which of the following is a quadratic equation?",
-      "options": ["2x + 3 = 7", "x² − 5x + 6 = 0", "y = mx + c", "x³ = 8"],
+      "options": [
+        "x² − 5x + 6 = 0",
+        "2x + 3 = 7",
+        "y = mx + c",
+        "x³ = 8"
+      ],
       "zolto": "ax^{2} + bx + c = 0",
-      "correct": 1,
+      "correct": 0,
       "rationale": "A quadratic has its unknown to exactly the second power and no higher — x² − 5x + 6 = 0 fits; the others are linear or cubic."
     },
     {
       "id": 2,
       "question": "Solve by factorising: x² − 5x + 6 = 0",
-      "options": ["x = −2, −3", "x = 1, 6", "x = 2, 3", "x = −1, −6"],
+      "options": [
+        "x = −2, −3",
+        "x = 1, 6",
+        "x = 2, 3",
+        "x = −1, −6"
+      ],
       "correct": 2,
       "rationale": "Two numbers multiplying to +6 and adding to −5 are −2 and −3, so (x−2)(x−3)=0 gives x = 2 or 3."
     },
     {
       "id": 3,
       "question": "The quadratic formula is:",
-      "options": ["x = (−b ± √(b²+4ac))/2a", "x = (b ± √(b²−4ac))/a", "x = (−b ± √(b²−4ac))/2a", "x = −c/b"],
+      "options": [
+        "x = (−b ± √(b²+4ac))/2a",
+        "x = (b ± √(b²−4ac))/a",
+        "x = (−b ± √(b²−4ac))/2a",
+        "x = −c/b"
+      ],
       "correct": 2,
       "rationale": "The formula subtracts 4ac inside the root and divides everything by 2a: x = (−b ± √(b² − 4ac)) / 2a."
     },
     {
       "id": 4,
       "question": "If the discriminant D = b² − 4ac equals 0, the equation has:",
-      "options": ["Two distinct real roots", "Exactly one repeated real root", "No real roots", "Infinitely many roots"],
-      "correct": 1,
+      "options": [
+        "Two distinct real roots",
+        "Infinitely many roots",
+        "No real roots",
+        "Exactly one repeated real root"
+      ],
+      "correct": 3,
       "rationale": "D = 0 means the square-root term vanishes, leaving one value x = −b/2a — the parabola just touches the x-axis."
     },
     {
       "id": 5,
       "question": "For x² + 4x + 4 = 0, what does the graph do at x = −2?",
-      "options": ["Crosses the x-axis twice", "Touches the x-axis and turns back", "Passes above the whole axis", "Becomes undefined"],
-      "correct": 1,
+      "options": [
+        "Touches the x-axis and turns back",
+        "Crosses the x-axis twice",
+        "Passes above the whole axis",
+        "Becomes undefined"
+      ],
+      "correct": 0,
       "rationale": "Here D = 16 − 16 = 0: a double root at x = −b/2a = −2, so the parabola is tangent to the axis there."
     },
     {
       "id": 6,
       "question": "The discriminant of 2x² − 3x + 5 = 0 is:",
-      "options": ["49", "−31", "9", "31"],
+      "options": [
+        "49",
+        "9",
+        "−31",
+        "31"
+      ],
       "zolto": "D = b^{2} - 4ac",
-      "correct": 1,
+      "correct": 2,
       "rationale": "D = (−3)² − 4(2)(5) = 9 − 40 = −31, so there are no real roots."
     },
     {
       "id": 7,
       "question": "For ax² + bx + c = 0, the sum of the roots equals:",
-      "options": ["c/a", "−b/a", "b/a", "−c/a"],
+      "options": [
+        "c/a",
+        "−b/a",
+        "b/a",
+        "−c/a"
+      ],
       "correct": 1,
       "rationale": "Sum of roots α + β = −b/a; the product αβ = c/a."
     },
     {
       "id": 8,
       "question": "If one root of x² − 7x + k = 0 is 3, then k equals:",
-      "options": ["10", "12", "4", "21"],
+      "options": [
+        "10",
+        "12",
+        "4",
+        "21"
+      ],
       "correct": 1,
       "rationale": "Substituting: 9 − 21 + k = 0 → k = 12. (Check via product: other root is 4, and 3 × 4 = 12.)"
     },
     {
       "id": 9,
       "question": "The parabola y = −2x² + x opens:",
-      "options": ["Upward, because c > 0", "Downward, because a < 0", "Sideways", "It cannot be determined"],
+      "options": [
+        "Upward, because c > 0",
+        "Downward, because a < 0",
+        "Sideways",
+        "It cannot be determined"
+      ],
       "correct": 1,
       "rationale": "Only the sign of a decides direction: a = −2 < 0 means it opens downward and has a maximum."
     },
     {
       "id": 10,
       "question": "Solve x² = 49.",
-      "options": ["x = 7 only", "x = ±7", "x = 24.5 only", "No solution"],
+      "options": [
+        "x = 7 only",
+        "x = ±7",
+        "x = 24.5 only",
+        "No solution"
+      ],
       "correct": 1,
       "rationale": "Both 7² and (−7)² equal 49, so a squared equation generally yields two solutions: x = ±7."
     }

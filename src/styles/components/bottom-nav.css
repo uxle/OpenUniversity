@@ -8,8 +8,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: var(--ou-bottom-nav-height);
+  /* Total height INCLUDES the safe-area inset: with viewport-fit=cover,
+     the nav must extend down over the home indicator (blurred translucent
+     bar — the standard iOS pattern) while the 64px row of tabs keeps its
+     full size. height: 64px + padding-bottom used to SHRINK the tab row
+     to ~30px on notched phones because border-box subtracted the inset
+     from the fixed height — tabs were crushed under the home indicator. */
+  height: calc(var(--ou-bottom-nav-height) + env(safe-area-inset-bottom));
   padding-bottom: env(safe-area-inset-bottom);
+  /* Landscape: keep tabs clear of the left/right notch edges. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -28,7 +37,7 @@
   width: 100%;
   height: 100%;
   max-width: 120px;
-  font-size: var(--ou-fs-xs);
+  font-size: max(12px, var(--ou-fs-xs));
   font-weight: 500;
   color: var(--ou-text-secondary);
   touch-action: manipulation;

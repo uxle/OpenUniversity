@@ -1,0 +1,126 @@
+{
+  "lessonId": "human-development-and-sustainable-development",
+  "title": "Human Development and Sustainable Development",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Human Development Index was launched in the first Human Development Report (1990) by:",
+      "options": [
+        "Mahbub ul Haq working with Amartya Sen",
+        "Amartya Sen alone",
+        "The World Bank under Robert McNamara",
+        "Karl Marx and Friedrich Engels"
+      ],
+      "correct": 0,
+      "rationale": "Mahbub ul Haq conceived the HDR/HDI in partnership with Amartya Sen, whose capabilities approach underpins it; the 1990 report opens with 'People are the real wealth of a nation'."
+    },
+    {
+      "id": 2,
+      "question": "Which three dimensions does the HDI measure?",
+      "options": [
+        "Income, wealth, employment",
+        "Health, housing, happiness",
+        "A long and healthy life, knowledge, a decent standard of living",
+        "Education, environment, equity"
+      ],
+      "correct": 2,
+      "rationale": "HDI combines life expectancy at birth (health), expected and mean years of schooling (knowledge), and GNI per capita in PPP dollars (living standard)."
+    },
+    {
+      "id": 3,
+      "question": "In the HDI, GNI per capita enters through:",
+      "options": [
+        "A linear scale capped at $10,000",
+        "A logarithm over goalposts of US$100 to 75,000",
+        "A quadratic scale",
+        "Purchasing-power parity of the median wage"
+      ],
+      "correct": 1,
+      "rationale": "Income uses a logarithm between $100 and $75,000 so each extra dollar counts less as income rises — richer people's dollars matter less to the index."
+    },
+    {
+      "id": 4,
+      "question": "An HDI value of 0.644 would place a country in which development band?",
+      "options": [
+        "Low human development",
+        "Very high human development",
+        "High human development",
+        "Medium human development"
+      ],
+      "correct": 3,
+      "rationale": "The bands are: below 0.550 low; 0.550-0.699 medium; 0.700-0.799 high; 0.800+ very high. India's roughly 0.64 sits in the medium band."
+    },
+    {
+      "id": 5,
+      "question": "The inequality-adjusted HDI (IHDI) matters because:",
+      "options": [
+        "National averages can hide deep distributional gaps in health, schooling, and income",
+        "It adds GDP growth to the HDI",
+        "It replaces GNI with median income",
+        "It measures only environmental inequality"
+      ],
+      "correct": 0,
+      "rationale": "HDI averages can mask inequality; the IHDI discounts each dimension for its distributional spread, and India's loss from inequality is roughly a fifth of its HDI."
+    },
+    {
+      "id": 6,
+      "question": "The Multidimensional Poverty Index declares a household poor when it is deprived in:",
+      "options": [
+        "All ten indicators without exception",
+        "At least income and education only",
+        "A weighted one-third of the ten indicators",
+        "Any single indicator"
+      ],
+      "correct": 2,
+      "rationale": "MPI poverty begins when weighted deprivations cross one-third across the ten indicators of health, education, and living standards — income itself is not counted."
+    },
+    {
+      "id": 7,
+      "question": "UNDP estimates about how many Indians exited multidimensional poverty between 2005-06 and 2019-21?",
+      "options": [
+        "About 41 million",
+        "About 135 million",
+        "About 415 million",
+        "About 415 thousand"
+      ],
+      "correct": 2,
+      "rationale": "UNDP-OPHI estimate roughly 415 million people moved out of multidimensional poverty in 15 years — the global MPI headcount fell from 55.1% to 16.4%."
+    },
+    {
+      "id": 8,
+      "question": "'Development that meets the needs of the present without compromising the ability of future generations to meet their own needs' comes from:",
+      "options": [
+        "The Stockholm Conference, 1972",
+        "The Brundtland Report, Our Common Future, 1987",
+        "The Rio+20 outcome, 2012",
+        "The Kyoto Protocol, 1997"
+      ],
+      "correct": 1,
+      "rationale": "This is the canonical Brundtland definition of sustainable development, stressing intergenerational equity; Stockholm (1972) was the first UN environment conference."
+    },
+    {
+      "id": 9,
+      "question": "The Sustainable Development Goals adopted in 2015 consist of:",
+      "options": [
+        "8 goals and 21 targets for developing countries",
+        "17 goals and 169 targets, universal for all countries",
+        "10 goals focused only on climate",
+        "17 goals binding only on the G20"
+      ],
+      "correct": 1,
+      "rationale": "The 2030 Agenda has 17 goals and 169 targets effective from 1 January 2016, and unlike the MDGs they are universal — applying to rich and poor countries alike."
+    },
+    {
+      "id": 10,
+      "question": "Under its updated Nationally Determined Contributions and the COP26 pledge, India has committed to:",
+      "options": [
+        "Net-zero emissions by 2050",
+        "45% cut in emissions intensity and 50% non-fossil power capacity by 2030, with net zero by 2070",
+        "Ending all coal use by 2030",
+        "A 2.5-3 billion tonne increase in oil reserves"
+      ],
+      "correct": 1,
+      "rationale": "India's NDCs target a 45% reduction in GDP emissions intensity and about 50% non-fossil installed capacity by 2030, plus a forest carbon sink of 2.5-3 bn tonnes; the net-zero year is 2070."
+    }
+  ]
+}

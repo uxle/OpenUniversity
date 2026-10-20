@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-13",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 13 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 13 of 16",
   "questions": [
     {
       "question": "What does 'Nested Shapes' classification test?",
       "options": [
-        "Only the outer boundary shape",
         "Whether a group of figures share a consistent pattern of shapes nested inside one another, with one breaking it",
+        "Only the outer boundary shape",
         "Only the color of shapes",
         "Only the number of shapes"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether figures share a consistent nested-shape structure, identifying the figure whose nesting pattern differs.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does the 'Symmetry Method' add to non-verbal classification, building on earlier methods?",
       "options": [
         "Nothing new, it repeats the counting method",
-        "A dedicated check for whether each figure shares a consistent type/degree of symmetry",
         "Only checks color",
+        "A dedicated check for whether each figure shares a consistent type/degree of symmetry",
         "Only checks size"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The symmetry method specifically checks for consistent symmetry properties across figures, complementing the counting, position, and orientation methods covered earlier.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "A method with no structural basis"
       ],
       "correct": 1,
-      "rationale": "This applies the same graph-based modeling idea used elsewhere in reasoning \u2014 representing items and their property relationships as connected nodes and edges.",
+      "rationale": "This applies the same graph-based modeling idea used elsewhere in reasoning — representing items and their property relationships as connected nodes and edges.",
       "id": 3
     },
     {
       "question": "What does 'Classification and Invariants' focus on?",
       "options": [
         "Properties that always change between items",
-        "Properties that remain constant (invariant) across the group, which is what defines the shared rule",
+        "Only numeric values",
         "Only visual color",
-        "Only numeric values"
+        "Properties that remain constant (invariant) across the group, which is what defines the shared rule"
       ],
-      "correct": 1,
-      "rationale": "This focuses on invariants \u2014 properties that stay constant across the group \u2014 since it's exactly this constancy that defines the shared classification rule.",
+      "correct": 3,
+      "rationale": "This focuses on invariants — properties that stay constant across the group — since it's exactly this constancy that defines the shared classification rule.",
       "id": 4
     },
     {
       "question": "What does an 'Invariant Diagram' help visualize?",
       "options": [
-        "A single item in isolation",
         "Which properties remain constant across a group and which one item breaks that constancy",
+        "A single item in isolation",
         "Only color differences",
         "A diagram unrelated to classification"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "An invariant diagram visually maps which properties stay constant across the group, helping pinpoint exactly where the one exception breaks that pattern.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What does the 'Advanced Classification Strategy' likely consolidate?",
       "options": [
         "Only the most basic techniques",
-        "Multiple techniques (feature vectors, invariants, graphs) combined into a more powerful, flexible solving approach",
         "A single narrow technique only",
+        "Multiple techniques (feature vectors, invariants, graphs) combined into a more powerful, flexible solving approach",
         "A strategy with no defined structure"
       ],
-      "correct": 1,
-      "rationale": "This consolidates the more advanced techniques covered \u2014 feature vectors, invariants, graph modeling \u2014 into a combined, more powerful and flexible solving approach.",
+      "correct": 2,
+      "rationale": "This consolidates the more advanced techniques covered — feature vectors, invariants, graph modeling — into a combined, more powerful and flexible solving approach.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What does a 'Cluster Model' apply to classification?",
       "options": [
         "Ignoring groupings entirely",
-        "Grouping items by shared properties into clusters, where the outlier is the item that doesn't fit well into the main cluster",
+        "A model with no grouping concept",
         "Only applies to letters",
-        "A model with no grouping concept"
+        "Grouping items by shared properties into clusters, where the outlier is the item that doesn't fit well into the main cluster"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This applies clustering directly to classification: items naturally group by shared properties, and the outlier is whichever item doesn't fit well into the main cluster.",
       "id": 8
     },

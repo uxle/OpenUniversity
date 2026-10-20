@@ -1,6 +1,6 @@
 {
   "lessonId": "analogy-detailed-part-5",
-  "title": "Analogy \u2014 In-Depth Guide \u2014 Part 5 of 12",
+  "title": "Analogy — In-Depth Guide — Part 5 of 12",
   "questions": [
     {
       "question": "What does a 'Mixed Operation' number analogy involve?",
@@ -18,11 +18,11 @@
       "question": "What does the 'Difference Method' check for in a number analogy?",
       "options": [
         "The ratio between the two numbers",
-        "A constant difference between the two numbers in the pair",
         "The sum of their digits",
+        "A constant difference between the two numbers in the pair",
         "Whether both numbers are prime"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The difference method checks whether a consistent, constant difference connects the two numbers in the given pair.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does a 'Digit-Sum Analogy' compute?",
       "options": [
         "The product of the two numbers",
-        "The sum of a number's individual digits, used as part of the relationship",
+        "A completely unrelated value",
         "The number of digits only",
-        "A completely unrelated value"
+        "The sum of a number's individual digits, used as part of the relationship"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A digit-sum analogy uses the sum of a number's individual digits (e.g., for 47, 4+7=11) as part of the relationship connecting the pair.",
       "id": 4
     },
     {
       "question": "What does a 'Digit-Product Analogy' compute, in contrast?",
       "options": [
-        "The sum of the digits",
         "The product of a number's individual digits, used as part of the relationship",
+        "The sum of the digits",
         "The total number of digits",
         "An unrelated random value"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A digit-product analogy multiplies a number's individual digits together (e.g., for 47, 4x7=28), using that as part of the relationship.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does a 'Reverse Number Analogy' involve?",
       "options": [
         "Adding the digits together",
-        "Reversing the digit order of a number as part of the relationship (e.g., 123 becomes 321)",
         "Squaring the number",
+        "Reversing the digit order of a number as part of the relationship (e.g., 123 becomes 321)",
         "A word-based relationship"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This analogy type reverses the order of a number's digits as part of the relationship, such as 123 relating to 321.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "What does the 'Alphabet Position Chart' provide for letter analogy?",
       "options": [
         "A list of synonyms",
-        "A quick-reference listing of each letter alongside its alphabet position, for fast lookup",
+        "A chart of country capitals",
         "A list of antonyms",
-        "A chart of country capitals"
+        "A quick-reference listing of each letter alongside its alphabet position, for fast lookup"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This chart provides a fast-reference lookup of each letter's alphabet position, useful for quickly working through letter analogy problems.",
       "id": 8
     },
     {
       "question": "What does 'Reverse Alphabet' in letter analogy refer to?",
       "options": [
-        "Reversing the order of letters in a word",
         "Mapping each letter to its mirror partner (position p to position 27-p)",
+        "Reversing the order of letters in a word",
         "Shifting each letter by a fixed amount",
         "A synonym for word length"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Reverse alphabet, in this context, refers to the same mirror mapping used elsewhere: pairing a letter at position p with its partner at position 27-p.",
       "id": 9
     },

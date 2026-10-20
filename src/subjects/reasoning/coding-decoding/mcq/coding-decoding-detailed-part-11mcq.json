@@ -1,29 +1,29 @@
 {
   "lessonId": "coding-decoding-detailed-part-11",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 11 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 11 of 22",
   "questions": [
     {
       "question": "What is 'sentence/word replacement' coding?",
       "options": [
-        "Replacing individual letters only",
         "Replacing entire words (not individual letters) with other assigned code words, as in the Chinese coding method",
+        "Replacing individual letters only",
         "A rule that ignores whole words",
         "A synonym for letter substitution"
       ],
-      "correct": 1,
-      "rationale": "This coding replaces whole words with other assigned code words, rather than transforming individual letters \u2014 the same idea underlying the Chinese coding method.",
+      "correct": 0,
+      "rationale": "This coding replaces whole words with other assigned code words, rather than transforming individual letters — the same idea underlying the Chinese coding method.",
       "id": 1
     },
     {
       "question": "What is 'number substitution'?",
       "options": [
         "Replacing letters with numbers",
-        "Replacing each digit or number with a different, fixed number or symbol according to a key",
         "A rule that ignores numbers entirely",
+        "Replacing each digit or number with a different, fixed number or symbol according to a key",
         "A synonym for word length coding"
       ],
-      "correct": 1,
-      "rationale": "Number substitution replaces digits or numbers with different fixed numbers or symbols, following a defined key \u2014 the numeric counterpart to letter substitution.",
+      "correct": 2,
+      "rationale": "Number substitution replaces digits or numbers with different fixed numbers or symbols, following a defined key — the numeric counterpart to letter substitution.",
       "id": 2
     },
     {
@@ -42,23 +42,23 @@
       "question": "How might 'coding-decoding and direction' combine two reasoning topics?",
       "options": [
         "They cannot be combined",
-        "A question could code direction-and-distance-style movement information using the same encode/decode logic used for letters or numbers",
+        "They are actually unrelated topics with no overlap",
         "Direction reasoning always replaces coding entirely",
-        "They are actually unrelated topics with no overlap"
+        "A question could code direction-and-distance-style movement information using the same encode/decode logic used for letters or numbers"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Such questions apply the same encode/decode logic used for letters or numbers to direction-and-distance-style movement information, blending the two reasoning domains.",
       "id": 4
     },
     {
       "question": "What does 'number coding with operations' involve?",
       "options": [
-        "Ignoring arithmetic entirely",
         "Applying explicit arithmetic operations (addition, multiplication, etc.) to numbers as part of deriving the code",
+        "Ignoring arithmetic entirely",
         "Only reversing digit order",
         "A rule that never uses numbers"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This coding type explicitly applies arithmetic operations to numbers as part of the process of deriving the final code.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is 'polynomial coding'?",
       "options": [
         "A code with no formula",
-        "A code derived from a polynomial expression (like n^2 + n) applied to a letter's position or a number",
         "A synonym for prime coding",
+        "A code derived from a polynomial expression (like n^2 + n) applied to a letter's position or a number",
         "A rule that ignores position values"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Polynomial coding derives its code by applying a polynomial expression, such as n^2 + n, to a letter's position or a given number.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What is 'Fibonacci coding'?",
       "options": [
         "A rule based on prime numbers",
-        "A coding rule based on the Fibonacci sequence (1, 1, 2, 3, 5, 8, ...) applied to positions or values",
+        "A rule with no numeric sequence involved",
         "A synonym for polynomial coding",
-        "A rule with no numeric sequence involved"
+        "A coding rule based on the Fibonacci sequence (1, 1, 2, 3, 5, 8, ...) applied to positions or values"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Fibonacci coding applies the Fibonacci sequence (1, 1, 2, 3, 5, 8...) to positions or values as the basis for its transformation.",
       "id": 8
     },

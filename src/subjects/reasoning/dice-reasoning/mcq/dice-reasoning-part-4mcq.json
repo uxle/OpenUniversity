@@ -1,16 +1,16 @@
 {
   "lessonId": "dice-reasoning-part-4",
-  "title": "Dice Reasoning \u2014 Part 4 of 10",
+  "title": "Dice Reasoning — Part 4 of 10",
   "questions": [
     {
       "question": "If three faces are visible in a view, and none of them are opposite pairs (which is guaranteed, since opposite faces never appear together), what must be true about the three hidden faces?",
       "options": [
-        "They are unrelated to the visible faces",
         "They include the three faces opposite to the ones visible, since each visible face's opposite must be hidden",
+        "They are unrelated to the visible faces",
         "They are always blank",
         "They cannot be determined at all"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Since each visible face's opposite can never also be visible, the opposite of every visible face must be among the three hidden faces.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'corner compatibility' check for when combining known face relationships?",
       "options": [
         "Whether the die is a perfect cube physically",
-        "Whether a proposed set of three mutually adjacent faces could actually meet validly at a real corner of the cube",
         "The die's total surface area",
+        "Whether a proposed set of three mutually adjacent faces could actually meet validly at a real corner of the cube",
         "Whether the die has any color at all"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Corner compatibility verifies that a proposed trio of faces could genuinely all meet together at one of the cube's actual corners, given the known adjacency and opposite relationships.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does the 'eight vertex combinations' heading likely refer to?",
       "options": [
         "Eight unrelated random face pairs",
-        "The eight distinct sets of three mutually adjacent faces, one for each corner of the cube",
+        "Eight different numbering systems for dice",
         "Eight different possible die colors",
-        "Eight different numbering systems for dice"
+        "The eight distinct sets of three mutually adjacent faces, one for each corner of the cube"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Since a cube has 8 corners, and each corner is where a unique set of 3 mutually adjacent faces meet, there are 8 such valid three-face corner combinations.",
       "id": 4
     },
     {
       "question": "What is a 'dice net'?",
       "options": [
-        "A net used to physically catch a rolling die",
         "A 2D unfolded layout of a cube's six faces that can be folded up to form the 3D die",
+        "A net used to physically catch a rolling die",
         "A grid used only for counting figures",
         "A type of dice game"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A dice net is a flat, 2D arrangement of the cube's six faces that, when folded along the shared edges, forms the complete 3D die.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does the 'net opposite rule' help identify in an unfolded dice net?",
       "options": [
         "Which faces are the same color",
-        "Which two faces in the flat net layout will become opposite faces once the net is folded into a cube",
         "The total area of the net",
+        "Which two faces in the flat net layout will become opposite faces once the net is folded into a cube",
         "Which face is the largest"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The net opposite rule identifies which pairs of faces, based on their positions in the flat unfolded layout, will end up opposite each other once the net is folded into a cube.",
       "id": 6
     },
@@ -95,7 +95,7 @@
         "It is drawn in a different color"
       ],
       "correct": 1,
-      "rationale": "An invalid net is one whose flat arrangement of six squares cannot actually fold into a complete, non-overlapping cube \u2014 not every arrangement of six squares is a valid cube net.",
+      "rationale": "An invalid net is one whose flat arrangement of six squares cannot actually fold into a complete, non-overlapping cube — not every arrangement of six squares is a valid cube net.",
       "id": 8
     },
     {

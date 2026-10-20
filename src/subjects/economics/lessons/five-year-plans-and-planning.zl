@@ -1,0 +1,247 @@
+# Planning in India: From Five-Year Plans to NITI Aayog
+
+> For sixty-six years India decided, in five-year instalments, how
+> much to invest and where. From the First Plan's dams and fields to
+> NITI Aayog's dashboards and indices, this lesson traces how Indian
+> planning was built, tested, reformed, and finally reimagined.
+
+## 1. Why Plan? The Post-Independence Vision
+
+[definition]
+**Economic planning** is the deliberate, central direction of an
+economy's investment and production priorities by the state for a
+stated period, usually through quantified targets for output,
+savings, and sectoral growth.
+[/definition]
+
+After 1947, planners saw private capital as too thin and too
+suspicious of long-gestation investments to build steel plants,
+dams, and machine industries quickly. Influenced by the Soviet model
+and by thinkers such as P. C. Mahalanobis, India chose a **mixed
+economy**: the state would occupy the commanding heights while
+private enterprise continued in consumer goods.
+
+The **Planning Commission** was set up by a Government of India
+cabinet resolution on **15 March 1950** — not by statute — with the
+Prime Minister as its chair (Jawaharlal Nehru was the first). Its job
+was to assess resources, formulate plans, and advise on priorities;
+execution stayed with ministries and states. The National Development
+Council, created in **1952**, brought Chief Ministers into plan
+approval.
+
+## 2. The Machinery of Planning
+
+@diagram tree id="planning-machinery" layout="tree" aria="Institutions of Indian planning"
+  "Indian planning" -> "Planning Commission (1950-2014)"
+  "Indian planning" -> "Five-Year Plans (1951-2017)"
+  "Planning Commission (1950-2014)" -> "Chair: Prime Minister"
+  "Planning Commission (1950-2014)" -> "Deputy Chairman and members"
+  "Five-Year Plans (1951-2017)" -> "Approved by National Development Council (1952)"
+  "Five-Year Plans (1951-2017)" -> "Annual plans in gap years"
+@/diagram
+
+Each plan set a growth target, allocated gross budgetary support
+among ministries, and divided resources between the Centre and the
+states. A plan year ran from April to March, and a plan "period"
+spanned five financial years — so the First Plan is written
+**1951-56**, not 1951-55.
+
+## 3. The First Three Plans: Foundations and Shocks (1951-1966)
+
+| Plan | Period | Model / focus | Target | Achieved (about) |
+| --- | --- | --- | --- | --- |
+| First | 1951-56 | Harrod-Domar; agriculture, irrigation, power | 2.1% | 3.6% |
+| Second | 1956-61 | Mahalanobis; heavy industry | 4.5% | 4.3% |
+| Third | 1961-66 | Self-sustaining growth; "agriculture and industry" | 5.6% | 2.4% |
+
+The **First Plan** succeeded so well that its problem was surfeit:
+good monsoons and community development lifted food output and
+tamed the inflation left by Partition and war.
+
+The **Second Plan** was the Mahalanobis era: the Industrial Policy
+Resolution of **1956** classified industries into Schedule A (state
+monopoly — railways, mining, steel), Schedule B (state-led), and
+Schedule C (private). Steel plants rose at Bhilai (Soviet aid),
+Rourkela (West German), and Durgapur (British).
+
+The **Third Plan** was wrecked by shocks no model had budgeted for:
+the **1962 China war** and the **1965 Pakistan war** inflated defence
+spending while two consecutive **droughts (1965, 1966)** cut food
+grain output sharply. The rupee was devalued by about **36.5 per
+cent in June 1966**, and the plan lapsed into **three Annual Plans
+(1966-69)** — the first "plan holiday".
+
+## 4. Plan Holidays, Garibi Hatao, and the Middle Years (1966-1990)
+
+Crisis bred doctrine. With food imports near famine levels, the
+**Green Revolution** spread high-yielding seeds, fertiliser, and
+assured irrigation through Punjab, Haryana, and western Uttar Pradesh
+from 1966-67, and India's food-grain output climbed from about
+72 million tonnes (1965-66) past 100 million tonnes by 1976-77.
+
+| Plan | Period | Slogan / theme | Achieved growth (about) |
+| --- | --- | --- | --- |
+| Fourth | 1969-74 | "Growth with stability" | 3.3% |
+| Fifth | 1974-79 | Poverty removal and self-reliance ("Garibi Hatao" backdrop) | 4.8% |
+| — | 1978-80 | Rolling Plan concept under the Janata government | — |
+| Sixth | 1980-85 | Direct attack on poverty: IRDP, NREP | 5.7% |
+| Seventh | 1985-90 | Productivity; food, work | 6.0% |
+
+The **Fifth Plan** was cut short in 1978 when the Janata government
+replaced it with the **Rolling Plan** — a plan revised every year.
+The **Sixth Plan** institutionalised anti-poverty programmes: the
+Integrated Rural Development Programme (IRDP) and the National Rural
+Employment Programme (NREP), ancestors of today's MGNREGA. The
+**1980-92** stretch also saw two more plan interruptions (annual
+plans in 1979-80 and 1990-92), the latter caused by the fiscal and
+external instability that ended in the 1991 crisis.
+
+[warning]
+Do not confuse the two "holidays": **1966-69** followed the Third
+Plan (wars and drought); **1990-92** followed the Seventh (political
+instability and the balance-of-payments slide). Rolling Plan =
+1978-80, a Janata idea, not a holiday as such.
+[/warning]
+
+## 5. The Reform-Era Plans (1992-2017)
+
+After liberalisation, plans shifted from command to indicative
+planning — from controlling licences to financing infrastructure and
+social sectors.
+
+| Plan | Period | Theme | Achieved growth (about) |
+| --- | --- | --- | --- |
+| Eighth | 1992-97 | Reforms and growth | 6.8% |
+| Ninth | 1997-2002 | "Growth with social justice" | 5.4% |
+| Tenth | 2002-07 | Monitoring targets | 7.7% |
+| Eleventh | 2007-12 | "Faster and more inclusive growth" | 8.0% |
+| Twelfth | 2012-17 | "Faster, more inclusive and sustainable growth" | about 6.8% |
+
+@chart bar title="Average annual real GDP growth by plan period (per cent, approximate)" labels:
+1st
+2nd
+3rd
+4th
+5th
+6th
+7th
+8th
+9th
+10th
+11th
+12th
+
+data:
+3.6
+4.3
+2.4
+3.3
+4.8
+5.7
+6.0
+6.8
+5.4
+7.7
+8.0
+6.8
+@/chart
+
+The trend line tells the story: growth roughly **doubled** from the
+Nehru-Mahalanobis years to the reform era, with the Eleventh Plan's
+~8 per cent marking the pre-crisis peak. The **Twelfth Plan
+(2012-17)** was the last of the line; its term ended before a
+successor plan could be drafted.
+
+## 6. What Planning Achieved — and Where It Failed
+
+Achievements, by any fair audit, are substantial:
+
+- **Food security**: food-grain output rose from about 55 million
+  tonnes in 1950-51 to over 300 million tonnes in recent years — the
+  Green Revolution plus procurement and the PDS.
+- **An industrial and scientific base**: PSUs in steel, machine
+  tools, power (BHEL), atomic energy and space; the IITs and CSIR
+  labs; dams under the Bhakra-Nangal and similar multipurpose
+  projects.
+- **Savings and investment** rose from about 10 per cent of GDP in
+  the 1950s to well above 30 per cent before the crisis years.
+
+Criticisms are equally standard exam fare:
+
+- The **licence-permit-quota raj** throttled competition: industrial
+  licensing, import controls, and price controls bred scarcity,
+  queues, and rent-seeking.
+- **PSU inefficiency**: many public enterprises earned returns below
+  the cost of capital, draining the budget.
+- **Plan growth was capital-heavy and job-light**, so unemployment
+  and inequality persisted despite rising output.
+- **Federal friction**: plan allocations were seen as partisan, and
+  states complained of one-size-fits-all schemes.
+
+## 7. From Planning Commission to NITI Aayog
+
+On 15 August 2014 the Prime Minister announced the Planning
+Commission's replacement from the Red Fort; a cabinet resolution of
+**1 January 2015** created the **National Institution for
+Transforming India — NITI Aayog**.
+
+[important]
+Key structural differences: NITI Aayog is a **think tank and
+coordinating body, not an allocator** — it distributes no plan funds,
+since plan transfers were replaced by the Finance Commission's tax
+devolution formula (14 per cent, later 41 per cent, of the divisible
+pool). It has no power to enforce; its leverage is evidence, indices,
+and persuasion.
+[/important]
+
+| Feature | Planning Commission | NITI Aayog |
+| --- | --- | --- |
+| Set up | 15 March 1950 | 1 January 2015 |
+| Role | Allocate funds, approve plans | Policy ideas, monitoring, coordination |
+| Federal design | Top-down; states consulted via NDC | "Cooperative and competitive federalism"; Governing Council of all CMs |
+| Signature documents | Five-Year Plans, Annual Plans | 15-year Vision, 7-year Strategy, 3-year Action Agenda |
+
+The **Governing Council** — Prime Minister, Chief Ministers, and
+Lt-Governor representatives — meets to set the national agenda, and
+regional councils address area-specific issues. The first CEO was
+Amitabh Kant.
+
+## 8. NITI Aayog's Tools: Federalism by Dashboard
+
+NITI Aayog governs by measurement. Its flagship instruments:
+
+- **SDG India Index** — ranks states and UTs on progress toward the
+  2030 Sustainable Development Goals; the national score rose from
+  57 in the 2018 baseline to 71 in the 2023-24 edition, with Kerala
+  topping every edition.
+- **Aspirational Districts Programme (2018)** — 112 of the least
+  developed districts monitored monthly on health, nutrition,
+  education, and basic infrastructure.
+- **Multidimensional Poverty Index (National MPI)** — India's own 12
+  indicators of deprivation: poverty fell from about **24.85 per
+  cent (2015-16) to 14.96 per cent (2019-21)**, moving roughly 13.5
+  crore people out of multidimensional poverty.
+- **Composite Water Management Index, Innovation Index, and health
+  and school "health-card" reports** — competitive pressure by
+  publication.
+
+[tip]
+Memory hook: Planning Commission = *funds*; NITI Aayog = *facts*.
+1950 vs 2015; allocation vs acceleration; NDC approval vs Governing
+Council persuasion.
+[/tip]
+
+## 9. Quick Revision
+
+| Item | Fact |
+| --- | --- |
+| Planning Commission | Cabinet resolution, 15 March 1950; PM chairs |
+| First Plan | 1951-56, Harrod-Domar model, agriculture priority |
+| Second Plan | 1956-61, Mahalanobis model, heavy industry |
+| First plan holiday | 1966-69, after wars and droughts |
+| Green Revolution begins | 1966-67, HYV seeds in Punjab-Haryana-west UP |
+| Rolling Plan | 1978-80, Janata government |
+| Poverty slogan era | Fifth Plan, "Garibi Hatao" backdrop |
+| Reform-era plans | Eighth (1992-97) onward; Twelfth (2012-17) last |
+| NITI Aayog | 1 January 2015; think tank, no fund allocation |
+| NITI indices | SDG India Index, Aspirational Districts, National MPI |

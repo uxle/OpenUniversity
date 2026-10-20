@@ -1,0 +1,198 @@
+# Surveys and Sampling: How Data Is Collected Fairly
+
+> Asking everyone is usually impossible, so statisticians ask a slice
+> and trust mathematics to make the slice stand in for the whole. How
+> the slice is chosen decides what the survey can honestly say.
+
+## 1. Population, Sample, and Census
+
+[definition]
+The **population** is every individual the study is about; a **sample**
+is the subset actually studied. A **census** studies the whole
+population, while a **sample survey** studies a sample and generalises
+from it with quantified uncertainty.
+[/definition]
+
+| Term | Meaning | School of 2,000 students |
+| --- | --- | --- |
+| Population | all units of interest | all 2,000 students |
+| Sample | the studied subset | 100 chosen students |
+| Sampling frame | the list you draw from | the official roll |
+| Census | a 100 percent count | the whole-school election |
+
+A number computed from the sample (the **statistic**, such as the
+sample mean) estimates the corresponding **parameter** for the whole
+population. The gap between them is **sampling error**, and it shrinks
+as the sample grows — but only random selection shrinks bias, at any
+sample size.
+
+## 2. Why Not Ask Everyone?
+
+Censuses are slow, costly, and error-prone: India's decennial census
+enumerates more than a billion people and takes years of preparation.
+A well-chosen sample of a few thousand can estimate national opinion
+within a couple of percentage points. Sampling is a deliberate trade —
+a small, measurable uncertainty in exchange for speed and cost — and
+the whole craft lies in making that uncertainty honest.
+
+## 3. The Sampling Family Tree
+
+@diagram tree id="sampling-methods-tree" layout="tree" aria="Probability and non-probability sampling methods"
+  "Sampling methods" -> "Probability sampling (known chance of selection)"
+  "Sampling methods" -> "Non-probability sampling (chance unknown)"
+  "Probability sampling (known chance of selection)" -> "Simple random"
+  "Probability sampling (known chance of selection)" -> "Systematic"
+  "Probability sampling (known chance of selection)" -> "Stratified"
+  "Probability sampling (known chance of selection)" -> "Cluster"
+  "Non-probability sampling (chance unknown)" -> "Convenience"
+  "Non-probability sampling (chance unknown)" -> "Judgement"
+  "Non-probability sampling (chance unknown)" -> "Quota"
+  "Non-probability sampling (chance unknown)" -> "Snowball"
+@/diagram
+
+Only the left branch lets probability theory measure reliability. The
+right branch is cheaper and sometimes the only option, but its bias
+cannot be measured away, whatever the sample size.
+
+## 4. Simple Random Sampling
+
+Every sample of size n has the same chance of being chosen — a lottery
+with every name in the drum exactly once.
+
+[example]
+A class list of 20 students numbered 1 to 20 must yield 4 winners.
+Read two-digit pairs from a random number table: 07, 42 (skip — over
+20), 13, 91 (skip), 05. The winners are students 7, 13, and 5, plus
+the next valid pair drawn. Every student had an equal chance and the
+dice did the choosing, not a person.
+[/example]
+
+- Pros: free of favouritism; the theory of probability guarantees
+  unbiasedness on average.
+- Cons: needs a complete frame, and small samples can miss subgroups
+  by pure luck — 4 draws can easily land on all boys.
+
+## 5. Systematic Sampling
+
+List the frame, compute the interval, draw one random start, then take
+every k-th unit:
+
+@math label="eq:sampling-interval"
+k = \frac{N}{n}
+@/math
+
+[example]
+Choose 25 students from a list of 200.
+Step 1: k = 200/25 = 8.
+Step 2: pick a random start between 1 and 8 — say 3.
+Step 3: the sample is students 3, 11, 19, 27, ... , 195 — 25 names
+spread evenly through the whole list.
+[/example]
+
+[tip]
+Systematic sampling is the field surveyor's favourite: one random
+number, then mechanical counting along a street, ward, or queue. Its
+only trap is a list that hides a repeating cycle matching k — for
+example, every 8th house on a street being a corner shop.
+[/tip]
+
+## 6. Stratified Sampling
+
+Split the population into non-overlapping **strata** that differ in
+the characteristic under study — class, gender, region — then draw a
+random sample from each in proportion to its size.
+
+[example]
+A school has 800 grade-9, 700 grade-10, and 500 grade-11 students.
+For a sample of 100, each stratum contributes n × (stratum size / N):
+Step 1: grade 9 gets 100 × 800/2000 = 40.
+Step 2: grade 10 gets 100 × 700/2000 = 35.
+Step 3: grade 11 gets 100 × 500/2000 = 25.
+Every grade is now represented in exactly its fair share.
+[/example]
+
+- Pros: guarantees every subgroup appears in proportion, and gives
+  more precise estimates than simple random sampling of the same size.
+- Cons: needs the full frame plus reliable sizes for every stratum.
+
+@chart bar title="A proportional stratified sample of 100 students" labels:
+Grade 9
+Grade 10
+Grade 11
+
+data:
+40
+35
+25
+@/chart
+
+## 7. Cluster Sampling
+
+When the population is scattered, list natural groups — villages,
+wards, schools — choose a few whole groups at random, and study
+everyone inside them (one-stage) or sample within each chosen group
+(two-stage).
+
+[example]
+A district has 50 wards with about 500 households each. Building a
+frame of 25,000 households is hopeless, so pick 5 wards at random and
+survey 100 households in each: 5 × 100 = 500 interviews, and the only
+frame needed is the list of 50 wards.
+[/example]
+
+| Method | How units are drawn | Best when | Main risk |
+| --- | --- | --- | --- |
+| Simple random | lottery over all units | small, complete frames | subgroups missed by luck |
+| Systematic | every k-th after a random start | long lists, field work | hidden cycles matching k |
+| Stratified | random within each stratum | known, contrasting subgroups | needs full frame and stratum sizes |
+| Cluster | random whole groups | scattered population, no frame | similar clusters inflate error |
+
+## 8. Non-Probability Samples and Bias
+
+- **Convenience**: whoever is easiest — mall visitors, your own
+  friends, people who answer the door.
+- **Judgement**: the researcher hand-picks "typical" cases.
+- **Quota**: fixed counts per category, filled non-randomly.
+- **Snowball**: respondents recruit the next respondents — invaluable
+  for rare or private populations, hopeless for representativeness.
+
+| Bias | What goes wrong |
+| --- | --- |
+| Selection / undercoverage | the frame omits part of the population (phone polls miss the phone-less) |
+| Non-response | the unwilling differ systematically from the willing |
+| Response / wording | leading questions push answers ("Should the canteen finally serve healthy food?") |
+| Voluntary sample | only the motivated reply, inflating extreme views |
+
+[warning]
+The 1936 Literary Digest poll collected 2.4 million ballots — an
+enormous sample — and still predicted the wrong US president, because
+its list reached wealthier voters far more often. A biased large
+sample loses to an unbiased small one every single time.
+[/warning]
+
+[important]
+Sample size fixes precision; sample selection fixes truth. No sample
+size can rescue a method that never gave part of the population any
+chance to be heard.
+[/important]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Whole group under study | population |
+| List used to draw the sample | sampling frame |
+| Interval k in systematic sampling | k = N/n |
+| 100 from strata of 800 / 700 / 500 | 40 / 35 / 25 |
+| Method for scattered villages | cluster sampling |
+| A sample mean estimates | the population parameter |
+| 2.4 million ballots, wrong prediction | selection bias (1936) |
+| Leading question causes | response (wording) bias |
+
+[summary]
+Fair sampling is random at some stage: simple random, systematic,
+stratified, and cluster each solve a different practical problem, and
+the pros-and-cons table tells you which; non-probability shortcuts
+save money and buy bias instead; and honest question wording plus a
+high response rate protect the result end to end.
+[/summary]

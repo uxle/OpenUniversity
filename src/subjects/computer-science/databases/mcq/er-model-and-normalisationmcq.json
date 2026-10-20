@@ -1,0 +1,111 @@
+{
+  "lessonId": "er-model-and-normalisation",
+  "title": "The ER Model and Normalisation: Designing Good Schemas",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In an ER diagram, students take many courses and each course holds many students. How is this M:N relationship mapped to relational tables?",
+      "options": [
+        "A foreign key on the student table",
+        "A foreign key on the course table",
+        "A junction table whose key is the pair of both entity keys",
+        "The two tables are merged into one"
+      ],
+      "correct": 2,
+      "rationale": "The relational model has no native M:N construct, so the relationship becomes its own table — ENROLMENT(student_id, course_id, grade) — holding both keys as a composite primary key."
+    },
+    {
+      "id": 2,
+      "question": "A STUDENT row stores a phone column containing \"98110, 99201\". Which normal form does this violate?",
+      "options": ["3NF", "1NF", "BCNF", "2NF"],
+      "correct": 1,
+      "rationale": "First normal form requires atomic values with no repeating groups; two phones in one cell force string surgery for queries, so each phone moves to its own row in a separate table."
+    },
+    {
+      "id": 3,
+      "question": "In ENROLMENT_REPORT keyed by (student_id, course_id), the name column depends on student_id alone. This violates:",
+      "options": ["2NF, because name depends on part of the composite key", "1NF, because name is not atomic", "3NF, because name is transitive", "BCNF, because name is a determinant"],
+      "correct": 0,
+      "rationale": "Second normal form forbids partial dependencies — non-key attributes determined by only part of a composite key — which is exactly the sid-to-name situation; the fix is splitting out STUDENT."
+    },
+    {
+      "id": 4,
+      "question": "student_id → hostel_id and hostel_id → hostel_name together give student_id → hostel_name. What is this pattern called, and which normal form forbids it among non-key attributes?",
+      "options": [
+        "A partial dependency; 2NF",
+        "A multivalued dependency; 4NF",
+        "A transitive dependency; 3NF",
+        "A functional dependency; 1NF"
+      ],
+      "correct": 2,
+      "rationale": "When a non-key attribute depends on another non-key attribute (hostel_name via hostel_id), it is transitive; third normal form requires splitting HOSTEL from STUDENT to remove it."
+    },
+    {
+      "id": 5,
+      "question": "How is a multivalued attribute such as a student's several phone numbers mapped to tables?",
+      "options": [
+        "Comma-separated in one column of STUDENT",
+        "A separate table with the owner's key plus one phone per row",
+        "Extra columns phone1, phone2, phone3 in STUDENT",
+        "It cannot be represented relationally"
+      ],
+      "correct": 1,
+      "rationale": "Composite attributes flatten into plain columns, but multivalued attributes become their own table — PHONE(student_id, phone) — keeping values atomic and searchable."
+    },
+    {
+      "id": 6,
+      "question": "Deleting the last enrolment row for the Networks course erases the course's title and credits from the database. Which anomaly is this?",
+      "options": ["Update anomaly", "Insertion anomaly", "Redundancy anomaly", "Deletion anomaly"],
+      "correct": 3,
+      "rationale": "A deletion anomaly is the loss of an unrelated fact because it shared a row with the deleted one — the symptom that drives decomposition into separate STUDENT, COURSE, and ENROLMENT tables."
+    },
+    {
+      "id": 7,
+      "question": "Which statement about keys is true?",
+      "options": [
+        "Every candidate key is a superkey, but only minimal ones are candidate keys",
+        "Every superkey is a candidate key",
+        "A primary key and a foreign key are the same thing",
+        "A composite key cannot be a primary key"
+      ],
+      "correct": 0,
+      "rationale": "Superkeys are any uniquely-identifying column sets; candidate keys are the minimal ones, and the primary key is whichever candidate key the designer chooses."
+    },
+    {
+      "id": 8,
+      "question": "The mnemonic \"each attribute depends on the key, the whole key, and nothing but the key\" summarises which progression?",
+      "options": [
+        "ER modelling to tables",
+        "1NF, 2NF, and 3NF respectively",
+        "Physical to logical data independence",
+        "OLTP to OLAP conversion"
+      ],
+      "correct": 1,
+      "rationale": "The three clauses map onto atomic values (1NF), no partial dependencies (2NF), and no transitive dependencies (3NF) — the first three rungs of the normal-form ladder."
+    },
+    {
+      "id": 9,
+      "question": "For a 1:N relationship such as department to employees, where does the foreign key go?",
+      "options": [
+        "A new junction table holding both keys",
+        "A foreign key added to the department table",
+        "A foreign key on the N side (employees) pointing at the 1 side (department)",
+        "Nowhere; 1:N relationships are left in the diagram"
+      ],
+      "correct": 2,
+      "rationale": "The many side carries the key of the one side — each employee row stores its department's key — which permits many employees per department without redundancy."
+    },
+    {
+      "id": 10,
+      "question": "When is denormalisation a defensible choice?",
+      "options": [
+        "Whenever storage is cheap",
+        "When the schema fails third normal form",
+        "When the designer dislikes joins",
+        "For measured, read-heavy reporting workloads, with the application keeping duplicated columns in step"
+      ],
+      "correct": 3,
+      "rationale": "Deliberate redundancy can speed simple reads, but it reintroduces anomaly risk, so it must be justified by a measured workload and guarded by application logic that keeps copies consistent."
+    }
+  ]
+}

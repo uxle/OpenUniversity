@@ -1,0 +1,126 @@
+{
+  "lessonId": "statement-and-conclusion",
+  "title": "Statement and Conclusion",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Statement: \"The bank will remain closed on the second Saturday of every month.\" Conclusions: I. The bank remains closed at least one Saturday every month. II. The bank is closed on more days than it opens.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": 0,
+      "rationale": "The second Saturday is certainly one Saturday, so I follows. II invents a comparison over all days of the month that the statement never makes, so it does not follow."
+    },
+    {
+      "id": 2,
+      "question": "Statement: \"Shyam scored higher than Ravi, and Ravi scored higher than Mohan.\" Which conclusion definitely follows?",
+      "options": [
+        "Shyam and Mohan scored equally",
+        "Mohan scored the lowest of the three",
+        "Ravi scored the highest of the three",
+        "Mohan scored higher than Shyam"
+      ],
+      "correct": 1,
+      "rationale": "Higher-than is transitive, so Shyam is above Ravi, who is above Mohan; with three people in that order, Mohan is necessarily last. The other options contradict or reverse this order."
+    },
+    {
+      "id": 3,
+      "question": "Statement: \"Regular practice of meditation helps reduce stress.\" Conclusions: I. People who practise meditation may experience less stress. II. Meditation is the best cure for stress.",
+      "options": [
+        "Neither I nor II follows",
+        "Only II follows",
+        "Only I follows",
+        "Both I and II follow"
+      ],
+      "correct": 2,
+      "rationale": "I is the statement weakened from \"helps\" to \"may\", and weaker options always follow. II invents a superlative comparison with every other cure that the statement never attempted."
+    },
+    {
+      "id": 4,
+      "question": "Statement: \"The government has banned single-use plastic bags in the city.\" Conclusions: I. Using single-use plastic bags is now prohibited in the city. II. The city will become completely free of plastic waste.",
+      "options": [
+        "Both I and II follow",
+        "Neither I nor II follows",
+        "Only II follows",
+        "Only I follows"
+      ],
+      "correct": 3,
+      "rationale": "A ban prohibits exactly what it names, so I follows directly. II escalates one product ban into a total plastic-free claim — an over-generalisation the statement never licenses."
+    },
+    {
+      "id": 5,
+      "question": "Statements: \"All students of Class X attended the science fair. Some students who attended the fair won prizes.\" Conclusions: I. Every Class X student was present at the fair. II. Some Class X students won prizes.",
+      "options": [
+        "Only II follows",
+        "Only I follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": 1,
+      "rationale": "I restates the first statement exactly. II fails because the prize winners could all belong to other classes that also attended — the statements never connect the prizes to Class X students."
+    },
+    {
+      "id": 6,
+      "question": "Statement: \"Only graduates are eligible for this post.\" Conclusions: I. A candidate who is not a graduate is not eligible. II. Every graduate is eligible for this post.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": 0,
+      "rationale": "\"Only graduates\" makes graduation a necessary condition, which is precisely I. But necessary is not sufficient — graduates may still fail other requirements — so II overstates the rule."
+    },
+    {
+      "id": 7,
+      "question": "Statement: \"Some ministers are honest.\" Conclusions: I. Some ministers are dishonest. II. It cannot be said that no minister is honest.",
+      "options": [
+        "Only I follows",
+        "Neither I nor II follows",
+        "Only II follows",
+        "Both I and II follow"
+      ],
+      "correct": 2,
+      "rationale": "\"Some\" never licenses the opposite fact, so I does not follow. II is strictly weaker than the statement — if some are honest, then it is false that none are — so II follows."
+    },
+    {
+      "id": 8,
+      "question": "Statement: \"All successful people work hard.\" Conclusions: I. All people who work hard are successful. II. Success is not possible without hard work.",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows"
+      ],
+      "correct": 1,
+      "rationale": "I reverses the \"all\" direction — an invalid conversion, since hard workers may still fail. II is the contrapositive in plain words: every successful person works hard, so no success can occur without it."
+    },
+    {
+      "id": 9,
+      "question": "Statement: \"The number of road accidents dropped after speed cameras were installed on the highway.\" Conclusions: I. Speed cameras may have contributed to the reduction. II. Speed cameras are the only way to reduce accidents.",
+      "options": [
+        "Only II follows",
+        "Both I and II follow",
+        "Neither I nor II follows",
+        "Only I follows"
+      ],
+      "correct": 3,
+      "rationale": "I merely allows the connection the timing suggests, at \"may\" strength, so it follows. II converts one measure into the only possible measure — an extreme claim the statement never supports."
+    },
+    {
+      "id": 10,
+      "question": "Statement: \"The city's air quality worsened every winter for the last five years.\" Which conclusion definitely follows?",
+      "options": [
+        "The city's air quality can never improve",
+        "The city's air quality is worst in summer",
+        "The city's air quality tends to worsen in winter",
+        "The government is responsible for the pollution"
+      ],
+      "correct": 2,
+      "rationale": "A five-year winter pattern supports the modest seasonal claim at \"tends to\" strength. \"Never\" and \"worst in summer\" overshoot the data, and responsibility for pollution is a new fact the statement never gave."
+    }
+  ]
+}

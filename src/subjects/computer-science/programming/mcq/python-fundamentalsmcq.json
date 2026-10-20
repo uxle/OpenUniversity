@@ -1,0 +1,126 @@
+{
+  "lessonId": "python-fundamentals",
+  "title": "Python Fundamentals: Syntax, Types, and Control Flow",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does it mean that Python is dynamically typed?",
+      "options": [
+        "Types must be declared before a variable is used",
+        "Type checking happens at run time; names carry no type of their own",
+        "Python has no types at all",
+        "Variables are automatically converted to strings"
+      ],
+      "correct": 1,
+      "rationale": "Dynamic typing means the type lives with the value and is checked at run time; a name can be rebound to objects of any type because the name itself has no type."
+    },
+    {
+      "id": 2,
+      "question": "Which of these values is truthy in Python?",
+      "options": [
+        "\"\" (empty string)",
+        "0",
+        "[] (empty list)",
+        "\"0\" (string containing a zero)"
+      ],
+      "correct": 3,
+      "rationale": "Empty containers, 0, and None are falsy, but a non-empty string such as \"0\" is truthy even though it denotes the digit zero."
+    },
+    {
+      "id": 3,
+      "question": "What is the key difference between a list and a tuple?",
+      "options": [
+        "Tuples are unordered; lists are ordered",
+        "Lists are mutable; tuples are immutable",
+        "Tuples can only hold strings",
+        "Lists cannot hold mixed types"
+      ],
+      "correct": 1,
+      "rationale": "Both are ordered and both can hold mixed types; the real difference is mutability — lists can change in place, tuples cannot."
+    },
+    {
+      "id": 4,
+      "question": "What does -7 // 2 evaluate to in Python?",
+      "options": [
+        "-3",
+        "-3.5",
+        "-4",
+        "3"
+      ],
+      "correct": 2,
+      "rationale": "// is floor division, which rounds toward negative infinity, so -7 // 2 is -4, not -3 or the float -3.5."
+    },
+    {
+      "id": 5,
+      "question": "Why is `def add(item, basket=[])` considered dangerous?",
+      "options": [
+        "The default list is created once at definition time and shared by all calls",
+        "Lists are not allowed as default values",
+        "It makes the function run more slowly",
+        "It silently converts items to strings"
+      ],
+      "correct": 0,
+      "rationale": "Default values are evaluated once when the function is defined, so every caller who omits basket appends to the same list — the safe pattern is to default to None and create a fresh list inside."
+    },
+    {
+      "id": 6,
+      "question": "Which collection is the best choice for fast membership tests and removing duplicates?",
+      "options": [
+        "list",
+        "tuple",
+        "set",
+        "dict"
+      ],
+      "correct": 2,
+      "rationale": "Sets store unique members and test membership in roughly constant time; lists require a linear scan and tuples are immutable records."
+    },
+    {
+      "id": 7,
+      "question": "What does [n * n for n in range(1, 5)] evaluate to?",
+      "options": [
+        "[1, 4, 9, 16]",
+        "[1, 4, 9]",
+        "[1, 2, 3, 4]",
+        "[2, 4, 6, 8]"
+      ],
+      "correct": 0,
+      "rationale": "range(1, 5) yields 1, 2, 3, 4 (stop excluded), and the comprehension squares each, giving [1, 4, 9, 16]."
+    },
+    {
+      "id": 8,
+      "question": "In Python, blocks of code are defined by:",
+      "options": [
+        "Curly braces",
+        "Parentheses around the block",
+        "A semicolon at the end of each line",
+        "Consistent indentation"
+      ],
+      "correct": 3,
+      "rationale": "Indentation is syntax in Python: four spaces mark each block, which is why mixing tabs and spaces causes TabError."
+    },
+    {
+      "id": 9,
+      "question": "What does for i in range(1, 6, 2) print when iterated?",
+      "options": [
+        "1 2 3 4 5",
+        "1 3 5",
+        "2 4 6",
+        "1 3 5 6"
+      ],
+      "correct": 1,
+      "rationale": "range(start, stop, step) counts from 1 up to but excluding 6 in steps of 2, producing 1, 3, 5."
+    },
+    {
+      "id": 10,
+      "question": "A Python function with no return statement returns:",
+      "options": [
+        "0",
+        "An empty string",
+        "None",
+        "It raises an error"
+      ],
+      "correct": 2,
+      "rationale": "Falling off the end of a function (or executing a bare return) returns None, which is why 'print inside the function' often hides a None result."
+    }
+  ]
+}

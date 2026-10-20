@@ -1,3 +1,16 @@
 {
-  "lessons": ["lesson1", "space-and-defence-technology", "units-and-measurement", "laws-of-motion", "work-energy-and-power", "gravitation", "heat-and-thermodynamics", "waves-and-sound", "light-and-optics", "electricity-and-magnetism"]
+  "lessons": [
+    "lesson1",
+    "space-and-defence-technology",
+    "units-and-measurement",
+    "laws-of-motion",
+    "work-energy-and-power",
+    "gravitation",
+    "heat-and-thermodynamics",
+    "waves-and-sound",
+    "light-and-optics",
+    "electricity-and-magnetism",
+    "fluids-and-pressure",
+    "modern-physics"
+  ]
 }

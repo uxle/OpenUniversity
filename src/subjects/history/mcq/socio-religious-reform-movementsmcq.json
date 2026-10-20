@@ -1,0 +1,76 @@
+{
+  "lessonId": "socio-religious-reform-movements",
+  "title": "Socio-Religious Reform Movements of the 19th Century",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Rammohan Roy founded the Brahmo Sabha (later Brahmo Samaj) in:",
+      "options": ["1814", "1820", "1828", "1839"],
+      "correct": 2,
+      "rationale": "The Brahmo Sabha was founded in August 1828 for worship of one formless God without idols or caste; the Atmiya Sabha of 1814 was his earlier discussion circle and the Tattvabodhini Sabha came in 1839."
+    },
+    {
+      "id": 2,
+      "question": "Sati was declared illegal in 1829 by Regulation XVII under which Governor-General, championed by Rammohan Roy?",
+      "options": ["Lord Minto", "Lord William Bentinck", "Lord Dalhousie", "Lord Canning"],
+      "correct": 1,
+      "rationale": "William Bentinck's Regulation XVII of 1829 made sati a culpable crime, following Rammohan Roy's petitions and shastric arguments against the practice."
+    },
+    {
+      "id": 3,
+      "question": "The Hindu Widows' Remarriage Act of 1856 was won mainly through the agitation of:",
+      "options": ["Keshab Chandra Sen", "Ishwar Chandra Vidyasagar", "Dayananda Saraswati", "Atmaram Pandurang"],
+      "correct": 1,
+      "rationale": "Vidyasagar marshalled shastric citations and about a thousand signatures for the 1856 Act; the first legal remarriage followed within a year."
+    },
+    {
+      "id": 4,
+      "question": "Dayananda Saraswati's Arya Samaj, founded in 1875, took which as its battle-cry?",
+      "options": ["Back to the Vedas", "Service to mankind is service to God", "One caste, one religion, one God", "Universal brotherhood without a religion"],
+      "correct": 0,
+      "rationale": "'Back to the Vedas' declared the Vedas infallible and all later additions — idolatry, caste by birth, child marriage — corrupt; the Satyarth Prakash (1875) set out the creed."
+    },
+    {
+      "id": 5,
+      "question": "Dayananda's Satyarth Prakash was published in the same year the Arya Samaj was founded:",
+      "options": ["1867", "1873", "1875", "1886"],
+      "correct": 2,
+      "rationale": "Both the Samaj (Bombay) and the Satyarth Prakash appeared in 1875; the D.A.V. College at Lahore followed in 1886."
+    },
+    {
+      "id": 6,
+      "question": "The Ramakrishna Mission, founded by Vivekananda in 1897, works under the motto:",
+      "options": ["Sarve bhavantu sukhinah", "Atmano mokshartham jagat hitaya cha", "Satyameva jayate", "Vasudhaiva kutumbakam"],
+      "correct": 1,
+      "rationale": "The motto means 'for one's own salvation and for the good of the world', joining Vedantic spirituality with famine relief, schools, and hospitals."
+    },
+    {
+      "id": 7,
+      "question": "Vivekananda's celebrated address at the Parliament of Religions ('Sisters and Brothers of America') was delivered at:",
+      "options": ["London in 1896", "New York in 1894", "Chicago in September 1893", "Belur in 1897"],
+      "correct": 2,
+      "rationale": "At Chicago in September 1893 Vivekananda opened with 'Sisters and Brothers of America' and presented Vedanta to the West, leading to the Mission's founding in 1897."
+    },
+    {
+      "id": 8,
+      "question": "Sir Syed Ahmad Khan founded the Scientific Society (1864) and the Muhammadan Anglo-Oriental College (1875), which became Aligarh Muslim University in:",
+      "options": ["1900", "1912", "1920", "1947"],
+      "correct": 2,
+      "rationale": "MAO College, opened at Aligarh in 1875, was raised to Aligarh Muslim University by an act of 1920, the culmination of the Aligarh Movement."
+    },
+    {
+      "id": 9,
+      "question": "The Satyashodhak Samaj ('Truth-Seekers' Society'), founded in 1873, was led by:",
+      "options": ["Jyotirao Phule", "M. G. Ranade", "Sri Narayana Guru", "Dadabhai Naoroji"],
+      "correct": 0,
+      "rationale": "Jyotirao Phule founded the Satyashodhak Samaj at Pune in 1873 for caste equality, holding weddings without Brahman priests; he and Savitribai had opened a girls' school in 1848."
+    },
+    {
+      "id": 10,
+      "question": "The Theosophical Society moved its headquarters to Adyar, Madras in 1882; its most famous Indian-era leader, from 1893, was:",
+      "options": ["Madame Blavatsky", "Colonel Olcott", "Annie Besant", "Keshab Chandra Sen"],
+      "correct": 2,
+      "rationale": "Annie Besant arrived in India in 1893, led the Society, founded the Central Hindu College (1898) that became part of Banaras Hindu University, and later led the Home Rule League."
+    }
+  ]
+}

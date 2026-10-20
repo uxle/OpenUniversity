@@ -1,0 +1,315 @@
+# Data Sufficiency in Arithmetic
+
+> Most data sufficiency questions are arithmetic wearing a disguise: ages,
+> percentages, ratios, profit-loss, and speed. The master key is a count —
+> unknowns versus independent equations — and this lesson drills it topic
+> by topic with fully worked verdicts.
+
+[important]
+In arithmetic DS, a statement is sufficient when it supplies enough
+*independent* constraints to pin every unknown in the stem. One linear
+equation can never fix two unknowns — no matter how inviting the numbers.
+[/important]
+
+## 1. Why Arithmetic Dominates DS
+
+@diagram tree id="arithmetic-ds-tree" layout="tree" aria="Arithmetic data sufficiency topic families"
+  "Arithmetic DS" -> "Ages"
+  "Arithmetic DS" -> "Percentages"
+  "Arithmetic DS" -> "Ratio and proportion"
+  "Arithmetic DS" -> "Profit and loss"
+  "Arithmetic DS" -> "Time, speed, distance"
+  "Arithmetic DS" -> "Simple equations"
+@/diagram
+
+Papers weight the families roughly like this:
+
+@chart bar title="Typical questions per topic in a 50-question arithmetic DS section (illustrative)" labels:
+Ages
+Percentages
+Ratio-proportion
+Profit-loss
+Time-speed-distance
+Simple equations
+
+data:
+8
+9
+7
+10
+6
+10
+@/chart
+
+Each family hides the same skeleton underneath: name the unknowns, turn
+each statement into an equation or fact, and count. The families differ
+only in how the unknowns are dressed — as years, rupees, kilometres, or
+marks.
+
+## 2. The Equation Count Rule
+
+[definition]
+The **equation count rule**: to determine *n* unknowns uniquely you need
+*n* independent equations, and a single statement may carry one, two, or
+zero of them. Sufficiency is a property of the count, not of the
+statement's length.
+[/definition]
+
+**Example 1 — both statements needed.** What is the value of x?
+- **I.** 3x + 2y = 24
+- **II.** y = 3
+
+I alone: one equation, two unknowns — structurally insufficient. II
+alone: fixes y but never touches x. Together: 3x + 6 = 24, so x = 6.
+The verdict is **both together** — I contributed one equation, II the
+second.
+
+**Example 2 — the quadratic trap.** What is the value of x?
+- **I.** 2x + 3 = 17
+- **II.** x² = 49
+
+I alone: one linear equation, one unknown — x = 7, unique, sufficient.
+II alone: x = 7 or x = −7 — *two* values survive, so II is insufficient.
+A statement can look like an equation and still fail the uniqueness
+test.
+
+[warning]
+Squares and square roots are the classic uniqueness killers. "x² = 36"
+leaves x = 6 and x = −6 alive; "x is positive and x² = 36" kills one
+branch and becomes sufficient. Always ask how many values survive.
+[/warning]
+
+**Example 3 — one statement can carry two equations.** What is the value of x?
+- **I.** x + y = 12 and x − y = 4
+- **II.** xy = 32
+
+Statement I packs *two* independent equations into a single statement —
+x = 8 immediately, so I alone is sufficient. II alone (one equation, two
+unknowns) is insufficient. The verdict is **I alone**, and the lesson is
+that "two statements" never means "two equations".
+
+@diagram flowchart id="equation-count-flow" layout="hierarchical" aria="Equation counting decision flow for arithmetic data sufficiency"
+node start label="List the unknowns in the stem" shape="pill"
+node s1 label="Does I alone give enough independent equations?" shape="diamond"
+node s2 label="Does II alone give enough independent equations?" shape="diamond"
+node comb label="Do I and II together give enough?" shape="diamond"
+node a label="I alone is sufficient" shape="round-rect"
+node b label="II alone is sufficient" shape="round-rect"
+node d label="Both together are needed" shape="round-rect"
+node e label="Neither is sufficient" shape="round-rect"
+
+start -> s1
+s1 -> a
+s1 -> s2
+s2 -> b
+s2 -> comb
+comb -> d
+comb -> e
+@/diagram
+
+[tip]
+Run the flowchart mentally, top to bottom, in statement order. If I
+alone already gives one clean equation per unknown, stop — the answer is
+I alone or both, and you only need II to see which.
+[/tip]
+
+## 3. Ages
+
+Age questions convert to linear equations in "present age" unknowns.
+Translate phrases first: "five years ago" subtracts 5, "six years hence"
+adds 6.
+
+**Example 1 — both needed.** What is Ravi's present age?
+- **I.** Ravi is 12 years older than Meena.
+- **II.** Five years ago, Meena was half of Ravi's age.
+
+I alone: R = M + 12 — one equation, two unknowns. II alone:
+M − 5 = (R − 5)/2 — again one equation, two unknowns. Together:
+R = 2M − 5 from II, so M + 12 = 2M − 5, giving M = 17 and R = 29.
+Check: five years ago 12 and 24 — exactly half. Verdict: **both
+together**.
+
+**Example 2 — either alone.** What is the son's present age?
+- **I.** The son's age is one-third of his father's, and the father is 45.
+- **II.** Five years ago the son was one-fourth of his father's age, and the father is 45.
+
+I alone: S = 45/3 = 15 — sufficient. II alone: S − 5 = 40/4 = 10, so
+S = 15 — sufficient. Two statements, two complete routes to the same
+age: **either alone**. When both routes agree like this, "either" is
+confirmed.
+
+**Example 3 — I alone.** What is Ashok's present age?
+- **I.** Ashok's age is 25% more than Meena's, and Meena is 20 years old.
+- **II.** Five years ago Ashok was twice as old as Meena.
+
+I alone: A = 1.25 × 20 = 25 — sufficient. II alone:
+A − 5 = 2(M − 5) — one equation, two unknowns. Verdict: **I alone**;
+II is a relation, not a value.
+
+## 4. Percentages
+
+Percentage statements are equations in disguise — but only if the *base*
+is present. A bare "increased by 10%" determines nothing.
+
+**Example 1 — both needed.** What was the town's population in 2020?
+- **I.** The population rose by 10% from 2019 to 2020.
+- **II.** The rise amounted to 2,200 people.
+
+I alone: a rate with no base. II alone: an amount with no rate. Together:
+10% of the 2019 population is 2,200, so 2019 held 22,000 and 2020 holds
+24,200. Verdict: **both together** — rate and base reunite.
+
+**Example 2 — either alone.** What is the value of x?
+- **I.** 60% of x is 288.
+- **II.** x is three-fourths of 640.
+
+I alone: x = 288/0.6 = 480 — sufficient. II alone: x = (3/4) × 640 =
+480 — sufficient. Verdict: **either alone**.
+
+[note]
+Percentage DS turns on the phrase "of what?". "10% more" with no noun,
+or "20% profit" with no cost price, is an equation missing its base —
+hunt the base in the other statement before concluding "neither".
+[/note]
+
+## 5. Ratio and Proportion
+
+A ratio is a *shape*, not a size. It suffices only when some absolute
+total or difference accompanies it.
+
+**Example 1 — both needed.** How many marbles does Anu have?
+- **I.** Anu and Bala together have 84 marbles.
+- **II.** Their marbles are in the ratio 5 : 7.
+
+I alone: a total with no split. II alone: a split with no total — 5k and
+7k for any k. Together: Anu has 5/12 of 84 = 35. Verdict: **both
+together**.
+
+**Example 2 — I alone.** How many red balls are in the bag?
+- **I.** The bag holds 60 balls in all, and red : blue is 2 : 3.
+- **II.** The blue balls are 50% more numerous than the red balls.
+
+I alone: total plus ratio fixes the parts — red = (2/5) × 60 = 24.
+Sufficient. II alone: B = 1.5R is one equation in two unknowns.
+Verdict: **I alone**. (With red = 24, blue = 36, and indeed 36 = 1.5 ×
+24 — the statements agree, as they must.)
+
+[tip]
+Ratio + total is the highest-value pairing in this topic: 5 : 7 with a
+sum of 84 dissolves in one line, 5k + 7k = 12k = 84. When you see a bare
+ratio in statement I, scan statement II for a total, a difference, or an
+absolute number — any one of them completes the size.
+[/tip]
+
+## 6. Profit and Loss
+
+Profit questions hide two unknowns (cost price and selling price) and
+two bridges between them (profit amount, profit percentage, markup,
+discount).
+
+**Example 1 — either alone.** What was the selling price?
+- **I.** The discount given was Rs 100, which was 10% of the marked price.
+- **II.** The profit was 20% on a cost price of Rs 750.
+
+I alone: marked price = 100 × 10 = 1,000, so selling price = 1,000 −
+100 = Rs 900 — sufficient. II alone: 750 × 1.2 = Rs 900 — sufficient.
+Verdict: **either alone**.
+
+**Example 2 — both needed.** What is the profit percentage?
+- **I.** The article was bought for Rs 400.
+- **II.** It was sold for Rs 460.
+
+A percentage of profit needs both prices; each statement supplies one.
+Together: profit = 60 on 400, which is 15%. Verdict: **both together**.
+
+[warning]
+"Profit percentage" is always a fraction of the *cost* price unless the
+stem says otherwise. Candidates who divide by the selling price answer
+a question the paper never asked — and mark "sufficient" for the wrong
+reason.
+[/warning]
+
+## 7. Time, Speed and Distance
+
+Every TSD statement is one equation of the form distance = speed ×
+time. Three quantities, two given, one asked — the third is the unknown
+you must corner.
+
+**Example 1 — both needed.** What is the speed of the train?
+- **I.** It crosses a pole in 12 seconds.
+- **II.** It crosses a 240-metre platform in 24 seconds.
+
+I alone: v = L/12 — the length L is a second unknown. II alone:
+(L + 240)/24 = v — one equation, two unknowns. Together: L = 12v, so
+(12v + 240)/24 = v, giving 12v = 240 and v = 20 m/s. Verdict: **both
+together**. Crossing a pole gives length, crossing a platform gives
+length + platform — the pair is designed to interlock.
+
+**Example 2 — either alone.** What is the distance between A and B?
+- **I.** A car covers it in 4 hours at 45 km/h.
+- **II.** A bus covers it in 3 hours at 60 km/h.
+
+I alone: 4 × 45 = 180 km — sufficient. II alone: 3 × 60 = 180 km —
+sufficient. Verdict: **either alone**.
+
+**Example 3 — I alone.** What is the speed of the bus?
+- **I.** The bus covers 150 km in 2.5 hours.
+- **II.** The bus takes 2 hours more than a car moving at 80 km/h for the same trip.
+
+I alone: 150/2.5 = 60 km/h — sufficient. II alone: the bus's time is
+tied to an unknown distance — one equation, two unknowns (bus speed and
+distance). Verdict: **I alone**.
+
+## 8. Traps and Timing
+
+| Trap | Signature | Defence |
+| --- | --- | --- |
+| One equation, two unknowns | "x is twice y" with no absolute number | count unknowns before touching algebra |
+| Quadratic doubles the answers | x² = 49, or area/perimeter pairs | demand a single surviving value |
+| Percentage without base | "increased 10%" and no reference number | hunt the base in statement II |
+| Ratio without total | 5 : 7 and no sum or difference | hunt a total, difference, or absolute part |
+| Unit drift | seconds vs hours, m/s vs km/h, paise vs rupees | convert once, early, in the margin |
+| Partial data read as full | "sold at 15% profit" without cost or price | name what is missing before judging |
+
+[tip]
+Budget **30–45 seconds per question**. The counting habit makes this
+realistic: five seconds to name the unknowns, ten per statement to
+translate and count, ten to combine or mark. Topics like ages and
+percentages reward a second of pattern recognition — "relation only" is
+almost never sufficient by itself.
+[/tip]
+
+[warning]
+Two insufficient statements are not automatically sufficient together.
+"I. 3x + 2y = 24. II. x and y are positive integers." — the second adds
+no equation, so x stays free. Combining only helps when the second
+statement brings an *independent* constraint.
+[/warning]
+
+## 9. Quick Revision
+
+| Topic | What suffices | Typical verdict pattern |
+| --- | --- | --- |
+| Ages | relations plus one absolute anchor | both together |
+| Percentages | rate and base reunited | either or both |
+| Ratio-proportion | ratio plus a total or difference | both or I alone |
+| Profit-loss | any two of cost, price, profit %, profit | either or both |
+| Time-speed-distance | two of distance, speed, time per object | either or both |
+| Simple equations | independent equations equal unknowns | all verdicts occur |
+
+| Point | One-line recap |
+| --- | --- |
+| Master rule | n unknowns need n independent equations |
+| Statement ≠ equation | one statement may hold two equations or zero |
+| Uniqueness | x² = 49 fails; x = 7 or "x is positive" rescues it |
+| Percentage | no base, no verdict |
+| Ratio | no total, no verdict |
+| Time budget | 30–45 seconds per question |
+
+[summary]
+Arithmetic DS is bookkeeping for equations: name the unknowns, convert
+each statement into constraints, and compare counts. Ages want an
+anchor, percentages want a base, ratios want a total, profit wants two
+prices, and speed wants two of its three quantities — count first, and
+never solve further than the verdict requires.
+[/summary]

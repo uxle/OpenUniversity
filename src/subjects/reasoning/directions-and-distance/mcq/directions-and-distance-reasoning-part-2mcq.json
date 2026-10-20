@@ -1,16 +1,16 @@
 {
   "lessonId": "directions-and-distance-reasoning-part-2",
-  "title": "Directions and Distance Reasoning \u2014 Part 2 of 10",
+  "title": "Directions and Distance Reasoning — Part 2 of 10",
   "questions": [
     {
       "question": "What is a 'reference frame' in direction reasoning?",
       "options": [
-        "A physical picture frame",
         "The fixed coordinate system or starting orientation against which all other directions and positions are measured",
+        "A physical picture frame",
         "A synonym for distance",
         "Only used in 3D problems"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A reference frame is the fixed coordinate system or starting orientation that all directions and positions in a problem are measured against.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'heading' refer to?",
       "options": [
         "The title of a reasoning question",
-        "The current direction someone or something is facing or moving",
         "The total distance traveled so far",
+        "The current direction someone or something is facing or moving",
         "A synonym for position"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Heading describes the current direction something is facing or moving in, which can change over the course of a multi-step problem.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "12"
       ],
       "correct": 2,
-      "rationale": "The eight-direction system includes N, NE, E, SE, S, SW, W, and NW \u2014 the four cardinal directions plus the four intercardinal directions.",
+      "rationale": "The eight-direction system includes N, NE, E, SE, S, SW, W, and NW — the four cardinal directions plus the four intercardinal directions.",
       "id": 3
     },
     {
       "question": "What is a 'bearing'?",
       "options": [
         "A type of distance unit",
-        "A direction expressed as an angle, commonly measured clockwise from North",
+        "A fixed physical landmark",
         "A synonym for displacement",
-        "A fixed physical landmark"
+        "A direction expressed as an angle, commonly measured clockwise from North"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A bearing expresses direction numerically as an angle, typically measured clockwise starting from North (0 degrees).",
       "id": 4
     },
     {
       "question": "What does 'position difference' measure between two points?",
       "options": [
-        "Only the time between two events",
         "The change in coordinates (and therefore direction and distance) from one point to the other",
+        "Only the time between two events",
         "The number of turns taken",
         "The elevation difference only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Position difference captures how coordinates change from one point to another, which is what lets you derive both the direction and distance between them.",
       "id": 5
     },

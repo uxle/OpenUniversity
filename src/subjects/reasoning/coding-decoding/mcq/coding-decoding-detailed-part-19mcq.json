@@ -1,28 +1,28 @@
 {
   "lessonId": "coding-decoding-detailed-part-19",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 19 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 19 of 22",
   "questions": [
     {
       "question": "What does the 'vector transformation model' generalize coding rules as?",
       "options": [
-        "Random, unrelated operations",
         "Mathematical operations (like addition or reflection) applied to a letter's position, represented as vectors",
+        "Random, unrelated operations",
         "A rule with no mathematical basis",
         "Only word reversal operations"
       ],
-      "correct": 1,
-      "rationale": "This model generalizes coding rules as mathematical vector operations \u2014 like addition (shift) or reflection (mirror) \u2014 applied to a letter's numeric position.",
+      "correct": 0,
+      "rationale": "This model generalizes coding rules as mathematical vector operations — like addition (shift) or reflection (mirror) — applied to a letter's numeric position.",
       "id": 1
     },
     {
       "question": "What does the 'matrix transformation model' extend this to?",
       "options": [
         "Only simple letter shifts",
-        "Representing coding transformations that involve grid/matrix positions (like Polybius-style coding) using matrix operations",
         "A model with no grid component",
+        "Representing coding transformations that involve grid/matrix positions (like Polybius-style coding) using matrix operations",
         "Only word-length-based rules"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The matrix transformation model extends the vector idea to grid-based transformations, like Polybius-style coding, using formal matrix operations.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does a 'master pattern table' consolidate?",
       "options": [
         "Only the golden rule",
-        "A comprehensive reference matching common input-output patterns to their corresponding coding rule types",
+        "A single unrelated example",
         "Only matrix-based rules",
-        "A single unrelated example"
+        "A comprehensive reference matching common input-output patterns to their corresponding coding rule types"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A master pattern table consolidates a comprehensive reference of common input-output patterns mapped to their corresponding coding rule types.",
       "id": 4
     },
     {
       "question": "What does the 'What NOT to Do' section most likely warn against?",
       "options": [
-        "Verifying a rule against all examples",
         "Common errors like assuming a rule from only partial verification, or forgetting alphabet wrap-around",
+        "Verifying a rule against all examples",
         "Using a position table",
         "Comparing multiple examples"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Consistent with the lesson's recurring themes, this section likely warns against common errors like insufficient verification or forgetting alphabet wrap-around.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'information sufficiency' ask you to assess in a coding-decoding question?",
       "options": [
         "The word's total length",
-        "Whether the given examples actually provide enough information to uniquely determine the rule and answer",
         "Only the first letter's position",
+        "Whether the given examples actually provide enough information to uniquely determine the rule and answer",
         "The number of vowels present"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Information sufficiency assesses whether the given examples genuinely contain enough information to uniquely pin down the rule and answer, or whether the problem is underdetermined.",
       "id": 6
     },
@@ -101,13 +101,13 @@
     {
       "question": "What does 'negative information' refer to in a coding-decoding problem?",
       "options": [
-        "Information that is always false",
         "Information about what a code does NOT represent, which can still help narrow down the correct rule by elimination",
+        "Information that is always false",
         "A synonym for wrap-around",
         "Information that should always be ignored"
       ],
-      "correct": 1,
-      "rationale": "Negative information tells you what a code does NOT correspond to, which \u2014 like elimination in other reasoning topics \u2014 can still help narrow down the correct rule.",
+      "correct": 0,
+      "rationale": "Negative information tells you what a code does NOT correspond to, which — like elimination in other reasoning topics — can still help narrow down the correct rule.",
       "id": 9
     },
     {

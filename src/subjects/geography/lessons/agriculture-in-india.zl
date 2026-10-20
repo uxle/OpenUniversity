@@ -1,0 +1,171 @@
+# Agriculture in India: Crops, Seasons, and Farming Systems
+
+> Farming engages close to half of India's workers and decides the food
+> security of more than a billion people. This lesson maps the cropping
+> seasons, the leading food and cash crops, and the farming systems
+> that hold them together.
+
+## 1. Why Agriculture Still Matters
+
+[definition]
+**Agriculture** is the art and science of cultivating the soil,
+growing crops, and rearing livestock to produce food, fibre, fuel,
+and industrial raw materials.
+[/definition]
+
+- Agriculture supports the livelihood of nearly half of India's
+  workforce and contributes roughly one-sixth of gross value added.
+- It supplies raw materials to the sugar, cotton textile, jute, and
+  edible-oil industries and feeds the public distribution system.
+- A good monsoon and a bumper harvest raise rural demand for consumer
+  goods, tractors, and two-wheelers, lifting the whole economy.
+- India is among the world's leading producers of rice, wheat,
+  sugarcane, cotton, milk, and pulses, and holds one of the largest
+  irrigated areas on Earth.
+
+[info]
+Because success depends so heavily on the **southwest monsoon** (June
+to September), irrigation, weather forecasting, and crop insurance
+under PMFBY are central pillars of Indian farm policy.
+[/info]
+
+## 2. The Three Cropping Seasons
+
+@diagram tree id="cropping-seasons" layout="tree" aria="Kharif, rabi, and zaid seasons with example crops"
+  "Indian cropping seasons" -> Kharif
+  "Indian cropping seasons" -> Rabi
+  "Indian cropping seasons" -> Zaid
+  Kharif -> "Rice, maize, bajra, cotton, jute"
+  Rabi -> "Wheat, gram, mustard, barley"
+  Zaid -> "Watermelon, cucumber, fodder"
+@/diagram
+
+| Season | Months | Main water source | Major crops |
+| --- | --- | --- | --- |
+| Kharif | June to October | Southwest monsoon | Rice, maize, jowar, bajra, cotton, jute, groundnut, tur |
+| Rabi | October to March | Winter rain and irrigation | Wheat, barley, gram, mustard, peas |
+| Zaid | April to June | Irrigation | Watermelon, muskmelon, cucumber, vegetables, fodder |
+
+[warning]
+A classic mistake is to call wheat a kharif crop because fields look
+lush in early summer. Wheat is sown in October-November and harvested
+in March-April, so it is strictly a rabi crop.
+[/warning]
+
+## 3. Food Crops: Rice, Wheat, Millets, and Pulses
+
+| Crop | Season and needs | Leading producers |
+| --- | --- | --- |
+| Rice | Kharif; about 25 degrees C and over 100 cm rain; flat, water-retentive land | West Bengal, Uttar Pradesh, Punjab |
+| Wheat | Rabi; cool 10-15 degrees C while growing and 21-26 degrees C at ripening; 50-75 cm water | Uttar Pradesh, Madhya Pradesh, Punjab |
+| Millets (jowar, bajra, ragi) | Hardy nutri-cereals; 50-100 cm rain; tolerate drought and poor soils | Maharashtra, Rajasthan, Karnataka |
+| Pulses (tur, gram, moong, urad) | Legumes needing little moisture; fix nitrogen in the soil | Madhya Pradesh, Rajasthan, Maharashtra |
+
+[important]
+Millets are now promoted as **nutri-cereals** because they are rich in
+protein, minerals, and fibre, and they survive on rain-fed land where
+rice and wheat would fail — a key answer to climate stress.
+[/important]
+
+@chart bar title="Approximate foodgrain production 2022-23 (million tonnes)" labels:
+Rice
+Wheat
+Coarse cereals
+Pulses
+
+data:
+136
+111
+41
+26
+@/chart
+
+## 4. Cash and Plantation Crops
+
+| Crop | Growing conditions | Leading producers | Uses |
+| --- | --- | --- | --- |
+| Cotton | Black (regur) soil; about 210 frost-free days; 6-8 months in the field | Gujarat, Maharashtra, Telangana | Textiles, oilseed, cattle feed |
+| Jute | The golden fibre; hot, humid delta with over 100 cm rain | West Bengal | Gunny bags, carpets, geotextiles |
+| Sugarcane | Tropical and subtropical; 75-100 cm rain and a long frost-free season | Uttar Pradesh, Maharashtra | Sugar, gur, molasses, ethanol, bagasse |
+| Tea | Well-drained hill slopes; 150-200 cm rain; shade trees | Assam, West Bengal (Darjeeling) | Beverage and major export |
+| Coffee | Shade-grown on highlands; Arabica and Robusta varieties | Karnataka, Kerala, Tamil Nadu | Beverage and export |
+
+[example]
+Jute thrives only in the Ganga-Brahmaputra delta, where loamy
+alluvium, standing water for retting the stalks, and cheap labour
+from the crowded countryside come together — which is why West Bengal
+grows most of the world's traded jute.
+[/example]
+
+## 5. Farming Systems: From Subsistence to Plantation
+
+| System | Key features | Where seen |
+| --- | --- | --- |
+| Intensive subsistence | Small plots, family labour, high output per hectare | Ganga plain and coastal deltas |
+| Commercial grain farming | Mechanised, market-oriented grain on large farms | Punjab, Haryana, western Uttar Pradesh |
+| Plantation | Single crop on large estates with capital and on-site processing | Tea in Assam, coffee in Karnataka, rubber in Kerala |
+| Shifting cultivation | Slash-and-burn on forest clearings, then fields moved elsewhere | Parts of north-east India (jhum) |
+| Dry farming | Moisture-conserving tillage in low-rainfall tracts | Deccan interior |
+
+[tip]
+Cropping intensity — taking two or three harvests from the same field
+in one year using irrigation and short-duration varieties — is a
+favourite exam term; a *ratoon* crop is a second shoot regrown from
+the stubble of sugarcane without replanting.
+[/tip]
+
+## 6. The Green Revolution and the Revolutions That Followed
+
+From the mid-1960s the **Green Revolution** combined high-yielding
+varieties (HYV) of wheat and rice, chemical fertilisers, assured
+irrigation, and price support to end recurring food imports. India
+moved from ship-to-mouth dependence to comfortable buffer stocks
+within about a decade. M. S. Swaminathan led the effort in India,
+building on dwarf-wheat work by Norman Borlaug.
+
+| Revolution | Sphere | Starting landmark |
+| --- | --- | --- |
+| Green | Food grains | HYV package from the mid-1960s |
+| White | Milk | Operation Flood, 1970, led by Verghese Kurien from Anand |
+| Blue | Fish and aquaculture | Fisheries development programmes |
+| Yellow | Oilseeds | Oilseeds Technology Mission of the 1980s |
+| Golden | Horticulture and honey | Horticulture missions after the 1990s |
+
+[warning]
+The Green Revolution succeeded brilliantly in Punjab, Haryana, and
+western Uttar Pradesh but widened regional gaps, and overuse of canal
+water and chemicals has caused waterlogging, falling water tables,
+and pesticide resistance — the lessons behind today's push for
+sustainable farming.
+[/warning]
+
+## 7. Challenges and the Road to Sustainable Farming
+
+- Average holdings are tiny — about 1.1 hectares — and shrink with
+  each generation, limiting mechanisation and bargaining power.
+- Roughly half the net sown area still depends on rainfall alone.
+- Soil degradation, groundwater depletion, and stubble burning demand
+  conservation practices such as crop rotation and zero tillage.
+- Reforms now in play: soil health cards, micro-irrigation (drip and
+  sprinkler), crop insurance, e-NAM online mandis, and natural
+  farming — Sikkim became India's first fully organic state in 2016.
+
+[important]
+The **Minimum Support Price (MSP)** announced for about two dozen
+crops gives farmers a guaranteed floor price, while government
+procurement of rice and wheat keeps buffer stocks and the ration
+system running.
+[/important]
+
+## 8. Quick Revision
+
+| Item | Remember this |
+| --- | --- |
+| Kharif | June-October, monsoon-fed: rice, cotton, jute, maize |
+| Rabi | October-March: wheat, gram, mustard |
+| Zaid | April-June irrigated season: melons, vegetables, fodder |
+| Rice and wheat | West Bengal-UP-Punjab and UP-MP-Punjab |
+| Cotton and jute | Black soil of Gujarat-Maharashtra and delta jute of West Bengal |
+| Green Revolution | HYV plus fertiliser plus irrigation from the mid-1960s |
+| White Revolution | Operation Flood, 1970, Verghese Kurien |
+| Biggest challenges | Tiny holdings and dependence on the monsoon |

@@ -1,0 +1,221 @@
+# Coordinate Geometry: Algebra Meets Geometry
+
+> Every point on the plane can be named by a pair of numbers, and every
+> geometric question — distance, midpoint, slope, area — then becomes an
+> algebra calculation. This lesson builds that toolkit step by step.
+
+## 1. The Cartesian Plane
+
+Two perpendicular number lines — the x-axis and the y-axis — cross at
+the **origin** O(0, 0) and divide the plane into four **quadrants**.
+A point P is written as an ordered pair $(x, y)$: $x$ is the
+**abscissa** (horizontal distance from the origin) and $y$ the
+**ordinate** (vertical distance).
+
+| Quadrant | Sign of x | Sign of y | Example point |
+| --- | --- | --- | --- |
+| I | positive | positive | (3, 2) |
+| II | negative | positive | (−3, 2) |
+| III | negative | negative | (−3, −2) |
+| IV | positive | negative | (3, −2) |
+
+[definition]
+The **Cartesian coordinate system** assigns each point of the plane a
+unique ordered pair of real numbers, and each ordered pair a unique
+point — a perfect two-way dictionary between geometry and algebra.
+[/definition]
+
+Points on the axes belong to no quadrant: (5, 0) sits on the x-axis
+and (0, −4) on the y-axis.
+
+## 2. The Distance Formula
+
+Distance is Pythagoras' theorem in disguise. Between $A(x_1, y_1)$ and
+$B(x_2, y_2)$ the horizontal leg is $x_2 - x_1$ and the vertical leg
+is $y_2 - y_1$, so the hypotenuse AB satisfies:
+
+@math label="eq:distance"
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+@/math
+
+[example]
+Find the distance between A(−2, 3) and B(4, −5).
+Step 1: horizontal leg = 4 − (−2) = 6.
+Step 2: vertical leg = −5 − 3 = −8.
+Step 3: $d = \sqrt{6^2 + (-8)^2} = \sqrt{100} = 10$ units.
+[/example]
+
+[tip]
+The formula squares each difference, so signs never matter:
+(−8)² and 8² both give 64. Just square the two legs and add — then
+take the square root last.
+[/tip]
+
+## 3. Midpoint and Section Formulas
+
+The midpoint is the coordinate-wise average of the endpoints:
+
+@math label="eq:midpoint"
+M = \left( \frac{x_1+x_2}{2}, \frac{y_1+y_2}{2} \right)
+@/math
+
+For example, the midpoint of (−3, 5) and (7, −1) is
+((−3 + 7)/2, (5 + (−1))/2) = (2, 2).
+
+When a point P divides the segment from A to B internally in the ratio
+m : n (measured from A), it sits closer to B as m grows:
+
+@math label="eq:section"
+P = \left( \frac{m x_2 + n x_1}{m+n}, \frac{m y_2 + n y_1}{m+n} \right)
+@/math
+
+[example]
+Find the point dividing A(2, 3) to B(8, 12) in the ratio 2 : 1.
+Step 1: x = (2 × 8 + 1 × 2)/3 = 18/3 = 6.
+Step 2: y = (2 × 12 + 1 × 3)/3 = 27/3 = 9, so P(6, 9).
+Check: from A to B the run is 6 and the rise is 9; P has covered
+2/3 of both — exactly the ratio 2 : 1.
+[/example]
+
+The **centroid** of a triangle extends the same averaging idea:
+average the three vertices' coordinates separately.
+
+## 4. Slope: The Steepness of a Line
+
+@math label="eq:slope"
+m = \frac{y_2-y_1}{x_2-x_1} = \tan\theta
+@/math
+
+| Value of m | The line |
+| --- | --- |
+| m > 0 | rises from left to right |
+| m < 0 | falls from left to right |
+| m = 0 | horizontal |
+| undefined | vertical (horizontal step is zero) |
+
+[example]
+Slope through (2, 1) and (6, 9): m = (9 − 1)/(6 − 2) = 8/4 = 2.
+The line climbs 2 units for every 1 across, matching tan θ = 2,
+so it makes an angle of about 63.4° with the positive x-axis.
+[/example]
+
+[warning]
+A vertical line has no slope at all — dividing by the zero horizontal
+step is impossible. "Undefined slope" and "zero slope" are opposite
+situations: vertical versus horizontal.
+[/warning]
+
+## 5. The Five Forms of a Line's Equation
+
+| Form | Equation | Best for |
+| --- | --- | --- |
+| Point-slope | y − y₁ = m(x − x₁) | one known point and the slope |
+| Slope-intercept | y = mx + c | reading slope and y-intercept |
+| Two-point | line through (x₁, y₁), (x₂, y₂) | two known points |
+| Intercept form | x/a + y/b = 1 | axis intercepts a and b |
+| General form | ax + by + c = 0 | uniform standard for computation |
+
+@diagram tree id="line-form-family" layout="tree" aria="Family tree of the five standard forms of a line's equation"
+  "Equation of a line" -> "Point-slope: y - y1 = m(x - x1)"
+  "Equation of a line" -> "Slope-intercept: y = mx + c"
+  "Equation of a line" -> "Two-point form"
+  "Equation of a line" -> "Intercept form: x/a + y/b = 1"
+  "Equation of a line" -> "General form: ax + by + c = 0"
+@/diagram
+
+[note]
+Every form converts to every other. In the general form ax + by + c = 0
+the slope is m = −a/b and the intercepts are x = −c/a and y = −c/b, so
+a conversion is never more than one rearrangement away.
+[/note]
+
+## 6. Parallel and Perpendicular Lines
+
+@math label="eq:parallel-perpendicular"
+\text{Parallel: } m_1 = m_2 \qquad \text{Perpendicular: } m_1 m_2 = -1
+@/math
+
+[example]
+Find the line through (2, −1) perpendicular to y = 3x + 4.
+Step 1: the given slope is 3, so the perpendicular slope is −1/3.
+Step 2: point-slope gives y + 1 = −(1/3)(x − 2).
+Step 3: rearrange to x + 3y + 1 = 0.
+Check: the slopes 3 and −1/3 multiply to −1. Perpendicular confirmed.
+[/example]
+
+[tip]
+To test whether two lines are perpendicular you only need the product
+of their slopes: −1 means yes, anything else means no. Equal slopes
+mean parallel — and equal slopes with a shared point mean the same line.
+[/tip]
+
+## 7. Area of a Triangle from Coordinates
+
+@math label="eq:triangle-area"
+A = \frac{1}{2} \left| x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2) \right|
+@/math
+
+[example]
+Vertices (0, 0), (4, 0), (4, 3):
+A = ½ |0(0 − 3) + 4(3 − 0) + 4(0 − 0)| = ½ |12| = 6 square units —
+the same answer the base-height formula gives (½ × 4 × 3).
+[/example]
+
+If the formula returns 0, the three points are **collinear** — no
+triangle exists. That zero-area test is the standard coordinate proof
+of collinearity.
+
+## 8. Putting It All Together
+
+[example]
+Classify the triangle A(1, 2), B(4, 6), C(7, 2).
+Step 1 (sides): AB = √(9 + 16) = 5, BC = √(9 + 16) = 5, AC = 6.
+Two equal sides, so the triangle is isosceles.
+Step 2 (area): ½ |1(6 − 2) + 4(2 − 2) + 7(2 − 6)| = ½ |−24| = 12.
+Cross-check: base AC = 6 along y = 2, height = 4, area = 12. Agreed.
+[/example]
+
+Plotting y = 2x + 1 — slope 2, y-intercept 1 — shows how a straight
+line rises steadily through its points:
+
+@chart line title="y = 2x + 1" labels:
+0
+1
+2
+3
+4
+
+data:
+1
+3
+5
+7
+9
+@/chart
+
+[info]
+Coordinate geometry is the language behind GPS navigation, computer
+graphics, and robotics: every "distance to destination", collision
+test, or rendered triangle is one of these formulas running on
+coordinates.
+[/info]
+
+## 9. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| Distance A(−2, 3) to B(4, −5) | distance formula | 10 |
+| Midpoint of (−3, 5), (7, −1) | average coordinates | (2, 2) |
+| Point 2 : 1 from A(2, 3) to B(8, 12) | section formula | (6, 9) |
+| Slope through (2, 1), (6, 9) | rise over run | 2 |
+| Line perpendicular to y = 3x + 4 through (2, −1) | m × m = −1 | x + 3y + 1 = 0 |
+| Area of (0, 0), (4, 0), (4, 3) | shoelace formula | 6 |
+| Triangle (1, 2), (4, 6), (7, 2) | side lengths | isosceles, area 12 |
+
+[summary]
+The plane turns into arithmetic: distances come from Pythagoras,
+midpoints from averaging, slopes from rise over run, parallel lines
+from equal slopes, perpendicular lines from slopes multiplying to −1,
+and areas from the shoelace formula — with a zero area proving
+collinearity.
+[/summary]

@@ -1,0 +1,216 @@
+# Network Attacks and Defence in Depth
+
+> Once a machine is on a network, strangers can touch it. This lesson
+> maps the main attack families — floods, interception, spoofing — and
+> the layered defences that answer them: firewalls, IDS, IPS, VPNs.
+
+## 1. Know the Adversary
+
+Defences make sense once you know who is attacking and why.
+
+| Attacker | Motive | Typical behaviour |
+| --- | --- | --- |
+| Script kiddie | curiosity, bragging | reuses other people's tools |
+| Cybercriminal | money | ransomware, fraud, data theft |
+| Hacktivist | ideology | defacement, leaks, DDoS protests |
+| Nation-state actor | espionage, disruption | patient, well-funded APT campaigns |
+| Insider | grievance or greed | misuses legitimate access |
+
+[info title="Why insiders are dangerous"]
+Insiders already hold valid credentials and sit behind the firewall,
+so perimeter defences see nothing unusual. This is one reason modern
+architecture stops trusting location and starts verifying every
+action — the zero-trust idea in Section 7.
+[/info]
+
+## 2. A Taxonomy of Network Attacks
+
+Network attacks fall into two grand families: **passive** attacks
+listen without changing anything, and **active** attacks alter,
+flood, or inject.
+
+@diagram tree id="network-attack-taxonomy" layout="tree" aria="Network attacks divided into passive and active families"
+  "Network attacks" -> "Passive: eavesdropping and sniffing"
+  "Network attacks" -> "Passive: reconnaissance and port scans"
+  "Network attacks" -> "Active: DoS and DDoS floods"
+  "Network attacks" -> "Active: man in the middle"
+  "Network attacks" -> "Active: spoofing and poisoning"
+  "Network attacks" -> "Active: injection and exploit attempts"
+@/diagram
+
+Passive attacks are hard to detect because nothing breaks — the
+defence is encryption, which makes intercepted traffic useless.
+Active attacks announce themselves eventually, so the defence is
+detection plus filtering.
+
+## 3. Denial of Service and DDoS
+
+A **Denial of Service (DoS)** attack exhausts a resource — bandwidth,
+connections, CPU — so genuine users get nothing. A **Distributed DoS
+(DDoS)** does it from thousands of hijacked machines at once: a
+**botnet** of infected laptops, routers, and cameras, each sending
+mere trickle, together a flood.
+
+| Vector | How it works | Layer |
+| --- | --- | --- |
+| UDP flood | junk UDP packets swamp bandwidth | network |
+| SYN flood | half-open TCP connections fill the table | transport |
+| DNS amplification | small queries trigger huge replies aimed at the victim | reflection |
+| HTTP flood | expensive page or API requests exhaust the app | application |
+
+@chart bar title="Illustrative share of DDoS attacks by vector" labels:
+UDP floods
+SYN floods
+HTTP application floods
+DNS amplification
+Other vectors
+
+data:
+35
+25
+20
+12
+8
+@/chart
+
+Defences mirror the layers: scrubbing centres and CDNs absorb
+volumetric floods, **SYN cookies** neutralise half-open connection
+attacks, and rate limiting plus caching blunt application floods.
+Amplification is discouraged by closing open resolvers and filtering
+spoofed source addresses.
+
+## 4. Man in the Middle and Spoofing
+
+In a **man-in-the-middle (MitM)** attack the attacker silently sits
+between two parties, reading or editing traffic. On a LAN,
+**ARP poisoning** tricks machines into sending traffic through the
+attacker; on a network, **DNS spoofing** hands out false addresses;
+on public Wi-Fi, an **evil twin** access point invites victims to
+connect to the attacker directly.
+
+[example]
+You join free airport Wi-Fi. The attacker's laptop relays every
+packet. Sites without HTTPS leak logins in cleartext; even with
+HTTPS, an attacker who tricks you into installing a rogue
+"certificate" could decrypt everything — which is why browser
+certificate warnings must never be clicked through.
+[/example]
+
+[warning]
+A common misconception: a VPN or HTTPS makes you anonymous. They make
+traffic unreadable and authenticated, not invisible — the sites you
+visit, DNS queries outside the tunnel, and your IP address are still
+observable.
+[/warning]
+
+The standing defence is TLS everywhere, certificate pinning where it
+matters, and treating any certificate warning as an alarm rather than
+a nuisance.
+
+## 5. Firewalls: Gatekeepers With Rules
+
+A **firewall** permits or blocks traffic between network zones
+according to rules. The types form a short evolution:
+
+| Type | Decides by | Knows about conversations? |
+| --- | --- | --- |
+| Packet filtering | IP addresses, ports, protocol | no |
+| Stateful | rules plus connection state table | yes |
+| Application / NGFW | application behaviour, users, identities | deeply |
+| Web application firewall (WAF) | HTTP requests and payloads | web layer only |
+
+@diagram flowchart id="firewall-decision" layout="hierarchical" aria="Stateful firewall decision path for an arriving packet"
+node arrive label="Packet arrives at the firewall" shape="pill"
+node state label="Connection already in state table?" shape="diamond"
+node rule label="Matches an allow rule?" shape="diamond"
+node allow label="Forward the packet" shape="round-rect"
+node deny label="Drop and log" shape="round-rect"
+
+arrive -> state
+state -> allow label="yes"
+state -> rule label="no"
+rule -> allow label="yes"
+rule -> deny label="no"
+@/diagram
+
+The flowchart encodes the golden rule: **default deny**. Anything not
+explicitly allowed is dropped and logged, and replies to connections
+you started pass freely because the state table remembers them.
+
+## 6. IDS and IPS: Detect and Prevent
+
+Firewalls decide by address and port; **intrusion detection** looks
+inside traffic for hostile behaviour.
+
+- An **IDS** watches copies of traffic and raises alerts —
+  detection only, no blocking.
+- An **IPS** sits inline and stops the malicious flow in real time.
+- **NIDS** monitors network segments; **HIDS** watches one host's
+  logs, files, and processes.
+
+| Approach | How it recognises attacks | Weakness |
+| --- | --- | --- |
+| Signature-based | matches known attack patterns | blind to brand-new attacks |
+| Anomaly-based | learns normal, flags deviations | false positives on genuine change |
+
+[tip]
+Memory hook: IDS *informs*, IPS *intervenes*. Signature systems know
+yesterday's attacks; anomaly systems notice anything unfamiliar —
+including tomorrow's.
+[/tip]
+
+## 7. Zero Trust, Segmentation, and VPNs
+
+The old model — hard shell, soft inside — fails when one phished
+laptop gets inside. **Zero trust** removes implicit trust entirely:
+every request is authenticated, authorised, and encrypted regardless
+of where it comes from.
+
+| Idea | Meaning |
+| --- | --- |
+| Never trust, always verify | no free pass for "internal" traffic |
+| Least privilege | minimal access per identity, per session |
+| Microsegmentation | workloads isolated into small zones |
+| Continuous monitoring | trust is re-earned, not assumed |
+
+A **VPN** builds an encrypted tunnel from your device to a gateway:
+on public Wi-Fi it shields traffic from local snoops and gives remote
+workers safe passage into company networks. In zero-trust designs,
+per-application access brokers increasingly replace the
+all-or-nothing network VPN.
+
+## 8. Defence in Depth in Practice
+
+No single control survives contact with a determined attacker; depth
+means overlapping layers, each buying time and visibility.
+
+| Layer | Controls |
+| --- | --- |
+| Perimeter | firewall, DDoS scrubbing, WAF |
+| Network | segmentation, IDS or IPS, NAC |
+| Endpoint | patched OS, antivirus or EDR, disk encryption |
+| Application | secure coding, parameterised queries, updates |
+| Data | encryption at rest and in transit, backups |
+| People | training, phishing drills, least privilege |
+
+[important]
+Depth is not buying one of everything — it is assuming any single
+layer will fail and making the next layer cheap to reach. A phished
+password plus MFA, plus a stateful firewall, plus offline backups,
+plus an alerting IPS is how real breaches stay small.
+[/important]
+
+## 9. Quick Revision
+
+| Concept | Remember this |
+| --- | --- |
+| Passive vs active attack | eavesdropping vs altering, flooding, injecting |
+| Botnet | hijacked devices acting as one flood |
+| SYN flood | half-open connections exhaust the table |
+| DNS amplification | small query, huge reply, spoofed source |
+| MitM on LAN | ARP poisoning routes traffic through attacker |
+| Stateful firewall | tracks conversations, defaults to deny |
+| IDS vs IPS | alerts on copies vs blocks inline |
+| Zero trust | never trust, always verify, least privilege |
+| VPN | encrypted tunnel against local snooping |
+| Defence in depth | overlapping layers assume single failure |

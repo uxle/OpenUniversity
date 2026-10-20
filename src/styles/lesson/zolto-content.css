@@ -131,20 +131,51 @@
 
 /* Diagrams:  @diagram …@/diagram  → inline <svg class="zl-diagram">.
    Zolto injects its own <style> for the internals; this just fits the
-   SVG into the lesson column. */
+   SVG into the lesson column.
+
+   WIDE-diagram fix: a 1886-unit-wide tree diagram squeezed to 249px on a
+   320px phone rendered its 14px labels at ~1.8px — invisible. For those,
+   utils/lesson-media.js re-wraps the svg in .ou-media-scroll and gives
+   it a min-width, trading vertical compactness for legibility (the
+   wrapper pans horizontally, like .zl-table-wrap). Small/medium diagrams
+   keep shrink-to-fit here. */
 .ou-lesson-content .zl-diagram {
   display: block;
   max-width: 100%;
   height: auto;
   margin: var(--ou-space-5) auto;
 }
+.ou-media-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  /* Fade-out hint that the diagram continues past the right edge. */
+  --ou-media-fade: 24px;
+  background:
+    linear-gradient(to right, var(--ou-bg) 30%, transparent) left / var(--ou-media-fade) 100% no-repeat,
+    linear-gradient(to left, var(--ou-bg) 30%, transparent) right / var(--ou-media-fade) 100% no-repeat;
+  background-attachment: local, scroll;
+}
+.ou-media-scroll .zl-diagram {
+  margin: var(--ou-space-4) 0;
+}
 
 /* Tables:  | a | b |  → .zl-table-wrap > table.zl-table. Previously
    completely unstyled (bare browser defaults) — added borders/padding/
    header treatment and kept Zolto's own horizontal-scroll wrapper for
-   wide tables on narrow screens. */
+   wide tables on narrow screens.
+
+   Mobile squeeze fix: the wrapper scrolls, but the table itself had
+   width:100% with NO minimum — on a 320px phone a 3-column table
+   compressed its columns to ~65px, wrapping cells one word per line
+   (measured: 5-line cells in a 3-col trap table). The floor below
+   guarantees each column a readable width; the pre-existing wrapper
+   then scrolls the whole table instead of crushing it. */
 .ou-lesson-content .zl-table-wrap {
   overflow-x: auto;
+  /* Momentum panning on iOS; don't trap vertical page scroll. */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   margin: var(--ou-space-5) 0;
   border: 1px solid var(--ou-border);
   border-radius: var(--ou-radius-md);
@@ -153,6 +184,18 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95em;
+}
+/* Only under the width where squeeze actually happens — desktop tables
+   keep their natural fill-the-container behavior untouched. */
+@media (max-width: 640px) {
+  .ou-lesson-content .zl-table th,
+  .ou-lesson-content .zl-table td {
+    /* 8.5em ≈ 136px @16px: enough for 2-3 wrapped words per line;
+       N columns therefore force real horizontal scrolling instead of
+       word-per-line crushing, while 2-column tables either fit or
+       scroll a few px. em, not px: scales with the fluid root font. */
+    min-width: 8.5em;
+  }
 }
 .ou-lesson-content .zl-table th,
 .ou-lesson-content .zl-table td {

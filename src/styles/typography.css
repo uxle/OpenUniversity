@@ -39,6 +39,16 @@ a.ou-link {
   transition: color var(--ou-transition-fast), opacity var(--ou-transition-fast);
 }
 a.ou-link:hover { text-decoration: underline; opacity: 0.85; }
+/* Inline "See all →" style links are the only nav affordance for their
+   section; bare line-height made them a ~25px tap target. Padding-block
+   + negative margin widens the hit area without shifting the row. */
+.ou-section-title-row a.ou-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding-block: var(--ou-space-2);
+  margin-block: calc(var(--ou-space-2) * -1);
+}
 a.ou-footer-link {
   color: var(--ou-text-muted);
   text-decoration: underline;

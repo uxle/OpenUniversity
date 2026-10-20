@@ -1,0 +1,252 @@
+# Statement and Conclusion
+
+> A conclusion question hands you a short text and a list of claims,
+> and asks which claims definitely follow from the text and nothing
+> else. This lesson fixes the standard of "definitely follows", trains
+> the keyword-by-keyword check, and solves eight exam questions in full.
+
+[important]
+The conclusion is checked against the statement *only*. It must be true
+in every situation the statement allows — not probably true, not
+plausibly true, not true in the real world. One possible situation in
+which the claim fails is enough to reject it.
+[/important]
+
+## 1. What Counts as a Valid Conclusion
+
+[definition]
+**Conclusion**: a claim that must be true whenever the statement is
+true. The test is *necessity*, not likelihood: if you can picture even
+one scenario, consistent with the statement, in which the claim fails,
+the claim does not follow.
+[/definition]
+
+The exam format:
+
+```text
+Statement: "The bank will remain closed on the second Saturday of
+            every month."
+Conclusion I:  The bank remains closed at least one Saturday every month.
+Conclusion II: The bank is closed on more days than it opens.
+```
+
+Conclusion I follows (the second Saturday is certainly one Saturday).
+Conclusion II does not (one closed Saturday per month says nothing about
+the balance of the other days). Note that no real-world knowledge about
+banks was used — only arithmetic on the words.
+
+## 2. Keywords That Qualify
+
+Conclusions live or die on their quantifier words. Compare the option's
+keywords with the statement's keywords before anything else.
+
+| Keyword | Force | Common exam misuse |
+| --- | --- | --- |
+| all, every, always | universal | applying it where the statement has "some" |
+| only | exclusive | pointing it at the wrong term |
+| none, never | universal negative | inferring it from a single "not" |
+| some, many, few | at least one | reading it as "some but not all" |
+| may, can, might | possibility | treating possibility as certainty |
+| best, most, surest | superlative | inferring a comparison never made |
+
+[warning]
+"S" never licenses "not S". From "some ministers are honest" you cannot
+conclude "some ministers are dishonest" — honesty and dishonesty are not
+stated to be the only two options for the same people, and the statement
+does not exclude everyone being honest. Options that take the *opposite*
+of a given fact are favourites of the examiner.
+[/warning]
+
+## 3. The Statement-Only Check
+
+Test each option mechanically with the three-verdict method:
+
+1. **Restates or follows** — the option repeats the statement or is a
+   strictly weaker version of it. Verdict: follows.
+2. **Contradicts** — the option denies something the statement commits
+   to. Verdict: does not follow.
+3. **Escapes the text** — the option adds new facts, raises the
+   strength, reverses a direction, or generalises beyond the sample.
+   Verdict: does not follow.
+
+The three verdicts and their signatures fit in one picture:
+
+@diagram tree id="conclusion-verdict-tree" layout="tree" aria="The three verdicts for testing a conclusion option"
+  Verdicts -> Supported
+  Verdicts -> Contradicted
+  Verdicts -> Out of scope
+  Supported -> "restates the statement or is strictly weaker"
+  Contradicted -> "denies what the statement commits to"
+  Out of scope -> "adds facts, raises strength, or reverses direction"
+@/diagram
+
+[tip]
+A weaker option is safer than a stronger one. If the statement says
+"may", then "may" in the conclusion is fine; if the statement says
+"all", then "some" is automatically fine, but "all" is fine only in the
+reverse direction. When torn between two options, pick the weaker claim.
+[/tip]
+
+## 4. Judgement Patterns in the Answer Options
+
+| Answer pattern | When it is correct |
+| --- | --- |
+| Only I follows | I survives all three tests, II fails at least one |
+| Only II follows | mirror image |
+| Both I and II follow | each is a restatement or a weaker form |
+| Neither follows | each escapes the text or contradicts it |
+| Either I or II follows | I and II cannot both be false (complementary pair) |
+
+## 5. Solved Examples: Single Statements
+
+**Example 1.**
+Statement: "Shyam scored higher than Ravi, and Ravi scored higher than
+Mohan." Conclusion I: "Shyam scored higher than Mohan." Conclusion II:
+"Mohan scored the lowest of the three." → *Both follow.* Higher-than is
+transitive, so Shyam > Mohan; and with three people ranked Shyam >
+Ravi > Mohan, Mohan is necessarily last.
+
+**Example 2.**
+Statement: "Regular practice of meditation helps reduce stress."
+Conclusion I: "People who practise meditation may experience less
+stress." Conclusion II: "Meditation is the best cure for stress." →
+*Only I follows.* I is the statement weakened from "helps" to "may";
+II invents a superlative comparison with all other cures that the
+statement never attempted.
+
+**Example 3.**
+Statement: "The government has banned single-use plastic bags in the
+city." Conclusion I: "Using single-use plastic bags is now prohibited
+in the city." Conclusion II: "The city will become completely free of
+plastic waste." → *Only I follows.* A ban prohibits exactly what it
+names; II escalates one product ban into a total waste-free claim.
+
+**Example 4.**
+Statement: "Only graduates are eligible for this post." Conclusion I:
+"A candidate who is not a graduate is not eligible." Conclusion II:
+"Every graduate is eligible for this post." → *Only I follows.* "Only
+graduates" makes graduation a necessary condition, which is exactly I;
+but a necessary condition is not sufficient — graduates may still fail
+age or exam requirements, so II overstates.
+
+## 6. Solved Examples: Two Statements and Harder Conclusions
+
+**Example 5.**
+Statements: "All students of Class X attended the science fair. Some
+students who attended the fair won prizes." Conclusion I: "Every Class X
+student was present at the fair." Conclusion II: "Some Class X students
+won prizes." → *Only I follows.* I restates the first statement; II
+fails because the winners could all belong to *other* classes that also
+attended — the statement never ties the prizes to Class X.
+
+**Example 6.**
+Statement: "The number of road accidents dropped after speed cameras
+were installed on the highway." Conclusion I: "Speed cameras may have
+contributed to the reduction." Conclusion II: "Speed cameras are the
+only way to reduce accidents." → *Only I follows.* I merely allows the
+connection the timing suggests, at "may" strength; II converts one
+measure into the only possible measure.
+
+**Example 7.**
+Statement: "Some ministers are honest." Conclusion I: "Some ministers
+are dishonest." Conclusion II: "It cannot be said that no minister is
+honest." → *Only II follows.* I takes the opposite of the given fact,
+which "some" never licenses; II is strictly weaker than the statement
+— if some are honest, then indeed it is false that none are.
+
+**Example 8.**
+Statement: "All successful people work hard." Conclusion I: "All people
+who work hard are successful." Conclusion II: "Success is not possible
+without hard work." → *Only II follows.* I reverses the "all" direction
+— an invalid conversion; II is the contrapositive in plain words: since
+every successful person works hard, no success can occur without it.
+
+[example]
+Verification method: for each option, run the *counter-scenario test*.
+
+@diagram flowchart id="conclusion-check-flow" layout="hierarchical" aria="Counter-scenario test for a conclusion"
+node start label="Read the option" shape="pill"
+node key label="Compare keywords and strength" shape="round-rect"
+node pic label="Can you picture a failure case?" shape="diamond"
+node no label="Follows" shape="round-rect"
+node yes label="Does not follow" shape="round-rect"
+
+start -> key
+key -> pic
+pic -> no label="no"
+pic -> yes label="yes"
+@/diagram
+
+Try to imagine one state of the world in which the statement is true
+but the option is false. If such a state exists, the option does not
+follow; if no state can be imagined, the option follows necessarily.
+[/example]
+
+## 7. Traps: Over-generalisation, Extremes, and Reversals
+
+| Trap | Signature wording | Why it fails |
+| --- | --- | --- |
+| Over-generalisation | "every", "all", "no one" on a "some" statement | one exception destroys a universal |
+| Extreme keywords | "best", "only", "always", "never" | the statement never made the comparison |
+| Reversal | swaps the subject and predicate of an "all" claim | "All A are B" does not give "All B are A" |
+| Opposite fact | takes the negative of what is given | "some" does not imply "some not" |
+| Outside knowledge | imports facts from real life | conclusions are judged inside the text |
+
+Across a sample of 100 wrong picks on this topic, the errors distribute
+roughly like this:
+
+@chart bar title="Share of wrong picks by error type (per 100 wrong answers)"
+labels:
+Over-generalisation
+Extreme keywords
+Reversal of "all"
+Opposite fact
+Outside knowledge
+
+data:
+30
+25
+20
+15
+10
+@/chart
+
+More than half of all lost marks come from the first two rows — so the
+biggest single gain in this topic is the habit of checking the option's
+quantifier against the statement's quantifier before anything else.
+
+[warning]
+Do not reject a conclusion merely because it sounds odd, and do not
+accept one because it sounds wise. Verdicts come only from the
+necessity test. An unremarkable restatement is a correct answer more
+often than a clever, quotable observation.
+[/warning]
+
+[info]
+Time management: single-statement items should take under 30 seconds — match keywords,
+run the three verdicts, move on. Reserve full attention for two-statement
+items, where the classic error is transferring a fact from one group to
+another group the statement never connected — as in Example 5.
+[/info]
+
+## 8. Quick Revision
+
+| Concept | One-line rule |
+| --- | --- |
+| Necessity test | the claim must hold in every situation the statement allows |
+| Restatement | always follows — same strength or weaker |
+| Counter-scenario | if you can picture a failure case, the claim does not follow |
+| Weaker beats stronger | when in doubt, choose the modest option |
+| "Only X" | makes X necessary, not sufficient |
+| "Some" | at least one; never implies "some not" |
+| "All A are B" | gives the contrapositive, never the reversal |
+| Superlatives | "best" and "most" need an explicit comparison in the text |
+| Two-statement items | do not transfer facts across unconnected groups |
+| Answer patterns | only I / only II / both / neither / either |
+
+[summary]
+A conclusion follows only if the statement forces it to be true. Match
+keywords, run the three verdicts, apply the counter-scenario test, and
+beware of over-generalisation, extreme wording, and reversed "all"
+claims. Precision, not plausibility, decides every mark in this topic.
+[/summary]

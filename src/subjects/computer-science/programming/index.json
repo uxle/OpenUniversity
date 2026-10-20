@@ -1,3 +1,11 @@
 {
-  "lessons": ["lesson1", "data-structures", "object-oriented-programming", "debugging-and-development-tools"]
+  "lessons": [
+    "lesson1",
+    "data-structures",
+    "object-oriented-programming",
+    "debugging-and-development-tools",
+    "python-fundamentals",
+    "functions-and-modularity",
+    "version-control-with-git"
+  ]
 }

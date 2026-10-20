@@ -1,28 +1,28 @@
 {
   "lessonId": "counting-of-figures-part-1",
-  "title": "Counting of Figures \u2014 Part 1 of 12",
+  "title": "Counting of Figures — Part 1 of 12",
   "questions": [
     {
       "question": "What is 'counting of figures' reasoning primarily about?",
       "options": [
-        "Measuring the physical size of a diagram",
         "Systematically counting how many valid geometrical figures (of a given type) are hidden within a composite diagram",
+        "Measuring the physical size of a diagram",
         "Drawing new figures from scratch",
         "Only counting the outermost boundary shape"
       ],
-      "correct": 1,
-      "rationale": "Counting-of-figures questions ask for the total number of valid figures \u2014 of one type or several \u2014 hidden within a larger composite diagram.",
+      "correct": 0,
+      "rationale": "Counting-of-figures questions ask for the total number of valid figures — of one type or several — hidden within a larger composite diagram.",
       "id": 1
     },
     {
       "question": "What is the 'basic principle' behind counting figures?",
       "options": [
         "Guess a number that looks reasonable",
-        "Break a complex figure down into fundamental building blocks and count combinations of them systematically",
         "Only count the largest figure present",
+        "Break a complex figure down into fundamental building blocks and count combinations of them systematically",
         "Ignore any figure that overlaps with another"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The basic principle is decomposing a complex figure into its fundamental building blocks, then systematically counting valid combinations of those blocks.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "Always assume the answer is an even number"
       ],
       "correct": 1,
-      "rationale": "The golden rule is to avoid relying on visual scanning alone, since it easily misses hidden or overlapping figures \u2014 a systematic method is required for a reliable count.",
+      "rationale": "The golden rule is to avoid relying on visual scanning alone, since it easily misses hidden or overlapping figures — a systematic method is required for a reliable count.",
       "id": 3
     },
     {
       "question": "What is the recommended first step in a general figure-counting workflow?",
       "options": [
         "Immediately apply a memorized formula",
-        "Identify all the basic building-block figures before looking for combined/composite ones",
+        "Skip straight to the final answer",
         "Count only the figure's perimeter",
-        "Skip straight to the final answer"
+        "Identify all the basic building-block figures before looking for combined/composite ones"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The workflow starts with identifying every basic, undivided figure first, since composite figures are built by combining these basic units.",
       "id": 4
     },
     {
       "question": "What formula gives the number of distinct line segments formed by n points on a single straight line?",
       "options": [
-        "n^2",
         "n(n-1)/2",
+        "n^2",
         "2n",
         "n(n+1)/2"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Each segment is uniquely determined by choosing 2 of the n points as its endpoints, giving the combination formula n(n-1)/2.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "Using that formula, how many segments do 5 points on a line form?",
       "options": [
         "8",
-        "10",
         "12",
+        "10",
         "15"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "5 x 4 / 2 = 10 distinct segments.",
       "id": 6
     },
@@ -119,7 +119,7 @@
         "There is no real difference between the two approaches"
       ],
       "correct": 1,
-      "rationale": "As a figure gets more complex, visual scanning becomes increasingly likely to miss combined figures made of several adjacent regions \u2014 a systematic method avoids this.",
+      "rationale": "As a figure gets more complex, visual scanning becomes increasingly likely to miss combined figures made of several adjacent regions — a systematic method avoids this.",
       "id": 10
     }
   ]

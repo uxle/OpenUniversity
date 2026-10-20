@@ -1,0 +1,238 @@
+# CSS: Styling and Layout
+
+> CSS decides how the structure HTML provides looks and where it sits.
+> Two systems run the show: the cascade, which resolves conflicts
+> between competing rules, and the layout models — flow, flexbox,
+> grid — that arrange boxes on the screen.
+
+## 1. Rules, Declarations, and the Cascade
+
+A stylesheet is a list of **rules**. A rule pairs a **selector** (which elements?) with a block of **declarations** (which properties, set to which values?):
+
+```css
+/* selector { property: value; } */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+```
+
+When two rules target the same element differently, the **cascade** picks the winner in a fixed order. Alongside it runs **inheritance**: text-related properties (`color`, `font-family`, `line-height`) flow from parent to child automatically — set the font once on `body` and every element speaks it.
+
+[definition]
+**The cascade** is CSS's conflict-resolution algorithm. For each property on each element it collects every matching declaration and chooses one by: (1) origin and importance — browser defaults yield to author styles, and `!important` reverses the order; (2) specificity; (3) source order — the last declaration wins.
+[/definition]
+
+## 2. Selectors and Specificity
+
+| Selector | Matches | Example |
+| --- | --- | --- |
+| Type | Every such element | `p` |
+| Class | Elements carrying the class | `.card` |
+| ID | The one element with that id | `#signup` |
+| Attribute | Elements with that attribute | `input[type="email"]` |
+| Descendant | Ancestor ... anywhere below | `.card p` |
+| Child | Direct parent and child | `.card > p` |
+| Adjacent sibling | The next matching sibling | `h2 + p` |
+| Pseudo-class | A state, not a name | `a:hover`, `li:first-child` |
+
+Specificity is scored as three numbers — **ids, classes, elements** — and the higher triple wins no matter where it appears in the file:
+
+| Selector | Specificity |
+| --- | --- |
+| `p` | 0-0-1 |
+| `.card p` | 0-1-1 |
+| `.nav .link` | 0-2-0 |
+| `#signup` | 1-0-0 |
+| inline `style` attribute | beats every selector except `!important` |
+
+@chart bar title="Specificity weight of common selector kinds (ids-classes-elements counting)" labels:
+Type (p)
+Class (.card)
+Two classes (.a .b)
+ID (#signup)
+
+data:
+1
+10
+20
+100
+@/chart
+
+[tip]
+Write selectors at the lowest specificity that works — classes, not IDs — so later overrides stay possible. Treat `!important` as a fire alarm, not a styling tool: every use invites ten more, and soon nothing can be overridden.
+[/tip]
+
+## 3. The Box Model
+
+Every element renders as a rectangular box with four layers, from the inside out: the **content**, then **padding** (breathing room inside the border), the **border**, and the **margin** (transparent space that pushes neighbours away).
+
+@diagram tree id="box-model" layout="tree" aria="The four layers of the CSS box model from content to margin"
+  "Box" -> "Content (text, image)"
+  "Box" -> "Padding (inside the border)"
+  "Box" -> "Border (the edge line)"
+  "Box" -> "Margin (outside, transparent)"
+@/diagram
+
+[example]
+With the default `content-box`, `width: 200px`, `padding: 20px`, and `border: 4px` render a box 200 + 2×20 + 2×4 = **248 px** wide; with `margin: 10px` it occupies 268 px of the page. Switch to `box-sizing: border-box` and the declared `width: 200px` becomes the *outer* width — padding and border are carved out of it, and the content shrinks to 152 px.
+[/example]
+
+Because the default arithmetic surprises everyone, most modern stylesheets begin by switching the whole document to `border-box`:
+
+```css
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+```
+
+[warning]
+Vertical margins of *adjacent* block boxes **collapse**: a paragraph with `margin-bottom: 20px` above one with `margin-top: 30px` leaves 30 px between them, not 50. The practical habit — space siblings with one margin direction only, such as `margin-bottom` — sidesteps the surprise entirely.
+[/warning]
+
+## 4. Display, Flow, and Positioning
+
+Without any CSS, elements lay themselves out in the **normal flow**: blocks stack downward, inline content flows left to right and wraps. The `display` property decides how each box participates:
+
+| Value | Behavior |
+| --- | --- |
+| `block` | New line, full width; accepts width and height |
+| `inline` | Flows within text; width and height are ignored |
+| `inline-block` | Flows inline but accepts box properties — the classic button chip |
+| `flex` / `grid` | Becomes a flex or grid container for its children |
+| `none` | Removed from rendering entirely (unlike `visibility: hidden`, which keeps the space) |
+
+`position` then lets a box break out of the flow:
+
+| Value | Effect |
+| --- | --- |
+| `static` | Default — in flow; offsets are ignored |
+| `relative` | In flow, but offset visually from its own spot; anchors absolute children |
+| `absolute` | Out of flow; positioned against the nearest *positioned* ancestor |
+| `fixed` | Out of flow; pinned to the viewport (sticky banners) |
+| `sticky` | In flow until a scroll threshold, then it acts fixed (table headers) |
+
+[important]
+An absolutely positioned element ignores its parent unless the parent has `position: relative` or any other non-static position. "Why is my dropdown anchored to the whole page?" — that is the missing `position: relative` on the parent.
+[/important]
+
+## 5. Flexbox: One-Dimensional Layout
+
+`display: flex` turns a container's children into **flex items** arranged along a **main axis** (horizontal by default), with a **cross axis** perpendicular to it. Alignment is the point of flexbox:
+
+```css
+.navbar {
+  display: flex;
+  justify-content: space-between; /* main axis: push items apart */
+  align-items: center;            /* cross axis: vertical centering */
+  gap: 1rem;
+}
+```
+
+| Container property | Controls |
+| --- | --- |
+| `justify-content` | Distribution along the main axis |
+| `align-items` | Alignment along the cross axis |
+| `flex-wrap` | Whether items may wrap onto a second line |
+| `gap` | Fixed spacing between items — no more margin hacks |
+
+Items themselves decide how they grow and shrink: `flex: 1 1 auto` (grow, shrink, basis). A sidebar with `flex: 0 0 240px` keeps a fixed width while the content area set to `flex: 1` absorbs whatever remains.
+
+[tip]
+Need the last item of a navigation bar pushed to the far edge? Give it `margin-left: auto` — the free space of the line is absorbed by that margin, and the item lands at the end. The oldest trick in the flexbox book.
+[/tip]
+
+## 6. Grid: Two-Dimensional Layout
+
+`display: grid` lays items into **rows *and* columns** at once. You define the tracks; the children fill the cells:
+
+```css
+.page {
+  display: grid;
+  grid-template-columns: 240px 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  min-height: 100vh;
+}
+/* the header spans all three columns */
+.page > header { grid-column: 1 / -1; }
+```
+
+The `fr` unit — *fraction of the free space* — makes flexible tracks trivial: `1fr 2fr` gives the second column twice the leftover width of the first, and `repeat(3, 1fr)` is shorthand for three equal columns.
+
+| Question | Flexbox | Grid |
+| --- | --- | --- |
+| Dimensions | One axis: a row *or* a column | Two axes: rows and columns together |
+| Sizing driver | Content-driven — items shape the line | Layout-driven — you define the tracks first |
+| Best at | Toolbars, media objects, centering | Page scaffolds, card walls, forms |
+| Mental model | "Flow these things along a line" | "Here is the blueprint; fill the cells" |
+
+The two compose rather than compete: grid for the page skeleton, flexbox inside each region.
+
+## 7. Responsive Design and Media Queries
+
+A responsive page adapts its layout to the space available. The enabling tag in the head is the viewport meta (`width=device-width, initial-scale=1`) — without it, phones render a 980 px desktop layout and zoom out. The core tool is the **media query**, which applies styles conditionally:
+
+```css
+/* mobile-first: one column by default */
+.cards { display: grid; gap: 1rem; }
+
+/* wider than 40rem: two columns */
+@media (min-width: 40rem) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+
+/* wider than 64rem: three */
+@media (min-width: 64rem) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+```
+
+[tip]
+Write **mobile-first**: base styles for the small screen, then layer on `min-width` queries as space allows. Choose breakpoints where the *content* breaks — a line of text becomes unreadable, a row needs wrapping — not at the dimensions of a particular phone.
+[/tip]
+
+Fluid sizing replaces fixed pixels at the edges: percentages of the container, `rem` for typography that respects the user's settings, `vw` and `vh` fractions of the viewport, and `clamp(min, preferred, max)` for a smooth in-between: `font-size: clamp(1rem, 2.5vw, 1.5rem)` grows with the screen yet never exceeds 1.5rem.
+
+## 8. Custom Properties and Design Tokens
+
+**CSS custom properties** store values centrally and inherit down the tree:
+
+```css
+:root {
+  --brand: #2563eb;
+  --radius: 8px;
+  --space: 1rem;
+}
+
+.button {
+  background: var(--brand);
+  border-radius: var(--radius);
+  padding: var(--space) calc(var(--space) * 2);
+}
+
+.button--ghost {
+  background: var(--brand, #333); /* fallback if --brand is undefined here */
+}
+```
+
+Because custom properties inherit and can be re-declared in any scope, they are the standard engine for theming: re-declare `--brand` under a `.theme-dark` class — or inside `@media (prefers-color-scheme: dark)` — and every rule that reads `var(--brand)` updates at once.
+
+[info]
+Design teams call these variables **design tokens** — the shared vocabulary of a design system: colors, spacing steps, radii, shadows. Components reference tokens instead of raw hex codes, so a rebrand becomes a file of a few dozen lines instead of a hunt through thousands of rules.
+[/info]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Cascade order | Origin and importance, then specificity, then source order |
+| Specificity | ids – classes – elements; inline style beats IDs; `!important` overrides everything |
+| Box model | Content, padding, border, margin; `border-box` includes the first three in `width` |
+| Display | `block` stacks, `inline` flows, `none` removes, `flex` and `grid` create layout contexts |
+| Position | `relative` anchors, `absolute` leaves the flow, `fixed` pins, `sticky` compromises |
+| Flexbox | One dimension; `justify-content` rules the main axis, `align-items` the cross axis |
+| Grid | Two dimensions; `fr` tracks, `gap`, `grid-column: 1 / -1` spans everything |
+| Responsive | Mobile-first base, `min-width` media queries, fluid units with `clamp()` |
+| Variables | `--token` on `:root`, consumed via `var()`; re-scope for instant theming |

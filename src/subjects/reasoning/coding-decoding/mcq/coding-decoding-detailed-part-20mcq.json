@@ -1,33 +1,33 @@
 {
   "lessonId": "coding-decoding-detailed-part-20",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 20 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 20 of 22",
   "questions": [
     {
-      "question": "What is the purpose of 'Practice Set A \u2014 Basic'?",
+      "question": "What is the purpose of 'Practice Set A — Basic'?",
       "options": [
-        "To test only the most advanced techniques",
         "To reinforce fundamental, single-technique coding rules before moving to more complex combinations",
+        "To test only the most advanced techniques",
         "To skip straight to mixed coding",
         "To only test word length coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Practice Set A focuses on reinforcing fundamental, single-technique coding rules, building a solid base before more complex combinations are introduced.",
       "id": 1
     },
     {
-      "question": "What does 'Practice Set B \u2014 Intermediate' likely introduce, compared to Set A?",
+      "question": "What does 'Practice Set B — Intermediate' likely introduce, compared to Set A?",
       "options": [
         "Only easier variations of Set A",
-        "Combinations of two techniques, or slightly less common rule types, building on the basics",
         "No new material at all",
+        "Combinations of two techniques, or slightly less common rule types, building on the basics",
         "Only word length coding"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Set B builds on the basics by introducing combinations of two techniques or slightly less common rule types, a step up in complexity from Set A.",
       "id": 2
     },
     {
-      "question": "What does 'Practice Set C \u2014 Advanced' likely require?",
+      "question": "What does 'Practice Set C — Advanced' likely require?",
       "options": [
         "Only the simplest single-step rules",
         "Correctly identifying and applying more complex or multi-step coding rules under less obvious conditions",
@@ -39,26 +39,26 @@
       "id": 3
     },
     {
-      "question": "What does 'Practice Set D \u2014 Challenge' likely test?",
+      "question": "What does 'Practice Set D — Challenge' likely test?",
       "options": [
         "Only basic single-technique rules",
-        "The ability to flexibly apply the full range of techniques to unusual or tricky problems, not just standard cases",
+        "Only word length coding",
         "Nothing beyond Set A",
-        "Only word length coding"
+        "The ability to flexibly apply the full range of techniques to unusual or tricky problems, not just standard cases"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The Challenge tier tests flexible application of the full range of techniques to unusual or tricky problems, beyond just standard, expected cases.",
       "id": 4
     },
     {
       "question": "Why does this lesson use four progressively harder practice tiers rather than one mixed set?",
       "options": [
-        "The ordering is arbitrary and has no purpose",
         "To let learners build confidence and skill systematically before tackling the hardest, most ambiguous problems",
+        "The ordering is arbitrary and has no purpose",
         "Because harder problems don't build on easier ones",
         "Because mixing difficulty levels is always more effective"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Progressive tiers let learners build confidence and skill systematically, ensuring a solid foundation before tackling the hardest, most ambiguous problems.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What foundational skill from earlier parts does EVERY practice tier ultimately rely on?",
       "options": [
         "Guessing without verification",
-        "Correctly identifying the coding rule by comparing input and output systematically, and verifying it against all given data",
         "Ignoring alphabet wrap-around",
+        "Correctly identifying the coding rule by comparing input and output systematically, and verifying it against all given data",
         "Only checking a single example"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Every tier, regardless of difficulty, ultimately relies on the same foundational skill: systematically identifying the rule and verifying it fully against all given data.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What is one likely reason an 'Advanced' tier problem might use 'mixed coding' (combining two or more techniques)?",
       "options": [
         "To make the problem impossible to solve",
-        "To test whether the learner can correctly identify and apply more than one rule together, not just recognize a single simple pattern",
+        "Because Advanced problems never use single techniques",
         "Because mixed coding is actually simpler than single-technique coding",
-        "Because Advanced problems never use single techniques"
+        "To test whether the learner can correctly identify and apply more than one rule together, not just recognize a single simple pattern"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Mixed coding at the Advanced tier tests whether a learner can correctly identify and combine multiple rules together, a more demanding skill than recognizing one simple pattern alone.",
       "id": 8
     },

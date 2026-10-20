@@ -1,0 +1,8 @@
+{
+  "lessons": [
+    "how-the-web-works",
+    "html-structure-and-semantics",
+    "css-styling-and-layout",
+    "javascript-and-the-dom"
+  ]
+}

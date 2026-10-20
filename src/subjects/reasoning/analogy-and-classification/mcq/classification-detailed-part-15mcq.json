@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-15",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 15 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 15 of 16",
   "questions": [
     {
       "question": "What does the 'Elimination Technique' involve in classification?",
       "options": [
-        "Guessing the answer immediately",
         "Systematically ruling out items that clearly fit the majority property, narrowing down to the true exception",
+        "Guessing the answer immediately",
         "Ignoring the majority property entirely",
         "Randomly removing items"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This technique systematically rules out items that clearly share the majority property, progressively narrowing down toward the genuine exception.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is 'Reverse Elimination'?",
       "options": [
         "The same process as regular elimination",
-        "Starting from a hypothesized exception and confirming that removing it leaves a clean, consistent shared property among the rest",
         "A technique that never actually works",
+        "Starting from a hypothesized exception and confirming that removing it leaves a clean, consistent shared property among the rest",
         "A technique unrelated to elimination"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Reverse elimination starts from a hypothesized exception and verifies that removing it leaves a clean, well-supported shared property among the remaining items.",
       "id": 2
     },
@@ -42,35 +42,35 @@
       "question": "What does a 'Quick Property Checklist' provide?",
       "options": [
         "A lengthy multi-step derivation",
-        "A short list of the most common property categories to quickly check against a given group",
+        "A checklist with no practical use",
         "Only number-based checks",
-        "A checklist with no practical use"
+        "A short list of the most common property categories to quickly check against a given group"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This provides a fast, short list of the most common property categories, helping quickly narrow down which type of shared property likely applies.",
       "id": 4
     },
     {
       "question": "What is the primary purpose of 'Solved Examples 1 through 15' across this part of the lesson?",
       "options": [
-        "To introduce entirely new property types",
         "To demonstrate the solving process applied to a range of realistic classification problems, reinforcing the techniques already covered",
+        "To introduce entirely new property types",
         "To replace the need for the four-stage method",
         "To only test number classification"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "These worked examples demonstrate the solving process on a range of realistic problems, reinforcing the various property types and techniques introduced earlier.",
       "id": 5
     },
     {
-      "question": "Why does 'Solved Example 11 \u2014 Pair Classification' appear alongside 'Solved Example 12 \u2014 Letter Pairs' and similar variety?",
+      "question": "Why does 'Solved Example 11 — Pair Classification' appear alongside 'Solved Example 12 — Letter Pairs' and similar variety?",
       "options": [
         "To repeat the exact same technique each time",
-        "To demonstrate the solving process across the different specific classification sub-types (pairs, letters, digits, computer, science) covered earlier",
         "Because only one sub-type is actually tested in exams",
+        "To demonstrate the solving process across the different specific classification sub-types (pairs, letters, digits, computer, science) covered earlier",
         "Because variety has no pedagogical value"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Covering a range of different sub-types in the solved examples reinforces the breadth of classification categories a learner needs to be able to recognize and solve.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'Classification by Algebraic Form' test?",
       "options": [
         "A word-meaning property",
-        "Whether a group of numbers/expressions share a common algebraic structure (like all fitting n^2+1), with one breaking it",
+        "A biology-based property",
         "A geography-based property",
-        "A biology-based property"
+        "Whether a group of numbers/expressions share a common algebraic structure (like all fitting n^2+1), with one breaking it"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether numbers or expressions share a common underlying algebraic formula or structure, identifying the one that doesn't fit that formula.",
       "id": 8
     },

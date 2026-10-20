@@ -1,0 +1,76 @@
+{
+  "lessonId": "sectors-of-indian-economy",
+  "title": "The Sectors of the Indian Economy: Primary, Secondary, and Tertiary",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is correctly classified?",
+      "options": ["Mining — secondary sector", "Construction — primary sector", "Banking — tertiary sector", "Fishing — secondary sector"],
+      "correct": 2,
+      "rationale": "Banking is a service, hence tertiary. Mining extracts natural products (primary), construction makes structures (secondary), and fishing extracts from nature (primary)."
+    },
+    {
+      "id": 2,
+      "question": "Mining and quarrying are conceptually part of the primary sector because they:",
+      "options": ["Transform raw materials into goods", "Merely extract nature's stock without transforming it", "Are always run by the government", "Employ the largest share of workers"],
+      "correct": 1,
+      "rationale": "Extraction without transformation defines the primary sector, even though India's national accounts report mining within the 'industry' block."
+    },
+    {
+      "id": 3,
+      "question": "The Industrial Policy Resolution that reserved the 'commanding heights' of the economy for the public sector was adopted in:",
+      "options": ["1948", "1951", "1956", "1991"],
+      "correct": 2,
+      "rationale": "The IPR of 1956 placed heavy industry, mining, and power in Schedule A (state monopoly), creating PSUs such as SAIL, BHEL, and NTPC; 1991 reversed much of this."
+    },
+    {
+      "id": 4,
+      "question": "India's structural paradox is that agriculture:",
+      "options": ["Produces over half of GVA but employs a tenth of workers", "Employs about 45% of workers but produces only about 15-18% of GVA", "Employs and earns an identical share", "Produces nothing without industry"],
+      "correct": 1,
+      "rationale": "Roughly half of India's workers earn only about a sixth of output in farming, making productivity per farm worker the lowest of the three sectors."
+    },
+    {
+      "id": 5,
+      "question": "Which sector contributes the largest share of India's gross value added today?",
+      "options": ["Primary", "Secondary", "Tertiary", "All three are equal"],
+      "correct": 2,
+      "rationale": "Services contribute about 53-55% of GVA, far ahead of industry (~28%) and agriculture (~15-18%), making India a services-led economy."
+    },
+    {
+      "id": 6,
+      "question": "A plumber employed by a municipal corporation with a pension and paid leave is best described as:",
+      "options": ["Private, unorganised sector", "Public, organised sector", "Private, organised sector", "Public, unorganised sector"],
+      "correct": 1,
+      "rationale": "Government employer means public sector; registration and service security (pension, leave) mean organised/formal — the two classifications cut across sector of activity."
+    },
+    {
+      "id": 7,
+      "question": "Roughly what share of India's workforce is in the unorganised (informal) sector?",
+      "options": ["About a quarter", "About half", "About nine out of ten", "About a third"],
+      "correct": 2,
+      "rationale": "Around 90% of Indian workers are informal — farm labour, street vendors, home-based workers — lacking written contracts and social security."
+    },
+    {
+      "id": 8,
+      "question": "In 1950-51, the primary sector's share of India's GDP was approximately:",
+      "options": ["About 20%", "About 35%", "About 52-55%", "About 75%"],
+      "correct": 2,
+      "rationale": "At Independence agriculture and allied activity produced more than half of GDP; its share has fallen steadily to roughly 15-18% today."
+    },
+    {
+      "id": 9,
+      "question": "'Premature tertiarisation' refers to India's pattern where:",
+      "options": ["Manufacturing rose to 40% before services dominated", "Services became dominant while manufacturing stayed stuck near 15-17% of GDP", "Agriculture re-emerged as the largest sector", "The tertiary sector shrank after 1991"],
+      "correct": 1,
+      "rationale": "Unlike East Asian economies that industrialised massively first, India's services overtook industry early and manufacturing's share has hovered around 15-17% for decades."
+    },
+    {
+      "id": 10,
+      "question": "Under the MSME classification revised in 2020, a 'small' enterprise is one with:",
+      "options": ["Investment up to ₹1 crore and turnover up to ₹5 crore", "Investment up to ₹10 crore and turnover up to ₹50 crore", "Investment up to ₹50 crore and turnover up to ₹250 crore", "No limits — any registered firm"],
+      "correct": 1,
+      "rationale": "Micro: ₹1 cr/₹5 cr; small: ₹10 cr/₹50 cr; medium: ₹50 cr/₹250 cr — the 2020 revision merged earlier manufacturing and services criteria."
+    }
+  ]
+}

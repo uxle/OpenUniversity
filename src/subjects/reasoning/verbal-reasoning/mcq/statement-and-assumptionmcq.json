@@ -1,0 +1,126 @@
+{
+  "lessonId": "statement-and-assumption",
+  "title": "Statement and Assumption",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Statement: \"Use Brightwhite toothpaste for whiter teeth in just seven days.\" Is the assumption \"People desire whiter teeth\" implicit?",
+      "options": [
+        "No — advertisements never assume desires",
+        "Yes — an advertisement argues from a benefit, and the benefit can motivate only buyers who already desire it",
+        "No — it is written explicitly in the statement",
+        "Yes — because all toothpastes whiten teeth"
+      ],
+      "correct": 1,
+      "rationale": "The ad's whole pull is the promised benefit, which works only on an audience that desires whiter teeth. The desire is unstated but necessary, hence implicit."
+    },
+    {
+      "id": 2,
+      "question": "Statement: \"All employees must attend the fire-safety drill on Friday.\" Is the assumption \"Compulsion is an acceptable way to secure attendance\" implicit?",
+      "options": [
+        "Not implicit — drills can also be voluntary",
+        "Not implicit — attendance and compulsion are unrelated",
+        "Implicit — the order \"must\" presupposes that compulsion is an accepted way to secure attendance",
+        "Implicit — because all employees dislike drills"
+      ],
+      "correct": 2,
+      "rationale": "The word \"must\" is an order, and an order is issued only by an authority that accepts compulsion as legitimate for its end. The belief is unstated but required, so it is implicit."
+    },
+    {
+      "id": 3,
+      "question": "Statement: \"Do not go near the river; the water level is rising.\" Is the assumption \"People might otherwise go near the river\" implicit?",
+      "options": [
+        "Implicit — a warning is pointless unless the warned act is possible",
+        "Not implicit — the statement bans entry to the riverbank outright",
+        "Implicit — because rivers are always dangerous",
+        "Not implicit — it only states a fact about the water level"
+      ],
+      "correct": 0,
+      "rationale": "Warnings presuppose the possibility of the act warned against; warning people away from an act they could not commit would be meaningless. Hence the assumption is implicit."
+    },
+    {
+      "id": 4,
+      "question": "Statement: \"The government has increased the scholarship amount for meritorious students.\" Is the assumption \"Higher scholarships encourage meritorious students\" implicit?",
+      "options": [
+        "Not implicit — scholarships never influence students",
+        "Implicit — the government has unlimited funds",
+        "Not implicit — merit cannot be measured",
+        "Implicit — the increase is justified only if the authority believes higher scholarships encourage meritorious students"
+      ],
+      "correct": 3,
+      "rationale": "A policy change claims a benefit, and the authority must believe the change produces that benefit or the decision has no justification. The belief is unstated but necessary, hence implicit."
+    },
+    {
+      "id": 5,
+      "question": "Statement: \"Shop at MegaMart — prices lower than any other store in town.\" Is the assumption \"No other store in town matches MegaMart's prices\" implicit?",
+      "options": [
+        "Yes — comparisons are always assumptions",
+        "No — it merely restates the explicit comparison written in the statement",
+        "Yes — every advertisement assumes exclusivity",
+        "No — price comparisons are never made by shops"
+      ],
+      "correct": 1,
+      "rationale": "An assumption must be unstated. This option copies the explicit claim \"lower than any other store\", so it is a restatement, not an assumption."
+    },
+    {
+      "id": 6,
+      "question": "Statement: \"Save water — every drop counts. — Municipal Corporation.\" Is the assumption \"Citizens can reduce their water usage\" implicit?",
+      "options": [
+        "Implicit — an appeal assumes the audience is able to respond to it",
+        "Not implicit — the Corporation itself must save the water",
+        "Implicit — because citizens never waste water",
+        "Not implicit — \"every drop counts\" is only a slogan"
+      ],
+      "correct": 0,
+      "rationale": "An appeal addressed to citizens assumes they are capable of changing their behaviour; appealing to the powerless would be meaningless. The capability is unstated but required, hence implicit."
+    },
+    {
+      "id": 7,
+      "question": "Statement: \"Enrol in the crash course to score 90+ in the board exam.\" Is the assumption \"The crash course is sufficient help for reaching that score\" implicit?",
+      "options": [
+        "Not implicit — course providers never believe in their own courses",
+        "Implicit — every student who enrols scores 90+",
+        "Implicit — the invitation is justified only if the writer believes the course can carry a student to that score",
+        "Not implicit — the statement only advertises the course"
+      ],
+      "correct": 2,
+      "rationale": "The invitation promises a target through the course, so the writer must believe the course is sufficient for reaching it. The belief is unstated but necessary — implicit. Option B overshoots: the writer need not believe every student will succeed."
+    },
+    {
+      "id": 8,
+      "question": "Statement: \"Please do not use the lift in case of fire.\" Is the assumption \"The lift may become unsafe during a fire\" implicit?",
+      "options": [
+        "Not implicit — lifts are always safe",
+        "Implicit — the instruction is meaningful only if the lift may become unsafe in a fire",
+        "Not implicit — the statement is about the stairs",
+        "Implicit — because lifts are slower than stairs"
+      ],
+      "correct": 1,
+      "rationale": "The safety instruction rests on the unstated belief that the lift poses a danger in a fire; without it the instruction has no reason. Hence the assumption is implicit."
+    },
+    {
+      "id": 9,
+      "question": "Statement: \"The library has extended its opening hours to midnight.\" Is the assumption \"Students need late-evening study time\" implicit?",
+      "options": [
+        "Not implicit — libraries never consider student needs",
+        "Implicit — because midnight is a popular closing time",
+        "Not implicit — opening hours and study time are unrelated",
+        "Implicit — the extension is pointless unless the authority believes students need late-evening study time"
+      ],
+      "correct": 3,
+      "rationale": "Extending hours is a facility change made for a purpose, and the authority must believe late-evening demand exists for the change to make sense. Negating the belief wrecks the statement, so it is implicit."
+    },
+    {
+      "id": 10,
+      "question": "Statement: \"Buy one, get one free — offer valid this week only.\" Is the assumption \"A deadline makes customers more likely to buy\" implicit?",
+      "options": [
+        "Not implicit — the offer would work without any deadline",
+        "Implicit — only free items ever sell",
+        "Implicit — the deadline creates urgency, which the seller believes increases purchases",
+        "Not implicit — it restates the statement"
+      ],
+      "correct": 2,
+      "rationale": "The phrase \"this week only\" manufactures urgency, which would be pointless unless the seller believed urgency increases buying. The belief is unstated but necessary, hence implicit."
+    }
+  ]
+}

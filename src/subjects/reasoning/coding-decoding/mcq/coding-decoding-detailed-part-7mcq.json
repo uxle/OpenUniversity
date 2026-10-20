@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-7",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 7 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 7 of 22",
   "questions": [
     {
       "question": "In a Chinese-coding example where 'cats eat fish' = 'dog cow bird' and 'fish eat mice' = 'bird cow lion', which code word means 'eat'?",
       "options": [
-        "dog",
         "cow",
+        "dog",
         "bird",
         "lion"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "'cow' is the code word common to both coded sentences, aligning with 'eat', the real word common to both original sentences.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is 'mixed coding'?",
       "options": [
         "A rule using only one technique",
-        "A rule that combines more than one coding technique together (e.g., a letter shift combined with a numeric transformation)",
         "A synonym for word reversal",
+        "A rule that combines more than one coding technique together (e.g., a letter shift combined with a numeric transformation)",
         "A rule with no defined structure at all"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Mixed coding combines two or more distinct coding techniques together, such as a letter shift applied alongside a numeric transformation.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What is 'symbol coding'?",
       "options": [
         "Coding that uses only letters",
-        "Replacing letters with non-alphabetic, non-numeric symbols according to a fixed key",
+        "A rule with no fixed key",
         "A synonym for number coding",
-        "A rule with no fixed key"
+        "Replacing letters with non-alphabetic, non-numeric symbols according to a fixed key"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Symbol coding substitutes letters with symbols (like @, #, $) rather than other letters or numbers, following a fixed substitution key.",
       "id": 4
     },
     {
       "question": "What is 'operation symbol coding'?",
       "options": [
-        "Coding using only letters",
         "Using mathematical operation symbols (+, -, x, /) as part of the code, often to indicate a transformation to apply",
+        "Coding using only letters",
         "A rule with no numeric component",
         "A synonym for symbol coding with no operations"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This coding incorporates mathematical operator symbols into the code itself, often signaling what transformation should be applied.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What might an 'operator coding example' test your understanding of?",
       "options": [
         "Word length only",
-        "Correctly interpreting what a given operator symbol instructs you to do to the letters or numbers in the code",
         "The color of the letters",
+        "Correctly interpreting what a given operator symbol instructs you to do to the letters or numbers in the code",
         "Only the alphabet's reverse mapping"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Operator coding examples test whether you can correctly interpret what a given mathematical operator symbol instructs you to do with the letters or numbers involved.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does a 'conditional flowchart' help visualize?",
       "options": [
         "The alphabet in a straight line",
-        "The branching logic of a conditional coding rule, showing which transformation applies under which condition",
+        "A single, unconditional rule",
         "Only word length data",
-        "A single, unconditional rule"
+        "The branching logic of a conditional coding rule, showing which transformation applies under which condition"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A conditional flowchart visualizes the decision branches of a conditional rule, clarifying exactly which transformation applies under each possible condition.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "Because the transformation is the same regardless of the condition"
       ],
       "correct": 1,
-      "rationale": "Since different conditions trigger different transformations, checking the condition first is essential \u2014 applying the wrong branch's rule produces an incorrect result.",
+      "rationale": "Since different conditions trigger different transformations, checking the condition first is essential — applying the wrong branch's rule produces an incorrect result.",
       "id": 9
     },
     {

@@ -6,24 +6,24 @@
       "id": 1,
       "question": "In a circular seating arrangement, why can't positions be described with a fixed \"left\" or \"right\" the way a row can?",
       "options": [
-        "Circular arrangements are never used in exams",
         "There is no fixed starting point, so positions are described relative to each other (clockwise/anticlockwise, opposite, neighbour)",
+        "Circular arrangements are never used in exams",
         "Everyone in a circle always faces the same direction as in a row",
         "Circular arrangements only ever have 4 seats"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Unlike a row, a circle has no natural start or end, so clues use relative terms like clockwise, anticlockwise, immediate neighbour, or opposite rather than absolute left/right positions."
     },
     {
       "id": 2,
       "question": "Why does it matter whether a circular group is \"facing the center\" or \"facing outward\"?",
       "options": [
-        "It doesn't matter \u2014 clockwise is always the same either way",
-        "Facing outward reverses how clockwise/anticlockwise appears from each person's own point of view",
+        "It doesn't matter — clockwise is always the same either way",
         "Facing outward means there are no neighbours",
+        "Facing outward reverses how clockwise/anticlockwise appears from each person's own point of view",
         "This only matters for row arrangements, not circular ones"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Clockwise motion looks reversed from each person's own perspective depending on whether the group faces the center or faces outward, which changes how directional clues like 'immediate right' should be applied."
     },
     {
@@ -43,22 +43,22 @@
       "question": "In a double-row arrangement where the two rows face each other, how does 'left' and 'right' behave between the rows?",
       "options": [
         "It's identical in both rows",
-        "It is mirrored \u2014 what's to one row's left is to the opposite row's right at the same paired position",
+        "Only the front row has a left/right",
         "Left and right don't apply to double rows",
-        "Only the front row has a left/right"
+        "It is mirrored — what's to one row's left is to the opposite row's right at the same paired position"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Because the two rows face each other, their left/right orientation is mirrored, so a seat and its opposite-row counterpart have reversed left/right relationships."
     },
     {
       "question": "In a circular seating arrangement facing the center, how does clockwise motion appear compared to a group facing outward?",
       "options": [
-        "Identical in both cases",
         "Reversed compared to facing outward",
+        "Identical in both cases",
         "Only relevant for double-row arrangements",
         "Clockwise doesn't apply to circles"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Facing the center versus facing outward reverses how clockwise/anticlockwise motion appears from each person's own point of view, which changes how directional clues should be applied.",
       "id": 5
     },
@@ -80,7 +80,7 @@
         "Two seats within the same row",
         "A seat in one row to a seat at the same paired position in the other row",
         "Only the two extreme ends",
-        "Nothing \u2014 'opposite' isn't used in double rows"
+        "Nothing — 'opposite' isn't used in double rows"
       ],
       "correct": 1,
       "rationale": "In a double-row arrangement, 'opposite' links a seat in one row directly to the seat at the same paired position in the facing row.",
@@ -107,7 +107,7 @@
         "'Immediately right' means anywhere in the row"
       ],
       "correct": 1,
-      "rationale": "'Neighbour' is a non-directional adjacency clue (either side), while 'immediately right of' fixes one specific direction \u2014 conflating the two can lead to placing a person in the wrong seat.",
+      "rationale": "'Neighbour' is a non-directional adjacency clue (either side), while 'immediately right of' fixes one specific direction — conflating the two can lead to placing a person in the wrong seat.",
       "id": 9
     },
     {

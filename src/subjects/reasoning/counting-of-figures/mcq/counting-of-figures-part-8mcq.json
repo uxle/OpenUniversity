@@ -1,16 +1,16 @@
 {
   "lessonId": "counting-of-figures-part-8",
-  "title": "Counting of Figures \u2014 Part 8 of 12",
+  "title": "Counting of Figures — Part 8 of 12",
   "questions": [
     {
       "question": "Why is 'labeling' (assigning letters/numbers to vertices) recommended before counting complex figures?",
       "options": [
-        "It has no real benefit",
         "It lets you refer to and track specific points and combinations precisely and unambiguously, avoiding visual confusion",
+        "It has no real benefit",
         "It is only useful for triangles, not other shapes",
         "It replaces the need for any counting method"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Labeling vertices lets you precisely and unambiguously refer to specific points and combinations, which avoids the confusion that comes with purely visual tracking.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does the 'vertex-path method' involve?",
       "options": [
         "Ignoring vertices entirely",
-        "Systematically tracing paths between labeled vertices to identify every valid closed figure",
         "Only tracing the outer boundary",
+        "Systematically tracing paths between labeled vertices to identify every valid closed figure",
         "Randomly connecting vertices"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This method systematically traces paths between labeled vertices, using that tracing to identify every valid closed figure in the diagram.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "Validating the figure's color scheme"
       ],
       "correct": 1,
-      "rationale": "Candidate validation confirms that a proposed combination of segments truly forms a closed, valid figure before it's added to the count \u2014 catching false positives.",
+      "rationale": "Candidate validation confirms that a proposed combination of segments truly forms a closed, valid figure before it's added to the count — catching false positives.",
       "id": 3
     },
     {
       "question": "What is 'composite figure detection'?",
       "options": [
         "Detecting only the smallest figures",
-        "Identifying larger figures formed by combining two or more adjacent basic figures",
+        "Removing composite figures from the count entirely",
         "Detecting figures made of a single color",
-        "Removing composite figures from the count entirely"
+        "Identifying larger figures formed by combining two or more adjacent basic figures"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Composite figure detection identifies larger figures built by combining two or more adjacent basic figures, which is a distinct step from counting the basic figures themselves.",
       "id": 4
     },
     {
       "question": "What is the main purpose of a formal 'figure-counting algorithm'?",
       "options": [
-        "To make the process more confusing",
         "To provide a repeatable, systematic sequence of steps that reliably finds every valid figure without missing or double-counting any",
+        "To make the process more confusing",
         "To only work on grid-based figures",
         "To replace the need for any verification"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A formal algorithm provides a repeatable, systematic sequence of steps designed to reliably find every valid figure while avoiding both missed and double-counted figures.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is one 'common mistake' this lesson likely warns about in figure counting?",
       "options": [
         "Using too many labels",
-        "Missing hidden or overlapping figures formed by combinations of basic shapes, not just the most visually obvious ones",
         "Counting too systematically",
+        "Missing hidden or overlapping figures formed by combinations of basic shapes, not just the most visually obvious ones",
         "Using formulas at all"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A very common mistake is missing hidden or overlapping composite figures, focusing only on the most visually obvious basic shapes.",
       "id": 6
     },
@@ -89,12 +89,12 @@
     {
       "question": "When is it appropriate to use a direct formula (like the squares-in-a-grid formula) rather than manual counting?",
       "options": [
-        "Never \u2014 manual counting is always required",
-        "When the figure follows a regular, well-defined structure that a known formula directly applies to",
+        "Never — manual counting is always required",
+        "Only for triangles, never for squares or rectangles",
         "Only when the figure has no lines at all",
-        "Only for triangles, never for squares or rectangles"
+        "When the figure follows a regular, well-defined structure that a known formula directly applies to"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Direct formulas apply reliably when a figure has a regular, well-defined structure (like a uniform grid) that matches the formula's underlying assumptions.",
       "id": 8
     },

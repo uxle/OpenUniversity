@@ -1,16 +1,16 @@
 {
   "lessonId": "classification-detailed-part-6",
-  "title": "Classification / Odd One Out \u2014 In-Depth Guide \u2014 Part 6 of 16",
+  "title": "Classification / Odd One Out — In-Depth Guide — Part 6 of 16",
   "questions": [
     {
       "question": "What does 'Gender Classification' test?",
       "options": [
-        "A digit-based property",
         "Whether a group of words/terms share a common grammatical or biological gender category, with one breaking it",
+        "A digit-based property",
         "A letter-count property",
         "A synonym relationship"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether a group shares a common gender category (masculine, feminine, or neutral terms), identifying the one that doesn't fit.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'Male/Female Classification' test, specifically?",
       "options": [
         "A synonym relationship",
-        "Whether a group of terms are all male (or all female) versions of a role/species, with one being the opposite gender term",
         "A digit-based property",
+        "Whether a group of terms are all male (or all female) versions of a role/species, with one being the opposite gender term",
         "A letter-count property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether a group of terms are all consistently male or all female versions (like Lion, Tiger, Bull all being male animal terms), identifying the outlier.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'Living/Non-Living Classification' test?",
       "options": [
         "A digit-based property",
-        "Whether a group of items are all living (or all non-living), with one item belonging to the opposite category",
+        "A letter-count property",
         "A gender-based property",
-        "A letter-count property"
+        "Whether a group of items are all living (or all non-living), with one item belonging to the opposite category"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether a group of items are all consistently living or all non-living, identifying the item that belongs to the opposite category.",
       "id": 4
     },
     {
       "question": "What does 'Natural/Man-Made Classification' test?",
       "options": [
-        "A living/non-living distinction",
         "Whether a group of items are all naturally occurring (or all man-made), with one item breaking that pattern",
+        "A living/non-living distinction",
         "A digit-based property",
         "A gender-based property"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This tests whether a group of items are consistently natural or consistently man-made, identifying the item from the opposite category.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does 'Solid/Liquid/Gas Classification' test?",
       "options": [
         "A living/non-living distinction",
-        "Whether a group of substances share the same state of matter, with one being in a different state",
         "A gender-based property",
+        "Whether a group of substances share the same state of matter, with one being in a different state",
         "A digit-based property"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This tests whether a group of substances share the same physical state of matter (solid, liquid, or gas), identifying the one in a different state.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "What does 'Planet Classification' test?",
       "options": [
         "A digit-based property",
-        "Whether a group of planets share a common categorical property (e.g., all rocky, or all gas giants), with one breaking that pattern",
+        "A synonym relationship",
         "A letter-count property",
-        "A synonym relationship"
+        "Whether a group of planets share a common categorical property (e.g., all rocky, or all gas giants), with one breaking that pattern"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This tests whether a group of planets share a common astronomical category (like being rocky planets or gas giants), identifying the exception.",
       "id": 8
     },

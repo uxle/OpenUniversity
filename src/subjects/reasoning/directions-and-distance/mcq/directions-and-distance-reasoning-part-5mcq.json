@@ -1,16 +1,16 @@
 {
   "lessonId": "directions-and-distance-reasoning-part-5",
-  "title": "Directions and Distance Reasoning \u2014 Part 5 of 10",
+  "title": "Directions and Distance Reasoning — Part 5 of 10",
   "questions": [
     {
       "question": "What does 'spatial language parsing' involve?",
       "options": [
-        "Drawing a map by hand",
         "Extracting direction, distance, and position information from a natural-language description",
+        "Drawing a map by hand",
         "Only extracting numbers, regardless of context",
         "Converting text into a different language"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Spatial language parsing identifies and extracts the direction, distance, and position information embedded in a natural-language problem statement.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is a 'spatial AST' (structured representation)?",
       "options": [
         "A physical map",
-        "A structured internal model of the parsed spatial entities and their relationships, similar in spirit to the temporal AST in clock reasoning",
         "A type of compass",
+        "A structured internal model of the parsed spatial entities and their relationships, similar in spirit to the temporal AST in clock reasoning",
         "A distance measured in a specific unit"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A spatial AST is a structured internal representation of the parsed entities and spatial relationships, mirroring the same structured-representation idea used in clock and blood relation reasoning.",
       "id": 2
     },
@@ -53,12 +53,12 @@
     {
       "question": "What role does a 'spatial reasoning engine' play?",
       "options": [
-        "It only draws diagrams",
         "It coordinates parsing, representation-building, constraint solving, and output formatting into one consistent process",
+        "It only draws diagrams",
         "It replaces the need for coordinates",
         "It only works for 3D problems"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The spatial reasoning engine is the overall system tying together every stage of the pipeline into one coherent, repeatable process.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "Why is 'unit conversion' important in direction-and-distance problems?",
       "options": [
         "It never matters",
-        "Because distances may be given in different units (km, m, miles) that must be converted to a common unit before combining them",
         "Because directions always need to be converted to degrees",
+        "Because distances may be given in different units (km, m, miles) that must be converted to a common unit before combining them",
         "Because unit conversion only applies to time, not distance"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Distances stated in different units must be converted to a shared unit before being added or compared, or the resulting total will be numerically wrong.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "Why is separating parsing from reasoning (rather than doing both at once) a good design principle?",
       "options": [
         "It isn't a good principle, they should always be combined",
-        "It keeps each stage focused on one job, making the overall process easier to verify and debug",
+        "It only applies to time-based problems",
         "It removes the need for verification entirely",
-        "It only applies to time-based problems"
+        "It keeps each stage focused on one job, making the overall process easier to verify and debug"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Separating parsing from reasoning keeps each stage focused on a single responsibility, which makes the overall pipeline easier to verify and debug when something goes wrong.",
       "id": 8
     },
     {
       "question": "What might go wrong if unit conversion is skipped in a multi-step distance problem?",
       "options": [
-        "Nothing, units don't actually matter",
         "Distances in different units could be added directly, producing a numerically wrong total",
+        "Nothing, units don't actually matter",
         "The direction would automatically become invalid",
         "The problem would become unsolvable rather than wrong"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Skipping unit conversion risks directly adding, say, a value in meters to a value in kilometers, producing a total that is numerically wrong despite looking plausible.",
       "id": 9
     },

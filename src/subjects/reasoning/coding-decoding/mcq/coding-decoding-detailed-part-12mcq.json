@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-12",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 12 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 12 of 22",
   "questions": [
     {
       "question": "What is the 'golden rule' for choosing between multiple coding rules that seem to fit?",
       "options": [
-        "Always pick the most complex rule",
         "Always prefer the SIMPLEST rule that remains consistent across every given example, not just some of them",
+        "Always pick the most complex rule",
         "Pick a rule at random",
         "Prefer whichever rule was thought of first"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The golden rule is to always prefer the simplest rule that holds true across every given example, rather than a more complex one that only partially fits.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does 'rule verification' require before finalizing an answer?",
       "options": [
         "Checking only the first letter",
-        "Confirming the candidate rule correctly explains every part of every given example, not just the first one checked",
         "Skipping verification to save time",
+        "Confirming the candidate rule correctly explains every part of every given example, not just the first one checked",
         "Only verifying if the rule seems complex"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Full rule verification means confirming the candidate rule correctly accounts for every part of every given example, not stopping after a single partial check.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'contradiction detection' catch during coding rule verification?",
       "options": [
         "Nothing useful",
-        "A candidate rule that works for one part of an example but produces a wrong result for another part, revealing it's not the correct rule",
+        "Only errors in the final answer choice",
         "Only spelling errors",
-        "Only errors in the final answer choice"
+        "A candidate rule that works for one part of an example but produces a wrong result for another part, revealing it's not the correct rule"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Contradiction detection catches cases where a candidate rule explains one part of an example correctly but fails on another part, revealing that it isn't actually the correct rule.",
       "id": 4
     },
     {
       "question": "What is the purpose of a formal 'coding solving algorithm'?",
       "options": [
-        "To make solving slower and more complex",
         "To provide a repeatable, systematic sequence of steps for identifying and verifying a coding rule, rather than guessing",
+        "To make solving slower and more complex",
         "To replace the need for any examples",
         "To only apply to letter-shift coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A formal solving algorithm provides a repeatable, systematic sequence of steps for identifying and verifying the correct coding rule, rather than relying on guesswork.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What does a 'master solving flowchart' consolidate?",
       "options": [
         "Only the golden rule",
-        "The full decision process for identifying, testing, and applying the correct coding rule, laid out as a step-by-step flowchart",
         "Only the wrap-around rule",
+        "The full decision process for identifying, testing, and applying the correct coding rule, laid out as a step-by-step flowchart",
         "A random selection of examples"
       ],
-      "correct": 1,
-      "rationale": "A master solving flowchart lays out the complete decision process \u2014 identifying, testing, and applying the rule \u2014 as a clear, step-by-step visual guide.",
+      "correct": 2,
+      "rationale": "A master solving flowchart lays out the complete decision process — identifying, testing, and applying the rule — as a clear, step-by-step visual guide.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "What does 'pair sum coding' compute?",
       "options": [
         "The individual position of each letter",
-        "The sum of each pair of adjacent letters' (or numbers') position values",
+        "The product of all letters combined",
         "The word's total length",
-        "The product of all letters combined"
+        "The sum of each pair of adjacent letters' (or numbers') position values"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Pair sum coding computes the sum of each pair of adjacent letters' or numbers' values, working through the word pair by pair.",
       "id": 8
     },
@@ -114,12 +114,12 @@
       "question": "Why must the simplest-consistent-rule principle always be checked against ALL given data, not just convenient parts of it?",
       "options": [
         "Partial checking is always sufficient",
-        "Because a rule that only explains part of the data isn't actually verified \u2014 it might coincidentally match a subset while being wrong overall",
+        "Because a rule that only explains part of the data isn't actually verified — it might coincidentally match a subset while being wrong overall",
         "Because all data is always identical",
         "Because this principle only applies to number coding"
       ],
       "correct": 1,
-      "rationale": "A rule that only explains part of the data hasn't truly been verified \u2014 it may coincidentally fit that subset while actually being incorrect when checked against everything given.",
+      "rationale": "A rule that only explains part of the data hasn't truly been verified — it may coincidentally fit that subset while actually being incorrect when checked against everything given.",
       "id": 10
     }
   ]

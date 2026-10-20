@@ -1,0 +1,277 @@
+# The ER Model and Normalisation: Designing Good Schemas
+
+> Databases outlive the applications built on them, so their schemas
+> must be right the first time. This lesson moves from ER sketches —
+> entities, attributes, relationships — to fully normalised tables,
+> watching one messy table shrink into four clean ones.
+
+## 1. What Schema Design Is For
+
+A schema is the permanent grammar of a database. Redesigning code is
+cheap; redesigning a live schema means migrating billions of rows
+while the business keeps running. Good design therefore aims at three
+targets:
+
+- **No redundant facts** — every fact stored once, so no copy can go
+  stale.
+- **No impossible data** — constraints make wrong data unrepresentable.
+- **Room to grow** — new attributes and rules slot in without breaking
+  existing tables.
+
+The classic pipeline: gather requirements, draw an **ER diagram**,
+convert it to relational tables, then **normalise** the result to
+remove redundancy the sketch missed.
+
+## 2. Entities, Attributes, and Relationships
+
+[definition]
+The **Entity-Relationship (ER) model** describes a business domain as
+*entities* (things worth recording, drawn as rectangles), *attributes*
+(properties, drawn as ovals), and *relationships* (associations
+between entities, drawn as diamonds).
+[/definition]
+
+@diagram tree id="er-building-blocks" layout="tree" aria="Building blocks of the ER model"
+  "ER model" -> Entity
+  "ER model" -> Attribute
+  "ER model" -> Relationship
+  Entity -> "Strong: has its own key"
+  Entity -> "Weak: borrows its owner's key"
+  Attribute -> "Simple: city"
+  Attribute -> "Composite: name into first and last"
+  Attribute -> "Multivalued: phone numbers"
+  Attribute -> "Derived: age from date of birth"
+  Relationship -> "One-to-one"
+  Relationship -> "One-to-many"
+  Relationship -> "Many-to-many"
+@/diagram
+
+For a university: STUDENT and COURSE are entities; name, city, and
+credits are attributes; *enrols in* is the relationship that connects
+them, carrying its own attribute — the grade. A relationship can have
+data of its own, and that observation later justifies a separate
+table.
+
+## 3. Cardinality and Participation
+
+Cardinality says how many of each side may participate:
+
+| Type | Reading | Example |
+| --- | --- | --- |
+| 1:1 | one of each, paired | person — passport |
+| 1:N | one parent, many children | department — employees |
+| M:N | many on both sides | students — courses |
+
+- **Total participation** — every instance must take part (every
+  enrolment names a student): drawn with a double line.
+- **Partial participation** — some instances may sit out (a student
+  may take no course this term).
+
+M:N is the interesting case: a student takes many courses, a course
+holds many students. Relational tables have no native M:N construct,
+so the relationship itself becomes a table.
+
+## 4. From ER Diagram to Tables
+
+| ER construct | Relational mapping |
+| --- | --- |
+| Strong entity | its own table, key becomes primary key |
+| Weak entity | table including the owner's key in its own |
+| Composite attribute | flatten into plain columns |
+| Multivalued attribute | separate table with the owner's key |
+| 1:N relationship | foreign key on the N side pointing at the 1 side |
+| 1:1 relationship | foreign key on either side, or merge the tables |
+| M:N relationship | junction table with both keys (plus its own attributes) |
+
+Applying the rules to the university sketch gives exactly three
+tables: STUDENT(student_id, name, city), COURSE(course_id, title,
+credits), and the junction ENROLMENT(student_id, course_id, grade) —
+with (student_id, course_id) as a composite primary key and grade as
+the relationship's own attribute.
+
+## 5. The Price of One Big Table
+
+Suppose instead we flatten everything into one wide,
+everything-in-one-place table:
+
+**ENROLMENT_REPORT(student_id, name, city, course_id, title, credits,
+grade)** — key (student_id, course_id):
+
+| student_id | name | city | course_id | title | credits | grade |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Aisha | Delhi | C1 | Databases | 4 | A |
+| 1 | Aisha | Delhi | C2 | Networks | 3 | B |
+| 2 | Boris | Mumbai | C1 | Databases | 4 | B |
+| 3 | Chen | Delhi | C1 | Databases | 4 | A |
+
+Aisha's name and city repeat on every row; Databases' title and
+credits repeat for every enroled student. Redundancy invites the
+three classic **anomalies**:
+
+- **Update anomaly** — Aisha moves to Chennai; every row mentioning
+  her must be edited. Miss one and the database disagrees with itself.
+- **Insertion anomaly** — a new course, Compilers, cannot be recorded
+  until some student enrols, because its row would have no student
+  part of the key.
+- **Deletion anomaly** — delete the last enrolment in Networks and the
+  course's title and credits vanish from the database entirely.
+
+[definition]
+An **anomaly** is an unwanted side effect of a redundant design: an
+update that must touch many rows, a fact that cannot be inserted, or a
+fact that disappears when an unrelated row is deleted.
+[/definition]
+
+Normalisation is a mechanical cure — follow the decision path:
+
+@diagram flowchart id="split-or-keep" layout="hierarchical" aria="Deciding how to split a table while normalising"
+node start label="One wide table" shape="pill"
+node q1 label="Non-atomic or repeating values?" shape="diamond"
+node a1 label="Flatten to 1NF" shape="round-rect"
+node q2 label="Fact depends on part of the key?" shape="diamond"
+node a2 label="Split to 2NF" shape="round-rect"
+node q3 label="Fact depends on another non-key fact?" shape="diamond"
+node a3 label="Split to 3NF" shape="round-rect"
+node done label="Clean schema" shape="round-rect"
+
+start -> q1
+q1 -> a1 label="yes"
+a1 -> q2
+q1 -> q2 label="no"
+q2 -> a2 label="yes"
+a2 -> q3
+q2 -> q3 label="no"
+q3 -> a3 label="yes"
+a3 -> done
+q3 -> done label="no"
+@/diagram
+
+## 6. Functional Dependencies: The Algebra of Keys
+
+[definition]
+A **functional dependency (FD)** X → Y holds when the value of X
+determines the value of Y: any two rows agreeing on X must agree on Y.
+In ENROLMENT_REPORT: student_id → name, course_id → credits,
+(student_id, course_id) → grade.
+[/definition]
+
+FDs are discovered from the business, not from the data — if the
+college reuses a course_id for two titles, that is a bug, not a new
+dependency. Two FD facts matter for design:
+
+- A **key** is a column set that functionally determines *every*
+  attribute of the table.
+- FDs compose by **transitivity**: from student_id → hostel_id and
+  hostel_id → hostel_name follows student_id → hostel_name, even
+  though no rule said so directly.
+
+## 7. 1NF, 2NF, 3NF: A Worked Normalisation
+
+The normal forms are a ladder; each rung removes one redundancy
+pattern:
+
+@diagram tree id="normal-forms-ladder" layout="tree" aria="Progression of normal forms"
+  "Unnormalised" -> "1NF: atomic values only"
+  "1NF: atomic values only" -> "2NF: no partial dependencies"
+  "2NF: no partial dependencies" -> "3NF: no transitive dependencies"
+  "3NF: no transitive dependencies" -> "BCNF: every determinant is a key"
+@/diagram
+
+**1NF — atomic values.** A STUDENT row holding `phones: 98110, 99201`
+stores two facts in one cell; queries like "find students with phone
+98110" become string surgery. Fix: one fact per cell — move each phone
+to its own row of a PHONE(student_id, phone) table. Our wide table is
+already in 1NF.
+
+**2NF — the whole key.** 1NF plus: no non-key attribute may depend on
+a *part* of a composite key. Here name and city depend on student_id
+alone, title and credits on course_id alone — partial dependencies.
+Split along the determinants:
+
+- STUDENT(student_id, name, city, hostel_id, hostel_name)
+- COURSE(course_id, title, credits)
+- ENROLMENT(student_id, course_id, grade) — key (student_id, course_id)
+
+**3NF — nothing but the key.** 2NF plus: no non-key attribute may
+depend on another non-key attribute (no *transitive* dependency).
+STUDENT still hides one: student_id → hostel_id → hostel_name. Split:
+
+- HOSTEL(hostel_id, hostel_name)
+- STUDENT(student_id, name, city, hostel_id)
+
+[example]
+Trace one fact through the ladder: "Databases is worth 4 credits"
+appeared three times in ENROLMENT_REPORT, once per enrolled student.
+After 2NF it appears once, in COURSE. Updating credits is now one
+row write — the update anomaly is gone by construction.
+[/example]
+
+[tip]
+The classic exam mnemonic: every attribute must depend on *the key
+(1NF), the whole key (2NF), and nothing but the key (3NF) — so help
+me Codd*. Map each clause to a dependency type and the normal form
+follows.
+[/tip]
+
+## 8. BCNF, Trade-offs, and When to Denormalise
+
+**BCNF** tightens 3NF: for *every* non-trivial FD X → Y, X must be a
+superkey — even when X is itself a non-key column set. 3NF tables can
+rarely still hide a dependency whose determinant is not a key; BCNF
+forbids those. Decomposition to BCNF may sacrifice dependency
+preservation, which is why 3NF is a common stopping point for
+exam-style designs.
+
+Normalisation costs joins: reconstructing the report in section 5 now
+means joining four tables. For most workloads the optimiser handles
+that easily, but two situations justify deliberate **denormalisation**
+— storing some redundancy on purpose:
+
+| Factor | Normalised | Denormalised |
+| --- | --- | --- |
+| Write correctness | anomalies impossible | application must keep copies in step |
+| Read joins | more joins, more work | fewer joins, faster simple reads |
+| Storage | minimal | redundant bytes grow with row count |
+| Best fit | transactional systems (OLTP) | reporting shelves, read-heavy caches |
+
+The storage bill for redundancy grows linearly with usage:
+
+@chart bar title="Redundant bytes stored for 100,000 enrolments (MB)" labels:
+One big table (name, city, title, credits repeated)
+Normalised (each fact once)
+
+data:
+5.2
+0.05
+@/chart
+
+[warning]
+Denormalise only when a measured, read-heavy workload proves the need
+— and let the application, not luck, keep the duplicated columns in
+step. Doing it "for speed" without measurements is how stale-data bugs
+are born.
+[/warning]
+
+## 9. Quick Revision
+
+| Concept | One-line recap |
+| --- | --- |
+| ER model | entities, attributes, relationships; M:N needs a junction table |
+| Mapping | 1:N puts the FK on the N side; M:N becomes its own table |
+| Anomalies | update, insertion, deletion — all children of redundancy |
+| FD | X → Y: X determines Y; keys determine everything |
+| 1NF | atomic values, no repeating groups |
+| 2NF | no non-key attribute depends on part of a composite key |
+| 3NF | no non-key attribute depends on another non-key |
+| BCNF | every determinant is a superkey |
+| Denormalisation | deliberate redundancy for reads; guard the writes |
+
+[summary]
+ER modelling captures the domain as entities, attributes, and
+relationships, and mechanical rules turn the diagram into tables —
+with M:N relationships becoming junction tables. One wide table
+demonstrates the update, insertion, and deletion anomalies; functional
+dependencies diagnose them, and 1NF, 2NF, and 3NF remove them step by
+step until every fact depends on the key, the whole key, and nothing
+but the key. Denormalise only on measured evidence.
+[/summary]

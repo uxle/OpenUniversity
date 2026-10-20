@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-10",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 10 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 10 of 22",
   "questions": [
     {
       "question": "What is a 'difference chart' used for?",
       "options": [
-        "Listing letter frequencies only",
         "Visually tabulating the differences between original and coded letter positions across an entire word or example",
+        "Listing letter frequencies only",
         "Counting vowels",
         "A chart unrelated to coding"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A difference chart visually tabulates the position gaps between original and coded letters across a whole example, aiding pattern detection.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is 'modular difference'?",
       "options": [
         "A difference calculated ignoring wrap-around",
-        "A difference calculated with wrap-around (modulo) taken into account, so it stays within the valid range of alphabet positions",
         "A synonym for word length",
+        "A difference calculated with wrap-around (modulo) taken into account, so it stays within the valid range of alphabet positions",
         "A difference that is always zero"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Modular difference accounts for the alphabet's wrap-around behavior, ensuring the calculated difference stays within the valid 1-26 position range.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What is 'alternating pattern detection' used for?",
       "options": [
         "Detecting a single, uniform shift only",
-        "Identifying when a coding rule alternates between two or more different transformations across successive letters",
+        "Detecting vowels only",
         "Counting the total number of letters",
-        "Detecting vowels only"
+        "Identifying when a coding rule alternates between two or more different transformations across successive letters"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This technique is specifically used to identify when a coding rule cycles between two or more different transformations rather than applying one constant rule.",
       "id": 4
     },
     {
       "question": "What is a 'position table' used for?",
       "options": [
-        "Listing only vowels",
         "Providing a quick-reference listing of each letter alongside its alphabet position, useful for fast lookup",
+        "Listing only vowels",
         "Listing word lengths only",
         "A table with no practical use"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A position table provides a fast, quick-reference lookup of each letter's alphabet position, saving time compared to counting from A each time.",
       "id": 5
     },
@@ -83,30 +83,30 @@
         "A rule that only reverses word order"
       ],
       "correct": 1,
-      "rationale": "Substitution coding replaces each letter according to a specific, potentially arbitrary key \u2014 unlike a uniform shift, the mapping isn't necessarily a consistent offset.",
+      "rationale": "Substitution coding replaces each letter according to a specific, potentially arbitrary key — unlike a uniform shift, the mapping isn't necessarily a consistent offset.",
       "id": 7
     },
     {
       "question": "What does the 'substitution coding flow' describe?",
       "options": [
         "A random guessing process",
-        "The step-by-step process of applying a substitution key to transform each letter of the original word",
+        "A flow unrelated to substitution",
         "The process of reversing a word",
-        "A flow unrelated to substitution"
+        "The step-by-step process of applying a substitution key to transform each letter of the original word"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This describes the systematic, step-by-step process of looking up and applying a substitution key to transform each letter of the word.",
       "id": 8
     },
     {
       "question": "What does a 'substitution example' typically demonstrate?",
       "options": [
-        "Reversing a word's order",
         "Applying a specific substitution key to a real word to show the resulting coded output",
+        "Reversing a word's order",
         "Counting vowels in a word",
         "A shift-based transformation only"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A substitution example works through applying a specific given key to a real word, demonstrating the resulting coded output step by step.",
       "id": 9
     },

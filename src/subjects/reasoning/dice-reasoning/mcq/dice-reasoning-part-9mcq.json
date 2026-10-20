@@ -1,16 +1,16 @@
 {
   "lessonId": "dice-reasoning-part-9",
-  "title": "Dice Reasoning \u2014 Part 9 of 10",
+  "title": "Dice Reasoning — Part 9 of 10",
   "questions": [
     {
       "question": "What is one 'common mistake' this lesson likely warns against in dice reasoning?",
       "options": [
-        "Using too many reference diagrams",
         "Assuming two faces are opposite just because they weren't seen together in one view, without confirming across all given views",
+        "Using too many reference diagrams",
         "Practicing with too many examples",
         "Using the coordinate model too often"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A common mistake is prematurely concluding two faces are opposite from a single view, rather than confirming that conclusion holds consistently across every given view.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is the purpose of a 'high-speed shortcut chart'?",
       "options": [
         "To slow down the solving process intentionally",
-        "To consolidate the fastest verified shortcuts (like immediate elimination rules) for quick use under exam time pressure",
         "To replace the need for understanding rules entirely",
+        "To consolidate the fastest verified shortcuts (like immediate elimination rules) for quick use under exam time pressure",
         "To only apply to letter dice"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "This chart consolidates the fastest, already-verified shortcuts into one place, supporting quick application when solving under real exam time pressure.",
       "id": 2
     },
@@ -35,30 +35,30 @@
         "Rules only relevant to symbol dice"
       ],
       "correct": 1,
-      "rationale": "These are meant to be near-instant, memorized checks \u2014 like the opposite-faces-never-together rule \u2014 that can be applied almost immediately without extended calculation.",
+      "rationale": "These are meant to be near-instant, memorized checks — like the opposite-faces-never-together rule — that can be applied almost immediately without extended calculation.",
       "id": 3
     },
     {
       "question": "Why does the lesson include multiple tiers of practice sets (Basic, Intermediate, Advanced, Challenge)?",
       "options": [
         "To make the lesson unnecessarily long",
-        "To let learners build dice reasoning skill progressively, from simple single-view problems up to complex multi-roll or ambiguous cases",
+        "Tiered practice has no real pedagogical benefit",
         "Because each tier uses entirely different, unrelated rules",
-        "Tiered practice has no real pedagogical benefit"
+        "To let learners build dice reasoning skill progressively, from simple single-view problems up to complex multi-roll or ambiguous cases"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Progressive tiers let learners build skill step by step, moving from simple single-view problems toward complex multi-roll or ambiguous cases as their understanding solidifies.",
       "id": 4
     },
     {
       "question": "What is the purpose of the 'Exam Strategy' section near the end of the practice sets?",
       "options": [
-        "To introduce brand-new cube facts",
         "To consolidate practical advice on how to approach dice reasoning questions efficiently under real exam conditions",
+        "To introduce brand-new cube facts",
         "To replace the need for the master formula sheet",
         "To only apply to the challenge-tier practice set"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This section consolidates practical, exam-oriented advice for efficiently approaching dice reasoning questions under real time-pressured conditions.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "Why might relying only on memorized shortcuts, without understanding the underlying opposite/adjacency rules, be risky?",
       "options": [
         "There is no risk at all in doing this",
-        "Because an unfamiliar or unusual die layout (not matching the standard assumption) could make a memorized shortcut give a wrong answer",
         "Because shortcuts are always slower than full derivation",
+        "Because an unfamiliar or unusual die layout (not matching the standard assumption) could make a memorized shortcut give a wrong answer",
         "Because shortcuts only apply to symbol dice"
       ],
-      "correct": 1,
-      "rationale": "A memorized shortcut, like assuming opposite faces sum to 7, can fail on a non-standard die layout \u2014 understanding the underlying rules is what lets you recognize and adapt to such cases.",
+      "correct": 2,
+      "rationale": "A memorized shortcut, like assuming opposite faces sum to 7, can fail on a non-standard die layout — understanding the underlying rules is what lets you recognize and adapt to such cases.",
       "id": 6
     },
     {
@@ -90,11 +90,11 @@
       "question": "Why is recognizing common mistakes explicitly useful, rather than only learning the correct rules?",
       "options": [
         "It isn't useful, only correct rules matter",
-        "Knowing the typical ways learners go wrong helps you actively watch for and avoid those same errors under exam pressure",
+        "It only helps with symbol dice problems",
         "It replaces the need to learn any rules at all",
-        "It only helps with symbol dice problems"
+        "Knowing the typical ways learners go wrong helps you actively watch for and avoid those same errors under exam pressure"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Explicitly knowing the common failure patterns lets you actively watch for and avoid them, which is a different and complementary skill from simply knowing the correct rules.",
       "id": 8
     },
@@ -119,7 +119,7 @@
         "Because speed techniques work independently of the basic rules"
       ],
       "correct": 1,
-      "rationale": "Reliable, fast problem-solving is built on a solid foundation of the underlying rules \u2014 the lesson's progression ensures that foundation is in place before layering on speed techniques and practice.",
+      "rationale": "Reliable, fast problem-solving is built on a solid foundation of the underlying rules — the lesson's progression ensures that foundation is in place before layering on speed techniques and practice.",
       "id": 10
     }
   ]

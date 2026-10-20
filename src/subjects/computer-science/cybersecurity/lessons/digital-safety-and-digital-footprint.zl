@@ -1,0 +1,226 @@
+# Digital Safety, Privacy, and Your Digital Footprint
+
+> Every click leaves a trace: posts you write, cookies you collect,
+> records others keep about you. This lesson turns cybersecurity into
+> daily habits, closing with India's IT Act 2000 and CERT-In.
+
+## 1. Your Digital Footprint: Active and Passive
+
+Your **digital footprint** is the trail of data you leave across the
+internet. It has two halves, and the second is easy to forget.
+
+@diagram tree id="digital-footprint-map" layout="tree" aria="Digital footprint split into active, passive, and third-party traces"
+  "Digital footprint" -> "Active: posts, comments, uploads"
+  "Digital footprint" -> "Passive: cookies, location pings, device fingerprints"
+  "Digital footprint" -> "Third party: tags, mentions, breached databases"
+@/diagram
+
+| Trace | Who creates it | Example |
+| --- | --- | --- |
+| Active | you, deliberately | photos, tweets, form submissions |
+| Passive | websites, silently | tracking cookies, IP logs, browsing history |
+| Third party | others | a friend tags you, a leaked password list includes you |
+
+[definition]
+Data minimisation: share the least data needed for the task, with the
+fewest parties, for the shortest time. The footprint you never create
+cannot leak, be profiled, or be sold.
+[/definition]
+
+[warning]
+The internet has a long memory. Deleted posts are cached, screenshotted,
+and archived; assume anything you publish could someday be read by an
+employer, an admission committee, or a stranger with bad intentions.
+[/warning]
+
+## 2. Password Hygiene: Length, Uniqueness, Randomness
+
+Three rules carry most of the weight: make passwords **long**,
+**unique per site**, and **unpredictable**. A four-word passphrase
+like *river-lantern-cactus-quilt* beats *P@ssw0rd!*, because every
+extra character multiplies the search space astronomically.
+
+@chart bar title="Illustrative offline crack time by password length (seconds, log-like scale)" labels:
+8 characters
+10 characters
+12 characters
+14 characters
+
+data:
+2200
+8400000
+32000000000
+120000000000000
+@/chart
+
+The chart assumes a random mix of letters, digits, and symbols
+against a fast hash at a hundred billion guesses per second — the
+jump from hours to millions of years is the whole argument for length.
+
+| Common mistake | Why it fails | Do this instead |
+| --- | --- | --- |
+| Password123 patterns | first thing crackers try | random passphrase |
+| Reuse across sites | one breach opens every account | unique per site |
+| Personal details | birthdays are public data | unguessable words |
+| Short but complex | Tr0ub4dor! is crackable | length over symbol tricks |
+
+[tip]
+Exam shortcut: when options differ on length versus complexity, pick
+length and uniqueness. Complexity rules without length produce
+"P@ssw0rd", which every cracking dictionary already contains.
+[/tip]
+
+## 3. Password Managers
+
+A **password manager** generates and stores strong unique passwords
+behind one strong **master password** and encryption. You memorise a
+single passphrase; the vault remembers hundreds.
+
+| Benefit | Explanation |
+| --- | --- |
+| Unique everywhere | a breach at one site stays at that site |
+| Strong by default | generated random strings you never need to type |
+| Autofill with checks | managers refuse to fill on lookalike phishing domains |
+| Sync and recovery | vaults sync encrypted across your devices |
+
+Choose a reputable manager, protect the master password with MFA, and
+export an encrypted backup. The vault becomes the single crown jewel —
+so its master password must be long, unshared, and never reused.
+
+## 4. MFA: Something You Know, Have, or Are
+
+**Multi-factor authentication (MFA)** demands proof from two or more
+different factor families, so a stolen password alone is useless.
+
+@diagram tree id="authenticator-factors" layout="tree" aria="Authentication factors grouped into knowledge, possession, and inherence"
+  "Authentication factors" -> "Knowledge: passwords, PINs"
+  "Authentication factors" -> "Possession: OTP apps, SMS codes, security keys"
+  "Authentication factors" -> "Inherence: fingerprint, face, voice"
+@/diagram
+
+Two factors from the *same* family do not count as MFA — a password
+plus a security question is still just knowledge twice.
+
+| Method | Strength | Main weakness |
+| --- | --- | --- |
+| SMS one-time codes | better than nothing | SIM-swap attacks, phishing |
+| Authenticator apps | strong, offline-capable | device loss, backup codes |
+| Push approval | convenient | prompt fatigue attacks |
+| Hardware security keys | strongest, phishing-resistant | cost, need a spare |
+
+[warning]
+Prompt fatigue is real: an attacker who knows your password spams
+login approvals at 2 a.m. hoping you tap "yes" to stop the noise.
+Never approve a prompt you did not trigger; use number matching or a
+security key where offered.
+[/warning]
+
+## 5. Safe Browsing Habits
+
+Small habits block most web-delivered threats:
+
+- Check that the address is exactly right — **typosquatting** sites
+  live at rnicrosoft.com and paypa1.com.
+- HTTPS matters for login pages, but a padlock on a scam site just
+  means the scam is encrypted.
+- Download apps and files only from official stores and vendors.
+- Keep browsers, extensions, and the OS updated — exploits chase
+  unpatched software.
+- On public Wi-Fi, prefer your phone's hotspot or a VPN; never log in
+  to banking over open networks without a tunnel.
+- Log out of shared computers, and decline "remember me" on devices
+  that are not yours.
+
+[info title="Quizzes and Facebook-questions"]
+"Which movie character is your first pet?" is a password-reset
+question being harvested in public. Anything used as a security
+answer — school, birthplace, first car — should never be answered
+truthfully in public posts.
+[/info]
+
+## 6. Recognising Phishing in Daily Life
+
+Phishing arrives by email, SMS, WhatsApp, and calls; the tells are
+constant across channels.
+
+| Sign | What you might see |
+| --- | --- |
+| Urgency and threats | "account closed in 24 hours" |
+| Authority pressure | "the CEO needs this done now" |
+| Mismatched sender | display name says bank, domain says mail.ru |
+| Generic greeting | "Dear customer" instead of your name |
+| Payload pressure | unexpected attachment or short-link |
+| Payment or OTP demand | no genuine service asks for your OTP |
+
+[example]
+A message claims your electricity will be cut tonight and asks you to
+pay a small amount on a linked page. The link resolves to a fresh
+domain registered last week. Verify through the official app or the
+number printed on your bill — never through the message itself.
+[/example]
+
+If you already clicked: disconnect, change the password from a clean
+device, enable MFA, and report it. Speed limits the damage more than
+embarrassment limits the reporting.
+
+## 7. Managing Your Footprint
+
+Footprint management is periodic hygiene, not a one-time cleanup:
+
+| Action | Frequency |
+| --- | --- |
+| Search your own name and review results | every few months |
+| Audit app permissions and revoke unused ones | yearly |
+| Tighten social media privacy to friends-only | after each platform change |
+| Delete or deactivate dormant accounts | as noticed |
+| Review what data brokers and old forums hold | yearly |
+
+[important]
+Before posting, run the three-question test: would I be comfortable if
+my employer, my family, and a stranger all saw this? Assume every
+post is permanent and public by default.
+[/important]
+
+## 8. India's Legal Framework: IT Act 2000 and CERT-In
+
+India's baseline cyber law is the **Information Technology Act,
+2000**, amended in 2008. It gives legal recognition to electronic
+records and signatures and defines offences with penalties.
+
+| Provision | Offence | Punishment outline |
+| --- | --- | --- |
+| Section 43 | unauthorised access, data damage | compensation to the victim |
+| Section 65 | tampering with computer source code | up to 3 years imprisonment and fine |
+| Section 66 | computer-related offences | up to 3 years and/or fine |
+| Section 66C | identity theft | up to 3 years and fine |
+| Section 66D | cheating by personation online | up to 3 years and fine |
+| Section 67 | publishing obscene material | up to 3 years first conviction and fine |
+
+[info title="CERT-In"]
+CERT-In, constituted in 2004 under Section 70B of the IT Act, is
+India's national cyber incident response agency: it issues alerts and
+advisories, coordinates incident response, and — under its 2022
+directions — requires service providers to report specified cyber
+incidents within six hours. Citizens can report cybercrime at
+cybercrime.gov.in or the 1930 helpline for financial fraud.
+[/info]
+
+The **Digital Personal Data Protection Act, 2023** adds a consent-based
+regime for how organisations handle personal data, complementing the
+IT Act's **SPDI Rules, 2011**, which require reasonable security
+practices for sensitive personal data.
+
+## 9. Quick Revision
+
+| Concept | Remember this |
+| --- | --- |
+| Digital footprint | active posts plus passive tracking plus third-party traces |
+| Password rules | long, unique, random — passphrase beats P@ssw0rd |
+| Password manager | one strong master password, many strong unique ones |
+| MFA families | knowledge, possession, inherence — two different ones |
+| Strongest 2FA | hardware security key, phishing-resistant |
+| SIM swap | why SMS codes are the weakest factor |
+| Typosquatting | lookalike domains like paypa1.com |
+| Data minimisation | least data, fewest parties, shortest time |
+| IT Act 2000 | India's cyber law; 66C identity theft, 66D online cheating |
+| CERT-In | national incident response; 6-hour reporting direction |

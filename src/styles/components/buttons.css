@@ -71,6 +71,13 @@
 
 /* Small */
 .ou-btn--sm { padding: var(--ou-space-1) var(--ou-space-3); font-size: var(--ou-fs-xs); }
+/* Small buttons (language switcher, inline actions) shrink to ~26px on
+   desktop, which is fine for a pointer — but on touch they must meet the
+   same 44px bar as everything else. pointer:coarse is the right gate
+   here (a desktop window stays compact; phones/tablets get the tap area). */
+@media (pointer: coarse) {
+  .ou-btn--sm { min-height: 44px; }
+}
 
 /* Icon button — exact 44×44px square, not padding-driven sizing:
    content-driven width (padding + glyph width) made this an oval, not a

@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-5",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 5 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 5 of 22",
   "questions": [
     {
       "question": "What does 'reverse + shift' coding combine?",
       "options": [
-        "Two shifts with no reversal",
         "Reversing the word's letter order, then applying an additional alphabet shift to each letter",
+        "Two shifts with no reversal",
         "Mirror coding only",
         "A rule with no transformation at all"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "This combines reversing the order of the word's letters with an additional alphabet shift applied to each letter afterward.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What is 'position swapping'?",
       "options": [
         "Changing a letter's alphabet position permanently",
-        "Exchanging the positions of two specific letters within the word, without changing the letters themselves",
         "Reversing the entire word",
+        "Exchanging the positions of two specific letters within the word, without changing the letters themselves",
         "Replacing letters with numbers"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Position swapping exchanges where two specific letters sit within the word, without altering which letters they are.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does 'odd-even position rearrangement' do?",
       "options": [
         "Deletes odd-position letters",
-        "Reorders the word by grouping letters from odd positions together and even positions together (or similar)",
+        "Has no effect on letter order",
         "Only affects vowels",
-        "Has no effect on letter order"
+        "Reorders the word by grouping letters from odd positions together and even positions together (or similar)"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This rearrangement regroups the word's letters based on whether their original position was odd or even, changing the overall letter order.",
       "id": 4
     },
     {
       "question": "What is 'alphabetical rearrangement' coding?",
       "options": [
-        "Leaving the word in its original order",
         "Reordering a word's letters into alphabetical order as its code",
+        "Leaving the word in its original order",
         "Reversing the word only",
         "Randomly shuffling the letters"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Alphabetical rearrangement coding sorts a word's letters into alphabetical order to produce its code.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "What is the key difference between 'letter shift' and 'position shift'?",
       "options": [
         "They are exactly the same thing",
-        "Letter shift changes which letter appears (moving through the alphabet), while position shift changes where a letter appears within the word (moving through word positions)",
         "Position shift only applies to numbers",
+        "Letter shift changes which letter appears (moving through the alphabet), while position shift changes where a letter appears within the word (moving through word positions)",
         "Letter shift never changes a letter's identity"
       ],
-      "correct": 1,
-      "rationale": "Letter shift moves a letter's identity forward/backward through the alphabet, while position shift moves where a letter sits within the word itself \u2014 two distinct kinds of movement.",
+      "correct": 2,
+      "rationale": "Letter shift moves a letter's identity forward/backward through the alphabet, while position shift moves where a letter sits within the word itself — two distinct kinds of movement.",
       "id": 6
     },
     {
@@ -83,18 +83,18 @@
         "A random selection of letters"
       ],
       "correct": 1,
-      "rationale": "Word coding treats the entire word as a single unit \u2014 basing the code on a property like its total length \u2014 rather than transforming each letter one by one.",
+      "rationale": "Word coding treats the entire word as a single unit — basing the code on a property like its total length — rather than transforming each letter one by one.",
       "id": 7
     },
     {
       "question": "What does 'word length coding' use as the basis for a code?",
       "options": [
         "The word's first letter only",
-        "The number of letters in the word",
+        "The number of vowels only",
         "The word's alphabetical position among a list of words",
-        "The number of vowels only"
+        "The number of letters in the word"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Word length coding derives the code directly from the total count of letters the word contains.",
       "id": 8
     },

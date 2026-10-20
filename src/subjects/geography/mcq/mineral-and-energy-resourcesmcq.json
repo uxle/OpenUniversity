@@ -1,0 +1,76 @@
+{
+  "lessonId": "mineral-and-energy-resources",
+  "title": "Mineral and Energy Resources of India",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which iron ore is considered the finest, with up to about 70 percent iron content?",
+      "options": ["Siderite", "Magnetite", "Limonite", "Haematite"],
+      "correct": 1,
+      "rationale": "Magnetite is the highest-grade ore with up to about 70 percent iron; haematite carries 50-60 percent and is the most widely used."
+    },
+    {
+      "id": 2,
+      "question": "High-grade haematite from the Bailadila hills is exported through which port?",
+      "options": ["Visakhapatnam", "Kandla", "Kochi", "Paradip"],
+      "correct": 0,
+      "rationale": "Ore from the Durg-Bastar-Chandrapur belt is railed from Bailadila in Chhattisgarh to Visakhapatnam for export."
+    },
+    {
+      "id": 3,
+      "question": "Manganese is mined mainly because it:",
+      "options": ["Burns as a domestic fuel", "Replaces limestone in cement", "Hardens steel as a ferro-alloy", "Serves as a gemstone"],
+      "correct": 2,
+      "rationale": "Manganese is a ferro-alloy used to harden and strengthen steel, so it travels with iron ore to the steel industry."
+    },
+    {
+      "id": 4,
+      "question": "Aluminium is smelted from which ore?",
+      "options": ["Magnetite", "Monazite", "Cinnabar", "Bauxite"],
+      "correct": 3,
+      "rationale": "Bauxite is the ore of aluminium; smelters such as NALCO's at Koraput sit near bauxite deposits and cheap electricity."
+    },
+    {
+      "id": 5,
+      "question": "The Koderma belt of Jharkhand is famous for which mineral used in electrical insulation?",
+      "options": ["Gypsum", "Mica", "Dolomite", "Barytes"],
+      "correct": 1,
+      "rationale": "The Koderma-Gaya-Hazaribagh belt of Jharkhand, with Nellore in Andhra Pradesh, supplies most of India's mica."
+    },
+    {
+      "id": 6,
+      "question": "Jharia in Jharkhand is celebrated in India's coal geography for:",
+      "options": ["The only lignite seam", "Anthracite of Tertiary age", "The richest coking coal of the Gondwana belt", "Being India's first oil field"],
+      "correct": 2,
+      "rationale": "Jharia holds India's richest coking (metallurgical) coal within the Gondwana rocks of the Damodar valley."
+    },
+    {
+      "id": 7,
+      "question": "Which is India's oldest petroleum refinery, working since 1901?",
+      "options": ["Jamnagar", "Mathura", "Barauni", "Digboi"],
+      "correct": 3,
+      "rationale": "Digboi in eastern Assam refined crude from India's oldest oil field and remains the country's oldest working refinery."
+    },
+    {
+      "id": 8,
+      "question": "India's vast thorium reserves, important for its nuclear programme, come from:",
+      "options": ["Bastar bauxite", "Monazite sands of the Kerala coast", "Kolar quartz reefs", "Rajasthan phosphates"],
+      "correct": 1,
+      "rationale": "Monazite beach sands along the Kerala coast are rich in thorium, a long-term nuclear fuel for advanced reactors."
+    },
+    {
+      "id": 9,
+      "question": "Bhadla, one of the world's largest solar parks, is located in which state?",
+      "options": ["Gujarat", "Karnataka", "Tamil Nadu", "Rajasthan"],
+      "correct": 3,
+      "rationale": "Bhadla lies in the sun-drenched Thar desert of Rajasthan, a flagship site of the National Solar Mission."
+    },
+    {
+      "id": 10,
+      "question": "Why is recycling aluminium scrap counted as energy conservation?",
+      "options": ["It increases coal burning", "It raises the ore grade", "It uses far less energy than smelting new metal", "It eliminates the need for power plants"],
+      "correct": 2,
+      "rationale": "Recycling aluminium consumes only a small fraction of the electricity needed to smelt fresh metal from bauxite."
+    }
+  ]
+}

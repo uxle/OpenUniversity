@@ -1,0 +1,76 @@
+{
+  "lessonId": "cloze_test_and_fill_ins",
+  "title": "Cloze Tests and Sentence Fill-ins",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the correct first step while solving a cloze passage?",
+      "options": ["Study the four options of blank 1 carefully", "Read the whole passage once, blanks and all", "Fill every blank that looks easy immediately", "Check the number of marks allotted"],
+      "correct": 1,
+      "rationale": "A full first read fixes the theme, tense, and tone in mind; starting with options lets them hypnotise you into wrong matches."
+    },
+    {
+      "id": 2,
+      "question": "A blank that follows 'has', 'have', or 'had' must be filled with:",
+      "options": ["a past participle", "a base verb", "a noun", "an adverb"],
+      "correct": 0,
+      "rationale": "The perfect tense is built with have/has/had + past participle (taken, reached), so the other word classes die immediately."
+    },
+    {
+      "id": 3,
+      "question": "Fill in: 'The committee has not yet ____ a final decision.'",
+      "options": ["make", "took", "taken", "taking"],
+      "correct": 2,
+      "rationale": "'Has' demands a past participle, and the collocation partner of 'decision' is take/reach/make — 'taken' satisfies both tests."
+    },
+    {
+      "id": 4,
+      "question": "Which connector best completes: 'Bee populations are falling; ____, several countries have banned the chemicals.'?",
+      "options": ["However", "Moreover", "Although", "Therefore"],
+      "correct": 3,
+      "rationale": "The ban is the result of the falling population, so the consequence connector 'therefore' fits; 'however' would signal contrast."
+    },
+    {
+      "id": 5,
+      "question": "'Unless you hurry, you will miss the train' means:",
+      "options": ["If you hurry, you will miss the train", "You will surely catch the train", "If you do not hurry, you will miss the train", "You must not hurry to catch the train"],
+      "correct": 2,
+      "rationale": "'Unless' already contains the negative: unless you hurry = if you do not hurry. Doubling it with 'not' is the classic trap."
+    },
+    {
+      "id": 6,
+      "question": "Choose the correct collocation for the blank: 'We walked through ____ rain for an hour.'",
+      "options": ["heavy", "strong", "powerful", "great"],
+      "correct": 0,
+      "rationale": "Rain collocates with 'heavy'; 'strong' goes with tea, wind, or coffee."
+    },
+    {
+      "id": 7,
+      "question": "In a narrative passage set in the past, verb blanks are usually filled with:",
+      "options": ["base forms", "present tense forms", "past tense forms", "future forms"],
+      "correct": 2,
+      "rationale": "The passage's master tense governs every verb blank unless logic demands otherwise — the tense-echo rule."
+    },
+    {
+      "id": 8,
+      "question": "Fill in: 'She was praised for her ____ handling of the crisis.'",
+      "options": ["tactic", "tactful", "tactics", "tactically"],
+      "correct": 1,
+      "rationale": "Blank + noun needs an adjective: 'tactful'. 'Tactic/tactics' are nouns and 'tactically' is an adverb — all fail the part-of-speech test."
+    },
+    {
+      "id": 9,
+      "question": "A connector that signals an unexpected or opposite fact between two sentences is:",
+      "options": ["therefore", "moreover", "then", "however"],
+      "correct": 3,
+      "rationale": "'However' marks contrast; 'therefore' shows result, 'moreover' adds, and 'then' sequences in time."
+    },
+    {
+      "id": 10,
+      "question": "Why should you re-read the completed passage at natural speed before moving on?",
+      "options": ["To memorise the passage for the next question", "To count the total words in the passage", "To check that every filled sentence matches the passage's tense and tone", "To translate the passage into your mother tongue"],
+      "correct": 2,
+      "rationale": "The final pass catches blanks filled by option-matching instead of reading — a sentence out of tone or tense betrays a wrong choice."
+    }
+  ]
+}

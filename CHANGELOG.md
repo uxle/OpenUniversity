@@ -5,6 +5,92 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Added — Font Awesome solid icons, self-hosted
+- Icons are Font Awesome 6 Free **solid** again, but without the old CDN dependency:
+  `tools/build-icon-font.py` subsets `fa-solid-900` to the ~66 glyphs the app uses
+  (~420 KB TTF → ~6 KB woff2 at `public/fonts/fa-solid-900.min.woff2`) and generates
+  `src/styles/vendor/fa-solid.css`; the font is preloaded and precached by the
+  service worker, so icons work offline and from `file://`.
+- `src/utils/icons.js` is now the single icon registry (canonical names + aliases for
+  every legacy name and the Material-Symbols names the vendored Zolto renderer emits);
+  `src/utils/icon.js` emits `<i class="fa-solid fa-…">` with the same accessibility
+  contract as before. `tools/check-icons.js` fails CI if any call site stops resolving.
+
+### Fixed — mobile UI/UX (deep audit, 320-393 px viewports)
+- **Command palette was never mounted** — the module existed but nothing instantiated
+  it: the home hero search button emitted an event nobody listened to, Ctrl/Cmd+K was
+  dead, and the header search pill silently fell back to plain navigation. The palette
+  is now created in `bootstrap.js`, mounted in the shell, and wired to the header
+  trigger, the hero button, `/` and Ctrl/Cmd+K.
+- **Safe-area insets silently no-op'd** — `index.html` lacked `viewport-fit=cover`, so
+  every `env(safe-area-inset-*)` rule returned 0 on notched phones. Fixed in
+  `index.html` and `404.html`; the bottom nav now extends over the home indicator
+  (its old fixed 64px height *including* the inset crushed the tabs to ~30px), and the
+  header, modal overlay and palette respect left/right notch insets in landscape.
+- **Wide lesson diagrams were unreadable** — a 1886-unit tree diagram shrank to 249px
+  on a 320px phone, rendering 14px labels at ~1.8px. New `utils/lesson-media.js`
+  re-wraps wide `svg.zl-diagram` elements in a horizontally pannable `.ou-media-scroll`
+  at a legible scale (labels now ~9px), with edge-fade affordance; narrow diagrams
+  keep shrink-to-fit.
+- **Tables crushed to one word per line** — lesson tables had no column floor, so a
+  3-column table compressed cells to ~65px on phones. Columns now keep an 8.5em
+  minimum under 640px and the existing wrapper scrolls the table instead.
+- **Vendor icon glyphs showed as literal words** — the Zolto renderer emits
+  Material-Symbols *ligature* spans, but that font was never loaded, so lessons with
+  `@alert`-style icons displayed the word "warning" instead of a glyph. They are now
+  rewritten to real FA solid icons at render time.
+- **iOS auto-zoom on focus** — the search box (15px) and command-palette (15.8px)
+  inputs sat below Safari's 16px zoom threshold and zoomed the page on every focus;
+  both now guarantee 16px+.
+- **Touch targets below 44px** — header search pill (36px), search filter pills
+  (31px), lesson back-link (21px), "See all" links (25px), small buttons on coarse
+  pointers, MCQ options (now min 48px), palette rows and esc button all meet the
+  44px+ bar without changing desktop layout.
+- **Mobile text floor** — fluid root font floor raised 15px → 16px, so `0.75rem`
+  labels (bottom-nav tabs, badges, form hints) render at 12px instead of ~11.3px.
+- **Modal on small screens** — max-height now uses `min(90vh, 100dvh - gap)` so tall
+  modals can't hide their footer behind mobile browser chrome; scroll chaining is
+  contained; footer buttons wrap full-width under 400px; palette anchors below the
+  keyboard on phones.
+- Anchor jumps respect the sticky header via `scroll-padding-top`; horizontal scroll
+  containers (tables, pills, diagrams) get momentum scrolling and `overscroll-behavior`
+  containment.
+
+### Added — 67 new lessons and 5 new sub-subjects (369 total, 3,773 MCQs)
+- Computer Science grows from 20 to 35 lessons and gains three new sub-subjects:
+  **Databases** (DBMS concepts, SQL, ER model and normalisation, transactions),
+  **Cybersecurity** (CIA triad, cryptography, network defence, digital safety) and
+  **Web Development** (how the web works, HTML, CSS, JavaScript and the DOM).
+- Reasoning grows from 109 to 116 lessons and gains two new sub-subjects:
+  **Verbal Reasoning** (statements, assumptions, conclusions, cause and effect)
+  and **Data Sufficiency** (arithmetic and reasoning variants with the standard
+  I-alone / II-alone / either / both option sets).
+- Mathematics grows from 19 to 30: exponents and sets (Numbers), sequences,
+  permutations and combinations, binomial theorem, matrices (Algebra),
+  coordinate geometry, trigonometry and mensuration (Geometry), sampling
+  (Statistics) and applications of calculus.
+- Economics grows from 13 to 18 (consumer behaviour, sectors of the Indian
+  economy, planning, the 1991 LPG reforms, human and sustainable development).
+- Geography grows from 13 to 18 (agriculture, mineral and energy resources,
+  industries, transport and trade, disasters and disaster management).
+- History grows from 14 to 19 (post-Mauryan kingdoms, south Indian kingdoms,
+  Vijayanagara and Bahmani, Bhakti and Sufi movements, 19th-century reforms).
+- Civics grows from 18 to 22 with four Hindi-language lessons: constitutional
+  amendments, emergency provisions, centre-state relations and political
+  parties with the anti-defection law.
+- Science grows from 34 to 39: fluids and modern physics (Physics),
+  environmental chemistry (Chemistry), genetics-evolution and biotechnology
+  (Biology, in Hindi).
+- Languages grows from 51 to 58: phrasal verbs, writing skills, error-spotting
+  and cloze tests (English); prefixes-suffixes, paragraph and essay writing,
+  letter writing and comprehension (Hindi).
+- Philosophy grows from 11 to 14: political philosophy,
+  philosophy of mind and applied ethics join the existing set.
+- Every new lesson ships with a 10-question MCQ bank (670 new questions) in the
+  same lesson language, plus tables, diagrams, charts and worked examples.
+- `subject-registry.json` and `search-index.json` regenerated; all 369 lesson
+  files and 369 MCQ banks validated; command palette and search cover everything.
+
 ### Added — "Ink & Accent" branding & media kit
 - Brand system: black & white stay the identity; color returns as **optional,
   small-dose accents** — one soft pastel per subject (icon badges + subject-page

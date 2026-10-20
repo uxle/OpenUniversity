@@ -1,0 +1,216 @@
+# The Sectors of the Indian Economy: Primary, Secondary, and Tertiary
+
+> Every rupee of national income is earned in a sector: growing,
+> making, or serving. Mapping India's output and workforce across the
+> three sectors reveals both the economy's shape and its biggest
+> structural puzzle.
+
+## 1. Why Classify Economic Activity?
+
+[definition]
+Economic activities are grouped into **sectors** by the kind of work
+done: the **primary sector** extracts gifts of nature (agriculture,
+forestry, fishing, mining and quarrying); the **secondary sector**
+transforms them into goods (manufacturing, construction, electricity,
+gas and water); the **tertiary sector** provides services that
+support producers and consumers (trade, transport, banking, education,
+health, administration).
+[/definition]
+
+Classification matters because the three sectors grow at different
+speeds, employ different skills, and demand different policies. A
+policy for farmers — irrigation, minimum support prices, crop
+insurance — cannot serve a software park or a steel plant. Modern
+accounts sometimes add a **quaternary sector** for knowledge work
+(IT services, research, consultancy), but the three-way split remains
+the exam standard.
+
+@diagram tree id="sector-tree" layout="tree" aria="The three sectors of the Indian economy with examples"
+  "Economic activity" -> "Primary (extractive)"
+  "Economic activity" -> "Secondary (manufacturing)"
+  "Economic activity" -> "Tertiary (services)"
+  "Primary (extractive)" -> "Crops, dairy, forestry, fishing, mining"
+  "Secondary (manufacturing)" -> "Textiles, steel, cement, power, construction"
+  "Tertiary (services)" -> "Trade, transport, banking, IT, health, education"
+@/diagram
+
+## 2. The Primary Sector: Closest to Nature
+
+The primary sector depends on land, water, and weather. In India it
+is dominated by agriculture and allied activities — crops, livestock,
+forestry, and fishing — together with mining and quarrying.
+
+- Agriculture is largely **monsoon-dependent**: only about half of
+  the net sown area is irrigated, so a deficient south-west monsoon
+  still moves food prices and farm incomes.
+- Holdings are small — the average farm size is roughly **one
+  hectare** — which limits mechanisation and keeps productivity low.
+- The sector carries a large share of **disguised unemployment**:
+  more family members work on a plot than the plot truly needs.
+- Mining and quarrying are primary because they *extract* nature's
+  stock — coal from Jharia, iron ore from Odisha's Keonjhar belt —
+  even though national accounts group them with "industry".
+
+[warning]
+A favourite exam trap: in India's national accounts, mining is
+reported inside the *industry* block alongside manufacturing,
+electricity, and construction — but conceptually it belongs to the
+*primary* sector because it does not transform anything; it merely
+takes.
+[/warning]
+
+## 3. The Secondary Sector: Making Things
+
+The secondary sector — often called the industrial sector — adds form
+value by processing raw materials. It covers registered (factory)
+manufacturing, unregistered small units, construction, and electricity
+generation.
+
+| Component | What it does | Indian anchors |
+| --- | --- | --- |
+| Manufacturing | Converts inputs into goods | Textiles of Tiruppur, steel of Jamshedpur, autos of Chennai's "Detroit of India" belt |
+| Construction | Builds structures — roads, houses, plants | Employs huge casual labour; a barometer of investment |
+| Electricity, gas, water | Produces and distributes utilities | Thermal, hydro, solar and wind plants |
+
+The secondary sector matters for the **earnings effect**: factory
+jobs historically paid more than farm work, so the share of industry
+in output and employment is a key indicator of structural progress.
+This is why the Industrial Policy Resolution of **1956** reserved the
+"commanding heights" — heavy machinery, mining, steel, power — for
+the public sector, creating PSUs such as SAIL, BHEL, and NTPC.
+
+## 4. The Tertiary Sector: Serving the Economy
+
+Services support both the other sectors and final consumers: trade,
+hotels, transport and communication, finance and insurance, real
+estate, public administration, defence, education, and health. India
+is unusual among developing countries in being **services-led** —
+exports of software services, business process outsourcing, and
+business services generate large foreign-exchange surpluses, and
+cities such as Bengaluru, Hyderabad, and Gurugram grew on this base.
+
+[info]
+Why does the tertiary sector grow fastest everywhere? As incomes
+rise, households spend proportionally more on services — eating out,
+banking, travel, schooling, healthcare. Specialisation also deepens:
+activities once done inside households or factories (accounting,
+repairs, logistics) spin off as purchased services.
+[/info]
+
+## 5. Comparing the Shares: Output versus Employment
+
+Here lies India's structural paradox. Using recent National Accounts
+and Periodic Labour Force Survey estimates (values approximate):
+
+@chart bar title="Approximate share of GVA and of employment by sector (per cent)" labels:
+Primary
+Secondary
+Tertiary
+
+data:
+18
+28
+54
+@/chart
+
+| Sector | Share of GVA (about) | Share of employment (about) | Gap |
+| --- | --- | --- | --- |
+| Primary (agriculture and allied) | 15-18% | 45% | Employs far more than it earns |
+| Secondary (industry) | 27-29% | 25% | Broadly balanced |
+| Tertiary (services) | 53-55% | 30% | Earns far more than it employs |
+
+Roughly **half of India's workers produce only a sixth of its
+output**. The arithmetic is unavoidable: average productivity per
+worker is lowest in agriculture, so meaningful income convergence
+requires shifting workers out of farming into higher-productivity
+industry and services — the transition economists call *structural
+transformation*.
+
+## 6. A Second Axis: Organised versus Unorganised, Public versus Private
+
+Sector of activity and sector of ownership are different questions.
+Cross-cut every primary/secondary/tertiary activity with two more
+classifications:
+
+- **Organised (formal) sector**: enterprises registered with the
+  government; employment terms fixed and regular; workers get
+  pensions, provident fund, paid leave. Examples: Indian Railways,
+  SAIL, TCS, government schools.
+- **Unorganised (informal) sector**: small and scattered units with
+  no written contract or job security — farm labour, street vendors,
+  home-based piece work. Roughly **nine out of ten Indian workers**
+  are informal, which is why schemes such as the e-Shram
+  registration drive matter.
+- **Public sector**: owned and controlled by government — railways,
+  defence production, most power distribution.
+- **Private sector**: owned by individuals or companies, run for
+  profit — from Kirana stores to Reliance and Infosys.
+
+[important]
+A worker can be any combination: a plumber employed by the municipal
+corporation is tertiary + public + organised; the same plumber working
+alone is tertiary + private + unorganised. Exams often test exactly
+this distinction.
+[/important]
+
+## 7. How the Mix Has Shifted Since 1951
+
+At Independence the primary sector produced **more than half of
+India's GDP** (about 52-55% in 1950-51) and employed about seven in
+ten workers. Since then, every successive decade has seen
+agriculture's output share fall — to roughly 42% by 1970-71, near 29%
+by 1990-91, and 15-18% today — while the services share climbed from
+about a third to well over half.
+
+Two features of this transition deserve note:
+
+1. **Services overtook industry**: unlike East Asian economies, whose
+   manufacturing share rose to 30-40% before services dominated,
+   India's manufacturing share of GDP has hovered around 15-17% for
+   decades. India, in effect, "skipped" the mass-manufacturing stage —
+   a pattern sometimes called premature tertiarisation.
+2. **Employment lags output**: workers left farming much more slowly
+   than output left farming, which is why the productivity gap in
+   section 5 persists. Programmes such as Make in India, PLI schemes,
+   and MGNREGA are, from different directions, attempts to manage this
+   gap.
+
+## 8. Common Confusions and Exam Traps
+
+[warning]
+Do not confuse *sector of the economy* (primary/secondary/tertiary)
+with *sector of ownership* (public/private) or *formality*
+(organised/unorganised). A coal miner in Coal India works in the
+primary sector, the public sector, and the organised sector — all at
+once.
+[/warning]
+
+[tip]
+Quick tests: Does the activity take from nature? Primary. Does it
+make or build something tangible? Secondary. Does it help producers
+or serve consumers without making a physical good? Tertiary. Mining
+= primary (extraction), even though it sits in the "industry" block
+of national accounts; a tailor stitching at home is secondary; a
+teacher is tertiary.
+[/tip]
+
+[definition]
+MSME size classes (revised 2020) — one more layer of classification
+used in policy: **micro** (investment up to ₹1 crore, turnover up to
+₹5 crore), **small** (up to ₹10 crore, ₹50 crore), **medium** (up to
+₹50 crore, ₹250 crore).
+[/definition]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Three sectors | Primary (extractive), secondary (manufacturing), tertiary (services) |
+| Mining belongs to | Primary sector (though shown under "industry" in accounts) |
+| Largest share of GVA today | Tertiary, about 53-55% |
+| Largest share of employment | Primary, about 45% |
+| 1950-51 position | Agriculture over half of GDP |
+| India's growth pattern | Services-led; manufacturing share stuck near 15-17% |
+| Organised vs unorganised | Registered with security of service vs informal, no security |
+| Public vs private | Government ownership vs private ownership |
+| Key structural task | Shift surplus labour from farms to productive non-farm jobs |

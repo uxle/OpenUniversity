@@ -1,0 +1,126 @@
+{
+  "lessonId": "version-control-with-git",
+  "title": "Version Control with Git: Tracking Every Change",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What exactly is a Git commit?",
+      "options": [
+        "A zipped backup of the whole folder",
+        "An immutable snapshot of the staged files plus author, message, and a pointer to the previous commit",
+        "A branch that cannot be deleted",
+        "An automatic upload to the remote server"
+      ],
+      "correct": 1,
+      "rationale": "A commit records the state of the staged files together with author, timestamp, message, and parent pointer, identified forever by its hash."
+    },
+    {
+      "id": 2,
+      "question": "git add moves changes from:",
+      "options": [
+        "The staging area to history",
+        "The remote to your local repository",
+        "The working directory to the staging area",
+        "The local repository to the remote"
+      ],
+      "correct": 2,
+      "rationale": "git add stages edits from the working directory; the later git commit takes the snapshot from staging into history."
+    },
+    {
+      "id": 3,
+      "question": "Why does Git have a staging area at all?",
+      "options": [
+        "It lets you commit selected changes, keeping one logical change per commit",
+        "It speeds up the network connection",
+        "It stores deleted files forever",
+        "It is required before any git log can run"
+      ],
+      "correct": 0,
+      "rationale": "The index lets you hand-pick which edits form the next commit, even when the working directory mixes several unrelated changes."
+    },
+    {
+      "id": 4,
+      "question": "Why is git revert preferred over git reset --hard for commits others already have?",
+      "options": [
+        "revert deletes all later commits, which is tidier",
+        "revert creates a new commit that undoes an old one, so shared histories stay consistent",
+        "They are identical commands with different flags",
+        "reset --hard fails on private branches only"
+      ],
+      "correct": 1,
+      "rationale": "revert rewrites nothing: it adds a compensating commit, while reset --hard erases history that teammates may already depend on."
+    },
+    {
+      "id": 5,
+      "question": "A Git branch is best described as:",
+      "options": [
+        "A full copy of every file in the project",
+        "A network request to the server",
+        "A movable label pointing at a commit",
+        "A compressed archive in .git/objects"
+      ],
+      "correct": 2,
+      "rationale": "A branch is just a 41-byte pointer file that moves as you commit — which is why creating one is effectively free."
+    },
+    {
+      "id": 6,
+      "question": "A merge conflict happens when:",
+      "options": [
+        "Two branches exist at the same time",
+        "Both branches changed the same lines of a file differently",
+        "A commit has no message",
+        "The remote server is unreachable"
+      ],
+      "correct": 1,
+      "rationale": "Git merges different-line changes automatically; only competing edits to the same lines require a human to resolve."
+    },
+    {
+      "id": 7,
+      "question": "The correct way to finish resolving a merge conflict is:",
+      "options": [
+        "Delete the repository and clone again",
+        "Run git push immediately",
+        "Edit the file to the text you want, remove the conflict markers, git add it, then commit",
+        "Run git merge again on the same branch"
+      ],
+      "correct": 2,
+      "rationale": "Resolution means producing the final text without <<<<<<< markers, staging it with git add, and committing to complete the merge."
+    },
+    {
+      "id": 8,
+      "question": "What is the relationship between Git and GitHub?",
+      "options": [
+        "GitHub is the offline version of Git",
+        "Git is a website; GitHub is a program",
+        "They are the same product from different vendors",
+        "Git is the open-source version control tool; GitHub is a hosting platform built on it"
+      ],
+      "correct": 3,
+      "rationale": "Git runs on your machine and works with any server; GitHub adds hosting plus issues, pull requests, and review on top."
+    },
+    {
+      "id": 9,
+      "question": "git fetch differs from git pull because fetch:",
+      "options": [
+        "Also merges remote changes into your branch",
+        "Downloads remote commits without merging, letting you inspect them first",
+        "Pushes local commits to the remote",
+        "Deletes commits the remote no longer has"
+      ],
+      "correct": 1,
+      "rationale": "pull is fetch plus merge in one step; fetch alone downloads new commits so you can review before integrating."
+    },
+    {
+      "id": 10,
+      "question": "What does a .gitignore file do?",
+      "options": [
+        "Tells Git which untracked files or patterns to never track, such as build output and .env",
+        "Hides files from your text editor",
+        "Encrypts the listed files",
+        "Compresses the repository database"
+      ],
+      "correct": 0,
+      "rationale": "Patterns in .gitignore keep machine-generated and secret files out of version control; tracked files must be untracked before the rule applies."
+    }
+  ]
+}

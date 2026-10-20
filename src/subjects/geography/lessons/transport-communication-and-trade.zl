@@ -1,0 +1,170 @@
+# Transport, Communication, and Trade: Connecting People and Markets
+
+> No region is an island: goods, messages, and money must move for a
+> market to exist. This lesson tours India's road, rail, water, air,
+> and pipeline networks, the systems of communication, and the trade
+> flows they carry.
+
+## 1. Lifelines of the Economy
+
+[definition]
+**Transport** moves people, goods, and services from one place to
+another; **communication** moves messages; **trade** is the exchange
+of goods and services that both make possible.
+[/definition]
+
+- Efficient transport widens markets, evens out regional prices, and
+  links mines, farms, factories, and ports into one supply chain.
+- In emergencies — floods, earthquakes, pandemics — these networks
+  become true lifelines carrying relief, fuel, and personnel.
+- International trade depends almost entirely on transport: ships,
+  planes, and land crossings are its arteries.
+
+@diagram tree id="modes-of-transport" layout="tree" aria="The modes of transport and communication"
+  "Movement systems" -> "Land transport"
+  "Movement systems" -> "Water transport"
+  "Movement systems" -> "Air transport"
+  "Movement systems" -> Communication
+  "Land transport" -> "Roads, railways, pipelines"
+  "Water transport" -> "Inland waterways, ocean shipping"
+  "Air transport" -> "Domestic and international aviation"
+  Communication -> "Post, telecom, internet, mass media"
+@/diagram
+
+@chart donut title="Approximate share of inland goods traffic" labels:
+Roads
+Railways
+Pipelines
+Waterways
+Airways
+
+data:
+65
+27
+4
+3
+1
+@/chart
+
+## 2. Roadways: The Network That Reaches Everywhere
+
+| Class | Managed by | Example |
+| --- | --- | --- |
+| National Highways | Central government (NHAI) | NH-44, Srinagar to Kanyakumari, India's longest |
+| State Highways | State governments | Links state capitals with district towns |
+| District and rural roads | District boards and panchayats | PMGSY village roads |
+| Border roads | Border Roads Organisation (since 1960) | Strategic frontier roads in mountains |
+
+- The **Golden Quadrilateral** links Delhi, Mumbai, Chennai, and
+  Kolkata in a roughly 5,800 km loop; the North-South corridor
+  (Srinagar-Kanyakumari) and East-West corridor (Porbandar-Silchar)
+  complete the national spine.
+- Numbering rule: odd-numbered highways run north-south and increase
+  from east to west, while even-numbered ones run east-west and
+  increase from north to south.
+
+[tip]
+On the Golden Quadrilateral, Delhi links directly with Mumbai and
+Kolkata, while Chennai joins Mumbai and Kolkata — draw the diamond
+once and every NH can be placed on it.
+[/tip]
+
+## 3. Railways: The Nation's Long Steel Thread
+
+- The first train ran from Bombay (Bori Bunder) to Thane on 16 April
+  1853 over 34 km; the network has since grown to roughly 68,000
+  route km, among the world's largest under single management.
+- Gauges were once a patchwork — broad (1.676 m), metre (1.000 m),
+  and narrow (0.762 m) — now being unified under Project Unigauge;
+  operations are organised into 17 zones.
+- The **Konkan Railway** threads the Western Ghats between Roha and
+  Mangalore with tunnels and tall bridges; two Dedicated Freight
+  Corridors (eastern and western) decongest passenger lines; Vande
+  Bharat trains mark the semi-high-speed era.
+
+## 4. Waterways and Ports: Cheapest for Bulk
+
+Inland waterways carry heavy cargo at the lowest cost: NW-1 on the
+Ganga (Prayagraj-Haldia, about 1,620 km), NW-2 on the Brahmaputra
+(Sadiya-Dhubri, about 891 km), and NW-3, the West Coast Canal in
+Kerala (Kollam-Kottapuram, about 205 km).
+
+| Port | State | Claim to fame |
+| --- | --- | --- |
+| Deendayal (Kandla) | Gujarat | Tidal port; tops the major ports in cargo handled |
+| Mumbai | Maharashtra | Largest natural harbour of India |
+| Nhava Sheva (JNPT) | Maharashtra | Largest container port |
+| Marmagao | Goa | Historic iron ore exports |
+| Kochi | Kerala | Natural lagoon harbour |
+| Chennai | Tamil Nadu | Oldest artificial port on the east coast |
+| Visakhapatnam | Andhra Pradesh | Deepest port of India |
+| Kolkata-Haldia | West Bengal | Riverine port system far up the Hooghly |
+
+[important]
+Ocean shipping carries roughly 95 percent of India's overseas trade
+by volume, so every policy on ports is really a policy on foreign
+trade.
+[/important]
+
+## 5. Airways and Pipelines
+
+- India's first commercial flight (1911) carried mail from Allahabad
+  to Naini; J. R. D. Tata founded Tata Airlines in 1932, which became
+  Air India, was nationalised in 1953, and returned to the Tata group
+  in 2022.
+- Air travel is unbeatable for long distances, emergencies, and
+  high-value cargo, with Delhi and Mumbai as the busiest hubs.
+- **Pipelines** move crude oil, petroleum products, and natural gas
+  at low running cost once built — the Hazira-Vijaipur-Jagdishpur gas
+  pipeline and the Salaya-Mathura crude line are classics — though
+  their routes cannot be changed after laying.
+
+## 6. Communication: From Postcards to the Internet
+
+- The postal network is among the world's largest; the six-digit
+  **PIN code**, introduced in 1972, reads region, sub-region, sorting
+  district, and finally the exact post office.
+- Telecom links every corner through fixed lines, mobiles, and the
+  internet, with optical fibre now reaching villages under BharatNet.
+- Mass media — radio, television, newspapers, cinema — carry market
+  prices, weather warnings, and government schemes to hundreds of
+  millions of homes.
+
+[info]
+Radio remains the cheapest and most far-reaching mass medium, which
+is why cyclone warnings are still broadcast in local languages hour
+by hour when storms approach the coast.
+[/info]
+
+## 7. International Trade: What We Sell and Buy
+
+| Major exports | Major imports |
+| --- | --- |
+| Petroleum products and engineering goods | Crude petroleum, the single largest item |
+| Gems and jewellery, pharmaceuticals | Gold and precious stones |
+| Textiles, apparel, and rice | Electronics, machinery, and coal |
+
+- India runs a **negative balance of trade**: the value of goods
+  imported exceeds the value of goods exported, though services
+  exports and remittances partly offset the gap.
+- Trade rides on the port and airport networks above, with container
+  traffic concentrated at JNPT and other gateway ports.
+
+[warning]
+Do not confuse the **balance of trade** (goods only) with the
+**balance of payments** (goods, services, investments, and transfers
+together) — India can run a goods deficit while services still earn
+surpluses.
+[/warning]
+
+## 8. Quick Revision
+
+| Mode | Landmark | Key fact |
+| --- | --- | --- |
+| Roads | Golden Quadrilateral | Delhi-Mumbai-Chennai-Kolkata, about 5,800 km |
+| Railways | Bombay to Thane, 1853 | Broad, metre, narrow gauges; 17 zones |
+| Waterways | NW-1 on the Ganga | Cheapest for heavy, bulky cargo |
+| Airways | Tata Airlines, 1932 | Best for speed, emergencies, light cargo |
+| Pipelines | HVJ gas line | Liquids and gases only; fixed route |
+| Post | PIN code, 1972 | Six digits from region to post office |
+| Trade | Sea carries about 95 percent by volume | Crude petroleum tops the import bill |

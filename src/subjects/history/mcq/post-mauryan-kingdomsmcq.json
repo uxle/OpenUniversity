@@ -1,0 +1,76 @@
+{
+  "lessonId": "post-mauryan-kingdoms",
+  "title": "The Post-Mauryan Kingdoms: Indo-Greeks, Kushanas, and Satavahanas",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The dialogue between the Indo-Greek king Menander (Milinda) and a Buddhist monk is recorded in which Pali text?",
+      "options": ["Dipavamsa", "Milindapanho", "Buddhacharita", "Mahavamsa"],
+      "correct": 1,
+      "rationale": "The Milindapanho ('Questions of King Milinda') records Menander's debate with the monk Nagasena, by whose teaching the king is said to have accepted Buddhism."
+    },
+    {
+      "id": 2,
+      "question": "The Sudarshana lake, rebuilt and praised in the Junagadh rock inscription, was first excavated under which ruler?",
+      "options": ["Chandragupta Maurya", "Ashoka", "Rudradaman I", "Gautamiputra Satakarni"],
+      "correct": 0,
+      "rationale": "Rudradaman's Junagadh inscription (c. 150 CE) says the lake was first excavated for Chandragupta Maurya by his governor Pushyagupta and improved under Ashoka, before Rudradaman rebuilt it."
+    },
+    {
+      "id": 3,
+      "question": "India's first substantial gold coinage was issued by which ruler?",
+      "options": ["Menander", "Nahapana", "Vima Kadphises", "Simuka"],
+      "correct": 2,
+      "rationale": "Vima Kadphises of the Kushana dynasty issued the first substantial gold coins (dinars), stamped with Shiva and the bull and modelled on Roman weight standards."
+    },
+    {
+      "id": 4,
+      "question": "The era of 78 CE, which India still uses as the Shaka era, is associated with which king?",
+      "options": ["Kanishka I", "Huvishka", "Vasudeva", "Kujula Kadphises"],
+      "correct": 0,
+      "rationale": "Kanishka I is remembered for the era beginning 78 CE, later known as the Shaka era, though the exact date of his accession remains debated."
+    },
+    {
+      "id": 5,
+      "question": "Under Kanishka, the Fourth Buddhist Council was held in:",
+      "options": ["Pataliputra", "Vaishali", "Kashmir", "Kandy"],
+      "correct": 2,
+      "rationale": "The Fourth Buddhist Council was held in Kashmir under Kanishka's patronage, where the Sarvastivada canon was committed to writing; the First and Second were at Rajagriha and Vaishali."
+    },
+    {
+      "id": 6,
+      "question": "Gautamiputra Satakarni's title Trisamudratoyapitavahana proclaims that his horses drank from:",
+      "options": ["The Ganga, Yamuna, and Saraswati", "The waters of the three seas", "The Indus and its five tributaries", "The sacred tanks of Paithan"],
+      "correct": 1,
+      "rationale": "The title means 'whose horses drink at the waters of the three seas', recorded in his mother Gautami Balashri's Nashik inscription after his victory over the Shakas."
+    },
+    {
+      "id": 7,
+      "question": "The Periplus of the Erythraean Sea, which lists Indian ports and trade goods, was written by:",
+      "options": ["Megasthenes", "An anonymous Greek sailor-merchant", "Ptolemy the geographer", "Pliny the Elder"],
+      "correct": 1,
+      "rationale": "The Periplus is a first-century CE Greek trading handbook by an unknown author describing Red Sea and Indian Ocean routes, ports like Muziris and Barygaza, and their exports."
+    },
+    {
+      "id": 8,
+      "question": "Arikamedu, excavated by Mortimer Wheeler in 1945, is best known as evidence of:",
+      "options": ["A Kushana imperial capital", "A Roman trading settlement", "A Buddhist university", "A Mauryan armoury"],
+      "correct": 1,
+      "rationale": "Arikamedu (Poduke) near Pondicherry yielded Arretine ware, wine amphorae, and Roman lamps alongside Tamil bead-making, showing direct Roman trade with the Tamil coast."
+    },
+    {
+      "id": 9,
+      "question": "The Gathasaptasati, about 700 love lyrics in Prakrit, is attributed to the Satavahana king:",
+      "options": ["Simuka", "Hala", "Yajna Sri Satakarni", "Pulumayi"],
+      "correct": 1,
+      "rationale": "Hala, a Satavahana ruler, is traditionally credited with the Gathasaptasati (Sattasai); his court also had the storyteller Gunadhya, author of the Brihatkatha."
+    },
+    {
+      "id": 10,
+      "question": "Which Buddhist art school used blue-grey schist and showed Greco-Roman influence in drapery and hairstyle?",
+      "options": ["Mathura", "Amaravati", "Gandhara", "Nagarjunakonda"],
+      "correct": 2,
+      "rationale": "The Gandhara school of the Peshawar valley carved the Buddha in blue-grey schist with Hellenistic drapery and wavy hair; Mathura used red sandstone in a more indigenous style."
+    }
+  ]
+}

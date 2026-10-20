@@ -1,0 +1,76 @@
+{
+  "lessonId": "network-attacks-and-defence",
+  "title": "Network Attacks and Defence in Depth",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What distinguishes a DDoS attack from a simple DoS attack?",
+      "options": ["DDoS only targets websites, DoS only targets routers", "DDoS uses one powerful machine, DoS uses many", "DDoS floods the target from thousands of distributed sources at once", "DDoS attacks encryption, DoS attacks firewalls"],
+      "correct": 2,
+      "rationale": "A DDoS coordinates a botnet of many hijacked devices so the flood is distributed and far harder to block than a single-source DoS."
+    },
+    {
+      "id": 2,
+      "question": "A botnet is best described as:",
+      "options": ["A network of hijacked devices controlled by an attacker", "A brand of firewall appliance", "A protocol for encrypted DNS", "A testing lab for malware samples"],
+      "correct": 0,
+      "rationale": "Infected machines, cameras, and routers are remotely controlled as one army, each contributing small traffic that adds up to a flood."
+    },
+    {
+      "id": 3,
+      "question": "In a DNS amplification attack, the attacker sends small queries that trigger:",
+      "options": ["Large replies redirected to the victim using spoofed source addresses", "Encrypted DNS tunnelling to the victim", "Zone transfers to the attacker", "Cache poisoning at the victim's resolver"],
+      "correct": 0,
+      "rationale": "Open resolvers answer small queries with much larger responses aimed at the spoofed victim address, multiplying the attacker's bandwidth many times."
+    },
+    {
+      "id": 4,
+      "question": "Which defence most directly defeats man-in-the-middle interception of web traffic?",
+      "options": ["Rate limiting", "TLS encryption with verified certificates", "Longer passwords", "MAC address filtering"],
+      "correct": 1,
+      "rationale": "TLS makes intercepted traffic unreadable and authenticates the server via certificates, so an eavesdropper sees only ciphertext."
+    },
+    {
+      "id": 5,
+      "question": "What extra capability does a stateful firewall have over a simple packet-filtering firewall?",
+      "options": ["It encrypts outgoing packets", "It tracks whole conversations in a state table", "It blocks spam emails", "It scans files for viruses"],
+      "correct": 1,
+      "rationale": "Stateful firewalls remember established connections, so reply traffic to sessions you started passes automatically while unsolicited packets are dropped."
+    },
+    {
+      "id": 6,
+      "question": "A web application firewall (WAF) protects mainly at which layer?",
+      "options": ["Physical cabling", "The HTTP application layer", "The DNS root", "The power supply"],
+      "correct": 1,
+      "rationale": "A WAF inspects HTTP requests and payloads, filtering web attacks like injection and cross-site scripting before they reach the application."
+    },
+    {
+      "id": 7,
+      "question": "What is the practical difference between an IDS and an IPS?",
+      "options": ["An IDS blocks attacks inline, an IPS only watches", "An IDS detects and alerts, an IPS sits inline and blocks", "They are identical hardware with different logos", "An IDS works on layer 1, an IPS on layer 7"],
+      "correct": 1,
+      "rationale": "IDS monitors copies of traffic and raises alerts without touching the flow, while an IPS is placed inline and can stop malicious traffic in real time."
+    },
+    {
+      "id": 8,
+      "question": "The core idea of zero trust architecture is:",
+      "options": ["Trust everything inside the corporate firewall", "Never trust, always verify — regardless of network location", "Trust only devices with antivirus installed", "Trust users but never administrators"],
+      "correct": 1,
+      "rationale": "Zero trust removes implicit trust based on location: every request must be authenticated, authorised, and encrypted, whether it originates inside or outside the network."
+    },
+    {
+      "id": 9,
+      "question": "ARP poisoning on a local network is typically used to enable which attack?",
+      "options": ["Man in the middle interception", "DNS amplification", "Brute-force password cracking", "Ransomware encryption"],
+      "correct": 0,
+      "rationale": "By sending false ARP replies, the attacker associates their MAC with the gateway's address so local traffic flows through them for interception or tampering."
+    },
+    {
+      "id": 10,
+      "question": "On open public Wi-Fi, the primary benefit of connecting through a VPN is:",
+      "options": ["It hides your device brand from websites", "It creates an encrypted tunnel that defeats local eavesdropping", "It makes your laptop immune to malware", "It increases your bandwidth"],
+      "correct": 1,
+      "rationale": "The VPN tunnel encrypts traffic end to end to a gateway, so anyone sniffing the local network sees only unreadable ciphertext."
+    }
+  ]
+}

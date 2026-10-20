@@ -1,0 +1,76 @@
+{
+  "lessonId": "cybersecurity-fundamentals",
+  "title": "Cybersecurity Fundamentals: The CIA Triad and the Threat Landscape",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Encrypting the hard disk of a stolen laptop primarily protects which CIA triad goal?",
+      "options": ["Confidentiality", "Integrity", "Availability", "Accountability"],
+      "correct": 0,
+      "rationale": "Encryption keeps the data unreadable to whoever holds the stolen hardware, which is the confidentiality corner of the triad."
+    },
+    {
+      "id": 2,
+      "question": "Ransomware that encrypts your files and demands payment is chiefly an attack on which goal?",
+      "options": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+      "correct": 2,
+      "rationale": "By making data and systems unusable until payment, ransomware attacks availability; modern double extortion also threatens confidentiality."
+    },
+    {
+      "id": 3,
+      "question": "What is the key difference between a virus and a worm?",
+      "options": ["A virus is always legal, a worm is not", "A worm spreads by itself over networks, a virus needs a host file", "A worm only spreads by email attachments", "There is no difference, the names are synonyms"],
+      "correct": 1,
+      "rationale": "Worms copy themselves across networks unaided, while viruses attach to host files and spread when those files are shared or run."
+    },
+    {
+      "id": 4,
+      "question": "A program that arrives disguised as a free game but installs a backdoor is best classified as:",
+      "options": ["A trojan", "A worm", "Adware", "A logic bomb"],
+      "correct": 0,
+      "rationale": "A trojan is malware hiding inside something that looks useful or entertaining; the disguise is its defining trait, not how it spreads."
+    },
+    {
+      "id": 5,
+      "question": "Vishing is phishing conducted over which channel?",
+      "options": ["SMS messages", "Malicious websites", "Voice calls", "USB drives"],
+      "correct": 2,
+      "rationale": "Vishing is voice phishing, such as a fake bank fraud department calling you; smishing is the SMS variant."
+    },
+    {
+      "id": 6,
+      "question": "An attacker calls employees pretending to be from IT, with a plausible story, to extract credentials. This is:",
+      "options": ["Tailgating", "Baiting", "DDoS", "Pretexting"],
+      "correct": 3,
+      "rationale": "Pretexting is social engineering built on an invented persona and scenario; tailgating is physical door-following and baiting relies on a tempting object."
+    },
+    {
+      "id": 7,
+      "question": "Which security goal does a digital signature directly provide by preventing a sender from denying they signed?",
+      "options": ["Confidentiality", "Availability", "Non-repudiation", "Redundancy"],
+      "correct": 2,
+      "rationale": "Because only the sender's private key could have created the signature, anyone can verify it and the sender cannot plausibly deny it — non-repudiation."
+    },
+    {
+      "id": 8,
+      "question": "Which combination is the most reliable defence against losing data to ransomware?",
+      "options": ["Paying the ransom quickly", "Regular offline or immutable backups plus prompt patching", "Disabling the firewall to speed updates", "Reusing one strong password everywhere"],
+      "correct": 1,
+      "rationale": "Backups the malware cannot reach make restoration possible without paying, and patching closes the holes ransomware walks through."
+    },
+    {
+      "id": 9,
+      "question": "Walking closely behind a badged employee through a secure door without a badge is called:",
+      "options": ["Smishing", "Tailgating", "Spoofing", "Pharming"],
+      "correct": 1,
+      "rationale": "Tailgating (or piggybacking) is a physical social-engineering move that exploits politeness to bypass door access controls."
+    },
+    {
+      "id": 10,
+      "question": "An unpatched web server open to the internet is best described as a:",
+      "options": ["Threat", "Control", "Vulnerability", "Mitigation"],
+      "correct": 2,
+      "rationale": "The missing patch is a weakness — a vulnerability; the attacker who might exploit it is the threat, and risk is the combination of the two."
+    }
+  ]
+}

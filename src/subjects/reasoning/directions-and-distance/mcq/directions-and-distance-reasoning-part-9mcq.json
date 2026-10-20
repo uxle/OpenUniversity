@@ -1,16 +1,16 @@
 {
   "lessonId": "directions-and-distance-reasoning-part-9",
-  "title": "Directions and Distance Reasoning \u2014 Part 9 of 10",
+  "title": "Directions and Distance Reasoning — Part 9 of 10",
   "questions": [
     {
       "question": "What does an 'example compilation' walkthrough demonstrate?",
       "options": [
-        "Nothing beyond the final answer",
         "How a natural-language spatial problem is translated step by step into a structured representation and then solved",
+        "Nothing beyond the final answer",
         "Only how to draw a compass rose",
         "That parsing is unnecessary for simple problems"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "An example compilation walkthrough shows the full step-by-step translation of a natural-language spatial problem into a structured representation, followed by solving it.",
       "id": 1
     },
@@ -18,11 +18,11 @@
       "question": "What does a 'minimal algorithm' for direction-and-distance reasoning aim to provide?",
       "options": [
         "The most complex possible solution method",
-        "The smallest consistent set of steps needed to reliably solve any standard problem in this domain",
         "A method that only works for one specific problem",
+        "The smallest consistent set of steps needed to reliably solve any standard problem in this domain",
         "A shortcut that skips verification"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A minimal algorithm distills the reasoning process into the smallest consistent set of steps that reliably solves any standard problem in the domain.",
       "id": 2
     },
@@ -42,23 +42,23 @@
       "question": "What does a 'spatial contradiction example' illustrate?",
       "options": [
         "A case where every given statement is trivially true",
-        "A case where the given spatial statements cannot all be true simultaneously, which a consistency check should catch",
+        "A case with no compass directions involved",
         "A rare case that never actually occurs",
-        "A case with no compass directions involved"
+        "A case where the given spatial statements cannot all be true simultaneously, which a consistency check should catch"
       ],
-      "correct": 1,
-      "rationale": "A spatial contradiction example shows a case where the given statements are mutually inconsistent \u2014 exactly the kind of case a consistency check is designed to catch.",
+      "correct": 3,
+      "rationale": "A spatial contradiction example shows a case where the given statements are mutually inconsistent — exactly the kind of case a consistency check is designed to catch.",
       "id": 4
     },
     {
       "question": "What does 'spatial confidence' represent?",
       "options": [
-        "The number of entities in a problem",
         "How certain the reasoning system is about a derived position or direction, especially under incomplete information",
+        "The number of entities in a problem",
         "The physical accuracy of a printed map",
         "A synonym for displacement"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Spatial confidence reflects how certain a derived conclusion is, which matters especially when the given information is incomplete or ambiguous.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What is 'image-based direction reasoning'?",
       "options": [
         "Reasoning based only on written text",
-        "Deriving direction and distance information from a visual (image) representation, such as a map or diagram, rather than text",
         "A synonym for coordinate transformation",
+        "Deriving direction and distance information from a visual (image) representation, such as a map or diagram, rather than text",
         "Only used for time zone problems"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Image-based direction reasoning extracts direction and distance information directly from a visual representation, such as a map or diagram, rather than from written description.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "Why is multi-hop reasoning more error-prone than single-step reasoning?",
       "options": [
         "It is actually less error-prone",
-        "Because an error introduced at any intermediate hop propagates forward and can invalidate the final derived result",
+        "Because it always requires image-based input",
         "Because multi-hop reasoning never involves distance",
-        "Because it always requires image-based input"
+        "Because an error introduced at any intermediate hop propagates forward and can invalidate the final derived result"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "In a chain of intermediate hops, an error at any single hop propagates forward and can invalidate everything derived afterward, making careful step-by-step verification important.",
       "id": 8
     },

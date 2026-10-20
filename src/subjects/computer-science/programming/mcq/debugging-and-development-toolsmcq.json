@@ -19,11 +19,11 @@
       "question": "In the professional debugging loop, what should you do FIRST?",
       "options": [
         "Rewrite the module from scratch",
-        "Reproduce the bug on demand",
         "Change random lines until it works",
+        "Reproduce the bug on demand",
         "Deploy to production and watch"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "The loop is reproduce → isolate → hypothesize → test → fix → regression-test; without reliable reproduction you can never know the fix worked."
     },
     {
@@ -43,23 +43,23 @@
       "question": "When reading a stack trace, which frame should you examine first?",
       "options": [
         "The bottom frame, which is always main()",
-        "The top frame — it is where the error actually happened",
+        "It does not matter",
         "The longest frame",
-        "It does not matter"
+        "The top frame — it is where the error actually happened"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The top frame names where the error occurred; the frames below it are the callers in reverse order — the path from the crime scene back to the door."
     },
     {
       "id": 5,
       "question": "What is the difference between 'step over' and 'step into' in a debugger?",
       "options": [
-        "Step over skips the next line entirely without running it; step into runs it",
         "Step over executes the next line without entering functions it calls; step into dives inside the next function call",
+        "Step over skips the next line entirely without running it; step into runs it",
         "Step into only works on breakpoints; step over works on watchpoints",
         "They are identical in every debugger"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Step over runs the next line at the current level, treating function calls as single steps; step into descends into the called function to watch inside it."
     },
     {
@@ -67,11 +67,11 @@
       "question": "Why is logging preferred over scattered print statements?",
       "options": [
         "Logs are always faster than print",
-        "Logging is permanent, level-tagged, and filterable by severity without editing code",
         "Print statements cannot display numbers",
+        "Logging is permanent, level-tagged, and filterable by severity without editing code",
         "Logs remove the need for tests"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Logs carry levels (DEBUG, INFO, WARNING, ERROR) that can be filtered without touching code, and they need not be stripped out like temporary prints."
     },
     {

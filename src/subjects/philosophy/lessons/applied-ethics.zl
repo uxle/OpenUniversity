@@ -1,0 +1,213 @@
+# Applied Ethics: Dilemmas of Life, Technology, and Society
+
+> Principles are cheap at the seminar table and expensive in the
+> clinic, the codebase, and the boardroom. Applied ethics works
+> through real dilemmas — end-of-life care, scarce organs, biased
+> algorithms, a warming planet — where every option costs something.
+
+## 1. The Method: Principles in Tension
+
+Applied ethics does not start from scratch. It brings **principles**
+to a case, lets them collide, and argues for a verdict — the method
+Beauchamp and Childress call *principlism*.
+
+| Principle | Demand | Tension with |
+| --- | --- | --- |
+| Autonomy | Respect informed, voluntary choice | Paternalism "for your own good" |
+| Beneficence | Act for the person's good | Autonomy — refusing beneficial care |
+| Non-maleficence | First, do no harm | Every intervention carries some harm |
+| Justice | Distribute benefits and burdens fairly | Beneficence — the many vs the one |
+
+[definition]
+**Informed consent** is the operational test of autonomy: the person
+understands the options, grasps the consequences, and chooses free
+of coercion. Consent without understanding — or under pressure —
+fails the test even if the form is signed.
+[/definition]
+
+A good verdict names the principles on each side, explains which
+weight it gives and why, and stays consistent with the next similar
+case.
+
+## 2. The Trolley Problem — and Why It Is Not an Ethics Kit
+
+The classic case: a trolley will kill five; diverting it to a side
+track kills one. Pull the switch? Most say yes. In the **footbridge**
+variant, stopping the trolley requires pushing a large man off a
+bridge; most say no — though the arithmetic is identical.
+
+| Reading | Verdict |
+| --- | --- |
+| Utilitarian | Pull, and push — one death beats five, always |
+| Doctrine of double effect | Pull (harm foreseen as a side effect), not push (harm used as a means) |
+| Virtue ethics | The question is what a wise, compassionate person would do here |
+
+[warning]
+The trolley problem trains the *shape* of moral reasoning — means vs
+side effects, doing vs allowing — but it is a stress test, not a
+policy tool. Real dilemmas involve uncertainty, institutions, and
+responsibilities that the stylised case quietly deletes. An
+autonomous-vehicle "trolley setting" is marketing, not ethics.
+[/warning]
+
+## 3. Bioethics: Dilemmas at the End of Life
+
+**Euthanasia** — literally a good death — divides first by consent
+and then by means.
+
+| Type | Who chooses | Means | Legal status (varies by jurisdiction) |
+| --- | --- | --- | --- |
+| Voluntary, active | Patient requests | Lethal injection | Legal in a handful of countries |
+| Passive | Withholding futile treatment | Withdrawal of life support | Widely permitted |
+| Non-voluntary | Others decide | — | Deeply contested (e.g. infants, coma) |
+
+The standard arguments: autonomy favours the right to decide the
+manner of one's death; beneficence favours ending intractable
+suffering; the deontological objection is that killing treats a
+person as disposable; the slippery-slope objection fears pressure on
+the vulnerable. The **doctrine of double effect** explains why
+withdrawing support and administering lethal drugs are treated so
+differently — one foresees death as a side effect, the other intends
+it as the means.
+
+## 4. Bioethics: Allocating Scarce Organs
+
+One donor liver, two patients — a child with a rare disease and a
+60-year-old with two dependents. Scarcity forces justice into the
+open: every allocation rule *is* an ethical theory in disguise.
+
+| Rule | What it maximises | What it sacrifices |
+| --- | --- | --- |
+| First come, first served | Procedural fairness | Outcomes |
+| Sickest first | Rescue of the dying | May spend the organ on low-benefit cases |
+| Best prognosis / life-years | Total benefit | Discriminates against the old and the sick |
+| Lottery | Equal chances | Ignores need entirely |
+
+Real systems blend the criteria — urgency, expected benefit, waiting
+time — and must resist the quiet corruptions of fame, wealth, and
+connections. The pandemic made this everyone's problem: ventilator
+triage protocols were organ allocation writ large.
+
+## 5. AI Ethics: Bias and Fairness
+
+A model trained on the past inherits the past's injustices — and
+then launders them as mathematics. Recidivism scores that flag
+Black defendants at higher rates, hiring screens trained on
+male-dominated CVs, face recognition with higher error rates on
+darker skin: the mechanism is the same — **biased data in, biased
+decision out**.
+
+@chart donut title="Share of reported AI incidents by sector (illustrative)" labels:
+Content and platforms
+Policing and justice
+Hiring and work
+Health
+Finance
+Other
+
+data:
+30
+16
+14
+13
+12
+15
+@/chart
+
+| Fairness notion | Definition | Why it conflicts with the others |
+| --- | --- | --- |
+| Group parity | Equal approval rates across groups | Collides with differing base rates |
+| Equalised odds | Equal error rates across groups | Provable impossibility when base rates differ (Kleinberg et al.) |
+| Individual fairness | Similar people treated similarly | Needs a contested metric of "similar" |
+
+[important]
+"Fix the data" is necessary but insufficient: historical injustice is
+not a data-quality bug. Fairness choices are *political* — which
+groups count, which error matters more — and hiding them inside a
+model closes a decision that a society should keep open.
+[/important]
+
+## 6. AI Ethics: Privacy and Accountability
+
+Training data is scraped from lives; inference re-identifies the
+anonymised; a model can be wrong about you with no one to appeal
+to. Two questions define the field: *who may know what?* and *who
+answers when the system errs?*
+
+| Concern | Harm | Candidate safeguard |
+| --- | --- | --- |
+| Mass collection | Surveillance chilling free life | Data minimisation, purpose limitation |
+| Inference | Prediction of health, belief, orientation | Right to explanation, opt-outs |
+| Opaque decisions | No appeal, no learning | Auditability, human review |
+| Diffuse responsibility | "The model decided" | Named owners and accountability chains |
+
+The **accountability gap**: harm was caused, but the developer points
+to the deployer, the deployer to the data, the data to society.
+Ethics insists the gap be filled by design — logging, audits,
+liability rules — not by luck.
+
+## 7. Environmental Ethics: Anthropocentrism to Ecocentrism
+
+Who counts, morally? Each answer redraws our duties to nature.
+
+| Position | What has value | Verdict on a forest |
+| --- | --- | --- |
+| Anthropocentrism | Humans only | Preserve the watershed — for us |
+| Sentientism | All feeling beings | Animal suffering in logging matters |
+| Biocentrism | Every living thing | Each tree has a good of its own |
+| Ecocentrism | Whole systems and species — Leopold's "land ethic" | The forest as a community has standing |
+
+@diagram tree id="moral-standing" layout="tree" aria="Expanding circles of moral standing from humans to the biosphere"
+  "Moral standing" -> "Anthropocentrism"
+  "Moral standing" -> "Sentientism"
+  "Moral standing" -> "Biocentrism"
+  "Moral standing" -> "Ecocentrism"
+@/diagram
+
+[example]
+Climate change is the stress test. A purely anthropocentric case —
+protect economies and coastlines — already demands deep cuts; a
+sentientist case adds future humans and animals; an ecocentric case
+adds the collapse of whole ecosystems. Notice how the *conclusion*
+rarely moves while the *ground* deepens: much of environmental ethics
+is an argument about justification, not action.
+[/example]
+
+## 8. Business Ethics: Whistle-blowing and Responsibility
+
+A safety engineer discovers the brake tests were falsified. Report
+up and be ignored? Resign quietly? Leak to the regulator? Business
+ethics asks when loyalty to an institution must yield to the public.
+
+| Option | What it protects | What it risks |
+| --- | --- | --- |
+| Internal reporting | The institution, careers first | Time — and complicity if ignored |
+| External whistle-blowing | The public | Retaliation — hence legal protections |
+| Resignation | Personal integrity | Neither the public nor the firm learns |
+
+[tip]
+Most ethicists set a threshold: go public when the harm is serious,
+internal channels are exhausted or complicit, and the evidence is
+documented and yours to share. Below that line, patience and
+persistence; above it, silence is complicity.
+[/tip]
+
+[summary]
+Applied ethics is principled triage: autonomy, beneficence,
+non-maleficence, and justice collide in clinics, algorithms,
+ecosystems, and firms — and the discipline is to show which
+principle yields, to whom, and why. The trolley trains the
+reasoning; the real cases — euthanasia, organs, biased models, a
+warming planet — supply the stakes.
+[/summary]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Four principles | Autonomy, beneficence, non-maleficence, justice |
+| Trolley lesson | Harm as means vs side effect — a trainer, not a policy |
+| Euthanasia | Consent and means; double effect separates them |
+| Organ allocation | Every rule is a justice theory in disguise |
+| AI fairness | Notions conflict; the choice is political, not mathematical |
+| Ecocentrism | Value beyond humans — the land ethic |

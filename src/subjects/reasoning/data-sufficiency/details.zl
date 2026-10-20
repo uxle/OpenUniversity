@@ -1,0 +1,14 @@
+# Data Sufficiency
+
+@subject {
+  id: data-sufficiency
+  parent: reasoning
+  title: "Data Sufficiency"
+  description: "Deciding whether given data is enough to answer — in arithmetic and in reasoning puzzles, without solving everything."
+}
+
+@lessons {
+  data-sufficiency-intro
+  data-sufficiency-arithmetic
+  data-sufficiency-reasoning
+}

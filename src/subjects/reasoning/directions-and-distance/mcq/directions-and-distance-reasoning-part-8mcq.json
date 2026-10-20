@@ -1,16 +1,16 @@
 {
   "lessonId": "directions-and-distance-reasoning-part-8",
-  "title": "Directions and Distance Reasoning \u2014 Part 8 of 10",
+  "title": "Directions and Distance Reasoning — Part 8 of 10",
   "questions": [
     {
       "question": "What is an 'unknown information' case in spatial reasoning?",
       "options": [
-        "A case where all information is given",
         "A situation where a required direction, distance, or position isn't stated and can't be fully derived from what's given",
+        "A case where all information is given",
         "A case that always has multiple valid answers",
         "A synonym for contradiction"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "An unknown-information case occurs when a needed value isn't stated and also can't be fully derived from the other given information.",
       "id": 1
     },
@@ -18,12 +18,12 @@
       "question": "What does 'spatial state' represent at a given point while solving a problem?",
       "options": [
         "Only the very first position given",
-        "The currently known positions, directions, and constraints at that stage of reasoning",
         "The name of the reasoning topic",
+        "The currently known positions, directions, and constraints at that stage of reasoning",
         "A fixed, unchanging snapshot taken once at the start"
       ],
-      "correct": 1,
-      "rationale": "Spatial state captures everything currently known \u2014 positions, directions, and constraints \u2014 at a specific point in the reasoning process, and it updates as more information is processed.",
+      "correct": 2,
+      "rationale": "Spatial state captures everything currently known — positions, directions, and constraints — at a specific point in the reasoning process, and it updates as more information is processed.",
       "id": 2
     },
     {
@@ -42,23 +42,23 @@
       "question": "What is a 'spatial state machine' used to model?",
       "options": [
         "A single fixed answer",
-        "The sequence of spatial states and the transitions between them as a problem's information is processed step by step",
+        "A physical robot",
         "Only the starting position",
-        "A physical robot"
+        "The sequence of spatial states and the transitions between them as a problem's information is processed step by step"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "A spatial state machine models how the spatial state evolves step by step as each new piece of information in the problem is processed in turn.",
       "id": 4
     },
     {
       "question": "What is one 'common error' this lesson likely warns against in direction-and-distance problems?",
       "options": [
-        "Using too many landmarks",
         "Confusing displacement (straight-line distance) with total path distance traveled",
+        "Using too many landmarks",
         "Using polar coordinates instead of Cartesian",
         "Using too few compass directions"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "Confusing displacement with total path distance is one of the most common errors in this domain, since the two values can differ significantly for a winding route.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What do 'validation rules' check for in a spatial reasoning solution?",
       "options": [
         "Spelling of place names",
-        "That the derived positions and distances are logically consistent with every given constraint",
         "That the map uses a specific color scheme",
+        "That the derived positions and distances are logically consistent with every given constraint",
         "That only cardinal directions were used"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Validation rules confirm that the final derived positions and distances are logically consistent with every constraint given in the original problem.",
       "id": 6
     },
@@ -90,11 +90,11 @@
       "question": "In what sense is 'spatial reasoning as compilation' a useful analogy?",
       "options": [
         "It is not a useful analogy",
-        "Parsing a spatial description into a structured representation and then evaluating it mirrors how a compiler processes source code",
+        "It only applies to grid-based problems",
         "It means spatial reasoning requires writing actual code by hand",
-        "It only applies to grid-based problems"
+        "Parsing a spatial description into a structured representation and then evaluating it mirrors how a compiler processes source code"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Just as a compiler translates source code into a structured form before executing it, spatial reasoning translates a natural-language description into a structured representation before evaluating it.",
       "id": 8
     },
@@ -107,7 +107,7 @@
         "It works better for multi-hop problems specifically"
       ],
       "correct": 1,
-      "rationale": "Memorized patterns only reliably cover combinations of directions and turns seen before \u2014 a genuinely new combination can break a purely pattern-based approach.",
+      "rationale": "Memorized patterns only reliably cover combinations of directions and turns seen before — a genuinely new combination can break a purely pattern-based approach.",
       "id": 9
     },
     {

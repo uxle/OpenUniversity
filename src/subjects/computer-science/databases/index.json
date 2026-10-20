@@ -1,0 +1,8 @@
+{
+  "lessons": [
+    "intro-databases-and-dbms",
+    "sql-fundamentals",
+    "er-model-and-normalisation",
+    "transactions-and-concurrency"
+  ]
+}

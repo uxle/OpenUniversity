@@ -1,0 +1,289 @@
+# What Is a Database? Data, Tables, and the DBMS
+
+> Every application you use — banking, shopping, attendance portals —
+> rests on a database that stores, protects, and retrieves its data.
+> This lesson defines the database, shows why the DBMS replaced plain
+> files, and introduces tables, keys, and data independence.
+
+## 1. Data, Information, and the Storage Problem
+
+[definition]
+A **database** is an organised, persistent collection of interrelated
+data stored so that it can be searched, updated, and shared reliably.
+A **DBMS** (Database Management System) is the software that stands
+between users and that data: MySQL, PostgreSQL, Oracle, SQL Server,
+SQLite, and MongoDB are all DBMSs.
+[/definition]
+
+Raw *data* are bare facts — 91, "Aisha", 55000. *Information* is data
+placed in context so it answers a question: "Aisha scored 91, the
+highest in the batch." Databases exist so that turning data into
+information is one cheap, safe query rather than an afternoon of
+manually collating text files.
+
+Three pressures make careful data management unavoidable:
+
+- **Volume** — a university holds thousands of records, a bank holds
+  billions; flat lists stop scaling long before that.
+- **Concurrency** — two tellers, or two million app users, touch the
+  same data at the same moment and must not corrupt it.
+- **Durability** — a power cut mid-write must never leave balances
+  half-updated or receipts lost.
+
+## 2. Why Plain Files Weren't Enough
+
+Before DBMSs, every application kept its own files and read them with
+custom code. That worked until the files grew, and then the classic
+problems appeared:
+
+| Problem | What it looks like | The DBMS answer |
+| --- | --- | --- |
+| Redundancy | the same address copied into five departmental files | one normalised table, referenced by key |
+| Inconsistency | copies disagree after one is updated | single source of truth plus constraints |
+| Program-data dependence | renaming a column breaks every program reading the file | schema managed separately from programs |
+| No concurrent access | two simultaneous writes corrupt the file | locks and transactions |
+| Weak security | any program can read any byte | grants at table, row, and column level |
+| No crash recovery | a half-written file after a power cut | logs, rollback, automatic recovery |
+| Wasted effort | every app rewrites search and sort code | one optimised query engine for all |
+
+[example]
+A student changes her phone number. With five departmental files, five
+programs must each find and rewrite her record — miss one, and the
+exam cell calls an old number while the library calls the new one.
+With a DBMS the number lives in one STUDENT row, and every system
+reads the corrected value instantly.
+[/example]
+
+The same story, measured:
+
+@chart bar title="Copies of one student's address that must be rewritten" labels:
+Flat files (one per department)
+Normalised DBMS
+
+data:
+5
+1
+@/chart
+
+[warning]
+Redundancy is not just wasted storage — it is a correctness risk. When
+two copies disagree, at least one business decision is being made on
+wrong data, and nobody knows which copy to trust.
+[/warning]
+
+## 3. The Relational Model: Tables All the Way Down
+
+The dominant family of databases — and the one this subject mostly
+studies — stores data as **relations**, which look like ordinary
+tables. Each row is one record; each column is one property.
+
+| Formal term | Everyday term | Example |
+| --- | --- | --- |
+| Relation | table | STUDENT |
+| Tuple | row | one student |
+| Attribute | column | phone |
+| Degree | number of columns | 4 |
+| Cardinality | number of rows | 5,000 |
+| Domain | allowed values of a column | 10-digit phone numbers |
+
+A concrete STUDENT table:
+
+| student_id | name | city | year |
+| --- | --- | --- | --- |
+| 1 | Aisha | Delhi | 2 |
+| 2 | Boris | Mumbai | 1 |
+| 3 | Chen | Delhi | 3 |
+
+Two properties matter more than they first appear:
+
+- **Schema versus instance** — the *schema* (table names, columns,
+  types, constraints) is the blueprint and changes rarely; the
+  *instance* (the current rows) changes every second. Courses teach
+  schemas; production databases are instances.
+- **No duplicate rows** — a relation is a *set* of tuples, so every
+  row must be distinguishable by its values. That requirement is
+  exactly what keys are for.
+
+Creating the table in SQL:
+
+```sql
+CREATE TABLE student (
+  student_id INT PRIMARY KEY,
+  name       VARCHAR(50) NOT NULL,
+  city       VARCHAR(30),
+  year       SMALLINT CHECK (year BETWEEN 1 AND 4)
+);
+
+INSERT INTO student VALUES
+  (1, 'Aisha', 'Delhi', 2),
+  (2, 'Boris', 'Mumbai', 1),
+  (3, 'Chen',  'Delhi', 3);
+```
+
+## 4. Keys: Naming and Linking Rows
+
+Keys give every row a name and give tables a way to point at each
+other — the relational model's disciplined substitute for pointers.
+
+| Key | Meaning | Example |
+| --- | --- | --- |
+| Superkey | any column set that uniquely identifies a row | student_id; also (student_id, name) |
+| Candidate key | a *minimal* superkey — drop a column and uniqueness fails | student_id |
+| Primary key | the candidate key chosen as the official identifier | student_id |
+| Alternate key | a candidate key not chosen as primary | national ID number |
+| Composite key | a key made of two or more columns together | (student_id, course_id) |
+| Foreign key | a column referencing a key of another table | enrolment.student_id refers to student.student_id |
+
+[definition]
+A **foreign key** is a column (or set of columns) in one table whose
+values must match a primary or unique key in another table. Enforcing
+this — *referential integrity* — is what stops an enrolment from
+pointing at a student who does not exist.
+[/definition]
+
+```sql
+CREATE TABLE enrolment (
+  student_id INT REFERENCES student(student_id),
+  course_id  VARCHAR(8) REFERENCES course(course_id),
+  grade      CHAR(2),
+  PRIMARY KEY (student_id, course_id)   -- composite key
+);
+```
+
+[tip]
+Exam questions love the word *minimal* in candidate keys. (student_id,
+name) uniquely identifies each row but is not minimal — student_id
+alone already does — so it is only a superkey, never a candidate key.
+[/tip]
+
+## 5. Three Levels of Seeing, Two Kinds of Independence
+
+The ANSI-SPARC architecture splits a database into three views so
+different audiences never trip over each other:
+
+| Level | Who sees it | What it holds |
+| --- | --- | --- |
+| External | each application or user group | a tailored view — the library sees names and fines, not fees |
+| Conceptual | the designer | the whole logical schema: tables, keys, constraints |
+| Internal | the engine | how bytes are stored: files, indexes, compression |
+
+- **Physical data independence** — change storage structures (add an
+  index, move to SSDs, repartition) without touching the conceptual
+  schema. Every DBMS provides this well.
+- **Logical data independence** — change the conceptual schema (add a
+  column, split a table) without rewriting applications, by adjusting
+  their external views. Much harder, and only partly achieved in
+  practice.
+
+[important]
+Data independence is the single idea that separates a database from a
+pile of files: programs describe *what* they want, never *where* or
+*how* the data is stored. It is why renaming an index never requires
+recompiling the accounts department.
+[/important]
+
+## 6. A Field Guide to Database Types
+
+"Database" names a spectrum of engines, each optimised for a different
+shape of data:
+
+@diagram tree id="database-families" layout="tree" aria="Families of database systems"
+  Databases -> "Relational (SQL)"
+  Databases -> NoSQL
+  Databases -> "Specialised engines"
+  "Relational (SQL)" -> "MySQL, PostgreSQL, Oracle"
+  NoSQL -> Document
+  NoSQL -> Key-value
+  NoSQL -> Column-family
+  NoSQL -> Graph
+  Document -> "MongoDB, CouchDB"
+  Key-value -> "Redis, DynamoDB"
+  Column-family -> "Cassandra, HBase"
+  Graph -> "Neo4j, Neptune"
+  "Specialised engines" -> "Time-series: InfluxDB"
+  "Specialised engines" -> "Vector search: pgvector, FAISS"
+@/diagram
+
+| Family | Data shape | Strength | Typical use |
+| --- | --- | --- | --- |
+| Relational | tables with fixed schemas | transactions, joins, integrity | banking, ERP, most business apps |
+| Document | JSON-like blobs, flexible fields | rapid development, nested data | catalogues, content management |
+| Key-value | opaque values addressed by key | extreme speed on simple lookup | caching, sessions, shopping carts |
+| Column-family | rows grouped into column families | write-heavy scans at scale | IoT telemetry, analytics |
+| Graph | nodes and edges | multi-hop relationship queries | social networks, fraud detection |
+| Time-series | timestamped measurements | fast range scans, retention rules | monitoring, sensor feeds |
+
+[info]
+The pendulum swings both ways: NoSQL arose to escape rigid schemas and
+the difficulty of scaling one machine, then relational engines adopted
+JSON columns and distributed designs while document stores grew joins.
+Modern practice is polyglot — choose per workload, not per fashion.
+[/info]
+
+## 7. Inside the DBMS: The Engine in Five Parts
+
+A query such as `SELECT name FROM student WHERE city = 'Delhi'`
+travels through the engine in stages:
+
+@diagram flowchart id="query-journey" layout="hierarchical" aria="The path of a query through a DBMS"
+node q label="SQL query arrives" shape="pill"
+node p label="Parser checks syntax and names" shape="round-rect"
+node o label="Optimiser chooses a plan (index scan or full scan)" shape="round-rect"
+node e label="Executor fetches rows via the storage manager" shape="round-rect"
+node t label="Transaction manager enforces ACID" shape="diamond"
+node r label="Result returned; changes logged" shape="round-rect"
+
+q -> p
+p -> o
+o -> e
+e -> t
+t -> r label="commit"
+@/diagram
+
+- **Query processor** — parses SQL, optimises it into a physical plan,
+  and executes that plan. A good optimiser can beat a hand-tuned plan
+  by orders of magnitude.
+- **Storage manager** — files on disk, the **buffer pool** of pages
+  cached in RAM, and the **indexes** (usually B-trees) that turn whole
+  scans into a handful of seeks.
+- **Transaction manager** — grants all-or-nothing behaviour and
+  isolation between concurrent users.
+- **Lock manager** — the transaction manager's enforcement arm.
+- **Log manager** — durably records every change *before* applying it
+  (write-ahead logging), so committed work survives a crash.
+
+## 8. Who Uses a DBMS, and With What Language?
+
+| Actor | Main tools | Concern |
+| --- | --- | --- |
+| Database administrator (DBA) | DDL, DCL, monitoring | availability, security, tuning |
+| Schema designer | ER modelling, normalisation | a correct, stable schema |
+| Application developer | DML inside programs | correct, fast queries |
+| Analyst or end user | ad-hoc SELECT, reports | information, not plumbing |
+
+The language they all share is SQL, whose sublanguages — DDL to
+define, DML to manipulate, DCL to control access, TCL to manage
+transactions — are the subject of the next lesson.
+
+## 9. Quick Revision
+
+| Concept | One-line recap |
+| --- | --- |
+| Database and DBMS | organised persistent data; software that manages it safely |
+| File-system problems | redundancy, inconsistency, program-data dependence, no concurrency or recovery |
+| Relation | table; tuple = row, attribute = column; no duplicate rows |
+| Keys | superkey contains candidate keys; primary chosen; composite spans columns; foreign keys link tables |
+| Three levels | external, conceptual, internal (ANSI-SPARC) |
+| Independence | physical (storage) easy; logical (schema) harder |
+| Families | relational for integrity; document, key-value, column, graph per workload |
+| Engine parts | query processor, storage and buffer pool, transaction, lock, log managers |
+
+[summary]
+A database is organised, persistent, shared data; the DBMS is the
+engine that makes searching, updating, and protecting it safe. The
+relational model stores data in tables identified by keys — primary
+keys name rows, foreign keys link tables — and hides storage details
+behind three levels of abstraction. Under a DBMS, one normalised fact
+replaces five inconsistent file copies, and every query flows through
+parser, optimiser, executor, and transaction manager before returning.
+[/summary]

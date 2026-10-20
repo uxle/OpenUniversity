@@ -1,0 +1,202 @@
+# Political Philosophy: Justice, Rights, and the State
+
+> Why obey the state at all? Political philosophy asks what makes
+> power legitimate, what justice demands of institutions, and how
+> much liberty a society may trade for security or equality. This
+> lesson maps the classic answers and their modern forms.
+
+## 1. The Questions of Political Philosophy
+
+Three questions organise the field. **Who should rule?** — the
+question of *authority*. **When must obedience give way to
+resistance?** — the question of *legitimacy*. **What may the state
+rightly do?** — the question of its *scope*. Every position in this
+lesson is an answer to some mixture of these.
+
+| Concept | Question | Danger if ignored |
+| --- | --- | --- |
+| Authority | Who may command? | Might becomes right |
+| Legitimacy | Why should anyone obey? | Rule rests on fear alone |
+| Scope | What may the state do? | Liberty or justice erodes |
+
+[definition]
+A state is **legitimate** when its subjects have *reasons* to obey
+beyond fear of punishment — reasons that would survive open debate.
+Illegitimate power may still win; it simply has no moral claim to
+obedience.
+[/definition]
+
+## 2. The Social Contract: Hobbes, Locke, Rousseau
+
+**Social contract theory** grounds the state in agreement: politics
+is legitimate because free and equal persons *would have consented*
+to it. Each thinker starts from a "state of nature" and asks what
+government rational people would build to escape it.
+
+| Thinker | State of nature | Why leave it | State they justify | Key work |
+| --- | --- | --- | --- | --- |
+| Thomas Hobbes (1588–1679) | "War of all against all"; life "nasty, brutish, and short" | Fear of violent death | Near-absolute sovereign; order first | *Leviathan* (1651) |
+| John Locke (1632–1704) | Free and equal, but rights insecure | To protect natural rights: life, liberty, property | Limited government; right of revolution | *Two Treatises* (1689) |
+| Jean-Jacques Rousseau (1712–1778) | Free but corrupted by inequality | To express the **general will** | Popular sovereignty; law as self-rule | *The Social Contract* (1762) |
+
+The three names anchor a spectrum: Hobbes trades liberty for
+security; Locke builds constitutional, limited government; Rousseau
+hands sovereignty to the people themselves. Modern debates still
+replay their bargain.
+
+[warning]
+Read the "state of nature" as a *thought experiment*, not history.
+Its job is to show which services of the state — peace, rights, law —
+no reasonable person could refuse, and therefore which powers the
+state may legitimately claim.
+[/warning]
+
+## 3. Justice: Three Conceptions
+
+| Conception | Justice is… | Institutional slogan |
+| --- | --- | --- |
+| Utilitarian | Whatever maximises total welfare | "The greatest good of the greatest number" |
+| Deontological | Respecting each person's rights and dignity, whatever the totals | Rights are trumps, not conveniences |
+| Rawlsian | What free, equal, rational people would choose behind a **veil of ignorance** | "Justice as fairness" |
+
+John Rawls' *A Theory of Justice* (1971) rebuilt contract theory for
+the modern age. Design society's basic rules without knowing your
+class, talents, gender, race, or generation — which rules would you
+accept? Rawls argues you would insure against bad luck, choosing:
+
+1. **Equal basic liberties** for all — speech, conscience, political participation.
+2. **Fair equality of opportunity** — offices open to all under fair conditions.
+3. **The difference principle** — inequalities only when they benefit the *least advantaged*.
+
+[example]
+A hospital assigns scarce ICU beds. A strict utilitarian maximises
+life-years saved; a deontologist insists triage rules treat patients
+as ends, never discarding one patient to serve others; a Rawlsian
+asks which rule the worst-off patient could reasonably accept.
+[/example]
+
+## 4. Liberty: Negative and Positive
+
+**Negative liberty** is absence of interference: no one stops you
+speaking, worshipping, or travelling. **Positive liberty** is the
+effective power to act: literacy, health, and resources that make
+rights usable. Isaiah Berlin's famous warning: tyrants have invoked
+"true" positive liberty to force people to be "free".
+
+| Idea | Claim | Champion |
+| --- | --- | --- |
+| Harm principle | Liberty may be restricted only to prevent harm to *others* | J. S. Mill, *On Liberty* (1859) |
+| Negative liberty | Freedom from interference | Berlin; classical liberals |
+| Positive liberty | Freedom as self-mastery and real capability | Rousseau's heirs; Amartya Sen |
+
+Mill's harm principle remains the sharpest tool in the box: the
+state may stop you from harming others, but may not patronise you
+"for your own good" — and offence, Mill insisted, is not harm.
+
+## 5. Equality: Of What, and For What?
+
+Equality splits into rival ideals the moment one asks *equality of
+what?* — and each ideal licenses different institutions.
+
+| Ideal | Meaning | Typical policy |
+| --- | --- | --- |
+| Equality before the law | Same rules, same courts | Anti-discrimination law |
+| Equality of opportunity | Same starting gates | Public schooling, limits on inherited advantage |
+| Equality of outcome | Same ending positions | Progressive taxation, quotas |
+| Equality of capabilities | Same real freedoms to be and do | Sen and Nussbaum's capability approach |
+
+[tip]
+Exam traps: Rawls *allows* inequality through the difference
+principle — he is not a strict egalitarian. And "equality of
+opportunity" presupposes some prior equalisation: nobody runs the
+same race from different starting lines.
+[/tip]
+
+## 6. Rights: Natural, Legal, and the Two Directions
+
+A **right** is a protected claim that overrides convenience — a
+trump card, in Ronald Dworkin's image, that cannot be played away
+for social gain.
+
+| Contrast | Meaning | Example |
+| --- | --- | --- |
+| Natural (moral) vs legal | Rights by reason of humanity vs rights by statute | Freedom of conscience exists even where banned; a parking right exists only in law |
+| Negative vs positive | Duties of forbearance vs duties to provide | Free speech vs right to education |
+| Individual vs group | Held by persons vs held by peoples | Privacy vs self-determination of peoples |
+
+The classic puzzle: if natural rights are not enacted by any
+legislature, *who says they exist?* — and if they are only legal, can
+a majority simply vote them away? Constitutions try to have it both
+ways by entrenching rights beyond the reach of ordinary majorities.
+
+## 7. Forms of the State
+
+@diagram tree id="forms-of-state" layout="tree" aria="Forms of the state by who rules and by how power is distributed"
+  "Forms of the state" -> "By who rules"
+  "Forms of the state" -> "By structure"
+  "By who rules" -> "Democracy"
+  "By who rules" -> "Autocracy"
+  "Democracy" -> "Direct"
+  "Democracy" -> "Representative"
+  "Autocracy" -> "Monarchy"
+  "Autocracy" -> "Oligarchy"
+  "By structure" -> "Unitary"
+  "By structure" -> "Federal"
+@/diagram
+
+The two axes matter: *who rules* (democracy to autocracy) is
+separate from *how power is shared* (unitary vs federal). A federal
+state can be authoritarian and a unitary state deeply democratic —
+the United States and the United Kingdom pair differently on the
+second axis.
+
+@chart donut title="Approximate share of world population by regime type (illustrative)" labels:
+Liberal democracy
+Electoral democracy
+Electoral autocracy
+Closed autocracy
+
+data:
+13
+19
+51
+17
+@/chart
+
+[info]
+Figures like these — in the spirit of the V-Dem and Freedom House
+reports — shift yearly. The stable lesson is that democracy's spread
+is neither automatic nor irreversible; institutions are maintained
+by citizens, not merely admired by them.
+[/info]
+
+## 8. Justice in the Indian Constitution
+
+India's Preamble compresses this lesson into four promises:
+**Justice** (social, economic, political), **Liberty** (of thought,
+expression, belief, faith, worship), **Equality** (of status and
+opportunity), and **Fraternity** — dignity of the individual and
+unity of the nation.
+
+| Value in the Preamble | Where it lives in the text |
+| --- | --- |
+| Justice — social, economic, political | Directive Principles (Arts. 38–39) |
+| Liberty of expression and belief | Fundamental Rights (Arts. 19, 25) |
+| Equality of status and opportunity | Arts. 14–18 |
+| Fraternity and dignity | Arts. 17, 21 |
+
+Note the Rawlsian echo: India guarantees *negative* liberties
+("state, leave me alone") *and* positive entitlements (education,
+livelihood) — because formal equality without material capability
+was the founding generation's lived experience of colonial rule.
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Social contract | Legitimacy from what free equals would consent to |
+| Hobbes vs Locke vs Rousseau | Order first / limited government / popular sovereignty |
+| Rawls | Veil of ignorance; inequalities must help the worst off |
+| Harm principle | Only harm to others licenses coercion |
+| Negative vs positive liberty | No interference vs real capability |
+| Rights | Natural vs legal; negative vs positive; trumps, not conveniences |

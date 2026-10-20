@@ -9,7 +9,11 @@
   justify-content: space-between;
   gap: var(--ou-space-3);
   height: var(--ou-header-height);
-  padding: 0 clamp(1rem, 4vw, 2rem);
+  /* max() keeps the comfortable clamp padding on wide screens while
+     guaranteeing at least the device's safe-area inset in landscape —
+     otherwise the brand/logo and action buttons sat under the notch. */
+  padding-left: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-left));
+  padding-right: max(clamp(1rem, 4vw, 2rem), env(safe-area-inset-right));
   background: var(--ou-surface-translucent);
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
@@ -70,7 +74,11 @@
   border-radius: var(--ou-radius-pill);
   color: var(--ou-text-muted);
   font-size: var(--ou-fs-sm);
-  min-height: 36px;
+  /* Was 36px: on phones the collapsed icon-only pill measured 39×36 —
+     below the 44px touch-target minimum the rest of the header already
+     meets (.ou-btn--icon). 44px fits the 56px header and costs nothing
+     on desktop (same guidance as accessibility.css's unconditional rule). */
+  min-height: 44px;
   transition: color var(--ou-transition-fast), border-color var(--ou-transition-fast),
               box-shadow var(--ou-transition-fast);
 }

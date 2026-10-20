@@ -1,16 +1,16 @@
 {
   "lessonId": "coding-decoding-detailed-part-9",
-  "title": "Coding-Decoding \u2014 In-Depth Guide \u2014 Part 9 of 22",
+  "title": "Coding-Decoding — In-Depth Guide — Part 9 of 22",
   "questions": [
     {
       "question": "What does 'ASCII-style coding' base a letter's code on?",
       "options": [
-        "Its position starting from 1",
         "The letter's standard ASCII numeric value, rather than just its alphabet position",
+        "Its position starting from 1",
         "A random assigned symbol",
         "Its reverse-alphabet position"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "ASCII-style coding uses the letter's standard ASCII numeric value (e.g., uppercase A = 65) rather than the simpler A=1 alphabet-position convention.",
       "id": 1
     },
@@ -42,23 +42,23 @@
       "question": "What is 'matrix coding'?",
       "options": [
         "Coding with no grid involved",
-        "Placing letters into a grid and coding each one by its row-and-column position in that grid",
+        "Coding that ignores letter position entirely",
         "A synonym for word reversal",
-        "Coding that ignores letter position entirely"
+        "Placing letters into a grid and coding each one by its row-and-column position in that grid"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "Matrix coding arranges letters in a grid and encodes each letter using its specific row-and-column position within that grid.",
       "id": 4
     },
     {
       "question": "What is 'Polybius-style matrix' coding specifically known as?",
       "options": [
-        "A modern digital-only cipher",
         "A classic cipher method that arranges the alphabet in a square grid and codes each letter as its (row, column) coordinate pair",
+        "A modern digital-only cipher",
         "A synonym for reverse alphabet coding",
         "A rule with no grid at all"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "The Polybius square is a classic historical cipher method that arranges the alphabet in a grid, coding each letter by its row-and-column coordinates.",
       "id": 5
     },
@@ -66,11 +66,11 @@
       "question": "What does a 'matrix coding example' typically walk through?",
       "options": [
         "Reversing a word's letters",
-        "Looking up a letter's position in a grid and reading off its row and column numbers as the code",
         "Applying a simple +1 shift",
+        "Looking up a letter's position in a grid and reading off its row and column numbers as the code",
         "Counting vowels in a word"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "A matrix coding example demonstrates the practical process of locating a letter in a grid and reading off its row/column coordinates as the resulting code.",
       "id": 6
     },
@@ -90,23 +90,23 @@
       "question": "What does 'vector representation of alphabet coding' generalize the idea of?",
       "options": [
         "Only matrix coding specifically",
-        "Expressing any coding transformation (shift, mirror, etc.) as a vector operation on a letter's position",
+        "Only reverse-alphabet coding",
         "A rule with no mathematical basis",
-        "Only reverse-alphabet coding"
+        "Expressing any coding transformation (shift, mirror, etc.) as a vector operation on a letter's position"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "This generalizes the vector idea beyond just matrix coding, expressing shifts, mirrors, and other transformations uniformly as vector operations on a letter's position.",
       "id": 8
     },
     {
       "question": "What is a 'transformation vector'?",
       "options": [
-        "A vector with no effect on values",
         "A vector that, when applied to an original value, produces the transformed (coded) value",
+        "A vector with no effect on values",
         "A synonym for word length",
         "A vector used only for reversing words"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A transformation vector is the specific vector that, when applied (e.g., added) to an original value, produces its transformed, coded value.",
       "id": 9
     },

@@ -6,25 +6,25 @@
       "id": 1,
       "question": "A sentence/part will almost never begin with which of the following?",
       "options": [
-        "Subject (Noun/Pronoun)",
         "V2, V3, or the Objective Case (me, him, them)",
+        "Subject (Noun/Pronoun)",
         "An article like 'A' or 'The'",
         "A proper noun"
       ],
-      "correct": 1,
-      "rationale": "A part opening with a past-tense/participle verb form (V2/V3) or an objective-case pronoun (me, him, them) almost never starts a sequence \u2014 these depend on something already introduced."
+      "correct": 0,
+      "rationale": "A part opening with a past-tense/participle verb form (V2/V3) or an objective-case pronoun (me, him, them) almost never starts a sequence — these depend on something already introduced."
     },
     {
       "id": 2,
       "question": "According to the pronoun-antecedent rule, when can a part beginning with 'he', 'she', or 'they' be the opening part?",
       "options": [
-        "Always \u2014 pronouns are neutral",
-        "Only if a noun it refers to has already appeared earlier \u2014 so it's very unlikely to be the opening part",
+        "Always — pronouns are neutral",
         "Only if the pronoun is capitalized",
+        "Only if a noun it refers to has already appeared earlier — so it's very unlikely to be the opening part",
         "Never, under any circumstance"
       ],
-      "correct": 1,
-      "rationale": "A pronoun must refer back to a noun that has already appeared \u2014 since nothing has appeared before the opening part, a part starting with a bare pronoun is very unlikely to be first."
+      "correct": 2,
+      "rationale": "A pronoun must refer back to a noun that has already appeared — since nothing has appeared before the opening part, a part starting with a bare pronoun is very unlikely to be first."
     },
     {
       "id": 3,
@@ -43,22 +43,22 @@
       "question": "What does the definite article ('the') vs indefinite article ('a/an') clue typically indicate?",
       "options": [
         "'The' introduces a noun for the first time; 'a/an' refers back to it",
-        "'A/an' usually introduces a noun first; 'the' refers back to it once already known",
+        "'The' always marks the final sentence",
         "Articles have no bearing on sequencing",
-        "'The' always marks the final sentence"
+        "'A/an' usually introduces a noun first; 'the' refers back to it once already known"
       ],
-      "correct": 1,
-      "rationale": "A noun is typically introduced with 'a/an' (indefinite) first, then referred to again with 'the' (definite) once it is already known to the reader \u2014 the indefinite mention usually comes first."
+      "correct": 3,
+      "rationale": "A noun is typically introduced with 'a/an' (indefinite) first, then referred to again with 'the' (definite) once it is already known to the reader — the indefinite mention usually comes first."
     },
     {
       "question": "In Practice Set 2 (A: 'Reading books regularly improves vocabulary and comprehension.' B: 'Therefore, students should be encouraged to read more.' C: 'It also helps develop critical thinking skills.' D: 'These benefits are especially important during school years.'), which part opens the sequence, and why?",
       "options": [
-        "B, because it states a conclusion",
         "A, because it introduces the general claim with no pronoun or article dependency",
+        "B, because it states a conclusion",
         "D, because it lists benefits",
         "C, because it uses 'it' referring back"
       ],
-      "correct": 1,
+      "correct": 0,
       "rationale": "A introduces the general claim about reading with a full noun phrase and no pronoun dependency, making it the natural opening sentence; C's 'it' and B's 'Therefore' both depend on something stated earlier.",
       "id": 5
     },
@@ -66,12 +66,12 @@
       "question": "According to the pronoun-antecedent rule, why is a part beginning with 'He discovered...' unlikely to be the opening sentence?",
       "options": [
         "Because 'He' is grammatically incorrect",
-        "Because the pronoun 'He' must refer back to a noun introduced in an earlier part",
         "Because sentences can never start with pronouns",
+        "Because the pronoun 'He' must refer back to a noun introduced in an earlier part",
         "Because 'discovered' is always a middle-sentence verb"
       ],
-      "correct": 1,
-      "rationale": "A pronoun like 'he' needs an antecedent \u2014 a noun it refers back to \u2014 that must already have appeared earlier in the sequence, so a part opening with it is very unlikely to be first.",
+      "correct": 2,
+      "rationale": "A pronoun like 'he' needs an antecedent — a noun it refers back to — that must already have appeared earlier in the sequence, so a part opening with it is very unlikely to be first.",
       "id": 6
     },
     {
@@ -107,7 +107,7 @@
         "There is no clue connecting them"
       ],
       "correct": 0,
-      "rationale": "Part A introduces 'a group of frogs' (indefinite); part C's 'the other frogs' uses the definite article, referring back to the group already introduced in A \u2014 a clear definite-article dependency.",
+      "rationale": "Part A introduces 'a group of frogs' (indefinite); part C's 'the other frogs' uses the definite article, referring back to the group already introduced in A — a clear definite-article dependency.",
       "id": 9
     },
     {

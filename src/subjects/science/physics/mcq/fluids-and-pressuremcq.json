@@ -1,0 +1,106 @@
+{
+  "lessonId": "fluids-and-pressure",
+  "title": "Fluids at Rest: Pressure, Buoyancy, and Bernoulli",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The pressure at a depth h in a liquid at rest depends on:",
+      "options": [
+        "Depth and the liquid's density",
+        "The volume of the container",
+        "The shape of the container",
+        "The area of the container's base"
+      ],
+      "correct": 0,
+      "rationale": "P = P0 + ρgh — pressure at depth grows with depth and density alone; container shape and volume are irrelevant, as communicating vessels show."
+    },
+    {
+      "id": 2,
+      "question": "In a hydraulic press, a 100 N force acts on a piston of area 0.01 m². The pressure lifts a load on a piston of area 0.5 m². The lifting force is:",
+      "options": ["500 N", "1,000 N", "5,000 N", "50,000 N"],
+      "correct": 2,
+      "rationale": "P = 100 ÷ 0.01 = 10,000 Pa, so F = P × A₂ = 10,000 × 0.5 = 5,000 N — the force grows by the piston-area ratio A₂/A₁ = 50."
+    },
+    {
+      "id": 3,
+      "question": "Iron has a relative density of about 7.8. This means:",
+      "options": [
+        "Iron is 7.8 times as heavy as air",
+        "Iron contains 7.8% water",
+        "Iron can hold 7.8 times its weight",
+        "Iron is 7.8 times as dense as water"
+      ],
+      "correct": 3,
+      "rationale": "Relative density is the ratio of a substance's density to water's density, so 7.8 means 7.8 times denser than water — and it carries no unit."
+    },
+    {
+      "id": 4,
+      "question": "A stone weighs 8 N in air and 6.5 N when fully immersed in water. The buoyant force on it is:",
+      "options": ["1.5 N", "6.5 N", "8 N", "14.5 N"],
+      "correct": 0,
+      "rationale": "By Archimedes' principle the upthrust equals the loss of weight in the fluid: 8 − 6.5 = 1.5 N, the weight of the displaced water."
+    },
+    {
+      "id": 5,
+      "question": "Roughly nine-tenths of a floating iceberg lies below the surface because:",
+      "options": [
+        "Ice is lighter than air",
+        "Ice's density is about 0.92 that of water, so that fraction submerges",
+        "Sea water pushes ice downward",
+        "Ice absorbs water as it melts"
+      ],
+      "correct": 1,
+      "rationale": "A floating body submerges in the ratio of its density to the fluid's; with relative density about 0.92, about 92% of the iceberg sits below water."
+    },
+    {
+      "id": 6,
+      "question": "A drinking straw raises a drink because of:",
+      "options": [
+        "Capillary action",
+        "Gravity inside the straw",
+        "Atmospheric pressure pushing the liquid up",
+        "A vacuum that sucks the liquid"
+      ],
+      "correct": 2,
+      "rationale": "Sucking lowers the pressure inside the straw; the atmospheric pressure on the drink's surface then pushes the liquid up — a vacuum does not 'suck'."
+    },
+    {
+      "id": 7,
+      "question": "According to Bernoulli's principle, where a fluid flows faster its pressure:",
+      "options": ["Increases", "Decreases", "Stays constant", "First increases, then decreases"],
+      "correct": 1,
+      "rationale": "Faster flow means lower pressure (and slower flow means higher) — valid for streamlined, non-viscous, incompressible flow."
+    },
+    {
+      "id": 8,
+      "question": "An atomiser or perfume sprayer draws liquid up and scatters it because of:",
+      "options": ["Pascal's law", "Archimedes' principle", "The law of gravitation", "Bernoulli's principle"],
+      "correct": 3,
+      "rationale": "The bulb speeds air across the tube; the resulting low pressure draws the liquid up into the fast jet, which breaks it into a spray."
+    },
+    {
+      "id": 9,
+      "question": "Pascal's law states that pressure applied to an enclosed fluid is transmitted:",
+      "options": [
+        "Only downward",
+        "Only to the bottom of the container",
+        "Undiminished to every part of the fluid and the container walls",
+        "Diminished in proportion to distance"
+      ],
+      "correct": 2,
+      "rationale": "An enclosed fluid transmits applied pressure undiminished to all points and walls, acting at right angles — the basis of hydraulic press, brakes, and lifts."
+    },
+    {
+      "id": 10,
+      "question": "An iron ship floats while an iron nail sinks because:",
+      "options": [
+        "Iron becomes less dense in large pieces",
+        "Sea water is denser than iron",
+        "The ship's hollow shape displaces enough water for the upthrust to match its weight",
+        "The nail is lighter than the ship"
+      ],
+      "correct": 2,
+      "rationale": "Floating depends on average density: the hollow ship's shape displaces a huge volume of water, so the upthrust balances its weight; a solid nail cannot displace enough."
+    }
+  ]
+}

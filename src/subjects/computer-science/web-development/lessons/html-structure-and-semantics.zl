@@ -1,0 +1,198 @@
+# HTML: Structure and Semantics
+
+> HTML is not about how a page looks — it is about what a page means.
+> This lesson dissects the anatomy of a document, the semantic
+> elements that give content meaning, forms that collect input, and
+> the accessibility that correct HTML provides for free.
+
+## 1. What HTML Actually Is
+
+**HTML (HyperText Markup Language)** describes the *structure and meaning* of a page: this text is a heading, that caption belongs with that image, this is a form field. How it *looks* is CSS's job; how it *behaves* is JavaScript's. Keeping those concerns separate is why a well-marked-up page stays readable by search engines, screen readers, and browsers yet to be invented.
+
+[definition]
+An **element** is the complete unit — opening tag, content, closing tag. A **tag** is just one marker of it. **Attributes** configure an element, live only in the opening tag, and take the form `name="value"` — for example the `href` attribute that gives an `a` element its destination.
+[/definition]
+
+```html
+<a href="/docs" title="Documentation">Read the docs</a>
+```
+
+## 2. Anatomy of an HTML Document
+
+Every page follows the same skeleton. The **doctype** switches browsers into standards mode; `lang` declares the human language (screen readers pick their pronunciation from it); the **head** carries metadata the user never sees; the **body** carries everything they do.
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout — Acme Store</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <!-- page content -->
+  </body>
+</html>
+```
+
+| Head resident | Purpose |
+| --- | --- |
+| `meta` with `charset="utf-8"` | Character encoding — without it, accents and scripts turn to mojibake |
+| `meta` with `name="viewport"` | Makes responsive design possible on mobile |
+| `title` | Browser-tab text, bookmark default, and a top SEO signal |
+| `link rel="stylesheet"` | Loads external CSS |
+| `script` with `defer` | Loads JavaScript without blocking parsing |
+
+[note]
+Anything visible belongs in the body; the head is for metadata only. A stray `div` written into the head is quietly moved into the body by the browser's parser — one more reason to validate the source rather than trust the rendered result.
+[/note]
+
+## 3. The Grammar: Nesting, Void Elements, Attributes
+
+Elements nest like Russian dolls: `li` inside `ul` inside `nav`. **Void elements** — `img`, `br`, `input`, `meta`, `link` — have no content and no closing tag. **Boolean attributes** are true by their mere presence: an input with `required` and one with `required="required"` mean the same thing.
+
+| Category | Behavior | Examples |
+| --- | --- | --- |
+| Block-level | Starts on a new line, fills available width | `div`, `p`, `h1`–`h6`, `ul`, `section` |
+| Inline | Flows inside text, sized to its content | `a`, `span`, `strong`, `em`, `code`, `img` |
+
+[warning]
+Browsers silently "fix" invalid nesting: a `div` written inside a `p` closes the paragraph early, so the DOM you get is not the HTML you wrote. What you inspect in the developer tools is the *repaired* DOM — always validate the source.
+[/warning]
+
+## 4. Semantic Layout: Landmarks, Not Div Soup
+
+A page can be built from generic `div` containers alone — but then the structure exists only for humans who can see it. **Semantic elements** name their own role, and assistive technology turns them into **landmarks** a user can jump between: to the navigation, to the main content, to the footer.
+
+@diagram tree id="page-landmarks" layout="tree" aria="Typical landmark structure of a semantic HTML page"
+  "header (banner)" -> "nav (navigation)"
+  "header (banner)" -> "h1: page title"
+  "main (main content)" -> "article (self-contained story)"
+  "main (main content)" -> "aside (related sidebar)"
+  "footer (contentinfo)" -> "contact and copyright"
+@/diagram
+
+| Element | Landmark role | Typical content |
+| --- | --- | --- |
+| `header` | banner | Logo, site title, top navigation |
+| `nav` | navigation | Menus, groups of links |
+| `main` | main | The one unique content area — only one per page |
+| `article` | article | Self-contained: a post, a product card, a comment |
+| `section` | region | A themed group with its own heading |
+| `aside` | complementary | Sidebar, related links, pull quotes |
+| `footer` | contentinfo | Copyright, contact, fine print |
+
+[important]
+The `main` element is the most useful accessibility feature per keystroke: screen-reader users jump straight past repeated headers and nav bars to the content. Rule of thumb — prefer a semantic element; reach for `div` only when no meaning applies.
+[/important]
+
+`article` versus `section`: an `article` makes sense alone in a feed or on its own page; a `section` is a chapter of the page it lives on and should almost always begin with its own heading.
+
+## 5. Text Content Done Right
+
+Headings (`h1`–`h6`) form the document outline: exactly one `h1` per page, then descend without skipping levels (`h2` under `h1`, `h3` under `h2`). Screen-reader users list headings to navigate exactly as sighted users skim — a heading chosen for its font size instead of its level breaks that map. Size is CSS's business: styling an `h1` smaller is fine, faking a heading with bold text is not.
+
+For body text: `p` for paragraphs; `ul` and `ol` lists (with `li` children); `dl`, `dt`, and `dd` for definition pairs such as a glossary; `blockquote` for quotations; `figure` with `figcaption` for self-contained images or charts; `pre` for preformatted text; `code` for inline code.
+
+| Use this | Not this | Why |
+| --- | --- | --- |
+| `strong` | `b` | Real importance — announced with emphasis by screen readers |
+| `em` | `i` | Stress emphasis, not "make it italic" |
+| `del` / `ins` | strikethrough styling | Meaning: removed / inserted content |
+
+[tip]
+When a visual style seems to demand `b` or `i`, ask what you *mean*: importance → `strong`; emphasis → `em`; a technical term or a ship's name → `i` is still legitimate. Style with CSS, mark up with meaning.
+[/tip]
+
+## 6. Links, Images, and Media
+
+The anchor element is the "hyper" in hyperText. Links should carry meaningful text — "read the accessibility guide", not "click here" — because screen readers offer a *list of links* out of context. For links that open a new tab, pair `target="_blank"` with `rel="noopener"` so the opened page cannot manipulate yours.
+
+Images use `img` with `src` and `alt`, and the **alt text** is where HTML earns its accessibility keep:
+
+| Image kind | Correct alt |
+| --- | --- |
+| Informative (a chart, a product photo) | Describes content and purpose: `alt="Line chart: revenue doubling yearly since 2019"` |
+| Functional (a logo linking home) | Names the *destination*: `alt="Acme home"` |
+| Decorative (background flourish) | Empty: `alt=""` — screen readers skip it entirely |
+| With a caption | Short alt plus a visible `figcaption` |
+
+`width` and `height` attributes (or CSS `aspect-ratio`) let the browser reserve space before the image loads, preventing layout shift. Native `video` and `audio` embed media with `controls`; avoid `autoplay` with sound — it is hostile to users and to assistive technology.
+
+[example]
+A team photo used as pure decoration: `img` with empty alt. The same photo illustrating an article about the team: `alt="The five founding engineers in front of the first office"`. Same file, different *meaning*, different markup.
+[/example]
+
+## 7. Forms and Inputs
+
+A form is a contract: the `form` wraps input controls, each control carries a `name` (the key under which its value is submitted), and `action` plus `method` say where and how to send the data.
+
+```html
+<form action="/signup" method="post">
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="age">Age</label>
+  <input id="age" name="age" type="number" min="13" max="120">
+
+  <button type="submit">Create account</button>
+</form>
+```
+
+| Input type | Gives you for free |
+| --- | --- |
+| `email` | Keyboard layout plus format validation |
+| `password` | Masked entry and password-manager integration |
+| `number` / `range` | Steppers or a slider, with `min` / `max` / `step` |
+| `date` / `time` | A native, localized picker |
+| `checkbox` / `radio` | Multi-select, or mutually exclusive choice (`name` groups radios) |
+| `file` | The operating system's file picker |
+| `hidden` | A value submitted but not shown |
+
+The `label` connected to its control through matching `for` and `id` values is not decoration: clicking the label focuses the control, and screen readers announce it as the field's name. `fieldset` with `legend` groups related controls such as "Shipping address". Validation attributes (`required`, `minlength`, `pattern`, `min`, `max`) improve the user experience instantly and for free.
+
+[warning]
+Client-side validation is a courtesy, not a defense. Anyone can disable JavaScript or post crafted data straight to the endpoint, so the *server* must validate everything again. Trust no input.
+[/warning]
+
+`method` matters: `GET` puts the form data in the URL (right for search — results are bookmarkable), while `POST` puts it in the request body (required for passwords, uploads, and anything that changes server state).
+
+## 8. Accessibility: HTML Is the Interface
+
+For assistive technology, correct HTML *is* the user interface. Semantic elements supply roles; `alt` supplies image meaning; `label` supplies form names; table semantics (`caption`, and `th` with `scope`) supply data relationships. When no native element fits, **ARIA** attributes can patch a role on — but the first rule of ARIA is *do not use ARIA* when a native element exists: a real `button` already announces itself, is focusable, and responds to Enter and Space; a `div` wired to a click handler does none of that without extra work.
+
+The payoff is measurable. When the WebAIM screen-reader survey asked users how they locate a section of a page, semantic structure dominated every other technique:
+
+@chart bar title="How screen reader users find a section on a page (WebAIM survey 2021, percent of respondents)" labels:
+Headings
+Landmarks and regions
+Links list
+In-page find
+Table of contents
+
+data:
+67.7
+27.2
+15.5
+12.6
+5.6
+@/chart
+
+[important]
+Keyboard access is the cheapest accessibility test: unplug the mouse. Every interactive element must be reachable with Tab and operable with Enter or Space, and the focus indicator must stay visible. If it fails keyboard testing, it fails assistive technology too.
+[/important]
+
+## 9. Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Element vs tag | Element = opening tag + content + closing tag; attributes configure the opening tag |
+| Document anatomy | Doctype, `html` with `lang`, head of metadata, body of content |
+| Void elements | `img`, `input`, `br`, `meta` — no content, no closing tag |
+| Landmarks | `header`, `nav`, one `main`, `aside`, `footer` — meaning over divs |
+| Headings | One `h1`, no skipped levels — the outline users navigate by |
+| Alt text | Informative images described, functional ones named, decorative get empty alt |
+| Forms | `label` ties name to field, `name` is the submitted key, the server re-validates |
+| Accessibility | Semantic HTML first; ARIA only when no native element exists |

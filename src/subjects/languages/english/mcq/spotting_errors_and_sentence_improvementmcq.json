@@ -1,0 +1,76 @@
+{
+  "lessonId": "spotting_errors_and_sentence_improvement",
+  "title": "Spotting Errors and Sentence Improvement",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Choose the correct verb: 'Each of the boys ____ present in the class.'",
+      "options": ["were", "are", "was", "have been"],
+      "correct": 2,
+      "rationale": "'Each' is the true singular subject; the plural 'boys' inside the 'of' phrase cannot attract the verb, so 'was' is correct."
+    },
+    {
+      "id": 2,
+      "question": "One of my friends ____ a doctor.",
+      "options": ["is", "are", "were", "have been"],
+      "correct": 0,
+      "rationale": "'One of the + plural noun' takes a singular verb — the subject is 'one', not 'friends'."
+    },
+    {
+      "id": 3,
+      "question": "Fill in: 'No sooner did he arrive ____ the bell rang.'",
+      "options": ["when", "than", "then", "that"],
+      "correct": 1,
+      "rationale": "'No sooner' is always completed by 'than', with inversion after 'no sooner'; 'hardly/scarcely' pair with 'when'."
+    },
+    {
+      "id": 4,
+      "question": "He has been living here ____ 2010.",
+      "options": ["from", "for", "since", "by"],
+      "correct": 2,
+      "rationale": "'Since' marks a point of time with perfect tenses; 'for' marks duration ('for five years')."
+    },
+    {
+      "id": 5,
+      "question": "Choose the correct preposition: 'She is superior ____ her colleague in experience.'",
+      "options": ["than", "to", "from", "over"],
+      "correct": 1,
+      "rationale": "Latin comparatives — superior, inferior, senior, junior, prior — take 'to', never 'than'."
+    },
+    {
+      "id": 6,
+      "question": "The committee ____ issued its report on Monday.",
+      "options": ["have", "were", "are", "has"],
+      "correct": 3,
+      "rationale": "A collective noun acting as one unit takes a singular verb; the singular pronoun 'its' in the sentence confirms 'has'."
+    },
+    {
+      "id": 7,
+      "question": "In 'I did not went to school yesterday', the error lies in:",
+      "options": ["'went' — it should be 'go' after 'did not'", "'did' — it should be 'do'", "'not' — it should be 'never'", "There is no error"],
+      "correct": 0,
+      "rationale": "The auxiliary 'did' already carries the past tense, so the main verb stays in the base form: 'did not go'."
+    },
+    {
+      "id": 8,
+      "question": "Improve: 'The reason for his absence is because he was ill.'",
+      "options": ["The reason for his absence is due to he was ill", "The reason for his absence is that he was ill", "The reason for his absence is because of he was ill", "No improvement needed"],
+      "correct": 1,
+      "rationale": "'Reason ... because' is a redundant double conjunction; the reason is 'that' he was ill."
+    },
+    {
+      "id": 9,
+      "question": "Which sentence corrects the dangling modifier in 'Walking through the park, the flowers looked beautiful.'?",
+      "options": ["Walking through the park, I found the flowers beautiful.", "Walking through the park, the flowers were looked beautiful.", "The flowers walked through the park, looking beautiful.", "No correction is needed."],
+      "correct": 0,
+      "rationale": "The participial opener must describe the sentence's subject; the flowers were not walking, so the subject must become 'I'."
+    },
+    {
+      "id": 10,
+      "question": "A number of students ____ absent today.",
+      "options": ["were", "was", "is", "has been"],
+      "correct": 0,
+      "rationale": "'A number of' means 'several' and takes a plural verb; only 'the number of' takes a singular verb."
+    }
+  ]
+}

@@ -5,70 +5,120 @@
     {
       "id": 1,
       "question": "Which case should be used after prepositions, 'let', 'except', and 'like'?",
-      "options": ["Subjective Case", "Objective Case", "Possessive Adjective", "Reflexive Pronoun"],
-      "correct": 1,
+      "options": [
+        "Objective Case",
+        "Subjective Case",
+        "Possessive Adjective",
+        "Reflexive Pronoun"
+      ],
+      "correct": 0,
       "rationale": "Objective Case (me, him, her, us, them) is used after prepositions, 'let', 'except', and 'like', e.g., 'There is no disagreement between you and me.'"
     },
     {
       "id": 2,
       "question": "What is the key difference between a Possessive Adjective and a Possessive Pronoun?",
-      "options": ["They are identical in every way", "A Possessive Adjective requires a noun after it (my pen); a Possessive Pronoun does not (mine)", "Possessive Pronouns are only used in questions", "Possessive Adjectives are only used with plural nouns"],
-      "correct": 1,
+      "options": [
+        "They are identical in every way",
+        "Possessive Pronouns are only used in questions",
+        "A Possessive Adjective requires a noun after it (my pen); a Possessive Pronoun does not (mine)",
+        "Possessive Adjectives are only used with plural nouns"
+      ],
+      "correct": 2,
       "rationale": "Possessive Adjectives require a noun after them ('my pen'), whereas Possessive Pronouns stand alone ('mine')."
     },
     {
       "id": 3,
       "question": "\"It is ___ who am involved in solving this.\" Choose the correct pronoun.",
-      "options": ["me", "I", "myself", "mine"],
+      "options": [
+        "me",
+        "I",
+        "myself",
+        "mine"
+      ],
       "correct": 1,
       "rationale": "Subjective Case is used after 'It is' and in comparisons — 'I' is correct here, not the objective 'me'."
     },
     {
       "id": 4,
       "question": "What is the Reflexive Pronoun form of 'They'?",
-      "options": ["Them", "Their", "Theirs", "Themselves"],
+      "options": [
+        "Them",
+        "Their",
+        "Theirs",
+        "Themselves"
+      ],
       "correct": 3,
       "rationale": "According to the pronoun case chart, the Reflexive Pronoun for 'They' is 'Themselves'."
     },
     {
       "id": 5,
       "question": "Which combination do indefinite singular pronouns like 'Somebody', 'Nobody', and 'Everyone' take?",
-      "options": ["Plural Verb + 'their'", "Singular Verb + Possessive Case ('his')", "Plural Verb + Possessive Case ('his')", "Singular Verb + 'one's'"],
-      "correct": 1,
+      "options": [
+        "Singular Verb + Possessive Case ('his')",
+        "Plural Verb + 'their'",
+        "Plural Verb + Possessive Case ('his')",
+        "Singular Verb + 'one's'"
+      ],
+      "correct": 0,
       "rationale": "Indefinite singular pronouns such as Somebody, Nobody, No one, Someone, Everyone, Everybody take a Singular Verb plus the Possessive 'his', e.g., 'No one has completed his work.'"
     },
     {
       "id": 6,
       "question": "\"Either of the students ___ come.\" Choose the correct verb.",
-      "options": ["have", "has", "are", "were"],
-      "correct": 1,
+      "options": [
+        "have",
+        "are",
+        "has",
+        "were"
+      ],
+      "correct": 2,
       "rationale": "In the 'Either of / Neither of / One of / Each of + Plural Noun' construction, a Singular Verb follows — so 'Either of the students has come' is correct."
     },
     {
       "id": 7,
       "question": "\"One should always make the most of ___ time.\" Choose the correct option.",
-      "options": ["his", "her", "one's", "their"],
+      "options": [
+        "his",
+        "her",
+        "one's",
+        "their"
+      ],
       "correct": 2,
       "rationale": "When 'One' is used as a subject, its possessive form must be 'one's', not 'his/her' — 'One should always make the most of one's time' is correct."
     },
     {
       "id": 8,
       "question": "\"They are wiser than ___.\" Choose the correct pronoun.",
-      "options": ["him", "he", "his", "himself"],
+      "options": [
+        "him",
+        "he",
+        "his",
+        "himself"
+      ],
       "correct": 1,
       "rationale": "Subjective Case is used after comparisons with 'than' and 'as' — 'They are wiser than he' is correct."
     },
     {
       "id": 9,
       "question": "What is the Possessive Adjective for 'We'?",
-      "options": ["Ours", "Our", "Us", "Ourselves"],
+      "options": [
+        "Ours",
+        "Our",
+        "Us",
+        "Ourselves"
+      ],
       "correct": 1,
       "rationale": "Per the pronoun case chart, the Possessive Adjective for 'We' is 'Our' (used before a noun, as in 'our pen'), while 'Ours' is the Possessive Pronoun."
     },
     {
       "id": 10,
       "question": "\"Neither of the girls ___ doing her work.\" Choose the correct verb.",
-      "options": ["are", "is", "have been", "were"],
+      "options": [
+        "are",
+        "is",
+        "have been",
+        "were"
+      ],
       "correct": 1,
       "rationale": "'Neither of + Plural Noun' takes a Singular Verb — 'Neither of the girls is doing her work' follows Rule 4."
     }

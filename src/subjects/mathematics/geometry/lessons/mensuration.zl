@@ -1,0 +1,215 @@
+# Mensuration: Surface Areas and Volumes of Solids
+
+> A solid carries two measures: how much wrapping its surface needs and
+> how much space its inside holds. Six shapes — cube, cuboid, cylinder,
+> cone, sphere, hemisphere — cover almost every question there is.
+
+## 1. The Family of Solids
+
+@diagram tree id="solid-family" layout="tree" aria="Classification of common three-dimensional solids"
+  "3D solids" -> "Prism family (same cross-section throughout)"
+  "Prism family (same cross-section throughout)" -> "Cuboid and cube"
+  "Prism family (same cross-section throughout)" -> "Cylinder (a circular prism)"
+  "3D solids" -> "Tapered solids (narrow to an apex)"
+  "Tapered solids (narrow to an apex)" -> "Pyramid (flat triangular faces)"
+  "Tapered solids (narrow to an apex)" -> "Cone (one curved face)"
+  "3D solids" -> "Fully round (no edges or corners)"
+  "Fully round (no edges or corners)" -> "Sphere and hemisphere"
+@/diagram
+
+[definition]
+**Surface area** measures the total boundary of a solid in square
+units; **volume** measures the space it encloses in cubic units.
+**Curved surface area** (CSA) counts only the curved part, while
+**total surface area** (TSA) adds every flat face as well.
+[/definition]
+
+## 2. Cuboid and Cube
+
+A cuboid has six rectangular faces, and opposite faces match. Think of
+unrolling a shoebox into a flat net: three different rectangles, each
+appearing twice, which is exactly where the 2 in the TSA formula comes
+from.
+
+| Solid | LSA | TSA | Volume |
+| --- | --- | --- | --- |
+| Cuboid (l, b, h) | 2h(l + b) | 2(lb + bh + hl) | lbh |
+| Cube (edge a) | 4a² | 6a² | a³ |
+
+@math label="eq:cuboid-volume"
+V = l \times b \times h
+@/math
+
+[example]
+A storage box is 8 cm long, 6 cm wide, and 5 cm tall.
+Step 1 (cardboard): TSA = 2(8×6 + 6×5 + 5×8) = 2(48 + 30 + 40) =
+2 × 118 = 236 cm².
+Step 2 (capacity): V = 8 × 6 × 5 = 240 cm³.
+Step 3 (space diagonal): $\sqrt{8^2+6^2+5^2} = \sqrt{125} \approx 11.2$
+cm — the 3-D version of Pythagoras.
+[/example]
+
+## 3. Cylinder
+
+Slice the label off a can and unroll it: a rectangle of width equal to
+the circumference 2πr and height h. That gives the curved wall
+instantly; the two circular lids add πr² each.
+
+| Measure | Formula |
+| --- | --- |
+| CSA (curved wall) | 2πrh |
+| TSA (wall + two lids) | 2πr(r + h) |
+| Volume | πr²h |
+
+[example]
+A closed drum has radius 7 cm and height 10 cm (take π = 22/7).
+Step 1: CSA = 2 × (22/7) × 7 × 10 = 440 cm².
+Step 2: TSA = 2 × (22/7) × 7 × (7 + 10) = 2 × 22 × 17 = 748 cm².
+Step 3: V = (22/7) × 7 × 7 × 10 = 1540 cm³.
+[/example]
+
+[tip]
+Radius does double duty in a cylinder: it appears squared in the
+volume but only once in the CSA. Doubling r multiplies the volume by 4
+but the curved area only by 2 — so read carefully whether a question
+asks for capacity or for wrapping.
+[/tip]
+
+## 4. Cone
+
+The **slant height** l runs from the apex to the rim and completes a
+right triangle with r and h:
+
+@math label="eq:cone-slant"
+l = \sqrt{r^2 + h^2}
+@/math
+
+Unrolled, the curved surface is a sector of radius l and arc 2πr,
+whose area works out to πrl. And a classic demonstration: filling a
+cone with water and pouring it into a cylinder of the same base and
+height takes exactly three pours.
+
+| Measure | Formula |
+| --- | --- |
+| CSA | πrl |
+| TSA | πr(l + r) |
+| Volume | (1/3)πr²h |
+
+[example]
+A cone has radius 3 cm and height 4 cm.
+Step 1: slant l = √(3² + 4²) = 5 cm — the 3-4-5 triangle again.
+Step 2: CSA = π × 3 × 5 = 15π ≈ 47.1 cm².
+Step 3: TSA = π × 3 × (5 + 3) = 24π ≈ 75.4 cm².
+Step 4: V = (1/3) × π × 9 × 4 = 12π ≈ 37.7 cm³.
+[/example]
+
+## 5. Sphere and Hemisphere
+
+A sphere has a single curved face. Archimedes' proudest result: its
+surface area 4πr² equals the curved wall of the tightest cylinder
+wrapped around it.
+
+| Solid | CSA | TSA | Volume |
+| --- | --- | --- | --- |
+| Sphere (r) | 4πr² | 4πr² | (4/3)πr³ |
+| Hemisphere (r) | 2πr² | 3πr² | (2/3)πr³ |
+
+[example]
+A hemispherical bowl has radius 7 cm (π = 22/7).
+Step 1 (painting the outside): TSA = 3πr² = 3 × (22/7) × 49 =
+3 × 154 = 462 cm².
+Step 2 (capacity): V = (2/3) × (22/7) × 343 = (2/3) × 1078 ≈ 718.7
+cm³, a little over 0.7 litres.
+[/example]
+
+## 6. Combined Solids
+
+Real objects stack these shapes: a silo is a cylinder plus a cone, a
+capsule is a cylinder plus two hemispheres, a test tube is a cylinder
+plus a hemisphere. The strategy never changes — split at the joints,
+compute each visible piece, and add only the surfaces that actually
+show.
+
+[example]
+A circus tent is a cylinder of radius 3 m and height 5 m, topped by a
+cone of radius 3 m and height 4 m. Find the canvas (floor excluded)
+and the air inside.
+Step 1: cone slant l = √(3² + 4²) = 5 m.
+Step 2: canvas = cylinder wall + cone curve = 2πrh + πrl =
+2π × 3 × 5 + π × 3 × 5 = 30π + 15π = 45π ≈ 141.4 m².
+Step 3: volume = πr²h + (1/3)πr²h = 45π + 12π = 57π ≈ 179.1 m³.
+Note the floor is never canvas, but both volumes count fully.
+[/example]
+
+## 7. Melting and Recasting
+
+When material is melted and reshaped, only the volume carries over:
+
+@math label="eq:recasting"
+V_1 = V_2
+@/math
+
+[example]
+A solid metal sphere of radius 6 cm is melted into a cone of base
+radius 6 cm. Find the cone's height.
+Step 1: sphere volume = (4/3)π × 6³ = (4/3) × 216 × π = 288π.
+Step 2: cone volume = (1/3)π × 6² × h = 12πh.
+Step 3: set them equal: 12πh = 288π, so h = 24 cm.
+[/example]
+
+[warning]
+Only volume is conserved. Surface area almost always changes when a
+solid is recast, so never write "area before = area after" — that is
+the single most common mensuration mistake.
+[/warning]
+
+[tip]
+"How many small spheres from one big sphere?" is a volume ratio: a
+sphere of radius 6 yields (6/1)³ = 216 spheres of radius 1. The cube
+of the radius ratio does all the work.
+[/tip]
+
+## 8. Comparing Solids of the Same Size
+
+Fix r = 3 cm, and let the cylinder and cone both have h = 6 cm. Then
+the volumes are 54π, 36π, and 18π cubic centimetres:
+
+@chart bar title="Volumes with r = 3 (cylinder and cone h = 6)" labels:
+Cylinder
+Sphere
+Cone
+
+data:
+169.6
+113.1
+56.5
+@/chart
+
+The ratio is cylinder : sphere : cone = 54π : 36π : 18π = 3 : 2 : 1.
+The cone holds exactly one third of its sibling cylinder, and the
+sphere sits neatly in between.
+
+[info]
+Among all solids with a given surface area, the sphere encloses the
+greatest volume — which is why soap bubbles, water droplets, and
+planets are round: nature minimises wrapping for the space it holds.
+[/info]
+
+## 9. Quick Revision
+
+| Solid | Key formulas (r radius, h height) |
+| --- | --- |
+| Cuboid | TSA = 2(lb + bh + hl), V = lbh |
+| Cube | TSA = 6a², V = a³ |
+| Cylinder | CSA = 2πrh, TSA = 2πr(r + h), V = πr²h |
+| Cone | l = √(r² + h²), CSA = πrl, TSA = πr(l + r), V = (1/3)πr²h |
+| Sphere | TSA = 4πr², V = (4/3)πr³ |
+| Hemisphere | CSA = 2πr², TSA = 3πr², V = (2/3)πr³ |
+| Recasting | conserve volume only, V₁ = V₂ |
+
+[summary]
+Unroll curved walls to get areas — 2πrh for the cylinder, πrl for the
+cone — compare each volume with a sibling cylinder to see the thirds,
+remember the slant-height right triangle, and when solids are joined,
+hollowed, or melted, let volume and only volume carry over.
+[/summary]

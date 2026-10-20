@@ -4,6 +4,7 @@
 @import "./reset.css";
 @import "./animations.css";
 @import "./variables.css";
+@import "./vendor/fa-solid.css"; /* self-hosted subsetted FA solid font (generated) */
 @import "./typography.css";
 @import "./layout.css";
 @import "./responsive.css";

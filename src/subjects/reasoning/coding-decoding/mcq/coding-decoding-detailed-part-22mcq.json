@@ -1,30 +1,30 @@
 {
   "lessonId": "coding-decoding-detailed-part-22",
-  "title": "Coding-Decoding \u2014 In-Depth Guide",
+  "title": "Coding-Decoding — In-Depth Guide",
   "questions": [
     {
       "id": 1,
       "question": "In mirror/substitution coding where the alphabet is reflected around its center, what is always true of a mapped letter pair's positions?",
       "options": [
-        "They are always identical",
         "They always sum to 27",
+        "They are always identical",
         "They always differ by exactly 13",
         "There is no fixed relationship between them"
       ],
-      "correct": 1,
-      "rationale": "Mirror coding reflects each letter's position p to position 27-p, so a mapped pair's positions always sum to 27 \u2014 the same rule covered in the letter-position and reverse-alphabet sections."
+      "correct": 0,
+      "rationale": "Mirror coding reflects each letter's position p to position 27-p, so a mapped pair's positions always sum to 27 — the same rule covered in the letter-position and reverse-alphabet sections."
     },
     {
       "id": 2,
       "question": "Why should you verify a suspected coding rule against every letter of the given example rather than just the first one or two?",
       "options": [
         "It isn't necessary once the first letter matches",
-        "Some questions apply a non-uniform rule or an exception on a specific letter, which only shows up later in the word",
         "Verification is only needed for number coding, not letter coding",
+        "Some questions apply a non-uniform rule or an exception on a specific letter, which only shows up later in the word",
         "The rule always changes after the third letter"
       ],
-      "correct": 1,
-      "rationale": "As the guide's solving-algorithm section stresses, a rule that fits the first letters can still fail on a later one if the question mixes a shift with an exception \u2014 full verification catches this before you misapply the rule to the new word."
+      "correct": 2,
+      "rationale": "As the guide's solving-algorithm section stresses, a rule that fits the first letters can still fail on a later one if the question mixes a shift with an exception — full verification catches this before you misapply the rule to the new word."
     },
     {
       "id": 3,
@@ -43,34 +43,34 @@
       "question": "What is the recommended first step in the guide's coding-solving algorithm, before testing any specific rule type?",
       "options": [
         "Guess the answer directly from the options",
-        "Read all the given examples and separate input from output for each one",
+        "Convert every letter straight to a number",
         "Assume a +1 letter shift, since it is the most common rule",
-        "Convert every letter straight to a number"
+        "Read all the given examples and separate input from output for each one"
       ],
-      "correct": 1,
+      "correct": 3,
       "rationale": "The solving algorithm starts by reading all given examples and separating input from output, so the rule can be compared consistently across every example before it is applied to the new case."
     },
     {
       "question": "What is the purpose of a 'Final Checklist' at the very end of the lesson?",
       "options": [
-        "To introduce brand-new rule types",
         "To provide a quick list of essential checks (like verifying the rule against every example, checking wrap-around) to run through before finalizing an answer",
+        "To introduce brand-new rule types",
         "To replace the master formula sheet",
         "To only apply to the Expert practice tier"
       ],
-      "correct": 1,
-      "rationale": "The Final Checklist provides a quick, essential set of checks \u2014 like full verification and wrap-around confirmation \u2014 to run through before finalizing any answer.",
+      "correct": 0,
+      "rationale": "The Final Checklist provides a quick, essential set of checks — like full verification and wrap-around confirmation — to run through before finalizing any answer.",
       "id": 5
     },
     {
       "question": "What is likely meant by the lesson's 'Final Concept,' given its recurring themes throughout?",
       "options": [
         "That guessing is an acceptable strategy",
-        "That reliable coding-decoding solving comes from systematically identifying and verifying a rule against ALL given data, not from guessing after a partial match",
         "That only the simplest rules ever appear",
+        "That reliable coding-decoding solving comes from systematically identifying and verifying a rule against ALL given data, not from guessing after a partial match",
         "That verification is optional once a pattern seems obvious"
       ],
-      "correct": 1,
+      "correct": 2,
       "rationale": "Consistent with the lesson's recurring emphasis, the Final Concept reinforces that reliability comes from systematic identification and full verification, not from guessing after only a partial match.",
       "id": 6
     },
@@ -90,36 +90,36 @@
       "question": "Why does this 22-part lesson end with condensed algorithms and checklists rather than new coding rule types?",
       "options": [
         "Because there was no more content to teach",
-        "Because every necessary rule type has already been introduced across the earlier parts, and the focus now shifts to consolidation and reliable execution",
+        "Because the lesson ran out of space",
         "Because rule types are considered unimportant by this point",
-        "Because the lesson ran out of space"
+        "Because every necessary rule type has already been introduced across the earlier parts, and the focus now shifts to consolidation and reliable execution"
       ],
-      "correct": 1,
-      "rationale": "By this point, every necessary rule type has already been thoroughly introduced \u2014 the closing sections appropriately shift focus to consolidation and reliable execution.",
+      "correct": 3,
+      "rationale": "By this point, every necessary rule type has already been thoroughly introduced — the closing sections appropriately shift focus to consolidation and reliable execution.",
       "id": 8
     },
     {
       "question": "According to the lesson's overall progression, what is the ultimate skill being built across all 22 parts?",
       "options": [
-        "Memorizing every specific example verbatim",
         "The ability to reliably identify, verify, and apply the correct coding-decoding rule to any new problem, not just memorize specific examples",
+        "Memorizing every specific example verbatim",
         "Only recognizing letter-shift coding",
         "Avoiding verification to save time"
       ],
-      "correct": 1,
-      "rationale": "The ultimate goal across all 22 parts is building the ability to reliably identify, verify, and apply the correct rule to ANY new problem \u2014 not simply memorizing the specific examples covered.",
+      "correct": 0,
+      "rationale": "The ultimate goal across all 22 parts is building the ability to reliably identify, verify, and apply the correct rule to ANY new problem — not simply memorizing the specific examples covered.",
       "id": 9
     },
     {
       "question": "Why is verifying a candidate rule against EVERY given example (not just the first) emphasized so consistently throughout this lesson?",
       "options": [
         "Because it is unnecessary in most cases",
-        "Because a rule that only explains part of the data can still be wrong overall, and this is one of the most common sources of error in coding-decoding",
         "Because the first example is always sufficient",
+        "Because a rule that only explains part of the data can still be wrong overall, and this is one of the most common sources of error in coding-decoding",
         "Because later examples are never actually relevant"
       ],
-      "correct": 1,
-      "rationale": "Full verification is emphasized consistently because a rule that only explains part of the data can still be incorrect overall \u2014 this remains one of the most common and persistent sources of error.",
+      "correct": 2,
+      "rationale": "Full verification is emphasized consistently because a rule that only explains part of the data can still be incorrect overall — this remains one of the most common and persistent sources of error.",
       "id": 10
     },
     {
@@ -143,19 +143,19 @@
         "Because wrap-around only applies to matrix coding"
       ],
       "correct": 1,
-      "rationale": "Even after mastering advanced techniques, forgetting basic wrap-around remains a common, persistent error \u2014 which is exactly why it's still explicitly included in the final checklist.",
+      "rationale": "Even after mastering advanced techniques, forgetting basic wrap-around remains a common, persistent error — which is exactly why it's still explicitly included in the final checklist.",
       "id": 12
     },
     {
       "question": "What is the overarching lesson of this entire 22-part chapter on coding-decoding?",
       "options": [
         "That coding-decoding is purely a matter of memorized tricks",
-        "That reliably solving coding-decoding problems comes from systematically identifying a rule, verifying it against every given example, and correctly applying (or inverting) it \u2014 not from memorizing isolated tricks alone",
+        "That reliably solving coding-decoding problems comes from systematically identifying a rule, verifying it against every given example, and correctly applying (or inverting) it — not from memorizing isolated tricks alone",
         "That only the simplest coding types are ever tested",
         "That verification can safely be skipped once a rule seems obvious"
       ],
       "correct": 1,
-      "rationale": "The chapter's consistent, central lesson is that reliable coding-decoding solving comes from systematic rule identification, full verification, and correct application (or inversion) \u2014 not from memorizing isolated tricks alone.",
+      "rationale": "The chapter's consistent, central lesson is that reliable coding-decoding solving comes from systematic rule identification, full verification, and correct application (or inversion) — not from memorizing isolated tricks alone.",
       "id": 13
     }
   ]
