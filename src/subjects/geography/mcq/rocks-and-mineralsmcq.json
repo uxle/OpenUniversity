@@ -1,0 +1,76 @@
+{
+  "lessonId": "rocks-and-minerals",
+  "title": "Rocks and Minerals: The Building Materials of the Crust",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A naturally occurring, inorganic substance with a definite chemical composition and crystal structure is a:",
+      "options": ["Rock", "Mineral", "Fossil", "Sediment"],
+      "correct": 1,
+      "rationale": "That is the definition of a mineral; a rock is an aggregate of one or more minerals, such as granite mixing quartz, feldspar, and mica."
+    },
+    {
+      "id": 2,
+      "question": "Which mineral sits at the top of the Mohs hardness scale?",
+      "options": ["Quartz", "Corundum", "Diamond", "Talc"],
+      "correct": 2,
+      "rationale": "Diamond rates 10 on the Mohs scale, quartz 7, and talc only 1."
+    },
+    {
+      "id": 3,
+      "question": "Why does granite show large, visible crystals?",
+      "options": ["It cooled rapidly on the surface", "It cooled slowly deep underground", "It was compacted in layers", "It was recrystallised by pressure"],
+      "correct": 1,
+      "rationale": "Granite is an intrusive (plutonic) igneous rock; slow cooling underground lets large crystals grow, unlike rapidly chilled, fine-grained basalt."
+    },
+    {
+      "id": 4,
+      "question": "Basalt is an example of:",
+      "options": ["Intrusive igneous rock", "Extrusive igneous rock", "Chemical sedimentary rock", "Metamorphic rock"],
+      "correct": 1,
+      "rationale": "Basalt is extrusive (volcanic) igneous rock formed when lava cools quickly in the open air."
+    },
+    {
+      "id": 5,
+      "question": "Which rock family alone can contain fossils?",
+      "options": ["Igneous", "Sedimentary", "Metamorphic", "All three equally"],
+      "correct": 1,
+      "rationale": "Only sedimentary rocks preserve fossils, because they form from deposited remains and debris layered under low temperatures."
+    },
+    {
+      "id": 6,
+      "question": "Coal is classified as which type of sedimentary rock?",
+      "options": ["Mechanical (clastic)", "Chemical", "Organic", "Metamorphic"],
+      "correct": 2,
+      "rationale": "Coal is an organic sedimentary rock formed from compacted plant remains; chalk is another organic example."
+    },
+    {
+      "id": 7,
+      "question": "Marble is the metamorphic product of:",
+      "options": ["Granite", "Shale", "Sandstone", "Limestone"],
+      "correct": 3,
+      "rationale": "Limestone recrystallises into marble; shale becomes slate and sandstone becomes quartzite."
+    },
+    {
+      "id": 8,
+      "question": "Slate forms from the metamorphism of:",
+      "options": ["Shale", "Limestone", "Granite", "Coal"],
+      "correct": 0,
+      "rationale": "Shale, under heat and pressure, realigns its mica crystals and becomes slate, which splits into roofing sheets."
+    },
+    {
+      "id": 9,
+      "question": "The Deccan Traps of peninsular India erupted about:",
+      "options": ["66 million years ago", "6,000 years ago", "500 million years ago", "2 billion years ago"],
+      "correct": 0,
+      "rationale": "The Deccan Traps flood basalts were erupted roughly 66 million years ago, near the end of the Cretaceous period."
+    },
+    {
+      "id": 10,
+      "question": "In the rock cycle, sedimentary rock buried deep in the crust may next become:",
+      "options": ["Magma directly, skipping a stage", "Metamorphic rock", "Igneous extrusive rock", "Loess"],
+      "correct": 1,
+      "rationale": "Heat and pressure metamorphose sedimentary rock; only later, by deep melting, does it return to magma — closing the cycle."
+    }
+  ]
+}

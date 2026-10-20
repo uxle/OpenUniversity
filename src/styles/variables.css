@@ -1,33 +1,61 @@
 /* src/styles/variables.css — design tokens.
-   Palette/radius/shadow values adopted from the supplied reference
-   design (Apple-inspired: near-white app bg distinct from white cards,
-   rgba-based borders that adapt automatically to themes, soft layered
-   shadows, generous rounding). */
+   "Ink & Accent" palette: black and white are the IDENTITY colors
+   (Apple-inspired near-black ink on paper white) — headlines, buttons,
+   cards and body text stay monochrome so nothing competes with the
+   content while studying.
+   Color is OPTIONAL decoration, used in small doses only: one soft
+   pastel per subject (icon badges/chips — see components/accents.css),
+   a gentle highlight for search/lesson marks, and muted functional
+   colors for quiz right/wrong, admonitions and destructive actions.
+   rgba-based borders adapt automatically to themes, shadows stay soft
+   and layered, rounding is unchanged. */
 :root {
   /* Color — light (default) */
-  --ou-bg: #fbfbfd;
+  --ou-bg: #ffffff;
   --ou-surface: #ffffff;              /* solid card background */
   --ou-surface-translucent: rgba(255, 255, 255, 0.75); /* header/bottom-nav blur */
-  --ou-surface-subtle: #f4f4f7;
-  --ou-surface-raised: #ffffff;
-  --ou-border: rgba(0, 0, 0, 0.05);
-  --ou-border-strong: rgba(0, 0, 0, 0.1);
+  --ou-surface-subtle: #f5f5f7;
+  --ou-surface-raised: #ffffff;       /* elevated card above ou-surface, e.g. modal */
+  --ou-border: rgba(0, 0, 0, 0.06);
+  --ou-border-strong: rgba(0, 0, 0, 0.12);
   --ou-text: #1d1d1f;
   --ou-text-secondary: #6e6e73;
   --ou-text-muted: #a1a1a6;
-  --ou-accent: #0071e3;
-  --ou-accent-hover: #0077ed;
-  --ou-accent-subtle: rgba(0, 113, 227, 0.08);
+  --ou-accent: #1d1d1f;
+  --ou-accent-hover: #000000;
+  --ou-accent-subtle: rgba(0, 0, 0, 0.06);
   --ou-accent-contrast: #ffffff;
-  --ou-success: #34c759;
-  --ou-warning: #ff9500;
-  --ou-danger: #ff3b30;
-  --ou-focus-ring: #0071e3;
+  --ou-success: #22a05c;
+  --ou-warning: #d97706;
+  --ou-danger: #e0564f;
+  --ou-focus-ring: #1d1d1f;
+
+  /* Optional accents — small doses only (marks, selection, tiny dots).
+     --ou-hue is the single soft brand blue; everything else keeps ink. */
+  --ou-hue: #4d9df8;
+  --ou-highlight: #fff3bf;
+  --ou-highlight-ink: #6b5900;
 
   /* Elevation — soft, layered (ambient + a barely-there direct shadow) */
-  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
-  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.06);
-  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.1);
+  --ou-shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
+  --ou-shadow-glow-accent: 0 0 0 4px var(--ou-accent-subtle),
+                           0 8px 24px rgba(0, 0, 0, 0.14);
+
+  /* Gradient tokens — grayscale only: depth comes from ink darkness,
+     never from hue. */
+  --ou-gradient-brand: linear-gradient(135deg, #1d1d1f 0%, #3a3a3c 100%);
+  --ou-gradient-hue: linear-gradient(135deg, #4d9df8 0%, #7a70f2 100%);
+  --ou-gradient-surface: linear-gradient(160deg, var(--ou-surface) 0%, var(--ou-surface-subtle) 100%);
+  --ou-gradient-success: linear-gradient(135deg, #2c2c2e 0%, #1d1d1f 100%);
+  --ou-gradient-skeleton: linear-gradient(
+    90deg,
+    var(--ou-surface-subtle) 25%,
+    var(--ou-surface) 50%,
+    var(--ou-surface-subtle) 75%
+  );
 
   /* Radius */
   --ou-radius-sm: 8px;
@@ -37,6 +65,7 @@
   --ou-radius-pill: 9999px;
 
   /* Spacing scale (8px rhythm) */
+  --ou-space-0: 2px;
   --ou-space-1: 4px;
   --ou-space-2: 8px;
   --ou-space-3: 12px;
@@ -65,8 +94,10 @@
   --ou-max-width: 980px;
 
   /* Motion */
-  --ou-transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  --ou-transition-base: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ou-transition-fast:   150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ou-transition-base:   250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ou-transition-slow:   400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ou-transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Z-index scale */
   --ou-z-dropdown: 100;

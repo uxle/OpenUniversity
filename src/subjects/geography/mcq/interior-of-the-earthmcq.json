@@ -1,0 +1,76 @@
+{
+  "lessonId": "interior-of-the-earth",
+  "title": "The Interior of the Earth: Layers and Sources of Evidence",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Kola Superdeep Borehole, the deepest ever drilled, reached a depth of about:",
+      "options": ["4 km", "12 km", "100 km", "2,900 km"],
+      "correct": 1,
+      "rationale": "The Kola Borehole reached roughly 12 km — the deepest direct penetration of the crust; the deepest mine (Mponeng) is only about 4 km."
+    },
+    {
+      "id": 2,
+      "question": "Which is the most important source of information about the Earth's interior?",
+      "options": ["Deep mines", "Meteorites", "Seismic waves", "Volcanic eruptions"],
+      "correct": 2,
+      "rationale": "Seismic waves change speed and path when they cross material boundaries, revealing layer depths, states, and densities without any drilling."
+    },
+    {
+      "id": 3,
+      "question": "Continental crust (sial) is typically how thick?",
+      "options": ["5–10 km", "30–70 km", "About 2,900 km", "About 2,200 km"],
+      "correct": 1,
+      "rationale": "Continental crust spans roughly 30–70 km, while the denser oceanic crust (sima) is only about 5–10 km thick."
+    },
+    {
+      "id": 4,
+      "question": "The Mohorovicic (Moho) discontinuity, identified in 1909, separates:",
+      "options": ["Upper and lower continental crust", "The crust and the mantle", "The mantle and the outer core", "The outer and inner core"],
+      "correct": 1,
+      "rationale": "The Moho marks the base of the crust, where seismic waves speed up entering the denser mantle."
+    },
+    {
+      "id": 5,
+      "question": "The Gutenberg discontinuity lies at a depth of about:",
+      "options": ["20 km", "700 km", "2,900 km", "5,100 km"],
+      "correct": 2,
+      "rationale": "The Gutenberg discontinuity (~2,900 km) marks the mantle–outer core boundary; 700 km is Repetti and 5,100 km is Lehmann."
+    },
+    {
+      "id": 6,
+      "question": "What evidence shows that the outer core is liquid?",
+      "options": ["P-waves are completely blocked by the core", "S-waves cannot pass through the outer core", "Surface waves travel through it fastest", "Mines have reached liquid iron"],
+      "correct": 1,
+      "rationale": "S-waves travel only through solids, so their failure to cross the outer core proves it is liquid iron and nickel."
+    },
+    {
+      "id": 7,
+      "question": "Who discovered the solid inner core in 1936?",
+      "options": ["Andrija Mohorovicic", "Beno Gutenberg", "Inge Lehmann", "A. Mohorovicic's assistant Conrad"],
+      "correct": 2,
+      "rationale": "Inge Lehmann identified the solid inner core at about 5,100 km depth from patterns in seismic wave arrivals."
+    },
+    {
+      "id": 8,
+      "question": "The mantle is approximately how thick?",
+      "options": ["70 km", "2,200 km", "2,900 km", "6,371 km"],
+      "correct": 2,
+      "rationale": "The mantle extends about 2,900 km from the base of the crust down to the Gutenberg discontinuity."
+    },
+    {
+      "id": 9,
+      "question": "The asthenosphere is best described as:",
+      "options": ["The rigid layer broken into tectonic plates", "The weak, partly molten zone that is the main source of magma", "The liquid iron-nickel shell", "The solid innermost sphere of the Earth"],
+      "correct": 1,
+      "rationale": "The asthenosphere lies beneath the lithosphere, extends to roughly 400 km, behaves weakly, supplies magma, and carries the sliding plates."
+    },
+    {
+      "id": 10,
+      "question": "As depth increases toward the Earth's centre, temperature, pressure, and density:",
+      "options": ["All increase", "All decrease", "Increase, then decrease", "Stay constant"],
+      "correct": 0,
+      "rationale": "Temperature climbs to 5,000–6,000°C, pressure to over 3.5 million atmospheres, and density from about 2.7 to about 13.6 g/cm³ at the centre."
+    }
+  ]
+}

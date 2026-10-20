@@ -1,0 +1,76 @@
+{
+  "lessonId": "fiscal-policy-and-budget",
+  "title": "Fiscal Policy, the Budget, and Deficits",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Expansionary fiscal policy involves:",
+      "options": ["Raising taxes and cutting spending", "Increasing government spending and/or cutting taxes", "Raising the repo rate", "Selling government securities"],
+      "correct": 1,
+      "rationale": "Expansionary fiscal policy boosts aggregate demand through higher spending or lower taxes — the anti-recession stance; repo rates and OMOs are monetary tools."
+    },
+    {
+      "id": 2,
+      "question": "Taxes falling and welfare spending rising automatically during a recession are examples of:",
+      "options": ["Discretionary policy", "Automatic stabilisers", "Crowding out", "Escape clause"],
+      "correct": 1,
+      "rationale": "Automatic stabilisers cushion incomes in a downturn without any fresh policy decision — unlike discretionary packages such as a stimulus."
+    },
+    {
+      "id": 3,
+      "question": "The fiscal deficit equals:",
+      "options": ["Revenue expenditure minus revenue receipts", "Total expenditure minus total receipts excluding borrowing", "Primary deficit plus subsidies", "Interest payments minus tax revenue"],
+      "correct": 1,
+      "rationale": "The fiscal deficit is the government's total borrowing need — all spending minus receipts other than borrowings — the headline deficit number."
+    },
+    {
+      "id": 4,
+      "question": "If the fiscal deficit is ₹15 lakh crore and interest payments are ₹10 lakh crore, the primary deficit is:",
+      "options": ["₹5 lakh crore", "₹10 lakh crore", "₹15 lakh crore", "₹25 lakh crore"],
+      "correct": 0,
+      "rationale": "Primary deficit = fiscal deficit − interest payments = 15 − 10 = ₹5 lakh crore, isolating today's borrowing from the cost of past debt."
+    },
+    {
+      "id": 5,
+      "question": "A revenue deficit indicates that the government is borrowing to finance:",
+      "options": ["Asset-creating capital projects", "Day-to-day running expenses", "Loan repayments to the RBI", "Exports"],
+      "correct": 1,
+      "rationale": "A revenue deficit means revenue expenditure outruns revenue receipts — borrowing simply to keep the machinery running."
+    },
+    {
+      "id": 6,
+      "question": "The FRBM Act of 2003 is aimed at:",
+      "options": ["Fixing the exchange rate", "Fiscal discipline through deficit targets and parliamentary statements", "Setting the repo rate", "Sharing taxes between states"],
+      "correct": 1,
+      "rationale": "The Fiscal Responsibility and Budget Management Act commits the Centre to deficit control, with an escape clause for emergencies such as COVID-19."
+    },
+    {
+      "id": 7,
+      "question": "Which constitutional provision establishes the Finance Commission?",
+      "options": ["Article 280", "Article 370", "Article 356", "Article 32"],
+      "correct": 0,
+      "rationale": "Article 280 provides for a Finance Commission every five years to recommend Centre–state tax devolution and grants to local bodies."
+    },
+    {
+      "id": 8,
+      "question": "Expenditure on building a new highway is classified in the budget as:",
+      "options": ["Revenue expenditure", "Capital expenditure", "Primary expenditure", "Non-plan revenue expenditure"],
+      "correct": 1,
+      "rationale": "Asset-creating spending like highways is capital expenditure — the deficit that adds to future productive capacity."
+    },
+    {
+      "id": 9,
+      "question": "The 'crowding out' effect of a large fiscal deficit works through:",
+      "options": ["Government borrowing raising interest rates and displacing private investment", "Excess exports crowding out imports", "Higher taxes forcing foreign investors out", "The RBI printing less currency"],
+      "correct": 0,
+      "rationale": "Heavy government market borrowing pushes up interest rates, making private investment costlier — the classic reason for FRBM discipline."
+    },
+    {
+      "id": 10,
+      "question": "A zero primary deficit with a positive fiscal deficit means:",
+      "options": ["The government has balanced its total budget", "Current borrowing exactly equals interest payments on past debt", "Revenue receipts equal capital expenditure", "The escape clause has been invoked"],
+      "correct": 1,
+      "rationale": "Primary deficit = fiscal deficit − interest payments; if it is zero, all of today's borrowing simply services the legacy of yesterday's debt."
+    }
+  ]
+}

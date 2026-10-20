@@ -1,20 +1,32 @@
 // src/pages/subject.js
 import { createEl, mount } from "../utils/dom.js";
 import { getSubject, listLessons } from "../engines/subject-engine.js";
-import { getLessonSource } from "../services/content-service.js";
+import { resolveLessonTitles } from "../services/lesson-title-service.js";
 import { createSubjectHeader } from "../components/subject/subject-header.js";
 import { createEmptyState } from "../components/common/empty-state.js";
+import { addHoverPrefetch, prefetchLesson, prefetchRegistry } from "../utils/prefetch.js";
+import { config } from "../app/config.js";
 
-/** Mirrors sub-subject.js's titleFromZl() — same reasoning applies here
- *  for "flat" subjects (no subSubjects) that list their own lessons
- *  directly on this page instead of sub-subject cards. */
-function titleFromZl(source, fallback) {
-  const match = source.match(/^#\s+(.+)$/m);
-  return match ? match[1].trim() : fallback;
+/**
+ * Wire hover-prefetch onto a lesson link anchor element.
+ * The .zl URL must match exactly what content-service.js builds so the
+ * loader's cache recognises the warm entry on the real fetch.
+ */
+function withLessonPrefetch(el, subjectId, subSubjectId, lessonId) {
+  const base = subSubjectId
+    ? `${config.dataBasePath}/${subjectId}/${subSubjectId}`
+    : `${config.dataBasePath}/${subjectId}`;
+  const sourceUrl = `${base}/lessons/${lessonId}.zl`;
+  addHoverPrefetch(el, () => {
+    prefetchRegistry(config.registryPath);
+    prefetchLesson(sourceUrl);
+  });
+  return el;
 }
 
-export async function render(container, { subjectId }) {
+export async function render(container, { subjectId }, nav = null) {
   const subject = await getSubject(subjectId);
+  if (nav?.stale) return;
   if (!subject) {
     document.title = "Subject not found — OpenKnowledge";
     mount(container, createEmptyState({ message: `Subject "${subjectId}" not found.`, iconName: "circle-question" }));
@@ -27,39 +39,34 @@ export async function render(container, { subjectId }) {
   if (hasSubSubjects) {
     mount(container, createEl("div", { class: "ou-container ou-stack" }, [
       createSubjectHeader(subject),
-      createEl("div", { class: "ou-grid" }, subject.subSubjects.map((s) =>
-        createEl("a", { href: `#/subjects/${subjectId}/${s.id}`, class: "ou-card ou-card--interactive" }, [
+      createEl("div", { class: "ou-grid" }, subject.subSubjects.map((s) => {
+        const el = createEl("a", { href: `#/subjects/${subjectId}/${s.id}`, class: "ou-card ou-card--interactive" }, [
           createEl("div", { class: "ou-card__title" }, [s.title]),
-        ])
-      )),
+        ]);
+        // Prefetch the lesson-list module on hover so the sub-subject page is instant.
+        addHoverPrefetch(el, () => import("./sub-subject.js").catch(() => {}));
+        return el;
+      })),
     ]));
     return;
   }
 
-  // "Flat" subject — no subSubjects, lessons sit directly under it (see
-  // src/subjects/*/index.json + details.zl for reasoning, economics,
-  // geography, history). Without this branch there was previously no way
-  // to reach these lessons from the UI at all — subSubjects.map() above
-  // just rendered an empty grid. List the lessons inline instead, the
-  // same way sub-subject.js does for a real sub-subject.
+  // "Flat" subject — no subSubjects, lessons sit directly under it.
   const lessonIds = await listLessons(subjectId, undefined).catch(() => []);
-  const lessons = await Promise.all(lessonIds.map(async (lessonId) => {
-    try {
-      const { source } = await getLessonSource(subjectId, undefined, lessonId);
-      return { id: lessonId, title: titleFromZl(source, lessonId) };
-    } catch {
-      return { id: lessonId, title: lessonId };
-    }
-  }));
+  const lessons = await resolveLessonTitles(subjectId, undefined, lessonIds);
+  if (nav?.stale) return;
 
   mount(container, createEl("div", { class: "ou-container ou-stack" }, [
     createSubjectHeader(subject),
     lessons.length
-      ? createEl("ul", { role: "list", class: "ou-stack" }, lessons.map(({ id, title }) =>
-          createEl("li", {}, [
-            createEl("a", { href: `#/subjects/${subjectId}/lessons/${id}`, class: "ou-card ou-card--interactive" }, [title]),
-          ])
-        ))
+      ? createEl("ul", { role: "list", class: "ou-stack" }, lessons.map(({ id, title }) => {
+          const el = createEl("a", {
+            href: `#/subjects/${subjectId}/lessons/${id}`,
+            class: "ou-card ou-card--interactive",
+          }, [title]);
+          withLessonPrefetch(el, subjectId, undefined, id);
+          return createEl("li", {}, [el]);
+        }))
       : createEmptyState({ message: "No lessons here yet.", iconName: "circle-question" }),
   ]));
 }

@@ -1,5 +1,91 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Introduction to Computer Networks",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the first step that happens when you type a domain name like example.com into a browser?",
+      "options": ["The server sends the page", "DNS translates the name into an IP address", "TCP breaks the page into packets", "The router assigns a new IP address"],
+      "correct": 1,
+      "rationale": "Before any request is sent, DNS resolves the human-friendly name to the server's numeric IP address."
+    },
+    {
+      "id": 2,
+      "question": "Why does the Internet use packet switching instead of sending data whole?",
+      "options": ["It makes files larger", "Packets can take different routes, so traffic survives path failures", "It removes the need for addresses", "It guarantees every packet arrives in order"],
+      "correct": 1,
+      "rationale": "Chopping data into independently routed packets makes the network robust — if one path fails, others carry the traffic."
+    },
+    {
+      "id": 3,
+      "question": "Which protocol guarantees ordered, complete delivery and is used for web pages and email?",
+      "options": ["UDP", "IP", "TCP", "Ethernet"],
+      "correct": 2,
+      "rationale": "TCP retransmits losses and restores order. UDP just sends without promises, suiting video calls and games."
+    },
+    {
+      "id": 4,
+      "question": "A home Wi-Fi network is an example of a:",
+      "options": ["WAN", "MAN", "LAN", "PAN"],
+      "correct": 2,
+      "rationale": "A LAN (local area network) covers a building or campus, like a home or office network; WANs span countries or the world."
+    },
+    {
+      "id": 5,
+      "question": "During a video call that keeps freezing while downloads run fast, which quantity is most likely the problem?",
+      "options": ["Bandwidth", "Latency", "Disk space", "DNS TTL"],
+      "correct": 1,
+      "rationale": "Calls depend on low latency (how long one packet takes). High latency causes freezes even when bandwidth is plentiful."
+    },
+    {
+      "id": 6,
+      "question": "Which network type covers a whole city, such as a cable network?",
+      "options": ["PAN", "LAN", "MAN", "WAN"],
+      "correct": 2,
+      "rationale": "A MAN (metropolitan area network) spans a city — e.g., a cable network; WANs span countries or the world."
+    },
+    {
+      "id": 7,
+      "question": "In the client–server model, what is the role of the client?",
+      "options": [
+        "It stores all web pages permanently",
+        "It assigns IP addresses to servers",
+        "It requests a resource from the server",
+        "It reassembles lost packets"
+      ],
+      "correct": 2,
+      "rationale": "The client (your browser) requests a resource and the server responds with it — e.g., an HTTP request answered with HTML."
+    },
+    {
+      "id": 8,
+      "question": "Besides the data itself, what does each packet carry?",
+      "options": [
+        "Source/destination addresses and sequence numbers",
+        "The full contents of every other packet",
+        "The server's DNS name",
+        "Only the sender's email address"
+      ],
+      "correct": 0,
+      "rationale": "Each packet is a small chunk carrying source/destination addresses and sequence numbers so it can be routed and reassembled at the destination."
+    },
+    {
+      "id": 9,
+      "question": "Which network layer handles delivery over one physical hop using technologies like Ethernet or Wi-Fi?",
+      "options": ["Application layer", "Transport layer", "Internet layer", "Link layer"],
+      "correct": 3,
+      "rationale": "The Link layer's job is delivery over one physical hop (Ethernet, Wi-Fi); the Internet layer does routing between hosts with IP."
+    },
+    {
+      "id": 10,
+      "question": "Which of these is given as an example of a PAN?",
+      "options": [
+        "Bluetooth headset connected to a phone",
+        "Office ethernet across a building",
+        "A city cable network",
+        "The Internet itself"
+      ],
+      "correct": 0,
+      "rationale": "A PAN covers just a few metres — like a Bluetooth headset paired to a phone."
+    }
+  ]
 }

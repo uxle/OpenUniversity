@@ -1,0 +1,76 @@
+{
+  "lessonId": "british-conquest-and-1857",
+  "title": "The British Conquest and the Revolt of 1857",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The East India Company was chartered on 31 December 1600 by:",
+      "options": ["Queen Victoria", "Queen Elizabeth I", "King James I", "Oliver Cromwell"],
+      "correct": 1,
+      "rationale": "Elizabeth I granted the Company its charter in 1600; James I later sent Sir Thomas Roe to Jahangir's court, winning the farman for the Surat factory of 1613."
+    },
+    {
+      "id": 2,
+      "question": "Bombay came to the English Crown in 1661 as:",
+      "options": ["A battle prize from the Portuguese", "The dowry of Catherine of Braganza", "Purchase from the Dutch", "A gift from the Mughals"],
+      "correct": 1,
+      "rationale": "Bombay arrived as the dowry of Catherine of Braganza on her marriage to Charles II; the Crown leased it to the Company in 1668."
+    },
+    {
+      "id": 3,
+      "question": "The Battle of Plassey (1757) was effectively decided by:",
+      "options": ["Clive's artillery superiority", "The betrayal of Mir Jafar, bought by the Company", "A French withdrawal", "A treaty with the Mughal emperor"],
+      "correct": 1,
+      "rationale": "Siraj-ud-Daulah's commander Mir Jafar had been purchased with the Jagat Seth bankers brokering, so Plassey was won by conspiracy before it was won by arms."
+    },
+    {
+      "id": 4,
+      "question": "At Buxar (22 October 1764), Hector Munro defeated the 'triple alliance' of:",
+      "options": ["Marathas, Nizam, and Sikhs", "Mir Qasim, Shuja-ud-Daula, and Shah Alam II", "Haider Ali, the Nizam, and the French", "Nana Saheb, Tantia Tope, and Kunwar Singh"],
+      "correct": 1,
+      "rationale": "The Company defeated Mir Qasim of Bengal, Awadh's Shuja-ud-Daula, and the Mughal emperor Shah Alam II, leading to the Diwani grant of 1765."
+    },
+    {
+      "id": 5,
+      "question": "The Diwani of 1765 entitled the Company to:",
+      "options": ["Trade monopoly in all of Asia", "The revenue rights of Bengal, Bihar, and Orissa", "Command of the Mughal army", "The Peacock Throne"],
+      "correct": 1,
+      "rationale": "By the Treaty of Allahabad, Shah Alam II granted the Diwani — revenue collection of Bengal, Bihar, and Orissa — legalising Company rule of eastern India."
+    },
+    {
+      "id": 6,
+      "question": "The Subsidiary Alliance system, first accepted by Hyderabad in 1798, was introduced by:",
+      "options": ["Warren Hastings", "Lord Wellesley", "Lord Dalhousie", "Lord Cornwallis"],
+      "correct": 1,
+      "rationale": "Wellesley's Subsidiary Alliances made rulers pay for British troops, host a Resident, and surrender their foreign policy — Hyderabad signed first."
+    },
+    {
+      "id": 7,
+      "question": "Under the Doctrine of Lapse, which state was annexed in 1853 after its ruler's adopted heir was refused recognition?",
+      "options": ["Satara", "Sambalpur", "Jhansi", "Nagpur"],
+      "correct": 2,
+      "rationale": "Dalhousie annexed Satara (1848), Jaitpur and Sambalpur (1849), Jhansi (1853), and Nagpur (1854) by refusing adopted heirs under the Doctrine of Lapse."
+    },
+    {
+      "id": 8,
+      "question": "The immediate trigger of the 1857 revolt was:",
+      "options": ["The Permanent Settlement", "Rumours that Enfield rifle cartridges were greased with cow and pig fat", "The Queen's Proclamation", "The annexation of Punjab"],
+      "correct": 1,
+      "rationale": "Sepoys had to bite the new Enfield cartridge; rumours of cow and pig fat offended Hindu and Muslim sepoys alike. Mangal Pandey's outburst at Barrackpore (29 March 1857) opened the revolt."
+    },
+    {
+      "id": 9,
+      "question": "Match the centre of the revolt with its leader: which pair is correct?",
+      "options": ["Lucknow - Nana Saheb", "Kanpur - Begum Hazrat Mahal", "Jhansi - Rani Lakshmibai", "Delhi - Kunwar Singh"],
+      "correct": 2,
+      "rationale": "Jhansi's Rani Lakshmibai died fighting in June 1858; Delhi had Bahadur Shah Zafar, Kanpur had Nana Saheb and Tantia Tope, and Lucknow was held for Begum Hazrat Mahal's son."
+    },
+    {
+      "id": 10,
+      "question": "Which change followed the revolt's failure?",
+      "options": ["The Company's charter was renewed for thirty years", "The Crown took direct rule under the Government of India Act 1858", "The Doctrine of Lapse was extended", "The Mughal title was preserved"],
+      "correct": 1,
+      "rationale": "The Act of 1858 ended Company rule, creating a Secretary of State and making the Governor-General the first Viceroy; Bahadur Shah's exile ended the Mughal title in 1862."
+    }
+  ]
+}

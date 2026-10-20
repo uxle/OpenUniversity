@@ -1,0 +1,139 @@
+# Medieval and Early Modern Philosophy: Faith, Reason, and the Rise of Science
+
+> Medieval thinkers reasoned about God with Greek tools; the early
+> moderns rebuilt philosophy on the knowing subject, split into
+> rationalists and empiricists, and political philosophy followed.
+
+## 1. Augustine and Aquinas: Faith Seeking Understanding
+
+**Augustine** (354–430 CE) baptised Plato: the Forms become ideas in
+God's mind, and the restless soul knows truth by divine illumination.
+His *Confessions* invents the inner autobiography, and his meditation
+on time remains definitive — "What then is time? If no one asks me,
+I know; if I wish to explain it, I do not know." The *City of God*
+frames history as a struggle between two loves.
+
+**Thomas Aquinas** (1225–1274) baptised Aristotle. In the *Summa
+Theologiae*, faith and reason form one harmony: truths of reason and
+truths of revelation cannot contradict, since both derive from God.
+His **five ways (quinque viae)** argue from motion, efficient causes,
+contingency, degrees of perfection, and design to a first unmoved
+source.
+
+## 2. The Problem of Universals
+
+Do general terms name real things?
+
+| Position | Claim | Champion |
+| --- | --- | --- |
+| Realism | Universals exist really | Augustinians, following Plato |
+| Conceptualism | Universals are concepts in minds | Peter Abelard's middle way |
+| Nominalism | Only particulars exist; universals are names | William of Ockham |
+
+[definition]
+**Ockham's razor** (after William of Ockham, c. 1287–1347): entities
+should not be multiplied beyond necessity — among explanations that
+fit the facts equally well, prefer the one positing fewest entities.
+It remains a standing rule of scientific method.
+[/definition]
+
+## 3. The Rationalists
+
+Reason, the rationalists held, can know reality through clear ideas
+independent of experience — mathematics as the model of knowledge:
+
+| Thinker | Dates | Core doctrine | Key text |
+| --- | --- | --- | --- |
+| Descartes | 1596–1650 | Cogito ergo sum; mind–body dualism | Meditations (1641) |
+| Spinoza | 1632–1677 | One substance: deus sive natura | Ethics, in geometrical order |
+| Leibniz | 1646–1716 | Monads; best of all possible worlds | Monadology |
+
+**Descartes** practised **methodic doubt**: doubt everything
+dubitable — senses, body, world — until one certainty survives:
+doubting is thinking, so a thinker exists. *Cogito ergo sum.* Mind and
+body become two distinct substances: **dualism**.
+
+**Spinoza** radicalises him: only one substance exists, infinite —
+call it God or Nature (**deus sive natura**); mind and body are two of
+its attributes, and everything follows necessarily.
+
+**Leibniz** multiplies: reality consists of countless windowless
+**monads**, simple substances pre-programmed in **pre-established
+harmony**; by the **principle of sufficient reason**, God chose the
+best of all possible worlds.
+
+## 4. The Empiricists
+
+The empiricist counter-thesis: nothing in the intellect that was not
+first in the senses:
+
+| Thinker | Dates | Core doctrine | Key text |
+| --- | --- | --- | --- |
+| Locke | 1632–1704 | Mind a tabula rasa; no innate ideas | Essay (1689) |
+| Berkeley | 1685–1753 | Esse est percipi — to be is to be perceived | Principles |
+| Hume | 1711–1776 | Skepticism about self, cause, induction | Treatise (1739) |
+
+**Locke's** **tabula rasa** (blank slate) makes every idea a construct
+of sensation and reflection. **Berkeley** drives empiricism to
+idealism: we perceive only ideas, never "matter" — so **to be is to
+be perceived**, and the world's steadiness is God's perceiving.
+
+**Hume** applies the method ruthlessly and gets three results:
+
+1. The **self dissolves** — introspection finds a **bundle** of
+   perceptions, no owner.
+2. **Causation dissolves** — we observe constant conjunction, never a
+   necessary link; the "connection" is habit.
+3. **Induction** cannot be justified without a circle.
+
+[important title="The is–ought gap"]
+Hume noticed moralists sliding from "is" statements to "ought"
+conclusions without argument. No set of facts, however complete,
+entails a value without an added principle — the modern starting
+point of metaethics.
+[/important]
+
+## 5. The Deadlock
+
+Rationalism could not say how the mind's clear ideas latch onto the
+world; Hume dissolved necessity, self, and induction — the framework of
+science itself. **Kant** will answer that the mind contributes space,
+time, and causality as the form of experience: Hume, he said,
+"interrupted my dogmatic slumber".
+
+@diagram tree id="philosophy-earlymodern-split" layout="tree" aria="Early modern philosophy splits into rationalists and empiricists, answered by Kant"
+  "Early modern" -> Rationalism
+  "Early modern" -> Empiricism
+  "Early modern" -> "Kant's synthesis"
+  Rationalism -> Descartes
+  Rationalism -> Spinoza
+  Rationalism -> Leibniz
+  Empiricism -> Locke
+  Empiricism -> Berkeley
+  Empiricism -> Hume
+@/diagram
+
+## 6. Political Philosophy Spins Off
+
+| Thinker | Text | State of nature | Resulting politics |
+| --- | --- | --- | --- |
+| Hobbes (1588–1679) | Leviathan (1651) | War of all against all | Absolute sovereign by contract, from fear |
+| Locke | Two Treatises (1689) | Free and equal under natural law | Limited government, consent, revolution |
+| Rousseau (1712–1778) | The Social Contract (1762) | Free, but corrupted by property | Rule by the general will |
+
+**Hobbes'** state of nature makes life "solitary, poor, nasty, brutish,
+and short" — the **social contract** buys peace at the price of
+absolute authority. **Locke** answers with natural rights to life,
+liberty, and property; **Rousseau** opens with a scandal: "Man is born
+free, and everywhere he is in chains."
+
+[summary]
+Medieval philosophy joined Greek argument to religious commitment —
+Augustine's Platonism, Aquinas' harmony of faith and reason, and the
+realist–nominalist dispute over universals. The early moderns then
+split: rationalists (Descartes, Spinoza, Leibniz) trusted reason
+alone; empiricists (Locke, Berkeley, Hume) reduced knowledge to
+experience and paid in skepticism. Hume set the problem Kant would
+solve, while Hobbes, Locke, and Rousseau rebuilt politics on the
+social contract.
+[/summary]

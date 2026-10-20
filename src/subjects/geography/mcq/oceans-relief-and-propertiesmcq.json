@@ -1,0 +1,76 @@
+{
+  "lessonId": "oceans-relief-and-properties",
+  "title": "The Oceans: Relief, Salinity, and Temperature",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A narrow stretch of water joining two larger bodies, like the Palk Strait, is a:",
+      "options": ["Gulf", "Bay", "Strait", "Isthmus"],
+      "correct": 2,
+      "rationale": "A strait is narrow water between landmasses; an isthmus is the opposite — narrow land joining two larger landmasses, like Panama."
+    },
+    {
+      "id": 2,
+      "question": "The continental shelf typically extends down to a depth of about:",
+      "options": ["20 m", "200 m", "2,000 m", "6,000 m"],
+      "correct": 1,
+      "rationale": "The shelf — under a tenth of the ocean floor — reaches about 200 m and hosts the richest fisheries and offshore oilfields."
+    },
+    {
+      "id": 3,
+      "question": "The world's longest mountain chain is:",
+      "options": ["The Himalaya", "The Andes", "The mid-ocean ridge system", "The Rockies"],
+      "correct": 2,
+      "rationale": "The mid-ocean ridge system runs about 65,000 km along diverging plate boundaries, far out-stretching any land range."
+    },
+    {
+      "id": 4,
+      "question": "The deepest point of the world ocean, about 11 km down, lies in the:",
+      "options": ["Java Trench", "Puerto Rico Trench", "Mariana Trench", "Tonga Trench"],
+      "correct": 2,
+      "rationale": "The Challenger Deep of the Mariana Trench reaches about 11 km — deep enough to submerge Mount Everest with over 2 km to spare."
+    },
+    {
+      "id": 5,
+      "question": "The average salinity of the world ocean is about:",
+      "options": ["20", "35", "41", "100"],
+      "correct": 1,
+      "rationale": "Average ocean salinity is about 35 grams of salt per kilogram of water — 35 practical salinity units."
+    },
+    {
+      "id": 6,
+      "question": "The Baltic Sea's unusually low salinity (about 7–10) is caused mainly by:",
+      "options": ["Heavy evaporation", "Dilution by river influx and low evaporation", "Sea-ice formation", "Upwelling"],
+      "correct": 1,
+      "rationale": "Rivers pour freshwater into the Baltic faster than the cool, weakly evaporating sea can concentrate salt."
+    },
+    {
+      "id": 7,
+      "question": "Which water body is hypersaline, at roughly 330?",
+      "options": ["The Red Sea", "The Black Sea", "The Dead Sea", "The Caspian Sea"],
+      "correct": 2,
+      "rationale": "The land-locked Dead Sea, with no outlet and intense evaporation, reaches about 330 — dense enough to float swimmers."
+    },
+    {
+      "id": 8,
+      "question": "Salinity is generally highest at which latitudes?",
+      "options": ["The equator", "20–30° north and south", "45–60°", "The poles"],
+      "correct": 1,
+      "rationale": "Near 20–30° N and S, evaporation outruns rainfall, maximising salinity; the equator is slightly diluted by heavy rain."
+    },
+    {
+      "id": 9,
+      "question": "The ocean layer in which temperature drops fastest with depth is the:",
+      "options": ["Mixed layer", "Thermocline", "Abyssal plain", "Continental slope"],
+      "correct": 1,
+      "rationale": "The thermocline is the divider between the warm wind-stirred surface lid and the cold, stable deep water."
+    },
+    {
+      "id": 10,
+      "question": "Coastal places enjoy mild climates compared with the interior chiefly because:",
+      "options": ["Water heats and cools slowly due to high heat capacity", "Water reflects all sunlight", "Salinity stabilises the air", "Tides moderate the land"],
+      "correct": 0,
+      "rationale": "Ocean water's high heat capacity damps temperature swings, so the sea warms coasts in winter and cools them in summer."
+    }
+  ]
+}

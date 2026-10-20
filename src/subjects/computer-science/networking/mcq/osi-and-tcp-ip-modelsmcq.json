@@ -1,0 +1,76 @@
+{
+  "lessonId": "osi-and-tcp-ip-models",
+  "title": "The OSI and TCP/IP Models: How Layers Organize a Network",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many layers does the OSI reference model define?",
+      "options": ["4", "5", "7", "9"],
+      "correct": 2,
+      "rationale": "OSI defines seven layers: Application, Presentation, Session, Transport, Network, Data link, Physical."
+    },
+    {
+      "id": 2,
+      "question": "Which OSI layer handles logical addressing and routing between networks?",
+      "options": ["Data link", "Network", "Transport", "Session"],
+      "correct": 1,
+      "rationale": "Layer 3, the Network layer, does logical addressing and routing — its examples are IP, ICMP, and routers."
+    },
+    {
+      "id": 3,
+      "question": "What is the protocol data unit (PDU) at the data link layer?",
+      "options": ["Bits", "Packet", "Segment", "Frame"],
+      "correct": 3,
+      "rationale": "Layer 2 delivers frames over one hop; layer 1 carries bits, layer 3 packets, and layer 4 segments."
+    },
+    {
+      "id": 4,
+      "question": "In the bottom-up mnemonic Please Do Not Throw Sausage Pizza Away, which layer does Throw stand for?",
+      "options": ["Transport", "Session", "Network", "Data link"],
+      "correct": 0,
+      "rationale": "Reading bottom-up the words map Physical, Data link, Network, Transport, Session, Presentation, Application — so Throw is Transport."
+    },
+    {
+      "id": 5,
+      "question": "The TCP/IP model has how many layers?",
+      "options": ["3", "4", "6", "7"],
+      "correct": 1,
+      "rationale": "TCP/IP compresses OSI into four layers: Application, Transport, Internet, and Link."
+    },
+    {
+      "id": 6,
+      "question": "The TCP/IP Application layer corresponds to which OSI layers?",
+      "options": ["Only layer 7", "Layers 7, 6, and 5", "Layers 5 and 4", "Layers 3 and 2"],
+      "correct": 1,
+      "rationale": "The mapping table shows TCP/IP Application covering OSI Application, Presentation, and Session — everything user-facing."
+    },
+    {
+      "id": 7,
+      "question": "Encapsulation on the way down the stack means:",
+      "options": ["Each layer strips a header", "Each layer treats the layer above's data as an opaque payload and adds its own header", "Data is encrypted at every layer", "Headers are only added at layer 1"],
+      "correct": 1,
+      "rationale": "Sending wraps the message layer by layer — data becomes a segment with a TCP header, a packet with an IP header, then a frame — each layer treating the payload as opaque."
+    },
+    {
+      "id": 8,
+      "question": "What is the correct order of the TCP three-way handshake?",
+      "options": ["ACK, SYN, SYN-ACK", "SYN, SYN-ACK, ACK", "SYN, ACK, FIN", "SYN-ACK, SYN, ACK"],
+      "correct": 1,
+      "rationale": "The client sends SYN, the server answers SYN-ACK, and the client returns ACK — after which the connection is open."
+    },
+    {
+      "id": 9,
+      "question": "Why does a live voice call prefer UDP over TCP?",
+      "options": ["UDP guarantees delivery", "UDP restores ordering", "It would rather skip a lost syllable than pause the conversation to request it again", "UDP headers are 20 bytes"],
+      "correct": 2,
+      "rationale": "TCP's ACKs and retransmission add delay; for live audio a small gap beats a stalled conversation, which is why VoIP uses UDP."
+    },
+    {
+      "id": 10,
+      "question": "How do the TCP and UDP header sizes compare?",
+      "options": ["TCP 8 bytes, UDP 20 bytes", "Both are 20 bytes", "TCP 20 bytes, UDP 8 bytes", "Both are 8 bytes"],
+      "correct": 2,
+      "rationale": "The comparison table lists TCP headers at 20 bytes and UDP headers at 8 bytes — one reason UDP is faster with minimal overhead."
+    }
+  ]
+}

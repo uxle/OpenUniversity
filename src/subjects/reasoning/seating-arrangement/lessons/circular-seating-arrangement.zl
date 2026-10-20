@@ -1,0 +1,167 @@
+# Circular Seating Arrangement: Round Tables and Complex Puzzles
+
+> Circular puzzles replace fixed seat numbers with neighbours, opposites,
+> and clockwise counts. This lesson fixes the left-right convention around
+> a table, breaks rotational symmetry, and walks an eight-person puzzle
+> before adding hybrid facing, square tables, and floor-puzzle variants.
+
+[important]
+Memorise the convention once: facing the centre, a person's LEFT runs
+anti-clockwise around the table and their RIGHT runs clockwise, as seen
+from above. Facing outward reverses both. Every circular clue — "second to
+the left", "third to the right" — is counted in the sitter's frame, not
+the page's.
+[/important]
+
+## 1. The Circular Convention Box
+
+Picture a clock face on the page. A person at the bottom of the circle,
+facing the centre (facing up), has their left hand toward the page's
+left — the 8 o'clock side: **anti-clockwise**.
+
+```text
+Facing the CENTRE:   left = anti-clockwise , right = clockwise
+Facing OUTWARD:      left = clockwise      , right = anti-clockwise
+```
+
+**Counting "second to the left of X":** stand at X's seat facing the way
+X faces, move one seat to your left, then one more — that second seat is
+the answer. For centre-facing X, that is two seats anti-clockwise.
+
+[tip]
+Write a small arrow next to each person in your sketch: an L arrow for
+anti-clockwise when centre-facing. When a clue says "immediate right,"
+trace clockwise from that person — never from the page's perspective.
+[/tip]
+
+## 2. Breaking Rotational Symmetry
+
+A circle has no seat 1 — any rotation of a valid arrangement is also
+valid. So fix one person arbitrarily:
+
+1. Place the person named in the most-used clue at any seat, say the top
+   (12 o'clock) position.
+2. Build the rest relative to them.
+3. Answer questions relative to people, never to absolute seat numbers.
+
+[definition]
+**Rotational symmetry** means the circle can be spun without changing any
+clue. Fixing one person's seat destroys this symmetry and turns the
+circular puzzle into a fixed sequence of seats.
+[/definition]
+
+## 3. Worked Example: Eight Friends Around a Table
+
+Eight friends A, B, C, D, E, F, G, H sit around a circular table, all
+facing the centre.
+
+```text
+Clue 1: A sits second to the right of B.
+Clue 2: C sits immediately to the left of A.
+Clue 3: D sits opposite A.
+Clue 4: F sits immediately to the left of B.
+Clue 5: G sits second to the left of D.
+Clue 6: E sits immediately to the left of D.
+```
+
+Step-by-step (number seats 1-8 clockwise, B fixed at seat 1):
+
+```text
+Clue 1: A second to right of B  -> clockwise 2 from seat 1 = seat 3
+Clue 2: C immediately left of A -> anti-clockwise 1 from 3 = seat 2
+Clue 3: D opposite A            -> 8 seats, opposite = 4 away = seat 7
+Clue 4: F immediately left of B -> anti-clockwise 1 from 1 = seat 8
+Clue 5: G second to left of D   -> anti-clockwise 2 from 7 = seat 5
+Clue 6: E immediately left of D -> seat 6 ; H takes the last seat = 4
+```
+
+Final arrangement clockwise from B: **B, C, A, H, G, E, D, F**.
+
+**Answers:** who sits opposite B? Seat 5 = G. Who are A's immediate
+neighbours? C and H. Who sits third to the right of E? Clockwise from
+seat 6: seat 7 (D), seat 8 (F), seat 1 (B) — so **B**.
+
+## 4. Facing Outward and Hybrid Circles
+
+When everyone faces **outward**, both directions flip: a person's left is
+now clockwise. The clue "A sits second to the left of B" now counts two
+seats clockwise from B.
+
+**Hybrid puzzles** mix the two: some face the centre, some face outward.
+The method:
+
+1. Label each person with an inward or outward arrow as you read.
+2. Convert every directional clue using that person's own facing.
+3. Ignore facing for "opposite" — opposites are pure geometry.
+
+In a hybrid, the same clue "immediate left" can mean anti-clockwise for
+one person and clockwise for their neighbour, so never batch-convert.
+
+[warning]
+The most common circular error is mixing conventions mid-puzzle —
+applying centre-facing rules to an outward-facing person. If your diagram
+locks but one clue refuses to fit, re-check the facing of that clue's
+person before redrawing.
+[/warning]
+
+## 5. Rectangular and Square Tables
+
+At a square table with two people per side (eight total), most rules
+carry over, but note:
+
+| Feature | Circular table | Square table |
+| --- | --- | --- |
+| Neighbours | two (always adjacent) | two, except corner sitters have three |
+| Opposite | the seat half-way around | the person directly across the table |
+| "Second to the left" | two seats along the ring | counts people along the perimeter |
+
+Corner seats belong to two sides; a clue like "P sits at a corner on the
+north side" fixes both a corner and a side — stronger than any circular
+clue, so use it as your symmetry-breaker, exactly like fixing the first
+person in a circle.
+
+## 6. Complex Add-Ons
+
+**Floor puzzles** use the same engine with floors instead of seats:
+eight people on four floors, two per floor. "A lives on floor 3" is
+definite; "A lives above B" is relative; "C does not live on floor 1" is
+negative — the definite-relative-negative order still rules.
+
+**Adjacency constraints** import from linear puzzles: "exactly two
+people sit between X and Y" or "X and Y are not neighbours" prune
+possibilities after the main placements.
+
+**Combi-puzzles** join two formats — a row and a circle sharing people,
+or a double row feeding a circle. Solve the format with more definite
+clues first, then carry the fixed facts into the second format.
+
+## 7. Traps That Cost Marks
+
+- **Clockwise/anti-clockwise swap:** reading "left" as clockwise because
+  the page picture looks that way to you — trace the sitter's own frame.
+- **Counting the starting seat:** "second to the right of X" means X's
+  neighbour's neighbour, not X itself — off-by-one errors are endemic.
+- **Odd-count opposites:** with an odd number of seats, nobody sits
+  exactly opposite anyone; do not hunt for opposite pairs in a 7-seat
+  circle.
+- **Forgetting the wrap:** seat 8's clockwise neighbour is seat 1; the
+  ring closes, and counts continue across the top of your numbering.
+
+## 8. Strategy Summary
+
+| Stage | Move |
+| --- | --- |
+| Read the stem | note the count, the facing (centre/out/hybrid) |
+| Setup | draw the ring, fix the most-used person at the top |
+| Phase 1 | place "opposite" clues first in even-count circles |
+| Phase 2 | place immediate left/right clues, using each person's facing |
+| Phase 3 | apply between-counts and negative constraints |
+| Finish | verify every clue; answer relative questions, not seat numbers |
+
+[example]
+Exam method: **(1)** fix one person to kill rotational symmetry, **(2)**
+convert every "left/right" clue through the sitter's own facing —
+centre-facing means left is anti-clockwise, **(3)** use opposites early
+in even circles, **(4)** close the ring when counting across seat 8,
+**(5)** re-check every clue before answering.
+[/example]

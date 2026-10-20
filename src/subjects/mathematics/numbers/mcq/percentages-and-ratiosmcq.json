@@ -1,0 +1,77 @@
+{
+  "lessonId": "percentages-and-ratios",
+  "title": "Percentages and Ratios: Comparing Quantities",
+  "questions": [
+    {
+      "id": 1,
+      "question": "45% of ₹800 is:",
+      "options": ["₹360", "₹400", "₹45", "₹320"],
+      "correct": 0,
+      "rationale": "45/100 × 800 = 45 × 8 = ₹360."
+    },
+    {
+      "id": 2,
+      "question": "18 out of 60 expressed as a percentage is:",
+      "options": ["18%", "30%", "33.3%", "60%"],
+      "correct": 1,
+      "rationale": "(18/60) × 100 = 30%."
+    },
+    {
+      "id": 3,
+      "question": "A price rises from ₹250 to ₹300. The percentage increase is:",
+      "options": ["20%", "16.7%", "50%", "25%"],
+      "correct": 0,
+      "rationale": "Change/original = 50/250 = +20%. The denominator is always the ORIGINAL value."
+    },
+    {
+      "id": 4,
+      "question": "That price then falls from ₹300 back to ₹250. The percentage decrease is:",
+      "options": ["Exactly −20%, so it cancels the rise", "−16.7%", "−50%", "−25%"],
+      "correct": 1,
+      "rationale": "Now the original is 300: −50/300 ≈ −16.7%. Equal absolute steps are unequal in percent."
+    },
+    {
+      "id": 5,
+      "question": "A value increases 10%, then falls 10%. Compared to the start, it is now:",
+      "options": ["Back to exactly the start", "1% lower", "1% higher", "10% lower"],
+      "zolto": "1.10 \\times 0.90 = 0.99",
+      "correct": 1,
+      "rationale": "Successive changes multiply: 1.10 × 0.90 = 0.99, a net loss of 1%."
+    },
+    {
+      "id": 6,
+      "question": "₹600 is divided between Anu and Bilal in ratio 2 : 3. Anu receives:",
+      "options": ["₹200", "₹240", "₹300", "₹360"],
+      "correct": 1,
+      "rationale": "Five parts total → one part = ₹120; Anu's 2 parts = ₹240 (and Bilal gets ₹360)."
+    },
+    {
+      "id": 7,
+      "question": "Which ratio is equal to 2 : 3?",
+      "options": ["3 : 4", "4 : 6", "2 : 4", "5 : 6"],
+      "correct": 1,
+      "rationale": "Multiplying both terms by the same number keeps a ratio identical: 2:3 = 4:6 = 20:30."
+    },
+    {
+      "id": 8,
+      "question": "Adding 1 to BOTH terms of the ratio 2 : 3 gives 3 : 4, which is:",
+      "options": ["The same ratio as before", "A larger value overall but a different ratio", "Half of the original ratio", "Not a valid ratio"],
+      "correct": 1,
+      "rationale": "Ratios scale by multiplication, not addition — 2/3 ≈ 0.667 while 3/4 = 0.75, so the proportion changed."
+    },
+    {
+      "id": 9,
+      "question": "In the 2 : 3 split of ₹600, Anu's share as a fraction of the TOTAL is:",
+      "options": ["2/3", "3/5", "2/5", "1/2"],
+      "correct": 2,
+      "rationale": "Part-to-part 2:3 means part-to-whole 2/(2+3) = 2/5 for Anu and 3/5 for Bilal."
+    },
+    {
+      "id": 10,
+      "question": "A shopkeeper marks an item up 25% on a ₹400 cost, then discounts the marked price by 25%. The final price is:",
+      "options": ["₹400 exactly", "₹375", "₹425", "₹500"],
+      "correct": 1,
+      "rationale": "Marked price = 400 × 1.25 = ₹500; discounting: 500 × 0.75 = ₹375 — below cost, since the two changes don't cancel."
+    }
+  ]
+}

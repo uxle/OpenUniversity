@@ -1,0 +1,126 @@
+{
+  "lessonId": "processes-and-scheduling",
+  "title": "Processes and CPU Scheduling: Who Gets the Processor Next",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the difference between a program and a process?",
+      "options": [
+        "A program is a running instance; a process is a file on disk",
+        "A program is a passive file on disk; a process is that program in execution",
+        "They are two names for exactly the same thing",
+        "A process exists only after the program is uninstalled"
+      ],
+      "correct": 1,
+      "rationale": "A program is a passive file of instructions; a process is a program in execution, with memory and bookkeeping state created by the OS."
+    },
+    {
+      "id": 2,
+      "question": "A process whose time slice just expired, and which will run again later, moves from Running to which state?",
+      "options": [
+        "Waiting (blocked)",
+        "Terminated",
+        "Ready",
+        "New"
+      ],
+      "correct": 2,
+      "rationale": "On preemption (time slice end or arrival of a higher-priority process) the process moves from Running back to Ready; Waiting is only for I/O or events."
+    },
+    {
+      "id": 3,
+      "question": "Which statement about a context switch is correct?",
+      "options": [
+        "It performs useful user work while switching",
+        "It is pure overhead, since no user work happens during the switch",
+        "It happens only when a process terminates",
+        "It requires no register or state saving"
+      ],
+      "correct": 1,
+      "rationale": "A context switch saves one process's state into its PCB and loads another's; it is pure overhead of typically a few microseconds, including register reloads and cache pollution."
+    },
+    {
+      "id": 4,
+      "question": "The convoy effect, where short jobs queue behind one long job, is a weakness of which scheduling algorithm?",
+      "options": [
+        "First-come, first-served (FCFS)",
+        "Shortest job first (SJF)",
+        "Round Robin",
+        "Priority scheduling with aging"
+      ],
+      "correct": 0,
+      "rationale": "In the worked example, FCFS ran P1 (burst 24) first, so P2 and P3 waited 24 and 27 ms — short jobs stuck behind a long one, like cars behind a truck."
+    },
+    {
+      "id": 5,
+      "question": "In the worked example (P1 = 24, P2 = 3, P3 = 3, all arriving at 0), what average waiting time does SJF achieve?",
+      "options": [
+        "17 ms",
+        "3 ms",
+        "5.7 ms",
+        "27 ms"
+      ],
+      "correct": 1,
+      "rationale": "SJF runs P2 (0–3), P3 (3–6), then P1 (6–30): waiting times are 0, 3, and 6 — an average of 3 ms, which is provably optimal for a fixed batch."
+    },
+    {
+      "id": 6,
+      "question": "Waiting time for a process is computed as:",
+      "options": [
+        "Completion time − arrival time",
+        "Turnaround time − CPU burst",
+        "First response − arrival",
+        "Time slice × number of processes"
+      ],
+      "correct": 1,
+      "rationale": "Turnaround = completion − arrival, and waiting = turnaround − burst; response time is first response − arrival."
+    },
+    {
+      "id": 7,
+      "question": "Which pair of problems does SJF suffer from?",
+      "options": [
+        "Convoy effect and no preemption",
+        "Needing future burst lengths and possible starvation of long jobs",
+        "Excessive context switches and convoy effect",
+        "Aging and priority inversion"
+      ],
+      "correct": 1,
+      "rationale": "SJF needs to know (or estimate) future burst lengths, and long jobs can starve while a stream of shorter jobs keeps arriving."
+    },
+    {
+      "id": 8,
+      "question": "What is the standard fix for starvation in priority scheduling?",
+      "options": [
+        "Increasing the time quantum to infinity",
+        "Using FCFS as a tiebreaker only",
+        "Aging — gradually raising the priority of processes that wait too long",
+        "Removing all priorities and using SJF"
+      ],
+      "correct": 2,
+      "rationale": "Aging gradually raises the priority of long-waiting processes so even the humblest job eventually runs."
+    },
+    {
+      "id": 9,
+      "question": "Which statement distinguishes concurrency from parallelism?",
+      "options": [
+        "Concurrency requires multiple cores; parallelism requires one",
+        "Concurrency is interleaved progress on one core; parallelism is simultaneous execution on several cores",
+        "They are identical concepts from different textbooks",
+        "Parallelism is only about structure, not simultaneity"
+      ],
+      "correct": 1,
+      "rationale": "Concurrency is about structure — many processes make progress by interleaving on one core; parallelism is simultaneity across several cores. A single-core machine is concurrent but never parallel."
+    },
+    {
+      "id": 10,
+      "question": "Compared with a process, a thread is cheaper to create and communicate through because threads:",
+      "options": [
+        "Have their own isolated address space",
+        "Share one address space, code, and open files with sibling threads",
+        "Run only in kernel mode",
+        "Never need locks or synchronization"
+      ],
+      "correct": 1,
+      "rationale": "Threads inside one process share its address space, so creation is light and communication uses shared variables — though that shared state needs locks and reduces failure isolation."
+    }
+  ]
+}

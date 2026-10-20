@@ -1,0 +1,139 @@
+# Probability: Measuring Chance with Numbers
+
+> Probability turns "probably" and "rarely" into precise fractions
+> between 0 and 1 — favourable over total, plus honest counting.
+
+## 1. Chance Has a Grammar
+
+A **random experiment** has outcomes that cannot be predicted in
+advance (a coin toss, a dice roll, a card draw). The **sample space**
+lists every possible outcome; an **event** is any subset of it.
+
+- One coin: the outcomes are H and T. One die: 1, 2, 3, 4, 5, 6.
+- Two coins: HH, HT, TH, TT — four outcomes, not three (HT and TH
+  are different paths to the same tally).
+
+## 2. The Probability Formula
+
+When all outcomes are **equally likely**:
+
+@math label="eq:probability-def"
+P(E) = \frac{\text{favourable outcomes}}{\text{total outcomes}}
+@/math
+
+Probability always lands between 0 and 1: a **sure event** scores
+P = 1, an **impossible event** P = 0, and "even on a die" sits at 1/2.
+
+## 3. The Standard Sample Spaces
+
+| Device | Sample space | Size |
+| --- | --- | --- |
+| One coin | H, T | 2 |
+| Two coins | HH, HT, TH, TT | 4 |
+| One die | 1–6 | 6 |
+| Two dice | ordered pairs (1,1) to (6,6) | 36 |
+| Full deck | 4 suits × 13 cards (12 face cards, 4 aces) | 52 |
+
+Suits: red **hearts** and **diamonds**, black **spades** and **clubs**
+— 26 red and 26 black in all.
+
+## 4. Two Dice: Count the Ways
+
+Sum 7 arises from (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — six pairs.
+
+@chart bar title="Ways to make each sum with two dice"
+labels:
+Sum 2
+Sum 3
+Sum 4
+Sum 5
+Sum 6
+Sum 7
+Sum 8
+Sum 9
+Sum 10
+Sum 11
+Sum 12
+
+data:
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+@/chart
+
+@math label="eq:sum7"
+P(\text{sum} = 7) = \frac{6}{36} = \frac{1}{6}
+@/math
+
+Sum 7 is the likeliest total; sums 2 and 12 have a single path each.
+
+[example]
+Two fair coins: what is the probability of **at least one** head?
+The sample space is HH, HT, TH, TT; three outcomes contain a head, so
+P = 3/4 — only TT fails the event.
+[/example]
+
+## 5. Cards, Carefully Counted
+
+[example]
+Draw one card. P(king or heart): 4 kings + 13 hearts − 1 king of
+hearts (counted twice) = 16 favourable cards, so P = 16/52 = 4/13 —
+naive addition double-counts the king of hearts.
+[/example]
+
+| Question | Favourable | Probability |
+| --- | --- | --- |
+| P(heart) | 13 | 1/4 |
+| P(face card) | 12 | 3/13 |
+| P(red ace) | 2 | 1/26 |
+| P(king or heart) | 16 | 4/13 |
+
+## 6. Combining Events
+
+- **Complement rule:** P(not E) = 1 − P(E). At least one head in
+  three tosses = 1 − P(all tails) = 1 − 1/8 = 7/8.
+- **Addition rule:** P(A or B) = P(A) + P(B) − P(A and B); the overlap
+  vanishes for **mutually exclusive** events: P(king or queen) = 2/13.
+- **Multiplication rule:** for **independent** events, P(A and B) =
+  P(A) × P(B). Two heads = 1/2 × 1/2 = 1/4.
+
+Without replacement, independence breaks: P(two kings) = 4/52 × 3/51
+= 1/221 — the first king is now missing.
+
+## 7. Traps That Cost Marks
+
+[warning]
+Independent is not the opposite of mutually exclusive. Two coins
+landing heads are independent — and both can happen. Mutually
+exclusive events cannot both occur; independent events do not
+affect each other's chances.
+[/warning]
+
+- "At least one" wants the complement: 1 − P(none); and ordered
+  pairs matter — HT ≠ TH, so two-coin questions have four outcomes.
+- 0 probability means impossible; a tiny probability still means
+  possible — never confuse "unlikely" with "cannot".
+
+## 8. Experimental vs Theoretical
+
+**Theoretical probability** reasons from symmetry (each die face
+1/6); **experimental probability** uses observed frequency — 52 heads
+in 200 tosses estimates 0.26. The **law of large numbers** says the
+experimental value settles toward the theoretical one as trials grow.
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| P(sum 7 with two dice)? | 6/36 = 1/6 |
+| Two coins, at least one head? | 3/4 |
+| P(king or heart)? | 16/52 = 4/13 |
+| Two kings without replacement? | 4/52 × 3/51 = 1/221 |

@@ -22,8 +22,25 @@
 <body>
   <div>
     <h1>404</h1>
-    <p>This page doesn't exist yet.</p>
-    <p><a href="/">Back to OpenKnowledge</a></p>
+    <p>This page doesn't exist.</p>
+    <!-- GitHub Pages serves this file for any URL under the site that
+         doesn't map to a real file. The app itself lives at
+         /OpenUniversity/ and does all its routing through location.hash,
+         so the right move is to send stray deep links back there.
+         (A plain href="/" would escape to the user's root site, not the
+         project — this file sits at the repo root but is served from a
+         project subpath, making relative "./" resolve differently per
+         depth. Absolute path is the one form that's correct here.) -->
+    <p><a href="/OpenUniversity/">Back to OpenKnowledge</a></p>
+    <script>
+      // Auto-redirect immediately; the link above remains the no-JS
+      // fallback. Preserve any #fragment so shared deep links to
+      // #/subjects/... still land where they were headed.
+      (function () {
+        var target = "/OpenUniversity/" + (location.hash || "");
+        location.replace(target);
+      })();
+    </script>
   </div>
 </body>
 </html>

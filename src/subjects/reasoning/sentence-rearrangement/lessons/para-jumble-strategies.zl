@@ -1,0 +1,184 @@
+# Para Jumbles: Reordering Sentences with Structure Signals
+
+> A para jumble shuffles four to six sentences and asks for the one
+> coherent order. The sentences carry hidden structure signals — pronouns,
+> demonstratives, conjunctions, chronology markers — and this lesson trains
+> you to read them instead of guessing what "sounds right."
+
+[important]
+Para jumbles are scored in SSC, banking, and MBA entrance exams precisely
+because instinct fails under time pressure. Do not start with the
+sentence that sounds like an opener; start by hunting **mandatory pairs**
+— two sentences that must sit together because the second cannot exist
+without the first.
+[/important]
+
+## 1. What a Para Jumble Tests
+
+You receive 4-6 sentences labelled A to E (or P to S) in shuffled order
+and 4-5 options of full sequences. You must pick the order that reads as
+one coherent paragraph. Two skills decide your score: spotting
+**structure signals** that lock sentences together, and eliminating
+options using those locks instead of full re-reads.
+
+[definition]
+A **mandatory pair** is a pair of sentences where one contains a word —
+a pronoun, a demonstrative, a repeated noun — that grammatically requires
+the other to come before it. Every correct sequence contains every
+mandatory pair intact.
+[/definition]
+
+## 2. Finding the Opening Sentence
+
+The opener has a recognisable fingerprint:
+
+| Signal of an opener | Why it works |
+| --- | --- |
+| Introduces a subject with its full name | nothing earlier is needed |
+| States a general fact or definition | sets up everything after |
+| Gives historical or broad context | details follow, never precede |
+| Contains no pronoun with an outside referent | "he", "it", "these" need an antecedent |
+| Starts with no conjunction | "But", "So", "Moreover" continue, not open |
+
+Likewise, the **closing sentence** often starts with "Therefore", "Thus",
+or "However" plus a summarising judgment, or completes a story's final
+action. A sentence opening with a time marker like "Only in 2005" or
+"Eventually" is a late-in-order candidate.
+
+## 3. Chronology and Sequence Markers
+
+Stories and processes order themselves by time. Mark each sentence with
+its time stamp:
+
+```text
+"in 1901"      -> early
+"then"         -> after the previous event
+"for decades"  -> a span, after the introduction
+"subsequently" -> one step later than its pair
+"finally"      -> last
+```
+
+Dates give absolute anchors; connectors like "then" and "subsequently"
+give relative anchors. Build the timeline first, then fine-tune with
+pronoun links.
+
+## 4. Transition Signals Table
+
+| Signal type | Example | What it demands |
+| --- | --- | --- |
+| Pronoun | he, she, it, they | a named noun in an earlier sentence |
+| Demonstrative | this, these, those | its noun named earlier — "these laws" after the laws are listed |
+| Conjunction pair | not only ... but also; either ... or | the two halves adjacent, first before second |
+| Contrast connector | however, on the contrary | a stated opposite position before it |
+| Cause-effect | therefore, as a result, thus | the reason stated before the result |
+| Addition | moreover, furthermore | a same-direction sentence before it |
+| Acronym or short form | "the WHO" | the full form ("World Health Organization") earlier |
+
+[tip]
+Work from the strongest signals down: pronouns and demonstratives lock
+pairs almost mechanically; tone and topic flow are the weakest signals
+and should only break ties the grammar leaves open.
+[/tip]
+
+## 5. Linking Strategies
+
+**Noun-pronoun chains:** a sentence introducing "a young scientist" must
+precede every "he" or "his" that follows. Chain the noun to its pronouns
+and the order locks.
+
+**Definite article ladder:** a noun appears first with "a" or "an"
+("a deep pit"), and later mentions use "the" ("the pit"). The "a"
+sentence comes first — for things exactly as for people.
+
+**Acronym expansion:** "the World Health Organization" precedes "the
+WHO". The spelled-out version always opens.
+
+**Cause before effect:** a sentence beginning "Therefore" or "As a
+result" never precedes the sentence stating the reason.
+
+## 6. Worked Example: Five-Sentence Jumble
+
+```text
+A. It consists of at least 30 bronze gears housed in a wooden frame.
+B. Only in 2005, using modern X-ray imaging, did researchers finally
+   read its hidden inscriptions.
+C. The Antikythera mechanism is an ancient Greek device discovered in
+   1901 in a shipwreck off the island of Antikythera.
+D. These gears could predict eclipses and track the positions of the
+   Sun and the Moon.
+E. For decades after its discovery, scholars could not explain how the
+   device worked.
+```
+
+Step-by-step reasoning:
+
+1. **Hunt the opener.** C introduces the subject by full name, gives a
+   date, and has no pronoun needing support. A's "It", D's "These gears",
+   and E's "its" all need antecedents; B starts with "Only in 2005", a
+   late marker. **C opens.**
+2. **Mandatory pairs.** A follows C: "It" refers to the mechanism. D
+   follows A: "These gears" refers to the 30 bronze gears A introduced.
+   B follows E: E states the decades-old failure, B resolves it.
+3. **Chronology check.** 1901 (C) ... decades of failure (E) ... 2005
+   (B) — the time order runs C, A, D, E, B, with A and D describing the
+   device between discovery and failure.
+4. **Answer: C - A - D - E - B.** Read it through: the device is
+   introduced, its gears described, their function explained, the long
+   mystery stated, and the 2005 resolution closes the paragraph.
+
+## 7. Fixed-Sentence Variants
+
+Many exams fix one or two positions and ask you to order the rest:
+
+- **First sentence given:** skip opener-hunting; start with mandatory
+  pairs, and check which sentence naturally follows the given opener.
+- **Last sentence given:** the closer is fixed, so any sentence with a
+  concluding marker must sit just before it.
+- **First and last given:** order only the middle; test the remaining
+  sentences' links to the two anchors directly.
+
+Fixed sentences are gifts: they pre-solve the hardest positions and let
+you eliminate any option that moves them.
+
+## 8. Elimination, Verification, and Time
+
+| Step | Action |
+| --- | --- |
+| 1 | mark every pronoun, demonstrative, and connector |
+| 2 | list the mandatory pairs and the opener candidates |
+| 3 | eliminate every option that breaks a pair or opens with a pronoun |
+| 4 | if two options survive, read both fully — pick the smoother logic |
+| 5 | verify: read your chosen sequence once, start to finish |
+
+[warning]
+Never verify by checking whether an option "sounds like" an essay. Verify
+by testing each link: does the pronoun have its noun *before* it? Does
+"therefore" follow its reason? One broken link disqualifies the option,
+no matter how fluent it sounds.
+[/warning]
+
+Budget **about 90 seconds per para jumble**: 20 seconds marking signals,
+30 seconds building mandatory pairs, 40 seconds eliminating and
+verifying. If two options survive past 90 seconds, choose the one whose
+*second* sentence links more tightly to the opener — the opening link
+carries more information than the closing link. Mark six-sentence jumbles
+for a second pass; they take longer than their marks are worth on the
+first visit.
+
+## 9. Strategy Summary
+
+| Tool | Use it to |
+| --- | --- |
+| Pronoun chain | lock a noun before its pronouns |
+| Definite article ladder | lock "a X" before "the X" |
+| Conjunction pairs | lock two halves adjacently, in order |
+| Chronology markers | build the timeline skeleton |
+| Opening fingerprint | choose the opener without guessing |
+| Mandatory pairs | eliminate options in bulk |
+
+[example]
+Exam method: **(1)** underline every signal word, **(2)** lock mandatory
+pairs starting with pronouns and demonstratives, **(3)** pick the opener
+by the no-pronoun, full-name rule, **(4)** eliminate options pair by
+pair, **(5)** read the final sequence once for logic, then commit.
+[/example]

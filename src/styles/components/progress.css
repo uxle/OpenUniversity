@@ -4,23 +4,42 @@
   border-radius: var(--ou-radius-pill);
   background: var(--ou-border-strong);
   overflow: hidden;
+  position: relative;
 }
 .ou-progress-bar__fill {
   height: 100%;
   width: 100%;
+  /* Flat ink fill — minimal, no hue */
   background: var(--ou-accent);
   border-radius: inherit;
   transform-origin: left center;
   transform: scaleX(var(--ou-progress, 0));
-  transition: transform var(--ou-transition-base);
+  transition: transform var(--ou-transition-slow);
 }
+/* Indeterminate / in-progress shimmer variant */
+.ou-progress-bar__fill--indeterminate {
+  transform: scaleX(1);
+  background: linear-gradient(
+    90deg,
+    var(--ou-accent) 0%,
+    color-mix(in srgb, var(--ou-accent) 35%, transparent) 40%,
+    var(--ou-accent) 60%,
+    color-mix(in srgb, var(--ou-accent) 35%, transparent) 100%
+  );
+  background-size: 200% 100%;
+  animation: ou-progress-shimmer 1.5s ease-in-out infinite;
+}
+
 .ou-progress-ring {
   position: relative;
   display: inline-grid;
   place-items: center;
   flex-shrink: 0;
 }
-.ou-progress-ring circle { transition: stroke-dashoffset var(--ou-transition-base); }
+.ou-progress-ring circle {
+  transition: stroke-dashoffset var(--ou-transition-slow);
+  stroke-linecap: round; /* smooth rounded stroke ends */
+}
 .ou-progress-ring__label {
   position: absolute;
   font-size: var(--ou-fs-xs);

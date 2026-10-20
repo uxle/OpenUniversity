@@ -29,6 +29,55 @@
       "options": ["He", "It", "Name (e.g., Ram)", "They"],
       "correct": 3,
       "rationale": "'We', 'I', 'You', and 'They' are treated as plural subjects, while 'He', 'She', 'It', and singular names are singular subjects."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a common helping verb used for both singular and plural subjects?",
+      "options": ["Is", "Did", "Are", "Was"],
+      "correct": 1,
+      "rationale": "'Did', 'Had', 'Will', 'May', and 'Can' are common helping verbs used with both singular and plural; 'Is/Was' are singular while 'Are' is plural."
+    },
+    {
+      "id": 6,
+      "question": "Which sentence correctly applies the 'Many a' rule?",
+      "options": ["Many a boy are playing outside.", "Many a boy is playing outside.", "Many a boys is playing outside.", "Many a boy were playing outside."],
+      "correct": 1,
+      "rationale": "'Many a' takes a singular subject and a singular verb — 'Many a boy is playing outside.'"
+    },
+    {
+      "id": 7,
+      "question": "Which sentence correctly applies the 'A number of' rule?",
+      "options": ["A number of boys wants to join our group.", "A number of boys want to join our group.", "A number of boys wanting to join our group.", "A number of boy want to join our group."],
+      "correct": 1,
+      "rationale": "'A number of' takes a plural subject and plural verb — 'A number of boys want to join our group.'"
+    },
+    {
+      "id": 8,
+      "question": "'The number of' as an expression takes which type of verb?",
+      "options": ["Plural", "Singular", "Both, depending on tense", "No verb needed"],
+      "correct": 1,
+      "rationale": "Per Rule 1, expressions like 'The number of', 'Much', 'Little', and 'The whole' take a singular subject followed by a singular verb."
+    },
+    {
+      "id": 9,
+      "question": "Spot the error: 'People has been warning in advance about the crisis.'",
+      "options": ["'People' should be replaced with 'Person'", "'has been' should be 'have been'", "'warning' should be 'warned'", "'about' should be 'of'"],
+      "correct": 1,
+      "rationale": "'People' is a plural subject, so it requires the plural verb 'have been' instead of 'has been'."
+    },
+    {
+      "id": 10,
+      "question": "Choose the correct sentence: He, not his friends, ______ lazy.",
+      "options": ["are", "is", "were", "have been"],
+      "correct": 1,
+      "rationale": "The true subject here is 'He' (singular), not 'his friends'; hence the singular verb 'is' is correct."
+    },
+    {
+      "id": 11,
+      "question": "Fill in the blank: A little patience ______ necessary to find the truth.",
+      "options": ["are", "is", "were", "have been"],
+      "correct": 1,
+      "rationale": "'A little' is one of the specific expressions that take a singular verb, so 'is' is correct."
     }
   ]
 }

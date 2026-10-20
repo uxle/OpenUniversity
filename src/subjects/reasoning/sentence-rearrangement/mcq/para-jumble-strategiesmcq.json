@@ -1,0 +1,126 @@
+{
+  "lessonId": "para-jumble-strategies",
+  "title": "Para Jumbles: Reordering Sentences with Structure Signals",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a mandatory pair?",
+      "options": [
+        "Two sentences with equal word counts",
+        "Two sentences where one contains a word that grammatically requires the other before it",
+        "The first and last sentences of any paragraph",
+        "Two sentences written by the same author"
+      ],
+      "correct": 1,
+      "rationale": "A mandatory pair is locked by grammar: a pronoun, demonstrative, or repeated noun in one sentence needs its antecedent in the other. Every correct sequence keeps every mandatory pair intact."
+    },
+    {
+      "id": 2,
+      "question": "Which sentence makes the strongest opening-sentence candidate?",
+      "options": [
+        "One beginning with 'However, the results were surprising'",
+        "One beginning with 'It consists of several moving parts'",
+        "One that introduces the subject by its full name with a date and no unsupported pronouns",
+        "One beginning with 'Therefore, the plan was abandoned'"
+      ],
+      "correct": 2,
+      "rationale": "Openers introduce the subject with its full name, give context, and carry no pronoun needing an earlier antecedent. 'However' and 'Therefore' continue earlier ideas, and 'It' needs support, so those sentences cannot open."
+    },
+    {
+      "id": 3,
+      "question": "In the worked example, why must sentence C ('The Antikythera mechanism is an ancient Greek device discovered in 1901...') come first?",
+      "options": [
+        "It is the longest sentence",
+        "It introduces the subject by full name and has no pronoun needing an antecedent",
+        "It starts with 'Only in 2005'",
+        "It contains the word 'gears'"
+      ],
+      "correct": 1,
+      "rationale": "C names the subject in full and relies on nothing earlier, while A's 'It', D's 'These gears', and E's 'its' all need antecedents. That fingerprint marks C as the opener."
+    },
+    {
+      "id": 4,
+      "question": "Sentence D reads 'These gears could predict eclipses...'. Which sentence must precede it?",
+      "options": [
+        "The sentence introducing the 30 bronze gears",
+        "The sentence about the 2005 X-ray imaging",
+        "The sentence about scholars' decades of failure",
+        "Any sentence mentioning Greece"
+      ],
+      "correct": 0,
+      "rationale": "The demonstrative 'These gears' requires its noun — the 30 bronze gears — to be named in an earlier sentence, which is sentence A. This mandatory pair A-D locks their order."
+    },
+    {
+      "id": 5,
+      "question": "A sentence begins 'A boy was standing near the gate.' A later sentence reads 'The boy then walked inside.' What fixes their order?",
+      "options": [
+        "Chronology markers",
+        "The definite article ladder: the 'a' introduction precedes the 'the' reference",
+        "The conjunction pair rule",
+        "Acronym expansion"
+      ],
+      "correct": 1,
+      "rationale": "A noun appears first with the indefinite article 'a' and is referred to later with the definite 'the' once known. The 'a' sentence must come before the 'the' sentence."
+    },
+    {
+      "id": 6,
+      "question": "One sentence spells out 'World Health Organization' and another later uses 'the WHO'. What ordering does this force?",
+      "options": [
+        "The abbreviation may come first",
+        "The full form must precede the abbreviation",
+        "They can appear in either order",
+        "They must be adjacent sentences"
+      ],
+      "correct": 1,
+      "rationale": "Acronym expansion demands the full form before the short form — 'the World Health Organization' must be named before 'the WHO' is used."
+    },
+    {
+      "id": 7,
+      "question": "What does a sentence beginning with 'Therefore' demand?",
+      "options": [
+        "That the reason be stated in an earlier sentence",
+        "That it open the paragraph",
+        "That it contain a pronoun",
+        "Nothing in particular"
+      ],
+      "correct": 0,
+      "rationale": "Cause-effect order puts the reason before the result, so a 'Therefore' sentence requires the reason earlier and can never open the paragraph."
+    },
+    {
+      "id": 8,
+      "question": "In a fixed-sentence variant where the LAST sentence is given, what should you do with a sentence that starts with a concluding marker like 'Thus, the scheme failed'?",
+      "options": [
+        "Place it first",
+        "Place it immediately before the given last sentence",
+        "Delete it from consideration",
+        "Place it exactly in the middle"
+      ],
+      "correct": 1,
+      "rationale": "When the closer is fixed, any sentence with a concluding marker must sit just before it, because it feeds the final summary — the fixed sentences pre-solve the hardest positions."
+    },
+    {
+      "id": 9,
+      "question": "According to the lesson, what is the correct final verification for a chosen sequence?",
+      "options": [
+        "Check that the word counts of sentences increase",
+        "Read the sequence once, start to finish, testing that every pronoun and connector has its support before it",
+        "Confirm the first sentence is the shortest",
+        "Compare the sequence against real-world facts"
+      ],
+      "correct": 1,
+      "rationale": "Verification means testing each link: does the pronoun have its noun before it? Does 'therefore' follow its reason? One broken link disqualifies an option no matter how fluent it sounds."
+    },
+    {
+      "id": 10,
+      "question": "If two options survive elimination past your 90-second budget, which tie-break does the lesson recommend?",
+      "options": [
+        "Pick the option with the longer first sentence",
+        "Choose the one whose second sentence links more tightly to the opener",
+        "Pick the option whose last sentence is shortest",
+        "Choose the option that lists more dates"
+      ],
+      "correct": 1,
+      "rationale": "The opening link carries more information than the closing link, so when two options survive, prefer the one whose second sentence connects more tightly to the opener."
+    }
+  ]
+}

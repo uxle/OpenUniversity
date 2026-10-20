@@ -1,0 +1,140 @@
+# Processes and CPU Scheduling: Who Gets the Processor Next
+
+> A program on disk is inert; a process is that program brought to
+> life, competing for the CPU. The scheduler decides who runs next.
+
+## 1. From Program to Process
+
+A **program** is a passive file on disk; a **process** is that
+program *in execution* — code loaded into memory, plus bookkeeping.
+
+@diagram tree id="process-states" layout="tree" aria="Process state machine with transition triggers from new to terminated"
+  "New (OS admits it)" -> "Ready"
+  "Ready (dispatcher picks it)" -> "Running"
+  "Running (timer expires)" -> "Ready"
+  "Running (requests I/O)" -> "Waiting"
+  "Running (finishes or is killed)" -> "Terminated"
+  "Waiting (event completes)" -> "Ready"
+@/diagram
+
+[definition]
+**Preemption** is taking the CPU away from a running process before
+it finishes — its time slice ran out or a more urgent one arrived.
+[/definition]
+
+## 2. The PCB and the Cost of Switching
+
+The OS keeps one **Process Control Block (PCB)** per process — the
+process's identity card in kernel memory:
+
+| PCB field | Contents |
+| --- | --- |
+| Process ID and state | Unique number; ready, running, waiting, ... |
+| Program counter + registers | Where execution is; saved CPU contents |
+| Scheduling info | Priority, quantum used, queue links |
+| Memory and I/O info | Page tables; open files, devices |
+
+A **context switch** saves the current process's state into its PCB
+and loads the next process's. It is pure overhead — no user work
+happens during a switch — costing microseconds.
+
+## 3. Processes vs Threads
+
+A **thread** is a unit of execution *inside* a process; sibling
+threads share its address space, code, and open files.
+
+| Property | Process | Thread |
+| --- | --- | --- |
+| Address space | Own, isolated | Shared with siblings |
+| Creation cost | Heavy — new memory maps | Light — stack plus registers |
+| Communication | Pipes and messages, slower | Shared variables, needs locks |
+| Crash impact | One death rarely harms others | One bad thread corrupts all |
+
+## 4. What a Scheduler Tries to Optimize
+
+The unit scheduled is the **CPU burst** — a stretch of pure
+computation between two I/O requests. Interactive systems care most
+about **response time**; batch systems care about throughput.
+
+| Criterion | Meaning | Formula or idea |
+| --- | --- | --- |
+| CPU utilization | Keep the CPU busy | Percent of time busy |
+| Throughput | Work completed | Processes finished per unit time |
+| Turnaround time | Total time in the system | Completion − arrival |
+| Waiting time | Time in the ready queue | Turnaround − CPU burst |
+| Response time | React quickly to input | First response − arrival |
+
+## 5. A Worked Example: Three Processes
+
+| Process | Arrival | Burst |
+| --- | --- | --- |
+| P1 | 0 | 24 |
+| P2 | 0 | 3 |
+| P3 | 0 | 3 |
+
+**FCFS** (first-come, first-served) runs them in arrival order —
+P1 (0–24), P2 (24–27), P3 (27–30); waits 0, 24, 27, average 17 ms.
+The long P1 drags the short jobs behind it: the **convoy effect**.
+
+**SJF** (shortest job first) runs P2 (0–3), P3 (3–6), P1 (6–30);
+waits 0, 3, 6 — average 3 ms, provably optimal for a fixed batch.
+
+[warning]
+SJF's optimality has two prices: it must know future bursts (in
+practice estimated from past ones), and long jobs can **starve**
+while shorter jobs keep arriving.
+[/warning]
+
+**Round Robin** with quantum q = 4 ms: P1 runs 0–4, P2 finishes
+4–7, P3 finishes 7–10, P1 runs 10–30; waits 6, 4, 7, average ≈
+5.7 ms — a bit worse than SJF, but every process touches the CPU
+quickly, which interactive users feel.
+
+@chart bar title="Average waiting time in the worked example (ms)"
+labels:
+FCFS
+SJF
+Round Robin
+
+data:
+17
+3
+5.7
+@/chart
+
+## 6. The Algorithm Zoo
+
+**SRTF** (shortest remaining time first) is preemptive SJF: switch
+whenever an arrival needs less time than the running job has left.
+**Priority scheduling** runs the highest-priority ready process, but
+can starve low-priority ones unless **aging** raises the priority of
+long-waiting processes.
+
+| Algorithm | Preemptive? | Starvation? | Signature property |
+| --- | --- | --- | --- |
+| FCFS | No | No | Simple FIFO; convoy effect |
+| SJF | No | Yes | Optimal average waiting time |
+| SRTF | Yes | Yes | Preemptive SJF, better response |
+| Round Robin | Yes | No | Fair slices; quantum trade-off |
+| Priority | Either | Yes | Aging is the standard fix |
+
+[tip]
+Round Robin's quantum is a trade-off: too large and it degenerates
+into FCFS; too small and context-switch overhead dominates.
+[/tip]
+
+## 7. Concurrency vs Parallelism
+
+**Concurrency** is structure: many processes make progress by
+interleaving on one core. **Parallelism** is simultaneity: several
+cores truly execute at once. The **dispatcher** hands the CPU to the
+chosen process — context switch, switch to user mode, jump.
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Context switch | Save one PCB, load another; pure overhead |
+| Turnaround / waiting | Completion − arrival / turnaround − burst |
+| Convoy effect | Short jobs stuck behind one long job (FCFS) |
+| Concurrency vs parallelism | Interleaved progress vs simultaneous execution |

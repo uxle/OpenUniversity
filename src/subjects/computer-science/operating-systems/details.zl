@@ -9,4 +9,7 @@
 
 @lessons {
   lesson1
+  processes-and-scheduling
+  memory-management
+  file-systems-deadlocks-and-virtualization
 }

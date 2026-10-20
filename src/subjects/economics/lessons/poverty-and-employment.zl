@@ -1,0 +1,120 @@
+# Poverty, Inequality, and Unemployment
+
+> Poverty is lack of the minimum needed to live; inequality is how
+> unevenly what exists is spread; unemployment is labour left idle —
+> three failures a growing GDP alone cannot fix.
+
+[definition]
+**Absolute poverty** means income too low to meet a defined minimum
+of basic needs (food, shelter, clothing). **Relative poverty**
+means income far below the society's average — the poor of rich
+countries are relatively, not absolutely, poor.
+[/definition]
+
+## 1. Measuring Poverty in India
+
+Poverty lines were set by expert committees, each revising the
+methodology:
+
+| Committee | Year | Approach |
+| --- | --- | --- |
+| Alagh | 1979 | Calorie norm — 2,400 rural / 2,100 urban per capita/day |
+| Lakdawala | 1993 | Retained calories; expenditure-based poverty line |
+| Tendulkar | 2009 | Mixed reference — private consumption of goods with implicit norms |
+| Rangarajan | 2014 | Higher spending norm: about ₹972 rural / ₹1,407 urban per month |
+
+Based on the Tendulkar line, India's poverty ratio fell from about
+45% in 1993–94 to about 22% in 2011-12 — roughly 27 crore people
+exiting poverty in two decades of fast growth.
+
+## 2. Multidimensional Poverty (MPI)
+
+The **Multidimensional Poverty Index**, developed by UNDP with the
+**Oxford Poverty and Human Development Initiative (OPHI)**, measures
+poverty in **three dimensions** with ten indicators:
+
+- **Health** — nutrition, child mortality
+- **Education** — years of schooling, school attendance
+- **Living standards** — cooking fuel, sanitation, drinking water,
+  electricity, housing, household assets
+
+A household is poor if the weighted sum of deprivations crosses a
+threshold — income never appears; deprivations do.
+
+## 3. Causes and Remedies
+
+Causes: low income growth for the bottom, unemployment, poor
+education and health, assetlessness, and social exclusion.
+
+Flagship anti-poverty programmes:
+
+| Programme | Year | Core idea |
+| --- | --- | --- |
+| MGNREGA | 2005 | Legal guarantee of 100 days of wage employment per rural household |
+| NRLM (Ajeevika) | 2011 | Self-help groups, credit, livelihoods |
+| NFSA | 2013 | Right to subsidised food grains — two-thirds of population |
+| PM Awas / Jan Dahan | 2015+ | Housing for the poor; universal bank accounts |
+
+## 4. Inequality: Lorenz Curve and Gini
+
+The **Lorenz curve** plots cumulative income share against cumulative
+population share (from poorest up); the farther it sags below the
+45° line of equality, the more unequal the distribution. The **Gini
+coefficient** summarises it:
+
+@math
+Gini = \frac{Area\ between\ diagonal\ and\ Lorenz\ curve}{Total\ area\ under\ diagonal}
+@/math
+
+A Gini of **0** is perfect equality; **1** is one person owning
+everything. India's consumption Gini sits around the mid-0.3s —
+moderate by cross-country standards but rising with growth.
+
+## 5. Types of Unemployment
+
+| Type | Meaning | Typical example |
+| --- | --- | --- |
+| Structural | Skills mismatch — jobs exist, skills don't | Old weaver when mills automate |
+| Frictional | Between jobs while searching | Engineer switching cities |
+| Cyclical | Demand-deficient, follows downturns | Construction layoffs in recession |
+| Seasonal | Work only part of the year | Farm labour, tourism workers |
+| Disguised | More workers than needed — MP near zero | Family members on a small farm |
+| Open | Willing, seeking, getting nothing | Educated job-seeker unemployed |
+
+## 6. Measuring Unemployment in India
+
+The Periodic Labour Force Survey uses reference periods:
+
+- **Usual Status (US)** — activity over the past year; captures the
+  long-term picture (lowest rate, includes marginal work).
+- **Current Weekly Status (CWS)** — activity over the past week.
+- **Current Daily Status** — each day of the week counted.
+
+[important title="Disguised unemployment hides in plain sight"]
+Five family members working a plot that two could farm are not
+recorded as unemployed — they *appear* employed, yet their marginal
+product is near zero. Shifting one out loses nothing, which is why
+surplus farm labour can migrate to industry without hurting output.
+[/important]
+
+## 7. Quick Revision Table
+
+| Question | Answer |
+| --- | --- |
+| First poverty line committee | Alagh, 1979 — calorie norms |
+| Latest spending-norm committee | Rangarajan, 2014 |
+| Tendulkar trend | ~45% (1993-94) → ~22% (2011-12) poverty ratio |
+| MPI dimensions | Health, education, living standards |
+| MGNREGA | 2005 — 100 days guaranteed rural wage work |
+| Gini range | 0 (equal) to 1 (max inequality) |
+| Disguised unemployment | Marginal product ≈ zero |
+| Usual Status | One-year reference period |
+
+[summary]
+India's poverty line evolved from calories (Alagh, Lakdawala) to
+consumption norms (Tendulkar, Rangarajan), while the MPI counts
+deprivations directly. Inequality is read off the Lorenz curve as a
+Gini between 0 and 1, and unemployment comes in six types — with
+disguised unemployment the classic Indian farm puzzle that Usual
+Status and weekly reference periods help uncover.
+[/summary]

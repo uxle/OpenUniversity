@@ -1,0 +1,76 @@
+{
+  "lessonId": "landforms-and-geomorphic-processes",
+  "title": "Landforms: How Weathering, Erosion, and Deposition Sculpt the Earth",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which pair correctly matches force and energy source?",
+      "options": ["Endogenic — the Sun; exogenic — internal heat", "Endogenic — internal heat; exogenic — solar energy and gravity", "Both — internal heat", "Both — solar energy"],
+      "correct": 1,
+      "rationale": "Endogenic forces (diastrophism, quakes, volcanism) are powered by the Earth's internal heat; exogenic forces run on solar energy and gravity."
+    },
+    {
+      "id": 2,
+      "question": "Orogenic movements differ from epeirogenic movements because they:",
+      "options": ["Lift or sink continents vertically", "Build mountains through horizontal compression", "Cause soil creep", "Dissolve limestone"],
+      "correct": 1,
+      "rationale": "Orogeny is mountain-building by horizontal compression; epeirogeny is the vertical uplift or subsidence of broad continental areas."
+    },
+    {
+      "id": 3,
+      "question": "Weathering differs from erosion because weathering:",
+      "options": ["Transports material downhill", "Breaks down rock in place without transport", "Only involves flowing water", "Only happens in deserts"],
+      "correct": 1,
+      "rationale": "Weathering is disintegration and decomposition where the rock lies; erosion and transport require a moving agent such as water, ice, or wind."
+    },
+    {
+      "id": 4,
+      "question": "Which weathering sub-process belongs to chemical weathering?",
+      "options": ["Frost wedging", "Exfoliation", "Carbonation", "Thermal expansion"],
+      "correct": 2,
+      "rationale": "Carbonation — carbon-dioxide-rich water dissolving limestone — is chemical; frost wedging and exfoliation are physical (mechanical) processes."
+    },
+    {
+      "id": 5,
+      "question": "Bent tree trunks and leaning fence posts on a hillside are evidence of:",
+      "options": ["Landslides", "Soil creep", "Glaciation", "Delta deposition"],
+      "correct": 1,
+      "rationale": "Soil creep, the slowest mass movement, gradually tilts anything anchored in the regolith downslope."
+    },
+    {
+      "id": 6,
+      "question": "An ox-bow lake forms when:",
+      "options": ["A river deposits an alluvial fan", "A meander loop is severed from the river", "A glacier over-deepens a valley", "Wind builds a crescent dune"],
+      "correct": 1,
+      "rationale": "When a meandering river cuts across its own neck, the abandoned loop becomes a crescent ox-bow lake."
+    },
+    {
+      "id": 7,
+      "question": "A U-shaped valley and a hanging valley are carved by:",
+      "options": ["Rivers", "Glaciers", "Wind", "Groundwater"],
+      "correct": 1,
+      "rationale": "Glacial ice grinds U-valleys; tributary glaciers left 'hanging' above the trunk valley form waterfalls where they join."
+    },
+    {
+      "id": 8,
+      "question": "Which landform is built by wind-deposited fine dust?",
+      "options": ["Barchan", "Drumlin", "Loess", "Esker"],
+      "correct": 2,
+      "rationale": "Loess is the fertile yellow-brown deposit of wind-blown silt, as in China; barchans are crescent dunes of coarser sand."
+    },
+    {
+      "id": 9,
+      "question": "Karst topography develops chiefly on which rock type?",
+      "options": ["Granite", "Basalt", "Limestone", "Sandstone"],
+      "correct": 2,
+      "rationale": "Carbonation dissolves limestone along joints, producing sinkholes, dolines, and caverns such as India's Borra and Belum caves."
+    },
+    {
+      "id": 10,
+      "question": "The memory hook says stala__tite is found on the:",
+      "options": ["Cave floor", "Cave ceiling", "Valley side", "Dune crest"],
+      "correct": 1,
+      "rationale": "Stalactites cling to the ceiling while stalagmites grow from the ground; meeting, they form a pillar."
+    }
+  ]
+}

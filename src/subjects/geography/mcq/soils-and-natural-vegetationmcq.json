@@ -1,0 +1,76 @@
+{
+  "lessonId": "soils-and-natural-vegetation",
+  "title": "Soils and Natural Vegetation: India's Living Cover",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of these is NOT one of the five soil-forming factors?",
+      "options": ["Parent rock", "Climate", "Soil colour", "Time"],
+      "correct": 2,
+      "rationale": "The five factors are parent rock, climate, relief, organisms, and time — colour is a result, not a cause."
+    },
+    {
+      "id": 2,
+      "question": "Alluvial soils cover roughly what share of India's area?",
+      "options": ["About 15%", "About 43%", "About 60%", "About 75%"],
+      "correct": 1,
+      "rationale": "Alluvial soils — the khadar and bhangar of the northern plains and coasts — cover about 43% of India's land."
+    },
+    {
+      "id": 3,
+      "question": "Black (regur) soil has formed mainly from:",
+      "options": ["Deccan Trap lava", "River alluvium", "Wind-blown loess", "Coral debris"],
+      "correct": 0,
+      "rationale": "Black soil is the weathered product of Deccan Trap basalt — clay-rich, moisture-retentive, and ideal for cotton."
+    },
+    {
+      "id": 4,
+      "question": "Khadar differs from bhangar in that khadar is:",
+      "options": ["Older alluvium with kankar nodules", "Fresh, fertile flood-plain silt", "A red soil", "A saline soil"],
+      "correct": 1,
+      "rationale": "Khadar is the new alluvium renewed by floods; bhangar is the older, higher alluvium with lime kankar nodules."
+    },
+    {
+      "id": 5,
+      "question": "Tea, coffee, and cashew grow best on which heavily leached soil?",
+      "options": ["Alluvial", "Black", "Laterite", "Arid"],
+      "correct": 2,
+      "rationale": "Laterite, leached in the high-rainfall Ghats and hills, suits plantation crops such as tea, coffee, cashew, and rubber."
+    },
+    {
+      "id": 6,
+      "question": "The ravines of the Chambal valley are a textbook example of:",
+      "options": ["Sheet erosion", "Gully erosion", "Wind erosion", "Glacial erosion"],
+      "correct": 1,
+      "rationale": "Runoff carving deep channels has dissected the Chambal valley into badland gullies."
+    },
+    {
+      "id": 7,
+      "question": "Ploughing with furrows running across, instead of down, a slope is called:",
+      "options": ["Contour ploughing", "Strip cropping", "Shelterbelting", "Terracing"],
+      "correct": 0,
+      "rationale": "Contour ploughing makes each furrow a small dam that slows runoff across the slope, cutting erosion."
+    },
+    {
+      "id": 8,
+      "question": "Tropical evergreen forests in India require rainfall above:",
+      "options": ["75 cm", "100 cm", "200 cm", "500 cm"],
+      "correct": 2,
+      "rationale": "Evergreen forests of the Western Ghats, north-east, and Andamans thrive above 200 cm of rain; thorn scrub survives below 75 cm."
+    },
+    {
+      "id": 9,
+      "question": "Which vegetation type is India's most widespread?",
+      "options": ["Tropical evergreen", "Tropical deciduous", "Montane", "Mangrove"],
+      "correct": 1,
+      "rationale": "Tropical deciduous forest — home of teak and sal — covers the widest area, shedding leaves during the long dry season."
+    },
+    {
+      "id": 10,
+      "question": "India's first biosphere reserve, set up in 1986, was:",
+      "options": ["Sundarbans", "Nilgiri", "Gulf of Mannar", "Nanda Devi"],
+      "correct": 1,
+      "rationale": "The Nilgiri biosphere reserve of 1986 was the first of India's 18 reserves; Project Tiger began in 1973 and Jim Corbett National Park in 1936."
+    }
+  ]
+}

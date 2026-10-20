@@ -1,0 +1,76 @@
+{
+  "lessonId": "earthquakes-and-volcanoes",
+  "title": "Earthquakes and Volcanoes: When the Earth Releases Energy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The point on the Earth's surface directly above an earthquake's focus is the:",
+      "options": ["Focus", "Epicentre", "Fault scarp", "Seismograph"],
+      "correct": 1,
+      "rationale": "The focus is the rupture point at depth; the epicentre lies on the surface directly above it and usually shakes most strongly."
+    },
+    {
+      "id": 2,
+      "question": "Which seismic wave travels fastest?",
+      "options": ["S-wave", "P-wave", "Rayleigh wave", "Love wave"],
+      "correct": 1,
+      "rationale": "P-waves are the fastest and pass through solids, liquids, and gases, so they arrive at recording stations first."
+    },
+    {
+      "id": 3,
+      "question": "Surface (L and Rayleigh) waves are notorious because they are:",
+      "options": ["The fastest waves", "Unable to travel through solids", "The slowest but most destructive at the surface", "Only produced by volcanoes"],
+      "correct": 2,
+      "rationale": "Surface waves travel along the ground, arriving last but rolling and shaking it with the greatest destructive effect near the epicentre."
+    },
+    {
+      "id": 4,
+      "question": "On the Richter scale, each whole-number step up represents about:",
+      "options": ["A doubling of energy", "Ten times the ground-motion amplitude", "No change", "One more Mercalli degree"],
+      "correct": 1,
+      "rationale": "The Richter scale is logarithmic: one whole step means roughly ten times greater recorded ground motion (and far more energy)."
+    },
+    {
+      "id": 5,
+      "question": "Which statement about magnitude versus intensity is correct?",
+      "options": ["One earthquake has one magnitude but many intensities", "One earthquake has one intensity but many magnitudes", "Both are identical", "Mercalli values are objective instrumental readings"],
+      "correct": 0,
+      "rationale": "Magnitude (Richter) is the fixed energy of the quake; Mercalli intensity varies with distance and local building quality, so one quake shows many intensities."
+    },
+    {
+      "id": 6,
+      "question": "The Koyna, Maharashtra earthquake of 1967 is an example of:",
+      "options": ["A volcanic earthquake", "A collapse earthquake", "A reservoir-induced (human-influenced) earthquake", "A mid-ocean ridge earthquake"],
+      "correct": 2,
+      "rationale": "Koyna 1967 is the classic reservoir-induced earthquake, triggered by the loading of water behind a large dam."
+    },
+    {
+      "id": 7,
+      "question": "The Circum-Pacific Ring of Fire accounts for approximately:",
+      "options": ["25% of volcanoes and 40% of quakes", "75% of active volcanoes and about 90% of large earthquakes", "All of the world's geysers", "Half of the mid-ocean ridges"],
+      "correct": 1,
+      "rationale": "The Ring of Fire hosts roughly 75% of the world's active volcanoes and about 90% of its large earthquakes."
+    },
+    {
+      "id": 8,
+      "question": "Which regions of India fall in seismic Zone V, the most severe?",
+      "options": ["Bihar and Odisha coasts", "NE India, Kashmir, Kutch, and the Andaman & Nicobar Islands", "The Deccan plateau interior", "Kerala and Tamil Nadu"],
+      "correct": 1,
+      "rationale": "Zone V — about 11% of India's area — includes NE India, Kashmir, the Kutch region, and the Andaman & Nicobar Islands."
+    },
+    {
+      "id": 9,
+      "question": "Mauna Loa in Hawaii is an example of a:",
+      "options": ["Shield volcano with fluid basaltic lava", "Composite stratovolcano", "Cinder cone", "Caldera"],
+      "correct": 0,
+      "rationale": "Mauna Loa is a shield volcano built by fluid basaltic lava flows with gentle slopes; Fuji and Vesuvius are composite cones."
+    },
+    {
+      "id": 10,
+      "question": "India's only active volcano is:",
+      "options": ["Nanda Devi", "Barren Island", "Narcondam", "A Deccan Trap vent"],
+      "correct": 1,
+      "rationale": "Barren Island in the Andaman Sea is India's only active volcano; Narcondam is dormant, and the Deccan Trap vents are long extinct."
+    }
+  ]
+}

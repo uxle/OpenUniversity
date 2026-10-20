@@ -1,0 +1,126 @@
+{
+  "lessonId": "object-oriented-programming",
+  "title": "Object-Oriented Programming: Modeling the World in Objects",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the core shift from procedural to object-oriented programming?",
+      "options": [
+        "Replacing all functions with global variables",
+        "Bundling data with the code allowed to touch it, so each object guards its own state",
+        "Removing data from programs entirely",
+        "Writing code only in assembly language"
+      ],
+      "correct": 1,
+      "rationale": "OOP flips the procedural layout: instead of free functions touching shared data, each object encapsulates its state and exposes a small set of operations."
+    },
+    {
+      "id": 2,
+      "question": "The real purpose of encapsulation is best stated as:",
+      "options": [
+        "Making code run faster by hiding variables",
+        "Encrypting all object data",
+        "Protecting invariants by making fields private and reachable only through methods",
+        "Preventing objects from being copied"
+      ],
+      "correct": 2,
+      "rationale": "Encapsulation is not secrecy but safety: with the balance reachable only through deposit(), no stray code can ever set it to −500 — the invariant cannot break."
+    },
+    {
+      "id": 3,
+      "question": "`ElectricCar extends Vehicle` is an example of which relationship, and what does it provide?",
+      "options": [
+        "Composition — reuse by storing an engine",
+        "Inheritance — an is-a relationship that reuses the parent's fields and methods",
+        "Polymorphism — the same call with many behaviors",
+        "Encapsulation — hiding the battery"
+      ],
+      "correct": 1,
+      "rationale": "Inheritance is the is-a relationship: an ElectricCar is a Vehicle plus extras, and code written for Vehicle works on it for free — though deep hierarchies risk fragility."
+    },
+    {
+      "id": 4,
+      "question": "A loop calls describe() on a list containing different Vehicle subclasses, and each answers differently. This is:",
+      "options": [
+        "Overloading",
+        "Encapsulation",
+        "Polymorphism via method overriding",
+        "Dependency inversion"
+      ],
+      "correct": 2,
+      "rationale": "Polymorphism lets the same call invoke each receiver's own override of the method; the loop neither knows nor cares which subclass it holds."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between overriding and overloading?",
+      "options": [
+        "Overriding redefines an inherited method in a subclass; overloading uses one name with different parameter lists in the same class",
+        "They are synonyms",
+        "Overloading only works in Python; overriding only in JavaScript",
+        "Overriding happens at compile time; both remove methods"
+      ],
+      "correct": 0,
+      "rationale": "Overriding redefines an inherited method at run time; overloading is a compile-time idea — same method name, different parameter lists."
+    },
+    {
+      "id": 6,
+      "question": "Why does the lesson recommend composition (has-a) over inheritance (is-a) in many cases?",
+      "options": [
+        "Composition always runs faster",
+        "Because inheritance is deprecated in all modern languages",
+        "Inheritance hierarchies are fragile — parent changes ripple into children — so has-a wiring is often safer",
+        "Composition forbids objects from having methods"
+      ],
+      "correct": 2,
+      "rationale": "A change to a parent class ripples into every descendant; a Car having an Engine avoids that fragility, so 'has-a' is preferred unless the is-a hierarchy is genuinely true and stable."
+    },
+    {
+      "id": 7,
+      "question": "In the SOLID principles, what does the 'O' stand for?",
+      "options": [
+        "Objectivity — every class must inherit Object",
+        "Open/closed — open for extension, closed for modification",
+        "Ownership — one owner per class",
+        "Optimization — profile before designing"
+      ],
+      "correct": 1,
+      "rationale": "O is the open/closed principle: extend behavior by adding new code (e.g., new subclasses), not by editing existing, working classes."
+    },
+    {
+      "id": 8,
+      "question": "In the JavaScript example, `super(make, 0)` inside ElectricCar's constructor does what?",
+      "options": [
+        "Creates a new Vehicle object unrelated to this one",
+        "Calls the parent Vehicle constructor to initialize the inherited fields",
+        "Clones the parent class",
+        "Marks the method as private"
+      ],
+      "correct": 1,
+      "rationale": "super() invokes the parent class's constructor so the inherited fields (make, speed) are initialized before the subclass adds its own (battery)."
+    },
+    {
+      "id": 9,
+      "question": "A single class that 'knows everything' and keeps growing is an example of which pitfall, and what is the cure?",
+      "options": [
+        "The God object; split it by responsibility",
+        "Deep fragile hierarchy; flatten it",
+        "Tight coupling; add more interfaces",
+        "Primitive obsession; add more fields"
+      ],
+      "correct": 0,
+      "rationale": "The God object concentrates every responsibility in one class; the cure is splitting it by responsibility (the single-responsibility principle)."
+    },
+    {
+      "id": 10,
+      "question": "Which statement best captures the lesson's verdict on OOP versus functional programming?",
+      "options": [
+        "Functional programming replaces OOP everywhere",
+        "They are enemies and only one may be used per project",
+        "They are not enemies: modern code mixes state-in-objects with pure functions",
+        "OOP has no state at all"
+      ],
+      "correct": 2,
+      "rationale": "OOP bundles state with behavior while functional keeps data immutable and functions pure — modern JavaScript, Python, and Java programs mix both freely."
+    }
+  ]
+}

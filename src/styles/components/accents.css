@@ -1,0 +1,118 @@
+/* src/styles/components/accents.css — OPTIONAL accents.
+   Black & white carry the identity (see variables.css). This file is the
+   ONLY place hues live, and every rule obeys three small-dose rules:
+     1. Accents sit on tiny elements — icon badges, chips, marks, dots.
+     2. Never on large surfaces, never for body text.
+     3. Every hue has a light + dark variant tuned for comfortable contrast
+        (soft pastels in light, airy tints on black — never neon).
+
+   Subject identity: one cute pastel per subject, applied by class
+   (ou-hue-<subject-id>) so both themes recolor automatically. Subjects
+   without an entry simply keep the neutral ink badge — accents are a
+   bonus, not a requirement. */
+
+/* ---- Subject hues (light theme) ------------------------------------ */
+.ou-hue-science          { color: #35b37e; background: color-mix(in srgb, #35b37e 14%, transparent); }
+.ou-hue-mathematics      { color: #4d9df8; background: color-mix(in srgb, #4d9df8 14%, transparent); }
+.ou-hue-computer-science { color: #7a70f2; background: color-mix(in srgb, #7a70f2 14%, transparent); }
+.ou-hue-history          { color: #ec8a4c; background: color-mix(in srgb, #ec8a4c 15%, transparent); }
+.ou-hue-geography        { color: #2db5ae; background: color-mix(in srgb, #2db5ae 14%, transparent); }
+.ou-hue-economics        { color: #d9a527; background: color-mix(in srgb, #d9a527 16%, transparent); }
+.ou-hue-philosophy       { color: #a06ce8; background: color-mix(in srgb, #a06ce8 14%, transparent); }
+.ou-hue-languages        { color: #ee6fa4; background: color-mix(in srgb, #ee6fa4 14%, transparent); }
+.ou-hue-civics           { color: #e75d6f; background: color-mix(in srgb, #e75d6f 13%, transparent); }
+.ou-hue-reasoning        { color: #38b6e0; background: color-mix(in srgb, #38b6e0 14%, transparent); }
+
+/* ---- Subject hues (dark theme — lighter, airy variants) ------------ */
+[data-theme="dark"] .ou-hue-science          { color: #7fdfae; background: color-mix(in srgb, #7fdfae 16%, transparent); }
+[data-theme="dark"] .ou-hue-mathematics      { color: #8db9ff; background: color-mix(in srgb, #8db9ff 16%, transparent); }
+[data-theme="dark"] .ou-hue-computer-science { color: #b0a8ff; background: color-mix(in srgb, #b0a8ff 16%, transparent); }
+[data-theme="dark"] .ou-hue-history          { color: #ffb183; background: color-mix(in srgb, #ffb183 16%, transparent); }
+[data-theme="dark"] .ou-hue-geography        { color: #7fdfd8; background: color-mix(in srgb, #7fdfd8 16%, transparent); }
+[data-theme="dark"] .ou-hue-economics        { color: #ecc96a; background: color-mix(in srgb, #ecc96a 16%, transparent); }
+[data-theme="dark"] .ou-hue-philosophy       { color: #c9a3f5; background: color-mix(in srgb, #c9a3f5 16%, transparent); }
+[data-theme="dark"] .ou-hue-languages        { color: #ff9cc4; background: color-mix(in srgb, #ff9cc4 16%, transparent); }
+[data-theme="dark"] .ou-hue-civics           { color: #ff8f9c; background: color-mix(in srgb, #ff8f9c 16%, transparent); }
+[data-theme="dark"] .ou-hue-reasoning        { color: #7fd4f2; background: color-mix(in srgb, #7fd4f2 16%, transparent); }
+
+/* ---- Gentle text highlight (search results / lesson <mark>) -------- */
+mark,
+.ou-mark {
+  background: var(--ou-highlight);
+  color: var(--ou-highlight-ink);
+  border-radius: 4px;
+  padding: 0 0.15em;
+}
+
+/* ---- Text selection — a soft brand-blue wash instead of the OS default */
+::selection {
+  background: color-mix(in srgb, var(--ou-hue) 22%, transparent);
+}
+
+/* ---- Subject page header chip ---------------------------------------
+   A small pill above the subject title: pastel icon + subject name.
+   Keeps subject pages cohesive with the subject cards on the home grid. */
+.ou-subject-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  padding: 6px 14px 6px 7px;
+  border-radius: var(--ou-radius-pill);
+  border: 1px solid var(--ou-border);
+  background: var(--ou-surface);
+  box-shadow: var(--ou-shadow-xs);
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--ou-text-secondary);
+  width: fit-content;
+}
+/* Reuse the shared subject badge inside the chip, sized down to fit. */
+.ou-subject-chip .ou-subject-card__icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  box-shadow: none;
+}
+
+/* ---- Tiny spark accent — decorative dot used by empty states --------
+   Three pastel dots (brand hues only, 6px) so "nothing here yet" feels
+   friendly instead of broken. Purely decorative: aria-hidden in markup. */
+.ou-spark-dots {
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: var(--ou-space-3);
+}
+.ou-spark-dots::before,
+.ou-spark-dots::after,
+.ou-spark-dots i {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.ou-spark-dots::before { background: #4d9df8; }
+.ou-spark-dots i       { background: #ee6fa4; display: block; }
+.ou-spark-dots::after  { background: #35b37e; }
+[data-theme="dark"] .ou-spark-dots::before { background: #8db9ff; }
+[data-theme="dark"] .ou-spark-dots i       { background: #ff9cc4; }
+[data-theme="dark"] .ou-spark-dots::after  { background: #7fdfae; }
+
+/* ---- High-contrast theme: accents yield ----------------------------
+   The AAA theme strips decoration — subject badges return to neutral
+   ink-on-surface so nothing reduces text contrast. */
+[data-theme="high-contrast"] .ou-subject-card__icon,
+[data-theme="high-contrast"] .ou-hue-science,
+[data-theme="high-contrast"] .ou-hue-mathematics,
+[data-theme="high-contrast"] .ou-hue-computer-science,
+[data-theme="high-contrast"] .ou-hue-history,
+[data-theme="high-contrast"] .ou-hue-geography,
+[data-theme="high-contrast"] .ou-hue-economics,
+[data-theme="high-contrast"] .ou-hue-philosophy,
+[data-theme="high-contrast"] .ou-hue-languages,
+[data-theme="high-contrast"] .ou-hue-civics,
+[data-theme="high-contrast"] .ou-hue-reasoning {
+  color: var(--ou-text);
+  background: var(--ou-accent-subtle);
+}

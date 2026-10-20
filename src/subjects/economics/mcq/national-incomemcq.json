@@ -1,0 +1,76 @@
+{
+  "lessonId": "national-income",
+  "title": "National Income: GDP, GNP, and Measuring an Economy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "GDP is defined as the market value of all final goods and services produced:",
+      "options": ["By a country's residents anywhere in the world", "Within a country's domestic territory in a year", "Only by the government sector", "Only from goods, excluding services"],
+      "correct": 1,
+      "rationale": "GDP counts production inside the domestic territory regardless of who produces it; GNP instead counts production by residents."
+    },
+    {
+      "id": 2,
+      "question": "The expenditure method expresses GDP as:",
+      "options": ["Rent + wages + interest + profit", "C + I + G + (X − M)", "Sum of value added by all firms", "GNP minus depreciation"],
+      "correct": 1,
+      "rationale": "Final spending equals consumption plus investment plus government spending plus net exports — the expenditure identity."
+    },
+    {
+      "id": 3,
+      "question": "GNP equals GDP plus:",
+      "options": ["Depreciation", "Net indirect taxes", "Net factor income from abroad", "Transfer payments"],
+      "correct": 2,
+      "rationale": "GNP adjusts domestic output by NFIA — residents' earnings from abroad minus non-residents' earnings domestically."
+    },
+    {
+      "id": 4,
+      "question": "For India, net factor income from abroad is negative. This means:",
+      "options": ["GNP is greater than GDP", "GNP is smaller than GDP", "NNP equals GDP", "National income cannot be computed"],
+      "correct": 1,
+      "rationale": "Income repatriated by foreign investors in India exceeds Indian earnings abroad, so subtracting a negative NFIA makes GNP slightly lower than GDP."
+    },
+    {
+      "id": 5,
+      "question": "Why are intermediate goods excluded from GDP?",
+      "options": ["They are imported", "To avoid double counting their value", "They have no market value", "They are counted in GNP instead"],
+      "correct": 1,
+      "rationale": "The value of bread already includes the value of the flour; counting both would double count — hence the value-added approach."
+    },
+    {
+      "id": 6,
+      "question": "Real GDP differs from nominal GDP because real GDP is valued at:",
+      "options": ["Current year prices", "Base year prices", "International prices", "Wholesale prices only"],
+      "correct": 1,
+      "rationale": "Real GDP uses base-year prices (2011-12 in India's national accounts), so it changes only when physical output changes."
+    },
+    {
+      "id": 7,
+      "question": "If nominal GDP is ₹110 lakh crore and real GDP is ₹100 lakh crore, the GDP deflator is:",
+      "options": ["90", "100", "110", "210"],
+      "correct": 2,
+      "rationale": "Deflator = (Nominal ÷ Real) × 100 = 1.10 × 100 = 110, indicating prices 10% above the base year."
+    },
+    {
+      "id": 8,
+      "question": "In the circular flow, which of the following is a leakage?",
+      "options": ["Investment", "Government spending", "Exports", "Savings"],
+      "correct": 3,
+      "rationale": "Leakages — savings, taxes, imports — drain spending from the domestic flow; injections — investment, government spending, exports — refill it."
+    },
+    {
+      "id": 9,
+      "question": "The Human Development Index, published by UNDP since 1990, uses which three dimensions?",
+      "options": ["GDP, trade, and defence", "Health, education, and standard of living", "Industry, agriculture, and services", "Inflation, unemployment, and growth"],
+      "correct": 1,
+      "rationale": "HDI combines life expectancy, years of schooling, and per-capita GNI (log-scaled) to capture welfare beyond raw output."
+    },
+    {
+      "id": 10,
+      "question": "Which of these is a recognised limitation of GDP as a welfare measure?",
+      "options": ["It counts government spending twice", "It ignores non-market household work and environmental damage", "It includes only services", "It is measured only every decade"],
+      "correct": 1,
+      "rationale": "GDP misses home production, the underground economy, distribution, and depletion of nature — the lesson's table of limitations."
+    }
+  ]
+}

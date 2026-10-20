@@ -1,3 +1,72 @@
-# Lesson1
+# Limits: The Gateway to Calculus
 
-TODO: write lesson content.
+> Calculus is the mathematics of change. Its entire structure rests on
+> one idea — the **limit** — which lets us speak precisely about
+> "infinitely close" and "infinitely small".
+
+## 1. The Problem Limits Solve
+
+How fast is a car going *at an instant*? Speed is distance ÷ time, but
+an instant contains no time to divide by. The way out: compute average
+speed over shorter and shorter intervals and see what value it
+approaches.
+
+@math label="eq:slope"
+\text{average rate} = \frac{f(x+h) - f(x)}{h}
+@/math
+
+As $h$ shrinks toward 0, that fraction approaches the instantaneous rate.
+
+## 2. The Formal Idea
+
+[definition]
+We write $\lim_{x \to a} f(x) = L$ and say "the limit of $f(x)$ as $x$
+approaches $a$ equals $L$" when the values of $f(x)$ get arbitrarily
+close to $L$ as $x$ gets arbitrarily close to $a$ — regardless of what
+happens exactly *at* $a$.
+[/definition]
+
+## Example
+
+$f(x) = \frac{x^2 - 1}{x - 1}$ is undefined at $x = 1$ (division by zero).
+
+But for $x \neq 1$: $\frac{(x-1)(x+1)}{x-1} = x + 1$, so
+
+@math label="eq:limit"
+\lim_{x \to 1} \frac{x^2-1}{x-1} = 2
+@/math
+
+The hole in the graph doesn't stop us — limits look at the *approach*.
+
+## 3. One-Sided Limits and Existence
+
+- **Left-hand limit:** approach from below ($x \to a^-$).
+- **Right-hand limit:** approach from above ($x \to a^+$).
+- The two-sided limit exists only if both sides agree.
+
+| Behaviour at a point | Limit exists? |
+| --- | --- |
+| Both sides approach same value | Yes |
+| Sides disagree (jump) | No |
+| Values grow without bound (∞) | No (we say limit is infinite) |
+
+[important]
+A function is **continuous** at $a$ when three things hold:
+$f(a)$ exists, $\lim_{x \to a} f(x)$ exists, and they are equal.
+Informally: you can draw the graph through $a$ without lifting your pen.
+[/important]
+
+## 4. Why This Matters
+
+Limits are the foundation of everything that follows:
+
+- **Derivatives** are limits of difference quotients → rates of change.
+- **Integrals** are limits of sums of infinitely many thin rectangles → areas.
+- **Series** ask what infinite sums converge to — again a limit question.
+
+## Key Takeaways
+
+- A limit describes where values head, not what happens at the point.
+- One-sided limits must agree for a two-sided limit to exist.
+- Continuity = limit equals actual value; derivatives and integrals are
+  both built from limits.

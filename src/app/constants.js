@@ -10,6 +10,7 @@ export const EVENTS = {
   BOOKMARK_REMOVED: "bookmark:removed",
   NOTE_SAVED: "note:saved",
   APP_ERROR: "app:error",
+  PALETTE_OPEN: "palette:open",
 };
 
 export const THEMES = ["light", "dark", "high-contrast"];

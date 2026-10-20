@@ -1,0 +1,126 @@
+{
+  "lessonId": "clock-reasoning",
+  "title": "Clock Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Using the representation T = H x 3600 + M x 60 + S (seconds since midnight), what number represents 7:45 PM?",
+      "options": [
+        "27900",
+        "71100",
+        "68400",
+        "74500"
+      ],
+      "correct": 1,
+      "rationale": "7:45 PM converts to 19:45 in 24-hour form. Then 19 x 3600 = 68400 and 45 x 60 = 2700, giving 68400 + 2700 = 71100 seconds. The value 27900 is the trap of forgetting to convert to PM."
+    },
+    {
+      "id": 2,
+      "question": "A raw time value of 4:125 is produced by naive addition. After normalization, what is the correct time?",
+      "options": [
+        "5:05",
+        "5:25",
+        "6:05",
+        "6:15"
+      ],
+      "correct": 2,
+      "rationale": "125 minutes = 2 hours 5 minutes, since only 60 minutes fit in one hour. Carrying twice: 4:125 becomes 5:65, then 6:05. Stopping after one carry gives the wrong 5:05."
+    },
+    {
+      "id": 3,
+      "question": "The expression \"quarter to six\" denotes which time on a digital clock?",
+      "options": [
+        "6:15",
+        "5:15",
+        "6:45",
+        "5:45"
+      ],
+      "correct": 3,
+      "rationale": "\"To\" means subtract from the next hour: a quarter hour (15 minutes) before six is 5:45. \"Quarter past six\" would be 6:15, which is the common mix-up here."
+    },
+    {
+      "id": 4,
+      "question": "It is 11:30 PM. What time will it be after exactly 2 hours?",
+      "options": [
+        "9:30 PM",
+        "1:30 AM the next day",
+        "12:30 AM the next day",
+        "2:30 AM the next day"
+      ],
+      "correct": 1,
+      "rationale": "In 24-hour form, 23:30 + 02:00 = 25:30. Since 25:30 exceeds 24:00, subtract one day: 25:30 - 24:00 = 01:30, so it is 1:30 AM on the next calendar day."
+    },
+    {
+      "id": 5,
+      "question": "What is the angle between the hour hand and the minute hand at 3:20, using theta_h = 30H + 0.5M and theta_m = 6M?",
+      "options": [
+        "30 degrees",
+        "50 degrees",
+        "20 degrees",
+        "75 degrees"
+      ],
+      "correct": 2,
+      "rationale": "The hour hand sits at 30(3) + 0.5(20) = 100 degrees and the minute hand at 6(20) = 120 degrees. The gap is |120 - 100| = 20 degrees. The answer 30 degrees wrongly freezes the hour hand exactly on the 3."
+    },
+    {
+      "id": 6,
+      "question": "Why is the smaller angle between the hands at 3:30 equal to 75 degrees rather than 90 degrees?",
+      "options": [
+        "Because the minute hand has not yet reached the 6",
+        "Because the hour hand keeps moving and has drifted to 105 degrees while the minute hand is at 180 degrees",
+        "Because clock angles must always be divided by two",
+        "It actually is 90 degrees"
+      ],
+      "correct": 1,
+      "rationale": "At 3:30 the minute hand is at 6(30) = 180 degrees, but the hour hand is halfway between the 3 and the 4: 30(3) + 0.5(30) = 105 degrees. The difference is 180 - 105 = 75 degrees; 90 degrees only appears if you assume the hour hand stays put on the 3."
+    },
+    {
+      "id": 7,
+      "question": "How often do the hour and minute hands of an analog clock overlap exactly?",
+      "options": [
+        "Exactly every 60 minutes",
+        "About every 65 and 5/11 minutes",
+        "About every 55 minutes",
+        "About every 72 minutes"
+      ],
+      "correct": 1,
+      "rationale": "The minute hand gains on the hour hand at 6 - 0.5 = 5.5 degrees per minute. To gain a full 360 degrees takes 360 / 5.5 = 720/11 = 65 5/11 minutes (about 65.45), so overlap is NOT once per hour."
+    },
+    {
+      "id": 8,
+      "question": "A meeting ends at 5:00 PM and lasted 90 minutes. Using the constraint start + duration = end, when did it start?",
+      "options": [
+        "3:30 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "6:30 PM"
+      ],
+      "correct": 0,
+      "rationale": "Rearranging the constraint: start = end - duration = 17:00 - 01:30 = 15:30, which is 3:30 PM in 12-hour form."
+    },
+    {
+      "id": 9,
+      "question": "Event A happens at 10:00. B happens 30 minutes after A, C happens 45 minutes after B, and D happens 20 minutes before C. When does D happen?",
+      "options": [
+        "11:15",
+        "11:35",
+        "10:55",
+        "11:05"
+      ],
+      "correct": 2,
+      "rationale": "Chain the offsets: B = 10:00 + 00:30 = 10:30, C = 10:30 + 00:45 = 11:15, D = 11:15 - 00:20 = 10:55. Answer 11:15 forgets the final minus-20 step; 11:35 adds 20 instead of subtracting."
+    },
+    {
+      "id": 10,
+      "question": "A trip starts at 10:30 PM and ends at 2:15 AM. What elapsed time does the trip take?",
+      "options": [
+        "3 hours 15 minutes",
+        "4 hours 15 minutes",
+        "8 hours 45 minutes",
+        "3 hours 45 minutes"
+      ],
+      "correct": 3,
+      "rationale": "Split at midnight: 10:30 PM to midnight is 1 h 30 m, and midnight to 2:15 AM is 2 h 15 m. Total = 1:30 + 2:15 = 3 hours 45 minutes. Ignoring the day boundary produces errors like 8 h 45 m."
+    }
+  ]
+}

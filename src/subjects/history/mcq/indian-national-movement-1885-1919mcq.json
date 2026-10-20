@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-national-movement-1885-1919",
+  "title": "The National Movement 1885-1919: From Petitions to Mass Politics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Indian Association of 1876, one of the Congress's forebears, was founded in Calcutta by:",
+      "options": ["Dadabhai Naoroji", "Surendranath Banerjea and Anand Mohan Bose", "Pherozeshah Mehta", "Justice Ranade"],
+      "correct": 1,
+      "rationale": "Surendranath Banerjea and Anand Mohan Bose founded the Indian Association (1876); its Indian National Conference merged into the Congress in 1886."
+    },
+    {
+      "id": 2,
+      "question": "The first session of the Indian National Congress (1885) was held at:",
+      "options": ["Calcutta", "Madras", "Bombay", "Poona"],
+      "correct": 2,
+      "rationale": "The Congress met at Gokuldas Tejpal College in Bombay on 28 December 1885, with 72 delegates and W. C. Bonnerjee as president; A. O. Hume was convener."
+    },
+    {
+      "id": 3,
+      "question": "The 'drain of wealth' theory, the Moderates' economic critique of colonial rule, was propounded in books by:",
+      "options": ["Dadabhai Naoroji and R. C. Dutt", "Tilak and Gokhale", "Ranade and Pherozeshah Mehta", "Aurobindo and Bipin Chandra Pal"],
+      "correct": 0,
+      "rationale": "Naoroji's Poverty and Un-British Rule in India and R. C. Dutt's Economic History of India demonstrated how home charges and one-way exports kept India poor."
+    },
+    {
+      "id": 4,
+      "question": "The Swadeshi movement began in protest against:",
+      "options": ["The Rowlatt Act", "Curzon's partition of Bengal, 1905", "The Simon Commission", "The salt tax"],
+      "correct": 1,
+      "rationale": "The 16 October 1905 partition of Bengal triggered boycott, national education, and song; it was annulled in 1911, the first big win of mass agitation."
+    },
+    {
+      "id": 5,
+      "question": "The Congress split between Moderates and Extremists took place at:",
+      "options": ["The Lucknow session, 1916", "The Surat session, 1907", "The Calcutta session, 1906", "The Nagpur session, 1920"],
+      "correct": 1,
+      "rationale": "The Surat Split of December 1907 broke the Congress over the presidential choice; reunion came with the Lucknow session of 1916."
+    },
+    {
+      "id": 6,
+      "question": "The Ghadar Party (1913) was founded in San Francisco by:",
+      "options": ["Shyamji Krishna Varma", "Madam Bhikaji Cama", "Lala Har Dayal and Sohan Singh Bhakna", "V. D. Savarkar"],
+      "correct": 2,
+      "rationale": "Lala Har Dayal and Sohan Singh Bhakna founded the Ghadar Party in 1913 among Punjabi emigrants, planning a wartime rising after the Komagata Maru affair."
+    },
+    {
+      "id": 7,
+      "question": "Separate electorates for Muslims were introduced by:",
+      "options": ["The Indian Councils Act of 1892", "The Indian Councils Act of 1909 (Morley-Minto reforms)", "The Government of India Act 1919", "The Lucknow Pact"],
+      "correct": 1,
+      "rationale": "Following the Simla deputation of 1906 led by the Aga Khan, the Morley-Minto reforms of 1909 legalised separate electorates — the constitutional seed of partition."
+    },
+    {
+      "id": 8,
+      "question": "The Lucknow Pact of 1916 is significant because:",
+      "options": ["It ended British rule in Bengal", "Congress and the League agreed on a common reform scheme, with Congress accepting separate electorates", "It created the Ghadar Party", "It partitioned Punjab"],
+      "correct": 1,
+      "rationale": "At Lucknow in December 1916, Congress and the Muslim League presented joint demands, with Congress accepting separate electorates — the high point of cooperation, Jinnah bridging both."
+    },
+    {
+      "id": 9,
+      "question": "The Home Rule Leagues of 1916 were started by:",
+      "options": ["Gandhi and Nehru", "Tilak (April) and Annie Besant (September)", "Gokhale and Pherozeshah Mehta", "Jinnah and the Aga Khan"],
+      "correct": 1,
+      "rationale": "Tilak founded his Home Rule League at Poona in April 1916, Annie Besant hers at Madras in September 1916, demanding self-government within the empire."
+    },
+    {
+      "id": 10,
+      "question": "The Rowlatt Act of March 1919 allowed:",
+      "options": ["Universal adult franchise", "Detention without trial, continuing wartime emergency powers", "A separate budget for Bengal", "Election of mayors"],
+      "correct": 1,
+      "rationale": "The Rowlatt Act provided detention without trial; Gandhi's 6 April 1919 hartal against it opened the Gandhian mass phase, leading to Jallianwala Bagh."
+    }
+  ]
+}

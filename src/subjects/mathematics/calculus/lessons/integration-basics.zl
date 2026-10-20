@@ -1,0 +1,133 @@
+# Integration Basics: Accumulating Change
+
+> Differentiation slices change infinitely fine; integration glues
+> the slices back together. As anti-differentiation it recovers a
+> function; as area-under-the-curve it totals change itself.
+
+## 1. Two Faces of Integration
+
+**Integration** is the reverse of differentiation: if the derivative
+of F is f, then an **antiderivative** of f is F. But integration is
+also **accumulation**: add up many thin rectangles under a curve
+(a **Riemann sum**) and, as the slices shrink, their total tends to
+the exact area — the two ideas coincide.
+
+@math label="eq:integral-def"
+\int f(x)\,dx = F(x) + C \quad \text{where} \quad F'(x) = f(x)
+@/math
+
+The elongated S is the integral sign; f(x) dx are the thin slices
+being summed; the dx names the slicing variable.
+
+## 2. Indefinite vs Definite
+
+| Feature | Indefinite integral | Definite integral |
+| --- | --- | --- |
+| Answer | a family of functions | a number |
+| Bounds | none | lower and upper, e.g. 0 to 2 |
+| + C? | required | cancels out |
+| Meaning | anti-derivative | signed area under the curve |
+
+## 3. The Power Rule
+
+@math label="eq:power-rule"
+\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)
+\qquad\qquad
+\int \frac{1}{x}\,dx = \ln|x| + C
+@/math
+
+Raise the power by one, divide by the new power. The exceptional
+n = −1 would divide by zero — its answer is the natural logarithm,
+which is exactly the function whose derivative is 1/x.
+
+[example]
+- ∫ x² dx = x³/3 + C (power 2 → 3, divide by 3).
+- ∫ (3x² + 4x − 5) dx = 3·x³/3 + 4·x²/2 − 5x + C = x³ + 2x² − 5x + C,
+  integrating term by term (the **sum rule**) with constants pulled
+  through (the **constant multiple rule**).
+[/example]
+
+## 4. Why the + C Matters
+
+Infinitely many functions share a derivative: x² + 1, x² − 7 and
+x² + π all differentiate to 2x. Integration only recovers the shape,
+so every answer carries **+ C** — the family of vertical translates
+of one curve. Forgetting + C loses solutions: any particle with
+velocity 2t has position t² + C, and only an initial condition picks
+out one member of the family.
+
+## 5. The Fundamental Theorem of Calculus
+
+[definition]
+**Fundamental theorem of calculus:** if F is any antiderivative of a
+continuous f, then the definite integral of f from a to b equals
+F(b) − F(a). No + C appears, because it cancels in the subtraction.
+[/definition]
+
+[example]
+Evaluate the definite integral of x² from 0 to 2.
+- Antiderivative: F(x) = x³/3.
+- Apply the theorem: F(2) − F(0) = 8/3 − 0 = **8/3**.
+- Geometrically: the area under y = x² between x = 0 and x = 2 is
+  exactly 8/3 ≈ 2.67 square units.
+[/example]
+
+## 6. From Velocity to Distance
+
+If v(t) is velocity, its integral over a time interval is the
+**displacement** — signed, so backwards motion subtracts. The
+**distance travelled** integrates the speed, which is |v(t)|, keeping
+every contribution positive.
+
+[example]
+A particle moves with v(t) = 3t². Over the interval from t = 0 to
+t = 2 its displacement is ∫ 3t² dt evaluated at the bounds = 8 − 0
+= 8 units. Since v(t) never turns negative here, the distance
+travelled also equals 8.
+[/example]
+
+## 7. What Integration Computes
+
+| Situation | Integrate | Result |
+| --- | --- | --- |
+| area between curve and x-axis | y = f(x) | signed area |
+| velocity known | v(t) | displacement (or distance) |
+| marginal cost known (economics) | marginal function | total cost |
+| flow rate known | rate of filling | total volume |
+| population growth rate known | growth rate | total change in population |
+
+Any "total from a rate" question is an integral in disguise —
+integration is the mathematics of adding up continuous change.
+
+## 8. A Peek at Techniques
+
+[example]
+Substitution — the chain rule in reverse. Evaluate ∫ 2x(x² + 1)³ dx.
+- Let u = x² + 1, so du = 2x dx — the whole integrand's awkward part.
+- The integral becomes ∫ u³ du = u⁴/4 + C = (x² + 1)⁴/4 + C.
+- Check by differentiating: the chain rule returns 2x(x² + 1)³. ✓
+[/example]
+
+Products of unlike functions (x·sin x, x·eˣ) need **integration by
+parts** — moving the derivative from one factor to the other. When
+no closed form exists (e.g. e^(−x²)), numerical methods such as the
+trapezium rule approximate the area to any accuracy a real problem
+demands — which is exactly how calculators evaluate integrals.
+
+[note]
+Areas below the x-axis count as negative in a definite integral; to
+measure geometric area, split the interval where the curve crosses
+the axis and integrate each piece separately.
+[/note]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| ∫ x² dx? | x³/3 + C |
+| ∫ 1/x dx? | ln ∣x∣ + C |
+| ∫ (3x² + 4x − 5) dx? | x³ + 2x² − 5x + C |
+| Definite integral of x² from 0 to 2? | 8/3 |
+| Why + C? | derivatives cannot see vertical shifts |
+| ∫ 2x(x² + 1)³ dx? | (x² + 1)⁴/4 + C |
+| Velocity gives what when integrated? | displacement (|v| gives distance) |

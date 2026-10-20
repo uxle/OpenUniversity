@@ -1,0 +1,139 @@
+# Demand, Supply, and Market Equilibrium
+
+> Demand and supply are the twin forces that determine every market price
+> and quantity; equilibrium is the point where they finally agree.
+
+[definition]
+**Demand** is the quantity of a good buyers are willing *and* able to
+purchase at each price over a period. **Supply** is the quantity sellers
+are willing and able to offer at each price. Willingness plus ability —
+not mere desire — is what counts.
+[/definition]
+
+## 1. The Law of Demand
+
+As price rises, quantity demanded falls; as price falls, it rises — an
+**inverse relationship**, shown by the downward-sloping demand curve.
+The two move together because of the **income effect** (a higher price
+cuts real purchasing power) and the **substitution effect** (buyers
+switch to cheaper alternatives).
+
+| Price of mango (₹/kg) | Quantity demanded (kg) |
+| --- | --- |
+| 40 | 5 |
+| 30 | 10 |
+| 20 | 20 |
+| 10 | 35 |
+
+A **demand schedule** is this table; plotting it gives the demand curve.
+
+## 2. Determinants of Demand
+
+Price changes cause a *movement along* the curve. Everything else that
+shifts the *whole curve* is a determinant:
+
+- **Income** — normal goods (rise with income) vs inferior goods (fall,
+  e.g., coarse cloth as incomes grow).
+- **Tastes and preferences** — fashion, advertising, health trends.
+- **Prices of related goods** — substitutes (tea and coffee) and
+  complements (petrol and cars).
+- **Expectations** of future prices — anticipated shortage, buy today.
+- **Population** — size and composition (more young families, more
+  school-bag demand).
+
+@diagram tree id="demand-determinants" layout="tree" aria="Determinants that shift the demand curve"
+  Determinants of Demand -> Income
+  Determinants of Demand -> Tastes and Preferences
+  Determinants of Demand -> Prices of Related Goods
+  Determinants of Demand -> Expectations
+  Determinants of Demand -> Population
+  "Prices of Related Goods" -> Substitutes
+  "Prices of Related Goods" -> Complements
+@/diagram
+
+## 3. The Law of Supply
+
+As price rises, quantity supplied rises — a **direct relationship**,
+giving an upward-sloping supply curve. Higher prices make production
+more profitable, so existing firms produce more and new firms enter.
+
+Key **determinants of supply**: input prices, technology, taxes and
+subsidies, prices of other goods, expectations, and the number of
+sellers. Better technology or cheaper inputs shift supply rightward.
+
+## 4. Movement Along vs Shift of the Curve
+
+[important title="The most common exam trap"]
+A change in the good's **own price** causes a movement *along* a curve.
+A change in any *other* factor (income, technology, tastes) shifts the
+*entire* curve. "Increase in demand" = curve shifts right; "increase in
+quantity demanded" = movement down along the same curve.
+[/important]
+
+| Term | What changed | Curve |
+| --- | --- | --- |
+| Extension of demand | Own price falls | Move down the curve |
+| Contraction of demand | Own price rises | Move up the curve |
+| Increase in demand | Income, tastes, etc. | Shifts right |
+| Decrease in demand | Income, tastes, etc. | Shifts left |
+
+## 5. Equilibrium: Where Curves Cross
+
+@math
+Market equilibrium: Q_d = Q_s
+@/math
+
+| Price (₹) | Q demanded | Q supplied | Market state | Pressure |
+| --- | --- | --- | --- | --- |
+| 40 | 5 | 25 | Surplus of 20 | Price falls |
+| 30 | 10 | 20 | Surplus of 10 | Price falls |
+| 20 | 20 | 20 | **Equilibrium** | None |
+| 10 | 35 | 5 | Shortage of 30 | Price rises |
+
+A **surplus** (excess supply) pushes price down; a **shortage**
+(excess demand) pushes price up. The market "solves" both on its own —
+Adam Smith's invisible hand at work.
+
+## 6. Shifts of Both Curves
+
+If demand rises while supply is fixed, both equilibrium price and
+quantity rise. If supply rises while demand is fixed, price falls but
+quantity rises. When both shift at once, one outcome becomes ambiguous
+(e.g., demand and supply both rise → quantity surely rises, but price
+depends on which shift is larger).
+
+[example]
+Festival season raises demand for sweets; a poor sugarcane crop cuts
+supply. Demand shifts right, supply shifts left — price rises sharply
+while quantity change depends on the relative shift sizes.
+[/example]
+
+## 7. Exceptions to the Law of Demand
+
+- **Giffen goods** — inferior staples (classic case: bread for poor
+  households) where the income effect of a price rise outweighs the
+  substitution effect, so quantity demanded *rises* with price.
+- **Veblen goods** — ostentatious luxury items (diamonds, designer
+  bags) bought *for status*; a higher price increases their appeal.
+- **Necessities** — salt, life-saving medicine; quantity barely moves.
+- **Speculative demand** — buyers rush in when prices rise, expecting
+  further rises (shares, housing booms).
+
+## 8. Quick Revision Table
+
+| Concept | Direction | Trigger |
+| --- | --- | --- |
+| Law of demand | P↑ → Qd↓ | Own price |
+| Law of supply | P↑ → Qs↑ | Own price |
+| Rightward demand shift | Demand↑ at every price | Income, tastes, substitutes' prices |
+| Rightward supply shift | Supply↑ at every price | Technology, subsidies |
+| Surplus | Price falls | P above equilibrium |
+| Shortage | Price rises | P below equilibrium |
+| Giffen/Veblen goods | Qd rises with price | Income effect / status effect |
+
+[summary]
+Prices are signals that ration scarce goods: shortages push prices up,
+surpluses push them down, and equilibrium is where neither pressure
+exists. Shift the curves, not points, whenever the cause is anything
+other than the good's own price.
+[/summary]

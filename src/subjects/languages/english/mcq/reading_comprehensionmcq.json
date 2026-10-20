@@ -29,6 +29,55 @@
       "options": ["They mean exactly the same thing", "'Not Given' means the passage denies it; 'False' means it's simply absent", "'False' means the passage denies it; 'Not Given' means it's simply absent from the passage", "Both terms are used interchangeably in all exams"],
       "correct": 2,
       "rationale": "The lesson stresses not to confuse 'not mentioned' (Not Given) with 'false' (directly contradicted by the passage) — they are different answers."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of skimming on your first read of a passage?",
+      "options": ["To memorise every detail for later recall", "To grasp the overall theme and structure without stopping at every unfamiliar word", "To translate the passage word-for-word", "To underline every absolute word you find"],
+      "correct": 1,
+      "rationale": "The 'skim first, then scan' strategy says the first quick read captures overall theme and structure; detailed keyword scanning happens on a second pass."
+    },
+    {
+      "id": 6,
+      "question": "Under the elimination technique, which kind of MCQ option should you remove even if it sounds reasonable?",
+      "options": ["An option directly quoted from the passage", "An option that is true in general but not stated in the passage", "An option written in simple vocabulary", "The longest option available"],
+      "correct": 1,
+      "rationale": "Eliminate options that contradict the passage, options that are true in general but not stated in the passage, and options that are only partially correct."
+    },
+    {
+      "id": 7,
+      "question": "For a Central Idea / Title question, what approach does the lesson recommend?",
+      "options": ["Choose the option covering one smallest detail precisely", "Look at the first and last paragraph and avoid options that cover only one small detail", "Pick whichever option has the most words", "Answer from the question's wording alone"],
+      "correct": 1,
+      "rationale": "Central idea questions ask what the passage is mainly about — check the first and last paragraphs and reject options that capture just a supporting detail."
+    },
+    {
+      "id": 8,
+      "question": "How should you approach a Tone / Attitude question?",
+      "options": ["Look at adjectives, word choice, and any qualifying statements the author makes", "Count how many facts appear in the passage", "Check only the passage's title", "Assume the tone is always objective"],
+      "correct": 0,
+      "rationale": "Tone questions ask how the author feels about the subject — clues lie in the author's adjectives, word choice, and qualifying statements."
+    },
+    {
+      "id": 9,
+      "question": "For a Vocabulary-in-Context question, what does the lesson advise?",
+      "options": ["Recall the dictionary definition you know best", "Re-read the sentence the word appears in and ignore its other possible dictionary meanings", "Replace the word with any synonym you prefer", "Skip such questions — context never clarifies meaning"],
+      "correct": 1,
+      "rationale": "Vocabulary-in-context asks what the word means *here* — re-read the sentence where it appears rather than relying on its other dictionary senses."
+    },
+    {
+      "id": 10,
+      "question": "If time is limited, what does the lesson suggest for speed and accuracy?",
+      "options": ["Read only the final paragraph", "Read the questions first so you know what to look for while reading the passage", "Guess quickly on all factual-detail items", "Read the passage aloud twice"],
+      "correct": 1,
+      "rationale": "When time is short, read the questions first — then you scan the passage with specific keywords already in mind."
+    },
+    {
+      "id": 11,
+      "question": "In the solved passage 'Reading is to the mind what exercise is to the body', what does a love of reading give a person during hard times?",
+      "options": ["Wealth that grows over time", "A companion that will never desert him in trouble", "Improved physical strength", "New career opportunities"],
+      "correct": 1,
+      "rationale": "The passage says reading 'furnishes him with a companion that will never desert him in trouble', comparing reading to exercise that preserves bodily health."
     }
   ]
 }

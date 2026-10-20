@@ -1,0 +1,76 @@
+{
+  "lessonId": "dynamic-programming-and-greedy",
+  "title": "Dynamic Programming and Greedy Algorithms: Choosing Well, Reusing Work",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which two properties must a problem have to fit dynamic programming?",
+      "options": ["Greedy-choice property and locality", "Overlapping subproblems and optimal substructure", "Uniform weights and DAG structure", "Recursion and iteration"],
+      "correct": 1,
+      "rationale": "DP fits when the same smaller cases recur (overlapping subproblems) and optimal answers build on optimal sub-answers (optimal substructure)."
+    },
+    {
+      "id": 2,
+      "question": "What distinguishes memoization from tabulation?",
+      "options": ["Memoization is bottom-up; tabulation is top-down", "Memoization is top-down recursion with a cache; tabulation fills a table with loops", "Memoization computes every state; tabulation caches nothing", "They are identical"],
+      "correct": 1,
+      "rationale": "Memoization is recursion plus a cache that only computes the states actually needed; tabulation is bottom-up loop-driven and computes every state up to n."
+    },
+    {
+      "id": 3,
+      "question": "In the knapsack walkthrough (capacity 5; A w2 v3, B w3 v4, C w4 v5, D w5 v6), what is the best achievable value?",
+      "options": ["6", "7", "9", "5"],
+      "correct": 1,
+      "rationale": "The bottom-right table cell holds 7, achieved by taking items A and B — total weight 2 + 3 = 5, total value 3 + 4 = 7."
+    },
+    {
+      "id": 4,
+      "question": "What does the 0/1 knapsack DP table cost to fill, for n items and capacity W?",
+      "options": ["O(2ⁿ)", "O(n·W)", "O(n + W)", "O(W log n)"],
+      "correct": 1,
+      "rationale": "The table has one row per item and one column per capacity value, so filling it costs O(n·W)."
+    },
+    {
+      "id": 5,
+      "question": "What is the length of the longest common subsequence of \"ACE\" and \"ABCDE\"?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 1,
+      "rationale": "The DP table's bottom-right cell is 3: the subsequence is exactly \"ACE\", and LCS costs O(m·n) to compute."
+    },
+    {
+      "id": 6,
+      "question": "With coins {1, 3, 4} and amount 6, what does greedy produce and what is optimal?",
+      "options": ["Greedy 3 coins (4+1+1); optimal 2 coins (3+3)", "Greedy 2 coins; optimal 3 coins", "Both give 2 coins", "Greedy fails to find any answer"],
+      "correct": 0,
+      "rationale": "Greedy grabs the largest coin 4 and limps to 4+1+1 = 3 coins, while the optimum is 3+3 = 2 coins — proof that greedy needs a correctness proof."
+    },
+    {
+      "id": 7,
+      "question": "The greedy-choice property says that:",
+      "options": ["Every local choice is always safe", "A locally optimal choice can always be extended to a globally optimal solution", "Greedy works only on graphs", "Local choices must be randomized"],
+      "correct": 1,
+      "rationale": "When a locally optimal choice extends to a globally optimal solution, a greedy algorithm — take the best local option, never revisit — is correct."
+    },
+    {
+      "id": 8,
+      "question": "Which greedy rule solves activity selection?",
+      "options": ["Pick the shortest activity first", "Pick the activity that starts earliest", "Pick the activity that finishes earliest", "Pick activities in alphabetical order"],
+      "correct": 2,
+      "rationale": "Picking the activity that finishes earliest is safe because it blocks the fewest others."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is a classic greedy algorithm rather than a DP problem?",
+      "options": ["0/1 knapsack", "Coin change with coins {1, 3, 4}", "Fractional knapsack", "Longest common subsequence"],
+      "correct": 2,
+      "rationale": "The fractional knapsack is greedily solvable — take items by best value per unit weight — because fractions fill the remainder exactly."
+    },
+    {
+      "id": 10,
+      "question": "A problem phrased as 'count the ways' or 'minimum cost to reach' signals which technique?",
+      "options": ["Dynamic programming", "Brute force", "Divide-and-conquer", "Topological sort"],
+      "correct": 0,
+      "rationale": "The decision table maps counting-ways, minimum-cost-to-reach, and longest-X phrasings to dynamic programming."
+    }
+  ]
+}

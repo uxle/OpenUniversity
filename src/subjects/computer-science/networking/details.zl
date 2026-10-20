@@ -9,4 +9,7 @@
 
 @lessons {
   lesson1
+  osi-and-tcp-ip-models
+  ip-addressing-and-routing
+  application-protocols-and-security
 }

@@ -1,0 +1,140 @@
+# Logic: Arguments, Validity, and the Art of Reasoning
+
+> Logic studies the skeleton of reasoning: how premises support
+> conclusions, which forms of inference preserve truth, and the
+> recurring patterns by which arguments fail.
+
+## 1. What Is an Argument?
+
+In philosophy, an **argument** is not a quarrel. It is a set of claims —
+the **premises** — offered as reasons for accepting one further claim,
+the **conclusion**.
+
+All mammals are warm-blooded (premise); all whales are mammals
+(premise); therefore, all whales are warm-blooded (conclusion).
+
+Three kinds of inference dominate Western and Indian logic alike:
+
+| Kind | Movement | Standard of success | Example |
+| --- | --- | --- | --- |
+| Deductive | Rule to case | Necessity — conclusion must follow | All humans are mortal; Socrates is human |
+| Inductive | Cases to rule | Probability — strong or weak | Every swan observed so far is white |
+| Abductive | Effect to cause | Plausibility — best explanation | The lawn is wet; probably it rained |
+
+[definition]
+**Deduction** applies rules with necessity. **Induction** generalises
+from observed cases, yielding only probability. **Abduction** infers
+the best explanation of an effect.
+[/definition]
+
+@diagram tree id="philosophy-logic-inference" layout="tree" aria="Three kinds of inference with their branches"
+  "Inference" -> Deductive
+  "Inference" -> Inductive
+  "Inference" -> Abductive
+  Deductive -> "Modus ponens"
+  Deductive -> "Modus tollens"
+  Inductive -> "Generalisation"
+  Inductive -> "Analogy"
+  Abductive -> "Best explanation"
+@/diagram
+
+## 2. Validity Versus Soundness
+
+**Validity** is a property of form, not content. A deductive argument
+is **valid** when its premises cannot be true while its conclusion is
+false; it is **sound** when, in addition, its premises are true.
+
+Truth and validity are independent dimensions:
+
+| Argument | Valid? | Premises true? |
+| --- | --- | --- |
+| All cats are mammals; all mammals are animals; so all cats are animals | Yes | Yes — sound |
+| All cats are birds; all birds fly; so all cats fly | Yes | No — form holds, premise false |
+| Some cats are black; some black things are dogs; so some cats are dogs | No | Yes — invalid despite true premises |
+
+[important title="Truth is not validity"]
+A valid argument can land on a false conclusion via a false premise; an
+invalid one can stumble onto truth. Truth describes the world,
+validity the wiring between claims.
+[/important]
+
+## 3. Four Valid Forms of Inference
+
+Classical logic names forms that never carry us from true premises to a
+false conclusion. Let **P** and **Q** stand for whole statements.
+
+| Form | Pattern | Instance |
+| --- | --- | --- |
+| Modus ponens | If P then Q; P; so Q | If it rains the ground is wet; it rained; so the ground is wet |
+| Modus tollens | If P then Q; not Q; so not P | If it rained the ground is wet; the ground is dry; so it did not rain |
+| Hypothetical syllogism | If P then Q; if Q then R; so if P then R | If she studies she passes; if she passes she graduates |
+| Disjunctive syllogism | P or Q; not P; so Q | The switch is on or off; it is not on; so it is off |
+
+[tip]
+Memory hook: in **modus ponens** you affirm the antecedent; in
+**modus tollens** you deny the consequent — the reverse is the blunder.
+[/tip]
+
+## 4. Formal Fallacies
+
+| Fallacy | Pattern | Why it fails |
+| --- | --- | --- |
+| Affirming the consequent | If P then Q; Q; so P | Q may have other causes |
+| Denying the antecedent | If P then Q; not P; so not Q | Q may hold anyway |
+| Undistributed middle | All A are C; all B are C; so all A are B | Sharing a property does not identify classes |
+
+[example]
+If the battery is dead, the car will not start. The car did not start;
+therefore the battery is dead. Invalid — the fuel may be empty or the
+starter broken. The form is affirming the consequent.
+[/example]
+
+## 5. Informal Fallacies
+
+| Fallacy | What happens | Example |
+| --- | --- | --- |
+| Ad hominem | Attacks the speaker, not the argument | "Of course she defends the tax — she is rich" |
+| Straw man | Refutes a distorted version | Attacking a simplified stand-in for the real view |
+| Appeal to authority | Cites prestige, not evidence | "A famous actor endorses it, so it works" |
+| Bandwagon | Truth by popularity | "Millions believe it; it must be true" |
+| False dilemma | Hides live options | "You are with us or against us" |
+| Slippery slope | Denies any stopping point | "One exception today, chaos tomorrow" |
+| Post hoc | After it, therefore because of it | The rooster crows, then the sun rises |
+| Equivocation | Shifts a word's meaning midway | "A feather is light; what is light cannot be dark" |
+| Begging the question | Assumes what it must prove | "This book is true because the book says so" |
+
+## 6. Syllogisms, Venn Diagrams, and the Square
+
+Aristotle's **categorical syllogism**: All M are P; all S are M; so
+all S are P. **Venn diagrams** test it — shade the regions the premises
+empty out; the form is valid when the shading forces the conclusion.
+
+The **square of opposition** charts the logical relations among the
+four basic statement shapes:
+
+| Letter | Form | Name |
+| --- | --- | --- |
+| A | All S are P | Universal affirmative |
+| E | No S are P | Universal negative |
+| I | Some S are P | Particular affirmative |
+| O | Some S are not P | Particular negative |
+
+A and O are contradictories, as are E and I; A entails I, and E entails O.
+
+## 7. Key Takeaways
+
+| Concept | One-line meaning |
+| --- | --- |
+| Argument | Premises offered in support of a conclusion |
+| Validity | True premises would guarantee a true conclusion |
+| Soundness | Validity plus actually true premises |
+| Deduction / induction / abduction | Necessity / probability / explanation |
+| Formal fallacy | Invalid inferential pattern |
+| Informal fallacy | Persuasive but defective move in context |
+
+[summary]
+Logic is topic-neutral — the same forms govern astronomy, law, and
+gossip. An argument is premises supporting a conclusion; validity is
+about form, soundness about fact; the valid forms and the fallacies
+form the working toolkit of every subject that argues.
+[/summary]

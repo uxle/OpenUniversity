@@ -1,0 +1,76 @@
+{
+  "lessonId": "mole-concept-and-stoichiometry",
+  "title": "The Mole Concept: Counting Particles by Weighing",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Avogadro's number is:",
+      "options": ["6.022 × 10²²", "6.022 × 10²³", "3.011 × 10²³", "22.4 × 10²²"],
+      "correct": 1,
+      "rationale": "One mole contains 6.022 × 10²³ particles — the count of atoms in exactly 12 g of carbon-12."
+    },
+    {
+      "id": 2,
+      "question": "The molar mass of carbon dioxide is:",
+      "options": ["28 g/mol", "32 g/mol", "44 g/mol", "58.5 g/mol"],
+      "correct": 2,
+      "rationale": "M(CO₂) = 12 + 2(16) = 44 g/mol, so 44 g of CO₂ is exactly one mole."
+    },
+    {
+      "id": 3,
+      "question": "How many moles are in 18 g of water (M = 18 g/mol)?",
+      "options": ["0.1", "0.5", "1", "2"],
+      "correct": 2,
+      "rationale": "n = m/M = 18/18 = 1 mol — which holds 6.022 × 10²³ molecules."
+    },
+    {
+      "id": 4,
+      "question": "At STP, one mole of any ideal gas occupies:",
+      "options": ["1 L", "11.2 L", "22.4 L", "44.8 L"],
+      "correct": 2,
+      "rationale": "Molar volume at 273 K and 1 atm is 22.4 L per mole, regardless of the gas."
+    },
+    {
+      "id": 5,
+      "question": "5.85 g of NaCl (M = 58.5 g/mol) dissolved to make 500 mL of solution gives a molarity of:",
+      "options": ["0.02 M", "0.1 M", "0.2 M", "1.17 M"],
+      "correct": 2,
+      "rationale": "n = 5.85/58.5 = 0.1 mol; molarity = 0.1 mol ÷ 0.500 L = 0.2 mol/L."
+    },
+    {
+      "id": 6,
+      "question": "The number of molecules in 11.2 L of a gas at STP is:",
+      "options": ["6.022 × 10²³", "3.011 × 10²³", "1.204 × 10²⁴", "22.4 × 10²³"],
+      "correct": 1,
+      "rationale": "11.2 L is half of 22.4 L, so half a mole — 0.5 × 6.022 × 10²³ = 3.011 × 10²³ molecules."
+    },
+    {
+      "id": 7,
+      "question": "The empirical formula of glucose (C₆H₁₂O₆) is:",
+      "options": ["C₂H₄O", "CH₂O", "C₆H₁₂O₆", "CHO"],
+      "correct": 1,
+      "rationale": "Dividing all subscripts by 6 gives the simplest whole-number ratio, CH₂O."
+    },
+    {
+      "id": 8,
+      "question": "Burning 4 g of hydrogen in 32 g of oxygen produces how much water?",
+      "options": ["32 g", "34 g", "36 g", "38 g"],
+      "correct": 2,
+      "rationale": "Mass is conserved: 4 g + 32 g = 36 g of water, matching 2H₂ + O₂ → 2H₂O (2 mol)."
+    },
+    {
+      "id": 9,
+      "question": "If 10 g of H₂ is mixed with 32 g of O₂, the limiting reagent is:",
+      "options": ["hydrogen", "oxygen", "both run out together", "neither reacts"],
+      "correct": 1,
+      "rationale": "10 g of H₂ is 5 mol, needing 2.5 mol (80 g) of O₂; only 1 mol (32 g) is present, so oxygen caps the yield."
+    },
+    {
+      "id": 10,
+      "question": "The mass percentage of hydrogen in water is about:",
+      "options": ["5.6%", "11.1%", "25%", "88.9%"],
+      "correct": 1,
+      "rationale": "2/18 = 11.1% hydrogen by mass; oxygen makes up the remaining 88.9%."
+    }
+  ]
+}

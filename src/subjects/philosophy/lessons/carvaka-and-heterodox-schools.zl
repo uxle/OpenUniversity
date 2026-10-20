@@ -1,0 +1,135 @@
+# Charvaka and the Heterodox Traditions: Philosophy Without God or Soul
+
+> Not every ancient Indian school accepted the Vedas, a soul, or an
+> afterlife. The heterodox thinkers built materialist and determinist
+> worldviews — and forced every rival school to argue harder.
+
+## 1. Astika and Nastika: Drawing the Line
+
+The classical divide in Indian philosophy is not "believer versus
+atheist". It is the acceptance or rejection of **the Vedas as a valid
+source of knowledge (pramana)**.
+
+| Label | Meaning | Members |
+| --- | --- | --- |
+| Astika | Accepts the authority of the Vedas | Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta |
+| Nastika | Rejects the authority of the Vedas | Charvaka, Ajivika, Buddhism, Jainism |
+
+[definition]
+**Astika** is one who affirms the Vedas' authority — whether or not he
+believes in a creator God. **Nastika** is one who denies that
+authority. Samkhya is astika yet posits no creator; Charvaka rejects
+God, soul, and Vedas together.
+[/definition]
+
+@diagram tree id="philosophy-heterodox-map" layout="tree" aria="Indian philosophy divided into astika and nastika schools"
+  "Indian Philosophy" -> Astika
+  "Indian Philosophy" -> Nastika
+  Astika -> "Six orthodox schools"
+  Nastika -> Charvaka
+  Nastika -> Ajivika
+  Nastika -> Buddhism
+  Nastika -> Jainism
+@/diagram
+
+## 2. Charvaka: Only What You Can Perceive
+
+**Charvaka**, also called **Lokayata** ("the doctrine of the world"),
+is India's school of uncompromising materialism. Its legendary founder
+is **Brihaspati**; its first historical teacher is **Ajita
+Kesakambalin**, one of the six heterodox teachers named in the Buddhist
+Samannaphala Sutta as a contemporary of the Buddha.
+
+Its epistemology is severe: **perception (pratyaksha) is the only
+pramana** — the only valid source of knowledge.
+
+| Pramana | Charvaka verdict | Reason |
+| --- | --- | --- |
+| Perception (pratyaksha) | Accepted | Directly experienced |
+| Inference (anumana) | Rejected | The universal link (vyapti) is never perceived |
+| Testimony (shabda) | Rejected | Trust in another's report, not direct knowledge |
+
+The argument against inference is radical: to infer fire from smoke
+requires knowing that smoke is *always* accompanied by fire, and such
+a universal connection can never be checked, since no one can survey
+all cases past and future. Inference therefore presupposes what it
+should prove.
+
+## 3. Four Elements, No Soul, No Afterlife
+
+Metaphysically, reality consists of the **four elements (mahabhutas):
+earth, water, fire, and air** — nothing else. Consciousness is not a
+separate soul but a product of their combination:
+
+[example]
+The Sarvadarshanasamgraha explains: just as betel nut, areca, and lime
+combine to yield a red colour, or fermented grain yields the
+intoxicating power of liquor — powers absent in each ingredient — so the
+combination of elements produces consciousness. At death the elements
+disperse, and with them the person.
+[/example]
+
+There is no transmigrating **atman**, no other world, no fruits of
+ritual. Hence Charvaka's ethics is straightforward **hedonism** — the
+Sarvadarshanasamgraha preserves its verse: "While you live, live
+happily; none can escape death. Once this body is burnt to ashes, it
+will never return."
+
+[note title="Lost sources"]
+Almost all Charvaka writing is lost. The school survives chiefly in the
+reports of its opponents — especially Madhavacharya's 14th-century
+compendium, the Sarvadarshanasamgraha, which preserves its only
+chapter-length treatment.
+[/note]
+
+## 4. Ajivika: The Doctrine of Fate
+
+The **Ajivikas** followed **Makkhali Gosala**, once a companion and
+later a rival of Mahavira. Their core doctrine is **niyati** — strict
+determinism:
+
+- Fate alone governs everything; human effort (purushakara) is powerless.
+- Virtue and vice are equally futile; karma cannot be altered.
+- Every soul passes through a fixed, predetermined series of lives —
+  the "wheel of time" — before automatic liberation.
+
+Paradoxically, the Ajivikas practised severe **austerities** —
+nakedness, fasting, and harsh penance — practised not to burn karma
+away, but as the destiny-appointed path. The sect received rock-cut
+caves from Emperor Ashoka at Barabar, survived into the medieval era,
+and then vanished.
+
+[warning]
+Do not confuse Ajivika determinism with Charvaka hedonism. Charvaka
+says only matter exists, so enjoy the present; Ajivika says fate fixes
+all, so struggle is pointless. One denies the soul; the other imprisons
+it in necessity.
+[/warning]
+
+## 5. Comparing the Nastika Schools
+
+| Feature | Charvaka | Ajivika | Buddhism | Jainism |
+| --- | --- | --- | --- | --- |
+| Founder | Brihaspati (attributed); Ajita Kesakambalin | Makkhali Gosala | Gautama Buddha | Mahavira, 24th Tirthankara |
+| Valid knowledge | Perception only | Sect's scripture | Perception and inference | Perception, inference, testimony |
+| Soul | Denied | Exists but determined | No permanent self (anatta) | Soul is real and active |
+| Karma and rebirth | Denied | Predetermined series | Causal law without a soul | Karma binds the soul as matter |
+| Liberation | Death ends everything | Automatic, after the fixed cycle | Nirvana by ending craving | Kaivalya by shedding karma |
+
+## 6. Why the Heterodox Matter
+
+1. They forced the orthodox schools to **argue rather than assert** —
+   Nyaya's defence of inference and Mimamsa's defence of testimony are
+   counter-attacks on Charvaka.
+2. Charvaka is among the **earliest documented materialisms** in world
+   philosophy, roughly contemporary with the Greek naturalists.
+3. Buddhist and Jain critiques reshaped Indian logic, psychology, and
+   language theory for over a thousand years.
+
+[summary]
+Astika and nastika turn on Vedic authority, not belief in God. Charvaka
+reduces knowledge to perception and reality to four elements, with no
+soul or afterlife. The Ajivikas held that fate (niyati) fixes every
+event. Both survive mainly in rivals' accounts, above all the
+Sarvadarshanasamgraha.
+[/summary]

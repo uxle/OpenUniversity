@@ -1,0 +1,76 @@
+{
+  "lessonId": "religious-movements-buddhism-jainism",
+  "title": "Buddhism and Jainism: The Shramana Challenge",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Siddhartha Gautama was born in 563 BCE at:",
+      "options": ["Kapilavastu", "Lumbini", "Kushinagar", "Bodh Gaya"],
+      "correct": 1,
+      "rationale": "The Buddha was born at Lumbini in Nepal, where an Ashokan pillar still marks the spot; his father Suddhodana ruled the Shakya republic from Kapilavastu."
+    },
+    {
+      "id": 2,
+      "question": "The Buddha attained enlightenment under a peepal tree at Uruvela on the river:",
+      "options": ["Niranjana", "Rijupalika", "Ganga", "Gandak"],
+      "correct": 0,
+      "rationale": "After six years of failed austerity he attained enlightenment at 35 under a peepal tree on the Niranjana — the site of Bodh Gaya. The Rijupalika is the Jain parallel for Mahavira's kaivalya."
+    },
+    {
+      "id": 3,
+      "question": "The Buddha's first sermon, the dharmachakrapravartana, was delivered at:",
+      "options": ["Bodh Gaya", "Rajgriha", "Sarnath", "Pavapuri"],
+      "correct": 2,
+      "rationale": "The 'turning of the wheel of law' was preached to five disciples at the deer park of Sarnath."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT one of the Four Noble Truths?",
+      "options": ["Life is suffering", "Suffering arises from craving", "The soul is permanent and eternal", "The Eightfold Path ends suffering"],
+      "correct": 2,
+      "rationale": "The Buddha denied a permanent soul (anatmavada); the truths state suffering, its cause (trishna), its cessation, and the path."
+    },
+    {
+      "id": 5,
+      "question": "The Triratna (three jewels) of Buddhism are:",
+      "options": ["Buddha, Dhamma, Sangha", "Right faith, knowledge, conduct", "Vinaya, Sutta, Abhidhamma", "Ahimsa, satya, aparigraha"],
+      "correct": 0,
+      "rationale": "Buddha-Dhamma-Sangha is the Buddhist Triratna; right faith-knowledge-conduct is the Jain set, and Vinaya-Sutta-Abhidhamma is the Pali Tipitaka."
+    },
+    {
+      "id": 6,
+      "question": "The Third Buddhist Council, which compiled the Abhidhamma and dispatched missionaries, was held at Pataliputra in 250 BCE under which king?",
+      "options": ["Ajatashatru", "Kalasoka", "Ashoka", "Kanishka"],
+      "correct": 2,
+      "rationale": "Ashoka patronised the Third Council at Pataliputra, presided over by Moggaliputta Tissa; Kanishka later patronised the Fourth at Kashmir."
+    },
+    {
+      "id": 7,
+      "question": "The Bodhisattva ideal and worship of the Buddha's image belong to which branch?",
+      "options": ["Hinayana", "Mahayana", "Theravada", "Ajivika"],
+      "correct": 1,
+      "rationale": "Mahayana, the 'great vehicle', Sanskrit-using and image-worshipping, developed the Bodhisattva saviour ideal and spread to East Asia."
+    },
+    {
+      "id": 8,
+      "question": "Which vow did Mahavira ADD to the four taught by Parshvanatha?",
+      "options": ["Ahimsa", "Satya", "Aparigraha", "Brahmacharya"],
+      "correct": 3,
+      "rationale": "Mahavira added brahmacharya (celibacy) to Parshvanatha's four — ahimsa, satya, asteya, aparigraha — completing the five great vows."
+    },
+    {
+      "id": 9,
+      "question": "Anekantavada, the doctrine that truth has many sides, is central to which religion?",
+      "options": ["Buddhism", "Jainism", "Ajivika determinism", "Charvaka materialism"],
+      "correct": 1,
+      "rationale": "Anekantavada (many-sidedness) and its logical arm syadvada are Jain epistemology, teaching that every statement holds only 'in some respect'."
+    },
+    {
+      "id": 10,
+      "question": "The Jain Agamas were finally written down in Ardha-Magadhi at the Council of:",
+      "options": ["Pataliputra, c. 300 BCE", "Vallabhi, 512 CE", "Rajgriha, 483 BCE", "Kashmir, 72 CE"],
+      "correct": 1,
+      "rationale": "The second Jain council at Vallabhi in Gujarat (512 CE), under Devardhigani, committed the Agamas to writing, preserving the Svetambara canon."
+    }
+  ]
+}

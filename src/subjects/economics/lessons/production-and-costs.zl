@@ -1,0 +1,140 @@
+# Production and Costs: From Inputs to Supply
+
+> Firms convert inputs into output under the discipline of cost; the
+> cost curve is the seed from which every supply decision grows.
+
+[definition]
+**Production** is the transformation of inputs (factors) into output.
+The **production function** records the maximum output obtainable from
+each combination of inputs for a given technology.
+[/definition]
+
+## 1. Factors of Production and Their Rewards
+
+| Factor | Meaning | Factor reward |
+| --- | --- | --- |
+| Land | All natural resources — soil, minerals, water | Rent |
+| Labour | Physical and mental human effort | Wages |
+| Capital | Man-made aids: machines, buildings, tools | Interest |
+| Entrepreneurship | Organises factors, bears risk, innovates | Profit |
+
+## 2. Total, Average, and Marginal Product
+
+With one variable input (labour) added to fixed land and capital:
+
+- **Total product (TP)** — output from all units of input.
+- **Average product** — output per unit of input: `AP = TP / L`.
+- **Marginal product** — extra output from one more unit:
+  `MP = ΔTP / ΔL`.
+
+| Workers | TP (baskets) | AP | MP |
+| --- | --- | --- | --- |
+| 1 | 10 | 10 | 10 |
+| 2 | 24 | 12 | 14 |
+| 3 | 39 | 13 | 15 |
+| 4 | 52 | 13 | 13 |
+| 5 | 60 | 12 | 8 |
+| 6 | 63 | 10.5 | 3 |
+| 7 | 63 | 9 | 0 |
+| 8 | 60 | 7.5 | −3 |
+
+## 3. The Law of Diminishing Marginal Returns
+
+[important]
+As more and more units of a variable input are added to a **fixed**
+input, the marginal product eventually falls. It is a short-run law
+about *changing proportions* of inputs, not about technology failing.
+[/important]
+
+Three stages emerge — rational production stops before the third:
+
+1. **Increasing returns** — MP rises (workers 1–3).
+2. **Diminishing returns** — MP falls but positive (workers 4–7).
+3. **Negative returns** — MP below zero; TP itself falls (worker 8).
+
+## 4. Short Run vs Long Run
+
+The **short run** is the period in which at least one factor is fixed
+(usually capital). The **long run** is long enough for *all* inputs to
+vary — new plants can be built, old ones closed. In the long run there
+are no fixed costs, only variable ones.
+
+## 5. Cost Concepts and Curves
+
+- **Fixed costs (TFC)** — do not vary with output: rent, salaries of
+  permanent staff, insurance. TFC is a horizontal line.
+- **Variable costs (TVC)** — rise with output: raw material, power,
+  piece-rate wages.
+- **Total cost**: `TC = TFC + TVC`.
+
+Per-unit measures: `AC = TC / Q` and `MC = ΔTC / ΔQ`.
+
+| Output | TFC (₹) | TVC (₹) | TC (₹) | AC (₹) | MC (₹) |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 60 | 0 | 60 | — | — |
+| 1 | 60 | 30 | 90 | 90 | 30 |
+| 2 | 60 | 50 | 110 | 55 | 20 |
+| 3 | 60 | 66 | 126 | 42 | 16 |
+| 4 | 60 | 84 | 144 | 36 | 18 |
+| 5 | 60 | 110 | 170 | 34 | 26 |
+| 6 | 60 | 150 | 210 | 35 | 40 |
+
+[info title="The AC–MC relationship"]
+While MC is below AC it drags AC down; once MC crosses above AC it
+pulls AC up — so the MC curve cuts the AC curve exactly at AC's
+**minimum point** (output 5 above). The same logic averages any
+quantity: a new member changes the team average toward their own value.
+[/info]
+
+## 6. Explicit vs Implicit Costs
+
+| Type | Definition | Example |
+| --- | --- | --- |
+| Explicit | Actual money paid to outsiders | Wages, rent, power bills |
+| Implicit | Opportunity cost of self-owned resources | Owner's forgone salary, own building not rented out |
+
+**Economic cost** = explicit + implicit. **Accounting profit** counts
+only explicit costs, so it can be positive while economic profit is
+negative — the moment a shopkeeper should honestly compare earnings
+with the best alternative job.
+
+## 7. Economies and Diseconomies of Scale
+
+In the long run, expanding *scale* changes average cost:
+
+- **Economies of scale** — AC falls with size: technical (larger,
+  more efficient machines), managerial (specialist departments),
+  marketing (bulk advertising), financial (cheaper credit), risk
+  spreading (multiple products).
+- **Diseconomies** — beyond some size, coordination and motivation
+  problems raise AC: layers of management, diluted accountability.
+- **Minimum efficient scale** — the smallest output at which AC hits
+  its minimum; it determines how many firms an industry can support.
+
+@diagram tree id="scale-economies" layout="tree" aria="Sources of economies of scale"
+  "Economies of Scale" -> Technical
+  "Economies of Scale" -> Managerial
+  "Economies of Scale" -> Marketing
+  "Economies of Scale" -> Financial
+  "Economies of Scale" -> "Risk Spreading"
+@/diagram
+
+## 8. Quick Revision Table
+
+| Concept | One-line rule |
+| --- | --- |
+| Law of variable proportions | MP of a variable input eventually falls against fixed input |
+| Stage of rational production | Stage two — MP falling but positive |
+| TC | TFC + TVC, starts from TFC at zero output |
+| MC vs AC | MC cuts AC at its minimum |
+| Short run | Some factor fixed, fixed costs exist |
+| Long run | All factors variable, only decisions about scale |
+| Economies of scale | AC falls as plant size grows (long run) |
+| Economic cost | Explicit + implicit (opportunity) cost |
+
+[summary]
+Diminishing marginal returns explains the short-run cost curve's rise;
+economies and diseconomies of scale shape the long-run curve. Where MC
+meets price, the firm finds its supply — production theory is simply
+supply's engine room.
+[/summary]

@@ -1,0 +1,138 @@
+# The Six Orthodox Schools: Systems of Vedic Philosophy
+
+> Six darshanas — "viewpoints" — accepted the Vedas and divided the
+> intellectual labour: logic, atomism, dualism, meditation, ritual
+> interpretation, and ultimate reality.
+
+## 1. What "Orthodox" Means
+
+A **darshana** is a system, literally a "view". All six orthodox
+schools are **astika**: each accepts the Vedas as a pramana, even
+where — like Samkhya and early Mimamsa — it has no creator God.
+Tradition pairs each theory school with an applied partner:
+
+@diagram tree id="philosophy-orthodox-pairs" layout="tree" aria="The six orthodox schools arranged in three pairs"
+  "Six orthodox schools" -> "Nyaya with Vaisheshika"
+  "Six orthodox schools" -> "Samkhya with Yoga"
+  "Six orthodox schools" -> "Mimamsa with Vedanta"
+@/diagram
+
+## 2. Nyaya: The Science of Logic
+
+Founded by **Gautama (Akshapada)** in the **Nyayasutra**, Nyaya is the
+school of logic and debate. It admits **four pramanas**: perception
+(pratyaksha), inference (anumana), comparison (upamana), and testimony
+(shabda). Inference runs five steps — proposition, reason, example,
+application, conclusion — and Nyaya catalogued the pseudo-reasons
+(hetvabhasa).
+
+[definition]
+**Pramana** means a valid source of knowledge. Schools are often
+distinguished simply by how many pramanas they admit — Charvaka one,
+Buddhists two, Nyaya four, Vedanta up to six.
+[/definition]
+
+Later Naiyayikas such as Udayana used inference to argue for God as
+the intelligent cause of the world, making Nyaya the great debating
+engine against Buddhist logicians.
+
+## 3. Vaisheshika: Atoms and Categories
+
+**Kanada's** **Vaisheshikasutra** builds a naturalist physics. Its
+famous **seven padarthas (categories)** cover everything knowable:
+
+| Category | Example |
+| --- | --- |
+| Substance (dravya) | Earth, water, fire, air, ether, time, space, self, mind |
+| Quality (guna) | Colour, taste, touch |
+| Action (karma) | Rising, falling, moving |
+| Generality (samanya) | "Cowness" in every cow |
+| Particularity (vishesha) | What individuates atoms |
+| Inherence (samavaya) | The tie between a whole and its parts |
+| Non-existence (abhava) | Absence, as of a pot here |
+
+Its **atomism** holds that irreducible atoms (paramanu) of earth,
+water, fire, and air combine into compounds, and that the world
+undergoes cycles of creation and dissolution — later read, together
+with Nyaya, as guided by God.
+
+## 4. Samkhya: The Two Realities
+
+The oldest systematised school, attributed to **Kapila**, is a
+dualism of two ultimate realities:
+
+- **Purusha** — consciousness: passive, countless, witness-only.
+- **Prakriti** — primordial matter: one, active, unconscious.
+
+Prakriti's display is woven from **three gunas**: **sattva**
+(lucidity), **rajas** (energy), and **tamas** (inertia). When its
+equilibrium disturbs, it unfolds into **25 tattvas**:
+
+| Tattvas | Layer |
+| --- | --- |
+| 1 | Prakriti — primal nature |
+| 2–4 | Intellect (mahat), ego-maker, mind |
+| 5–14 | Ten senses, cognitive and motor |
+| 15–19 | Five subtle elements (tanmatras) |
+| 20–24 | Five gross elements (mahabhutas) |
+| 25 | Purusha — the witnessing self |
+
+Liberation (**kaivalya**) is the discriminating realisation that "I am
+not this display" — purusha stands apart, and prakriti, unobserved,
+retires.
+
+## 5. Yoga: Stilling the Mind
+
+**Patanjali's** **Yoga Sutras** (c. 2nd century BCE, dating debated)
+accept Samkhya's metaphysics but add Ishvara — a special, untouched
+purusha. The opening definition is the whole programme: *yogash
+chitta-vritti-nirodhah* — **yoga is the cessation of the fluctuations
+of the mind**.
+
+| Limb | Name | Practise |
+| --- | --- | --- |
+| 1 | Yama | Restraints: non-violence, truth, non-stealing |
+| 2 | Niyama | Observances: purity, study, devotion |
+| 3 | Asana | Steady posture |
+| 4 | Pranayama | Breath regulation |
+| 5 | Pratyahara | Withdrawal of the senses |
+| 6 | Dharana | Fixed attention |
+| 7 | Dhyana | Sustained meditation |
+| 8 | Samadhi | Absorbed union |
+
+## 6. Mimamsa: The Ritual Science of Words
+
+**Jaimini's** **Mimamsasutra** (Purva Mimamsa — "the earlier inquiry")
+is the hermeneutics of Vedic ritual. Its revolutionary claims:
+
+- **Apaurusheyatva** — the Vedas are not the work of any author,
+  human or divine, and so cannot be false.
+- **Svatah pramanya** — Vedic statements are valid in themselves,
+  needing no external confirmation, unlike perception-based knowledge.
+- Dharma is what the Vedic injunction commands; action's results need
+  no God to distribute them (early Mimamsa is functionally atheist).
+
+## 7. Vedanta: The Science of Brahman
+
+**Badarayana's** **Brahmasutras** (also called Uttara Mimamsa — "the
+later inquiry") systematise the Upanishads into about 555 short sutras
+in four chapters, and became the seedbed of Shankara, Ramanuja, and
+Madhva — the subject of the next lesson.
+
+## 8. The Systems Side by Side
+
+[note]
+The six schools are allies only at the level of Vedic loyalty. Samkhya
+argued with Yoga over Ishvara, Nyaya with Vedanta over God's nature,
+and everyone with the Buddhists — debate culture (vada) itself became
+India's shared scientific method.
+[/note]
+
+| School | Founder | Root text | Core claim | Reality count |
+| --- | --- | --- | --- | --- |
+| Nyaya | Gautama (Akshapada) | Nyayasutra | Logic; four pramanas | 9 substances |
+| Vaisheshika | Kanada | Vaisheshikasutra | Atomism; 7 categories | 9 substances |
+| Samkhya | Kapila | Samkhyakarika | Purusha–prakriti dualism | 25 tattvas |
+| Yoga | Patanjali | Yoga Sutras | Eight limbs still the mind | 25 tattvas + Ishvara |
+| Mimamsa | Jaimini | Mimamsasutra | Vedas authorless and self-valid | Endless ritual order |
+| Vedanta | Badarayana | Brahmasutras | Brahman is the ultimate | 1 — Brahman |

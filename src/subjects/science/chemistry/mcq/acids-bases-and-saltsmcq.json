@@ -1,0 +1,76 @@
+{
+  "lessonId": "acids-bases-and-salts",
+  "title": "Acids, Bases, and Salts: The pH Story",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A Brønsted–Lowry base is defined as a:",
+      "options": ["producer of OH⁻ in water", "proton acceptor", "electron-pair acceptor", "salt former"],
+      "correct": 1,
+      "rationale": "Brønsted–Lowry (1923) bases accept protons; Arrhenius bases produce OH⁻ in water, and Lewis bases donate electron pairs."
+    },
+    {
+      "id": 2,
+      "question": "Which species is a Lewis acid that contains no hydrogen at all?",
+      "options": ["HCl", "NH₃", "BF₃", "CH₃COOH"],
+      "correct": 2,
+      "rationale": "BF₃ accepts an electron pair into boron's empty orbital — the Lewis definition covers acids with no H."
+    },
+    {
+      "id": 3,
+      "question": "Pure water at 25 °C has a pH of:",
+      "options": ["0", "7", "10.5", "14"],
+      "correct": 1,
+      "rationale": "On the 0–14 scale at 25 °C, pH 7 is neutral — H⁺ and OH⁻ concentrations are equal."
+    },
+    {
+      "id": 4,
+      "question": "Phenolphthalein turns what colour in a basic solution?",
+      "options": ["red", "yellow", "colourless", "pink"],
+      "correct": 3,
+      "rationale": "Colourless below pH 8.3 and pink above it — the classic titration endpoint colour."
+    },
+    {
+      "id": 5,
+      "question": "Which salt dissolves to give an acidic solution?",
+      "options": ["NaCl", "Na₂CO₃", "CH₃COONa", "NH₄Cl"],
+      "correct": 3,
+      "rationale": "NH₄Cl comes from a strong acid plus weak base; the NH₄⁺ ion releases H⁺. Na₂CO₃ and CH₃COONa give basic solutions, NaCl neutral."
+    },
+    {
+      "id": 6,
+      "question": "Aqua regia — the mixture that dissolves gold — is:",
+      "options": ["3 parts HCl to 1 part HNO₃", "3 parts HNO₃ to 1 part HCl", "equal parts H₂SO₄ and HNO₃", "pure concentrated HCl"],
+      "correct": 0,
+      "rationale": "Three volumes of concentrated HCl to one of concentrated HNO₃ — 'royal water'."
+    },
+    {
+      "id": 7,
+      "question": "Tooth decay speeds up when mouth pH drops below about:",
+      "options": ["7.0", "6.5", "5.5", "3.0"],
+      "correct": 2,
+      "rationale": "Below pH 5.5, bacterial acids begin dissolving the calcium salts of tooth enamel."
+    },
+    {
+      "id": 8,
+      "question": "Plaster of Paris is chemically:",
+      "options": ["CaSO₄·2H₂O", "CaSO₄·½H₂O", "Ca(OH)₂", "CaCO₃"],
+      "correct": 1,
+      "rationale": "Heating gypsum (CaSO₄·2H₂O) removes most of the water, giving CaSO₄·½H₂O, which re-sets to gypsum when water is added."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is a weak acid?",
+      "options": ["HCl", "HNO₃", "CH₃COOH", "H₂SO₄"],
+      "correct": 2,
+      "rationale": "Acetic acid ionizes only partially; HCl, HNO₃, and H₂SO₄ are strong, fully ionizing acids."
+    },
+    {
+      "id": 10,
+      "question": "The conjugate base of HCl is:",
+      "options": ["Cl⁻", "H₂Cl⁺", "OH⁻", "NaCl"],
+      "correct": 0,
+      "rationale": "Removing one proton from an acid gives its conjugate base: HCl → Cl⁻."
+    }
+  ]
+}

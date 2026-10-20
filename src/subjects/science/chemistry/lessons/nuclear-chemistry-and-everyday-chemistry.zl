@@ -1,0 +1,130 @@
+# Nuclear Chemistry and Chemistry in Everyday Life
+
+> The nucleus can shed particles or split outright, releasing a
+> million times the energy of chemical bonds. Add medicines,
+> additives, and fertilizers, and chemistry explains your whole day.
+
+## 1. The Discovery of Radioactivity
+
+[definition]
+**Radioactivity** is the spontaneous decay of unstable nuclei,
+emitting radiation without any external trigger. Henri Becquerel
+discovered it in 1896 — uranium salts fogged photographic plates in
+the dark — and Marie and Pierre Curie went on to isolate polonium
+and radium.
+[/definition]
+
+## 2. Alpha, Beta, Gamma
+
+| Property | Alpha (α) | Beta (β) | Gamma (γ) |
+| --- | --- | --- | --- |
+| Identity | helium nucleus ⁴₂He | electron ⁰₋₁e | high-energy photon |
+| Charge | +2 | −1 | 0 |
+| Mass | 4 u | ~1/1836 u | 0 |
+| Speed | ~5–7% of c | up to 98% of c | c (light speed) |
+| Stopped by | paper or skin | a few mm of aluminium | thick lead or concrete |
+| Ionizing power | highest | medium | lowest |
+| Field deflection | toward negative plate | toward positive plate | none |
+
+@diagram tree id="decay-modes" layout="tree" aria="Radioactive decay modes: alpha, beta and gamma with their effects on mass number and atomic number"
+  "Radioactive decay" -> "Alpha: A - 4, Z - 2"
+  "Radioactive decay" -> "Beta: A same, Z + 1"
+  "Radioactive decay" -> "Gamma: A, Z unchanged"
+@/diagram
+
+[example]
+**Beta decay of carbon-14:** ¹⁴C → ¹⁴N + ⁰₋₁e. A neutron becomes a
+proton, so Z rises from 6 to 7 while A stays 14.
+[/example]
+
+## 3. Half-Life
+
+[definition]
+The **half-life** (t½) is the time for half the nuclei in a sample
+to decay. Carbon-14's half-life of 5,730 years powers radiocarbon
+dating; iodine-131's 8-day half-life suits short medical uses.
+[/definition]
+
+| Half-lives elapsed | 1 | 2 | 3 |
+| --- | --- | --- | --- |
+| Fraction remaining | 1/2 | 1/4 | 1/8 |
+
+## 4. Fission and Fusion
+
+| | Fission | Fusion |
+| --- | --- | --- |
+| What happens | heavy nucleus splits | light nuclei merge |
+| Fuel | U-235, Pu-239 | hydrogen isotopes |
+| Where | reactors, atomic bombs | the Sun and stars, H-bombs |
+| Example | n + ²³⁵U → ¹⁴¹Ba + ⁹²Kr + 3n + energy | 4 ¹H → ⁴He + energy |
+
+Einstein's mass–energy equivalence explains the enormous output:
+
+@math label="eq:emc2"
+E = mc^{2}
+@/math
+
+Reactors use **moderators** (water, heavy water, graphite) to slow
+neutrons and **control rods** (cadmium, boron) to absorb them,
+keeping the **chain reaction** steady. Fusion demands the Sun's
+temperatures; the ITER project aims to tame it on Earth.
+
+## 5. Applications and Hazards
+
+| Application | Isotope | Detail |
+| --- | --- | --- |
+| Cancer radiotherapy | Co-60 | gamma beams target tumours |
+| Thyroid therapy | I-131 | the thyroid hoards iodine |
+| Organ imaging | Tc-99m | the workhorse of hospital scans |
+| Radiocarbon dating | C-14 | dates one-living matter to ~50,000 years |
+| Food irradiation | Co-60 | delays sprouting, kills microbes |
+| Smoke detectors | Am-241 | α-particles ionize air; smoke cuts the current |
+
+[warning]
+Radiation can damage DNA — causing radiation sickness, cancer, or
+mutations. Shield with lead, maximize distance, minimize exposure
+time, and test basement air for **radon**, the radioactive gas that
+seeps from soil into homes.
+[/warning]
+
+## 6. Chemistry in the Medicine Cabinet
+
+| Drug class | Examples | Job |
+| --- | --- | --- |
+| Antacids | milk of magnesia, ranitidine | neutralize or damp stomach acid |
+| Antihistamines | cetirizine, promethazine | allergy relief |
+| Analgesics | paracetamol, aspirin | pain and fever; aspirin thins blood |
+| Antibiotics | penicillin, ofloxacin | kill or slow bacteria |
+
+## 7. Additives, Cleansers, and Home Chemistry
+
+| Category | Examples | Purpose |
+| --- | --- | --- |
+| Preservatives | sodium benzoate, SO₂ | slow spoilage |
+| Sweeteners | aspartame, sucralose | sweetness without the sugar load |
+| Antioxidants | BHA, BHT | stop fats going rancid |
+| Fertilizers | urea (N), superphosphate (P), potash (K) | NPK: growth, roots, disease resistance |
+
+**Cleansing agents:** soaps biodegrade but fail in hard water;
+synthetic detergents work in hard water — linear-chain versions
+biodegrade, while branched ones persist in rivers.
+
+**Fire extinguishers:**
+
+| Type | Best on | Never on |
+| --- | --- | --- |
+| Water | wood, paper | electrical or oil fires |
+| CO₂ | electrical, oil | — |
+| Foam | petrol, oil | — |
+| Dry powder | most fires | leaves residue |
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Most penetrating radiation? | gamma |
+| Alpha particle is? | a helium nucleus, charge +2 |
+| Beta decay changes? | Z + 1, A unchanged |
+| C-14 half-life? | 5,730 years |
+| Sun's power source? | fusion of hydrogen |
+| Smoke detector isotope? | Am-241 |

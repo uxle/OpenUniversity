@@ -1,0 +1,139 @@
+# Debugging and Development Tools: Finding and Fixing Bugs Like a Professional
+
+> Bugs are the normal byproduct of writing software, not failures
+> of character — professionals differ from beginners mainly in their
+> toolkit: debuggers, logs, version control, and tests.
+
+## 1. A Field Guide to Bugs
+
+| Kind | When it bites | Tiny example |
+| --- | --- | --- |
+| **Syntax error** | Before the program runs at all | `if x == 5` missing its colon |
+| **Runtime error** | Mid-execution, crashes it | `10 / 0` → ZeroDivisionError |
+| **Logic error** | Never crashes — wrong answer | averaging with `total * count` |
+
+Syntax errors surface at **compile time**; runtime and logic errors
+appear only when code executes — a program that runs is not the same
+as a program that is right. The nastiest bugs are logic errors,
+because nothing complains; only tests and careful reading catch them.
+
+## 2. The Debugging Mindset
+
+Professional debugging is a loop, not guesswork:
+
+@diagram tree id="debug-loop" layout="tree" aria="The debugging cycle from reproducing the bug to adding a regression test"
+  "Reproduce the bug" -> "Isolate the smallest case"
+  "Isolate the smallest case" -> "Hypothesize the cause"
+  "Hypothesize the cause" -> "Test the hypothesis"
+  "Test the hypothesis" -> "Fix and verify"
+  "Fix and verify" -> "Add a regression test"
+@/diagram
+
+[definition]
+**Bisecting** is the systematic version of guessing: halve the
+remaining suspicious range each time, so a million possibilities take
+about twenty probes. `git bisect` applies the idea to commits.
+[/definition]
+
+**Rubber-duck debugging**: explain the code line by line to a duck
+(or colleague) — stating the expectation aloud exposes where reality
+disagrees.
+
+## 3. Using a Debugger
+
+A **debugger** pauses your program mid-flight — a microscope for
+running code.
+
+| Feature | What it does |
+| --- | --- |
+| **Breakpoint** | Pause execution when a chosen line runs |
+| **Step over** | Execute the next line without entering functions it calls |
+| **Step into** | Dive inside the next function call |
+| **Watch** | Track a variable or expression as you step |
+| **Call stack** | The chain of calls that got you here |
+
+[important]
+Read a **stack trace** top frame first: it is where the error actually
+happened; below it sit the callers, back to who opened the door.
+[/important]
+
+## 4. Logging vs Print Debugging
+
+Scattering `print("here1")` works, but you must remove it and cannot
+filter by severity. **Logging** is print's professional sibling:
+permanent, level-tagged, filterable without touching code.
+
+| Level | Meaning | Example use |
+| --- | --- | --- |
+| `DEBUG` | Fine-grained internal detail | Variable values in a loop |
+| `INFO` | Normal milestones | "server started on port 8080" |
+| `WARNING` | Something suspicious, still working | Retry succeeded, slowly |
+| `ERROR` | An operation failed | Payment could not be processed |
+
+## 5. Version Control with Git
+
+**Version control** records every committed snapshot of your project
+— who, what, when, and why — and lets any past state return.
+
+```text
+git clone URL      # copy a remote repository
+git add cart.js    # stage changes for the next commit
+git commit -m "Fix off-by-one in cart total"
+git push           # share your commits
+git pull           # fetch and merge others' commits
+```
+
+**Branches** isolate work without disturbing the main line; a
+**merge conflict** arises only when two branches edit the same lines,
+and Git asks you to pick. A `.gitignore` keeps build output,
+dependencies, and secrets out of history.
+
+[tip]
+Commit small and often: each commit is a reviewable, revertible unit,
+and the history itself becomes documentation.
+[/tip]
+
+## 6. The Testing Pyramid
+
+| Layer | Scope | Speed | Quantity | Notes |
+| --- | --- | --- | --- | --- |
+| **Unit** | One function or class, isolated | Milliseconds | Thousands | **Mocks** replace collaborators (databases, clocks) |
+| **Integration** | Several real pieces together | Seconds | Hundreds | Talks to a test database or API |
+| **End-to-end** | The whole system through the real UI | Minutes | Tens | Closest to the user, flakiest and slowest |
+
+## 7. TDD and Assertions
+
+**Test-driven development (TDD)** writes the test *before* the code,
+in a three-beat rhythm:
+
+[example]
+**Red** — write a small failing test describing the behavior you
+want. **Green** — make it pass with the simplest code. **Refactor** —
+clean up test and code, keeping the suite green. Repeat.
+[/example]
+
+An **assertion** checks a claim: `assert total == 42` fails loudly if
+false — the building block of every test.
+
+## 8. Getting Unstuck
+
+| Practice | The habit |
+| --- | --- |
+| Read the error message | Actually read it — top frame first; it names file and line |
+| Timebox | Struggle deliberately for ~30–45 minutes, then seek help |
+| Ask well | State goal, expected vs actual, what you tried, versions, minimal example |
+
+[warning]
+Debugging by random edits is not debugging: without a reproducible
+bug, you cannot know the fix worked — or that nothing else broke.
+[/warning]
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Bug taxonomy | Syntax (before running), runtime (crash), logic (silent wrong) |
+| Debug loop | Reproduce → isolate → hypothesize → test → fix → regression-test |
+| Stack trace | Top frame first: where it happened |
+| Git rhythm | clone, add, commit, push, pull; branch to isolate |
+| Pyramid | Many fast unit tests; few slow end-to-end tests |

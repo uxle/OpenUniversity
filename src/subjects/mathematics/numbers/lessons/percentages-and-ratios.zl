@@ -1,0 +1,78 @@
+# Percentages and Ratios: Comparing Quantities
+
+> Percentages and ratios both compare quantities — percentages against a
+> base of 100, ratios part-to-part. Most "real world" maths is one of
+> these two in disguise.
+
+## 1. Percent Means Per Hundred
+
+@math label="eq:percent-def"
+x\% = \frac{x}{100}
+@/math
+
+- 45% of ₹800: $\frac{45}{100} \times 800 = 360$
+- What percent is 18 of 60? $\frac{18}{60} \times 100 = 30\%$
+
+## 2. Percentage Change
+
+[definition]
+Percentage change = $\frac{\text{new} - \text{old}}{\text{old}} \times
+100$. The denominator is always the ORIGINAL value — the most common
+exam mistake is dividing by the new one.
+[/definition]
+
+## Example
+
+Price rises from ₹250 to ₹300:
+$\frac{50}{250} \times 100 = +20\%$.
+Falling back from ₹300 to ₹250: $\frac{-50}{300} \times 100 = -16.7\%$.
+Equal absolute steps are NOT equal percentage steps.
+
+## 3. Successive Changes Multiply
+
+A +10% rise followed by −10% fall does not return to the start:
+
+@math label="eq:successive"
+1.10 \times 0.90 = 0.99 \quad (\text{a net } 1\% \text{ loss})
+@/math
+
+## Example
+
+₹500 → +10% → ₹550 → −10% → ₹495. Each change applies to whatever the
+value has become, not to the original.
+
+## 4. Ratios: Part-to-Part Comparison
+
+Divide ₹600 between Anu and Bilal in ratio $2 : 3$: that's $5$ parts,
+so one part = ₹120 — Anu ₹240, Bilal ₹360.
+
+| Ratio | As fractions of total |
+| --- | --- |
+| 2 : 3 | 2/5 and 3/5 |
+| 1 : 1 : 2 | 1/4, 1/4, 1/2 |
+
+Proportion check: $\frac{240}{360} = \frac{2}{3}$ ✓
+
+## 5. A Share Picture
+
+The ₹600 split above as a picture:
+
+@chart pie title="₹600 split in ratio 2 : 3" labels:
+Anu (2 parts)
+Bilal (3 parts)
+
+data:
+240
+360
+@/chart
+
+[important title="Ratios scale, they don't add"]
+Doubling BOTH terms keeps the ratio identical: $2{:}3 = 4{:}6 = 20{:}30$.
+Adding the same number to both terms changes it instead — $3{:}4 \neq 2{:}3$.
+[/important]
+
+## Key Takeaways
+
+- Percent change divides by the original; successive changes multiply.
+- Ratio splits: total ÷ (sum of parts) × parts.
+- Equal steps up and down in percent never cancel exactly.

@@ -1,0 +1,126 @@
+{
+  "lessonId": "directions-and-distance-reasoning",
+  "title": "Directions and Distance Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the standard compass coordinate model where North = (0, +1) and East = (+1, 0), which unit vector corresponds to South-West?",
+      "options": [
+        "(-1, -1)",
+        "(+1, -1)",
+        "(-1, +1)",
+        "(+1, +1)"
+      ],
+      "correct": 0,
+      "rationale": "South-West combines West's negative x with South's negative y, so SW = (-1, -1). The vector (+1, -1) is South-East and (-1, +1) is North-West."
+    },
+    {
+      "id": 2,
+      "question": "A person walks 5 km along the north-east diagonal. What are the east and north components of this movement?",
+      "options": [
+        "5 km east and 5 km north",
+        "0 km east and 5 km north",
+        "5/sqrt(2) km east and 5/sqrt(2) km north",
+        "2.5 km east and 2.5 km north"
+      ],
+      "correct": 2,
+      "rationale": "If 5 km is the total distance along the 45-degree diagonal, each component is 5 / sqrt(2), about 3.54 km. Writing the components as (5, 5) would make the diagonal length sqrt(50), about 7.07 km, a classic error."
+    },
+    {
+      "id": 3,
+      "question": "A person is facing east. After turning right, which direction are they facing?",
+      "options": [
+        "North",
+        "South",
+        "West",
+        "North-East"
+      ],
+      "correct": 1,
+      "rationale": "\"Right\" is relative to the current heading: facing east, a right turn is toward south. Answering North mirrors the turn; in heading terms, East (90 degrees) plus 90 degrees gives South (180 degrees)."
+    },
+    {
+      "id": 4,
+      "question": "Bearings are measured clockwise from north. A bearing of 315 degrees corresponds to which compass direction?",
+      "options": [
+        "South-East",
+        "South-West",
+        "North-East",
+        "North-West"
+      ],
+      "correct": 3,
+      "rationale": "The eight directions step by 45 degrees: N=0, NE=45, E=90, SE=135, S=180, SW=225, W=270, NW=315. So 315 degrees is exactly North-West; 135 degrees would be South-East."
+    },
+    {
+      "id": 5,
+      "question": "A person walks 3 km east, then 4 km north. What are the total path distance and the straight-line displacement?",
+      "options": [
+        "Path 7 km, displacement 5 km",
+        "Path 5 km, displacement 7 km",
+        "Path 7 km, displacement 7 km",
+        "Path 5 km, displacement 5 km"
+      ],
+      "correct": 0,
+      "rationale": "Path distance sums the legs: 3 + 4 = 7 km. Straight-line displacement uses Pythagoras: sqrt(3^2 + 4^2) = 5 km. Swapping the two values is the most common mistake for this problem type."
+    },
+    {
+      "id": 6,
+      "question": "A person walks 5 km north, then 3 km east, then 2 km south. Where do they end up relative to the start, and how far away is that?",
+      "options": [
+        "Back at the starting point",
+        "Net (3, 3): about 4.24 km north-east",
+        "Net (5, 3): about 5.83 km north-east",
+        "Net (3, 10): about 10.44 km north-east"
+      ],
+      "correct": 1,
+      "rationale": "Add vectors: (0,5) + (3,0) + (0,-2) = (3,3). The south leg only partially cancels the north leg. Magnitude = sqrt(3^2 + 3^2) = sqrt(18), about 4.24 km, pointing north-east."
+    },
+    {
+      "id": 7,
+      "question": "Facing east, a person walks 4 km, turns left and walks 3 km, then turns right and walks 2 km. How far are they from their starting point?",
+      "options": [
+        "About 9 km",
+        "About 5 km",
+        "About 7.81 km",
+        "About 6.71 km"
+      ],
+      "correct": 3,
+      "rationale": "Track heading and position: east 4 km gives (4,0); left from east is north, giving (4,3); right from north is east again, giving (6,3). Displacement = sqrt(6^2 + 3^2) = sqrt(45), about 6.71 km. The value 9 km is the total path walked, not the displacement."
+    },
+    {
+      "id": 8,
+      "question": "B is 5 km east of A, C is 4 km north of B, and D is 3 km west of C. How far is D from A, and in which direction?",
+      "options": [
+        "About 4.47 km north-east",
+        "About 6.40 km north-east",
+        "About 5.00 km north-west",
+        "About 4.47 km north-west"
+      ],
+      "correct": 0,
+      "rationale": "Set A=(0,0); then B=(5,0), C=(5,4), D=(2,4). D - A = (2,4), so distance = sqrt(2^2 + 4^2) = sqrt(20), about 4.47 km, and both signs are positive, i.e. north-east. Forgetting the west leg gives the wrong (5,4)."
+    },
+    {
+      "id": 9,
+      "question": "For points A = (0,0) and B = (3,4), what are the Manhattan distance and the Euclidean distance respectively?",
+      "options": [
+        "5 and 7 respectively",
+        "25 and 5 respectively",
+        "7 and 5 respectively",
+        "12 and 7 respectively"
+      ],
+      "correct": 2,
+      "rationale": "Manhattan distance restricts movement to horizontal and vertical steps: |3| + |4| = 7. Euclidean distance is straight-line: sqrt(3^2 + 4^2) = 5. The order matters: grid-style distance is larger here, not smaller."
+    },
+    {
+      "id": 10,
+      "question": "The hospital is north of the school, and the park is east of the hospital. By transitive spatial reasoning, where is the park relative to the school?",
+      "options": [
+        "North-west",
+        "North-east",
+        "South-east",
+        "Due north"
+      ],
+      "correct": 1,
+      "rationale": "Propagate coordinates: set School=(0,0), so Hospital=(0,h) and Park=(e,h). Both deltas from the school are positive (east and north), so the park lies north-east of the school even though that relation was never stated directly."
+    }
+  ]
+}

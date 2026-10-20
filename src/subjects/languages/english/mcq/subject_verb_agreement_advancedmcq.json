@@ -29,6 +29,48 @@
       "options": ["is", "was", "are", "has"],
       "correct": 2,
       "rationale": "The main subject is 'You', which takes 'are' — the connector phrase 'together with your brother' does not change the verb."
+    },
+    {
+      "id": 5,
+      "question": "\"The knowledge of four languages ___ required to join this service.\" Choose the correct verb.",
+      "options": ["are", "is", "have been", "were"],
+      "correct": 1,
+      "rationale": "In 'The + Noun + of + Noun' pattern, the verb agrees with the first noun — 'knowledge' is singular, so 'is' is correct."
+    },
+    {
+      "id": 6,
+      "question": "\"Not only these children but also this boy ___ to gym daily.\" Choose the correct verb.",
+      "options": ["go", "goes", "going", "gone"],
+      "correct": 1,
+      "rationale": "With 'Not only...but also', the verb agrees with the nearest subject — here 'this boy', which is singular, so 'goes'."
+    },
+    {
+      "id": 7,
+      "question": "\"Neither Sam nor I ___ interested in attending the meeting.\" Choose the correct verb.",
+      "options": ["is", "are", "am", "were"],
+      "correct": 2,
+      "rationale": "'Neither...nor' follows the nearest-subject rule — the subject closest to the verb is 'I', so the verb is 'am'."
+    },
+    {
+      "id": 8,
+      "question": "\"Bread and butter ___ not easy to earn these days.\" Choose the correct verb.",
+      "options": ["are", "is", "have been", "were"],
+      "correct": 1,
+      "rationale": "'Bread and butter' is a pair noun expressing one combined concept (livelihood), so it takes a singular verb — 'is'."
+    },
+    {
+      "id": 9,
+      "question": "\"The teacher and the peon ___ not come today.\" Choose the correct verb.",
+      "options": ["has", "have", "is", "was"],
+      "correct": 1,
+      "rationale": "'The teacher and the peon' (with two articles) names two different entities, so a plural verb — 'have' — is used. One article ('The clerk and student') would mean one person."
+    },
+    {
+      "id": 10,
+      "question": "\"Patience as well as perseverance ___ necessary for success.\" Choose the correct verb.",
+      "options": ["are", "were", "is", "have been"],
+      "correct": 2,
+      "rationale": "With connectors like 'as well as', the verb agrees with the main subject — 'Patience' (singular), so 'is' is correct."
     }
   ]
 }

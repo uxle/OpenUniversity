@@ -1,5 +1,84 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Matter and the Atom: An Introduction to Chemistry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which subatomic particle determines the identity of an element?",
+      "options": ["Electron", "Neutron", "Proton", "Photon"],
+      "correct": 2,
+      "rationale": "The atomic number — the proton count — defines the element. Neutrons vary among isotopes; electrons balance charge."
+    },
+    {
+      "id": 2,
+      "question": "A neutral sodium atom has atomic number 11 and mass number 23. How many neutrons does it contain?",
+      "options": ["11", "12", "23", "34"],
+      "zolto": "23 - 11 = 12",
+      "correct": 1,
+      "rationale": "Neutrons = mass number − atomic number = 23 − 11 = 12."
+    },
+    {
+      "id": 3,
+      "question": "Table salt (NaCl) is best classified as:",
+      "options": ["An element", "A compound", "A heterogeneous mixture", "A solution"],
+      "correct": 1,
+      "rationale": "Sodium and chlorine are chemically bonded in a fixed 1:1 ratio — a compound whose properties differ completely from its elements."
+    },
+    {
+      "id": 4,
+      "question": "Burning paper produces ash, carbon dioxide, and water vapour. This is a:",
+      "options": ["Physical change, because energy is released", "Chemical change, because new substances form", "Physical change, because the paper gets smaller", "Change of state only"],
+      "correct": 1,
+      "rationale": "The test is identity: new substances with new properties mean a chemical change."
+    },
+    {
+      "id": 5,
+      "question": "An ionic bond forms when:",
+      "options": ["Two non-metals share electrons", "Electrons are transferred between metal and non-metal atoms", "Free electrons flow around positive ions", "Two nuclei merge together"],
+      "correct": 1,
+      "rationale": "Ionic bonding is electron transfer (e.g. Na → Cl); sharing is covalent; the mobile electron sea is metallic bonding."
+    },
+    {
+      "id": 6,
+      "question": "Which state of matter has a fixed volume but no fixed shape, with flowing particles?",
+      "options": ["Solid", "Liquid", "Gas", "Plasma"],
+      "correct": 1,
+      "rationale": "Liquids keep their volume but take the container's shape — particles flow. Solids have fixed shape; gases have neither fixed shape nor volume."
+    },
+    {
+      "id": 7,
+      "question": "The change from gas to liquid, releasing heat, is called:",
+      "options": ["Evaporation", "Freezing", "Condensation", "Melting"],
+      "correct": 2,
+      "rationale": "Condensation is gas → liquid with heat released (heat out). Evaporation and melting take heat in."
+    },
+    {
+      "id": 8,
+      "question": "Carbon-12 and carbon-14 differ in which respect?",
+      "options": ["Number of protons", "Number of neutrons", "Number of electrons", "Chemical identity as elements"],
+      "correct": 1,
+      "rationale": "Isotopes are atoms of one element differing only in neutron count; the proton count (and thus the element) stays the same."
+    },
+    {
+      "id": 9,
+      "question": "A neutral atom has atomic number 11. How many electrons does it contain?",
+      "options": ["10", "11", "12", "23"],
+      "correct": 1,
+      "rationale": "In a neutral atom, electron count balances the proton count: atomic number 11 → 11 protons → 11 electrons."
+    },
+    {
+      "id": 10,
+      "question": "Water and carbon dioxide are compounds because they:",
+      "options": ["Are separable by filtering", "Contain two or more elements chemically bonded in fixed ratios", "Contain only one type of atom", "Can exist as gas, liquid, or solid"],
+      "correct": 1,
+      "rationale": "Compounds have two or more elements chemically bonded in fixed ratios (H₂O, CO₂), with properties utterly different from their component elements."
+    },
+    {
+      "id": 11,
+      "question": "Which bond type explains why metals conduct electricity well?",
+      "options": ["Ionic bonds", "Covalent bonds", "Metallic bonds — an electron 'sea' around positive ions", "Hydrogen bonds"],
+      "correct": 2,
+      "rationale": "In metallic bonding, mobile free electrons form a 'sea' around positive ions, letting charge flow — that's what makes metals conductive."
+    }
+  ]
 }

@@ -26,6 +26,11 @@ function plainText(zlSource) {
 
 function walkLessons() {
   const entries = [];
+  // Translation variants (lesson1.hi.zl) describe the same lesson at the
+  // same route as their default-language counterpart — indexing both
+  // produced duplicate search results pointing at one destination.
+  // Translations are reached via the lesson page's language switcher.
+  const TRANSLATION_RE = /\.[a-z]{2}\.zl$/;
   for (const subjectId of fs.readdirSync(subjectsDir)) {
     const subjectDir = path.join(subjectsDir, subjectId);
     if (!fs.statSync(subjectDir).isDirectory()) continue;
@@ -40,7 +45,7 @@ function walkLessons() {
     const ownLessonsDir = path.join(subjectDir, "lessons");
     if (fs.existsSync(ownLessonsDir)) {
       for (const file of fs.readdirSync(ownLessonsDir)) {
-        if (!file.endsWith(".zl")) continue;
+        if (!file.endsWith(".zl") || TRANSLATION_RE.test(file)) continue;
         const lessonId = file.replace(".zl", "");
         const source = fs.readFileSync(path.join(ownLessonsDir, file), "utf8");
         entries.push({
@@ -65,7 +70,7 @@ function walkLessons() {
       const lessonsDir = path.join(subDir, "lessons");
       if (!fs.existsSync(lessonsDir)) continue;
       for (const file of fs.readdirSync(lessonsDir)) {
-        if (!file.endsWith(".zl")) continue;
+        if (!file.endsWith(".zl") || TRANSLATION_RE.test(file)) continue;
         const lessonId = file.replace(".zl", "");
         const source = fs.readFileSync(path.join(lessonsDir, file), "utf8");
         entries.push({

@@ -1,0 +1,138 @@
+# Reading Data: Averages, Spread, and Relationships
+
+> Data answer questions only when you summarise them honestly. Three
+> averages, two measures of spread, and one golden warning —
+> correlation is not causation — carry most of that work.
+
+## 1. Types of Data and Frequency Tables
+
+**Qualitative** data record categories (blood group, favourite
+subject); **quantitative** data record amounts, and split into
+**discrete** (countable: number of goals) and **continuous**
+(measured: height, time). Continuous data are grouped into **class
+intervals** (e.g. 150–160, 160–170) with tally marks building a
+frequency table.
+
+[definition]
+A **frequency table** pairs each value (or class) with how often it
+occurs. The total of the frequency column is n, the size of the
+dataset.
+[/definition]
+
+## 2. Mean, Median, Mode
+
+Marks scored by 20 students: 4 appears 3 times, 6 appears 5 times, 8
+appears 8 times, 10 appears 4 times.
+
+@chart bar title="Marks scored by 20 students"
+labels:
+4 marks
+6 marks
+8 marks
+10 marks
+
+data:
+3
+5
+8
+4
+@/chart
+
+@math label="eq:mean-frequency"
+\bar{x} = \frac{\sum f x}{\sum f} = \frac{3(4)+5(6)+8(8)+4(10)}{20} = \frac{146}{20} = 7.3
+@/math
+
+The **median** needs the data in order: with n = 20, average the
+10th and 11th values. Cumulative frequencies 3, 8, 16, 20 place both
+at 8 marks. The **mode** is the most frequent value: 8.
+
+| Average | Use it when |
+| --- | --- |
+| Mean | data are fairly even; every value matters |
+| Median | skewed data or outliers (income, house prices) |
+| Mode | categories ("most popular" transport or snack) |
+
+## 3. Outliers Bend the Mean
+
+One billionaire joining a village of 100 farmers drags the mean
+income far above what anyone earns — but the **median** barely moves,
+because it counts position, not size. This robustness is why median
+income is reported, not mean. Trimmed means discard the top and
+bottom few percent for the same reason.
+
+## 4. Range, Quartiles, IQR
+
+- **Range** = maximum − minimum (simple, but outlier-sensitive).
+- **Quartiles** split ordered data into four parts: Q1 (25% below),
+  Q2 (the median), Q3 (75% below).
+- **IQR** = Q3 − Q1, the width of the middle half — robust to
+  outliers.
+
+For 3, 5, 6, 7, 9, 10, 12: Q1 = 5, median = 7, Q3 = 10, so
+IQR = 5 and range = 9. A **box plot** draws exactly these five
+numbers (min, Q1, median, Q3, max): the box spans the IQR, whiskers
+the range, and outliers appear as lone dots.
+
+## 5. Spread: Variance and Standard Deviation
+
+**Variance** averages the **squared** deviations from the mean;
+**standard deviation** (SD) is its square root, back in the units of
+the data.
+
+[example]
+Compare A: 4, 5, 6, 7, 8 with B: 1, 3, 6, 9, 11. Both have mean 6,
+but A's deviations (−2, −1, 0, 1, 2) give SD ≈ 1.41, while B's
+deviations (−5, −3, 0, 3, 5) give SD ≈ 3.69. Same centre, very
+different spread — B's SD flags it, the mean cannot.
+[/example]
+
+## 6. Reading Charts Honestly
+
+- **Bar chart** — discrete categories with gaps; **histogram** —
+  continuous classes with no gaps, area carries frequency.
+- **Pie chart** — parts of one whole: angle = fraction × 360°.
+- **Line graph** — time series; slope shows the rate of change.
+
+[example]
+Transport survey of 30 students: walk 12, bus 10, cycle 5, car 3.
+Pie angles: 12/30 × 360° = 144°, 10/30 × 360° = 120°, 5/30 × 360° =
+60°, 3/30 × 360° = 36°. The angles must total 360° — a built-in check.
+[/example]
+
+[warning]
+Misleading charts: a truncated vertical axis magnifies tiny
+differences, and a cherry-picked time window hides the trend on
+either side. Always check the axis labels and where the axis starts.
+[/warning]
+
+## 7. Correlation: Direction, Not Cause
+
+A **scatter plot** of two variables shows **correlation**: points
+drifting upward together are **positive** (height and weight),
+downward together **negative** (practice hours and typing errors),
+a shapeless cloud **none** (shoe size and salary). Tightness of the
+cloud measures strength.
+
+[important title="Correlation is not causation"]
+Ice-cream sales and drownings rise together every summer — not
+because dessert drowns people, but because hot weather drives both.
+A **confounding variable** can create a correlation with no causal
+link at all. Only controlled experiments can establish causation.
+[/important]
+
+A **regression line** is the straight line of best fit through the
+cloud; its slope predicts how much the response changes per unit of
+the explanatory variable, and predictions work best inside the
+observed range (interpolation, not extrapolation).
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Mean of the 20-student data? | 7.3 |
+| Its median and mode? | 8 and 8 |
+| Best average for incomes? | median — outliers bend the mean |
+| Q1 = 5, Q3 = 10 — IQR? | 5 |
+| A: SD 1.41 vs B: SD 3.69 — same mean. Which spread is wider? | B |
+| Pie angle for 12 of 30? | 144° |
+| Correlation proves causation? | never — look for confounders |

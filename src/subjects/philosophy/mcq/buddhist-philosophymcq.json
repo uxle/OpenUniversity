@@ -1,0 +1,76 @@
+{
+  "lessonId": "buddhist-philosophy",
+  "title": "Buddhist Philosophy: The Middle Way to the End of Suffering",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Second Noble Truth identifies the cause of suffering as:",
+      "options": ["Ignorance of the Vedas", "Craving (tanha)", "The four elements", "Fate (niyati)"],
+      "correct": 1,
+      "rationale": "The Four Noble Truths run: dukkha (suffering), samudaya (its arising from craving, tanha), nirodha (its cessation), and magga (the Eightfold Path)."
+    },
+    {
+      "id": 2,
+      "question": "The eight factors of the path are grouped into three trainings. Which set is correct?",
+      "options": ["Wisdom, ethical conduct, mental discipline", "Faith, ritual, renunciation", "Study, sacrifice, meditation", "Generosity, truthfulness, silence"],
+      "correct": 0,
+      "rationale": "Wisdom (right view, right intention), ethical conduct (right speech, action, livelihood), and mental discipline (right effort, mindfulness, concentration)."
+    },
+    {
+      "id": 3,
+      "question": "The doctrine of anatta claims that:",
+      "options": ["The atman is identical with Brahman", "There is no permanent self — only a stream of changing aggregates", "The soul survives death intact", "The self is created by God"],
+      "correct": 1,
+      "rationale": "Anatta (no-self) denies a permanent atman: what exists is a stream of five skandhas — form, feeling, perception, formations, consciousness."
+    },
+    {
+      "id": 4,
+      "question": "Pratityasamutpada — dependent origination — is best summarised as:",
+      "options": ["All things arise from a creator", "All things arise permanently and unchangingly", "This being, that becomes; with the ceasing of this, that ceases", "Nothing exists"],
+      "correct": 2,
+      "rationale": "The twelve-link nidana chain expresses the causal law: each link arises dependent on the previous one, so ending one ends the rest — which is how suffering can be ended."
+    },
+    {
+      "id": 5,
+      "question": "How does Buddhism explain rebirth without a soul?",
+      "options": ["The atman travels to a new body", "The same person is reborn unchanged", "Like a flame lighting a new candle — causally continuous, neither the same nor different", "Rebirth is an illusion of the gods"],
+      "correct": 2,
+      "rationale": "The candle-flame analogy: karmic continuity without a permanent self, just as the second flame depends on the first without being identical to it."
+    },
+    {
+      "id": 6,
+      "question": "Which vehicle upholds the bodhisattva ideal of universal liberation?",
+      "options": ["Theravada", "Mahayana", "Vajrayana only", "Ajivika"],
+      "correct": 1,
+      "rationale": "Mahayana (Sanskritic, East Asian) makes the bodhisattva its ideal; Theravada (Pali, 'the elders') emphasises the arhat's personal liberation."
+    },
+    {
+      "id": 7,
+      "question": "Nagarjuna's concept of shunyata (emptiness) means:",
+      "options": ["Nothing exists at all", "Things lack any unconditioned own-being (svabhava)", "The world is made of empty space", "The mind is a blank tablet"],
+      "correct": 1,
+      "rationale": "Since everything arises dependently on conditions, nothing has independent essence — emptiness is the absence of own-being, not literal non-existence."
+    },
+    {
+      "id": 8,
+      "question": "The Yogacara school, founded by Asanga and Vasubandhu, taught:",
+      "options": ["Atomism", "Representation-only (vijnapti-matra) — we know only mental content", "The eternity of the Vedas", "Strict fatalism"],
+      "correct": 1,
+      "rationale": "Yogacara holds that the external world is a construction of consciousness, including a storehouse consciousness (alaya-vijnana)."
+    },
+    {
+      "id": 9,
+      "question": "The Third Buddhist Council, held around 250 BCE at Pataliputra, was patronised by:",
+      "options": ["Ajatashatru", "Ashoka", "Kanishka", "Kalasoka"],
+      "correct": 1,
+      "rationale": "The councils ran: Rajagriha (Ajatashatru), Vaishali c. 383 BCE (Kalasoka), Pataliputra c. 250 BCE (Ashoka), Kashmir 1st century CE (Kanishka)."
+    },
+    {
+      "id": 10,
+      "question": "Dignaga and Dharmakirti accepted which two pramanas?",
+      "options": ["Perception and testimony", "Perception and inference", "Inference and comparison", "Scripture and intuition"],
+      "correct": 1,
+      "rationale": "Buddhist epistemology accepted only perception and inference, and analysed meaning through apoha — words work by excluding what a thing is not."
+    }
+  ]
+}

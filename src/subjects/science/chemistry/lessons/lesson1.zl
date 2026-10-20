@@ -1,3 +1,82 @@
-# Lesson1
+# Matter and the Atom: An Introduction to Chemistry
 
-TODO: write lesson content.
+> Chemistry is the study of matter — what it's made of, how it's
+> structured, and how it changes. Everything starts with the atom.
+
+## 1. Matter and Its States
+
+[definition]
+**Matter** is anything that has mass and takes up space. It exists in
+three everyday states — **solid** (fixed shape, particles vibrate in
+place), **liquid** (fixed volume, flowing particles), and **gas** (no
+fixed shape or volume, fast free particles) — plus plasma at high
+temperatures.
+[/definition]
+
+Changes of state are physical, not chemical:
+
+| Change | Direction | Term |
+| --- | --- | --- |
+| solid → liquid | melting | heat in |
+| liquid → gas | evaporation / boiling | heat in |
+| gas → liquid | condensation | heat out |
+| liquid → solid | freezing | heat out |
+
+## 2. Inside the Atom
+
+| Particle | Charge | Mass (relative) | Location |
+| --- | --- | --- | --- |
+| Proton | +1 | 1 | nucleus |
+| Neutron | 0 | 1 | nucleus |
+| Electron | −1 | ~1/1836 | orbiting shells |
+
+- **Atomic number** = number of protons. It defines the element.
+- **Mass number** = protons + neutrons.
+- **Isotopes** are atoms of one element differing in neutron count
+  (carbon-12 vs carbon-14).
+
+## Example
+
+A neutral sodium atom has atomic number 11 → 11 protons, so also 11
+electrons. Its most common isotope has mass number 23:
+
+@math label="eq:sodium-neutrons"
+23 - 11 = 12 \text{ neutrons}
+@/math
+
+## 3. Elements, Compounds, Mixtures
+
+@diagram tree id="matter-classification" layout="tree" aria="Classification of matter"
+  Matter -> Element
+  Matter -> Compound
+  Matter -> Mixture
+  Mixture -> "Homogeneous (solutions)"
+  Mixture -> "Heterogeneous"
+@/diagram
+
+- **Element:** one type of atom only (oxygen, gold).
+- **Compound:** two+ elements chemically bonded in fixed ratios (H₂O,
+  CO₂). Properties differ utterly from the elements inside — soft,
+  reactive sodium + poisonous green chlorine = table salt.
+- **Mixture:** substances combined but *not* bonded; separable by
+  physical means (filtering, distilling).
+
+[important title="Chemical vs physical change"]
+Tearing paper, dissolving sugar, melting ice — no new substances form:
+*physical*. Burning paper creates ash, CO₂, water — new substances:
+*chemical*. The test is always "did the identity change?"
+[/important]
+
+## 4. Why Atoms Bond
+
+Atoms bond to reach stable outer electron shells:
+
+- **Ionic bonds** — electrons transferred (metal + non-metal, e.g. NaCl)
+- **Covalent bonds** — electrons shared (non-metals, e.g. H₂O)
+- **Metallic bonds** — electron "sea" around positive ions (conductivity!)
+
+## Key Takeaways
+
+- States of matter differ by particle arrangement and energy.
+- Protons define the element; isotopes vary only in neutrons.
+- Compounds are chemically bonded in fixed ratios; mixtures aren't.

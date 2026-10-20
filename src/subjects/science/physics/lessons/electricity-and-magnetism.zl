@@ -1,0 +1,140 @@
+# Electricity and Magnetism: Charges, Currents, and Fields
+
+> Static charge, flowing current, and magnetic fields are one
+> story. This lesson runs from Coulomb to Ohm to Faraday, ending
+> in the circuits wired through your home.
+
+## 1. Electric Charge and Static Electricity
+
+**Electric charge** comes in two kinds; like charges repel and
+unlike charges attract. Charge can neither be created nor
+destroyed — only transferred, as when rubbing a comb through dry
+hair. Coulomb's law says the force between two charges grows with
+the product of their sizes and falls with the square of their
+distance.
+
+A **lightning conductor** — Benjamin Franklin's idea — places a
+pointed metal spike above a building so the giant spark chooses
+the safe copper path to the ground instead of the walls.
+
+## 2. Current and Potential Difference
+
+@math label="eq:current"
+I = \frac{Q}{t}, \qquad V = \frac{W}{Q}
+@/math
+
+**Electric current** is the rate of flow of charge, measured in
+amperes; the **potential difference** between two points is the
+work done per unit charge moved between them, measured in volts.
+
+[example]
+If 12 C of charge flows through a lamp in 4 s, the current is
+I = 12 ÷ 4 = 3 A.
+[/example]
+
+## 3. Ohm's Law and Resistance
+
+@math label="eq:ohms-law"
+V = IR
+@/math
+
+At constant temperature, current grows in proportion to the
+applied voltage; the constant of proportionality is the
+**resistance**, measured in ohms (Ω).
+
+| Factor | Effect on resistance |
+| --- | --- |
+| Longer wire | increases (R ∝ length) |
+| Thicker wire | decreases (R ∝ 1/area) |
+| Material | set by resistivity — copper low, nichrome high |
+| Higher temperature | increases in metals |
+
+[example]
+A 12 V battery drives current through a 4 Ω lamp:
+I = V/R = 12 ÷ 4 = 3 A.
+[/example]
+
+## 4. Series and Parallel Circuits
+
+| Aspect | Series | Parallel |
+| --- | --- | --- |
+| Resistance | Rs = R₁ + R₂ | 1/Rp = 1/R₁ + 1/R₂ |
+| Current | same everywhere | divides between branches |
+| Voltage | shared across components | same across each branch |
+| One bulb fails | whole chain goes dark | others keep glowing |
+| Example | fairy lights | household wiring |
+
+[example]
+Two 6 Ω resistors: in series Rs = 6 + 6 = 12 Ω; in parallel
+1/Rp = 1/6 + 1/6 = 1/3, so Rp = 3 Ω — parallel lowers the total.
+[/example]
+
+## 5. Electrical Power and the Heating Effect
+
+@math label="eq:power"
+P = VI = I^{2}R = \frac{V^{2}}{R}
+@/math
+
+Power is measured in **watts**. Current passing through a
+resistance heats it (Joule's law: H = I²Rt) — the working
+principle of geysers, irons, and toasters. A **fuse** melts when
+the current exceeds its rating, cutting the circuit and saving
+appliances; an electric bulb glows because its thin **tungsten**
+filament (melting point ≈ 3400 °C) white-hot resists melting.
+
+@diagram tree id="current-effects" layout="tree" aria="Three effects of electric current with their applications"
+  "Effects of current" -> "Heating: geyser, fuse, bulb"
+  "Effects of current" -> "Magnetic: electromagnet, motor"
+  "Effects of current" -> "Chemical: electroplating, electrolysis"
+@/diagram
+
+## 6. Magnetic Effects of Current
+
+Hans Christian Oersted (1820) saw a compass needle swivel beside
+a live wire — every current creates a magnetic field. The
+**right-hand thumb rule** points the thumb along the current and
+the curled fingers along the field circles. A coil wound as a
+**solenoid** behaves like a bar magnet; with a soft-iron core it
+becomes an **electromagnet**, switched on and off at will.
+
+| Property | Electromagnet | Permanent magnet |
+| --- | --- | --- |
+| Strength | variable with current | fixed |
+| On/off | temporary | always on |
+| Poles | reversible by current direction | fixed |
+| Uses | cranes, relays, doorbells, MRI | fridge magnets, compasses |
+
+## 7. Electromagnetic Induction: Generator and Motor
+
+Michael Faraday (1831) found the reverse of Oersted: moving a
+magnet near a coil **induces** a current. A **generator**
+(dynamo) uses this to convert mechanical energy into electrical
+energy — every power plant is a generator turned by steam or
+falling water. An **electric motor** runs the conversion the other
+way, turning electrical energy into rotation through the force on
+a current-carrying coil in a magnetic field.
+
+## 8. Domestic Electric Circuits
+
+Houses receive supply through a **live** (red/brown), a
+**neutral** (black/blue), and an **earth** wire (green) — the
+earth bonds metal bodies of appliances to the ground so a fault
+cannot make the body live. Lighting and fans run on **5 A**
+circuits; heavy appliances like geysers and air conditioners need
+**15 A** lines. A **short circuit** happens when live and neutral
+touch with almost no resistance; **overloading** is drawing more
+current than the line is rated for — fuses and MCBs guard against
+both.
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Current | I = Q/t, unit ampere |
+| Ohm's law | V = IR at constant temperature |
+| Series / parallel | Rs = R₁ + R₂; 1/Rp = 1/R₁ + 1/R₂ |
+| Power | P = VI = I²R = V²/R |
+| Fuse | melts above its current rating |
+| Oersted 1820 | a current deflects a compass — magnetism |
+| Faraday 1831 | motion near a coil induces current — generator |
+| Earth wire | green; bonds appliance bodies to ground |

@@ -1,0 +1,83 @@
+# Quadratic Equations: Factoring, Formula, and Parabolas
+
+> A quadratic equation has the form $ax^2 + bx + c = 0$ with $a \neq 0$.
+> Its solutions are where the parabola $y = ax^2 + bx + c$ crosses the x-axis.
+
+## 1. Three Ways to Solve
+
+| Method | When it works best |
+| --- | --- |
+| Factorising | Numbers multiply/add nicely |
+| Quadratic formula | Always works |
+| Completing the square | Reveals the vertex form |
+
+## Example: factorising
+
+Solve $x^2 - 5x + 6 = 0$: find two numbers multiplying to $6$, adding to $-5$:
+$-2$ and $-3$. So $(x-2)(x-3)=0$, giving $x = 2$ or $x = 3$.
+
+[definition]
+The **quadratic formula** solves every quadratic:
+
+@math label="eq:quadratic-formula"
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+@/math
+[/definition]
+
+## 2. The Discriminant Tells You What to Expect
+
+The expression $D = b^2 - 4ac$ under the square root decides everything:
+
+| Value of D | Roots | Graph crosses x-axis |
+| --- | --- | --- |
+| D > 0 | two distinct real roots | twice |
+| D = 0 | one repeated root | touches once (tangent) |
+| D < 0 | no real roots | never (complex roots) |
+
+## Example
+
+For $x^2 + 4x + 4 = 0$: $D = 16 - 16 = 0$, so one repeated root
+$x = -\frac{b}{2a} = -2$. The graph just touches the axis at $(-2, 0)$.
+
+## 3. Sum and Product Shortcuts
+
+For roots $\alpha$ and $\beta$ of $ax^2+bx+c=0$:
+
+@math label="eq:sum-product"
+\alpha + \beta = \frac{-b}{a}, \qquad \alpha\beta = \frac{c}{a}
+@/math
+
+Check with $x^2-5x+6=0$: sum $= 5$, product $= 6$ — matching roots $2$ and $3$.
+
+## 4. Seeing the Parabola
+
+Values of $y = x^2 - 5x + 6$ plotted against $x$ show the U-shape and its
+two zeros at $x=2$ and $x=3$:
+
+@chart line title="y = x² − 5x + 6" labels:
+0
+1
+2
+3
+4
+5
+
+data:
+6
+2
+0
+0
+2
+6
+@/chart
+
+[important title="Opening direction"]
+If $a > 0$ the parabola opens upward (minimum); if $a < 0$ it opens
+downward (maximum). The sign of $a$ alone tells you which.
+[/important]
+
+## Key Takeaways
+
+- Factorise when you can; otherwise use the formula — it always works.
+- The discriminant predicts two / one / zero real roots without solving.
+- Sum = $-b/a$ and product = $c/a$ verify answers fast.

@@ -29,6 +29,55 @@
       "options": ["Henpecked", "Gourmet", "Fatalist", "Sadist"],
       "correct": 0,
       "rationale": "'Henpecked' (जोरू का गुलाम) describes a husband ruled by his wife."
+    },
+    {
+      "id": 5,
+      "question": "\"One who does not believe in God\" is called:",
+      "options": ["Atheist", "Apostate", "Ascetic", "Fatalist"],
+      "correct": 0,
+      "rationale": "'Atheist' (नास्तिक) is a person who does not believe in God; an 'Apostate' is one who has changed his faith."
+    },
+    {
+      "id": 6,
+      "question": "\"One who collects stamps\" is called:",
+      "options": ["Connoisseur", "Philatelist", "Gourmand", "Cacographist"],
+      "correct": 1,
+      "rationale": "'Philatelist' (डाक टिकट संग्रहकर्ता) is one who collects stamps as a hobby."
+    },
+    {
+      "id": 7,
+      "question": "\"One recovering from illness\" is called:",
+      "options": ["Convalescent", "Insolvent", "Fugitive", "Sadist"],
+      "correct": 0,
+      "rationale": "'Convalescent' (स्वास्थ्य-लाभ पाने वाला) refers to one who is recovering from illness; 'Insolvent' means unable to pay debts."
+    },
+    {
+      "id": 8,
+      "question": "\"One who runs away from justice\" is called:",
+      "options": ["Emigrant", "Bohemian", "Fugitive", "Pedestrian"],
+      "correct": 2,
+      "rationale": "'Fugitive' (भगोड़ा) is one who runs away from justice; an 'Emigrant' simply leaves his country to settle elsewhere."
+    },
+    {
+      "id": 9,
+      "question": "\"One who believes in fate\" is called:",
+      "options": ["Bigot", "Fanatic", "Anarchist", "Fatalist"],
+      "correct": 3,
+      "rationale": "'Fatalist' (भाग्यवादी) is one who believes in fate; a 'Bigot/Fanatic' is filled with excessive religious enthusiasm."
+    },
+    {
+      "id": 10,
+      "question": "\"Breaker of images and traditional beliefs\" is called:",
+      "options": ["Iconoclast", "Cannibal", "Carnivorous", "Arbitrator"],
+      "correct": 0,
+      "rationale": "'Iconoclast' (मूर्तिभंजक) is the breaker of images and traditional beliefs; a 'Cannibal' feeds on human flesh."
+    },
+    {
+      "id": 11,
+      "question": "\"One who is unable to pay his debts\" is called:",
+      "options": ["Fastidious", "Bankrupt / Insolvent", "Honorary", "Novice"],
+      "correct": 1,
+      "rationale": "'Bankrupt / Insolvent' (दिवालिया) is one who is unable to pay his debts; 'Honorary' means holding a post without any salary."
     }
   ]
 }

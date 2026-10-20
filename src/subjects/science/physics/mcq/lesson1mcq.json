@@ -1,5 +1,5 @@
 {
-  "lessonId": "physics-motion-001",
+  "lessonId": "lesson1",
   "title": "Introduction to Motion",
   "questions": [
     {
@@ -13,6 +13,114 @@
       ],
       "correct": 0,
       "rationale": "Motion is a change in the position of an object with respect to time."
+    },
+    {
+      "id": 2,
+      "question": "In the lesson's example, what is the velocity of a car that travels 100 km in 2 hours?",
+      "options": [
+        "50 km/h",
+        "200 km/h",
+        "102 km/h",
+        "25 km/h"
+      ],
+      "correct": 0,
+      "rationale": "Using v = d/t, the velocity is 100 divided by 2, which equals 50 km/h."
+    },
+    {
+      "id": 3,
+      "question": "Which equation does the lesson use to calculate velocity?",
+      "options": [
+        "v = d × t",
+        "v = t/d",
+        "v = d/t",
+        "v = d + t"
+      ],
+      "correct": 2,
+      "rationale": "Velocity is distance divided by time, written as v = d/t."
+    },
+    {
+      "id": 4,
+      "question": "According to the lesson, motion always depends on which of these?",
+      "options": [
+        "The temperature",
+        "A reference frame",
+        "The color of the object",
+        "The mass of the object"
+      ],
+      "correct": 1,
+      "rationale": "The lesson states that motion always depends on a reference frame, since position is described relative to something."
+    },
+    {
+      "id": 5,
+      "question": "An object whose position changes relative to a reference point over time is said to be:",
+      "options": [
+        "In motion",
+        "At rest permanently",
+        "Weightless",
+        "Invisible"
+      ],
+      "correct": 0,
+      "rationale": "Motion describes how an object's position changes relative to a reference point, so such an object is in motion."
+    },
+    {
+      "id": 6,
+      "question": "In the lesson's example, what distance does the car travel?",
+      "options": [
+        "2 km",
+        "50 km",
+        "100 km",
+        "200 km"
+      ],
+      "correct": 2,
+      "rationale": "The example states the car travels 100 km in 2 hours."
+    },
+    {
+      "id": 7,
+      "question": "Using v = d/t, what is the velocity of an object that covers 60 km in 2 hours?",
+      "options": [
+        "120 km/h",
+        "30 km/h",
+        "62 km/h",
+        "15 km/h"
+      ],
+      "correct": 1,
+      "rationale": "Dividing the distance 60 km by the time 2 hours gives a velocity of 30 km/h."
+    },
+    {
+      "id": 8,
+      "question": "In the lesson's example, how long does the car take for its journey?",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "5 hours",
+        "10 hours"
+      ],
+      "correct": 1,
+      "rationale": "The example says the car travels 100 km in 2 hours."
+    },
+    {
+      "id": 9,
+      "question": "Why can the same object be described as moving by one observer and stationary by another?",
+      "options": [
+        "Because motion always depends on the reference frame",
+        "Because objects can shrink and expand",
+        "Because time runs faster inside vehicles",
+        "Because observers see different colors"
+      ],
+      "correct": 0,
+      "rationale": "Since motion is defined relative to a reference frame, different frames can give different descriptions of the same object's motion."
+    },
+    {
+      "id": 10,
+      "question": "In the lesson, velocity is expressed in which combination of units?",
+      "options": [
+        "km and h only, without division",
+        "kilograms per second",
+        "meters per liter",
+        "kilometers per hour (km/h)"
+      ],
+      "correct": 3,
+      "rationale": "The example computes 100 km divided by 2 hours and gives the answer 50 km/h."
     }
   ]
 }

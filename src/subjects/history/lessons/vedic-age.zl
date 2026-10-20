@@ -1,0 +1,147 @@
+# The Vedic Age: From Pastoral Tribes to Kingdoms
+
+> Between about 1500 and 600 BCE, Indo-Aryan-speaking communities moved from
+> the Punjab plains to the Ganga-Yamuna doab — from cattle camps with tribal
+> councils to territorial kingdoms with grand sacrifices. Their hymns, the
+> Vedas, are the oldest large body of Indian literature.
+
+## 1. The Four Vedas
+
+The Vedas are **shruti** — "heard" revelation — transmitted orally with
+extraordinary mnemonic devices (pathas) for centuries before writing.
+
+| Veda | Content | Associated priest | Note |
+| --- | --- | --- | --- |
+| Rigveda | 1028 hymns in 10 mandalas to gods like Indra and Agni | Hotri (reciter) | Oldest; Gayatri mantra (RV 3.62) |
+| Samaveda | Melodies (saman) set to Rigvedic verses | Udgatri (singer) | Root of Indian music |
+| Yajurveda | Prose and verse formulas for sacrifice | Adhvaryu (ritualist) | Shukla and Krishna recensions |
+| Atharvaveda | Charms, spells, folk medicine | Brahma (overseer) | Closest to popular practice |
+
+## 2. Early Vedic Life (1500-1000 BCE)
+
+The **Rigveda** pictures a pastoral world in the **Sapta Sindhava** — the
+"land of seven rivers" (Indus, Jhelum, Chenab, Ravi, Beas, Sutlej, and the
+Sarasvati, "the most pious of rivers"). Cattle were the core of wealth.
+
+- **Gavishti**, the common Rigvedic word for war, literally means "search
+  for cows."
+- Time was measured in **godhuli** (the dust-raising moment of homecoming
+  herds); a rich man was a **gomat**.
+- Barter, not coins: **nishka** was still a gold ornament, not money.
+
+[example]
+A raja's standing was counted in herds, not acres. When hymns pray for
+"sons, long life, and cattle," the economic order of the age is on display —
+the cow is currency, status, and sacrifice all at once.
+[/example]
+
+The era's great conflict was the **Battle of Ten Kings (Dasarajna)** on the
+**Parushni (Ravi)**, where **Sudas** of the Bharata tribe defeated a
+confederacy including the Purus — the two later merged into the Kuru people.
+
+## 3. Early Political and Social Order
+
+| Institution | Role |
+| --- | --- |
+| Rajan | Tribal chief, led in war; not absolute |
+| Sabha | Council of elders, debated policy |
+| Samiti | Wider assembly, chose and advised the rajan |
+| Vidatha | Oldest assembly; women could take part |
+| Purohita | Chief priest and advisor to the rajan |
+| Senani | War commander |
+| Gramani | Head of the village (grama) |
+
+Women enjoyed notable standing: seeresses such as **Lopamudra, Apala, and
+Ghosha** composed hymns; girls studied the Vedas, chose husbands at
+**swayamvara**, and sat in the vidatha. The varna order was present but
+flexible — the Rigveda's tenth-mandala **Purusha Sukta** (RV 10.90) gives
+the mythic origin of the four varnas from the sacrificed cosmic man.
+
+## 4. Later Vedic Transformation (1000-600 BCE)
+
+Communities moved east into the doab, clearing forest with **krishna ayas**
+— iron, appearing from about 1000 BCE at sites such as Atranjikhera — and
+leaving the characteristic **Painted Grey Ware (PGW)** pottery.
+
+| Feature | Early Vedic | Later Vedic |
+| --- | --- | --- |
+| Region | Sapta Sindhava, Punjab | Ganga-Yamuna doab |
+| Economy | Pastoral; cattle wealth | Agriculture first; rice and wheat |
+| Metal | Copper-bronze (ayas) | Iron (krishna ayas) |
+| Pottery | Ochre Coloured Pottery | Painted Grey Ware |
+| Chief | Rajan, tribal | King with divine sanction |
+| Assemblies | Sabha, samiti, vidatha strong | Declining, priest-dominated |
+| Varna | Flexible | Rigid, birth-based |
+| Ritual | Simple yajna | Grand royal sacrifices |
+
+## 5. Politics of Sacrifice
+
+Kingship widened into **rashtra** (territorial state) and required ritual
+legitimacy from Brahmanas. The great royal rites were the **rajasuya**
+(consecration), **ashvamedha** (horse sacrifice claiming supremacy), and
+**vajapeya** (chariot-race ritual). New officials appear — **sangrahitri**
+(treasurer) and **bhagadugha** (tax collector), signalling regular tribute
+(**bhaga**) replacing voluntary **bali**.
+
+[definition]
+**Ashvamedha** — the "horse sacrifice." A royal stallion roamed free for a
+year under army escort; the lands it crossed had to accept the king's
+suzerainty or fight, and the horse's return sealed the claim in ritual.
+[/definition]
+
+## 6. The Later Vedic Landscape
+
+The Kuru-Panchala region (around modern Delhi-Doab) was the cultural
+heartland; the period's powers are the **Kuru, Panchala, Kosala, Kashi, and
+Videha** kingdoms. King **Janaka** of Videha's court hosted the philosophers
+**Yajnavalkya** and the women debaters **Gargi and Maitreyi** — a glimpse of
+the debate culture that produced the Upanishads.
+
+By now women had lost their place in the assemblies, **gotra** exogamy was
+established, and the four ashramas (student, householder, forest-dweller,
+renouncer) were systematised in the Jabala Upanishad.
+
+## 7. The Wider Literature
+
+@diagram tree id="vedic-literature" layout="tree" aria="Vedic literature from each Veda to its attached prose texts"
+  Vedic Literature -> "Rigveda"
+  Vedic Literature -> "Samaveda"
+  Vedic Literature -> "Yajurveda"
+  Vedic Literature -> "Atharvaveda"
+  Rigveda -> "Aitareya Brahmana"
+  Rigveda -> "Kaushitaki Brahmana"
+  Samaveda -> "Panchavimsha Brahmana"
+  Yajurveda -> "Shatapatha Brahmana"
+  Atharvaveda -> "Gopatha Brahmana"
+  Shatapatha Brahmana -> "Brihadaranyaka Upanishad"
+@/diagram
+
+- **Brahmanas**: prose manuals explaining each sacrifice. The vast
+  **Shatapatha Brahmana** narrates sage Videha Mathava carrying Agni east —
+  the movement of the culture itself.
+- **Aranyakas**: "forest treatises" for hermits, bridging ritual and
+  philosophy.
+- **Upanishads**: 108 in the traditional Muktika list; the philosophical
+  core, teaching that **Brahman** (universal soul) and **Atman** (individual
+  soul) are one. India's national motto, *Satyameva Jayate* ("truth alone
+  triumphs"), comes from the **Mundaka Upanishad**.
+- **Vedangas**: six limbs that help study the Veda — Shiksha (phonetics),
+  Kalpa (ritual), Vyakarana (grammar), Nirukta (etymology), Chhanda
+  (metrics), and Jyotisha (astronomy).
+
+[tip]
+Pair each Vedanga with a plain word and the list locks in: Shiksha-sound,
+Kalpa-ritual, Vyakarana-grammar, Nirukta-meaning, Chhanda-meter,
+Jyotisha-stars. Sound, ritual, grammar, meaning, meter, stars.
+[/tip]
+
+## Key Takeaways
+
+- The Vedic Age moved from a pastoral, assembly-governed tribal society in
+  the Punjab to agrarian, sacrifice-legitimised kingdoms in the doab.
+- Cattle defined early wealth (gavishti); iron and PGW pottery define the
+  Later Vedic eastward expansion.
+- Women's status, visibly strong in the Rigveda, declined in the Later Vedic
+  phase along with the assemblies.
+- The Brahmanas, Aranyakas, Upanishads, and six Vedangas grew around the
+  four Vedas as ritual and philosophy matured.

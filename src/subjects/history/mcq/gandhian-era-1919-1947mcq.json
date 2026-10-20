@@ -1,0 +1,76 @@
+{
+  "lessonId": "gandhian-era-1919-1947",
+  "title": "The Gandhian Era: Mass Struggles to Independence",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Gandhi returned to India from South Africa in January 1915. His first Indian satyagraha, at Champaran in 1917, was against:",
+      "options": ["The salt tax", "The tinkathia indigo system of European planters", "Railway racial segregation", "The mill owners of Ahmedabad"],
+      "correct": 1,
+      "rationale": "At Champaran (1917), with Rajendra Prasad assisting, Gandhi's inquiry ended the tinkathia rule forcing tenants to grow indigo on three-twentieths of their land."
+    },
+    {
+      "id": 2,
+      "question": "The Jallianwala Bagh massacre took place on:",
+      "options": ["6 April 1919", "13 April 1919", "5 February 1922", "12 March 1930"],
+      "correct": 1,
+      "rationale": "On Baisakhi day, 13 April 1919, General Dyer fired on an unarmed crowd in Amritsar; the Hunter Commission's mild censure destroyed Indian faith in British justice."
+    },
+    {
+      "id": 3,
+      "question": "Gandhi withdrew the Non-Cooperation movement after:",
+      "options": ["The Chauri Chaura incident of 5 February 1922", "The Simon Commission's arrival", "The failure of the Second Round Table Conference", "The Communal Award"],
+      "correct": 0,
+      "rationale": "A crowd burnt a police station with policemen at Chauri Chaura (Gorakhpur) on 5 February 1922; Gandhi called off the movement at Bardoli rather than let violence define it."
+    },
+    {
+      "id": 4,
+      "question": "The Nehru Report of 1928 and Jinnah's Fourteen Points of 1929 respectively represented:",
+      "options": ["British reform plans", "Congress's constitutional draft and the League's counter-demands", "The two Round Table outcomes", "Gandhi's and Patel's economic programmes"],
+      "correct": 1,
+      "rationale": "Motilal Nehru's committee drafted a dominion-status constitution; Jinnah's Fourteen Points marked the League's rejection and parting of ways."
+    },
+    {
+      "id": 5,
+      "question": "The Purna Swaraj resolution was passed at the Lahore session of Congress in December 1929 under whose presidency?",
+      "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sarojini Naidu", "Subhas Chandra Bose"],
+      "correct": 1,
+      "rationale": "The Lahore session under Jawaharlal Nehru voted complete independence, observed as Independence Day on 26 January 1930."
+    },
+    {
+      "id": 6,
+      "question": "The Dandi March of 1930 covered roughly:",
+      "options": ["78 miles from Delhi to Meerut", "240 miles from Sabarmati to Dandi", "400 miles from Calcutta to Nagpur", "100 miles around Bombay"],
+      "correct": 1,
+      "rationale": "From 12 March to 6 April 1930, Gandhi walked about 240 miles with 78 followers to break the salt law at Dandi for eight annas of tax."
+    },
+    {
+      "id": 7,
+      "question": "The Poona Pact of September 1932 between Gandhi and Ambedkar:",
+      "options": ["Granted separate electorates to the Depressed Classes", "Replaced separate electorates with reserved seats under joint electorates", "Ended the salt tax", "Created Pakistan"],
+      "correct": 1,
+      "rationale": "Gandhi's Yerawada fast against the Communal Award's separate electorates for the Depressed Classes produced the Poona Pact: joint electorates with reserved seats."
+    },
+    {
+      "id": 8,
+      "question": "The Quit India movement's call 'Do or Die' was given on 8 August 1942 at:",
+      "options": ["Bombay", "Lahore", "Calcutta", "Wardha"],
+      "correct": 0,
+      "rationale": "The All-India Congress Committee's Bombay session passed the Quit India resolution of 8 August 1942; Aruna Asaf Ali hoisted the flag at Gowalia Tank as leaders were arrested."
+    },
+    {
+      "id": 9,
+      "question": "Subhas Chandra Bose proclaimed the Azad Hind Government and the INA's 'Delhi Chalo' slogan in:",
+      "options": ["Berlin, 1941", "Tokyo, 1942", "Singapore, 1943", "Rangoon, 1945"],
+      "correct": 2,
+      "rationale": "Bose reached Singapore in 1943, proclaimed the Azad Hind Government with the Rani Jhansi Regiment, and led the INA toward Imphal and Kohima in 1944."
+    },
+    {
+      "id": 10,
+      "question": "The Radcliffe Line, drawn for the Partition of 1947, was announced on:",
+      "options": ["3 June 1947", "15 August 1947", "17 August 1947", "26 January 1950"],
+      "correct": 2,
+      "rationale": "The Boundary Commission's award was published on 17 August 1947, two days after the midnight transfer of power, cutting through Bengal and the Punjab."
+    }
+  ]
+}

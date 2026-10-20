@@ -1,6 +1,16 @@
 /* src/styles/lesson/lesson-content.css — wraps Zolto's compiled HTML output */
-.ou-lesson-content { line-height: 1.7; }
+.ou-lesson-content {
+  line-height: 1.7;
+  /* content-visibility: auto skips rendering off-screen Zolto content until
+     it scrolls into view. Long lessons (20+ sections) can skip dozens of
+     costly layout + paint passes on initial render — directly reducing the
+     time-to-interactive for the visible portion of the lesson.
+     contain-intrinsic-size gives the browser a height estimate so the
+     scrollbar behaves correctly before the content is rendered. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
 .ou-lesson-content h2 { margin-top: var(--ou-space-6); }
 .ou-lesson-content h3 { margin-top: var(--ou-space-5); }
-.ou-lesson-content p { margin-top: var(--ou-space-3); }
+.ou-lesson-content p  { margin-top: var(--ou-space-3); }
 .ou-lesson-content > *:first-child { margin-top: 0; }

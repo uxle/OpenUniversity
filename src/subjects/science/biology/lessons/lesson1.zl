@@ -1,3 +1,66 @@
-# Lesson1
+# The Characteristics of Life
 
-TODO: write lesson content.
+> What separates a living thing from a rock, a flame, or a crystal?
+> Biologists answer with a checklist of processes — not a single magic
+> property.
+
+## 1. The Seven Characteristics
+
+Something is generally considered alive when it shows all of the following:
+
+| Characteristic | Meaning | Example |
+| --- | --- | --- |
+| Movement | Change of position or internal motion | Plants grow toward light |
+| Respiration | Releasing energy from food | Mitochondria burning glucose |
+| Sensitivity | Responding to the environment | Mimosa leaves folding when touched |
+| Growth | Permanent increase in size/dry mass | A seedling becoming a tree |
+| Reproduction | Producing new individuals | Bacteria dividing every 20 minutes |
+| Excretion | Removing metabolic waste | Kidneys filtering urea |
+| Nutrition | Obtaining organic matter for energy/materials | Photosynthesis; eating |
+
+[definition]
+**Metabolism** is the sum of all chemical reactions inside an organism —
+the building-up (**anabolic**) and breaking-down (**catabolic**) processes
+that make every characteristic above possible.
+[/definition]
+
+## 2. Tricky Cases
+
+- **A virus** reproduces and evolves, but has no metabolism of its own
+  and can't move or respond — most biologists class it as non-living.
+- **A candle flame** moves, grows, consumes fuel and excretes smoke, but
+  has no organisation, reproduction, or response from *within* — not alive.
+- **A mule** cannot produce fertile offspring yet is unmistakably alive:
+  reproduction counts at the level of the species, not the individual.
+
+[important]
+Life is defined by *processes*, organised in a bounded, self-maintaining
+system. No single trait — movement, growth, even reproduction — is
+sufficient on its own.
+[/important]
+
+## 3. Levels of Biological Organisation
+
+Characteristics of life emerge as levels stack up:
+
+@diagram tree id="levels-of-life" layout="tree" aria="Levels of biological organisation"
+  Cell -> Tissue
+  Tissue -> Organ
+  Organ -> "Organ system"
+  "Organ system" -> Organism
+  Organism -> Population
+  Population -> Community
+  Community -> Ecosystem
+@/diagram
+
+## Example
+
+A heartbeat is a property of no single muscle cell. Cells contract;
+*only the organ* beats. This emergence of new properties at each level
+is why biology studies everything from molecules to ecosystems.
+
+## Key Takeaways
+
+- The seven characteristics describe life by what living things *do*.
+- Viruses fail the metabolism test; flames lack internal organisation.
+- New properties appear at every level from cell to ecosystem.

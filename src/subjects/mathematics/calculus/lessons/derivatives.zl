@@ -1,0 +1,78 @@
+# Derivatives: Measuring Instantaneous Change
+
+> The derivative of $f(x)$ at a point is the slope of the curve there —
+> how fast the output changes per unit input at that exact moment.
+
+## 1. From Secant to Tangent
+
+The average rate over an interval $h$ is
+$\frac{f(x+h) - f(x)}{h}$. Shrinking $h \to 0$ turns the secant's slope
+into the tangent's:
+
+@math label="eq:derivative-def"
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+@/math
+
+## 2. Rules That Replace the Definition
+
+| Function | Derivative | Rule name |
+| --- | --- | --- |
+| $c$ (constant) | 0 | constant rule |
+| $x^n$ | $nx^{n-1}$ | power rule |
+| $\sin x$ | $\cos x$ | standard |
+| $\cos x$ | $-\sin x$ | watch the sign |
+| $e^x$ | $e^x$ | unchanged by differentiation |
+| $\ln x$ | $1/x$ | standard |
+
+## Example
+
+For $f(x) = 3x^4 - 2x + 7$:
+
+@math label="eq:power-example"
+f'(x) = 12x^3 - 2
+@/math
+
+The derivative of the constant 7 vanishes — constants don't change.
+
+## 3. What the Sign Tells You
+
+@diagram flowchart id="sign-reading" layout="hierarchical" aria="Reading the sign of the derivative"
+node pos label="f'(x) > 0" shape="round-rect" fill="#22c55e"
+node neg label="f'(x) < 0" shape="round-rect"
+node zero label="f'(x) = 0" shape="diamond"
+
+pos -> zero label="rising, then flattens"
+neg -> zero label="falling, then flattens"
+
+edge zero -> pos style="dashed" label="minimum possible turn"
+edge zero -> neg style="dashed" label="maximum possible turn"
+@/diagram
+
+- Positive derivative → increasing; negative → decreasing.
+- Zero derivative marks a **stationary point** (peak, valley, or flat).
+  The **second derivative** sorts them: $f'' > 0$ minimum, $f'' < 0$
+  maximum.
+
+## Example: optimisation in one move
+
+Height of a thrown ball: $h(t) = 20t - 5t^2$. Then
+$h'(t) = 20 - 10t$, and $h' = 0$ at $t = 2$ s — the peak. Height there:
+$h(2) = 40 - 20 = 20$ m.
+
+## 4. Rates in the Real World
+
+If $s(t)$ is distance, $s'(t)$ is velocity. If $C(x)$ is cost,
+$C'(x)$ is marginal cost — the extra cost of one more unit. Same
+machinery, different nouns.
+
+[important title="Differentiable implies continuous"]
+A function must be unbroken at a point to have a derivative there.
+The converse fails: $|x|$ is continuous everywhere but has no
+derivative at $0$ (the corner has no single tangent direction).
+[/important]
+
+## Key Takeaways
+
+- Derivative = limit of average rates = slope of the tangent line.
+- Power rule covers polynomials; sign of $f'$ gives rise/fall.
+- Stationary points need the second derivative to classify.

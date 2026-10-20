@@ -1,0 +1,76 @@
+{
+  "lessonId": "chemical-reactions-and-equilibrium",
+  "title": "Chemical Reactions: Types, Rates, and Equilibrium",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Heating limestone (CaCO₃ → CaO + CO₂) is which type of reaction?",
+      "options": ["combination", "decomposition", "displacement", "double displacement"],
+      "correct": 1,
+      "rationale": "One reactant splits into two products on heating — thermal decomposition."
+    },
+    {
+      "id": 2,
+      "question": "Iron displaces copper from copper sulfate solution because:",
+      "options": ["iron is lighter than copper", "iron lies above copper in the reactivity series", "copper is magnetic", "iron melts at a lower temperature"],
+      "correct": 1,
+      "rationale": "A more reactive metal displaces a less reactive one from its salt solution: Fe + CuSO₄ → FeSO₄ + Cu."
+    },
+    {
+      "id": 3,
+      "question": "In Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl, the insoluble BaSO₄ is called a:",
+      "options": ["catalyst", "solute", "precipitate", "colloid"],
+      "correct": 2,
+      "rationale": "This double-displacement swap partners in solution to form an insoluble solid — a precipitate, marked with the down-arrow."
+    },
+    {
+      "id": 4,
+      "question": "'OIL RIG' reminds you that oxidation is ______ and reduction is ______.",
+      "options": ["gain of electrons; loss of electrons", "loss of electrons; gain of electrons", "loss of oxygen; gain of oxygen", "gain of protons; loss of protons"],
+      "correct": 1,
+      "rationale": "Oxidation Is Loss (of electrons), Reduction Is Gain — the electron bookkeeping behind every redox reaction."
+    },
+    {
+      "id": 5,
+      "question": "Which coefficients correctly balance CH₄ + O₂ → CO₂ + H₂O?",
+      "options": ["1, 1, 1, 1", "1, 2, 1, 2", "2, 3, 2, 4", "1, 3, 1, 2"],
+      "correct": 1,
+      "rationale": "CH₄ + 2O₂ → CO₂ + 2H₂O: carbon 1 = 1, hydrogen 4 = 4, oxygen 4 = 4."
+    },
+    {
+      "id": 6,
+      "question": "Respiration and photosynthesis differ because:",
+      "options": ["both are exothermic", "respiration is exothermic while photosynthesis is endothermic", "respiration is endothermic while photosynthesis is exothermic", "neither involves energy change"],
+      "correct": 1,
+      "rationale": "Respiration releases the energy stored in glucose; photosynthesis absorbs sunlight to build glucose."
+    },
+    {
+      "id": 7,
+      "question": "Chemically, rust is:",
+      "options": ["Fe₂O₃·xH₂O", "FeS", "Fe₃N₂", "FeCl₃"],
+      "correct": 0,
+      "rationale": "Rust is hydrated iron(III) oxide, Fe₂O₃·xH₂O — the flaky reddish-brown corrosion product."
+    },
+    {
+      "id": 8,
+      "question": "In the Haber process, N₂ + 3H₂ ⇌ 2NH₃ (ΔH = −92 kJ), raising the pressure shifts the equilibrium:",
+      "options": ["left, lowering the NH₃ yield", "right, raising the NH₃ yield", "nowhere — it only speeds the reaction", "left and right equally"],
+      "correct": 1,
+      "rationale": "Pressure pushes the system toward fewer gas molecules — 4 mol of reactant become 2 mol of product — favouring ammonia."
+    },
+    {
+      "id": 9,
+      "question": "Adding a catalyst to a system already at equilibrium:",
+      "options": ["raises the yield", "shifts it toward products", "brings equilibrium sooner without shifting its position", "shifts it toward reactants"],
+      "correct": 2,
+      "rationale": "Catalysts lower the activation energy of both directions equally, so the mixture reaches equilibrium faster but its composition is unchanged."
+    },
+    {
+      "id": 10,
+      "question": "Chip packets are flushed with nitrogen mainly to:",
+      "options": ["add crunchiness", "prevent rancidity by keeping oxygen away from the fats", "sterilize the contents", "reduce shipping weight"],
+      "correct": 1,
+      "rationale": "Oxygen oxidizes fats and oils, turning them rancid; nitrogen is an inert blanket, and antioxidants help too."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+# Carbon and Its Compounds: The Chemistry of Life
+
+> Carbon's ability to chain with itself — catenation — creates
+> millions of compounds. From fuels and fabrics to soaps and food,
+> organic chemistry runs daily life.
+
+## 1. Why Carbon Is Special
+
+[definition]
+**Catenation** is the self-linking of atoms of one element into
+chains and rings; **tetravalency** means carbon forms four bonds.
+Together they let carbon build the backbones of fuels, fabrics,
+food, and life itself.
+[/definition]
+
+## 2. Allotropes of Carbon
+
+| Allotrope | Bonding | Standout property | Use |
+| --- | --- | --- | --- |
+| Diamond | each C bonded to 4 others; sp³ network | hardest natural substance | cutting, drilling, jewellery |
+| Graphite | flat hexagonal layers; sp², one free electron per C | soft, slippery, conducts | pencil leads, lubricants, electrodes |
+| Fullerene | C₆₀ "buckyball", 60 C in a football shape | unique cage chemistry | drug delivery, nanotech |
+| Graphene | a single graphite layer | strongest material tested | next-generation electronics |
+
+[important]
+Graphite conducts because each sp² carbon contributes one
+delocalized electron; in diamond every electron is locked into a
+σ bond, so it insulates — while its rigid network makes it the
+hardest natural substance.
+[/important]
+
+## 3. Hydrocarbon Families
+
+@diagram tree id="hydrocarbon-families" layout="tree" aria="Hydrocarbons split into saturated alkanes and unsaturated alkenes and alkynes"
+  Hydrocarbons -> "Saturated: alkanes"
+  Hydrocarbons -> "Unsaturated"
+  "Unsaturated" -> "Alkenes (C=C)"
+  "Unsaturated" -> "Alkynes (C triple C)"
+@/diagram
+
+| Family | General formula | Bonding | First four members |
+| --- | --- | --- | --- |
+| Alkanes | CₙH₂ₙ₊₂ | all single | CH₄, C₂H₆, C₃H₈, C₄H₁₀ |
+| Alkenes | CₙH₂ₙ | one C=C | C₂H₄, C₃H₆, C₄H₈ |
+| Alkynes | CₙH₂ₙ₋₂ | one C≡C | C₂H₂, C₃H₄, C₄H₆ |
+
+A **molecular formula** (C₄H₁₀) only lists atoms; a **structural
+formula** shows the arrangement — straight n-butane versus branched
+iso-butane.
+
+## 4. Isomerism and Homologous Series
+
+[definition]
+**Isomers** share a molecular formula but differ in structure.
+Butane (C₄H₁₀) has 2 isomers; pentane (C₅H₁₂) has 3 — n-, iso-, and
+neo-.
+[/definition]
+
+A **homologous series** is a family sharing one functional group,
+each member one CH₂ larger than the last, so melting points climb
+smoothly along the series.
+
+## 5. Functional Groups
+
+| Group | Suffix | Example |
+| --- | --- | --- |
+| Alcohol (–OH) | -ol | ethanol, CH₃CH₂OH |
+| Aldehyde (–CHO) | -al | ethanal, CH₃CHO |
+| Ketone (–CO–) | -one | propanone, CH₃COCH₃ |
+| Carboxylic acid (–COOH) | -oic acid | ethanoic acid, CH₃COOH |
+| Alkene (C=C) | -ene | ethene, C₂H₄ |
+| Alkyne (C≡C) | -yne | ethyne, C₂H₂ |
+
+## 6. Ethanol and Ethanoic Acid
+
+**Ethanol** (C₂H₅OH) comes from fermenting glucose. "Denatured"
+alcohol carries additives that make it unfit to drink; it serves as
+a solvent and a fuel. With sodium it releases hydrogen:
+
+@math label="eq:ethanol-sodium"
+\mathrm{2C_2H_5OH + 2Na \to 2C_2H_5ONa + H_2}
+@/math
+
+**Ethanoic acid** (CH₃COOH) is vinegar's sour agent (about 5%).
+The pure acid, freezing near 16.6 °C into ice-like crystals, is
+called **glacial**. With ethanol and an acid catalyst it forms the
+sweet-smelling **ester**:
+
+@math label="eq:esterification"
+\mathrm{CH_3COOH + C_2H_5OH \rightleftharpoons CH_3COOC_2H_5 + H_2O}
+@/math
+
+[note]
+Esters carry fruity perfumes. Hydrolysing an ester with NaOH makes
+soap — **saponification**, the reaction that turned animal fat into
+the original soaps.
+[/note]
+
+## 7. Soaps and Detergents
+
+[definition]
+A **soap** is the sodium or potassium salt of a long-chain fatty
+acid. In water its molecules cluster into **micelles**: oily tails
+trap grease inside while charged heads face the water.
+[/definition]
+
+| | Soap | Detergent |
+| --- | --- | --- |
+| Works in hard water? | no — Ca²⁺/Mg²⁺ form scum | yes |
+| Biodegradable? | yes | slower; branched chains persist |
+| Made from | fats + NaOH | petrochemicals |
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Softest useful allotrope? | graphite — also the conductor |
+| Alkane general formula? | CₙH₂ₙ₊₂ |
+| Isomers of pentane? | 3 |
+| Vinegar? | about 5% ethanoic acid |
+| Sweet-smelling ester reaction? | esterification |
+| Why soap fails in hard water? | Ca/Mg salts form scum |

@@ -1,0 +1,111 @@
+# Electrochemistry: Batteries, Electrolysis, and Rust
+
+> Push current through a compound, or let a reaction push current
+> through a wire — electrochemistry runs both ways. It plates your
+> jewellery, starts your car, and rusts your gate.
+
+## 1. Electrolytes and Nonelectrolytes
+
+[definition]
+An **electrolyte** — sodium chloride solution, molten KCl, dilute
+H₂SO₄, NaOH — conducts because it dissociates into mobile ions. A
+**nonelectrolyte** — sugar or alcohol solution — holds no ions and
+does not conduct.
+[/definition]
+
+Electrolytic conduction is ion motion, unlike metallic conduction
+by electrons.
+
+## 2. Electrolysis: Splitting with Current
+
+The electrode dictionary — never mix these up:
+
+| Electrode | Process | Memory hook |
+| --- | --- | --- |
+| Anode | oxidation (electron loss) | AN OX |
+| Cathode | reduction (electron gain) | RED CAT |
+
+[example]
+**Electrolysis of acidified water:** hydrogen bubbles at the
+cathode, oxygen at the anode — the volume of H₂ is exactly twice
+that of O₂, matching 2H₂O → 2H₂ + O₂.
+[/example]
+
+**Molten NaCl** gives sodium metal at the cathode and chlorine gas
+at the anode. Electrolysis of **brine** (the chlor-alkali process)
+delivers three products at once:
+
+| Product | Where it appears | Use |
+| --- | --- | --- |
+| Cl₂ | anode | PVC, disinfectants, water treatment |
+| H₂ | cathode | fuel, margarine |
+| NaOH | left in solution | soap, paper, textiles |
+
+Overall: 2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂.
+
+## 3. Galvanic Cells: Chemistry Makes Current
+
+@diagram tree id="daniell-cell" layout="tree" aria="Parts of the Daniell cell"
+  "Daniell cell" -> "Zn anode in ZnSO4"
+  "Daniell cell" -> "Cu cathode in CuSO4"
+  "Daniell cell" -> "Salt bridge"
+@/diagram
+
+The **Daniell cell** pairs a zinc rod in ZnSO₄ solution with a
+copper rod in CuSO₄, joined by a **salt bridge** that keeps both
+solutions electrically neutral. Zinc dissolves (Zn → Zn²⁺ + 2e⁻)
+while copper plates out (Cu²⁺ + 2e⁻ → Cu), and electrons stream
+through the wire — a cell EMF of about 1.1 V.
+
+[note]
+In galvanic cells the anode is still the oxidation electrode — but
+it is the negative terminal, opposite to electrolytic cells.
+[/note]
+
+## 4. Batteries
+
+| Cell | Type | Chemistry highlights | Where |
+| --- | --- | --- | --- |
+| Dry cell (Leclanché) | primary (single use) | zinc anode, MnO₂ cathode in NH₄Cl paste | torches, remotes |
+| Lead-acid | secondary (rechargeable) | Pb and PbO₂ plates in H₂SO₄ | car starter motors |
+| Lithium-ion | secondary | Li⁺ shuttles between electrodes; light, energy-dense | phones, laptops, EVs |
+| Fuel cell | continuous feed | H₂ + O₂ → H₂O plus electricity and heat | spacecraft, buses |
+
+## 5. Corrosion: Electrochemistry in Reverse
+
+Rust is electrochemical: iron at anodic patches dissolves while
+oxygen is reduced at cathodic patches, with moisture as the
+electrolyte.
+
+| Prevention | How it works |
+| --- | --- |
+| Galvanization | zinc coat; even scratched, the zinc corrodes first |
+| Sacrificial anodes | Mg or Zn blocks bolted to ship hulls corrode instead |
+| Alloying | stainless steel (Cr, Ni) resists rust outright |
+| Barriers | paint, grease, plastic dip — keep air and water away |
+
+## 6. Electroplating
+
+[definition]
+**Electroplating** deposits a thin metal layer by electrolysis:
+the object to be plated is the cathode, the plating metal is the
+anode, and the electrolyte is a solution of that metal's salt.
+[/definition]
+
+| Object being plated | Electrode | What happens |
+| --- | --- | --- |
+| the item (spoon, ring) | cathode | metal ions reduce onto its surface |
+| the plating metal bar | anode | metal dissolves into the solution as ions |
+
+Uses: chrome on car bumpers, silver on cutlery, tin on food cans.
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Anode does what? | oxidation — always |
+| Electrolysis of water — gas ratio? | H₂ : O₂ = 2 : 1 by volume |
+| Chlor-alkali products? | NaOH, Cl₂, H₂ |
+| Rechargeable car battery? | lead-acid |
+| Which electrode gets plated? | the cathode |
+| Sacrificial ship blocks? | magnesium |

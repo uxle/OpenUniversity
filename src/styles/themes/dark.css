@@ -1,19 +1,48 @@
-/* src/styles/themes/dark.css */
+/* src/styles/themes/dark.css — "Ink" theme: pure black, white becomes
+   the accent (inverted monochrome). Accent-contrast flips to black so
+   text/icons on accent-filled surfaces stay readable. Success/warning/
+   danger get lighter muted variants to hold contrast on dark surfaces.
+   The optional pastel accents (--ou-hue, subject hues in accents.css)
+   get lighter variants too so they stay soft — never neon — on black. */
 [data-theme="dark"] {
   --ou-bg: #000000;
   --ou-surface: #1c1c1e;
-  --ou-surface-translucent: rgba(22, 22, 24, 0.8);
+  --ou-surface-translucent: rgba(22, 22, 24, 0.82);
   --ou-surface-subtle: #2c2c2e;
   --ou-surface-raised: #2c2c2e;
-  --ou-border: rgba(255, 255, 255, 0.08);
-  --ou-border-strong: rgba(255, 255, 255, 0.15);
+  --ou-border: rgba(255, 255, 255, 0.09);
+  --ou-border-strong: rgba(255, 255, 255, 0.16);
   --ou-text: #f5f5f7;
   --ou-text-secondary: #98989d;
   --ou-text-muted: #636366;
-  --ou-accent: #2997ff;
-  --ou-accent-subtle: rgba(41, 151, 255, 0.15);
-  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.3);
-  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.5);
-  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.65);
+  --ou-accent: #f5f5f7;
+  --ou-accent-hover: #ffffff;
+  --ou-accent-subtle: rgba(245, 245, 247, 0.12);
+  --ou-accent-contrast: #000000;
+  --ou-focus-ring: #f5f5f7;
+  --ou-success: #6fd08c;
+  --ou-warning: #e8a04c;
+  --ou-danger: #ef6b62;
+
+  /* Optional accents — same small-dose rules as light theme. */
+  --ou-hue: #8db9ff;
+  --ou-highlight: rgba(255, 214, 10, 0.20);
+  --ou-highlight-ink: #ffe68a;
+
+  --ou-gradient-brand: linear-gradient(135deg, #f5f5f7 0%, #c7c7cc 100%);
+  --ou-gradient-hue: linear-gradient(135deg, #8db9ff 0%, #b3a6ff 100%);
+  --ou-gradient-success: linear-gradient(135deg, #f5f5f7 0%, #c7c7cc 100%);
+  --ou-gradient-skeleton: linear-gradient(
+    90deg,
+    #2c2c2e 25%,
+    #3a3a3c 50%,
+    #2c2c2e 75%
+  );
+  --ou-shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.55);
+  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.70);
+  --ou-shadow-glow-accent: 0 0 0 4px rgba(245, 245, 247, 0.16),
+                           0 8px 24px rgba(0, 0, 0, 0.55);
   color-scheme: dark;
 }

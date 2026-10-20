@@ -11,31 +11,37 @@
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 4,
+      "lessonCount": 20,
       "subSubjects": [
+        {
+          "id": "ai-reasoning",
+          "title": "AI Reasoning",
+          "description": "How intelligent systems convert natural language into structured, symbolic representations — then reason, calculate, and verify answers deterministically instead of guessing.",
+          "lessonCount": 3
+        },
         {
           "id": "algorithms",
           "title": "Algorithms",
           "description": "Step-by-step methods for solving problems, and how to measure their efficiency.",
-          "lessonCount": 1
+          "lessonCount": 5
         },
         {
           "id": "networking",
           "title": "Networking",
           "description": "How computers communicate and exchange data across networks.",
-          "lessonCount": 1
+          "lessonCount": 4
         },
         {
           "id": "operating-systems",
           "title": "Operating Systems",
           "description": "The software that manages a computer's hardware, processes, and resources.",
-          "lessonCount": 1
+          "lessonCount": 4
         },
         {
           "id": "programming",
           "title": "Programming",
           "description": "Writing instructions that tell computers what to do.",
-          "lessonCount": 1
+          "lessonCount": 4
         }
       ]
     },
@@ -43,21 +49,21 @@
       "id": "economics",
       "title": "Economics",
       "description": "How individuals, businesses, and societies allocate scarce resources.",
-      "lessonCount": 1,
+      "lessonCount": 13,
       "subSubjects": []
     },
     {
       "id": "geography",
       "title": "Geography",
       "description": "The study of places, landscapes, and how people interact with them.",
-      "lessonCount": 1,
+      "lessonCount": 13,
       "subSubjects": []
     },
     {
       "id": "history",
       "title": "History",
       "description": "The study of past events and how they shaped the present.",
-      "lessonCount": 1,
+      "lessonCount": 14,
       "subSubjects": []
     },
     {
@@ -84,37 +90,37 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 5,
+      "lessonCount": 19,
       "subSubjects": [
         {
           "id": "algebra",
           "title": "Algebra",
           "description": "Working with symbols and variables, and the rules for manipulating them.",
-          "lessonCount": 1
+          "lessonCount": 4
         },
         {
           "id": "calculus",
           "title": "Calculus",
           "description": "The mathematics of change, motion, and accumulation.",
-          "lessonCount": 1
+          "lessonCount": 3
         },
         {
           "id": "geometry",
           "title": "Geometry",
           "description": "The study of shapes, sizes, angles, and the properties of space.",
-          "lessonCount": 1
+          "lessonCount": 4
         },
         {
           "id": "numbers",
           "title": "Numbers",
           "description": "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on.",
-          "lessonCount": 1
+          "lessonCount": 4
         },
         {
           "id": "statistics",
           "title": "Statistics",
           "description": "Collecting, analyzing, and interpreting data.",
-          "lessonCount": 1
+          "lessonCount": 4
         }
       ]
     },
@@ -122,14 +128,14 @@
       "id": "philosophy",
       "title": "Philosophy",
       "description": "Fundamental questions about knowledge, existence, and ethics.",
-      "lessonCount": 1,
+      "lessonCount": 11,
       "subSubjects": []
     },
     {
       "id": "reasoning",
       "title": "Reasoning",
       "description": "Logical and verbal reasoning for competitive exams — organized by topic: blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, and sentence rearrangement.",
-      "lessonCount": 102,
+      "lessonCount": 109,
       "subSubjects": [
         {
           "id": "analogy-and-classification",
@@ -177,25 +183,25 @@
           "id": "seating-arrangement",
           "title": "Seating Arrangement",
           "description": "Linear, circular, and double-row seating arrangement puzzles.",
-          "lessonCount": 1
+          "lessonCount": 3
         },
         {
           "id": "sentence-rearrangement",
           "title": "Sentence Rearrangement",
           "description": "Reordering jumbled sentence parts into a coherent paragraph.",
-          "lessonCount": 1
+          "lessonCount": 2
         },
         {
           "id": "series",
           "title": "Number & Alphabet Series",
           "description": "Number series, alphabet series, and mixed series pattern-detection.",
-          "lessonCount": 1
+          "lessonCount": 3
         },
         {
           "id": "syllogism",
           "title": "Syllogism",
           "description": "Statement-and-conclusion logic using the four A/E/I/O statement types.",
-          "lessonCount": 1
+          "lessonCount": 3
         }
       ]
     },
@@ -203,25 +209,25 @@
       "id": "science",
       "title": "Science",
       "description": "Explore the natural world through scientific knowledge.",
-      "lessonCount": 15,
+      "lessonCount": 34,
       "subSubjects": [
         {
           "id": "biology",
           "title": "Biology",
           "description": "The study of living organisms and life processes.",
-          "lessonCount": 12
+          "lessonCount": 13
         },
         {
           "id": "chemistry",
           "title": "Chemistry",
           "description": "The study of matter, its properties, and how it changes.",
-          "lessonCount": 1
+          "lessonCount": 11
         },
         {
           "id": "physics",
           "title": "Physics",
           "description": "Study matter, energy, motion, forces and the laws of nature.",
-          "lessonCount": 2
+          "lessonCount": 10
         }
       ]
     }

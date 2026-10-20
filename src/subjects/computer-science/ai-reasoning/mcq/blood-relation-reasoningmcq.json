@@ -1,0 +1,126 @@
+{
+  "lessonId": "blood-relation-reasoning",
+  "title": "Blood Relation Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In standard blood relation terminology, what does the term \"nephew\" mean?",
+      "options": [
+        "The brother of one's parent",
+        "The son of one's sibling",
+        "The child of one's uncle or aunt",
+        "The father of one's parent"
+      ],
+      "correct": 2,
+      "rationale": "The lesson defines a nephew as the son of a sibling. The brother of a parent is an uncle, the child of an uncle or aunt is a cousin, and the father of a parent is a grandfather."
+    },
+    {
+      "id": 2,
+      "question": "P is the mother of Q. Q is the brother of R. How is P related to R?",
+      "options": [
+        "Mother",
+        "Aunt",
+        "Grandmother",
+        "Sister"
+      ],
+      "correct": 0,
+      "rationale": "Q and R are brothers, so they are siblings sharing the same parents. Since P is the mother of Q, P is also the mother of Q's sibling R."
+    },
+    {
+      "id": 3,
+      "question": "A is the brother of B. B is the father of C. How is A related to C?",
+      "options": [
+        "Cousin",
+        "Uncle",
+        "Grandfather",
+        "Nephew"
+      ],
+      "correct": 1,
+      "rationale": "A is a sibling of B, and B is C's father. A male sibling of a parent is an uncle, so composing 'brother' + 'father' gives uncle."
+    },
+    {
+      "id": 4,
+      "question": "R is the son of S. S is the sister of T. T is the father of U. How is R related to U?",
+      "options": [
+        "Nephew",
+        "Brother",
+        "Cousin",
+        "Uncle"
+      ],
+      "correct": 2,
+      "rationale": "S and T are siblings, so S's child (R) and T's child (U) are children of siblings, which makes them cousins."
+    },
+    {
+      "id": 5,
+      "question": "A is a parent of B, and B is a parent of C. The genders of A and B are not given. What is the most specific relation of A to C that the data guarantees?",
+      "options": [
+        "Grandmother",
+        "Grandfather",
+        "Aunt or uncle",
+        "Grandparent"
+      ],
+      "correct": 3,
+      "rationale": "Two parent steps up give grandparent (+2 generation distance). Because no gender information is supplied, saying grandmother or grandfather would invent facts; the guaranteed answer is the neutral term grandparent."
+    },
+    {
+      "id": 6,
+      "question": "John is the bro of Mary. Mary is the mom of Sam. After normalizing these words, how is John related to Sam?",
+      "options": [
+        "Sam's paternal uncle",
+        "Sam's maternal uncle",
+        "Sam's father",
+        "Sam's cousin"
+      ],
+      "correct": 1,
+      "rationale": "Normalizing: John is the brother of Mary and Mary is the mother of Sam. John is the brother of Sam's mother, i.e. his maternal uncle (a paternal uncle would be the father's brother)."
+    },
+    {
+      "id": 7,
+      "question": "D is the daughter of E. E is the sister of F. How is D related to F?",
+      "options": [
+        "Daughter",
+        "Cousin",
+        "Niece",
+        "Aunt"
+      ],
+      "correct": 2,
+      "rationale": "E is a sibling of F, so E's child D is the child of F's sibling. A female child of a sibling is a niece; the gender word 'daughter' fixes the female form."
+    },
+    {
+      "id": 8,
+      "question": "You are told only that A is married to B and B is the mother of C. Following careful blood-relation reasoning, what should be concluded about A and C?",
+      "options": [
+        "A must be C's biological father",
+        "A is certainly C's uncle",
+        "Nothing at all can be inferred about how A relates to C",
+        "Marriage alone does not prove parenthood; A is C's parent or step-parent only if the problem implies it"
+      ],
+      "correct": 3,
+      "rationale": "Spouse links must be stored separately from parent-child links. A spouse relation alone does not automatically imply biological parenthood, so the solver should not assert 'father' without supporting evidence."
+    },
+    {
+      "id": 9,
+      "question": "A is the brother of B. B is the sister of C. How is A related to C?",
+      "options": [
+        "Brother",
+        "Uncle",
+        "Cousin",
+        "Cannot be determined"
+      ],
+      "correct": 0,
+      "rationale": "B and C are siblings, and A and B are siblings, so A and C are siblings too. Since A is described as a brother, A is male, so A is the brother of C."
+    },
+    {
+      "id": 10,
+      "question": "K is the son of L. L is the daughter of M. M is the father of N. How is K related to N?",
+      "options": [
+        "Cousin",
+        "Nephew",
+        "Grandson",
+        "Brother"
+      ],
+      "correct": 1,
+      "rationale": "M is the parent of both L and N, so L and N are siblings. K is the child of L, so K is the child of N's sibling; since K is male (a son), K is N's nephew."
+    }
+  ]
+}

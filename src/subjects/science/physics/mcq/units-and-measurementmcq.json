@@ -1,0 +1,126 @@
+{
+  "lessonId": "units-and-measurement",
+  "title": "Units and Measurement: The Language of Physics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is an SI base unit rather than a derived unit?",
+      "options": [
+        "newton",
+        "kilogram",
+        "joule",
+        "watt"
+      ],
+      "correct": 1,
+      "rationale": "The kilogram is one of the seven SI base units; the newton, joule, and watt are derived units built from base units."
+    },
+    {
+      "id": 2,
+      "question": "The SI prefix 'nano' represents which factor?",
+      "options": [
+        "10⁻⁶",
+        "10⁻¹²",
+        "10⁻⁹",
+        "10⁹"
+      ],
+      "correct": 2,
+      "rationale": "Nano stands for 10⁻⁹, as in green light of about 550 nm."
+    },
+    {
+      "id": 3,
+      "question": "What are the dimensions of force?",
+      "options": [
+        "MLT⁻¹",
+        "MLT⁻²",
+        "ML²T⁻²",
+        "ML⁻¹T⁻²"
+      ],
+      "correct": 1,
+      "rationale": "Force = mass × acceleration, so its dimensions are MLT⁻², equivalent to the newton (kg·m/s²). ML²T⁻² is work and ML⁻¹T⁻² is pressure."
+    },
+    {
+      "id": 4,
+      "question": "Which limitation of dimensional analysis does the lesson highlight?",
+      "options": [
+        "It cannot check whether an equation is homogeneous",
+        "It cannot determine dimensionless constants such as the 1/2 in kinetic energy",
+        "It cannot convert units between systems",
+        "It cannot compare physical quantities"
+      ],
+      "correct": 1,
+      "rationale": "Dimensional analysis checks an equation's skeleton but cannot find dimensionless coefficients like 1/2 or π."
+    },
+    {
+      "id": 5,
+      "question": "Why did NASA lose the Mars Climate Orbiter in 1999, as cited in the lesson?",
+      "options": [
+        "One team used metric units while another used imperial ones",
+        "The antenna failed to open",
+        "A solar storm damaged its electronics",
+        "The launch rocket exploded"
+      ],
+      "correct": 0,
+      "rationale": "The lesson uses the Mars Climate Orbiter as the classic warning about mismatched units between engineering teams."
+    },
+    {
+      "id": 6,
+      "question": "What is the least count of the vernier caliper described in the lesson?",
+      "options": [
+        "0.01 mm",
+        "1 mm",
+        "0.001 mm",
+        "0.1 mm"
+      ],
+      "correct": 3,
+      "rationale": "The vernier caliper reads to 0.1 mm; the finer screw gauge reaches 0.01 mm."
+    },
+    {
+      "id": 7,
+      "question": "In the archery analogy, 'precision' means:",
+      "options": [
+        "Hits near the bullseye",
+        "Small error bars on the instrument",
+        "Hits clustered tightly together",
+        "The number of decimal places displayed"
+      ],
+      "correct": 2,
+      "rationale": "Accuracy is closeness to the true value (hits near the bullseye); precision is closeness of repeated readings (hits clustered tightly)."
+    },
+    {
+      "id": 8,
+      "question": "A wire's true length is 2.00 m and the measured length is 2.04 m. What is the percentage error?",
+      "options": [
+        "0.2%",
+        "2%",
+        "4%",
+        "0.04%"
+      ],
+      "correct": 1,
+      "rationale": "Absolute error is 0.04 m, so percentage error = (0.04 ÷ 2.00) × 100 = 2%."
+    },
+    {
+      "id": 9,
+      "question": "Which institution maintains India's national measurement standards?",
+      "options": [
+        "National Physical Laboratory (NPL), New Delhi",
+        "BIPM, Paris",
+        "ISRO, Bengaluru",
+        "National Metrology Centre, Mumbai"
+      ],
+      "correct": 0,
+      "rationale": "India's NPL in New Delhi keeps the national standards, traceable to the BIPM in Paris."
+    },
+    {
+      "id": 10,
+      "question": "Since the 2019 redefinition, the kilogram is defined by fixing the value of which constant?",
+      "options": [
+        "The speed of light",
+        "The Planck constant",
+        "The Boltzmann constant",
+        "The Avogadro constant"
+      ],
+      "correct": 1,
+      "rationale": "Since 20 May 2019 the kilogram is defined through the Planck constant, ending reliance on a metal cylinder in Paris."
+    }
+  ]
+}

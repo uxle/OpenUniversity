@@ -1,30 +1,65 @@
 /* src/styles/components/toast.css */
 .ou-toast-region {
   position: fixed;
-  bottom: var(--ou-space-5);
-  right: var(--ou-space-5);
+  /* Sit above the fixed bottom nav — never overlap it */
+  bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-4) + env(safe-area-inset-bottom));
+  right: var(--ou-space-4);
   display: flex;
   flex-direction: column;
   gap: var(--ou-space-2);
   z-index: var(--ou-z-toast);
+  max-width: min(340px, calc(100vw - var(--ou-space-4) * 2));
+  pointer-events: none;
 }
 .ou-toast {
   background: var(--ou-surface-raised, var(--ou-surface));
   color: var(--ou-text);
-  border: 1px solid var(--ou-border);
-  border-radius: var(--ou-radius-md);
-  box-shadow: var(--ou-shadow-md);
+  border: 1px solid var(--ou-border-strong);
+  border-radius: var(--ou-radius-lg);
+  box-shadow: var(--ou-shadow-lg);
   padding: var(--ou-space-3) var(--ou-space-4);
-  min-width: 220px;
-  max-width: 320px;
+  min-width: 240px;
   font-size: var(--ou-fs-sm);
-  animation: ou-toast-in var(--ou-transition-base);
+  line-height: 1.45;
+  /* Slide in from the right */
+  animation: ou-toast-in var(--ou-transition-base) both;
   border-left: 4px solid var(--ou-accent);
+  pointer-events: auto;
+  /* Progress bar beneath toast text */
+  position: relative;
+  overflow: hidden;
 }
+/* Auto-dismiss countdown bar */
+.ou-toast__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: currentColor;
+  opacity: 0.25;
+  border-radius: 0;
+  transform-origin: left;
+  /* JS sets --ou-toast-duration and toggles the animation */
+  animation: ou-toast-progress var(--ou-toast-duration, 4s) linear forwards;
+}
+@keyframes ou-toast-progress {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
 .ou-toast--success { border-left-color: var(--ou-success); }
 .ou-toast--warning { border-left-color: var(--ou-warning); }
-.ou-toast--error { border-left-color: var(--ou-danger); }
-@keyframes ou-toast-in {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+.ou-toast--error   { border-left-color: var(--ou-danger); }
+
+/* Exit state — added by JS before removing from DOM */
+.ou-toast--exiting {
+  animation: ou-toast-out var(--ou-transition-base) both;
+  pointer-events: none;
 }
+
+/* Toast title + message layout */
+.ou-toast__title {
+  font-weight: 600;
+  margin-bottom: var(--ou-space-0);
+}
+.ou-toast__message { color: var(--ou-text-secondary); }

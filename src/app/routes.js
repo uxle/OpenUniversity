@@ -49,24 +49,59 @@ function renderLoadError(container, pattern, err) {
   ]));
 }
 
+// Navigation generation token. Every handler invocation bumps navSeq;
+// anything still awaiting from an older navigation sees stale === true
+// and must not touch the container. Without this, clicking two links
+// quickly let the SLOWER first route finish after the faster second one
+// and overwrite it — the UI showed content for a URL you'd already left.
+let navSeq = 0;
+
+function currentNav() {
+  const seq = ++navSeq;
+  return {
+    seq,
+    get stale() {
+      return seq !== navSeq;
+    },
+  };
+}
+
 export async function registerRoutes(router, container) {
   for (const [pattern, loadModule] of Object.entries(routeTable)) {
     router.register(pattern, async (params) => {
+      const nav = currentNav();
       try {
         const { render } = await loadModule();
-        await render(container, params);
+        if (nav.stale) return;
+        await render(container, params, nav);
       } catch (err) {
-        renderLoadError(container, pattern, err);
+        if (!nav.stale) renderLoadError(container, pattern, err);
       }
     });
   }
 
   router.notFound(async (params) => {
+    const nav = currentNav();
     try {
       const { render } = await import("../pages/not-found.js");
-      await render(container, params);
+      if (nav.stale) return;
+      await render(container, params, nav);
     } catch (err) {
-      renderLoadError(container, "not-found", err);
+      if (!nav.stale) renderLoadError(container, "not-found", err);
     }
   });
+}
+
+/**
+ * Kick off the dynamic imports for the primary-nav pages ahead of any
+ * click, during browser idle time. Dynamic import caches its result, so
+ * when the user does navigate, the module is already in memory and the
+ * route renders immediately instead of waiting on a network round-trip.
+ * Failures are ignored — routes still import lazily as a fallback.
+ */
+export function prefetchPrimaryRoutes() {
+  for (const pattern of [ROUTES.HOME, ROUTES.SUBJECTS, ROUTES.SEARCH, ROUTES.PROGRESS, ROUTES.LESSON, ROUTES.SUBJECT_LESSON]) {
+    const load = routeTable[pattern];
+    if (load) load().catch(() => {});
+  }
 }

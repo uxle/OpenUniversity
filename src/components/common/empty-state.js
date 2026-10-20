@@ -4,6 +4,8 @@ import { icon } from "../../utils/icon.js";
 
 export function createEmptyState({ message, actionLabel = null, onAction = null, iconName = "inbox" }) {
   const children = [
+    // Decorative pastel spark — makes "nothing here" feel friendly, not broken.
+    createEl("div", { class: "ou-spark-dots", "aria-hidden": "true" }, [createEl("i")]),
     icon(iconName, { class: "ou-empty-state__icon" }),
     createEl("p", { class: "ou-text-secondary" }, [message]),
   ];

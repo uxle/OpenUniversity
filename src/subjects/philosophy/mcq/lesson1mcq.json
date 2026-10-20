@@ -1,5 +1,76 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "What Is Philosophy? Branches and Methods",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The branch of philosophy that asks 'How do we know what we know?' is:",
+      "options": ["Metaphysics", "Epistemology", "Aesthetics", "Ethics"],
+      "correct": 1,
+      "rationale": "Epistemology studies knowledge — what separates knowing from merely believing (justified true belief)."
+    },
+    {
+      "id": 2,
+      "question": "'All humans are mortal; Socrates is human; therefore Socrates is mortal.' This argument is:",
+      "options": ["Inductive and weak", "Deductive and valid", "A fallacy", "An aesthetic judgement"],
+      "correct": 1,
+      "rationale": "It is a classic valid deduction: if the premises are true, the conclusion must be true."
+    },
+    {
+      "id": 3,
+      "question": "Refuting a distorted version of your opponent's view instead of their actual view is which fallacy?",
+      "options": ["Ad hominem", "Straw man", "False dilemma", "Appeal to authority"],
+      "correct": 1,
+      "rationale": "The straw man fallacy attacks an exaggerated or distorted stand-in for the real argument."
+    },
+    {
+      "id": 4,
+      "question": "Which ethical approach judges actions purely by their consequences?",
+      "options": ["Virtue ethics", "Deontology", "Consequentialism", "Epistemology"],
+      "correct": 2,
+      "rationale": "Consequentialism (e.g. Mill) evaluates acts by results. Kant's deontology focuses on duty, Aristotle's virtue ethics on character."
+    },
+    {
+      "id": 5,
+      "question": "Thought experiments like the 'experience machine' are used in philosophy to:",
+      "options": ["Prove experiments are useless", "Reveal the principles we actually hold", "Replace all real-world data", "Settle questions by vote"],
+      "correct": 1,
+      "rationale": "Pushing intuitions to extremes exposes which principles genuinely guide our judgements — the story matters less than what it reveals."
+    },
+    {
+      "id": 6,
+      "question": "The branch of philosophy that asks 'What is real?' is:",
+      "options": ["Metaphysics", "Logic", "Ethics", "Aesthetics"],
+      "correct": 0,
+      "rationale": "Metaphysics asks what is real (e.g., are numbers real or invented?), while logic asks what follows from what."
+    },
+    {
+      "id": 7,
+      "question": "According to the classical analysis given in the lesson, knowledge is:",
+      "options": ["Whatever a majority believes", "Justified true belief — belief that is true and adequately grounded", "Any strongly felt conviction", "Only what can be measured"],
+      "correct": 1,
+      "rationale": "Epistemology's classical analysis: you must believe it, it must be true, and you need adequate grounds — justified true belief."
+    },
+    {
+      "id": 8,
+      "question": "Which fallacy is committed by the claim \"You're with us or against us\"?",
+      "options": ["Ad hominem", "Appeal to authority", "False dilemma", "Straw man"],
+      "correct": 2,
+      "rationale": "A false dilemma presents only two options when more exist; attacking the speaker is ad hominem, and citing a celebrity as proof is appeal to authority."
+    },
+    {
+      "id": 9,
+      "question": "How do deductive and inductive arguments differ, per the lesson?",
+      "options": ["Deduction aims for certainty; induction argues from observed cases with only probability", "Induction aims for certainty; deduction for probability", "Both always guarantee their conclusions", "Deduction uses examples; deduction uses rules"],
+      "correct": 0,
+      "rationale": "Deductive arguments claim their conclusion follows necessarily (valid form + true premises = true conclusion), while induction generalizes from observed cases and is only strong or weak, never certain."
+    },
+    {
+      "id": 10,
+      "question": "In the lying-to-save-a-life example, which verdict matches Kantian deontology?",
+      "options": ["Approve the lie because it produces the best outcome", "Object, because lying violates a duty regardless of outcomes", "Ask whether a compassionate person could find a third way", "Declare the question meaningless"],
+      "correct": 1,
+      "rationale": "Deontology holds some duties regardless of outcomes — a strict Kantian objects to the lie. Consequentialism approves it; virtue ethics asks about character and a third way."
+    }
+  ]
 }

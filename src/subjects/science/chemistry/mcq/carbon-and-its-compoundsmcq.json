@@ -1,0 +1,76 @@
+{
+  "lessonId": "carbon-and-its-compounds",
+  "title": "Carbon and Its Compounds: The Chemistry of Life",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The self-linking of carbon atoms into chains and rings is called:",
+      "options": ["catenation", "tetravalency", "isomerism", "substitution"],
+      "correct": 0,
+      "rationale": "Catenation — carbon bonding to carbon — builds molecular backbones; tetravalency sets the four bonds per carbon."
+    },
+    {
+      "id": 2,
+      "question": "Which carbon allotrope conducts electricity?",
+      "options": ["diamond", "graphite", "fullerene C₆₀", "none of them"],
+      "correct": 1,
+      "rationale": "Each sp² carbon in graphite contributes a delocalized electron; in diamond the electrons are locked in σ bonds, so it insulates."
+    },
+    {
+      "id": 3,
+      "question": "The hardest naturally occurring substance is:",
+      "options": ["graphite", "quartz", "diamond", "steel"],
+      "correct": 2,
+      "rationale": "Diamond's 3D sp³ network — every carbon bonded to four others — makes it the hardest natural substance."
+    },
+    {
+      "id": 4,
+      "question": "The general formula of the alkynes is:",
+      "options": ["CₙH₂ₙ₊₂", "CₙH₂ₙ", "CₙH₂ₙ₋₂", "CₙH₂ₙ₋₆"],
+      "correct": 2,
+      "rationale": "One triple bond strips four hydrogens from the alkane formula, giving CₙH₂ₙ₋₂ — e.g., ethyne C₂H₂."
+    },
+    {
+      "id": 5,
+      "question": "Butane (C₄H₁₀) has how many structural isomers?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 1,
+      "rationale": "n-Butane (straight chain) and iso-butane (branched). Pentane, C₅H₁₂, has three."
+    },
+    {
+      "id": 6,
+      "question": "The functional group of ethanoic acid is:",
+      "options": ["–OH", "–CHO", "–COOH", "–CO–"],
+      "correct": 2,
+      "rationale": "The carboxylic acid group –COOH, named with the suffix -oic acid; vinegar is about 5% of it."
+    },
+    {
+      "id": 7,
+      "question": "Pure ethanoic acid is called 'glacial' because it:",
+      "options": ["evaporates instantly", "freezes into ice-like crystals near 16.6 °C", "forms glaciers of solid CO₂", "is colourless"],
+      "correct": 1,
+      "rationale": "The anhydrous acid solidifies just below room temperature, at about 16.6 °C, into crystals resembling ice."
+    },
+    {
+      "id": 8,
+      "question": "Ethanoic acid + ethanol with an acid catalyst produces:",
+      "options": ["a soap", "an ester with a sweet smell", "a plastic", "hydrogen gas"],
+      "correct": 1,
+      "rationale": "Esterification gives ethyl ethanoate and water; esters carry the fruity, sweet smells of perfumes."
+    },
+    {
+      "id": 9,
+      "question": "Soaps fail in hard water because:",
+      "options": ["Ca²⁺ and Mg²⁺ ions form an insoluble scum with the soap", "soap molecules are covalent", "hard water is too hot", "soap dissolves the container"],
+      "correct": 0,
+      "rationale": "Hardness ions swap for sodium or potassium and precipitate calcium or magnesium salts of the fatty acids — the scum ring."
+    },
+    {
+      "id": 10,
+      "question": "In a soap micelle cleaning grease:",
+      "options": ["heads bury in grease while tails face water", "oily tails surround the grease while charged heads face the water", "both ends face the water", "the micelle repels both oil and water"],
+      "correct": 1,
+      "rationale": "The micelle locks grease inside its hydrophobic tails while the hydrophilic carboxylate heads keep the whole cluster suspended in water."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+# Chemical Reactions: Types, Rates, and Equilibrium
+
+> Every change around you — rusting, breathing, digesting — is a
+> chemical equation in motion. Learn the types, what speeds them up,
+> and how reversible reactions settle into balance.
+
+## 1. The Main Reaction Types
+
+@diagram tree id="reaction-types-tree" layout="tree" aria="Five main types of chemical reactions"
+  Reactions -> Combination
+  Reactions -> Decomposition
+  Reactions -> Displacement
+  Reactions -> "Double displacement"
+  Reactions -> "Redox (electron transfer)"
+@/diagram
+
+| Type | Pattern | Example |
+| --- | --- | --- |
+| Combination | A + B → AB | CaO + H₂O → Ca(OH)₂ + heat |
+| Decomposition | AB → A + B | CaCO₃ → CaO + CO₂ (on heating) |
+| Displacement | A + BC → AC + B | Fe + CuSO₄ → FeSO₄ + Cu |
+| Double displacement | AB + CD → AD + CB | Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl |
+| Redox | electron transfer | ZnO + C → Zn + CO |
+
+Decomposition comes in three flavours: **thermal** (heating CaCO₃),
+**electrolytic** (an electric current splits water), and
+**photolytic** (light drives 2AgBr → 2Ag + Br₂, the basis of
+photography).
+
+[info title="Spotting a precipitation"]
+In double displacement, dissolved partners often swap to create
+an insoluble solid — a **precipitate**, like the BaSO₄ above,
+marked with a down-arrow.
+[/info]
+
+## 2. Balancing Equations
+
+Matter is conserved, so atom counts must match on both sides.
+
+[example]
+Balance methane combustion, CH₄ + O₂ → CO₂ + H₂O. Carbon: 1 = 1.
+Hydrogen: 4 on the left needs 2 H₂O on the right. Oxygen: 2 + 2
+(from CO₂ and 2H₂O) = 4, so 2 O₂ on the left:
+
+CH₄ + 2O₂ → CO₂ + 2H₂O
+[/example]
+
+## 3. Exothermic vs Endothermic
+
+| Type | Heat | ΔH sign | Everyday examples |
+| --- | --- | --- | --- |
+| Exothermic | released | negative | respiration, burning, quicklime + water |
+| Endothermic | absorbed | positive | photosynthesis, cooking, decomposing CaCO₃ |
+
+## 4. Oxidation and Reduction
+
+[definition]
+**Oxidation** is loss of electrons and **reduction** is gain —
+*OIL RIG*. The oxidizing agent is itself reduced; the reducing
+agent is oxidized.
+[/definition]
+
+Take CuO + H₂ → Cu + H₂O: copper oxide is reduced (loses
+oxygen) while hydrogen is oxidized (gains oxygen).
+
+## 5. Corrosion and Rancidity
+
+| Metal attacked | Product | Look |
+| --- | --- | --- |
+| Iron | rust, Fe₂O₃·xH₂O | reddish-brown, flaky |
+| Silver | Ag₂S | black tarnish |
+| Copper | CuCO₃·Cu(OH)₂ | green patina |
+
+Corrosion is stalled by painting, greasing, galvanizing, or
+alloying. **Rancidity** is the oxidation of fats and oils on
+standing — checked by antioxidants (BHA, BHT), nitrogen flushing
+of chip packets, and refrigeration.
+
+## 6. Rates of Reaction
+
+| Factor raised | Rate | Why |
+| --- | --- | --- |
+| Concentration | up | more frequent collisions |
+| Temperature | up | collisions faster and more energetic |
+| Surface area | up | more exposed reaction sites |
+| Catalyst present | up | lower activation energy; catalyst unchanged |
+
+[example]
+2H₂O₂ → 2H₂O + O₂ crawls along until a pinch of MnO₂ makes it
+froth violently. In your saliva, the enzyme **amylase** catalyzes
+starch digestion the same way — faster, but never consumed.
+[/example]
+
+## 7. Equilibrium and Le Chatelier
+
+[definition]
+**Chemical equilibrium** is the dynamic state of a reversible
+reaction where forward and backward rates are equal, so
+concentrations hold steady — but only in a closed system.
+[/definition]
+
+**Le Chatelier's principle**: disturb an equilibrium — by changing
+concentration, pressure, or temperature — and the system shifts to
+oppose the disturbance.
+
+The Haber process, N₂ + 3H₂ ⇌ 2NH₃ with ΔH = −92 kJ, shows every
+lever:
+
+| Disturbance | Shift | NH₃ yield |
+| --- | --- | --- |
+| Pressure up | right (2 mol gas vs 4) | up |
+| Temperature up | left (backward is endothermic) | down |
+| NH₃ removed | right | up |
+| Iron catalyst added | none — just faster | unchanged |
+
+[important title="The industrial compromise"]
+Industry runs the Haber process near 450 °C and 200 atm over an
+iron catalyst (promoted with Mo): high pressure for yield, moderate
+temperature because low heat would be too slow.
+[/important]
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Respiration is? | exothermic |
+| Photosynthesis is? | endothermic |
+| Rust formula? | Fe₂O₃·xH₂O |
+| OIL RIG? | oxidation is loss, reduction is gain |
+| Catalyst changes? | rate only, not the equilibrium position |

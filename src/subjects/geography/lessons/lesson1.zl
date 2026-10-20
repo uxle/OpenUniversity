@@ -1,3 +1,83 @@
-# Lesson1
+# Maps, Globes, and the Earth's Grid
 
-TODO: write lesson content.
+> Geography answers three questions: *where is it?*, *what is it like
+> there?*, and *how do people and places connect?* This lesson covers the
+> tools geographers use to answer the first one.
+
+## 1. The Earth's Basic Facts
+
+| Feature | Value |
+| --- | --- |
+| Shape | Geoid — an oblate spheroid, flattened at the poles |
+| Equatorial circumference | About 40,075 km |
+| Surface | About 71% water, 29% land |
+| Continents / Oceans | 7 continents, 5 oceans |
+
+@chart donut title="Earth's surface: water vs land" labels:
+Water (71%)
+Land (29%)
+
+data:
+71
+29
+@/chart
+
+## 2. Latitude and Longitude
+
+[definition]
+**Latitude** measures distance north or south of the Equator in degrees
+(0°–90°). **Longitude** measures distance east or west of the Prime
+Meridian in degrees (0°–180°). Together they form a coordinate grid that
+pinpoints any location on Earth.
+[/definition]
+
+### Important lines of latitude
+
+| Line | Latitude | Significance |
+| --- | --- | --- |
+| Equator | 0° | Divides Earth into Northern and Southern hemispheres |
+| Tropic of Cancer | 23.5° N | Northern limit of the Sun's direct rays |
+| Tropic of Capricorn | 23.5° S | Southern limit of the Sun's direct rays |
+| Arctic Circle | 66.5° N | Boundary of the midnight Sun |
+| Antarctic Circle | 66.5° S | Boundary of polar day and night |
+
+The **Prime Meridian** (0° longitude) passes through Greenwich, England;
+the **180° meridian** roughly coincides with the International Date Line.
+
+## 3. Map Essentials
+
+Every good map carries five elements:
+
+- **Title** — what the map shows
+- **Scale** — the ratio between map distance and real distance
+- **Direction** — usually a north arrow or compass rose
+- **Legend / key** — meaning of symbols and colours
+- **Grid reference** — latitude–longitude lines for locating points
+
+[important title="Small scale vs large scale"]
+A **large-scale** map (e.g. 1:10,000) shows a small area in great detail —
+a city plan. A **small-scale** map (e.g. 1:1,000,000) shows a large area
+with less detail — an atlas page of a country.
+[/important]
+
+## 4. Types of Maps
+
+@diagram tree id="map-types" layout="tree" aria="Types of maps"
+  Maps -> "Physical maps"
+  Maps -> "Political maps"
+  Maps -> "Thematic maps"
+  "Thematic maps" -> "Climate"
+  "Thematic maps" -> Population
+  "Thematic maps" -> "Economic activity"
+@/diagram
+
+- **Physical maps** show natural features: mountains, rivers, plateaus.
+- **Political maps** show boundaries, cities, and capitals.
+- **Thematic maps** focus on one theme, such as rainfall or population density.
+
+## Key Takeaways
+
+- Latitude runs north–south from the Equator; longitude runs east–west
+  from Greenwich.
+- The five map essentials let any reader interpret a map correctly.
+- Different map types answer different geographic questions.

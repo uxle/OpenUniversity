@@ -1,0 +1,125 @@
+# National Income: GDP, GNP, and Measuring an Economy
+
+> National income accounting measures an economy's total output,
+> income, and spending — the scoreboard behind every budget and
+> growth headline.
+
+[definition]
+**Gross Domestic Product (GDP)** is the market value of all *final*
+goods and services produced *within a country's domestic territory*
+during a year. Final means for use, not for resale — intermediate
+goods are excluded to avoid double counting.
+[/definition]
+
+## 1. The Circular Flow of Income
+
+In a simple **two-sector economy** (households and firms), households
+supply factors to firms and receive factor incomes; firms supply
+goods and services; spending by one is income of the other. Output =
+Income = Expenditure — the identity behind GDP's three measurement
+methods.
+
+Real economies add **leakages** — savings (S), taxes (T), imports (M)
+— and **injections** — investment (I), government spending (G),
+exports (X). Equilibrium requires leakages to equal injections.
+
+@diagram tree id="circular-flow" layout="tree" aria="Circular flow with leakages and injections"
+  Households -> "Factor services (to firms)"
+  Firms -> "Factor incomes (rent, wages, interest, profit)"
+  Households -> "Leakages: saving, taxes, imports"
+  Firms -> "Injections: investment, govt spending, exports"
+@/diagram
+
+## 2. The Family of Aggregates
+
+| Aggregate | Formula | Meaning |
+| --- | --- | --- |
+| GDP | Sum of domestic output | Produced *inside* the border |
+| GNP | GDP + NFIA | Add residents' earnings from abroad |
+| NNP (at FC) = **National Income** | GNP − Depreciation | Net of capital wear |
+| Personal income | NI − corporate taxes − undistributed profits + transfer payments | Received by households |
+| Disposable income | Personal income − direct personal taxes | Available to spend or save |
+
+**Net Factor Income from Abroad (NFIA)** = factor income earned by
+residents abroad − factor income of non-residents earned domestically.
+For India, NFIA is *negative* (large foreign investment outflows
+earn repatriated income exceeding Indian earnings abroad), so GNP is
+slightly smaller than GDP.
+
+## 3. Three Methods of Measurement
+
+1. **Product (value added) method** — sum of gross value added by
+   each enterprise across primary, secondary, tertiary sectors.
+2. **Income method** — sum of factor incomes: rent + wages +
+   interest + profit (plus mixed income of the self-employed).
+3. **Expenditure method** — final spending:
+
+@math
+GDP = C + I + G + (X - M)
+@/math
+
+where C is private consumption, I investment, G government spending,
+and X − M net exports.
+
+All three give the same total because one person's spending is
+another's income and another's output.
+
+[warning]
+Only *final* goods count. The value of bread already contains the
+value of the flour; adding both double counts. Value added — output
+minus purchased inputs — is the safe unit of account.
+[/warning]
+
+## 4. Nominal vs Real GDP
+
+- **Nominal GDP** — valued at *current* prices; rises both when we
+  produce more and when prices rise.
+- **Real GDP** — valued at *base year* prices; changes only with
+  physical output. India's national accounts currently use the
+  **2011-12 base year**.
+- **GDP deflator** converts one into the other:
+
+@math
+GDP\ Deflator = \frac{Nominal\ GDP}{Real\ GDP} \times 100
+@/math
+
+[example]
+If nominal GDP is ₹110 lakh crore and real GDP is ₹100 lakh crore,
+the deflator is 110 — the general price level is 10% above the base
+year. Growth claims must always quote real figures.
+[/example]
+
+## 5. Beyond GDP
+
+The **Human Development Index (HDI)**, published by UNDP since 1990,
+ranks well-being on three equally weighted dimensions: health (life
+expectancy at birth), education (years of schooling), and standard of
+living (per-capita GNI, log-scaled). It corrects GDP's blindness to
+distribution and quality of life.
+
+| Limitation of GDP | What it misses |
+| --- | --- |
+| Non-market work | Household labour, care work, volunteering |
+| Underground economy | Unrecorded cash transactions |
+| Distribution | A rising mean can hide stagnant medians |
+| Environmental damage | Depletion and pollution are not deducted |
+| Leisure and welfare | More output at the cost of longer hours |
+
+## 6. Quick Revision Table
+
+| Question | Answer |
+| --- | --- |
+| Where was it produced? | Domestic territory → GDP; by residents → GNP |
+| Gross vs net | Net subtracts depreciation |
+| Market prices vs factor cost | Subtract indirect taxes, add subsidies |
+| Which price base? | Current = nominal; base year = real |
+| Growth = ? | % change in *real* GDP |
+| NFIA for India | Negative, so GNP < GDP |
+
+[summary]
+Output, income, and expenditure are three views of one circular flow,
+so GDP by any method must match. Move from GDP to GNP with NFIA, to
+national income by subtracting depreciation, and to real growth by
+deflating — then remember what GDP never saw: home work, the
+underground economy, distribution, and nature.
+[/summary]

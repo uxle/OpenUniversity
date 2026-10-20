@@ -9,15 +9,32 @@
   font-size: var(--ou-fs-sm);
   font-weight: 600;
   border: 1px solid transparent;
-  transition: background-color var(--ou-transition-fast), transform var(--ou-transition-fast);
+  transition:
+    background-color var(--ou-transition-fast),
+    box-shadow var(--ou-transition-fast),
+    transform var(--ou-transition-fast),
+    opacity var(--ou-transition-fast);
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
 }
-.ou-btn:active { transform: scale(0.97); }
-.ou-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ou-btn:active { transform: scale(0.96); transition-duration: 60ms; }
+.ou-btn:disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
 
-.ou-btn--primary { background: var(--ou-accent); color: var(--ou-accent-contrast); }
-.ou-btn--primary:hover:not(:disabled) { filter: brightness(1.08); }
+/* Primary — ink fill (monochrome) with soft neutral glow on hover */
+.ou-btn--primary {
+  background: var(--ou-gradient-brand);
+  background-color: var(--ou-accent); /* fallback */
+  color: var(--ou-accent-contrast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+.ou-btn--primary:hover:not(:disabled) {
+  box-shadow: var(--ou-shadow-glow-accent);
+  filter: brightness(1.06);
+}
+.ou-btn--primary:active { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14); }
 
+/* Secondary */
 .ou-btn--secondary {
   /* background-color, not the background shorthand: shorthand resets
      background-image/-position/-repeat/-size to their initial values,
@@ -26,34 +43,73 @@
      the cascade for any select.ou-btn--secondary. */
   background-color: var(--ou-surface);
   color: var(--ou-text);
-  border-color: var(--ou-border);
+  border-color: var(--ou-border-strong);
+  box-shadow: var(--ou-shadow-xs);
 }
-.ou-btn--secondary:hover:not(:disabled) { background-color: var(--ou-bg); }
+.ou-btn--secondary:hover:not(:disabled) {
+  background-color: var(--ou-surface-subtle);
+  box-shadow: var(--ou-shadow-sm);
+  border-color: var(--ou-border-strong);
+}
 
+/* Ghost */
 .ou-btn--ghost { background: transparent; color: var(--ou-accent); }
-.ou-btn--ghost:hover:not(:disabled) { background: color-mix(in srgb, var(--ou-accent) 10%, transparent); }
+.ou-btn--ghost:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--ou-accent) 10%, transparent);
+}
 
-.ou-btn--danger { background: var(--ou-danger); color: #fff; }
+/* Danger */
+.ou-btn--danger {
+  background: var(--ou-danger);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(197, 34, 31, 0.18);
+}
+.ou-btn--danger:hover:not(:disabled) {
+  filter: brightness(1.06);
+  box-shadow: 0 4px 16px rgba(197, 34, 31, 0.26);
+}
+
+/* Small */
 .ou-btn--sm { padding: var(--ou-space-1) var(--ou-space-3); font-size: var(--ou-fs-xs); }
-/* Exact 44×44px square, not padding-driven sizing: content-driven width
-   (padding + glyph width) made this an oval, not a circle, whenever the
-   icon glyph itself wasn't square — fa-ellipsis (three dots side by
-   side) is naturally much wider than tall, so uniform padding around it
-   still produced a wide box, and accessibility.css's old min-height/
-   min-width rule only forced the height to 44px, leaving the width free
-   to be pulled wider by the glyph. A fixed square (padding zeroed so it
-   can't reopen the same gap) guarantees both a true circle and the real
-   44px touch target regardless of which glyph is inside. */
-.ou-btn--icon { width: 44px; height: 44px; padding: 0; border-radius: 50%; }
 
+/* Icon button — exact 44×44px square, not padding-driven sizing:
+   content-driven width (padding + glyph width) made this an oval, not a
+   circle, whenever the icon glyph itself wasn't square. A fixed square
+   (padding zeroed so it can't reopen the same gap) guarantees both a
+   true circle and the real 44px touch target regardless of glyph. */
+.ou-btn--icon {
+  width: 44px; height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}
+.ou-btn--icon:active { transform: scale(0.88); }
+
+/* Loading state — shows spinner, hides content */
+.ou-btn--loading {
+  pointer-events: none;
+  opacity: 0.75;
+  color: transparent;
+}
+.ou-btn--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px; height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: ou-spin 0.7s linear infinite;
+  color: var(--ou-accent-contrast);
+}
+
+/* Spinner (standalone) */
 .ou-spinner {
   width: 20px; height: 20px;
-  border: 2px solid var(--ou-border);
+  border: 2px solid var(--ou-border-strong);
   border-top-color: var(--ou-accent);
   border-radius: 50%;
   animation: ou-spin 0.7s linear infinite;
   display: inline-block;
+  flex-shrink: 0;
 }
-@keyframes ou-spin { to { transform: rotate(360deg); } }
 
 .ou-icon--active { color: var(--ou-accent); }

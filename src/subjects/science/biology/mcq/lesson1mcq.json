@@ -1,5 +1,86 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "The Characteristics of Life",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which set lists characteristics used to define living things?",
+      "options": ["Movement, respiration, sensitivity, growth, reproduction, excretion, nutrition", "Weight, height, colour, shape", "Solid, liquid, gas, plasma", "Birth, aging, death only"],
+      "correct": 0,
+      "rationale": "The classic checklist — MRS GREN — describes life by processes: Movement, Respiration, Sensitivity, Growth, Reproduction, Excretion, Nutrition."
+    },
+    {
+      "id": 2,
+      "question": "Why are viruses generally classified as non-living?",
+      "options": ["They are too small to see", "They lack their own metabolism and cannot move or respond", "They never reproduce in any way", "They contain no genetic material"],
+      "correct": 1,
+      "rationale": "Viruses reproduce and evolve only inside host cells and have no independent metabolism, movement, or response — failing most of the checklist."
+    },
+    {
+      "id": 3,
+      "question": "A candle flame moves, 'grows', consumes fuel, and produces waste, yet is not alive because:",
+      "options": ["It is too hot", "It lacks internal organisation, reproduction, and response driven from within", "It has no colour", "Fire is made of cells"],
+      "correct": 1,
+      "rationale": "Life requires organised internal processes; a flame's behaviour comes purely from outside fuel and convection physics."
+    },
+    {
+      "id": 4,
+      "question": "The sum of all chemical reactions inside an organism is called:",
+      "options": ["Homeostasis", "Metabolism", "Respiration rate", "Excretion"],
+      "correct": 1,
+      "rationale": "Metabolism includes anabolic (building) and catabolic (breaking down) reactions powering every characteristic of life."
+    },
+    {
+      "id": 5,
+      "question": "A heart can beat though no single muscle cell can. This illustrates:",
+      "options": ["Cells are unimportant", "Emergent properties at higher levels of organisation", "That organs violate the characteristics of life", "Homeostasis failure"],
+      "correct": 1,
+      "rationale": "New properties appear as levels stack: cells contract, but the beating emerges only at the organ level."
+    },
+    {
+      "id": 6,
+      "question": "Mimosa leaves folding when touched is an example of which characteristic of life?",
+      "options": ["Sensitivity", "Excretion", "Respiration", "Growth"],
+      "correct": 0,
+      "rationale": "Sensitivity means responding to the environment — the Mimosa folds its leaves when touched."
+    },
+    {
+      "id": 7,
+      "question": "Kidneys filtering urea from the blood illustrate which characteristic?",
+      "options": ["Nutrition", "Reproduction", "Excretion", "Movement"],
+      "correct": 2,
+      "rationale": "Excretion is removing metabolic waste, and the kidneys filtering urea is the lesson's example."
+    },
+    {
+      "id": 8,
+      "question": "A mule cannot produce fertile offspring yet is still considered alive. Why?",
+      "options": [
+        "Because mules can photosynthesize",
+        "Because mules have no cells",
+        "Because reproduction counts at the level of the species, not the individual",
+        "Because mules never actually die"
+      ],
+      "correct": 2,
+      "rationale": "The lesson explains that a mule's sterility doesn't disqualify it: reproduction is judged for the species, not every individual."
+    },
+    {
+      "id": 9,
+      "question": "Which sequence shows biological levels in increasing order of complexity?",
+      "options": [
+        "Organism -> Cell -> Tissue",
+        "Cell -> Tissue -> Organ -> Organ system -> Organism",
+        "Ecosystem -> Community -> Population",
+        "Tissue -> Cell -> Organism"
+      ],
+      "correct": 1,
+      "rationale": "The hierarchy stacks up from cell to tissue to organ to organ system and finally organism."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson, which single trait is by itself enough to declare something living?",
+      "options": ["Movement", "Reproduction", "Growth", "None — life requires organised processes working together"],
+      "correct": 3,
+      "rationale": "No single trait — movement, growth, even reproduction — is sufficient; life is defined by processes in a bounded, self-maintaining system."
+    }
+  ]
 }

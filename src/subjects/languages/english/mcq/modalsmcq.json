@@ -29,6 +29,56 @@
       "options": ["Should + V1", "Would + V1", "Will + V1", "Have + V3"],
       "correct": 0,
       "rationale": "'Lest' (कहीं ऐसा न हो कि) is always followed by 'Should + V1'."
+    },
+    {
+      "id": 5,
+      "question": "\"He works hard so that he ___ get good marks.\" Choose the correct modal.",
+      "options": ["may", "might", "must", "would"],
+      "correct": 0,
+      "rationale": "With 'so that', Present Indefinite in the main clause takes 'may': 'He works hard so that he may get good marks.'"
+    },
+    {
+      "id": 6,
+      "question": "\"He worked hard so that he ___ win the match.\" Choose the correct modal.",
+      "options": ["may", "might", "should", "can"],
+      "correct": 1,
+      "rationale": "With 'so that', Past Indefinite in the main clause takes 'might' (the past form of may): 'He worked hard so that he might win the match.'"
+    },
+    {
+      "id": 7,
+      "question": "'Must' is used to express:",
+      "options": ["Weak possibility", "Compulsion, obligation or moral duty", "Past ability", "A polite request"],
+      "correct": 1,
+      "rationale": "'Must' expresses compulsion, obligation or moral duty (अवश्य चाहिए), e.g., 'You must read.'"
+    },
+    {
+      "id": 8,
+      "question": "'Ought to' is used for:",
+      "options": ["Moral duty toward parents, society or country", "Past habitual actions", "Formal permission", "Unreal conditions"],
+      "correct": 0,
+      "rationale": "'Ought to' expresses moral duty toward parents, society or country, e.g., 'You ought to respect your parents.'"
+    },
+    {
+      "id": 9,
+      "question": "\"If I ___ a teacher, I would teach you.\" Choose the correct form for this unreal/conditional sentence.",
+      "options": ["am", "was", "were", "will be"],
+      "correct": 2,
+      "rationale": "In unreal conditional sentences the structure is: If + Subject + were + Noun/Adj, Subject + would + V1 — so 'If I were a teacher, I would teach you.'"
+    },
+    {
+      "id": 10,
+      "question": "Which word can NEVER be used inside a 'lest' clause?",
+      "options": ["should", "not / will / may", "V1", "you"],
+      "correct": 1,
+      "rationale": "'Lest' is always followed by Should + V1; words like 'not', 'never', 'will' and 'may' must never appear inside a lest clause — e.g., 'Work hard lest you should fail.'"
+    },
+    {
+      "id": 11,
+      "question": "As a main verb (not modal), how is 'need' correctly used in the negative?",
+      "options": ["Need not + V1", "Do/Does not + need + to + V1", "Does not need + V1", "Not need + V3"],
+      "correct": 1,
+      "rationale": "As a main verb, need takes do-support plus 'to': 'He does not need to go to school.' As a modal it would be 'need not come' (no 'to')."
     }
   ]
 }
+

@@ -1,0 +1,76 @@
+{
+  "lessonId": "production-and-costs",
+  "title": "Production and Costs: From Inputs to Supply",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The reward earned by the factor of production 'entrepreneurship' is:",
+      "options": ["Rent", "Wages", "Interest", "Profit"],
+      "correct": 3,
+      "rationale": "Land earns rent, labour wages, capital interest, and entrepreneurship — which organises the others and bears risk — earns profit."
+    },
+    {
+      "id": 2,
+      "question": "Marginal product is defined as:",
+      "options": ["Total output divided by number of workers", "The extra output produced by one additional unit of input", "Output when no input is used", "Total cost divided by output"],
+      "correct": 1,
+      "rationale": "MP = ΔTP / ΔL — the addition to total product from employing one more unit of the variable input."
+    },
+    {
+      "id": 3,
+      "question": "The law of diminishing marginal returns states that:",
+      "options": ["All inputs eventually produce nothing", "As more of a variable input is added to a fixed input, marginal product eventually falls", "Technology deteriorates over time", "Total product always falls as inputs rise"],
+      "correct": 1,
+      "rationale": "The law is about changing input proportions in the short run: MP eventually declines against the fixed factor, as with workers 4 to 7 in the lesson's table."
+    },
+    {
+      "id": 4,
+      "question": "Rational production takes place in:",
+      "options": ["Stage one only", "Stage two, where MP is falling but positive", "Stage three, where MP is negative", "The stage where AP is maximum"],
+      "correct": 1,
+      "rationale": "Stage one leaves gains unrealised and stage three reduces total product, so rational firms produce in stage two."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a fixed cost for a bakery?",
+      "options": ["Flour purchases", "Electricity for ovens", "Monthly shop rent", "Packaging material"],
+      "correct": 2,
+      "rationale": "Fixed costs like rent do not vary with output, while flour, oven power, and packaging change with the quantity baked."
+    },
+    {
+      "id": 6,
+      "question": "The marginal cost curve intersects the average cost curve:",
+      "options": ["At AC's maximum point", "At AC's minimum point", "Never", "Exactly where TFC equals TVC"],
+      "correct": 1,
+      "rationale": "While MC is below AC it pulls the average down; above AC it pulls it up — so MC cuts AC precisely at the minimum of AC."
+    },
+    {
+      "id": 7,
+      "question": "In the lesson's cost table, the total cost of producing 3 units is:",
+      "options": ["₹126", "₹110", "₹144", "₹90"],
+      "correct": 0,
+      "rationale": "TC = TFC + TVC = 60 + 66 = ₹126 at output 3."
+    },
+    {
+      "id": 8,
+      "question": "The key difference between the short run and the long run is that in the long run:",
+      "options": ["Technology cannot change", "All inputs can be varied and there are no fixed costs", "Only labour can be varied", "Fixed costs are always larger"],
+      "correct": 1,
+      "rationale": "The long run is long enough for every factor — plant included — to change, so all costs become variable."
+    },
+    {
+      "id": 9,
+      "question": "A shopkeeper's forgone salary from the best job he could have taken is an example of:",
+      "options": ["An explicit cost", "An implicit (opportunity) cost", "A fixed cost only", "A sunk cost"],
+      "correct": 1,
+      "rationale": "Implicit costs are the opportunity costs of self-owned, self-employed resources; they explain why accounting profit can overstate economic profit."
+    },
+    {
+      "id": 10,
+      "question": "Bulk purchasing of inputs lowering per-unit cost as a firm grows is an example of:",
+      "options": ["Diseconomies of scale", "Economies of scale", "Diminishing marginal returns", "A fixed cost"],
+      "correct": 1,
+      "rationale": "Economies of scale — technical, managerial, marketing, financial, risk-spreading — reduce long-run average cost as scale expands."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lessonId": "syllogism-possibility-and-venn-methods",
+  "title": "Syllogism: Possibility Cases and Venn Diagram Mastery",
+  "questions": [
+    {
+      "id": 1,
+      "question": "When is a possibility conclusion considered true?",
+      "options": [
+        "Only when it holds in every valid Venn arrangement",
+        "When it is not definitely contradicted by the statements",
+        "Only when it matches real-world knowledge",
+        "When at least two arrangements support it"
+      ],
+      "correct": 1,
+      "rationale": "The golden rule: a possibility is true when it is not definitely contradicted — you only have to fail to disprove it. Demanding truth in every arrangement is the standard for definite conclusions, not possibilities."
+    },
+    {
+      "id": 2,
+      "question": "Statement: All A are B. Conclusion: Some B being A is a possibility. What is the verdict?",
+      "options": [
+        "False, because the statement only talks about A",
+        "True, because nothing is contradicted",
+        "False, because no A can be a B",
+        "True only if A is empty"
+      ],
+      "correct": 1,
+      "rationale": "Nothing in 'All A are B' contradicts some B being A — in fact some B are A is definite here, and a definite truth always satisfies a possibility. The conclusion is true."
+    },
+    {
+      "id": 3,
+      "question": "Statement: Some A are not B. Conclusion: All A being B is a possibility. What is the verdict?",
+      "options": [
+        "True, because some A may still be in B",
+        "False, because the statement directly contradicts it",
+        "True, because some never excludes all",
+        "Neither true nor false without more statements"
+      ],
+      "correct": 1,
+      "rationale": "The statement itself says some A lie outside B, so the picture where all A are inside B is directly contradicted. The possibility fails."
+    },
+    {
+      "id": 4,
+      "question": "Statement: Some A are B. Conclusion: All A being B is a possibility. What is the verdict?",
+      "options": [
+        "True, because some never excludes all",
+        "False, because some means not all",
+        "False, because all statements convert",
+        "True only when A and B are equal"
+      ],
+      "correct": 0,
+      "rationale": "In formal logic 'some' only guarantees 'at least one' and never means 'not all', so the arrangement where circle A sits fully inside B still satisfies 'some A are B'. The possibility is true."
+    },
+    {
+      "id": 5,
+      "question": "Which statement type has NO valid conversion?",
+      "options": [
+        "All A are B",
+        "Some A are B",
+        "No A is B",
+        "Some A are not B"
+      ],
+      "correct": 3,
+      "rationale": "The O-type, 'Some A are not B', has no valid conversion — 'Some B are not A' does not follow from it. This single fact settles many trap options instantly."
+    },
+    {
+      "id": 6,
+      "question": "What is the valid conversion of 'All A are B'?",
+      "options": [
+        "All B are A",
+        "Some B are A",
+        "No B is A",
+        "Some B are not A"
+      ],
+      "correct": 1,
+      "rationale": "From 'All A are B' you may conclude 'Some B are A' by conversion. 'All B are A' is the classic invalid reversal."
+    },
+    {
+      "id": 7,
+      "question": "What is the recommended strategy for three-statement syllogisms?",
+      "options": [
+        "Treat all three statements as one large statement",
+        "Combine the statements in pairs, then combine the derived conclusions",
+        "Check only the first and last statements",
+        "Convert every statement before reading the conclusions"
+      ],
+      "correct": 1,
+      "rationale": "Derive every two-statement conclusion the rules allow, then treat those derived conclusions as new statements and combine again — like chaining A to B to C to D."
+    },
+    {
+      "id": 8,
+      "question": "Statements: Some chairs are tables. Conclusions: I. All chairs are tables. II. Some chairs are not tables. What follows?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Either I or II follows",
+        "Neither I nor II follows"
+      ],
+      "correct": 2,
+      "rationale": "Neither conclusion follows definitely, but I and II form an A-O complementary pair on the same terms — one universal affirmative, one particular negative — so exactly one holds in every arrangement: either I or II follows."
+    },
+    {
+      "id": 9,
+      "question": "Statements: No cup is a plate. Some plates are dishes. Conclusion I: Some dishes being cups is a possibility. Does it follow?",
+      "options": [
+        "No, because no cup is a plate",
+        "Yes, because dishes may sit outside the plate circle and overlap cups",
+        "No, because dishes are not mentioned with cups",
+        "Yes, because some cups are always dishes"
+      ],
+      "correct": 1,
+      "rationale": "Dishes can overlap the cup circle anywhere outside 'plate' without violating 'No cup is a plate', so the possibility is not contradicted and is true. The definite claim 'Some cups are dishes', however, would not follow."
+    },
+    {
+      "id": 10,
+      "question": "Statements: Some emails are letters. All letters are posts. Conclusion I: Some emails are posts. Conclusion II: Some posts being letters is a possibility. What follows?",
+      "options": [
+        "Only I follows",
+        "Only II follows",
+        "Both I and II follow",
+        "Neither follows"
+      ],
+      "correct": 2,
+      "rationale": "I follows because Some + All combines to Some emails are posts. II also holds: 'Some posts are letters' is actually definite by conversion of 'All letters are posts', and a definite truth always satisfies a possibility."
+    }
+  ]
+}

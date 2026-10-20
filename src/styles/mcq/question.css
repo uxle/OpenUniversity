@@ -1,5 +1,11 @@
 /* src/styles/mcq/question.css */
-.ou-mcq-question { font-size: var(--ou-fs-lg); font-weight: 600; margin-bottom: var(--ou-space-4); }
+.ou-mcq-question {
+  font-size: var(--ou-fs-lg);
+  font-weight: 600;
+  margin-bottom: var(--ou-space-5);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
 /* Holds the optional "zolto" math field (schemas/mcq.schema.json) — left
    empty and collapsed via :empty when a question has no math, so it
    never adds a visible gap for the (currently more common) case of a
@@ -11,5 +17,6 @@
   margin-bottom: var(--ou-space-4);
   text-align: center;
   font-size: 1.1em;
+  border: 1px solid var(--ou-border);
 }
 .ou-mcq-question__math:empty { display: none; }

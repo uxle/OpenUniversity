@@ -1,0 +1,76 @@
+{
+  "lessonId": "demand-and-supply",
+  "title": "Demand, Supply, and Market Equilibrium",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The law of demand states that, other things equal:",
+      "options": ["As price rises, quantity demanded rises", "As price rises, quantity demanded falls", "As income rises, quantity demanded falls", "As supply rises, quantity demanded rises"],
+      "correct": 1,
+      "rationale": "The law of demand is the inverse relationship between a good's own price and the quantity demanded, driven by the income effect and the substitution effect."
+    },
+    {
+      "id": 2,
+      "question": "A rise in the price of tea leading to increased coffee purchases shows tea and coffee are:",
+      "options": ["Complementary goods", "Substitute goods", "Inferior goods", "Giffen goods"],
+      "correct": 1,
+      "rationale": "Substitutes like tea and coffee replace each other: when one becomes costlier, demand for the other rises."
+    },
+    {
+      "id": 3,
+      "question": "Petrol and cars are complements. If car prices fall sharply, the demand for petrol will:",
+      "options": ["Shift leftward", "Shift rightward", "Remain fixed since petrol price is unchanged", "Move along the same curve upward"],
+      "correct": 1,
+      "rationale": "Cheaper complements boost demand for the paired good: more cars purchased means the whole demand curve for petrol shifts rightward."
+    },
+    {
+      "id": 4,
+      "question": "An increase in quantity demanded (as opposed to demand) is caused by:",
+      "options": ["A rise in consumer income", "A fall in the good's own price", "Improved technology", "A rise in the price of a substitute"],
+      "correct": 1,
+      "rationale": "Only a change in the good's own price moves quantity along the curve; all other factors shift the entire demand curve."
+    },
+    {
+      "id": 5,
+      "question": "If the market price is below equilibrium, the result is:",
+      "options": ["A surplus that pushes price down", "A shortage that pushes price up", "Zero quantity traded", "A leftward shift of supply"],
+      "correct": 1,
+      "rationale": "Below equilibrium, quantity demanded exceeds quantity supplied — a shortage — and competition among buyers pushes the price back up."
+    },
+    {
+      "id": 6,
+      "question": "Using the lesson's schedule, at a price of ₹30/kg the mango market shows:",
+      "options": ["Equilibrium", "A surplus of 10 kg", "A shortage of 10 kg", "A shortage of 30 kg"],
+      "correct": 1,
+      "rationale": "At ₹30, quantity supplied (20 kg) exceeds quantity demanded (10 kg), creating a surplus of 10 kg that pressures the price downward."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a determinant that shifts the supply curve rightward?",
+      "options": ["A new tax on production", "A subsidy or better technology", "Rising consumer incomes", "A growing fashion for the good"],
+      "correct": 1,
+      "rationale": "Cheaper inputs, subsidies, and improved technology lower production costs and shift supply rightward; rising incomes shift demand, not supply."
+    },
+    {
+      "id": 8,
+      "question": "If demand and supply both increase simultaneously, the certain outcome is that:",
+      "options": ["Equilibrium price rises", "Equilibrium price falls", "Equilibrium quantity rises", "Equilibrium quantity falls"],
+      "correct": 2,
+      "rationale": "Both shifts push quantity up, so quantity surely rises; the price effect is ambiguous and depends on which shift is larger."
+    },
+    {
+      "id": 9,
+      "question": "Giffen goods violate the law of demand because:",
+      "options": ["Their income effect outweighs the substitution effect after a price rise", "They are luxury status symbols bought for prestige", "They have perfectly elastic demand", "Government fixes their prices"],
+      "correct": 0,
+      "rationale": "For inferior staples like bread in poor households, a price rise so reduces real purchasing power that consumers buy *more* of the staple — the income effect dominates the substitution effect."
+    },
+    {
+      "id": 10,
+      "question": "Veblen goods such as designer diamonds can sell more at higher prices because:",
+      "options": ["They are necessities with no substitutes", "Their price itself signals status, raising their appeal", "The law of supply applies to them", "They are always rationed by government"],
+      "correct": 1,
+      "rationale": "Ostentatious (conspicuous-consumption) goods are demanded partly for prestige, so a higher price makes them more attractive — an exception to the law of demand."
+    }
+  ]
+}

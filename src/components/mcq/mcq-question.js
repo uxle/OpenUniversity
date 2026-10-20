@@ -6,7 +6,8 @@ import { renderInlineMath } from "../../engines/zolto/zolto-engine.js";
 
 /**
  * @param {{ id, question, zolto?, options, correct, rationale }} question
- * @param {(correct: boolean) => void} onAnswered
+ * @param {(selectedIndex: number) => void} onAnswered - receives the index
+ *   of the option the learner chose (the caller compares it with `correct`).
  */
 export function createMcqQuestionView(question, onAnswered) {
   let answered = false;
@@ -25,7 +26,7 @@ export function createMcqQuestionView(question, onAnswered) {
           else if (i === index) el.classList.add("ou-mcq-option--incorrect");
         });
         feedback.textContent = question.rationale || "";
-        onAnswered(isCorrect);
+        onAnswered(index);
       },
     });
     optionsContainer.appendChild(option);

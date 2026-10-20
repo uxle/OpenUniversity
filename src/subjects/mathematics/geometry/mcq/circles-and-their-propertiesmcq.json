@@ -1,0 +1,76 @@
+{
+  "lessonId": "circles-and-their-properties",
+  "title": "Circles: Chords, Angles, and the Magic of \u03c0",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the longest chord of a circle called?",
+      "options": ["The radius", "The tangent", "The diameter", "The secant"],
+      "correct": 2,
+      "rationale": "The diameter is a chord passing through the centre; at 2r it is the longest chord in the circle."
+    },
+    {
+      "id": 2,
+      "question": "Which of these is TRUE about the number \u03c0?",
+      "options": ["It equals 22/7 exactly", "It is irrational, about 3.14159", "It is a whole number", "It changes with the circle's size"],
+      "correct": 1,
+      "rationale": "\u03c0 = C/d is the same constant for every circle and is irrational, so 22/7 is only a convenient approximation."
+    },
+    {
+      "id": 3,
+      "question": "An angle at the circumference of a circle standing on arc AB is 35\u00b0. What is the central angle AOB on the same arc?",
+      "options": ["17.5\u00b0", "35\u00b0", "70\u00b0", "145\u00b0"],
+      "correct": 2,
+      "rationale": "The central-angle theorem: the angle at the centre is twice any angle at the circumference standing on the same arc, so 2 \u00d7 35\u00b0 = 70\u00b0."
+    },
+    {
+      "id": 4,
+      "question": "An angle inscribed in a semicircle measures:",
+      "options": ["45\u00b0", "60\u00b0", "90\u00b0", "180\u00b0"],
+      "correct": 2,
+      "rationale": "The angle in a semicircle is exactly 90\u00b0 \u2014 it is the central-angle theorem with the centre angle of 180\u00b0 halved."
+    },
+    {
+      "id": 5,
+      "question": "Opposite angles of a cyclic quadrilateral always:",
+      "options": ["Are equal", "Sum to 90\u00b0", "Sum to 180\u00b0", "Are right angles"],
+      "correct": 2,
+      "rationale": "In a cyclic quadrilateral opposite angles are supplementary \u2014 110\u00b0 faces 70\u00b0 \u2014 and each exterior angle equals the interior opposite angle."
+    },
+    {
+      "id": 6,
+      "question": "At the point of contact, a tangent to a circle is:",
+      "options": ["Parallel to the radius", "Perpendicular to the radius", "Parallel to a chord", "Equal in length to the diameter"],
+      "correct": 1,
+      "rationale": "The tangent is perpendicular to the radius at the point of contact \u2014 the single most-used tangent fact in exams."
+    },
+    {
+      "id": 7,
+      "question": "Two tangents drawn to a circle from the same external point are:",
+      "options": ["Perpendicular to each other", "Equal in length", "Always parallel", "Reciprocals of each other"],
+      "correct": 1,
+      "rationale": "Two tangents from an external point are equal in length, which makes the triangle they form with the centre line symmetric."
+    },
+    {
+      "id": 8,
+      "question": "A circle has radius 7 cm. Using \u03c0 \u2248 22/7, its circumference and area are:",
+      "options": ["44 cm and 154 cm\u00b2", "22 cm and 154 cm\u00b2", "44 cm and 49 cm\u00b2", "14 cm and 154 cm\u00b2"],
+      "correct": 0,
+      "rationale": "C = 2\u03c0r = 2 \u00d7 22/7 \u00d7 7 = 44 cm, and A = \u03c0r\u00b2 = 22/7 \u00d7 49 = 154 cm\u00b2."
+    },
+    {
+      "id": 9,
+      "question": "With r = 7 cm and central angle \u03b8 = 90\u00b0, the arc length is:",
+      "options": ["7 cm", "11 cm", "22 cm", "38.5 cm"],
+      "correct": 1,
+      "rationale": "Arc = (\u03b8/360) \u00d7 2\u03c0r = (90/360) \u00d7 2 \u00d7 22/7 \u00d7 7 = 44/4 = 11 cm \u2014 a quarter of the circumference. (38.5 cm\u00b2 is the sector's area.)"
+    },
+    {
+      "id": 10,
+      "question": "The area of the annulus between concentric circles of radii 5 and 3 is:",
+      "options": ["\u03c0(5 \u2212 3) = 2\u03c0", "16\u03c0", "\u03c0(5 + 3) = 8\u03c0", "2\u03c0(5 + 3) = 16"],
+      "correct": 1,
+      "rationale": "The annulus area is the difference of areas: \u03c0(5\u00b2 \u2212 3\u00b2) = \u03c0(25 \u2212 9) = 16\u03c0 \u2014 squares subtract, not the radii themselves."
+    }
+  ]
+}

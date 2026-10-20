@@ -1,0 +1,150 @@
+# Linear Seating Arrangement: Rows, Facing, and Fixed Seats
+
+> Linear seating gives you a row of chairs and a stack of clues. This
+> lesson fixes the left-right convention for every facing direction, sorts
+> clues into definite, relative, and negative types, and works single-row
+> and two-row puzzles end to end.
+
+[important]
+Before using any directional clue, find out which way the sitters face.
+"Left" and "right" belong to the *person on the page*, not to you. A
+north-facing person's left matches your left; a south-facing person's
+left is your right — this convention decides half of all marks.
+[/important]
+
+## 1. The Left-Right Convention
+
+| Sitter faces | Their LEFT is | Their RIGHT is |
+| --- | --- | --- |
+| North | your left (west) | your right (east) |
+| South | your right (east) | your left (west) |
+
+When a row faces **north**, every "A is to the left of B" clue reads
+like a normal page scan; when the row faces **south**, each flips.
+
+[tip]
+Write "faces N" or "faces S" in the corner of your diagram the moment
+you read it — candidates lose entire puzzles by solving clue 1 in
+north-mode and clue 5 in south-mode.
+[/tip]
+
+## 2. Three Types of Information
+
+| Clue type | Meaning | Example | Use it |
+| --- | --- | --- | --- |
+| Definite | fixes a position outright | "G is 3rd from the left" | first |
+| Relative | fixes position relative to another person | "A sits immediately right of G" | once an anchor exists |
+| Negative | removes possibilities only | "F is not at any end" | last, to break ties |
+
+A well-formed puzzle opens with a definite clue, chains relatives
+onto it, and closes with negatives — if your diagram stalls, hunt for
+the unused definite clue.
+
+## 3. Setting Up: Count, Blanks, Notation
+
+1. Count the people and draw exactly that many blanks.
+2. Number the seats 1 to n from the page's left; mark N or S.
+3. Tick off each clue as you place it — a clue used twice creates
+false certainty.
+
+[definition]
+**Bracket notation**: when a clue links two people, write the pair in a
+bracket, such as [A G] for "G immediately right of A" — long chains then
+slide along the blanks as one block until locked.
+[/definition]
+
+## 4. Worked Example: Seven in a Row Facing North
+
+Seven people A, B, C, D, E, F, G sit in a row facing north.
+
+```text
+Clues: G is 3rd from the left end; C is at the extreme right; A is
+       immediately right of G; exactly two people sit between A and C;
+       E is immediately left of C; B is 2nd from the left; F is not an
+       immediate neighbour of B.
+Seats:    1   2   3   4   5   6   7
+Clue 1-2: -   -   G   -   -   -   C      (definite clues first)
+Clue 3:   -   -   G   A   -   -   C      (relative; right = page right)
+Clue 4-5: -   -   G   A   -   E   C      (seats 5 and 6 lie between
+          A and C; E is immediately left of C = seat 6)
+Clue 6-7: D   B   G   A   F   E   C      (F cannot touch B at seat 1,
+          so F takes seat 5; D fills the last blank)
+```
+
+**Answers:** who sits in the middle? A. F's neighbours? A and E.
+Who is second from the right end? E.
+
+## 5. Worked Example: Two Rows Facing Each Other
+
+Ten people sit in two parallel rows of five. Row 1 (top) faces south;
+Row 2 (bottom) faces north, and each top person faces a bottom person,
+seat for seat.
+
+```text
+Clues 1-2: R sits in the middle of Row 1; C faces R -> seats 3 of
+   both rows.
+Clue 3: S sits immediately LEFT of R — Row 1 faces south, so R's
+   left is the page's RIGHT: seat 4.
+Clue 4: Q sits immediately RIGHT of R -> the page's LEFT: seat 2.
+Clue 5: A sits opposite Q.                    -> Row 2, seat 2.
+Clue 6: E sits at the right end of Row 2 — Row 2 faces north, so
+   the right end is the page's RIGHT: seat 5.
+Clues 7-8: B is at the left end of Row 2 (seat 1; D fills seat 4)
+   and T faces E (Row 1, seat 5). P fills Row 1 seat 1.
+```
+
+**Result:** Row 1 = P, Q, R, S, T and Row 2 = B, A, C, D, E. Clues 3
+and 4 only work through the facing convention: in a south-facing row,
+"left of R" means the seat *after* R on the page.
+
+[info title="Why two rows confuse candidates"]
+The two rows face each other, so their lefts are mirrored: what is on
+the left for Row 1 (facing south) is on the right for Row 2 at the
+facing position — translate clues into page positions before combining.
+[/info]
+
+## 6. Facing-Variable Questions
+
+Harder puzzles seat some people facing north and others south in the
+same row, so each person carries their own left-right frame. If a clue
+says "D sits to the left of C" where C faces north, count using C's
+frame: C's left is the page's left, so D lies to the page's left of C,
+regardless of which way D personally faces.
+
+## 7. Clue Phrasings and Interpretations
+
+| Phrase in the question | Exact interpretation |
+| --- | --- |
+| "3rd from the left end" | seat 3 counting from the page's left, if facing north |
+| "to the immediate right of X" | adjacent seat in X's right direction |
+| "second to the left of X" | two seats away in X's left direction |
+| "at one of the extreme ends" | seat 1 or seat n — two branches, resolve later |
+| "faces X" (two rows) | occupies the seat directly opposite X's seat |
+| "as many between A and B as between C and D" | a count equality, not a position |
+
+## 8. Common Traps and Strategy
+
+- **Mixing facing directions:** solving some clues in north-mode,
+  others in south-mode, in the same puzzle.
+- **Counting yourself, not the sitter:** "left of" in a south-facing
+  row is your right.
+- **Trusting the first arrangement:** one early branch poisons the
+  rest — re-check every clue at the end.
+- **Ignoring branches:** "at one of the extreme ends" means two
+  branches; carry both until a clue kills one.
+
+| Stage | Move |
+| --- | --- |
+| Read the stem | note row count, facing direction, total people |
+| Phase 1 | draw blanks, number them, place definite clues first |
+| Phase 2 | chain relative clues onto placed people |
+| Phase 3 | use negative clues to break remaining ties |
+| Finish | verify the arrangement against every clue |
+
+[example]
+Exam method: **(1)** facing direction first, always, **(2)** blanks and
+seat numbers, **(3)** definite clues, **(4)** bracket relative pairs
+and slide them as blocks, **(5)** negatives last, **(6)** re-check
+every clue. If two arrangements survive, keep both and answer the
+questions that agree in both cases first.
+[/example]

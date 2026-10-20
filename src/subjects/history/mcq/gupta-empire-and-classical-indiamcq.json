@@ -1,0 +1,76 @@
+{
+  "lessonId": "gupta-empire-and-classical-india",
+  "title": "The Gupta Age: India's Classical Golden Age",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Gupta era begins with the coronation of Chandragupta I in which year?",
+      "options": ["320 CE", "375 CE", "319 CE", "335 CE"],
+      "correct": 2,
+      "rationale": "Chandragupta I's coronation year 319-320 CE marks the start of the Gupta era; he took the title maharajadhiraja after marrying the Lichchhavi princess Kumaradevi."
+    },
+    {
+      "id": 2,
+      "question": "The Allahabad (Prayag) Prashasti, the main source for Samudragupta's conquests, was composed by:",
+      "options": ["Banabhatta", "Harisena", "Ravikirti", "Amarasimha"],
+      "correct": 1,
+      "rationale": "Harisena, Samudragupta's court poet, composed the Prayag Prashasti, listing uprooted northern kings and reinstated southern vassals."
+    },
+    {
+      "id": 3,
+      "question": "Which Viceroy-era historian called Samudragupta the 'Indian Napoleon'?",
+      "options": ["V. A. Smith", "R. C. Majumdar", "D. D. Kosambi", "Romila Thapar"],
+      "correct": 0,
+      "rationale": "Vincent Arthur Smith, using the conquests of the Prayag Prashasti, described Samudragupta as an 'Indian Napoleon'."
+    },
+    {
+      "id": 4,
+      "question": "The Chinese pilgrim who visited India during Chandragupta II's reign was:",
+      "options": ["Xuanzang", "Fa-Hien", "I-tsing", "Yijing"],
+      "correct": 1,
+      "rationale": "Fa-Hien travelled c. 399-414 CE during Chandragupta II Vikramaditya's rule; Xuanzang came later, under Harsha."
+    },
+    {
+      "id": 5,
+      "question": "Aryabhata, born in 476 CE, is credited in the Aryabhatiya with:",
+      "options": ["Denying eclipses entirely", "Explaining eclipses as shadows and stating the earth rotates", "Inventing the Julian calendar", "Rejecting place-value numerals"],
+      "correct": 1,
+      "rationale": "The Aryabhatiya explains place value with zero, treats eclipses as shadow effects, states the earth rotates, and gives pi as 3.1416."
+    },
+    {
+      "id": 6,
+      "question": "The rust-free Iron Pillar of Delhi was erected during the reign of:",
+      "options": ["Samudragupta", "Chandragupta II", "Skandagupta", "Kumaragupta I"],
+      "correct": 1,
+      "rationale": "The Mehrauli Iron Pillar, standing rust-free for over 1,500 years, is credited to Chandragupta II Vikramaditya — a monument to Gupta metallurgy."
+    },
+    {
+      "id": 7,
+      "question": "The Nalanda mahavihara was founded by:",
+      "options": ["Chandragupta II", "Kumaragupta I", "Harsha", "Skandagupta"],
+      "correct": 1,
+      "rationale": "Kumaragupta I founded Nalanda, which grew into the era's greatest university, later praised by Xuanzang."
+    },
+    {
+      "id": 8,
+      "question": "The Gupta empire's western collapse was caused by invasions of the Hunas led by:",
+      "options": ["Toramana and Mihirakula", "Mihirakula and Pulakeshin II", "Toramana and Harsha", "Kanishka and Toramana"],
+      "correct": 0,
+      "rationale": "After Skandagupta repelled the first Huna wave, Toramana and his son Mihirakula broke the western empire in the early sixth century."
+    },
+    {
+      "id": 9,
+      "question": "Harsha's biography, the Harshacharita, was written by his court poet:",
+      "options": ["Bana (Banabhatta)", "Harisena", "Ravikirti", "Kalidasa"],
+      "correct": 0,
+      "rationale": "Banabhatta wrote the Harshacharita, the biography of Harsha of Thanesar (606-647 CE), and the novel Kadambari."
+    },
+    {
+      "id": 10,
+      "question": "The Aihole inscription of Ravikirti (634-635 CE) celebrates which victory of Pulakeshin II?",
+      "options": ["Defeat of the Hunas", "Defeat of Harsha on the Narmada", "Capture of Kanchipuram", "Conquest of Sri Lanka"],
+      "correct": 1,
+      "rationale": "The Chalukya court poet Ravikirti's Aihole inscription praises Pulakeshin II for halting Harsha's southern march on the Narmada."
+    }
+  ]
+}

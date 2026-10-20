@@ -1,3 +1,83 @@
-# Lesson1
+# Understanding Economics: Scarcity, Choice, and Opportunity Cost
 
-TODO: write lesson content.
+> Economics is the study of how people, businesses, and societies use
+> scarce resources to satisfy unlimited wants.
+
+[definition]
+**Scarcity** means that resources (time, money, land, labour) are limited,
+while human wants are effectively unlimited. Every economic question starts
+from this tension.
+[/definition]
+
+## 1. The Three Fundamental Economic Questions
+
+Every economy — from a household to a nation — must answer:
+
+1. **What to produce?** (food, cars, hospitals, entertainment?)
+2. **How to produce?** (machines or workers? coal or solar?)
+3. **For whom to produce?** (how is output distributed?)
+
+| System | Who answers these questions | Example |
+| --- | --- | --- |
+| Market economy | Buyers and sellers through prices | Most modern economies |
+| Command economy | Central government planning | Historical Soviet Union |
+| Mixed economy | Markets + government intervention | India, France |
+
+## 2. Opportunity Cost
+
+[important]
+**Opportunity cost** is the value of the *next best alternative* you give
+up when making a choice. It is the true cost of any decision — not just
+the money spent.
+[/important]
+
+## Example
+
+You have one free evening. You can study economics, work a shift earning
+₹500, or watch a film. If you choose studying, your opportunity cost is
+the ₹500 you could have earned (the **next best** option — not both
+alternatives added together).
+
+## 3. Factors of Production
+
+| Factor | Description | Reward |
+| --- | --- | --- |
+| Land | All natural resources | Rent |
+| Labour | Human physical and mental effort | Wages |
+| Capital | Tools, machines, buildings used to produce | Interest |
+| Entrepreneurship | Organising the other factors and bearing risk | Profit |
+
+## 4. Demand and Supply in One Minute
+
+- **Law of demand:** as price rises, quantity demanded falls (and vice versa).
+- **Law of supply:** as price rises, quantity supplied rises.
+- **Market equilibrium:** the price at which quantity demanded equals
+  quantity supplied — shortages push prices up; surpluses push them down.
+
+The two curves as data — demand falls with price while supply rises,
+crossing at the equilibrium price of ₹30:
+
+@chart line title="Quantity demanded vs supplied at each price (₹)" labels:
+10
+20
+30
+40
+50
+
+series:
+  - name: "Demanded"
+    data: 90 70 50 30 10
+  - name: "Supplied"
+    data: 10 30 50 70 90
+@/chart
+
+[info title="Why prices matter"]
+Prices act as *signals*. A rising price tells producers "make more" and
+consumers "use less", reallocating resources without anyone issuing orders.
+[/info]
+
+## Key Takeaways
+
+- Scarcity forces choice; every choice has an opportunity cost.
+- Land, labour, capital, and entrepreneurship combine to produce goods.
+- Demand and supply interact to determine market prices.

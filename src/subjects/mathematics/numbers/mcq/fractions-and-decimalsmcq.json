@@ -1,0 +1,76 @@
+{
+  "lessonId": "fractions-and-decimals",
+  "title": "Fractions and Decimals: Parts of Wholes, Done Precisely",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Compute 3/4 + 5/6.",
+      "options": ["19/12", "8/10", "8/12", "15/24"],
+      "correct": 0,
+      "rationale": "The LCM of 4 and 6 is 12: 3/4 = 9/12 and 5/6 = 10/12, and 9/12 + 10/12 = 19/12 = 1 7/12. Adding denominators (giving 8/10) is the classic error the lesson warns against."
+    },
+    {
+      "id": 2,
+      "question": "Compute 3/4 ÷ 2/5.",
+      "options": ["3/10", "15/8", "8/15", "6/20"],
+      "correct": 1,
+      "rationale": "Dividing means multiplying by the reciprocal: 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 = 1 7/8."
+    },
+    {
+      "id": 3,
+      "question": "Evaluate 15/8 × 4/9 by cancelling first.",
+      "options": ["60/72 only", "5/6", "15/18", "3/2"],
+      "correct": 1,
+      "rationale": "Cancel 15 with 9 (÷3) and 4 with 8 (÷4) before multiplying, leaving (5 × 1)/(2 × 3) = 5/6 — the same value as 60/72 but with no big products."
+    },
+    {
+      "id": 4,
+      "question": "Which fraction is less than the other: 3/7 or 3/5?",
+      "options": ["3/7 < 3/5", "3/5 < 3/7", "They are equal", "Cannot be compared"],
+      "correct": 0,
+      "rationale": "With the same numerator, the larger denominator gives the smaller fraction — cutting a whole into 7 pieces makes each piece smaller than cutting it into 5."
+    },
+    {
+      "id": 5,
+      "question": "Which of these fractions gives a terminating decimal?",
+      "options": ["5/12", "7/9", "7/40", "1/3"],
+      "correct": 2,
+      "rationale": "A fraction terminates exactly when its denominator (in lowest terms) has only 2s and 5s as prime factors. 40 = 2³ × 5 qualifies, so 7/40 = 0.175 terminates; 12 (2² × 3), 9 (3²) and 3 all contain other primes."
+    },
+    {
+      "id": 6,
+      "question": "Convert the recurring decimal 0.777… to a fraction.",
+      "options": ["7/10", "7/9", "77/100", "7/99"],
+      "correct": 1,
+      "rationale": "Let x = 0.777…; then 10x = 7.777… and 10x − x = 7, so 9x = 7 and x = 7/9."
+    },
+    {
+      "id": 7,
+      "question": "Convert 0.232323… (23 repeating) to a fraction.",
+      "options": ["23/90", "23/100", "23/99", "23/98"],
+      "correct": 2,
+      "rationale": "For a two-digit repeat, shift by 100: 100x − x = 23.2323… − 0.2323… = 23, so 99x = 23 and x = 23/99."
+    },
+    {
+      "id": 8,
+      "question": "Compute 0.3 × 0.02.",
+      "options": ["0.6", "0.06", "0.006", "0.0006"],
+      "correct": 2,
+      "rationale": "Multiply 3 × 2 = 6, then plant as many decimal places as the factors had combined: 1 + 2 = 3 places, giving 0.006."
+    },
+    {
+      "id": 9,
+      "question": "Round 3.4567 to two decimal places.",
+      "options": ["3.45", "3.46", "3.456", "3.5"],
+      "correct": 1,
+      "rationale": "Inspect the third decimal digit (6); since 6 ≥ 5, round the second digit up: 3.4567 → 3.46."
+    },
+    {
+      "id": 10,
+      "question": "Using the fraction–decimal table, what is 5/8 as a decimal?",
+      "options": ["0.58", "0.625", "0.575", "0.65"],
+      "correct": 1,
+      "rationale": "5/8 = 4/8 + 1/8 = 0.5 + 0.125 = 0.625, exactly as derived in the lesson's conversion table."
+    }
+  ]
+}

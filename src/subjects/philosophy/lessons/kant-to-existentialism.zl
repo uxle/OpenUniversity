@@ -1,0 +1,129 @@
+# From Kant to Existentialism: Modern and Contemporary Philosophy
+
+> Kant fused rationalism and empiricism by showing the mind structures
+> experience; Hegel made history itself philosophical; and the
+> existentialists put the concrete, choosing individual back at the
+> centre.
+
+## 1. Kant's Copernican Revolution
+
+**Immanuel Kant** (1724–1804) proposed asking not how our knowledge
+conforms to objects (Hume's problem) but how objects conform to our
+cognition: the mind supplies the forms of experience — space, time,
+the categories. This explains how **synthetic a priori** judgements
+are possible: informative claims that hold independently of experience.
+
+[definition]
+**Phenomena** are things as they appear, structured by our cognition.
+**Noumena** are things-in-themselves — thinkable, never knowable. We
+know the world as appearance, not as it is apart from knowers.
+[/definition]
+
+In ethics, Kant's **categorical imperative** commands unconditionally:
+
+1. Act only on maxims you can will as universal law.
+2. Treat humanity — in yourself and others — never merely as a means,
+   but always at the same time as an end.
+
+His essay "What Is Enlightenment?" (1784) adds *sapere aude* — dare
+to know — the exit from self-incurred immaturity.
+
+## 2. Hegel: History as Logic
+
+**G. W. F. Hegel** (1770–1831) makes reality the self-development of
+**Geist** (Spirit) coming to know itself — **absolute idealism**.
+Development runs dialectically — popularly "thesis–antithesis–
+synthesis"; Hegel's own terms move from the **abstract** through the
+**negative** to the **concrete**. History is freedom's unfolding.
+
+[example]
+The master–slave dialectic (Phenomenology of Spirit, 1807): the
+master seeks recognition from the slave, but recognition from an
+unfree being is worthless — domination undermines itself. Genuine
+self-consciousness requires mutual recognition between equals.
+[/example]
+
+## 3. Three Revolts Against the System
+
+| Rebel | Revolt | Core idea |
+| --- | --- | --- |
+| Kierkegaard (1813–1855) | Against the system swallowing the individual | Truth is subjectivity; faith is a leap |
+| Marx (1818–1883) | Against Spirit as the mover | Historical materialism: production drives ideas |
+| Nietzsche (1844–1900) | Against all metaphysical consolations | God is dead; will to power; perspectivism |
+
+**Kierkegaard**, the father of existentialism, insists the existing
+individual outranks any system, moving through aesthetic, ethical,
+and religious stages — the leap of faith beyond reason.
+
+**Marx** turns the dialectic "right side up": the economic base shapes
+law, religion, and ideas (the superstructure); history is class struggle.
+
+**Nietzsche** diagnoses the **death of God** — the collapse of the
+shared moral horizon — traces master and slave moralities, and holds
+that knowing is **perspectival** and life a **will to power**.
+
+## 4. Existentialism
+
+**Jean-Paul Sartre** (1905–1980): **existence precedes essence** — no
+fixed human nature; we are what we make of ourselves, therefore
+**radically free** and responsible. Fleeing that freedom by hiding in
+roles is **bad faith** (*Being and Nothingness*, 1943).
+
+**Simone de Beauvoir** (1908–1986) applied the analysis to gender: "One
+is not born, but rather becomes, a woman" (*The Second Sex*, 1949) —
+femininity is a constructed situation for a situated freedom.
+
+**Albert Camus** (1913–1960) names our condition the **absurd** — our
+demand for meaning met by the universe's silence. *The Myth of
+Sisyphus* (1942) answers with revolt: "One must imagine Sisyphus happy."
+
+## 5. Phenomenology: The Method Behind It
+
+**Edmund Husserl** (1859–1938) founded it with "to the things
+themselves": describe experience as given. Its core finding is
+**intentionality** — consciousness is always of something.
+
+**Martin Heidegger** (1889–1976), in *Being and Time* (1927), asks the
+question of Being: we are **Dasein**, thrown into a world of concerns,
+and authenticity means facing our **being-toward-death**.
+
+## 6. Analytic and Continental Philosophy
+
+| | Analytic | Continental |
+| --- | --- | --- |
+| Style | Small arguments, formal logic, clarity | Big systems, interpretation, history |
+| Homes | Britain, Austria, United States | Germany, France |
+| Central figures | Frege, Russell, Wittgenstein | Hegel, Nietzsche, Heidegger, Sartre |
+| Typical questions | Meaning, reference, science | Being, meaning of life, power, history |
+
+@diagram tree id="philosophy-modern-tree" layout="tree" aria="Philosophy after Kant branching into four movements"
+  "After Kant" -> "German idealism"
+  "After Kant" -> Existentialism
+  "After Kant" -> Phenomenology
+  "After Kant" -> "Analytic philosophy"
+@/diagram
+
+Twentieth-century snapshots:
+
+- **Ludwig Wittgenstein** (1889–1951): the later *Philosophical
+  Investigations* treats meaning as use within **language games** —
+  philosophy's puzzles are grammar misfiring.
+- **Karl Popper** (1902–1994): a theory is scientific only if
+  **falsifiable**; science grows by conjectures and refutations.
+- **Thomas Kuhn** (1922–1996): science works inside a **paradigm**
+  until anomalies force a revolutionary shift (1962).
+
+## 7. Key Takeaways
+
+| Thinker | Signature claim |
+| --- | --- |
+| Kant | Mind structures experience; categorical imperative |
+| Hegel | Spirit develops dialectically toward freedom |
+| Kierkegaard | Truth is subjectivity; the leap of faith |
+| Marx | Historical materialism |
+| Nietzsche | God is dead; will to power; perspectivism |
+| Sartre | Existence precedes essence; radical freedom |
+| de Beauvoir | One becomes a woman |
+| Camus | The absurd; revolt |
+| Wittgenstein | Meaning as use; language games |
+| Popper and Kuhn | Falsification; paradigms |

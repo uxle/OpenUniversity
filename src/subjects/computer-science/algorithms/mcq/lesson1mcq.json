@@ -1,5 +1,83 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Introduction to Algorithms: Thinking in Steps",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which property is NOT required of a valid algorithm?",
+      "options": ["It must eventually stop", "Every step must be unambiguous", "It must run in under one second", "It must work for a whole class of inputs"],
+      "correct": 2,
+      "rationale": "Algorithms must be finite, unambiguous, effective, and general — but no fixed speed limit is part of the definition."
+    },
+    {
+      "id": 2,
+      "question": "Binary search on a sorted list of 1,000,000 items needs roughly how many comparisons?",
+      "options": ["1,000,000", "50,000", "20", "1000"],
+      "correct": 2,
+      "rationale": "Each comparison halves the range, so about log₂(1,000,000) ≈ 20 checks suffice."
+    },
+    {
+      "id": 3,
+      "question": "An algorithm with O(n²) time complexity compared to an O(n log n) one will:",
+      "options": ["Always be faster", "Grow much slower in running time as n increases", "Use no extra memory by definition", "Only work on sorted data"],
+      "correct": 1,
+      "rationale": "Quadratic growth dominates: for large n, n² vastly exceeds n·log(n), regardless of hardware speed."
+    },
+    {
+      "id": 4,
+      "question": "Merge sort's strategy of splitting the list, sorting halves, and merging them is called:",
+      "options": ["Greedy method", "Divide and conquer", "Brute force", "Dynamic programming"],
+      "correct": 1,
+      "rationale": "Divide and conquer splits a problem into smaller subproblems, solves them, and combines results — giving merge sort its O(n log n) average time."
+    },
+    {
+      "id": 5,
+      "question": "Which sorting algorithm is especially fast when the input is already nearly sorted?",
+      "options": ["Insertion sort", "Bubble sort", "Selection sort", "Quicksort with random pivot"],
+      "correct": 0,
+      "rationale": "Insertion sort places each element into the already-sorted prefix and runs near O(n) when few elements are out of place."
+    },
+    {
+      "id": 6,
+      "question": "Accessing an array element by index is an example of which complexity class?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+      "correct": 0,
+      "rationale": "Per the complexity table, accessing an array element is O(1) — constant time, independent of list size."
+    },
+    {
+      "id": 7,
+      "question": "Trying every subset of a problem's items corresponds to which growth rate?",
+      "options": ["O(n log n)", "O(n²)", "O(2ⁿ)", "O(1)"],
+      "correct": 2,
+      "rationale": "The lesson maps 'trying every subset' to O(2ⁿ) — exponential time, the slowest class in the table."
+    },
+    {
+      "id": 8,
+      "question": "Which sorting algorithm repeatedly swaps adjacent out-of-order pairs?",
+      "options": ["Bubble sort", "Merge sort", "Insertion sort", "Binary search"],
+      "correct": 0,
+      "rationale": "Bubble sort's idea is swapping adjacent out-of-order pairs repeatedly; it runs in O(n²) average time."
+    },
+    {
+      "id": 9,
+      "question": "In the pseudocode for BINARY-SEARCH, when A[mid] < target, what happens next?",
+      "options": ["high is set to mid - 1", "low is set to mid + 1", "the loop exits immediately", "mid stays unchanged"],
+      "correct": 1,
+      "rationale": "If the middle value is less than the target, the target must lie in the right half, so low = mid + 1 narrows the search there."
+    },
+    {
+      "id": 10,
+      "question": "According to the definition of correctness, a correct algorithm:",
+      "options": ["Runs in O(log n) or better", "Produces the right output for every valid input", "Always uses the least possible memory", "Never takes more than one pass over the data"],
+      "correct": 1,
+      "rationale": "Correctness means producing the right output for every valid input — efficiency (time/memory as input grows) is a separate question."
+    },
+    {
+      "id": 11,
+      "question": "Quicksort partitions data around a pivot and recurses. Its typical average running time is:",
+      "options": ["O(n²)", "O(n log n)", "O(2ⁿ)", "O(1)"],
+      "correct": 1,
+      "rationale": "The sorting table lists Quicksort as O(n log n) typical — partition around a pivot, then recurse on both sides."
+    }
+  ]
 }

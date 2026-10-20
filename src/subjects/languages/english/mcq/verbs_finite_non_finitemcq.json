@@ -29,6 +29,48 @@
       "options": ["V1 + ing", "V2 alone", "To + V1", "Having + V3"],
       "correct": 2,
       "rationale": "An Infinitive takes the form 'To + V1', e.g., 'To read' — as in the earlier example 'Infinitive (To + V1)'."
+    },
+    {
+      "id": 5,
+      "question": "Which sentence correctly uses the Bare Infinitive (V1 without 'to') after 'let'?",
+      "options": ["They do not let me to play hockey there.", "They do not let me play hockey there.", "They do not letting me play hockey.", "They do not let me played hockey."],
+      "correct": 1,
+      "rationale": "After words like Let, Make, Bid, Than, But, Had better, the Bare Infinitive (direct V1 without 'to') is used — 'do not let me play'."
+    },
+    {
+      "id": 6,
+      "question": "Which structure combines two actions where the first is completed before the second begins?",
+      "options": ["Having + V3 + object, Subject + V2 + object (Perfect Participle)", "While + V1 + ing", "Is/Are + used to + V1 + ing", "To + V1"],
+      "correct": 0,
+      "rationale": "The Perfect Participle structure 'Having + V3 ..., Subject + V2 ...' shows a completed prior action — e.g., 'Having cooked food, he came to office.'"
+    },
+    {
+      "id": 7,
+      "question": "In 'Seeing a lion, he ran away.', 'Seeing a lion' is an example of:",
+      "options": ["Gerund acting as a noun", "Present Participle showing fastness/immediate reaction between actions", "Perfect Participle", "Bare Infinitive"],
+      "correct": 1,
+      "rationale": "The Present Participle (V1 + ing) is used when there is fastness or immediate reaction between two actions — seeing and running happen back-to-back."
+    },
+    {
+      "id": 8,
+      "question": "Fill in: 'He refused ___ us in bad days.'",
+      "options": ["helping", "to help", "help", "helped"],
+      "correct": 1,
+      "rationale": "'Refuse' belongs to the group of emotion/intention words (easy, want, eager, hate, fail, refuse) that are followed by the Infinitive — 'refused to help'."
+    },
+    {
+      "id": 9,
+      "question": "Fill in: 'I am looking forward to ___ my friends.'",
+      "options": ["meet", "meeting", "met", "have met"],
+      "correct": 1,
+      "rationale": "'Look forward to' is a fixed expression followed by a Gerund (V1 + ing) — 'looking forward to meeting my friends'."
+    },
+    {
+      "id": 10,
+      "question": "'He is used to ___ mistakes.' Which form fits, and what does this structure denote?",
+      "options": ["make — a past habit", "making — a present habit (used to + V1 + ing)", "made — a completed action", "to make — a future intention"],
+      "correct": 1,
+      "rationale": "The structure Is/Am/Are/Was/Were + used to + V1 + ing denotes a present habit — 'He is used to making mistakes.'"
     }
   ]
 }

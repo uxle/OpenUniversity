@@ -1,0 +1,126 @@
+{
+  "lessonId": "heat-and-thermodynamics",
+  "title": "Heat and Thermodynamics: Temperature, Transfer, and Engines",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Temperature is best described as:",
+      "options": [
+        "The total heat content of a body",
+        "The average kinetic energy of its molecules",
+        "The total mass of a body",
+        "The energy in transit between two bodies"
+      ],
+      "correct": 1,
+      "rationale": "Temperature measures the average kinetic energy of a body's molecules; heat is the energy in transit due to a temperature difference."
+    },
+    {
+      "id": 2,
+      "question": "Absolute zero corresponds to:",
+      "options": [
+        "0 °C",
+        "−100 °C",
+        "−273.15 °C",
+        "−273.15 K"
+      ],
+      "correct": 2,
+      "rationale": "0 K = −273.15 °C is absolute zero, where molecular motion reaches its minimum and nothing can be colder."
+    },
+    {
+      "id": 3,
+      "question": "A sea breeze blowing onshore during the day is an example of:",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "Evaporation"
+      ],
+      "correct": 1,
+      "rationale": "Land heats faster than the sea by day, and the rising warm air drives a convective circulation: the onshore sea breeze."
+    },
+    {
+      "id": 4,
+      "question": "Which mode of heat transfer requires no medium at all?",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "All three need a medium"
+      ],
+      "correct": 2,
+      "rationale": "Radiation travels as electromagnetic waves, which is how the Sun's warmth crosses empty space."
+    },
+    {
+      "id": 5,
+      "question": "The specific heat capacity of water is about:",
+      "options": [
+        "4200 J/kg·K",
+        "9.8 J/kg·K",
+        "336 J/kg·K",
+        "2260 J/kg·K"
+      ],
+      "correct": 0,
+      "rationale": "Water's ~4200 J/kg·K is the highest of common materials, making it an excellent coolant and climate stabiliser."
+    },
+    {
+      "id": 6,
+      "question": "While ice is melting at 0 °C, its temperature:",
+      "options": [
+        "Stays constant",
+        "Rises steadily",
+        "Falls steadily",
+        "Fluctuates rapidly"
+      ],
+      "correct": 0,
+      "rationale": "The 336 kJ/kg supplied as latent heat changes the state, not the temperature; the thermometer holds at 0 °C until all ice melts."
+    },
+    {
+      "id": 7,
+      "question": "Boyle's law states that:",
+      "options": [
+        "V ∝ T at constant pressure",
+        "P ∝ V at constant temperature",
+        "PV = constant at constant temperature",
+        "P ∝ 1/T at constant volume"
+      ],
+      "correct": 2,
+      "rationale": "Boyle found PV = constant at fixed temperature; combined with Charles's V ∝ T it yields PV = nRT."
+    },
+    {
+      "id": 8,
+      "question": "The relation ΔU = Q − W represents which law of thermodynamics?",
+      "options": [
+        "Zeroth law",
+        "First law",
+        "Second law",
+        "Boyle's law"
+      ],
+      "correct": 1,
+      "rationale": "The first law says supplied heat Q partly raises internal energy ΔU and partly leaves as work W done by the gas."
+    },
+    {
+      "id": 9,
+      "question": "A Carnot engine working between 500 K and 300 K has a maximum efficiency of:",
+      "options": [
+        "60%",
+        "50%",
+        "40%",
+        "100%"
+      ],
+      "correct": 2,
+      "rationale": "η = 1 − Tc/Th = 1 − 300/500 = 0.40, so even a perfect engine converts at most 40% of the heat."
+    },
+    {
+      "id": 10,
+      "question": "Small gaps are left between railway track segments so that:",
+      "options": [
+        "Steel is saved during construction",
+        "The rails can expand in summer heat",
+        "Rainwater drains away quickly",
+        "Workers can walk between them"
+      ],
+      "correct": 1,
+      "rationale": "Rails expand on hot days (thermal expansion), and the gaps stop the track from buckling."
+    }
+  ]
+}

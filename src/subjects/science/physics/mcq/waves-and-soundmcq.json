@@ -1,0 +1,126 @@
+{
+  "lessonId": "waves-and-sound",
+  "title": "Waves and Sound: Oscillations That Carry Energy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A travelling wave transports:",
+      "options": [
+        "Both matter and energy",
+        "Energy but not matter",
+        "Matter but not energy",
+        "Neither matter nor energy"
+      ],
+      "correct": 1,
+      "rationale": "A wave is a disturbance that carries energy without carrying matter — the cork bobs in place as ripples pass."
+    },
+    {
+      "id": 2,
+      "question": "Sound in air is best classified as a:",
+      "options": [
+        "Transverse mechanical wave",
+        "Longitudinal mechanical wave",
+        "Transverse electromagnetic wave",
+        "Longitudinal electromagnetic wave"
+      ],
+      "correct": 1,
+      "rationale": "Sound is longitudinal (compressions and rarefactions along the travel direction) and mechanical — it needs a medium."
+    },
+    {
+      "id": 3,
+      "question": "Using v = fλ, the wavelength of a 500 Hz note in air (343 m/s) is about:",
+      "options": [
+        "0.69 m",
+        "1.45 m",
+        "500 m",
+        "0.15 m"
+      ],
+      "correct": 0,
+      "rationale": "λ = 343 ÷ 500 ≈ 0.69 m, the spacing between successive compressions, as the lesson's example computes."
+    },
+    {
+      "id": 4,
+      "question": "In which order does the speed of sound increase?",
+      "options": [
+        "Air > water > steel",
+        "Steel > water > air",
+        "Water > steel > air",
+        "The speed is the same in all three"
+      ],
+      "correct": 1,
+      "rationale": "The lesson's chart shows about 343 m/s in air, 1500 m/s in water, and 5000 m/s in steel."
+    },
+    {
+      "id": 5,
+      "question": "The loudness of a sound depends mainly on its:",
+      "options": [
+        "Frequency",
+        "Amplitude",
+        "Waveform",
+        "Speed"
+      ],
+      "correct": 1,
+      "rationale": "Loudness tracks amplitude; pitch tracks frequency and quality (timbre) tracks waveform."
+    },
+    {
+      "id": 6,
+      "question": "The audible range of the healthy human ear is roughly:",
+      "options": [
+        "2 Hz to 200 Hz",
+        "20 Hz to 2,000 Hz",
+        "200 Hz to 20,000 Hz",
+        "20 Hz to 20,000 Hz"
+      ],
+      "correct": 3,
+      "rationale": "Humans hear about 20 Hz to 20,000 Hz; below is infrasound and above is ultrasound."
+    },
+    {
+      "id": 7,
+      "question": "The minimum distance of a reflecting surface for a clear echo at 20 °C is about:",
+      "options": [
+        "1.72 m",
+        "34.3 m",
+        "17.2 m",
+        "172 m"
+      ],
+      "correct": 2,
+      "rationale": "With a 0.1 s persistence of hearing, d = 343 × 0.1 ÷ 2 ≈ 17.2 m."
+    },
+    {
+      "id": 8,
+      "question": "A SONAR pulse returns after 2 s. With sound at 1500 m/s in sea water, the depth is:",
+      "options": [
+        "750 m",
+        "3,000 m",
+        "1,500 m",
+        "625 m"
+      ],
+      "correct": 2,
+      "rationale": "d = vt ÷ 2 = 1500 × 2 ÷ 2 = 1,500 m — the lesson's worked SONAR example."
+    },
+    {
+      "id": 9,
+      "question": "As an ambulance with a blaring siren approaches you, the pitch you hear:",
+      "options": [
+        "Falls",
+        "Rises",
+        "Stays the same",
+        "Disappears"
+      ],
+      "correct": 1,
+      "rationale": "The Doppler effect raises the apparent frequency of an approaching source and lowers it as the source recedes."
+    },
+    {
+      "id": 10,
+      "question": "The Mach number of a source is defined as:",
+      "options": [
+        "Speed of light ÷ speed of sound",
+        "Sound speed × distance travelled",
+        "Source speed ÷ speed of sound",
+        "Frequency × wavelength"
+      ],
+      "correct": 2,
+      "rationale": "Mach number is the ratio of source speed to the speed of sound; exceeding Mach 1 piles the wavefronts into a cone, creating a sonic boom."
+    }
+  ]
+}

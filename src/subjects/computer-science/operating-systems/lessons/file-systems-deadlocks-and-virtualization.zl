@@ -1,0 +1,137 @@
+# File Systems, Deadlocks, and Virtualization: Completing the OS Picture
+
+> Files, deadlocks, and virtual machines turn a bare multitasking
+> kernel into a dependable platform — and the cloud's foundation.
+
+## 1. Files and Their Metadata
+
+A **file** is a named, ordered collection of bytes on persistent
+storage; the file system keeps each file's facts — not its content —
+in a metadata record: on Unix, the **inode**.
+
+| inode field | Meaning |
+| --- | --- |
+| Size | Length in bytes |
+| Timestamps | Created, modified, last accessed |
+| Permissions | Owner, group, and world read/write/execute bits |
+| Block pointers | Where the content lives (direct and indirect) |
+
+[definition]
+An **inode** stores a file's metadata and block pointers; the file
+*name* lives in the directory entry — so one file can have several
+names (hard links) pointing at a single inode.
+[/definition]
+
+## 2. Directories and Paths
+
+A **directory** maps names to files and to other directories, forming
+a tree; a **path** such as `/home/ada/report.txt` walks it from the
+root. Typical operations: `create`, `open`, `read`, `write`, `seek`,
+`close`, `delete`.
+
+## 3. Allocating File Blocks
+
+| Method | Layout | Strength | Weakness |
+| --- | --- | --- | --- |
+| Contiguous | Consecutive blocks, like an array | Fast sequential *and* random access (base + index) | External fragmentation; files cannot grow |
+| Linked | Each block points to the next | No external fragmentation; grows freely | Random access crawls along the chain; pointer overhead |
+| Indexed | One index block lists all the file's blocks | Fast random access; no external fragmentation | Index block overhead; wasteful for tiny files |
+
+The classic **FAT** (file allocation table) of DOS is an indexed
+design kept separate from the files; Unix keeps the index inside
+the inode with indirect pointers for big files.
+
+## 4. Free Space and Crash Safety
+
+| Free-space map | Idea | Trade-off |
+| --- | --- | --- |
+| Bitmap | One bit per block: 0 free, 1 used | Easy to find contiguous runs; large tables |
+| Linked list | Free blocks chained together | Compact; slow to scan for runs |
+
+[info title="Journaling in one line"]
+A **journaling** file system (ext4, NTFS) writes the intended change
+to a log first, then applies it — so a crash mid-write is repaired by
+replaying the journal, not scanning the whole disk.
+[/info]
+
+## 5. Deadlock: The Four Coffman Conditions
+
+**Deadlock** is a stand-off: processes each hold a resource and wait
+for one another's — none can ever proceed. All four **Coffman
+conditions** must hold simultaneously:
+
+| Condition | Statement |
+| --- | --- |
+| Mutual exclusion | At most one process may use a resource at a time |
+| Hold and wait | A process holds resources while waiting for more |
+| No preemption | Resources cannot be forcibly taken away |
+| Circular wait | A cycle of processes waits on each other |
+
+[important]
+Break any single condition and deadlock becomes impossible — the
+insight driving every prevention strategy.
+[/important]
+
+## 6. Handling Deadlocks
+
+| Strategy | Approach | Example |
+| --- | --- | --- |
+| Prevention | Design away one Coffman condition | Request all resources at once (kills hold-and-wait); global numbering of resources (kills circular wait) |
+| Avoidance | Grant requests only when the system stays in a **safe state** | Banker's algorithm needs each process's maximum claim in advance |
+| Detection + recovery | Let deadlock happen, then fix it | Build the wait-for graph; find a cycle; kill a victim or roll it back |
+| Ostrich algorithm | Ignore it and reboot if it ever happens | Roughly what Linux and Windows do — deadlocks are rare and prevention is expensive |
+
+## 7. Virtual Machines and Hypervisors
+
+A **virtual machine (VM)** is a software computer: virtual CPU, RAM,
+and disks. The **hypervisor** creates and runs VMs — one physical
+machine becomes many.
+
+@diagram tree id="virtualization-stack" layout="tree" aria="A type 1 hypervisor runs directly on hardware and hosts three virtual machines"
+  "Physical hardware (CPU, RAM, disk, NIC)" -> "Hypervisor"
+  "Hypervisor" -> "VM 1: guest OS + apps"
+  "Hypervisor" -> "VM 2: guest OS + apps"
+  "Hypervisor" -> "VM 3: guest OS + apps"
+@/diagram
+
+| Type | Runs on | Examples | Typical use |
+| --- | --- | --- | --- |
+| Type 1 (bare metal) | Directly on hardware | VMware ESXi, Hyper-V, Xen, KVM | Data centres, cloud |
+| Type 2 (hosted) | On top of a host OS | VirtualBox, VMware Workstation | Desktops, testing |
+
+## 8. Containers vs VMs
+
+A **container** packages an application with its libraries but shares
+the *host kernel*: isolation comes from **namespaces** (what the
+process may see) and **cgroups** (what it may use) — the Linux
+primitives behind **Docker**.
+
+| Property | Virtual machine | Container |
+| --- | --- | --- |
+| Boots in | Tens of seconds | Milliseconds |
+| Size | Gigabytes (whole guest OS) | Megabytes (app + libraries) |
+| Isolation | Hardware-level, very strong | Kernel-level, strong but weaker than VMs |
+| Guest OS | Any OS on any host | Must share the host kernel |
+
+[tip]
+Containers are light, so dozens share one VM — VMs isolate tenants,
+containers deploy fast inside them.
+[/tip]
+
+## 9. The Cloud Layer Cake
+
+Cloud platforms stack these ideas. **IaaS** rents raw virtual machines
+(you manage the OS up: e.g., EC2); **PaaS** rents a managed runtime
+(you bring only code: e.g., Heroku); **SaaS** rents the finished
+application itself (e.g., Gmail) — each level trading control for
+convenience.
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| inode | File metadata + block pointers; names live in directories |
+| Journaling | Log the change first; replay after a crash |
+| Coffman conditions | Mutual exclusion, hold and wait, no preemption, circular wait |
+| Container | Namespaces (see) + cgroups (use), sharing the host kernel |
+| IaaS / PaaS / SaaS | Rent a VM / a platform / an application |

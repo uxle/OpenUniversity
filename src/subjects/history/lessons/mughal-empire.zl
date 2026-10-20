@@ -1,0 +1,146 @@
+# The Mughal Empire: From Babur to the Last Emperor
+
+> Between 1526 and 1707 the Mughals built the richest empire of the early
+> modern world — artillery victories at Panipat, a mansabdari state run on
+> ranked salaries, the Taj Mahal, and Akbar's policy of sulh-i-kul. After
+> Aurangzeb's over-long reign, the same machine unravelled in fifty years.
+
+## 1. Babur and the Founding Battles
+
+| Battle | Year | Combatants | Outcome |
+| --- | --- | --- | --- |
+| First Panipat | 1526 | Babur vs Ibrahim Lodi | Artillery and tulughma tactics win North India |
+| Khanwa | 1527 | Babur vs Rana Sanga | Rajput power broken |
+| Chausa | 1539 | Sher Shah vs Humayun | Humayun escapes by river |
+| Kannauj (Bilgram) | 1540 | Sher Shah vs Humayun | Humayun exiled to Persia |
+| Second Panipat | 1556 | Bairam Khan (for Akbar) vs Hemu | Mughal rule restored |
+
+At **Panipat (21 April 1526)** Babur's field artillery and flanking
+*tulughma* wheel destroyed Ibrahim Lodi's larger army; **Khanwa** (1527)
+against **Rana Sanga** confirmed the conquest, both declared jehads by
+Babur, who publicly renounced wine.
+
+## 2. The Sher Shah Interlude (1540-1545)
+
+**Sher Shah Suri** ruled five years but built the template Akbar perfected:
+he repaired the **Grand Trunk Road (Sadak-i-Azam)** from Sonargaon to the
+Indus with **sarais** and horse posts, issued the trim silver **rupiya**
+and copper **dam** (ancestor of the rupee), measured land with a
+standardised gaz for graded revenue, and fortified **Purana Qila** in
+Delhi — dying at **Kalinjar (1545)** from a gunpowder explosion.
+
+## 3. Akbar the Great (1556-1605)
+
+Freed from Bairam Khan's regency in 1560, Akbar built on coalition:
+
+- **Conquests:** Chittor (1568), Gujarat (1572), Bengal, Kashmir (1586),
+  Qandahar (1595). At **Haldighati (1576)** Man Singh's army fought Rana
+  Pratap to a bloody standstill.
+- **Rajput policy:** marriage alliances with Amber — Bhagwan Das and Man
+  Singh held the highest mansabs of their day.
+- **Religion:** pilgrimage tax (1563) and **jizya (1564)** abolished; the
+  **Ibadat Khana** debates (1575) matured into the **Din-i-Ilahi (1582)**,
+  a sulh-i-kul ethic with few takers — Birbal the famous one.
+- **Revenue:** Todar Mal's **Dahsala (bandobast) of 1580** fixed cash rates
+  on a ten-year average of measured yields.
+- **Court:** the **Navaratnas** — Birbal, Todar Mal, Abul Fazl, Faizi,
+  Tansen, Abdur Rahim, Man Singh, Fakir Aziao-Din, Mullah-do-Piaza.
+
+[important title="Sulh-i-kul"]
+"Peace with all" — Akbar's governing principle: the king stands above every
+sect, protecting each so all live under impartial law. It guided his
+marriage diplomacy, recruitment, and the Din-i-Ilahi alike.
+[/important]
+
+## 4. Jahangir and Shah Jahan
+
+**Jahangir** (1605-1627) hung a **golden chain of justice** for petitioners,
+married the formidable **Nur Jahan** (1611), received Sir **Thomas Roe's**
+English embassy (1615), and lost Qandahar (1622). His was the golden age of
+Mughal painting — **Ustad Mansur's** flora and fauna, recorded in his own
+*Tuzuk-i-Jahangiri*. **Shah Jahan** (1628-1658) raised the **Taj Mahal
+(1632-1653)** for Mumtaz Mahal — architect **Ustad Ahmad Lahori**, pietra
+dura inlay, the Yamuna as mirror — beside the **Red Fort** and **Jama
+Masjid** of Shahjahanabad. His four sons' war of succession left Dara
+Shikoh executed and the emperor imprisoned in Agra Fort until 1666.
+
+## 5. Aurangzeb Alamgir (1658-1707)
+
+Aurangzeb ruled **forty-nine years** — the dynasty's longest — with
+personal austerity and relentless war:
+
+- **Annexations:** Bijapur (1686) and Golconda (1687); **Sambhaji**
+  executed (1689), igniting decades of Maratha war.
+- **Religion:** **jizya reimposed (1679)**; music banned at court;
+  muhtasibs policing morals.
+- **Revolt everywhere:** Marathas, Jats, Satnamis, Sikhs (Guru Tegh
+  Bahadur executed 1675), and the Rajputs of Marwar alienated (1678).
+- Died in camp at Ahmednagar (1707), buried simply at Khuldabad.
+
+## 6. The Machinery: Mansab and Jagir
+
+@diagram tree id="mansab-system" layout="tree" aria="How the mansab and jagir system linked the emperor to soldiers"
+  Emperor -> "Mansabdar (rank-holder)"
+  Mansabdar -> "Zat: personal rank and pay"
+  Mansabdar -> "Sawar: cavalry he must keep"
+  Mansabdar -> "Jagir: revenue assignment for salary"
+  Jagir -> "Peasant revenue collected by agents"
+@/diagram
+
+Every noble held a **mansab** in two numbers — **zat** (personal pay) and
+**sawar** (horsemen maintained) — paid through a transferable, never
+hereditary **jagir** (revenue assignment).
+
+[warning]
+By Aurangzeb's reign ranks multiplied while good jagirs shrank — the
+**jagirdari crisis**: short-term holders squeezed peasants, spreading the
+rot Irfan Habib mapped in *The Agrarian System of Mughal India*.
+[/warning]
+
+## 7. Art, Architecture, and Painting
+
+| Phase | Patron | Signature |
+| --- | --- | --- |
+| Humayun's Tomb (1562-71) | Akbar's reign | Charbagh garden tomb, Persian dome |
+| Fatehpur Sikri | Akbar | Buland Darwaza, Panch Mahal |
+| Itimad-ud-Daula | Jahangir | First white marble with pietra dura |
+| Taj Mahal | Shah Jahan | Balance and inlay at perfection |
+| Red Fort and Jama Masjid | Shah Jahan | Shahjahanabad's ceremonial core |
+| Badshahi Mosque, Lahore | Aurangzeb | Power without ornament |
+
+Painting moved from the Persian masters **Mir Sayyid Ali and Abdus Samad**
+(whom Humayun brought) through Akbar's **Hamzanama** — Daswanth and
+Basawan among its best — to its peak under Jahangir, who preferred
+portraiture and natural history.
+
+## 8. Decline and the Later Mughals
+
+- **Successor states:** Hyderabad under **Nizam-ul-Mulk** (1724), Awadh
+  under Saadat Khan, Bengal under Murshid Quli — all nominally Mughal.
+- **Court politics:** the Sayyid brothers made and unmade emperors;
+  Farrukhsiyar's 1717 farman (duty-free Bengal trade) armed the East
+  India Company for its future.
+- **Invasions:** **Nadir Shah (1739)** carried off the **Peacock Throne**
+  and Kohinoor; Ahmad Shah Abdali raided repeatedly (1748-1767).
+- **Maratha and British rise:** by 1803 Delhi itself lay under Company
+  "protection." **Bahadur Shah "Zafar,"** the last titular emperor, was
+  exiled to Rangoon after 1857 — the Mughal name extinguished by the
+  Crown.
+
+[note]
+No single cause killed the Mughals: factional nobility, the jagirdari
+crisis, Deccan over-extension, north-western invasions, and the European
+sea-borne economy each struck an empire already rotting from within.
+[/note]
+
+## Key Takeaways
+
+- Babur's artillery won at Panipat (1526) and Khanwa (1527); Sher Shah's
+  five-year administration (rupiya, GT Road, measured revenue) set the
+  standard Akbar institutionalised.
+- Akbar's sulh-i-kul, Dahsala settlement, and mansab-jagir system made the
+  empire durable and inclusive.
+- Jahangir's painting and Shah Jahan's Taj mark the cultural peak;
+  Aurangzeb's 49-year reign over-extended it.
+- Jagirdari crisis, succession wars, Nadir Shah (1739), and successor
+  states dissolved Mughal power by the mid-eighteenth century.

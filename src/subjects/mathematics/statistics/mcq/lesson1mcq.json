@@ -1,5 +1,83 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Describing Data: Mean, Median, Mode, and Spread",
+  "questions": [
+    {
+      "id": 1,
+      "question": "For the data 4, 7, 7, 8, 9, 14, what is the median?",
+      "options": ["7", "7.5", "8", "8.2"],
+      "correct": 1,
+      "rationale": "Sorted data has six values; the median is the average of the middle two: (7+8)/2 = 7.5."
+    },
+    {
+      "id": 2,
+      "question": "Why do news reports usually quote median salaries rather than mean salaries?",
+      "options": ["Medians are easier to calculate", "A few very high incomes distort the mean upward", "Medians always equal the mode", "Salaries have no spread"],
+      "correct": 1,
+      "rationale": "Income is right-skewed: extreme values drag the mean up, while the median still describes a typical earner."
+    },
+    {
+      "id": 3,
+      "question": "Two datasets both have mean 50: {49, 50, 51} and {0, 50, 100}. What differs between them?",
+      "options": ["Their medians", "Their modes", "Their spread (standard deviation)", "Nothing at all"],
+      "correct": 2,
+      "rationale": "Centres match but spread differs enormously — the first is tightly clustered, the second wildly scattered."
+    },
+    {
+      "id": 4,
+      "question": "Which measure of centre is the only one that makes sense for categorical data like 'most common shoe size'?",
+      "options": ["Mean", "Median", "Mode", "Range"],
+      "correct": 2,
+      "rationale": "You cannot add or order categories numerically; the mode — the most frequent value — is the only applicable measure."
+    },
+    {
+      "id": 5,
+      "question": "In a right-skewed distribution (long tail of large values), the typical relationship is:",
+      "options": ["Mean > median", "Mean < median", "Mean = median exactly", "No relationship exists"],
+      "correct": 0,
+      "rationale": "The long right tail pulls the mean above the median — which is why the median is trusted for incomes and house prices."
+    },
+    {
+      "id": 6,
+      "question": "For the test scores 4, 7, 7, 8, 9, 14, what is the mean (approximately)?",
+      "options": ["7", "7.5", "About 8.2", "14"],
+      "correct": 2,
+      "rationale": "The mean is the sum divided by the count: (4+7+7+8+9+14)/6 = 49/6 ≈ 8.2; it is dragged up by the outlier 14."
+    },
+    {
+      "id": 7,
+      "question": "What is the mode of the dataset 4, 7, 7, 8, 9, 14?",
+      "options": ["7", "8", "8.2", "No mode exists"],
+      "correct": 0,
+      "rationale": "The mode is the most frequent value; only 7 appears twice in this dataset."
+    },
+    {
+      "id": 8,
+      "question": "How is the range of a dataset calculated?",
+      "options": ["Maximum − minimum", "Sum of values divided by count", "Average of the squared deviations from the mean", "Spread of the middle 50% of values"],
+      "correct": 0,
+      "rationale": "Range = maximum − minimum. It is crude but instant; the middle-50% description belongs to the IQR."
+    },
+    {
+      "id": 9,
+      "question": "Which measure of spread is immune to outliers?",
+      "options": ["Range", "Interquartile range (IQR)", "Standard deviation", "Mode"],
+      "correct": 1,
+      "rationale": "The IQR measures the spread of the middle 50% of the data, so extreme values cannot affect it — unlike the range or standard deviation."
+    },
+    {
+      "id": 10,
+      "question": "In a symmetric distribution (e.g., adult heights), what relationship holds between mean and median?",
+      "options": ["Mean > median", "Mean < median", "Mean ≈ median", "The median is undefined"],
+      "correct": 2,
+      "rationale": "In a symmetric shape there is no long tail on either side, so the mean and median roughly coincide."
+    },
+    {
+      "id": 11,
+      "question": "An easy exam where most scores are high but a few very low scores stretch one tail produces a left-skewed distribution. What is true then?",
+      "options": ["mean < median", "mean > median", "mean equals the mode", "the spread must be zero"],
+      "correct": 0,
+      "rationale": "Left-skew means the long tail points down toward small values, dragging the mean below the median."
+    }
+  ]
 }

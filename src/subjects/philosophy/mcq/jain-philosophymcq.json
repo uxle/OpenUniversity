@@ -1,0 +1,76 @@
+{
+  "lessonId": "jain-philosophy",
+  "title": "Jain Philosophy: Many-Sided Truth and Non-Violence",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many Tirthankaras does Jain tradition count, and who was the last?",
+      "options": ["Ten; Rishabhanatha", "Twenty-four; Mahavira", "Twenty-four; Parshvanatha", "Twelve; Gosala"],
+      "correct": 1,
+      "rationale": "There are 24 ford-makers: Rishabhanatha (Adinatha) first, Parshvanatha 23rd, and Mahavira (540–468 BCE, traditional dates) the 24th."
+    },
+    {
+      "id": 2,
+      "question": "Which vow did Mahavira add to the four taught by Parshvanatha?",
+      "options": ["Ahimsa", "Satya", "Asteya", "Brahmacharya"],
+      "correct": 3,
+      "rationale": "Parshvanatha's four restraints were ahimsa, satya, asteya, and aparigraha; Mahavira added brahmacharya (celibacy) as the fifth great vow."
+    },
+    {
+      "id": 3,
+      "question": "Anekantavada — the doctrine of many-sidedness — implies that:",
+      "options": ["There is no truth at all", "Every judgement is made from a partial standpoint, so no single statement captures reality whole", "Truth changes with the seasons", "Only perception reveals truth"],
+      "correct": 1,
+      "rationale": "Reality has infinitely many aspects (anekanta), and each claim reflects a partial standpoint (naya) — as in the blind men and the elephant parable."
+    },
+    {
+      "id": 4,
+      "question": "The word 'syat' in Jain syadvada means:",
+      "options": ["Always", "Never", "In some respect", "By authority"],
+      "correct": 2,
+      "rationale": "Each of the seven predications is qualified by 'syat' — in some respect — marking the partial standpoint from which the claim holds."
+    },
+    {
+      "id": 5,
+      "question": "In Jain metaphysics, karma is:",
+      "options": ["A law of intention only", "Literal, subtle matter (pudgala) that flows into and binds the soul", "An illusion", "A command of God"],
+      "correct": 1,
+      "rationale": "Jainism uniquely treats karma as physical matter that binds the soul — asrava is its inflow, bandha its sticking, nirjara its shedding."
+    },
+    {
+      "id": 6,
+      "question": "Which of these is NOT among the seven tattvas?",
+      "options": ["Asrava", "Bandha", "Samvara", "Prakriti"],
+      "correct": 3,
+      "rationale": "The seven tattvas are jiva, ajiva, asrava (influx), bandha (bondage), samvara (stoppage), nirjara (shedding), and moksha. Prakriti belongs to Samkhya."
+    },
+    {
+      "id": 7,
+      "question": "How does the Jain view of the soul differ from the Buddhist?",
+      "options": ["Jains deny any soul; Buddhists affirm it", "For Jains the soul is a real, conscious agent; Buddhists find no permanent self", "Both deny the soul", "Both affirm an eternal, unchanging self"],
+      "correct": 1,
+      "rationale": "The Jain jiva acts, enjoys, and suffers eternally; the Buddhist anatta doctrine finds only a stream of aggregates and no permanent self."
+    },
+    {
+      "id": 8,
+      "question": "The Jain practice of sweeping the ground and straining water before use reflects which vow, taken to its extreme?",
+      "options": ["Aparigraha", "Ahimsa", "Satya", "Brahmacharya"],
+      "correct": 1,
+      "rationale": "Jain ahimsa extends to all living beings — monks sweep the path and strain water to avoid harming even insects, stricter than any parallel tradition."
+    },
+    {
+      "id": 9,
+      "question": "The Jain ratnatraya (three jewels) consists of:",
+      "options": ["Buddha, Dhamma, Sangha", "Right faith, right knowledge, right conduct", "Earth, water, fire", "Study, ritual, meditation"],
+      "correct": 1,
+      "rationale": "The Jain three jewels are qualities of the seeker — samyak darshana, jnana, and charitra. Buddha, Dhamma, Sangha is the Buddhist Triratna."
+    },
+    {
+      "id": 10,
+      "question": "The Digambara and Svetambara sects differ over:",
+      "options": ["The number of Tirthankaras", "Whether monks go naked or wear white robes", "The language of prayer", "Whether ahimsa is required"],
+      "correct": 1,
+      "rationale": "Digambara ('sky-clad') monks wear nothing; Svetambara ('white-clad') monks wear white robes. The Agama canon was compiled at Pataliputra around 300 BCE under Sthulabhadra."
+    }
+  ]
+}

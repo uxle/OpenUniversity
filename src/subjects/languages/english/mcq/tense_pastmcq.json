@@ -29,6 +29,48 @@
       "options": ["Subject + was/were + V1 + ing + Object", "Subject + V2 + Object", "Subject + had + V3", "Subject + will be + V1 + ing"],
       "correct": 0,
       "rationale": "Past Continuous Tense (used for ongoing past actions, रहा था/रही थी/रहे थे) follows: Subject + was/were + V1 + ing + Object."
+    },
+    {
+      "id": 5,
+      "question": "Which structure is correct for Past Indefinite Tense (Negative)?",
+      "options": ["Subject + did not + V2 + Object", "Subject + did not + V1 + Object", "Subject + does not + V1 + Object", "Subject + was not + V1 + ing"],
+      "correct": 1,
+      "rationale": "Past Indefinite (Negative) follows Subject + did not + V1 + Object, e.g., 'They did not pluck a flower from the garden.'"
+    },
+    {
+      "id": 6,
+      "question": "\"She had plucked a flower before I came.\" Which tense is used in the first part of this sentence?",
+      "options": ["Past Indefinite Tense", "Past Continuous Tense", "Past Perfect Tense", "Past Perfect Continuous Tense"],
+      "correct": 2,
+      "rationale": "'Had plucked' follows the Past Perfect structure (Subject + had + V3), used for an action completed before another past action."
+    },
+    {
+      "id": 7,
+      "question": "\"When I saw you yesterday, you ___ a song.\" Choose the correct verb form.",
+      "options": ["sang", "were singing", "had sung", "have been singing"],
+      "correct": 1,
+      "rationale": "In the When-combination rule, 'when + Past Indefinite' pairs with Past Continuous — so 'you were singing a song' is correct."
+    },
+    {
+      "id": 8,
+      "question": "Which verb form correctly completes the AFTER-combination? \"You did this work after I ___ come.\"",
+      "options": ["did", "was", "had", "have"],
+      "correct": 2,
+      "rationale": "In the after-combination, the earlier action takes 'had + V3' — 'after I had come' shows the first of the two past actions."
+    },
+    {
+      "id": 9,
+      "question": "What is the structure of Past Perfect Continuous Tense?",
+      "options": ["Subject + had + V3 + Object", "Subject + was/were + V1 + ing", "Subject + had been + V1 + ing + since/for + time", "Subject + did not + V1"],
+      "correct": 2,
+      "rationale": "Past Perfect Continuous uses Subject + had been + V1 + ing + since/for + time, e.g., 'They had been living here since 2001.'"
+    },
+    {
+      "id": 10,
+      "question": "\"They ___ living here since 2001 when I came.\" Choose the correct option.",
+      "options": ["were being", "are", "had been", "has been"],
+      "correct": 2,
+      "rationale": "A past ongoing action with time duration uses Past Perfect Continuous — 'They had been living here since 2001' is correct; 'has been' cannot follow the plural subject 'they'."
     }
   ]
 }

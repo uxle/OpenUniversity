@@ -1,0 +1,76 @@
+{
+  "lessonId": "logic-and-argumentation",
+  "title": "Logic: Arguments, Validity, and the Art of Reasoning",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the philosophical sense, an argument is:",
+      "options": ["A heated exchange between two people", "A set of premises offered in support of a conclusion", "A statement that is always true", "A claim that appeals to emotion"],
+      "correct": 1,
+      "rationale": "Philosophers define an argument as premises offered as reasons for accepting a conclusion — not a quarrel."
+    },
+    {
+      "id": 2,
+      "question": "Which kind of inference reasons from an observed effect to its most plausible explanation?",
+      "options": ["Deduction", "Induction", "Abduction", "Subtraction"],
+      "correct": 2,
+      "rationale": "Abduction is inference to the best explanation, e.g. 'the lawn is wet; probably it rained'. Deduction applies rules with necessity; induction generalises from observed cases."
+    },
+    {
+      "id": 3,
+      "question": "A deductive argument that is valid but has a false premise is:",
+      "options": ["Sound", "Valid but unsound", "Invalid", "Circular"],
+      "correct": 1,
+      "rationale": "Soundness requires both a valid form AND premises that are actually true. A valid argument with a false premise proves nothing."
+    },
+    {
+      "id": 4,
+      "question": "'If it rains, the ground is wet. The ground is dry. Therefore, it did not rain.' This is which form?",
+      "options": ["Modus ponens", "Modus tollens", "Disjunctive syllogism", "Affirming the consequent"],
+      "correct": 1,
+      "rationale": "Modus tollens has the pattern: If P then Q; not Q; therefore not P. Here the consequent (wet ground) is denied, so the antecedent (rain) is denied."
+    },
+    {
+      "id": 5,
+      "question": "'If the battery is dead, the car will not start. The car did not start. Therefore the battery is dead.' This reasoning is:",
+      "options": ["Valid, by modus ponens", "Valid, by modus tollens", "Invalid, affirming the consequent", "Invalid, denying the antecedent"],
+      "correct": 2,
+      "rationale": "The form is 'If P then Q; Q; so P' — affirming the consequent. Other causes (empty fuel, broken starter) could make the car not start, so the form is invalid."
+    },
+    {
+      "id": 6,
+      "question": "The rooster crows just before sunrise, so the crowing must cause the sunrise. This is which fallacy?",
+      "options": ["Post hoc ergo propter hoc", "Straw man", "False dilemma", "Equivocation"],
+      "correct": 0,
+      "rationale": "Post hoc assumes that because one thing follows another, it was caused by it — mere succession is not causation."
+    },
+    {
+      "id": 7,
+      "question": "An argument can have true premises and a false conclusion only when:",
+      "options": ["It is sound", "It is valid", "Its form is invalid", "It is deductive"],
+      "correct": 2,
+      "rationale": "By definition, a valid deductive argument cannot have true premises and a false conclusion. So the 'some cats / some black things' example fails only because its form is invalid."
+    },
+    {
+      "id": 8,
+      "question": "'You are with us or against us' commits which fallacy?",
+      "options": ["Bandwagon", "False dilemma", "Begging the question", "Ad hominem"],
+      "correct": 1,
+      "rationale": "A false dilemma hides live options, presenting only two alternatives when more exist."
+    },
+    {
+      "id": 9,
+      "question": "Begging the question is the fallacy of:",
+      "options": ["Assuming what the argument must prove", "Attacking the speaker instead of the argument", "Citing popularity as evidence", "Shifting a word's meaning midway"],
+      "correct": 0,
+      "rationale": "'This book is true because the book says so' assumes the very conclusion in question. Attacking the speaker is ad hominem; popularity is bandwagon."
+    },
+    {
+      "id": 10,
+      "question": "On the square of opposition, the universal affirmative 'All S are P' (A) is the contradictory of:",
+      "options": ["The universal negative 'No S are P' (E)", "The particular negative 'Some S are not P' (O)", "The particular affirmative 'Some S are P' (I)", "Itself"],
+      "correct": 1,
+      "rationale": "A and O are contradictories — exactly one is true. A and E are contraries (both cannot be true), while A entails I."
+    }
+  ]
+}

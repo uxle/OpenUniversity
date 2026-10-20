@@ -5,15 +5,37 @@
   border-radius: var(--ou-radius-xl);
   box-shadow: var(--ou-shadow-sm);
   padding: var(--ou-space-5);
-  transition: box-shadow var(--ou-transition-base), transform var(--ou-transition-base), border-color var(--ou-transition-base);
+  transition:
+    box-shadow var(--ou-transition-base),
+    transform var(--ou-transition-base),
+    border-color var(--ou-transition-base);
 }
-.ou-card--interactive { cursor: pointer; display: block; }
-.ou-card--interactive:hover { box-shadow: var(--ou-shadow-md); transform: translateY(-4px); border-color: var(--ou-border-strong); }
-.ou-card--interactive:active { transform: scale(0.98); transition-duration: 80ms; }
-.ou-card__title { font-size: var(--ou-fs-lg); font-weight: 700; letter-spacing: -0.01em; margin-bottom: var(--ou-space-1); }
+.ou-card--interactive {
+  cursor: pointer;
+  display: block;
+  will-change: transform;
+}
+.ou-card--interactive:hover {
+  box-shadow: var(--ou-shadow-md),
+              0 0 0 1px var(--ou-accent-subtle),
+              0 8px 30px rgba(0, 0, 0, 0.06);
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--ou-accent) 20%, var(--ou-border));
+}
+.ou-card--interactive:active {
+  transform: scale(0.98) translateY(-2px);
+  transition-duration: 60ms;
+}
+.ou-card__title {
+  font-size: var(--ou-fs-lg);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--ou-space-1);
+}
 .ou-card__subtitle { color: var(--ou-text-secondary); font-size: var(--ou-fs-sm); line-height: 1.45; }
 .ou-card__body { margin-top: var(--ou-space-3); }
 
+/* Subject card */
 .ou-subject-card {
   display: flex;
   flex-direction: column;
@@ -25,13 +47,32 @@
    which clearly dominates the "N lessons" line. */
 .ou-subject-card .ou-card__title { font-size: clamp(1.6rem, 5vw, 1.85rem); margin-bottom: var(--ou-space-2); }
 .ou-subject-card .ou-card__subtitle { font-size: 1rem; line-height: 1.5; }
+/* Clamp card descriptions at 3 lines. The registry descriptions vary
+   wildly in length (a two-line Economics blurb next to a nine-line
+   Reasoning paragraph); unclamped, one long card stretched its whole
+   grid row and broke the visual rhythm of the subjects grid. The full
+   text stays available on the subject page itself. */
+.ou-subject-card .ou-card__subtitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .ou-subject-card__icon {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px;
   border-radius: var(--ou-radius-pill);
   display: grid;
   place-items: center;
-  font-size: var(--ou-fs-md);
+  font-size: var(--ou-fs-lg);
   margin-bottom: var(--ou-space-3);
+  background: var(--ou-gradient-brand);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
+  transition: transform var(--ou-transition-bounce), box-shadow var(--ou-transition-base);
+}
+.ou-card--interactive:hover .ou-subject-card__icon {
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 6px 20px rgba(0, 113, 227, 0.35);
 }
 .ou-subject-card__footer {
   display: flex;
@@ -49,22 +90,41 @@
   font-weight: 500;
 }
 
+/* Empty state */
 .ou-empty-state {
   text-align: center;
   padding: var(--ou-space-6) var(--ou-space-4);
   color: var(--ou-text-muted);
 }
+.ou-empty-state__icon {
+  font-size: 2.5rem;
+  color: var(--ou-text-muted);
+  margin-bottom: var(--ou-space-3);
+  display: block;
+  /* display:block ignores the parent's text-align:center — auto margins
+     actually center the block-level svg glyph (the spark dots above it
+     are inline-flex, so they always centered; mixed alignment looked
+     broken on 404/empty routes). */
+  margin-inline: auto;
+}
 
-.ou-empty-state__icon { font-size: 2rem; color: var(--ou-text-muted); margin-bottom: var(--ou-space-2); }
-
+/* Progress card */
 .ou-progress-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--ou-space-4);
 }
-.ou-progress-card__chevron { color: var(--ou-text-muted); flex-shrink: 0; }
+.ou-progress-card__chevron {
+  color: var(--ou-text-muted);
+  flex-shrink: 0;
+  transition: transform var(--ou-transition-fast);
+}
+.ou-card--interactive:hover .ou-progress-card__chevron {
+  transform: translateX(3px);
+}
 
+/* Quiz CTA */
 .ou-quiz-cta {
   display: flex;
   align-items: center;
@@ -72,7 +132,7 @@
   margin-top: var(--ou-space-5);
 }
 .ou-quiz-cta__icon {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px;
   border-radius: var(--ou-radius-pill);
   display: grid;
   place-items: center;
@@ -80,6 +140,28 @@
   flex-shrink: 0;
   background: var(--ou-accent-subtle);
   color: var(--ou-accent);
+  transition: transform var(--ou-transition-bounce), background var(--ou-transition-fast);
+}
+.ou-card--interactive:hover .ou-quiz-cta__icon {
+  transform: scale(1.1);
+  background: color-mix(in srgb, var(--ou-accent) 18%, transparent);
 }
 .ou-quiz-cta__body { flex: 1; min-width: 0; }
-.ou-quiz-cta__chevron { color: var(--ou-text-muted); flex-shrink: 0; }
+.ou-quiz-cta__chevron {
+  color: var(--ou-text-muted);
+  flex-shrink: 0;
+  transition: transform var(--ou-transition-fast);
+}
+.ou-card--interactive:hover .ou-quiz-cta__chevron {
+  transform: translateX(3px);
+}
+
+/* Skeleton card — shimmer loading placeholder */
+.ou-card--skeleton {
+  background: var(--ou-gradient-skeleton);
+  background-size: 200% 100%;
+  animation: ou-skeleton-shimmer 1.5s ease-in-out infinite;
+  border-color: transparent;
+  box-shadow: none;
+  pointer-events: none;
+}

@@ -1,3 +1,100 @@
-# Lesson1
+# Thinking Like a Programmer: Variables, Conditions, and Loops
 
-TODO: write lesson content.
+> Programming is giving a machine precise instructions. Three building
+> blocks — variables, conditionals, and loops — appear in every language
+> on Earth. Master the ideas here and any syntax becomes a detail.
+
+## 1. Variables and Types
+
+A **variable** is a named box that stores a value for later use.
+
+```
+age = 17            # a whole number (integer)
+name = "Ada"        # text (string)
+height = 1.68       # a decimal (floating point)
+is_student = true   # true/false (boolean)
+```
+
+[definition]
+**Assignment** (`=`) stores a value in a variable. It is not algebraic
+equality: `count = count + 1` means "take the old value, add one, store
+the result back" — the standard way to count things.
+[/definition]
+
+## 2. Conditionals: Making Decisions
+
+Programs choose paths based on tests:
+
+```
+if score >= 90:
+  grade = "A"
+else if score >= 80:
+  grade = "B"
+else:
+  grade = "C"
+```
+
+Conditions are **boolean expressions** — comparisons (`==`, `!=`, `<`,
+`>=`) joined by `and`, `or`, `not`.
+
+| Expression | Value |
+| --- | --- |
+| `5 > 3` | true |
+| `5 == 3` | false |
+| `(5 > 3) and (2 < 4)` | true |
+| `not (5 > 3)` | false |
+
+[important title="= vs =="]
+In most languages, `=` assigns while `==` compares. Writing `if x = 5`
+instead of `if x == 5` is one of history's most common bugs.
+[/important]
+
+## 3. Loops: Repetition Without Repetition
+
+**Definite loop** — you know how many times:
+
+```
+for i from 1 to 5:
+  print(i)          # prints 1, 2, 3, 4, 5
+```
+
+**Indefinite loop** — run until something becomes true:
+
+```
+while password != secret:
+  ask("Password?")
+```
+
+## Example: total of a list
+
+```
+total = 0
+for item in [4, 8, 15]:
+  total = total + item
+print(total)   # 27
+```
+
+Three patterns combine: a variable accumulates, a loop repeats, a
+conditional inside the loop could filter which items count.
+
+## 4. Functions: Naming a Recipe
+
+A **function** wraps steps under a name so they can be reused:
+
+```
+function area_of_circle(r):
+  return 3.14159 * r * r
+```
+
+@math label="eq:area"
+A = \pi r^2
+@/math
+
+Functions take **inputs** (parameters) and hand back an **output**
+(return value). They turn long programs into short, readable sentences.
+
+## Key Takeaways
+
+- Variables name values; types describe what operations make sense.
+- Conditionals branch; loops repeat; functions package logic for reuse.
+- Nearly every program ever written is some combination of these three.

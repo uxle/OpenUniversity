@@ -17,7 +17,15 @@ export function createSearchBox(onSearch, { debounceMs = 250 } = {}) {
     autocomplete: "off", spellcheck: "true",
     on: {
       input: (e) => debounced(e.target.value),
-      keydown: (e) => { if (e.key === "Enter") runSearch(e.target.value); },
+      keydown: (e) => {
+        if (e.key === "Enter") {
+          // Enter runs the search immediately; cancel the pending
+          // debounced call or it fires again ~250ms later with the same
+          // query — duplicate work and a duplicated history entry.
+          debounced.cancel();
+          runSearch(e.target.value);
+        }
+      },
     },
   });
 

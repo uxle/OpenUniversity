@@ -1,3 +1,98 @@
-# Lesson1
+# Introduction to Algorithms: Thinking in Steps
 
-TODO: write lesson content.
+> An algorithm is a finite, unambiguous sequence of steps that solves a
+> problem. Recipes, directions, and long-division procedures are all
+> algorithms — computer science just makes the idea precise.
+
+## 1. What Makes an Algorithm?
+
+A valid algorithm must be:
+
+1. **Finite** — it eventually stops.
+2. **Unambiguous** — every step is precisely defined.
+3. **Effective** — each step is actually doable.
+4. **General** — it works for a whole class of inputs, not one case.
+
+[definition]
+**Correctness** means the algorithm produces the right output for every
+valid input. **Efficiency** asks how much time and memory it needs as
+the input grows. A slow correct algorithm beats a fast wrong one — but
+usually we want both.
+[/definition]
+
+## 2. Measuring Cost: Big-O Notation
+
+We count how running time grows with input size *n*, ignoring constants:
+
+| Complexity | Name | Example problem |
+| --- | --- | --- |
+| O(1) | Constant | Accessing an array element |
+| O(log n) | Logarithmic | Binary search |
+| O(n) | Linear | Scanning a list once |
+| O(n log n) | Linearithmic | Merge sort |
+| O(n²) | Quadratic | Nested loops comparing all pairs |
+| O(2ⁿ) | Exponential | Trying every subset |
+
+## Example: linear search vs binary search
+
+Finding a name in a sorted list of 1,000,000 entries:
+
+- **Linear search** checks up to 1,000,000 names.
+- **Binary search** halves the range each step — about 20 checks,
+  since log₂(1,000,000) ≈ 20.
+
+@diagram flowchart id="binary-search-flow" layout="hierarchical" aria="The binary search decision loop"
+node start label="Compare middle item" shape="pill"
+node eq label="Match?" shape="diamond"
+node left label="Search lower half" shape="round-rect"
+node right label="Search upper half" shape="round-rect"
+node done label="Found it" shape="round-rect" fill="#22c55e"
+node fail label="Range empty → absent" shape="round-rect"
+
+start -> eq
+eq -> done label="yes" color="#22c55e"
+eq -> left label="target smaller"
+eq -> right label="target larger"
+left -> start style="dashed"
+right -> start style="dashed"
+start ..> fail label="if range empties first"
+@/diagram
+
+[important]
+Growth rate dominates hardware. An O(n²) algorithm on a fast machine
+loses to an O(n log n) algorithm on a slow one once lists get big.
+[/important]
+
+## 3. Sorting: One Problem, Many Algorithms
+
+| Algorithm | Idea | Average time |
+| --- | --- | --- |
+| Bubble sort | Swap adjacent out-of-order pairs repeatedly | O(n²) |
+| Insertion sort | Place each item into the sorted part so far | O(n²), fast when nearly sorted |
+| Merge sort | Split in half, sort halves, merge | O(n log n) |
+| Quicksort | Partition around a pivot, recurse | O(n log n) typical |
+
+Merge sort illustrates **divide and conquer**: split the problem,
+solve the pieces, combine the results.
+
+## 4. Pseudocode
+
+Algorithms are written in pseudocode before code:
+
+```
+BINARY-SEARCH(A, target):
+  low  = 0
+  high = length(A) - 1
+  while low <= high:
+    mid = (low + high) / 2   (integer division)
+    if A[mid] == target: return mid
+    else if A[mid] < target: low  = mid + 1
+    else:                    high = mid - 1
+  return NOT FOUND
+```
+
+## Key Takeaways
+
+- Algorithms must be finite, unambiguous, effective, and general.
+- Big-O describes growth, not raw speed.
+- Divide-and-conquer turns hard problems into manageable halves.

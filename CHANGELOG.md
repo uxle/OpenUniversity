@@ -5,6 +5,264 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Added — "Ink & Accent" branding & media kit
+- Brand system: black & white stay the identity; color returns as **optional,
+  small-dose accents** — one soft pastel per subject (icon badges + subject-page
+  chips), a gentle highlight for marks, functional green/red on quizzes. All hues
+  live in `src/styles/components/accents.css`; the high-contrast theme strips them.
+- Brand kit in `assets/branding/`: logo mark + horizontal lockups (light/dark SVG),
+  Libby the owl mascot (AI-illustrated, background removed), README hero banner,
+  GitHub social preview (also at `.github/social-preview.png`), and three
+  advertising posters (portrait 1080×1350, square 1080×1080, story 1080×1920).
+- Regenerated all app icons from the new mark (favicon, PWA, maskable) — the
+  navbar logo rebrands automatically.
+- `BRANDING.md`: palette tables, logo usage rules, voice & tone, media kit index.
+- README rewritten around the brand: banner, badges, screenshots, subject table,
+  quick start; `tree.md` regenerated; empty-state icon centering fixed.
+
+### Added — 93 new lessons across every thin subject (302 total, 3,104 MCQs)
+- Economics 1 → 13: demand/supply, elasticity, production & costs, market
+  structures, national income, money, banking & RBI, inflation, monetary
+  policy, fiscal policy & budget, poverty & employment, international
+  trade & BOP.
+- Geography 1 → 13: Earth's interior, rocks & minerals, landforms,
+  earthquakes & volcanoes, atmosphere & insolation, pressure & winds,
+  Indian monsoon, oceans, currents & tides, Indian rivers & lakes, soils
+  & vegetation, world population.
+- History 1 → 14: Indus Valley, Vedic age, Buddhism & Jainism, Mauryas,
+  Guptas & classical India, Delhi Sultanate, Mughals, Marathas &
+  18th century, British conquest & 1857, national movement 1885-1919,
+  Gandhian era, world revolutions, world wars & Cold War.
+- Philosophy 1 → 11: logic & fallacies, Charvaka & heterodox schools,
+  Buddhist philosophy, Jain philosophy, six orthodox schools, Upanishads
+  & Vedanta, Greek philosophy, medieval-to-early-modern, Kant to
+  existentialism, ethics theories.
+- Chemistry 1 → 11: atomic structure, periodic table, bonding, acids/
+  bases/salts, reactions & equilibrium, metals & non-metals, carbon
+  compounds, mole concept, electrochemistry, nuclear & everyday
+  chemistry.
+- Physics 2 → 10: units & measurement, laws of motion, work-energy-power,
+  gravitation, heat & thermodynamics, waves & sound, light & optics,
+  electricity & magnetism.
+- Computer Science 7 → 20: sorting algorithms, recursion & divide-and-
+  conquer, graph algorithms, DP & greedy (algorithms 1→5); OSI & TCP/IP
+  models, IP addressing & routing, protocols & security (networking 1→4);
+  processes & scheduling, memory management, file systems & deadlocks
+  (OS 1→4); data structures, OOP, debugging & dev tools (programming
+  1→4).
+- Reasoning 102 → 109: number series patterns, alphabet & mixed series
+  (series 1→3); syllogism possibility & Venn methods, reverse
+  syllogism (syllogism 1→3); linear & circular seating arrangement
+  (seating 1→3); para-jumble strategies (rearrangement 1→2).
+- Mathematics 11 → 19: fractions & decimals, LCM & HCF (numbers 2→4);
+  polynomials & factorisation (algebra 3→4); triangles, circles
+  (geometry 2→4); probability, data interpretation & correlation
+  (statistics 2→4); integration basics (calculus 2→3).
+- Every new lesson ships a matching MCQ file (8-10 questions, rationales
+  citing the lesson), is registered in its topic's `index.json` +
+  `details.zl` `@lessons` block, and flows into the regenerated
+  subject registry and search index.
+
+### Fixed — content bugs
+- Removed 204 duplicated files from reasoning: the subject's
+  restructure into 11 topic folders had left all 102 root-level
+  lessons (and their 102 MCQs) behind as byte-identical copies. Every
+  reasoning lesson was reachable at two routes, duplicated in search
+  results, and double-counted by the registry (which reported 211
+  lessons for 109 real ones). Canonical copies live in the topic
+  folders; the subject page now shows topics only.
+- `physics/mcq/lesson1mcq.json` carried `"lessonId":
+  "physics-motion-001"` — inconsistent with its `lesson1` slug (MCQs
+  load by filename, so it worked, but the field lied).
+- `chemistry/lessons/acids-bases-and-salts.zl` used `\log_{10}` and
+  `^{+}` inside an `@math` block — two LaTeX forms the vendored Zolto
+  engine's math parser rejects (three M006 errors failing
+  `validate:zolto`). Rewritten as the equivalent `pH = -\log[H^+]`.
+
+
+
+### Changed — "Ink & Paper" monochrome palette (colors only)
+- Full color swap to black & white, so nothing competes with the content
+  while studying. No layout, animation, or behavior changes — every rule
+  touched is a color value.
+- **Identity colors** — Apple blue `#0071e3` (light) / `#2997ff` (dark)
+  replaced by ink `#1d1d1f` (light) and paper-white `#f5f5f7` (dark).
+  `--ou-accent-contrast` now flips per theme (white-on-ink / black-on-
+  paper) so accent-filled surfaces stay readable in both. Focus rings
+  follow the accent. Backgrounds are pure `#ffffff` (light) / `#000000`
+  (dark); `--ou-gradient-brand` / `--ou-gradient-success` are grayscale
+  ink gradients now.
+- **Functional colors only** — success/warning/danger survive solely for
+  quiz right/wrong, admonitions, toasts and destructive actions, muted to
+  `#1e8e3e`/`#a05000`/`#c5221f` (light) with lighter dark-theme variants
+  (`#6fd08c`/`#e8a04c`/`#ef6b62`) that hold contrast on black. The
+  opt-in high-contrast theme keeps its AAA yellow accent.
+- **Per-subject card colors removed** — every subject icon badge is now
+  the same ink-on-paper mark (`currentColor`, theme-adaptive) instead of
+  a per-subject hue; the rotating fallback palette is gone too.
+- **Progress bars** — flat ink fill (no blue gradient); the
+  indeterminate shimmer mixes the accent with transparency instead of a
+  second hue. Button/icon glows are neutral black shadows.
+- **Assets** — all app icons (32/180/192/512/maskable) recolored from
+  blue to ink (transparent-glyph variants) and black-tile/white-glyph
+  (maskable); the dark theme inverts the header logo via CSS `filter`.
+  `manifest.json`, `theme-color` meta and the JS-failed fallback button
+  match the new palette.
+- Regenerated `src/styles/main.bundle.css` (`npm run build:css`).
+
+### Added — performance, offline & reading-experience pass
+- **Command palette (Ctrl/Cmd+K, also `/`)** — one-shortcut jump to any
+  lesson (ranked by the same engine the Search page uses), subject, or app
+  action (toggle theme, random lesson, destinations). VS Code/Raycast
+  keyboard contract (↑↓ navigate, ↵ open, esc close), full
+  dialog/listbox ARIA, focus restore on close. The header gains a search
+  trigger showing the shortcut; the home hero has an input-shaped button
+  that opens it via a new `palette:open` bus event (pages stay decoupled
+  from the shell).
+- **Offline support (real PWA now, not just a manifest)** — root-level
+  `sw.js`: precached app shell, stale-while-revalidate for same-origin
+  assets, network-first navigations falling back to the cached shell.
+  Verified by reloading a lesson with the network cut — it renders.
+  Root placement matters: a `public/sw.js` would default to a `/public/`
+  scope and control nothing (GitHub Pages can't send
+  `Service-Worker-Allowed`). Registered after first render so it never
+  competes with startup; skipped on file://.
+- **Inline SVG icon system** replacing the Font Awesome 6.5.2 CDN — the
+  app's last runtime network dependency (~100 KB CSS + webfonts for ~35
+  glyphs) is gone. `utils/icon.js` keeps its exact call signature and
+  accessibility contract; `utils/icons.js` holds the 24×24 stroke set
+  under FA-compatible names. No more icon flash on slow links; works
+  from file://. The one CSS-referenced FA glyph (accordion chevron) is a
+  pure-CSS rotated border now.
+- **Single bundled stylesheet** (`npm run build:css` →
+  `tools/bundle-css.js`) — main.css's 28-file `@import` chain became one
+  request instead of a waterfall. Source files stay split and readable;
+  cascade order is preserved exactly (media-qualified imports become
+  `@media` blocks). index.html ships the bundle; main.css still works
+  standalone for development.
+- **Lesson reading experience**: scroll-progress bar under the header
+  (compositor-only `scaleX`, rAF-throttled, self-cleaning listener), a
+  script-aware reading-time estimate in the lesson meta (~200 wpm, with
+  CJK/Devanagari adjustments), ← / → keyboard prev/next (ignored while
+  typing, self-removing on route change), and a global back-to-top
+  button that appears after 600 px.
+- **"Continue where you left off"** — the last opened lesson is recorded
+  locally and offered as a one-click resume card on the home page.
+- **Home hero**: gradient accent on the headline, an opening search
+  field, and a provenance stats line (N subjects · N lessons · always
+  free). Subject-card descriptions clamp to three lines so one long
+  entry (Reasoning) no longer stretches its whole grid row.
+- **404 with a way forward**: subject chips + a search button, not just
+  "Back to home".
+- Manifest `shortcuts` (long-press: Subjects / Search / Progress) and
+  `categories`.
+
+### Fixed — this pass
+- **Route-outlet focus ring drew two full-height blue lines** around the
+  entire content column on every navigation: `main#route-outlet` is
+  programmatically focused after each route change, and the global
+  `:focus-visible` ring (3px accent outline) applied to that
+  non-interactive container. The outline is suppressed for the outlet
+  only; real elements keep their rings.
+- **Scroll position leaked across routes**: navigating from the bottom
+  of a long page to a new route rendered the new page mid-scroll. New
+  navigations now scroll to top; back/forward restore the previous
+  offset per path (popstate-before-hashchange distinguishes traversal
+  from fresh navigation).
+- **Dark theme ignored the OS**: `defaultTheme` was hardcoded to light,
+  so system-dark users got white on every cold load. With no stored
+  preference the app now follows `prefers-color-scheme` — including
+  live OS switches — until the user picks a theme manually.
+- **Quick-action cards rendered icon jammed against the label**: cards.css
+  (imported after layout.css) re-won `display: block` at equal
+  specificity, silently flattening the flex-column layout. The selector
+  is doubled so intent wins regardless of file order.
+- **`probabilitymcq.json` failed to parse** (`"id": 8",` — stray quote),
+  which made the statistics quiz 404 and failed
+  `tests/content/mcq-validation.test.js` (37/37 tests pass now).
+
+### Added — placeholder lessons written for real
+- The 15 remaining `lesson1.zl` scaffolds ("TODO: write lesson content.")
+  across economics, geography, history, languages, philosophy,
+  computer-science (algorithms / networking / operating-systems /
+  programming), mathematics (algebra / calculus / geometry / statistics),
+  biology, and chemistry now contain real lessons in the Zolto format —
+  headings, tables, admonitions, diagrams, and math where appropriate.
+- Each of those lessons got a matching `*mcq.json` question bank (4–5
+  questions with rationales; the previous files were empty shells), so
+  every one now shows a working "Take the quiz" card.
+- `science/biology/index.json` lists its `lesson1` again — it existed on
+  disk but was unlisted, which is what the index/lessons consistency test
+  caught.
+- Real GitHub issue forms (bug / feature / lesson contribution) replace
+  the three `# TODO: define workflow/template` stubs, plus a real pull
+  request template and a fonts README that documents the system-font
+  decision instead of a bare "TODO."
+
+### Fixed — real bugs found by review + headless-browser testing
+- Quiz review tracked the wrong answers. The selected option was never
+  passed to the quiz container; a `findIndex` fallback meant every wrong
+  answer was recorded as "picked option A", so the post-quiz review could
+  claim you chose something you never clicked. The chosen index now flows
+  through, and browser testing confirms the score/review match actual
+  picks.
+- High contrast mode could never be turned back off: enabling it
+  overwrote `data-theme`, disabling left every page stuck in high
+  contrast until a theme button was pressed manually — and on boot it ran
+  *before* the stored theme was applied, silently cancelling itself.
+  High contrast is now layered on top of the chosen light/dark theme and
+  restores it when disabled (round-trip verified in-browser).
+- Rapid navigation race: clicking link A then quickly link B let the
+  slower route finish loading after the faster one and overwrite it —
+  the page showed content for a URL already left behind. Routes now carry
+  a navigation token; stale renders are discarded before they can mount
+  (regression-tested in-browser).
+- Note editors leaked a window-level `beforeunload` listener per visit:
+  after typing in notes on N lesson visits, all N guards stayed armed for
+  the session's lifetime (memory leak + permanent "leave site?" prompts).
+  They now detach when the editor unmounts on navigation.
+- Bookmark links for flat subjects (economics, history…) pointed at
+  `#/subjects/<id>/undefined/lessons/<id>` because the href interpolated
+  an absent sub-subject segment — every bookmark of those subjects 404'd.
+- Search ranking discarded base relevance: results were re-sorted by the
+  "studied before" boost alone, letting a barely-matching studied lesson
+  outrank a strong unstudied match. Relevance is now the primary key with
+  the history boost as a bounded promotion, matching the README's
+  "user history as *a* factor".
+- Pressing Enter in the search box fired the search immediately AND let
+  the still-pending debounce fire the same query again ~250 ms later
+  (duplicate work, duplicated history entry). The pending call is now
+  cancelled.
+- A failed search-index load cached the empty failure forever for the
+  session; the promise now resets so the next query retries.
+- `build-search-index.js` indexed translation variants (`lesson1.hi.zl`)
+  as separate entries at the same URL as their English originals —
+  duplicate search results pointing at one destination. Variants are
+  skipped; translations remain reachable via the language switcher.
+- Content validation false-positive: pseudocode like `A[mid]` inside a
+  fenced code block counted as admonition tags (`[mid]`) and tripped
+  "unbalanced blocks" on legitimate lessons. Both the tool and the
+  mirrored test strip fences before scanning.
+
+### Changed — performance ("feels laggy" pass)
+- Listing pages no longer fetch every lesson's full source just to regex
+  out a title. Subject / sub-subject / related-lesson listings now use
+  the generated search index (one cached JSON fetch) via the new
+  `lesson-title-service`. The reasoning → coding-decoding page went from
+  22 `.zl` requests to 0 extra requests.
+- The loader coalesces concurrent identical fetches into one request and
+  negative-caches 404s for 30 s — switching a lesson to Spanish used to
+  re-request the missing `.es.zl` on every visit; misses are now instant
+  fallbacks.
+- Primary-nav page modules (home/subjects/search/progress) prefetch
+  during idle time after first paint, removing the first-tap delay caused
+  by dynamic imports; `<link rel="modulepreload">` covers bootstrap.
+- Search scoring precomputes lowercase title/subject/content fields once
+  per index load instead of lowercasing every entry's full content for
+  every token of every query.
+- `empty()` clears containers in one browser-side pass instead of a
+  removeChild loop.
+
 ### Changed — UI/UX overhaul (based on a supplied reference design)
 - Removed the persistent desktop sidebar and CSS-grid shell entirely.
   Single layout at every screen width now: sticky minimal header (brand +

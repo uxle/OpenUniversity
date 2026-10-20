@@ -1,29 +1,97 @@
 /* src/styles/components/tabs.css */
+
+/* ─── Tab list ──────────────────────────────────────────────────────── */
 .ou-tabs__list {
   display: flex;
-  gap: var(--ou-space-2);
+  gap: 0;
   border-bottom: 1px solid var(--ou-border);
+  position: relative;
 }
 .ou-tabs__tab {
-  padding: var(--ou-space-2) var(--ou-space-3);
+  padding: var(--ou-space-2) var(--ou-space-4);
   font-size: var(--ou-fs-sm);
   color: var(--ou-text-secondary);
-  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  position: relative;
+  transition: color var(--ou-transition-fast), background-color var(--ou-transition-fast);
+  border-radius: var(--ou-radius-sm) var(--ou-radius-sm) 0 0;
+}
+.ou-tabs__tab:hover:not([aria-selected="true"]) {
+  color: var(--ou-text);
+  background: var(--ou-surface-subtle);
+}
+/* Animated indicator — a pseudo element on the tab itself.
+   The active tab gets an accent underline via transform-origin: left,
+   which gives a smooth expand/contract as tabs change. */
+.ou-tabs__tab::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--ou-accent);
+  border-radius: var(--ou-radius-pill) var(--ou-radius-pill) 0 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--ou-transition-base);
 }
 .ou-tabs__tab[aria-selected="true"] {
   color: var(--ou-accent);
-  border-bottom-color: var(--ou-accent);
   font-weight: 600;
 }
-.ou-tabs__panel { padding-top: var(--ou-space-4); }
+.ou-tabs__tab[aria-selected="true"]::after {
+  transform: scaleX(1);
+}
+.ou-tabs__panel {
+  padding-top: var(--ou-space-4);
+  animation: ou-fade-in var(--ou-transition-fast) both;
+}
 
-.ou-accordion__item { border-bottom: 1px solid var(--ou-border); }
+/* ─── Accordion ─────────────────────────────────────────────────────── */
+.ou-accordion__item {
+  border-bottom: 1px solid var(--ou-border);
+}
 .ou-accordion__trigger {
   width: 100%;
   text-align: left;
   padding: var(--ou-space-3) 0;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-3);
+  color: var(--ou-text);
+  transition: color var(--ou-transition-fast);
 }
-.ou-accordion__trigger[aria-expanded="true"]::after { content: " ▲"; }
-.ou-accordion__trigger[aria-expanded="false"]::after { content: " ▼"; }
-.ou-accordion__body { padding-bottom: var(--ou-space-3); }
+.ou-accordion__trigger:hover { color: var(--ou-accent); }
+/* Chevron indicator — pure CSS (a rotated half-border square), no icon
+   font needed. Rotates smoothly on expand. */
+.ou-accordion__trigger::after {
+  content: "";
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 2px solid var(--ou-text-muted);
+  border-bottom: 2px solid var(--ou-text-muted);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  transition: transform var(--ou-transition-base), border-color var(--ou-transition-fast);
+}
+.ou-accordion__trigger[aria-expanded="true"]::after {
+  transform: rotate(225deg);
+  border-color: var(--ou-accent);
+}
+/* Smooth open/close with max-height transition */
+.ou-accordion__body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height var(--ou-transition-slow), opacity var(--ou-transition-base);
+  opacity: 0;
+  padding-bottom: 0;
+}
+.ou-accordion__body[aria-hidden="false"],
+.ou-accordion__body:not([aria-hidden]) {
+  max-height: 2000px; /* large enough for any content */
+  opacity: 1;
+  padding-bottom: var(--ou-space-3);
+}

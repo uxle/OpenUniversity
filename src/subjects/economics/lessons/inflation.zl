@@ -1,0 +1,118 @@
+# Inflation: Causes, Measurement, and Control
+
+> Inflation is a sustained rise in the general price level; how it is
+> measured, why it happens, and who it hurts decide both policy and
+> personal finance.
+
+[definition]
+**Inflation** is a persistent increase in the general price level of
+goods and services over time, which erodes the purchasing power of
+money — each rupee buys less than before.
+[/definition]
+
+## 1. Measuring Inflation in India
+
+| Feature | WPI | CPI |
+| --- | --- | --- |
+| Full name | Wholesale Price Index | Consumer Price Index |
+| Agency | Office of the Economic Adviser, DPIIT (Commerce Ministry) | National Statistical Office (MoSPI) |
+| Base year | 2011-12 | 2012 |
+| Captures | Prices at the wholesale/producer level, goods only | Retail prices paid by consumers, goods *and* services |
+| Policy role | Indicator of producer prices | **Inflation target (4% ±2%) set on CPI** |
+
+Headline CPI inflation is the number the RBI's Monetary Policy
+Committee answers for.
+
+## 2. Types by Speed
+
+| Type | Annual rate | Mood |
+| --- | --- | --- |
+| Creeping | Under 3% | Mild, even helpful for growth |
+| Walking | 3–7% | A warning sign for policy |
+| Running | 7–10% | Serious — erodes savings fast |
+| Galloping | Above 10% | Prices rewrite weekly |
+| **Hyperinflation** | Above roughly 50% a month | Monetary collapse |
+
+[example]
+Zimbabwe in 2008 (prices doubling in hours, the 100-trillion-dollar
+note) and Weimar Germany in 1923 (wheelbarrows of banknotes for
+bread) are the classic hyperinflations — both born of printing money
+to finance deficits.
+[/example]
+
+## 3. Causes: Demand-Pull vs Cost-Push
+
+- **Demand-pull** — aggregate demand outruns supply: "too much money
+  chasing too few goods". Cue: war spending, credit booms, stimulus.
+- **Cost-push** — rising input costs push the supply curve left:
+  wages, imported oil, raw materials, taxes.
+
+By coverage, economists also separate **headline inflation** (all
+items, including volatile food and fuel) from **core inflation**
+(excluding food and fuel), which shows the underlying, sticky trend
+the central bank watches.
+
+@diagram tree id="inflation-causes" layout="tree" aria="Causes of inflation"
+  Inflation -> "Demand-Pull"
+  Inflation -> "Cost-Push"
+  "Demand-Pull" -> "Credit boom, stimulus, war spending"
+  "Cost-Push" -> "Wages, oil, raw materials, taxes"
+@/diagram
+
+## 4. Who Wins and Who Loses
+
+| Group | Effect of inflation |
+| --- | --- |
+| Debtors | Gain — repay loans in cheaper rupees |
+| Creditors and savers | Lose — interest earned lags price rises |
+| Fixed-income earners | Pensioners, salaried lose purchasing power |
+| Asset holders | Real estate, equity owners often gain |
+| Flexible earners | Can renegotiate and keep pace |
+
+**Deflation** (falling prices) is not benign either: buyers postpone
+purchases, revenues and jobs fall. **Stagflation** is the worst
+combo — stagnation (low growth, unemployment) with persistent
+inflation, classically traced to the 1970s oil shocks.
+
+## 5. Effects in One Line Each
+
+- Purchasing power falls; real value of savings declines.
+- Lenders demand an **inflation premium** in interest rates.
+- Exports get costlier, imports attractive — trade balance suffers.
+- Uncertainty rises, long-term investment decisions get deferred.
+
+## 6. Remedies
+
+**Monetary measures (RBI):** raise the repo rate (borrowing for
+banks costs more), tighten CRR (less credit multiplication), sell
+government securities via open market operations (suck out money).
+
+**Fiscal measures (Government):** cut expenditure, raise taxes,
+rationalise subsidies — cooling demand directly.
+
+[warning title="The policy dilemma"]
+Fighting demand-pull inflation with tight money slows growth and
+jobs; cost-push inflation is worse — tightening attacks demand but
+cannot make oil cheaper. There is no painless dose, only trade-offs.
+[/warning]
+
+## 7. Quick Revision Table
+
+| Concept | One-line memory |
+| --- | --- |
+| CPI vs WPI | Consumer-retail-with-services vs wholesale-goods-only |
+| India's CPI base | 2012; WPI base 2011-12 |
+| Target | 4% CPI inflation, band ±2% |
+| Demand-pull | Too much money chasing too few goods |
+| Cost-push | Rising input costs shift supply left |
+| Core inflation | Excludes food and fuel |
+| Hyperinflation | 50%+ a month; Zimbabwe 2008, Weimar 1923 |
+| Debtors vs creditors | Debtors gain, creditors lose |
+
+[summary]
+Inflation is measured by WPI (wholesale) and CPI (retail — the
+policy index, targeted at 4% ±2%), caused by excess demand or rising
+costs, and it redistributes from creditors and fixed earners to
+debtors and asset holders. Control is a pincer — RBI rate and
+reserve tools from one side, fiscal tightening from the other.
+[/summary]

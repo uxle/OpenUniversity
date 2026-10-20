@@ -1,0 +1,126 @@
+{
+  "lessonId": "circular-seating-arrangement",
+  "title": "Circular Seating Arrangement: Round Tables and Complex Puzzles",
+  "questions": [
+    {
+      "id": 1,
+      "question": "For a person facing the centre of a circular table, which direction does their LEFT run as seen from above?",
+      "options": [
+        "Clockwise",
+        "Anti-clockwise",
+        "Toward the centre",
+        "It depends on the seat"
+      ],
+      "correct": 1,
+      "rationale": "Facing the centre, a person's left hand points anti-clockwise around the ring and their right points clockwise, as seen from above. Facing outward reverses both directions."
+    },
+    {
+      "id": 2,
+      "question": "How does the left-right convention change when everyone faces outward?",
+      "options": [
+        "Left becomes clockwise and right becomes anti-clockwise",
+        "Left and right stay the same",
+        "Left and right both point to the centre",
+        "Outward-facing people have no left or right"
+      ],
+      "correct": 0,
+      "rationale": "Facing outward is the reverse of facing the centre: the person's left runs clockwise and their right runs anti-clockwise. Every directional clue must be re-read through the sitter's own facing."
+    },
+    {
+      "id": 3,
+      "question": "Why should you fix one person at a chosen seat before doing anything else?",
+      "options": [
+        "Because that person is always the most important",
+        "To break the rotational symmetry of the circle",
+        "To reduce the number of seats by one",
+        "Because opposite pairs depend on it"
+      ],
+      "correct": 1,
+      "rationale": "A circle can be spun without changing any clue, so every rotation is equally valid. Fixing one person's seat destroys this rotational symmetry and turns the puzzle into a fixed sequence of seats."
+    },
+    {
+      "id": 4,
+      "question": "In the worked example, the final clockwise order from B is B, C, A, H, G, E, D, F. Who sits opposite B?",
+      "options": [
+        "E",
+        "G",
+        "D",
+        "A"
+      ],
+      "correct": 1,
+      "rationale": "With eight seats, the person opposite sits four away. From B at seat 1, counting four seats clockwise gives seat 5, which is occupied by G."
+    },
+    {
+      "id": 5,
+      "question": "In that same arrangement, who are A's immediate neighbours?",
+      "options": [
+        "B and C",
+        "C and H",
+        "H and G",
+        "D and C"
+      ],
+      "correct": 1,
+      "rationale": "A sits at seat 3, with C at seat 2 and H at seat 4 on either side, so A's immediate neighbours are C and H."
+    },
+    {
+      "id": 6,
+      "question": "The clue 'A sits second to the right of B' (both facing the centre) is resolved how?",
+      "options": [
+        "Count two seats anti-clockwise from B",
+        "Count two seats clockwise from B",
+        "Count two seats upward from B",
+        "Place A directly opposite B"
+      ],
+      "correct": 1,
+      "rationale": "Centre-facing right means clockwise, so counting starts at B's clockwise neighbour and stops at the second seat clockwise from B — in the worked example, seat 3."
+    },
+    {
+      "id": 7,
+      "question": "Why are 'opposite' clues best placed first in an even-count circle?",
+      "options": [
+        "They fix two seats four apart in one step",
+        "Opposite pairs must sit alphabetically",
+        "They are the only definite clues possible",
+        "Odd circles have no opposites either"
+      ],
+      "correct": 0,
+      "rationale": "An 'opposite' clue locks two seats at once, four positions apart in an even-count circle, giving two anchors immediately — the strongest opening move available."
+    },
+    {
+      "id": 8,
+      "question": "In a circle with seven seats, what happens to 'opposite' clues?",
+      "options": [
+        "They fix three-and-a-half seats apart",
+        "Nobody sits exactly opposite anyone — do not hunt for opposite pairs",
+        "They work like immediate-neighbour clues",
+        "They only apply to corner seats"
+      ],
+      "correct": 1,
+      "rationale": "Opposite requires a seat exactly half-way around the ring. With an odd count such as seven, no seat is exactly opposite another, so opposite clues cannot exist — a classic trap."
+    },
+    {
+      "id": 9,
+      "question": "In the worked example, who sits third to the right of E (seat 6, everyone facing the centre)?",
+      "options": [
+        "D",
+        "F",
+        "B",
+        "G"
+      ],
+      "correct": 2,
+      "rationale": "Right is clockwise: from seat 6, the first seat clockwise is 7 (D), then 8 (F), then 1 (B) — remembering that the ring wraps across the top of the seat numbering."
+    },
+    {
+      "id": 10,
+      "question": "How do floor-based puzzles relate to circular seating, according to the lesson?",
+      "options": [
+        "They are unrelated formats",
+        "They use the same engine: definite, relative, and negative clues in the same order",
+        "They require clockwise counting",
+        "They can only be solved after the circle is complete"
+      ],
+      "correct": 1,
+      "rationale": "Eight people on four floors use the same deduction engine: 'A lives on floor 3' is definite, 'A lives above B' is relative, and 'C does not live on floor 1' is negative — the definite-relative-negative order still rules."
+    }
+  ]
+}

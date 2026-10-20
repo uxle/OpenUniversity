@@ -1,0 +1,126 @@
+{
+  "lessonId": "laws-of-motion",
+  "title": "Newton's Laws of Motion: Force, Momentum, and Friction",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why do passengers lurch forward when a moving bus brakes suddenly?",
+      "options": [
+        "The seat pushes them forward",
+        "The bus accelerates backward",
+        "Their bodies keep moving due to inertia",
+        "Friction from the floor drags them ahead"
+      ],
+      "correct": 2,
+      "rationale": "By the first law, the passengers' bodies continue their forward motion until a force (the seatbelt or seat) acts on them."
+    },
+    {
+      "id": 2,
+      "question": "In the lesson's worked example, what force accelerates a 2 kg block at 5 m/s²?",
+      "options": [
+        "2.5 N",
+        "7 N",
+        "0.4 N",
+        "10 N"
+      ],
+      "correct": 3,
+      "rationale": "From F = ma, the force is 2 kg × 5 m/s² = 10 N."
+    },
+    {
+      "id": 3,
+      "question": "One newton equals:",
+      "options": [
+        "1 kg·m/s",
+        "1 kg·m/s²",
+        "1 g·cm/s²",
+        "1 kg·m²/s²"
+      ],
+      "correct": 1,
+      "rationale": "The newton is the force that accelerates a 1 kg mass at 1 m/s², i.e. 1 kg·m/s²."
+    },
+    {
+      "id": 4,
+      "question": "Why do action and reaction forces never cancel each other?",
+      "options": [
+        "They act on two different bodies",
+        "They are unequal in magnitude",
+        "They act in the same direction",
+        "They act at different times"
+      ],
+      "correct": 0,
+      "rationale": "The third law pair acts on two different bodies, so no single body experiences both forces as a balance."
+    },
+    {
+      "id": 5,
+      "question": "Rocket propulsion, where hot gas is pushed down and the rocket is pushed up, illustrates which law?",
+      "options": [
+        "First law",
+        "Second law",
+        "Third law",
+        "Conservation of energy"
+      ],
+      "correct": 2,
+      "rationale": "The rocket pushes gas downward and the gas pushes the rocket upward — an equal and opposite action-reaction pair."
+    },
+    {
+      "id": 6,
+      "question": "What is the momentum of a 2 kg trolley moving at 3 m/s?",
+      "options": [
+        "6 kg·m/s",
+        "1.5 kg·m/s",
+        "5 kg·m/s",
+        "0.67 kg·m/s"
+      ],
+      "correct": 0,
+      "rationale": "Momentum p = mv = 2 kg × 3 m/s = 6 kg·m/s."
+    },
+    {
+      "id": 7,
+      "question": "A 2 kg trolley at 3 m/s couples with a stationary 1 kg trolley. How fast does the joined pair move?",
+      "options": [
+        "3 m/s",
+        "2 m/s",
+        "6 m/s",
+        "1 m/s"
+      ],
+      "correct": 1,
+      "rationale": "Momentum 6 kg·m/s is conserved, so the combined 3 kg mass moves at 6 ÷ 3 = 2 m/s."
+    },
+    {
+      "id": 8,
+      "question": "Why does a cricketer draw the hands back while catching a fast ball?",
+      "options": [
+        "To decrease the ball's momentum",
+        "To keep momentum conserved",
+        "To increase the force on the hands",
+        "To increase the collision time and reduce the force"
+      ],
+      "correct": 3,
+      "rationale": "Stretching the collision time reduces the rate of change of momentum, so the impulse force on the hands is smaller."
+    },
+    {
+      "id": 9,
+      "question": "Mud flying off a spinning wheel moves tangentially because:",
+      "options": [
+        "A centrifugal force pushes it outward",
+        "Once it leaves the wheel no inward force acts, so inertia carries it straight",
+        "Gravity pulls it sideways",
+        "The wheel keeps accelerating it outward"
+      ],
+      "correct": 1,
+      "rationale": "The centripetal force acts only while the mud is in contact; after release, inertia carries it along the tangent."
+    },
+    {
+      "id": 10,
+      "question": "Which type of friction is usually the largest?",
+      "options": [
+        "Rolling friction",
+        "Kinetic friction",
+        "Static friction",
+        "All are always equal"
+      ],
+      "correct": 2,
+      "rationale": "The lesson's table lists static friction as the largest, with kinetic smaller and rolling the smallest of the three."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+# Circles: Chords, Angles, and π
+
+> A circle is the set of points at a fixed distance (the radius) from a
+> centre. Its symmetry produces the cleanest angle rules in geometry.
+
+## 1. Core Vocabulary
+
+| Term | Meaning |
+| --- | --- |
+| Radius | Centre to any point on the circle |
+| Diameter | A chord through the centre — the longest one ($d = 2r$) |
+| Chord | Segment joining two points on the circle |
+| Tangent | Line touching the circle at exactly one point |
+| Arc | Part of the circumference |
+| Sector | "Pizza slice" between two radii |
+
+## 2. The Formulas Everything Uses
+
+@math label="eq:circle-formulas"
+C = 2\pi r = \pi d, \qquad A = \pi r^2
+@/math
+
+## Example
+
+A circle of radius $7$ cm has circumference $C = 2\pi \cdot 7 = 14\pi$
+cm and area $\pi \cdot 7^2 = 49\pi$ cm². Leave answers in terms of $\pi$
+unless asked otherwise.
+
+## 3. Angle Rules Inside Circles
+
+- The angle in a **semicircle is always 90°** (Thales' theorem).
+- Angles from the same arc at the circumference are **equal**.
+- The angle at the **centre** is **twice** the angle at the
+  circumference standing on the same arc.
+
+@diagram flowchart id="central-angle" layout="hierarchical" aria="Central angle versus inscribed angle"
+node centre label="Centre: 80°" shape="circle"
+node rim1 label="At rim, same arc: 40°" shape="round-rect"
+node rim2 label="Other side of arc: also 40°" shape="round-rect"
+
+centre -> rim1 label="double"
+centre -> rim2 label="double"
+@/diagram
+
+[definition]
+A **cyclic quadrilateral** has all four corners on one circle. Its
+opposite angles are supplementary — they sum to 180°.
+[/definition]
+
+## 4. Tangent Facts
+
+1. A tangent meets the radius at the touch point at exactly **90°**.
+2. Two tangents drawn from an external point have **equal lengths**.
+
+## Example
+
+Two tangents from point P touch a circle at A and B with $PA = 6$ cm.
+Then $PB$ is also $6$ cm — no calculation needed.
+
+## 5. Sectors and Pie Thinking
+
+A sector's share of the circle equals its angle's share of 360°:
+
+@chart donut title="Sector shares of a full turn" labels:
+120° sector
+90° sector
+150° remainder
+
+data:
+120
+90
+150
+@/chart
+
+A 120° sector therefore holds $\frac{120}{360} = \frac{1}{3}$ of the
+circle's area.
+
+## Key Takeaways
+
+- $C = 2\pi r$, $A = \pi r^2$ — memorise cold.
+- Centre angle = 2 × rim angle; semicircle angles are right angles.
+- Tangents meet radii at 90° and come in equal pairs from a point.

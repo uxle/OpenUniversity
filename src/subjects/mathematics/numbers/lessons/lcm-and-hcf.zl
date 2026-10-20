@@ -1,0 +1,131 @@
+# LCM and HCF: Factors, Multiples, and Their Powers
+
+> Two numbers are built from shared primes. Take the lowest powers of
+> those primes and you get the HCF; take the highest and you get the
+> LCM — one factorisation answers both questions at once.
+
+## 1. Factors and Multiples
+
+A **factor** divides a number exactly; a **multiple** is what you get
+by multiplying the number by a whole number. For 12: factors are 1, 2,
+3, 4, 6, 12; multiples are 12, 24, 36, 48, …
+
+- Factors arrive in pairs: 12 = 1 × 12 = 2 × 6 = 3 × 4.
+- The **prime factorisation** rebuilds a number from primes:
+  12 = 2² × 3 and 18 = 2 × 3².
+
+[definition]
+The **HCF** (highest common factor, also called GCD) is the largest
+number that divides both given numbers exactly. The **LCM** (lowest
+common multiple) is the smallest number that both given numbers
+divide into exactly.
+[/definition]
+
+## 2. HCF and LCM of 12 and 18
+
+- Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 18: 1, 2, 3, 6, 9, 18.
+  Common factors: 1, 2, 3, 6 — so **HCF(12, 18) = 6**.
+- Multiples of 12: 12, 24, 36, 48, … Multiples of 18: 18, 36, 54, …
+  First shared multiple: **LCM(12, 18) = 36**.
+
+Note the sandwich rule: the HCF is at most the smaller number, and
+the LCM is at least the larger one — a quick sanity check.
+
+## 3. Three Ways to Compute Them
+
+| Method | HCF recipe | LCM recipe |
+| --- | --- | --- |
+| Listing | list factors; pick largest common | list multiples; stop at first match |
+| Prime factorisation | lowest power of each common prime | highest power of each prime seen |
+| Division ladder | multiply the common divisors | multiply divisors and leftovers |
+
+Prime factorisation for **24 and 36** (24 = 2³ × 3, 36 = 2² × 3²):
+
+@diagram tree id="lcm-hcf-prime-powers" layout="tree" aria="Prime powers of 24 and 36 combine into HCF 12 and LCM 72"
+  "24 = 2^3 x 3 and 36 = 2^2 x 3^2" -> "HCF takes lowest powers: 2^2 x 3 = 12"
+  "24 = 2^3 x 3 and 36 = 2^2 x 3^2" -> "LCM takes highest powers: 2^3 x 3^2 = 72"
+@/diagram
+
+## 4. The Division Ladder
+
+Divide both numbers by any common prime; carry remainders down until
+the bottoms are **co-prime** (share no factor except 1).
+
+| Divide by | 24 | 36 |
+| --- | --- | --- |
+| 2 | 12 | 18 |
+| 2 | 6 | 9 |
+| 3 | 2 | 3 |
+| stop | co-prime | co-prime |
+
+- HCF = product of divisors = 2 × 2 × 3 = **12**
+- LCM = divisors × leftovers = 2 × 2 × 3 × 2 × 3 = **72**
+
+[tip]
+The ladder is the fastest hand method for three or more numbers —
+and it never produces the "lowest/highest powers" mix-up that
+beginners make with the factorisation method.
+[/tip]
+
+## 5. The Golden Relation
+
+@math label="eq:hcf-lcm-relation"
+\text{HCF}(a,\,b) \times \text{LCM}(a,\,b) = a \times b
+@/math
+
+Check both pairs above: 6 × 36 = 216 = 12 × 18 ✓ and 12 × 72 = 864 =
+24 × 36 ✓. The relation also gives a slick shortcut: once you know
+one of the pair, divide the product by it to get the other.
+
+[warning]
+The relation holds for **two numbers only**. It fails for three:
+HCF(2, 3, 4) = 1 and LCM(2, 3, 4) = 12, but 1 × 12 ≠ 2 × 3 × 4.
+For three or more numbers, always use prime factorisation.
+[/warning]
+
+## 6. Word Problems: Which Tool?
+
+| Signal in the question | Use | Because |
+| --- | --- | --- |
+| "ring/toll together again", "meet at the start" | LCM | the coincidence must be a multiple of each time |
+| "largest tile/plank measuring exactly" | HCF | the measure must divide every dimension |
+| "distributed equally, nothing left over" | HCF | the group size divides every quantity |
+| "smallest length cut into equal pieces of both" | LCM | the pieces reassemble both lengths |
+
+[example]
+Three bells toll every 6 s, 8 s and 12 s, starting together. When do
+they next coincide? Factorise: 6 = 2 × 3, 8 = 2³, 12 = 2² × 3.
+LCM = 2³ × 3 = 24 — they toll together every 24 seconds.
+[/example]
+
+[example]
+A floor 24 m × 36 m is tiled with the largest possible square tiles,
+no cutting. The tile side divides both 24 and 36, so it is the HCF:
+12 m. That needs (24/12) × (36/12) = 2 × 3 = 6 tiles.
+[/example]
+
+On a circular track, two runners starting together meet at the LCM of
+their lap times — same mathematics, laps instead of rings.
+
+## 7. Quick Facts Worth Knowing
+
+- **Co-prime numbers** have HCF 1, so their LCM is simply their
+  product: LCM(4, 9) = 36.
+- Consecutive integers are co-prime: HCF(48, 49) = 1.
+- The HCF of any set always divides their LCM: HCF(24, 36) = 12
+  divides LCM = 72 (72 = 12 × 6).
+- For fractions: HCF = HCF(numerators) ÷ LCM(denominators) and
+  LCM = LCM(numerators) ÷ HCF(denominators). So HCF(2/3, 4/9) =
+  2/9 and LCM(2/3, 4/9) = 4/3.
+
+## 8. Quick Revision
+
+| Question | Tool | Answer |
+| --- | --- | --- |
+| HCF(12, 18) | listing | 6 |
+| LCM(12, 18) | multiples | 36 |
+| HCF(24, 36) | lowest prime powers | 2² × 3 = 12 |
+| LCM(24, 36) | highest prime powers | 2³ × 3² = 72 |
+| HCF × LCM for 24, 36 | golden relation | 864 = 24 × 36 |
+| Bells 6 s, 8 s, 12 s | LCM | 24 s |
+| Largest square tile, 24 × 36 floor | HCF | 12 m |

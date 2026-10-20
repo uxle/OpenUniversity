@@ -1,0 +1,113 @@
+# Metals and Non-Metals: Properties, Reactivity, and Metallurgy
+
+> Three-quarters of the elements are metals, and their reactivity
+> ladder governs everything from salt formation to pulling iron out
+> of ore.
+
+## 1. Metals vs Non-Metals
+
+| Property | Metals | Non-metals |
+| --- | --- | --- |
+| Lustre | shiny | dull (iodine is the lustrous exception) |
+| State at room temperature | solid (mercury pours as a liquid) | gases or solids (bromine is liquid) |
+| Malleability | malleable and ductile | brittle |
+| Conduction | conduct heat and electricity | insulators (graphite is the exception) |
+| Sonority | ring when struck | silent |
+| Oxides | mostly basic | mostly acidic (CO₂, SO₂) |
+
+[warning]
+Exam-favourite exceptions: graphite (a non-metal) conducts
+electricity; iodine shines; mercury is liquid; sodium is soft
+enough to cut with a knife; diamond conducts heat superbly.
+[/warning]
+
+## 2. The Reactivity Series
+
+K > Na > Ca > Mg > Al > Zn > Fe > Pb > (H) > Cu > Hg > Ag > Au
+
+[tip]
+Memory sentence — *Kind Nature Can Make A Zebra Feel Proud; Her
+Cute Hamster Always Agrees.* Each initial gives one element, from
+potassium down to gold.
+[/tip]
+
+| Series position | Behaviour |
+| --- | --- |
+| K, Na, Ca | react with cold water → hydroxide + H₂ |
+| Mg, Al, Zn, Fe | react with steam → oxide + H₂ |
+| above hydrogen | displace H₂ from dilute acids |
+| Cu, Hg, Ag, Au | unaffected by water or dilute acids |
+
+## 3. Ionic Compounds and Amphoteric Oxides
+
+Metals hand electrons to non-metals, giving hard, high-melting
+ionic salts — NaCl, MgCl₂, CaO.
+
+[definition]
+**Amphoteric oxides** (Al₂O₃, ZnO, PbO) act as bases toward strong
+acids and as acids toward strong alkalis — they dissolve in both.
+[/definition]
+
+## 4. Extracting Metals: Metallurgy
+
+@diagram tree id="metallurgy-flow" layout="tree" aria="Metallurgy steps from ore to refined metal"
+  Ore -> "Concentration (remove gangue)"
+  "Concentration (remove gangue)" -> "Calcination or roasting"
+  "Calcination or roasting" -> "Metal oxide"
+  "Metal oxide" -> "Reduction to crude metal"
+  "Reduction to crude metal" -> "Refining"
+@/diagram
+
+| Step | What happens | Example |
+| --- | --- | --- |
+| Concentration | gangue removed | froth flotation (sulphide ores), gravity, magnetic separation |
+| Calcination | carbonate heated in limited air | ZnCO₃ → ZnO + CO₂ |
+| Roasting | sulphide heated in excess air | 2ZnS + 3O₂ → 2ZnO + 2SO₂ |
+| Reduction | oxide loses oxygen | carbon in the blast furnace; thermite (Fe₂O₃ + 2Al → 2Fe + Al₂O₃); electrolysis for Al and Na |
+| Refining | purification | electrolytic: pure cathode, impure anode, salt electrolyte |
+
+[important]
+The more reactive the metal, the harder the extraction: K, Na, Ca,
+Mg, and Al need electrolysis; Zn, Fe, and Pb yield to carbon;
+Cu, Ag, and Au sometimes occur free in the ground.
+[/important]
+
+## 5. Alloys
+
+[definition]
+An **alloy** is a homogeneous mixture of a metal with other metals
+or non-metals, made to boost hardness, strength, or corrosion
+resistance.
+[/definition]
+
+| Alloy | Composition | Use |
+| --- | --- | --- |
+| Steel | iron + about 1% carbon | construction girders |
+| Stainless steel | Fe + Cr + Ni | cutlery; chromium blocks rust |
+| Brass | Cu + Zn | fittings, musical instruments |
+| Bronze | Cu + Sn | statues, coins |
+| Solder | Pb + Sn | low-melting joins in electronics |
+
+## 6. Corrosion and Its Prevention
+
+Corrosion is a metal being oxidized by air and moisture — rust on
+iron, black Ag₂S on silver, green CuCO₃·Cu(OH)₂ on copper.
+
+| Prevention | How it works |
+| --- | --- |
+| Galvanization | zinc coat on iron; even scratched zinc keeps protecting |
+| Alloying | stainless steel resists rust outright |
+| Barriers | paint, grease, plastic dip — keep air and water off |
+| Sacrificial blocks | more reactive metal corrodes in place (details in the electrochemistry lesson) |
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Liquid metal? | mercury |
+| Conducting non-metal? | graphite |
+| Soft metal cut with a knife? | sodium |
+| Displaces Cu from CuSO₄? | any metal above Cu — e.g. Fe |
+| Sulphide ore concentration? | froth flotation |
+| Brass? | Cu + Zn |
+| Amphoteric oxides? | Al₂O₃, ZnO |

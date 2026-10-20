@@ -1,0 +1,128 @@
+# Landforms: How Weathering, Erosion, and Deposition Sculpt the Earth
+
+> Mountains are raised from below and lowered from above. This lesson
+> organises the geomorphic processes and the signature landforms each
+> agent of erosion and deposition leaves behind.
+
+## 1. Endogenic and Exogenic Forces
+
+| Force | Energy source | Pace | Processes |
+| --- | --- | --- | --- |
+| Endogenic | The Earth's internal heat | Slow or sudden | Diastrophism, earthquakes, volcanism |
+| Exogenic | Solar energy and gravity | Steady and gradual | Weathering, mass movement, erosion, deposition |
+
+[definition]
+**Diastrophism** is slow, large-scale deformation of the crust:
+**orogenic** movements build mountains through horizontal compression,
+while **epeirogenic** movements lift or sink broad continental areas.
+Earthquakes and volcanic eruptions are the sudden counterparts.
+[/definition]
+
+## 2. Weathering: Decay Without Transport
+
+**Weathering** is the disintegration and decomposition of rocks where
+they lie — nothing is carried away.
+
+| Type | Processes | Favoured setting |
+| --- | --- | --- |
+| Physical (mechanical) | Frost wedging, thermal expansion, exfoliation | Deserts, high mountains |
+| Chemical | Oxidation, carbonation, solution, hydration | Warm, humid tropics |
+| Biological | Root pressure, burrowing animals | Vegetated lands |
+
+Oxidation rusts iron-rich minerals; carbonation lets carbon-dioxide-rich
+water dissolve limestone; hydration swells minerals and cracks them.
+
+## 3. Mass Movements: Gravity's Work
+
+- **Landslides** — rapid slides of rock and debris down a slope.
+- **Mudflows** — saturated soil racing along valleys.
+- **Soil creep** — the slowest movement, betrayed by bent tree trunks
+  and leaning fence posts.
+
+[warning]
+Mass movements need no river or wind — only slope and gravity — which
+is why deforested, over-steepened hillsides fail so readily during
+heavy rain.
+[/warning]
+
+## 4. Rivers: Fluvial Landforms
+
+| Stage | Erosional landforms | Depositional landforms |
+| --- | --- | --- |
+| Upper course (mountains) | V-shaped valley, gorge, waterfall, potholes | Alluvial fan at the foothills |
+| Middle course (plains) | Meanders, river cliffs | Floodplain, ox-bow lake (severed meander) |
+| Lower course (delta) | Widened, braided channel | Delta with distributaries, levees |
+
+[example]
+The Ganga–Brahmaputra delta (the Sundarbans) is the world's largest
+delta; an ox-bow lake is the abandoned loop of an over-widened
+meander, left behind after the river cuts across its neck.
+[/example]
+
+## 5. Glaciers: Ice-Carved Country
+
+| Erosional landforms | Depositional landforms |
+| --- | --- |
+| Cirque (bowl-shaped hollow) | Moraines — lateral, medial, terminal |
+| Arête (knife-edge ridge) | Drumlins (inverted-spoon hills) |
+| U-shaped valley and hanging valley | Eskers and outwash plains |
+| Fjord — drowned U-valley, as in Norway | Till sheets of mixed debris |
+
+[info title="Ice versus river"]
+A glacier's ice load grinds a U-shaped valley, while a river's water
+carves a V-shaped one: the cross-section alone reveals which agent
+worked the landscape.
+[/info]
+
+## 6. Wind: Aeolian Landforms
+
+| Process | Landform |
+| --- | --- |
+| Deflation and abrasion | Mushroom (pedestal) rocks, ventifacts |
+| Saltation and deposition | Barchans (crescent dunes), seif dunes, sand seas |
+| Settling of fine dust | Loess — fertile yellow-brown soils, as in China |
+
+[example]
+The crescent barchans of the Thar Desert march downwind, horns trailing,
+a few metres each year across the sand sea.
+[/example]
+
+## 7. Groundwater: Karst Landforms
+
+Carbon-dioxide-charged rainwater dissolves limestone along joints,
+hollowing out a distinctive karst landscape (named for the Karst
+plateau of Slovenia).
+
+| On the surface | Underground |
+| --- | --- |
+| Sinkholes (sinks) and dolines | Caverns and solution channels |
+| Disappearing streams | Stalactites (ceiling) and stalagmites (floor) |
+
+India's Borra caves (Andhra Pradesh) and Belum caves show this chemistry
+at work.
+
+[tip]
+Memory hook: stala**c**tite clings to the **c**eiling; stala**g**mite
+grows from the **g**round — and may one day meet its partner in a
+pillar.
+[/tip]
+
+## 8. Quick Revision
+
+@diagram tree id="geomorphic-agents" layout="tree" aria="Erosion agents and their signature landforms"
+  "Exogenic agents" -> Rivers
+  "Exogenic agents" -> Glaciers
+  "Exogenic agents" -> Wind
+  "Exogenic agents" -> Groundwater
+  Rivers -> "Meanders, deltas"
+  Glaciers -> "U-valleys, moraines"
+  Wind -> "Barchans, loess"
+  Groundwater -> "Sinkholes, caves"
+@/diagram
+
+| Agent | Signature erosional form | Signature deposit |
+| --- | --- | --- |
+| River | V-valley, meander | Delta, floodplain |
+| Glacier | U-valley, cirque | Moraine, drumlin |
+| Wind | Mushroom rock | Barchan, loess |
+| Groundwater | Sinkhole, cave | Stalactite, stalagmite |

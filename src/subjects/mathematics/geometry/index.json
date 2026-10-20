@@ -1,3 +1,8 @@
 {
-  "lessons": ["lesson1"]
+  "lessons": [
+    "lesson1",
+    "circles",
+    "triangles-properties",
+    "circles-and-their-properties"
+  ]
 }

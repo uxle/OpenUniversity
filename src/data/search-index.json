@@ -145,72 +145,512 @@
       "content": "7. संघ एवं उसके राज्य क्षेत्र (Union and its Territories) भाग-1 (अनुच्छेद 1 से 4) अनुच्छेद 1: भारत राज्यों का संघ है - कथन: \"भारत, अर्थात इंडिया, राज्यों का संघ (Union of States) होगा।\" - संघ (Union) की प्रकृति: भारतीय संघ राज्यों के बीच समझौते का परिणाम नहीं है। राज्यों को संघ से अलग होने (Secede) का अधिकार नहीं है। - वर्तमान स्थिति: 28 राज्य एवं 8 केंद्र शासित प्रदेश (UTs)। अनुच्छेद 2: नए राज्यों का प्रवेश या स्थापना - संसद को शक्ति प्राप्त है कि वह संघ में नए राज्य का प्रवेश या स्थापना कर सकत"
     },
     {
+      "lessonId": "blood-relation-reasoning",
+      "subjectId": "computer-science",
+      "subSubjectId": "ai-reasoning",
+      "title": "Blood Relation Reasoning",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Blood Relation Reasoning Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 1. What Blood Relation Reasoning Means Blood relation problems ask questions such as: - Who is the father of X? - How is A related to B? - What is the relation bet"
+    },
+    {
+      "lessonId": "clock-reasoning",
+      "subjectId": "computer-science",
+      "subSubjectId": "ai-reasoning",
+      "title": "Clock Reasoning",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Clock Reasoning 1. Introduction Clock reasoning is the ability of an intelligent system to understand, calculate, compare, and reason about time represented by a clock — converting a natural-language description of time into a structured representation before doing any arithmetic on it. Clock reasoning is the ability of an intelligent system to understand, calculate, compare, and reason about time represented by a clock. A human can look at: “The meeting starts at 2:35 PM and lasts 1 hour 45 min"
+    },
+    {
+      "lessonId": "directions-and-distance-reasoning",
+      "subjectId": "computer-science",
+      "subSubjectId": "ai-reasoning",
+      "title": "Directions and Distance Reasoning",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Directions and Distance Reasoning 1. Introduction Directions and distance reasoning is the ability of an intelligent system to understand where things are, how locations relate to each other, how far apart they are, and which direction leads from one location to another — by converting language into coordinates and vectors before doing any arithmetic. Directions and distance reasoning is the ability of an intelligent system to understand where things are, how locations are related, how far apart"
+    },
+    {
+      "lessonId": "dynamic-programming-and-greedy",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Dynamic Programming and Greedy Algorithms: Choosing Well, Reusing Work",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Dynamic Programming and Greedy Algorithms: Choosing Well, Reusing Work When a problem asks for the best, the count, or the longest, two strategies dominate: dynamic programming reuses answers to overlapping subproblems; greedy commits to provably safe choices. 1. Two Ways to Optimize Brute force tries every possibility — correct, but exponential: - Dynamic programming (DP) enumerates each subproblem once and reuses the answers it already paid for. - Greedy algorithms make one pass of local decis"
+    },
+    {
+      "lessonId": "graph-algorithms",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Graph Algorithms: Navigating Networks",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Graph Algorithms: Navigating Networks A graph is just dots joined by lines — enough to model roads, friendships, the internet, and build systems. This lesson covers storing graphs, traversing them, and finding shortest paths. 1. Graph Vocabulary A graph G = (V, E) is a set of vertices (nodes) and a set of edges joining pairs of them. The degree of a vertex counts the edges that touch it. | Term | Meaning | Everyday example | | --- | --- | --- | | Directed | edges have a direction | a Twitter fol"
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "computer-science",
       "subSubjectId": "algorithms",
-      "title": "Lesson1",
+      "title": "Introduction to Algorithms: Thinking in Steps",
       "subject": "computer-science",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Introduction to Algorithms: Thinking in Steps An algorithm is a finite, unambiguous sequence of steps that solves a problem. Recipes, directions, and long-division procedures are all algorithms — computer science just makes the idea precise. 1. What Makes an Algorithm? A valid algorithm must be: 1. Finite — it eventually stops. 2. Unambiguous — every step is precisely defined. 3. Effective — each step is actually doable. 4. General — it works for a whole class of inputs, not one case. Correctnes"
+    },
+    {
+      "lessonId": "recursion-and-divide-and-conquer",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Recursion and Divide-and-Conquer: Solve Big Problems with Small Ones",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Recursion and Divide-and-Conquer: Solve Big Problems with Small Ones A recursive function solves a problem by calling itself on a smaller copy of the same problem. Divide-and-conquer builds whole algorithms on that move: split, solve, combine — and logarithms do the rest. 1. Recursion: A Function That Calls Itself Every recursive definition has exactly two ingredients: 1. Base case — a small input answered directly, with no self-call. 2. Recursive case — the problem restated in terms of smaller "
+    },
+    {
+      "lessonId": "sorting-algorithms",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Sorting Algorithms: Ordering Data Efficiently",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Sorting Algorithms: Ordering Data Efficiently Sorting — putting a collection into order — is the most studied problem in computer science. This lesson walks the simple quadratic sorts, the fast divide-and-conquer family, and how to choose. 1. Why Sorting Matters Sorted data is dramatically cheaper to work with: - Binary search needs sorted input: O(log n) instead of O(n). - Duplicates collapse into adjacent runs, so dedup is one scan. - People expect ordered output: price lists, rankings, inbox "
+    },
+    {
+      "lessonId": "application-protocols-and-security",
+      "subjectId": "computer-science",
+      "subSubjectId": "networking",
+      "title": "Application Protocols and Network Security: How the Web Talks and Stays Safe",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Application Protocols and Network Security: How the Web Talks and Stays Safe Above the network plumbing sit the protocols people actually meet — HTTP, DNS, email, DHCP — and the threats that target them. This lesson covers how they work and how to defend them. 1. HTTP: The Language of the Web HTTP is a stateless request-response protocol: the client asks, the server answers, the server forgets. | Method | Meaning | Body | | --- | --- | --- | | GET | fetch a resource; must not change anything | n"
+    },
+    {
+      "lessonId": "ip-addressing-and-routing",
+      "subjectId": "computer-science",
+      "subSubjectId": "networking",
+      "title": "IP Addressing and Routing: Finding Every Machine on Earth",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "IP Addressing and Routing: Finding Every Machine on Earth Every device on the Internet needs an address, and every packet needs a path to one. This lesson covers IPv4 structure, subnetting, private ranges, IPv6, and the protocols that choose routes. 1. IPv4: 32 Bits in Dotted Decimal An IPv4 address is 32 bits written as four octets in dotted decimal, each ranging 0–255: 192.168.10.42. That is about 4.3 billion addresses — the pool that ran out, and the reason IPv6 exists. Every IPv4 address spl"
     },
     {
       "lessonId": "lesson1",
       "subjectId": "computer-science",
       "subSubjectId": "networking",
-      "title": "Lesson1",
+      "title": "Introduction to Computer Networks",
       "subject": "computer-science",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Introduction to Computer Networks A network is computers connected so they can exchange data. This lesson covers how data finds its way from one machine to another — the plumbing behind every web page and message. 1. Network Types by Scale | Type | Scope | Example | | --- | --- | --- | | PAN | A few metres | Bluetooth headset to phone | | LAN | Building / campus | Home Wi-Fi, office ethernet | | MAN | City | Cable network | | WAN | Country / world | The Internet itself | 2. The Client–Server Ide"
+    },
+    {
+      "lessonId": "osi-and-tcp-ip-models",
+      "subjectId": "computer-science",
+      "subSubjectId": "networking",
+      "title": "The OSI and TCP/IP Models: How Layers Organize a Network",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "The OSI and TCP/IP Models: How Layers Organize a Network Networking is split into layers, each serving the one above it and using the one below. This lesson maps the seven OSI layers, the four TCP/IP layers, and the TCP-versus-UDP choice that dominates practice. 1. Why Layering? Chopping network functions into layers buys three things: - Modularity — swap Wi-Fi for ethernet without touching browsers. - Interoperability — any HTTP server works with any browser, on any operating system, over any p"
+    },
+    {
+      "lessonId": "file-systems-deadlocks-and-virtualization",
+      "subjectId": "computer-science",
+      "subSubjectId": "operating-systems",
+      "title": "File Systems, Deadlocks, and Virtualization: Completing the OS Picture",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "File Systems, Deadlocks, and Virtualization: Completing the OS Picture Files, deadlocks, and virtual machines turn a bare multitasking kernel into a dependable platform — and the cloud's foundation. 1. Files and Their Metadata A file is a named, ordered collection of bytes on persistent storage; the file system keeps each file's facts — not its content — in a metadata record: on Unix, the inode . | inode field | Meaning | | --- | --- | | Size | Length in bytes | | Timestamps | Created, modified,"
     },
     {
       "lessonId": "lesson1",
       "subjectId": "computer-science",
       "subSubjectId": "operating-systems",
-      "title": "Lesson1",
+      "title": "What an Operating System Does",
       "subject": "computer-science",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "What an Operating System Does The operating system (OS) is the program that turns a bag of hardware into a usable machine. It stands between applications — browsers, games, editors — and the CPU, memory, and devices underneath. 1. The Four Core Jobs | Job | What it means | Example | | --- | --- | --- | | Process management | Deciding which programs run, when, for how long | Playing music while browsing | | Memory management | Giving each process its own memory, protecting them from each other | "
+    },
+    {
+      "lessonId": "memory-management",
+      "subjectId": "computer-science",
+      "subSubjectId": "operating-systems",
+      "title": "Memory Management: Fitting Programs into RAM",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Memory Management: Fitting Programs into RAM RAM is small, shared, and contested. The memory manager tracks every byte, protects neighbours — and lets programs use more memory than the machine physically has. 1. The Job Description The memory manager must track , protect , relocate , and share memory. When addresses get bound matters: | Binding time | What happens | | --- | --- | | Compile time | Compiler fixes absolute addresses; program must load at one spot | | Load time | Addresses patched a"
+    },
+    {
+      "lessonId": "processes-and-scheduling",
+      "subjectId": "computer-science",
+      "subSubjectId": "operating-systems",
+      "title": "Processes and CPU Scheduling: Who Gets the Processor Next",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Processes and CPU Scheduling: Who Gets the Processor Next A program on disk is inert; a process is that program brought to life, competing for the CPU. The scheduler decides who runs next. 1. From Program to Process A program is a passive file on disk; a process is that program in execution — code loaded into memory, plus bookkeeping. Preemption is taking the CPU away from a running process before it finishes — its time slice ran out or a more urgent one arrived. 2. The PCB and the Cost of Switc"
+    },
+    {
+      "lessonId": "data-structures",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "Data Structures: Organizing Data for Speed",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Data Structures: Organizing Data for Speed Finding one item in a million can take a million steps — or one. Data structures are the art of choosing that arrangement. 1. Why Structure Choice Matters Finding one name among a million unsorted records by scanning takes up to 1,000,000 comparisons . Sorted, binary search needs about 20 (since 2^20 1,000,000). In a hash table , roughly 1 . Same data, same machine — different structure, five orders of magnitude less work. A data structure is a way of o"
+    },
+    {
+      "lessonId": "debugging-and-development-tools",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "Debugging and Development Tools: Finding and Fixing Bugs Like a Professional",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Debugging and Development Tools: Finding and Fixing Bugs Like a Professional Bugs are the normal byproduct of writing software, not failures of character — professionals differ from beginners mainly in their toolkit: debuggers, logs, version control, and tests. 1. A Field Guide to Bugs | Kind | When it bites | Tiny example | | --- | --- | --- | | Syntax error | Before the program runs at all | if x == 5 missing its colon | | Runtime error | Mid-execution, crashes it | 10 / 0 → ZeroDivisionError "
     },
     {
       "lessonId": "lesson1",
       "subjectId": "computer-science",
       "subSubjectId": "programming",
-      "title": "Lesson1",
+      "title": "Thinking Like a Programmer: Variables, Conditions, and Loops",
       "subject": "computer-science",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Thinking Like a Programmer: Variables, Conditions, and Loops Programming is giving a machine precise instructions. Three building blocks — variables, conditionals, and loops — appear in every language on Earth. Master the ideas here and any syntax becomes a detail. 1. Variables and Types A variable is a named box that stores a value for later use. Assignment ( = ) stores a value in a variable. It is not algebraic equality: count = count + 1 means \"take the old value, add one, store the result ba"
+    },
+    {
+      "lessonId": "object-oriented-programming",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "Object-Oriented Programming: Modeling the World in Objects",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Object-Oriented Programming: Modeling the World in Objects Instead of a list of instructions, object-oriented programs are a society of objects that keep their own data and answer messages. 1. From Procedures to Objects Procedural code is a recipe: data lives in variables, functions transform them, and any function may touch any data — freedom that becomes chaos as programs grow. Object-oriented programming (OOP) flips the layout: bundle the data with the code allowed to touch it. Each object gu"
+    },
+    {
+      "lessonId": "banking-and-rbi",
+      "subjectId": "economics",
+      "title": "Banking and the Reserve Bank of India",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Banking and the Reserve Bank of India The RBI steers the monetary system; commercial banks mobilise savings and multiply credit — together they form the economy's financial backbone. A central bank is the apex institution that issues currency, banks for the government and the banking system, and controls money and credit. India's central bank is the Reserve Bank of India , established in 1935 under the RBI Act, 1934 , and nationalised in 1949 . 1. Functions of the RBI | Function | What it means "
+    },
+    {
+      "lessonId": "demand-and-supply",
+      "subjectId": "economics",
+      "title": "Demand, Supply, and Market Equilibrium",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Demand, Supply, and Market Equilibrium Demand and supply are the twin forces that determine every market price and quantity; equilibrium is the point where they finally agree. Demand is the quantity of a good buyers are willing and able to purchase at each price over a period. Supply is the quantity sellers are willing and able to offer at each price. Willingness plus ability — not mere desire — is what counts. 1. The Law of Demand As price rises, quantity demanded falls; as price falls, it rise"
+    },
+    {
+      "lessonId": "elasticity",
+      "subjectId": "economics",
+      "title": "Elasticity: How Sensitive Markets Are to Price and Income",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Elasticity: How Sensitive Markets Are to Price and Income Elasticity puts a number on sensitivity — how much quantity responds when price, income, or a related good's price changes. Price elasticity of demand (PED) measures the percentage change in quantity demanded caused by a one percent change in price. Because price and quantity move oppositely, PED is negative; by convention we use its absolute value. 1. The PED Formula If price rises 10% and quantity demanded falls 20%, PED = 20/10 = 2 — d"
+    },
+    {
+      "lessonId": "fiscal-policy-and-budget",
+      "subjectId": "economics",
+      "title": "Fiscal Policy, the Budget, and Deficits",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Fiscal Policy, the Budget, and Deficits Fiscal policy uses the government's budget — spending and taxes — to steer demand; its deficits measure how much of the steering is done on borrowed money. Fiscal policy is the use of government expenditure and taxation to influence aggregate demand, output, and employment. It is decided by the government (through the Union Budget), unlike monetary policy, which belongs to the RBI. 1. Expansionary vs Contractionary - Expansionary fiscal policy — higher spe"
+    },
+    {
+      "lessonId": "inflation",
+      "subjectId": "economics",
+      "title": "Inflation: Causes, Measurement, and Control",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Inflation: Causes, Measurement, and Control Inflation is a sustained rise in the general price level; how it is measured, why it happens, and who it hurts decide both policy and personal finance. Inflation is a persistent increase in the general price level of goods and services over time, which erodes the purchasing power of money — each rupee buys less than before. 1. Measuring Inflation in India | Feature | WPI | CPI | | --- | --- | --- | | Full name | Wholesale Price Index | Consumer Price I"
+    },
+    {
+      "lessonId": "international-trade",
+      "subjectId": "economics",
+      "title": "International Trade and the Balance of Payments",
+      "subject": "economics",
+      "keywords": [],
+      "content": "International Trade and the Balance of Payments Nations trade because opportunity costs differ; the balance of payments records every rupee that crosses the border. The balance of payments (BoP) is a systematic record of all economic transactions between residents of a country and the rest of the world over a period — goods, services, incomes, transfers, and capital flows. 1. Why Trade: Two Classic Arguments - Absolute advantage (Adam Smith) — a country should specialise in what it produces with"
     },
     {
       "lessonId": "lesson1",
       "subjectId": "economics",
-      "title": "Lesson1",
+      "title": "Understanding Economics: Scarcity, Choice, and Opportunity Cost",
       "subject": "economics",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Understanding Economics: Scarcity, Choice, and Opportunity Cost Economics is the study of how people, businesses, and societies use scarce resources to satisfy unlimited wants. Scarcity means that resources (time, money, land, labour) are limited, while human wants are effectively unlimited. Every economic question starts from this tension. 1. The Three Fundamental Economic Questions Every economy — from a household to a nation — must answer: 1. What to produce? (food, cars, hospitals, entertain"
+    },
+    {
+      "lessonId": "market-structures",
+      "subjectId": "economics",
+      "title": "Market Structures: Competition, Monopoly, and the Middle Ground",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Market Structures: Competition, Monopoly, and the Middle Ground Market structure classifies industries by how many sellers compete, how different their products are, and how hard entry is. Market structure refers to the organisational features of a market — number of buyers and sellers, nature of the product, freedom of entry and exit, and control over price — that shape firms' behaviour and outcomes. 1. Perfect Competition Features of a perfectly competitive market: - Very large number of buyer"
+    },
+    {
+      "lessonId": "monetary-policy",
+      "subjectId": "economics",
+      "title": "Monetary Policy: The RBI's Toolkit",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Monetary Policy: The RBI's Toolkit Monetary policy manages money, credit, and interest to hold prices steady while financing growth — through rates, reserves, and persuasion. Monetary policy is the central bank's use of instruments — policy rates, reserve ratios, open market operations, and guidance — to control money supply and the cost of credit in pursuit of price stability with growth. 1. Objectives and the Inflation-Targeting Framework Since the 2016 amendment to the RBI Act (Section 45ZA),"
+    },
+    {
+      "lessonId": "money",
+      "subjectId": "economics",
+      "title": "Money: From Barter to Modern Currency",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Money: From Barter to Modern Currency Money is whatever a society accepts as the common medium of exchange; its functions and its measure define modern economies. Money is anything that is generally accepted as a medium of exchange and that simultaneously serves as a unit of value and a store of value. Acceptance, not material, makes money. 1. The Barter Problem Barter — goods for goods — requires a double coincidence of wants : a weaver wanting wheat must find a farmer wanting cloth, at the sam"
+    },
+    {
+      "lessonId": "national-income",
+      "subjectId": "economics",
+      "title": "National Income: GDP, GNP, and Measuring an Economy",
+      "subject": "economics",
+      "keywords": [],
+      "content": "National Income: GDP, GNP, and Measuring an Economy National income accounting measures an economy's total output, income, and spending — the scoreboard behind every budget and growth headline. Gross Domestic Product (GDP) is the market value of all final goods and services produced within a country's domestic territory during a year. Final means for use, not for resale — intermediate goods are excluded to avoid double counting. 1. The Circular Flow of Income In a simple two-sector economy (hous"
+    },
+    {
+      "lessonId": "poverty-and-employment",
+      "subjectId": "economics",
+      "title": "Poverty, Inequality, and Unemployment",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Poverty, Inequality, and Unemployment Poverty is lack of the minimum needed to live; inequality is how unevenly what exists is spread; unemployment is labour left idle — three failures a growing GDP alone cannot fix. Absolute poverty means income too low to meet a defined minimum of basic needs (food, shelter, clothing). Relative poverty means income far below the society's average — the poor of rich countries are relatively, not absolutely, poor. 1. Measuring Poverty in India Poverty lines were"
+    },
+    {
+      "lessonId": "production-and-costs",
+      "subjectId": "economics",
+      "title": "Production and Costs: From Inputs to Supply",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Production and Costs: From Inputs to Supply Firms convert inputs into output under the discipline of cost; the cost curve is the seed from which every supply decision grows. Production is the transformation of inputs (factors) into output. The production function records the maximum output obtainable from each combination of inputs for a given technology. 1. Factors of Production and Their Rewards | Factor | Meaning | Factor reward | | --- | --- | --- | | Land | All natural resources — soil, min"
+    },
+    {
+      "lessonId": "atmosphere-and-insolation",
+      "subjectId": "geography",
+      "title": "The Atmosphere: Composition, Layers, and the Heat Budget",
+      "subject": "geography",
+      "keywords": [],
+      "content": "The Atmosphere: Composition, Layers, and the Heat Budget A thin shell of gases shields Earth from space, stores the Sun's energy, and makes weather possible. This lesson profiles the air's make-up, its layered structure, and the heat budget that drives climate. 1. Composition of the Atmosphere | Gas | Share of dry air | Role | | --- | --- | --- | | Nitrogen | 78.08% | Dilutes oxygen; feeds life through the nitrogen cycle | | Oxygen | 20.95% | Respiration and combustion | | Argon | 0.93% | Inert "
+    },
+    {
+      "lessonId": "earthquakes-and-volcanoes",
+      "subjectId": "geography",
+      "title": "Earthquakes and Volcanoes: When the Earth Releases Energy",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Earthquakes and Volcanoes: When the Earth Releases Energy Strain stored in rock and heat stored in the mantle escape as trembling ground and erupting mountains. This lesson explains how earthquakes are measured, where they cluster, and how volcanoes are built and classified. 1. Anatomy of an Earthquake An earthquake is the shaking of the ground caused by a sudden release of accumulated strain along a fault. The rupture point at depth is the focus ; the point on the surface directly above it is t"
+    },
+    {
+      "lessonId": "indian-rivers-and-lakes",
+      "subjectId": "geography",
+      "title": "India's Rivers and Lakes: Himalayan and Peninsular Systems",
+      "subject": "geography",
+      "keywords": [],
+      "content": "India's Rivers and Lakes: Himalayan and Peninsular Systems Two families of rivers drain India — young, snow-fed Himalayan streams and old, seasonal peninsular rivers. This lesson compares their behaviour and tours the country's major lakes. 1. The Himalayan Rivers: The Indus System The Indus rises near Lake Manasarovar in Tibet, flows through Ladakh, and leaves India for Pakistan before reaching the Arabian Sea. Its Punjab tributaries — Jhelum, Chenab, Ravi, Beas, and Sutlej — drain the world's "
+    },
+    {
+      "lessonId": "interior-of-the-earth",
+      "subjectId": "geography",
+      "title": "The Interior of the Earth: Layers and Sources of Evidence",
+      "subject": "geography",
+      "keywords": [],
+      "content": "The Interior of the Earth: Layers and Sources of Evidence No drill has ever reached the mantle, yet geographers map the deep Earth with confidence. This lesson explains the evidence behind that knowledge and the layered structure it reveals. 1. The Challenge of Depth The Earth's mean radius is about 6,371 km , but the deepest human excavation is barely a scratch on that scale. Direct observation stops a few kilometres below the surface, so the interior must be pieced together from indirect clues"
+    },
+    {
+      "lessonId": "landforms-and-geomorphic-processes",
+      "subjectId": "geography",
+      "title": "Landforms: How Weathering, Erosion, and Deposition Sculpt the Earth",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Landforms: How Weathering, Erosion, and Deposition Sculpt the Earth Mountains are raised from below and lowered from above. This lesson organises the geomorphic processes and the signature landforms each agent of erosion and deposition leaves behind. 1. Endogenic and Exogenic Forces | Force | Energy source | Pace | Processes | | --- | --- | --- | --- | | Endogenic | The Earth's internal heat | Slow or sudden | Diastrophism, earthquakes, volcanism | | Exogenic | Solar energy and gravity | Steady "
     },
     {
       "lessonId": "lesson1",
       "subjectId": "geography",
-      "title": "Lesson1",
+      "title": "Maps, Globes, and the Earth's Grid",
       "subject": "geography",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Maps, Globes, and the Earth's Grid Geography answers three questions: where is it? , what is it like there? , and how do people and places connect? This lesson covers the tools geographers use to answer the first one. 1. The Earth's Basic Facts | Feature | Value | | --- | --- | | Shape | Geoid — an oblate spheroid, flattened at the poles | | Equatorial circumference | About 40,075 km | | Surface | About 71% water, 29% land | | Continents / Oceans | 7 continents, 5 oceans | 2. Latitude and Longit"
+    },
+    {
+      "lessonId": "monsoon-climate-of-india",
+      "subjectId": "geography",
+      "title": "The Indian Monsoon: Onset, Retreat, and Year-to-Year Variation",
+      "subject": "geography",
+      "keywords": [],
+      "content": "The Indian Monsoon: Onset, Retreat, and Year-to-Year Variation India's year turns on a seasonal reversal of winds that delivers about three-quarters of its rain in four months. This lesson explains the monsoon's machinery, calendar, and notorious variability. 1. What \"Monsoon\" Means The monsoon — from the Arabic word mausim , season — is a seasonal reversal of wind direction and rainfall, driven by the temperature contrast between land and sea. In summer air flows sea-to-land; in winter, land-to"
+    },
+    {
+      "lessonId": "ocean-currents-and-tides",
+      "subjectId": "geography",
+      "title": "Ocean Currents and Tides: Rivers in the Sea",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Ocean Currents and Tides: Rivers in the Sea Surface waters stream in vast loops and the sea itself rises and falls twice a day. This lesson charts the major currents, their climate effects, and the astronomy that drives tides. 1. What Drives the Currents Currents are set moving by a committee of causes: solar heating (which expands and piles up equatorial water), prevailing winds (the chief driver of surface drift), gravity (pulling the pile back down), Coriolis deflection (curving the flow cloc"
+    },
+    {
+      "lessonId": "oceans-relief-and-properties",
+      "subjectId": "geography",
+      "title": "The Oceans: Relief, Salinity, and Temperature",
+      "subject": "geography",
+      "keywords": [],
+      "content": "The Oceans: Relief, Salinity, and Temperature Oceans hold about 97% of Earth's water and hide most of its relief beneath a lid of blue. This lesson tours the ocean floor and explains the salt and heat that govern how ocean water behaves. 1. The Water of the Planet Solar evaporation, vapour transport, precipitation, and runoff endlessly recycle water between ocean, air, and land — the hydrological cycle . | Term | Meaning | Example | | --- | --- | --- | | Ocean | A vast, connected body of salt wa"
+    },
+    {
+      "lessonId": "pressure-and-winds",
+      "subjectId": "geography",
+      "title": "Pressure Belts and Winds: The Engine of World Climate",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Pressure Belts and Winds: The Engine of World Climate Air rises at the Equator, sinks in the subtropics, and spills between as the winds that steer every climate on Earth. This lesson maps the pressure belts, the winds between them, and the storms that ride them. 1. What Sets the Air in Motion Three controls govern every wind: - Pressure gradient force — air is pushed from high pressure to low pressure; steeper gradients mean stronger winds. - Coriolis effect (Ferrel's law) — the Earth's rotatio"
+    },
+    {
+      "lessonId": "rocks-and-minerals",
+      "subjectId": "geography",
+      "title": "Rocks and Minerals: The Building Materials of the Crust",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Rocks and Minerals: The Building Materials of the Crust Every landscape is assembled from minerals bound into rocks, and every rock records the process that made it. This lesson sorts the crust's materials into three families and follows the cycle that recycles them. 1. Minerals: The Ingredients A mineral is a naturally occurring, inorganic substance with a definite chemical composition and an orderly crystal structure. A rock is any aggregate of one or more minerals. | Mineral property | Meanin"
+    },
+    {
+      "lessonId": "soils-and-natural-vegetation",
+      "subjectId": "geography",
+      "title": "Soils and Natural Vegetation: India's Living Cover",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Soils and Natural Vegetation: India's Living Cover Soil takes centuries to form and only seasons to lose. This lesson classifies India's eight soil groups, the erosion that threatens them, and the natural vegetation they support. 1. How Soil Forms Soil is the loose surface layer in which plants root, made of mineral grains, organic matter (humus), water, and air. It is built by the interplay of five factors over time: parent rock, climate, relief, organisms, and time . | Factor | Contribution | "
+    },
+    {
+      "lessonId": "world-population-and-settlement",
+      "subjectId": "geography",
+      "title": "Population and Settlements: How People Fill the Earth",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Population and Settlements: How People Fill the Earth Eight billion people now share the planet, crowded into a handful of rich regions and scattered across vast empty ones. This lesson explains the growth, the patterns, the migration between them, and the settlements people build. 1. A Story in Milestones | Milestone | Year | Gap from previous | | --- | --- | --- | | 1 billion | ~1804 | — | | 2 billion | 1927 | 123 years | | 3 billion | 1959 | 32 years | | 4 billion | 1974 | 15 years | | 7 bill"
+    },
+    {
+      "lessonId": "british-conquest-and-1857",
+      "subjectId": "history",
+      "title": "The British Conquest and the Revolt of 1857",
+      "subject": "history",
+      "keywords": [],
+      "content": "The British Conquest and the Revolt of 1857 A chartered trading company became the subcontinent's ruler in stages — factories, Carnatic proxies, Plassey's conspiracy, Buxar's legitimacy, and the tools of Subsidiary Alliance and Lapse. In 1857 the sepoys rose; the revolt failed, but it ended Company rule and remade the Raj. 1. The Company Arrives (1600-1690) Queen Elizabeth I chartered the East India Company on 31 December 1600 . Embassies to Jahangir's court (Hawkins 1608, Sir Thomas Roe 1615) w"
+    },
+    {
+      "lessonId": "delhi-sultanate",
+      "subjectId": "history",
+      "title": "The Delhi Sultanate: Five Dynasties, 320 Years",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Delhi Sultanate: Five Dynasties, 320 Years Between 1206 and 1526 five dynasties ruled from Delhi — Mamluk, Khalji, Tughlaq, Sayyid, and Lodi — building an Indo-Persian state on the iqta system, a horse-mounted army, and the tanka and jital coinage, while Sufi khanqahs and Bhakti saints reshaped popular religion. 1. The Turkish Onslaught Mahmud of Ghazni (971-1030) raided India seventeen times between 1000 and 1027 — the sack of Somnath (1025) the most notorious — but took plunder, not territ"
+    },
+    {
+      "lessonId": "gandhian-era-1919-1947",
+      "subjectId": "history",
+      "title": "The Gandhian Era: Mass Struggles to Independence",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Gandhian Era: Mass Struggles to Independence From his return in January 1915 to the midnight of 15 August 1947, Gandhi turned satyagraha into the engine of a mass movement — Champaran, Non-Cooperation, Dandi, and Quit India — while the Cabinet Mission, Direct Action, and Partition closed the era at a terrible price. 1. The Method and the Early Satyagrahas Gandhi returned from South Africa on 9 January 1915 , seasoned by two decades of satyagraha — the Phoenix settlement, Tolstoy Farm, and ca"
+    },
+    {
+      "lessonId": "gupta-empire-and-classical-india",
+      "subjectId": "history",
+      "title": "The Gupta Age: India's Classical Golden Age",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Gupta Age: India's Classical Golden Age From about 319 to 550 CE the Guptas reunited the Ganga plain and set off an extraordinary run of mathematics, poetry, medicine, and temple art — Aryabhata's zero, Kalidasa's dramas, the Iron Pillar, and Nalanda all belong to this classical moment. Harsha's brief empire and southern Pallava-Chalukya art carry the story into the seventh century. 1. Rise of the Guptas Chandragupta I (319-335 CE) took the title maharajadhiraja , married the Lichchhavi prin"
+    },
+    {
+      "lessonId": "indian-national-movement-1885-1919",
+      "subjectId": "history",
+      "title": "The National Movement 1885-1919: From Petitions to Mass Politics",
+      "subject": "history",
+      "keywords": [],
+      "content": "The National Movement 1885-1919: From Petitions to Mass Politics Between 1885 and 1919 the Indian National Congress grew from a body of petitioners into a mass organisation — through moderate economic critique, extremist Swadeshi agitation, revolutionary secret societies, the Muslim League, and Tilak-Besant Home Rule, until Rowlatt and Gandhi changed the rules of the game. 1. Before the Congress Post-1857 associations had prepared the ground: | Association | Year / Founder | | --- | --- | | East"
+    },
+    {
+      "lessonId": "indus-valley-civilization",
+      "subjectId": "history",
+      "title": "The Indus Valley Civilization: Bronze Age Urban Genius",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Indus Valley Civilization: Bronze Age Urban Genius South Asia's first urban culture flourished from about 2600 to 1900 BCE on the floodplains of the Indus and the now-dry Ghaggar-Hakra. Larger in area than Egypt and Mesopotamia combined, it is remembered less for kings than for grid streets, covered drains, and standardised bricks. 1. Discovery and Dating The civilization surfaced only in the 1920s, when the Archaeological Survey of India excavated mounds in Punjab and Sindh and its Director"
     },
     {
       "lessonId": "lesson1",
       "subjectId": "history",
-      "title": "Lesson1",
+      "title": "What Is History? Sources and Periodization",
       "subject": "history",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "What Is History? Sources and Periodization History is the systematic study of the past, built from evidence — not just a list of dates. Historians ask questions, gather sources, weigh them against each other, and only then write an account. 1. Why Study History? - Identity: history explains how societies, institutions, and borders came to be. - Judgement: past decisions and their consequences teach judgement, not lessons to copy blindly. - Evidence-based thinking: history trains you to ask \"how "
+    },
+    {
+      "lessonId": "marathas-and-the-18th-century",
+      "subjectId": "history",
+      "title": "The Marathas and the 18th Century Struggle for Power",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Marathas and the 18th Century Struggle for Power In the eighteenth century the Marathas rose from hill-fort guerrillas to the dominant power of the subcontinent — Shivaji's Swarajya, the Peshwas' confederacy, and the disaster of Panipat 1761 — while successor states, Anglo-French wars, and a trading company from London fought over what the Mughals had lost. 1. Background: The Maratha Country The western Deccan's mountains, the collapse of Ahmadnagar and Bijapur, and Malik Ambar's model of gu"
+    },
+    {
+      "lessonId": "mauryan-empire",
+      "subjectId": "history",
+      "title": "The Mauryan Empire: India's First Pan-Subcontinental State",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Mauryan Empire: India's First Pan-Subcontinental State Between 322 and 185 BCE the Mauryas welded nearly the whole subcontinent into one state — from Afghanistan to Karnataka. Its monument is not a palace but a set of rock and pillar edicts in which Ashoka, shaken by the Kalinga war, preached Dhamma to the entire population. 1. Sources for the Mauryas | Source | Author / Nature | Value | | --- | --- | --- | | Arthashastra | Kautilya (Chanakya) | Treatise on statecraft: spies, taxes, army | |"
+    },
+    {
+      "lessonId": "mughal-empire",
+      "subjectId": "history",
+      "title": "The Mughal Empire: From Babur to the Last Emperor",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Mughal Empire: From Babur to the Last Emperor Between 1526 and 1707 the Mughals built the richest empire of the early modern world — artillery victories at Panipat, a mansabdari state run on ranked salaries, the Taj Mahal, and Akbar's policy of sulh-i-kul. After Aurangzeb's over-long reign, the same machine unravelled in fifty years. 1. Babur and the Founding Battles | Battle | Year | Combatants | Outcome | | --- | --- | --- | --- | | First Panipat | 1526 | Babur vs Ibrahim Lodi | Artillery "
+    },
+    {
+      "lessonId": "religious-movements-buddhism-jainism",
+      "subjectId": "history",
+      "title": "Buddhism and Jainism: The Shramana Challenge",
+      "subject": "history",
+      "keywords": [],
+      "content": "Buddhism and Jainism: The Shramana Challenge In the sixth century BCE, two Kshatriya teachers — Siddhartha Gautama and Vardhamana Mahavira — rejected Vedic ritual and varna hierarchy to preach in the people's languages. Their orders reshaped Indian religion, ethics, and art for the next two millennia. 1. The Sixth-Century Ferment By 600 BCE the Gangetic plains had iron ploughs, punch-marked silver coins, new cities — and religious restlessness: Buddhist texts count 62 sects . The causes behind t"
+    },
+    {
+      "lessonId": "vedic-age",
+      "subjectId": "history",
+      "title": "The Vedic Age: From Pastoral Tribes to Kingdoms",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Vedic Age: From Pastoral Tribes to Kingdoms Between about 1500 and 600 BCE, Indo-Aryan-speaking communities moved from the Punjab plains to the Ganga-Yamuna doab — from cattle camps with tribal councils to territorial kingdoms with grand sacrifices. Their hymns, the Vedas, are the oldest large body of Indian literature. 1. The Four Vedas The Vedas are shruti — \"heard\" revelation — transmitted orally with extraordinary mnemonic devices (pathas) for centuries before writing. | Veda | Content |"
+    },
+    {
+      "lessonId": "world-revolutions",
+      "subjectId": "history",
+      "title": "Revolutions That Made the Modern World: American, French, and Russian",
+      "subject": "history",
+      "keywords": [],
+      "content": "Revolutions That Made the Modern World: American, French, and Russian Three revolutions — America in 1776, France in 1789, Russia in 1917 — destroyed monarchy's divine pretensions and gave the modern world its vocabulary: liberty, equality, fraternity, rights, constitutions, and planned economies. Each fed on Enlightenment ideas and ended further than it began. 1. Ideas Before the Revolutions The Renaissance and Reformation taught Europe to question authority; the Enlightenment turned that habit"
+    },
+    {
+      "lessonId": "world-wars-and-the-cold-war",
+      "subjectId": "history",
+      "title": "The World Wars and the Cold War: 1914-1991",
+      "subject": "history",
+      "keywords": [],
+      "content": "The World Wars and the Cold War: 1914-1991 Two world wars killed some eighty million people and ended European dominance; the Cold War that followed divided the planet between two superpowers for four decades. The chain runs: alliance systems, Versailles, depression and dictators, blitzkrieg and the bomb, the UN, and the wall that came down in 1989. 1. The Causes of World War I Historians summarise the deep causes as MAIN — Militarism, Alliances, Imperialism, Nationalism: the Anglo-German naval "
     },
     {
       "lessonId": "lesson1",
       "subjectId": "languages",
-      "title": "Lesson1",
+      "title": "How Languages Work: An Introduction to Language Study",
       "subject": "languages",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "How Languages Work: An Introduction to Language Study Every language — spoken or signed — is a rule-governed system for meaning. Learning about language makes learning a language faster. 1. What Every Language Has | Level | What it handles | Example (English) | | --- | --- | --- | | Phonology | Sound system | /p/ vs /b/ distinguishes pat from bat | | Morphology | Word building | un-break-able = three meaningful parts | | Syntax | Sentence structure | \"The dog bit the man\" ≠ \"The man bit the dog\""
     },
     {
       "lessonId": "active_passive_voice",
@@ -666,28 +1106,118 @@
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "algebra",
-      "title": "Lesson1",
+      "title": "Algebra Basics: Expressions, Equations, and Patterns",
       "subject": "mathematics",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Algebra Basics: Expressions, Equations, and Patterns Algebra is arithmetic with unknowns. Instead of asking \"what is 3 + 4?\" we ask \"what values make 3x + 4 = 19 true?\" — and learn methods that answer millions of such questions at once. 1. From Arithmetic to Algebra An algebraic expression combines numbers, variables, and operations: - Terms are the parts joined by + or −: here 3x² , -5x , 7 . - The coefficient multiplies the variable (3, −5). - Like terms share the same variable power and can c"
+    },
+    {
+      "lessonId": "linear-equations",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Linear Equations: Lines, Slopes, and Intersections",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Linear Equations: Lines, Slopes, and Intersections A linear equation $y = mx + c$ draws a straight line. The slope $m$ measures tilt; the intercept $c$ says where it crosses the y-axis. 1. Reading the Form - Slope $m = \\frac{\\text{rise}}{\\text{run}} = \\frac{y 2 - y 1}{x 2 - x 1}$ between any two points on the line. - Intercept $c$ is the output when $x = 0$. Example Through $(1, 3)$ and $(3, 11)$: $m = \\frac{11-3}{3-1} = 4$, then $3 = 4(1) + c$ gives $c = -1$. So $y = 4x - 1$. 2. Two Lines Meet "
+    },
+    {
+      "lessonId": "polynomials-and-factorisation",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Polynomials and Factorisation: Breaking Expressions Apart",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Polynomials and Factorisation: Breaking Expressions Apart A polynomial is a sum of power terms in one variable. Factorisation reverses multiplication — it rebuilds the product that made an expression — and it is the master key to solving equations and simplifying fractions. 1. Anatomy of a Polynomial A polynomial in x is a sum of terms of the form axⁿ, where a is a real coefficient and n is a whole number. The highest power is the degree of the polynomial; the degree of a term is its exponent. |"
+    },
+    {
+      "lessonId": "quadratic-equations",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Quadratic Equations: Factoring, Formula, and Parabolas",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Quadratic Equations: Factoring, Formula, and Parabolas A quadratic equation has the form $ax^2 + bx + c = 0$ with $a \\neq 0$. Its solutions are where the parabola $y = ax^2 + bx + c$ crosses the x-axis. 1. Three Ways to Solve | Method | When it works best | | --- | --- | | Factorising | Numbers multiply/add nicely | | Quadratic formula | Always works | | Completing the square | Reveals the vertex form | Example: factorising Solve $x^2 - 5x + 6 = 0$: find two numbers multiplying to $6$, adding to"
+    },
+    {
+      "lessonId": "derivatives",
+      "subjectId": "mathematics",
+      "subSubjectId": "calculus",
+      "title": "Derivatives: Measuring Instantaneous Change",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Derivatives: Measuring Instantaneous Change The derivative of $f(x)$ at a point is the slope of the curve there — how fast the output changes per unit input at that exact moment. 1. From Secant to Tangent The average rate over an interval $h$ is $\\frac{f(x+h) - f(x)}{h}$. Shrinking $h \\to 0$ turns the secant's slope into the tangent's: 2. Rules That Replace the Definition | Function | Derivative | Rule name | | --- | --- | --- | | $c$ (constant) | 0 | constant rule | | $x^n$ | $nx^{n-1}$ | power"
+    },
+    {
+      "lessonId": "integration-basics",
+      "subjectId": "mathematics",
+      "subSubjectId": "calculus",
+      "title": "Integration Basics: Accumulating Change",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Integration Basics: Accumulating Change Differentiation slices change infinitely fine; integration glues the slices back together. As anti-differentiation it recovers a function; as area-under-the-curve it totals change itself. 1. Two Faces of Integration Integration is the reverse of differentiation: if the derivative of F is f, then an antiderivative of f is F. But integration is also accumulation : add up many thin rectangles under a curve (a Riemann sum ) and, as the slices shrink, their tot"
     },
     {
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "calculus",
-      "title": "Lesson1",
+      "title": "Limits: The Gateway to Calculus",
       "subject": "mathematics",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Limits: The Gateway to Calculus Calculus is the mathematics of change. Its entire structure rests on one idea — the limit — which lets us speak precisely about \"infinitely close\" and \"infinitely small\". 1. The Problem Limits Solve How fast is a car going at an instant ? Speed is distance ÷ time, but an instant contains no time to divide by. The way out: compute average speed over shorter and shorter intervals and see what value it approaches. As $h$ shrinks toward 0, that fraction approaches the"
+    },
+    {
+      "lessonId": "circles-and-their-properties",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Circles: Chords, Angles, and the Magic of π",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Circles: Chords, Angles, and the Magic of π One number — π — links every circle's circumference to its diameter. Around it stands a family of theorems about chords, arcs, tangents and angles that turn circles into the most elegant chapter of geometry. 1. Parts of a Circle A circle is the set of all points at a fixed distance (the radius r) from a centre. | Part | Definition | | --- | --- | | Radius | segment from centre to any point of the circle | | Chord | segment joining two points of the cir"
+    },
+    {
+      "lessonId": "circles",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Circles: Chords, Angles, and π",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Circles: Chords, Angles, and π A circle is the set of points at a fixed distance (the radius) from a centre. Its symmetry produces the cleanest angle rules in geometry. 1. Core Vocabulary | Term | Meaning | | --- | --- | | Radius | Centre to any point on the circle | | Diameter | A chord through the centre — the longest one ($d = 2r$) | | Chord | Segment joining two points on the circle | | Tangent | Line touching the circle at exactly one point | | Arc | Part of the circumference | | Sector | \""
     },
     {
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "geometry",
-      "title": "Lesson1",
+      "title": "Points, Lines, and Angles: Geometry's Atoms",
       "subject": "mathematics",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Points, Lines, and Angles: Geometry's Atoms Every diagram in geometry — however complicated — is built from three primitives: points, lines, and angles. Learn their rules first. 1. The Undefined Starting Points A point names a location; it has no size. A line is a straight path extending forever in both directions; it has length but no width. A ray starts at a point and extends forever one way; a segment joins two endpoints and has a measurable length. Through any two distinct points passes exac"
+    },
+    {
+      "lessonId": "triangles-properties",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Triangles: Classification, Congruence, and Similarity",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Triangles: Classification, Congruence, and Similarity The triangle is geometry's atom — rigid, simple, everywhere. Its angle sum, its inequality, and its famous theorem let you measure heights, prove equality, and scale shapes with confidence. 1. Classifying Triangles | Family | Meaning | Key fact | | --- | --- | --- | | Scalene | all sides different | all angles different | | Isosceles | two sides equal | base angles equal | | Equilateral | all sides equal | all angles 60° | | Acute | all angle"
+    },
+    {
+      "lessonId": "fractions-and-decimals",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Fractions and Decimals: Parts of Wholes, Done Precisely",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Fractions and Decimals: Parts of Wholes, Done Precisely Fractions say how many parts a whole is cut into; decimals say the same thing in place-value language. Fluency in both — and in moving between them — underpins nearly every later topic in mathematics. 1. Anatomy of a Fraction A fraction a/b records a division: numerator ÷ denominator. The denominator names the size of the parts; the numerator counts how many are taken. | Type | Condition | Example | Value | | --- | --- | --- | --- | | Prope"
+    },
+    {
+      "lessonId": "lcm-and-hcf",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "LCM and HCF: Factors, Multiples, and Their Powers",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "LCM and HCF: Factors, Multiples, and Their Powers Two numbers are built from shared primes. Take the lowest powers of those primes and you get the HCF; take the highest and you get the LCM — one factorisation answers both questions at once. 1. Factors and Multiples A factor divides a number exactly; a multiple is what you get by multiplying the number by a whole number. For 12: factors are 1, 2, 3, 4, 6, 12; multiples are 12, 24, 36, 48, … - Factors arrive in pairs: 12 = 1 × 12 = 2 × 6 = 3 × 4. "
     },
     {
       "lessonId": "numbers",
@@ -699,21 +1229,137 @@
       "content": "Numbers Long before anyone wrote a number down, people needed to answer one simple question: how many? How many sheep in the flock. How many days until the harvest. How many stones to mark a grave. A number is just an answer to \"how many\" or \"how much\" — a symbol that stands in for a quantity, so we don't have to carry the actual sheep around to compare flocks. A number is a symbol or word that represents a quantity, an amount, or a position in a sequence. 1. Counting is where numbers begin The "
     },
     {
+      "lessonId": "percentages-and-ratios",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Percentages and Ratios: Comparing Quantities",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Percentages and Ratios: Comparing Quantities Percentages and ratios both compare quantities — percentages against a base of 100, ratios part-to-part. Most \"real world\" maths is one of these two in disguise. 1. Percent Means Per Hundred - 45% of ₹800: $\\frac{45}{100} \\times 800 = 360$ - What percent is 18 of 60? $\\frac{18}{60} \\times 100 = 30\\%$ 2. Percentage Change Percentage change = $\\frac{\\text{new} - \\text{old}}{\\text{old}} \\times 100$. The denominator is always the ORIGINAL value — the most"
+    },
+    {
+      "lessonId": "data-interpretation-and-correlation",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Reading Data: Averages, Spread, and Relationships",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Reading Data: Averages, Spread, and Relationships Data answer questions only when you summarise them honestly. Three averages, two measures of spread, and one golden warning — correlation is not causation — carry most of that work. 1. Types of Data and Frequency Tables Qualitative data record categories (blood group, favourite subject); quantitative data record amounts, and split into discrete (countable: number of goals) and continuous (measured: height, time). Continuous data are grouped into "
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "statistics",
-      "title": "Lesson1",
+      "title": "Describing Data: Mean, Median, Mode, and Spread",
       "subject": "mathematics",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Describing Data: Mean, Median, Mode, and Spread Statistics turns heaps of numbers into a few honest summaries. This lesson covers measuring a \"typical\" value (centre) and how scattered the data is (spread). 1. Measures of Centre Given the test scores: 4, 7, 7, 8, 9, 14 | Measure | How to compute | Here | | --- | --- | --- | | Mean | add all, divide by count | $(4+7+7+8+9+14)/6 = 49/6 \\approx 8.2$ | | Median | middle value of sorted data | between 7 and 8 → 7.5 | | Mode | most frequent value | 7 "
+    },
+    {
+      "lessonId": "probability-basics",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Probability: Measuring Chance with Numbers",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Probability: Measuring Chance with Numbers Probability turns \"probably\" and \"rarely\" into precise fractions between 0 and 1 — favourable over total, plus honest counting. 1. Chance Has a Grammar A random experiment has outcomes that cannot be predicted in advance (a coin toss, a dice roll, a card draw). The sample space lists every possible outcome; an event is any subset of it. - One coin: the outcomes are H and T. One die: 1, 2, 3, 4, 5, 6. - Two coins: HH, HT, TH, TT — four outcomes, not thre"
+    },
+    {
+      "lessonId": "probability",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Probability: Measuring Uncertainty",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Probability: Measuring Uncertainty Probability puts a number between 0 and 1 on how likely something is: 0 = impossible, 1 = certain. Everything else lives in between. 1. The Basic Definition For equally likely outcomes: Example One card drawn from a standard 52-card deck. $P(\\text{king}) = \\frac{4}{52} = \\frac{1}{13}$ — four kings, fifty-two cards. 2. Complements: The \"Not\" Shortcut The chance of at least one six in three dice rolls is easier from the other side: $1 - \\left(\\frac{5}{6}\\right)^3"
+    },
+    {
+      "lessonId": "buddhist-philosophy",
+      "subjectId": "philosophy",
+      "title": "Buddhist Philosophy: The Middle Way to the End of Suffering",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Buddhist Philosophy: The Middle Way to the End of Suffering The Buddha taught that suffering has a cause and therefore an end. His analysis of mind, causation, and the self became one of history's most influential philosophical systems. 1. The Four Noble Truths | Truth | Claim | | --- | --- | | Dukkha | Life involves suffering and unsatisfactoriness | | Samudaya | Suffering arises from craving (tanha) | | Nirodha | Ending craving ends suffering | | Magga | The way out is the Eightfold Path | The"
+    },
+    {
+      "lessonId": "carvaka-and-heterodox-schools",
+      "subjectId": "philosophy",
+      "title": "Charvaka and the Heterodox Traditions: Philosophy Without God or Soul",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Charvaka and the Heterodox Traditions: Philosophy Without God or Soul Not every ancient Indian school accepted the Vedas, a soul, or an afterlife. The heterodox thinkers built materialist and determinist worldviews — and forced every rival school to argue harder. 1. Astika and Nastika: Drawing the Line The classical divide in Indian philosophy is not \"believer versus atheist\". It is the acceptance or rejection of the Vedas as a valid source of knowledge (pramana) . | Label | Meaning | Members | "
+    },
+    {
+      "lessonId": "ethics-theories",
+      "subjectId": "philosophy",
+      "title": "Ethics: Theories of Right and Wrong",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Ethics: Theories of Right and Wrong Ethics asks how we should live. Metaethics asks what moral talk means; normative theories build accounts of right action; applied ethics brings them to the clinic, the courtroom, and the farm. 1. The Three Levels of Ethics | Level | Question | Example | | --- | --- | --- | | Metaethics | What do moral claims mean — facts, feelings, commands? | Are moral truths objective? | | Normative | What makes actions right or wrong? | Is lying always wrong? | | Applied | "
+    },
+    {
+      "lessonId": "greek-philosophy",
+      "subjectId": "philosophy",
+      "title": "Greek Philosophy: From the Presocratics to Aristotle",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Greek Philosophy: From the Presocratics to Aristotle Greek philosophy began when thinkers swapped mythos for logos — asking what nature, knowledge, and the good life are, using reason and argument alone. 1. The Presocratics: Explaining Nature by Nature The first philosophers, working in Ionia and southern Italy, sought a first principle ( arche ) behind the world's variety: | Thinker | Approx. dates | Arche | Signature idea | | --- | --- | --- | --- | | Thales | 624–546 BCE | Water | All is wate"
+    },
+    {
+      "lessonId": "jain-philosophy",
+      "subjectId": "philosophy",
+      "title": "Jain Philosophy: Many-Sided Truth and Non-Violence",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Jain Philosophy: Many-Sided Truth and Non-Violence Jainism teaches that reality has endless facets, that karma is literal matter binding the soul, and that non-violence is the supreme duty — held more strictly than in any other tradition. 1. The Tirthankaras A Tirthankara (\"ford-maker\") is one who crosses the river of becoming and shows others the crossing. The tradition counts 24 Tirthankaras : | Tirthankara | Position | Note | | --- | --- | --- | | Rishabhanatha (Adinatha) | First | Legendary "
+    },
+    {
+      "lessonId": "kant-to-existentialism",
+      "subjectId": "philosophy",
+      "title": "From Kant to Existentialism: Modern and Contemporary Philosophy",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "From Kant to Existentialism: Modern and Contemporary Philosophy Kant fused rationalism and empiricism by showing the mind structures experience; Hegel made history itself philosophical; and the existentialists put the concrete, choosing individual back at the centre. 1. Kant's Copernican Revolution Immanuel Kant (1724–1804) proposed asking not how our knowledge conforms to objects (Hume's problem) but how objects conform to our cognition: the mind supplies the forms of experience — space, time, "
     },
     {
       "lessonId": "lesson1",
       "subjectId": "philosophy",
-      "title": "Lesson1",
+      "title": "What Is Philosophy? Branches and Methods",
       "subject": "philosophy",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "What Is Philosophy? Branches and Methods Philosophy begins in wonder. It asks the questions other subjects assume answers to: What exists? How do we know? How should we live? 1. The Major Branches | Branch | Core question | Sample question | | --- | --- | --- | | Metaphysics | What is real? | Are numbers real, or invented? | | Epistemology | How do we know? | Can we be certain of anything? | | Ethics | How should we act? | Is morality relative or universal? | | Logic | What follows from what? | "
+    },
+    {
+      "lessonId": "logic-and-argumentation",
+      "subjectId": "philosophy",
+      "title": "Logic: Arguments, Validity, and the Art of Reasoning",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Logic: Arguments, Validity, and the Art of Reasoning Logic studies the skeleton of reasoning: how premises support conclusions, which forms of inference preserve truth, and the recurring patterns by which arguments fail. 1. What Is an Argument? In philosophy, an argument is not a quarrel. It is a set of claims — the premises — offered as reasons for accepting one further claim, the conclusion . All mammals are warm-blooded (premise); all whales are mammals (premise); therefore, all whales are wa"
+    },
+    {
+      "lessonId": "medieval-to-early-modern-philosophy",
+      "subjectId": "philosophy",
+      "title": "Medieval and Early Modern Philosophy: Faith, Reason, and the Rise of Science",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Medieval and Early Modern Philosophy: Faith, Reason, and the Rise of Science Medieval thinkers reasoned about God with Greek tools; the early moderns rebuilt philosophy on the knowing subject, split into rationalists and empiricists, and political philosophy followed. 1. Augustine and Aquinas: Faith Seeking Understanding Augustine (354–430 CE) baptised Plato: the Forms become ideas in God's mind, and the restless soul knows truth by divine illumination. His Confessions invents the inner autobiog"
+    },
+    {
+      "lessonId": "six-orthodox-schools",
+      "subjectId": "philosophy",
+      "title": "The Six Orthodox Schools: Systems of Vedic Philosophy",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "The Six Orthodox Schools: Systems of Vedic Philosophy Six darshanas — \"viewpoints\" — accepted the Vedas and divided the intellectual labour: logic, atomism, dualism, meditation, ritual interpretation, and ultimate reality. 1. What \"Orthodox\" Means A darshana is a system, literally a \"view\". All six orthodox schools are astika : each accepts the Vedas as a pramana, even where — like Samkhya and early Mimamsa — it has no creator God. Tradition pairs each theory school with an applied partner: 2. N"
+    },
+    {
+      "lessonId": "upanishads-and-vedanta",
+      "subjectId": "philosophy",
+      "title": "The Upanishads and Vedanta: Brahman, Atman, and Liberation",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "The Upanishads and Vedanta: Brahman, Atman, and Liberation The Upanishads turn from ritual to the self, teaching that the inner Atman and the cosmic Brahman are one. Vedanta built centuries of rival systems on that single identity claim. 1. What the Upanishads Are The Upanishads are the speculative culmination of the Vedas — hence Vedanta , \"the end of the Vedas\", meaning both their closing portions and their goal. Tradition counts 108 Upanishads (the Muktika list), of which about thirteen princ"
     },
     {
       "lessonId": "analogy-and-classification-reasoning",
@@ -1598,6 +2244,24 @@
       "content": "Directions and Distance Reasoning — Part 9 of 10 Continuing from the previous part. back to Part 8 ( directions-and-distance-reasoning-part-8 ) · continue to Part 10 ( directions-and-distance-reasoning-part-10 ). 68. Example Compilation Input: AST: Spatial IR: Execution: Result: 69. Minimal Algorithm Conceptually: 70. Multi-Hop Reasoning Consider: The system can choose a reference: Then propagate constraints: Now any pair can be compared. For example: Therefore: This demonstrates why coordinate "
     },
     {
+      "lessonId": "circular-seating-arrangement",
+      "subjectId": "reasoning",
+      "subSubjectId": "seating-arrangement",
+      "title": "Circular Seating Arrangement: Round Tables and Complex Puzzles",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Circular Seating Arrangement: Round Tables and Complex Puzzles Circular puzzles replace fixed seat numbers with neighbours, opposites, and clockwise counts. This lesson fixes the left-right convention around a table, breaks rotational symmetry, and walks an eight-person puzzle before adding hybrid facing, square tables, and floor-puzzle variants. Memorise the convention once: facing the centre, a person's LEFT runs anti-clockwise around the table and their RIGHT runs clockwise, as seen from abov"
+    },
+    {
+      "lessonId": "linear-seating-arrangement",
+      "subjectId": "reasoning",
+      "subSubjectId": "seating-arrangement",
+      "title": "Linear Seating Arrangement: Rows, Facing, and Fixed Seats",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Linear Seating Arrangement: Rows, Facing, and Fixed Seats Linear seating gives you a row of chairs and a stack of clues. This lesson fixes the left-right convention for every facing direction, sorts clues into definite, relative, and negative types, and works single-row and two-row puzzles end to end. Before using any directional clue, find out which way the sitters face. \"Left\" and \"right\" belong to the person on the page , not to you. A north-facing person's left matches your left; a south-fac"
+    },
+    {
       "lessonId": "seating-arrangement-reasoning",
       "subjectId": "reasoning",
       "subSubjectId": "seating-arrangement",
@@ -1605,6 +2269,15 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Seating Arrangement Reasoning Seating arrangement reasoning gives you a set of clues about where people sit — in a row, around a table, or in a grid — and asks you to reconstruct the full arrangement, then answer questions about it. Never try to solve a seating arrangement entirely in your head. Sketch it, place the clues one at a time, and update the sketch as each new clue narrows the possibilities. Most errors come from skipping the sketch, not from misunderstanding the clues. 1. What Seating"
+    },
+    {
+      "lessonId": "para-jumble-strategies",
+      "subjectId": "reasoning",
+      "subSubjectId": "sentence-rearrangement",
+      "title": "Para Jumbles: Reordering Sentences with Structure Signals",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Para Jumbles: Reordering Sentences with Structure Signals A para jumble shuffles four to six sentences and asks for the one coherent order. The sentences carry hidden structure signals — pronouns, demonstratives, conjunctions, chronology markers — and this lesson trains you to read them instead of guessing what \"sounds right.\" Para jumbles are scored in SSC, banking, and MBA entrance exams precisely because instinct fails under time pressure. Do not start with the sentence that sounds like an op"
     },
     {
       "lessonId": "sentence-rearrangement",
@@ -1616,6 +2289,24 @@
       "content": "Lesson 22: Sentence Rearrangement (PQRS / Jumbled Sentences) What This Tests Sentence Rearrangement (also called Para Jumbles, or PQRS-type questions) gives you a set of sentences or sentence-fragments in random order and asks you to arrange them into a single logical, grammatically correct sentence or paragraph. It is a reasoning skill as much as a language one: you are not judging individual grammar so much as tracing the logical thread that connects one idea to the next. --- Fundamental Rules"
     },
     {
+      "lessonId": "alphabet-and-mixed-series",
+      "subjectId": "reasoning",
+      "subSubjectId": "series",
+      "title": "Alphabet and Mixed Letter Series: EJOTY and Beyond",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Alphabet and Mixed Letter Series: EJOTY and Beyond Alphabet series become number series the moment you convert letters to positions. This lesson covers the EJOTY trick, the skip-pattern families, and mixed letter-number series. Never count letters on your fingers mid-exam. Memorise the five anchor letters of EJOTY (E=5, J=10, O=15, T=20, Y=25) and every position becomes a two-second lookup. Speed here is conversion speed. 1. The Position Table and EJOTY Each letter has a fixed position: A=1 thro"
+    },
+    {
+      "lessonId": "number-series-patterns",
+      "subjectId": "reasoning",
+      "subSubjectId": "series",
+      "title": "Number Series Patterns: The Complete Catalogue",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Number Series Patterns: The Complete Catalogue A number series question hides one rule inside a sequence. This lesson catalogues every pattern family exams use, so you can identify the family in seconds and apply its test. Do not guess. Every exam series belongs to one of a small number of pattern families . Read the series once — rising, falling, zig-zag, or blocked — then run the master test order (Section 8). Each family below has a tell, a visible symptom, and a worked example. 1. Family One"
+    },
+    {
       "lessonId": "series-reasoning",
       "subjectId": "reasoning",
       "subSubjectId": "series",
@@ -1623,6 +2314,24 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Number and Alphabet Series Reasoning A series question gives you a sequence of numbers or letters that follows a hidden pattern, and asks you to find the missing term, the next term, or the one term that breaks the pattern. Series reasoning is pattern detection, not calculation. Before you calculate anything, look at the sequence and ask: is it going up, down, alternating, or repeating in blocks? That single glance usually tells you which pattern family to test first. 1. What Series Reasoning Me"
+    },
+    {
+      "lessonId": "reverse-syllogism-and-new-patterns",
+      "subjectId": "reasoning",
+      "subSubjectId": "syllogism",
+      "title": "Reverse Syllogism and New-Style Questions",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Reverse Syllogism and New-Style Questions Reverse syllogism gives you the conclusions first and asks which set of statements supports them — this lesson covers the elimination method and new-phrase patterns like \"only a few\" and \"can never be.\" Reverse syllogism rewards elimination, not construction. You rarely build the statement set yourself — you test each option against the conclusions and delete the ones that fail: one violated conclusion kills an entire option set. 1. What Reverse Syllogis"
+    },
+    {
+      "lessonId": "syllogism-possibility-and-venn-methods",
+      "subjectId": "reasoning",
+      "subSubjectId": "syllogism",
+      "title": "Syllogism: Possibility Cases and Venn Diagram Mastery",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Syllogism: Possibility Cases and Venn Diagram Mastery Possibility questions flip syllogism from \"what must be true\" to \"what could be true.\" This lesson covers the golden possibility rule, the Venn method, and the either-or and three-statement cases. The golden rule: a possibility conclusion is true when it is not definitely contradicted by the statements. You only have to fail to disprove it. If every valid Venn arrangement contradicts it, the possibility is false. 1. Recap: The Four Statement "
     },
     {
       "lessonId": "syllogism-reasoning",
@@ -1697,6 +2406,15 @@
       "content": "अन्तःस्रावी तंत्र (Endocrine System) 1. परिचय (Introduction) अन्तःस्रावी तंत्र (Endocrine System) ऐसी ग्रंथियों से मिलकर बना है जो सीधे रक्त में हार्मोन (Hormones) स्रावित करती हैं (बिना किसी वाहिनी/नली के — इसीलिए इन्हें नलिकाविहीन ग्रंथियाँ / Ductless Glands भी कहते हैं)। एंडोक्राइनोलॉजी (अंतःस्रावी विज्ञान) के पिता थॉमस एडिसन (Thomas Addison) हैं — एक ब्रिटिश चिकित्सक, जिन्होंने एड्रिनल ग्रंथि से जुड़े रोग (Addison's disease) का वर्णन किया था। (ध्यान दें: यह आविष्कारक थॉमस एडिसन — Thomas Edis"
     },
     {
+      "lessonId": "lesson1",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "The Characteristics of Life",
+      "subject": "science",
+      "keywords": [],
+      "content": "The Characteristics of Life What separates a living thing from a rock, a flame, or a crystal? Biologists answer with a checklist of processes — not a single magic property. 1. The Seven Characteristics Something is generally considered alive when it shows all of the following: | Characteristic | Meaning | Example | | --- | --- | --- | | Movement | Change of position or internal motion | Plants grow toward light | | Respiration | Releasing energy from food | Mitochondria burning glucose | | Sensi"
+    },
+    {
       "lessonId": "nutrition-and-vitamins",
       "subjectId": "science",
       "subSubjectId": "biology",
@@ -1742,22 +2460,139 @@
       "content": "कंकाल तंत्र एवं पेशीय तंत्र (Skeletal & Muscular System) 1. कंकाल तंत्र का परिचय (Introduction to the Skeletal System) कंकाल तंत्र (Skeletal System) शरीर की हड्डियों तथा उपास्थियों (Cartilages) से मिलकर बनता है। यह शरीर को आकार, आधार तथा सुरक्षा प्रदान करता है। अध्ययन: ऑस्टियोलॉजी (Osteology) । एक नवजात शिशु में लगभग 300 हड्डियाँ होती हैं, परंतु वृद्धि के दौरान कई हड्डियाँ आपस में जुड़ जाती हैं, जिससे वयस्क शरीर में अंततः 206 हड्डियाँ शेष रहती हैं। 2. वयस्क मानव कंकाल — 206 हड्डियाँ (The Adult H"
     },
     {
+      "lessonId": "acids-bases-and-salts",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Acids, Bases, and Salts: The pH Story",
+      "subject": "science",
+      "keywords": [],
+      "content": "Acids, Bases, and Salts: The pH Story Three theories, one logarithmic scale, and endless everyday consequences — from antacid tablets to acid rain. Master pH and the chemistry of acids, bases, and salts falls into place. 1. Three Theories of Acids and Bases | Theory (Year) | Acid is | Base is | Scope | | --- | --- | --- | --- | | Arrhenius (1884) | H⁺ producer in water | OH⁻ producer in water | aqueous solutions only | | Brønsted–Lowry (1923) | proton donor | proton acceptor | covers NH₃; conjug"
+    },
+    {
+      "lessonId": "atomic-structure",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Atomic Structure: From Dalton to Quantum Numbers",
+      "subject": "science",
+      "keywords": [],
+      "content": "Atomic Structure: From Dalton to Quantum Numbers The atom turned out to be divisible, mostly empty, and ruled by quantum laws. This lesson traces the ideas from Dalton's solid spheres to Schrödinger's probability clouds. 1. The Three Subatomic Particles Atom — the smallest particle of an element that retains its chemical identity. At its centre sits a dense, positive nucleus of protons and neutrons; electrons fill the space around it. | Particle | Symbol | Charge | Relative mass | Discovered by "
+    },
+    {
+      "lessonId": "carbon-and-its-compounds",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Carbon and Its Compounds: The Chemistry of Life",
+      "subject": "science",
+      "keywords": [],
+      "content": "Carbon and Its Compounds: The Chemistry of Life Carbon's ability to chain with itself — catenation — creates millions of compounds. From fuels and fabrics to soaps and food, organic chemistry runs daily life. 1. Why Carbon Is Special Catenation is the self-linking of atoms of one element into chains and rings; tetravalency means carbon forms four bonds. Together they let carbon build the backbones of fuels, fabrics, food, and life itself. 2. Allotropes of Carbon | Allotrope | Bonding | Standout "
+    },
+    {
+      "lessonId": "chemical-bonding",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Chemical Bonding: How Atoms Combine",
+      "subject": "science",
+      "keywords": [],
+      "content": "Chemical Bonding: How Atoms Combine Atoms bond to shed energy and reach noble-gas outer shells. The bond type chosen — ionic, covalent, metallic, or merely intermolecular — fixes melting point, conductivity, and shape. 1. Why Bonds Form A chemical bond is a lasting attraction between atoms that lowers the system's energy. The driving rule is the octet rule : atoms gain, lose, or share electrons to complete an outer shell. Lewis dot symbols track only valence electrons — Na has one dot, Cl seven "
+    },
+    {
+      "lessonId": "chemical-reactions-and-equilibrium",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Chemical Reactions: Types, Rates, and Equilibrium",
+      "subject": "science",
+      "keywords": [],
+      "content": "Chemical Reactions: Types, Rates, and Equilibrium Every change around you — rusting, breathing, digesting — is a chemical equation in motion. Learn the types, what speeds them up, and how reversible reactions settle into balance. 1. The Main Reaction Types | Type | Pattern | Example | | --- | --- | --- | | Combination | A + B → AB | CaO + H₂O → Ca(OH)₂ + heat | | Decomposition | AB → A + B | CaCO₃ → CaO + CO₂ (on heating) | | Displacement | A + BC → AC + B | Fe + CuSO₄ → FeSO₄ + Cu | | Double di"
+    },
+    {
+      "lessonId": "electrochemistry",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Electrochemistry: Batteries, Electrolysis, and Rust",
+      "subject": "science",
+      "keywords": [],
+      "content": "Electrochemistry: Batteries, Electrolysis, and Rust Push current through a compound, or let a reaction push current through a wire — electrochemistry runs both ways. It plates your jewellery, starts your car, and rusts your gate. 1. Electrolytes and Nonelectrolytes An electrolyte — sodium chloride solution, molten KCl, dilute H₂SO₄, NaOH — conducts because it dissociates into mobile ions. A nonelectrolyte — sugar or alcohol solution — holds no ions and does not conduct. Electrolytic conduction i"
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "science",
       "subSubjectId": "chemistry",
-      "title": "Lesson1",
+      "title": "Matter and the Atom: An Introduction to Chemistry",
       "subject": "science",
       "keywords": [],
-      "content": "Lesson1 TODO: write lesson content."
+      "content": "Matter and the Atom: An Introduction to Chemistry Chemistry is the study of matter — what it's made of, how it's structured, and how it changes. Everything starts with the atom. 1. Matter and Its States Matter is anything that has mass and takes up space. It exists in three everyday states — solid (fixed shape, particles vibrate in place), liquid (fixed volume, flowing particles), and gas (no fixed shape or volume, fast free particles) — plus plasma at high temperatures. Changes of state are phy"
     },
     {
-      "lessonId": "lesson1.hi",
+      "lessonId": "metals-and-nonmetals",
       "subjectId": "science",
-      "subSubjectId": "physics",
-      "title": "गति का परिचय",
+      "subSubjectId": "chemistry",
+      "title": "Metals and Non-Metals: Properties, Reactivity, and Metallurgy",
       "subject": "science",
       "keywords": [],
-      "content": "गति का परिचय गति समय के साथ किसी वस्तु की स्थिति में होने वाला परिवर्तन है। गति यह बताती है कि किसी वस्तु की स्थिति किसी संदर्भ बिंदु के सापेक्ष कैसे बदलती है। गति हमेशा किसी संदर्भ फ्रेम पर निर्भर करती है। उदाहरण एक कार 2 घंटे में 100 किमी की दूरी तय करती है। उत्तर: 50 किमी/घंटा"
+      "content": "Metals and Non-Metals: Properties, Reactivity, and Metallurgy Three-quarters of the elements are metals, and their reactivity ladder governs everything from salt formation to pulling iron out of ore. 1. Metals vs Non-Metals | Property | Metals | Non-metals | | --- | --- | --- | | Lustre | shiny | dull (iodine is the lustrous exception) | | State at room temperature | solid (mercury pours as a liquid) | gases or solids (bromine is liquid) | | Malleability | malleable and ductile | brittle | | Con"
+    },
+    {
+      "lessonId": "mole-concept-and-stoichiometry",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "The Mole Concept: Counting Particles by Weighing",
+      "subject": "science",
+      "keywords": [],
+      "content": "The Mole Concept: Counting Particles by Weighing Atoms are too small to count one by one, so chemists count in packages of 6.022 × 10²³ — the mole — converting freely between mass, particles, and gas volume. 1. Why a Counting Unit? A single drop of water holds more molecules than there are stars visible in the sky. Chemistry needs a bridge between the atomic scale (particles) and the laboratory scale (grams) — and the mole is that bridge. 2. The Mole and Avogadro's Number A mole is the amount of"
+    },
+    {
+      "lessonId": "nuclear-chemistry-and-everyday-chemistry",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Nuclear Chemistry and Chemistry in Everyday Life",
+      "subject": "science",
+      "keywords": [],
+      "content": "Nuclear Chemistry and Chemistry in Everyday Life The nucleus can shed particles or split outright, releasing a million times the energy of chemical bonds. Add medicines, additives, and fertilizers, and chemistry explains your whole day. 1. The Discovery of Radioactivity Radioactivity is the spontaneous decay of unstable nuclei, emitting radiation without any external trigger. Henri Becquerel discovered it in 1896 — uranium salts fogged photographic plates in the dark — and Marie and Pierre Curie"
+    },
+    {
+      "lessonId": "periodic-table",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "The Periodic Table: Order from Atomic Number",
+      "subject": "science",
+      "keywords": [],
+      "content": "The Periodic Table: Order from Atomic Number Sixty-three known elements defied order until Mendeleev arranged them by mass — and Moseley later corrected the key to atomic number. The table's shape now predicts how every element behaves. 1. From Triads to the Modern Law | Attempt | Scientist (Year) | Idea | Why it fell short | | --- | --- | --- | --- | | Triads | Döbereiner (1817) | middle element's mass ≈ mean of the other two (Li 7, Na 23, K 39) | only a handful of triads worked | | Law of octa"
+    },
+    {
+      "lessonId": "electricity-and-magnetism",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Electricity and Magnetism: Charges, Currents, and Fields",
+      "subject": "science",
+      "keywords": [],
+      "content": "Electricity and Magnetism: Charges, Currents, and Fields Static charge, flowing current, and magnetic fields are one story. This lesson runs from Coulomb to Ohm to Faraday, ending in the circuits wired through your home. 1. Electric Charge and Static Electricity Electric charge comes in two kinds; like charges repel and unlike charges attract. Charge can neither be created nor destroyed — only transferred, as when rubbing a comb through dry hair. Coulomb's law says the force between two charges "
+    },
+    {
+      "lessonId": "gravitation",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Gravitation: From Falling Apples to Orbiting Satellites",
+      "subject": "science",
+      "keywords": [],
+      "content": "Gravitation: From Falling Apples to Orbiting Satellites The same force that drops an apple steers the Moon. This lesson runs from Kepler's orbits through Newton's universal law, g, escape velocity, satellites, and tides. 1. Kepler's Laws of Planetary Motion Tycho Brahe's naked-eye data let Johannes Kepler abandon perfect circles for ellipses — decades before Newton explained why. | Law | Statement | Consequence | | --- | --- | --- | | First (orbit) | planets move in ellipses with the Sun at one "
+    },
+    {
+      "lessonId": "heat-and-thermodynamics",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Heat and Thermodynamics: Temperature, Transfer, and Engines",
+      "subject": "science",
+      "keywords": [],
+      "content": "Heat and Thermodynamics: Temperature, Transfer, and Engines Heat is energy on the move; temperature says how hot a body is. This lesson covers scales, transfer modes, expansion, specific heat, gas laws, and the engines that turn heat into work. 1. Temperature versus Heat | Aspect | Temperature | Heat | | --- | --- | --- | | Meaning | average kinetic energy of molecules | energy in transit due to a temperature difference | | Unit | kelvin (K), °C | joule (J) | | Measured by | thermometer | calori"
+    },
+    {
+      "lessonId": "laws-of-motion",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Newton's Laws of Motion: Force, Momentum, and Friction",
+      "subject": "science",
+      "keywords": [],
+      "content": "Newton's Laws of Motion: Force, Momentum, and Friction Three short laws explain why things start, stop, and turn. This lesson covers inertia, F = ma, action–reaction pairs, momentum, its conservation, friction, and circular motion. 1. Force and the First Law of Motion A force is a push or pull on a body. Aristotle thought motion needs a continuous push; Galileo's inclined planes said otherwise, and Newton sharpened the idea into his first law. Newton's first law (law of inertia): a body stays at"
     },
     {
       "lessonId": "lesson1",
@@ -1769,6 +2604,15 @@
       "content": "Introduction to Motion Motion is the change in position of an object over time. Motion describes how an object's position changes relative to a reference point. Motion always depends on a reference frame. Example A car travels 100 km in 2 hours. Answer: 50 km/h"
     },
     {
+      "lessonId": "light-and-optics",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Light and Optics: Reflection, Refraction, and Lenses",
+      "subject": "science",
+      "keywords": [],
+      "content": "Light and Optics: Reflection, Refraction, and Lenses Light travels in straight lines until a surface turns it. This lesson follows reflection, refraction, total internal reflection, lenses, dispersion, and the defects of the human eye. 1. Reflection and Plane Mirrors Light travels in straight lines — the reason shadows are sharp and eclipses are predictable. When it strikes a surface it reflects , obeying two laws: the angle of incidence equals the angle of reflection, and incident ray, normal, "
+    },
+    {
       "lessonId": "space-and-defence-technology",
       "subjectId": "science",
       "subSubjectId": "physics",
@@ -1776,6 +2620,33 @@
       "subject": "science",
       "keywords": [],
       "content": "विज्ञान एवं प्रौद्योगिकी: अंतरिक्ष एवं रक्षा (Science & Technology: Space & Defence) 1. भारत के प्रमुख अंतरिक्ष एवं परमाणु संगठन (India's Key Space & Atomic Organisations) | संगठन | संक्षिप्त नाम | स्थापना | मुख्यालय | | --- | --- | --- | --- | | भारतीय अंतरिक्ष अनुसंधान संगठन | ISRO | 1969 | बेंगलुरु | | रक्षा अनुसंधान एवं विकास संगठन | DRDO | 1958 | नई दिल्ली | | भारतीय परमाणु ऊर्जा विभाग | DAE | 1954 | मुंबई | | भारतीय राष्ट्रीय सुदूर संवेदन केंद्र | NRSC | — | हैदराबाद | डॉ. विक्रम साराभाई ("
+    },
+    {
+      "lessonId": "units-and-measurement",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Units and Measurement: The Language of Physics",
+      "subject": "science",
+      "keywords": [],
+      "content": "Units and Measurement: The Language of Physics Every physical statement pairs a number with a unit. This lesson assembles the toolkit — SI base units, prefixes, significant figures, dimensional analysis, and errors. 1. Why Units Matter A number without a unit is half a measurement — a wire \"10 long\" could be 10 millimetres or 10 metres. In 1999 NASA lost the Mars Climate Orbiter to a metric–imperial mix-up between its teams. A physical quantity is any measurable property written as a number toge"
+    },
+    {
+      "lessonId": "waves-and-sound",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Waves and Sound: Oscillations That Carry Energy",
+      "subject": "science",
+      "keywords": [],
+      "content": "Waves and Sound: Oscillations That Carry Energy A wave carries energy, not matter. This lesson covers wave vocabulary, the behaviour of sound, echo ranging, SONAR, the Doppler effect, and sonic booms. 1. What Is a Wave? A wave is a disturbance that travels carrying energy without carrying matter along — a floating cork bobs in place as ripples pass. In a transverse wave the particles oscillate across the direction of travel; in a longitudinal wave they oscillate along it. | Feature | Transverse "
+    },
+    {
+      "lessonId": "work-energy-and-power",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Work, Energy, and Power: The Currency of Physics",
+      "subject": "science",
+      "keywords": [],
+      "content": "Work, Energy, and Power: The Currency of Physics Work is force moving through a distance, energy is the capacity to do work, and power is how fast the work gets done. Together they form the accounting system of physics. 1. Work Done by a Force Work is done when a force acts along a displacement; it equals force × displacement × cosine of the angle between them. The SI unit of work (and energy) is the joule : 1 J = 1 N·m. Only the force component along the motion counts, so when θ = 90° the force"
     }
   ]
 }

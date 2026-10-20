@@ -1,0 +1,76 @@
+{
+  "lessonId": "six-orthodox-schools",
+  "title": "The Six Orthodox Schools: Systems of Vedic Philosophy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What makes a school 'astika' or orthodox?",
+      "options": ["Belief in a personal creator God", "Acceptance of the Vedas as a valid source of knowledge", "Use of Sanskrit", "Belief in many souls"],
+      "correct": 1,
+      "rationale": "Astika schools accept the Vedas as pramana. Samkhya and early Mimamsa are astika yet lack a creator God."
+    },
+    {
+      "id": 2,
+      "question": "Match the school with its founder: Vaisheshika is attributed to:",
+      "options": ["Gautama (Akshapada)", "Kanada", "Kapila", "Jaimini"],
+      "correct": 1,
+      "rationale": "Kanada founded Vaisheshika (atomism, seven padarthas); Gautama founded Nyaya, Kapila Samkhya, and Jaimini Mimamsa."
+    },
+    {
+      "id": 3,
+      "question": "Which pramanas does Nyaya admit?",
+      "options": ["Perception only", "Perception and inference", "Perception, inference, comparison, and testimony", "Six, including presumption"],
+      "correct": 2,
+      "rationale": "Nyaya's four pramanas are pratyaksha, anumana, upamana, and shabda; inference is laid out in five steps."
+    },
+    {
+      "id": 4,
+      "question": "The seven padarthas — including substance, quality, action, generality, particularity, inherence, and non-existence — belong to:",
+      "options": ["Samkhya", "Yoga", "Vaisheshika", "Vedanta"],
+      "correct": 2,
+      "rationale": "Kanada's Vaisheshika catalogues everything knowable under seven categories, including abhava (non-existence) added by followers."
+    },
+    {
+      "id": 5,
+      "question": "Samkhya's dualism is between:",
+      "options": ["God and the world", "Purusha (conscious witness) and prakriti (primordial matter)", "Atman and Brahman", "The four elements"],
+      "correct": 1,
+      "rationale": "Purusha is passive, countless consciousness; prakriti is the one active material source. Liberation (kaivalya) is discriminating the two."
+    },
+    {
+      "id": 6,
+      "question": "The three gunas of Samkhya are:",
+      "options": ["Satyam, shivam, sundaram", "Sattva, rajas, tamas", "Dharma, artha, kama", "Yama, niyama, asana"],
+      "correct": 1,
+      "rationale": "Prakriti's strands are sattva (lucidity), rajas (energy), and tamas (inertia); their disturbed equilibrium unfolds the 23 evolutes."
+    },
+    {
+      "id": 7,
+      "question": "Patanjali's Yoga Sutras define yoga as:",
+      "options": ["Union with God through love", "The cessation of the fluctuations of the mind", "The study of the Vedas", "Detachment from politics"],
+      "correct": 1,
+      "rationale": "Yogash chitta-vritti-nirodhah — yoga is stilling the mind's fluctuations, achieved through the eight limbs from yama to samadhi."
+    },
+    {
+      "id": 8,
+      "question": "The doctrine of apaurusheyatva, defended by Mimamsa, holds that:",
+      "options": ["God authored the Vedas", "The Vedas are not the work of any author and so cannot be false", "The Vedas are mythology", "Rituals are optional"],
+      "correct": 1,
+      "rationale": "For Jaimini's school the Vedas are eternal and authorless — hence self-valid (svatah pramanya), needing no external confirmation."
+    },
+    {
+      "id": 9,
+      "question": "'Purva Mimamsa' and 'Uttara Mimamsa' are the earlier and later inquiries — the latter is better known as:",
+      "options": ["Nyaya", "Vedanta", "Samkhya", "Lokayata"],
+      "correct": 1,
+      "rationale": "Vedanta ('the end of the Vedas') is Uttara Mimamsa, systematised in Badarayana's Brahmasutras, which begins from the Upanishads rather than ritual injunctions."
+    },
+    {
+      "id": 10,
+      "question": "Which school counts exactly 25 tattvas in its map of reality?",
+      "options": ["Vaisheshika", "Yoga alone", "Samkhya", "Charvaka"],
+      "correct": 2,
+      "rationale": "Samkhya's 25 tattvas run from prakriti through intellect, ego, mind, senses, subtle and gross elements, up to purusha. Yoga accepts the same map plus Ishvara."
+    }
+  ]
+}

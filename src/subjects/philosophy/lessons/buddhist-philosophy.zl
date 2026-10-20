@@ -1,0 +1,139 @@
+# Buddhist Philosophy: The Middle Way to the End of Suffering
+
+> The Buddha taught that suffering has a cause and therefore an end.
+> His analysis of mind, causation, and the self became one of history's
+> most influential philosophical systems.
+
+## 1. The Four Noble Truths
+
+| Truth | Claim |
+| --- | --- |
+| Dukkha | Life involves suffering and unsatisfactoriness |
+| Samudaya | Suffering arises from craving (tanha) |
+| Nirodha | Ending craving ends suffering |
+| Magga | The way out is the Eightfold Path |
+
+The Buddha called this the **Middle Way (majjhima patipada)** — between
+the indulgence Charvaka praised and the extreme asceticism of the
+forest renouncers.
+
+## 2. The Eightfold Path
+
+The path has eight factors grouped into three trainings:
+
+| Training | Factors |
+| --- | --- |
+| Wisdom (panna) | Right view, right intention |
+| Ethical conduct (sila) | Right speech, right action, right livelihood |
+| Mental discipline (samadhi) | Right effort, right mindfulness, right concentration |
+
+[definition]
+**Dukkha** is wider than pain: it covers gross suffering, the
+frustration of impermanent joys, and conditioned existence as such.
+**Tanha** — craving, thirst — is its cause, because craving clings to
+what cannot last.
+[/definition]
+
+## 3. Impermanence and No-Self
+
+Three marks characterise all conditioned things: **anicca**
+(impermanence), **dukkha** (unsatisfactoriness), and **anatta**
+(no-self). The last is the sharpest break with the Vedic traditions:
+what we call a "self" is only a stream of ever-changing physical and
+mental events — the five **skandhas** (form, feeling, perception,
+mental formations, consciousness). No permanent **atman** is found
+within.
+
+In the Questions of King Milinda, the monk Nagasena likens the person
+to a chariot: no single part is the chariot, nor the parts apart from
+their arrangement — the name applies to the whole, not to an essence.
+
+## 4. Dependent Origination
+
+**Dependent origination (pratityasamutpada)** is the Buddha's causal
+law: this being, that becomes; with the ceasing of this, that ceases.
+The classical chain has **twelve links (nidanas)**:
+
+| # | Link | # | Link |
+| --- | --- | --- | --- |
+| 1 | Ignorance (avijja) | 7 | Feeling (vedana) |
+| 2 | Formations (sankhara) | 8 | Craving (tanha) |
+| 3 | Consciousness (vinnana) | 9 | Clinging (upadana) |
+| 4 | Name-and-form (nama-rupa) | 10 | Becoming (bhava) |
+| 5 | Six senses (salayatana) | 11 | Birth (jati) |
+| 6 | Contact (phassa) | 12 | Aging and death (jaramarana) |
+
+This also answers the puzzle of **rebirth without a soul**: the dying
+flame lights the next candle — the new life is neither the same person
+nor a different one, just as the second flame is causally continuous
+without being identical. Karma is intention, and its results follow
+the causal stream.
+
+## 5. The Three Vehicles
+
+@diagram tree id="philosophy-buddhist-schools" layout="tree" aria="Buddhism divided into Theravada, Mahayana, and Vajrayana"
+  "Buddhism" -> Theravada
+  "Buddhism" -> Mahayana
+  "Buddhism" -> Vajrayana
+  Mahayana -> Madhyamaka
+  Mahayana -> Yogacara
+@/diagram
+
+| Vehicle | Canon and language | Ideal | Region |
+| --- | --- | --- | --- |
+| Theravada | Pali Tipitaka; "the elders" | Arhat — personal liberation | Sri Lanka, Southeast Asia |
+| Mahayana | Sanskrit sutras | Bodhisattva — universal liberation | East Asia |
+| Vajrayana | Sanskrit tantras | Tantric speed: buddhahood in one life | Tibet, Himalayas |
+
+## 6. Nagarjuna and the Two Truths
+
+**Nagarjuna** (c. 150–250 CE), founder of the **Madhyamaka** school,
+argued from dependent origination to **shunyata (emptiness)**: since
+everything arises dependent on conditions, nothing has an unconditioned
+own-being (svabhava). Emptiness is not nothing — it is the absence of
+independent essence.
+
+He paired this with the doctrine of **two truths**: conventionally,
+persons and tables function; ultimately, all are empty of essence —
+and even emptiness itself is empty. His method was the *prasanga*,
+showing every metaphysical thesis self-contradictory.
+
+The **Yogacara** school of **Asanga and Vasubandhu** (4th century CE)
+instead argued for **vijnapti-matra** — "representation-only": we know
+only our mental content, and the external world is a construction of
+consciousness, including a deep **storehouse consciousness**
+(alaya-vijnana).
+
+## 7. Buddhist Logic and the Councils
+
+Buddhist epistemology culminated with **Dignaga** and **Dharmakirti**
+(6th–7th centuries CE), who accepted only two pramanas — perception and
+inference — and analysed meaning through **apoha** (exclusion: a word
+means what it excludes, since no universal is perceived). The community
+fixed its canon in a series of councils:
+
+| Council | Place and time | Patron |
+| --- | --- | --- |
+| First | Rajagriha, soon after the Buddha's death | Ajatashatru |
+| Second | Vaishali, c. 383 BCE | Kalasoka |
+| Third | Pataliputra, c. 250 BCE | Ashoka |
+| Fourth | Kashmir, 1st century CE | Kanishka |
+
+## 8. Buddhism and the Vedic Tradition
+
+| Issue | Vedic view | Buddhist view |
+| --- | --- | --- |
+| Self | Eternal atman | No permanent self (anatta) |
+| Authority | The Vedas as revelation | The Buddha's verified experience and reasoning |
+| Method | Ritual (karma-kanda) first | Meditation and ethics over sacrifice |
+| Goal | Moksha — unity with or release of atman | Nirvana — extinguishing craving and grasping |
+| Language | Sanskrit authority | Pali and local languages for teaching |
+
+[summary]
+Buddhism diagnoses suffering (dukkha), traces it to craving (tanha),
+and prescribes the Eightfold Path. No-self (anatta) and impermanence
+(anicca) are explained through dependent origination — rebirth without
+a transmigrating soul, like flame passing to flame. Theravada,
+Mahayana, and Vajrayana split over canon and ideal; Nagarjuna's
+emptiness and Dharmakirti's logic carried the school to its peak.
+[/summary]

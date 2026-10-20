@@ -27,9 +27,9 @@ export function createMcqContainer(data, onComplete) {
     progressEl.appendChild(createMcqProgress(index, data.questions.length));
     empty(bodyEl);
     const question = data.questions[index];
-    bodyEl.appendChild(createMcqQuestionView(question, (isCorrect) => {
-      if (isCorrect) correctCount++;
-      selected[index] = question.options.findIndex((_, i) => (isCorrect ? i === question.correct : true));
+    bodyEl.appendChild(createMcqQuestionView(question, (selectedIndex) => {
+      if (selectedIndex === question.correct) correctCount++;
+      selected[index] = selectedIndex;
       setTimeout(next, 900);
     }));
   }

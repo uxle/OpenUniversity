@@ -1,0 +1,140 @@
+# Ethics: Theories of Right and Wrong
+
+> Ethics asks how we should live. Metaethics asks what moral talk
+> means; normative theories build accounts of right action; applied
+> ethics brings them to the clinic, the courtroom, and the farm.
+
+## 1. The Three Levels of Ethics
+
+@diagram tree id="philosophy-ethics-levels" layout="tree" aria="Ethics divided into metaethics, normative, and applied levels"
+  Ethics -> Metaethics
+  Ethics -> Normative
+  Ethics -> Applied
+  Normative -> Consequentialism
+  Normative -> Deontology
+  Normative -> "Virtue ethics"
+@/diagram
+
+| Level | Question | Example |
+| --- | --- | --- |
+| Metaethics | What do moral claims mean — facts, feelings, commands? | Are moral truths objective? |
+| Normative | What makes actions right or wrong? | Is lying always wrong? |
+| Applied | What should be done in this case? | Is euthanasia permissible? |
+
+[definition]
+**Moral absolutism** holds some acts are wrong everywhere, always.
+**Moral relativism** holds rightness varies with culture or
+individual. Metaethics asks which of these stances (or another) is
+true — and what would make it true.
+[/definition]
+
+## 2. Consequentialism: The Greatest Good
+
+**Consequentialism** judges actions solely by their outcomes. Its
+dominant form is **utilitarianism**:
+
+| Thinker | Contribution |
+| --- | --- |
+| Jeremy Bentham (1748–1832) | Pleasure and pain as the sovereign masters; the **hedonic calculus** — intensity, duration, certainty, propinquity, fecundity, purity, extent |
+| John Stuart Mill (1806–1873) | **Higher pleasures** of the mind over bodily ones; "better to be Socrates dissatisfied than a fool satisfied" |
+
+Bentham's calculus is democratic — each counts for one, nobody for
+more than one. Mill answered the "swine" objection by ranking pleasures
+qualitatively. **Act utilitarianism** rates each act by its own
+consequences; **rule utilitarianism** rates rules by the consequences
+of their general adoption.
+
+[warning]
+Objections: the trolley case suggests killing differs from letting die;
+the **tyranny of the majority** could license injustice; and the theory
+demands a saint's total sacrifice of every personal project.
+[/warning]
+
+## 3. Deontology: Duty First
+
+**Kantian deontology** (from *deon*, duty) holds that rightness
+depends on conforming to duty, not on outcomes. It separates:
+
+| Imperative | Form | Example |
+| --- | --- | --- |
+| Hypothetical | If you want X, do Y | If you want to be trusted, keep promises |
+| Categorical | Do Y, unconditionally | Keep promises — always |
+
+The two famous formulations: act only on maxims you can will as
+**universal law**; and treat humanity in every person never **merely
+as a means**, but always as an end. Persons have dignity (beyond
+price) because they are rational agents whose consent matters.
+Objections: conflicting duties have no priority rule, and Kant's
+rigorism famously forbids lying even to a murderer hunting your friend.
+
+## 4. Virtue Ethics: Be the Right Kind of Person
+
+Aristotle asks not "which act is right?" but "what kind of person
+should I be?" — one whose character expresses the virtues, because
+only virtuous activity achieves **eudaimonia** — flourishing, a whole
+life going well. **Phronesis** (practical wisdom) is the master virtue
+that finds the right act, since virtue lies in a **mean between two
+vices**, relative to us:
+
+| Virtue | Deficiency | Excess |
+| --- | --- | --- |
+| Courage | Cowardice | Rashness |
+| Temperance | Insensibility | Self-indulgence |
+| Generosity | Stinginess | Wastefulness |
+| Truthfulness | Understatement | Boastfulness |
+| Friendliness | Surliness | Flattery |
+
+Revived in the twentieth century by Anscombe and MacIntyre, it
+counters: rules and calculations cannot anticipate every case — a good
+agent can.
+
+## 5. Other Normative Theories
+
+| Theory | Claim | Champion |
+| --- | --- | --- |
+| Divine command | Right is what God commands | Religious ethics; puzzles over the Euthyphro dilemma |
+| Natural law | Reason reads the good off human nature | Aquinas |
+| Social contract | Right is what rational contractors would agree to | Hobbes, Locke, Rousseau — and Rawls |
+| Care ethics | Morality grows from relationships and responsiveness | Carol Gilligan, In a Different Voice (1982) |
+| Egoism | Each ought to pursue own (enlightened) interest | Hobbes' psychology |
+
+**Rawls' A Theory of Justice (1971)** is the modern classic: choosing
+society's rules from an **original position** behind a **veil of
+ignorance** — ignorant of your class, talents, or fortune — you would
+pick justice as fairness: equal basic liberties and the difference
+principle (inequalities only if they benefit the worst off).
+
+## 6. Applied Ethics in One Box
+
+[example]
+Euthanasia: a utilitarian weighs intractable suffering against
+autonomy; a Kantian objects that hastening death treats a person as
+disposable; a virtue theorist asks what compassion with integrity
+would do. Capital punishment: consequentialists debate deterrence
+against the risk of executing the innocent; deontologists split over
+retributive desert versus the categorical ban on killing. Animal
+ethics: Bentham's question — not "can they reason?" but "can they
+suffer?" — grounds Singer's equal consideration of interests (Animal
+Liberation, 1975) and Regan's rights view; Kantians grant only
+indirect duties via humanity.
+[/example]
+
+## 7. One Case, Three Verdicts
+
+A runaway trolley will kill five; you can divert it to a side track
+where it will kill one. Should you pull the switch?
+
+| Theory | Verdict | Reasoning |
+| --- | --- | --- |
+| Utilitarianism | Pull | Five deaths averted, one caused — the arithmetic favours pulling |
+| Deontology | Do not pull | Diverting uses the one as a means to save the rest |
+| Virtue ethics | It depends | What would a practically wise, compassionate person do here? |
+
+[summary]
+Ethics operates on three levels — the meaning of moral talk, the
+theory of right action, and its application. Consequentialism counts
+outcomes; deontology demands duty and respect for persons as ends;
+virtue ethics cultivates character guided by phronesis. Contract,
+care, natural law, and divine command complete the map — and applied
+ethics is where their differences become decisions.
+[/summary]

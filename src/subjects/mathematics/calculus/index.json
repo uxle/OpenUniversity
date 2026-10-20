@@ -1,3 +1,7 @@
 {
-  "lessons": ["lesson1"]
+  "lessons": [
+    "lesson1",
+    "derivatives",
+    "integration-basics"
+  ]
 }

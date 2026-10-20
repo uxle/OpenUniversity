@@ -1,0 +1,113 @@
+# The Mole Concept: Counting Particles by Weighing
+
+> Atoms are too small to count one by one, so chemists count in
+> packages of 6.022 × 10²³ — the mole — converting freely between
+> mass, particles, and gas volume.
+
+## 1. Why a Counting Unit?
+
+A single drop of water holds more molecules than there are stars
+visible in the sky. Chemistry needs a bridge between the atomic
+scale (particles) and the laboratory scale (grams) — and the mole
+is that bridge.
+
+## 2. The Mole and Avogadro's Number
+
+[definition]
+A **mole** is the amount of substance containing as many particles
+as there are atoms in exactly 12 g of carbon-12. That count is
+**Avogadro's number**: 6.022 × 10²³ particles per mole.
+[/definition]
+
+@diagram tree id="mole-map" layout="tree" aria="The mole connects mass, particle count and gas volume"
+  "Moles (n)" -> "Mass: n times molar mass M"
+  "Moles (n)" -> "Particles: n times 6.022 x 10^23"
+  "Moles (n)" -> "Gas at STP: n times 22.4 L"
+@/diagram
+
+## 3. The Master Formulas
+
+@math label="eq:mole-relations"
+n = \frac{m}{M} = \frac{N}{N_A} = \frac{V_{\mathrm{gas}}}{22.4\ \mathrm{L}}
+@/math
+
+@math label="eq:molarity"
+\text{Molarity} = \frac{n_{\mathrm{solute}}}{V_{\mathrm{solution\ (L)}}}
+@/math
+
+STP means 273 K (0 °C) and 1 atm — the conditions at which one mole
+of any ideal gas fills 22.4 L.
+
+## 4. Worked Examples
+
+[example]
+**Mass to particles.** 18 g of water: n = 18/18 = 1 mol, so
+6.022 × 10²³ molecules. With 3 atoms each, that is about
+1.8 × 10²⁴ atoms.
+[/example]
+
+[example]
+**A second mass.** 44 g of CO₂: n = 44/44 = 1 mol, again
+6.022 × 10²³ molecules.
+[/example]
+
+[example]
+**Gas volume.** 11.2 L of any gas at STP: n = 11.2/22.4 = 0.5 mol,
+so 3.011 × 10²³ molecules.
+[/example]
+
+[example]
+**Molarity.** 5.85 g of NaCl (M = 58.5 g/mol) in 500 mL of
+solution: n = 5.85/58.5 = 0.1 mol, and molarity = 0.1/0.500
+= 0.2 mol/L.
+[/example]
+
+## 5. Percentage Composition
+
+| Compound | Calculation | Result |
+| --- | --- | --- |
+| H in H₂O | 2(1)/18 | ≈ 11.1% |
+| O in H₂O | 16/18 | ≈ 88.9% |
+| C in CO₂ | 12/44 | ≈ 27.3% |
+
+## 6. Empirical and Molecular Formula
+
+[definition]
+The **empirical formula** is the simplest whole-number ratio of
+atoms; the **molecular formula** is the actual count — always a
+whole-number multiple of the empirical.
+[/definition]
+
+A compound found to be 40.0% C, 6.7% H, 53.3% O divides by atomic
+masses to the ratio 3.33 : 6.7 : 3.33, which simplifies to
+1 : 2 : 1 — empirical formula CH₂O. If the molar mass is 180, the
+molecular formula is (CH₂O)₆ = C₆H₁₂O₆ — glucose.
+
+## 7. Equations as Mole Bookkeeping
+
+Read 2H₂ + O₂ → 2H₂O as "2 mol of hydrogen react with 1 mol of
+oxygen to give 2 mol of water":
+
+@math label="eq:mass-conservation"
+2(2\ \mathrm{g}) + 32\ \mathrm{g} \longrightarrow 2(18\ \mathrm{g})
+@/math
+
+So 4 g + 32 g → 36 g — mass is conserved because atoms are merely
+rearranged.
+
+[info title="Limiting reagent"]
+The **limiting reagent** is the reactant that runs out first and
+caps the yield. Mix 10 g of H₂ with 32 g of O₂: the 5 mol of H₂
+would need 2.5 mol of O₂ but only 1 mol is present, so O₂ is
+limiting and at most 36 g of water forms.
+[/info]
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Avogadro's number? | 6.022 × 10²³ per mole |
+| Molar volume at STP? | 22.4 L per mole |
+| Moles in 18 g of H₂O? | 1 mol |
+| Empirical formula of glucose? | CH₂O |
+| Why is mass conserved? | atoms are only rearranged |

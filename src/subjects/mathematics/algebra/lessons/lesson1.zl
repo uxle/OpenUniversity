@@ -1,3 +1,79 @@
-# Lesson1
+# Algebra Basics: Expressions, Equations, and Patterns
 
-TODO: write lesson content.
+> Algebra is arithmetic with unknowns. Instead of asking "what is 3 + 4?"
+> we ask "what values make 3x + 4 = 19 true?" — and learn methods that
+> answer millions of such questions at once.
+
+## 1. From Arithmetic to Algebra
+
+An **algebraic expression** combines numbers, variables, and operations:
+
+@math label="eq:expression"
+3x^2 - 5x + 7
+@/math
+
+- **Terms** are the parts joined by + or −: here `3x²`, `-5x`, `7`.
+- The **coefficient** multiplies the variable (3, −5).
+- **Like terms** share the same variable power and can combine:
+  `2x + 5x = 7x`.
+
+## 2. Solving Linear Equations
+
+[definition]
+A **linear equation** has the unknown only to the first power. Solve by
+doing the same operation to both sides until the variable stands alone.
+[/definition]
+
+## Example
+
+Solve $3x + 4 = 19$:
+
+| Step | Equation | Reason |
+| --- | --- | --- |
+| 1 | 3x + 4 = 19 | Start |
+| 2 | 3x = 15 | Subtract 4 from both sides |
+| 3 | x = 5 | Divide both sides by 3 |
+
+**Check:** substitute back — $3(5) + 4 = 19$. Always check.
+
+## 3. Expanding and Factorising
+
+Two opposite moves:
+
+- **Expand** the brackets: $(x + 2)(x + 3) = x^2 + 5x + 6$
+- **Factorise**: $x^2 + 5x + 6 = (x + 2)(x + 3)$
+
+Factorising solves quadratics elegantly:
+
+## Example
+
+$x^2 + 5x + 6 = 0$
+$(x+2)(x+3) = 0$
+So $x = -2$ or $x = -3$ — because a product is zero exactly when a
+factor is zero.
+
+[info title="When factorising fails"]
+Not every quadratic factors neatly. The **quadratic formula**
+$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$ always works for
+$ax^2 + bx + c = 0$.
+[/info]
+
+## 4. Sequences and Patterns
+
+| Sequence | Pattern | Next term | Rule |
+| --- | --- | --- | --- |
+| 3, 7, 11, 15, … | add 4 each time | 19 | $4n - 1$ |
+| 2, 6, 18, 54, … | × 3 each time | 162 | $2 \cdot 3^{n-1}$ |
+| 1, 4, 9, 16, … | perfect squares | 25 | $n^2$ |
+
+[important]
+Algebra is pattern language: a rule like $4n-1$ compresses an infinite
+list of numbers into one sentence you can compute with.
+[/important]
+
+## Key Takeaways
+
+- Simplify expressions by combining like terms; solve equations by
+  balanced moves.
+- Factorising reverses expanding and unlocks quadratic solutions.
+- Sequences follow rules; algebra writes those rules compactly.

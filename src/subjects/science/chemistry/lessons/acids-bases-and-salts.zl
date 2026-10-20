@@ -1,0 +1,137 @@
+# Acids, Bases, and Salts: The pH Story
+
+> Three theories, one logarithmic scale, and endless everyday
+> consequences — from antacid tablets to acid rain. Master pH and
+> the chemistry of acids, bases, and salts falls into place.
+
+## 1. Three Theories of Acids and Bases
+
+| Theory (Year) | Acid is | Base is | Scope |
+| --- | --- | --- | --- |
+| Arrhenius (1884) | H⁺ producer in water | OH⁻ producer in water | aqueous solutions only |
+| Brønsted–Lowry (1923) | proton donor | proton acceptor | covers NH₃; conjugate pairs |
+| Lewis (1923) | electron-pair acceptor | electron-pair donor | broadest — includes BF₃ |
+
+@diagram tree id="acid-base-theories" layout="tree" aria="Three acid-base theories of increasing scope from Arrhenius to Lewis"
+  "Acid-base theories" -> "Arrhenius: H+ and OH- in water"
+  "Acid-base theories" -> "Bronsted-Lowry: proton transfer"
+  "Acid-base theories" -> "Lewis: electron pairs"
+@/diagram
+
+[definition]
+A **conjugate acid–base pair** differs by exactly one proton:
+HCl/Cl⁻ and NH₄⁺/NH₃ are pairs. After a Brønsted transfer, the old
+acid becomes the new base and the old base the new acid.
+[/definition]
+
+## 2. The pH Scale
+
+@math label="eq:ph"
+pH = -\log[H^+]
+@/math
+
+pH runs 0–14 at 25 °C: below 7 acidic, exactly 7 neutral, above 7
+basic. Each unit means a tenfold jump in H⁺ concentration — lemon
+juice (pH 2.2) carries a million times more H⁺ than milk of
+magnesia (pH 10.5).
+
+@chart bar title="Approximate pH of common substances"
+labels:
+Lemon
+Vinegar
+Tomato
+Coffee
+Water
+Blood
+Soap
+
+data:
+2.2
+3.0
+4.2
+5.0
+7.0
+7.4
+10.0
+@/chart
+
+## 3. Indicators
+
+| Indicator | Acid colour | Base colour | Useful range |
+| --- | --- | --- | --- |
+| Litmus | red | blue | ~4.5–8.3 |
+| Methyl orange | red | yellow | 3.1–4.4 |
+| Phenolphthalein | colourless | pink | 8.3–10.0 |
+| Universal indicator | full colour spread | full colour spread | 1–14 |
+
+## 4. Strong vs Weak
+
+| Strong acids | Weak acids | Strong bases | Weak bases |
+| --- | --- | --- | --- |
+| HCl, H₂SO₄, HNO₃ | CH₃COOH, H₂CO₃, H₃PO₄ | NaOH, KOH, Ca(OH)₂ | NH₃, methylamine |
+
+[info title="Strength is not concentration"]
+Strength measures ionization: a dilute HCl solution is still
+strong (every molecule ionizes); a bottle of concentrated acetic
+acid is still weak (ionization stays partial).
+[/info]
+
+## 5. Neutralization and Salt Types
+
+Acid + base → salt + water:
+
+@math label="eq:neutralization"
+\mathrm{HCl + NaOH \to NaCl + H_2O}
+@/math
+
+| Salt type | Formed from | Example | Solution pH |
+| --- | --- | --- | --- |
+| Normal | strong acid + strong base | NaCl, KNO₃ | ≈ 7 |
+| Acidic | strong acid + weak base | NH₄Cl | < 7 |
+| Basic | weak acid + strong base | Na₂CO₃, CH₃COONa | > 7 |
+| Double salt | two salts in one crystal | potash alum | acidic |
+| Complex salt | carries a complex ion | K₄[Fe(CN)₆] | — |
+
+## 6. Everyday and Industrial Chemicals
+
+| Formula | Common name | Note |
+| --- | --- | --- |
+| H₂SO₄ | sulfuric acid | "king of chemicals" — fertilizers, car batteries |
+| HNO₃ | nitric acid | 3:1 with HCl = aqua regia, which dissolves gold |
+| CH₃COOH | acetic acid | vinegar is about 5% |
+| NaOH | caustic soda | soap making, drain cleaners |
+| CaO | quicklime | heating limestone; cement |
+| Ca(OH)₂ | slaked lime | whitewash; corrects acidic soil |
+| Mg(OH)₂ | milk of magnesia | antacid |
+
+Everyday acids: **citric** (lemon), **lactic** (curd), **oxalic**
+(spinach), **acetic** (vinegar), **formic** (ant sting), and
+**ascorbic** — vitamin C.
+
+## 7. pH in Real Life
+
+- **Hyperacidity** — excess stomach HCl; antacids (milk of
+  magnesia, sodium bicarbonate) neutralize the surplus.
+- **Tooth decay** — mouth bacteria turn sugar into acids; below
+  pH 5.5, enamel's calcium salts start dissolving.
+- **Acid rain** (pH below 5.6) — SO₂ and NOₓ from burning fuels
+  dissolve in rain; it corrodes marble (the Taj Mahal's "marble
+  cancer") and acidifies lakes.
+
+[example]
+**Plaster of Paris:** heating gypsum drives off water —
+CaSO₄·2H₂O → CaSO₄·½H₂O — leaving plaster of Paris. Adding water
+reverses the change and the paste sets hard; doctors cast broken
+bones with it.
+[/example]
+
+## 8. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Brønsted acid? | proton donor |
+| H-free Lewis acid? | BF₃ |
+| Phenolphthalein in base? | pink |
+| Acidic salt? | NH₄Cl |
+| Aqua regia? | 3 HCl : 1 HNO₃ |
+| Tooth decay threshold? | pH below 5.5 |

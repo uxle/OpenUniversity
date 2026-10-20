@@ -1,0 +1,76 @@
+{
+  "lessonId": "nuclear-chemistry-and-everyday-chemistry",
+  "title": "Nuclear Chemistry and Chemistry in Everyday Life",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Radioactivity was discovered in 1896 by:",
+      "options": ["Marie Curie", "Henri Becquerel", "Ernest Rutherford", "Wilhelm Röntgen"],
+      "correct": 1,
+      "rationale": "Becquerel found that uranium salts fogged photographic plates in the dark; the Curies later isolated polonium and radium."
+    },
+    {
+      "id": 2,
+      "question": "Which radiation has the greatest penetrating power?",
+      "options": ["alpha", "beta", "gamma", "all penetrate equally"],
+      "correct": 2,
+      "rationale": "Chargeless, high-energy gamma photons need thick lead or concrete to stop them; paper stops alpha and a few mm of aluminium stops beta."
+    },
+    {
+      "id": 3,
+      "question": "An alpha particle is identical to:",
+      "options": ["a high-speed electron", "a helium nucleus", "a photon", "a hydrogen atom"],
+      "correct": 1,
+      "rationale": "An alpha particle is ⁴₂He — charge +2, mass 4 u, the most ionizing but least penetrating radiation."
+    },
+    {
+      "id": 4,
+      "question": "The half-life of carbon-14 is about:",
+      "options": ["8 days", "573 years", "5,730 years", "50,000 years"],
+      "correct": 2,
+      "rationale": "5,730 years — the clock behind radiocarbon dating, useful for once-living matter up to roughly 50,000 years old."
+    },
+    {
+      "id": 5,
+      "question": "In beta decay:",
+      "options": ["Z falls by 2", "A falls by 4", "Z rises by 1 while A stays constant", "a proton turns into a neutron"],
+      "correct": 2,
+      "rationale": "A neutron converts to a proton plus an ejected electron (⁰₋₁e), so the atomic number rises by one at constant mass number."
+    },
+    {
+      "id": 6,
+      "question": "Nuclear reactors keep the fission chain reaction under control using:",
+      "options": ["moderators and control rods", "magnets and filters", "strong acids", "cooling only"],
+      "correct": 0,
+      "rationale": "Moderators (water, heavy water, graphite) slow neutrons to fissile speeds while control rods (cadmium, boron) absorb the surplus."
+    },
+    {
+      "id": 7,
+      "question": "The Sun's energy comes from:",
+      "options": ["uranium fission", "fusion of hydrogen into helium", "chemical combustion", "gravitational friction"],
+      "correct": 1,
+      "rationale": "Four hydrogen nuclei fuse into helium, converting mass to energy per E = mc² — fusion, not fission."
+    },
+    {
+      "id": 8,
+      "question": "Smoke detectors commonly rely on which radioactive isotope?",
+      "options": ["Co-60", "I-131", "Am-241", "C-14"],
+      "correct": 2,
+      "rationale": "Americium-241's alpha particles ionize air; smoke interrupts that tiny current and triggers the alarm."
+    },
+    {
+      "id": 9,
+      "question": "Overactive thyroid glands are treated with:",
+      "options": ["iodine-131", "technetium-99m", "cobalt-60", "uranium-235"],
+      "correct": 0,
+      "rationale": "The thyroid concentrates iodine, so I-131 — with its short 8-day half-life — delivers radiation exactly where needed."
+    },
+    {
+      "id": 10,
+      "question": "CO₂ extinguishers are preferred for electrical fires because CO₂:",
+      "options": ["cools like water", "smothers the fire without conducting electricity or leaving residue", "chemically absorbs oxygen", "is acidic"],
+      "correct": 1,
+      "rationale": "CO₂ blankets the flames, insulates against current, and leaves no residue — water is dangerous on live circuits."
+    }
+  ]
+}

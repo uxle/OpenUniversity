@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  OpenKnowledge is a hash-router SPA: every "page" (subjects, lessons,
+  quizzes) is the same document at "/", so a sitemap can only honestly
+  list the single canonical URL. Deep routes live behind #/ fragments
+  which crawlers treat as the same document anyway.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://uxle.github.io/OpenUniversity/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

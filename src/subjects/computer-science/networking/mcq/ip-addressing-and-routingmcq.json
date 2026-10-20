@@ -1,0 +1,76 @@
+{
+  "lessonId": "ip-addressing-and-routing",
+  "title": "IP Addressing and Routing: Finding Every Machine on Earth",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many bits does an IPv4 address contain?",
+      "options": ["16", "32", "64", "128"],
+      "correct": 1,
+      "rationale": "An IPv4 address is 32 bits written as four octets in dotted decimal, each ranging 0–255 — about 4.3 billion addresses."
+    },
+    {
+      "id": 2,
+      "question": "In 192.168.10.42/24, what does the /24 signify?",
+      "options": ["24 usable hosts", "The first 24 bits are the network part", "24 subnets exist", "The host part is 24 bits"],
+      "correct": 1,
+      "rationale": "The subnet mask /24 (255.255.255.0) draws the line: the first 24 bits are network, leaving 8 bits for the host part."
+    },
+    {
+      "id": 3,
+      "question": "How many usable hosts does a /24 network provide?",
+      "options": ["256", "254", "62", "128"],
+      "correct": 1,
+      "rationale": "A /24 has 256 total addresses, but the network address and broadcast address are reserved, leaving 254 usable."
+    },
+    {
+      "id": 4,
+      "question": "Which of these is a private address range?",
+      "options": ["172.16.0.0/12 (172.16–172.31)", "127.0.0.0/8", "169.254.0.0/16", "224.0.0.0/4"],
+      "correct": 0,
+      "rationale": "The three private ranges are 10.0.0.0/8, 172.16.0.0/12 (172.16–172.31), and 192.168.0.0/16 — none routable on the public Internet."
+    },
+    {
+      "id": 5,
+      "question": "A laptop showing a 169.254.x.x address almost always indicates:",
+      "options": ["A working NAT setup", "The DHCP server was unreachable", "A successful IPv6 transition", "A manually assigned static IP"],
+      "correct": 1,
+      "rationale": "169.254.0.0/16 is the link-local (APIPA) range that devices self-assign when DHCP fails — check the cable or Wi-Fi first."
+    },
+    {
+      "id": 6,
+      "question": "Splitting 192.168.10.0/24 into /26 subnets yields:",
+      "options": ["2 subnets of 126 hosts", "4 subnets of 62 usable hosts each", "8 subnets of 30 hosts", "1 subnet of 254 hosts"],
+      "correct": 1,
+      "rationale": "Each /26 block holds 64 addresses; the network and broadcast addresses are reserved, so each of the 4 subnets has 62 usable hosts."
+    },
+    {
+      "id": 7,
+      "question": "Which statement about IPv6 is correct?",
+      "options": ["It uses 64-bit dotted decimal addresses", "It removes the need for NAT for address conservation", "It relies on broadcast for discovery", "It cannot be abbreviated"],
+      "correct": 1,
+      "rationale": "IPv6's 128 bits give about 3.4 × 10³⁸ addresses — enough for every device to be globally reachable without NAT; broadcast is replaced by multicast and anycast."
+    },
+    {
+      "id": 8,
+      "question": "Which routing protocol family does OSPF belong to, and what does it run?",
+      "options": ["Distance-vector; it counts hops", "Link-state; it runs Dijkstra inside one AS", "Path-vector; it joins ASes", "Static routing with manual entries"],
+      "correct": 1,
+      "rationale": "OSPF is a link-state protocol whose cost comes from bandwidth and which runs Dijkstra inside a single autonomous system."
+    },
+    {
+      "id": 9,
+      "question": "Which protocol is described as the glue of the Internet backbone?",
+      "options": ["RIP", "OSPF", "BGP", "ARP"],
+      "correct": 2,
+      "rationale": "BGP is a path-vector protocol that exchanges policy-weighted paths between autonomous systems — it glues the Internet together."
+    },
+    {
+      "id": 10,
+      "question": "In DNS resolution, a recursive resolver asks which servers first?",
+      "options": ["The authoritative servers of the domain", "The root servers", "The TLD servers", "The local hosts file"],
+      "correct": 1,
+      "rationale": "The chain walks root servers (which point to .com TLD servers), then the TLD, then the domain's authoritative servers, caching answers on the way."
+    }
+  ]
+}

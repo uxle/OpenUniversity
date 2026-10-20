@@ -1,0 +1,138 @@
+# Polynomials and Factorisation: Breaking Expressions Apart
+
+> A polynomial is a sum of power terms in one variable. Factorisation
+> reverses multiplication — it rebuilds the product that made an
+> expression — and it is the master key to solving equations and
+> simplifying fractions.
+
+## 1. Anatomy of a Polynomial
+
+A **polynomial** in x is a sum of terms of the form axⁿ, where a is a
+real **coefficient** and n is a whole number. The highest power is the
+**degree** of the polynomial; the degree of a term is its exponent.
+
+| Name | Terms | Example | Degree |
+| --- | --- | --- | --- |
+| Monomial | 1 | 5x³ | 3 |
+| Binomial | 2 | x² − 9 | 2 |
+| Trinomial | 3 | x² + 5x + 6 | 2 |
+
+**Like terms** share the same variable and power — only they combine;
+polynomials are written in **descending** order of degree.
+
+## 2. The Big Five Identities
+
+An **identity** holds for every value of the variable, unlike an
+equation, which holds only for some.
+
+@math label="eq:identities"
+\begin{aligned}
+(a+b)^2 &= a^2 + 2ab + b^2 & a^2 - b^2 &= (a+b)(a-b) \\
+(a-b)^2 &= a^2 - 2ab + b^2 & (a+b)^3 &= a^3 + 3a^2b + 3ab^2 + b^3 \\
+a^3 + b^3 &= (a+b)(a^2 - ab + b^2) & a^3 - b^3 &= (a-b)(a^2 + ab + b^2)
+\end{aligned}
+@/math
+
+[example]
+Compute 102² without long multiplication:
+- 102² = (100 + 2)² = 100² + 2(100)(2) + 2² = 10404.
+- And 97 × 103 = (100 − 3)(100 + 3) = 100² − 3² = 9991.
+[/example]
+
+## 3. Method 1: Common Factor and Grouping
+
+**Take out the highest common factor** first — always.
+
+- 6x²y + 9xy² = 3xy(2x + 3y) — 3xy divides both terms.
+- 5x(x−2) + 3(x−2) = (x−2)(5x + 3): the bracket is the common factor.
+
+**Grouping** creates common factors when none is visible at the start:
+
+@math label="eq:grouping"
+x^3 + 3x^2 + 2x + 6 = x^2(x+3) + 2(x+3) = (x+3)(x^2+2)
+@/math
+
+## 4. Method 2: Difference of Squares and Perfect Squares
+
+- Difference of squares: 9x² − 25 = (3x)² − (5)² = (3x − 5)(3x + 5).
+- Perfect square trinomial: 4x² + 12x + 9 = (2x)² + 2(2x)(3) + 3² =
+  (2x + 3)².
+
+[important title="Recognise the pattern first"]
+Before expanding anything, scan for a² − b² (two squares joined by a
+minus) and for a² ± 2ab + b² (first and last squares with twice the
+middle). These two patterns factor instantly — expanding them by
+hand wastes minutes in an exam.
+[/important]
+
+## 5. Method 3: Splitting the Middle Term
+
+For x² + bx + c, find two numbers whose product is c and whose sum is
+b; split bx with them, then group.
+
+[example]
+Factorise x² + 5x + 6. Two numbers with product 6 and sum 5: 2 and 3.
+- Split: x² + 2x + 3x + 6
+- Group: x(x + 2) + 3(x + 2) = (x + 2)(x + 3)
+- Check by expanding: (x + 2)(x + 3) = x² + 5x + 6 ✓
+
+For x² − 7x + 12: product 12, sum −7 → −3 and −4, giving
+(x − 3)(x − 4) — same-sign c needs same-sign factors.
+[/example]
+
+## 6. Remainder and Factor Theorems
+
+[definition]
+**Remainder theorem:** when a polynomial p(x) is divided by (x − a),
+the remainder is p(a). **Factor theorem:** (x − a) is a factor of p(x)
+exactly when p(a) = 0.
+[/definition]
+
+[example]
+Is (x − 1) a factor of p(x) = x³ − 3x + 2? Evaluate: p(1) =
+1 − 3 + 2 = 0 — yes. Divide to get x² + x − 2 = (x + 2)(x − 1), so
+the complete factorisation is (x − 1)²(x + 2).
+[/example]
+
+For a cubic with integer coefficients, every rational root is ± a
+divisor of the constant term: x³ − 4x² + x + 6 needs only try
+±1, ±2, ±3, ±6 — and p(2) = 0 succeeds, giving (x−2)(x−3)(x+1).
+
+## 7. Simplifying Algebraic Fractions
+
+Factor numerator and denominator completely, then cancel — factors
+only, never individual terms.
+
+@math label="eq:algebraic-fraction"
+\frac{x^2-9}{x^2+7x+12} = \frac{(x-3)(x+3)}{(x+3)(x+4)} = \frac{x-3}{x+4}
+@/math
+
+The cancelled factor (x + 3) still leaves the original expression
+undefined at x = −3 — a hole in the graph, not an asymptote.
+
+## 8. Where Factorisation Shows Up
+
+| Exam task | Factorisation move |
+| --- | --- |
+| Solve x² + 5x + 6 = 0 | factor → x = −2 or x = −3 |
+| Simplify a rational expression | factor top and bottom, cancel |
+| Evaluate 97 × 103 mentally | a² − b² with a = 100, b = 3 |
+| Split a partial fraction | factorise the denominator first |
+| Find where a graph meets the axis | roots come from factors |
+
+[note]
+Not every quadratic factors over the integers — x² + x + 1 does not.
+The quadratic formula then takes over, giving complex roots when the
+discriminant b² − 4ac is negative.
+[/note]
+
+## 9. Quick Revision
+
+| Ask yourself | Answer |
+| --- | --- |
+| Degree of 5x³ − x + 4? | 3 (highest power) |
+| 102² by identity? | (100+2)² = 10404 |
+| Factorise x² + 5x + 6 | (x + 2)(x + 3) |
+| Factorise 9x² − 25 | (3x − 5)(3x + 5) |
+| Is (x − 2) a factor of x³ − 4x² + x + 6? | p(2) = 0 → yes |
+| Cancel rule for fractions? | factors only, never single terms |

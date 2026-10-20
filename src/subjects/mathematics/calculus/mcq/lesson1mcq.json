@@ -1,5 +1,97 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Limits: The Gateway to Calculus",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The limit of f(x) as x approaches a describes:",
+      "options": ["The value f(a) exactly", "Where the values of f(x) head near a, regardless of f(a)", "The steepest point of the graph", "The area under the curve"],
+      "correct": 1,
+      "rationale": "Limits look at the approach: values of f(x) can settle toward L near a even when f(a) itself is undefined or different."
+    },
+    {
+      "id": 2,
+      "question": "Evaluate: lim(x→1) (x² − 1)/(x − 1)",
+      "options": ["0", "1", "2", "Does not exist"],
+      "zolto": "\\lim_{x \\to 1} \\frac{x^{2}-1}{x-1}",
+      "correct": 2,
+      "rationale": "Factor and cancel: ((x−1)(x+1))/(x−1) = x + 1 for x ≠ 1, which approaches 2 as x → 1."
+    },
+    {
+      "id": 3,
+      "question": "For the two-sided limit to exist at a point, which must be true?",
+      "options": ["f(a) must equal zero", "Left-hand and right-hand limits must agree", "The function must be increasing", "The graph must have an asymptote"],
+      "correct": 1,
+      "rationale": "Both one-sided limits must be equal; if they disagree (a jump), the two-sided limit does not exist."
+    },
+    {
+      "id": 4,
+      "question": "A function is continuous at x = a exactly when:",
+      "options": ["It is defined everywhere on the real line", "f(a) exists, the limit exists, and they are equal", "Its derivative is positive there", "The graph is a straight line"],
+      "correct": 1,
+      "rationale": "Continuity needs all three: defined value, existing limit, and both matching — informally, no pen-lift at that point."
+    },
+    {
+      "id": 5,
+      "question": "The derivative — calculus's measure of instantaneous change — is formally defined as:",
+      "options": ["A limit of average rates over shrinking intervals", "An infinite sum of rectangles", "The slope of any secant line", "A type of asymptote"],
+      "correct": 0,
+      "rationale": "Derivatives are limits of difference quotients [f(x+h) − f(x)]/h as h → 0; integrals are the ones built from sums of thin rectangles."
+    },
+    {
+      "id": 6,
+      "question": "What does the difference quotient [f(x+h) − f(x)]/h measure?",
+      "options": [
+        "The exact instantaneous speed at x",
+        "An average rate over an interval of width h",
+        "The area under f between x and x+h",
+        "A one-sided limit from the left"
+      ],
+      "correct": 1,
+      "rationale": "It is an average rate over the interval from x to x+h; only as h shrinks toward 0 does the fraction approach the instantaneous rate."
+    },
+    {
+      "id": 7,
+      "question": "Why is f(x) = (x² − 1)/(x − 1) undefined at x = 1?",
+      "options": [
+        "Because the numerator x² − 1 equals 0 there",
+        "Because substituting x = 1 gives division by zero",
+        "Because the values grow without bound near every point",
+        "Because the graph has a vertical asymptote at x = 0"
+      ],
+      "correct": 1,
+      "rationale": "At x = 1 both numerator and denominator vanish, giving 0/0 (division by zero); yet for x ≠ 1 the expression simplifies to x + 1, so its limit is still 2."
+    },
+    {
+      "id": 8,
+      "question": "If the values of f(x) grow without bound as x → a, what happens to the limit?",
+      "options": [
+        "It exists and equals some large finite number",
+        "It does not exist as a number — we say the limit is infinite",
+        "It automatically equals f(a)",
+        "It always equals zero"
+      ],
+      "correct": 1,
+      "rationale": "Unbounded growth means no single value L is approached, so the limit fails to exist as a number — informally we say the limit is infinite."
+    },
+    {
+      "id": 9,
+      "question": "Which calculus object is defined as a limit of sums of infinitely many thin rectangles?",
+      "options": ["The derivative", "The integral", "A difference quotient", "A secant slope"],
+      "correct": 1,
+      "rationale": "Integrals are limits of sums of infinitely many thin rectangles, which give areas; derivatives come from limits of difference quotients."
+    },
+    {
+      "id": 10,
+      "question": "The right-hand limit, written x → a⁺, describes:",
+      "options": [
+        "Approaching a from above (values greater than a)",
+        "Approaching a from below (values less than a)",
+        "Evaluating f(a) directly",
+        "Letting h become negative infinity"
+      ],
+      "correct": 0,
+      "rationale": "x → a⁺ approaches a from above while x → a⁻ approaches from below; the two-sided limit exists only when these two agree."
+    }
+  ]
 }

@@ -1,0 +1,76 @@
+{
+  "lessonId": "inflation",
+  "title": "Inflation: Causes, Measurement, and Control",
+  "questions": [
+    {
+      "id": 1,
+      "question": "India's inflation target of 4% with a band of ±2% is set on which index?",
+      "options": ["Wholesale Price Index", "Consumer Price Index", "GDP deflator", "Sensex"],
+      "correct": 1,
+      "rationale": "The flexible inflation-targeting framework uses headline CPI inflation — the index capturing retail prices of goods and services."
+    },
+    {
+      "id": 2,
+      "question": "The Wholesale Price Index in India is compiled by:",
+      "options": ["National Statistical Office (MoSPI)", "Reserve Bank of India", "Office of the Economic Adviser, DPIIT", "NITI Aayog"],
+      "correct": 2,
+      "rationale": "WPI is published by the Office of the Economic Adviser under DPIIT, Ministry of Commerce and Industry, with base year 2011-12; CPI comes from the NSO."
+    },
+    {
+      "id": 3,
+      "question": "A key difference between CPI and WPI is that CPI:",
+      "options": ["Covers only goods", "Covers retail prices including services", "Uses base year 2011-12", "Excludes food and fuel"],
+      "correct": 1,
+      "rationale": "CPI captures what consumers pay at retail for goods and services; WPI tracks wholesale goods prices only and uses base 2011-12."
+    },
+    {
+      "id": 4,
+      "question": "'Too much money chasing too few goods' describes:",
+      "options": ["Cost-push inflation", "Demand-pull inflation", "Deflation", "Disinflation"],
+      "correct": 1,
+      "rationale": "Demand-pull inflation arises when aggregate demand outruns the economy's capacity to supply — cue credit booms, stimulus, or war spending."
+    },
+    {
+      "id": 5,
+      "question": "An oil price shock that raises production costs across the economy causes:",
+      "options": ["Demand-pull inflation", "Cost-push inflation", "Creeping deflation", "No price change"],
+      "correct": 1,
+      "rationale": "Cost-push inflation comes from rising input costs (oil, wages, raw materials) shifting supply left — the 1970s oil shocks being the classic case."
+    },
+    {
+      "id": 6,
+      "question": "Core inflation differs from headline inflation because it:",
+      "options": ["Includes only food and fuel", "Excludes volatile food and fuel prices", "Measures wholesale prices only", "Is compiled quarterly only"],
+      "correct": 1,
+      "rationale": "Core inflation strips out food and fuel to reveal the underlying, sticky trend that central banks track."
+    },
+    {
+      "id": 7,
+      "question": "During unexpected inflation, which group clearly gains?",
+      "options": ["Creditors who lent at fixed interest", "Fixed-income pensioners", "Debtors who borrowed at fixed rates", "Savers holding cash"],
+      "correct": 2,
+      "rationale": "Debtors repay loans in cheaper rupees, while creditors, fixed earners, and cash savers lose purchasing power."
+    },
+    {
+      "id": 8,
+      "question": "Stagflation is the combination of:",
+      "options": ["Rising prices and rising output", "Stagnant growth with high unemployment and persistent inflation", "Falling prices and full employment", "Zero inflation and recession"],
+      "correct": 1,
+      "rationale": "Stagflation couples stagnation (low growth, unemployment) with inflation — historically traced to the 1970s oil shocks, and hard to treat because demand tools cannot fix supply-side costs."
+    },
+    {
+      "id": 9,
+      "question": "Zimbabwe in 2008 and Weimar Germany in 1923 are textbook examples of:",
+      "options": ["Creeping inflation", "Deflationary spiral", "Hyperinflation", "Disinflation"],
+      "correct": 2,
+      "rationale": "Both printed money to finance deficits and saw prices exploding — Zimbabwe's 100-trillion-dollar note and Weimar's wheelbarrows of notes."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a monetary remedy for inflation?",
+      "options": ["Raising the repo rate", "Increasing government expenditure", "Cutting direct taxes", "Expanding subsidies"],
+      "correct": 0,
+      "rationale": "The RBI cools inflation by raising the repo rate, tightening CRR, and selling securities via open market operations; the other options are expansionary fiscal moves."
+    }
+  ]
+}

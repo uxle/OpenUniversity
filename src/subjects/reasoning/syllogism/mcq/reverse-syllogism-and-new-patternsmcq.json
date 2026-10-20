@@ -1,0 +1,126 @@
+{
+  "lessonId": "reverse-syllogism-and-new-patterns",
+  "title": "Reverse Syllogism and New-Style Questions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What makes reverse syllogism different from classic syllogism?",
+      "options": [
+        "The conclusions are given first and you pick the statement set that makes them true",
+        "The statements are always negative",
+        "You must evaluate real-world truth of each option",
+        "Only three options are given instead of four"
+      ],
+      "correct": 0,
+      "rationale": "In reverse syllogism the conclusions are given and four option sets of statements are provided; you pick the set from which those conclusions definitely follow. The input and output of the classic form are swapped."
+    },
+    {
+      "id": 2,
+      "question": "What is the first step of the reverse-syllogism method taught in this lesson?",
+      "options": [
+        "Draw the Venn pictures demanded by each conclusion before looking at any option",
+        "Convert every statement in every option",
+        "Eliminate options that contain universal statements",
+        "Check which option sounds true in the real world"
+      ],
+      "correct": 0,
+      "rationale": "The method is conclusions first: translate each conclusion into a Venn requirement and a kill list, then scan the options against it. Construction of statement sets is rarely needed."
+    },
+    {
+      "id": 3,
+      "question": "Conclusions: Some cars are buses. No bus is a cycle. Which option set supports both conclusions?",
+      "options": [
+        "All cars are buses. All buses are cycles.",
+        "Some cars are buses. No bus is a cycle.",
+        "All cars are cycles. Some cycles are buses.",
+        "No car is a bus. No bus is a cycle."
+      ],
+      "correct": 1,
+      "rationale": "Option (b) states both conclusions outright, so both are definitely true. Option (a) kills conclusion II, option (c) kills it too, and option (d) contradicts conclusion I."
+    },
+    {
+      "id": 4,
+      "question": "Why does 'All cars are cycles. Some cycles are buses.' fail the conclusion 'No bus is a cycle'?",
+      "options": [
+        "Because cycles are never mentioned",
+        "Because some cycles being buses means at least one bus is a cycle",
+        "Because all cars are cycles",
+        "Because the option has no negative statement"
+      ],
+      "correct": 1,
+      "rationale": "Some cycles are buses guarantees an overlap between the bus and cycle circles, directly contradicting 'No bus is a cycle'. The kill list catches this in seconds."
+    },
+    {
+      "id": 5,
+      "question": "What does the statement 'Only a few A are B' mean?",
+      "options": [
+        "Some A are B, and possibly all A are B",
+        "Some A are B AND some A are not B",
+        "No A is a B",
+        "All A are B"
+      ],
+      "correct": 1,
+      "rationale": "Only a few A are B carries two commitments: at least one A is a B, and at least one A is not a B. It is strictly stronger than plain 'some'."
+    },
+    {
+      "id": 6,
+      "question": "Statement: Only a few doctors are surgeons. Which conclusion is definitely FALSE?",
+      "options": [
+        "Some doctors are surgeons",
+        "Some doctors are not surgeons",
+        "All doctors are surgeons",
+        "Some surgeons being doctors is a possibility"
+      ],
+      "correct": 2,
+      "rationale": "Only a few doctors are surgeons guarantees some doctors are outside the surgeon circle, so 'All doctors are surgeons' is contradicted and definitely false. The two 'some' conclusions are definitely true."
+    },
+    {
+      "id": 7,
+      "question": "How should the phrase 'A can never be B' be treated?",
+      "options": [
+        "As a possibility claim needing one supporting arrangement",
+        "As equivalent to 'No A is B', demanding definite proof of total separation",
+        "As a statement about real-world facts",
+        "As identical to 'only a few A are B'"
+      ],
+      "correct": 1,
+      "rationale": "'Can never be' is the mirror of possibility: it translates to 'No A is B' and demands the strongest proof. A single arrangement where an A sits inside B destroys it."
+    },
+    {
+      "id": 8,
+      "question": "Statements: Only a few pens are pencils. No pencil is a marker. Does 'Pens can never be markers' follow?",
+      "options": [
+        "Yes, because no pencil is a marker",
+        "No, because the statements never separate pens from markers",
+        "Yes, because only a few pens are pencils",
+        "No, because only a few means some are"
+      ],
+      "correct": 1,
+      "rationale": "Nothing in the statements separates the pen and marker circles — they are never mentioned together — so 'No pen is a marker' is not definitely true and the conclusion does not follow."
+    },
+    {
+      "id": 9,
+      "question": "Which type of statement eliminates reverse-syllogism options fastest?",
+      "options": [
+        "The E-type ('No X is Y')",
+        "The I-type ('Some X are Y')",
+        "Any statement about the conclusion's predicate",
+        "The longest statement in the option"
+      ],
+      "correct": 0,
+      "rationale": "A single No-statement contradicts the largest number of possible conclusions, so it should sit at the top of your kill list and eliminate options fastest."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson's timing advice, what should you do if two options are still alive after two minutes?",
+      "options": [
+        "Guess immediately and move on",
+        "Look for the E-type or 'only a few' statement to break the tie",
+        "Rebuild all four diagrams from scratch",
+        "Choose the option with more statements"
+      ],
+      "correct": 1,
+      "rationale": "The budget is about two minutes per question; if two options survive, hunt for the E-type or only-a-few statement — one of them almost always breaks the tie. If still stuck, mark and skip."
+    }
+  ]
+}

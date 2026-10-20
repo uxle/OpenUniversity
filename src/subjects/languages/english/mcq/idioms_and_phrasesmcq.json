@@ -29,6 +29,48 @@
       "options": ["Waste time uselessly", "Work or study late into the night", "End a long-standing feud", "Face negative consequences"],
       "correct": 1,
       "rationale": "'Burn the midnight oil' (देर रात तक मेहनत करना) means to work or study late into the night."
+    },
+    {
+      "id": 5,
+      "question": "What does 'Apple of one's eye' mean?",
+      "options": ["A matter of dispute", "Very precious / Dear", "An unexpected winner", "A selfish motive"],
+      "correct": 1,
+      "rationale": "'Apple of one's eye' (आँखों का तारा) means someone who is very precious or dear."
+    },
+    {
+      "id": 6,
+      "question": "'A dark horse' refers to:",
+      "options": ["A scholar or wise man", "A lively and active person", "An unexpected winner / Hidden talent", "A person unfit for a position"],
+      "correct": 2,
+      "rationale": "'A dark horse' (छुपारुस्तम) means an unexpected winner or someone with hidden talent."
+    },
+    {
+      "id": 7,
+      "question": "What does 'Bury the hatchet' mean?",
+      "options": ["Make peace / End hostility", "Bear the negative consequences", "Regret about a past loss", "Start a conversation"],
+      "correct": 0,
+      "rationale": "'Bury the hatchet' (पुरानी दुश्मनी भूलना) means to make peace and end hostility."
+    },
+    {
+      "id": 8,
+      "question": "'Cry over spilt milk' means:",
+      "options": ["To make a poor impression", "To face a difficult situation bravely", "To regret about an unchangeable past loss", "To provide for oneself dishonestly"],
+      "correct": 2,
+      "rationale": "'Cry over spilt milk' (व्यर्थ में पछताना) means to regret over a loss that has already happened and cannot be changed."
+    },
+    {
+      "id": 9,
+      "question": "If you have to 'Face the music', you must:",
+      "options": ["Work late into the night", "Bear the negative consequences of your actions", "Express good luck to someone", "Search for something uselessly"],
+      "correct": 1,
+      "rationale": "'Face the music' (परिणाम भुगतना) means to bear the negative consequences of one's actions."
+    },
+    {
+      "id": 10,
+      "question": "What does 'Break the ice' mean?",
+      "options": ["Cause a quarrel suddenly", "End hostility permanently", "Break silence / Start a conversation", "Do something immediately without delay"],
+      "correct": 2,
+      "rationale": "'Break the ice' (चुप्पी तोड़ना) means to break silence and start a conversation, often between strangers."
     }
   ]
 }

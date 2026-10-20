@@ -1,0 +1,76 @@
+{
+  "lessonId": "carvaka-and-heterodox-schools",
+  "title": "Charvaka and the Heterodox Traditions: Philosophy Without God or Soul",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The astika/nastika divide in Indian philosophy is fundamentally about:",
+      "options": ["Belief in a creator God", "Acceptance or rejection of the Vedas as a valid source of knowledge", "Belief in rebirth", "Whether rituals should be performed"],
+      "correct": 1,
+      "rationale": "Astika means accepting the Vedas as pramana (valid knowledge), not belief in God — Samkhya is astika yet posits no creator."
+    },
+    {
+      "id": 2,
+      "question": "Charvaka accepts which pramana as the only valid source of knowledge?",
+      "options": ["Inference (anumana)", "Perception (pratyaksha)", "Testimony (shabda)", "Comparison (upamana)"],
+      "correct": 1,
+      "rationale": "Charvaka's severe empiricism accepts only direct perception, rejecting inference and testimony as unperceived or second-hand."
+    },
+    {
+      "id": 3,
+      "question": "Why does Charvaka reject inference?",
+      "options": ["Because inference is too slow", "Because the universal connection (vyapti) between things can never be perceived across all cases", "Because the Buddha forbade it", "Because inference only works in mathematics"],
+      "correct": 1,
+      "rationale": "To infer fire from smoke requires knowing the two are always concomitant — and no one can survey all cases past and future, so inference presupposes what it should prove."
+    },
+    {
+      "id": 4,
+      "question": "According to Charvaka, how many elements constitute reality?",
+      "options": ["Five, including space", "Four: earth, water, fire, and air", "Three: earth, water, and fire", "One: primordial matter"],
+      "correct": 1,
+      "rationale": "Charvaka holds that only the four mahabhutas — earth, water, fire, and air — exist; consciousness arises from their combination, as fermentation arises from grain."
+    },
+    {
+      "id": 5,
+      "question": "Ajita Kesakambalin, Charvaka's first historical teacher, is known to us mainly from:",
+      "options": ["His own surviving sutras", "The Buddhist Samannaphala Sutta's list of six heterodox teachers", "The Vedas", "Ashokan edicts"],
+      "correct": 1,
+      "rationale": "Ajita Kesakambalin appears in the Buddhist Samannaphala Sutta as one of the six heterodox teachers contemporary with the Buddha; almost no Charvaka texts survive."
+    },
+    {
+      "id": 6,
+      "question": "The Ajivika school taught which core doctrine?",
+      "options": ["Hedonism — pleasure is the only good", "Niyati — strict determinism by fate", "The four noble truths", "Many-sided truth"],
+      "correct": 1,
+      "rationale": "Makkhali Gosala's Ajivikas held that niyati (fate) governs everything: effort is powerless, and every soul traverses a fixed series of lives before automatic liberation."
+    },
+    {
+      "id": 7,
+      "question": "Who is traditionally credited as the founder of the Charvaka system, and which 14th-century compendium preserves its doctrines?",
+      "options": ["Kapila; the Samkhyakarika", "Brihaspati; Madhavacharya's Sarvadarshanasamgraha", "Kanada; the Vaisheshikasutra", "Gosala; the Barabar edicts"],
+      "correct": 1,
+      "rationale": "Charvaka is attributed to the legendary Brihaspati, and survives mainly through opponents — above all Madhavacharya's Sarvadarshanasamgraha (14th century)."
+    },
+    {
+      "id": 8,
+      "question": "A paradox of Ajivika practice was that its members:",
+      "options": ["Taught ritual sacrifice to kings", "Practised severe austerities despite believing effort cannot change fate", "Rejected all forms of asceticism", "Worshipped Brihaspati daily"],
+      "correct": 1,
+      "rationale": "The Ajivikas practised nakedness, fasting, and harsh penance — not to burn away karma, but as the destiny-appointed path fixed by niyati."
+    },
+    {
+      "id": 9,
+      "question": "Which school is astika despite positing no creator God?",
+      "options": ["Charvaka", "Samkhya", "Ajivika", "Buddhism"],
+      "correct": 1,
+      "rationale": "Astika concerns acceptance of Vedic authority, not theism — Samkhya accepts the Vedas yet explains the world through purusha and prakriti without a creator."
+    },
+    {
+      "id": 10,
+      "question": "On Charvaka's view, consciousness is:",
+      "options": ["An eternal soul distinct from the body", "A by-product of the combination of the four elements", "An illusion produced by karma", "A property of space"],
+      "correct": 1,
+      "rationale": "As the Sarvadarshanasamgraha reports: just as betel, areca, and lime combine to yield red colour, so the elements combine to produce consciousness — which ends at death."
+    }
+  ]
+}

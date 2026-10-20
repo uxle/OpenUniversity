@@ -1,0 +1,76 @@
+{
+  "lessonId": "world-revolutions",
+  "title": "Revolutions That Made the Modern World: American, French, and Russian",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Enlightenment thinker argued for the separation of powers into legislative, executive, and judicial branches?",
+      "options": ["Locke", "Rousseau", "Montesquieu", "Voltaire"],
+      "correct": 2,
+      "rationale": "Montesquieu's The Spirit of the Laws argued for separating the three powers — the architectural principle of the 1787 American Constitution."
+    },
+    {
+      "id": 2,
+      "question": "The American Declaration of Independence was adopted on:",
+      "options": ["4 July 1776", "14 July 1789", "4 July 1787", "5 May 1789"],
+      "correct": 0,
+      "rationale": "Jefferson's Declaration was adopted on 4 July 1776; the Constitution followed in 1787 and the Bill of Rights in 1791."
+    },
+    {
+      "id": 3,
+      "question": "The American war ended decisively when Cornwallis surrendered at:",
+      "options": ["Saratoga", "Lexington", "Yorktown", "New York"],
+      "correct": 2,
+      "rationale": "Cornwallis surrendered at Yorktown in 1781; the Treaty of Paris (1783) then recognised the United States."
+    },
+    {
+      "id": 4,
+      "question": "On 17 June 1789, the Third Estate proclaimed itself:",
+      "options": ["The Committee of Public Safety", "The National Assembly", "The Directory", "The Estates-General"],
+      "correct": 1,
+      "rationale": "The Third Estate declared itself the National Assembly, sealing the claim with the Tennis Court Oath of 20 June — no dissolution until France had a constitution."
+    },
+    {
+      "id": 5,
+      "question": "The Declaration of the Rights of Man and of the Citizen was adopted in:",
+      "options": ["June 1789", "August 1789", "January 1793", "July 1794"],
+      "correct": 1,
+      "rationale": "The Declaration of 26 August 1789 proclaimed liberty, property, and equality before the law — the French Revolution's manifesto."
+    },
+    {
+      "id": 6,
+      "question": "The Reign of Terror (1793-94) is associated with:",
+      "options": ["Napoleon Bonaparte", "Maximilien Robespierre and the Jacobins", "Lafayette", "The Directory"],
+      "correct": 1,
+      "rationale": "The Jacobins under Robespierre ruled through the Committee of Public Safety, sending some 17,000 people to the guillotine before Robespierre himself fell in Thermidor (July 1794)."
+    },
+    {
+      "id": 7,
+      "question": "Lenin called the revolution of 1905 the 'dress rehearsal' for 1917. The event that triggered it was:",
+      "options": ["The Kronstadt mutiny", "Bloody Sunday, when troops fired on Father Gapon's petitioners", "Defeat at Waterloo", "The October Manifesto"],
+      "correct": 1,
+      "rationale": "On Bloody Sunday (January 1905) troops fired on peaceful petitioners outside the Winter Palace, sparking strikes, the Potemkin mutiny, and the Duma concession."
+    },
+    {
+      "id": 8,
+      "question": "In the February Revolution of 1917:",
+      "options": ["The Bolsheviks seized the Winter Palace", "Tsar Nicholas II abdicated and a Provisional Government took over", "Lenin returned in a sealed train", "The Red Army won the civil war"],
+      "correct": 1,
+      "rationale": "Bread riots and mutinies at Petrograd forced Nicholas II's abdication; the Provisional Government (Lvov, then Kerensky) continued the unpopular war."
+    },
+    {
+      "id": 9,
+      "question": "The October Revolution of 7-8 November 1917 was carried out by:",
+      "options": ["The Constituent Assembly", "The Bolsheviks under Lenin and Trotsky's Military Revolutionary Committee", "Tsarist generals", "The Kronstadt sailors alone"],
+      "correct": 1,
+      "rationale": "Lenin's Bolsheviks, organised by Trotsky's Military Revolutionary Committee, seized key points in Petrograd; the cruiser Aurora's shot signalled the Winter Palace assault."
+    },
+    {
+      "id": 10,
+      "question": "Stalin's first Five-Year Plan (1928) was paired with:",
+      "options": ["The New Economic Policy", "Collectivisation of peasant agriculture", "The October Manifesto", "The Kronstadt rising"],
+      "correct": 1,
+      "rationale": "From 1928 Stalin forced heavy industrialisation through Five-Year Plans and collectivised farms — dekulakisation and the 1932-33 famine (Holodomor) followed."
+    }
+  ]
+}

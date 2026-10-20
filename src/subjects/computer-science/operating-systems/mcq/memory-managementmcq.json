@@ -1,0 +1,126 @@
+{
+  "lessonId": "memory-management",
+  "title": "Memory Management: Fitting Programs into RAM",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the difference between a logical and a physical address?",
+      "options": [
+        "Logical addresses are longer than physical ones",
+        "A logical address is what the program sees; the physical address is the real RAM location the MMU maps it to",
+        "Physical addresses exist only on disk",
+        "They are identical in every modern OS"
+      ],
+      "correct": 1,
+      "rationale": "The program uses logical (virtual) addresses; the MMU translates each to a physical RAM location at run time, enabling isolation and relocation."
+    },
+    {
+      "id": 2,
+      "question": "Free memory exists but is scattered into small, non-contiguous holes that cannot satisfy a request. This is called:",
+      "options": [
+        "Internal fragmentation",
+        "External fragmentation",
+        "Thrashing",
+        "Belady's anomaly"
+      ],
+      "correct": 1,
+      "rationale": "External fragmentation is free memory broken into scattered holes; its cures are compaction (shuffling processes together) or paging."
+    },
+    {
+      "id": 3,
+      "question": "Why does paging eliminate external fragmentation?",
+      "options": [
+        "Because every page must be physically adjacent to its neighbours",
+        "Because any page can be placed in any free frame of the same size",
+        "Because pages are always contiguous on disk",
+        "Because the TLB merges holes automatically"
+      ],
+      "correct": 1,
+      "rationale": "Paging divides memory into fixed-size pages and frames, and any page can occupy any free frame — so no unusable gaps remain between allocations."
+    },
+    {
+      "id": 4,
+      "question": "With a 20 ns TLB lookup, 100 ns memory access, and an 80% TLB hit ratio, what is the effective access time?",
+      "options": [
+        "120 ns",
+        "140 ns",
+        "220 ns",
+        "100 ns"
+      ],
+      "correct": 1,
+      "rationale": "Hit cost = 20 + 100 = 120 ns; miss cost = 20 + 100 + 100 = 220 ns; effective time = 0.8 × 120 + 0.2 × 220 = 140 ns."
+    },
+    {
+      "id": 5,
+      "question": "What is the final step when servicing a page fault?",
+      "options": [
+        "Kill the process that faulted",
+        "Restart the faulting instruction so the process never notices",
+        "Flush the TLB and reboot",
+        "Move the page to disk"
+      ],
+      "correct": 1,
+      "rationale": "After loading the page and updating the page table, the OS restarts the faulting instruction — the transparent restart is what makes demand paging work."
+    },
+    {
+      "id": 6,
+      "question": "Belady's anomaly, where adding frames increases page faults, afflicts which replacement algorithm?",
+      "options": [
+        "LRU",
+        "Optimal",
+        "FIFO",
+        "Clock with second chance"
+      ],
+      "correct": 2,
+      "rationale": "FIFO can produce more faults with 4 frames (10) than with 3 (9) on the same reference string; LRU and Optimal are immune to the anomaly."
+    },
+    {
+      "id": 7,
+      "question": "On the reference string 1 2 3 4 1 2 5 1 2 3 4 5 with 3 frames, how many faults do FIFO, LRU, and Optimal produce respectively?",
+      "options": [
+        "9, 10, and 7",
+        "7, 9, and 10",
+        "10, 9, and 7",
+        "9, 7, and 10"
+      ],
+      "correct": 0,
+      "rationale": "The classic result is FIFO = 9, LRU = 10, and Optimal = 7 faults; Optimal is unimplementable and serves only as a benchmark."
+    },
+    {
+      "id": 8,
+      "question": "A system where processes fault continuously and the CPU is busy servicing faults instead of executing is:",
+      "options": [
+        "Compacting",
+        "Thrashing",
+        "Paging in the working set",
+        "Segmentation"
+      ],
+      "correct": 1,
+      "rationale": "Thrashing is the death spiral from too few frames per process; throughput collapses even though the CPU appears 100% busy."
+    },
+    {
+      "id": 9,
+      "question": "The working set of a process is:",
+      "options": [
+        "All pages the process will ever use",
+        "The set of pages used in the last Δ references — the memory it truly needs",
+        "The pages currently on the swap disk",
+        "One page of the page table"
+      ],
+      "correct": 1,
+      "rationale": "The working-set model counts pages used in a recent window Δ; guaranteeing each process its working set is the cure for thrashing."
+    },
+    {
+      "id": 10,
+      "question": "How does segmentation differ from paging?",
+      "options": [
+        "Segments are fixed-size units of physical memory",
+        "Segments are variable-size and divided by meaning (code, stack, heap), while paging divides by size",
+        "Segmentation cannot be combined with paging",
+        "Segmentation removes internal fragmentation but causes page faults"
+      ],
+      "correct": 1,
+      "rationale": "Segmentation divides memory by logical meaning into variable-size segments; paging divides by size. Real systems like x86 combine both — segment logically, then page each segment."
+    }
+  ]
+}

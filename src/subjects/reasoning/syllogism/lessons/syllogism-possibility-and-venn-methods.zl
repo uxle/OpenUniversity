@@ -1,0 +1,141 @@
+# Syllogism: Possibility Cases and Venn Diagram Mastery
+
+> Possibility questions flip syllogism from "what must be true" to
+> "what could be true." This lesson covers the golden possibility rule,
+> the Venn method, and the either-or and three-statement cases.
+
+[important]
+The golden rule: **a possibility conclusion is true when it is not
+definitely contradicted** by the statements. You only have to fail to
+disprove it. If every valid Venn arrangement contradicts it, the
+possibility is false.
+[/important]
+
+## 1. Recap: The Four Statement Types
+
+| Type | Form | Venn picture in words |
+| --- | --- | --- |
+| A — universal affirmative | All A are B | circle A sits fully inside circle B |
+| E — universal negative | No A is B | circles A and B do not touch |
+| I — particular affirmative | Some A are B | the circles overlap (A inside B also counts) |
+| O — particular negative | Some A are not B | part of A sticks out of B |
+
+[definition]
+A **definite conclusion** must hold in *every* valid Venn arrangement.
+A **possibility conclusion** only needs one arrangement in which it
+*could* hold — it fails only if every arrangement contradicts it.
+[/definition]
+
+## 2. The Possibility Test in Three Steps
+
+1. Draw every Venn arrangement the statements permit.
+2. Ask: does any arrangement allow the conclusion's picture?
+3. If none does, the statements definitely contradict it and the
+   possibility fails; otherwise it is true.
+
+## 3. Worked Possibility Cases
+
+| Statement | Possibility conclusion | Verdict | Why |
+| --- | --- | --- | --- |
+| All A are B | Some B being A is a possibility | True | not contradicted; some B are A is in fact definite here |
+| Some A are not B | All A being B is a possibility | False | contradicted: the statement says some A lie outside B |
+| Some A are B | All A being B is a possibility | True | "some" never excludes "all" |
+| No A is B | Some A being B is a possibility | False | contradicted by the total separation |
+| Some A are not B | Some A being B is a possibility | True | the A's outside B do not stop other A's being inside B |
+
+[warning]
+The phrase "is a possibility" changes the whole question. A conclusion
+that fails as a definite claim may pass as a possibility, and a
+reasonable-sounding one may fail because one arrangement contradicts it.
+[/warning]
+
+## 4. Conversion Rules Table
+
+| Original statement | Valid conversion | Invalid conversion |
+| --- | --- | --- |
+| All A are B | Some B are A | All B are A |
+| Some A are B | Some B are A | — |
+| No A is B | No B is A | — |
+| Some A are not B | no conversion exists | Some B are not A (does not follow) |
+
+The O-type has no valid conversion — that single fact settles many trap
+options instantly.
+
+## 5. The Four Immediate-Inference Cases
+
+| Statement | Definitely follows | Definitely fails |
+| --- | --- | --- |
+| All A are B | Some A are B; Some B are A | No A is B; Some A are not B |
+| No A is B | Some A are not B; No B is A | Some A are B; All A are B |
+| Some A are B | Some B are A | No A is B; All A are not B |
+| Some A are not B | none beyond the original | All A are B |
+
+**Worked case:** All parks are gardens. "Some gardens are parks" follows
+(conversion of A-type), as does "Some parks are gardens" (A implies I);
+"No park is a garden" and "Some parks are not gardens" both fail.
+
+## 6. Three-Statement Syllogisms
+
+With three statements, combine them **in pairs**:
+
+```text
+Statements: All A are B. All B are C. All C are D.
+Pair 1+2 -> All A are C.   Pair 2+3 -> All B are D.
+Combine:   All A are C + All C are D -> All A are D.
+```
+
+Derive every two-statement conclusion the rules allow, then treat those
+derived conclusions as new statements and combine again — most three-
+statement questions are two two-statement questions in one coat.
+
+[tip]
+Write the chain A → B → C → D over the terms. If the middle terms link
+head-to-tail, the whole chain combines — the answer is about the ends.
+[/tip]
+
+## 7. Either-Or Cases (Complementary Pairs)
+
+**Either-or** applies when two conclusions, taken alone, both fail — but
+together they cover every arrangement. Conditions:
+
+1. Both conclusions share the same subject and predicate.
+2. One is universal, the other particular (an A-O pair or an E-I pair).
+3. One is affirmative, the other negative.
+4. Neither follows definitely from the statements.
+
+**Worked case:** Some chairs are tables. Conclusions: I. All chairs are
+tables. II. Some chairs are not tables. Neither follows definitely, but
+they form an A-O complementary pair on the same terms — in every
+arrangement exactly one is true. Answer: **either I or II follows**.
+
+## 8. Two Full Worked Examples
+
+**Example 1:** Some emails are letters. All letters are posts.
+I. Some emails are posts — follows (Some + All combines to Some A are C).
+II. Some posts being letters is a possibility — follows; it is definite
+by conversion, and a definite truth always satisfies a possibility.
+**Both I and II follow.**
+
+**Example 2:** No cup is a plate. Some plates are dishes.
+I. Some dishes being cups is a possibility — can a dish overlap the cup
+circle while no cup touches a plate? Yes, dishes may sit anywhere outside
+"plate". Not contradicted, so **true**.
+II. Some cups are dishes — does **not** follow definitely; the overlap is
+only possible, not necessary. **Only I follows.**
+
+## 9. Strategy Summary
+
+| Question phrasing | What it demands | Failure condition |
+| --- | --- | --- |
+| "definitely follows" | true in every Venn arrangement | one counter-arrangement kills it |
+| "is a possibility" | true in at least one arrangement | contradicted in every arrangement |
+| "either I or II follows" | complementary pair, neither definite | both follow, or the pair is not complementary |
+| three statements | combine in pairs, then again | skipping the derived conclusions |
+
+[example]
+Exam method: **(1)** label each statement A/E/I/O, **(2)** apply the
+conversion table if the conclusion's terms look reversed, **(3)** sketch
+the overlap — "some" includes "all inside," **(4)** for possibility
+questions, hunt for a contradiction, not a proof, **(5)** check
+complementary pairs before marking "neither follows."
+[/example]

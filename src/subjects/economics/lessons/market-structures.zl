@@ -1,0 +1,128 @@
+# Market Structures: Competition, Monopoly, and the Middle Ground
+
+> Market structure classifies industries by how many sellers compete,
+> how different their products are, and how hard entry is.
+
+[definition]
+**Market structure** refers to the organisational features of a market
+— number of buyers and sellers, nature of the product, freedom of
+entry and exit, and control over price — that shape firms' behaviour
+and outcomes.
+[/definition]
+
+## 1. Perfect Competition
+
+Features of a **perfectly competitive** market:
+
+- Very large number of buyers and sellers — none big enough to move
+  the price; each is a **price taker**.
+- **Homogenous product** — identical units, perfect substitutes.
+- **Free entry and exit** — no barriers; profits attract entrants
+  until profits normalise.
+- Perfect information and perfect mobility of factors.
+
+The firm's demand curve is horizontal at the market price: it can sell
+any quantity at that price but nothing above it. India's agricultural
+commodity mandis (wheat, vegetables sold by small farmers) approximate
+this structure, as does a street vegetable market.
+
+## 2. Monopoly
+
+A **monopoly** is one seller of a product with no close substitutes —
+the firm *is* the industry and is a **price maker**. Barriers to entry
+protect it: legal (patents, licences), control of a key input,
+enormous capital requirement, or deliberate limit pricing.
+
+[info title="Natural monopoly"]
+When huge **economies of scale** mean one firm can serve the entire
+market cheaper than two could, a **natural monopoly** results — the
+average cost curve keeps falling over the whole demand range. Indian
+Railways' track network and electricity transmission grids are classic
+examples, which is why they are state-run or price-regulated.
+[/info]
+
+## 3. Monopolistic Competition
+
+Many sellers, **easy entry**, but products are **differentiated** —
+by brand, packaging, quality, location, service (toothpaste brands,
+neighbourhood restaurants, local tuition centres). Each firm has a
+slightly downward-sloping demand curve, so it has *some* pricing power
+within its brand-loyal customers. Advertising and branding replace
+price as the weapon; long-run profit is competed down toward normal
+levels by free entry.
+
+## 4. Oligopoly
+
+A **few large firms** dominate — each so big that its actions affect
+rivals, making firms strategically **interdependent**: before changing
+price, a firm must guess rivals' reactions. Features:
+
+- High entry barriers (capital, technology, patents).
+- Products may be homogenous (steel, cement, aluminium) or
+  differentiated (cars, smartphones, airlines).
+- **Kinked demand curve** — rivals match a price cut but ignore a
+  price rise, so price becomes sticky near the kink.
+- Non-price competition and a temptation to form **cartels** (an
+  explicit collusive agreement, illegal in India under the Competition
+  Act, 2002).
+
+Indian examples: telecom services, cement, two-wheelers, airlines.
+
+@diagram tree id="market-structures-tree" layout="tree" aria="Market structures spectrum"
+  "Market Structures" -> "Perfect Competition"
+  "Market Structures" -> "Monopolistic Competition"
+  "Market Structures" -> Oligopoly
+  "Market Structures" -> Monopoly
+  "Perfect Competition" -> "Many sellers, homogenous product"
+  Oligopoly -> "Few large interdependent firms"
+  Monopoly -> "Single seller, entry barriers"
+@/diagram
+
+## 5. Comparison of All Four Structures
+
+| Basis | Perfect competition | Monopolistic competition | Oligopoly | Monopoly |
+| --- | --- | --- | --- | --- |
+| Number of sellers | Very many | Many | Few | One |
+| Product type | Homogenous | Differentiated | Homo- or differentiated | Unique, no close substitute |
+| Entry barriers | None | Low | High | Very high or absolute |
+| Price control | None — price taker | Limited | Considerable, interdependent | Substantial — price maker |
+| Demand curve of firm | Horizontal | Slightly downward | Kinked | Downward, market demand |
+| Non-price competition | None | Branding, advertising | Heavy | Public relations |
+| Approximate example | Vegetable mandis | Restaurants, toothpaste | Telecom, airlines | Indian Railways |
+
+## 6. Price and Output Outcomes
+
+- Perfect competition produces the largest output at the lowest
+  price (P = MC); it is the efficiency benchmark.
+- Monopoly restricts output below, and sets price above, the
+  competitive level — creating deadweight loss, the reason for
+  anti-trust and regulation of natural monopolies.
+- Monopolistic competition gives variety at slightly higher prices;
+  oligopoly outcomes lie between, shaped by rivalry or collusion.
+
+[example]
+When India's telecom sector consolidated to a few major players,
+tariff wars, bundle pricing, and spectrum-auction bidding showed
+classic oligopoly interdependence — each operator's pricing assumed
+answers from the others.
+[/example]
+
+## 7. Quick Revision Table
+
+| Clue in a question | Structure it points to |
+| --- | --- |
+| 'Price taker', homogenous good | Perfect competition |
+| Single seller, no substitutes | Monopoly |
+| Falling AC over whole market, regulation needed | Natural monopoly |
+| Many sellers with brands | Monopolistic competition |
+| Kinked demand, sticky prices | Oligopoly |
+| Agreement among rival firms | Cartel (collusive oligopoly) |
+
+[summary]
+Sellers' numbers, product differentiation, and entry barriers place
+every industry between perfect competition (price takers, benchmark
+efficiency) and monopoly (price maker, deadweight loss); branding
+creates the middle ground of monopolistic competition, and
+interdependence defines oligopoly, where strategy — not just price —
+decides outcomes.
+[/summary]

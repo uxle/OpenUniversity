@@ -1,0 +1,139 @@
+# Population and Settlements: How People Fill the Earth
+
+> Eight billion people now share the planet, crowded into a handful of
+> rich regions and scattered across vast empty ones. This lesson
+> explains the growth, the patterns, the migration between them, and
+> the settlements people build.
+
+## 1. A Story in Milestones
+
+| Milestone | Year | Gap from previous |
+| --- | --- | --- |
+| 1 billion | ~1804 | — |
+| 2 billion | 1927 | 123 years |
+| 3 billion | 1959 | 32 years |
+| 4 billion | 1974 | 15 years |
+| 7 billion | 2011 | 12 years |
+| 8 billion | November 2022 | 11 years |
+
+[note]
+Although each billion arrives sooner, the *rate* of growth peaked
+around the late 1960s at above 2% per year and has fallen to under 1%:
+the world is still growing, but ever more slowly.
+[/note]
+
+## 2. The Demographic Transition Model
+
+[definition]
+The **demographic transition model** traces a population from high
+birth and death rates to low ones as a country develops, passing
+through five stages.
+[/definition]
+
+| Stage | Birth rate | Death rate | Growth | Example today |
+| --- | --- | --- | --- | --- |
+| 1 High stationary | High | High | Nearly zero | A few isolated groups only |
+| 2 Early expanding | High | Falling fast | Rapid | Parts of Africa |
+| 3 Late expanding | Falling | Low | Slowing | India, Latin America |
+| 4 Low stationary | Low | Low | Nearly zero | USA, much of Europe |
+| 5 Declining | Very low | Low | Negative | Japan, Germany |
+
+## 3. Where People Live
+
+Asia holds about **60% of humanity**. Within it, population presses
+thickest on the river plains and coastlines of East, South, and
+South-East Asia, in western Europe, and along the north-eastern United
+States.
+
+@chart bar title="Population by continent in billions"
+labels:
+Asia
+Africa
+Europe
+Latin America
+Northern America
+Oceania
+
+data:
+4.8
+1.5
+0.75
+0.66
+0.39
+0.05
+@/chart
+
+| Rank | Country | Approximate population |
+| --- | --- | --- |
+| 1 | India (passed China about 2023) | ~1.43 bn |
+| 2 | China | ~1.41 bn |
+| 3 | United States | ~335 mn |
+| 4 | Indonesia | ~280 mn |
+| 5 | Pakistan | ~245 mn |
+
+[info title="Why so uneven"]
+Sparse lands share harsh conditions — the Amazon's forest, the Sahara's
+aridity, polar cold, and the thin air of high mountains. Crowded lands
+offer water, fertile soil, level ground, and jobs.
+[/info]
+
+## 4. Migration
+
+| Push factors drive people out | Pull factors draw people in |
+| --- | --- |
+| War and persecution | Peace and safety |
+| Poverty and unemployment | Jobs and higher wages |
+| Disasters and crop failure | Schools and hospitals |
+
+**Emigration** is leaving one's country; **immigration** is entering
+another. Money migrants send home — remittances — is a pillar of many
+economies.
+
+## 5. India by the 2011 Census
+
+India counts itself every ten years — decennially — since 1881; the
+2021 Census was deferred. Key figures from **Census 2011**:
+
+| Indicator | Value |
+| --- | --- |
+| Population | 1.21 billion (17.5% of the world) |
+| Literacy | ~74% (males ~82%, females ~66%) |
+| Most and least literate states | Kerala ~94%; Bihar ~62% |
+| Sex ratio | 943 females per 1,000 males (Kerala 1,084; Haryana 879) |
+| Child sex ratio (0–6 years) | 919 |
+| Density | 382 persons per km² (Bihar densest) |
+| Urban share | ~31% |
+
+## 6. Settlements
+
+@diagram tree id="settlement-patterns" layout="tree" aria="Settlement types from compact to dispersed"
+  Settlements -> "Compact / nucleated"
+  Settlements -> Dispersed
+  Settlements -> Linear
+  "Compact / nucleated" -> "Fertile plains and water points"
+  Dispersed -> "Hills, forests, large farms"
+  Linear -> "Along roads, rivers, and levees"
+@/diagram
+
+| Aspect | Rural settlement | Urban settlement |
+| --- | --- | --- |
+| Main occupation | Farming, fishing, forestry | Industry, services, commerce |
+| Density | Low | High |
+| Social life | Small-scale, kinship-based | Heterogeneous, anonymous |
+| Settlement form | Compact villages or scattered farms | Nucleated, ever-spreading cities |
+
+[example]
+Compact villages cluster where water and fertile soil coincide, as on
+the Ganga plain; farmsteads scatter across the hills of Uttarakhand.
+[/example]
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| 8 billion reached? | November 2022 |
+| Stage 2 of the DTM? | High birth rate with falling death rate |
+| Share of humanity in Asia? | About 60% |
+| World's most populous country? | India (since about 2023) |
+| India's 2011 sex ratio? | 943 females per 1,000 males |
+| Census frequency in India? | Every ten years since 1881 |

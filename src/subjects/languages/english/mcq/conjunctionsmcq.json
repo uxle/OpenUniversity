@@ -29,6 +29,53 @@
       "options": ["is", "was", "were", "will be"],
       "correct": 2,
       "rationale": "The unreal/hypothetical 'As if' structure uses 'were' for all subjects, not just plural ones."
+    },
+    {
+      "id": 5,
+      "question": "\"Hardly had I reached the station ___ the train left.\" Choose the correct word.",
+      "options": ["than", "then", "when", "that"],
+      "correct": 2,
+      "rationale": "'Hardly / Scarcely' always pairs with 'when', not 'than'. ('Than' is the mandatory partner of 'No sooner'.)"
+    },
+    {
+      "id": 6,
+      "question": "Which word is the mandatory pair of 'Between' in correlative conjunctions?",
+      "options": ["Or", "And", "Nor", "But also"],
+      "correct": 1,
+      "rationale": "'Between' must be followed by 'And' — e.g., 'between you and me', never 'between you or me'."
+    },
+    {
+      "id": 7,
+      "question": "\"Both Ram and Shyam ___ going to the market.\" Choose the correct verb.",
+      "options": ["is", "are", "was", "has been"],
+      "correct": 1,
+      "rationale": "Subjects joined by 'Both ... And' always take a plural verb, regardless of how many subjects there are."
+    },
+    {
+      "id": 8,
+      "question": "\"Neither the players nor the coach ___ ready for the match.\" Choose the correct verb.",
+      "options": ["were", "are", "have been", "was"],
+      "correct": 3,
+      "rationale": "With 'Either ... Or' and 'Neither ... Nor', the verb agrees with the subject closer to it — here 'the coach', so 'was'."
+    },
+    {
+      "id": 9,
+      "question": "\"The manager, as well as his employees, ___ happy.\" Choose the correct verb.",
+      "options": ["is", "are", "were", "have been"],
+      "correct": 0,
+      "rationale": "With 'as well as' (like 'along with', 'together with'), the verb agrees with the first subject only — 'the manager', so 'is'."
+    },
+    {
+      "id": 10,
+      "question": "Why is \"If suppose it rains tomorrow, what will you do?\" considered incorrect?",
+      "options": [
+        "Because 'suppose' can never be used about weather",
+        "Because 'if' requires a comma before it",
+        "Because it should be written in past tense",
+        "Because 'Suppose' and 'If' mean the same thing and must never be used together"
+      ],
+      "correct": 3,
+      "rationale": "'Suppose' and 'If' mean the same thing, so using them together ('if suppose') is redundant — use one of them alone."
     }
   ]
 }

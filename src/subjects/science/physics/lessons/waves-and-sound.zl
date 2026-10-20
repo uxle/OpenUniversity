@@ -1,0 +1,135 @@
+# Waves and Sound: Oscillations That Carry Energy
+
+> A wave carries energy, not matter. This lesson covers wave
+> vocabulary, the behaviour of sound, echo ranging, SONAR, the
+> Doppler effect, and sonic booms.
+
+## 1. What Is a Wave?
+
+A **wave** is a disturbance that travels carrying energy without
+carrying matter along — a floating cork bobs in place as ripples
+pass. In a **transverse** wave the particles oscillate across the
+direction of travel; in a **longitudinal** wave they oscillate
+along it.
+
+| Feature | Transverse | Longitudinal |
+| --- | --- | --- |
+| Particle motion | perpendicular to travel | parallel to travel |
+| Shape | crests and troughs | compressions and rarefactions |
+| Examples | rope wave, water ripples, light | sound, spring pulses |
+
+@diagram tree id="wave-classification" layout="tree" aria="Waves classified as transverse or longitudinal with examples"
+  "Wave" -> "Transverse: rope, ripples, light"
+  "Wave" -> "Longitudinal: sound, spring pulses"
+@/diagram
+
+## 2. Wave Vocabulary
+
+**Amplitude** is the maximum disturbance, **wavelength** λ the
+length of one full wave, **frequency** f the waves passing per
+second, and **time period** T = 1/f.
+
+@math label="eq:wave-speed"
+v = f\lambda
+@/math
+
+[example]
+A 500 Hz note in air at 343 m/s has
+λ = 343 ÷ 500 ≈ 0.69 m — the spacing between successive
+compressions.
+[/example]
+
+## 3. Sound: A Mechanical Wave
+
+Sound is a **longitudinal mechanical wave** — it needs a medium
+and cannot cross a vacuum, as the classic bell-jar experiment
+shows. Speed rises with the medium's stiffness:
+
+@chart bar title="Approximate speed of sound (m/s)"
+labels:
+Air 20 °C
+Water
+Steel
+
+data:
+343
+1500
+5000
+@/chart
+
+## 4. Pitch, Loudness, and Quality
+
+| Sensation | Depends on | Change |
+| --- | --- | --- |
+| Pitch | frequency | higher f → shriller note |
+| Loudness | amplitude | larger amplitude → louder |
+| Quality (timbre) | waveform | separates a flute from a violin |
+
+The healthy human ear hears roughly **20 Hz to 20,000 Hz**.
+
+## 5. Infrasound and Ultrasound
+
+**Infrasound** (below 20 Hz) is produced by earthquakes and
+severe storms — animals often sense it before humans feel the
+quake. **Ultrasound** (above 20,000 Hz) reflects finely off small
+objects, which suits it to **SONAR**, medical sonography, breaking
+kidney stones, and the echolocation of bats and dolphins.
+
+[note]
+Ultrasound is chosen for scans because it is harmless compared
+with X-rays, and its tiny wavelength resolves fine detail.
+[/note]
+
+## 6. Echo and Reverberation
+
+An **echo** is a distinct reflected sound. The ear holds a
+sensation about 0.1 s, so the reflector must be at least
+
+@math label="eq:echo-distance"
+d = \frac{v t}{2} = \frac{343 \times 0.1}{2} \approx 17.2\ \mathrm{m}
+@/math
+
+away for the echo to be heard separately. **Reverberation** — the
+persistence of sound from many reflections — blurs speech in a
+bare hall, so walls and ceilings are covered with absorbers.
+
+## 7. SONAR
+
+**SONAR** (sound navigation and ranging) times an ultrasonic pulse
+to the sea floor and back:
+
+@math label="eq:sonar"
+d = \frac{v \times t}{2}
+@/math
+
+[example]
+A pulse returns after 2 s; sea water carries sound at 1500 m/s,
+so the depth d = 1500 × 2 ÷ 2 = 1500 m.
+[/example]
+
+## 8. Doppler Effect and Shock Waves
+
+The **Doppler effect** raises the pitch of a source approaching
+you and lowers it as it recedes — the siren of a passing
+ambulance. The same shift in radar speed guns and in the redshift
+of galaxies reveals motion along the line of sight.
+
+@math label="eq:doppler"
+f' = f\,\frac{v \pm v_{o}}{v \mp v_{s}}
+@/math
+
+When a source outruns its own sound (speed > Mach 1), the
+wavefronts pile into a cone and produce a **sonic boom**. The
+**Mach number** is the ratio of source speed to sound speed.
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Wave relation | v = fλ |
+| Sound in air | ~343 m/s at 20 °C; faster in water, fastest in steel |
+| Sound needs | a medium — never a vacuum |
+| Audible range | 20 Hz to 20,000 Hz |
+| Echo rule | reflector ≥ 17.2 m away (0.1 s persistence) |
+| SONAR depth | d = vt ÷ 2 |
+| Sonic boom | source exceeding the speed of sound (Mach > 1) |

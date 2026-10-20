@@ -29,6 +29,55 @@
       "options": ["Concise, Brief, Short", "Dangerous, Risky", "Poor, Penniless", "Formless"],
       "correct": 0,
       "rationale": "'Laconic' (कम बोलने वाला / संक्षिप्त) means Concise, Brief, or Short."
+    },
+    {
+      "id": 5,
+      "question": "'Affluent' means the same as:",
+      "options": ["Poor, Penniless", "Rich, Wealthy, Prosperous", "Formless", "Honest, Principled"],
+      "correct": 1,
+      "rationale": "'Affluent' (समृद्ध / धनी) means Rich or Wealthy; 'Destitute' is its opposite meaning Poor."
+    },
+    {
+      "id": 6,
+      "question": "'Treason' most nearly means:",
+      "options": ["Disloyalty, Betrayal", "Comfort, Mercy", "Result, Outcome", "Truthfulness"],
+      "correct": 0,
+      "rationale": "'Treason' (देशद्रोह / गद्दारी) means Disloyalty or Betrayal."
+    },
+    {
+      "id": 7,
+      "question": "'Curtail' means to:",
+      "options": ["Increase, Expand", "Reconsider, Revoke", "Reduce, Decrease, Diminish", "Provoke, Endanger"],
+      "correct": 2,
+      "rationale": "'Curtail' (कम करना) means Reduce, Decrease, or Diminish."
+    },
+    {
+      "id": 8,
+      "question": "'Veracity' is a synonym of:",
+      "options": ["Disrespect", "Misleading", "Truthfulness", "Loneliness"],
+      "correct": 2,
+      "rationale": "'Veracity' (सच्चाई) means Truthfulness; 'Irreverence' means Disrespect."
+    },
+    {
+      "id": 9,
+      "question": "Which phrasal verb means 'to take care of'?",
+      "options": ["Look after", "Look into", "Look for", "Take after"],
+      "correct": 0,
+      "rationale": "'Look after' (देखभाल करना) means to take care of; 'Look into' means investigate and 'Look for' means search."
+    },
+    {
+      "id": 10,
+      "question": "'Forlorn' describes someone who is:",
+      "options": ["Wealthy and prosperous", "Lonely, sad, abandoned", "Clever and sly", "Clear and transparent"],
+      "correct": 1,
+      "rationale": "'Forlorn' means Lonely, sad, or abandoned; 'Crafty/Cunning' means Clever, sly."
+    },
+    {
+      "id": 11,
+      "question": "'Opaque' is the opposite of:",
+      "options": ["Transparent", "Devastated", "Bruised", "Miserable"],
+      "correct": 0,
+      "rationale": "'Transparent' (पारदर्शी) means Clear, while 'Opaque' (अपारदर्शी) means Non-transparent — they are opposites."
     }
   ]
 }

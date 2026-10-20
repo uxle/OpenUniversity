@@ -1,0 +1,134 @@
+# Graph Algorithms: Navigating Networks
+
+> A graph is just dots joined by lines — enough to model roads,
+> friendships, the internet, and build systems. This lesson covers
+> storing graphs, traversing them, and finding shortest paths.
+
+## 1. Graph Vocabulary
+
+[definition]
+A **graph** G = (V, E) is a set of **vertices** (nodes) and a set of
+**edges** joining pairs of them. The **degree** of a vertex counts the
+edges that touch it.
+[/definition]
+
+| Term | Meaning | Everyday example |
+| --- | --- | --- |
+| Directed | edges have a direction | a Twitter follow |
+| Undirected | edges go both ways | a Facebook friendship |
+| Weighted | edges carry a cost | road distance |
+| Path | sequence of connected edges | route home |
+| Cycle | path that returns to its start | a round trip |
+| DAG | directed graph with no cycles | course prerequisites |
+
+## 2. Storing a Graph: Matrix vs List
+
+| Representation | Space | Edge test "u to v?" | Best for |
+| --- | --- | --- | --- |
+| **Adjacency matrix** (V × V grid) | O(V²) | O(1) | dense graphs |
+| **Adjacency list** (per-vertex list) | O(V + E) | O(degree of u) | sparse graphs |
+
+Real networks are sparse — a person knows hundreds out of billions of
+people — so adjacency lists are the default choice.
+
+## 3. Traversals: BFS and DFS
+
+Start from A in this graph (edges A–B, A–C, B–D, C–D, C–E):
+
+@diagram tree id="bfs-levels" layout="tree" aria="Graph arranged by breadth-first search levels rooted at node A"
+  A -> B
+  A -> C
+  B -> D
+  C -> D
+  C -> E
+@/diagram
+
+**Breadth-first search (BFS)** uses a **queue**: visit the start, then
+its neighbours, then *their* neighbours — level by level. From A the
+order is A, B, C, D, E.
+
+**Depth-first search (DFS)** uses a **stack**, often the call stack:
+dive down one branch to the end, backtrack, dive again. From A, trying
+neighbours alphabetically: A, B, D, C, E.
+
+| Property | BFS | DFS |
+| --- | --- | --- |
+| Data structure | queue (FIFO) | stack (LIFO) |
+| Exploration | level by level, closest first | one branch fully, then backtrack |
+| Delivers | shortest paths (unweighted) | cycle detection, topological order |
+| Memory | can be very wide | O(depth) — usually small |
+
+BFS finds shortest paths in unweighted graphs because it reaches every
+vertex in fewest-edges-first order. Weighted graphs need Dijkstra.
+
+## 4. Shortest Paths: Dijkstra and Bellman-Ford
+
+**Dijkstra's algorithm** is greedy: repeatedly settle the unsettled
+vertex with the smallest tentative distance, then **relax** its edges
+— if routing through it improves a neighbour's distance, update it.
+On edges A–B = 4, A–C = 1, C–B = 2, C–D = 5, B–D = 1:
+
+| Step | Settled | Remaining distances |
+| --- | --- | --- |
+| 1 | A = 0 | B = 4, C = 1, D = ∞ |
+| 2 | C = 1 | B = 3 via A–C–B, D = 6 |
+| 3 | B = 3 | D = 4 via A–C–B–D |
+| 4 | D = 4 | all settled |
+
+With a binary heap, Dijkstra runs in O((V + E) log V). It requires
+**non-negative weights**: a negative edge can make an already-settled
+vertex improvable, which breaks the greedy assumption.
+
+[important]
+**Bellman-Ford** allows negative edges and detects negative cycles in
+O(V·E) time — slower, but it is the tool when weights can go below
+zero.
+[/important]
+
+## 5. Minimum Spanning Trees
+
+A **spanning tree** connects all vertices with V − 1 edges and no
+cycles; a **minimum spanning tree (MST)** is the cheapest such set.
+
+| Algorithm | Strategy | Cost |
+| --- | --- | --- |
+| Prim | grow one tree from a start vertex, always adding the cheapest edge leaving the tree | O(E log V) |
+| Kruskal | sort all edges, add each cheapest edge that does not close a cycle | O(E log E) |
+
+Kruskal needs **union-find** to test for cycles fast; Prim needs a
+priority queue. Classic uses: cheapest cabling or pipe networks, and
+clustering.
+
+## 6. Topological Sort
+
+A **topological order** of a **DAG** lists vertices so every edge
+points forward — prerequisites always come before dependents. Courses,
+build steps, and package installs all need one.
+
+@diagram tree id="course-prerequisites" layout="tree" aria="Course prerequisite chain where each course points to a course that depends on it"
+  "Data Structures" -> "Algorithms"
+  "Algorithms" -> "Machine Learning"
+  "Linear Algebra" -> "Machine Learning"
+@/diagram
+
+A valid order here is Data Structures, Linear Algebra, Algorithms,
+Machine Learning. Kahn's algorithm builds such orders by repeatedly
+removing any vertex whose prerequisites are all done.
+
+## 7. Graphs in the Real World
+
+| Domain | Vertices / edges | Algorithm at work |
+| --- | --- | --- |
+| GPS navigation | intersections / roads | Dijkstra, A* |
+| Internet routing | routers / links | OSPF runs Dijkstra inside one AS |
+| Social networks | people / friendships | BFS gives degrees of separation |
+| Build systems | files / dependencies | topological sort |
+| Recommendations | users and items / links | graph similarity |
+
+[summary]
+Store sparse graphs as adjacency lists. BFS (queue) explores level by
+level and finds unweighted shortest paths; DFS (stack) dives deep and
+yields cycles and topological orders. Dijkstra solves non-negative
+shortest paths in O((V+E) log V); Bellman-Ford copes with negative
+weights; Prim and Kruskal build minimum spanning trees.
+[/summary]

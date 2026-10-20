@@ -1,0 +1,76 @@
+{
+  "lessonId": "recursion-and-divide-and-conquer",
+  "title": "Recursion and Divide-and-Conquer: Solve Big Problems with Small Ones",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Every recursive definition must have which two ingredients?",
+      "options": ["A loop and a counter", "A base case and a recursive case", "A stack and a queue", "A pivot and a partition"],
+      "correct": 1,
+      "rationale": "The base case is answered directly with no self-call; the recursive case restates the problem in terms of smaller input."
+    },
+    {
+      "id": 2,
+      "question": "What happens when a recursive function's base case is missing or unreachable?",
+      "options": ["It returns zero immediately", "It loops forever without using memory", "Each call pushes a frame until a stack overflow kills the program", "The compiler converts it to iteration"],
+      "correct": 2,
+      "rationale": "Without a base case the calls never bottom out; every call pushes a stack frame until the program dies with a stack overflow."
+    },
+    {
+      "id": 3,
+      "question": "What is the approximate cost of the naive recursive Fibonacci algorithm?",
+      "options": ["O(n)", "O(n log n)", "O(2ⁿ)", "O(log n)"],
+      "correct": 2,
+      "rationale": "The naive call tree recomputes overlapping subproblems — fib(3) twice, fib(2) three times — and the branching roughly doubles each level, giving about O(2ⁿ)."
+    },
+    {
+      "id": 4,
+      "question": "With memoization, Fibonacci's cost becomes:",
+      "options": ["O(2ⁿ) time, O(1) space", "O(n) time at the price of O(n) memory", "O(log n) time", "O(n²) time"],
+      "correct": 1,
+      "rationale": "Memoization records each answer at first computation, so repeats become lookups: Fibonacci drops from O(2ⁿ) to O(n) time for O(n) memory."
+    },
+    {
+      "id": 5,
+      "question": "How many moves does Tower of Hanoi require for n discs?",
+      "options": ["n² moves", "2ⁿ − 1 moves", "2n moves", "n log n moves"],
+      "correct": 1,
+      "rationale": "The recurrence h(n) = 2·h(n−1) + 1 resolves to 2ⁿ − 1 moves; 64 discs take about 585 billion years at one move per second."
+    },
+    {
+      "id": 6,
+      "question": "Which recurrence describes Euclid's GCD algorithm?",
+      "options": ["gcd(a, b) = gcd(a−1, b−1)", "gcd(a, b) = gcd(b, a mod b)", "gcd(a, b) = gcd(a mod b, a)", "gcd(a, b) = a + b mod 2"],
+      "correct": 1,
+      "rationale": "Euclid's GCD recurses with gcd(b, a mod b) and costs O(log min(a, b)) because the shrink is multiplicative."
+    },
+    {
+      "id": 7,
+      "question": "The three phases of divide-and-conquer are:",
+      "options": ["Sort, scan, merge", "Divide, conquer, combine", "Push, pop, return", "Compare, swap, recurse"],
+      "correct": 1,
+      "rationale": "Divide the problem into smaller instances, conquer each piece recursively, then combine the answers into the final result."
+    },
+    {
+      "id": 8,
+      "question": "About how many comparisons does binary search need among 1,000,000 sorted items?",
+      "options": ["20", "1,000", "5,000", "500,000"],
+      "correct": 0,
+      "rationale": "Each comparison halves the range, so log₂(1,000,000) ≈ 20 comparisons — by step 20 only about 1 item remains possible."
+    },
+    {
+      "id": 9,
+      "question": "How does tabulation differ from memoization?",
+      "options": ["Tabulation is top-down recursion with a cache", "Tabulation fills a table with loops, computing every state up to n", "Tabulation only works on trees", "Tabulation cannot be used for Fibonacci"],
+      "correct": 1,
+      "rationale": "Tabulation is the bottom-up approach — loops fill the table for every state up to n — while memoization is top-down recursion plus a cache that only computes needed states."
+    },
+    {
+      "id": 10,
+      "question": "What is tail recursion?",
+      "options": ["A recursion with two base cases", "A recursion whose self-call is the last action, with nothing pending afterwards", "A recursion that runs in O(log n)", "A recursion stored on the heap instead of the stack"],
+      "correct": 1,
+      "rationale": "Tail recursion — the self-call is the last action — can be compiled into a loop, but Python does not, so deep recursion there must become an explicit loop with a stack."
+    }
+  ]
+}

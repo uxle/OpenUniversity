@@ -1,0 +1,114 @@
+# Monetary Policy: The RBI's Toolkit
+
+> Monetary policy manages money, credit, and interest to hold prices
+> steady while financing growth — through rates, reserves, and
+> persuasion.
+
+[definition]
+**Monetary policy** is the central bank's use of instruments —
+policy rates, reserve ratios, open market operations, and guidance —
+to control money supply and the cost of credit in pursuit of price
+stability with growth.
+[/definition]
+
+## 1. Objectives and the Inflation-Targeting Framework
+
+Since the 2016 amendment to the RBI Act (Section 45ZA), India follows
+**flexible inflation targeting**: CPI inflation of **4% with a band
+of 2–6%**. A **Monetary Policy Committee (MPC)** of **six members**
+— the RBI Governor as chair, the Deputy Governor in charge of
+monetary policy, one RBI officer, and three government nominees —
+votes by majority, meeting at least four times a year.
+
+## 2. Quantitative Instruments
+
+| Tool | What it is | Tightening use |
+| --- | --- | --- |
+| **Repo rate** | Rate at which the RBI lends short-term to banks against securities | Raise it — loans get costlier |
+| **Reverse repo / SDF** | Rate for banks' surplus funds parked with the RBI | Raise it — banks park money instead of lending |
+| **Bank rate** | Penal rate for rediscounting bills; long-standing signal rate | Raise it |
+| **CRR** | Share of deposits banks must hold as cash with the RBI | Raise it — credit multiplier falls |
+| **SLR** | Share of deposits in liquid assets — cash, gold, approved securities | Raise it — lendable funds fall |
+| **Open market operations (OMO)** | Buying/selling government securities | Sell securities — money is absorbed |
+
+[info title="Marginal Standing Facility (MSF)"]
+Banks can borrow overnight from the RBI **above** the repo quota by
+dipping into their SLR portfolio — at the MSF rate, set above repo.
+**SDF (Standing Deposit Facility)**, introduced in 2022, absorbs
+surplus liquidity *without collateral*, replacing the fixed-rate
+reverse repo as the corridor's floor.
+[/info]
+
+The **liquidity corridor** runs from the SDF rate (floor) to the MSF
+rate (ceiling), with the repo rate in between.
+
+## 3. Qualitative (Selective) Instruments
+
+- **Margin requirement** — raise the down-payment percentage for
+  loans against sensitive commodities to cool speculative borrowing.
+- **Selective credit controls** — stricter terms for lending against
+  particular goods (sugar, pulses) when hoarding emerges.
+- **Credit rationing** — ceilings on how much banks may lend to
+  certain sectors.
+- **Moral suasion** — the RBI persuades banks through letters,
+  meetings, and public statements, without formal order.
+
+## 4. The Transmission Mechanism
+
+@diagram tree id="transmission-chain" layout="tree" aria="Monetary policy transmission chain"
+  "RBI raises repo rate" -> "Banks' cost of funds rises"
+  "Banks' cost of funds rises" -> "Lending rates rise"
+  "Lending rates rise" -> "Credit and demand cool"
+  "Credit and demand cool" -> "Inflation pressure eases"
+@/diagram
+
+Transmission is slow — a repo change typically takes a few quarters
+to show fully in lending rates, spending, and prices.
+
+## 5. Tight vs Easy Money
+
+| Aspect | Tight (dear) money | Easy (cheap) money |
+| --- | --- | --- |
+| Repo, bank rate | High | Low |
+| CRR / SLR | High | Low |
+| OMO | Sell securities | Buy securities |
+| Credit | Contracts | Expands |
+| Used against | Inflation | Recession, slowdown |
+| Risk | Growth and jobs slow | Inflation and asset bubbles |
+
+[example]
+Facing an inflation surge, the RBI raises the repo rate in steps;
+EMIs on floating-rate home loans rise within two quarters as
+external benchmark lending rates reset, households cut spending, and
+demand pressure eases — tight money in action.
+[/example]
+
+## 6. Limitations of Monetary Policy
+
+- **Time lags** — recognition, action, and effect each take months.
+- **Cost-push inflation** resists rate medicine — supply shocks need
+  supply-side answers.
+- **Excess liquidity** from capital inflows can defeat tightening.
+- **Poor transmission** if banks pass on rate changes slowly or
+  weak demand caps credit offtake.
+
+## 7. Quick Revision Table
+
+| Question | Answer |
+| --- | --- |
+| Target | CPI 4%, band 2–6% (2016 framework) |
+| MPC | 6 members; Governor chairs; majority vote |
+| Repo | RBI lends to banks against securities |
+| SDF (2022) | Collateral-free absorption; corridor floor |
+| CRR vs SLR | Cash with RBI vs liquid assets held by bank |
+| Qualitative tools | Margins, rationing, moral suasion, selective controls |
+| Tight money fights | Inflation (raise rates, sell securities) |
+| Easy money fights | Recession (cut rates, buy securities) |
+
+[summary]
+The MPC targets 4% CPI inflation through a toolkit of rates (repo,
+bank rate, MSF, SDF), reserves (CRR, SLR), open-market sales, and
+selective controls. The chain runs from rate to bank cost to credit
+to demand to prices — powerful, but slow and helpless against
+supply shocks alone.
+[/summary]

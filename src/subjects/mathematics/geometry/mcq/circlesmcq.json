@@ -1,0 +1,77 @@
+{
+  "lessonId": "circles",
+  "title": "Circles: Chords, Angles, and π",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The circumference of a circle with radius 7 cm is:",
+      "options": ["14π cm", "49π cm", "7π cm", "21π cm"],
+      "zolto": "C = 2\\pi r",
+      "correct": 0,
+      "rationale": "C = 2πr = 2π(7) = 14π cm. (49π would be the area.)"
+    },
+    {
+      "id": 2,
+      "question": "The area of a circle of radius 7 cm is:",
+      "options": ["14π cm²", "21π cm²", "49π cm²", "7π cm²"],
+      "correct": 2,
+      "rationale": "A = πr² = π(7)² = 49π cm²."
+    },
+    {
+      "id": 3,
+      "question": "An angle inscribed in a semicircle is always:",
+      "options": ["45°", "60°", "90°", "180°"],
+      "correct": 2,
+      "rationale": "Thales' theorem: any angle whose arms end at the diameter's endpoints is exactly a right angle."
+    },
+    {
+      "id": 4,
+      "question": "The angle at the centre standing on an arc is 80°. The angle at the rim on the same arc is:",
+      "options": ["40°", "80°", "160°", "20°"],
+      "correct": 0,
+      "rationale": "The centre angle is twice the rim angle on the same arc, so the rim angle is 80°/2 = 40°."
+    },
+    {
+      "id": 5,
+      "question": "Two tangents are drawn from an external point P, touching the circle at A and B with PA = 6 cm. Then PB equals:",
+      "options": ["3 cm", "6 cm", "12 cm", "Cannot be determined"],
+      "correct": 1,
+      "rationale": "Tangents from the same external point always have equal lengths, so PB = PA = 6 cm."
+    },
+    {
+      "id": 6,
+      "question": "A tangent meets the radius drawn to the point of contact at an angle of:",
+      "options": ["30°", "45°", "90°", "180°"],
+      "correct": 2,
+      "rationale": "A tangent is perpendicular to the radius at the touch point — that is what makes it touch only once."
+    },
+    {
+      "id": 7,
+      "question": "In a cyclic quadrilateral, opposite angles are:",
+      "options": ["Equal", "Complementary (sum 90°)", "Supplementary (sum 180°)", "Unrelated"],
+      "correct": 2,
+      "rationale": "All four corners lie on one circle; each pair of opposite angles sums to 180°."
+    },
+    {
+      "id": 8,
+      "question": "A 120° sector occupies what fraction of the circle's area?",
+      "options": ["1/4", "1/3", "1/2", "2/3"],
+      "correct": 1,
+      "rationale": "Sector share = angle/360 = 120/360 = 1/3 of the whole circle."
+    },
+    {
+      "id": 9,
+      "question": "Which chord of a circle is the longest?",
+      "options": ["Any chord through a point 1 cm from centre", "The diameter", "They are all equal", "A chord perpendicular to no radius"],
+      "correct": 1,
+      "rationale": "Every other chord sits off-centre; the one passing through the centre (the diameter) is longest."
+    },
+    {
+      "id": 10,
+      "question": "If the radius of a circle doubles, its area becomes:",
+      "options": ["Double", "Triple", "Four times", "Unchanged"],
+      "correct": 2,
+      "rationale": "Area scales with r²: doubling r multiplies area by 2² = 4 (while circumference only doubles)."
+    }
+  ]
+}

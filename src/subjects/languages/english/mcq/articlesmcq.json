@@ -29,6 +29,55 @@
       "options": ["He is learning the English.", "He is learning English.", "He is learning a English.", "He is learning an English."],
       "correct": 1,
       "rationale": "Articles are NOT used before languages, professions, hobbies, or diseases — 'He is learning English' is correct with zero article."
+    },
+    {
+      "id": 5,
+      "question": "Which is correct?",
+      "options": ["A F.I.R. was lodged", "An F.I.R. was lodged", "The F.I.R. was lodged only", "F.I.R. needs no article"],
+      "correct": 1,
+      "rationale": "'An' is used before abbreviations beginning with a vowel sound — 'F' is pronounced 'ef', so 'an F.I.R.' is correct."
+    },
+    {
+      "id": 6,
+      "question": "Unique objects and celestial bodies take which article?",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 2,
+      "rationale": "Unique objects like The Sun, The Moon, and The Earth always take the definite article 'The'."
+    },
+    {
+      "id": 7,
+      "question": "Complete: ______ best student in the class won the prize.",
+      "options": ["A", "An", "The", "No article"],
+      "correct": 2,
+      "rationale": "Superlative degrees always take 'The' — e.g., 'the best', 'the richest'."
+    },
+    {
+      "id": 8,
+      "question": "Which sentence correctly uses articles with meals and modes of travel?",
+      "options": ["He goes to school by a bus and takes a lunch.", "He goes to school by bus and takes lunch.", "He goes to school by an bus and takes the lunch.", "He goes to school by the bus and takes an lunch."],
+      "correct": 1,
+      "rationale": "No article is used before meals in general (breakfast, lunch, dinner) or modes of travel (by bus, by train) — this is the Zero Article rule."
+    },
+    {
+      "id": 9,
+      "question": "Complete: ______ more you get, ______ more you want.",
+      "options": ["A / a", "An / an", "The / the", "No article needed"],
+      "correct": 2,
+      "rationale": "Parallel proportion with comparatives uses 'The... the...' — e.g., 'The more you get, the more you want.'"
+    },
+    {
+      "id": 10,
+      "question": "Which of these correctly uses articles with political parties/armed forces?",
+      "options": ["BJP won; Navy rescued sailors", "The BJP won; The Navy rescued sailors", "A BJP won; An Navy rescued sailors", "An BJP won; A Navy rescued sailors"],
+      "correct": 1,
+      "rationale": "Armed forces and political parties take 'The' — The Navy, The Army, The BJP, The Congress."
+    },
+    {
+      "id": 11,
+      "question": "Which sentence represents a whole class using 'The'?",
+      "options": ["Rich should help poor.", "The rich should help the poor.", "A rich should help a poor.", "An rich should help an poor."],
+      "correct": 1,
+      "rationale": "'The rich should help the poor' uses 'The' before adjectives to represent an entire class of people — a mandatory use of the definite article."
     }
   ]
 }

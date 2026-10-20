@@ -1,0 +1,76 @@
+{
+  "lessonId": "money",
+  "title": "Money: From Barter to Modern Currency",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The 'double coincidence of wants' is a problem associated with:",
+      "options": ["Fiat money", "The barter system", "Commercial banking", "Electronic payments"],
+      "correct": 1,
+      "rationale": "Barter requires each trader to want exactly what the other offers at the same time and place — money removes this constraint."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a primary function of money?",
+      "options": ["Standard of deferred payment", "Transfer of value", "Medium of exchange", "Store of value"],
+      "correct": 2,
+      "rationale": "The primary functions are medium of exchange and unit of value; deferred payment, transfer, and storing value are secondary."
+    },
+    {
+      "id": 3,
+      "question": "Modern currency notes are an example of:",
+      "options": ["Commodity money", "Fiat money", "Fiduciary money", "Representative money backed fully by gold"],
+      "correct": 1,
+      "rationale": "Fiat money derives value from government legal-tender order, not from the material or a gold backing."
+    },
+    {
+      "id": 4,
+      "question": "Cheques and bank deposits that are accepted on trust in the issuer are called:",
+      "options": ["Fiat money", "Legal tender", "Fiduciary money", "Commodity money"],
+      "correct": 2,
+      "rationale": "Fiduciary money circulates on confidence in the issuer rather than legal-tender law — cheques are the classic case."
+    },
+    {
+      "id": 5,
+      "question": "In India, narrow money M1 consists of:",
+      "options": ["Currency with public + demand deposits + other deposits with RBI", "Currency + time deposits", "M3 + post office deposits", "Only currency notes in circulation"],
+      "correct": 0,
+      "rationale": "M1 = currency with the public plus demand deposits with banks plus other deposits with the RBI — the most spendable money."
+    },
+    {
+      "id": 6,
+      "question": "Which measure is called broad money in India?",
+      "options": ["M1", "M2", "M3", "M0"],
+      "correct": 2,
+      "rationale": "M3 = M1 + time deposits with banks; it is the headline measure of money supply."
+    },
+    {
+      "id": 7,
+      "question": "High-powered money (monetary base) consists of:",
+      "options": ["M1 plus M3", "Currency with public plus cash reserves with banks and the RBI", "Only gold reserves", "Time deposits plus savings deposits"],
+      "correct": 1,
+      "rationale": "M0 is currency with the public plus banks' cash reserves held with themselves and with the RBI — the base banks multiply."
+    },
+    {
+      "id": 8,
+      "question": "The RBI has followed the minimum reserve system of currency issue since:",
+      "options": ["1935", "1949", "1956", "1991"],
+      "correct": 2,
+      "rationale": "Since 1956 the RBI maintains a minimum reserve of ₹200 crore (₹115 crore in gold) and may issue currency against it without limit."
+    },
+    {
+      "id": 9,
+      "question": "Which is NOT a characteristic of good money?",
+      "options": ["General acceptability", "Divisibility", "Unlimited supply", "Stability of value"],
+      "correct": 2,
+      "rationale": "Good money must be scarce — a money printable without limit would lose value; the other traits are all desirable."
+    },
+    {
+      "id": 10,
+      "question": "A shopkeeper accepts a ₹500 note although the paper and printing cost far less. This works because money is:",
+      "options": ["Commodity money whose paper is valuable", "Fiat money backed by RBI and legal-tender status with public confidence", "Barter in disguise", "A deferred payment contract"],
+      "correct": 1,
+      "rationale": "Fiat money functions on government order plus confidence that others will keep accepting it — the lesson's example of the ₹500 note."
+    }
+  ]
+}

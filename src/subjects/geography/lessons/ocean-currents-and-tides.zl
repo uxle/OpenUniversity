@@ -1,0 +1,103 @@
+# Ocean Currents and Tides: Rivers in the Sea
+
+> Surface waters stream in vast loops and the sea itself rises and
+> falls twice a day. This lesson charts the major currents, their
+> climate effects, and the astronomy that drives tides.
+
+## 1. What Drives the Currents
+
+Currents are set moving by a committee of causes: solar heating (which
+expands and piles up equatorial water), **prevailing winds** (the chief
+driver of surface drift), gravity (pulling the pile back down),
+**Coriolis deflection** (curving the flow clockwise in the Northern
+Hemisphere, anticlockwise in the Southern), and density differences of
+temperature and salinity that power the slow deep circulation.
+
+## 2. The Major Currents
+
+@diagram tree id="world-ocean-currents" layout="tree" aria="Major warm and cold ocean currents"
+  Currents -> "Warm currents"
+  Currents -> "Cold currents"
+  "Warm currents" -> "Gulf Stream, North Atlantic Drift"
+  "Warm currents" -> "Kuroshio, Agulhas"
+  "Cold currents" -> "Oyashio, Labrador"
+  "Cold currents" -> "Canary, Benguela, Humboldt"
+@/diagram
+
+| Ocean | Warm currents | Cold currents |
+| --- | --- | --- |
+| Atlantic | Gulf Stream, North Atlantic Drift | Canary, Labrador, Benguela |
+| Pacific | Kuroshio | Oyashio, Californian, Humboldt (Peru) |
+| Indian | Agulhas (Mozambique Channel) | West Australian |
+
+The **North Atlantic Drift**, the Gulf Stream's extension, keeps the
+Norwegian coast and north-west Europe ice-free in winter — Palm trees
+grow in western Scotland at nearly 57°N. Cold currents do the opposite:
+the **Benguela** and **Humboldt** chill the air above them and help
+strand the Namib and Atacama deserts beside the sea.
+
+[example]
+Where warm and cold waters meet, nutrients well up and plankton bloom:
+the Grand Banks off Newfoundland (Gulf Stream against Labrador) and
+the seas off Japan (Kuroshio against Oyashio) are the classic fishing
+grounds.
+[/example]
+
+## 3. El Niño and La Niña
+
+Every few years the trade winds over the Pacific slacken; warm water
+that normally piles up in the west sloshes east. This is **El Niño**.
+The Peru (Humboldt) current weakens, upwelling stops, and the great
+anchoveta fishery collapses, while droughts strike Australia and parts
+of Asia and floods soak Peru. The see-saw of pressure between the two
+sides of the Pacific is the **El Niño–Southern Oscillation (ENSO)**.
+**La Niña** is the strengthening opposite — cooler eastern Pacific
+water, stronger trades, and often a brisker Indian monsoon.
+
+## 4. Tides
+
+[definition]
+**Tides** are the periodic rise and fall of sea level, produced mainly
+by the gravitational pull of the **Moon** (the Sun contributes about
+46% of the Moon's force). One high tide follows another roughly every
+12 hours and 25 minutes on most coasts.
+[/definition]
+
+| Tide | Happens when | Result |
+| --- | --- | --- |
+| Spring tide | New and full moon — Sun, Moon, and Earth aligned | Highest highs, lowest lows |
+| Neap tide | Quarter moons — Sun and Moon at right angles (quadrature) | Weakest tides |
+| Perigean spring | New or full moon near perigee (Moon closest) | Exceptionally large range |
+
+| Pattern | Rhythm | Example coast |
+| --- | --- | --- |
+| Semi-diurnal | Two highs, two lows a day (most common) | Most of the Indian coast |
+| Diurnal | One high, one low a day | Parts of the Gulf of Tonkin |
+| Mixed | Two uneven highs and lows | Parts of the US west coast |
+
+## 5. Why Tides Matter
+
+- **Navigation** — deep-draught ships enter harbours riding the tide.
+- **Fishing** — currents stirred by tides concentrate fish.
+- **Cleaning** — tides flush estuaries of silt and waste.
+- **Power** — the fast, high tides of India's **Gulf of Kutch** and
+  **Gulf of Khambhat** offer the country's best tidal-energy
+  prospects.
+
+[warning]
+Tidal bores and storm surges arriving at high tide can multiply
+coastal flooding — a reminder that the sea keeps a strict timetable
+and does not consult us about it.
+[/warning]
+
+## 6. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Chief driver of surface currents? | Prevailing winds |
+| Current that warms NW Europe? | North Atlantic Drift |
+| Cold current off Peru? | Humboldt (Peru) current |
+| El Niño first hits? | The Peru fishery |
+| Dominant tide-maker? | The Moon (Sun adds ~46%) |
+| Spring tides occur at? | New and full moon |
+| India's tidal-energy gulfs? | Kutch and Khambhat |

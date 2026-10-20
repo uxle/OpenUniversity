@@ -1,0 +1,80 @@
+# Linear Equations: Lines, Slopes, and Intersections
+
+> A linear equation $y = mx + c$ draws a straight line. The slope $m$
+> measures tilt; the intercept $c$ says where it crosses the y-axis.
+
+## 1. Reading the Form
+
+@math label="eq:slope-form"
+y = mx + c
+@/math
+
+- **Slope** $m = \frac{\text{rise}}{\text{run}} = \frac{y_2 - y_1}{x_2 - x_1}$
+  between any two points on the line.
+- **Intercept** $c$ is the output when $x = 0$.
+
+## Example
+
+Through $(1, 3)$ and $(3, 11)$:
+$m = \frac{11-3}{3-1} = 4$, then $3 = 4(1) + c$ gives $c = -1$. So
+$y = 4x - 1$.
+
+## 2. Two Lines Meet (or Don't)
+
+| Relationship | Condition | Solution count |
+| --- | --- | --- |
+| Intersecting | different slopes | exactly one |
+| Parallel | same slope, different intercepts | none |
+| Identical | same slope, same intercept | infinitely many |
+
+Solve a pair like $y = 2x + 1$ and $y = x + 5$ by setting them equal:
+$2x + 1 = x + 5 \Rightarrow x = 4$, so they cross at $(4, 9)$.
+
+## 3. Special Slopes
+
+- Horizontal line: $m = 0$, equation $y = c$.
+- Vertical line: slope **undefined**, equation $x = k$.
+- Perpendicular slopes multiply to $-1$: if one is $2$, the other is
+  $-\frac{1}{2}$.
+
+[definition]
+Lines with the **same slope** never meet no matter how far extended —
+that's what "parallel" means in coordinates.
+[/definition]
+
+## 4. Distance and Midpoint
+
+Between $(x_1,y_1)$ and $(x_2,y_2)$:
+
+@math label="eq:distance-midpoint"
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}, \quad M = \left(\tfrac{x_1+x_2}{2}, \tfrac{y_1+y_2}{2}\right)
+@/math
+
+## 5. Watching Cost vs Revenue Cross
+
+A classic linear pair — cost grows faster than revenue until they
+intersect at break-even:
+
+@chart line title="Cost vs revenue by units sold" labels:
+0
+10
+20
+30
+40
+
+series:
+  - name: "Cost (₹)"
+    data: 100 200 300 400 500
+  - name: "Revenue (₹)"
+    data: 0 200 400 600 800
+@/chart
+
+Before the crossing point the business loses money; after it, every
+extra unit adds profit.
+
+## Key Takeaways
+
+- $m$ = rise/run; $c$ = starting value at $x=0$.
+- Equal slopes → parallel; equal everything → same line.
+- Perpendicular slopes are negative reciprocals.
+- Simultaneous linear equations = asking where two lines cross.

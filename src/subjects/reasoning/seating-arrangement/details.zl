@@ -9,4 +9,6 @@
 
 @lessons {
   seating-arrangement-reasoning
+  linear-seating-arrangement
+  circular-seating-arrangement
 }

@@ -1,0 +1,76 @@
+{
+  "lessonId": "banking-and-rbi",
+  "title": "Banking and the Reserve Bank of India",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Reserve Bank of India was established in:",
+      "options": ["1934 under the RBI Act", "1935 under the RBI Act, 1934", "1949 by nationalisation", "1956 under the Banking Regulation Act"],
+      "correct": 1,
+      "rationale": "The RBI began operations in 1935 under the RBI Act, 1934, and was nationalised in 1949."
+    },
+    {
+      "id": 2,
+      "question": "As 'lender of last resort', the RBI:",
+      "options": ["Lends to the general public at concessional rates", "Provides funds to banks in distress against collateral", "Prints currency only when the government orders", "Sets the minimum reserve of gold"],
+      "correct": 1,
+      "rationale": "When banks cannot borrow elsewhere, the RBI lends against collateral — the function that prevents solvent banks from collapsing due to temporary runs."
+    },
+    {
+      "id": 3,
+      "question": "With a CRR of 20%, an initial deposit of ₹1,000 can support total credit of:",
+      "options": ["₹1,000", "₹1,200", "₹5,000", "₹20,000"],
+      "correct": 2,
+      "rationale": "The multiplier is 1/CRR = 1/0.20 = 5, so total deposits = 1,000 × 5 = ₹5,000."
+    },
+    {
+      "id": 4,
+      "question": "In credit creation, each successive round of lending becomes smaller because:",
+      "options": ["Banks lend less as they get tired", "A fraction (the CRR) must be retained as cash reserve each round", "The RBI recalls the loans", "Interest rates always rise"],
+      "correct": 1,
+      "rationale": "The CRR must be withheld from every re-deposited amount, so each round shrinks geometrically until the total reaches deposit × 1/CRR."
+    },
+    {
+      "id": 5,
+      "question": "The nationalisation of 14 major Indian banks took place in:",
+      "options": ["1949", "1955", "1969", "1980"],
+      "correct": 2,
+      "rationale": "In 1969, fourteen large private banks were nationalised to direct credit toward agriculture and rural India; six more followed in 1980."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a primary function of commercial banks?",
+      "options": ["Issuing currency notes", "Acting as banker to the government", "Accepting deposits and advancing loans", "Setting the repo rate"],
+      "correct": 2,
+      "rationale": "Accepting deposits and lending are the twin primary functions; currency issue, government banking, and the repo rate belong to the RBI."
+    },
+    {
+      "id": 7,
+      "question": "Fixed and recurring deposits are examples of:",
+      "options": ["Demand deposits", "Time deposits", "Other deposits with the RBI", "High-powered money"],
+      "correct": 1,
+      "rationale": "Time deposits are locked for a term and earn higher interest, unlike current or savings accounts which are withdrawable on demand."
+    },
+    {
+      "id": 8,
+      "question": "Which statement about payment banks is correct?",
+      "options": ["They can issue credit cards freely", "They accept small deposits and handle payments but cannot lend", "They only serve large corporations", "They were created by the FRBM Act"],
+      "correct": 1,
+      "rationale": "Payment banks (from 2015, per the Nachiket Mor committee vision) take small deposits and offer remittances but must invest in safe instruments — no lending."
+    },
+    {
+      "id": 9,
+      "question": "AU Small Finance Bank and Ujjivan are examples of:",
+      "options": ["Payment banks", "Regional rural banks", "Small finance banks", "Cooperative banks"],
+      "correct": 2,
+      "rationale": "Small finance banks, licensed from 2015–16, are full-service banks focused on financial inclusion, small loans, and priority-sector lending."
+    },
+    {
+      "id": 10,
+      "question": "When one person's bank loan becomes another person's bank deposit, the process is called:",
+      "options": ["Currency demonetisation", "Credit creation by commercial banks", "Open market operation", "Deficit financing"],
+      "correct": 1,
+      "rationale": "Loans returning as fresh deposits let banks lend again minus the CRR — the geometric process through which banks create credit money."
+    }
+  ]
+}

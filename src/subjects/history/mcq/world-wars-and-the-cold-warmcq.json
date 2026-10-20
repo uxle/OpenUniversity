@@ -1,0 +1,76 @@
+{
+  "lessonId": "world-wars-and-the-cold-war",
+  "title": "The World Wars and the Cold War: 1914-1991",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The spark for World War I was the assassination at Sarajevo (28 June 1914) of:",
+      "options": ["Kaiser Wilhelm II", "Archduke Franz Ferdinand by Gavrilo Princip", "Tsar Nicholas II", "Rasputin"],
+      "correct": 1,
+      "rationale": "Gavrilo Princip of the Black Hand killed Archduke Franz Ferdinand, heir to Austria-Hungary, at Sarajevo on 28 June 1914 — the spark that the alliance cascade turned into general war."
+    },
+    {
+      "id": 2,
+      "question": "The MAIN acronym for World War I's causes stands for:",
+      "options": ["Monarchy, Army, Industry, Navy", "Militarism, Alliances, Imperialism, Nationalism", "Marxism, Austria, Italy, Napoleon", "Mediterranean, Atlantic, India, Near East"],
+      "correct": 1,
+      "rationale": "Militarism, Alliances, Imperialism, and Nationalism are the standard deep causes — with the Anglo-German naval race and Balkan nationalism as prime examples."
+    },
+    {
+      "id": 3,
+      "question": "The United States entered World War I in April 1917 largely because of:",
+      "options": ["The Zimmermann telegram and unrestricted U-boat warfare", "The Rape of Belgium", "The League Covenant", "The Russian Revolution"],
+      "correct": 0,
+      "rationale": "Unrestricted submarine warfare (including the Lusitania sinking of 1915) and the Zimmermann telegram's proposed German-Mexican alliance brought America into the war in April 1917."
+    },
+    {
+      "id": 4,
+      "question": "The Treaty of Versailles' Article 231:",
+      "options": ["Created the League's army", "Assigned war guilt to Germany and its allies", "Restored Poland's 1772 borders", "Banned the Nazi party"],
+      "correct": 1,
+      "rationale": "The war guilt clause made Germany responsible, justifying reparations of 132 billion gold marks and territorial losses — the resentment Hitler later exploited."
+    },
+    {
+      "id": 5,
+      "question": "The Great Depression began with:",
+      "options": ["The Weimar hyperinflation of 1923", "The Wall Street Crash of October 1929", "The Munich agreement", "The Russian civil war"],
+      "correct": 1,
+      "rationale": "The October 1929 crash collapsed banks and world trade, with a quarter of US workers jobless — the economic despair that incubated fascism and Nazism."
+    },
+    {
+      "id": 6,
+      "question": "Mussolini's Fascists took power in Italy through:",
+      "options": ["A election landslide", "The March on Rome, October 1922", "A coup backed by Germany", "The King's abdication"],
+      "correct": 1,
+      "rationale": "After the March on Rome (October 1922), King Victor Emmanuel III invited Mussolini to form a government — constitutional in form, dictatorial in substance."
+    },
+    {
+      "id": 7,
+      "question": "Which battle of February 1943 destroyed the German Sixth Army and turned the tide in Europe?",
+      "options": ["El Alamein", "Midway", "Stalingrad", "Normandy"],
+      "correct": 2,
+      "rationale": "Stalingrad's surrender in February 1943 destroyed the Sixth Army after the failure of Barbarossa's 1941 gamble — the war's European turning point."
+    },
+    {
+      "id": 8,
+      "question": "The United Nations was founded on 24 October 1945 with how many permanent members of the Security Council?",
+      "options": ["Three", "Four", "Five", "Ten"],
+      "correct": 2,
+      "rationale": "Five permanent, veto-wielding members: the USA, USSR (now Russia), Britain, France, and China — the lesson of the League's unanimity rule applied differently."
+    },
+    {
+      "id": 9,
+      "question": "The Truman Doctrine and the Marshall Plan, both of 1947, were instruments of:",
+      "options": ["Appeasement", "Containment of communism", "Detente", "Non-alignment"],
+      "correct": 1,
+      "rationale": "Containment — armed by Truman Doctrine aid to Greece and Turkey and Marshall Plan reconstruction — defined US Cold War policy from 1947."
+    },
+    {
+      "id": 10,
+      "question": "The Non-Aligned Movement's 1961 founding summit at Belgrade was led by:",
+      "options": ["Nehru, Nasser, and Tito", "Kennedy and Khrushchev", "Gandhi and Nehru", "Stalin and Mao"],
+      "correct": 0,
+      "rationale": "Nehru of India, Nasser of Egypt, and Tito of Yugoslavia led the Belgrade founding (1961), offering the decolonising world a path outside both blocs."
+    }
+  ]
+}

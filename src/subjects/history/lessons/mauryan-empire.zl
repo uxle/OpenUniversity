@@ -1,0 +1,157 @@
+# The Mauryan Empire: India's First Pan-Subcontinental State
+
+> Between 322 and 185 BCE the Mauryas welded nearly the whole subcontinent
+> into one state — from Afghanistan to Karnataka. Its monument is not a
+> palace but a set of rock and pillar edicts in which Ashoka, shaken by the
+> Kalinga war, preached Dhamma to the entire population.
+
+## 1. Sources for the Mauryas
+
+| Source | Author / Nature | Value |
+| --- | --- | --- |
+| Arthashastra | Kautilya (Chanakya) | Treatise on statecraft: spies, taxes, army |
+| Indica | Megasthenes, Seleucus's ambassador | Eyewitness account (survives in fragments) |
+| Mudrarakshasa | Vishakhadatta (play) | Chandragupta-Chanakya vs the Nandas |
+| Ashokan edicts | Royal proclamations | Contemporary, public, dated |
+
+The **Arthashastra**, a 15-book manual recovered and published by R.
+Shamasastry in 1909, details the machinery of an intrusive state.
+**Megasthenes**, envoy of **Seleucus Nicator** to Chandragupta's
+Pataliputra, described a city of wood guarded by 570 towers. The edicts,
+cut mainly in **Brahmi** (Kharosthi in the north-west), were finally read
+in **1837** by **James Prinsep** — the discovery that made Ashoka
+historical.
+
+## 2. Chandragupta Maurya (322-298 BCE)
+
+Guided by **Kautilya**, Chandragupta overthrew the unpopular Nanda king of
+Magadha and took Pataliputra by about **322 BCE**. His war with **Seleucus
+Nicator** (c. 305 BCE) ended in a treaty ceding the eastern satrapies —
+Arachosia (Kandahar), Gedrosia (Makran), Paropamisadae (Kabul) — in
+exchange for **500 war elephants** and a marriage alliance, with
+Megasthenes left as resident ambassador.
+
+[important title="An emperor's Jain exit"]
+Jain tradition says Chandragupta, in old age, abdicated, went south with
+the sage Bhadrabahu to **Shravanabelagola** (Karnataka), and ended his life
+by ritual fast — **sallekhana** — about 298 BCE.
+[/important]
+
+## 3. Bindusara (298-273 BCE)
+
+Called **Amitraghata** ("destroyer of foes"; Greek *Amitrochates*),
+Bindusara consolidated the Deccan — only Kalinga remained outside — kept
+the Seleucid connection (**Deimachus** was Antiochus I's envoy), and
+patronised the **Ajivika** sect.
+
+## 4. Ashoka the Great (268-232 BCE)
+
+Ashoka's personal name was discovered only in 1915 at **Maski** (and later
+Gujjara), where a minor edict reads "Devanampiya **Asoka**"; elsewhere he
+calls himself Devanampiya Piyadasi.
+
+- **Kalinga war, 261 BCE:** his own 13th Rock Edict records 100,000 slain,
+  150,000 deported — and his turn to Dhamma in remorse.
+- **Dhamma** was an ethical code, not mere Buddhism: respect for elders
+  and slaves, generosity, tolerance of all sects, propagated by officers
+  called **dhamma mahamatras**.
+- Rock Edict XIII names five Greek kings — **Antiochus II** of Syria,
+  **Ptolemy II** of Egypt, **Antigonus** of Macedonia, **Magas** of Cyrene,
+  **Alexander** of Epirus — proving diplomatic contact across the
+  Hellenistic world.
+- He convened the **Third Buddhist Council** at Pataliputra (250 BCE) and
+  sent his children **Mahendra and Sanghamitra** as missionaries to **Sri
+  Lanka**; the Barabar caves he gave to the Ajivikas.
+
+## 5. The Edicts: The First Mass Media
+
+| Type | Number | Famous sites |
+| --- | --- | --- |
+| Major Rock Edicts | 14 | Girnar, Kalsi, Shahbazgarhi, Erragudi |
+| Minor Rock Edicts | several | Maski, Gujjara, Rupnath, Sasaram |
+| Pillar Edicts | 7 | Delhi-Topra, Rampurva, Lauriya Nandangarh |
+| Separate (Kalinga) Edicts | 2 | Dhauli, Jaugada |
+
+The **Kandahar** bilingual (Greek-Aramaic) edict shows the empire speaking
+to subjects in their own scripts; **Sarnath's** four-lion capital, in
+polished Chunar sandstone, became India's national emblem in 1950.
+
+## 6. Mauryan Administration
+
+@diagram tree id="mauryan-rulers" layout="tree" aria="The Mauryan ruling line from Chandragupta to Brihadratha"
+  Mauryas -> "Chandragupta (322-298 BCE)"
+  Mauryas -> "Bindusara (298-273 BCE)"
+  Mauryas -> "Ashoka (268-232 BCE)"
+  Mauryas -> "Later Mauryas"
+  Later Mauryas -> "Dasharatha, Samprati, Salisuka"
+  Later Mauryas -> "Brihadratha (killed 185 BCE)"
+@/diagram
+
+- **Centre:** king advised by the **mantriparishad**; the top 18 posts,
+  the **tirthas**, included the revenue chief (samaharta) and treasurer
+  (sannidhata).
+- **Provinces:** four, each under a prince — **Uttarapatha** (Taxila),
+  **Avantiratha** (Ujjain), **Dakshinapatha** (Suvarnagiri), and **Kalinga**
+  (Tosali).
+- **Intelligence:** **gudhapurushas** — spies stationary (*sanstha*) and
+  wandering (*sanchara*) — the Arthashastra's nervous heart.
+- **City:** Megasthenes reports six committees of five members each at
+  Pataliputra, handling trade, foreigners, and the tithe on sales.
+- **Land:** the king's own domain, **Sit** land, sat beside taxed private
+  plots at roughly one-sixth of produce.
+
+@chart bar title="The Mauryan standing army as reported by Pliny"
+labels:
+Infantry
+Cavalry
+Elephants
+Chariots
+
+data:
+600000
+30000
+9000
+8000
+@/chart
+
+## 7. Economy and Society
+
+Punch-marked silver coins (**pana**) circulated under state regulation of
+weights; the crown ran mines, forests, and armouries. Ashoka's Pillar
+Edict VII records wells, rest houses, and medical plantations for men and
+cattle — the first recorded welfare policy in India.
+
+[definition]
+**Sit land** — the crown's own agricultural land, farmed with slave and
+hired labour under state supervision, its produce flowing straight into
+the Mauryan treasury.
+[/definition]
+
+## 8. Decline (185 BCE)
+
+Ashoka died in 232 BCE; weak successors followed. In **185 BCE** the
+commander-in-chief **Pushyamitra Shunga** killed the last king,
+Brihadratha, during a troop inspection and founded the Shunga dynasty.
+
+| Theory | Author | Claim |
+| --- | --- | --- |
+| Brahmanical reaction | H. P. Shastri | Anti-sacrifice policy bred priestly revolt |
+| Financial crisis | D. D. Kosambi | Debased coins point to fiscal breakdown |
+| Over-centralisation | Romila Thapar | No single cause: too little local agency |
+
+[note]
+Modern historians do not blame Ashoka's pacifism: the empire outlived him
+by fifty years, and Pushyamitra's coup was a court affair, not a popular
+rising. Mauryan pillars outlasted the dynasty by centuries.
+[/note]
+
+## Key Takeaways
+
+- The Mauryas (322-185 BCE) created the subcontinent's first uniform
+  administration, documented in the Arthashastra and Megasthenes's Indica.
+- Ashoka's edicts — read after Prinsep's 1837 decipherment of Brahmi — are
+  India's first dated public policy statements.
+- Kalinga (261 BCE) turned Ashoka from conqueror to Dhamma's preacher;
+  his missions carried Buddhism abroad.
+- Four provinces, the 18 tirthas, gudhapurasha spies, and Sit land formed
+  the working machinery — and its heavy cost hastened the fall.

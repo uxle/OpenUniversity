@@ -1,0 +1,76 @@
+{
+  "lessonId": "sorting-algorithms",
+  "title": "Sorting Algorithms: Ordering Data Efficiently",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which sorting algorithm repeatedly swaps adjacent out-of-order pairs, with the largest value moving to the end each pass?",
+      "options": ["Merge sort", "Selection sort", "Bubble sort", "Counting sort"],
+      "correct": 2,
+      "rationale": "Bubble sort swaps adjacent out-of-order pairs; after each full pass the largest remaining value has bubbled to the end of the list."
+    },
+    {
+      "id": 2,
+      "question": "In the worked example, sorting 5 3 8 1 4 with bubble sort left the list as which state after pass 2?",
+      "options": ["3 5 1 4 8", "3 1 4 5 8", "1 3 4 5 8", "3 5 1 8 4"],
+      "correct": 1,
+      "rationale": "The pass table shows pass 1 ending at 3 5 1 4 8 and pass 2 (two swaps) ending at 3 1 4 5 8."
+    },
+    {
+      "id": 3,
+      "question": "What is merge sort's worst-case running time?",
+      "options": ["O(n²)", "O(n log n)", "O(n)", "O(2ⁿ)"],
+      "correct": 1,
+      "rationale": "Merge sort runs in O(n log n) on every input — best, average, and worst — because the split tree has log₂ n levels, each costing O(n) to merge."
+    },
+    {
+      "id": 4,
+      "question": "Why is merge sort not in-place?",
+      "options": ["It uses recursion", "Merging needs an O(n) scratch buffer", "It requires sorted input", "It keeps a log of all swaps"],
+      "correct": 1,
+      "rationale": "In-place means O(1) extra memory; merge sort needs an O(n) buffer while merging the sorted halves."
+    },
+    {
+      "id": 5,
+      "question": "Which scenario degrades quicksort to its O(n²) worst case?",
+      "options": ["Random pivots", "A bad pivot such as the first element of already-sorted input", "Sorting strings instead of numbers", "Using extra memory for a buffer"],
+      "correct": 1,
+      "rationale": "Quicksort is usually fastest in practice, but a bad pivot on sorted input partitions extremely unevenly, giving quadratic time."
+    },
+    {
+      "id": 6,
+      "question": "How does counting sort beat the Ω(n log n) comparison lower bound?",
+      "options": ["By comparing keys in parallel", "By using keys directly as array indices", "By sorting only half the list", "By requiring unique keys"],
+      "correct": 1,
+      "rationale": "Non-comparison sorts use keys as array indices: counting sort tallies occurrences and rebuilds in order, running in O(n + k) for key range k."
+    },
+    {
+      "id": 7,
+      "question": "Which pair of sorts does the master table list as stable AND in-place in O(1) extra space?",
+      "options": ["Merge and bubble", "Bubble and insertion", "Quick and heap", "Selection and merge"],
+      "correct": 1,
+      "rationale": "Bubble and insertion sorts are both stable with O(1) extra space; merge needs O(n) space, while quick and heap are not stable."
+    },
+    {
+      "id": 8,
+      "question": "For a tiny array of about ten nearly-sorted items, which sort does the lesson recommend?",
+      "options": ["Insertion sort", "Heapsort", "Counting sort", "Merge sort"],
+      "correct": 0,
+      "rationale": "Insertion sort is adaptive — nearly-sorted input finishes in O(n) — and wins on constants for tiny arrays, which is why libraries call it for short runs."
+    },
+    {
+      "id": 9,
+      "question": "What are Timsort and introsort, as shipped by Python/Java and C++?",
+      "options": ["A stable merge/insertion hybrid and a quicksort that turns to heapsort", "Two variants of counting sort", "Parallel quicksort implementations", "Variants of selection sort for GPUs"],
+      "correct": 0,
+      "rationale": "Timsort is a stable merge/insertion hybrid running in O(n) on nearly-sorted data; introsort is quicksort that switches to heapsort when recursion runs deep."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson, why does sorted data matter so much?",
+      "options": ["It compresses better on disk", "Binary search needs it, dropping lookups from O(n) to O(log n)", "All algorithms require sorted input", "It removes the need for memory"],
+      "correct": 1,
+      "rationale": "Sorted input enables binary search at O(log n), collapses duplicates into adjacent runs for one-scan dedup, and puts medians at a known index."
+    }
+  ]
+}

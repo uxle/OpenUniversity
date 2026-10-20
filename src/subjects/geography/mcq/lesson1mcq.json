@@ -1,5 +1,83 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Maps, Globes, and the Earth's Grid",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which line of latitude divides the Earth into the Northern and Southern hemispheres?",
+      "options": ["Prime Meridian", "Tropic of Cancer", "Equator", "Arctic Circle"],
+      "correct": 2,
+      "rationale": "The Equator (0° latitude) divides the Earth into Northern and Southern hemispheres; the Prime Meridian divides longitude."
+    },
+    {
+      "id": 2,
+      "question": "The Prime Meridian passes through:",
+      "options": ["Greenwich, England", "Paris, France", "New York, USA", "Tokyo, Japan"],
+      "correct": 0,
+      "rationale": "The Prime Meridian (0° longitude) passes through Greenwich, England; its opposite is roughly the International Date Line at 180°."
+    },
+    {
+      "id": 3,
+      "question": "A city map with scale 1:10,000 is best described as:",
+      "options": ["A small-scale map showing a large area", "A large-scale map showing a small area in detail", "A physical map", "A thematic map"],
+      "correct": 1,
+      "rationale": "Large-scale maps (like 1:10,000) cover small areas with great detail — a city plan. Small-scale maps show large areas with less detail."
+    },
+    {
+      "id": 4,
+      "question": "Which map element explains the meaning of symbols and colours used on the map?",
+      "options": ["Scale", "Title", "Legend", "North arrow"],
+      "correct": 2,
+      "rationale": "The legend (or key) defines what each symbol and colour on the map represents."
+    },
+    {
+      "id": 5,
+      "question": "About what fraction of Earth's surface is covered by water?",
+      "options": ["50%", "71%", "29%", "90%"],
+      "correct": 1,
+      "rationale": "Roughly 71% of Earth's surface is water and about 29% is land."
+    },
+    {
+      "id": 6,
+      "question": "Latitude measures distance north or south of the Equator in degrees within which range?",
+      "options": ["0°–90°", "0°–180°", "0°–360°", "45°–135°"],
+      "correct": 0,
+      "rationale": "Latitude runs from 0° at the Equator to 90° at the poles; longitude is the one measured in degrees 0°–180° east or west of the Prime Meridian."
+    },
+    {
+      "id": 7,
+      "question": "Which line of latitude marks the northern limit of the Sun's direct rays?",
+      "options": ["Equator", "Arctic Circle", "Tropic of Cancer (23.5° N)", "Antarctic Circle"],
+      "correct": 2,
+      "rationale": "The Tropic of Cancer at 23.5° N is the northern limit of the Sun's direct rays; the Tropic of Capricorn at 23.5° S is the southern limit."
+    },
+    {
+      "id": 8,
+      "question": "The 180° meridian roughly coincides with which line?",
+      "options": ["The Equator", "The International Date Line", "The Tropic of Capricorn", "The Antarctic Circle"],
+      "correct": 1,
+      "rationale": "The 180° meridian roughly coincides with the International Date Line, opposite the Prime Meridian at 0°."
+    },
+    {
+      "id": 9,
+      "question": "Which map element shows the ratio between map distance and real-world distance?",
+      "options": ["Title", "Direction", "Scale", "Grid reference"],
+      "correct": 2,
+      "rationale": "The scale expresses the ratio between distance on the map and the corresponding real distance; direction comes from a north arrow or compass rose."
+    },
+    {
+      "id": 10,
+      "question": "A map that focuses on one theme such as rainfall or population density is classified as:",
+      "options": ["Physical map", "Political map", "Thematic map", "Globe"],
+      "correct": 2,
+      "rationale": "Thematic maps focus on a single theme such as climate, population, or economic activity; physical maps show natural features and political maps show boundaries and cities."
+    },
+    {
+      "id": 11,
+      "question": "According to the lesson, Earth's shape is best described as:",
+      "options": ["A perfect sphere", "Geoid — an oblate spheroid flattened at the poles", "A flat disc", "An egg-shaped body bulging at the poles"],
+      "correct": 1,
+      "rationale": "Earth is described as a Geoid — an oblate spheroid flattened at the poles — with an equatorial circumference of about 40,075 km."
+    }
+  ]
 }

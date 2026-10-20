@@ -1,3 +1,77 @@
-# Lesson1
+# How Languages Work: An Introduction to Language Study
 
-TODO: write lesson content.
+> Every language — spoken or signed — is a rule-governed system for
+> meaning. Learning *about* language makes learning *a* language faster.
+
+## 1. What Every Language Has
+
+| Level | What it handles | Example (English) |
+| --- | --- | --- |
+| Phonology | Sound system | /p/ vs /b/ distinguishes *pat* from *bat* |
+| Morphology | Word building | *un-break-able* = three meaningful parts |
+| Syntax | Sentence structure | "The dog bit the man" ≠ "The man bit the dog" |
+| Semantics | Meaning | *bank* (river) vs *bank* (money) |
+| Pragmatics | Meaning in context | "Can you pass the salt?" is a request, not a question |
+
+[definition]
+**Grammar** is the full set of a language's patterns — not a list of
+polite preferences. If millions of native speakers consistently do it,
+it is grammar; style guides can only rank the options grammar provides.
+[/definition]
+
+## 2. Language Families
+
+Languages descend from common ancestors, the way species do:
+
+@diagram tree id="language-families" layout="tree" aria="Major language families and examples"
+  "World languages" -> "Indo-European"
+  "Indo-European" -> Hindi
+  "Indo-European" -> English
+  "Indo-European" -> Spanish
+  "World languages" -> Dravidian
+  Dravidian -> Tamil
+  Dravidian -> Telugu
+  "World languages" -> "Sino-Tibetan"
+  "Sino-Tibetan" -> Mandarin
+  "World languages" -> Afroasiatic
+  Afroasiatic -> Arabic
+@/diagram
+
+- **Indo-European** — Hindi, English, Spanish, Russian, Persian
+- **Sino-Tibetan** — Mandarin, Cantonese, Burmese
+- **Afro-Asiatic** — Arabic, Hebrew, Hausa
+- **Dravidian** — Tamil, Telugu, Kannada, Malayalam
+- **Austronesian** — Indonesian, Malay, Tagalog, Malagasy
+
+[info title="Cognates"]
+Words descended from the same ancestor are **cognates**: English
+*father*, Latin *pater*, Sanskrit *pitṛ*. Spotting cognates unlocks
+vocabulary across a whole family.
+[/info]
+
+## 3. Scripts: How Writing Encodes Language
+
+1. **Alphabets** — one letter per basic sound (Latin, Cyrillic).
+2. **Abjads** — letters mainly for consonants (Arabic, Hebrew).
+3. **Abugidas** — consonant letters carrying a default vowel, marked otherwise (Devanagari).
+4. **Logographies** — characters for words/morphemes (Chinese).
+
+## 4. Strategies That Actually Work
+
+- **Spaced repetition:** review words just before you would forget them.
+- **Comprehensible input:** read and listen slightly above your level.
+- **Output early:** making mistakes while speaking/writing speeds correction.
+- **Patterns over lists:** learn *"I have gone"* as a pattern, not isolated words.
+
+[important]
+Consistency beats intensity. Twenty minutes daily outperforms four hours
+once a week, because memory consolidates through repeated retrieval over
+time.
+[/important]
+
+## Key Takeaways
+
+- Language has five levels, from sounds to context-bound meaning.
+- Languages belong to families; cognates reveal shared ancestry.
+- Scripts differ in what their symbols encode.
+- Spaced, regular, input-rich practice is how languages are actually acquired.

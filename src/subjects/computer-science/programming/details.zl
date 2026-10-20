@@ -9,4 +9,7 @@
 
 @lessons {
   lesson1
+  data-structures
+  object-oriented-programming
+  debugging-and-development-tools
 }

@@ -29,6 +29,58 @@
       "options": ["Aware to", "Aware of", "Aware in", "Aware at"],
       "correct": 1,
       "rationale": "'Aware of' is a fixed combination with 'Of', along with Beware of, Consist of, Proud of, and Fond of."
+    },
+    {
+      "id": 5,
+      "question": "Which sentence correctly applies Rule 2 (Gerund after Preposition)?",
+      "options": [
+        "You must aim at get good marks.",
+        "You must aim at getting good marks.",
+        "You must aim at got good marks.",
+        "You must aim at to getting good marks."
+      ],
+      "correct": 1,
+      "rationale": "A preposition is followed by a gerund (V1 + ing), so 'aim at getting' is correct — except 'to + V1' (infinitive)."
+    },
+    {
+      "id": 6,
+      "question": "Which preposition is used after 'Superior', 'Inferior', 'Junior', and 'Prefer'?",
+      "options": ["Than", "From", "To", "Of"],
+      "correct": 2,
+      "rationale": "These verbs/adjectives take the fixed preposition 'To' — e.g., 'superior to', 'prefer tea to coffee'."
+    },
+    {
+      "id": 7,
+      "question": "Which preposition completes this sentence about separation: \"Refrain ___ smoking\"?",
+      "options": ["From", "Of", "To", "For"],
+      "correct": 0,
+      "rationale": "'From' indicates source, origin, or separation, as in 'Refrain from smoking'."
+    },
+    {
+      "id": 8,
+      "question": "Which preposition is used with specific days and dates like Monday or 15th August?",
+      "options": ["In", "At", "Into", "On"],
+      "correct": 3,
+      "rationale": "'On' shows surface contact and specific days/dates — on Monday, on 15th August."
+    },
+    {
+      "id": 9,
+      "question": "\"The book was written ___ 1990.\" Choose the correct preposition for a year.",
+      "options": ["In", "On", "At", "Among"],
+      "correct": 0,
+      "rationale": "'In' expresses a static state inside something and is used with years — in 1990."
+    },
+    {
+      "id": 10,
+      "question": "Which sentence is correct regarding verbs that take NO preposition?",
+      "options": [
+        "He discussed about the matter.",
+        "He described about the scene.",
+        "He discussed the matter.",
+        "He obeyed to the order."
+      ],
+      "correct": 2,
+      "rationale": "Verbs like Affect, Resemble, Discuss, Describe, Obey take no preposition in active voice — hence 'He discussed the matter'."
     }
   ]
 }

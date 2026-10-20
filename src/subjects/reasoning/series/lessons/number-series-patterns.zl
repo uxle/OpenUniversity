@@ -1,0 +1,140 @@
+# Number Series Patterns: The Complete Catalogue
+
+> A number series question hides one rule inside a sequence. This lesson
+> catalogues every pattern family exams use, so you can identify the
+> family in seconds and apply its test.
+
+[important]
+Do not guess. Every exam series belongs to one of a small number of
+**pattern families**. Read the series once — rising, falling, zig-zag,
+or blocked — then run the master test order (Section 8). Each family
+below has a tell, a visible symptom, and a worked example.
+[/important]
+
+## 1. Family One: Differences
+
+Write the differences between consecutive terms as their own row and
+inspect that row — the most common family of all.
+
+| Sub-pattern | Rule | Tell |
+| --- | --- | --- |
+| Constant | add a fixed number | differences all equal |
+| Increasing | differences grow by 1, 2, 3 ... | differences rise slowly |
+| Alternating | +a, −b, +a, −b | series zig-zags |
+| Second-order | differences form their own series | differences drift |
+
+**Worked example:** 3, 5, 8, 12, 17, ? — differences 2, 3, 4, 5 rise by 1
+each step, so the next difference is 6 and the answer is 17 + 6 = **23**.
+
+**Worked example (alternating):** 50, 45, 47, 42, 44, 39, ? — differences
+−5, +2, −5, +2, −5, so the next is +2 and the answer is 39 + 2 = **41**.
+
+## 2. Family Two: Products and Ratios
+
+If differences explode rather than creep upward, test multiplication.
+
+| Sub-pattern | Rule | Tell |
+| --- | --- | --- |
+| Constant ratio | ×2, ×3 ... | terms roughly double or triple |
+| Mixed multiply-add | ×2+1, ×2+2, ×3−1 ... | ratios near-constant but drifting |
+| Alternating × and +/− | two operations alternate | sharp rise then small step |
+| Division series | ÷2, ÷4 backward | large first term falling fast |
+
+**Worked example:** 3, 7, 16, 35, 74, ? — ratios drift, so test ×2 plus
+something: 3×2+1 = 7, 7×2+2 = 16, 16×2+3 = 35, 35×2+4 = 74. The added
+number rises by 1; next is 74×2+5 = **153**.
+
+**Worked example (alternating ×/−):** 2, 6, 4, 12, 10, 30, ? — operations
+alternate ×3, −2, ×3, −2, ×3, so next is 30 − 2 = **28**.
+
+## 3. Family Three: Squares and Cubes
+
+Compare each term with the squares, cubes, and neighbouring perfect
+powers of its position.
+
+| Sub-pattern | Formula | Example series |
+| --- | --- | --- |
+| Squares | n² | 1, 4, 9, 16, 25 |
+| Squares ±1 | n²±1 | 2, 5, 10, 17, 26 (n²+1) |
+| Pronic | n²+n | 2, 6, 12, 20, 30 |
+| Cubes | n³ | 1, 8, 27, 64 |
+| Cubes ±1 | n³±1 | 0, 7, 26, 63, 124 (n³−1) |
+| Mixed square+cube | n²+n³ | 2, 12, 36, 80, 150 |
+
+**Worked example:** 2, 6, 12, 20, 30, ? — differences 4, 6, 8, 10 rise by
+2; equally, 2 = 1²+1, 6 = 2²+2, 12 = 3²+3, 20 = 4²+4, 30 = 5²+5, so
+next is 6²+6 = **42**. Two routes agreeing confirms the rule.
+
+**Worked example (cubes):** 0, 7, 26, 63, 124, ? — each term is one less
+than a cube: 1³−1, 2³−1, 3³−1, 4³−1, 5³−1. Next is 6³−1 = **215**.
+
+## 4. Family Four: Primes and Factorials
+
+| Sub-pattern | Rule | Tell |
+| --- | --- | --- |
+| Prime terms | consecutive primes 2, 3, 5, 7, 11 | small terms, no clean ratio |
+| Prime differences | add the next prime each step | differences 2, 3, 5, 7, 11 |
+| Factorial | n! = 1, 2, 6, 24, 120 | explosive growth with 1, 2, 6 start |
+
+**Worked example:** 1, 3, 6, 11, 18, 29, ? — differences are the primes
+2, 3, 5, 7, 11 in order; the next prime is 13, so the answer is **42**.
+
+**Worked example (factorial):** 1, 2, 6, 24, 120, ? — each term multiplies
+by 1, 2, 3, 4, 5 in turn: the factorial family. Next is 120 × 6 = **720**.
+
+## 5. Family Five: Fibonacci-Style and Digit-Based
+
+**Fibonacci-style:** each term is the sum of the previous two —
+1, 1, 2, 3, 5, 8, 13, 21, so 2, 3, 5, 8, 13 gives 13 + 8 = **21**.
+**Digit-based:** the rule is *previous term + sum of its own digits*:
+
+```text
+25, 32, 37, 47, 58, ?
+25 + (2+5) = 32 ; 32 + (3+2) = 37 ; 37 + (3+7) = 47 ; 47 + (4+7) = 58
+58 + (5+8) = 13  ->  answer 71
+```
+
+[warning]
+Digit-based series look like difference series at first glance. If the
+differences are irregular (7, 5, 10, 11) and the terms are two-digit,
+check whether each difference equals the previous term's digit sum.
+[/warning]
+
+## 6. Twin and Alternating Series
+
+One series can hide **two interleaved patterns** — one on odd positions,
+one on even. The tell: alternate terms look unrelated, but each
+subsequence looks clean. **Worked example:** 4, 10, 9, 20, 14, 30, 19,
+? — odd positions give 4, 9, 14, 19 (+5); even positions give 10, 20, 30
+(+10). The blank is an even position, so the answer is 30 + 10 = **40**.
+
+## 7. Common Traps
+
+- **Looks arithmetic, is quadratic:** 3, 5, 8, 12 rises gently, but the
+  differences 2, 3, 4 grow — write the difference row first.
+- **Two hidden series:** if one rule fits only half the terms, split the
+  series and re-test instead of forcing it.
+- **Near-miss options:** 153 vs 148 — the wrong one stops the ×2+1, ×2+2
+  rule one step early; verify against every term before answering.
+
+## 8. Master Strategy and Speed Table
+
+Master test order: **(1)** differences row, **(2)** ratios, **(3)** squares
+and cubes against position, **(4)** primes and factorials, **(5)** split
+into two interleaved series, **(6)** digit rules.
+
+| Symptom | Test first |
+| --- | --- |
+| Differences grow slowly, steadily | Second-order / n² family |
+| Differences double fast | Ratio family (×2±k) |
+| Sharp jump, then small step | Alternating × and +/− |
+| Every other term unrelated | Twin interleaved series |
+| Growth 1, 2, 6, 24 | Factorial |
+| Irregular gentle differences | Digit-based or prime differences |
+
+[example]
+Worked flow for 3, 7, 16, 35, 74: differences 4, 9, 19, 39 are
+irregular; ratios drift near 2 — so test ×2 plus correction: ×2+1,
+×2+2, ×2+3, ×2+4 all fit. The rule confirmed against every term, the
+next term is 74×2+5 = 153.
+[/example]

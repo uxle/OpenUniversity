@@ -1,0 +1,140 @@
+# Memory Management: Fitting Programs into RAM
+
+> RAM is small, shared, and contested. The memory manager tracks
+> every byte, protects neighbours — and lets programs use more memory
+> than the machine physically has.
+
+## 1. The Job Description
+
+The memory manager must **track**, **protect**, **relocate**, and
+**share** memory. When addresses get bound matters:
+
+| Binding time | What happens |
+| --- | --- |
+| Compile time | Compiler fixes absolute addresses; program must load at one spot |
+| Load time | Addresses patched at load; program may load anywhere |
+| Execution time | Hardware translates every address; process may move |
+
+## 2. Logical vs Physical Addresses
+
+A **logical (virtual) address** is what the program sees; the
+**physical address** is the real RAM location. The **MMU** — the
+memory management unit between CPU and RAM — translates between them
+at run time; in its simplest form one **relocation register** is
+added to every address emitted.
+
+[definition]
+The **address space** is the range of logical addresses a process may
+use. Two processes can both place a variable at address 4000 — the
+MMU maps each to a different physical home.
+[/definition]
+
+## 3. Contiguous Allocation and Fragmentation
+
+The oldest scheme gives each process one contiguous block of RAM —
+so which free hole should the allocator choose?
+
+| Strategy | Picks | Weakness |
+| --- | --- | --- |
+| First fit | First hole big enough | Fast, but scatters small holes |
+| Best fit | Smallest hole that fits | Leaves useless slivers |
+| Worst fit | Largest hole | Remainders still may not fit |
+
+| Type | What breaks | Cure |
+| --- | --- | --- |
+| **External** | Free memory lies in scattered, small holes | Compaction — shuffle processes together |
+| **Internal** | Allocated block exceeds the request; slack is wasted inside | Smaller allocation units |
+
+**Compaction** works only because addresses bind at execution time —
+and it burns CPU moving live processes.
+
+## 4. Paging: Fixed-Size Blocks
+
+**Paging** slices logical memory into equal **pages** and physical RAM
+into same-size **frames**; any page may occupy any free frame, so
+external fragmentation vanishes — only the last page of a process
+wastes part of a frame (**internal fragmentation**). The per-process
+**page table** maps page numbers to frame numbers; the MMU splits
+each virtual address into (page number, offset), and every address
+flows through the **TLB** — a small cache of recent translations:
+
+@diagram tree id="address-translation" layout="tree" aria="Virtual address translated through TLB and page table to a physical address"
+  "CPU emits virtual address" -> "TLB lookup"
+  "TLB lookup" -> "TLB hit (fast)"
+  "TLB lookup" -> "TLB miss: walk the page table"
+  "TLB hit (fast)" -> "Physical frame + offset"
+  "TLB miss: walk the page table" -> "Physical frame + offset"
+@/diagram
+
+[example]
+With a TLB lookup of 20 ns, memory access of 100 ns, and an 80% hit
+ratio: a hit costs 20 + 100 = 120 ns; a miss costs 20 + 100 + 100 =
+220 ns. Effective access time = 0.8 × 120 + 0.2 × 220 = **140 ns**.
+[/example]
+
+Small pages waste less internally but bloat the page table; large
+pages do the reverse — the classic **page size trade-off**.
+
+## 5. Virtual Memory and Demand Paging
+
+**Virtual memory** lets a program run while only some pages are in
+RAM. A **page fault** occurs when the CPU touches a page whose
+valid bit says "not in memory":
+
+```text
+1. Trap to the OS; save registers; verify the access is legal
+2. Find the page on disk
+3. Find a free frame — or evict a victim (write back if dirty)
+4. Read the page from disk into the frame; update the page table
+5. Set the valid bit; restart the faulting instruction
+```
+
+[important]
+The instruction restart is the trick that makes demand paging work:
+the process never knows the fault happened — but disk is roughly a
+million times slower than RAM, so health requires rare faults.
+[/important]
+
+## 6. Page Replacement Algorithms
+
+When no free frame exists, the OS must evict a victim — on the
+reference string `1 2 3 4 1 2 5 1 2 3 4 5` with 3 frames:
+
+| Algorithm | Rule | Faults | Comment |
+| --- | --- | --- | --- |
+| FIFO | Evict the oldest page loaded | 9 | Suffers Belady's anomaly |
+| LRU | Evict least recently used | 10 | Needs age tracking |
+| Optimal | Evict the page not needed for longest | 7 | Unimplementable — benchmark only |
+
+[warning]
+**Belady's anomaly**: with FIFO, more frames can mean more faults —
+that same reference string faults 10 times with 4 frames but 9 with
+3. LRU and Optimal are immune to the anomaly.
+[/warning]
+
+## 7. Thrashing and the Working Set
+
+**Thrashing** is the spiral where a process holds too few frames: it
+faults, evicts a page it needs moments later, faults again — the CPU
+services faults instead of executing. The **working set** — pages
+used in the last Δ references — is the memory truly needed.
+
+## 8. Paging vs Segmentation
+
+**Segmentation** divides memory by *meaning* — a code segment, a
+stack, a heap — in variable sizes; x86 does both: segment logically,
+then page each segment.
+
+| Aspect | Paging | Segmentation |
+| --- | --- | --- |
+| Unit | Fixed-size page | Variable-size logical segment |
+| Fragmentation | Internal only, in last page | External possible |
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| MMU | Translates logical to physical addresses at run time |
+| External vs internal | Scattered holes vs wasted slack inside |
+| Page fault | Load missing page from disk, restart instruction |
+| FIFO / LRU / Optimal | 9 / 10 / 7 faults on the classic string |

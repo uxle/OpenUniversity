@@ -1,0 +1,76 @@
+{
+  "lessonId": "greek-philosophy",
+  "title": "Greek Philosophy: From the Presocratics to Aristotle",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Thales, traditionally the first Greek philosopher, held that the arche (first principle) of all things is:",
+      "options": ["Fire", "Water", "Number", "Atoms"],
+      "correct": 1,
+      "rationale": "Thales of Miletus (c. 624–546 BCE) proposed water as the single underlying nature of things — the first logos-style explanation."
+    },
+    {
+      "id": 2,
+      "question": "Which pair of Presocratics set philosophy's central metaphysical agenda — the changeless One versus universal flux?",
+      "options": ["Thales and Anaximander", "Parmenides and Heraclitus", "Pythagoras and Democritus", "Protagoras and Gorgias"],
+      "correct": 1,
+      "rationale": "Parmenides argued that change is an illusion of the senses, while Heraclitus taught that everything flows like fire — permanence versus flux."
+    },
+    {
+      "id": 3,
+      "question": "Democritus explained the world as:",
+      "options": ["Four elements plus a cosmic mind", "Indivisible atoms moving in the void", "The shadow of the Forms", "Water in different states"],
+      "correct": 1,
+      "rationale": "Democritus' atomism posited changeless particles whose changing arrangements produce the world — a reply to both Parmenides and Heraclitus."
+    },
+    {
+      "id": 4,
+      "question": "'Man is the measure of all things' expresses which movement's relativism?",
+      "options": ["The Sophists, as taught by Protagoras", "The Pythagoreans", "The Academy", "The Lyceum"],
+      "correct": 0,
+      "rationale": "Protagoras, a Sophist, made truth relative to the perceiver; the Sophists were travelling paid teachers whom Plato distrusted."
+    },
+    {
+      "id": 5,
+      "question": "Socrates' characteristic method of cross-examining a claim until it yields agreement or contradiction is called:",
+      "options": ["The dialectic of nature", "The elenchus", "The syllogism", "Aporia of the Academy"],
+      "correct": 1,
+      "rationale": "The elenchus tests claims by drawing out their consequences; Socrates wrote nothing — we know him through Plato, Xenophon, and Aristophanes."
+    },
+    {
+      "id": 6,
+      "question": "In Plato's allegory of the cave, the sun outside stands for:",
+      "options": ["The philosopher-king", "The Form of the Good", "The material world", "The soul's appetite"],
+      "correct": 1,
+      "rationale": "The escaped prisoner finally sees the sun — the Form of the Good, source of truth and being for all other Forms."
+    },
+    {
+      "id": 7,
+      "question": "Plato's Republic grounds the ideal state on which psychology?",
+      "options": ["The soul is a harmony of the four humours", "The soul has three parts — reason, spirit, appetite", "The soul is a stream of perceptions", "There is no soul"],
+      "correct": 1,
+      "rationale": "Reason should rule with spirit as ally and appetite obedient: philosopher-kings, guardians, and producers each do their own work — that is justice."
+    },
+    {
+      "id": 8,
+      "question": "A sculptor's labour is to a statue as the ______ cause is to it:",
+      "options": ["Material", "Formal", "Efficient", "Final"],
+      "correct": 2,
+      "rationale": "Aristotle's four causes: bronze (material), the design (formal), the sculptor's work (efficient), and the purpose of honouring a god (final)."
+    },
+    {
+      "id": 9,
+      "question": "Unlike Plato, Aristotle holds that:",
+      "options": ["Forms exist in a separate realm", "Forms exist within things, and knowledge begins with the senses", "Knowledge is recollection", "The senses are unreliable"],
+      "correct": 1,
+      "rationale": "Aristotle's empiricism keeps forms immanent in substances; against Plato's separate, recollected Forms."
+    },
+    {
+      "id": 10,
+      "question": "Which Hellenistic school sought apatheia — freedom from destructive passions — through reason?",
+      "options": ["Epicureanism", "Stoicism", "Skepticism", "Cynicism"],
+      "correct": 1,
+      "rationale": "Zeno of Citium's Stoicism taught living by reason and controlling only what is up to us — later embodied by Epictetus and Marcus Aurelius."
+    }
+  ]
+}

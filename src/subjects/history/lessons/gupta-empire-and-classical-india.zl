@@ -1,0 +1,133 @@
+# The Gupta Age: India's Classical Golden Age
+
+> From about 319 to 550 CE the Guptas reunited the Ganga plain and set off
+> an extraordinary run of mathematics, poetry, medicine, and temple art —
+> Aryabhata's zero, Kalidasa's dramas, the Iron Pillar, and Nalanda all
+> belong to this classical moment. Harsha's brief empire and southern
+> Pallava-Chalukya art carry the story into the seventh century.
+
+## 1. Rise of the Guptas
+
+**Chandragupta I** (319-335 CE) took the title *maharajadhiraja*, married
+the **Lichchhavi** princess Kumaradevi, and launched the **Gupta era** with
+his coronation year **319-320 CE**.
+
+@diagram tree id="gupta-rulers" layout="tree" aria="The main Gupta rulers from Chandragupta I to Skandagupta"
+  Guptas -> "Chandragupta I (319-335 CE)"
+  Guptas -> "Samudragupta (335-375 CE)"
+  Guptas -> "Chandragupta II (375-415 CE)"
+  Guptas -> "Kumaragupta I (415-455 CE)"
+  Guptas -> "Skandagupta (455-467 CE)"
+@/diagram
+
+**Samudragupta** (335-375 CE) is known almost entirely from the **Allahabad
+(Prayag) Prashasti**, a eulogy in Sanskrit verse by his court poet
+**Harisena**. It lists the uprooted kings of Aryavarta, the twelve
+Dakshinapatha rulers reinstated as vassals, and frontier kings paying
+homage. He performed the **ashvamedha** — his gold coins show the sacrifice
+horse — and V. A. Smith dubbed him the **"Indian Napoleon."**
+
+## 2. Chandragupta II Vikramaditya and the Zenith
+
+Chandragupta II destroyed western **Shaka** power (Ujjain became his second
+capital), took the title **Vikramaditya**, and hosted the Chinese pilgrim
+**Fa-Hien** (c. 399-414 CE). His court's **Navaratna** ("nine gems")
+included **Kalidasa** and the lexicographer **Amarasimha**.
+
+| Ruler | Title / marker | Key facts |
+| --- | --- | --- |
+| Chandragupta I | Maharajadhiraja | Gupta era begins 319-320 CE |
+| Samudragupta | Kaviraja | Prayag Prashasti; ashvamedha |
+| Chandragupta II | Vikramaditya | Shakas destroyed; Fa-Hien visits |
+| Kumaragupta I | Mahendraditya | Founded Nalanda mahavihara |
+| Skandagupta | Vikramaditya II | Defeated Hunas; repaired Sudarshana lake |
+
+## 3. A Golden Age? Achievements
+
+- **Aryabhata** (b. 476 CE): the *Aryabhatiya* explains place value with
+  **zero**, states that the **earth rotates**, gives pi as 3.1416, and
+  explains eclipses as shadows — not demons.
+- **Varahamihira**: the *Brihatsamhita*, an encyclopaedia of astronomy and
+  omens.
+- **Medicine:** the *Charaka Samhita* (medicine) and *Sushruta Samhita*
+  (surgery — 121 instruments, cataract and nose operations) attained
+  classical form.
+- **Kalidasa:** *Abhijnanashakuntalam*, *Meghaduta*, *Raghuvamsha*. Shudraka
+  wrote *Mrichchhakatika*; Vishakhadatta the *Mudrarakshaka*; the
+  *Panchatantra* was compiled.
+- **Metallurgy:** the **Delhi Iron Pillar** (Mehrauli) of Chandragupta II
+  has resisted rust for over 1,500 years.
+- **Art:** the Sarnath Buddha, the Bhitarargaon brick temple, the
+  Dashavatara temple at Deogarh, and the **Ajanta** frescoes.
+
+[info title="Nalanda"]
+Kumaragupta I founded the **Nalanda** mahavihara; by Xuanzang's day it held
+thousands of students and a nine-storey library, teaching grammar, logic,
+medicine, and Buddhist philosophy to scholars from Korea to Central Asia.
+[/info]
+
+## 4. Administration and Economy
+
+The Gupta state was **decentralised** compared with the Mauryas: land
+grants to Brahmanas (**agrahara**) and officials, hereditary officials, and
+guilds (**shreni**) issuing coins. Gold **dinara** coins of remarkable
+beauty circulated; urbanisation slowed in the late phase and Roman trade
+declined, but Southeast Asian trade grew — Sanskrit inscriptions appear in
+**Funan** (Cambodia) and Champa, carrying Indian scripts, temples, and law.
+
+| Mauryan feature | Gupta reality |
+| --- | --- |
+| Paid bureaucracy | Land grants to office-holders |
+| Central spy network | Feudatories: parivrajaka, Uccakalpa, Maitrakas |
+| State coinage | Guptas and guilds both mint |
+
+[warning]
+"Golden age" needs qualification: Fa-Hien notes growing **untouchability**
+(chandalas announcing themselves with wood clappers in the street), and
+the earliest epigraphic hints of temple women (**devadasis**) come from
+late-classical inscriptions of the fifth-sixth centuries.
+[/warning]
+
+## 5. Fall of the Guptas
+
+**Skandagupta** (455-467 CE) repelled the first **Huna** wave — his Junagadh
+inscription records repairing the Mauryan Sudarshana lake — but the invasions
+of **Toramana** and his ferocious son **Mihirakula** broke the western
+empire. Weak successors, the drift to land grants, and the loss of western
+ports reduced the Guptas to a Magadha rump by about **550 CE**.
+
+## 6. Harsha of Thanesar (606-647 CE)
+
+Harsha of the **Pushyabhuti** house rebuilt a north Indian empire from
+Thanesar to Kanauj. His court poet **Banabhatta** wrote the *Harshacharita*;
+the Chinese pilgrim **Xuanzang** stayed 630-644 CE, studied at Nalanda, and
+praised Harsha's generosity at the great **Prayag assemblies**, where the
+king gave away his treasury every five years. His southward march was
+halted on the Narmada by the Chalukya **Pulakeshin II** (Aihole
+inscription). After Harsha died in 647 without an heir, his minister
+Arjunashva misgoverned briefly into Chinese-Tibetan intervention.
+
+## 7. The Classical South: Pallavas and Chalukyas
+
+| Dynasty | Capital | Signature works |
+| --- | --- | --- |
+| Pallavas | Kanchipuram; port Mamallapuram | Rathas and Shore Temple, Kailasanatha temple |
+| Chalukyas of Badami | Vatapi (Badami) | Aihole temples, Pattadakal, Badami caves |
+
+The **Aihole inscription of Ravikirti** (634-635 CE) praises Pulakeshin II
+defeating Harsha. Pallava-Chalukya rivalry (Pulakeshin II vs.
+Mahendravarman and Narasimhavarman I, who captured Vatapi) drove
+architectural experiment that seeded the Dravida temple style.
+
+## Key Takeaways
+
+- The Gupta era (from 319 CE) delivered classical peaks: Aryabhata's
+  mathematics, Kalidasa's poetry, Sushruta's surgery, Nalanda, and the
+  rust-free Iron Pillar.
+- The Allahabad Prashasti of Harisena is the key source for Samudragupta's
+  conquests; Fa-Hien and Xuanzang give the Chinese view of Gupta and
+  Harsha's India.
+- Gupta rule was grant-based and decentralised — effective while rich,
+  brittle before the Hunas (Toramana, Mihirakula).
+- Harsha (606-647) was the classical north's last great emperor; the
+  Pallava-Chalukya duel shaped southern temple art.

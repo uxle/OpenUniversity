@@ -1,39 +1,28 @@
 // src/components/layout/header.js — minimal sticky header: brand + a
-// "more" menu for secondary pages + theme toggle. Primary navigation
-// (Home/Subjects/Search/Progress) lives in the bottom nav at every
-// screen width — see components/layout/mobile-navigation.js — so the
-// header only ever holds two small icon buttons and can't overflow.
+// palette/search trigger + a "more" menu for secondary pages + theme
+// toggle. Primary navigation (Home/Subjects/Search/Progress) lives in
+// the bottom nav at every screen width — see
+// components/layout/mobile-navigation.js — so the header only ever holds
+// small icon buttons and can't overflow.
 import { createEl } from "../../utils/dom.js";
 import { icon } from "../../utils/icon.js";
-import { appStore } from "../../app/state.js";
-import { setPreference } from "../../storage/user-storage.js";
-import { announce } from "../../accessibility/screen-reader.js";
+import { currentTheme, toggleTheme } from "../../utils/theme.js";
 import { eventBus } from "../../core/event-bus.js";
 import { EVENTS } from "../../app/constants.js";
 
 const THEME_ICON = { light: "sun", dark: "moon" };
 
-function setThemeColorMeta(theme) {
-  const meta = document.getElementById("theme-color-meta");
-  if (meta) meta.content = theme === "dark" ? "#000000" : "#fbfbfd";
-}
-
 function createThemeToggle() {
-  const current = () => (appStore.getState().theme === "dark" ? "dark" : "light");
-  const iconEl = icon(THEME_ICON[current()]);
+  // Inline SVG icons are swapped by re-rendering, not className (the old
+  // `fa-solid fa-…` class shuffle died with the FA dependency).
+  const iconEl = icon(THEME_ICON[currentTheme()]);
   return createEl("button", {
     class: "ou-btn ou-btn--icon ou-btn--secondary",
     type: "button",
     "aria-label": "Toggle dark mode",
     on: {
       click: () => {
-        const next = current() === "dark" ? "light" : "dark";
-        document.documentElement.dataset.theme = next;
-        setPreference("theme", next);
-        appStore.setState({ theme: next });
-        setThemeColorMeta(next);
-        iconEl.className = `fa-solid fa-${THEME_ICON[next]}`;
-        announce(`${next === "dark" ? "Dark" : "Light"} mode enabled`);
+        iconEl.replaceWith(icon(THEME_ICON[toggleTheme()]));
       },
     },
   }, [iconEl]);
@@ -83,7 +72,26 @@ function createMoreMenu() {
   return wrapper;
 }
 
-export function createHeader() {
+export function createHeader(palette = null) {
+  // Search trigger: on desktop it shows the Ctrl+K affordance and opens
+  // the command palette; on narrow screens it collapses to an icon (the
+  // full Search page stays available from the bottom nav either way).
+  const searchBtn = createEl("button", {
+    type: "button",
+    class: "ou-btn ou-btn--secondary ou-navbar__search-trigger",
+    "aria-label": palette ? "Open command palette (Ctrl+K)" : "Open search",
+    on: {
+      click: (e) => {
+        if (palette) palette.open(e.currentTarget);
+        else location.hash = "/search";
+      },
+    },
+  }, [
+    icon("magnifying-glass"),
+    createEl("span", { class: "ou-navbar__search-label" }, ["Search"]),
+    createEl("kbd", { class: "ou-navbar__kbd" }, ["Ctrl K"]),
+  ]);
+
   return createEl("header", { class: "ou-navbar ou-app-shell__header" }, [
     createEl("a", { href: "#/", class: "ou-navbar__brand", translate: "no" }, [
       createEl("img", {
@@ -94,6 +102,7 @@ export function createHeader() {
       createEl("span", { class: "ou-navbar__brand-text" }, ["OpenKnowledge"]),
     ]),
     createEl("div", { class: "ou-navbar__actions" }, [
+      searchBtn,
       createMoreMenu(),
       createThemeToggle(),
     ]),

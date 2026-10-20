@@ -25,6 +25,22 @@ export function applyAccessibilitySettings(root = document.documentElement) {
   const reducedMotion = settings.reducedMotion ?? prefersReducedMotion();
   const highContrast = settings.highContrast ?? prefersHighContrast();
   root.dataset.a11yReducedMotion = String(reducedMotion);
-  if (highContrast) root.dataset.theme = "high-contrast";
   root.dataset.a11yTextSize = settings.textSize;
+
+  // High contrast is a *layer* on top of the user's chosen light/dark
+  // theme, not a replacement for it. While enabled, we render
+  // "high-contrast" but remember the underlying theme; when disabled we
+  // restore it. Previously the flag only ever overwrote dataset.theme —
+  // switching high contrast OFF left every page stuck in high contrast
+  // until you manually picked a theme again (and boot applied it before
+  // the stored theme, silently cancelling it instead).
+  if (highContrast) {
+    if (root.dataset.theme !== "high-contrast") {
+      root.dataset.preHcTheme = root.dataset.theme || getPreference("theme", "light");
+      root.dataset.theme = "high-contrast";
+    }
+  } else if (root.dataset.theme === "high-contrast") {
+    root.dataset.theme = root.dataset.preHcTheme || getPreference("theme", "light");
+    delete root.dataset.preHcTheme;
+  }
 }

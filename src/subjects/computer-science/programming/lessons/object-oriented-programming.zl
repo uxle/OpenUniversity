@@ -1,0 +1,140 @@
+# Object-Oriented Programming: Modeling the World in Objects
+
+> Instead of a list of instructions, object-oriented programs are a
+> society of objects that keep their own data and answer messages.
+
+## 1. From Procedures to Objects
+
+**Procedural** code is a recipe: data lives in variables, functions
+transform them, and any function may touch any data — freedom that
+becomes chaos as programs grow. **Object-oriented programming (OOP)**
+flips the layout: bundle the data *with* the code allowed to touch
+it. Each **object** guards its own state; the program becomes objects
+sending each other messages.
+
+## 2. Classes and Objects
+
+A **class** is a blueprint; an **object** is an instance built from
+it — one blueprint, many houses. A class declares **fields** (state)
+and **methods** (behavior).
+
+| Class `Car` | Kind | Example value for one object |
+| --- | --- | --- |
+| `make` | Field | "Maruti" |
+| `speed` | Field | 42 |
+| `accelerate()` | Method | adds 10 to `speed` |
+
+@diagram tree id="vehicle-hierarchy" layout="tree" aria="Vehicle class hierarchy with Car and Motorbike subclasses, and ElectricCar extending Car"
+  "Vehicle" -> "Car"
+  "Vehicle" -> "Motorbike"
+  "Car" -> "ElectricCar"
+@/diagram
+
+## 3. Encapsulation: Guard Your Own State
+
+**Encapsulation** hides an object's fields behind its methods — mark
+fields `private`, expose controlled accessors — to protect
+**invariants**: rules that must always hold.
+
+```python
+class Account:
+    def __init__(self):
+        self.__balance = 0          # private by convention
+
+    def deposit(self, amount):
+        if amount <= 0: raise ValueError("must be positive")
+        self.__balance += amount     # the ONLY way in
+```
+
+[important]
+With the balance reachable only through `deposit`, no stray code can
+ever set it to −500: the invariant cannot break at all.
+[/important]
+
+## 4. Inheritance: The Is-a Relationship
+
+**Inheritance** lets a class adopt another's fields and methods —
+`ElectricCar` **is a** `Vehicle` plus extras. Reuse is the reward;
+fragility is the risk — parent changes ripple into every
+descendant, so keep hierarchies shallow.
+
+## 5. Polymorphism: One Call, Many Behaviors
+
+**Polymorphism** ("many forms") lets the same call invoke different
+code depending on the receiver's actual class. Iterating a list of
+`Vehicle` objects calling `describe()`, each subclass supplies its
+own **override**; the loop neither knows nor cares which.
+
+[definition]
+**Overriding** redefines an inherited method in a subclass;
+**overloading** is a compile-time idea — same name, different
+parameter lists, in one class.
+[/definition]
+
+## 6. Abstraction: Contract Before Mechanism
+
+**Abstraction** exposes *what* an object does, hiding *how*. An
+**interface** (or abstract class) states the contract — method names
+and promises — and any class may implement it; dependents work with
+every implementation, present or future.
+
+| Tool | What it provides |
+| --- | --- |
+| Abstract class | Partial implementation + contract; single inheritance |
+| Interface | Pure contract only; a class may implement many |
+
+## 7. A Worked Example in JavaScript
+
+```js
+class Vehicle {
+  constructor(make, speed) { this.make = make; this.speed = speed; }
+  describe() { return this.make + " going " + this.speed + " km/h"; }
+}
+class ElectricCar extends Vehicle {
+  constructor(make, battery) {
+    super(make, 0);              // call parent constructor
+    this.battery = battery;
+  }
+  describe() {                    // override
+    return super.describe() + " | battery " + this.battery + "%";
+  }
+}
+
+const garage = [new ElectricCar("Zap", 80), new Vehicle("Maruti", 60)];
+garage.forEach(v => console.log(v.describe()));  // polymorphism at work
+```
+
+## 8. Composition vs Inheritance — and SOLID
+
+Inheritance is powerful but brittle. Often the better tool is
+**composition**: a `Car` *has an* `Engine` (a field) rather than *is
+a* `MotorizedThing`. Favour "has-a" over "is-a" unless the hierarchy
+is genuinely stable.
+
+[tip]
+SOLID, one line each: **S**ingle responsibility — one reason to
+change; **O**pen/closed — extend, don't edit; **L**iskov — subclasses
+usable wherever the parent is; **I**nterface segregation — many
+small contracts; **D**ependency inversion — depend on abstractions.
+[/tip]
+
+## 9. Pitfalls — and OOP vs Functional
+
+| Pitfall | Symptom | Cure |
+| --- | --- | --- |
+| **God object** | One class "knows everything" | Split by responsibility |
+| Deep hierarchy | Base change breaks ten children | Flatten; use composition |
+
+OOP and **functional programming** are not enemies: OOP bundles
+state with behavior; functional keeps data immutable and functions
+pure. Modern code mixes both — state lives in objects, logic flows
+through pure functions.
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Class vs object | Blueprint vs built instance |
+| Encapsulation | Private fields + methods guard invariants |
+| Polymorphism | Same call, subclass decides the behavior |
+| Composition | Has-a beats is-a when in doubt |

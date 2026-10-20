@@ -1,5 +1,76 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Understanding Economics: Scarcity, Choice, and Opportunity Cost",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The fundamental economic problem that gives rise to all economic choices is:",
+      "options": ["Inflation", "Scarcity", "Unemployment", "Globalisation"],
+      "correct": 1,
+      "rationale": "Scarcity — limited resources versus unlimited wants — is why every economy must decide what, how, and for whom to produce."
+    },
+    {
+      "id": 2,
+      "question": "You skip a paid shift worth ₹500 to study instead, turning down a film as well. Your opportunity cost is:",
+      "options": ["₹500 plus the film", "The film only", "₹500, the next best alternative", "Zero, since studying is free"],
+      "correct": 2,
+      "rationale": "Opportunity cost counts only the single next best alternative given up — not the sum of all alternatives."
+    },
+    {
+      "id": 3,
+      "question": "Which factor of production earns 'interest' as its reward?",
+      "options": ["Land", "Labour", "Capital", "Entrepreneurship"],
+      "correct": 2,
+      "rationale": "Land earns rent, labour earns wages, capital earns interest, and entrepreneurship earns profit."
+    },
+    {
+      "id": 4,
+      "question": "If the market price is above equilibrium, the immediate result is:",
+      "options": ["A shortage and rising price", "A surplus and falling price", "No change in quantity", "Demand shifting rightward"],
+      "correct": 1,
+      "rationale": "Above equilibrium, quantity supplied exceeds quantity demanded — a surplus — which pushes prices back down toward equilibrium."
+    },
+    {
+      "id": 5,
+      "question": "In a mixed economy, the three fundamental questions are answered by:",
+      "options": ["Central planners alone", "Markets alone", "Tradition alone", "Markets together with government intervention"],
+      "correct": 3,
+      "rationale": "A mixed economy combines market allocation through prices with government intervention — like India or France."
+    },
+    {
+      "id": 6,
+      "question": "According to the law of demand, when the price of a good rises:",
+      "options": ["Quantity demanded rises", "Quantity demanded falls", "Supply falls", "Demand and supply both stay constant"],
+      "correct": 1,
+      "rationale": "The law of demand states an inverse relationship: as price rises, quantity demanded falls (and vice versa)."
+    },
+    {
+      "id": 7,
+      "question": "The law of supply states that as the price of a good rises:",
+      "options": ["Quantity supplied falls", "Quantity supplied rises", "Quantity demanded rises", "The market moves away from equilibrium"],
+      "correct": 1,
+      "rationale": "Higher prices make production more rewarding, so quantity supplied rises along with price."
+    },
+    {
+      "id": 8,
+      "question": "Market equilibrium is defined as the price at which:",
+      "options": ["Government fixes both price and output", "Producers earn maximum profit", "Quantity demanded equals quantity supplied", "Prices stop changing forever"],
+      "correct": 2,
+      "rationale": "Equilibrium is where the two forces balance — quantity demanded equals quantity supplied; shortages then push prices up and surpluses push them down."
+    },
+    {
+      "id": 9,
+      "question": "Why do economists call prices 'signals'?",
+      "options": ["They inform the government when to intervene by law", "A rising price tells producers to make more and consumers to use less, reallocating resources without orders", "They indicate the quality of goods to inspectors", "They signal which firm will earn profit"],
+      "correct": 1,
+      "rationale": "Prices transmit information automatically: rising prices induce producers to supply more and consumers to buy less, reallocating resources without anyone issuing commands."
+    },
+    {
+      "id": 10,
+      "question": "In a command economy, who answers the three fundamental economic questions?",
+      "options": ["Buyers and sellers through prices", "Central government planning", "Traditional customs alone", "Individual entrepreneurs competing in markets"],
+      "correct": 1,
+      "rationale": "A command economy allocates resources through central government planning (e.g., the historical Soviet Union), unlike market economies where prices decide."
+    }
+  ]
 }

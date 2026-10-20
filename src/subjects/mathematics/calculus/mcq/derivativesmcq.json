@@ -1,0 +1,77 @@
+{
+  "lessonId": "derivatives",
+  "title": "Derivatives: Measuring Instantaneous Change",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Geometrically, the derivative f′(x) at a point is:",
+      "options": ["The area under the curve there", "The slope of the tangent line there", "The value of the function there", "The length of the curve"],
+      "correct": 1,
+      "rationale": "f′(x) is the limit of secant slopes as the interval shrinks — the tangent line's slope at that exact point."
+    },
+    {
+      "id": 2,
+      "question": "Using the power rule, the derivative of x³ is:",
+      "options": ["3x²", "x²", "3x", "x⁴/4"],
+      "zolto": "\\frac{d}{dx}x^{n} = nx^{n-1}",
+      "correct": 0,
+      "rationale": "Bring down the exponent and reduce it by one: d/dx x³ = 3x²."
+    },
+    {
+      "id": 3,
+      "question": "If f(x) = 3x⁴ − 2x + 7, then f′(x) =",
+      "options": ["12x³ − 2", "12x³ − 2 + 7", "7x³ − 2x", "4x³ − 1"],
+      "correct": 0,
+      "rationale": "Differentiate term by term: 3·4x³ = 12x³, derivative of −2x is −2, constant 7 differentiates to 0."
+    },
+    {
+      "id": 4,
+      "question": "The derivative of a constant (like 7) is:",
+      "options": ["7", "7x", "0", "Undefined"],
+      "correct": 2,
+      "rationale": "Constants never change, so their rate of change is exactly zero."
+    },
+    {
+      "id": 5,
+      "question": "At a point where f′(x) < 0, the function is:",
+      "options": ["Increasing", "Decreasing", "At a maximum", "Constant"],
+      "correct": 1,
+      "rationale": "Negative slope means each small step right drops the output — the function is falling there."
+    },
+    {
+      "id": 6,
+      "question": "A thrown ball has height h(t) = 20t − 5t². When does it reach its peak?",
+      "options": ["t = 1 s", "t = 2 s", "t = 4 s", "t = 10 s"],
+      "correct": 1,
+      "rationale": "Peak when h′(t) = 20 − 10t = 0 → t = 2 s; h″ = −10 < 0 confirms a maximum."
+    },
+    {
+      "id": 7,
+      "question": "The peak ball height in the previous problem is:",
+      "options": ["10 m", "20 m", "40 m", "80 m"],
+      "correct": 1,
+      "rationale": "Substitute t = 2: h(2) = 40 − 20 = 20 m."
+    },
+    {
+      "id": 8,
+      "question": "At a stationary point where f″(x) > 0, the graph has a:",
+      "options": ["Local maximum", "Local minimum", "Vertical asymptote", "Discontinuity"],
+      "correct": 1,
+      "rationale": "Zero first derivative marks the flat spot; positive second derivative means the slope is increasing — a valley (minimum)."
+    },
+    {
+      "id": 9,
+      "question": "Which function equals its own derivative?",
+      "options": ["sin x", "ln x", "eˣ", "x²"],
+      "correct": 2,
+      "rationale": "d/dx eˣ = eˣ — the only elementary function unchanged by differentiation."
+    },
+    {
+      "id": 10,
+      "question": "Why does |x| have no derivative at x = 0?",
+      "options": ["It jumps there", "It is not continuous there", "The corner has no single tangent direction", "Its value there is zero"],
+      "correct": 2,
+      "rationale": "Left of 0 the slope is −1, right of 0 it is +1; the corner never settles on one tangent, so the limit doesn't exist."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+# Chemical Bonding: How Atoms Combine
+
+> Atoms bond to shed energy and reach noble-gas outer shells. The
+> bond type chosen — ionic, covalent, metallic, or merely
+> intermolecular — fixes melting point, conductivity, and shape.
+
+## 1. Why Bonds Form
+
+[definition]
+A **chemical bond** is a lasting attraction between atoms that
+lowers the system's energy. The driving rule is the **octet rule**:
+atoms gain, lose, or share electrons to complete an outer shell.
+[/definition]
+
+**Lewis dot symbols** track only valence electrons — Na has one
+dot, Cl seven — making bond prediction simple dot bookkeeping.
+
+@diagram tree id="bond-types-tree" layout="tree" aria="Main chemical bond types and their subcategories"
+  "Chemical bonds" -> "Ionic (transfer)"
+  "Chemical bonds" -> "Covalent (sharing)"
+  "Chemical bonds" -> "Metallic (electron sea)"
+  "Covalent (sharing)" -> "Nonpolar (F2)"
+  "Covalent (sharing)" -> "Polar (HF)"
+@/diagram
+
+## 2. Ionic Bonds: Electron Transfer
+
+Sodium (2, 8, 1) hands its lone valence electron to chlorine
+(2, 8, 7):
+
+@math label="eq:nacl"
+\mathrm{Na \to Na^{+} + e^{-}}, \quad \mathrm{Cl + e^{-} \to Cl^{-}}
+@/math
+
+Opposite charges then pack into a giant **crystal lattice**; the
+energy released in lattice formation drives the reaction.
+
+| Property of ionic compounds | Reason |
+| --- | --- |
+| high melting points (NaCl 801 °C) | strong electrostatic lattice |
+| conduct only when molten or dissolved | ions must be free to move |
+| hard but brittle | shifted layers bring like charges face to face |
+| often soluble in water | polar water molecules stabilize the ions |
+
+## 3. Covalent Bonds: Electron Sharing
+
+| Bond | Example | Shared pairs |
+| --- | --- | --- |
+| Single | H–H, Cl–Cl | 1 |
+| Double | O=O (O₂) | 2 |
+| Triple | N≡N (N₂) | 3 — strongest, shortest |
+
+**Polarity** hinges on the electronegativity difference: in F₂
+(ΔEN = 0) the pair sits dead centre — nonpolar; in HF (ΔEN = 1.9)
+fluorine drags the pair its way — polar, with H δ+ and F δ−.
+
+## 4. Metallic and Coordinate Bonds
+
+**Metallic bonding**: metal kernels afloat in a delocalized
+"electron sea" — hence conductivity, malleability, and shine.
+
+[definition]
+A **coordinate (dative) bond** shares a pair that one atom supplied
+entirely. Once formed it behaves as any covalent bond. Classics:
+the ammonium ion NH₄⁺, the hydronium ion H₃O⁺, and carbon monoxide.
+[/definition]
+
+## 5. Forces Between Molecules
+
+| Force | Typical strength | Requirement | Example |
+| --- | --- | --- | --- |
+| Hydrogen bond | ~10–40 kJ/mol | H bonded to N, O, or F | H₂O, NH₃, HF |
+| Dipole–dipole | moderate | polar molecules | HCl |
+| London (dispersion) | weakest; grows with size | temporary dipoles | F₂ gas vs I₂ solid |
+
+[important]
+**Water's hydrogen bonds explain its anomalies:** ice floats because
+freezing locks molecules into an open, H-bonded cage less dense
+than the liquid; the boiling point climbs to 100 °C while H₂S,
+too weak to hydrogen-bond, boils at −60 °C.
+[/important]
+
+## 6. VSEPR: Predicting Shapes
+
+[definition]
+**VSEPR theory**: electron pairs around a central atom repel and
+settle as far apart as possible. Lone pairs repel harder than bond
+pairs, so they squeeze the angles.
+[/definition]
+
+| Shape | Angle | Bond pairs + lone pairs | Example |
+| --- | --- | --- | --- |
+| Linear | 180° | 2 + 0 | BeCl₂, CO₂ |
+| Trigonal planar | 120° | 3 + 0 | BF₃ |
+| Tetrahedral | 109.5° | 4 + 0 | CH₄ |
+| Trigonal pyramidal | 107° | 3 + 1 | NH₃ |
+| Bent | 104.5° | 2 + 2 | H₂O |
+| Octahedral | 90° | 6 + 0 | SF₆ |
+
+## 7. Hybridization, Sigma and Pi
+
+| Hybridization | Mixing | Geometry | Examples |
+| --- | --- | --- | --- |
+| sp | 1 s + 1 p | linear | BeCl₂, C₂H₂ |
+| sp² | 1 s + 2 p | trigonal planar | BF₃, C₂H₄ |
+| sp³ | 1 s + 3 p | tetrahedral | CH₄, NH₃, H₂O |
+
+A **sigma (σ) bond** comes from head-on overlap — every single bond
+and the first bond of any multiple bond. A **pi (π) bond** comes
+from sideways overlap of parallel p orbitals — the second and third
+bonds of double and triple bonds. Exposed π electrons make alkenes
+the reactive corner of organic chemistry.
+
+## 8. Bond Parameters
+
+| Bond | Length (pm) | Energy (kJ/mol) |
+| --- | --- | --- |
+| H–H | 74 | 436 |
+| C–H | 109 | 413 |
+| O=O | 121 | 498 |
+| C–C | 154 | 348 |
+| C=C | 134 | 614 |
+| C≡C | 120 | 839 |
+| N≡N | 110 | 945 |
+
+[note]
+Multiplicity tightens and strengthens: compare C–C, C=C, C≡C —
+shorter at each step, and harder to break at each step.
+[/note]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Metal + non-metal? | ionic transfer |
+| Non-metal + non-metal? | covalent sharing |
+| Which molecules hydrogen-bond? | H attached to N, O, or F |
+| NH₃ shape and angle? | trigonal pyramidal, 107° |
+| Why do metals conduct? | delocalized electron sea |

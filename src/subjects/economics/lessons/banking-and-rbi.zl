@@ -1,0 +1,125 @@
+# Banking and the Reserve Bank of India
+
+> The RBI steers the monetary system; commercial banks mobilise
+> savings and multiply credit — together they form the economy's
+> financial backbone.
+
+[definition]
+A **central bank** is the apex institution that issues currency,
+banks for the government and the banking system, and controls money
+and credit. India's central bank is the **Reserve Bank of India**,
+established in **1935** under the **RBI Act, 1934**, and
+**nationalised in 1949**.
+[/definition]
+
+## 1. Functions of the RBI
+
+| Function | What it means |
+| --- | --- |
+| Issue of currency | Sole issuer of notes (₹2 and above); coins and ₹1 notes come from the Government |
+| Banker to the government | Keeps accounts, manages public debt, arranges loans |
+| Bankers' bank | Holds bank deposits, settles inter-bank claims, supervises banks |
+| Lender of last resort | Banks in distress borrow from the RBI against collateral |
+| Custodian of foreign exchange | Manages reserves and defends the rupee |
+| Monetary authority | Controls money supply and credit (repo, CRR, and other tools) |
+| Credit regulator | Sets priorities, margins, and lending norms |
+
+## 2. Commercial Banks: Primary Functions
+
+**Accepting deposits:**
+
+- **Demand deposits** — current and savings accounts; withdrawable
+  anytime, chequable.
+- **Time deposits** — fixed and recurring deposits; locked for a
+  term, earning higher interest.
+
+**Advancing loans:** cash credit and overdrafts, demand and term
+loans, discounting bills of exchange, and investment in government
+securities.
+
+**Secondary functions** include agency services (collecting cheques,
+paying bills, buying and selling securities, fund transfers like
+NEFT/UPI rails) and general utility services (lockers, letters of
+credit, foreign exchange dealing).
+
+## 3. Credit Creation and the Money Multiplier
+
+Banks keep only a fraction of deposits as reserve and lend the rest;
+loans return as new deposits, again partially lent — each round
+shrinks by the **Cash Reserve Ratio (CRR)**, so the system multiplies
+the original deposit:
+
+@math
+Credit\ Multiplier = \frac{1}{CRR},\qquad Total\ credit = Initial\ deposit \times \frac{1}{CRR}
+@/math
+
+[example title="1000 becomes 5000"]
+With CRR 20%, a ₹1,000 deposit supports total deposits of
+1,000 × (1/0.20) = **₹5,000** — the first ₹1,000 is real cash
+(the monetary base); the other ₹4,000 is bank-created credit money.
+A higher CRR shrinks the multiplier; lowering it expands credit.
+[/example]
+
+## 4. Nationalisation of Banks
+
+- **1969** — 14 major private banks nationalised by bank size
+  (deposits above ₹50 crore), taking banking to rural India.
+- **1980** — 6 more banks nationalised, raising the public sector
+  share of deposits above 90%.
+
+Aim: social control over credit — priority-sector lending to
+agriculture and small industry instead of concentration in urban,
+large-business hands. The State Bank of India was earlier made a
+public bank under the SBI Act, 1955.
+
+## 5. The Indian Banking Structure
+
+@diagram tree id="banking-structure" layout="tree" aria="Structure of Indian banking system"
+  "Indian Banking" -> "RBI (apex regulator)"
+  "Indian Banking" -> "Commercial Banks"
+  "Indian Banking" -> "Cooperative Banks"
+  "Commercial Banks" -> "Public Sector Banks"
+  "Commercial Banks" -> "Private Sector Banks"
+  "Commercial Banks" -> "Foreign Banks"
+  "Commercial Banks" -> "Regional Rural Banks"
+@/diagram
+
+## 6. New-Age Banks
+
+- **Payment banks** (recommended by the Nachiket Mor Committee,
+  licensed from 2015): accept small deposits (then capped at
+  ₹1 lakh per customer; limit later raised), offer remittances and
+  payments — but **cannot lend** or issue credit cards. Examples:
+  Airtel Payments Bank, Paytm Payments Bank (until 2024),
+  India Post Payments Bank.
+- **Small finance banks** (from 2015–16): full-service banks for
+  financial inclusion — small loans, micro-credit, savings — with
+  mandated priority-sector focus. Examples: AU Small Finance Bank,
+  Ujjivan, Equitas.
+
+[info title="Why payment banks cannot lend"]
+Deposits are invested only in safe government securities up to a
+prescribed limit, keeping payment-system money insulated from credit
+risk — the same logic that keeps wallets out of the lending
+business.
+[/info]
+
+## 7. Quick Revision Table
+
+| Question | Answer |
+| --- | --- |
+| RBI established | 1935 (RBI Act 1934), nationalised 1949 |
+| Lender of last resort | The RBI, to banks in distress |
+| Money multiplier | 1/CRR; ₹1,000 at 20% CRR → ₹5,000 |
+| Bank nationalisation | 1969 (14 banks); 1980 (6 banks) |
+| Payment banks | Small deposits, remittances — no lending |
+| Small finance banks | Inclusion-focused full-service banks |
+| Demand vs time deposit | Withdrawable on demand vs locked for a term |
+
+[summary]
+The RBI governs currency, credit, and the payments architecture;
+commercial banks turn deposits into loans and multiply money by
+1/CRR. Nationalisation (1969, 1980) socialised credit, and payment
+and small finance banks now extend the same architecture to the last
+mile.
+[/summary]

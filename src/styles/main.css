@@ -2,6 +2,7 @@
    Import this one file; it pulls in the rest via @import (no build step
    required — modern browsers resolve these directly). */
 @import "./reset.css";
+@import "./animations.css";
 @import "./variables.css";
 @import "./typography.css";
 @import "./layout.css";
@@ -14,6 +15,7 @@
 
 @import "./components/buttons.css";
 @import "./components/cards.css";
+@import "./components/accents.css";
 @import "./components/navbar.css";
 @import "./components/bottom-nav.css";
 @import "./components/modal.css";
@@ -21,6 +23,8 @@
 @import "./components/tabs.css";
 @import "./components/dropdown.css";
 @import "./components/progress.css";
+@import "./components/command-palette.css";
+@import "./components/reading-extras.css";
 
 @import "./lesson/lesson.css";
 @import "./lesson/lesson-content.css";

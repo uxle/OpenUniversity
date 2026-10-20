@@ -1,5 +1,84 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Algebra Basics: Expressions, Equations, and Patterns",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Simplify: 2x + 5x − 3 + 8",
+      "options": ["7x + 5", "10x + 5", "7x² + 5", "15x"],
+      "correct": 0,
+      "rationale": "Combine like terms: 2x + 5x = 7x and −3 + 8 = 5, giving 7x + 5."
+    },
+    {
+      "id": 2,
+      "question": "Solve for x: 3x + 4 = 19",
+      "options": ["3", "5", "7", "9"],
+      "zolto": "3x + 4 = 19",
+      "correct": 1,
+      "rationale": "Subtract 4 from both sides (3x = 15), then divide by 3: x = 5. Check: 3(5) + 4 = 19."
+    },
+    {
+      "id": 3,
+      "question": "Factorise fully: x² + 5x + 6",
+      "options": ["(x+1)(x+6)", "(x+2)(x+3)", "(x−2)(x−3)", "(x+5)(x+1)"],
+      "correct": 1,
+      "rationale": "Find two numbers multiplying to 6 and adding to 5: 2 and 3 — so (x+2)(x+3)."
+    },
+    {
+      "id": 4,
+      "question": "If a sequence follows the rule 4n − 1, what is its 10th term?",
+      "options": ["39", "40", "41", "44"],
+      "correct": 0,
+      "rationale": "Substitute n = 10: 4(10) − 1 = 39."
+    },
+    {
+      "id": 5,
+      "question": "A quadratic that cannot be factorised neatly can still always be solved using:",
+      "options": ["Guessing", "The quadratic formula", "Rounding", "Only graphing"],
+      "correct": 1,
+      "rationale": "The quadratic formula x = (−b ± √(b²−4ac))/2a solves every equation of the form ax² + bx + c = 0."
+    },
+    {
+      "id": 6,
+      "question": "In the expression 3x² − 5x + 7, what is the coefficient of x?",
+      "options": ["3", "−5", "7", "5"],
+      "correct": 1,
+      "rationale": "The coefficient multiplies the variable — here −5 multiplies x (3 is the coefficient of x²)."
+    },
+    {
+      "id": 7,
+      "question": "Expand: (x + 2)(x + 3)",
+      "options": ["x² + 5x + 6", "x² + 6x + 5", "x² + 6x + 6", "x² + 5x + 5"],
+      "correct": 0,
+      "rationale": "Expanding gives x² + 3x + 2x + 6 = x² + 5x + 6; factorising is exactly this move reversed."
+    },
+    {
+      "id": 8,
+      "question": "What are the solutions of (x + 2)(x + 3) = 0?",
+      "options": ["x = 2 or x = 3", "x = −2 or x = −3", "x = 5 or x = 6", "x = −5 or x = −6"],
+      "correct": 1,
+      "rationale": "A product is zero exactly when a factor is zero, so x + 2 = 0 or x + 3 = 0, giving x = −2 or x = −3."
+    },
+    {
+      "id": 9,
+      "question": "The sequence 2, 6, 18, 54, … follows which rule?",
+      "options": ["4n − 1", "n²", "2·3ⁿ⁻¹", "n + 4"],
+      "correct": 2,
+      "rationale": "Each term is multiplied by 3, so the nth term is 2·3ⁿ⁻¹; the next term after 54 is 162."
+    },
+    {
+      "id": 10,
+      "question": "The first step in solving 3x + 4 = 19 by balanced moves is to:",
+      "options": ["Divide both sides by 3", "Subtract 4 from both sides", "Subtract 19 from both sides", "Multiply both sides by 4"],
+      "correct": 1,
+      "rationale": "You subtract 4 from both sides first to get 3x = 15, then divide by 3 to get x = 5."
+    },
+    {
+      "id": 11,
+      "question": "Which pair consists of like terms that can be combined?",
+      "options": ["3x² and −5x", "7x and 2x", "7x and 7", "x²y and xy²"],
+      "correct": 1,
+      "rationale": "Like terms share the same variable power — 7x and 2x combine to 9x; terms with different powers (like 3x² and −5x) cannot be combined."
+    }
+  ]
 }

@@ -29,6 +29,48 @@
       "options": ["won't you?", "will you?", "shall we?", "don't you?"],
       "correct": 1,
       "rationale": "For Negative Imperative sentences, the tag is 'will you?' — 'Don't make a noise, will you?'"
+    },
+    {
+      "id": 5,
+      "question": "\"These are rare flowers, ___?\" Choose the correct question tag.",
+      "options": ["aren't these?", "isn't it?", "aren't they?", "are they?"],
+      "correct": 2,
+      "rationale": "For 'These/Those' (plural), the tag subject is 'they' and the sentence is positive, so the tag must be negative: 'aren't they?'"
+    },
+    {
+      "id": 6,
+      "question": "\"I am working hard on this book, ___?\" Choose the correct question tag.",
+      "options": ["amn't I?", "aren't I?", "am I?", "isn't I?"],
+      "correct": 1,
+      "rationale": "The special tag for 'I am' is 'aren't I?' — e.g., 'I am working hard on this book, aren't I?'"
+    },
+    {
+      "id": 7,
+      "question": "\"Sit down, ___?\" Choose the correct tag for this Positive Imperative.",
+      "options": ["shall we?", "won't you? (or will you?)", "don't you?", "isn't it?"],
+      "correct": 1,
+      "rationale": "For Positive Imperative sentences (commands/requests), the tag is 'won't you?' or 'will you?' — 'Sit down, won't you?'"
+    },
+    {
+      "id": 8,
+      "question": "\"They seldom come here, ___?\" Choose the correct question tag.",
+      "options": ["don't they?", "do they?", "seldom they?", "aren't they?"],
+      "correct": 1,
+      "rationale": "'Seldom' makes the sentence negative in meaning, so the tag must be positive: 'They seldom come here, do they?'"
+    },
+    {
+      "id": 9,
+      "question": "\"Delhi is not very far away, ___?\" Choose the correct question tag.",
+      "options": ["isn't it?", "is it?", "is Delhi?", "doesn't it?"],
+      "correct": 1,
+      "rationale": "The sentence contains 'not', so it is negative and takes a positive tag: 'Delhi is not very far away, is it?'"
+    },
+    {
+      "id": 10,
+      "question": "\"The tree was uprooted by the storm last evening, ___?\" Choose the correct question tag.",
+      "options": ["didn't it?", "was it?", "wasn't it?", "hadn't it?"],
+      "correct": 2,
+      "rationale": "The helping verb of the positive past statement ('was') returns in the negative tag with the pronoun 'it': 'wasn't it?'"
     }
   ]
 }

@@ -1,0 +1,138 @@
+# Recursion and Divide-and-Conquer: Solve Big Problems with Small Ones
+
+> A recursive function solves a problem by calling itself on a smaller
+> copy of the same problem. Divide-and-conquer builds whole algorithms
+> on that move: split, solve, combine — and logarithms do the rest.
+
+## 1. Recursion: A Function That Calls Itself
+
+Every recursive definition has exactly two ingredients:
+
+1. **Base case** — a small input answered directly, with no self-call.
+2. **Recursive case** — the problem restated in terms of smaller input.
+
+```text
+FACTORIAL(n):
+  if n <= 1:
+    return 1
+  return n * FACTORIAL(n - 1)
+```
+
+FACTORIAL(4) unwinds down to FACTORIAL(1), then multiplies back up.
+
+[warning]
+A missing or unreachable base case means the calls never bottom out —
+each call pushes a frame until the program dies with a **stack
+overflow**.
+[/warning]
+
+## 2. The Call Stack
+
+Each call pushes a **stack frame**; each return pops one frame.
+
+| Call | Waits on | Returns |
+| --- | --- | --- |
+| FACTORIAL(3) | FACTORIAL(2) | 6 |
+| FACTORIAL(2) | FACTORIAL(1) | 2 |
+| FACTORIAL(1) | — base case | 1 |
+
+[info title="Space is part of the cost"]
+An O(n)-time recursion still consumes O(n) stack space; a loop uses O(1).
+[/info]
+
+## 3. Four Classic Recursions
+
+| Problem | Recurrence | Cost | Note |
+| --- | --- | --- | --- |
+| Factorial | f(n) = n × f(n−1) | O(n) | one call per level |
+| Fibonacci | f(n) = f(n−1) + f(n−2) | O(2ⁿ) naive, O(n) memoized | overlapping calls |
+| Tower of Hanoi | h(n) = 2·h(n−1) + 1 | 2ⁿ − 1 moves | exponential is optimal |
+| Euclid's GCD | gcd(a, b) = gcd(b, a mod b) | O(log min(a, b)) | multiplicative shrink |
+
+[note]
+Tower of Hanoi with 64 discs takes 2⁶⁴ − 1 moves — about 585 billion
+years at one per second. Exponential growth is a wall.
+[/note]
+
+## 4. Overlapping Subproblems: The Fibonacci Trap
+
+The naive call tree recomputes the same values again and again:
+
+@diagram tree id="fibonacci-call-tree" layout="tree" aria="Naive Fibonacci call tree where fib of 3 and fib of 2 are computed repeatedly"
+  "fib(5)" -> "fib(4)"
+  "fib(5)" -> "fib(3)"
+  "fib(4)" -> "fib(3)"
+  "fib(4)" -> "fib(2)"
+  "fib(3)" -> "fib(2)"
+  "fib(3)" -> "fib(1)"
+@/diagram
+
+fib(3) is computed twice and fib(2) three times; the branching roughly
+doubles every level, so naive Fibonacci costs about O(2ⁿ).
+
+[definition]
+**Memoization** records each answer at first computation; repeats become
+lookups. Fibonacci drops from O(2ⁿ) to O(n) time for O(n) memory.
+[/definition]
+
+## 5. Memoization vs Tabulation
+
+| Aspect | Memoization (top-down) | Tabulation (bottom-up) |
+| --- | --- | --- |
+| Style | recursion plus a cache | fill a table with loops |
+| Computes | only the states actually needed | every state up to n |
+| Risk | deep call stack | must order the table correctly |
+| Best at | sparse state spaces | dense, regular ones |
+
+Both compute each state once — differing only in direction.
+
+## 6. Divide-and-Conquer: Divide, Conquer, Combine
+
+Divide-and-conquer cuts the input in half and recurses on each piece:
+
+1. **Divide** the problem into smaller instances of itself.
+2. **Conquer** each piece recursively; tiny pieces are solved directly.
+3. **Combine** the answers into the final result.
+
+Halving is powerful: log₂ n levels separate a million items from one.
+
+| Problem | Divide | Combine | Total |
+| --- | --- | --- | --- |
+| Binary search | keep one half | nothing to merge | O(log n) |
+| Merge sort | two halves | linear merge | O(n log n) |
+| Max subarray | two halves | best run crossing the middle | O(n log n) |
+
+## 7. Binary Search as Halving in Action
+
+Looking for one value among 1,000,000 sorted items:
+
+| After step | Items still possible |
+| --- | --- |
+| 0 | 1,000,000 |
+| 10 | about 977 |
+| 20 | about 1 |
+
+Twenty comparisons, because log₂(1,000,000) ≈ 20: each comparison
+discards half the range, and that is the entire trick.
+
+## 8. Recursion vs Iteration
+
+| Aspect | Recursion | Iteration |
+| --- | --- | --- |
+| Readability | mirrors the problem's shape | can be long-winded |
+| Memory | O(depth) stack frames | O(1) |
+| Failure mode | stack overflow | infinite loop |
+| Best for | trees, divide-and-conquer | counting, scans |
+
+[note]
+**Tail recursion** — the self-call is the last action, nothing pending
+afterwards — can be compiled into a loop; Python does not, so deep
+recursion there must become a loop with an explicit stack.
+[/note]
+
+[summary]
+Recursion needs a base case plus a recursive case, and spends one
+stack frame per level. Overlapping subproblems make naive recursion
+exponential — memoize or tabulate. Divide-and-conquer halves problems:
+binary search O(log n), merge sort O(n log n).
+[/summary]

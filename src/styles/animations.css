@@ -1,0 +1,135 @@
+/* src/styles/animations.css — central keyframe library.
+   All @keyframes live here; component files reference by name only.
+   Every animation is automatically suppressed by the
+   prefers-reduced-motion rule in reset.css (animation-duration: 0.01ms).
+   New keyframes go here, not scattered across component files. */
+
+/* ─── Entrance / Page transitions ─────────────────────────────────── */
+
+/* Standard page / card fade-lift entrance */
+@keyframes ou-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Fade in — used for overlays, backdrops */
+@keyframes ou-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide up — used for modal panels, bottom sheets */
+@keyframes ou-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Slide in from right — used for toast notifications */
+@keyframes ou-toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 24px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide out to right — used for toast exit */
+@keyframes ou-toast-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    max-height: 120px;
+    margin-bottom: 0;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(calc(100% + 24px));
+    max-height: 0;
+    margin-bottom: calc(var(--ou-space-2) * -1);
+  }
+}
+
+/* Dropdown open — scale + fade from top-right origin */
+@keyframes ou-dropdown-open {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ─── Micro-interactions ────────────────────────────────────────────── */
+
+/* Shake — used for MCQ incorrect answer feedback */
+@keyframes ou-shake {
+  0%   { transform: translateX(0); }
+  15%  { transform: translateX(-7px); }
+  30%  { transform: translateX(6px); }
+  45%  { transform: translateX(-5px); }
+  60%  { transform: translateX(4px); }
+  75%  { transform: translateX(-2px); }
+  90%  { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
+/* Bounce-in pulse — used for MCQ correct answer feedback */
+@keyframes ou-bounce-in {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.04); }
+  60%  { transform: scale(0.98); }
+  80%  { transform: scale(1.01); }
+  100% { transform: scale(1); }
+}
+
+/* Score pop — used for MCQ results score reveal */
+@keyframes ou-score-pop {
+  0%   { opacity: 0; transform: scale(0.6); }
+  60%  { opacity: 1; transform: scale(1.08); }
+  80%  { transform: scale(0.96); }
+  100% { transform: scale(1); }
+}
+
+/* ─── Loading / Skeleton ────────────────────────────────────────────── */
+
+/* Skeleton shimmer — sweeping highlight across placeholder blocks */
+@keyframes ou-skeleton-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Pulse — used for indeterminate progress / active indicators */
+@keyframes ou-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* ─── Utility ───────────────────────────────────────────────────────── */
+
+/* Spinner rotation */
+@keyframes ou-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Progress bar shimmer (in-progress state) */
+@keyframes ou-progress-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}

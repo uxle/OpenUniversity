@@ -1,0 +1,140 @@
+# Data Structures: Organizing Data for Speed
+
+> Finding one item in a million can take a million steps — or one.
+> Data structures are the art of choosing that arrangement.
+
+## 1. Why Structure Choice Matters
+
+Finding one name among a million unsorted records by scanning takes
+up to **1,000,000 comparisons**. Sorted, **binary search** needs
+about **20** (since 2^20 > 1,000,000). In a **hash table**, roughly
+**1**. Same data, same machine — different structure, five orders of
+magnitude less work.
+
+[definition]
+A **data structure** is a way of organizing data in memory so the
+operations you care about — search, insert, delete, traverse — are
+cheap, while accepting that others become expensive.
+[/definition]
+
+## 2. Arrays vs Linked Lists
+
+| Aspect | Array | Linked list |
+| --- | --- | --- |
+| Memory layout | One contiguous block | Nodes scattered, each with a pointer |
+| Access i-th item | O(1) — index arithmetic | O(n) — walk from the head |
+| Insert/delete at front | O(n) — shift every element | O(1) — rewire pointers |
+| Insert at end | O(1) amortized (dynamic arrays) | O(1) with a tail pointer |
+| Search (unsorted) | O(n) | O(n) |
+| Cache friendliness | Excellent — sequential memory | Poor — pointer chasing |
+| Memory overhead | None | One pointer per node |
+
+```text
+Array:  [ 12 ][ 5 ][ 8 ][ 3 ]    one block, index math
+List:   (12)->(5)->(8)->(3)     nodes + pointers
+```
+
+[tip]
+CPU caches stream contiguous memory, so arrays beat linked lists in
+real programs far more often than the big-O table suggests.
+[/tip]
+
+## 3. Stacks, Queues, and Deques
+
+| Structure | Rule | Core ops (all O(1)) | Classic uses |
+| --- | --- | --- | --- |
+| **Stack** | LIFO — last in, first out | `push`, `pop`, `peek` | Call stack, undo, browser back |
+| **Queue** | FIFO — first in, first out | `enqueue`, `dequeue` | OS ready queue, print jobs, BFS |
+| **Deque** | Both ends open | push/pop at both ends | Sliding windows, work stealing |
+
+```python
+stack = []
+stack.append(1)   # push
+stack.append(2)
+stack.pop()       # pop -> 2 (the last one in)
+```
+
+## 4. Hash Tables
+
+A **hash table** stores key–value pairs. A **hash function** converts
+a key into an array index, so a lookup is: hash the key, jump
+straight to that bucket.
+
+| Aspect | Fact |
+| --- | --- |
+| Average lookup/insert/delete | O(1) |
+| Worst case | O(n) — every key collides |
+| Collision | Two different keys hash to the same bucket |
+| **Chaining** | Each bucket holds a small list of colliding items |
+| **Open addressing** | Probe nearby slots for the next free spot |
+| Load factor | Items ÷ buckets; too high → resize and rehash |
+
+[important]
+Hash tables buy O(1) speed by *forgetting order*: they answer "is
+this key here, and what is its value?" but cannot cheaply list keys
+in sorted order or answer range questions — that is a tree's job.
+Caches, de-duplication, and compiler symbol tables all lean on them.
+[/important]
+
+## 5. Binary Search Trees
+
+A **binary search tree (BST)** orders every node: left subtree keys
+are smaller, right subtree keys larger.
+
+@diagram tree id="bst-example" layout="tree" aria="Binary search tree holding keys 8, 3, 10, 1, 6 and 14"
+  "8" -> "3"
+  "8" -> "10"
+  "3" -> "1"
+  "3" -> "6"
+  "10" -> "14"
+@/diagram
+
+Searching follows one path from the root, and each step discards
+half the remaining keys when the tree is balanced. An **in-order
+traversal** (left, node, right) visits keys in **sorted order**.
+
+[warning]
+A BST stays fast only while it stays *balanced*: insert 1, 2, 3, 4, 5
+in order and the tree degenerates into a linked list — O(n) search.
+The fix is automatic rebalancing.
+[/warning]
+
+## 6. Balanced Trees and Heaps
+
+| Tree | Idea | Kept fast by |
+| --- | --- | --- |
+| **AVL tree** | Strict balance — sibling heights differ by at most 1 | Rotations on every insert/delete |
+| **Red-black tree** | Looser color rules, fewer rotations | Used inside `std::map`, Java's `TreeMap` |
+| **Heap** | Parent always ≤ children (min-heap) — not a search tree | Priority queues |
+
+A **heap** answers one question in a hurry — *"what is the smallest
+item?"* — not "where is this key?", making it the engine of priority
+queues, Dijkstra's shortest path, and heapsort.
+
+| Operation | BST (balanced) | Heap |
+| --- | --- | --- |
+| Search by key | O(log n) | O(n) |
+| Insert | O(log n) | O(log n) |
+| Find minimum | O(log n) | **O(1)** |
+| Delete minimum | O(log n) | O(log n) |
+
+## 7. Choosing the Right Structure
+
+| Your need | Best structure |
+| --- | --- |
+| Fast lookup by key, order irrelevant | Hash table |
+| Sorted order, range queries | Balanced BST (AVL / red-black) |
+| Undo, backtracking, most-recent-first | Stack |
+| Fairness — first come, first served | Queue |
+| Repeatedly extract the smallest/largest | Heap |
+| Fixed shape, index math, cache-friendly scan | Array |
+
+## Quick Revision
+
+| Concept | One-line recall |
+| --- | --- |
+| Array vs list | Index O(1) vs O(n); cache loves arrays |
+| Stack / queue | LIFO undo vs FIFO fairness |
+| Hash table | O(1) average by key; chaining or probing |
+| BST | In-order traversal is sorted; O(n) if unbalanced |
+| Heap | O(1) peek at the minimum; priority queues live here |

@@ -1,3 +1,18 @@
 {
-  "lessons": ["lesson1"]
+  "lessons": [
+    "lesson1",
+    "indus-valley-civilization",
+    "vedic-age",
+    "religious-movements-buddhism-jainism",
+    "mauryan-empire",
+    "gupta-empire-and-classical-india",
+    "delhi-sultanate",
+    "mughal-empire",
+    "marathas-and-the-18th-century",
+    "british-conquest-and-1857",
+    "indian-national-movement-1885-1919",
+    "gandhian-era-1919-1947",
+    "world-revolutions",
+    "world-wars-and-the-cold-war"
+  ]
 }

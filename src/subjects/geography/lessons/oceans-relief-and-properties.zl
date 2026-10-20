@@ -1,0 +1,115 @@
+# The Oceans: Relief, Salinity, and Temperature
+
+> Oceans hold about 97% of Earth's water and hide most of its relief
+> beneath a lid of blue. This lesson tours the ocean floor and explains
+> the salt and heat that govern how ocean water behaves.
+
+## 1. The Water of the Planet
+
+Solar evaporation, vapour transport, precipitation, and runoff endlessly
+recycle water between ocean, air, and land — the **hydrological cycle**.
+
+| Term | Meaning | Example |
+| --- | --- | --- |
+| Ocean | A vast, connected body of salt water | The Pacific Ocean |
+| Sea | Smaller, partly land-locked salt water | The Arabian Sea |
+| Bay | Wide coastal recess, land on three sides | Bay of Bengal |
+| Gulf | Deep recess with a narrow mouth | Gulf of Mexico |
+| Strait | Narrow water joining two larger bodies | Palk Strait |
+| Isthmus | Narrow land joining two larger landmasses | Isthmus of Panama |
+
+## 2. Relief of the Ocean Floor
+
+@diagram tree id="ocean-floor-relief" layout="tree" aria="Ocean floor features from shelf to trench"
+  "Ocean floor" -> "Continental shelf"
+  "Ocean floor" -> "Continental slope"
+  "Ocean floor" -> "Abyssal plains"
+  "Ocean floor" -> "Mid-ocean ridges"
+  "Ocean floor" -> Trenches
+@/diagram
+
+| Feature | Depth or extent | Significance |
+| --- | --- | --- |
+| Continental shelf | To about 200 m | Less than a tenth of the ocean floor; the world's richest fisheries and offshore oil |
+| Continental slope | 200 m to about 2,000–3,000 m | Steep descent to the deep sea |
+| Abyssal plains | 3,000–6,000 m | Flattest, most extensive stretches of the globe, sediments settling |
+| Mid-ocean ridges | Rising from the plains | World's longest mountain chain (~65,000 km); plates diverge along its rift |
+| Seamounts and guyots | Isolated volcanic peaks | Guyots are flat-topped, wave-planed seamounts |
+| Ocean trenches | Below 6,000 m | Mariana Trench's Challenger Deep, ~11 km — the planet's deepest point |
+
+[important title="Where the plates meet"]
+Trenches mark subduction zones where one plate dives beneath another;
+the Challenger Deep in the Mariana Trench would swallow Mount Everest
+with more than 2 km to spare.
+[/important]
+
+## 3. Salinity
+
+[definition]
+**Salinity** is the salt content of water, expressed in grams per
+kilogram (practical salinity units); the world-ocean average is about
+**35**.
+[/definition]
+
+| Factor | Effect on salinity |
+| --- | --- |
+| Evaporation | Raises it |
+| Precipitation and river influx | Lower it |
+| Freezing of sea ice | Raises it (salt is excluded from ice) |
+
+@chart bar title="Salinity of selected waters (practical salinity units)"
+labels:
+Baltic Sea
+World average
+Red Sea
+
+data:
+8
+35
+41
+@/chart
+
+The **Baltic Sea** reads only about 7–10 because rivers dilute it; the
+**Red Sea**, evaporating fiercely with no rivers, reaches about 41;
+and the land-locked **Dead Sea**, at roughly 330, is so dense that
+swimmers float like corks. Latitudinally, salinity peaks near 20–30°
+north and south, where evaporation outruns rainfall.
+
+## 4. Temperature of Ocean Water
+
+| Layer or zone | Behaviour |
+| --- | --- |
+| Surface (mixed) layer | Warmest; stirred by winds; tropical waters reach 25–30°C |
+| Thermocline | Rapid fall of temperature with depth |
+| Deep water | Cold and stable, near 0–2°C at the floor |
+
+Surface temperature falls poleward from about 25–30°C at the equator to
+near freezing at the polar margins. Ocean water warms and cools far
+more slowly than land, because water has a high heat capacity — which
+is why coastal cities enjoy mild, equable climates.
+
+[tip]
+Think of the ocean as a three-layer cake: a warm lid, a thermocline
+divider, and a vast cold base.
+[/tip]
+
+## 5. Wealth of the Oceans
+
+- **Food** — fisheries cluster over the nutrient-rich shelves and
+  upwelling zones.
+- **Minerals** — oil and gas from shelves; polymetallic nodules on
+  abyssal plains.
+- **Energy** — tidal, wave, and ocean-thermal prospects.
+- **Trade** — most of world trade by weight still travels by sea.
+
+## 6. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Deepest point of the oceans? | Challenger Deep, Mariana Trench (~11 km) |
+| Longest mountain chain? | The mid-ocean ridge system (~65,000 km) |
+| Average salinity? | About 35 |
+| Least saline sea? | The Baltic (about 7–10) |
+| Hypersaline example? | The Dead Sea (about 330) |
+| Rapid-cooling depth zone? | The thermocline |
+| Richest fisheries lie over? | The continental shelf |

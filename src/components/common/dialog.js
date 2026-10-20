@@ -21,12 +21,11 @@ export function confirmDialog({ title = "Are you sure?", message, confirmLabel =
 
 export function alertDialog({ title = "Notice", message }) {
   return new Promise((resolve) => {
-    const modal = openModal({
+    openModal({
       title,
       content: createEl("p", {}, [message]),
       onClose: resolve,
       actions: [],
     });
-    modal.actions = [];
   });
 }

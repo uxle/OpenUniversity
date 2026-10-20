@@ -1,0 +1,77 @@
+{
+  "lessonId": "probability",
+  "title": "Probability: Measuring Uncertainty",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A probability of 0 means the event:",
+      "options": ["Is very unlikely", "Is impossible", "Happens half the time", "Is certain"],
+      "correct": 1,
+      "rationale": "The probability scale runs from 0 (impossible) to 1 (certain)."
+    },
+    {
+      "id": 2,
+      "question": "One card is drawn from a standard 52-card deck. P(king) =",
+      "options": ["1/4", "4/52 = 1/13", "1/52", "12/52"],
+      "correct": 1,
+      "rationale": "Four kings among 52 equally likely cards: 4/52 = 1/13."
+    },
+    {
+      "id": 3,
+      "question": "P(not E) when P(E) = 0.3 equals:",
+      "options": ["0.7", "0.3", "1.3", "0"],
+      "zolto": "P(\\text{not } E) = 1 - P(E)",
+      "correct": 0,
+      "rationale": "Complements always sum to exactly 1, so P(not E) = 1 − 0.3 = 0.7."
+    },
+    {
+      "id": 4,
+      "question": "Two fair coins are flipped. P(two heads) =",
+      "options": ["1/2", "1/3", "1/4", "3/4"],
+      "correct": 2,
+      "rationale": "Independent events multiply: 1/2 × 1/2 = 1/4."
+    },
+    {
+      "id": 5,
+      "question": "Two dice are rolled. How many of the 36 outcomes give a sum of 7?",
+      "options": ["4", "5", "6", "8"],
+      "correct": 2,
+      "rationale": "(1,6),(2,5),(3,4),(4,3),(5,2),(6,1) — six ordered pairs make 7 the most likely sum."
+    },
+    {
+      "id": 6,
+      "question": "So P(sum = 7) with two dice is:",
+      "options": ["1/6", "7/36", "1/12", "5/36"],
+      "correct": 0,
+      "rationale": "6 favourable out of 36 total: 6/36 = 1/6."
+    },
+    {
+      "id": 7,
+      "question": "One die is rolled once. P(prime number) =",
+      "options": ["1/3", "1/2", "2/3", "5/6"],
+      "correct": 1,
+      "rationale": "Primes on a die are 2, 3, 5 — three faces out of six: 3/6 = 1/2."
+    },
+    {
+      "id": 8,
+      "question": "Events that cannot both happen at the same time are combined for 'or' by:",
+      "options": ["Multiplying probabilities", "Adding probabilities", "Subtracting from 1", "Averaging them"],
+      "correct": 1,
+      "rationale": "Mutually exclusive events share no outcomes, so P(A or B) = P(A) + P(B) with no overlap to subtract."
+    },
+    {
+      "id": 9,
+      "question": "The chance of at least one six in three rolls of a die is:",
+      "options": ["1/2", "91/216", "1/216", "3/6"],
+      "correct": 1,
+      "rationale": "Work via the complement: 1 − (5/6)³ = 1 − 125/216 = 91/216."
+    },
+    {
+      "id": 10,
+      "question": "The law of large numbers says experimental probability:",
+      "options": ["Always matches theory exactly, even in few trials", "Converges toward theoretical probability as trials grow", "Gets further from theory as trials grow", "Replaces theoretical probability entirely"],
+      "correct": 1,
+      "rationale": "Small samples wobble (7 heads in 10 flips is normal); over many trials the observed frequency settles toward the true probability."
+    }
+  ]
+}

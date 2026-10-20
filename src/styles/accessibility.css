@@ -25,6 +25,17 @@
   outline: 3px solid var(--ou-focus-ring);
   outline-offset: 2px;
 }
+/* #route-outlet is the programmatic focus target after every route change
+   (bootstrap.js focuses it so screen readers announce the new page). It is
+   a non-interactive container — painting the global :focus-visible ring on
+   it drew a full-viewport-height 3px outline around the entire content
+   column (two long blue vertical lines), which reads as a rendering bug.
+   The skip link + per-element rings still cover keyboard users; the
+   container itself announces via .focus() without needing a visual ring. */
+#route-outlet:focus-visible,
+#route-outlet:focus {
+  outline: none;
+}
 [data-a11y-text-size="lg"] body { font-size: 1.15rem; }
 [data-a11y-text-size="xl"] body { font-size: 1.3rem; }
 [data-a11y-reduced-motion="true"] *, [data-a11y-reduced-motion="true"] *::before, [data-a11y-reduced-motion="true"] *::after {

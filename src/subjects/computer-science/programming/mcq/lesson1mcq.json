@@ -1,5 +1,86 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Thinking Like a Programmer: Variables, Conditions, and Loops",
+  "questions": [
+    {
+      "id": 1,
+      "question": "After running `count = 5` then `count = count + 1`, what is stored in count?",
+      "options": ["5", "6", "count + 1 as text", "An error"],
+      "correct": 1,
+      "rationale": "Assignment takes the old value (5), adds one, and stores the result back: count becomes 6."
+    },
+    {
+      "id": 2,
+      "question": "In most programming languages, what is the difference between `=` and `==`?",
+      "options": ["They are interchangeable", "`=` compares; `==` assigns", "`=` assigns; `==` compares", "Neither is valid in conditions"],
+      "correct": 2,
+      "rationale": "A single = stores a value; == tests equality. Mixing them up is one of the most common beginner bugs."
+    },
+    {
+      "id": 3,
+      "question": "Which construct should you use when you need to repeat steps but don't know in advance how many times?",
+      "options": ["A for loop over a fixed range", "A while loop with a condition", "A variable declaration", "A function definition"],
+      "correct": 1,
+      "rationale": "While loops run until their condition changes — ideal for 'until the user guesses correctly' style repetition."
+    },
+    {
+      "id": 4,
+      "question": "The main benefit of wrapping code into a function is:",
+      "options": ["It runs faster than inline code", "It can only be called once", "The logic gets a reusable name and clear inputs/outputs", "It removes the need for variables"],
+      "correct": 2,
+      "rationale": "Functions package steps under a name with parameters (inputs) and return values (outputs), making programs readable and reusable."
+    },
+    {
+      "id": 5,
+      "question": "What does this loop print? `total = 0; for item in [4, 8, 15]: total = total + item`",
+      "options": ["4", "15", "27", "0"],
+      "correct": 2,
+      "rationale": "The accumulator starts at 0 and adds each item: 0+4+8+15 = 27."
+    },
+    {
+      "id": 6,
+      "question": "`is_student = true` stores which kind of value?",
+      "options": ["An integer", "A string", "A boolean", "A floating-point number"],
+      "correct": 2,
+      "rationale": "true/false values are booleans; age = 17 is an integer, \"Ada\" is a string, and height = 1.68 is a floating-point number."
+    },
+    {
+      "id": 7,
+      "question": "What is the value of the boolean expression `not (5 > 3)`?",
+      "options": ["true", "false", "5", "It causes an error"],
+      "correct": 1,
+      "rationale": "(5 > 3) is true, and applying `not` flips it to false — conditions are boolean expressions joined by and/or/not."
+    },
+    {
+      "id": 8,
+      "question": "What does this definite loop print? `for i from 1 to 5: print(i)`",
+      "options": ["1, 2, 3, 4, 5", "0, 1, 2, 3, 4", "Only 5", "The text 'from 1 to 5'"],
+      "correct": 0,
+      "rationale": "A definite loop runs a known number of times — here i takes each value 1 through 5 in order, printing 1, 2, 3, 4, 5."
+    },
+    {
+      "id": 9,
+      "question": "In `function area_of_circle(r): return 3.14159 * r * r`, what is `r`?",
+      "options": [
+        "A return value",
+        "A parameter (input) of the function",
+        "A boolean expression",
+        "An assignment operator"
+      ],
+      "correct": 1,
+      "rationale": "r is the parameter — the input passed into the function; the computed result handed back via `return` is the output."
+    },
+    {
+      "id": 10,
+      "question": "In the list-total example, the variable `total` plays which role in the three-part pattern?",
+      "options": [
+        "It accumulates the running sum while the loop repeats over the items",
+        "It acts as the loop's exit condition",
+        "It names the function being defined",
+        "It declares the data type of the list"
+      ],
+      "correct": 0,
+      "rationale": "Three patterns combine there: a variable (total) accumulates, a loop repeats, and a conditional inside could filter which items count."
+    }
+  ]
 }

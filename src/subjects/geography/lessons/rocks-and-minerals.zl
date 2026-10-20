@@ -1,0 +1,126 @@
+# Rocks and Minerals: The Building Materials of the Crust
+
+> Every landscape is assembled from minerals bound into rocks, and every
+> rock records the process that made it. This lesson sorts the crust's
+> materials into three families and follows the cycle that recycles them.
+
+## 1. Minerals: The Ingredients
+
+[definition]
+A **mineral** is a naturally occurring, inorganic substance with a
+definite chemical composition and an orderly crystal structure. A
+**rock** is any aggregate of one or more minerals.
+[/definition]
+
+| Mineral property | Meaning | Example |
+| --- | --- | --- |
+| Hardness | Resistance to scratching (Mohs scale 1–10) | Talc 1; quartz 7; diamond 10 |
+| Lustre | Surface shine | Metallic galena; glassy quartz |
+| Streak | Colour of the powdered mineral | Haematite streaks red |
+| Cleavage | Tendency to split along planes | Mica peels into sheets |
+| Density | Mass per unit volume | Galena feels unusually heavy |
+
+## 2. The Three Rock Families
+
+@diagram tree id="rock-families" layout="tree" aria="Igneous, sedimentary, and metamorphic rock families"
+  Rocks -> Igneous
+  Rocks -> Sedimentary
+  Rocks -> Metamorphic
+  Igneous -> "Granite (intrusive)"
+  Igneous -> "Basalt (extrusive)"
+  Sedimentary -> "Sandstone, coal, limestone"
+  Metamorphic -> "Marble, slate, gneiss"
+@/diagram
+
+## 3. Igneous Rocks: Born of Magma
+
+Igneous rocks form when **magma** (below ground) or **lava** (on the
+surface) cools and solidifies. They are called the **primary rocks**
+because they crystallised first from the cooling planet and every other
+family derives from them.
+
+| Type | Cooling place | Rate | Grain | Example |
+| --- | --- | --- | --- | --- |
+| Intrusive (plutonic) | Deep underground | Slow | Large visible crystals | Granite |
+| Extrusive (volcanic) | Surface | Fast | Fine or glassy | Basalt |
+
+[example]
+Granite's salt-and-pepper speckle comes from crystals large enough to
+see — proof of slow cooling. Basalt, frozen in the open air, is so
+fine-grained that its individual crystals are invisible.
+[/example]
+
+## 4. Sedimentary Rocks: Layered Archives
+
+Sedimentary rocks form when weathered material is carried away,
+deposited in layers, and then compacted and cemented. They alone hold
+**fossils** and display bedding.
+
+| Class | Formed from | Examples |
+| --- | --- | --- |
+| Mechanical (clastic) | Fragments of older rocks | Sandstone, conglomerate, shale |
+| Chemical | Minerals precipitated from solution | Limestone, rock salt, gypsum |
+| Organic | Compacted remains of living things | Coal, chalk |
+
+## 5. Metamorphic Rocks: Changed by Heat and Pressure
+
+**Metamorphism** means change of form: existing rocks recrystallise in
+the solid state under intense heat and pressure, growing new minerals
+and textures.
+
+| Original rock | Becomes |
+| --- | --- |
+| Granite | Gneiss |
+| Limestone | Marble |
+| Shale | Slate |
+| Sandstone | Quartzite |
+
+[tip]
+Slate splits into such thin sheets that it roofed houses for centuries,
+while marble — recrystallised calcite — sparkles in monuments such as
+the Taj Mahal.
+[/tip]
+
+## 6. The Rock Cycle
+
+@diagram tree id="rock-cycle" layout="tree" aria="The rock cycle from magma back to magma"
+  Magma -> "Igneous rock (cooling)"
+  "Igneous rock" -> "Sediment (weathering and erosion)"
+  Sediment -> "Sedimentary rock (compaction and cementation)"
+  "Sedimentary rock" -> "Metamorphic rock (heat and pressure)"
+  "Metamorphic rock" -> "Magma again (deep melting)"
+@/diagram
+
+[summary]
+No rock is permanent: igneous rock weathers into sediment, sediment is
+cemented into sedimentary rock, heat and pressure metamorphose it, and
+deep burial may melt it back into magma — closing the loop.
+[/summary]
+
+## 7. Rocks in the Indian Record and the Economy
+
+- The **Deccan Traps**, erupted about 66 million years ago near the end
+  of the Cretaceous, blanket much of peninsular India in flood basalt.
+- The **Cuddapah** and **Vindhyan** systems preserve some of India's
+  oldest and thickest sedimentary sequences.
+
+| Rock | Chief uses |
+| --- | --- |
+| Granite | Building stone, monuments, kitchen counters |
+| Basalt | Road metal and railway ballast |
+| Sandstone | Building stone (Red Fort walls) |
+| Limestone | Cement making and flux in iron smelting |
+| Marble | Flooring and sculpture (Makrana marble) |
+| Slate | Roofing tiles |
+| Coal | Fuel and thermal power generation |
+
+## 8. Quick Revision
+
+| Rock | Family | Formed by |
+| --- | --- | --- |
+| Granite | Igneous intrusive | Slow cooling of magma |
+| Basalt | Igneous extrusive | Rapid cooling of lava |
+| Sandstone | Sedimentary | Cemented sand grains |
+| Coal | Sedimentary (organic) | Compacted plant remains |
+| Marble | Metamorphic | Recrystallised limestone |
+| Slate | Metamorphic | Pressured shale |

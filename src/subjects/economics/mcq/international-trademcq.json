@@ -1,0 +1,76 @@
+{
+  "lessonId": "international-trade",
+  "title": "International Trade and the Balance of Payments",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to David Ricardo's theory, a country gains from trade by specialising in goods where:",
+      "options": ["Its absolute output is the highest", "Its opportunity cost is lowest", "Its tariffs are highest", "Its currency is strongest"],
+      "correct": 1,
+      "rationale": "Comparative advantage says specialise where opportunity cost is lowest — gains from trade exist even for a country that is worse at producing everything."
+    },
+    {
+      "id": 2,
+      "question": "In the lesson's example, India's opportunity cost of 1 kg tea is:",
+      "options": ["1/3 unit of software", "1/2 unit of software", "2 units of software", "3 units of software"],
+      "correct": 0,
+      "rationale": "Tea costs India 10 hours and software 30, so each kg of tea forgoes 10/30 = 1/3 unit of software — lower than the USA's 1/2, so India exports tea."
+    },
+    {
+      "id": 3,
+      "question": "The balance of trade (BoT) refers to:",
+      "options": ["Exports minus imports of goods only", "Exports minus imports of goods and services", "The current account balance", "The capital account balance"],
+      "correct": 0,
+      "rationale": "BoT is the merchandise balance — goods exports minus goods imports; services, income, and transfers are the invisibles that complete the current account."
+    },
+    {
+      "id": 4,
+      "question": "Software exports, tourism earnings, and workers' remittances are collectively called:",
+      "options": ["Visible items", "Invisibles", "Capital account flows", "Reserve assets"],
+      "correct": 1,
+      "rationale": "Invisibles — services, income, and transfers — offset a good part of India's merchandise trade deficit."
+    },
+    {
+      "id": 5,
+      "question": "Since 1991, India's exchange rate regime is best described as:",
+      "options": ["A fixed peg to the US dollar", "A fully clean float", "A managed float with RBI smoothing", "A currency board"],
+      "correct": 2,
+      "rationale": "India operates a market-driven rate with the Reserve Bank intervening to smooth excessive volatility — a managed float."
+    },
+    {
+      "id": 6,
+      "question": "Depreciation of the rupee will most likely:",
+      "options": ["Make Indian exports cheaper abroad and imports costlier", "Make exports costlier and imports cheaper", "Have no effect on trade", "Automatically eliminate the fiscal deficit"],
+      "correct": 0,
+      "rationale": "A weaker rupee lowers the foreign-currency price of Indian exports and raises the rupee cost of imports such as crude oil — exporting import-inflation risk."
+    },
+    {
+      "id": 7,
+      "question": "Depreciation differs from devaluation in that depreciation is:",
+      "options": ["A policy decision by the government", "A market-driven fall in the currency's value", "Always caused by the WTO", "Restricted to the services sector"],
+      "correct": 1,
+      "rationale": "Depreciation happens through market demand and supply; devaluation is a deliberate policy cut of a pegged rate."
+    },
+    {
+      "id": 8,
+      "question": "The WTO became operational on 1 January 1995, replacing:",
+      "options": ["The IMF", "The World Bank", "GATT, established in 1947", "The Bretton Woods system"],
+      "correct": 2,
+      "rationale": "The permanent World Trade Organization succeeded the provisional General Agreement on Tariffs and Trade of 1947, both headquartered in Geneva."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an agreement covered by the WTO but not by GATT?",
+      "options": ["Trade in goods", "Trade in services under GATS", "Tariff bindings", "Most-favoured-nation treatment"],
+      "correct": 1,
+      "rationale": "GATT covered goods only; the WTO umbrella added services (GATS) and intellectual property (TRIPS) with binding dispute settlement."
+    },
+    {
+      "id": 10,
+      "question": "A physical limit on the quantity of a good that may be imported during a year is a:",
+      "options": ["Tariff", "Quota", "Subsidy", "Devaluation"],
+      "correct": 1,
+      "rationale": "A quota caps import quantity directly — unlike a tariff, which raises the price instead."
+    }
+  ]
+}

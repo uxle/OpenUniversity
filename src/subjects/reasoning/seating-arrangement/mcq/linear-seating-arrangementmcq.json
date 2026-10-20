@@ -1,0 +1,126 @@
+{
+  "lessonId": "linear-seating-arrangement",
+  "title": "Linear Seating Arrangement: Rows, Facing, and Fixed Seats",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A person faces north. As seen on the page, their LEFT hand points which way?",
+      "options": [
+        "To the top of the page",
+        "To your left (west)",
+        "To your right (east)",
+        "It depends on the seat number"
+      ],
+      "correct": 1,
+      "rationale": "With north up on the page, a north-facing person's left matches your left — toward the west. Only a south-facing person's left flips to your right."
+    },
+    {
+      "id": 2,
+      "question": "In a row facing south, the clue 'S sits immediately to the left of R' places S in which direction from R on the page?",
+      "options": [
+        "One seat to the page's left of R",
+        "One seat to the page's right of R",
+        "Two seats to the page's left of R",
+        "Directly opposite R"
+      ],
+      "correct": 1,
+      "rationale": "A south-facing person's left is the page's right, so 'immediately to the left of R' means the adjacent seat on the page's right of R — the facing convention flips the clue."
+    },
+    {
+      "id": 3,
+      "question": "Which clue type should you place FIRST when solving a linear arrangement?",
+      "options": [
+        "Negative clues such as 'F is not at any end'",
+        "Definite clues such as 'G is 3rd from the left'",
+        "Count-equality clues",
+        "The longest clue in the list"
+      ],
+      "correct": 1,
+      "rationale": "Definite clues fix positions outright and create the anchors; relative clues chain onto them, and negative or count-based clues are used last to break ties."
+    },
+    {
+      "id": 4,
+      "question": "In the worked seven-person row (D, B, G, A, F, E, C from left), who sits exactly in the middle seat?",
+      "options": [
+        "G",
+        "A",
+        "F",
+        "E"
+      ],
+      "correct": 1,
+      "rationale": "With seats 1 to 7 occupied by D, B, G, A, F, E, C, the middle seat 4 is A, who was placed by clue 3 as immediately to the right of G."
+    },
+    {
+      "id": 5,
+      "question": "In that same row, who are F's immediate neighbours?",
+      "options": [
+        "G and A",
+        "A and E",
+        "B and E",
+        "E and C"
+      ],
+      "correct": 1,
+      "rationale": "F occupies seat 5, between A in seat 4 and E in seat 6, so F's neighbours are A and E."
+    },
+    {
+      "id": 6,
+      "question": "In the two-row example, Row 1 faces south and Row 2 faces north. What does the clue 'E sits at the right end of Row 2' mean on the page?",
+      "options": [
+        "E is at the page's left of Row 2",
+        "E is at the page's right of Row 2",
+        "E is in the middle of Row 2",
+        "E is opposite the middle of Row 1"
+      ],
+      "correct": 1,
+      "rationale": "Row 2 faces north, so the sitters' right matches the page's right: E takes the rightmost seat of Row 2, seat 5."
+    },
+    {
+      "id": 7,
+      "question": "In a facing-variable question, a clue says 'D sits to the left of C' where C faces north. Where is D relative to C on the page?",
+      "options": [
+        "Somewhere to the page's left of C",
+        "Somewhere to the page's right of C",
+        "Always immediately beside C",
+        "The clue is unusable"
+      ],
+      "correct": 0,
+      "rationale": "Directional clues are read in the frame of the person being referenced. C faces north, and a north-facing person's left is the page's left, so D lies to the page's left of C — regardless of which way D personally faces."
+    },
+    {
+      "id": 8,
+      "question": "What is bracket notation used for in linear seating?",
+      "options": [
+        "Marking which clues have been checked twice",
+        "Writing linked pairs as blocks that slide along the seats",
+        "Recording the facing direction of each row",
+        "Numbering the seats from the left"
+      ],
+      "correct": 1,
+      "rationale": "Bracket notation fixes linked people, such as [A G] for an immediate pair, so the whole block can be slid along the blanks until other clues lock it in place."
+    },
+    {
+      "id": 9,
+      "question": "A clue reads 'A is at one of the extreme ends.' What should you do?",
+      "options": [
+        "Guess one end and continue",
+        "Ignore the clue as too vague",
+        "Carry both branches until another clue kills one",
+        "Place A in the middle temporarily"
+      ],
+      "correct": 2,
+      "rationale": "The clue creates two possible branches. Keep both arrangements alive and let a later clue — often a negative one — eliminate one branch."
+    },
+    {
+      "id": 10,
+      "question": "What is the mandatory final step after completing any seating diagram?",
+      "options": [
+        "Re-check the arrangement against every clue, one by one",
+        "Count the people again",
+        "Draw the diagram a second time from memory",
+        "Convert all relative clues to negative clues"
+      ],
+      "correct": 0,
+      "rationale": "One early wrong branch silently poisons the rest of the diagram, so verify the finished arrangement against every clue before answering questions."
+    }
+  ]
+}

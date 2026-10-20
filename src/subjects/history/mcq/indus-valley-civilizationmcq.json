@@ -1,0 +1,76 @@
+{
+  "lessonId": "indus-valley-civilization",
+  "title": "The Indus Valley Civilization: Bronze Age Urban Genius",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Harappa was excavated in 1921 by:",
+      "options": ["R. D. Banerji", "Daya Ram Sahni", "John Marshall", "S. R. Rao"],
+      "correct": 1,
+      "rationale": "Daya Ram Sahni excavated Harappa in 1921; R. D. Banerji followed with Mohenjo-daro in 1922, and John Marshall, ASI Director-General, announced the discoveries in 1924."
+    },
+    {
+      "id": 2,
+      "question": "The Harappan site famous for its dockyard is:",
+      "options": ["Kalibangan", "Dholavira", "Lothal", "Chanhudaro"],
+      "correct": 2,
+      "rationale": "Lothal in Gujarat has a brick-lined basin 216 m by 37 m interpreted as a dockyard, and also yielded a bead factory and a terracotta toy ship."
+    },
+    {
+      "id": 3,
+      "question": "The earliest ploughed field ever attested archaeologically comes from:",
+      "options": ["Kalibangan", "Rakhigarhi", "Harappa", "Ropar"],
+      "correct": 0,
+      "rationale": "Kalibangan on the Ghaggar in Rajasthan yielded a ploughed field — the world's earliest attested — along with rows of fire altars."
+    },
+    {
+      "id": 4,
+      "question": "Harappan baked bricks followed a standardised ratio of:",
+      "options": ["1 : 2 : 3", "1 : 2 : 4", "2 : 3 : 4", "1 : 3 : 9"],
+      "correct": 1,
+      "rationale": "Baked bricks in the fixed ratio 1 : 2 : 4, laid in English bond, were used across every settlement from Harappa to Lothal — a hallmark of Harappan standardisation."
+    },
+    {
+      "id": 5,
+      "question": "The Great Bath, a bitumen-waterproofed tank 11.88 m by 7.01 m, belongs to:",
+      "options": ["Harappa", "Mohenjo-daro", "Dholavira", "Lothal"],
+      "correct": 1,
+      "rationale": "The Great Bath is the most famous citadel structure of Mohenjo-daro — a sunken ritual tank 2.43 m deep with steps at both ends."
+    },
+    {
+      "id": 6,
+      "question": "In Mesopotamian records, the Indus region was called:",
+      "options": ["Dilmun", "Magan", "Meluhha", "Sindhu"],
+      "correct": 2,
+      "rationale": "Texts of Sargon of Akkad mention ships from Meluhha, the Indus land; Dilmun (Bahrain) and Magan (Oman) were the trade middlemen."
+    },
+    {
+      "id": 7,
+      "question": "The bronze Dancing Girl of Mohenjo-daro was made using which technique?",
+      "options": ["Hammering", "Lost-wax casting", "Moulded copper sheet", "Forged iron"],
+      "correct": 1,
+      "rationale": "The 10.5 cm Dancing Girl was cast in bronze by the lost-wax method, showing the advanced metallurgy of the Mature Harappan phase."
+    },
+    {
+      "id": 8,
+      "question": "Harappan weights were based mainly on which system?",
+      "options": ["Decimal", "Binary", "Duodecimal", "Sexagesimal"],
+      "correct": 1,
+      "rationale": "Chert cube weights follow a binary series — 1, 2, 4, 8, 16, 32 — with larger units in decimal multiples such as 16, 160, and 320."
+    },
+    {
+      "id": 9,
+      "question": "Why does the Harappan script remain undeciphered?",
+      "options": ["It has too many signs to classify", "No bilingual text exists and the language family is unknown", "It was written only on perishable material", "The signs are purely numerical"],
+      "correct": 1,
+      "rationale": "With roughly 400-600 short signs, no bilingual text, and an unknown language family, every claimed decipherment — Sanskrit or Dravidian — remains hypothesis."
+    },
+    {
+      "id": 10,
+      "question": "Which decline theory is now largely doubted by archaeologists?",
+      "options": ["Weakening monsoon after c. 2200 BCE", "Shifting of the Ghaggar-Hakra rivers", "Aryan invasion as argued by Mortimer Wheeler", "Collapse of Mesopotamian trade"],
+      "correct": 2,
+      "rationale": "Wheeler's invasion reading rested on Mohenjo-daro skeletons, but these span decades with no massacre layer; climate and river-shift theories are now better supported."
+    }
+  ]
+}

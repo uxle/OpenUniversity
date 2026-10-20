@@ -1,0 +1,76 @@
+{
+  "lessonId": "chemical-bonding",
+  "title": "Chemical Bonding: How Atoms Combine",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Atoms form bonds chiefly to:",
+      "options": ["gain protons", "reach stable noble-gas outer shells while lowering energy", "become radioactive", "increase in mass"],
+      "correct": 1,
+      "rationale": "The octet rule plus overall energy lowering drives bond formation."
+    },
+    {
+      "id": 2,
+      "question": "Which molecule holds a triple bond?",
+      "options": ["H₂", "CO₂", "O₂", "N₂"],
+      "correct": 3,
+      "rationale": "N≡N shares three pairs — the strongest and shortest bond in the list."
+    },
+    {
+      "id": 3,
+      "question": "HF is a polar molecule because:",
+      "options": ["it contains a metal", "fluorine's stronger pull shifts the shared pair toward itself", "hydrogen has no electrons", "the molecule is symmetrical"],
+      "correct": 1,
+      "rationale": "The electronegativity difference of 1.9 drags electron density to fluorine, leaving H δ+ and F δ−, unlike the perfectly shared pair in F₂."
+    },
+    {
+      "id": 4,
+      "question": "A coordinate (dative) bond is present in:",
+      "options": ["NaCl", "CH₄", "NH₄⁺", "MgO"],
+      "correct": 2,
+      "rationale": "In the ammonium ion nitrogen donates both electrons of a lone pair to H⁺; H₃O⁺ and CO are the other classic cases."
+    },
+    {
+      "id": 5,
+      "question": "Ice floats on liquid water because:",
+      "options": ["ice is colder than water", "hydrogen bonding locks water into an open cage less dense than the liquid", "air bubbles are permanently trapped", "water shrinks when warmed"],
+      "correct": 1,
+      "rationale": "Each water molecule hydrogen-bonds to four neighbours in an open lattice, lowering the solid's density below the liquid's."
+    },
+    {
+      "id": 6,
+      "question": "The bond angle in methane (CH₄) is:",
+      "options": ["90°", "109.5°", "120°", "180°"],
+      "correct": 1,
+      "rationale": "Four equivalent bond pairs spread tetrahedrally, 109.5° apart — the textbook sp³ angle."
+    },
+    {
+      "id": 7,
+      "question": "Ammonia's shape and bond angle are:",
+      "options": ["tetrahedral, 109.5°", "bent, 104.5°", "trigonal pyramidal, 107°", "linear, 180°"],
+      "correct": 2,
+      "rationale": "Three bond pairs plus one lone pair give a pyramid; the lone pair squeezes the angle below 109.5°, to about 107°."
+    },
+    {
+      "id": 8,
+      "question": "Metals conduct electricity because metallic bonding provides:",
+      "options": ["mobile ions", "a sea of delocalized electrons", "fixed shared pairs", "loose protons"],
+      "correct": 1,
+      "rationale": "Metal kernels sit in a mobile electron sea that carries charge — and explains malleability and lustre too."
+    },
+    {
+      "id": 9,
+      "question": "The correct order of carbon–carbon bond lengths is:",
+      "options": ["C–C < C=C < C≡C", "C≡C < C–C < C=C", "C–C > C=C > C≡C", "all are equal"],
+      "correct": 2,
+      "rationale": "More shared pairs pull atoms closer: 154 pm, 134 pm, 120 pm for single, double, and triple bonds."
+    },
+    {
+      "id": 10,
+      "question": "The central atom in BF₃ is which hybridization?",
+      "options": ["sp", "sp²", "sp³", "sp³d²"],
+      "correct": 1,
+      "rationale": "Boron mixes one s and two p orbitals into three sp² orbitals, giving the trigonal-planar 120° geometry."
+    }
+  ]
+}

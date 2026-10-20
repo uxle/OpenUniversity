@@ -1,0 +1,135 @@
+# Circles: Chords, Angles, and the Magic of π
+
+> One number — π — links every circle's circumference to its
+> diameter. Around it stands a family of theorems about chords, arcs,
+> tangents and angles that turn circles into the most elegant chapter
+> of geometry.
+
+## 1. Parts of a Circle
+
+A **circle** is the set of all points at a fixed distance (the
+**radius** r) from a centre.
+
+| Part | Definition |
+| --- | --- |
+| Radius | segment from centre to any point of the circle |
+| Chord | segment joining two points of the circle |
+| Diameter | a chord through the centre — the longest chord, 2r |
+| Arc | a piece of the circumference between two points |
+| Sector | pie-slice region bounded by two radii and an arc |
+| Segment | region between a chord and its arc |
+| Secant | a line cutting the circle at two points |
+| Tangent | a line touching the circle at exactly one point |
+
+## 2. π: The Constant Ratio
+
+Measure the circumference of any circle and divide by its diameter:
+the answer is always the same irrational number, **π ≈ 3.14159**.
+Because π is irrational, no fraction — not even 22/7 — equals it
+exactly; those are merely convenient approximations.
+
+@math label="eq:pi-def"
+\pi = \frac{C}{d} \approx 3.14159
+@/math
+
+## 3. The Circle Theorems
+
+| Theorem | Statement |
+| --- | --- |
+| Central angle | the angle at the centre is **twice** any angle at the circumference standing on the same arc |
+| Same segment | angles in the same segment (standing on one chord) are equal |
+| Semicircle | the angle in a semicircle is exactly **90°** |
+| Cyclic quadrilateral | opposite angles of a cyclic quadrilateral sum to **180°** |
+| Equal chords | equal chords subtend equal arcs and equal angles at the centre |
+| Perpendicular chord | the perpendicular from the centre to a chord bisects the chord |
+
+[example]
+If an angle at the circumference standing on arc AB is 35°, the angle
+AOB at the centre on the same arc is 70°. An angle inscribed in a
+semicircle (arc = 180°) is 90° — the semicircle theorem is really the
+central-angle theorem with centre angle 180°.
+[/example]
+
+## 4. Tangents
+
+A **tangent** is perpendicular to the radius at the point of
+contact — the single most-used tangent fact in exams. Two tangents
+drawn from the same external point are **equal in length**, so the
+triangle they form with the line to the centre is symmetric.
+
+[info title="Alternate segment theorem"]
+The angle between a tangent and a chord through the point of contact
+equals the angle in the alternate segment — the angle the chord
+subtends anywhere on the far arc. It quietly powers most "prove the
+angles equal" tangent questions.
+[/info]
+
+## 5. Measuring the Circle
+
+@math label="eq:circle-measure"
+C = 2\pi r
+\qquad\qquad
+A = \pi r^2
+@/math
+
+[example]
+For radius 7 cm (with π ≈ 22/7): the circumference is 2 × 22/7 × 7 =
+44 cm, and the area is 22/7 × 49 = 154 cm². The **annulus** between
+two concentric circles of radii 5 and 3 has area π(5² − 3²) = 16π ≈
+50.3 square units — outer minus inner, no need for separate pies.
+[/example]
+
+## 6. Arcs and Sectors
+
+An arc is a **fraction of the circumference** and a sector the same
+fraction of the area — the fraction is θ/360 for a central angle θ.
+
+@math label="eq:arc-sector"
+\text{arc length} = \frac{\theta}{360} \times 2\pi r
+\qquad
+\text{sector area} = \frac{\theta}{360} \times \pi r^2
+@/math
+
+[example]
+With r = 7 and θ = 90°: the arc is (90/360) × 2π × 7 = 14π/4 = 11 cm
+(using π ≈ 22/7), and the sector area is (90/360) × π × 49 = 154/4 =
+38.5 cm² — exactly one quarter of the full circle, as 90° suggests.
+[/example]
+
+## 7. Cyclic Quadrilaterals
+
+A **cyclic quadrilateral** has all four vertices on one circle. Its
+opposite angles sum to 180° — 110° faces 70° — and each **exterior
+angle equals the interior opposite angle**. Ptolemy's theorem (the
+product of the diagonals equals the sum of the products of opposite
+sides) holds for these quadrilaterals and generalises the distance
+formulas of trigonometry.
+
+## 8. Common Exam Patterns
+
+| Question type | First move |
+| --- | --- |
+| Find the angle at the centre | double the circumference angle (or halve) |
+| Two angles standing on one chord | equal — same segment |
+| Radius meets a chord at 90° | it bisects the chord; use right triangles |
+| Two tangents from a point | equal lengths; line to centre bisects |
+| Shaded region | sector minus triangle (or annulus pieces) |
+| Prove a 90° angle | stand it in a semicircle, or use tangent ⊥ radius |
+
+[note]
+Area of a segment = sector area − triangle area. For a chord
+subtending 90° at the centre, the triangle is a right isosceles
+triangle with legs r, so the segment is πr²/4 − r²/2.
+[/note]
+
+## 9. Quick Revision
+
+| Ask yourself | Answer |
+| --- | --- |
+| Circumference at a glance? | C = 2πr |
+| Area at a glance? | A = πr² |
+| r = 7, θ = 90°: arc, sector? | 11 cm, 38.5 cm² |
+| Angle at centre for 35° at circumference? | 70° |
+| Opposite angles of a cyclic quadrilateral? | sum to 180° |
+| Tangent and radius meet at? | 90° |
+| Two tangents from an external point? | equal lengths |

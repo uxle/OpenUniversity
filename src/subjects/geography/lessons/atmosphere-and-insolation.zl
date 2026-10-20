@@ -1,0 +1,130 @@
+# The Atmosphere: Composition, Layers, and the Heat Budget
+
+> A thin shell of gases shields Earth from space, stores the Sun's
+> energy, and makes weather possible. This lesson profiles the air's
+> make-up, its layered structure, and the heat budget that drives
+> climate.
+
+## 1. Composition of the Atmosphere
+
+| Gas | Share of dry air | Role |
+| --- | --- | --- |
+| Nitrogen | 78.08% | Dilutes oxygen; feeds life through the nitrogen cycle |
+| Oxygen | 20.95% | Respiration and combustion |
+| Argon | 0.93% | Inert filler |
+| Carbon dioxide | ~0.04% | Photosynthesis; principal greenhouse gas |
+| Water vapour and dust | Variable (up to ~4%) | Clouds, precipitation; dust seeds condensation |
+
+@chart donut title="Composition of dry air"
+labels:
+Nitrogen (78%)
+Oxygen (21%)
+Argon and others (1%)
+
+data:
+78
+21
+1
+@/chart
+
+[note]
+The proportions of nitrogen, oxygen, and argon are almost constant up
+to about 80 km; only water vapour and dust vary strongly from place to
+place and day to day.
+[/note]
+
+## 2. Layers of the Atmosphere
+
+@diagram tree id="atmosphere-layers" layout="tree" aria="Atmosphere layers and their features"
+  Atmosphere -> Troposphere
+  Atmosphere -> Stratosphere
+  Atmosphere -> Mesosphere
+  Atmosphere -> Thermosphere
+  Atmosphere -> Exosphere
+  Troposphere -> "Weather and clouds"
+  Stratosphere -> "Ozone layer, 20-25 km"
+  Mesosphere -> "Meteors burn up"
+  Thermosphere -> "Ionosphere, auroras"
+  Exosphere -> "Merges into space"
+@/diagram
+
+| Layer | Extent | Temperature trend | Happens here |
+| --- | --- | --- | --- |
+| Troposphere | 8 km (poles) to 18 km (equator) | Falls ~6.5°C per km | Almost all weather and clouds |
+| Stratosphere | Up to ~50 km | Rises with height | Ozone layer at 20–25 km; airliners cruise near its base |
+| Mesosphere | Up to ~80 km | Falls again; coldest layer | Meteors burn up as shooting stars |
+| Thermosphere | Up to ~600 km | Rises steeply | Ionosphere reflects radio waves; auroras glow |
+| Exosphere | To ~10,000 km | Merges into space | Light gases slowly escape |
+
+[definition]
+The steady fall of temperature with height in the troposphere — about
+**6.5°C per kilometre** — is the **normal lapse rate**; it is why hill
+stations are cooler than the plains below them.
+[/definition]
+
+## 3. Insolation and Its Factors
+
+**Insolation** (incoming solar radiation) is the solar energy received
+at the Earth's surface. Its strength varies with:
+
+- **Latitude** — the Sun's angle shrinks toward the poles, spreading
+  the same beam over more area.
+- **Day length** — longer days deliver more total energy.
+- **Altitude** — thinner, cleaner air above absorbs less.
+- **Distance from the Sun** — Earth is nearest (perihelion, ~147
+  million km) around 3 January and farthest (aphelion, ~152 million
+  km) around 4 July.
+- **Atmospheric conditions** — cloud cover and dust cut transmission.
+
+## 4. The Earth's Heat Budget
+
+Of every 100 units of incoming solar radiation:
+
+| Fate of the energy | Units |
+| --- | --- |
+| Reflected and scattered straight back to space (albedo) | ~30 |
+| Absorbed by the land and ocean surface | ~51 |
+| Absorbed by the atmosphere (gases, clouds, dust) | ~19 |
+
+The surface then returns its 51 units as long-wave terrestrial
+radiation, which the atmosphere mostly traps before it escapes — so
+the budget of the whole Earth-atmosphere system still balances.
+
+[important title="Albedo"]
+**Albedo** is the fraction of radiation a surface reflects back to
+space. Clouds and fresh snow are highly reflective; dark forests and
+oceans are not. Earth's planetary albedo averages about 30%.
+[/important]
+
+## 5. How the Air Is Heated
+
+The atmosphere is heated mainly *from below*: the Sun's short-wave
+rays pass through the air with little absorption, warm the surface, and
+the surface then warms the air by **conduction**, **convection**, and
+emitted long-wave radiation. This is why temperature falls with height
+in the troposphere.
+
+## 6. The Greenhouse Effect
+
+Water vapour, carbon dioxide, methane, and nitrous oxide are
+transparent to incoming sunlight but absorb outgoing long-wave
+radiation, delaying its escape to space.
+
+[warning]
+Without the natural greenhouse effect the Earth's mean temperature
+would be about −18°C instead of the comfortable ~15°C we enjoy. The
+problem is not the effect itself but its rapid enhancement by fossil
+fuel emissions.
+[/warning]
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Most abundant gas? | Nitrogen, 78.08% of dry air |
+| Where is the ozone layer? | Stratosphere, ~20–25 km |
+| Lapse rate in the troposphere? | ~6.5°C per km |
+| What absorbs ~51 units? | The land and ocean surface |
+| Albedo of the whole planet? | About 30% |
+| Radio waves reflect off the? | Ionosphere (thermosphere) |
+| Greenhouse gases? | CO2, methane, N2O, water vapour |

@@ -1,5 +1,77 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "Points, Lines, and Angles: Geometry's Atoms",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many lines pass through two distinct given points?",
+      "options": ["None", "Exactly one", "Exactly two", "Infinitely many"],
+      "correct": 1,
+      "rationale": "Through any two distinct points there passes exactly one line — a foundational fact used throughout geometry."
+    },
+    {
+      "id": 2,
+      "question": "An angle measuring exactly 90° is called:",
+      "options": ["Acute", "Right", "Obtuse", "Reflex"],
+      "correct": 1,
+      "rationale": "Right angles measure 90°; acute are smaller, obtuse between 90° and 180°, reflex beyond 180°."
+    },
+    {
+      "id": 3,
+      "question": "Two parallel lines are cut by a transversal. One angle is 70°. Its co-interior partner measures:",
+      "options": ["20°", "70°", "110°", "180°"],
+      "zolto": "180^{\\circ} - 70^{\\circ} = 110^{\\circ}",
+      "correct": 2,
+      "rationale": "Co-interior angles between parallel lines sum to 180°, so the partner is 110°."
+    },
+    {
+      "id": 4,
+      "question": "The angle sum of any triangle is:",
+      "options": ["90°", "180°", "270°", "360°"],
+      "correct": 1,
+      "rationale": "Drawing a line through one vertex parallel to the opposite side transfers the interior angles onto a straight line: 180° total."
+    },
+    {
+      "id": 5,
+      "question": "An exterior angle of a triangle equals:",
+      "options": ["The adjacent interior angle", "Half the sum of all angles", "The sum of the two remote interior angles", "Always 90°"],
+      "correct": 2,
+      "rationale": "Exterior angle theorem: it is supplementary to its adjacent interior angle, hence equal to the other two combined."
+    },
+    {
+      "id": 6,
+      "question": "What is the key difference between a ray and a segment?",
+      "options": ["A ray has no starting point; a segment does", "A ray extends forever in one direction from an endpoint, while a segment joins two endpoints with measurable length", "A segment extends forever in both directions", "There is no difference"],
+      "correct": 1,
+      "rationale": "A ray starts at a point and goes on forever in one direction; a segment is bounded by two endpoints and therefore has a measurable length."
+    },
+    {
+      "id": 7,
+      "question": "The angles around a single point sum to:",
+      "options": ["90°", "180°", "270°", "360°"],
+      "correct": 3,
+      "rationale": "Angles meeting at a point complete a full turn: they sum to 360° (while angles on a straight line sum to 180°)."
+    },
+    {
+      "id": 8,
+      "question": "When two lines cross, the vertically opposite angles are always:",
+      "options": ["Complementary", "Equal", "Supplementary", "Unequal unless the lines are perpendicular"],
+      "correct": 1,
+      "rationale": "Vertically opposite angles formed by two crossing lines are always equal — a core angle-chasing fact derived from straight-line sums."
+    },
+    {
+      "id": 9,
+      "question": "An angle measuring between 180° and 360° is called:",
+      "options": ["Straight", "Obtuse", "Reflex", "Acute"],
+      "correct": 2,
+      "rationale": "Reflex angles lie between 180° and 360°; a straight angle is exactly 180° and obtuse angles lie between 90° and 180°."
+    },
+    {
+      "id": 10,
+      "question": "Using the polygon angle-sum pattern $(n-2) \\times 180°$, the interior angles of a hexagon (n = 6) sum to:",
+      "options": ["540°", "620°", "720°", "900°"],
+      "correct": 2,
+      "rationale": "(6 − 2) × 180° = 4 × 180° = 720° — this generalisation follows from the triangle's 180° angle sum via parallel-line facts."
+    }
+  ]
 }

@@ -1,0 +1,76 @@
+{
+  "lessonId": "integration-basics",
+  "title": "Integration Basics: Accumulating Change",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Compute \u222b x\u00b2 dx.",
+      "options": ["2x + C", "x\u00b3/3 + C", "x\u00b3 + C", "x\u00b2/2 + C"],
+      "correct": 1,
+      "rationale": "The power rule raises the exponent by one and divides by the new power: \u222bx\u00b2 dx = x\u00b3/3 + C."
+    },
+    {
+      "id": 2,
+      "question": "What is \u222b 1/x dx?",
+      "options": ["x\u207b\u00b9/0 + C", "ln \u2223x\u2223 + C", "1/x\u00b2 + C", "e\u02e3 + C"],
+      "correct": 1,
+      "rationale": "The power n = \u22121 would divide by zero, so it is the exception: 1/x integrates to the natural logarithm, ln \u2223x\u2223 + C, since d/dx of ln \u2223x\u2223 is 1/x."
+    },
+    {
+      "id": 3,
+      "question": "Compute \u222b (3x\u00b2 + 4x \u2212 5) dx.",
+      "options": ["6x + 4 + C", "x\u00b3 + 2x\u00b2 \u2212 5x + C", "3x\u00b3 + 2x\u00b2 \u2212 5x + C", "x\u00b3 + 2x\u00b2 \u2212 5 + C"],
+      "correct": 1,
+      "rationale": "Integrate term by term: 3x\u00b2 gives x\u00b3, 4x gives 2x\u00b2, \u22125 gives \u22125x \u2014 sum rule and constant multiple rule \u2014 so the answer is x\u00b3 + 2x\u00b2 \u2212 5x + C."
+    },
+    {
+      "id": 4,
+      "question": "Evaluate the definite integral of x\u00b2 from x = 0 to x = 2.",
+      "options": ["4", "8/3", "8", "2"],
+      "correct": 1,
+      "rationale": "The antiderivative is x\u00b3/3, and the fundamental theorem gives F(2) \u2212 F(0) = 8/3 \u2212 0 = 8/3 \u2248 2.67 square units of area."
+    },
+    {
+      "id": 5,
+      "question": "Why does every indefinite integral end with + C?",
+      "options": ["It marks the constant of the variable", "Vertical shifts all share the same derivative, so integration cannot recover them", "It is just a convention with no meaning", "It makes the answer positive"],
+      "correct": 1,
+      "rationale": "x\u00b2 + 1, x\u00b2 \u2212 7 and x\u00b2 + \u03c0 all differentiate to 2x \u2014 derivatives cannot see vertical shifts, so integration must report the whole family of curves."
+    },
+    {
+      "id": 6,
+      "question": "Which quantity does integrating velocity over a time interval directly give you?",
+      "options": ["Acceleration", "Speed", "Displacement", "Jerk"],
+      "correct": 2,
+      "rationale": "Integrating velocity gives displacement \u2014 signed, so backwards motion subtracts. Distance travelled requires integrating the speed |v(t)|."
+    },
+    {
+      "id": 7,
+      "question": "Which statement about definite integrals is TRUE?",
+      "options": ["They always equal an area", "They require the + C in the answer", "They evaluate to a number: antiderivative at the top bound minus at the bottom", "They only work for polynomials"],
+      "correct": 2,
+      "rationale": "The fundamental theorem of calculus turns a definite integral into F(b) \u2212 F(a): a single number. The + C cancels in the subtraction, and regions below the x-axis count negative."
+    },
+    {
+      "id": 8,
+      "question": "Compute \u222b 2x(x\u00b2 + 1)\u00b3 dx using substitution.",
+      "options": ["(x\u00b2 + 1)\u2074/4 + C", "2(x\u00b2 + 1)\u2074 + C", "(x\u00b2 + 1)\u00b3\u00b7x\u00b2 + C", "3(x\u00b2 + 1)\u00b2 + C"],
+      "correct": 0,
+      "rationale": "Let u = x\u00b2 + 1 so du = 2x dx; the integral becomes \u222bu\u00b3 du = u\u2074/4 + C = (x\u00b2 + 1)\u2074/4 + C \u2014 differentiating confirms it returns the integrand."
+    },
+    {
+      "id": 9,
+      "question": "Which technique handles integrals of products like x\u00b7sin x?",
+      "options": ["The power rule", "Integration by substitution", "Integration by parts", "Taking reciprocals"],
+      "correct": 2,
+      "rationale": "Products of unlike functions need integration by parts, which moves the derivative from one factor to the other; substitution works for chain-rule-shaped integrands like 2x(x\u00b2 + 1)\u00b3."
+    },
+    {
+      "id": 10,
+      "question": "An economist knows a firm's marginal cost. Which integration application recovers total cost?",
+      "options": ["Differentiate the marginal cost", "Integrate the marginal cost function", "Multiply by the number of workers", "Take the average"],
+      "correct": 1,
+      "rationale": "Every 'total from a rate' question is an integral in disguise \u2014 integrating the marginal (rate of change) function accumulates it back into the total."
+    }
+  ]
+}

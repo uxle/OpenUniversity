@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-rivers-and-lakes",
+  "title": "India's Rivers and Lakes: Himalayan and Peninsular Systems",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Ganga originates as the Bhagirathi from which glacier?",
+      "options": ["Zemu glacier", "Gangotri glacier", "Siachen glacier", "Milam glacier"],
+      "correct": 1,
+      "rationale": "The Bhagirathi rises at Gangotri and joins the Alaknanda at Devprayag to form the Ganga proper."
+    },
+    {
+      "id": 2,
+      "question": "Which tributary is called the 'sorrow of Bihar' for its shifting course and floods?",
+      "options": ["Gandak", "Yamuna", "Kosi", "Son"],
+      "correct": 2,
+      "rationale": "The Kosi spreads a wandering alluvial fan over north Bihar, switching channels and flooding as it goes."
+    },
+    {
+      "id": 3,
+      "question": "The Brahmaputra is known in Tibet as the:",
+      "options": ["Dihang", "Tsangpo", "Siang", "Manas"],
+      "correct": 1,
+      "rationale": "The river is the Tsangpo in Tibet, becomes the Dihang/Siang in Arunachal Pradesh, and the Brahmaputra in Assam — the 'sorrow of Assam'."
+    },
+    {
+      "id": 4,
+      "question": "The largest peninsular river, honoured as the 'Dakshin Ganga', is the:",
+      "options": ["Krishna", "Kaveri", "Godavari", "Mahanadi"],
+      "correct": 2,
+      "rationale": "The Godavari is the biggest of the peninsular rivers and is revered as the Ganga of the South."
+    },
+    {
+      "id": 5,
+      "question": "The Narmada and Tapi are unusual among Indian rivers because they:",
+      "options": ["Flow in rift valleys and end in estuaries", "Form the world's largest delta", "Are perennial snow-fed streams", "Flow east into the Bay of Bengal"],
+      "correct": 0,
+      "rationale": "The two rivers run through fault-trough rift valleys westward to the Arabian Sea, ending in tide-scoured estuaries rather than deltas."
+    },
+    {
+      "id": 6,
+      "question": "Himalayan rivers flow year-round chiefly because:",
+      "options": ["They are fed by both monsoon rain and snowmelt", "They receive winter rainfall from the western disturbances only", "Lakes keep them full", "They are canal-fed"],
+      "correct": 0,
+      "rationale": "The perennial regime of Himalayan rivers combines summer monsoon rain with continuing snow and glacier melt, unlike seasonal peninsular rivers."
+    },
+    {
+      "id": 7,
+      "question": "Majuli, one of the world's largest inhabited river islands, stands in the:",
+      "options": ["Ganga", "Brahmaputra", "Mahanadi", "Godavari"],
+      "correct": 1,
+      "rationale": "Majuli lies midstream in the Brahmaputra in Assam, upstream of the river's flood-prone lower course."
+    },
+    {
+      "id": 8,
+      "question": "India's largest freshwater lake is:",
+      "options": ["Chilika", "Wular", "Sambhar", "Vembanad"],
+      "correct": 1,
+      "rationale": "Wular in Jammu & Kashmir, fed by the Jhelum, is the largest freshwater lake; Chilika is brackish and Sambhar is salt."
+    },
+    {
+      "id": 9,
+      "question": "Chilika, India's largest brackish-water lagoon, lies in:",
+      "options": ["Kerala", "Odisha", "Andhra Pradesh", "West Bengal"],
+      "correct": 1,
+      "rationale": "Chilika in Odisha is a shallow lagoon separated from the sea by a sand bar — a lagoon, not a true lake."
+    },
+    {
+      "id": 10,
+      "question": "Sambhar Lake in Rajasthan is famous as:",
+      "options": ["India's largest inland salt lake", "A crater lake", "The longest lake in India", "A freshwater lagoon"],
+      "correct": 0,
+      "rationale": "Sambhar is India's largest inland salt lake; Lonar is the crater lake and Vembanad the longest."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "mughal-empire",
+  "title": "The Mughal Empire: From Babur to the Last Emperor",
+  "questions": [
+    {
+      "id": 1,
+      "question": "At the First Battle of Panipat (1526), Babur defeated Ibrahim Lodi using:",
+      "options": ["Elephant charges", "Artillery and tulughma flanking tactics", "Naval blockade", "Mountain guerrilla warfare"],
+      "correct": 1,
+      "rationale": "On 21 April 1526 Babur's field artillery and the tulughma wheel destroyed the larger Lodi army; Khanwa (1527) against Rana Sanga confirmed the conquest."
+    },
+    {
+      "id": 2,
+      "question": "The silver rupiya and a repaired Grand Trunk Road are achievements of:",
+      "options": ["Babur", "Sher Shah Suri", "Bairam Khan", "Todar Mal"],
+      "correct": 1,
+      "rationale": "Sher Shah's five-year interlude (1540-45) gave India the trim silver rupiya, copper dam, the Sadak-i-Azam with sarais, and measured land revenue."
+    },
+    {
+      "id": 3,
+      "question": "Akbar abolished the jizya in which year?",
+      "options": ["1562", "1564", "1575", "1582"],
+      "correct": 1,
+      "rationale": "After ending the pilgrimage tax in 1563, Akbar abolished jizya in 1564; it was reimposed by Aurangzeb in 1679."
+    },
+    {
+      "id": 4,
+      "question": "Todar Mal's Dahsala (bandobast) system of 1580:",
+      "options": ["Fixed revenue as a ten-year average of measured yields", "Abolished all cash taxation", "Gave jagirs permanently to nobles", "Applied only to Gujarat"],
+      "correct": 0,
+      "rationale": "The Dahsala settlement took a ten-year average of prices and produce on measured land to fix a stable cash demand per unit."
+    },
+    {
+      "id": 5,
+      "question": "The Din-i-Ilahi, promulgated in 1582, is best described as:",
+      "options": ["A state religion imposed on all subjects", "A sulh-i-kul ethical order with few followers", "A military alliance system", "A revenue department"],
+      "correct": 1,
+      "rationale": "Growing from the Ibadat Khana debates, the Din-i-Ilahi was a syncretic ethic of 'peace with all'; Birbal was its most famous adherent."
+    },
+    {
+      "id": 6,
+      "question": "The Taj Mahal (1632-1653) was designed by:",
+      "options": ["Ustad Mansur", "Ustad Ahmad Lahori", "Mir Sayyid Ali", "Mirak Mirza Ghiyas"],
+      "correct": 1,
+      "rationale": "Ustad Ahmad Lahori designed Shah Jahan's Taj Mahal for Mumtaz Mahal; Mirak Mirza Ghiyas built Humayun's Tomb a generation earlier."
+    },
+    {
+      "id": 7,
+      "question": "In the mansabdari system, the 'sawar' rank indicated:",
+      "options": ["Personal salary of the noble", "Number of cavalrymen the noble had to maintain", "Court precedence at Darbar", "Amount of land owned hereditarily"],
+      "correct": 1,
+      "rationale": "Each mansab had two numbers: zat (personal rank and pay) and sawar (cavalry obligation), paid through a transferable jagir."
+    },
+    {
+      "id": 8,
+      "question": "Which Mughal emperor had the longest reign?",
+      "options": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+      "correct": 3,
+      "rationale": "Aurangzeb ruled forty-nine years (1658-1707), the longest of the dynasty, dying in camp at Ahmednagar."
+    },
+    {
+      "id": 9,
+      "question": "Nadir Shah's invasion of 1739 resulted in:",
+      "options": ["Annexation of Punjab to Persia", "The Peacock Throne and Kohinoor being carried away", "Akbar's Din-i-Ilahi", "The 1717 farman to the English company"],
+      "correct": 1,
+      "rationale": "Nadir Shah's raid left Delhi plundered, taking the Peacock Throne and the Kohinoor; the 1717 farman was Farrukhsiyar's concession to the East India Company."
+    },
+    {
+      "id": 10,
+      "question": "The 'jagirdari crisis' of the later Mughal period refers to:",
+      "options": ["Shortage of jagirs for multiplying mansabdars, squeezing the peasantry", "Excess rainfall ruining crops", "Rajput revolts in Marwar", "Debasement of the rupiya by Sher Shah"],
+      "correct": 0,
+      "rationale": "Ranks multiplied while good revenue assignments shrank, so short-term holders squeezed peasants — the rot Irfan Habib mapped in The Agrarian System of Mughal India."
+    }
+  ]
+}

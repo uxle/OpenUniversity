@@ -1,0 +1,76 @@
+{
+  "lessonId": "electrochemistry",
+  "title": "Electrochemistry: Batteries, Electrolysis, and Rust",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Electrolyte solutions conduct electricity because they contain:",
+      "options": ["free electrons", "mobile ions", "neutral atoms", "metal atoms"],
+      "correct": 1,
+      "rationale": "Dissolved or molten electrolytes dissociate into ions that migrate to the electrodes — unlike metals, which conduct by electron flow."
+    },
+    {
+      "id": 2,
+      "question": "'AN OX, RED CAT' tells you that:",
+      "options": ["anode = oxidation, cathode = reduction", "anode = reduction, cathode = oxidation", "anodes are always positive", "cathodes lose electrons"],
+      "correct": 0,
+      "rationale": "Oxidation always occurs at the anode and reduction at the cathode — true in both electrolytic and galvanic cells."
+    },
+    {
+      "id": 3,
+      "question": "In the electrolysis of acidified water, the volume ratio of hydrogen (cathode) to oxygen (anode) is:",
+      "options": ["1:1", "1:2", "2:1", "8:1"],
+      "correct": 2,
+      "rationale": "2H₂O → 2H₂ + O₂ — twice as much hydrogen as oxygen by volume, a ratio the lesson's example highlights."
+    },
+    {
+      "id": 4,
+      "question": "The chlor-alkali process (electrolysis of brine) produces:",
+      "options": ["NaOH, Cl₂, and H₂", "Na metal and Cl₂", "NaOCl only", "H₂ and O₂"],
+      "correct": 0,
+      "rationale": "2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂: chlorine at the anode, hydrogen at the cathode, sodium hydroxide left in solution."
+    },
+    {
+      "id": 5,
+      "question": "In the Daniell cell, the zinc electrode is the:",
+      "options": ["cathode", "anode, dissolving as Zn → Zn²⁺ + 2e⁻", "salt bridge", "inert electrode"],
+      "correct": 1,
+      "rationale": "Zinc oxidizes (dissolves), making it the anode — and the negative terminal of this galvanic cell, with an EMF near 1.1 V."
+    },
+    {
+      "id": 6,
+      "question": "The salt bridge in a galvanic cell:",
+      "options": ["blocks ion flow", "keeps both solutions electrically neutral by letting ions drift", "supplies the electrons", "just holds the electrodes apart"],
+      "correct": 1,
+      "rationale": "Ion drift through the bridge completes the circuit and prevents charge build-up in either half-cell."
+    },
+    {
+      "id": 7,
+      "question": "Which of these is a secondary (rechargeable) cell?",
+      "options": ["dry Leclanché cell", "lead-acid battery", "disposable alkaline cell", "a used AA carbon-zinc cell"],
+      "correct": 1,
+      "rationale": "Lead-acid (and lithium-ion) cells reverse their reactions on charging; dry and alkaline cells are primary, single-use."
+    },
+    {
+      "id": 8,
+      "question": "The H₂–O₂ fuel cell's only chemical product is:",
+      "options": ["CO₂", "water", "ozone", "hydrogen peroxide"],
+      "correct": 1,
+      "rationale": "H₂ + O₂ → H₂O plus electricity — no pollution, which is why fuel cells power spacecraft and clean buses."
+    },
+    {
+      "id": 9,
+      "question": "In silver plating a spoon, the spoon is made the:",
+      "options": ["anode", "cathode", "electrolyte", "oxidizing agent"],
+      "correct": 1,
+      "rationale": "Metal deposits by reduction, and reduction happens at the cathode; the silver bar is the dissolving anode."
+    },
+    {
+      "id": 10,
+      "question": "Magnesium blocks bolted to a ship's steel hull protect it because:",
+      "options": ["magnesium is cheap and heavy", "magnesium, being more reactive, corrodes sacrificially in place of the steel", "magnesium insulates the hull", "magnesium is inert in seawater"],
+      "correct": 1,
+      "rationale": "As the more easily oxidized metal, the magnesium anodes are consumed while the hull stays intact."
+    }
+  ]
+}

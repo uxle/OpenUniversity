@@ -1,0 +1,100 @@
+# India's Rivers and Lakes: Himalayan and Peninsular Systems
+
+> Two families of rivers drain India — young, snow-fed Himalayan
+> streams and old, seasonal peninsular rivers. This lesson compares
+> their behaviour and tours the country's major lakes.
+
+## 1. The Himalayan Rivers: The Indus System
+
+The **Indus** rises near Lake Manasarovar in Tibet, flows through
+Ladakh, and leaves India for Pakistan before reaching the Arabian Sea.
+Its Punjab tributaries — **Jhelum, Chenab, Ravi, Beas, and Sutlej** —
+drain the world's greatest concentration of glaciers outside the poles.
+
+## 2. The Himalayan Rivers: Ganga and Brahmaputra
+
+The **Ganga** begins as the **Bhagirathi** from the Gangotri glacier,
+joining the Alaknanda at Devprayag. Her great tributaries are the
+**Yamuna**, **Ghaghara**, **Gandak**, and **Kosi** — the last so prone
+to shifting course that it is called the **sorrow of Bihar**. Near the
+Farakka barrage the river feeds the **Hooghly**, which carries her
+waters to the Bay of Bengal.
+
+The **Brahmaputra** is the **Tsangpo** in Tibet and the **Dihang** in
+Arunachal Pradesh before becoming the Brahmaputra of Assam — where
+summer flooding earns it the name **sorrow of Assam**. Midway lies
+**Majuli**, one of the world's largest inhabited river islands.
+
+[note]
+Snowmelt plus monsoon rain gives Himalayan rivers their perennial,
+ever-flowing character — navigable in stretches and generous with
+irrigation and hydropower.
+[/note]
+
+## 3. Peninsular Rivers
+
+| East-flowing | West-flowing |
+| --- | --- |
+| Mahanadi, Godavari, Krishna, Kaveri | Narmada, Tapi, and the short Western Ghats streams |
+| Rise in the Western Ghats / Chotanagpur, drain to the Bay of Bengal | Rise in central India, drain to the Arabian Sea |
+| End in large deltas | End in estuaries — no deltas |
+| Rain-fed, seasonal | Rain-fed, seasonal |
+
+The **Godavari**, largest of the peninsular rivers, is honoured as the
+**Dakshin Ganga**. The **Narmada** and **Tapi** flow through **rift
+valleys** — fault troughs so steep and tide-scoured that sediment
+cannot build deltas, only estuaries.
+
+## 4. Why the Two Systems Behave Differently
+
+| Feature | Himalayan rivers | Peninsular rivers |
+| --- | --- | --- |
+| Water regime | Perennial — rain plus snowmelt | Seasonal — rain only |
+| Age and gradient | Young, steep, energetic | Ancient, graded, gentle |
+| Channel habit | Deep gorges, sweeping meanders | Straighter, steadier courses on hard rock |
+| Mouth | Great deltas (Sundarbans) | East: deltas; west: estuaries |
+| Flood risk | Widespread summer floods | Mostly flash floods |
+
+[example]
+The Kosi is a textbook case of a restless young river: leaving the
+mountains, it spreads an alluvial fan across north Bihar and wanders
+over it, century by century.
+[/example]
+
+## 5. India's Major Lakes
+
+@diagram tree id="indian-rivers-by-coast" layout="tree" aria="Indian rivers grouped by system and coast"
+  "Indian rivers" -> "Himalayan system"
+  "Indian rivers" -> "Peninsular system"
+  "Himalayan system" -> "Indus, Ganga, Brahmaputra"
+  "Peninsular system" -> "East-flowing to deltas"
+  "Peninsular system" -> "West-flowing to estuaries"
+@/diagram
+
+| Lake | State | Distinction |
+| --- | --- | --- |
+| Wular | Jammu & Kashmir | Largest freshwater lake (fed by the Jhelum) |
+| Dal | Srinagar | Houseboats and shikaras; tourist icon |
+| Sambhar | Rajasthan | Largest inland salt lake |
+| Chilika | Odisha | Largest brackish-water lagoon |
+| Vembanad | Kerala | Longest lake; heart of the backwaters |
+| Lonar | Maharashtra | Crater lake of meteoric origin |
+
+[definition]
+A **lake** is any inland body of standing water; a **lagoon** (like
+Chilika) is a shallow lake cut off from the sea by a sand bar; an
+**estuary** (like the Hooghly mouth) is a drowned river valley where
+tide and stream meet.
+[/definition]
+
+## 6. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Sorrow of Bihar? | The Kosi |
+| Sorrow of Assam? | The Brahmaputra |
+| Dakshin Ganga? | The Godavari |
+| Rift-valley rivers? | Narmada and Tapi |
+| Largest freshwater lake? | Wular |
+| Largest brackish lagoon? | Chilika |
+| Longest lake of India? | Vembanad |

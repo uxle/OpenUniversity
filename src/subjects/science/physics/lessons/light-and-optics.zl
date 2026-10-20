@@ -1,0 +1,140 @@
+# Light and Optics: Reflection, Refraction, and Lenses
+
+> Light travels in straight lines until a surface turns it. This
+> lesson follows reflection, refraction, total internal reflection,
+> lenses, dispersion, and the defects of the human eye.
+
+## 1. Reflection and Plane Mirrors
+
+Light travels in straight lines — the reason shadows are sharp
+and eclipses are predictable. When it strikes a surface it
+**reflects**, obeying two laws: the angle of incidence equals the
+angle of reflection, and incident ray, normal, and reflected ray
+lie in one plane.
+
+A **plane mirror** forms an image that is **virtual**, erect, as
+far behind the mirror as the object is in front, and **laterally
+inverted** — your left hand appears as the right hand.
+
+[tip]
+To read the mirrored writing on the front of an ambulance,
+hold it to a mirror — lateral inversion reverses it back.
+[/tip]
+
+## 2. Spherical Mirrors
+
+A **concave mirror** converges light; a **convex mirror** diverges
+it. The **focal length** f is half the radius of curvature.
+
+| Feature | Concave | Convex |
+| --- | --- | --- |
+| Reflecting face | inner (curved in) | outer (bulging out) |
+| Image | real or virtual, magnified or small | always virtual, small, erect |
+| Field of view | narrow | wide |
+| Uses | dentist's mirror, headlights, solar furnaces, shaving mirrors | vehicle rear-view and street mirrors |
+
+@math label="eq:mirror-formula"
+\frac{1}{v} + \frac{1}{u} = \frac{1}{f}
+@/math
+
+The **magnification** m = −v/u; its sign reveals whether the
+image is inverted (real) or erect (virtual).
+
+[example]
+An object 30 cm from a concave mirror of focal length 20 cm:
+1/v = 1/20 − 1/30 = 1/60, so v = 60 cm — a real image twice
+the size (m = −60/30 = −2).
+[/example]
+
+## 3. Refraction and Refractive Index
+
+Light bends when it crosses obliquely into a medium of different
+**optical density** — the straw that seems broken at the water
+line. The **refractive index** compares speeds:
+
+@math label="eq:refractive-index"
+n = \frac{c}{v}
+@/math
+
+@chart bar title="Refractive index of common media"
+labels:
+Water
+Crown glass
+Flint glass
+Diamond
+
+data:
+1.33
+1.52
+1.62
+2.42
+@/chart
+
+Air's shifting layers make stars **twinkle**, and the Sun is seen
+a few minutes before sunrise and after sunset for the same
+reason — atmospheric refraction.
+
+## 4. Total Internal Reflection
+
+Beyond the **critical angle**, light striking from the denser
+side cannot escape and reflects totally. A diamond's cut exploits
+its tiny critical angle (~24°) to send light back to the eye,
+creating brilliance. An **optical fibre** pipes light along a bent
+glass thread the same way — the backbone of internet cables. On a
+hot road, refracting air layers fabricate a **mirage** of water.
+
+## 5. Lenses
+
+A **convex (converging) lens** bulges out and brings rays to a
+focus; a **concave (diverging) lens** hollows in and spreads them.
+
+| Feature | Convex lens | Concave lens |
+| --- | --- | --- |
+| Shape | thicker at the middle | thinner at the middle |
+| Focus | real — rays meet | virtual — rays appear to meet |
+| Image | real and inverted or virtual and magnified | always virtual, erect, small |
+| Uses | magnifying glass, camera, projector | correcting short sight |
+
+@math label="eq:lens-formula"
+\frac{1}{v} - \frac{1}{u} = \frac{1}{f}
+@/math
+
+The **power** of a lens, P = 1/f (f in metres), is measured in
+**dioptres**: a 25 cm focal-length converging lens has P = +4 D.
+
+## 6. Dispersion and the Rainbow
+
+A prism splits white light into the spectrum **ROYGBIV** — red
+deviated least, violet most — because refractive index varies
+with frequency. A **rainbow** repeats the prism trick inside
+raindrops: refraction on entry, one internal reflection, refraction
+on exit — always seen opposite the Sun.
+
+@diagram tree id="light-at-boundaries" layout="tree" aria="Light behaviour at boundaries: reflection, refraction, and dispersion"
+  "Light meets a boundary" -> "Reflection: mirrors"
+  "Light meets a boundary" -> "Refraction: bent path, straw in water"
+  "Refraction: bent path" -> "Dispersion: prism spectrum"
+  "Refraction: bent path" -> "Total internal reflection: fibres"
+@/diagram
+
+## 7. The Human Eye and Its Defects
+
+The eye's lens focuses on the **retina**; the **least distance of
+distinct vision** is about 25 cm.
+
+| Defect | Problem | Remedy |
+| --- | --- | --- |
+| Myopia (short sight) | image forms before the retina | concave (diverging) lens |
+| Hypermetropia (long sight) | image forms behind the retina | convex (converging) lens |
+| Presbyopia | ageing lens loses flexibility | bifocal lenses |
+
+## 8. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Mirror formula | 1/v + 1/u = 1/f; m = −v/u |
+| Vehicle mirrors | convex — wide field of view |
+| Refractive index | n = c/v; diamond 2.42, water 1.33 |
+| Optical fibre | works by total internal reflection |
+| Lens power | P = 1/f (metres), unit dioptre |
+| Myopia | corrected with a concave lens |

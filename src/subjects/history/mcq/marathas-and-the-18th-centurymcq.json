@@ -1,0 +1,76 @@
+{
+  "lessonId": "marathas-and-the-18th-century",
+  "title": "The Marathas and the 18th Century Struggle for Power",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Shivaji was born in 1630 at which fort?",
+      "options": ["Raigad", "Shivneri", "Pratapgad", "Torna"],
+      "correct": 1,
+      "rationale": "Shivaji was born at Shivneri fort to Shahji Bhosle and Jijabai; he captured his first fort, Torna, in 1646 and made Raigad his capital."
+    },
+    {
+      "id": 2,
+      "question": "The Treaty of Purandar (1665), by which Shivaji ceded 23 forts, was signed with:",
+      "options": ["Afzal Khan of Bijapur", "Jai Singh I of Amber", "Shaista Khan", "Aurangzeb directly"],
+      "correct": 1,
+      "rationale": "Jai Singh I's Mughal campaign forced the Treaty of Purandar in 1665; Shivaji's subsequent visit to Agra ended in his famous escape."
+    },
+    {
+      "id": 3,
+      "question": "Shivaji's coronation as Chhatrapati at Raigad was performed by:",
+      "options": ["Dadaji Konddev", "Gaga Bhatt", "Samarth Ramdas", "Balaji Vishwanath"],
+      "correct": 1,
+      "rationale": "Gaga Bhatt of Varanasi officiated at the coronation of 6 June 1674, giving ritual legitimacy and the title Haindava Dharmodharak."
+    },
+    {
+      "id": 4,
+      "question": "'Chauth' and 'sardeshmukhi' respectively claimed:",
+      "options": ["One-tenth and one-fourth of revenue", "One-fourth and an additional one-tenth of revenue", "A fixed tribute and military service", "Half the produce and free labour"],
+      "correct": 1,
+      "rationale": "Chauth was one-fourth of a territory's revenue in exchange for protection; sardeshmukhi was an extra one-tenth claimed as an overlord's hereditary due — 35% together."
+    },
+    {
+      "id": 5,
+      "question": "Which Peshwa secured sanads from Delhi granting Maratha claims over the six Deccan provinces?",
+      "options": ["Baji Rao I", "Balaji Vishwanath", "Balaji Baji Rao", "Madhavrao"],
+      "correct": 1,
+      "rationale": "Balaji Vishwanath marched to Delhi in 1719 to support the Sayyid brothers and returned with sanads legalising chauth and sardeshmukhi across the Deccan."
+    },
+    {
+      "id": 6,
+      "question": "Baji Rao I's celebrated victory over the Nizam in 1728 was at:",
+      "options": ["Palkhed", "Bhopal", "Wandiwash", "Khed"],
+      "correct": 0,
+      "rationale": "Baji Rao I outmanoeuvred the Nizam at Palkhed in 1728 and again at Bhopal in 1737; he died in 1740 without losing a battle."
+    },
+    {
+      "id": 7,
+      "question": "In the Third Battle of Panipat (14 January 1761), the Maratha commander was:",
+      "options": ["Baji Rao I", "Sadashivrao Bhau", "Mahadji Scindia", "Raghunathrao"],
+      "correct": 1,
+      "rationale": "Sadashivrao Bhau led the Marathas against Ahmad Shah Abdali; Vishwasrao and Bhau himself died in the defeat."
+    },
+    {
+      "id": 8,
+      "question": "The Maratha admiral who dominated the Konkan coast from Kolaba was:",
+      "options": ["Kanhoji Angre", "Tukoji Holkar", "Damaji Gaekwad", "Ranoji Scindia"],
+      "correct": 0,
+      "rationale": "Kanhoji Angre, Sarkhel of Kolaba (1698-1729), made Maratha sea power supreme on the western coast for three decades."
+    },
+    {
+      "id": 9,
+      "question": "At the Battle of Wandiwash (1760), Eyre Coote defeated:",
+      "options": ["Haider Ali", "Count de Lally's French force", "Baji Rao II", "Shah Alam II"],
+      "correct": 1,
+      "rationale": "Wandiwash on 22 January 1760 ended the third Carnatic war: Coote defeated the Comte de Lally, and by the Peace of Paris (1763) France kept only unfortified trading posts."
+    },
+    {
+      "id": 10,
+      "question": "Which of these is NOT listed as a reason for English success against Indian powers?",
+      "options": ["Command of the sea", "Bengal's revenues and Company credit", "A disciplined, regularly paid army", "A single united Indian confederacy opposing them"],
+      "correct": 3,
+      "rationale": "Indian powers fought separately — Marathas, Mysore, and the Nizam never made common cause — which, with sea power, finance, and a disciplined sepoy army, secured English victory."
+    }
+  ]
+}

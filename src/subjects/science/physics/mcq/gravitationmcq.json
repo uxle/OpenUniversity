@@ -1,0 +1,126 @@
+{
+  "lessonId": "gravitation",
+  "title": "Gravitation: From Falling Apples to Orbiting Satellites",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Kepler's third law of planetary motion states that:",
+      "options": [
+        "T ∝ a²",
+        "T² ∝ a³",
+        "T³ ∝ a²",
+        "T² ∝ 1/a"
+      ],
+      "correct": 1,
+      "rationale": "The square of a planet's period is proportional to the cube of its semi-major axis: T² ∝ a³."
+    },
+    {
+      "id": 2,
+      "question": "What is the value of the universal gravitational constant G?",
+      "options": [
+        "6.67 × 10⁻¹¹ N·m²/kg²",
+        "9.8 N/kg",
+        "6.67 × 10⁻⁷ N·m²/kg²",
+        "3 × 10⁸ N·m²/kg²"
+      ],
+      "correct": 0,
+      "rationale": "G = 6.67 × 10⁻¹¹ N·m²/kg², the same everywhere in the universe; 9.8 is Earth's surface g, not G."
+    },
+    {
+      "id": 3,
+      "question": "Henry Cavendish's 1798 torsion-balance experiment is famous for:",
+      "options": [
+        "Discovering the planet Neptune",
+        "First measuring G, thereby 'weighing the Earth'",
+        "Proving that orbits are ellipses",
+        "Calculating the escape velocity"
+      ],
+      "correct": 1,
+      "rationale": "Cavendish measured G in the laboratory; substituting it into g = GM/R² gave Earth's mass (about 6 × 10²⁴ kg) for the first time."
+    },
+    {
+      "id": 4,
+      "question": "As altitude above the Earth increases, the acceleration due to gravity:",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Stays exactly the same",
+        "Becomes zero just above the surface"
+      ],
+      "correct": 1,
+      "rationale": "g = GM/R² falls off with distance: it drops from 9.8 m/s² to about 8.7 m/s² at the ISS's 400 km height."
+    },
+    {
+      "id": 5,
+      "question": "Which quantity changes when an astronaut travels from Earth to the Moon?",
+      "options": [
+        "Mass",
+        "Weight",
+        "Both mass and weight",
+        "Neither mass nor weight"
+      ],
+      "correct": 1,
+      "rationale": "Mass (kg) never changes with location, but weight W = mg does: the lesson's 60 kg student weighs 588 N on Earth and about 97 N on the Moon."
+    },
+    {
+      "id": 6,
+      "question": "The escape velocity from the Earth's surface is approximately:",
+      "options": [
+        "7.9 km/s",
+        "9.8 km/s",
+        "11.2 km/s",
+        "3 × 10⁸ m/s"
+      ],
+      "correct": 2,
+      "rationale": "vₑ = √(2gR) ≈ 11.2 km/s for Earth; 7.9 km/s is the near-surface orbital velocity, which is smaller."
+    },
+    {
+      "id": 7,
+      "question": "A geostationary satellite has which combination of properties?",
+      "options": [
+        "24-hour period, about 36,000 km high, orbiting west to east above the equator",
+        "100-minute period, 800 km high, crossing the poles",
+        "12-hour period, 20,000 km high, above the equator",
+        "Fixed on the ground with a 24-hour period"
+      ],
+      "correct": 0,
+      "rationale": "Geostationary satellites match Earth's 24-hour spin at ~36,000 km above the equator, so they appear fixed in the sky."
+    },
+    {
+      "id": 8,
+      "question": "Mapping, spying, and crop and forest monitoring are typical uses of which satellites?",
+      "options": [
+        "Geostationary satellites",
+        "Communication satellites only",
+        "Polar (sun-synchronous) satellites",
+        "Geostationary and polar equally"
+      ],
+      "correct": 2,
+      "rationale": "Polar satellites at 700–800 km cross every latitude every ~100 minutes, making them ideal for mapping and monitoring."
+    },
+    {
+      "id": 9,
+      "question": "Spring tides (the strongest tides) occur when:",
+      "options": [
+        "The Moon is at half phase",
+        "Sun and Moon line up at new and full moon",
+        "Only during a solar eclipse",
+        "The Earth is farthest from the Sun"
+      ],
+      "correct": 1,
+      "rationale": "At new and full moon the solar and lunar pulls add together to give spring tides; at half moon they partially cancel, giving neap tides."
+    },
+    {
+      "id": 10,
+      "question": "Using Kepler's third law with a = 1.52 AU for Mars, the orbital period is about:",
+      "options": [
+        "1.88 years",
+        "1.52 years",
+        "2.52 years",
+        "1.20 years"
+      ],
+      "correct": 0,
+      "rationale": "T = √(a³) = √(1.52³) ≈ 1.88 years, the value the lesson's info box confirms by observation."
+    }
+  ]
+}

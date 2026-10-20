@@ -1,0 +1,99 @@
+# Probability: Measuring Uncertainty
+
+> Probability puts a number between 0 and 1 on how likely something is:
+> 0 = impossible, 1 = certain. Everything else lives in between.
+
+## 1. The Basic Definition
+
+[definition]
+For equally likely outcomes:
+
+@math label="eq:probability-def"
+P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}}
+@/math
+[/definition]
+
+## Example
+
+One card drawn from a standard 52-card deck. $P(\text{king}) =
+\frac{4}{52} = \frac{1}{13}$ — four kings, fifty-two cards.
+
+## 2. Complements: The "Not" Shortcut
+
+@math label="eq:complement"
+P(\text{not } E) = 1 - P(E)
+@/math
+
+The chance of **at least one** six in three dice rolls is easier from
+the other side: $1 - \left(\frac{5}{6}\right)^3 = 1 - \frac{125}{216}
+= \frac{91}{216}$.
+
+## 3. Combining Events
+
+| Situation | Rule |
+| --- | --- |
+| A and B are independent | $P(A \text{ and } B) = P(A) \cdot P(B)$ |
+| A and B cannot both happen (mutually exclusive) | $P(A \text{ or } B) = P(A) + P(B)$ |
+| General "or" | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+
+## Example
+
+Two coins flipped. $P(\text{two heads}) = \frac12 \times \frac12 =
+\frac14$ — independent events multiply. But $P(\text{head or tail on
+one coin}) = \frac12 + \frac12 = 1$ — mutually exclusive events add.
+
+## 4. Sample Spaces You Should Know Cold
+
+| Experiment | Outcomes | Example probability |
+| --- | --- | --- |
+| One die | 6 | P(prime) = 3/6 = 1/2 (2, 3, 5) |
+| Two dice | 36 | P(sum = 7) = 6/36 = 1/6 |
+| Two coins | 4 | P(exactly one head) = 2/4 = 1/2 |
+
+The sum-7 result deserves a picture — six of the thirty-six ordered
+pairs make it the most likely total:
+
+@chart bar title="Sums of two dice — ways out of 36" labels:
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+data:
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+@/chart
+
+## 5. Experimental vs Theoretical
+
+Flip a fair coin 10 times and you might see 7 heads — experimental
+probability wobbles at small samples. As trials grow, it converges to
+the theoretical $\frac12$: that convergence is the **law of large
+numbers**.
+
+[important]
+Probabilities of ALL possible outcomes always sum to exactly 1. If your
+list sums to more, you double-counted; to less, you missed a case.
+[/important]
+
+## Key Takeaways
+
+- Favourable ÷ total for equally likely cases; complement flips the question.
+- Multiply independent events; add mutually exclusive ones.
+- The two-dice distribution peaks at 7 — and every list must total 1.

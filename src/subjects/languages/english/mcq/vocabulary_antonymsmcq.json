@@ -29,6 +29,48 @@
       "options": ["Amateur, Fresher, Tyro", "Powerless, Feeble", "Ordinary, Common", "Fatal, Harmless"],
       "correct": 0,
       "rationale": "'Veteran' (अनुभवी) is the opposite of Amateur, Fresher, or Tyro (नौसिखिया)।"
+    },
+    {
+      "id": 5,
+      "question": "What is the antonym of 'Generous'?",
+      "options": ["Kind, Humble", "Stingy, Miser, Niggard", "Blame, Censure", "Plenty, Surplus"],
+      "correct": 1,
+      "rationale": "'Generous' (उदार, दयालु) is opposite in meaning to Stingy, Miser, or Niggard (कंजूस)।"
+    },
+    {
+      "id": 6,
+      "question": "'Explicit' is the opposite of:",
+      "options": ["Ambiguous, Obscure", "Conceal, Hide", "Sane, Sensible", "Scarce, Meagre"],
+      "correct": 0,
+      "rationale": "'Explicit' (प्रत्यक्ष, स्पष्ट) means clear and direct; its opposites are Confused, Ambiguous, and Obscure (अस्पष्ट)।"
+    },
+    {
+      "id": 7,
+      "question": "What is the antonym of 'Miniature'?",
+      "options": ["Faint, Dim", "Titanic, Huge, Gigantic, Mammoth", "Rare, Infrequent", "Weak, Feeble"],
+      "correct": 1,
+      "rationale": "'Miniature' means very small (बहुत छोटा); its opposites are Titanic, Huge, Gigantic, and Mammoth (विशालकाय)।"
+    },
+    {
+      "id": 8,
+      "question": "'Scarcity' is opposite in meaning to:",
+      "options": ["Shortage, Deficit", "Supply, Abundance, Surplus", "Hide, Cover", "Cruel, Arrogant"],
+      "correct": 1,
+      "rationale": "'Scarcity' (कमी) is the opposite of Supply, Abundance, or Surplus (पूर्ति, प्रचुरता)।"
+    },
+    {
+      "id": 9,
+      "question": "The word 'Demolish' most nearly means:",
+      "options": ["Construct", "Ruin, Destroy", "Improve, Rectify", "Gather, Hoard"],
+      "correct": 1,
+      "rationale": "In the vocabulary list, 'Demolish' matches Ruin/Destroy (नष्ट करना); 'Amend', not demolish, means improve or rectify."
+    },
+    {
+      "id": 10,
+      "question": "The word 'Abhor' most nearly means:",
+      "options": ["Praise, Appreciate", "Mix, Combine", "Hate, Dislike, Loathe", "Hide, Obscure"],
+      "correct": 2,
+      "rationale": "'Abhor' matches Hate/Dislike/Loathe (घृणा करना); 'Admire', its near-opposite, means Praise or Appreciate."
     }
   ]
 }

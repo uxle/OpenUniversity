@@ -1,0 +1,76 @@
+{
+  "lessonId": "application-protocols-and-security",
+  "title": "Application Protocols and Network Security: How the Web Talks and Stays Safe",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which HTTP method requests only the headers, with no response body?",
+      "options": ["GET", "HEAD", "OPTIONS", "TRACE"],
+      "correct": 1,
+      "rationale": "HEAD returns headers only, no body — the method table lists GET, POST, PUT, DELETE, and HEAD."
+    },
+    {
+      "id": 2,
+      "question": "A 404 status code belongs to which family?",
+      "options": ["1xx informational", "2xx success", "3xx redirect", "4xx client error"],
+      "correct": 3,
+      "rationale": "4xx codes are client errors; 404 Not Found sits alongside 403 Forbidden, while 5xx codes are server errors like 500."
+    },
+    {
+      "id": 3,
+      "question": "HTTP is stateless — how do sessions survive across requests?",
+      "options": ["The server keeps every client in RAM", "Servers set cookies that the browser echoes back on every visit", "TCP remembers the session", "The URL stores all state"],
+      "correct": 1,
+      "rationale": "The server sets a cookie via Set-Cookie and the browser echoes it back on every visit, identifying the returning user."
+    },
+    {
+      "id": 4,
+      "question": "What does the padlock icon in a browser actually certify?",
+      "options": ["The site is free of malware", "Traffic is encrypted in transit and the certificate verifies against a trusted CA", "The server is in your country", "The connection uses UDP"],
+      "correct": 1,
+      "rationale": "HTTPS runs HTTP inside TLS: the padlock means encrypted in transit and the certificate was verified against a Certificate Authority your system trusts."
+    },
+    {
+      "id": 5,
+      "question": "Which DNS record type holds a domain's IPv6 address?",
+      "options": ["A", "AAAA", "MX", "CNAME"],
+      "correct": 1,
+      "rationale": "A records hold IPv4 addresses, AAAA holds IPv6, CNAME is an alias, and MX names the mail server for the domain."
+    },
+    {
+      "id": 6,
+      "question": "HTTP/3 achieves faster handshakes by running QUIC on top of:",
+      "options": ["TCP", "UDP", "ICMP", "Ethernet"],
+      "correct": 1,
+      "rationale": "HTTP/3 runs on QUIC, which is built over UDP — HTTP/2, by contrast, multiplexes many requests over one TCP connection."
+    },
+    {
+      "id": 7,
+      "question": "What is the main difference between POP3 and IMAP?",
+      "options": ["POP3 sends mail; IMAP receives it", "POP3 downloads to one device and usually deletes from the server; IMAP keeps mail on the server and syncs everywhere", "IMAP is encrypted; POP3 is not", "POP3 uses UDP; IMAP uses TCP"],
+      "correct": 1,
+      "rationale": "SMTP sends mail; POP3 pulls it to a single device, while IMAP keeps mail on the server so folders sync across devices."
+    },
+    {
+      "id": 8,
+      "question": "What do the four DHCP steps spell out, in order?",
+      "options": ["DORA: Discover, Offer, Request, Acknowledge", "RAOD: Request, Acknowledge, Offer, Discover", "DRAO: Discover, Request, Acknowledge, Offer", "ODAR: Offer, Discover, Acknowledge, Request"],
+      "correct": 0,
+      "rationale": "The client broadcasts DISCOVER, the server OFFERS an address, the client REQUESTS it, and the server ACKs the lease — DORA."
+    },
+    {
+      "id": 9,
+      "question": "Which defense directly neutralizes SQL injection?",
+      "options": ["Rate limiting", "Parameterized queries", "Longer passwords", "A packet-filtering firewall"],
+      "correct": 1,
+      "rationale": "SQL injection feeds malformed input that becomes database commands; parameterized queries keep input data separate from code."
+    },
+    {
+      "id": 10,
+      "question": "How does TLS combine symmetric and asymmetric encryption?",
+      "options": ["It uses only AES", "It uses only RSA", "An asymmetric handshake agrees on a key, then fast symmetric AES carries the session", "It alternates packets between RSA and AES"],
+      "correct": 2,
+      "rationale": "TLS uses both: the slow asymmetric handshake establishes a shared key, and the fast symmetric AES then encrypts the session itself."
+    }
+  ]
+}

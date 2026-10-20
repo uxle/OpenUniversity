@@ -1,0 +1,137 @@
+# Elasticity: How Sensitive Markets Are to Price and Income
+
+> Elasticity puts a number on sensitivity — how much quantity responds
+> when price, income, or a related good's price changes.
+
+[definition]
+**Price elasticity of demand (PED)** measures the percentage change in
+quantity demanded caused by a one percent change in price. Because
+price and quantity move oppositely, PED is negative; by convention we
+use its absolute value.
+[/definition]
+
+## 1. The PED Formula
+
+@math
+PED = \frac{\%\ \Delta Q_d}{\%\ \Delta P}
+@/math
+
+If price rises 10% and quantity demanded falls 20%, PED = 20/10 = 2 —
+demand is elastic. The **midpoint (arc) method** averages the two
+endpoints so the answer is the same whichever direction you measure:
+
+@math
+PED = \frac{(Q_2 - Q_1)/\frac{1}{2}(Q_1 + Q_2)}{(P_2 - P_1)/\frac{1}{2}(P_1 + P_2)}
+@/math
+
+## 2. The Five Degrees of Elasticity
+
+| Value of PED | Name | Demand curve shape | Example |
+| --- | --- | --- | --- |
+| PED = 0 | Perfectly inelastic | Vertical line | Life-saving medicine |
+| 0 < PED < 1 | Inelastic | Steep | Salt, fuel, rice |
+| PED = 1 | Unitary elastic | Rectangular hyperbola | Hypothetical benchmark |
+| PED > 1 | Elastic | Flat | Restaurant meals, air travel |
+| PED = ∞ | Perfectly elastic | Horizontal line | One farmer's wheat in a market |
+
+## 3. What Makes Demand Elastic?
+
+- **Availability of substitutes** — the single biggest factor; many
+  close substitutes mean buyers leave when price rises.
+- **Necessity vs luxury** — a heart patient's medicine vs a cruise.
+- **Share of the budget** — a rise in matchbox prices is ignored; a
+  rise in house prices is not.
+- **Time horizon** — demand is more elastic in the long run (habits
+  and durable stocks adjust slowly).
+
+[example]
+Salt has almost no substitutes, costs a tiny budget share, and is a
+necessity — so its PED is close to zero. Air travel is a luxury with
+substitutes (trains, video calls) and takes a large budget bite —
+highly elastic, and airlines discount fares to fill seats.
+[/example]
+
+## 4. Elasticity and Total Revenue
+
+@math
+TR = P \times Q
+@/math
+
+| Demand | Price rises | Price falls |
+| --- | --- | --- |
+| Inelastic (PED < 1) | TR rises | TR falls |
+| Unitary (PED = 1) | TR unchanged | TR unchanged |
+| Elastic (PED > 1) | TR falls | TR rises |
+
+[important title="The pricing rule sellers live by"]
+When demand is inelastic, raising price raises revenue — which is why
+governments tax fuel, tobacco, and liquor. When demand is elastic, a
+price cut pays for itself through extra volume.
+[/important]
+
+## 5. Income Elasticity of Demand (YED)
+
+@math
+YED = \frac{\%\ \Delta Q_d}{\%\ \Delta Income}
+@/math
+
+- **Normal goods** — YED > 0. If YED > 1 they are **luxuries**
+  (cars, eating out); 0 < YED < 1 are **necessities** (food grains).
+- **Inferior goods** — YED < 0: as income rises, demand falls
+  (coarse grains, generic brands, bus travel replacing some journeys).
+
+Engel's observation: the share of income spent on food falls as a
+household becomes richer — a mark of necessity behaviour.
+
+## 6. Cross Elasticity of Demand (XED)
+
+@math
+XED = \frac{\%\ \Delta Q_d\ of\ X}{\%\ \Delta P\ of\ Y}
+@/math
+
+| XED value | Relationship | Example pair |
+| --- | --- | --- |
+| XED > 0 | Substitutes | Tea and coffee |
+| XED < 0 | Complements | Petrol and cars |
+| XED = 0 | Unrelated | Chalk and cheese |
+
+A high positive XED is how regulators detect "relevant markets" in
+competition cases — products that constrain each other's pricing.
+
+## 7. Elasticity Ladder in Practice
+
+Approximate long-run elasticities illustrate the spread of real-world
+sensitivity — necessities cluster near zero, discretionary categories
+stretch well above one:
+
+@chart bar title="Illustrative price elasticity by category"
+labels:
+Salt
+Rice
+Fuel
+Cinema
+Air travel
+
+data:
+0.1
+0.3
+0.6
+1.8
+2.5
+@/chart
+
+## 8. Quick Revision Table
+
+| Measure | Formula | Key sign reading |
+| --- | --- | --- |
+| PED | %ΔQd / %ΔP | Magnitude → inelastic vs elastic |
+| YED | %ΔQd / %ΔIncome | Positive = normal, negative = inferior |
+| XED | %ΔQd of X / %ΔP of Y | Positive = substitutes, negative = complements |
+| Revenue test | Δ(P×Q) after price change | TR and price move together when inelastic |
+
+[summary]
+Elasticity converts "how sensitive?" into a number: PED for own price,
+YED for income (sign classifies the good), XED for related goods (sign
+classifies the relationship). Sellers and tax authorities both price
+against PED — inelastic goods carry the markups and the sin taxes.
+[/summary]

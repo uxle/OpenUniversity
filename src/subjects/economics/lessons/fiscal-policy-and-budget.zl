@@ -1,0 +1,139 @@
+# Fiscal Policy, the Budget, and Deficits
+
+> Fiscal policy uses the government's budget — spending and taxes —
+> to steer demand; its deficits measure how much of the steering is
+> done on borrowed money.
+
+[definition]
+**Fiscal policy** is the use of government expenditure and taxation
+to influence aggregate demand, output, and employment. It is decided
+by the government (through the Union Budget), unlike monetary
+policy, which belongs to the RBI.
+[/definition]
+
+## 1. Expansionary vs Contractionary
+
+- **Expansionary fiscal policy** — higher spending and/or lower
+  taxes to fight recession and unemployment; the risk is inflation
+  and borrowing.
+- **Contractionary fiscal policy** — lower spending and/or higher
+  taxes to cool overheating demand.
+
+By timing, policy is either **discretionary** (deliberate changes —
+a stimulus package) or **automatic** (built-in stabilisers — tax
+revenues fall and welfare spending rises in a downturn, cushioning
+incomes without any new decision).
+
+## 2. Structure of the Union Budget
+
+| Receipts | Revenue (current income) | Capital (creates liability or reduces asset) |
+| --- | --- | --- |
+| Type | Taxes (net to Centre), dividends, interest | Borrowings, loan recoveries, disinvestment |
+| Expenditure | Revenue: salaries, subsidies, interest payments | Capital: assets — roads, machines, loans given |
+
+Revenue expenditure maintains the government and its programmes;
+capital expenditure builds assets that raise future capacity. The
+budget is presented in two parts — Economic Survey a day earlier,
+then the Finance Minister's budget speech on 1 February. The old
+plan/non-plan classification was replaced by revenue/capital
+groupings.
+
+[info title="Revenue vs Capital — the test"]
+Does the receipt create a liability (borrowing) or shrink an asset
+(disinvestment)? Capital. Is it regular income or running expense?
+Revenue. Interest *paid* is revenue expenditure though the loan
+behind it was capital.
+[/info]
+
+## 3. The Three Deficits
+
+@math
+Revenue\ Deficit = Revenue\ Expenditure - Revenue\ Receipts
+@/math
+
+@math
+Fiscal\ Deficit = Total\ Expenditure - Total\ Receipts\ (excluding\ borrowings)
+@/math
+
+@math
+Primary\ Deficit = Fiscal\ Deficit - Interest\ Payments
+@/math
+
+| Deficit | What it tells you |
+| --- | --- |
+| Revenue deficit | Government borrowing to cover *running* costs |
+| Fiscal deficit | Total borrowing need — the headline number |
+| Primary deficit | Today's borrowing excluding the burden of *past* borrowing |
+
+A zero primary deficit means all current borrowing merely services
+old interest — no new profligacy, just legacy cost.
+
+## 4. FRBM Act, 2003
+
+The **Fiscal Responsibility and Budget Management Act** committed the
+Centre to fiscal discipline: eliminate the revenue deficit and bring
+the fiscal deficit toward long-term targets, with annual statements
+to Parliament. It includes an **escape clause** allowing temporary
+deviation for defined emergencies — invoked for COVID-19 — with a
+commitment to return to the glide path.
+
+## 5. Finance Commission (Article 280)
+
+Every five years, the **Finance Commission** recommends how the
+Centre's divisible tax pool is shared with states (vertical
+devolution), how it is distributed among states (horizontal sharing,
+based on population, area, forest cover, income distance), and grants
+for local bodies — the fiscal federalism referee.
+
+@chart donut title="Stylised union budget expenditure shares (%)"
+labels:
+Interest payments
+Defence and security
+Subsidies
+Capital investment
+Grants and transfers
+Other expenditure
+
+data:
+24
+13
+9
+20
+18
+16
+@/chart
+
+[example]
+If total expenditure is ₹100 lakh crore and receipts other than
+borrowing are ₹85 lakh crore, the fiscal deficit is ₹15 lakh crore.
+If interest payments are ₹10 lakh crore, the primary deficit is
+₹5 lakh crore — today's borrowing net of yesterday's debt service.
+[/example]
+
+## 6. Financing and Crowding Out
+
+Deficits are financed by borrowing — from the market (G-secs), small
+savings (National Small Savings Fund), or occasionally the RBI.
+Heavy market borrowing can **crowd out** private investment by
+raising interest rates, which is exactly why FRBM-type discipline
+exists.
+
+## 7. Quick Revision Table
+
+| Concept | One-line memory |
+| --- | --- |
+| Expansionary fiscal | More spending, less tax — anti-recession |
+| Automatic stabiliser | Taxes and transfers self-adjust with the cycle |
+| Fiscal deficit | Total spending minus non-borrowed receipts |
+| Primary deficit | Fiscal deficit minus interest payments |
+| FRBM Act | 2003; targets plus escape clause |
+| Finance Commission | Article 280; five-yearly tax devolution |
+| Crowding out | Government borrowing raises rates, displacing private investment |
+
+[summary]
+Fiscal policy counter-cycles demand through the budget; deficits —
+revenue, fiscal, primary — grade the borrowing behind it, the FRBM
+framework disciplines it, and the Finance Commission divides the
+tax pool between Centre and states. Capital expenditure is the
+deficit that pays for itself.
+[/summary]

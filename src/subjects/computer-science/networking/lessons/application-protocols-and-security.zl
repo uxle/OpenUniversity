@@ -1,0 +1,131 @@
+# Application Protocols and Network Security: How the Web Talks and Stays Safe
+
+> Above the network plumbing sit the protocols people actually meet —
+> HTTP, DNS, email, DHCP — and the threats that target them. This
+> lesson covers how they work and how to defend them.
+
+## 1. HTTP: The Language of the Web
+
+**HTTP** is a stateless request-response protocol: the client asks,
+the server answers, the server forgets.
+
+| Method | Meaning | Body |
+| --- | --- | --- |
+| GET | fetch a resource; must not change anything | no |
+| POST | submit data, create something | yes |
+| PUT | replace a resource | yes |
+| DELETE | remove a resource | no |
+| HEAD | headers only, no body | no |
+
+| Status family | Meaning | Famous members |
+| --- | --- | --- |
+| 1xx | informational | 101 Switching Protocols |
+| 2xx | success | 200 OK, 204 No Content |
+| 3xx | redirect | 301 Moved Permanently |
+| 4xx | client error | 404 Not Found, 403 Forbidden |
+| 5xx | server error | 500 Internal Server Error |
+
+[info title="Why stateless scales"]
+Because no server remembers any request, any of thousands of
+interchangeable machines can answer any request. State lives in
+cookies and tokens — small strings the browser echoes back on every
+visit after the server sets them via Set-Cookie.
+[/info]
+
+## 2. HTTPS and TLS
+
+**HTTPS** is HTTP inside a **TLS** tunnel. During the handshake the
+parties agree on encryption, and the server presents a **certificate**
+— a signed statement binding its domain to its public key. The browser
+verifies the chain of trust:
+
+@diagram tree id="certificate-chain" layout="tree" aria="Certificate chain from a trusted root CA through an intermediate to the site certificate"
+  "Root CA (preinstalled in your OS)" -> "Intermediate CA"
+  "Intermediate CA" -> "Site certificate for example.com"
+@/diagram
+
+The padlock icon means: encrypted in transit, and the certificate was
+verified against a **Certificate Authority (CA)** your system already
+trusts. **HTTP/2** multiplexes many requests over one connection;
+**HTTP/3** runs on QUIC, built over UDP, for faster handshakes.
+
+## 3. DNS: Names to Numbers
+
+| Record | Holds |
+| --- | --- |
+| A | a domain's IPv4 address |
+| AAAA | a domain's IPv6 address |
+| CNAME | an alias pointing to another name |
+| MX | which mail server receives the domain's email |
+| TXT | free-form text — SPF, verification codes |
+
+Your **recursive resolver** does the legwork: it asks a root server,
+then the .com TLD servers, then the domain's **authoritative** server,
+caching answers on the way. Before all that, the OS checks the local
+**hosts file** — a name-to-address override that predates DNS.
+
+## 4. Email and File Transfer
+
+| Protocol | Job | Style |
+| --- | --- | --- |
+| SMTP | send mail between clients and servers | push |
+| POP3 | download to one device, usually deleting from the server | pull, single device |
+| IMAP | keep mail on the server, sync folders everywhere | pull, multi-device |
+
+**FTP** moves files in the clear over separate control and data
+connections; **SFTP** re-implements transfer over SSH — encrypted,
+one channel, one port.
+
+## 5. DHCP: Getting an Address Automatically
+
+@diagram tree id="dhcp-dora" layout="tree" aria="DHCP discover offer request acknowledge exchange"
+  "Client broadcasts DISCOVER" -> "Server OFFERS an address"
+  "Server OFFERS an address" -> "Client REQUESTS that address"
+  "Client REQUESTS that address" -> "Server ACK: lease granted"
+@/diagram
+
+The four steps spell **DORA**: Discover, Offer, Request, Acknowledge.
+The address is a lease with an expiry, renewed partway through its
+lifetime.
+
+## 6. Threats and Defenses
+
+| Threat | What it is | First line of defense |
+| --- | --- | --- |
+| Phishing | fake mail or sites harvesting credentials | verify senders, type URLs yourself |
+| Malware — virus, worm, trojan, ransomware, spyware | hostile code: copied, self-spread, disguised, extorting, observing | patched OS, antivirus, backups |
+| DoS / DDoS | flooding a service offline, often from many hijacked machines | rate limiting, CDNs, scrubbing |
+| Man in the middle | intercepting traffic between two parties | TLS everywhere |
+| SQL injection | malformed input becomes database commands | parameterized queries |
+| Social engineering | manipulating people, not machines | verification procedures, training |
+
+## 7. Firewalls, VPNs, and Authentication
+
+- A **packet-filtering firewall** allows or blocks by IP and port; a
+  **stateful firewall** also tracks whole conversations.
+- A **VPN** encrypts all traffic to a gateway, shielding it from the
+  local network and public Wi-Fi.
+- **Two-factor authentication (2FA)** pairs a password with something
+  you have or are — a code, a security key, a fingerprint.
+
+## 8. Encryption: Symmetric and Asymmetric
+
+| Property | Symmetric (AES) | Asymmetric (RSA) |
+| --- | --- | --- |
+| Keys | one shared secret | public + private pair |
+| Speed | fast | slow |
+| Solves | bulk confidentiality | key exchange, signatures |
+
+TLS uses both: an asymmetric handshake to agree on a key, then fast
+symmetric AES for the session itself. Add password hygiene — long,
+unique passphrases in a manager, never reused — and the stack is
+defended end to end.
+
+[summary]
+HTTP is stateless — methods, status families, cookies for state. HTTPS
+is HTTP inside TLS, with certificates verified against trusted CAs.
+DNS records (A, AAAA, CNAME, MX, TXT) resolve through root, TLD, and
+authoritative servers. Email is SMTP out, POP3 or IMAP in; DHCP leases
+addresses via DORA. Defenses layer: TLS, firewalls, VPNs, 2FA,
+parameterized queries, and hybrid encryption.
+[/summary]

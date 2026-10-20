@@ -29,6 +29,63 @@
       "options": ["Helping Verb + Subject + Main Verb + Object?", "Subject + Helping Verb + Main Verb + Object?", "Question Word + Subject + Verb?", "Main Verb + Subject + Helping Verb?"],
       "correct": 0,
       "rationale": "Closed (Yes/No) interrogative sentences begin with the Helping Verb, followed by Subject + (not) + Main Verb + Object, e.g., 'Is he reading books?'"
+    },
+    {
+      "id": 5,
+      "question": "What is the structure of the Future Perfect Tense?",
+      "options": ["Subject + will/shall + be + V1 + ing", "Subject + will/shall + have + V3", "Subject + will/shall + V1", "Subject + has/have + V3"],
+      "correct": 1,
+      "rationale": "Future Perfect Tense follows: Subject + will/shall + have + V3, e.g., 'They will have completed their work before we go.'"
+    },
+    {
+      "id": 6,
+      "question": "\"They ___ their work before we go.\" Choose the correct form.",
+      "options": ["will complete", "will have completed", "will be completing", "will have been completing"],
+      "correct": 1,
+      "rationale": "'Before we go' with a finished action calls for Future Perfect: will/shall + have + V3 — 'will have completed'."
+    },
+    {
+      "id": 7,
+      "question": "Which structure belongs to the Future Perfect Continuous Tense?",
+      "options": [
+        "Subject + will/shall + have + V3",
+        "Subject + will/shall + be + V1 + ing",
+        "Subject + will/shall + have been + V1 + ing + from/since + time",
+        "Subject + had been + V1 + ing"
+      ],
+      "correct": 2,
+      "rationale": "Future Perfect Continuous follows: Subject + will/shall + have been + V1 + ing + from/since + time, e.g., 'They will have been reading Hindi from Monday onwards.'"
+    },
+    {
+      "id": 8,
+      "question": "Which sentence correctly applies the conditional clause rule?",
+      "options": [
+        "If they will come here, I will talk to them.",
+        "If they come here, I will talk to them.",
+        "If they came here, I will talk to them.",
+        "When you will help me, I will help you."
+      ],
+      "correct": 1,
+      "rationale": "In an if/when clause about two future actions, the if/when clause takes Present Indefinite ('come') and only the main clause takes Future Indefinite."
+    },
+    {
+      "id": 9,
+      "question": "What is the pattern of an open (question word type) interrogative sentence?",
+      "options": [
+        "Question Word + Helping Verb + Subject + Main Verb + Object?",
+        "Subject + Question Word + Helping Verb + Verb?",
+        "Helping Verb + Object + Subject + Question Word?",
+        "Main Verb + Helping Verb + Subject?"
+      ],
+      "correct": 0,
+      "rationale": "Open questions start with a question word (Why, Who, How, Where, When, What), then Helping Verb + Subject + Main Verb + Object — e.g., 'When will you come?'"
+    },
+    {
+      "id": 10,
+      "question": "\"As soon as I ___ New Delhi, I shall send you the file.\" Choose the correct verb.",
+      "options": ["shall reach", "will reach", "reach", "reached"],
+      "correct": 2,
+      "rationale": "After 'as soon as' (like if/when clauses), use Present Indefinite for the future action; the main clause carries the future tense."
     }
   ]
 }

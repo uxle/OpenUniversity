@@ -1,0 +1,160 @@
+# Revolutions That Made the Modern World: American, French, and Russian
+
+> Three revolutions — America in 1776, France in 1789, Russia in 1917 —
+> destroyed monarchy's divine pretensions and gave the modern world its
+> vocabulary: liberty, equality, fraternity, rights, constitutions, and
+> planned economies. Each fed on Enlightenment ideas and ended further
+> than it began.
+
+## 1. Ideas Before the Revolutions
+
+The Renaissance and Reformation taught Europe to question authority; the
+**Enlightenment** turned that habit on politics itself.
+
+| Thinker | Key work | Idea |
+| --- | --- | --- |
+| John Locke | Two Treatises of Government | Natural rights; consent of the governed |
+| Montesquieu | The Spirit of the Laws | Separation of legislative, executive, judicial powers |
+| Rousseau | The Social Contract | General will; sovereignty of the people |
+| Voltaire | Candide, Letters | Freedom of speech and religion |
+
+[definition]
+The **social contract** holds that legitimate government rests on agreement
+among the people — rulers who break it may lawfully be replaced. Locke
+justified England's 1688 revolution; Jefferson and Rousseau armed two more.
+[/definition]
+
+## 2. The American Revolution (1776)
+
+Britain's victory in the Seven Years War (1763) left debts Parliament taxed
+its thirteen colonies to pay — **Stamp Act (1765)**, Townshend duties, the
+**Boston Tea Party (1773)**. The cry "**no taxation without representation**"
+turned a fiscal quarrel into revolution. Fighting began at Lexington and
+Concord (1775); the **Declaration of Independence (4 July 1776)** asserted
+inalienable rights; Saratoga (1777) brought France in; Cornwallis
+surrendered at **Yorktown (1781)**; the Treaty of Paris (1783) recognised
+the United States. The **Constitution of 1787** built federal government,
+separation of powers, and checks and balances — Washington first President —
+and the first ten amendments, the **Bill of Rights (1791)**, completed the
+template the world would copy.
+
+[info title="The first modern republic"]
+A written constitution, a bill of rights, an elected president, and federal
+division of powers: the American formula adapted by France, Latin America,
+and eventually India.
+[/info]
+
+## 3. The French Revolution: Causes
+
+France in 1789 was a state bankrupted by wars — including aid to America —
+facing bad harvests, with taxes falling on those least able to pay.
+
+| Estate | Who | Privilege |
+| --- | --- | --- |
+| First | c. 100,000 clergy | Tithe; no taille |
+| Second | c. 400,000 nobles | Seigneurial dues and exemptions |
+| Third | 98% of the nation | Paid everything, owned grievances |
+
+@chart donut title="Population of France by estate, 1789 (percent)"
+labels:
+First Estate
+Second Estate
+Third Estate
+
+data:
+0.5
+1.5
+98
+@/chart
+
+## 4. The French Revolution: Course
+
+- **5 May 1789:** Louis XVI summons the **Estates-General** for the first
+  time since 1614; the Third Estate proclaims itself the **National
+  Assembly** (17 June), sealing the **Tennis Court Oath** (20 June).
+- **14 July 1789:** the **Bastille** falls; the Great Fear sweeps the
+  countryside; feudal dues are abolished (4 August).
+- **26 August 1789:** the **Declaration of the Rights of Man and of the
+  Citizen** — liberty, property, equality before the law.
+- **1791:** constitutional monarchy; **1792:** war with Austria and
+  Prussia; the **Republic** is proclaimed and **Louis XVI guillotined
+  (21 January 1793)**.
+- **1793-94:** the radical **Jacobins** — Robespierre, Danton, Marat — rule
+  through the Committee of Public Safety: the **Reign of Terror** sends
+  some 17,000 to the guillotine, Robespierre included (**Thermidor, July
+  1794**).
+- **1795-99:** the corrupt Directory ends when **Napoleon Bonaparte** seizes
+  power on **18 Brumaire (9 November 1799)**.
+
+## 5. Napoleon and the Legacy
+
+Napoleon crowned himself emperor (1804) and spread the **Code Napoleon** —
+equality before the law, property rights, secular administration — across
+Europe by conquest, from Austerlitz (1805) through the Russian disaster
+(1812) to **Waterloo (1815)**.
+
+| Legacy | Detail |
+| --- | --- |
+| Rights | Liberty-equality-fraternity as political standard |
+| Nationalism | Conscription and occupation awakened European nations |
+| Metric system | Standardised in 1795, now global |
+| Law | The Code Napoleon, model for civil codes worldwide |
+| Land | Peasant purchases of Church lands were never undone |
+
+## 6. The Russian Revolution: Causes and 1905
+
+Autocracy had no parliament or free press, and a small but concentrated
+industrial working class. Defeat by Japan in **1905** cracked the regime:
+on **Bloody Sunday** (January 1905) troops fired on Father Gapon's
+petitioners outside the Winter Palace, bringing strikes and the Battleship
+Potemkin mutiny. The October Manifesto granted a **Duma** — which Nicholas
+II then hollowed out. **1905 became, in Lenin's phrase, the "dress
+rehearsal" for 1917**.
+
+## 7. 1917: February and October
+
+@diagram tree id="russian-1917" layout="tree" aria="The two Russian revolutions of 1917 and their outcomes"
+  Russia 1917 -> "February Revolution"
+  Russia 1917 -> "October Revolution"
+  February Revolution -> "Tsar Nicholas II abdicates"
+  February Revolution -> "Provisional Government under Lvov, then Kerensky"
+  October Revolution -> "Bolsheviks seize power, 7-8 November"
+  October Revolution -> "Peace, Land, Bread; all power to the Soviets"
+@/diagram
+
+In **February**, bread riots and mutinies at **Petrograd** forced
+**Nicholas II to abdicate**; the Provisional Government continued the war
+and lost the people. Lenin, returned in the sealed train, offered "**Peace,
+Land, Bread**." On **7-8 November (old-style 25-26 October)** the
+Bolsheviks, with Trotsky's Military Revolutionary Committee and the cruiser
+**Aurora's** signal shot, took the **Winter Palace**. A three-year civil
+war followed (1918-21): war communism, the **Red Army** Trotsky built,
+foreign intervention, the crushing of the Kronstadt rising (1921), and the
+**New Economic Policy** that restored markets to rebuild.
+
+## 8. Stalin's Revolution and the Legacy
+
+After Lenin's death (1924), **Stalin** outmanoeuvred rivals and replaced
+the NEP with forced-march modernisation: the first **Five-Year Plan
+(1928)** for steel, dams, and tractor factories, and **collectivisation**
+of the farms — answered by "dekulakisation" and the famine of 1932-33
+(the Ukrainian **Holodomor**, millions dead). The **Great Terror
+(1936-38)** then purged party, army, and intelligentsia through show
+trials and the Gulag.
+
+[note]
+The ledger: the **USSR (from December 1922)** industrialised a peasant
+empire, defeated Nazi Germany, and launched the space age — at the cost of
+tens of millions of lives. The state Stalin built dissolved in 1991, but
+its Cold War division of the world shaped the whole twentieth century.
+[/note]
+
+## Key Takeaways
+
+- Enlightenment ideas — Locke's rights, Montesquieu's separation,
+  Rousseau's contract — supplied the vocabulary of all three revolutions.
+- America (1776-91) built the constitutional republic; France (1789-99)
+  radicalised through Terror to Napoleon; Russia (1917) replaced a class
+  state with a one-party one.
+- Their exports are everywhere: bills of rights, the metric system, the
+  Code Napoleon, national self-determination, five-year planning.

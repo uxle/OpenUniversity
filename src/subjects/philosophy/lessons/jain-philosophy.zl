@@ -1,0 +1,140 @@
+# Jain Philosophy: Many-Sided Truth and Non-Violence
+
+> Jainism teaches that reality has endless facets, that karma is
+> literal matter binding the soul, and that non-violence is the
+> supreme duty — held more strictly than in any other tradition.
+
+## 1. The Tirthankaras
+
+A **Tirthankara** ("ford-maker") is one who crosses the river of
+becoming and shows others the crossing. The tradition counts **24
+Tirthankaras**:
+
+| Tirthankara | Position | Note |
+| --- | --- | --- |
+| Rishabhanatha (Adinatha) | First | Legendary first teacher of the era |
+| Parshvanatha | 23rd | Historical; taught four restraints |
+| Mahavira | 24th | 540–468 BCE (traditional dates); contemporary of the Buddha |
+
+**Mahavira** was born at Kundagrama near Vaishali; he renounced the
+world at thirty, attained omniscience (**kevala-jnana**) after twelve
+years of austerities, and reorganised the community. Where Parshvanatha
+had taught four vows, Mahavira added **brahmacharya** (celibacy) as the
+fifth.
+
+## 2. Anekantavada: The Many-Sidedness of Truth
+
+**Anekantavada** holds that reality has infinitely many aspects and no
+single statement captures it whole. Every judgement is made from some
+partial standpoint (**naya**). Its logical expression is **syadvada**,
+the sevenfold predication, where every claim is qualified by *syat* —
+"in some respect":
+
+1. In some respect, it is.
+2. In some respect, it is not.
+3. In some respect, it is and is not.
+4. In some respect, it is indescribable.
+5–7. The three further combinations of these, taken together.
+
+[example]
+Blind men touch an elephant — the side, the tusk, the trunk — and each
+declares "the elephant is like a wall," "like a spear," "like a snake."
+Each is right from his standpoint; each is wrong about the whole.
+[/example]
+
+## 3. What There Is: Six Substances
+
+Reality divides into **six substances (dravyas)**:
+
+| Dravya | Kind | Role |
+| --- | --- | --- |
+| Jiva (soul) | Living | Conscious; countless, each eternal |
+| Pudgala (matter) | Non-living | Has touch, taste, smell, colour |
+| Dharma | Non-living | Medium that enables motion |
+| Adharma | Non-living | Medium that enables rest |
+| Akasha | Non-living | Space that accommodates all |
+| Kala | Non-living | Time, the support of change |
+
+Unlike Buddhism, Jainism insists the **jiva** is a genuine agent: the
+soul *acts*, *enjoys*, and *suffers* — consciousness is its essence,
+not a by-product of matter as Charvaka held.
+
+## 4. Karma as Matter and the Seven Tattvas
+
+Jain karma is **literal, subtle matter (pudgala)** that flows into the
+soul and binds it, obscuring knowledge and energy. The path is mapped
+in **seven tattvas**:
+
+@diagram tree id="philosophy-jain-path" layout="tree" aria="The seven Jain tattvas from influx of karma to liberation"
+  "Seven tattvas" -> Jiva
+  "Seven tattvas" -> Ajiva
+  "Seven tattvas" -> Asrava
+  "Seven tattvas" -> Bandha
+  "Seven tattvas" -> Samvara
+  "Seven tattvas" -> Nirjara
+  "Seven tattvas" -> Moksha
+@/diagram
+
+| Tattva | Meaning |
+| --- | --- |
+| Jiva | The living soul |
+| Ajiva | The non-living substances |
+| Asrava | The inflow of karmic matter into the soul |
+| Bandha | Bondage — karma sticking to the soul |
+| Samvara | Blocking new inflow |
+| Nirjara | Shedding accumulated karma through austerities |
+| Moksha | Liberation when all karma is gone |
+
+[important]
+When every particle of karma is shed, the soul — now pure, omniscient,
+and all-powerful — rises to the summit of the universe, Siddhashila.
+This state is **kaivalya**: perfect isolation and release.
+[/important]
+
+## 5. Ethics: The Five Great Vows
+
+| Vow | Meaning | Jain strictness |
+| --- | --- | --- |
+| Ahimsa | Non-violence | Monks sweep the path, strain water, cover the mouth |
+| Satya | Truthfulness | Speech that harms is not truth |
+| Asteya | Non-stealing | Not even what is freely dropped |
+| Brahmacharya | Celibacy | Added by Mahavira |
+| Aparigraha | Non-possession | Renouncing property and attachment |
+
+Compare the Buddhist five precepts: non-violence, truthfulness,
+non-stealing, sexual misconduct (not total celibacy for laypeople), and
+abstinence from intoxicants. Jain ethics presses each vow further —
+non-violence covers all living beings from insects to plants.
+
+[warning]
+Santhara or sallekhana — the religious fast unto death — is accepted
+only under strict conditions (terminal illness or old age), as the
+final shedding of the body, not suicide in the Jain view.
+[/warning]
+
+## 6. The Three Jewels and Liberation
+
+Liberation rests on the **ratnatraya** — right faith (samyak
+darshana), right knowledge (samyak jnana), and right conduct (samyak
+charitra). Note the contrast: the Buddhist **Triratna** is the Buddha,
+the Dhamma, and the Sangha — a refuge in persons and community, while
+the Jain three jewels are qualities of the seeker.
+
+## 7. Canon and Legacy
+
+The Jain canon (**Agamas**), composed in Prakrit and Ardha-Magadhi,
+was compiled — tradition says — at the council of Pataliputra around
+300 BCE under Sthulabhadra. The community later split:
+
+| Sect | Name means | Practice |
+| --- | --- | --- |
+| Digambara | "Sky-clad" | Monks go nude, owning nothing |
+| Svetambara | "White-clad" | Monks wear white robes |
+
+[summary]
+Jainism counts 24 Tirthankaras ending with Mahavira (540–468 BCE).
+Anekantavada and syadvada teach that truth is many-sided. Six
+substances constitute reality; the soul is real and conscious, bound
+by karma understood as matter. The five vows, led by extreme ahimsa,
+and the three jewels lead to kaivalya — the soul's complete release.
+[/summary]

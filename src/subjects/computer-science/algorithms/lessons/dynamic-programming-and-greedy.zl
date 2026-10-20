@@ -1,0 +1,140 @@
+# Dynamic Programming and Greedy Algorithms: Choosing Well, Reusing Work
+
+> When a problem asks for the best, the count, or the longest, two
+> strategies dominate: dynamic programming reuses answers to
+> overlapping subproblems; greedy commits to provably safe choices.
+
+## 1. Two Ways to Optimize
+
+Brute force tries every possibility — correct, but exponential:
+
+- **Dynamic programming (DP)** enumerates each subproblem once and
+  reuses the answers it already paid for.
+- **Greedy algorithms** make one pass of local decisions and never
+  look back — valid only when local optimality provably implies global.
+
+## 2. When Dynamic Programming Applies
+
+[definition]
+A problem fits DP when it has **overlapping subproblems** (the same
+smaller cases recur, like fib(3) in naive Fibonacci) and **optimal
+substructure** (optimal answers build on optimal sub-answers), as in
+shortest paths: the fastest route to a city extends a fastest route.
+[/definition]
+
+## 3. Memoization vs Tabulation
+
+| Aspect | Memoization (top-down) | Tabulation (bottom-up) |
+| --- | --- | --- |
+| Style | recursion plus a cache | fill a table with loops |
+| Computes | only the states actually needed | every state up to n |
+| Risk | deep call stack | must order the table correctly |
+| Best at | sparse state spaces | dense, regular ones |
+
+## 4. Fibonacci: From Exponential to Linear
+
+```text
+FIB-TAB(n):
+  table[0] = 0, table[1] = 1
+  for i in 2 .. n:
+    table[i] = table[i-1] + table[i-2]
+  return table[n]
+```
+
+Each value is computed once from the two below it: O(n) time, and O(1)
+extra space if only the last two values are kept.
+
+## 5. The 0/1 Knapsack, Walked Through
+
+Items with weight and value, knapsack capacity 5:
+
+| Item | Weight | Value |
+| --- | --- | --- |
+| A | 2 | 3 |
+| B | 3 | 4 |
+| C | 4 | 5 |
+| D | 5 | 6 |
+
+Each cell holds the best value from the first i items within capacity
+c: skip the item (value above) or take it (value plus best at c − weight).
+
+| Items used \ Capacity | 0 | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- | --- |
+| none | 0 | 0 | 0 | 0 | 0 | 0 |
+| A | 0 | 0 | 3 | 3 | 3 | 3 |
+| A, B | 0 | 0 | 3 | 4 | 4 | 7 |
+| A, B, C | 0 | 0 | 3 | 4 | 5 | 7 |
+| A, B, C, D | 0 | 0 | 3 | 4 | 5 | 7 |
+
+Bottom-right: 7 — items A and B (weight 5). The table costs O(n·W).
+
+[note]
+The **0/1** rule — take an item whole or leave it — is what forces DP;
+the **fractional knapsack** is greedily solvable instead.
+[/note]
+
+## 6. Longest Common Subsequence
+
+Given S1 = "ACE" and S2 = "ABCDE", the LCS is "ACE". Each cell holds
+the LCS length of a prefix of S1 against a prefix of S2: equal letters
+extend the diagonal, else the better of dropping one character from
+either string.
+
+| | A | B | C | D | E |
+| --- | --- | --- | --- | --- | --- |
+| A | 1 | 1 | 1 | 1 | 1 |
+| C | 1 | 1 | 2 | 2 | 2 |
+| E | 1 | 1 | 2 | 2 | 3 |
+
+Bottom-right: 3 ("ACE"). LCS costs O(m·n) — the engine inside diff tools.
+
+## 7. Coin Change: Where Greedy Breaks
+
+Greedy always takes the largest coin that fits. With coins {1, 3, 4}
+and amount 6:
+
+@diagram tree id="greedy-vs-optimal-coins" layout="tree" aria="Greedy coin change makes 6 as 4 plus 1 plus 1, while the optimum is 3 plus 3"
+  "Make 6 from coins 1, 3, 4" -> "Greedy: 4 + 1 + 1 (3 coins)"
+  "Make 6 from coins 1, 3, 4" -> "Optimal: 3 + 3 (2 coins)"
+@/diagram
+
+DP fixes it: min-coins(6) = 1 + min over coins of min-coins(6 − coin) —
+O(n·k) overall. Greedy happens to work for "nice" systems like
+{1, 2, 5, 10}, but only DP works for all of them.
+
+## 8. Greedy Algorithms: Commit and Move On
+
+[definition]
+A problem has the **greedy-choice property** when a locally optimal
+choice extends to a globally optimal solution. Then a **greedy
+algorithm** — take the best local option, never revisit — is correct.
+[/definition]
+
+| Problem | Greedy rule | Why it is safe |
+| --- | --- | --- |
+| Activity selection | pick the activity that finishes earliest | it blocks the fewest others |
+| Fractional knapsack | take items by best value per unit weight | fractions fill the remainder exactly |
+| Huffman coding | merge the two rarest symbols first | rare symbols earn long codes |
+| Dijkstra | settle the closest unsettled vertex | non-negative edges only |
+
+## 9. Choosing the Right Tool
+
+| Signal in the problem | Reach for |
+| --- | --- |
+| "Count the ways…", "minimum cost to reach…", "longest X" | dynamic programming |
+| Local best choice provably safe | greedy |
+| Subproblems disjoint, no overlap | divide and conquer |
+| n tiny (under ~20), no structure found | brute force |
+
+[warning]
+Do not DP everything: if a greedy rule is provably correct, DP wastes
+time and memory on it; if subproblems never overlap, plain
+divide-and-conquer is simpler. Match the tool to the structure.
+[/warning]
+
+[summary]
+DP = overlapping subproblems + optimal substructure; solve each state
+once: Fibonacci O(n), knapsack O(n·W), LCS O(m·n). Greedy = safe
+local choices: activity selection, fractional knapsack, Huffman,
+Dijkstra. Coins {1, 3, 4} making 6 prove greedy needs a proof.
+[/summary]

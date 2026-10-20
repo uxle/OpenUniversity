@@ -1,0 +1,76 @@
+{
+  "lessonId": "triangles-properties",
+  "title": "Triangles: Classification, Congruence, and Similarity",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Two angles of a triangle are 40\u00b0 and 65\u00b0. What is the third angle?",
+      "options": ["75\u00b0", "85\u00b0", "105\u00b0", "115\u00b0"],
+      "correct": 0,
+      "rationale": "The angle-sum property fixes the interior angles at 180\u00b0: 180 \u2212 40 \u2212 65 = 75\u00b0."
+    },
+    {
+      "id": 2,
+      "question": "In the same triangle, what is the exterior angle at the third vertex?",
+      "options": ["75\u00b0", "105\u00b0", "115\u00b0", "140\u00b0"],
+      "correct": 1,
+      "rationale": "The exterior angle theorem says the exterior angle equals the sum of the two remote interior angles: 40\u00b0 + 65\u00b0 = 105\u00b0 (equivalently 180 \u2212 75)."
+    },
+    {
+      "id": 3,
+      "question": "Can sides of length 3, 4 and 9 form a triangle?",
+      "options": ["Yes, always", "No, because 3 + 4 < 9", "Yes, because 3 + 4 > 9", "Only a right triangle"],
+      "correct": 1,
+      "rationale": "The triangle inequality demands every two sides sum to more than the third; 3 + 4 = 7 < 9, so no triangle exists."
+    },
+    {
+      "id": 4,
+      "question": "A 13 m ladder leans against a wall with its foot 5 m from the base. How high up the wall does it reach?",
+      "options": ["8 m", "12 m", "\u221a18 m", "14 m"],
+      "correct": 1,
+      "rationale": "Pythagoras gives the wall side as \u221a(13\u00b2 \u2212 5\u00b2) = \u221a(169 \u2212 25) = \u221a144 = 12 m \u2014 the 5-12-13 triple."
+    },
+    {
+      "id": 5,
+      "question": "Which of these is NOT a valid triangle congruence criterion?",
+      "options": ["SSS", "SAS", "SSA", "RHS"],
+      "correct": 2,
+      "rationale": "SSA is not a criterion: two distinct triangles can share two sides and a non-included angle. The valid ones are SSS, SAS, ASA, AAS and RHS."
+    },
+    {
+      "id": 6,
+      "question": "AAA guarantees that two triangles are:",
+      "options": ["Congruent", "Similar", "Right-angled", "Isosceles"],
+      "correct": 1,
+      "rationale": "Matching angles fix the shape but not the size, so AAA guarantees similarity only \u2014 this is exactly why it fails as a congruence criterion."
+    },
+    {
+      "id": 7,
+      "question": "A triangle with sides 3, 4, 5 is enlarged so its shortest side becomes 6. Its area becomes how many times the original?",
+      "options": ["2 times", "4 times", "6 times", "8 times"],
+      "correct": 1,
+      "rationale": "The similarity ratio is k = 2 for lengths, and areas scale by k\u00b2 = 4. The new sides are 6, 8, 10 and the area is four times the original."
+    },
+    {
+      "id": 8,
+      "question": "For a right triangle, where is the circumcentre?",
+      "options": ["At the right-angle vertex", "At the midpoint of the hypotenuse", "Outside the triangle", "On the shortest side"],
+      "correct": 1,
+      "rationale": "For right triangles the perpendicular bisectors of the sides meet at the midpoint of the hypotenuse \u2014 which is why the hypotenuse is the diameter of the circumscribed circle."
+    },
+    {
+      "id": 9,
+      "question": "Using Heron's formula, the area of a triangle with sides 13, 14 and 15 is:",
+      "options": ["42", "84", "86", "90"],
+      "correct": 1,
+      "rationale": "The semi-perimeter is s = 21, so A = \u221a(21 \u00d7 8 \u00d7 7 \u00d7 6) = \u221a7056 = 84 square units."
+    },
+    {
+      "id": 10,
+      "question": "A line parallel to one side of a triangle cuts the other two sides in equal ratios. This is known as:",
+      "options": ["The exterior angle theorem", "The basic proportionality (Thales) theorem", "The triangle inequality", "The midpoint theorem"],
+      "correct": 1,
+      "rationale": "Thales' basic proportionality theorem: a line parallel to one side divides the other two sides proportionally, e.g. AD/DB = AE/EC."
+    }
+  ]
+}

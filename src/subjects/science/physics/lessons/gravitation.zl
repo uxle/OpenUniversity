@@ -1,0 +1,130 @@
+# Gravitation: From Falling Apples to Orbiting Satellites
+
+> The same force that drops an apple steers the Moon. This lesson
+> runs from Kepler's orbits through Newton's universal law, g, escape
+> velocity, satellites, and tides.
+
+## 1. Kepler's Laws of Planetary Motion
+
+Tycho Brahe's naked-eye data let Johannes Kepler abandon perfect
+circles for **ellipses** — decades before Newton explained why.
+
+| Law | Statement | Consequence |
+| --- | --- | --- |
+| First (orbit) | planets move in ellipses with the Sun at one focus | no circle is needed |
+| Second (areas) | the Sun–planet line sweeps equal areas in equal times | planets speed up near the Sun |
+| Third (periods) | T² ∝ a³ for every planet | distant planets crawl |
+
+[info title="T squared over a cubed"]
+For Earth, T = 1 year with a = 1 AU; for Mars, a = 1.52 AU, so
+T = √(1.52³) ≈ 1.88 years — as observed.
+[/info]
+
+## 2. Newton's Universal Law of Gravitation
+
+Every particle attracts every other with a force along the line
+joining them.
+
+@math label="eq:gravitation"
+F = \frac{G m_{1} m_{2}}{r^{2}}
+@/math
+
+G = 6.67 × 10⁻¹¹ N·m²/kg² is the **universal gravitational
+constant** — the same everywhere in the universe.
+
+[example]
+Two 100 kg students sitting 1 m apart pull at each other with
+F = 6.67 × 10⁻⁷ N — less than the weight of a grain of rice.
+Gravity between everyday objects is feeble; only planet-sized
+masses make it rule the sky.
+[/example]
+
+[note title="Weighing the Earth"]
+In 1798 Henry Cavendish measured G in the laboratory with a
+twisting torsion balance. Plugging G into g = GM/R² gave Earth's
+mass for the first time — about 6 × 10²⁴ kg.
+[/note]
+
+## 3. Acceleration Due to Gravity
+
+@math label="eq:gravity"
+g = \frac{GM}{R^{2}} \approx 9.8\ \mathrm{m/s^{2}}
+@/math
+
+Every body near Earth's surface falls with the same g, whatever
+its mass. The value falls slightly with **height** (9.8 → 8.7 m/s²
+at the ISS's 400 km) and also decreases with **depth** toward the
+centre. At the equator g ≈ 9.78 m/s², at the poles ≈ 9.83 m/s².
+
+Astronauts float in orbit not because gravity vanishes but
+because the whole station falls together with them — apparent
+**weightlessness** in free fall.
+
+## 4. Mass versus Weight
+
+| Aspect | Mass | Weight |
+| --- | --- | --- |
+| Meaning | amount of matter | gravitational force on it |
+| Formula | — | W = mg |
+| Unit | kilogram (kg) | newton (N) |
+| Scalar or vector | scalar | vector (downward) |
+| Varies with location? | never | yes — with g |
+| Measured by | beam balance | spring balance |
+
+[example]
+A 60 kg student has weight W = 60 × 9.8 ≈ 588 N on Earth but
+only about 97 N on the Moon (g ≈ 1.6 m/s²); the mass stays 60 kg
+everywhere.
+[/example]
+
+## 5. Escape Velocity and Orbital Velocity
+
+**Escape velocity** is the launch speed that lets a body leave a
+planet's gravity forever.
+
+@math label="eq:escape"
+v_{e} = \sqrt{2gR} = 11.2\ \mathrm{km/s\ (Earth)}
+@/math
+
+**Orbital velocity** is smaller: a satellite need only balance
+gravity as a centripetal force, giving about 7.9 km/s just above
+Earth's surface. The Moon, farther out, needs only about 1 km/s.
+
+## 6. Artificial Satellites
+
+A satellite is a projectile moving fast enough sideways that it
+keeps missing the Earth — Newton's own thought experiment.
+
+| Feature | Geostationary | Polar (sun-synchronous) |
+| --- | --- | --- |
+| Period | 24 h (matches Earth's spin) | about 100 min |
+| Height | ~36,000 km | 700–800 km |
+| Path | west → east above the equator | pole to pole |
+| Appears | fixed in the sky | crosses every latitude |
+| Uses | DTH TV, weather, communication | mapping, spying, crop and forest monitoring |
+
+@diagram tree id="satellite-family" layout="tree" aria="Artificial satellites classified by orbit type"
+  "Artificial satellite" -> "Geostationary: TV, weather, phones"
+  "Artificial satellite" -> "Polar: mapping, crops, monitoring"
+  "Artificial satellite" -> "Navigation: GPS-style positioning"
+@/diagram
+
+## 7. Tides: Gravity on the Water
+
+Ocean **tides** peak where the Moon's pull is strongest; a weaker
+solar pull adds to it. At new and full moon the two line up to give
+**spring tides**; at half moon they partially cancel, giving gentler
+**neap tides**. India's tallest tidal range is in the Gulf of
+Khambhat.
+
+## 8. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Kepler's third law | T² ∝ a³ |
+| Universal law | F = Gm₁m₂/r², G = 6.67 × 10⁻¹¹ N·m²/kg² |
+| Surface gravity | g = GM/R² ≈ 9.8 m/s² |
+| Mass vs weight | kg never changes; W = mg varies with g |
+| Escape velocity (Earth) | 11.2 km/s |
+| Geostationary | 24 h, ~36,000 km, over the equator |
+| Strong tides | spring tides at new and full moon |

@@ -1,0 +1,127 @@
+# International Trade and the Balance of Payments
+
+> Nations trade because opportunity costs differ; the balance of
+> payments records every rupee that crosses the border.
+
+[definition]
+The **balance of payments (BoP)** is a systematic record of all
+economic transactions between residents of a country and the rest of
+the world over a period — goods, services, incomes, transfers, and
+capital flows.
+[/definition]
+
+## 1. Why Trade: Two Classic Arguments
+
+- **Absolute advantage (Adam Smith)** — a country should specialise
+  in what it produces with fewer inputs than others, and trade for
+  the rest.
+- **Comparative advantage (David Ricardo)** — even a country better
+  at *everything* gains by specialising where its **opportunity
+  cost** is lowest, i.e., in goods it produces relatively (not
+  absolutely) most efficiently.
+
+[example title="Two countries, two goods"]
+Hours needed per unit — India and the USA:
+
+| | Tea (1 kg) | Software (1 unit) |
+| --- | --- | --- |
+| India | 10 | 30 |
+| USA | 20 | 40 |
+
+India is absolutely better at both — yet the gains from trade are
+real. India's opportunity cost of tea is 1/3 software unit versus
+USA's 1/2; the USA's opportunity cost of software is 2 kg tea versus
+India's 3 kg. So India exports tea, the USA exports software, and
+both consume beyond their own production frontiers.
+[/example]
+
+## 2. Structure of the Balance of Payments
+
+**Current account** — flows of income and current spending:
+
+- Merchandise trade (**balance of trade, BoT** — goods only)
+- **Invisibles** — services (software exports, tourism), income
+  (interest, profits), and transfers (workers' remittances)
+
+**Capital account** — flows that change assets and liabilities:
+foreign investment, loans, banking capital, and reserves. In
+BPM-6 language most of these sit in the "financial account"; the
+capital account proper is small. Since 1991 India's BoP has been
+sustainable — current account deficits financed by capital inflows.
+
+@diagram tree id="bop-structure" layout="tree" aria="Balance of payments structure"
+  "Balance of Payments" -> "Current Account"
+  "Balance of Payments" -> "Capital Account"
+  "Current Account" -> "Trade in goods (BoT)"
+  "Current Account" -> "Invisibles: services, income, transfers"
+  "Capital Account" -> "Investment, loans, reserves"
+@/diagram
+
+## 3. Exchange Rates
+
+| Regime | Who sets the rate | Example |
+| --- | --- | --- |
+| Fixed | Government/Central bank pegs value | Bretton Woods era dollar pegs |
+| Flexible (floating) | Market demand and supply | US dollar, yen broadly |
+| Managed float | Market-led, with central bank smoothing | **India since 1991** |
+
+**Depreciation** (market-driven fall) and **devaluation** (policy
+decision to lower a peg) both make exports cheaper abroad and
+imports costlier at home — helping exporters, hurting importers of
+oil and machinery, and feeding imported inflation.
+
+## 4. Trade Policy Tools
+
+- **Tariff** — a customs duty on imports; raises revenue and prices
+  foreign goods, inviting retaliation.
+- **Quota** — a physical limit on import quantity; certain shortage
+  gains for protected producers, certain loss for consumers.
+- **Subsidy** — grants to domestic producers; an export subsidy acts
+  like a hidden tariff against rivals.
+
+## 5. The WTO
+
+The **World Trade Organization**, operational from **1 January 1995**,
+replaced the provisional **GATT (1947)**. Both are headquartered in
+Geneva.
+
+| Basis | GATT (1947) | WTO (1995) |
+| --- | --- | --- |
+| Coverage | Goods only | Goods, services (GATS), IP (TRIPS) |
+| Legal status | Provisional agreement | Permanent organisation |
+| Dispute settlement | Slow, consensus to enforce | Binding Dispute Settlement Body |
+| Agreements | Narrow | Umbrella with single-package commitments |
+
+Core principles: non-discrimination (**MFN** — any concession to one
+member extends to all), national treatment, and tariff bindings.
+India is a founding member.
+
+## 6. India's Trade Profile
+
+Durable facts: India consistently runs a **merchandise trade
+deficit**, importing crude oil, gold, and electronics while
+exporting petroleum products, gems and jewellery, pharma, textiles,
+and engineering goods. Services — led by software — and remittances
+comfortably offset the goods gap in most years. **FDI** enters
+through the automatic route (no approval needed for most sectors)
+and the government (approval) route for sensitive ones.
+
+## 7. Quick Revision Table
+
+| Concept | One-line memory |
+| --- | --- |
+| Comparative advantage | Specialise where opportunity cost is lowest |
+| BoT | Goods exports minus goods imports |
+| Invisibles | Services, income, transfers |
+| Current vs capital account | Current spending vs asset-changing flows |
+| Depreciation vs devaluation | Market fall vs policy cut |
+| Rupee falls | Exports gain, imports and inflation hurt |
+| GATT → WTO | 1947 provisional → 1995 permanent, wider, binding |
+
+[summary]
+Trade follows comparative, not absolute, advantage; the BoP books it
+all as current flows (goods plus invisibles) and capital flows,
+settled through exchange rates — managed in India's case since 1991.
+Tariffs, quotas, and subsidies protect at a price, and the WTO has
+policed that price since it replaced GATT in 1995.
+[/summary]

@@ -13,3 +13,39 @@
 }
 .ou-note-editor__textarea { width: 100%; }
 .ou-profile-header { display: flex; align-items: center; gap: var(--ou-space-4); }
+
+/* Labeled form field (label + input + hint), used by
+   account-settings.js. Mirrors the .ou-form-field block pattern that
+   make plain inputs look intentional instead of orphaned. */
+.ou-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ou-space-1);
+}
+.ou-form-field__label {
+  font-weight: 600;
+  font-size: var(--ou-fs-sm);
+  color: var(--ou-text);
+}
+.ou-form-field__hint {
+  font-size: var(--ou-fs-xs);
+  color: var(--ou-text-secondary);
+  line-height: 1.45;
+}
+
+/* Avatar circle with the learner's initials (profile page). Degrades to
+   a generic person glyph when the name is empty. */
+.ou-profile-avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--ou-radius-pill);
+  background: var(--ou-gradient-brand);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: none;
+}

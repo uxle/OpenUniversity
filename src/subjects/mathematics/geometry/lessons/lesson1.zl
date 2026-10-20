@@ -1,3 +1,79 @@
-# Lesson1
+# Points, Lines, and Angles: Geometry's Atoms
 
-TODO: write lesson content.
+> Every diagram in geometry — however complicated — is built from three
+> primitives: points, lines, and angles. Learn their rules first.
+
+## 1. The Undefined Starting Points
+
+[definition]
+A **point** names a location; it has no size. A **line** is a straight
+path extending forever in both directions; it has length but no width.
+A **ray** starts at a point and extends forever one way; a **segment**
+joins two endpoints and has a measurable length.
+[/definition]
+
+Through any two distinct points passes **exactly one** line — geometry's
+first great "obviously true, endlessly useful" fact.
+
+## 2. Angles
+
+An **angle** measures the turn between two rays sharing an endpoint
+(the vertex), usually in degrees:
+
+| Type | Measure |
+| --- | --- |
+| Acute | between 0° and 90° |
+| Right | exactly 90° |
+| Obtuse | between 90° and 180° |
+| Straight | exactly 180° |
+| Reflex | between 180° and 360° |
+
+## 3. Angle Facts That Power Everything
+
+- Angles on a straight line sum to **180°**.
+- Angles around a point sum to **360°**.
+- **Vertically opposite** angles (formed by two crossing lines) are equal.
+- When lines are parallel:
+
+@diagram tree id="parallel-angles" layout="tree" aria="Angle pairs made by parallel lines"
+  "Parallel lines + transversal" -> "Corresponding angles: equal"
+  "Parallel lines + transversal" -> "Alternate angles: equal"
+  "Parallel lines + transversal" -> "Co-interior angles: sum to 180"
+@/diagram
+
+## Example
+
+Two parallel lines are cut by a transversal. One angle is 70°. Find the rest:
+
+- Corresponding angle: **70°**
+- Alternate angle: **70°**
+- Co-interior partner: $180° - 70° = \mathbf{110°}$
+- Vertically opposite pairs repeat the pattern on the other side.
+
+## 4. Triangles Before You Even Draw One
+
+The **angle sum of a triangle is always 180°** — a consequence of the
+parallel-line facts above (draw a line through one vertex parallel to
+the opposite side and watch the angles transfer).
+
+So in a triangle with angles $a$, $b$, $c$:
+
+@math label="eq:triangle-sum"
+a + b + c = 180^{\circ}
+@/math
+
+An **exterior angle** equals the sum of the two remote interior angles.
+
+[important title="Why proofs matter"]
+Each fact here follows from earlier ones — parallel-line facts give the
+triangle angle sum, which later gives polygon sums
+$(n-2) \times 180°$. Geometry is a chain of small certainties, not a
+pile of formulas to memorise.
+[/important]
+
+## Key Takeaways
+
+- Point, line, ray, segment are the atoms everything else is built from.
+- Straight-line 180° and around-point 360° anchor all angle chasing.
+- Parallel lines create equal alternate/corresponding pairs and
+  co-interior pairs that sum to 180°.

@@ -1,0 +1,76 @@
+{
+  "lessonId": "delhi-sultanate",
+  "title": "The Delhi Sultanate: Five Dynasties, 320 Years",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Mahmud of Ghazni's most famous raid, the sack of the Somnath temple, took place in:",
+      "options": ["1000", "1017", "1025", "1030"],
+      "correct": 2,
+      "rationale": "Mahmud raided India seventeen times between 1000 and 1027; the sack of Somnath in 1025 was the most notorious, though he took plunder, not territory."
+    },
+    {
+      "id": 2,
+      "question": "At the Second Battle of Tarain (1192), Muhammad Ghori defeated:",
+      "options": ["Jaichandra of Kanauj", "Prithviraj Chauhan III", "Bhima II of Gujarat", "Mularaja of Anhilwara"],
+      "correct": 1,
+      "rationale": "After losing the First Battle of Tarain in 1191, Ghori's mounted archers destroyed Prithviraj Chauhan's forces in 1192, opening north India to Turkish rule."
+    },
+    {
+      "id": 3,
+      "question": "The Sultanate's real institutional founder, who regularised the iqta and minted the tanka, was:",
+      "options": ["Qutb-ud-din Aibak", "Iltutmish", "Balban", "Alauddin Khalji"],
+      "correct": 1,
+      "rationale": "Iltutmish (1211-1236) regularised the iqta, completed the Qutub Minar, issued the silver tanka and copper jital, and organised the Chahalgani."
+    },
+    {
+      "id": 4,
+      "question": "Which Sultan styled himself Zil-i-Ilahi, 'the shadow of God on earth'?",
+      "options": ["Balban", "Iltutmish", "Firuz Shah Tughlaq", "Sikandar Lodi"],
+      "correct": 0,
+      "rationale": "Balban (1266-1287) ruled by blood and iron, destroyed the Chahalgani nobility, ran the barid spy system, and built the Diwan-i-Arz."
+    },
+    {
+      "id": 5,
+      "question": "Alauddin Khalji's market system was enforced by which officials?",
+      "options": ["Diwan-i-Arz officials", "Shahna-i-mandi under the Diwan-i-Riyasat", "Muqti cavalry", "Barids of the provinces"],
+      "correct": 1,
+      "rationale": "Prices in Delhi's separate markets for grain, cloth, and horses were fixed by the Diwan-i-Riyasat and enforced by the shahna-i-mandi."
+    },
+    {
+      "id": 6,
+      "question": "Muhammad bin Tughlaq's token currency of 1329 failed primarily because:",
+      "options": ["Silver vanished from the empire", "Counterfeit copper coins flooded the market", "Merchants refused all coinage", "The ulema declared it un-Islamic"],
+      "correct": 1,
+      "rationale": "Bronze tokens were declared equal in value to silver tankas, but easy counterfeiting flooded Delhi with fakes and the scheme was withdrawn within about four years."
+    },
+    {
+      "id": 7,
+      "question": "Ibn Battuta, who left an eyewitness account of Muhammad bin Tughlaq's court, was a traveller from:",
+      "options": ["China", "Morocco", "Persia", "Central Asia"],
+      "correct": 1,
+      "rationale": "The Moroccan Ibn Battuta served as qazi of Delhi from 1333 to 1342 and recorded the age in his Rihla."
+    },
+    {
+      "id": 8,
+      "question": "Firuz Shah Tughlaq is remembered for all EXCEPT:",
+      "options": ["Five canals from the Yamuna and Sutlej", "A slave department with 180,000 slaves", "Founding Agra in 1504", "Translations of Sanskrit medical works"],
+      "correct": 2,
+      "rationale": "Agra was founded by Sikandar Lodi in 1504. Firuz Shah's works were the canals, hospitals, and translations of Sanskrit medical texts."
+    },
+    {
+      "id": 9,
+      "question": "The Chishti order's most famous Delhi saint, patron of Amir Khusrau, was:",
+      "options": ["Muinuddin Chishti", "Bahauddin Zakariya", "Nizamuddin Auliya", "Nasiruddin Chiragh"],
+      "correct": 2,
+      "rationale": "Nizamuddin Auliya (d. 1325) of Delhi was the greatest Chishti shaikh of the capital; Muinuddin Chishti was the order's founder at Ajmer."
+    },
+    {
+      "id": 10,
+      "question": "The Sultanate ended in 1526 when Babur defeated Ibrahim Lodi at:",
+      "options": ["Khanwa", "Chandawar", "Panipat", "Talikota"],
+      "correct": 2,
+      "rationale": "Babur destroyed the Lodi army at the First Battle of Panipat on 21 April 1526, ending the Delhi Sultanate and founding Mughal rule."
+    }
+  ]
+}

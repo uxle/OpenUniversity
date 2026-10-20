@@ -1,0 +1,138 @@
+# The Periodic Table: Order from Atomic Number
+
+> Sixty-three known elements defied order until Mendeleev arranged
+> them by mass — and Moseley later corrected the key to atomic
+> number. The table's shape now predicts how every element behaves.
+
+## 1. From Triads to the Modern Law
+
+| Attempt | Scientist (Year) | Idea | Why it fell short |
+| --- | --- | --- | --- |
+| Triads | Döbereiner (1817) | middle element's mass ≈ mean of the other two (Li 7, Na 23, K 39) | only a handful of triads worked |
+| Law of octaves | Newlands (1865) | every 8th element resembles the first, like musical octaves | broke down after calcium |
+| Periodic table | Mendeleev (1869) | elements ordered by atomic mass; gaps left for the unknown | a few elements seemed out of order |
+| Atomic number | Moseley (1913) | X-ray spectra expose the true ordering number | — (basis of the modern table) |
+
+[definition]
+The **modern periodic law**: the properties of elements are a
+periodic function of their **atomic number** (proton count), not
+their atomic mass.
+[/definition]
+
+[example]
+Mendeleev's boldest move was leaving gaps for elements not yet
+found. He predicted **eka-aluminium** (gallium, found 1875) and
+**eka-silicon** (germanium, 1886) — with startlingly accurate
+masses and properties. The fulfilled predictions won the day.
+[/example]
+
+## 2. Anatomy: Groups, Periods, and Blocks
+
+@diagram tree id="periodic-table-blocks" layout="tree" aria="Periodic table divided into s, p, d and f blocks"
+  "Periodic table" -> "s-block: groups 1-2, plus helium"
+  "Periodic table" -> "p-block: groups 13-18"
+  "Periodic table" -> "d-block: groups 3-12 (transition metals)"
+  "Periodic table" -> "f-block: lanthanides and actinides"
+@/diagram
+
+- **Groups** — 18 vertical columns; members share a valence
+  configuration, hence similar chemistry.
+- **Periods** — 7 horizontal rows; each fills one outer shell
+  (lengths 2, 8, 8, 18, 18, 32 track subshell capacities).
+- **Blocks** — named for the subshell being filled: s, p, d, f.
+
+## 3. The Families
+
+| Group | Family name | Members |
+| --- | --- | --- |
+| 1 | Alkali metals | Li, Na, K, Rb, Cs, Fr |
+| 2 | Alkaline earth metals | Be, Mg, Ca, Sr, Ba, Ra |
+| 3–12 | Transition metals | Fe, Cu, Zn, Ag, Au, ... |
+| 16 | Chalcogens | O, S, Se, Te, Po |
+| 17 | Halogens | F, Cl, Br, I, At |
+| 18 | Noble gases | He, Ne, Ar, Kr, Xe, Rn |
+
+The **inner transition metals** — the **lanthanides** (Z = 58–71)
+and **actinides** (Z = 90–103) — fill f orbitals and are pulled out
+below the main table.
+
+[tip]
+Group 1 memory sentence: *Little Naughty Kids Rub Cats Fur* —
+Li, Na, K, Rb, Cs, Fr. For the halogens: *Fine Cool Brides Ignore
+Actors* — F, Cl, Br, I, At.
+[/tip]
+
+## 4. Trends Across the Table
+
+| Trend | Across a period (→) | Down a group (↓) | Reason |
+| --- | --- | --- | --- |
+| Atomic radius | decreases | increases | nuclear charge pulls inward; new shells expand |
+| Ionization energy | increases | decreases | electron lies closer to / farther from nucleus |
+| Electron affinity | generally increases | generally decreases | sharper pull toward a near-complete shell |
+| Electronegativity | increases | decreases | fluorine tops the scale at 4.0 |
+| Metallic character | decreases | increases | metals live at the bottom left |
+
+@chart bar title="First ionization energy across period 2 (kJ/mol)"
+labels:
+Li
+Be
+B
+C
+N
+O
+F
+Ne
+
+data:
+520
+900
+801
+1086
+1402
+1314
+1681
+2081
+@/chart
+
+[warning]
+Two famous dips: Be → B falls because boron's new 2p electron sits
+farther out than its 2s; N → O falls because oxygen's fourth 2p
+electron must pair up, adding repulsion to a stable half-filled
+shell.
+[/warning]
+
+## 5. Special Elements and Exceptions
+
+- **Fluorine** — most electronegative element (4.0).
+- **Noble gases** — highest ionization energies in their periods;
+  filled shells make them chemically aloof.
+- **Helium** — the smallest atom; placed in group 18 because its
+  1s² shell is complete.
+- **Mercury** — the only metal liquid at room temperature;
+  **gallium** melts in your hand at 29.8 °C.
+
+## 6. Diagonal Relationships
+
+[definition]
+A **diagonal relationship** links an element with its down-right
+neighbour — Li–Mg, Be–Al, B–Si. Similar sizes and charge
+densities give the pairs unexpectedly similar chemistry.
+[/definition]
+
+| Pair | Shared traits |
+| --- | --- |
+| Li and Mg | both burn to nitrides; carbonates decompose on heating |
+| Be and Al | both form amphoteric oxides and covalent halides |
+| B and Si | both form acidic oxides and covalent hydrides |
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| What orders the modern table? | atomic number (Z) |
+| Who left the famous gaps? | Mendeleev — eka-silicon became Ge |
+| Alkali metals? | group 1: Li Na K Rb Cs Fr |
+| Halogens? | group 17: F Cl Br I At |
+| Left to right, radius...? | decreases |
+| Most electronegative? | fluorine, 4.0 |
+| Diagonal pairs? | Li–Mg, Be–Al, B–Si |

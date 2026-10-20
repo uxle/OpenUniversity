@@ -1,0 +1,76 @@
+{
+  "lessonId": "atmosphere-and-insolation",
+  "title": "The Atmosphere: Composition, Layers, and the Heat Budget",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The most abundant gas in dry air is:",
+      "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
+      "correct": 1,
+      "rationale": "Nitrogen makes up 78.08% of dry air, oxygen 20.95%, argon 0.93%, and carbon dioxide only about 0.04%."
+    },
+    {
+      "id": 2,
+      "question": "Almost all weather — clouds, rain, and storms — happens in the:",
+      "options": ["Stratosphere", "Mesosphere", "Troposphere", "Thermosphere"],
+      "correct": 2,
+      "rationale": "The troposphere holds the bulk of the atmosphere's mass and nearly all its water vapour and weather activity."
+    },
+    {
+      "id": 3,
+      "question": "Temperature in the troposphere falls with height at about:",
+      "options": ["6.5°C per km", "1°C per 100 m", "10°C per km", "It does not fall"],
+      "correct": 0,
+      "rationale": "The normal lapse rate is roughly 6.5°C per kilometre — the reason hill stations are cooler than the plains below."
+    },
+    {
+      "id": 4,
+      "question": "The ozone layer, which shields life from ultraviolet radiation, lies in the:",
+      "options": ["Troposphere", "Stratosphere", "Exosphere", "Mesosphere"],
+      "correct": 1,
+      "rationale": "Ozone concentrates at 20–25 km in the stratosphere; airliners also cruise near the base of this layer."
+    },
+    {
+      "id": 5,
+      "question": "Meteors burn up as 'shooting stars' in which layer?",
+      "options": ["Mesosphere", "Thermosphere", "Exosphere", "Stratosphere"],
+      "correct": 0,
+      "rationale": "The mesosphere is cold and thin enough that incoming meteors are vaporised before reaching the ground."
+    },
+    {
+      "id": 6,
+      "question": "Radio waves are reflected back to Earth's surface by the:",
+      "options": ["Ionosphere in the thermosphere", "Ozone layer", "Exosphere", "Normal lapse rate"],
+      "correct": 0,
+      "rationale": "The ionised thermosphere (ionosphere) reflects radio waves and also hosts the auroras."
+    },
+    {
+      "id": 7,
+      "question": "Earth is farthest from the Sun (aphelion) in early July at about:",
+      "options": ["147 million km", "152 million km", "150 million km", "149.6 billion km"],
+      "correct": 1,
+      "rationale": "At perihelion (around 3 January) Earth is about 147 million km from the Sun; at aphelion (around 4 July) it is about 152 million km."
+    },
+    {
+      "id": 8,
+      "question": "In the Earth's heat budget, about how many of every 100 units of insolation are absorbed by the land and ocean surface?",
+      "options": ["19 units", "30 units", "51 units", "75 units"],
+      "correct": 2,
+      "rationale": "About 51 units are absorbed by the surface, 19 by the atmosphere, and 30 (the albedo) are reflected and scattered back to space."
+    },
+    {
+      "id": 9,
+      "question": "Albedo, which averages about 30% for the planet, refers to:",
+      "options": ["The rate of temperature fall with height", "The fraction of radiation reflected back to space", "The share of nitrogen in air", "The absorption of radio waves"],
+      "correct": 1,
+      "rationale": "Albedo is the reflected fraction of incoming radiation; clouds and snow raise it while dark forests and oceans lower it."
+    },
+    {
+      "id": 10,
+      "question": "The atmosphere is heated chiefly by:",
+      "options": ["Direct absorption of sunlight in the thermosphere", "Long-wave radiation from the warmed surface below", "The ozone layer", "The exosphere"],
+      "correct": 1,
+      "rationale": "Sunlight passes through the air largely unabsorbed, warms the surface, and the surface then heats the air from below by conduction, convection, and long-wave radiation."
+    }
+  ]
+}

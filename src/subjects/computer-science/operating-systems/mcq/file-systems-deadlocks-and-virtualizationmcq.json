@@ -1,0 +1,126 @@
+{
+  "lessonId": "file-systems-deadlocks-and-virtualization",
+  "title": "File Systems, Deadlocks, and Virtualization: Completing the OS Picture",
+  "questions": [
+    {
+      "id": 1,
+      "question": "On Unix systems, where do a file's name and its metadata (inode) live?",
+      "options": [
+        "Both are stored inside the inode",
+        "The name lives in the directory entry; metadata and block pointers live in the inode",
+        "The name is stored in the superblock; metadata in the FAT",
+        "Both are stored in the first data block of the file"
+      ],
+      "correct": 1,
+      "rationale": "The inode stores size, timestamps, permissions, and block pointers; the file name lives in the directory — which is why multiple hard links can point at one inode."
+    },
+    {
+      "id": 2,
+      "question": "In linked file allocation, the main price paid is:",
+      "options": [
+        "External fragmentation of the disk",
+        "Random access is slow because blocks must be followed one pointer at a time",
+        "A huge index block per file",
+        "The file system cannot track free space"
+      ],
+      "correct": 1,
+      "rationale": "Linked allocation grows freely with no external fragmentation, but reaching block k means walking the chain from the first block, plus pointer overhead."
+    },
+    {
+      "id": 3,
+      "question": "What does a journaling file system do to survive crashes?",
+      "options": [
+        "It writes the intended change to a log first, then applies it, replaying the journal after a crash",
+        "It keeps three copies of every file",
+        "It disables write caching on the disk",
+        "It stores all metadata in the inode"
+      ],
+      "correct": 0,
+      "rationale": "Journaling (ext4, NTFS) logs the intended change before applying it, so a crash mid-write is repaired by replaying the journal rather than scanning the whole disk."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT one of the four Coffman conditions for deadlock?",
+      "options": [
+        "Mutual exclusion",
+        "Hold and wait",
+        "No preemption",
+        "Least privilege"
+      ],
+      "correct": 3,
+      "rationale": "The Coffman conditions are mutual exclusion, hold and wait, no preemption, and circular wait; least privilege is a security principle."
+    },
+    {
+      "id": 5,
+      "question": "Why does breaking any single Coffman condition suffice to prevent deadlock?",
+      "options": [
+        "Because all four conditions must hold simultaneously for deadlock to occur",
+        "Because conditions come in pairs",
+        "Because the OS kernel enforces at least one condition anyway",
+        "Because deadlock requires at least five processes"
+      ],
+      "correct": 0,
+      "rationale": "All four conditions must hold at once; engineering away any one — e.g., requesting all resources at once kills hold-and-wait — makes deadlock impossible."
+    },
+    {
+      "id": 6,
+      "question": "The Banker's algorithm is an example of which deadlock strategy?",
+      "options": [
+        "Prevention by breaking circular wait",
+        "Avoidance — granting a request only if the system stays in a safe state",
+        "Detection and recovery by killing a victim",
+        "The ostrich algorithm"
+      ],
+      "correct": 1,
+      "rationale": "The Banker's algorithm is avoidance: it grants a request only while the system stays in a safe state, and it needs each process's maximum claim in advance."
+    },
+    {
+      "id": 7,
+      "question": "What is the 'ostrich algorithm' for deadlocks?",
+      "options": [
+        "Killing the youngest process on each cycle",
+        "Detecting deadlock via the wait-for graph",
+        "Ignoring deadlocks because they are rare and prevention is costly — roughly what Linux and Windows do",
+        "Numbering all resources globally"
+      ],
+      "correct": 2,
+      "rationale": "The ostrich approach ignores the problem — deadlocks are rare in practice and the machinery to prevent them is expensive, so desktop and server OSes largely ignore them."
+    },
+    {
+      "id": 8,
+      "question": "VMware ESXi and Xen are examples of which hypervisor type, and what does that type run on?",
+      "options": [
+        "Type 2, running on a host OS like Windows",
+        "Type 1, running directly on the physical hardware",
+        "Type 2, running inside a web browser",
+        "Type 1, running inside a container"
+      ],
+      "correct": 1,
+      "rationale": "Type 1 (bare-metal) hypervisors such as ESXi, Hyper-V, Xen, and KVM run directly on hardware and dominate data centres and clouds; Type 2 (hosted) ones like VirtualBox run atop a host OS."
+    },
+    {
+      "id": 9,
+      "question": "Docker containers achieve isolation primarily through:",
+      "options": [
+        "A full guest operating system per container",
+        "Linux namespaces controlling what a process may see, and cgroups controlling what it may consume",
+        "Hardware virtualization extensions",
+        "Journaling the container's file system"
+      ],
+      "correct": 1,
+      "rationale": "Containers share the host kernel; isolation comes from namespaces (visibility) plus cgroups (resource limits) — hence millisecond starts and megabyte sizes, but weaker isolation than VMs."
+    },
+    {
+      "id": 10,
+      "question": "In the cloud stack, which service model rents you the finished application itself?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Hypervisor-as-a-service"
+      ],
+      "correct": 2,
+      "rationale": "SaaS (e.g., Gmail) rents the finished application; IaaS rents raw VMs like EC2 and PaaS rents a managed runtime like Heroku — each level trades control for convenience."
+    }
+  ]
+}

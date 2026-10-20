@@ -24,6 +24,11 @@ function validateZl(file, errors) {
   if (!/^#\s+\S/.test(text.trimStart())) {
     errors.push(`${path.relative(root, file)}: missing top-level "# Title" heading`);
   }
+  // Fenced code blocks are prose, not markup: pseudocode like `A[mid]`
+  // legitimately contains square brackets that must not be counted as
+  // admonition tags. Strip fences before scanning (same rule
+  // build-search-index.js's plainText() applies).
+  const prose = text.replace(/```[\s\S]*?```/g, " ");
   // Matches [type] or [type key="value" ...] — anything up to the closing
   // bracket — but not a closer [/type], since closers never start with a
   // letter right after "[". Previously only matched a bare [type] with no
@@ -31,8 +36,8 @@ function validateZl(file, errors) {
   // documented feature — see SKILL.md's bracket admonition syntax) was
   // invisible to this count while its closer still was, guaranteeing a
   // false "unbalanced" mismatch for every titled admonition.
-  const opens = [...text.matchAll(/\[([a-z]+)(?:\s[^\]\n]*)?\]/g)].map((m) => m[1]).sort();
-  const closes = [...text.matchAll(/\[\/([a-z]+)\]/g)].map((m) => m[1]).sort();
+  const opens = [...prose.matchAll(/\[([a-z]+)(?:\s[^\]\n]*)?\]/g)].map((m) => m[1]).sort();
+  const closes = [...prose.matchAll(/\[\/([a-z]+)\]/g)].map((m) => m[1]).sort();
   if (JSON.stringify(opens) !== JSON.stringify(closes)) {
     errors.push(`${path.relative(root, file)}: unbalanced admonition blocks`);
   }

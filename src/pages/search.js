@@ -7,7 +7,7 @@ import { createSearchFilters } from "../components/search/search-filters.js";
 import { createSearchResults } from "../components/search/search-results.js";
 import { createSearchHistoryList } from "../components/search/search-history.js";
 
-export async function render(container) {
+export async function render(container, _params, nav = null) {
   document.title = "Search — OpenKnowledge";
   const resultsEl = createEl("div");
   let activeSubject = null;
@@ -16,6 +16,7 @@ export async function render(container) {
   async function runSearch(query) {
     lastQuery = query;
     const results = await search(query);
+    if (nav?.stale) return;
     const filtered = activeSubject ? results.filter((r) => r.subjectId === activeSubject) : results;
     empty(resultsEl);
     resultsEl.appendChild(createSearchResults(filtered));

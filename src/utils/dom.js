@@ -49,7 +49,9 @@ export function off(el, event, handler, opts) {
 }
 
 export function empty(el) {
-  while (el.firstChild) el.removeChild(el.firstChild);
+  // textContent assignment clears in one browser-side pass — measurably
+  // faster than a removeChild loop on large lesson trees.
+  el.textContent = "";
   return el;
 }
 

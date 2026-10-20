@@ -1,0 +1,76 @@
+{
+  "lessonId": "probability-basics",
+  "title": "Probability: Measuring Chance with Numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Two fair dice are rolled. What is the probability that the sum is 7?",
+      "options": ["1/12", "1/6", "7/36", "5/36"],
+      "correct": 1,
+      "rationale": "Six ordered pairs give sum 7 — (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — out of 36 equally likely pairs: 6/36 = 1/6."
+    },
+    {
+      "id": 2,
+      "question": "Two fair coins are tossed. What is the probability of at least one head?",
+      "options": ["1/2", "2/3", "3/4", "1/4"],
+      "correct": 2,
+      "rationale": "The four outcomes are HH, HT, TH, TT; only TT fails the event, so P = 3/4. Equivalently 1 − P(no heads) = 1 − 1/4."
+    },
+    {
+      "id": 3,
+      "question": "One card is drawn from a standard deck. What is P(king or heart)?",
+      "options": ["17/52", "16/52", "4/52", "13/52"],
+      "correct": 1,
+      "rationale": "Count carefully: 4 kings + 13 hearts − 1 king of hearts (counted twice) = 16 favourable cards, so P = 16/52 = 4/13. Adding 4 + 13 double-counts."
+    },
+    {
+      "id": 4,
+      "question": "How many face cards are in a standard 52-card deck?",
+      "options": ["4", "12", "13", "16"],
+      "correct": 1,
+      "rationale": "Each of the 4 suits has 3 face cards (J, Q, K), giving 12 in total; the deck also has 4 aces and 26 red cards."
+    },
+    {
+      "id": 5,
+      "question": "If P(E) = 0.3, what is P(not E)?",
+      "options": ["0.3", "0.7", "1.3", "0.5"],
+      "correct": 1,
+      "rationale": "The complement rule gives P(not E) = 1 − P(E) = 1 − 0.3 = 0.7."
+    },
+    {
+      "id": 6,
+      "question": "A fair coin is tossed three times. What is the probability of at least one tail?",
+      "options": ["7/8", "1/8", "3/4", "1/2"],
+      "correct": 0,
+      "rationale": "\"At least one\" wants the complement: 1 − P(all heads) = 1 − 1/8 = 7/8, since only HHH avoids tails."
+    },
+    {
+      "id": 7,
+      "question": "Two events are mutually exclusive. Which statement is TRUE?",
+      "options": ["They cannot both happen", "They must be independent", "Their probabilities add to 1", "They are complements"],
+      "correct": 0,
+      "rationale": "Mutually exclusive events cannot both occur, so P(A and B) = 0 and the addition rule loses its overlap term. Independence is a different concept entirely."
+    },
+    {
+      "id": 8,
+      "question": "Two fair coins are tossed. What is the probability that both show heads?",
+      "options": ["1/2", "1/3", "1/4", "3/4"],
+      "correct": 2,
+      "rationale": "The tosses are independent, so P(H and H) = 1/2 × 1/2 = 1/4."
+    },
+    {
+      "id": 9,
+      "question": "Two cards are drawn without replacement. What is the probability that both are kings?",
+      "options": ["1/169", "1/221", "1/13", "4/52"],
+      "correct": 1,
+      "rationale": "Without replacement the draws are dependent: 4/52 × 3/51 = 12/2652 = 1/221, because one king is already gone."
+    },
+    {
+      "id": 10,
+      "question": "After 200 coin tosses, heads appeared 104 times. Which statement is correct?",
+      "options": ["The coin must be biased, as 104 ≠ 100", "This experimental estimate is 0.52 and will settle near 0.5 as trials grow", "Theoretical probability has failed", "Each toss now has probability 104/200"],
+      "correct": 1,
+      "rationale": "Experimental probability is observed frequency (104/200 = 0.52); the law of large numbers says it drifts toward the theoretical 1/2 as the number of trials grows."
+    }
+  ]
+}

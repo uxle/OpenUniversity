@@ -1,0 +1,76 @@
+{
+  "lessonId": "ocean-currents-and-tides",
+  "title": "Ocean Currents and Tides: Rivers in the Sea",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The chief driver of surface ocean currents is:",
+      "options": ["Earth's magnetism", "Prevailing winds", "Undersea earthquakes", "The Gulf Stream only"],
+      "correct": 1,
+      "rationale": "Prevailing winds drag the surface waters along, while Coriolis deflection, gravity, and density differences shape the resulting loops."
+    },
+    {
+      "id": 2,
+      "question": "The warm extension of the Gulf Stream that keeps north-west Europe ice-free in winter is the:",
+      "options": ["Canary current", "Labrador current", "North Atlantic Drift", "Benguela current"],
+      "correct": 2,
+      "rationale": "The North Atlantic Drift carries warm Gulf Stream water to the Norwegian coast, keeping ports ice-free at high latitudes."
+    },
+    {
+      "id": 3,
+      "question": "Which cold current flows along the coast of south-west Africa?",
+      "options": ["The Benguela current", "The Kuroshio current", "The Agulhas current", "The Brazil current"],
+      "correct": 0,
+      "rationale": "The cold Benguela current chills the air over the Namib Desert; the warm Agulhas current is its neighbour in the Indian Ocean."
+    },
+    {
+      "id": 4,
+      "question": "The Kuroshio and Oyashio currents meet off:",
+      "options": ["Newfoundland", "Japan", "Peru", "West Africa"],
+      "correct": 1,
+      "rationale": "The warm Kuroshio and cold Oyashio meet off Japan, stirring nutrients that make these waters great fishing grounds."
+    },
+    {
+      "id": 5,
+      "question": "During El Niño, the first and most famous casualty is:",
+      "options": ["The Norwegian herring fishery", "The Peruvian anchoveta fishery", "The Grand Banks cod fishery", "The Indian mackerel catch"],
+      "correct": 1,
+      "rationale": "El Niño weakens the Peru (Humboldt) current and its upwelling, so the anchoveta fishery collapses while Peru floods and Australia dries out."
+    },
+    {
+      "id": 6,
+      "question": "La Niña, the opposite phase of ENSO, typically:",
+      "options": ["Warms the eastern Pacific", "Cools the eastern Pacific and strengthens the trades", "Stops the tides", "Reverses the Gulf Stream"],
+      "correct": 1,
+      "rationale": "La Niña reinforces the trade winds and the cold eastern Pacific, often invigorating the Indian monsoon."
+    },
+    {
+      "id": 7,
+      "question": "The dominant tide-generating body is the Moon; the Sun contributes about:",
+      "options": ["10% of the Moon's force", "46% of the Moon's force", "Exactly the same force", "Twice the Moon's force"],
+      "correct": 1,
+      "rationale": "The Moon dominates tide generation, with the Sun adding roughly 46% of the lunar pull."
+    },
+    {
+      "id": 8,
+      "question": "Spring tides — the highest of the month — occur when:",
+      "options": ["The Moon is in its quarter phases", "Sun, Moon, and Earth are aligned at new or full moon", "The Moon is at apogee", "The tide is diurnal"],
+      "correct": 1,
+      "rationale": "Alignment of Sun and Moon at new and full moon combines their pulls; at quadrature (quarter moons) the weaker neap tides occur."
+    },
+    {
+      "id": 9,
+      "question": "A tide pattern with two high waters and two low waters each day is called:",
+      "options": ["Diurnal", "Semi-diurnal", "Mixed", "Perigean"],
+      "correct": 1,
+      "rationale": "Semi-diurnal tides — two highs and two lows a day — are the most common pattern, including along most of the Indian coast."
+    },
+    {
+      "id": 10,
+      "question": "India's best tidal-energy prospects lie in the:",
+      "options": ["Ganga delta", "Gulf of Kutch and Gulf of Khambhat", "Palk Strait", "Chilika lagoon"],
+      "correct": 1,
+      "rationale": "The fast, high tidal ranges of the Gulfs of Kutch and Khambhat make them India's leading tidal-energy sites."
+    }
+  ]
+}

@@ -32,12 +32,15 @@ test("every .zl file starts with a top-level heading", () => {
 test("admonition blocks are balanced ([x] has a matching [/x])", () => {
   const files = findZlFiles(path.join(root, "src/subjects"));
   for (const file of files) {
-    const text = fs.readFileSync(file, "utf8");
+    let text = fs.readFileSync(file, "utf8");
+    // Fenced code blocks are prose, not markup — pseudocode like A[mid]
+    // must not count as an admonition tag. Mirrors the same rule in
+    // tools/validate-content.js.
+    text = text.replace(/```[\s\S]*?```/g, " ");
     // [type] or [type key="value" ...] — not just a bare [type] with no
     // attributes, or any admonition using title="..." (a normal,
     // documented feature) reads as unopened here while its closer still
-    // counts, guaranteeing a false mismatch. Mirrors the same fix in
-    // tools/validate-content.js.
+    // counts, guaranteeing a false mismatch.
     const opens = [...text.matchAll(/\[([a-z]+)(?:\s[^\]\n]*)?\]/g)].map((m) => m[1]);
     const closes = [...text.matchAll(/\[\/([a-z]+)\]/g)].map((m) => m[1]);
     assert.deepEqual(opens.sort(), closes.sort(), `${path.relative(root, file)} has unbalanced admonitions`);

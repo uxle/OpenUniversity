@@ -1,0 +1,76 @@
+{
+  "lessonId": "world-population-and-settlement",
+  "title": "Population and Settlements: How People Fill the Earth",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The world's population reached 8 billion in:",
+      "options": ["2011", "2015", "November 2022", "2024"],
+      "correct": 2,
+      "rationale": "The United Nations marked 8 billion in November 2022, eleven years after the 7-billion milestone of 2011."
+    },
+    {
+      "id": 2,
+      "question": "Although billions arrive ever sooner, the rate of world population growth:",
+      "options": ["Keeps rising steadily", "Peaked around the late 1960s and has since fallen below 1%", "Has never changed", "Doubled between 2011 and 2022"],
+      "correct": 1,
+      "rationale": "Growth peaked above 2% per year around the late 1960s and has slowed to under 1% — still rising in total, but more slowly."
+    },
+    {
+      "id": 3,
+      "question": "In stage 2 of the demographic transition model:",
+      "options": ["Birth and death rates are both low", "Birth rate stays high while death rate falls fast", "Both rates are high", "Population declines"],
+      "correct": 1,
+      "rationale": "Early expanding: modern medicine and food cut the death rate while the birth rate stays high, producing rapid population growth."
+    },
+    {
+      "id": 4,
+      "question": "Japan and Germany, with birth rates below death rates, illustrate which DTM stage?",
+      "options": ["Stage 3", "Stage 4", "Stage 5 — declining", "Stage 1"],
+      "correct": 2,
+      "rationale": "Stage 5 countries see deaths outnumber births, so population shrinks despite development."
+    },
+    {
+      "id": 5,
+      "question": "About what share of humanity lives in Asia?",
+      "options": ["One-third", "Half", "About 60%", "About 75%"],
+      "correct": 2,
+      "rationale": "Asia holds roughly 60% of the world's people, with about 4.8 billion of the 8 billion total."
+    },
+    {
+      "id": 6,
+      "question": "Which became the world's most populous country, passing China around 2023?",
+      "options": ["The United States", "India", "Indonesia", "Pakistan"],
+      "correct": 1,
+      "rationale": "India (about 1.43 billion) overtook China (about 1.41 billion) around 2023 to become the most populous country."
+    },
+    {
+      "id": 7,
+      "question": "All of these are sparse regions because of harsh conditions EXCEPT:",
+      "options": ["The Amazon", "The Sahara", "The Ganga plain", "The polar lands"],
+      "correct": 2,
+      "rationale": "The Ganga plain's water, level fertile land, and cities make it one of Earth's densest regions; the others repel settlement."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a PULL factor in migration?",
+      "options": ["War", "Crop failure", "Jobs and higher wages", "Persecution"],
+      "correct": 2,
+      "rationale": "Pull factors such as jobs, safety, and services attract migrants; war, persecution, and crop failure push them out."
+    },
+    {
+      "id": 9,
+      "question": "According to India's 2011 Census, the sex ratio was:",
+      "options": ["1,084 females per 1,000 males", "943 females per 1,000 males", "919 females per 1,000 males", "879 females per 1,000 males"],
+      "correct": 1,
+      "rationale": "The 2011 sex ratio was 943; Kerala's 1,084 was highest, Haryana's 879 lowest, and the child sex ratio 919."
+    },
+    {
+      "id": 10,
+      "question": "Compact, nucleated villages are most typical of:",
+      "options": ["Steep Himalayan slopes", "Fertile plains with reliable water", "Dense forests", "Desert interiors"],
+      "correct": 1,
+      "rationale": "Where fertile soil and water coincide — as on the Ganga plain — homes cluster together; hills and forests force dispersed settlement."
+    }
+  ]
+}

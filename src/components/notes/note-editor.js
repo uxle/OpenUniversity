@@ -2,6 +2,8 @@
 import { createEl } from "../../utils/dom.js";
 import { saveNote } from "../../engines/notes-engine.js";
 import { showToast } from "../common/toast.js";
+import { eventBus } from "../../core/event-bus.js";
+import { EVENTS } from "../../app/constants.js";
 
 export function createNoteEditor({ subjectId, subSubjectId, lessonId, existing = null, onSaved }) {
   const textarea = createEl("textarea", {
@@ -32,17 +34,20 @@ export function createNoteEditor({ subjectId, subSubjectId, lessonId, existing =
     }
   });
 
-  // Warn before navigating away with an unsaved note (only while this
-  // editor is on the page — listener is removed once the lesson unmounts
-  // isn't tracked here since there's no unmount hook yet, so this is a
-  // best-effort per-editor-instance guard for the common case: leaving
-  // the tab/window mid-edit).
+  // Warn before leaving the tab/window with an unsaved note. The guard
+  // must not outlive this editor: the lesson page rebuilds the editor on
+  // every navigation, so without removal each visit stacked another
+  // window-level listener (memory leak, plus a permanent "leave site?"
+  // prompt once any note had been typed). Route change == unmount here.
   const beforeUnload = (e) => {
     if (!dirty) return;
     e.preventDefault();
     e.returnValue = "";
   };
   window.addEventListener("beforeunload", beforeUnload);
+  eventBus.on(EVENTS.ROUTE_CHANGED, () => {
+    window.removeEventListener("beforeunload", beforeUnload);
+  });
 
   return createEl("form", { class: "ou-stack", on: { submit: handleSubmit } }, [
     textarea,

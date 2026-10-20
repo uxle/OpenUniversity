@@ -1,0 +1,76 @@
+{
+  "lessonId": "monsoon-climate-of-india",
+  "title": "The Indian Monsoon: Onset, Retreat, and Year-to-Year Variation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The word 'monsoon' traces back to the Arabic word *mausim*, meaning:",
+      "options": ["Rain", "Season", "Wind", "Ocean"],
+      "correct": 1,
+      "rationale": "Mausim means season — the monsoon is a seasonal reversal of wind and rainfall between land and sea."
+    },
+    {
+      "id": 2,
+      "question": "The fundamental driver of the monsoon circulation is:",
+      "options": ["Ocean salinity differences", "The temperature contrast between land and sea", "Earth's magnetic field", "Jet contrails"],
+      "correct": 1,
+      "rationale": "In summer the land heats faster than the ocean, creating a thermal low that draws moist sea air inland; winter reverses the flow."
+    },
+    {
+      "id": 3,
+      "question": "Which high-altitude plateau acts as a heat pump strengthening the summer monsoon low?",
+      "options": ["Deccan Plateau", "Tibetan Plateau", "Chotanagpur Plateau", "Ladakh"],
+      "correct": 1,
+      "rationale": "Summer heating of the Tibetan Plateau lofts warm air, deepening the monsoon low over northern India."
+    },
+    {
+      "id": 4,
+      "question": "The southwest monsoon normally sets in over Kerala around:",
+      "options": ["15 May", "1 June", "1 July", "15 August"],
+      "correct": 1,
+      "rationale": "The normal onset date over Kerala is about 1 June, with the whole country covered by roughly mid-July."
+    },
+    {
+      "id": 5,
+      "question": "The Bay of Bengal branch of the monsoon is deflected westward by:",
+      "options": ["The Aravalli hills", "The Himalaya", "The Western Ghats", "The Somali jet"],
+      "correct": 1,
+      "rationale": "Blocked by the Himalaya, the Bay branch turns west up the Ganga plain, watering much of northern India."
+    },
+    {
+      "id": 6,
+      "question": "The wettest place on Earth, with about 11,870 mm of rain a year, is:",
+      "options": ["Cherrapunji only", "Mawsynram in Meghalaya", "Mumbai", "Chennai"],
+      "correct": 1,
+      "rationale": "Mawsynram in Meghalaya faces the full force of the Bay of Bengal branch and averages roughly 11,870 mm annually."
+    },
+    {
+      "id": 7,
+      "question": "Which coast of India receives most of its rainfall from the retreating northeast monsoon?",
+      "options": ["Konkan coast", "Malabar coast", "Tamil Nadu coast", "Kutch"],
+      "correct": 2,
+      "rationale": "North-east winds crossing the Bay of Bengal pick up moisture and drench the Tamil Nadu coast in October–November."
+    },
+    {
+      "id": 8,
+      "question": "The southwest monsoon supplies roughly what share of India's annual rainfall?",
+      "options": ["One-third", "Half", "About 75%", "Nearly 100%"],
+      "correct": 2,
+      "rationale": "About 75% of India's annual rain arrives between June and September from the southwest monsoon."
+    },
+    {
+      "id": 9,
+      "question": "El Niño events typically have what effect on the Indian monsoon?",
+      "options": ["Strengthen it", "Weaken it", "No effect", "Reverse it to winter"],
+      "correct": 1,
+      "rationale": "The eastern Pacific warming called El Niño usually weakens the Indian monsoon, often producing deficient rainfall."
+    },
+    {
+      "id": 10,
+      "question": "Rice, jute, and cotton, sown with the June rains and harvested by early autumn, are examples of:",
+      "options": ["Rabi crops", "Kharif crops", "Plantation crops", "Zaid crops"],
+      "correct": 1,
+      "rationale": "Kharif crops are sown at the monsoon's onset and depend directly on its timing; rabi crops like wheat are the winter alternative."
+    }
+  ]
+}

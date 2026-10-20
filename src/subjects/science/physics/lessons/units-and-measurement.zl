@@ -1,0 +1,140 @@
+# Units and Measurement: The Language of Physics
+
+> Every physical statement pairs a number with a unit. This lesson
+> assembles the toolkit — SI base units, prefixes, significant
+> figures, dimensional analysis, and errors.
+
+## 1. Why Units Matter
+
+A number without a unit is half a measurement — a wire "10 long"
+could be 10 millimetres or 10 metres. In 1999 NASA lost the Mars
+Climate Orbiter to a metric–imperial mix-up between its teams.
+
+[definition]
+A **physical quantity** is any measurable property written as a
+number together with a unit — length, time, temperature, current.
+[/definition]
+
+## 2. The Seven SI Base Units
+
+All of physics is built from seven **base quantities** of the
+**Système International (SI)**, adopted in 1960.
+
+| Base quantity | Unit | Symbol | Anchoring constant |
+| --- | --- | --- | --- |
+| Length | metre | m | speed of light, c |
+| Mass | kilogram | kg | Planck constant, h |
+| Time | second | s | caesium-133 frequency |
+| Electric current | ampere | A | elementary charge, e |
+| Temperature | kelvin | K | Boltzmann constant, k |
+| Amount of substance | mole | mol | Avogadro constant |
+| Luminous intensity | candela | cd | luminous efficacy |
+
+[note title="The 2019 redefinition"]
+Since 20 May 2019 every base unit is defined by fixing a
+fundamental constant — the kilogram no longer depends on a
+metal cylinder in Paris.
+[/note]
+
+@diagram tree id="si-unit-family" layout="tree" aria="Physical quantities split into base and derived units"
+  "Physical quantity" -> "Base: metre, kilogram, second"
+  "Physical quantity" -> "Base: ampere, kelvin, mole, candela"
+  "Physical quantity" -> "Derived: newton, joule, watt, pascal"
+@/diagram
+
+## 3. Derived Units and Prefixes
+
+**Derived units** combine base units; **prefixes** scale them from
+nuclear to cosmic sizes.
+
+| Quantity | Definition | SI expression | Name |
+| --- | --- | --- | --- |
+| Speed | distance ÷ time | m/s | — |
+| Force | mass × acceleration | kg·m/s² | newton (N) |
+| Pressure | force ÷ area | N/m² | pascal (Pa) |
+| Work, energy | force × distance | N·m | joule (J) |
+| Power | work ÷ time | J/s | watt (W) |
+
+| Prefix | Symbol | Factor | Example |
+| --- | --- | --- | --- |
+| nano | n | 10⁻⁹ | green light ≈ 550 nm |
+| micro | μ | 10⁻⁶ | red blood cell ≈ 7 μm |
+| milli | m | 10⁻³ | medicine doses in mL |
+| kilo | k | 10³ | city distances in km |
+| mega | M | 10⁶ | plant output in MW |
+| giga | G | 10⁹ | processor clocks in GHz |
+
+[example]
+A human hair is about 8 × 10⁻⁵ m wide, and 10⁻⁶ m = 1 μm, so
+the hair measures 80 μm — an easy laboratory quantity.
+[/example]
+
+## 4. Significant Figures
+
+**Significant figures** record how precisely a value is known.
+
+| Situation | Rule | Example |
+| --- | --- | --- |
+| Non-zero digits | all significant | 3.42 → 3 s.f. |
+| Zeros between non-zeros | significant | 1002 → 4 s.f. |
+| Leading zeros | never significant | 0.021 → 2 s.f. |
+| Trailing zero after decimal | significant | 2.50 → 3 s.f. |
+
+[important title="Rounding rules"]
+Add or subtract → fewest decimal places: 1.2 + 1.25 = 2.5.
+Multiply or divide → fewest significant figures: 2.1 × 2.05 = 4.3.
+[/important]
+
+## 5. Dimensional Analysis
+
+The **dimensions** of a quantity describe its make-up in mass (M),
+length (L), and time (T).
+
+| Quantity | Dimensions | SI unit |
+| --- | --- | --- |
+| Force | MLT⁻² | N |
+| Work, energy | ML²T⁻² | J |
+| Power | ML²T⁻³ | W |
+| Pressure | ML⁻¹T⁻² | Pa |
+
+Dimensions test whether an equation is **dimensionally
+homogeneous** — in v² = u² + 2as both sides reduce to L²T⁻².
+
+[warning]
+Dimensional analysis cannot find dimensionless constants such as
+the 1/2 in kinetic energy or π in the pendulum formula — it
+checks a skeleton, not the coefficients.
+[/warning]
+
+## 6. Errors, Instruments, and Standards
+
+**Error** is the deviation of a measured value from the true value.
+
+@math label="eq:errors"
+\text{percentage error} = \frac{\text{absolute error}}{\text{true value}} \times 100
+@/math
+
+[example]
+True length 2.00 m, measured 2.04 m: absolute error 0.04 m,
+relative error 0.04 ÷ 2.00 = 0.02, percentage error 2%.
+[/example]
+
+| Concept | Meaning | Archery picture |
+| --- | --- | --- |
+| Accuracy | closeness to the true value | hits near the bullseye |
+| Precision | closeness of repeated readings | hits clustered tightly |
+
+A precise instrument can still be inaccurate if it carries a fixed
+**systematic error** such as a wrongly zeroed scale. A **vernier
+caliper** has a **least count** of 0.1 mm; a **screw gauge** with
+1 mm pitch and 100 divisions reads to 0.01 mm. India's National
+Physical Laboratory (NPL) in New Delhi keeps the standards.
+
+## 7. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| SI base units | seven: m, kg, s, A, K, mol, cd |
+| nano / kilo / giga | 10⁻⁹ / 10³ / 10⁹ |
+| Dimensions of force | MLT⁻² |
+| Least counts | vernier 0.1 mm; screw gauge 0.01 mm |

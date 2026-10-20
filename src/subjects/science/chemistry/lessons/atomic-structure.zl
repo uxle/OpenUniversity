@@ -1,0 +1,140 @@
+# Atomic Structure: From Dalton to Quantum Numbers
+
+> The atom turned out to be divisible, mostly empty, and ruled by
+> quantum laws. This lesson traces the ideas from Dalton's solid
+> spheres to Schrödinger's probability clouds.
+
+## 1. The Three Subatomic Particles
+
+[definition]
+**Atom** — the smallest particle of an element that retains its
+chemical identity. At its centre sits a dense, positive **nucleus**
+of protons and neutrons; electrons fill the space around it.
+[/definition]
+
+| Particle | Symbol | Charge | Relative mass | Discovered by |
+| --- | --- | --- | --- | --- |
+| Electron | e⁻ | −1 | ~1/1836 | J. J. Thomson (1897) |
+| Proton | p⁺ | +1 | 1 | Goldstein (canal rays, 1886) |
+| Neutron | n⁰ | 0 | 1 | J. Chadwick (1932) |
+
+The nucleus holds over 99.9% of the atom's mass in a volume about
+10⁻⁵ of the whole atom — matter is mostly empty space.
+
+## 2. How the Atomic Model Evolved
+
+@diagram tree id="atomic-models-evolution" layout="tree" aria="Timeline of atomic models from Dalton to Schrodinger"
+  "Atomic model" -> "Dalton 1808: solid sphere"
+  "Atomic model" -> "Thomson 1904: plum pudding"
+  "Atomic model" -> "Rutherford 1911: nuclear atom"
+  "Atomic model" -> "Bohr 1913: fixed orbits"
+  "Atomic model" -> "Schrodinger 1926: orbitals"
+@/diagram
+
+| Model | Scientist (Year) | Picture of the atom | What it could not explain |
+| --- | --- | --- | --- |
+| Solid sphere | Dalton (1808) | indivisible billiard ball | subatomic particles |
+| Plum pudding | Thomson (1904) | electrons studded in a positive sphere | gold-foil deflections |
+| Nuclear | Rutherford (1911) | tiny dense nucleus, electrons outside | why electrons do not spiral inward |
+| Planetary | Bohr (1913) | fixed orbits with quantized energies | any atom beyond hydrogen |
+| Quantum | Schrödinger (1926) | orbitals — clouds of probability | nothing yet; current model |
+
+[example]
+**Rutherford's gold foil experiment (1911):** most α-particles
+passed straight through — the atom is mostly empty. A few bent at
+large angles, and about 1 in 20,000 bounced back, proving the
+positive charge lives in a tiny, dense nucleus.
+[/example]
+
+## 3. Quantum Numbers: The Electron's Address
+
+| Number | Symbol | Values | What it fixes |
+| --- | --- | --- | --- |
+| Principal | n | 1, 2, 3, ... | shell — size and energy |
+| Azimuthal | l | 0 to n−1 | subshell: 0 = s, 1 = p, 2 = d, 3 = f |
+| Magnetic | mₗ | −l to +l | orientation of the orbital |
+| Spin | mₛ | +½ or −½ | the electron's spin |
+
+Three rules govern how electrons are arranged:
+
+- **Aufbau principle** — fill the lowest-energy subshell first:
+  1s → 2s → 2p → 3s → 3p → 4s → 3d; note that 4s fills before 3d.
+- **Pauli exclusion principle** — no two electrons share all four
+  quantum numbers; each orbital holds at most two, spins opposed.
+- **Hund's rule** — equal-energy orbitals fill singly with parallel
+  spins before any pairing starts.
+- Capacities: s holds 2, p holds 6, d holds 10, f holds 14.
+
+## 4. Configurations of the First 20 Elements
+
+| Z | El | Configuration | Val | Z | El | Configuration | Val |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | H | 1s¹ | 1 | 11 | Na | [Ne] 3s¹ | 1 |
+| 2 | He | 1s² | 2 | 12 | Mg | [Ne] 3s² | 2 |
+| 3 | Li | 1s² 2s¹ | 1 | 13 | Al | [Ne] 3s² 3p¹ | 3 |
+| 4 | Be | 1s² 2s² | 2 | 14 | Si | [Ne] 3s² 3p² | 4 |
+| 5 | B | 1s² 2s² 2p¹ | 3 | 15 | P | [Ne] 3s² 3p³ | 5 |
+| 6 | C | 1s² 2s² 2p² | 4 | 16 | S | [Ne] 3s² 3p⁴ | 6 |
+| 7 | N | 1s² 2s² 2p³ | 5 | 17 | Cl | [Ne] 3s² 3p⁵ | 7 |
+| 8 | O | 1s² 2s² 2p⁴ | 6 | 18 | Ar | [Ne] 3s² 3p⁶ | 8 |
+| 9 | F | 1s² 2s² 2p⁵ | 7 | 19 | K | [Ar] 4s¹ | 1 |
+| 10 | Ne | 1s² 2s² 2p⁶ | 8 | 20 | Ca | [Ar] 4s² | 2 |
+
+[definition]
+**Valence electrons** occupy the outermost shell and do all the
+bonding; **core electrons** sit in filled inner shells. Chlorine,
+ending 3p⁵, has 7 — one short of the octet that drives its hunger
+for one more electron.
+[/definition]
+
+## 5. Isotopes, Isobars, Isotones, Ions
+
+| Relationship | Same | Different | Example |
+| --- | --- | --- | --- |
+| Isotopes | protons (Z) | neutrons | ¹H, ²H, ³H; C-12/C-14; U-235/U-238 |
+| Isobars | mass number (A) | protons | ⁴⁰Ar and ⁴⁰Ca |
+| Isotones | neutrons | protons | ¹⁴C and ¹⁶O (8 each) |
+| Ions | element | electron count | Na⁺ (11 p, 10 e) |
+
+Hydrogen's three isotopes get special names:
+
+| Isotope | Protons | Neutrons | Note |
+| --- | --- | --- | --- |
+| Protium ¹H | 1 | 0 | 99.98% of natural hydrogen |
+| Deuterium ²H | 1 | 1 | heavy water D₂O — reactor moderator |
+| Tritium ³H | 1 | 2 | radioactive; fusion research |
+
+Cations (electrons lost) are smaller than parent atoms; anions
+(electrons gained) are larger.
+
+## 6. Emission Spectra: Why Bohr Mattered
+
+An electron pushed to a higher orbit falls back, emitting a photon
+of one exact frequency:
+
+@math label="eq:bohr"
+E_n = -\frac{13.6\ \mathrm{eV}}{n^2}, \qquad \Delta E = h\nu
+@/math
+
+Because only certain jumps are allowed, hydrogen emits sharp **line
+spectra** — a fingerprint unique to each element, readable even in
+starlight. Hydrogen's lines bunch into the Lyman (UV), Balmer
+(visible), and Paschen (infrared) series.
+
+[important title="Where Bohr breaks down"]
+The fixed-orbit model works only for one-electron systems —
+hydrogen and ions like He⁺ and Li²⁺. Multi-electron atoms need
+Schrödinger's orbital picture.
+[/important]
+
+## 7. Quick Revision
+
+| Concept | Memory hook |
+| --- | --- |
+| Nucleus | 99.9% of the mass in a tiny core |
+| Gold foil | mostly empty; 1 in 20,000 rebounds |
+| n, l, m, s | shell, subshell, orientation, spin |
+| Aufbau | lowest energy first — 4s before 3d |
+| Pauli | two per orbital, opposite spins |
+| Hund | singles before pairs |
+| Isotopes | same Z, different neutrons |

@@ -1,0 +1,5 @@
+# www.robotstxt.org/ — OpenKnowledge is fully open; crawl everything.
+User-agent: *
+Allow: /
+
+Sitemap: https://uxle.github.io/OpenUniversity/sitemap.xml

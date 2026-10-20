@@ -1,0 +1,141 @@
+# Reverse Syllogism and New-Style Questions
+
+> Reverse syllogism gives you the conclusions first and asks which set of
+> statements supports them — this lesson covers the elimination method and
+> new-phrase patterns like "only a few" and "can never be."
+
+[important]
+Reverse syllogism rewards elimination, not construction. You rarely
+build the statement set yourself — you test each option against the
+conclusions and delete the ones that fail: one violated conclusion kills
+an entire option set.
+[/important]
+
+## 1. What Reverse Syllogism Is
+
+Classic form: statements given, conclusions given, pick the conclusions
+that follow. **Reverse form:** conclusions given, four option sets of
+statements given, pick the set from which those conclusions definitely
+follow — a banking-exam staple, since guessing requires checking every
+conclusion against every option.
+
+## 2. The Method: Conclusions First
+
+1. Draw the Venn picture demanded by each **conclusion** before looking
+   at any option: an overlap for "some", total separation for "no".
+2. Note what each conclusion *rules out* — your kill list.
+3. Test each option set: the statements must make every conclusion
+   definitely true.
+
+[definition]
+A **kill condition** is a fact that, if present in an option's statements,
+makes some conclusion impossible — kill conditions delete options in
+seconds without full diagrams.
+[/definition]
+
+## 3. Elimination Workflow Table
+
+| Step | Action | Typical result |
+| --- | --- | --- |
+| 1 | Translate conclusions into Venn requirements | two or three must-have pictures |
+| 2 | Scan option (a): does it contradict any conclusion? | if yes, strike it off |
+| 3 | Scan options (b), (c), (d) the same way | usually two die here |
+| 4 | For survivors, draw the strictest statement (E or A) first, then check every conclusion | last survivor is the answer |
+
+## 4. Worked Example with Four Options
+
+**Conclusions:** I. Some cars are buses. II. No bus is a cycle.
+
+```text
+Kill list from I:  "No car/bus" statements die.
+Kill list from II: "All/Some buses are cycles" die.
+```
+
+- **Option (a):** All cars are buses. All buses are cycles. — I survives,
+  but II dies: buses and cycles overlap. **Eliminated.**
+- **Option (b):** Some cars are buses. No bus is a cycle. — both
+  conclusions stated outright. **Survives.**
+- **Option (c):** All cars are cycles. Some cycles are buses. — II dies:
+  some cycles being buses means a bus is a cycle. **Eliminated.**
+- **Option (d):** No car is a bus. No bus is a cycle. — I dies: no cars
+  are buses contradicts some cars being buses. **Eliminated.**
+
+Answer: **option (b)** — the kill list deleted three options with no diagram at all.
+
+[tip]
+Keep the E-type ("No X is Y") at the top of your kill list — a single
+No-statement contradicts the largest number of conclusions, so it
+eliminates options fastest.
+[/tip]
+
+## 5. "Only a Few" Statements
+
+Recent exams add the phrase **only a few**, stronger than "some."
+
+| Statement | What it means |
+| --- | --- |
+| Some A are B | at least one A is a B (maybe all are) |
+| Only a few A are B | some A are B AND some A are not B |
+
+[definition]
+**Only a few A are B** carries two commitments: at least one A is a B,
+and at least one A is not a B. It sits strictly between "some" and "no."
+[/definition]
+
+**Worked case:** Only a few doctors are surgeons. "Some doctors are
+surgeons" and "Some doctors are not surgeons" are both definitely true,
+while "All doctors are surgeons" and "No doctor is a surgeon" are both
+definitely **false** — each contradicted by half the statement.
+
+## 6. "Can Never Be" and Other New Phrasings
+
+| Phrase | Standard translation |
+| --- | --- |
+| A can never be B | No A is B — must be definitely true from the statements |
+| A can be B | Some A being B is a possibility — true unless contradicted |
+| At least some A are B | same as Some A are B |
+| Unless A, B | if not A, then B — rewrite as: all non-A are B |
+
+**Worked case:** Only a few pens are pencils. No pencil is a marker.
+Conclusion: Pens can never be markers. Nothing separates the pen and
+marker circles — the statements never mention them together — so the
+conclusion **does not follow**.
+
+[warning]
+"Can never be" is the mirror of possibility: it demands the strongest
+proof. A single arrangement where an A sits inside B destroys "A can
+never be B" — treat it exactly like a No-conclusion.
+[/warning]
+
+## 7. Common Traps Table
+
+| Trap | How it catches candidates | Defence |
+| --- | --- | --- |
+| Partial truth | option (a) satisfies conclusion I but kills II | check every conclusion before accepting |
+| Reversed conversion | option relies on All B are A from All A are B | recall the conversion table |
+| "Only a few" read as "some" | ignores the guaranteed outsider | both parts must hold |
+| Near-duplicate options | two options differ by one word | re-read the differing word slowly |
+
+## 8. Practice Strategy and Timing
+
+Budget **about two minutes per question**: 30 seconds for the conclusion
+pictures and kill list, the rest for scanning options. If two options
+remain alive, the E-type or "only a few" statement almost always breaks
+the tie. If still stuck, mark and skip: a wrong guess costs the same.
+
+## 9. Strategy Summary
+
+| Situation | Move |
+| --- | --- |
+| Conclusions given, statements in options | draw conclusions first, build a kill list |
+| An option contradicts one conclusion | eliminate the option immediately |
+| "Only a few A are B" appears | read it as some are + some are not |
+| "Can never be" appears | demand definite proof of total separation |
+| Two options survive past two minutes | hunt for the E-type or only-a-few tie-breaker |
+
+[example]
+Exam method: **(1)** convert each conclusion into a must-have picture
+and a kill list, **(2)** scan all four options against it — most die
+in seconds, **(3)** for survivors, draw the strictest statement first,
+**(4)** verify every conclusion, **(5)** accept the survivor.
+[/example]

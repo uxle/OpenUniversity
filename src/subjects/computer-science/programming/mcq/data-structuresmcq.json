@@ -1,0 +1,126 @@
+{
+  "lessonId": "data-structures",
+  "title": "Data Structures: Organizing Data for Speed",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Roughly how many steps does binary search take to find one item among a million?",
+      "options": [
+        "About 1,000,000",
+        "About 1,000",
+        "About 20",
+        "About 100,000"
+      ],
+      "correct": 2,
+      "rationale": "Each step halves the remaining candidates, and 2^20 exceeds 1,000,000 — so binary search needs about 20 comparisons versus up to a million for a linear scan."
+    },
+    {
+      "id": 2,
+      "question": "What is the time complexity of accessing the i-th element of an array versus a linked list?",
+      "options": [
+        "O(n) for the array and O(1) for the list",
+        "O(1) for the array and O(n) for the list",
+        "O(log n) for both",
+        "O(1) for both"
+      ],
+      "correct": 1,
+      "rationale": "Arrays compute the element's address directly from the index (O(1)); a linked list must walk node by node from the head (O(n))."
+    },
+    {
+      "id": 3,
+      "question": "A data structure where the last element inserted is the first removed — used for undo and the function call stack — is a:",
+      "options": [
+        "Queue",
+        "Stack",
+        "Heap",
+        "Hash table"
+      ],
+      "correct": 1,
+      "rationale": "A stack is LIFO (last in, first out) with O(1) push, pop, and peek; it backs function call stacks, undo, and browser back."
+    },
+    {
+      "id": 4,
+      "question": "In a hash table, what is a collision?",
+      "options": [
+        "The table runs out of memory",
+        "Two different keys hash to the same bucket",
+        "A key is inserted twice with different values",
+        "The load factor drops below one"
+      ],
+      "correct": 1,
+      "rationale": "A collision is two distinct keys mapping to the same index; it is handled by chaining (a list per bucket) or open addressing (probing for a free slot)."
+    },
+    {
+      "id": 5,
+      "question": "What is the worst-case complexity of a hash table lookup?",
+      "options": [
+        "O(log n)",
+        "O(1)",
+        "O(n), when every key collides",
+        "O(n log n)"
+      ],
+      "correct": 2,
+      "rationale": "Average lookup is O(1), but if every key hashes to the same bucket the operation degenerates to scanning a list — O(n)."
+    },
+    {
+      "id": 6,
+      "question": "Which traversal of a binary search tree visits keys in sorted order?",
+      "options": [
+        "Pre-order (node, left, right)",
+        "In-order (left, node, right)",
+        "Post-order (left, right, node)",
+        "Level-order"
+      ],
+      "correct": 1,
+      "rationale": "In-order traversal — left subtree, then the node, then the right subtree — yields keys in ascending sorted order."
+    },
+    {
+      "id": 7,
+      "question": "Inserting the keys 1, 2, 3, 4, 5 into a plain BST in that order illustrates which hazard?",
+      "options": [
+        "The tree self-balances automatically",
+        "The tree degenerates into a linked list with O(n) search",
+        "Every insert causes a hash collision",
+        "The tree cannot store duplicates of itself"
+      ],
+      "correct": 1,
+      "rationale": "Sorted insertion builds a right-leaning chain — effectively a linked list — so search degrades from O(log n) to O(n); self-balancing trees prevent this."
+    },
+    {
+      "id": 8,
+      "question": "Which pair correctly distinguishes AVL trees from red-black trees?",
+      "options": [
+        "AVL trees are heaps; red-black trees are hash tables",
+        "AVL is strictly height-balanced; red-black uses looser color rules with fewer rotations (used in std::map)",
+        "Red-black trees cannot search by key; AVL trees cannot insert",
+        "Both are implemented only in Python"
+      ],
+      "correct": 1,
+      "rationale": "AVL trees enforce sibling heights differing by at most 1; red-black trees use relaxed color invariants and fewer rotations, powering std::map and Java's TreeMap."
+    },
+    {
+      "id": 9,
+      "question": "Which structure is the natural engine for a priority queue that repeatedly extracts the smallest item?",
+      "options": [
+        "A heap, with O(1) find-min and O(log n) delete-min",
+        "A plain array with O(1) find-min",
+        "A stack with O(1) find-min",
+        "A linked list with O(log n) find-min"
+      ],
+      "correct": 0,
+      "rationale": "A min-heap keeps the smallest item at the root: peeking is O(1) and removing it is O(log n), which is exactly what priority queues, Dijkstra's algorithm, and heapsort need."
+    },
+    {
+      "id": 10,
+      "question": "Your program needs fast lookup by key AND the ability to list keys in sorted order. Which structure fits best?",
+      "options": [
+        "Hash table",
+        "Balanced binary search tree",
+        "Stack",
+        "Queue"
+      ],
+      "correct": 1,
+      "rationale": "Hash tables forget order entirely; a balanced BST gives O(log n) keyed operations plus sorted in-order traversal and range queries."
+    }
+  ]
+}

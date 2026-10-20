@@ -1,5 +1,83 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "What an Operating System Does",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The rapid switching of the CPU between processes to create the illusion of simultaneous execution is called:",
+      "options": ["Virtual memory", "Context switching", "Booting", "Caching"],
+      "correct": 1,
+      "rationale": "Context switches happen thousands of times per second, letting one core run many programs 'at once'."
+    },
+    {
+      "id": 2,
+      "question": "A process waiting for a disk read to finish is in which state?",
+      "options": ["Running", "Ready", "Blocked", "Terminated"],
+      "correct": 2,
+      "rationale": "Blocked processes wait for an event (like I/O); they cannot use the CPU even if it is free until the event arrives."
+    },
+    {
+      "id": 3,
+      "question": "Why can't one misbehaving program normally corrupt another program's memory?",
+      "options": ["Programs share one big memory block policed by users", "Each process gets an isolated virtual address space", "Memory is read-only for all programs", "Disks are faster than RAM"],
+      "correct": 1,
+      "rationale": "Virtual memory gives each process its own private address space, with the OS and hardware enforcing isolation."
+    },
+    {
+      "id": 4,
+      "question": "Which component of the OS runs in kernel mode and handles scheduling, drivers, and the memory manager?",
+      "options": ["The shell", "The compiler", "The kernel", "The file explorer"],
+      "correct": 2,
+      "rationale": "The kernel is the privileged OS core; user programs reach it only through system calls like open() or fork()."
+    },
+    {
+      "id": 5,
+      "question": "When physical RAM fills up, the OS moves less-used pages to disk. This lets virtual memory be:",
+      "options": ["Larger than physical memory, at a speed cost", "Faster than registers", "Permanently stored without power", "Shared between separate computers"],
+      "correct": 0,
+      "rationale": "Paging to disk extends apparent memory beyond installed RAM, but accessing disk pages is far slower than RAM."
+    },
+    {
+      "id": 6,
+      "question": "Which OS job is responsible for turning raw disk blocks into files and folders?",
+      "options": ["Process management", "Memory management", "File system", "Device management"],
+      "correct": 2,
+      "rationale": "The file system's job is organising raw disk blocks into files and directories — e.g., saving a document."
+    },
+    {
+      "id": 7,
+      "question": "A process that is waiting for its turn on the CPU (the CPU is busy elsewhere) is in which state?",
+      "options": ["Running", "Ready", "Blocked", "Terminated"],
+      "correct": 1,
+      "rationale": "'Ready' means waiting for a turn on the CPU; 'Blocked' means waiting for an event like I/O even if the CPU is free."
+    },
+    {
+      "id": 8,
+      "question": "What does a process consist of, beyond its code?",
+      "options": ["Only its file name on disk", "Its current state: program counter, registers, open files, and memory", "Only the CPU cache contents", "The OS kernel itself"],
+      "correct": 1,
+      "rationale": "A process is a running program: code plus current state — program counter, registers, open files, memory."
+    },
+    {
+      "id": 9,
+      "question": "Which mechanism is the doorway through which user programs request privileged work from the kernel?",
+      "options": ["System calls such as open(), read(), fork()", "Context switches", "Metadata records", "Drivers running in user mode"],
+      "correct": 0,
+      "rationale": "User programs run with restricted rights in user mode; privileged operations happen in kernel mode via system calls like open(), read(), fork()."
+    },
+    {
+      "id": 10,
+      "question": "File metadata typically records which of the following?",
+      "options": ["The file's actual content blocks", "Size, timestamps, and permissions per file", "The CPU scheduling priority of the file", "The physical RAM address of the file"],
+      "correct": 1,
+      "rationale": "Metadata stores size, timestamps, and permissions per file; permissions decide who may read, write, or execute."
+    },
+    {
+      "id": 11,
+      "question": "Linux, Windows NT, and macOS's XNU differ mainly in:",
+      "options": ["Their design choices (monolithic vs hybrid kernels)", "Whether they support multitasking at all", "Whether they provide virtual memory", "Whether files can have permissions"],
+      "correct": 0,
+      "rationale": "All three provide scheduling, memory isolation, and files — they differ mainly in design choices like monolithic vs hybrid kernels, not in fundamentals."
+    }
+  ]
 }

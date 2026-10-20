@@ -1,0 +1,76 @@
+{
+  "lessonId": "metals-and-nonmetals",
+  "title": "Metals and Non-Metals: Properties, Reactivity, and Metallurgy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The non-metal that conducts electricity is:",
+      "options": ["sulphur", "graphite", "phosphorus", "gem diamond"],
+      "correct": 1,
+      "rationale": "Graphite's delocalized electrons carry current — the classic non-metal conductor among otherwise insulating non-metals."
+    },
+    {
+      "id": 2,
+      "question": "Which is the most reactive metal in this list?",
+      "options": ["iron", "copper", "potassium", "gold"],
+      "correct": 2,
+      "rationale": "The reactivity series runs K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Hg > Ag > Au — potassium is near the top."
+    },
+    {
+      "id": 3,
+      "question": "Which metal will NOT liberate hydrogen from dilute HCl?",
+      "options": ["zinc", "magnesium", "iron", "copper"],
+      "correct": 3,
+      "rationale": "Copper sits below hydrogen in the reactivity series, so it cannot displace H⁺ from the acid."
+    },
+    {
+      "id": 4,
+      "question": "Roasting differs from calcination because roasting converts:",
+      "options": ["carbonates to oxides in limited air", "sulphides to oxides in excess air", "oxides to pure metals", "metals to carbonates"],
+      "correct": 1,
+      "rationale": "Roasting heats sulphide ores in excess air (2ZnS + 3O₂ → 2ZnO + 2SO₂); calcination heats carbonates in limited air."
+    },
+    {
+      "id": 5,
+      "question": "In the thermite reaction (Fe₂O₃ + 2Al → 2Fe + Al₂O₃), aluminium acts as a:",
+      "options": ["catalyst", "reducing agent", "oxidizing agent", "inert filler"],
+      "correct": 1,
+      "rationale": "Reactive aluminium strips oxygen from iron oxide — it reduces Fe₂O₃ while being oxidized itself."
+    },
+    {
+      "id": 6,
+      "question": "Brass is an alloy of:",
+      "options": ["Cu and Sn", "Fe and Cr", "Cu and Zn", "Pb and Sn"],
+      "correct": 2,
+      "rationale": "Brass = copper + zinc. Bronze is copper + tin; solder is lead + tin; stainless steel is iron + chromium + nickel."
+    },
+    {
+      "id": 7,
+      "question": "Which oxide is amphoteric?",
+      "options": ["CO₂", "CaO", "SO₂", "Al₂O₃"],
+      "correct": 3,
+      "rationale": "Al₂O₃ (like ZnO) reacts with both strong acids and strong bases; CO₂ and SO₂ are acidic, CaO basic."
+    },
+    {
+      "id": 8,
+      "question": "Froth flotation is used to concentrate:",
+      "options": ["sulphide ores", "carbonate ores", "native metals", "silicate sand"],
+      "correct": 0,
+      "rationale": "The process floats sulphide particles on rising bubbles while worthless gangue sinks and is drained off."
+    },
+    {
+      "id": 9,
+      "question": "Stainless steel resists rusting because it contains:",
+      "options": ["a coating of zinc", "chromium and nickel alloyed into the iron", "a layer of tin", "added carbon"],
+      "correct": 1,
+      "rationale": "Alloying iron with chromium (plus nickel) produces a protective, non-rusting alloy used for cutlery."
+    },
+    {
+      "id": 10,
+      "question": "The metal that is liquid at room temperature is:",
+      "options": ["sodium", "mercury", "gallium", "zinc"],
+      "correct": 1,
+      "rationale": "Mercury is the only metal liquid under everyday conditions; gallium only melts at 29.8 °C — in your hand."
+    }
+  ]
+}

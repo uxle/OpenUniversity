@@ -1,0 +1,76 @@
+{
+  "lessonId": "mauryan-empire",
+  "title": "The Mauryan Empire: India's First Pan-Subcontinental State",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Arthashastra, the great Mauryan treatise on statecraft, is attributed to:",
+      "options": ["Megasthenes", "Kautilya (Chanakya)", "Vishakhadatta", "James Prinsep"],
+      "correct": 1,
+      "rationale": "Kautilya, also called Chanakya or Vishnugupta, composed the 15-book Arthashastra; its manuscript was recovered and published by R. Shamasastry in 1909."
+    },
+    {
+      "id": 2,
+      "question": "Megasthenes, who described Pataliputra in his Indica, was the ambassador of:",
+      "options": ["Antiochus I", "Seleucus Nicator", "Alexander of Epirus", "Ptolemy II"],
+      "correct": 1,
+      "rationale": "Megasthenes served as resident ambassador of Seleucus Nicator at Chandragupta's court after the treaty that exchanged the eastern satrapies for 500 war elephants."
+    },
+    {
+      "id": 3,
+      "question": "The treaty ending the Chandragupta-Seleucus war of about 305 BCE transferred which territory to the Mauryas?",
+      "options": ["Bactria and Sogdiana", "Arachosia, Gedrosia and Paropamisadae", "Kalinga and Utkala", "Gandhara only"],
+      "correct": 1,
+      "rationale": "Seleucus ceded the eastern satrapies — Arachosia (Kandahar), Gedrosia (Makran), Paropamisadae (Kabul) — in return for 500 war elephants and a marriage alliance."
+    },
+    {
+      "id": 4,
+      "question": "The Brahmi script of the Ashokan edicts was deciphered in 1837 by:",
+      "options": ["William Jones", "John Marshall", "James Prinsep", "Alexander Cunningham"],
+      "correct": 2,
+      "rationale": "James Prinsep, an East India Company civil servant, deciphered Brahmi in 1837 — the breakthrough that made Ashoka a historical figure."
+    },
+    {
+      "id": 5,
+      "question": "The Kalinga war, recorded with remorse in the 13th Rock Edict, was fought in:",
+      "options": ["268 BCE", "261 BCE", "232 BCE", "250 BCE"],
+      "correct": 1,
+      "rationale": "The Kalinga war of 261 BCE left, by Ashoka's own count, 100,000 slain and 150,000 deported, and turned him to the policy of Dhamma."
+    },
+    {
+      "id": 6,
+      "question": "Which pair of Ashoka's children were sent as Buddhist missionaries to Sri Lanka?",
+      "options": ["Dasharatha and Samprati", "Mahendra and Sanghamitra", "Tivara and Karuvaki", "Kunala and Jalauka"],
+      "correct": 1,
+      "rationale": "After the Third Buddhist Council at Pataliputra (250 BCE), Ashoka sent his son Mahendra and daughter Sanghamitra to convert Sri Lanka."
+    },
+    {
+      "id": 7,
+      "question": "Ashoka's own name 'Asoka' appears in the minor rock edicts found at:",
+      "options": ["Girnar and Kalsi", "Dhauli and Jaugada", "Maski and Gujjara", "Sopara and Sannati"],
+      "correct": 2,
+      "rationale": "Most edicts call him Devanampiya Piyadasi; the name 'Asoka' was discovered only in 1915 at Maski (and later at Gujjara)."
+    },
+    {
+      "id": 8,
+      "question": "Which Mauryan provincial capital was NOT correctly matched with its province?",
+      "options": ["Taxila - Uttarapatha", "Ujjain - Avantiratha", "Tosali - Kalinga", "Suvarnagiri - Avantiratha"],
+      "correct": 3,
+      "rationale": "Suvarnagiri was the capital of Dakshinapatha, not Avantiratha, which was governed from Ujjain."
+    },
+    {
+      "id": 9,
+      "question": "In Mauryan administration, spies were known as:",
+      "options": ["Gudhapurushas", "Sanahartas", "Tirthas", "Amatyas"],
+      "correct": 0,
+      "rationale": "Gudhapurushas were the state's spies, stationary (sanstha) and wandering (sanchara), as detailed in the Arthashastra."
+    },
+    {
+      "id": 10,
+      "question": "The last Mauryan emperor, Brihadratha, was killed in 185 BCE by his commander-in-chief:",
+      "options": ["Pushyamitra Shunga", "Kharavela", "Vasudeva", "Pusyamitra's general Agnimitra"],
+      "correct": 0,
+      "rationale": "Pushyamitra Shunga killed Brihadratha during a troop inspection in 185 BCE and founded the Shunga dynasty, ending Mauryan rule."
+    }
+  ]
+}

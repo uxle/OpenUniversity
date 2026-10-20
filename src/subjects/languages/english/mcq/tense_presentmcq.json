@@ -29,6 +29,48 @@
       "options": ["2", "3", "4", "5"],
       "correct": 2,
       "rationale": "Each tense category contains four sub-types: Indefinite, Continuous, Perfect, and Perfect Continuous."
+    },
+    {
+      "id": 5,
+      "question": "Which of these are key indicators of the Present Continuous Tense?",
+      "options": ["Just, yet, already", "Since 2007, for two years", "At present, Now-a-days, Of late, These days", "Yesterday, last week"],
+      "correct": 2,
+      "rationale": "Present Continuous (Subject + is/am/are + V1+ing) is signalled by 'At present', 'Now-a-days', 'Of late' and 'These days'."
+    },
+    {
+      "id": 6,
+      "question": "\"These days he ___ in a pharmacy company.\" Choose the correct verb form.",
+      "options": ["works", "is working", "has worked", "has been working"],
+      "correct": 1,
+      "rationale": "'These days' signals Present Continuous: Subject (He) + is + V1+ing → 'is working'."
+    },
+    {
+      "id": 7,
+      "question": "Which of these are key indicators of the Present Perfect Tense?",
+      "options": ["Now-a-days, of late", "Just, just now, so far, yet, already, till now", "First, then, later", "Always, never, seldom"],
+      "correct": 1,
+      "rationale": "Present Perfect (has/have + V3) is used with 'just', 'just now', 'so far', 'yet', 'already' and 'till now', e.g., 'He has already gone to school.'"
+    },
+    {
+      "id": 8,
+      "question": "What is the structure of the Present Perfect Continuous Tense?",
+      "options": ["Subject + has/have + V3", "Subject + is/am/are + V1+ing", "Subject + had been + V1+ing", "Subject + has/have + been + V1+ing + since/for + time"],
+      "correct": 3,
+      "rationale": "Present Perfect Continuous uses: Subject + has/have + been + V1+ing + since/for + time — e.g., 'He has been reading here since 2007.'"
+    },
+    {
+      "id": 9,
+      "question": "In Present Perfect Continuous, what is the difference between 'since' and 'for'?",
+      "options": ["Both show duration equally", "'Since' shows a point of time; 'for' shows a period of time", "'Since' shows a period; 'for' shows a point", "'Since' is used only with future actions"],
+      "correct": 1,
+      "rationale": "'Since' marks the specific starting point ('since 2006', 'since morning'), while 'for' marks duration ('for 2 hours', 'for 5 days')."
+    },
+    {
+      "id": 10,
+      "question": "\"Her mother ___ a novel since evening.\" Choose the correct form to complete this sentence.",
+      "options": ["reads", "is reading", "has been reading", "read"],
+      "correct": 2,
+      "rationale": "'Since evening' shows an action started in the past continuing to the present, so Present Perfect Continuous is used: 'has been reading'."
     }
   ]
 }

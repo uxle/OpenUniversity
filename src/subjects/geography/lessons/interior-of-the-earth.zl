@@ -1,0 +1,133 @@
+# The Interior of the Earth: Layers and Sources of Evidence
+
+> No drill has ever reached the mantle, yet geographers map the deep
+> Earth with confidence. This lesson explains the evidence behind that
+> knowledge and the layered structure it reveals.
+
+## 1. The Challenge of Depth
+
+The Earth's mean radius is about **6,371 km**, but the deepest human
+excavation is barely a scratch on that scale. Direct observation stops
+a few kilometres below the surface, so the interior must be pieced
+together from indirect clues.
+
+[important title="Scale check"]
+If the Earth were an apple, the deepest mine and the deepest borehole
+combined would not even pierce the skin. Humans have directly sampled
+well under 1% of the way to the planet's centre.
+[/important]
+
+## 2. Direct and Indirect Sources of Evidence
+
+| Source | Kind | What it reveals |
+| --- | --- | --- |
+| Deep mines (deepest: Mponeng, South Africa, ~4 km) | Direct | Rock samples, temperature, and pressure near the surface |
+| Superdeep drilling (Kola Borehole, ~12 km) | Direct | Crustal rocks and the geothermal gradient |
+| Volcanic eruptions | Indirect | Molten magma rising from the mantle |
+| Meteorites | Indirect | Analogues of the core and of the early planet |
+| Seismic waves | Indirect | The most important source: layer depths, states, densities |
+
+[definition]
+**Seismic waves** are vibrations that travel through the Earth after an
+earthquake or explosion. Their speed and path change whenever they cross
+a boundary between materials, so they scan the planet like a natural
+X-ray machine.
+[/definition]
+
+## 3. The Three Main Layers
+
+@diagram tree id="earth-interior-layers" layout="tree" aria="Earth divided into crust, mantle, and core"
+  Earth -> Crust
+  Earth -> Mantle
+  Earth -> Core
+  Crust -> "Continental crust (sial)"
+  Crust -> "Oceanic crust (sima)"
+  Core -> "Outer core (liquid)"
+  Core -> "Inner core (solid)"
+@/diagram
+
+| Layer | Thickness | State and composition |
+| --- | --- | --- |
+| Crust | Continental 30–70 km; oceanic 5–10 km | Solid silicate rock |
+| Mantle | About 2,900 km thick | Solid but slowly flowing silicate rock |
+| Outer core | About 2,200 km thick | Liquid iron and nickel |
+| Inner core | About 1,220 km radius | Solid iron–nickel sphere |
+
+[note]
+The **sial** (silica + aluminium) of the continents is lighter than the
+**sima** (silica + magnesium) of the ocean floor, which is why
+continents stand high while ocean basins sit low.
+[/note]
+
+## 4. Discontinuities: The Boundaries Within
+
+A **discontinuity** is a depth at which seismic waves abruptly change
+speed, marking a change of material.
+
+| Discontinuity | Depth | Separates |
+| --- | --- | --- |
+| Conrad | ~20 km | Upper and lower continental crust |
+| Mohorovicic (Moho), found 1909 | Base of the crust | Crust and mantle |
+| Repetti | ~700 km | Upper and lower mantle |
+| Gutenberg | ~2,900 km | Mantle and outer core |
+| Lehmann, 1936 | ~5,100 km | Liquid outer core and solid inner core |
+
+@chart bar title="Approximate layer thickness in kilometres"
+labels:
+Continental crust
+Oceanic crust
+Mantle
+Outer core
+Inner core
+
+data:
+35
+7
+2900
+2200
+1220
+@/chart
+
+## 5. Temperature, Pressure, and Density
+
+All three properties climb steeply with depth.
+
+| Property | Near the surface | Near the centre |
+| --- | --- | --- |
+| Temperature | ~15°C annual mean | 5,000–6,000°C |
+| Pressure | 1 atmosphere | Over 3.5 million atmospheres |
+| Density | ~2.7 g/cm³ (crustal rock) | ~13.6 g/cm³ (inner core) |
+
+[warning]
+The geothermal gradient of roughly 1°C per 32 m of descent holds only
+near the surface; it cannot be simply extended to the centre of the
+Earth.
+[/warning]
+
+## 6. Lithosphere and Asthenosphere
+
+A second, mechanical division cuts across the chemical one:
+
+- **Lithosphere** — the rigid crust plus the uppermost mantle, broken
+  into tectonic plates about 100 km thick on average.
+- **Asthenosphere** — the hotter, weaker, partly molten zone beneath it
+  (extending to roughly 400 km); the main source of magma and the layer
+  on which the plates slide.
+
+[info title="Two schemes, one planet"]
+Crust–mantle–core describes *what the layers are made of*;
+lithosphere–asthenosphere describes *how they behave* under stress.
+Both divisions are used side by side in plate tectonics.
+[/info]
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Deepest mine? | Mponeng, South Africa (~4 km) |
+| Deepest borehole? | Kola (~12 km) |
+| Most important evidence? | Seismic waves |
+| Moho (1909) separates? | Crust from mantle |
+| Gutenberg discontinuity? | Mantle–core boundary (~2,900 km) |
+| Lehmann (1936) identified? | The solid inner core (~5,100 km) |
+| Outer core's state? | Liquid — S-waves cannot cross it |

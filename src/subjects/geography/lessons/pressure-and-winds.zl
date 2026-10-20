@@ -1,0 +1,107 @@
+# Pressure Belts and Winds: The Engine of World Climate
+
+> Air rises at the Equator, sinks in the subtropics, and spills between
+> as the winds that steer every climate on Earth. This lesson maps the
+> pressure belts, the winds between them, and the storms that ride them.
+
+## 1. What Sets the Air in Motion
+
+Three controls govern every wind:
+
+- **Pressure gradient force** — air is pushed from high pressure to
+  low pressure; steeper gradients mean stronger winds.
+- **Coriolis effect** (Ferrel's law) — the Earth's rotation deflects
+  moving air to the **right in the Northern Hemisphere** and to the
+  **left in the Southern Hemisphere**.
+- **Friction** — drag from the surface slows the wind and weakens the
+  Coriolis deflection near the ground.
+
+## 2. The Seven Pressure Belts
+
+@diagram tree id="pressure-belts-tree" layout="tree" aria="World pressure belts from equator to poles"
+  "Pressure belts" -> "Equatorial low (doldrums)"
+  "Pressure belts" -> "Subtropical highs (horse latitudes)"
+  "Pressure belts" -> "Subpolar lows"
+  "Pressure belts" -> "Polar highs"
+@/diagram
+
+| Belt | Latitude | Character |
+| --- | --- | --- |
+| Equatorial low | ~0–10° | Rising warm, moist air; calm, thundery doldrums |
+| Subtropical highs | ~30–35° N and S | Sinking dry air; calms of the horse latitudes; site of the great deserts |
+| Subpolar lows | ~60–65° N and S | Stormy convergence of westerlies and polar easterlies |
+| Polar highs | 90° N and S | Sinking, intensely cold, dense air |
+
+[note]
+The belts shift about 5–10° with the overhead Sun — northward in July,
+southward in January. This seasonal migration is the taproot of the
+monsoons.
+[/note]
+
+## 3. Planetary Winds
+
+| Wind | Blows from | Direction | Traits |
+| --- | --- | --- | --- |
+| Trade winds | Subtropical highs to the equator | NE (Northern Hemisphere), SE (Southern) | Steadiest winds of the era of sail |
+| Westerlies | Subtropical highs to subpolar lows | SW (Northern), NW (Southern) | Roaring forties and furious fifties of the southern seas |
+| Polar easterlies | Polar highs to subpolar lows | Easterly both hemispheres | Cold, shallow, and dry |
+
+## 4. Famous Local Winds
+
+| Wind | Region | Nature |
+| --- | --- | --- |
+| Loo | Northern plains of India | Hot, dry, gusty summer afternoons |
+| Chinook | Leeward slopes of the Rockies | Warm snow-eating winter wind |
+| Foehn | Leeward slopes of the Alps | Warm and dry |
+| Mistral | Rhone valley, France | Bitterly cold, gusty winter drainage |
+| Sirocco | Sahara to the Mediterranean | Hot, dust-laden; causes blood rain |
+| Harmattan | West Africa | Dry, dusty; nicknamed the doctor |
+
+[example]
+The same physics names them all: air descending a mountain range
+compresses, warms, and dries — whether it is called foehn or chinook.
+[/example]
+
+## 5. Cyclones and Anticyclones
+
+| Feature | Tropical cyclone | Temperate (extratropical) cyclone |
+| --- | --- | --- |
+| Birthplace | Warm oceans, roughly 5–20° latitude | Mid-latitudes, along the polar front |
+| Energy source | Latent heat of warm sea water | Contrast of warm and cold air masses |
+| Structure | Calm eye ringed by storm wall; no fronts | Frontal wedges of warm and cold air |
+| Weather | Storm surge, torrential rain, high winds | Widespread rain and drizzle, gusty winds |
+
+[definition]
+A **tropical cyclone** is a low-pressure storm with winds spiralling
+inward and upward around a calm **eye**; the **storm surge** — sea
+pushed ashore by the storm — is usually its deadliest weapon. In the
+North Indian Ocean, names are assigned from lists prepared by WMO
+panels of the region's countries, released by Indian forecasters.
+[/definition]
+
+An **anticyclone** is the opposite: high pressure with slow, sinking
+air, giving calm, clear weather and cool nights — winter fog traps
+beneath them.
+
+## 6. Jet Streams
+
+Jet streams are narrow bands of near-tropopause winds, hundreds of
+kilometres wide but only a few thick, blowing at well over 200 km/h.
+
+[info title="The monsoon connection"]
+The **subtropical westerly jet** rides south of the Himalaya in
+winter; its northward retreat in early June signals the burst of the
+southwest monsoon over India.
+[/info]
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Ferrel's law? | Deflection right in the Northern Hemisphere |
+| Doldrums lie near? | The equatorial low |
+| Horse latitudes? | Subtropical highs, ~30–35° |
+| Which belt feeds the deserts? | Subtropical highs |
+| Stormy 40–50°S westerlies? | Roaring forties |
+| Calm core of a cyclone? | The eye |
+| Winter westerly jet over India? | Subtropical westerly jet |

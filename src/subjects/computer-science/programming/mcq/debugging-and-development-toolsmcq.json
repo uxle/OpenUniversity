@@ -1,0 +1,126 @@
+{
+  "lessonId": "debugging-and-development-tools",
+  "title": "Debugging and Development Tools: Finding and Fixing Bugs Like a Professional",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A program averages numbers using `total * count` instead of `total / count`. It runs fine but prints wrong results. This is a:",
+      "options": [
+        "Syntax error",
+        "Runtime error",
+        "Logic error",
+        "Compile-time error"
+      ],
+      "correct": 2,
+      "rationale": "Logic errors never crash — the program runs and produces a wrong answer, which is why only tests and careful reading catch them."
+    },
+    {
+      "id": 2,
+      "question": "In the professional debugging loop, what should you do FIRST?",
+      "options": [
+        "Rewrite the module from scratch",
+        "Reproduce the bug on demand",
+        "Change random lines until it works",
+        "Deploy to production and watch"
+      ],
+      "correct": 1,
+      "rationale": "The loop is reproduce → isolate → hypothesize → test → fix → regression-test; without reliable reproduction you can never know the fix worked."
+    },
+    {
+      "id": 3,
+      "question": "Bisecting a bug means:",
+      "options": [
+        "Trying every possibility in order",
+        "Cutting the remaining suspicious range roughly in half each time, so a million possibilities need about twenty probes",
+        "Deleting half the source files",
+        "Splitting the bug report among teammates"
+      ],
+      "correct": 1,
+      "rationale": "Bisecting halves the remaining search space each step — git bisect applies exactly this idea to commits."
+    },
+    {
+      "id": 4,
+      "question": "When reading a stack trace, which frame should you examine first?",
+      "options": [
+        "The bottom frame, which is always main()",
+        "The top frame — it is where the error actually happened",
+        "The longest frame",
+        "It does not matter"
+      ],
+      "correct": 1,
+      "rationale": "The top frame names where the error occurred; the frames below it are the callers in reverse order — the path from the crime scene back to the door."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between 'step over' and 'step into' in a debugger?",
+      "options": [
+        "Step over skips the next line entirely without running it; step into runs it",
+        "Step over executes the next line without entering functions it calls; step into dives inside the next function call",
+        "Step into only works on breakpoints; step over works on watchpoints",
+        "They are identical in every debugger"
+      ],
+      "correct": 1,
+      "rationale": "Step over runs the next line at the current level, treating function calls as single steps; step into descends into the called function to watch inside it."
+    },
+    {
+      "id": 6,
+      "question": "Why is logging preferred over scattered print statements?",
+      "options": [
+        "Logs are always faster than print",
+        "Logging is permanent, level-tagged, and filterable by severity without editing code",
+        "Print statements cannot display numbers",
+        "Logs remove the need for tests"
+      ],
+      "correct": 1,
+      "rationale": "Logs carry levels (DEBUG, INFO, WARNING, ERROR) that can be filtered without touching code, and they need not be stripped out like temporary prints."
+    },
+    {
+      "id": 7,
+      "question": "In Git, what does a merge conflict usually mean?",
+      "options": [
+        "The repository is corrupted",
+        "Two branches edited the same lines, so Git asks you to choose the resolution",
+        "You forgot to run git clone",
+        "The commit message was invalid"
+      ],
+      "correct": 1,
+      "rationale": "A conflict arises only when two branches change the same lines; Git pauses the merge and asks you to pick the correct combined result."
+    },
+    {
+      "id": 8,
+      "question": "In the testing pyramid, why do unit tests form the broad base?",
+      "options": [
+        "They run in milliseconds and can number in the thousands, using mocks to isolate one function or class",
+        "They exercise the whole system through the real UI",
+        "They are required by law",
+        "They replace the need for integration tests"
+      ],
+      "correct": 0,
+      "rationale": "Unit tests are the many, fast, isolated tests of the pyramid; mocks replace collaborators like databases, while end-to-end tests are few, slow, and closest to the user."
+    },
+    {
+      "id": 9,
+      "question": "The three beats of test-driven development are:",
+      "options": [
+        "Plan, code, ship",
+        "Red — write a failing test; green — make it pass minimally; refactor — clean up while staying green",
+        "Write code, write tests, delete code",
+        "Commit, push, pull"
+      ],
+      "correct": 1,
+      "rationale": "TDD's rhythm is red-green-refactor: the failing test describes the desired behavior, minimal code makes it pass, and refactoring cleans both while the suite stays green."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson's timebox guidance, how long should you struggle alone before asking for help?",
+      "options": [
+        "Never ask for help under any circumstances",
+        "A bounded slot of roughly 30–45 minutes, then seek help",
+        "At least one full week",
+        "Ask immediately without trying anything"
+      ],
+      "correct": 1,
+      "rationale": "Struggle deliberately for a bounded 30–45 minute slot — enough to learn from the problem — then ask well: goal, expected vs actual, what you tried, versions, and a minimal example."
+    }
+  ]
+}

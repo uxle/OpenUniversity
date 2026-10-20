@@ -1,0 +1,126 @@
+{
+  "lessonId": "work-energy-and-power",
+  "title": "Work, Energy, and Power: The Currency of Physics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The work done by a force is zero when:",
+      "options": [
+        "Force and displacement are parallel",
+        "The body moves at constant speed",
+        "Force and displacement are perpendicular",
+        "The body is very heavy"
+      ],
+      "correct": 2,
+      "rationale": "With θ = 90°, cos θ = 0, so W = Fs cos 90° = 0 — as when carrying a bag while walking on level ground."
+    },
+    {
+      "id": 2,
+      "question": "What is the SI unit of work?",
+      "options": [
+        "watt",
+        "newton",
+        "pascal",
+        "joule"
+      ],
+      "correct": 3,
+      "rationale": "Work is measured in joules, where 1 J = 1 N·m; the watt measures power and the newton measures force."
+    },
+    {
+      "id": 3,
+      "question": "If the speed of a moving body doubles, its kinetic energy:",
+      "options": [
+        "Doubles",
+        "Halves",
+        "Stays the same",
+        "Quadruples"
+      ],
+      "correct": 3,
+      "rationale": "KE = ½mv², so at 2v the energy is ½m(2v)² = 4 × ½mv² — four times larger."
+    },
+    {
+      "id": 4,
+      "question": "Using the lesson's example, a ball dropped from 20 m hits the ground at about:",
+      "options": [
+        "40 m/s",
+        "20 m/s",
+        "14 m/s",
+        "10 m/s"
+      ],
+      "correct": 1,
+      "rationale": "v = √(2gh) = √(2 × 9.8 × 20) = √392 ≈ 20 m/s, as all the PE converts to KE."
+    },
+    {
+      "id": 5,
+      "question": "At the lowest point of a pendulum's swing:",
+      "options": [
+        "PE is maximum, KE is minimum",
+        "KE is maximum, PE is minimum",
+        "Both are maximum",
+        "Both are zero"
+      ],
+      "correct": 1,
+      "rationale": "The pendulum trades PE for KE each swing: at the ends of the arc PE peaks; at the lowest point KE peaks."
+    },
+    {
+      "id": 6,
+      "question": "The unit of power is the:",
+      "options": [
+        "watt, equal to 1 J/s",
+        "joule",
+        "newton per metre",
+        "kilowatt-hour"
+      ],
+      "correct": 0,
+      "rationale": "Power P = W/t is work per unit time, so its unit is the watt, defined as 1 joule per second."
+    },
+    {
+      "id": 7,
+      "question": "One kilowatt-hour equals how many joules?",
+      "options": [
+        "3.6 × 10⁶ J",
+        "3.6 × 10³ J",
+        "1 × 10⁶ J",
+        "9.8 × 10⁶ J"
+      ],
+      "correct": 0,
+      "rationale": "1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J."
+    },
+    {
+      "id": 8,
+      "question": "In the lesson's example, a 100 W bulb burning for 10 hours consumes:",
+      "options": [
+        "10 units",
+        "1 unit",
+        "0.1 unit",
+        "100 units"
+      ],
+      "correct": 1,
+      "rationale": "100 W × 10 h = 1000 Wh = 1 kWh, which is exactly one 'unit' on a domestic electricity bill."
+    },
+    {
+      "id": 9,
+      "question": "The work–energy theorem states that:",
+      "options": [
+        "Net work equals the total energy of a body",
+        "Net work equals the power developed",
+        "Net work equals the change in kinetic energy",
+        "Net work equals the change in momentum"
+      ],
+      "correct": 2,
+      "rationale": "The net work done on a body equals its change in kinetic energy — pushing adds KE, friction removes it."
+    },
+    {
+      "id": 10,
+      "question": "In the worked example, the power of a 50 kg student climbing 4 m of stairs in 10 s is about:",
+      "options": [
+        "196 W",
+        "1960 W",
+        "500 W",
+        "20 W"
+      ],
+      "correct": 0,
+      "rationale": "W = mgh = 50 × 9.8 × 4 ≈ 1960 J, and P = 1960 ÷ 10 ≈ 196 W."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+# The OSI and TCP/IP Models: How Layers Organize a Network
+
+> Networking is split into layers, each serving the one above it and
+> using the one below. This lesson maps the seven OSI layers, the four
+> TCP/IP layers, and the TCP-versus-UDP choice that dominates practice.
+
+## 1. Why Layering?
+
+Chopping network functions into layers buys three things:
+
+- **Modularity** — swap Wi-Fi for ethernet without touching browsers.
+- **Interoperability** — any HTTP server works with any browser, on
+  any operating system, over any physical medium.
+- **Divide-and-conquer debugging** — a cable test probes layer 1,
+  `ping` probes layer 3: failures get isolated fast.
+
+## 2. The Seven OSI Layers
+
+| # | Layer | Data unit (PDU) | Job | Examples |
+| --- | --- | --- | --- | --- |
+| 7 | Application | data | serves applications directly | HTTP, DNS, SMTP |
+| 6 | Presentation | data | format, compress, encrypt | TLS, JPEG |
+| 5 | Session | data | open, manage, close dialogs | RPC, NetBIOS |
+| 4 | Transport | segment | end-to-end delivery, reliability | TCP, UDP |
+| 3 | Network | packet | logical addressing, routing | IP, ICMP, routers |
+| 2 | Data link | frame | one-hop delivery, MAC addresses | Ethernet, switches |
+| 1 | Physical | bits | signals over the medium | cables, hubs, radio |
+
+OSI is the *reference* model — a teaching and vocabulary framework.
+The Internet actually runs the leaner TCP/IP stack.
+
+## 3. Remembering the Stack
+
+Bottom-up — **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza
+**A**way — reads Physical, Data link, Network, Transport, Session,
+Presentation, Application. Top-down the same stack reads **A**ll
+**P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing.
+
+[tip]
+Layer numbers are shorthand operators use: "a layer 2 switch" versus
+"a layer 3 router" instantly tells you what the box can inspect.
+[/tip]
+
+## 4. Encapsulation and Decapsulation
+
+Sending a message wraps it layer by layer; receiving unwraps in reverse:
+
+@diagram tree id="encapsulation-layers" layout="tree" aria="Encapsulation adding a header at each layer down the stack"
+  "Data (application)" -> "Segment (plus TCP header)"
+  "Segment (plus TCP header)" -> "Packet (plus IP header)"
+  "Packet (plus IP header)" -> "Frame (plus MAC header and trailer)"
+  "Frame (plus MAC header and trailer)" -> "Bits on the wire"
+@/diagram
+
+Each layer treats the layer above's data as an opaque payload — the
+**encapsulation** principle. Decapsulation strips the headers in
+reverse order on the receiving machine.
+
+## 5. The TCP/IP Model
+
+| TCP/IP layer | Maps to OSI | Job | Protocols |
+| --- | --- | --- | --- |
+| Application | 7, 6, 5 | everything user-facing | HTTP, DNS, SMTP, TLS |
+| Transport | 4 | ports, reliability, flow control | TCP, UDP |
+| Internet | 3 | IP addressing and routing | IP, ICMP |
+| Link | 2, 1 | frames on the local medium | Ethernet, Wi-Fi |
+
+## 6. TCP vs UDP
+
+| Feature | TCP | UDP |
+| --- | --- | --- |
+| Connection | connection-oriented (handshake) | connectionless |
+| Reliability | ACKs plus retransmission | none |
+| Ordering | sequence numbers restore order | not guaranteed |
+| Speed | slower | faster, minimal overhead |
+| Header size | 20 bytes | 8 bytes |
+| Data style | byte stream | discrete datagrams |
+| Typical uses | web, email, file transfer | DNS, streaming, gaming, VoIP |
+
+[example]
+A web page (TCP) must arrive complete and in order — a re-sent packet
+is better than a gap. A live voice call (UDP) would rather skip a
+lost syllable than pause the conversation to request it again.
+[/example]
+
+## 7. Connections: The Three-Way Handshake
+
+Before exchanging TCP data, client and server synchronize:
+
+```text
+Client                              Server
+  | ---- SYN (seq = x) ------------> |
+  | <--- SYN-ACK (seq = y, ack x+1) - |
+  | ---- ACK (ack = y+1) ----------> |   connection open
+```
+
+Teardown uses FIN segments, acknowledged in each direction. UDP skips
+all of this — send, and hope.
+
+[summary]
+OSI names seven layers with PDUs bits, frames, packets, segments, data;
+TCP/IP compresses them into Application, Transport, Internet, Link.
+Encapsulation adds one header per layer on the way down. TCP is
+reliable and ordered, opened by the SYN, SYN-ACK, ACK handshake; UDP
+is the fast, connectionless alternative for streaming, DNS, and games.
+[/summary]

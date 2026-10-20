@@ -1,0 +1,76 @@
+{
+  "lessonId": "upanishads-and-vedanta",
+  "title": "The Upanishads and Vedanta: Brahman, Atman, and Liberation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The word 'Vedanta' refers to:",
+      "options": ["The ritual portions of the Vedas", "The end — both the concluding portions and the goal — of the Vedas", "A school of grammar", "The epics of India"],
+      "correct": 1,
+      "rationale": "Vedanta means the end of the Vedas in both senses: the Upanishads that close the Vedic corpus and the goal they teach — knowledge of Brahman."
+    },
+    {
+      "id": 2,
+      "question": "According to the traditional Muktika list, how many Upanishads are there?",
+      "options": ["Thirteen", "One hundred and eight", "Ten principal Upanishads", "Fifty-five"],
+      "correct": 1,
+      "rationale": "The Muktika canon counts 108 Upanishads, of which about 13 are treated as philosophically principal."
+    },
+    {
+      "id": 3,
+      "question": "The mahavakya 'Tat tvam asi' — That thou art — comes from which Upanishad?",
+      "options": ["Brihadaranyaka", "Mandukya", "Chandogya", "Aitareya"],
+      "correct": 2,
+      "rationale": "'Tat tvam asi' is Chandogya's great sentence; 'Aham brahmasmi' is Brihadaranyaka's, 'Prajnanam brahma' Aitareya's, and 'Ayam atma brahma' Mandukya's."
+    },
+    {
+      "id": 4,
+      "question": "Brahman is classically described as:",
+      "options": ["Sat-chit-ananda — being, consciousness, bliss", "The lord of ritual", "The four elements", "The wheel of time"],
+      "correct": 0,
+      "rationale": "The Upanishads characterise the sole ultimate reality as existence, consciousness, and bliss; the Atman, the innermost self, is identical with it."
+    },
+    {
+      "id": 5,
+      "question": "The Upanishadic pivot away from the ritual Vedas is the claim that liberation comes through:",
+      "options": ["More elaborate sacrifice", "Direct knowledge (jnana) of the identity of Atman and Brahman", "Ascetic fasting alone", "Vedic grammar"],
+      "correct": 1,
+      "rationale": "Knowledge replaces sacrifice: avidya and maya conceal the ever-present identity, and moksha dawns when jnana dissolves the ignorance."
+    },
+    {
+      "id": 6,
+      "question": "Which trio summarises Shankara's Advaita?",
+      "options": ["Brahma satyam, jagat mithya, jivo brahmaiva naparah", "Pancha-bheda", "Sarvam khalvidam brahma alone", "Prapatti, bhakti, jnana"],
+      "correct": 0,
+      "rationale": "Brahman alone is real, the world is appearance, and the soul is none other than Brahman — the core of Shankara's (788–820 CE) non-dualism."
+    },
+    {
+      "id": 7,
+      "question": "The doctrine of ajativada — that nothing ever truly originates — is associated with:",
+      "options": ["Madhva", "Gaudapada", "Vivekananda", "Jaimini"],
+      "correct": 1,
+      "rationale": "Gaudapada's Mandukya Karika teaches ajativada; he stands at the head of the Advaita line, two teachers before Shankara."
+    },
+    {
+      "id": 8,
+      "question": "Ramanuja's Vishishtadvaita holds that souls and matter are:",
+      "options": ["Illusory appearances of Brahman", "Real as the body and modes of a Brahman with attributes", "Identical with God", "Eternal and wholly independent of God"],
+      "correct": 1,
+      "rationale": "For Ramanuja (1017–1137), one saguna Brahman exists, with souls and matter as its real but dependent body — hence 'qualified non-dualism'."
+    },
+    {
+      "id": 9,
+      "question": "Madhva's five eternal differences (pancha-bheda) include:",
+      "options": ["Atman is Brahman", "God differs from soul, God from matter, souls from one another, souls from matter, and matter from matter", "The world is mithya", "Ritual outranks knowledge"],
+      "correct": 1,
+      "rationale": "Dvaita's realism posits five irreducible differences across God, souls, and matter; Vishnu is supreme and liberation comes through devotion."
+    },
+    {
+      "id": 10,
+      "question": "Who carried Vedanta to the World's Parliament of Religions in Chicago in 1893?",
+      "options": ["Ramakrishna", "Swami Vivekananda", "Dayananda Saraswati", "Aurobindo"],
+      "correct": 1,
+      "rationale": "Vivekananda's 1893 Chicago address announced the harmony of religions and launched modern Neo-Vedanta and the Ramakrishna Mission."
+    }
+  ]
+}

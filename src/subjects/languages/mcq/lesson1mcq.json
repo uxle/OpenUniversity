@@ -1,5 +1,81 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "How Languages Work: An Introduction to Language Study",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which level of language deals with how words are built from meaningful parts?",
+      "options": ["Phonology", "Morphology", "Pragmatics", "Semantics"],
+      "correct": 1,
+      "rationale": "Morphology handles word-building: 'un-break-able' contains three meaningful units (morphemes)."
+    },
+    {
+      "id": 2,
+      "question": "Saying 'Can you pass the salt?' to make a request belongs to which level?",
+      "options": ["Syntax", "Phonology", "Pragmatics", "Morphology"],
+      "correct": 2,
+      "rationale": "Pragmatics is meaning in context — the sentence is grammatically a question but functionally a request."
+    },
+    {
+      "id": 3,
+      "question": "English 'father', Latin 'pater', and Sanskrit 'pitṛ' are examples of:",
+      "options": ["Loanwords", "Cognates", "Idioms", "Dialects"],
+      "correct": 1,
+      "rationale": "Cognates are words descended from a common ancestor — evidence that these languages belong to one family (Indo-European)."
+    },
+    {
+      "id": 4,
+      "question": "Devanagari, where consonant letters carry a default vowel that can be overridden, is classified as:",
+      "options": ["An alphabet", "An abjad", "A logography", "An abugida"],
+      "correct": 3,
+      "rationale": "Abugidas (like Devanagari) write consonants with an inherent vowel, marking other vowels with diacritics."
+    },
+    {
+      "id": 5,
+      "question": "Which study strategy does research on memory most strongly support?",
+      "options": ["Four hours of study once a week", "Spaced repetition before forgetting points", "Reading each word once loudly", "Avoiding all mistakes"],
+      "correct": 1,
+      "rationale": "Consistency beats intensity: reviewing at spaced intervals just before you would forget strengthens memory through repeated retrieval."
+    },
+    {
+      "id": 6,
+      "question": "The fact that 'The dog bit the man' means something different from 'The man bit the dog' illustrates which level of language?",
+      "options": ["Phonology", "Syntax", "Morphology", "Pragmatics"],
+      "correct": 1,
+      "rationale": "Syntax handles sentence structure — reordering the same words changes who bites whom."
+    },
+    {
+      "id": 7,
+      "question": "'Bank' meaning a riverside versus 'bank' meaning a financial institution falls under which level?",
+      "options": ["Semantics", "Syntax", "Phonology", "Morphology"],
+      "correct": 0,
+      "rationale": "Semantics deals with meaning — these two senses of 'bank' show how one word can carry multiple meanings."
+    },
+    {
+      "id": 8,
+      "question": "Tamil and Telugu belong to which language family?",
+      "options": ["Indo-European", "Sino-Tibetan", "Dravidian", "Austronesian"],
+      "correct": 2,
+      "rationale": "Tamil, Telugu, Kannada and Malayalam are listed as members of the Dravidian family."
+    },
+    {
+      "id": 9,
+      "question": "Arabic script, where letters mainly represent consonants, is classified as:",
+      "options": ["An alphabet", "An abugida", "A logography", "An abjad"],
+      "correct": 3,
+      "rationale": "Abjads write letters mainly for consonants — like Arabic and Hebrew; logographies like Chinese write whole words/morphemes."
+    },
+    {
+      "id": 10,
+      "question": "What does the strategy 'comprehensible input' mean?",
+      "options": [
+        "Reading only grammar rules repeatedly",
+        "Reading and listening slightly above your current level",
+        "Memorizing isolated word lists",
+        "Avoiding listening until speaking is mastered"
+      ],
+      "correct": 1,
+      "rationale": "Comprehensible input means consuming language material just above your level — hard enough to stretch you but still understandable."
+    }
+  ]
 }

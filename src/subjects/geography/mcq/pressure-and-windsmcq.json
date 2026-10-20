@@ -1,0 +1,76 @@
+{
+  "lessonId": "pressure-and-winds",
+  "title": "Pressure Belts and Winds: The Engine of World Climate",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Ferrel's law states that the Coriolis effect deflects winds:",
+      "options": ["Left in the Northern Hemisphere", "Right in the Northern Hemisphere and left in the Southern", "Left in both hemispheres", "Toward the nearest low pressure always"],
+      "correct": 1,
+      "rationale": "Earth's rotation deflects moving air to the right in the Northern Hemisphere and to the left in the Southern Hemisphere."
+    },
+    {
+      "id": 2,
+      "question": "The equatorial low-pressure belt with its calm, thundery air is nicknamed the:",
+      "options": ["Horse latitudes", "Doldrums", "Roaring forties", "Polar high"],
+      "correct": 1,
+      "rationale": "The doldrums mark the equatorial low, where rising moist air produces daily thunderstorms but weak surface winds."
+    },
+    {
+      "id": 3,
+      "question": "The subtropical high-pressure belts near 30–35° latitude are associated with:",
+      "options": ["The world's great deserts", "The ITCZ", "Frequent cyclones", "The auroras"],
+      "correct": 0,
+      "rationale": "Sinking, drying air in the horse latitudes suppresses rain beneath the subtropical highs — hence the Sahara and other great deserts."
+    },
+    {
+      "id": 4,
+      "question": "The trade winds blow from the subtropical highs toward the equator as:",
+      "options": ["North-easterlies in the Northern Hemisphere", "South-westerlies in the Northern Hemisphere", "Westerlies in both hemispheres", "Polar easterlies"],
+      "correct": 0,
+      "rationale": "Coriolis deflection turns the pole-to-equator flow into north-east trades in the Northern Hemisphere and south-east trades in the Southern."
+    },
+    {
+      "id": 5,
+      "question": "The stormy westerlies of 40–50°S are famously called the:",
+      "options": ["Horse latitudes", "Doldrums", "Roaring forties", "Furious fifties only"],
+      "correct": 2,
+      "rationale": "Unblocked by land, the southern westerlies howl at 40–50°S as the roaring forties, deepening into the furious fifties."
+    },
+    {
+      "id": 6,
+      "question": "Which is a hot, dusty wind blowing from the Sahara toward the Mediterranean?",
+      "options": ["Mistral", "Sirocco", "Chinook", "Harmattan"],
+      "correct": 1,
+      "rationale": "The sirocco crosses from the Sahara to the Mediterranean carrying red dust that falls as blood rain; the harmattan is its West African cousin."
+    },
+    {
+      "id": 7,
+      "question": "The Loo of northern India is best described as:",
+      "options": ["A cold winter drainage wind", "A hot, dry, gusty wind of summer afternoons", "A sea breeze", "A polar easterly"],
+      "correct": 1,
+      "rationale": "The Loo blows hot and dry across the northern plains on summer afternoons, notorious for heat waves."
+    },
+    {
+      "id": 8,
+      "question": "The calm, cloud-free centre of a tropical cyclone is the:",
+      "options": ["Eye", "Eye wall", "Storm surge", "Front"],
+      "correct": 0,
+      "rationale": "Sinking air at the cyclone's centre produces the calm eye, ringed by the violent eye wall; the deadliest hazard is usually the storm surge."
+    },
+    {
+      "id": 9,
+      "question": "Temperate cyclones differ from tropical cyclones because they are:",
+      "options": ["Born over warm equatorial oceans", "Formed along the polar front from meeting air masses", "Always stronger", "Centred on a calm eye"],
+      "correct": 1,
+      "rationale": "Extratropical cyclones are frontal, powered by the temperature contrast of colliding warm and cold air masses in mid-latitudes."
+    },
+    {
+      "id": 10,
+      "question": "The northward retreat of the subtropical westerly jet in early June signals:",
+      "options": ["The onset of winter in India", "The burst of the southwest monsoon", "Neap tides", "El Nino"],
+      "correct": 1,
+      "rationale": "The subtropical westerly jet shifts north of the Himalaya as the monsoon sets in over India — a classic jet-stream weather link."
+    }
+  ]
+}

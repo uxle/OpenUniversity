@@ -1,0 +1,140 @@
+/* src/styles/components/command-palette.css — Ctrl+K quick launcher.
+   Overlay near the top (Raycast/VS Code position), same elevation and
+   radius language as modal.css, theme-aware via the shared tokens. */
+
+.ou-cmdk {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--ou-z-modal) + 10);
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12vh var(--ou-space-4) var(--ou-space-5);
+}
+.ou-cmdk[hidden] { display: none; }
+
+.ou-cmdk__panel {
+  width: min(560px, 100%);
+  max-height: min(60vh, 480px);
+  display: flex;
+  flex-direction: column;
+  background: var(--ou-surface);
+  border: 1px solid var(--ou-border-strong);
+  border-radius: var(--ou-radius-lg);
+  box-shadow: var(--ou-shadow-lg);
+  overflow: hidden;
+  animation: ou-cmdk-in var(--ou-transition-fast) both;
+}
+@keyframes ou-cmdk-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.985); }
+  to   { opacity: 1; transform: none; }
+}
+
+.ou-cmdk__head {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-3);
+  padding: var(--ou-space-3) var(--ou-space-4);
+  border-bottom: 1px solid var(--ou-border);
+  flex-shrink: 0;
+}
+.ou-cmdk__glass { font-size: 1.05rem; color: var(--ou-text-muted); }
+
+.ou-cmdk__input {
+  flex: 1;
+  min-width: 0;
+  border: none !important;
+  background: transparent !important;
+  padding: var(--ou-space-2) 0 !important;
+  font-size: 1.05rem;
+  color: var(--ou-text);
+  outline: none;
+}
+.ou-cmdk__input::placeholder { color: var(--ou-text-muted); }
+
+.ou-cmdk__esc {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-1);
+  border: 1px solid var(--ou-border);
+  background: var(--ou-surface-subtle);
+  color: var(--ou-text-muted);
+  border-radius: var(--ou-radius-sm);
+  padding: 2px var(--ou-space-2);
+  font-size: var(--ou-fs-xs);
+  cursor: pointer;
+}
+
+.ou-cmdk__list {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--ou-space-2);
+  flex: 1;
+}
+.ou-cmdk__group {
+  font-size: var(--ou-fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ou-text-muted);
+  padding: var(--ou-space-3) var(--ou-space-2) var(--ou-space-1);
+}
+
+.ou-cmdk__item {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-3);
+  padding: var(--ou-space-3);
+  border-radius: var(--ou-radius-md);
+  cursor: pointer;
+  color: var(--ou-text);
+  min-height: 44px; /* touch-target rule */
+}
+.ou-cmdk__item svg { color: var(--ou-text-muted); flex-shrink: 0; font-size: 1.05rem; }
+.ou-cmdk__item[aria-selected="true"] {
+  background: var(--ou-accent-subtle);
+  color: var(--ou-accent);
+}
+.ou-cmdk__item[aria-selected="true"] svg { color: var(--ou-accent); }
+
+.ou-cmdk__label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--ou-fs-md);
+}
+
+.ou-cmdk__hint {
+  flex-shrink: 0;
+  font-size: var(--ou-fs-xs);
+  color: var(--ou-text-muted);
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ou-cmdk__empty {
+  padding: var(--ou-space-5);
+  text-align: center;
+  color: var(--ou-text-muted);
+  font-size: var(--ou-fs-sm);
+}
+
+.ou-cmdk__foot {
+  display: flex;
+  gap: var(--ou-space-4);
+  padding: var(--ou-space-2) var(--ou-space-4);
+  border-top: 1px solid var(--ou-border);
+  color: var(--ou-text-muted);
+  font-size: var(--ou-fs-xs);
+  flex-shrink: 0;
+}
+
+/* Reduced motion: skip the pop-in. */
+[data-a11y-reduced-motion="true"] .ou-cmdk__panel { animation: none; }

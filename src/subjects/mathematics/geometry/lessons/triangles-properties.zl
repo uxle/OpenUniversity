@@ -1,0 +1,139 @@
+# Triangles: Classification, Congruence, and Similarity
+
+> The triangle is geometry's atom — rigid, simple, everywhere. Its
+> angle sum, its inequality, and its famous theorem let you measure
+> heights, prove equality, and scale shapes with confidence.
+
+## 1. Classifying Triangles
+
+@diagram tree id="triangle-families" layout="tree" aria="Triangles classified by sides and by angles"
+  "Triangles" -> "By sides: scalene, isosceles, equilateral"
+  "Triangles" -> "By angles: acute, right-angled, obtuse"
+@/diagram
+
+| Family | Meaning | Key fact |
+| --- | --- | --- |
+| Scalene | all sides different | all angles different |
+| Isosceles | two sides equal | base angles equal |
+| Equilateral | all sides equal | all angles 60° |
+| Acute | all angles < 90° | — |
+| Right | one angle = 90° | hypotenuse is the longest side |
+| Obtuse | one angle > 90° | side facing it is the longest |
+
+## 2. The Angle Sum Is Always 180°
+
+**Angle-sum property:** the three interior angles of any triangle add
+to 180°. Proof sketch: through one vertex draw a line parallel to the
+opposite side; the two alternate angles created match the remote
+interior angles, and with the vertex angle they sit on a straight line.
+
+[definition]
+**Exterior angle theorem:** an exterior angle equals the sum of the
+two remote interior angles — 40° and 65° give an exterior angle of
+105°.
+[/definition]
+
+## 3. The Triangle Inequality and Pythagoras
+
+Any two sides of a triangle must sum to **more** than the third — so
+3, 4, 9 cannot form a triangle (3 + 4 = 7 < 9), and the third side
+of a triangle with sides 5 and 8 lies strictly between 3 and 13.
+
+**Pythagoras' theorem:** in a right triangle, the square on the
+hypotenuse equals the sum of squares on the other two sides.
+
+| Triple | Check |
+| --- | --- |
+| 3, 4, 5 | 9 + 16 = 25 |
+| 5, 12, 13 | 25 + 144 = 169 |
+| 8, 15, 17 | 64 + 225 = 289 |
+| 7, 24, 25 | 49 + 576 = 625 |
+
+Multiples are triples too: 6-8-10 and 9-12-15 are just 3-4-5 scaled.
+
+[example]
+A 13 m ladder leans on a wall with its foot 5 m out. The wall side is
+√(13² − 5²) = √144 = 12 m — the 5-12-13 triple in the wild. The
+**converse**: if a² + b² = c², the angle facing c is exactly 90° —
+so an 8 × 15 rectangle has a 17 m diagonal.
+[/example]
+
+## 4. Congruence: Same Shape AND Size
+
+Two triangles are **congruent** when one is an exact copy of the other.
+
+| Criterion | You need | Note |
+| --- | --- | --- |
+| SSS | all three pairs of sides | |
+| SAS | two sides + the angle **between** them | angle must be included |
+| ASA | two angles + the side between | |
+| AAS | two angles + any corresponding side | |
+| RHS | right angle, hypotenuse, one side | right triangles only |
+
+[warning]
+SSA is **not** a criterion — two different triangles can share two
+sides and a non-included angle. AAA guarantees similarity only: angles
+fix shape, not size. After proving congruence, use **CPCT** —
+corresponding parts of congruent triangles — to claim any remaining
+matching side or angle.
+[/warning]
+
+## 5. Similarity: Same Shape, Any Size
+
+Triangles are **similar** when angles match (AA), all three pairs of
+sides are in one ratio (SSS), or two sides are in one ratio with the
+included angle equal (SAS). For a similarity ratio k:
+
+- corresponding sides scale by k, perimeters by k, **areas by k²**.
+
+[example]
+A triangle with sides 3, 4, 5 meets a similar partner whose shortest
+side is 6, so k = 2: the new sides are 6, 8, 10 and the perimeter
+doubles to 24. If the small one has area 6, the big has 6 × 2² = 24 —
+areas grow by the square of k.
+[/example]
+
+## 6. Parallel Lines and Proportion (Thales)
+
+The **basic proportionality theorem** (Thales): a line parallel to one
+side of a triangle divides the other two sides in the same ratio — if
+AD/DB = 3/2, then AE/EC = 3/2. The converse holds, and the midpoint
+theorem follows: the segment joining midpoints is half the third side,
+parallel to it.
+
+## 7. The Four Centres of a Triangle
+
+| Centre | Lines that meet there | Location |
+| --- | --- | --- |
+| Centroid | the three **medians** | always inside; divides each median 2 : 1 from vertex |
+| Incentre | the three **angle bisectors** | always inside; centre of the inscribed circle |
+| Circumcentre | perpendicular bisectors of sides | inside (acute), midpoint of hypotenuse (right), outside (obtuse) |
+| Orthocentre | the three **altitudes** | inside (acute), at the right-angle vertex (right), outside (obtuse) |
+
+A **median** joins a vertex to the midpoint of the opposite side; an
+**altitude** is perpendicular to it. The circumcentre is equidistant
+from the three vertices, the incentre from the three sides.
+
+## 8. Area Formulas
+
+@math label="eq:triangle-areas"
+A = \tfrac{1}{2} b h
+\qquad\qquad
+A = \sqrt{s(s-a)(s-b)(s-c)},\ \ s = \tfrac{a+b+c}{2}
+@/math
+
+[example]
+**Heron's formula** for sides 13, 14, 15: s = (13 + 14 + 15)/2 = 21,
+so A = √(21 × 8 × 7 × 6) = √7056 = 84 square units. The altitude on
+the 14-side satisfies ½ × 14 × h = 84, so h = 12 — a cross-check.
+[/example]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Angles 40°, 65° — third angle? | 75° (sum is 180°) |
+| Ladder 13 m, foot 5 m out? | wall height 12 m |
+| Congruence criteria? | SSS, SAS, ASA, AAS, RHS |
+| Sides scale by k — areas scale by? | k² |
+| Sides 13, 14, 15 — area? | 84 (Heron, s = 21) |

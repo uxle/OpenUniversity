@@ -1,0 +1,140 @@
+# Greek Philosophy: From the Presocratics to Aristotle
+
+> Greek philosophy began when thinkers swapped mythos for logos —
+> asking what nature, knowledge, and the good life are, using reason
+> and argument alone.
+
+## 1. The Presocratics: Explaining Nature by Nature
+
+The first philosophers, working in Ionia and southern Italy, sought a
+first principle (**arche**) behind the world's variety:
+
+| Thinker | Approx. dates | Arche | Signature idea |
+| --- | --- | --- | --- |
+| Thales | 624–546 BCE | Water | All is water; predicted an eclipse |
+| Anaximander | 610–546 BCE | Apeiron (the boundless) | Cosmos separates out from an unlimited source |
+| Heraclitus | 535–475 BCE | Fire | Everything flows; unity of opposites |
+| Parmenides | 515–450 BCE | Being | Change is an illusion of the senses |
+| Pythagoras | 570–495 BCE | Number | Reality is mathematical |
+| Democritus | 460–370 BCE | Atoms | Indivisible particles moving in the void |
+
+[definition]
+**Mythos** explains by story and divine genealogy; **logos** by
+publicly stateable reasons anyone can examine and dispute. The
+Presocratic switch to logos is the birth of Western philosophy.
+[/definition]
+
+Parmenides and Heraclitus set the agenda: is reality one and
+changeless, or many and in flux? Democritus' atoms answered both at
+once — changeless particles, changing arrangements.
+
+## 2. The Sophists and Socrates
+
+The **Sophists** — travelling paid teachers such as **Protagoras**
+("Man is the measure of all things") and Gorgias — taught rhetoric
+and relativised truth. Plato blamed them for making the weaker
+argument appear the stronger.
+
+**Socrates** (469–399 BCE) wrote nothing; we know him through his
+students **Plato**, **Xenophon**, and the comic playwright
+**Aristophanes**. His contributions:
+
+- The **elenchus** — a cross-examining method that tests a claim by
+  drawing out its consequences until it agrees or contradicts itself.
+- "Know thyself" turned philosophy from nature to the care of the soul;
+  his sole wisdom was knowing what he did not know.
+- Tried in 399 BCE for impiety and corrupting the young, he refused to
+  escape and drank the hemlock, making the examined life his final
+  argument.
+
+## 3. Plato: The Theory of Forms
+
+**Plato** (427–347 BCE), Socrates' greatest student, founded the
+**Academy** — Europe's first school of higher learning. His two-world
+metaphysics:
+
+| Realm | Contents | Feature |
+| --- | --- | --- |
+| Forms (intelligible) | Justice itself, Equality itself | Eternal, perfect, non-material |
+| Appearance (sensible) | Just acts, equal sticks | Changing copies that participate in Forms |
+
+[example]
+The allegory of the cave (Republic, Book VII): prisoners mistake
+shadows for reality; one escapes, adjusts painfully to the fire and
+sunlight, and sees the Form of the Good. Education is turning the
+whole soul toward the light, not pouring facts into an empty vessel.
+[/example]
+
+In the **Republic**, the ideal state mirrors the **tripartite soul** —
+reason should rule, spirit should enforce, appetite should obey:
+philosopher-kings above guardians above producers, and justice is each
+part doing its own work.
+
+## 4. Aristotle: Reality and the Four Causes
+
+**Aristotle** (384–322 BCE) studied twenty years at the Academy,
+tutored Alexander the Great, and founded the **Lyceum**, whose
+peripatetic researchers mapped biology, politics, and logic. Where
+Plato separates Form from things, Aristotle's forms live *in* things:
+knowledge begins with the senses — an early **empiricism**.
+
+He asks of everything: why does it exist? — answered by the **four
+causes**:
+
+| Cause | Question | Example: a bronze statue |
+| --- | --- | --- |
+| Material | What is it made of? | Bronze |
+| Formal | What is its structure? | The sculptor's design |
+| Efficient | What produced it? | The sculptor's labour |
+| Final | What is it for? | To honour a god |
+
+His ethics locates the good in **eudaimonia** (flourishing), achieved
+by virtue as a **golden mean** between excess and deficiency; his
+**syllogism** founded logic as a discipline, unrivalled for millennia.
+
+## 5. Hellenistic Schools: Philosophy as Therapy
+
+After Alexander's conquests, philosophy reorganised around the art of
+living:
+
+@diagram tree id="philosophy-greek-schools" layout="tree" aria="Greek philosophy from Presocratics through classical to Hellenistic schools"
+  "Greek philosophy" -> Presocratic
+  "Greek philosophy" -> Classical
+  "Greek philosophy" -> Hellenistic
+  Classical -> Socrates
+  Socrates -> Plato
+  Plato -> Aristotle
+  Hellenistic -> Stoicism
+  Hellenistic -> Epicureanism
+  Hellenistic -> Skepticism
+  Hellenistic -> Cynicism
+@/diagram
+
+| School | Founder | Chief idea | Goal |
+| --- | --- | --- | --- |
+| Stoicism | Zeno of Citium | Live by reason; control only what is up to you | Apatheia — freedom from destructive passion |
+| Epicureanism | Epicurus | Modest pleasure; gods do not intervene; atomism | Ataraxia — tranquillity |
+| Skepticism | Pyrrho | Suspend judgement on all non-evident matters | Peace of mind (epoché) |
+| Cynicism | Diogenes of Sinope | Virtue alone suffices; reject convention | Self-sufficiency and freedom |
+
+The later Stoa — **Epictetus** the ex-slave and emperor **Marcus
+Aurelius** — made it a practical therapy of judgement.
+
+## 6. Why the Greeks Still Matter
+
+1. They set the problems and the vocabulary — substance, cause,
+   virtue, category, syllogism.
+2. His works returned to Europe through Islamic philosophers such as
+   Avicenna and Averroes, dominating science until the 1600s.
+3. The Socratic template — follow the argument wherever it leads —
+   remains the discipline's working definition.
+
+[summary]
+The Presocratics replaced myth with logos, seeking the arche from
+water to atoms. Socrates invented cross-examination and died for the
+examined life. Plato split reality into Forms and copies and designed
+the philosopher-king's state; Aristotle kept forms within things and
+explained them by four causes, the golden mean, and syllogistic logic.
+The Hellenistic schools — Stoic, Epicurean, Skeptic, Cynic — made
+philosophy a therapy for living.
+[/summary]

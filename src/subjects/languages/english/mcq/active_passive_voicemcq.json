@@ -29,6 +29,48 @@
       "options": ["was/were + V1+ing", "was/were + being + V3", "had + been + V3", "will/shall + be + V3"],
       "correct": 1,
       "rationale": "Past Continuous Passive uses: was/were + being + V3, as opposed to the Active form was/were + V1+ing."
+    },
+    {
+      "id": 5,
+      "question": "What is the Passive structure for Present Perfect Tense?",
+      "options": ["is/am/are + being + V3", "has/have + been + V3", "had + been + V3", "was/were + V3"],
+      "correct": 1,
+      "rationale": "Present Perfect Passive uses: has/have + been + V3 — e.g., 'He has done the work' → 'The work has been done by him.'"
+    },
+    {
+      "id": 6,
+      "question": "What is the Passive structure for Future Indefinite Tense?",
+      "options": ["will/shall + be + V3", "will/shall + V3", "will/shall + have been + V3", "will/shall + being + V3"],
+      "correct": 0,
+      "rationale": "Future Indefinite Passive uses: will/shall + be + V3. (Future Perfect instead uses will/shall + have been + V3.)"
+    },
+    {
+      "id": 7,
+      "question": "What is the Passive structure for sentences containing Modals?",
+      "options": ["Modal + V3", "Modal + being + V3", "Modal + be + V3", "Modal + have + V3"],
+      "correct": 2,
+      "rationale": "For Modals, the passive structure is Modal + be + V3, e.g., 'You should read this book' → 'This book should be read by you.'"
+    },
+    {
+      "id": 8,
+      "question": "\"I know you.\" — Choose the correct Passive form.",
+      "options": ["You are known by me.", "You are known to me.", "You know me.", "You were known by me."],
+      "correct": 1,
+      "rationale": "With 'know', the preposition 'to' takes the place of 'by': 'I know you' → 'You are known to me.'"
+    },
+    {
+      "id": 9,
+      "question": "Which of these is a correct Passive conversion of the negative imperative \"Don't tell a lie.\"?",
+      "options": ["A lie is not told.", "Let a lie not be told.", "You are forbidden to tell a lie.", "You should not tell a lie."],
+      "correct": 2,
+      "rationale": "Negative imperatives convert to 'You are ordered not to...' or 'You are forbidden to...' structures — here: You are forbidden to tell a lie."
+    },
+    {
+      "id": 10,
+      "question": "\"She writes a letter.\" — Choose the correct Passive form.",
+      "options": ["A letter is written by her.", "A letter was written by her.", "A letter has written by her.", "A letter is writing by her."],
+      "correct": 0,
+      "rationale": "Present Indefinite Active (V1+s/es) converts to Passive as is/am/are + V3: 'writes' → 'is written', and the object 'a letter' becomes the subject."
     }
   ]
 }

@@ -1,0 +1,126 @@
+{
+  "lessonId": "light-and-optics",
+  "title": "Light and Optics: Reflection, Refraction, and Lenses",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The image formed by a plane mirror is:",
+      "options": [
+        "Real and inverted",
+        "Virtual and laterally inverted",
+        "Real and magnified",
+        "Not formed at all"
+      ],
+      "correct": 1,
+      "rationale": "A plane mirror forms a virtual, erect image as far behind the mirror as the object is in front, with left and right swapped."
+    },
+    {
+      "id": 2,
+      "question": "Vehicle rear-view mirrors are convex because they:",
+      "options": [
+        "Magnify distant objects",
+        "Form real images",
+        "Give a wide field of view with erect, small images",
+        "Concentrate sunlight"
+      ],
+      "correct": 2,
+      "rationale": "Convex mirrors diverge light, always forming small, erect, virtual images with a wide field of view — ideal for spotting traffic behind."
+    },
+    {
+      "id": 3,
+      "question": "In the lesson's worked example, an object 30 cm from a concave mirror of focal length 20 cm forms an image at:",
+      "options": [
+        "60 cm",
+        "30 cm",
+        "12 cm",
+        "50 cm"
+      ],
+      "correct": 0,
+      "rationale": "1/v = 1/20 − 1/30 = 1/60, so v = 60 cm — a real, inverted image of magnification −2."
+    },
+    {
+      "id": 4,
+      "question": "Which medium in the lesson's chart has the highest refractive index?",
+      "options": [
+        "Water (1.33)",
+        "Crown glass (1.52)",
+        "Diamond (2.42)",
+        "Flint glass (1.62)"
+      ],
+      "correct": 2,
+      "rationale": "Diamond's n = 2.42 is the highest listed, so light travels slowest in it and bends most."
+    },
+    {
+      "id": 5,
+      "question": "Stars twinkle because of:",
+      "options": [
+        "Total internal reflection",
+        "Atmospheric refraction through shifting air layers",
+        "Dispersion by clouds",
+        "Reflection from the Moon"
+      ],
+      "correct": 1,
+      "rationale": "Changing air density keeps bending starlight slightly differently, so the star's apparent position and brightness flicker."
+    },
+    {
+      "id": 6,
+      "question": "An optical fibre transmits light along a bent glass thread by:",
+      "options": [
+        "Simple reflection",
+        "Refraction",
+        "Total internal reflection",
+        "Dispersion"
+      ],
+      "correct": 2,
+      "rationale": "Light striking the fibre wall beyond the critical angle reflects totally, staying trapped inside — the backbone of internet cables."
+    },
+    {
+      "id": 7,
+      "question": "The power of a lens is measured in:",
+      "options": [
+        "watt",
+        "dioptre",
+        "metre",
+        "joule"
+      ],
+      "correct": 1,
+      "rationale": "Lens power P = 1/f (f in metres) is expressed in dioptres (D)."
+    },
+    {
+      "id": 8,
+      "question": "A convex lens of focal length 25 cm has a power of:",
+      "options": [
+        "+4 D",
+        "−4 D",
+        "+0.25 D",
+        "+25 D"
+      ],
+      "correct": 0,
+      "rationale": "P = 1/f = 1/0.25 m = +4 D; the convex (converging) lens takes a positive power."
+    },
+    {
+      "id": 9,
+      "question": "When white light passes through a prism, the colour deviated the most is:",
+      "options": [
+        "Red",
+        "Yellow",
+        "Violet",
+        "Green"
+      ],
+      "correct": 2,
+      "rationale": "Refractive index rises with frequency across the ROYGBIV spectrum, so violet bends most and red least."
+    },
+    {
+      "id": 10,
+      "question": "Hypermetropia (long sight) is corrected using a:",
+      "options": [
+        "Concave (diverging) lens",
+        "Convex (converging) lens",
+        "Bifocal lens",
+        "Cylindrical lens"
+      ],
+      "correct": 1,
+      "rationale": "The hypermetropic eye forms images behind the retina, so a converging lens pulls the focus forward onto it."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "elasticity",
+  "title": "Elasticity: How Sensitive Markets Are to Price and Income",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Price rises by 10% and quantity demanded falls by 20%. Price elasticity of demand is:",
+      "options": ["0.5, inelastic", "2, elastic", "20, perfectly elastic", "10, unitary"],
+      "correct": 1,
+      "rationale": "PED = %ΔQd ÷ %ΔP = 20/10 = 2, which exceeds 1, so demand is elastic."
+    },
+    {
+      "id": 2,
+      "question": "The single most important determinant of price elasticity of demand is:",
+      "options": ["The size of the producer", "Availability of close substitutes", "The colour of the packaging", "The prevailing wage rate"],
+      "correct": 1,
+      "rationale": "The more close substitutes exist, the easier buyers switch away when price rises — the biggest driver of elasticity."
+    },
+    {
+      "id": 3,
+      "question": "A perfectly inelastic demand curve is:",
+      "options": ["A horizontal line", "A vertical line", "A rectangular hyperbola", "An upward-sloping line"],
+      "correct": 1,
+      "rationale": "PED = 0 means quantity demanded does not respond to price at all, so the curve is vertical — e.g., a life-saving medicine."
+    },
+    {
+      "id": 4,
+      "question": "When demand is inelastic, a seller who raises the price will find that total revenue:",
+      "options": ["Rises", "Falls", "Stays exactly the same", "First falls then doubles"],
+      "correct": 0,
+      "rationale": "With PED < 1, quantity falls proportionally less than price rises, so revenue P × Q increases — the reason sin taxes target inelastic goods."
+    },
+    {
+      "id": 5,
+      "question": "The midpoint (arc) method of computing elasticity is preferred because it:",
+      "options": ["Removes the sign of the answer", "Gives the same value whichever direction the price moves", "Requires no data on quantities", "Converts elasticity into slope"],
+      "correct": 1,
+      "rationale": "The arc method averages both endpoints, so elasticity computed from A to B equals that from B to A."
+    },
+    {
+      "id": 6,
+      "question": "A good with a negative income elasticity of demand is called:",
+      "options": ["A luxury", "A normal good", "An inferior good", "A complementary good"],
+      "correct": 2,
+      "rationale": "YED < 0 means demand falls as income rises — the mark of an inferior good such as coarse grains or generic brands."
+    },
+    {
+      "id": 7,
+      "question": "Cross elasticity of demand between petrol and cars is expected to be:",
+      "options": ["Positive, since they are substitutes", "Negative, since they are complements", "Zero, since they are unrelated", "Exactly one by definition"],
+      "correct": 1,
+      "rationale": "Complements have XED < 0: costlier petrol reduces driving and hence the demand for cars."
+    },
+    {
+      "id": 8,
+      "question": "For a necessity good with an income elasticity between 0 and 1, as household income rises, the share of income spent on it:",
+      "options": ["Rises sharply", "Remains constant", "Falls", "Becomes negative"],
+      "correct": 2,
+      "rationale": "With YED < 1, spending on the good grows more slowly than income, so its budget share declines — Engel's observation about food."
+    },
+    {
+      "id": 9,
+      "question": "Demand for a product is more elastic in the long run than the short run because:",
+      "options": ["Prices are always higher later", "Habits, contracts, and durable stocks adjust only slowly over time", "Incomes always fall over time", "Substitutes disappear in the long run"],
+      "correct": 1,
+      "rationale": "Consumers need time to adjust habits and replace durables, so quantity responses grow larger with the time horizon."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson's illustrative ladder, which category shows the highest price elasticity?",
+      "options": ["Salt", "Rice", "Fuel", "Air travel"],
+      "correct": 3,
+      "rationale": "Air travel — a discretionary luxury with substitutes and a large budget share — sits at the top of the elasticity ladder, around 2.5."
+    }
+  ]
+}

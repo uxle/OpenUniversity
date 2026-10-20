@@ -1,3 +1,81 @@
-# Lesson1
+# What Is Philosophy? Branches and Methods
 
-TODO: write lesson content.
+> Philosophy begins in wonder. It asks the questions other subjects
+> assume answers to: What exists? How do we know? How should we live?
+
+## 1. The Major Branches
+
+| Branch | Core question | Sample question |
+| --- | --- | --- |
+| Metaphysics | What is real? | Are numbers real, or invented? |
+| Epistemology | How do we know? | Can we be certain of anything? |
+| Ethics | How should we act? | Is morality relative or universal? |
+| Logic | What follows from what? | Why is this argument invalid? |
+| Aesthetics | What is beauty/art? | Does art need rules to be good? |
+
+@diagram tree id="philosophy-map" layout="tree" aria="The five branches of philosophy"
+  Philosophy -> Metaphysics
+  Philosophy -> Epistemology
+  Philosophy -> Ethics
+  Philosophy -> Logic
+  Philosophy -> Aesthetics
+@/diagram
+
+[definition]
+**Epistemology** studies knowledge: what distinguishes knowing something
+from merely believing it? Classical analysis says knowledge is justified
+true belief — you must believe it, it must be true, and you need adequate
+grounds.
+[/definition]
+
+## 2. Logic: The Philosopher's Toolkit
+
+An **argument** is a set of claims: premises offered in support of a
+conclusion.
+
+- **Deductive** arguments claim their conclusion follows *necessarily*.
+  If the premises are true and the form valid, the conclusion must be true:
+
+  1. All humans are mortal.
+  2. Socrates is human.
+  3. Therefore, Socrates is mortal.
+
+- **Inductive** arguments argue from observed cases to general claims —
+  strong or weak, never certain ("every swan I've seen is white…").
+
+### Common fallacies
+
+| Fallacy | Example |
+| --- | --- |
+| Ad hominem | Attacking the speaker instead of the argument |
+| Straw man | Refuting a distorted version of the opponent's view |
+| False dilemma | "You're with us or against us" |
+| Appeal to authority | "A celebrity said so, so it's true" |
+
+## 3. Ethics: Three Classic Approaches
+
+1. **Virtue ethics (Aristotle):** ask what a person of good character would do; cultivate virtues like courage and honesty.
+2. **Deontology (Kant):** some duties hold regardless of outcomes — never treat people merely as means.
+3. **Consequentialism (Mill):** judge actions by results — choose the option with the best overall consequences.
+
+[important title="Same act, three verdicts"]
+You lie to save a life. Consequentialism approves (best outcome). A
+strict Kantian duty-view objects (lying violates a duty). Virtue ethics
+asks whether a compassionate but honest person could find a third way.
+[/important]
+
+## 4. Thought Experiments
+
+Philosophy tests ideas by pushing them to extremes: Would you enter
+Nozick's "experience machine" that guarantees pleasant illusions?
+Trolley problems ask whether it differs to divert harm rather than allow
+it. The point isn't the story — it's what your reactions reveal about
+the principles you actually hold.
+
+## Key Takeaways
+
+- Five branches, five kinds of question — reality, knowledge, action,
+  inference, beauty.
+- Deductive arguments aim for certainty; induction for probability.
+- Fallacies are recurring failure patterns worth learning to spot.
+- Ethical theories weigh character, duty, and consequences differently.

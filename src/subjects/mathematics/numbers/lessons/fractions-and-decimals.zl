@@ -1,0 +1,140 @@
+# Fractions and Decimals: Parts of Wholes, Done Precisely
+
+> Fractions say how many parts a whole is cut into; decimals say the
+> same thing in place-value language. Fluency in both — and in moving
+> between them — underpins nearly every later topic in mathematics.
+
+## 1. Anatomy of a Fraction
+
+A **fraction** a/b records a division: numerator ÷ denominator. The
+**denominator** names the size of the parts; the **numerator** counts
+how many are taken.
+
+| Type | Condition | Example | Value |
+| --- | --- | --- | --- |
+| Proper | numerator < denominator | 3/4 | less than 1 |
+| Improper | numerator ≥ denominator | 7/4 | 1 or more |
+| Mixed number | whole + proper part | 1¾ = 7/4 | equals the improper form |
+| Like fractions | same denominator | 2/9 and 5/9 | add directly |
+| Unlike fractions | different denominators | 2/3 and 3/5 | need a common step |
+
+**Equivalent fractions** scale top and bottom alike: 2/3 = 4/6 =
+20/30; **simplifying** divides both by the HCF: 36/48 = 3/4 (÷ 12).
+
+## 2. Adding and Subtracting: Common Ground First
+
+Like fractions add straight across. **Unlike fractions** must first be
+re-cut to a **common denominator** — best chosen as the LCM of the
+denominators.
+
+[example]
+Add 3/4 + 5/6.
+- LCM(4, 6) = 12, so convert: 3/4 = 9/12 and 5/6 = 10/12.
+- Add: 9/12 + 10/12 = 19/12 = 1 7/12.
+- Subtraction works the same way: 5/6 − 3/4 = 10/12 − 9/12 = 1/12.
+[/example]
+
+[warning]
+Never add denominators: 3/4 + 5/6 is not 8/10 — different-sized
+pieces must be re-cut to one size before counting them together.
+[/warning]
+
+## 3. Multiplying and Dividing
+
+Multiplication needs no common denominator: multiply straight across,
+and cancel common factors before multiplying to keep the arithmetic
+small.
+
+[example]
+Multiply 15/8 × 4/9. Cancel diagonally: 15 with 9 (÷3 gives 5/3) and
+4 with 8 (÷4 gives 1/2). Only 5 × 1 over 3 × 2 remains: 5/6.
+Divide by flipping: 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 = 1 7/8.
+[/example]
+
+To **divide**, multiply by the **reciprocal** of the divisor — "invert
+and multiply" is the definition, not a trick.
+
+## 4. Comparing Fractions
+
+| Technique | Best when | Example |
+| --- | --- | --- |
+| Common denominator | any pair, exact | 3/4 vs 5/6 → 9/12 vs 10/12 |
+| Cross-multiply | quick pair test | 3×6 = 18 < 4×5 = 20, so 3/4 < 5/6 |
+| Benchmark ½ | fast estimating | 5/9 beats ½; 4/9 does not |
+| Same numerator | shared tops | 3/7 < 3/5 — more pieces, smaller pieces |
+
+[tip]
+With the same numerator, the larger denominator gives the smaller
+fraction — 7 pieces are each smaller than 5.
+[/tip]
+
+## 5. Fractions, Decimals, and Percentages
+
+Every fraction becomes a decimal by dividing numerator by denominator,
+and a percentage by multiplying that decimal by 100.
+
+| Fraction | Decimal | Percent |
+| --- | --- | --- |
+| 1/2 | 0.5 | 50% |
+| 1/3 | 0.333… | 33.3% |
+| 1/4 | 0.25 | 25% |
+| 1/5 | 0.2 | 20% |
+| 1/8 | 0.125 | 12.5% |
+| 3/8 | 0.375 | 37.5% |
+| 1/9 | 0.111… | 11.1% |
+
+Memorising this table converts most exam fractions on sight: 5/8 is
+0.625 because 5/8 = 4/8 + 1/8 = 0.5 + 0.125.
+
+## 6. Terminating or Repeating?
+
+A fraction in lowest terms gives a **terminating decimal** exactly
+when the denominator's prime factors are only 2s and 5s.
+
+| Fraction | Denominator factors | Decimal |
+| --- | --- | --- |
+| 7/40 | 2³ × 5 | 0.175 (terminates) |
+| 5/12 | 2² × 3 | 0.41666… (repeats) |
+| 7/9 | 3² | 0.777… (repeats) |
+
+The reason: 10 = 2 × 5, so only 2s and 5s divide a power of 10
+evenly. Any other prime in the denominator forces the long-division
+remainders to cycle forever, producing a **recurring decimal**.
+
+## 7. Decimal Operations and Rounding
+
+- Add or subtract: line up the decimal points, then column-work:
+  3.45 + 0.8 = 4.25.
+- Multiply: ignore the points, multiply, then plant as many decimal
+  places as the factors had combined: 0.3 × 0.02 = 0.006 (1 + 2 = 3
+  places).
+- Divide: shift the divisor's point until it is whole, shift the
+  dividend identically, then divide as usual.
+- **Powers of ten** move the point: × 10 shifts one place right, ÷ 100
+  shifts two places left (2.75 ÷ 100 = 0.0275).
+
+To round, inspect the next digit: 3.4567 to 2 d.p. looks at the 6 (≥ 5),
+giving 3.46.
+
+## 8. Recurring Decimals Back to Fractions
+
+[example]
+Convert x = 0.777… (7 recurring) to a fraction.
+- Let x = 0.777…, so 10x = 7.777…
+- Subtract: 10x − x = 7.777… − 0.777… = 7, hence 9x = 7.
+- Therefore x = 7/9.
+
+For a two-digit repeat, shift by 100 instead: 100x − x = 23 for
+0.232323…, so x = 23/99.
+[/example]
+
+## 9. Quick Revision
+
+| Task | Method | Answer |
+| --- | --- | --- |
+| 3/4 + 5/6 | LCM 12 → 9/12 + 10/12 | 19/12 = 1 7/12 |
+| 15/8 × 4/9 | cancel 15↔9, 8↔4 | 5/6 |
+| 3/4 ÷ 2/5 | multiply by 5/2 | 15/8 = 1 7/8 |
+| 0.777… | 9x = 7 | 7/9 |
+| Does 7/40 terminate? | 40 = 2³ × 5 only | yes — 0.175 |
+| Round 3.4567 to 2 d.p. | third digit 6 ≥ 5 | 3.46 |

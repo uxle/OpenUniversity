@@ -1,0 +1,76 @@
+{
+  "lessonId": "periodic-table",
+  "title": "The Periodic Table: Order from Atomic Number",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Mendeleev's 1869 table ordered the elements by increasing:",
+      "options": ["atomic number", "density", "atomic mass", "electronegativity"],
+      "correct": 2,
+      "rationale": "Mendeleev used atomic mass; Moseley's atomic-number ordering (1913) came later and fixed the anomalies."
+    },
+    {
+      "id": 2,
+      "question": "'Eka-silicon', the gap Mendeleev left in his table, turned out to be:",
+      "options": ["gallium", "scandium", "aluminium", "germanium"],
+      "correct": 3,
+      "rationale": "Eka-silicon became germanium (1886); eka-aluminium became gallium (1875) — both predicted with accurate masses and properties."
+    },
+    {
+      "id": 3,
+      "question": "The modern periodic law makes element properties a periodic function of:",
+      "options": ["atomic number", "atomic mass", "number of neutrons", "valence shell capacity"],
+      "correct": 0,
+      "rationale": "Moseley's X-ray work showed proton count (atomic number) is the true basis, replacing Mendeleev's atomic-mass ordering."
+    },
+    {
+      "id": 4,
+      "question": "Which element sits in group 2, period 3 of the periodic table?",
+      "options": ["Mg", "Ca", "Na", "Al"],
+      "correct": 0,
+      "rationale": "Group 2 period 3 is magnesium — an alkaline earth metal with configuration [Ne] 3s²."
+    },
+    {
+      "id": 5,
+      "question": "Moving left to right across a period, atomic radius generally:",
+      "options": ["increases", "decreases", "stays constant", "oscillates"],
+      "correct": 1,
+      "rationale": "Rising nuclear charge pulls the same shell inward, so atoms shrink across a period; they grow down a group as shells are added."
+    },
+    {
+      "id": 6,
+      "question": "The most electronegative element (4.0 on the Pauling scale) is:",
+      "options": ["oxygen", "chlorine", "nitrogen", "fluorine"],
+      "correct": 3,
+      "rationale": "Fluorine's small size and high nuclear charge make it the strongest electron puller — 4.0, the top of the scale."
+    },
+    {
+      "id": 7,
+      "question": "Oxygen's first ionization energy (1314 kJ/mol) is lower than nitrogen's (1402 kJ/mol) because:",
+      "options": ["oxygen has more protons", "oxygen's fourth 2p electron must pair up, adding repulsion, while nitrogen's half-filled 2p³ is stable", "nitrogen is a larger atom", "oxygen is a noble gas"],
+      "correct": 1,
+      "rationale": "Pairing the fourth 2p electron in oxygen creates repulsion, making that electron easier to remove than one from nitrogen's stable half-filled shell."
+    },
+    {
+      "id": 8,
+      "question": "A diagonal relationship links which pair?",
+      "options": ["Na and K", "Li and Mg", "C and Si", "F and Cl"],
+      "correct": 1,
+      "rationale": "Down-right neighbours Li–Mg, Be–Al, and B–Si share size and charge density, hence similar chemistry."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is NOT a halogen?",
+      "options": ["bromine", "astatine", "neon", "iodine"],
+      "correct": 2,
+      "rationale": "Halogens are group 17: F, Cl, Br, I, At. Neon is a noble gas of group 18."
+    },
+    {
+      "id": 10,
+      "question": "The f-block inner transition elements are the:",
+      "options": ["alkali metals and alkaline earths", "lanthanides and actinides", "halogens and noble gases", "transition metals of period 4"],
+      "correct": 1,
+      "rationale": "Lanthanides (Z = 58–71) and actinides (Z = 90–103) fill f orbitals and sit below the main table."
+    }
+  ]
+}

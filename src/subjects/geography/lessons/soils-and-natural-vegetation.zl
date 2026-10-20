@@ -1,0 +1,108 @@
+# Soils and Natural Vegetation: India's Living Cover
+
+> Soil takes centuries to form and only seasons to lose. This lesson
+> classifies India's eight soil groups, the erosion that threatens them,
+> and the natural vegetation they support.
+
+## 1. How Soil Forms
+
+[definition]
+**Soil** is the loose surface layer in which plants root, made of
+mineral grains, organic matter (humus), water, and air. It is built by
+the interplay of five factors over time: **parent rock, climate,
+relief, organisms, and time**.
+[/definition]
+
+| Factor | Contribution |
+| --- | --- |
+| Parent rock | Mineral skeleton and chemistry |
+| Climate | Speed of weathering and leaching |
+| Relief | Slope drains or drowns the soil |
+| Organisms | Humus, roots, and mixing burrows |
+| Time | Depth and maturity of the profile |
+
+## 2. The Eight ICAR Soil Groups
+
+| Group | Home | Traits | Suited crops |
+| --- | --- | --- | --- |
+| Alluvial (~43% of area) | Ganga–Brahmaputra plains, coasts | Deep, fertile, renewed by floods | Rice, wheat, sugarcane, jute |
+| Black (regur) | Deccan Trap lava country | Clay-rich, cracks in summer, holds moisture | Cotton, soybean, jowar |
+| Red | Eastern and southern Deccan | Iron-stained, porous, low fertility | Millets, pulses, groundnut |
+| Laterite | High-rainfall Ghats and hills | Heavily leached, hardens on exposure | Tea, coffee, cashew, rubber |
+| Arid | Rajasthan desert, Kutch | Sandy, kankar-rich, low humus | Bajra and hardy pulses |
+| Forest / mountain | Himalayan slopes | Thin, immature, acidic in conifer tracts | Plantation and terrace crops |
+| Saline–alkaline | Rann of Kutch, over-irrigated plains | Salt crusts (reh, kallar) starve roots | Reclaimed only with gypsum |
+| Peaty / marshy | Kerala coast, deltas | Waterlogged, humus-rich, black | Paddy after drainage |
+
+[definition]
+In the alluvial plains, **khadar** is the fresh, fertile silt of
+low-lying flood tracts, while **bhangar** is the older, higher alluvium
+studded with lime nodules called **kankar**.
+[/definition]
+
+[tip]
+Black soil's talent for holding monsoon moisture is why the Deccan can
+grow cotton without much irrigation — and why the same soil turns
+into sticky, plough-resistant clay in a wet week.
+[/tip]
+
+## 3. Soil Erosion and Conservation
+
+| Form | What happens | Classic example |
+| --- | --- | --- |
+| Gully erosion | Runoff carves deep channels | Chambal ravines |
+| Sheet erosion | Thin layers wash evenly off slopes | Degraded red-soil uplands |
+| Wind erosion | Dust and sand blow away | Rajasthan's sandy margins |
+
+Conservation toolkit: **contour ploughing** (furrows across the slope),
+**terrace farming** (steps on steep hills), **shelterbelts** (tree rows
+against the wind), **strip cropping**, check dams, and **afforestation**.
+
+[warning]
+India loses billions of tonnes of topsoil every year — erosion works
+quietly, invisibly, and every monsoon, unlike a flood that announces
+itself once.
+[/warning]
+
+## 4. Types of Natural Vegetation
+
+@diagram tree id="india-vegetation-types" layout="tree" aria="India's natural vegetation types"
+  "Natural vegetation" -> "Tropical evergreen"
+  "Natural vegetation" -> "Tropical deciduous"
+  "Natural vegetation" -> "Thorn and scrub"
+  "Natural vegetation" -> Montane
+  "Natural vegetation" -> Mangrove
+@/diagram
+
+| Type | Rainfall | Where | Signature trees |
+| --- | --- | --- | --- |
+| Tropical evergreen | Over 200 cm | Western Ghats, north-east, Andamans | Rosewood, ebony, mahogany, rubber |
+| Tropical deciduous | 70–200 cm | Most widespread type | Teak, sal, sandalwood — shed leaves in the dry season |
+| Thorn and scrub | Under 75 cm | Rajasthan, Gujarat, leeward Deccan | Cactus, babool (acacia), khejri, date palm |
+| Montane | Varies with altitude | The Himalaya | Pine, deodar, fir, spruce, birch, then alpine meadows |
+| Mangrove (tidal) | — | Sundarbans delta | Sundari trees with pneumatophore breathing roots |
+
+The **Sundarbans** — named for the sundari tree — shelter the **Royal
+Bengal tiger** in a lattice of tidal mud and breathing roots.
+
+## 5. Conserving the Wild Cover
+
+- **Biosphere reserves** — 18 protect whole ecosystems; the **Nilgiri
+  reserve (1986)** was India's first.
+- **National parks** — the **Jim Corbett National Park (1936)** began
+  the tradition.
+- **Project Tiger (1973)** — today links dozens of tiger reserves.
+- **Wildlife sanctuaries and Ramsar wetlands** — shield birds, marshes,
+  and migratory stop-overs.
+
+## 6. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Largest soil group? | Alluvial (~43% of India's area) |
+| Black soil grows? | Cotton — it is 'black cotton soil' |
+| Khadar is? | Fresh flood-plain alluvium |
+| Chambal ravines come from? | Gully erosion |
+| Most widespread vegetation? | Tropical deciduous |
+| First biosphere reserve? | Nilgiri, 1986 |
+| First national park? | Jim Corbett, 1936 |

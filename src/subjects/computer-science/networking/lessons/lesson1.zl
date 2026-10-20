@@ -1,3 +1,76 @@
-# Lesson1
+# Introduction to Computer Networks
 
-TODO: write lesson content.
+> A network is computers connected so they can exchange data. This
+> lesson covers how data finds its way from one machine to another —
+> the plumbing behind every web page and message.
+
+## 1. Network Types by Scale
+
+| Type | Scope | Example |
+| --- | --- | --- |
+| PAN | A few metres | Bluetooth headset to phone |
+| LAN | Building / campus | Home Wi-Fi, office ethernet |
+| MAN | City | Cable network |
+| WAN | Country / world | The Internet itself |
+
+## 2. The Client–Server Idea
+
+Most traffic follows a simple pattern:
+
+- A **client** (your browser) *requests* a resource.
+- A **server** (a distant computer) *responds* with it.
+
+Your browser asking for a page sends an HTTP request; the server replies
+with HTML. Peer-to-peer networks blur the roles — every machine is both
+client and server.
+
+## 3. IP Addresses and DNS
+
+[definition]
+An **IP address** is a numeric label identifying a device on a network
+(IPv4 looks like `192.168.1.10`; IPv6 like `2001:db8::8a2e:370:7334`).
+**DNS (Domain Name System)** translates human-friendly names such as
+`example.com` into those addresses.
+[/definition]
+
+When you visit a site, DNS resolution happens first:
+
+@diagram tree id="dns-steps" layout="tree" aria="Steps from URL to server"
+  "Type example.com" -> "Ask DNS resolver"
+  "Ask DNS resolver" -> "Get 93.184.216.34"
+  "Get 93.184.216.34" -> "Send HTTP request"
+  "Send HTTP request" -> "Server responds with page"
+@/diagram
+
+## 4. Packets and Switching
+
+Data does not travel whole. It is chopped into **packets** — small
+chunks carrying source/destination addresses and sequence numbers.
+Packets may take different routes and are reassembled at the destination.
+This **packet switching** is what makes the Internet robust: if one path
+fails, others carry the traffic.
+
+## 5. Layers: Who Does What
+
+| Layer | Job | Examples |
+| --- | --- | --- |
+| Application | Meaningful services to programs | HTTP, DNS, SMTP |
+| Transport | Delivery between programs; reliability | TCP, UDP |
+| Internet | Addressing and routing between hosts | IP |
+| Link | Delivery over one physical hop | Ethernet, Wi-Fi |
+
+- **TCP** guarantees ordered, complete delivery (web pages, email).
+- **UDP** just sends — fast, no promises (video calls, games).
+
+[info title="Latency vs bandwidth"]
+**Bandwidth** is how much data fits through per second (a wide pipe);
+**latency** is how long one packet takes to arrive (pipe length).
+Downloads care about bandwidth; video calls care about latency.
+[/info]
+
+## Key Takeaways
+
+- Networks scale from PAN to WAN; the Internet is a WAN of WANs.
+- DNS turns names into IP addresses before any request is sent.
+- Data moves as packets that can be rerouted around damage.
+- TCP trades speed for reliability; UDP trades reliability for speed.

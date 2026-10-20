@@ -1,5 +1,76 @@
 {
-  "lessonId": "",
-  "title": "",
-  "questions": []
+  "lessonId": "lesson1",
+  "title": "What Is History? Sources and Periodization",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A newspaper printed in 1947 describing events of that year is which kind of source?",
+      "options": ["A primary source", "A secondary source", "An archaeological source", "An oral source"],
+      "correct": 0,
+      "rationale": "Primary sources are made during the period being studied. A 1947 newspaper is primary for 1947; a modern book about it would be secondary."
+    },
+    {
+      "id": 2,
+      "question": "Which category of sources includes coins, tools, and monuments?",
+      "options": ["Written sources", "Oral sources", "Archaeological sources", "Secondary sources"],
+      "correct": 2,
+      "rationale": "Archaeological sources are physical remains — tools, coins, monuments, excavations — datable but often silent about names and ideas."
+    },
+    {
+      "id": 3,
+      "question": "The period before the existence of writing is called:",
+      "options": ["Ancient history", "Medieval history", "Prehistory", "Modern history"],
+      "correct": 2,
+      "rationale": "Prehistory is the time before writing existed, so archaeology — not documents — is our only window into it."
+    },
+    {
+      "id": 4,
+      "question": "'Periods' such as ancient, medieval, and modern should be understood as:",
+      "options": ["Hard walls when life changed overnight", "Convenient conventions for organising time", "Scientific measurements of change", "Religious divisions of time"],
+      "correct": 1,
+      "rationale": "Periodization divides the past for convenience. Life did not transform overnight at each boundary — periods are useful shelves, not facts."
+    },
+    {
+      "id": 5,
+      "question": "Asking 'what does this source leave out?' matters because:",
+      "options": ["Sources are always forged", "Silence in a source is also information", "Only written sources can be trusted", "Older sources are automatically better"],
+      "correct": 1,
+      "rationale": "Critical reading includes noticing what a source omits — its silences tell us about its maker's perspective and purpose."
+    },
+    {
+      "id": 6,
+      "question": "A book written in 2020 about the events of 1947, quoting a 1947 newspaper, is:",
+      "options": ["A primary source because it quotes a primary source", "A secondary source — later interpretation based on primaries", "An oral source", "Not a historical source at all"],
+      "correct": 1,
+      "rationale": "Secondary sources are later interpretations based on primary sources; quoting a newspaper from 1947 does not make a 2020 book primary for 1947."
+    },
+    {
+      "id": 7,
+      "question": "Which is a stated strength of ORAL sources such as songs and legends?",
+      "options": ["They never change over time", "They preserve voices left out of writing", "They are always precisely dated", "They cannot be biased"],
+      "correct": 1,
+      "rationale": "Oral sources preserve voices left out of writing, but their weaknesses are changes in transmission and being hard to date."
+    },
+    {
+      "id": 8,
+      "question": "What weakness of archaeological sources does the lesson highlight?",
+      "options": ["They can never be dated", "They are silent about names and ideas unless inscribed", "They only exist for modern periods", "They are always biased by their author"],
+      "correct": 1,
+      "rationale": "Archaeological evidence (tools, coins, monuments) is physical and datable, but stays silent about names and ideas unless something is inscribed."
+    },
+    {
+      "id": 9,
+      "question": "Which broad marker defines MEDIEVAL history in the lesson's periodization table?",
+      "options": ["Before writing existed", "Early civilisations to roughly the 5th century CE", "Roughly the 5th–15th century CE", "Colonialism and industrialisation onward"],
+      "correct": 2,
+      "rationale": "Medieval history covers roughly the 5th–15th century CE; ancient ends near the 5th century CE, and modern begins with colonialism and nation-states."
+    },
+    {
+      "id": 10,
+      "question": "According to the lesson, what should you ask first when reading a source critically?",
+      "options": ["How old the paper it is printed on is", "Who made it — and what did they want?", "Whether the source agrees with textbooks", "How many words it contains"],
+      "correct": 1,
+      "rationale": "Critical reading starts with 'Who made it — and what did they want?', followed by when/where, what kind of evidence it is, and what it leaves out."
+    }
+  ]
 }

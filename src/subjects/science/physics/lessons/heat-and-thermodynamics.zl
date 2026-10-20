@@ -1,0 +1,139 @@
+# Heat and Thermodynamics: Temperature, Transfer, and Engines
+
+> Heat is energy on the move; temperature says how hot a body is.
+> This lesson covers scales, transfer modes, expansion, specific
+> heat, gas laws, and the engines that turn heat into work.
+
+## 1. Temperature versus Heat
+
+| Aspect | Temperature | Heat |
+| --- | --- | --- |
+| Meaning | average kinetic energy of molecules | energy in transit due to a temperature difference |
+| Unit | kelvin (K), °C | joule (J) |
+| Measured by | thermometer | calorimeter |
+
+## 2. Temperature Scales
+
+@math label="eq:scales"
+\frac{C}{5} = \frac{F - 32}{9}, \qquad K = C + 273.15
+@/math
+
+| Scale | Water freezes | Water boils | Notes |
+| --- | --- | --- | --- |
+| Celsius | 0 °C | 100 °C | everyday metric scale |
+| Fahrenheit | 32 °F | 212 °F | still used in the USA |
+| Kelvin | 273.15 K | 373.15 K | SI unit; cannot go below 0 K |
+
+[note title="Absolute zero"]
+0 K = −273.15 °C is **absolute zero** — molecular motion reaches
+its minimum, and nothing can be colder.
+[/note]
+
+## 3. How Heat Travels
+
+| Mode | Mechanism | Needs medium? | Example |
+| --- | --- | --- | --- |
+| Conduction | particle-to-particle contact | yes (solids best) | a steel spoon heating in tea |
+| Convection | bulk movement of heated fluid | yes (fluids) | sea breeze, room cooler |
+| Radiation | electromagnetic waves | no | warmth of the Sun in space |
+
+Metals conduct best — free electrons carry the energy. The land
+heats faster than the sea by day, so a **sea breeze** blows
+onshore; at night the flow reverses into a **land breeze**.
+
+@diagram tree id="heat-transfer-modes" layout="tree" aria="Three modes of heat transfer with examples"
+  "Heat transfer" -> "Conduction: spoon in hot tea"
+  "Heat transfer" -> "Convection: sea breeze"
+  "Heat transfer" -> "Radiation: sunshine through space"
+@/diagram
+
+## 4. Thermal Expansion
+
+Bodies expand on heating — length (**linear**, α), area
+(**areal**, β ≈ 2α), volume (**volumetric**, γ ≈ 3α).
+
+| Application | What happens |
+| --- | --- |
+| small gaps between rail segments | rails expand in summer heat |
+| bimetallic strip in a thermostat | two metals bend differently and trip a switch |
+| pendulum clocks in summer | longer rod → longer period → clock loses time |
+| overhead power lines | strung slightly slack for hot days |
+
+## 5. Specific Heat and Latent Heat
+
+**Specific heat capacity** c is the heat needed to raise 1 kg by
+1 K; water's ~4200 J/kg·K, the highest of common materials, makes
+it a coolant and a climate stabiliser.
+
+@chart bar title="Specific heat capacity of common materials (J/kg·K)"
+labels:
+Water
+Aluminium
+Iron
+Copper
+Lead
+
+data:
+4200
+900
+450
+390
+130
+@/chart
+
+**Latent heat** is the hidden heat of changing state: ice melts
+at 336 kJ/kg and water boils away at 2260 kJ/kg while the
+temperature holds still. A **calorimeter** applies heat lost =
+heat gained.
+
+## 6. Gas Laws and the Ideal Gas Equation
+
+Boyle: PV = constant at fixed T; Charles: V ∝ T at fixed P.
+Together they give the **ideal gas equation**:
+
+@math label="eq:ideal-gas"
+PV = nRT
+@/math
+
+with R = 8.314 J/mol·K — behind pressure cookers, tyres, balloons.
+
+## 7. The First Law of Thermodynamics
+
+@math label="eq:first-law"
+\Delta U = Q - W
+@/math
+
+Heat Q supplied to a gas partly raises its internal energy ΔU
+and partly leaves as work W done by the gas — the conservation of
+energy applied to heat.
+
+## 8. Heat Engines and Refrigerators
+
+A **heat engine** absorbs heat from a hot reservoir, converts
+part to work, and dumps the rest into a cold sink. Carnot proved
+no engine can beat a limit set only by the two temperatures:
+
+@math label="eq:carnot"
+\eta = 1 - \frac{T_{c}}{T_{h}}
+@/math
+
+[example]
+A steam plant running between 500 K and 300 K: η = 1 − 300/500
+= 0.40 — at best 40% efficiency.
+[/example]
+
+The **second law** says no engine can turn heat entirely into
+work (Kelvin–Planck), and heat never flows cold to hot on its
+own (Clausius). A **refrigerator** beats that only by spending
+work: coolant evaporating inside the box absorbs heat, and
+condensing outside releases it.
+
+## 9. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Absolute zero | 0 K = −273.15 °C |
+| Water | c ≈ 4200 J/kg·K, highest of common materials |
+| Ice melting | latent heat 336 kJ/kg at 0 °C |
+| First law | ΔU = Q − W |
+| Carnot | η = 1 − Tc/Th |

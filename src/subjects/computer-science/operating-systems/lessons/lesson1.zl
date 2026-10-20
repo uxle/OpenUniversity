@@ -1,3 +1,77 @@
-# Lesson1
+# What an Operating System Does
 
-TODO: write lesson content.
+> The operating system (OS) is the program that turns a bag of hardware
+> into a usable machine. It stands between applications — browsers,
+> games, editors — and the CPU, memory, and devices underneath.
+
+## 1. The Four Core Jobs
+
+| Job | What it means | Example |
+| --- | --- | --- |
+| Process management | Deciding which programs run, when, for how long | Playing music while browsing |
+| Memory management | Giving each process its own memory, protecting them from each other | One crashed app doesn't corrupt another |
+| File system | Turning raw disk blocks into files and folders | Saving a document |
+| Device management | Talking to hardware through drivers | Printing, drawing to screen |
+
+## 2. Processes
+
+A **process** is a running program: its code plus its current state
+(program counter, registers, open files, memory).
+
+[definition]
+**Multitasking** is the OS rapidly switching the CPU between processes.
+The switch (**context switch**) happens thousands of times per second,
+which creates the illusion of many programs running at once even on one
+CPU core.
+[/definition]
+
+Processes move through states:
+
+- **Ready** — waiting for a turn on the CPU
+- **Running** — currently executing
+- **Blocked** — waiting for something (disk read, network reply)
+
+## 3. Virtual Memory
+
+Each process sees its own private address space; the OS + hardware map
+it onto physical RAM and, when RAM runs short, temporarily park less-used
+pages on disk.
+
+[important]
+This isolation is why one misbehaving program usually cannot scribble on
+another's memory. It is also why "more RAM than you have" seems possible:
+**virtual memory** can exceed physical memory at the cost of speed.
+[/important]
+
+## 4. Files and Directories
+
+- A **file system** organises data as files inside directories (folders).
+- **Metadata** records size, timestamps, and permissions per file.
+- **Permissions** decide who may read, write, or execute — the base of
+  multi-user security.
+
+## 5. Kernels and Modes
+
+@diagram tree id="os-ring" layout="tree" aria="User mode versus kernel mode"
+  "CPU modes" -> "User mode"
+  "CPU modes" -> "Kernel mode"
+  "Kernel mode" -> "Direct hardware access"
+  "Kernel mode" -> "Runs drivers, scheduler, memory manager"
+@/diagram
+
+The **kernel** is the OS core. User programs run in *user mode* with
+restricted rights; anything privileged (touching hardware) happens in
+*kernel mode* via **system calls** — `open()`, `read()`, `fork()` and
+friends.
+
+[info title="Same principles, different kernels"]
+Linux, Windows NT, and macOS's XNU all provide scheduling, memory
+isolation, and files — they differ mainly in design choices (monolithic
+vs hybrid kernels), not in the fundamentals you just learned.
+[/info]
+
+## Key Takeaways
+
+- An OS manages processes, memory, files, and devices.
+- Context switching creates multitasking; virtual memory creates isolation.
+- System calls are the doorway from user programs into the kernel.

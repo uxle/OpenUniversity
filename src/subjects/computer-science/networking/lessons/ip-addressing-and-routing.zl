@@ -1,0 +1,140 @@
+# IP Addressing and Routing: Finding Every Machine on Earth
+
+> Every device on the Internet needs an address, and every packet needs
+> a path to one. This lesson covers IPv4 structure, subnetting, private
+> ranges, IPv6, and the protocols that choose routes.
+
+## 1. IPv4: 32 Bits in Dotted Decimal
+
+An **IPv4 address** is 32 bits written as four **octets** in dotted
+decimal, each ranging 0–255: 192.168.10.42. That is about 4.3 billion
+addresses — the pool that ran out, and the reason IPv6 exists.
+
+[definition]
+Every IPv4 address splits into a **network part** (which network) and
+a **host part** (which machine on it). The **subnet mask** draws the
+line: 255.255.255.0, written /24, means the first 24 bits are network.
+[/definition]
+
+@diagram tree id="ipv4-split" layout="tree" aria="An IPv4 address split by its slash 24 mask into network and host parts"
+  "192.168.10.42 /24" -> "Network: 192.168.10"
+  "192.168.10.42 /24" -> "Host: .42"
+@/diagram
+
+## 2. Classful Legacy and CIDR
+
+The original scheme split addresses into fixed classes:
+
+| Class | Leading bits | First octet | Default mask | Typical size |
+| --- | --- | --- | --- | --- |
+| A | 0 | 1–126 | /8 | ~16.7M hosts |
+| B | 10 | 128–191 | /16 | 65,534 hosts |
+| C | 110 | 192–223 | /24 | 254 hosts |
+| D | 1110 | 224–239 | — | multicast |
+| E | 1111 | 240–255 | — | reserved |
+
+Rigid classes wasted addresses by the million, so **CIDR**
+(Classless Inter-Domain Routing) replaced them in 1993: any prefix
+length is allowed, matched to actual need.
+
+## 3. Subnetting: Borrowing Bits
+
+Subnetting steals bits from the host part to create smaller networks.
+Splitting 192.168.10.0/24 into /26 blocks:
+
+| Subnet | Usable range | Hosts |
+| --- | --- | --- |
+| 192.168.10.0/26 | .1 – .62 | 62 |
+| 192.168.10.64/26 | .65 – .126 | 62 |
+| 192.168.10.128/26 | .129 – .190 | 62 |
+| 192.168.10.192/26 | .193 – .254 | 62 |
+
+Each block holds 64 addresses; the first (the network address) and the
+last (broadcast) are reserved, leaving 62 usable. A /30 — 4 addresses,
+2 usable — is the classic point-to-point link mask.
+
+| Prefix | Total addresses | Usable hosts |
+| --- | --- | --- |
+| /24 | 256 | 254 |
+| /25 | 128 | 126 |
+| /26 | 64 | 62 |
+| /28 | 16 | 14 |
+| /30 | 4 | 2 |
+
+## 4. Private Ranges and NAT
+
+| Private range | Block | Usual home |
+| --- | --- | --- |
+| 10.0.0.0/8 | 10.x.x.x | large enterprises |
+| 172.16.0.0/12 | 172.16 – 172.31 | mid-size networks |
+| 192.168.0.0/16 | 192.168.x.x | homes and small offices |
+
+These are not routable on the public Internet. **NAT** (Network
+Address Translation) on the router rewrites private source addresses
+to its one public address — tracking which port belongs to which
+machine — so a whole household shares a single public IP.
+
+## 5. Special Addresses Worth Knowing
+
+| Address | Meaning |
+| --- | --- |
+| 127.0.0.1 | loopback — this machine itself (localhost) |
+| 0.0.0.0 | this network / unspecified source |
+| 169.254.0.0/16 | link-local (APIPA) — self-assigned, DHCP failed |
+| 255.255.255.255 | broadcast to everyone on this segment |
+
+[warning]
+Seeing a 169.254.x.x address on a laptop almost always means the DHCP
+server was unreachable — check the cable or the Wi-Fi before blaming
+the operating system.
+[/warning]
+
+## 6. IPv6: The 128-Bit Answer
+
+**IPv6** widens the address to 128 bits, written as eight hex groups:
+2001:db8:0:0:0:0:0:1 shortens to 2001:db8::1 by dropping leading zeros
+and collapsing one run of zeros. About 3.4 × 10³⁸ addresses exist —
+enough that every device can be globally reachable without NAT.
+
+| IPv4 habit | IPv6 change |
+| --- | --- |
+| NAT to survive address shortage | global addresses for every device |
+| broadcast | multicast (to a group) and anycast (to nearest of a group) |
+| manual or DHCP setup | SLAAC autoconfiguration, DHCPv6 optional |
+| ARP for neighbour discovery | built-in neighbour discovery protocol |
+
+## 7. Routing: Static and Dynamic
+
+| Protocol | Family | Metric / idea | Home |
+| --- | --- | --- | --- |
+| RIP | distance-vector | hop count, max 15 | small networks |
+| OSPF | link-state | cost from bandwidth; runs Dijkstra | inside one AS |
+| BGP | path-vector | policy-weighted paths between ASes | the Internet backbone |
+
+- **Static routes** are hand-written — predictable, zero overhead, and
+  no self-healing when a link dies.
+- **Dynamic protocols** exchange reachability and re-route around
+  failure automatically.
+- `traceroute` reveals the actual hop-by-hop path packets take.
+
+## 8. A Word on Names
+
+Numbers route packets; names route people. Before the first packet
+leaves, DNS turns example.com into an address:
+
+@diagram tree id="dns-resolution-chain" layout="tree" aria="DNS resolution walking from root servers to the TLD then the authoritative name server"
+  "Resolver asks a root server" -> "Root: ask the .com TLD servers"
+  "Root: ask the .com TLD servers" -> "TLD: ask example.com's servers"
+  "TLD: ask example.com's servers" -> "Answer: 93.184.216.34"
+@/diagram
+
+Record types, caching, and the hosts file are covered in the
+application-protocols lesson.
+
+[summary]
+IPv4 is 32 bits split by mask into network and host parts; CIDR freed
+prefix lengths from classes; a /26 subnet holds 62 usable hosts.
+Private ranges 10.x, 172.16–31, 192.168.x hide behind NAT. IPv6 brings
+128 bits, no broadcast, no NAT. RIP, OSPF, BGP route at increasing
+scales — BGP glues the Internet together.
+[/summary]

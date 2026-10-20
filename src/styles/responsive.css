@@ -1,11 +1,27 @@
 /* src/styles/responsive.css — with the sidebar gone (see layout.css), the
    single-column shell already works at every width via fluid tokens and
-   min()/minmax(). Only a couple of fine-tuning rules remain. */
+   min()/minmax(). A few fine-tuning rules for specific breakpoints. */
 
+/* Very narrow screens: reduce horizontal padding */
 @media (max-width: 380px) {
-  .ou-app-shell__main { padding-left: var(--ou-space-3); padding-right: var(--ou-space-3); }
+  .ou-app-shell__main {
+    padding-left: var(--ou-space-3);
+    padding-right: var(--ou-space-3);
+  }
 }
 
+/* Medium screens (tablet): increase padding slightly */
 @media (min-width: 640px) {
-  .ou-app-shell__main { padding: var(--ou-space-6) var(--ou-space-5); padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-6)); }
+  .ou-app-shell__main {
+    padding: var(--ou-space-6) var(--ou-space-5);
+    padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-6) + env(safe-area-inset-bottom));
+  }
+}
+
+/* Large screens: generous padding, slightly increased max-width breathing room */
+@media (min-width: 1024px) {
+  .ou-app-shell__main {
+    padding: var(--ou-space-7) var(--ou-space-6);
+    padding-bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-7) + env(safe-area-inset-bottom));
+  }
 }

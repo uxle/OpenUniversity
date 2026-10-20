@@ -11,8 +11,8 @@
   height: var(--ou-header-height);
   padding: 0 clamp(1rem, 4vw, 2rem);
   background: var(--ou-surface-translucent);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-bottom: 1px solid var(--ou-border);
   position: sticky;
   top: 0;
@@ -28,8 +28,13 @@
   color: var(--ou-text);
   min-width: 0;
   flex-shrink: 1;
+  /* Explicit transition so the opacity change actually animates */
+  transition: opacity var(--ou-transition-fast), transform var(--ou-transition-fast);
 }
-.ou-navbar__brand:hover { opacity: 0.7; }
+.ou-navbar__brand:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
 .ou-navbar__brand-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -40,9 +45,53 @@
   flex-shrink: 0;
   object-fit: contain;
   border-radius: var(--ou-radius-sm);
+  transition: transform var(--ou-transition-bounce);
+}
+/* Ink & Paper: invert the (black-tile) logo mark on the dark theme so it
+   reads as white ink on black instead of a black hole in the header. */
+[data-theme="dark"] .ou-navbar__logo { filter: invert(1); }
+.ou-navbar__brand:hover .ou-navbar__logo {
+  transform: rotate(-4deg) scale(1.05);
 }
 .ou-navbar__actions { display: flex; align-items: center; gap: var(--ou-space-2); flex-shrink: 0; }
 
 @media (min-width: 480px) {
   .ou-navbar__brand { font-size: var(--ou-fs-lg); }
+}
+
+/* ── Header search / command-palette trigger ─────────────────────────
+   Desktop: a compact "Search  ⌃K" pill that opens the command palette.
+   Narrow screens: collapses to an icon-only 44px touch target. */
+.ou-navbar__search-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  padding: var(--ou-space-2) var(--ou-space-3);
+  border-radius: var(--ou-radius-pill);
+  color: var(--ou-text-muted);
+  font-size: var(--ou-fs-sm);
+  min-height: 36px;
+  transition: color var(--ou-transition-fast), border-color var(--ou-transition-fast),
+              box-shadow var(--ou-transition-fast);
+}
+.ou-navbar__search-trigger:hover {
+  color: var(--ou-text);
+  border-color: var(--ou-border-strong);
+}
+.ou-navbar__search-label { display: none; }
+.ou-navbar__kbd {
+  display: none;
+  font-family: inherit;
+  font-size: var(--ou-fs-xs);
+  font-weight: 600;
+  color: var(--ou-text-muted);
+  background: var(--ou-surface-subtle);
+  border: 1px solid var(--ou-border);
+  border-radius: 6px;
+  padding: 1px 6px;
+  line-height: 1.4;
+}
+@media (min-width: 720px) {
+  .ou-navbar__search-label { display: inline; }
+  .ou-navbar__kbd { display: inline-block; }
 }

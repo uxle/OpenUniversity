@@ -2,10 +2,20 @@
 
 export function debounce(fn, wait = 200) {
   let timer = null;
-  return function debounced(...args) {
+  function debounced(...args) {
     clearTimeout(timer);
-    timer = setTimeout(() => fn.apply(this, args), wait);
+    timer = setTimeout(() => {
+      timer = null;
+      fn.apply(this, args);
+    }, wait);
+  }
+  /** Drop any still-pending call (e.g. Enter already ran the search). */
+  debounced.cancel = () => {
+    clearTimeout(timer);
+    timer = null;
   };
+  debounced.pending = () => timer !== null;
+  return debounced;
 }
 
 export function throttle(fn, wait = 200) {

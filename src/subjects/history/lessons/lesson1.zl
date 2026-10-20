@@ -1,3 +1,70 @@
-# Lesson1
+# What Is History? Sources and Periodization
 
-TODO: write lesson content.
+> History is the systematic study of the past, built from evidence — not
+> just a list of dates. Historians ask questions, gather sources, weigh
+> them against each other, and only then write an account.
+
+## 1. Why Study History?
+
+- **Identity:** history explains how societies, institutions, and borders came to be.
+- **Judgement:** past decisions and their consequences teach judgement, not lessons to copy blindly.
+- **Evidence-based thinking:** history trains you to ask "how do we know?" of every claim.
+
+## 2. Historical Sources
+
+@diagram tree id="source-types" layout="tree" aria="How historical sources divide up"
+  Sources -> Archaeological
+  Sources -> Written
+  Sources -> Oral
+@/diagram
+
+[definition]
+A **historical source** is any trace of the past from which knowledge can
+be drawn. Sources are divided into **primary** (made during the period
+being studied) and **secondary** (later interpretations based on
+primaries).
+[/definition]
+
+| Type | Examples | Strength | Weakness |
+| --- | --- | --- | --- |
+| Archaeological | tools, coins, monuments, excavations | Physical, datable evidence | Silent about names and ideas unless inscribed |
+| Written | manuscripts, inscriptions, court records | Direct voices from the past | Bias of the author; survival by chance |
+| Oral | songs, legends, eyewitness accounts | Preserves voices left out of writing | Changes in transmission; hard to date |
+
+[important title="Primary or secondary?"]
+A newspaper article *from 1947* is a primary source for 1947. A book
+*written in 2020* about 1947 is a secondary source — even if it quotes
+the newspaper.
+[/important]
+
+## 3. Periodization: Dividing Time
+
+Historians divide the past into periods to make it manageable:
+
+| Period | Broad marker (varies by region) |
+| --- | --- |
+| Prehistory | Before writing existed (archaeology is our only window) |
+| Ancient history | Early civilisations to roughly the 5th century CE |
+| Medieval history | Roughly 5th–15th century CE |
+| Modern history | Colonialism, industrialisation, nation-states onward |
+
+[info title="Periods are tools, not walls"]
+Life did not change overnight when a "period" ended. Dates that divide
+eras are conventions chosen for convenience — useful shelves, not facts
+about the past itself.
+[/info]
+
+## 4. Reading a Source Critically
+
+Ask four questions of any source:
+
+1. **Who made it** — and what did they want?
+2. **When and where** was it made?
+3. **What kind of evidence** is it (official record, memoir, coin, legend)?
+4. **What does it leave out?** Silence is also information.
+
+## Key Takeaways
+
+- History is argument built on evidence, starting from sources.
+- Primary sources come from the period studied; secondary sources interpret them.
+- Periodization organises time but should never be mistaken for the past itself.

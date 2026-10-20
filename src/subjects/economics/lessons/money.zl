@@ -1,0 +1,130 @@
+# Money: From Barter to Modern Currency
+
+> Money is whatever a society accepts as the common medium of
+> exchange; its functions and its measure define modern economies.
+
+[definition]
+**Money** is anything that is generally accepted as a medium of
+exchange and that simultaneously serves as a unit of value and a
+store of value. Acceptance, not material, makes money.
+[/definition]
+
+## 1. The Barter Problem
+
+Barter — goods for goods — requires a **double coincidence of
+wants**: a weaver wanting wheat must find a farmer wanting cloth, at
+the same time and place. Barter also lacks a common measure of value
+(n goods create n(n−1)/2 exchange rates) and a store of divisible
+value. Money dissolves all three defects.
+
+## 2. Evolution of Money
+
+| Stage | Example | Weakness solved |
+| --- | --- | --- |
+| Commodity money | Cattle, salt, shells, grain | None — lacked uniformity |
+| Metallic money | Gold, silver coins | Gave durability, divisibility |
+| Paper money | Currency notes, initially backed by gold | Convenience of carrying value |
+| Credit money | Cheques, bills, bank deposits | Transfer without cash |
+| Electronic money | UPI, cards, digital wallets | Instant, contactless transfer |
+
+@diagram tree id="money-evolution" layout="tree" aria="Evolution of money through five stages"
+  Money -> Commodity
+  Money -> Metallic
+  Money -> Paper
+  Money -> Credit
+  Money -> Electronic
+  "Commodity" -> "Cattle, salt, shells"
+  "Electronic" -> "UPI, cards, wallets"
+@/diagram
+
+## 3. Functions of Money
+
+**Primary functions:**
+
+1. **Medium of exchange** — splits barter's sale and purchase apart;
+   the double coincidence problem disappears.
+2. **Unit of value (measure)** — one common denominator prices
+   everything, making accounts and contracts possible.
+
+**Secondary functions:**
+
+3. **Standard of deferred payments** — debts, salaries, and loans
+   are set in money terms, not in goats.
+4. **Store of value** — purchasing power carried across time.
+5. **Transfer of value** — money moves value across persons and
+   places instantly.
+
+[tip]
+Memory hook: "MUM-ST" — Medium, Unit, Standard of deferred payment,
+Transfer — all resting on the Store of value function.
+[/tip]
+
+## 4. Types of Money
+
+- **Commodity money** — value from the material itself (gold coin).
+- **Fiat money** — value by government order (legal tender); modern
+  currency notes, worthless as paper, priceless by decree.
+- **Fiduciary money** — accepted on trust in the issuer (cheques,
+  bank deposits), not legal tender but convertible.
+
+**Characteristics of good money**: general acceptability,
+durability, portability, divisibility, uniformity, stability of
+value, scarcity (difficulty of counterfeit).
+
+## 5. Money Supply Measures (India)
+
+| Measure | Composition | Liquidity |
+| --- | --- | --- |
+| M1 | Currency with public + demand deposits with banks + other deposits with RBI | Highest |
+| M2 | M1 + savings deposits with post office | |
+| M3 | M1 + time deposits with banks — **broad money** | |
+| M4 | M3 + total post office deposits | Lowest |
+
+- **M1 is narrow money** — money ready to spend.
+- **M3 is broad money** — includes less liquid term deposits; it is
+  the headline measure of money supply in India.
+
+[info title="High-powered money (monetary base)"]
+**High-powered money (M0)** = currency held by the public + cash
+reserves with banks + cash reserves with the RBI. The RBI controls
+M0 directly; commercial banks multiply it into M1 and M3 through
+credit creation.
+[/info]
+
+## 6. RBI and Currency Issue
+
+The Reserve Bank of India is the sole issuer of currency notes in
+India (one-rupee notes and coins are issued by the Government of
+India, circulated through the RBI). Since **1956** India follows the
+**minimum reserve system**: the RBI maintains a minimum reserve of
+gold and foreign securities (₹200 crore, of which ₹115 crore in
+gold) and can issue any quantity of currency against it — the system
+that lets money supply grow with the economy.
+
+[example]
+A ₹500 note costs far less than ₹500 to print. It is fiat money: its
+worth rests on RBI backing, government legal-tender status, and your
+confidence that the shopkeeper will accept it tomorrow.
+[/example]
+
+## 7. Quick Revision Table
+
+| Concept | One-line memory |
+| --- | --- |
+| Double coincidence | Barter's fatal flaw |
+| Primary functions | Medium of exchange, unit of value |
+| Secondary functions | Deferred payment, transfer of value |
+| Store of value | Bridges present and future |
+| Fiat money | Value by government order |
+| M1 | Currency + demand deposits (narrow) |
+| M3 | M1 + time deposits (broad) |
+| M0 / high-powered | Currency + bank reserves with RBI |
+| Minimum reserve system | Since 1956, ₹200 crore backing |
+
+[summary]
+Money evolved from cattle to UPI to solve barter's frictions, and it
+works through five functions built on general acceptability. India
+measures it as M1 through M4 — narrow to broad — atop the RBI-
+controlled monetary base, issued since 1956 under the minimum
+reserve system.
+[/summary]

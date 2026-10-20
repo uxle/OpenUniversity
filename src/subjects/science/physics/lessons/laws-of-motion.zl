@@ -1,0 +1,137 @@
+# Newton's Laws of Motion: Force, Momentum, and Friction
+
+> Three short laws explain why things start, stop, and turn. This
+> lesson covers inertia, F = ma, action–reaction pairs, momentum,
+> its conservation, friction, and circular motion.
+
+## 1. Force and the First Law of Motion
+
+A **force** is a push or pull on a body. Aristotle thought motion
+needs a continuous push; Galileo's inclined planes said otherwise,
+and Newton sharpened the idea into his first law.
+
+[definition]
+**Newton's first law (law of inertia):** a body stays at rest, or
+keeps moving uniformly in a straight line, unless a net external
+force acts on it.
+[/definition]
+
+**Inertia** is a body's resistance to any change of state, and
+**mass** is its measure. Passengers lurch backward when a bus
+starts and forward when it brakes — inertia at work.
+
+[example]
+In a collision the car stops but the passenger keeps moving
+forward — inertia. The seatbelt supplies the backward force so
+the passenger is not thrown onto the wheel.
+[/example]
+
+## 2. The Second Law: F = ma
+
+@math label="eq:newton-second-law"
+F = ma
+@/math
+
+The unit of force is the **newton**: 1 N accelerates a 1 kg mass at
+1 m/s². The same force gives a heavier mass a smaller acceleration
+— doubling the mass halves the acceleration.
+
+[example]
+**Worked example.** A 2 kg block accelerates at 5 m/s²:
+F = 2 × 5 = 10 N. If the same 10 N pushes a 4 kg block,
+a = 10 ÷ 4 = 2.5 m/s².
+[/example]
+
+## 3. The Third Law: Action and Reaction
+
+For every action there is an equal and opposite reaction — and the
+two forces act on *different bodies*, so they never cancel.
+
+A rocket pushes hot gas downward; the gas pushes the rocket upward.
+A swimmer pushes water back; the water drives the swimmer forward.
+A gun recoils as the bullet races ahead.
+
+@diagram tree id="force-family" layout="tree" aria="Forces classified into contact and non-contact types"
+  "Force" -> "Contact: friction, normal, tension, air drag"
+  "Force" -> "Non-contact: gravitational, magnetic, electrostatic"
+@/diagram
+
+[warning]
+Action and reaction act on two different bodies — that is exactly
+why they never cancel each other's motion.
+[/warning]
+
+## 4. Momentum and Impulse
+
+**Momentum** is the "quantity of motion" — it measures the impact a
+moving body can deliver.
+
+@math label="eq:momentum"
+p = mv
+@/math
+
+The second law, read fully, says force is the rate of change of
+momentum. **Impulse** = force × time = the momentum change it
+produces.
+
+[example]
+A cricketer draws the hands back while catching a fast ball:
+stretching the collision time shrinks the force. Airbags and
+seatbelts work the same way; a karate chop keeps the time tiny, so
+the force is huge.
+[/example]
+
+## 5. Conservation of Momentum
+
+[definition]
+In an isolated system the total momentum before an interaction
+equals the total momentum after it.
+[/definition]
+
+[example]
+**Collision.** A 2 kg trolley moving at 3 m/s couples with a
+stationary 1 kg trolley. Total p = 6 kg·m/s, so the joined 3 kg
+pair moves at 6 ÷ 3 = 2 m/s.
+**Recoil.** A 3 kg gun fires a 0.02 kg bullet at 300 m/s
+(p = 6 kg·m/s); the gun kicks backward at 6 ÷ 3 = 2 m/s.
+[/example]
+
+## 6. Friction
+
+**Friction** opposes relative sliding between surfaces in contact;
+it arises from microscopic interlocking of surface bumps.
+
+| Type | Acts when | Relative size |
+| --- | --- | --- |
+| Static | no sliding yet | largest — a threshold |
+| Kinetic | surfaces are sliding | smaller than static |
+| Rolling | wheels or balls roll | smallest of the three |
+
+Advantages: walking, braking, gripping, striking a match. Trouble:
+wear, heat, and wasted energy — reduced with lubricants, polishing,
+and ball bearings.
+
+## 7. Circular Motion and Centripetal Force
+
+A body moving in a circle is always accelerating toward the centre;
+the inward net force is the **centripetal force**.
+
+@math label="eq:centripetal-force"
+F = \frac{mv^{2}}{r}
+@/math
+
+Mud flies off a spinning wheel *tangentially*: once it lets go, no
+inward force remains and inertia carries it straight. Earth's
+gravity supplies the centripetal force that keeps the Moon in orbit.
+
+## 8. Quick Revision
+
+| Concept | Formula / fact |
+| --- | --- |
+| First law | no net force → no change in motion |
+| Second law | F = ma; 1 N = 1 kg·m/s² |
+| Third law | equal, opposite, on different bodies |
+| Momentum | p = mv (kg·m/s) |
+| Impulse | force × time = change in momentum |
+| Conservation | total p stays constant in an isolated system |
+| Centripetal force | mv² ÷ r, directed to the centre |

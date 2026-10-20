@@ -1,0 +1,199 @@
+/* src/styles/components/reading-extras.css — reading experience add-ons:
+   lesson reading-progress bar, back-to-top float, reading-time meta. */
+
+/* ── Reading progress (lesson pages) ──────────────────────────────────
+   Fixed directly under the sticky header; scaleX compositor-only. */
+.ou-reading-progress {
+  position: fixed;
+  top: var(--ou-header-height);
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: var(--ou-z-sticky);
+  background: transparent;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--ou-transition-base);
+}
+.ou-reading-progress--visible { opacity: 1; }
+.ou-reading-progress__fill {
+  height: 100%;
+  width: 100%;
+  background: var(--ou-gradient-brand);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  will-change: transform;
+}
+
+/* ── Reading time (lesson meta) ─────────────────────────────────────── */
+.ou-reading-time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  margin-top: var(--ou-space-1);
+}
+
+/* ── Back to top (global) ─────────────────────────────────────────────
+   Sits above the bottom nav on mobile, docked bottom-right on desktop;
+   hidden attribute + class hook for an easy transition when allowed. */
+.ou-back-to-top {
+  position: fixed;
+  right: max(var(--ou-space-4), env(safe-area-inset-right));
+  bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-4) + env(safe-area-inset-bottom));
+  width: 44px;
+  height: 44px;
+  border-radius: var(--ou-radius-pill);
+  border: 1px solid var(--ou-border-strong);
+  background: var(--ou-surface);
+  color: var(--ou-text);
+  box-shadow: var(--ou-shadow-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--ou-transition-base), transform var(--ou-transition-base),
+              background var(--ou-transition-fast), color var(--ou-transition-fast);
+  z-index: calc(var(--ou-z-sticky) - 1);
+}
+.ou-back-to-top--visible {
+  opacity: 1;
+  transform: none;
+}
+.ou-back-to-top:hover {
+  color: var(--ou-accent);
+  border-color: var(--ou-accent);
+}
+.ou-back-to-top[hidden] { display: none; }
+
+@media (min-width: 720px) {
+  .ou-back-to-top {
+    bottom: var(--ou-space-6);
+  }
+}
+
+[data-a11y-reduced-motion="true"] .ou-back-to-top,
+[data-a11y-reduced-motion="true"] .ou-reading-progress {
+  transition: none;
+}
+
+/* ── Home hero upgrades ─────────────────────────────────────────────── */
+.ou-hero-heading__accent {
+  background: var(--ou-gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ou-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ou-space-2) var(--ou-space-4);
+  margin-top: var(--ou-space-3);
+}
+.ou-hero-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  color: var(--ou-text-secondary);
+}
+.ou-hero-stat svg { color: var(--ou-accent); }
+
+/* Input-shaped button that opens the command palette. */
+.ou-hero-search {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-3);
+  width: min(420px, 100%);
+  margin-top: var(--ou-space-5);
+  padding: var(--ou-space-3) var(--ou-space-4);
+  border: 1px solid var(--ou-border-strong);
+  border-radius: var(--ou-radius-pill);
+  background: var(--ou-surface);
+  color: var(--ou-text-muted);
+  font-size: var(--ou-fs-md);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--ou-shadow-xs);
+  transition: border-color var(--ou-transition-fast), box-shadow var(--ou-transition-fast),
+              transform var(--ou-transition-fast);
+}
+.ou-hero-search:hover {
+  border-color: var(--ou-accent);
+  box-shadow: var(--ou-shadow-glow-accent);
+  transform: translateY(-1px);
+}
+.ou-hero-search svg { color: var(--ou-accent); flex-shrink: 0; }
+.ou-hero-search__placeholder {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ou-text-muted);
+}
+.ou-hero-search__kbd {
+  font-family: inherit;
+  font-size: var(--ou-fs-xs);
+  font-weight: 600;
+  color: var(--ou-text-muted);
+  background: var(--ou-surface-subtle);
+  border: 1px solid var(--ou-border);
+  border-radius: 6px;
+  padding: 1px 8px;
+  flex-shrink: 0;
+}
+@media (max-width: 560px) {
+  .ou-hero-search__kbd { display: none; }
+}
+
+/* ── Continue-learning card ─────────────────────────────────────────── */
+.ou-continue-card {
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-4);
+  padding: var(--ou-space-4) var(--ou-space-5);
+  border-left: 3px solid var(--ou-accent);
+}
+.ou-continue-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--ou-radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ou-accent-subtle);
+  color: var(--ou-accent);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+.ou-continue-card__body { flex: 1; min-width: 0; }
+.ou-continue-card__eyebrow {
+  font-size: var(--ou-fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ou-accent);
+  margin-bottom: 2px;
+}
+.ou-continue-card .ou-card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ou-continue-card__chevron { color: var(--ou-text-muted); flex-shrink: 0; }
+.ou-continue-card:hover .ou-continue-card__chevron { color: var(--ou-accent); }
+
+/* ── Subject card descriptions: clamp to 3 lines ─────────────────────
+   Reasoning's 50-word description stretched its card (and its whole grid
+   row) far taller than siblings. Clamping evens the grid; the full text
+   remains on the subject's own page and via title tooltip. */
+.ou-subject-card .ou-card__subtitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

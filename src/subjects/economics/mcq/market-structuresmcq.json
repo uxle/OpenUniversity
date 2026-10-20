@@ -1,0 +1,76 @@
+{
+  "lessonId": "market-structures",
+  "title": "Market Structures: Competition, Monopoly, and the Middle Ground",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A firm in perfect competition is a price taker because:",
+      "options": ["The government fixes all prices", "Each firm is too small relative to the market to influence price", "Its product is patented", "It faces no buyers"],
+      "correct": 1,
+      "rationale": "With very many sellers of a homogenous product, no single firm's output decision can move the market price, so each takes the price as given."
+    },
+    {
+      "id": 2,
+      "question": "Which feature distinguishes monopolistic competition from perfect competition?",
+      "options": ["Product differentiation and branding", "Very many sellers", "Free entry and exit", "Homogenous products"],
+      "correct": 0,
+      "rationale": "Monopolistic competition keeps many sellers and free entry but differentiates products by brand, quality, or location — giving each firm limited pricing power."
+    },
+    {
+      "id": 3,
+      "question": "A natural monopoly arises when:",
+      "options": ["The government grants an exclusive licence", "A firm owns all skilled workers", "Economies of scale are so large that one firm serves the market at lowest cost", "Consumers prefer a single brand"],
+      "correct": 2,
+      "rationale": "When average cost keeps falling over the entire demand range, one firm can supply the whole market more cheaply than several — Indian Railways' network is the lesson's example."
+    },
+    {
+      "id": 4,
+      "question": "The kinked demand curve is associated with which market structure?",
+      "options": ["Perfect competition", "Monopoly", "Oligopoly", "Monopolistic competition"],
+      "correct": 2,
+      "rationale": "In oligopoly, rivals match price cuts but ignore price rises, producing a kink in the demand curve and sticky prices."
+    },
+    {
+      "id": 5,
+      "question": "Strategic interdependence — each firm considering rivals' reactions — is the defining trait of:",
+      "options": ["Monopoly", "Oligopoly", "Perfect competition", "A cartel's customers"],
+      "correct": 1,
+      "rationale": "Because oligopoly has few large firms, each one's pricing and output decisions materially affect the others, forcing strategic behaviour."
+    },
+    {
+      "id": 6,
+      "question": "A cartel is best described as:",
+      "options": ["A regulatory agency", "An explicit collusive agreement among rival firms", "A vertical merger", "A consumer protection body"],
+      "correct": 1,
+      "rationale": "Cartels are collusive oligopoly agreements — illegal in India under the Competition Act, 2002."
+    },
+    {
+      "id": 7,
+      "question": "Which Indian industry most closely approximates perfect competition?",
+      "options": ["Telecom services", "Railway operations", "Agricultural commodity mandis", "Cement production"],
+      "correct": 2,
+      "rationale": "Small farmers selling homogenous produce in vegetable mandis face many buyers and sellers with no individual price control — closest real-world approximation."
+    },
+    {
+      "id": 8,
+      "question": "Compared with perfect competition, a monopolist typically:",
+      "options": ["Produces more at a lower price", "Produces less and charges a higher price", "Produces the same output", "Faces a horizontal demand curve"],
+      "correct": 1,
+      "rationale": "A monopoly restricts output below the competitive level and prices above it, creating deadweight loss — the basis for anti-trust and regulation."
+    },
+    {
+      "id": 9,
+      "question": "In monopolistic competition, long-run economic profits are competed away mainly because of:",
+      "options": ["Product differentiation", "Free entry of new firms", "Government price ceilings", "Homogenous products"],
+      "correct": 1,
+      "rationale": "Easy entry means profits attract new differentiated sellers until excess profit is normalised, even though brands persist."
+    },
+    {
+      "id": 10,
+      "question": "A market with a few large sellers of a homogenous product like cement is best classified as:",
+      "options": ["Perfect competition", "Monopolistic competition", "Oligopoly", "Natural monopoly"],
+      "correct": 2,
+      "rationale": "Cement, steel, and aluminium are the lesson's examples of oligopoly with homogenous products and high entry barriers."
+    }
+  ]
+}

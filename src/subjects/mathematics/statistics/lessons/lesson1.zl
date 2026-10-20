@@ -1,3 +1,73 @@
-# Lesson1
+# Describing Data: Mean, Median, Mode, and Spread
 
-TODO: write lesson content.
+> Statistics turns heaps of numbers into a few honest summaries. This
+> lesson covers measuring a "typical" value (centre) and how scattered
+> the data is (spread).
+
+## 1. Measures of Centre
+
+Given the test scores: **4, 7, 7, 8, 9, 14**
+
+| Measure | How to compute | Here |
+| --- | --- | --- |
+| Mean | add all, divide by count | $(4+7+7+8+9+14)/6 = 49/6 \approx 8.2$ |
+| Median | middle value of sorted data | between 7 and 8 → **7.5** |
+| Mode | most frequent value | **7** |
+
+[definition]
+The **mean** uses every value but is dragged by outliers; the **median**
+splits the ordered data in half and ignores extremes; the **mode** is
+the only measure that works for categories ("the most common shoe size").
+[/definition]
+
+## Example: why medians matter
+
+Household incomes in a street: 30k, 32k, 35k, 38k, and one billionaire.
+
+- The mean is enormous — one extreme value dominates it.
+- The median still reports a typical resident's income.
+
+This is why news reports quote *median* salaries and house prices.
+
+## 2. Measures of Spread
+
+Two datasets can share a mean while behaving completely differently:
+
+| Data set | Mean | Comment |
+| --- | --- | --- |
+| 49, 50, 51 | 50 | tightly clustered |
+| 0, 50, 100 | 50 | wildly spread |
+
+- **Range** = maximum − minimum. Crude but instant.
+- **Interquartile range (IQR)** = spread of the middle 50%, immune to outliers.
+- **Standard deviation** measures the typical distance from the mean:
+
+@math label="eq:std"
+\sigma = \sqrt{\frac{\sum (x - \bar{x})^2}{n}}
+@/math
+
+## 3. Reading the Shape
+
+Plot data as a histogram and describe its silhouette:
+
+- **Symmetric:** mean ≈ median (heights of adults).
+- **Right-skewed:** long tail up → mean > median (incomes).
+- **Left-skewed:** long tail down → mean < median (easy exam scores).
+
+[important title="Centre without spread is half a story"]
+"The average is 50" hides whether everyone scored 48–52 or whether half
+failed and half aced it. Always pair a centre with a spread.
+[/important]
+
+## 4. Choosing Honestly
+
+Ask two questions before quoting any statistic:
+
+1. Is this measure representative here? (Outliers? Skew?)
+2. What does the spread say about how much the centre is worth?
+
+## Key Takeaways
+
+- Mean, median, mode answer "typical?" differently — pick per situation.
+- Range/IQR/standard deviation answer "how spread out?"
+- Shape (skew) decides which centre to trust.

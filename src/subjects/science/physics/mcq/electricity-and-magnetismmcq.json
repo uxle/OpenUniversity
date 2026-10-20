@@ -1,0 +1,126 @@
+{
+  "lessonId": "electricity-and-magnetism",
+  "title": "Electricity and Magnetism: Charges, Currents, and Fields",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Two positively charged spheres brought close together will:",
+      "options": [
+        "Attract each other",
+        "Repel each other",
+        "Neutralise each other",
+        "Merge into one body"
+      ],
+      "correct": 1,
+      "rationale": "Like charges repel and unlike charges attract — the basic rule of electrostatics."
+    },
+    {
+      "id": 2,
+      "question": "A lightning conductor protects a building by:",
+      "options": [
+        "Blocking the lightning bolt",
+        "Storing the charge inside the building",
+        "Offering the bolt a safe copper path into the ground",
+        "Attracting clouds away from the area"
+      ],
+      "correct": 2,
+      "rationale": "Franklin's pointed metal spike gives the giant spark an easy, safe route to earth instead of through the walls."
+    },
+    {
+      "id": 3,
+      "question": "If 12 C of charge flows through a lamp in 4 s, the current is:",
+      "options": [
+        "3 A",
+        "48 A",
+        "0.33 A",
+        "12 A"
+      ],
+      "correct": 0,
+      "rationale": "I = Q/t = 12 ÷ 4 = 3 A, the lesson's worked example."
+    },
+    {
+      "id": 4,
+      "question": "Using Ohm's law, a 12 V battery across a 4 Ω lamp drives a current of:",
+      "options": [
+        "48 A",
+        "0.33 A",
+        "3 A",
+        "16 A"
+      ],
+      "correct": 2,
+      "rationale": "I = V/R = 12 ÷ 4 = 3 A at constant temperature."
+    },
+    {
+      "id": 5,
+      "question": "Two 6 Ω resistors connected in parallel give a total resistance of:",
+      "options": [
+        "12 Ω",
+        "3 Ω",
+        "6 Ω",
+        "0.5 Ω"
+      ],
+      "correct": 1,
+      "rationale": "1/Rp = 1/6 + 1/6 = 1/3, so Rp = 3 Ω — parallel connection lowers the total resistance."
+    },
+    {
+      "id": 6,
+      "question": "In a series circuit, the current is:",
+      "options": [
+        "The same through every component",
+        "Divided between the components",
+        "Zero after the first component",
+        "Larger through smaller resistances"
+      ],
+      "correct": 0,
+      "rationale": "Series offers a single path, so the same current flows everywhere; it is the voltage that is shared."
+    },
+    {
+      "id": 7,
+      "question": "A fuse protects a circuit by:",
+      "options": [
+        "Increasing the resistance of the wires",
+        "Melting and breaking the circuit when current exceeds its rating",
+        "Converting AC to DC",
+        "Storing the excess charge"
+      ],
+      "correct": 1,
+      "rationale": "Joule heating (H = I²Rt) melts the fuse wire once the current crosses the rating, cutting off the supply."
+    },
+    {
+      "id": 8,
+      "question": "Electric bulb filaments are made of tungsten because it:",
+      "options": [
+        "Is a cheap metal",
+        "Has very low resistance",
+        "Withstands about 3400 °C without melting",
+        "Is a good insulator"
+      ],
+      "correct": 2,
+      "rationale": "Tungsten's extremely high melting point (≈ 3400 °C) lets the thin filament glow white-hot without melting."
+    },
+    {
+      "id": 9,
+      "question": "Hans Christian Oersted's 1820 discovery was that:",
+      "options": [
+        "Current is proportional to voltage",
+        "Moving a magnet induces current",
+        "Charge comes in discrete packets",
+        "A current deflects a nearby compass needle"
+      ],
+      "correct": 3,
+      "rationale": "Oersted saw the compass swivel beside a live wire, showing that every current produces a magnetic field."
+    },
+    {
+      "id": 10,
+      "question": "The earth wire in domestic wiring (green insulation) exists to:",
+      "options": [
+        "Carry the main supply current",
+        "Return the current to the meter",
+        "Bond appliance metal bodies to the ground for safety",
+        "Increase the voltage of appliances"
+      ],
+      "correct": 2,
+      "rationale": "The earth wire keeps appliance bodies at ground potential, so even a live fault cannot give the user a shock."
+    }
+  ]
+}

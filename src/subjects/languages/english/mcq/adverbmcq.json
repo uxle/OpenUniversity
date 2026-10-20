@@ -29,6 +29,48 @@
       "options": ["but", "than", "except", "besides"],
       "correct": 1,
       "rationale": "'Other/Rather/Otherwise' are followed by 'Than' — 'I have no other choice than to fight again.'"
+    },
+    {
+      "id": 5,
+      "question": "\"He is a ___ fast runner.\" Choose the word that correctly modifies the adjective 'fast'.",
+      "options": ["very", "much", "more", "most"],
+      "correct": 0,
+      "rationale": "An adverb can modify an adjective — in 'He is a very fast runner', the adverb 'very' modifies the adjective 'fast'."
+    },
+    {
+      "id": 6,
+      "question": "What is the adverb form of 'Clever'?",
+      "options": ["Cleverful", "Cleverly", "Clever", "Cleverity"],
+      "correct": 1,
+      "rationale": "Most adjectives form their adverbs by adding '-ly': Wise → Wisely, Honest → Honestly, Clever → Cleverly."
+    },
+    {
+      "id": 7,
+      "question": "\"It is nothing else ___ a waste of time.\" Choose the correct connector.",
+      "options": ["than", "but", "or", "then"],
+      "correct": 1,
+      "rationale": "'Nothing else' is followed by 'But' — while 'Other/Rather/Otherwise' take 'Than', the phrase 'Nothing else' takes 'But'."
+    },
+    {
+      "id": 8,
+      "question": "\"Soldiers are trained never to fight ___.\" Which is the correct adverbial expression?",
+      "options": ["cowardly", "cowardlily", "in a cowardly manner", "with cowardice manner"],
+      "correct": 2,
+      "rationale": "'Cowardly' is an adjective, not an adverb; so the adverbial sense is expressed as 'in a cowardly manner'."
+    },
+    {
+      "id": 9,
+      "question": "\"Mr. Sukesh and his family ate the food ___.\" Fill in with the correct adverb.",
+      "options": ["greedy", "greedily", "greedier", "greediness"],
+      "correct": 1,
+      "rationale": "The verb 'ate' needs an adverb to modify it, and the adverb form of 'greedy' is 'greedily'."
+    },
+    {
+      "id": 10,
+      "question": "\"He came ___ to me.\" Choose the correct adverb.",
+      "options": ["direct", "direction", "directly", "directing"],
+      "correct": 2,
+      "rationale": "'Came' is a verb here, so it must be modified by an adverb: 'He came directly to me.'"
     }
   ]
 }

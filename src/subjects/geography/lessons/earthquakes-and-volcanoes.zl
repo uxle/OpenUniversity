@@ -1,0 +1,123 @@
+# Earthquakes and Volcanoes: When the Earth Releases Energy
+
+> Strain stored in rock and heat stored in the mantle escape as
+> trembling ground and erupting mountains. This lesson explains how
+> earthquakes are measured, where they cluster, and how volcanoes are
+> built and classified.
+
+## 1. Anatomy of an Earthquake
+
+[definition]
+An **earthquake** is the shaking of the ground caused by a sudden
+release of accumulated strain along a fault. The rupture point at depth
+is the **focus**; the point on the surface directly above it is the
+**epicentre**, where shaking is usually strongest.
+[/definition]
+
+## 2. Seismic Waves
+
+| Wave | Speed | Passes through | Character |
+| --- | --- | --- | --- |
+| P (primary) | Fastest | Solids, liquids, and gases | Push–pull; arrives first |
+| S (secondary) | Slower | Solids only | Shearing; cannot cross the liquid core |
+| L and Rayleigh (surface) | Slowest | Along the surface | Rolling ground motion; most destructive |
+
+[info title="Waves as probes"]
+The S-wave shadow zone — where no shear waves arrive — proved that the
+outer core is liquid, a conclusion reached without drilling a single
+metre into the Earth.
+[/info]
+
+## 3. Scales of Measurement
+
+| Scale | Measures | Nature | Range |
+| --- | --- | --- | --- |
+| Richter (magnitude) | Energy released | Objective, logarithmic | Open-ended; each whole step means about 10x ground motion |
+| Mercalli (intensity) | Observed damage | Subjective, local | I (unnoticed) to XII (total destruction) |
+
+[important]
+One earthquake has one magnitude but many intensities: magnitude is
+fixed by the energy released, while Mercalli intensity falls with
+distance and depends on local building quality.
+[/important]
+
+## 4. Causes and Aftershocks
+
+| Cause | Example |
+| --- | --- |
+| Tectonic (most quakes) | Movement along the San Andreas fault |
+| Volcanic | Quakes accompanying eruptions |
+| Collapse | Caving-in of mines and caverns |
+| Human-induced | Reservoir loading (Koyna, Maharashtra, 1967) |
+
+Small quakes that precede the main event are **foreshocks**; those that
+follow are **aftershocks**, which can topple buildings already weakened
+by the main shock.
+
+## 5. Where Earthquakes and Volcanoes Cluster
+
+- **Circum-Pacific Ring of Fire** — about 75% of the world's active
+  volcanoes and roughly 90% of its large earthquakes.
+- **Mid-Atlantic ridge** — shallow quakes along diverging plates.
+- **Alpine–Himalayan belt** — quakes from the Africa–Eurasia and
+  India–Eurasia collisions.
+
+India's seismic zoning (Bureau of Indian Standards):
+
+| Zone | Severity | Includes | Share of area |
+| --- | --- | --- | --- |
+| V | Most severe | NE India, Kashmir, Kutch, Andaman & Nicobar | ~11% |
+| IV | Severe | Delhi, remaining Jammu & Kashmir, Himachal foothills | ~18% |
+| III | Moderate | Most of the Ganga plain, parts of the peninsula | ~30% |
+| II | Least | Interior of the Deccan plateau | ~41% |
+
+## 6. Volcano Anatomy and Types
+
+@diagram tree id="volcano-anatomy" layout="tree" aria="Parts of a volcano from magma chamber to crater"
+  Volcano -> "Magma chamber"
+  Volcano -> "Conduit and vent"
+  Volcano -> "Crater"
+  Volcano -> "Lava flows"
+  Volcano -> "Ash and pyroclasts"
+@/diagram
+
+| Type | Behaviour | Example |
+| --- | --- | --- |
+| Shield | Fluid basaltic lava, gentle slopes | Mauna Loa, Hawaii |
+| Composite (stratovolcano) | Alternating lava and ash layers; explosive | Fuji, Vesuvius, Stromboli |
+| Cinder cone | Small, steep cone of loose fragments | Paricutin, Mexico |
+| Caldera | Summit collapses after a huge eruption | Krakatoa, Toba |
+| Fissure eruption | Lava floods from long cracks | Deccan Traps; Iceland |
+
+## 7. Active, Dormant, and Extinct
+
+| Class | Meaning | Example |
+| --- | --- | --- |
+| Active | Erupts regularly or recently | Barren Island — India's only active volcano |
+| Dormant | Sleeping between long intervals | Vesuvius, which buried Pompeii in 79 CE |
+| Extinct | No eruption in recorded history; deeply eroded | Most Deccan Trap vents |
+
+## 8. Hot Springs and Geysers
+
+Groundwater heated by shallow magma emerges as **hot springs**; where
+superheated water flashes periodically to steam, a **geyser** erupts.
+Old Faithful at Yellowstone is the famous example, and the word geyser
+itself comes from Iceland's Great Geysir. In India, Manikaran (Himachal
+Pradesh) and the Puga valley (Ladakh) are notable geothermal springs.
+
+[note]
+Geothermal fields like Puga are being studied as clean-energy sources
+that tap the same heat that powers volcanoes.
+[/note]
+
+## 9. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Fastest seismic wave? | P-wave (through all three states) |
+| Most destructive waves? | Surface (L and Rayleigh) waves |
+| Richter measures? | Magnitude — energy, logarithmically |
+| Mercalli measures? | Observed intensity, I to XII |
+| Ring of Fire holds? | ~75% of volcanoes, ~90% of large quakes |
+| India's Zone V covers? | NE India, Kashmir, Kutch, Andaman & Nicobar |
+| India's only active volcano? | Barren Island (Andaman Sea) |

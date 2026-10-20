@@ -1,0 +1,140 @@
+# Sorting Algorithms: Ordering Data Efficiently
+
+> Sorting — putting a collection into order — is the most studied
+> problem in computer science. This lesson walks the simple quadratic
+> sorts, the fast divide-and-conquer family, and how to choose.
+
+## 1. Why Sorting Matters
+
+Sorted data is dramatically cheaper to work with:
+
+- **Binary search** needs sorted input: O(log n) instead of O(n).
+- **Duplicates** collapse into adjacent runs, so dedup is one scan.
+- People expect ordered output: price lists, rankings, inbox dates.
+
+## 2. Vocabulary: In-Place and Stable
+
+[definition]
+A sort is **in-place** if it rearranges elements inside the original
+array using only O(1) extra memory. A sort is **stable** if equal keys
+keep their original relative order, so a later sort never scrambles
+an earlier one.
+[/definition]
+
+## 3. The Simple Sorts: Bubble, Selection, Insertion
+
+| Algorithm | How it works | Best | Worst |
+| --- | --- | --- | --- |
+| Bubble | Swap adjacent out-of-order pairs; the largest value bubbles to the end each pass | O(n) | O(n²) |
+| Selection | Scan for the smallest remaining item, swap it into place | O(n²) | O(n²) |
+| Insertion | Slide each new item left into its spot, like arranging cards in hand | O(n) | O(n²) |
+
+All three use O(1) extra space. Insertion sort is the keeper — adaptive,
+finishing nearly-sorted input in O(n) — and the pick for short runs.
+
+## 4. Bubble Sort, Pass by Pass
+
+Sorting the list 5 3 8 1 4 with left-to-right passes:
+
+| Pass | Swaps | List after the pass |
+| --- | --- | --- |
+| 1 | 3 | 3 5 1 4 8 |
+| 2 | 2 | 3 1 4 5 8 |
+| 3 | 1 | 1 3 4 5 8 |
+| 4 | 0 | 1 3 4 5 8 — sorted, stop early |
+
+```text
+BUBBLE-SORT(A):
+  repeat until a full pass makes no swap:
+    for i in 0 .. length(A) - 2:
+      if A[i] > A[i+1]:
+        swap A[i] and A[i+1]
+```
+
+[tip]
+The "no swaps means done" rule gives bubble sort its O(n) best case.
+[/tip]
+
+## 5. Efficient Sorts: Divide and Conquer
+
+**Merge sort** splits the list in half, recursively sorts each half,
+then merges the two sorted halves in one linear sweep:
+
+@diagram tree id="sorting-split-tree" layout="tree" aria="Merge sort splitting a list into halves down to single elements"
+  "38 27 43 3" -> "38 27"
+  "38 27 43 3" -> "43 3"
+  "38 27" -> "38"
+  "38 27" -> "27"
+  "43 3" -> "43"
+  "43 3" -> "3"
+@/diagram
+
+The tree has log₂ n levels, each costing O(n) to merge, so merge sort
+runs in O(n log n) on every input — but needs the O(n) scratch buffer.
+
+**Quicksort** picks a **pivot**, partitions smaller items left and
+larger right, then recurses on both sides: in-place and usually
+fastest, but a bad pivot on sorted input degrades it to O(n²).
+
+**Heapsort** builds a max-heap, then repeatedly swaps the root (the
+maximum) to the end and re-heapifies: O(n log n) guaranteed, in-place,
+but not stable and slower than quicksort on most hardware.
+
+## 6. Beyond Comparisons: Counting and Bucket Sort
+
+Every comparison-based sort needs Ω(n log n) comparisons in the worst
+case: n! orderings exist, and each comparison cuts them in half.
+Non-comparison sorts dodge the bound by using keys as array indices:
+
+| Algorithm | Idea | Time | Works when |
+| --- | --- | --- | --- |
+| Counting | Tally how many times each key occurs, rebuild in order | O(n + k) | small integer keys, k = range |
+| Bucket | Scatter items into ordered buckets, sort each bucket | O(n + k) avg | data spread evenly over a range |
+
+[important]
+Counting sort breaks the n log n barrier by not comparing at all — it
+indexes: a million exam scores between 0 and 100 sort in linear time.
+[/important]
+
+## 7. The Master Comparison Table
+
+| Algorithm | Best | Average | Worst | Extra space | Stable |
+| --- | --- | --- | --- | --- | --- |
+| Bubble | O(n) | O(n²) | O(n²) | O(1) | Yes |
+| Selection | O(n²) | O(n²) | O(n²) | O(1) | No |
+| Insertion | O(n) | O(n²) | O(n²) | O(1) | Yes |
+| Merge | O(n log n) | O(n log n) | O(n log n) | O(n) | Yes |
+| Quick | O(n log n) | O(n log n) | O(n²) | O(log n) | No |
+| Heap | O(n log n) | O(n log n) | O(n log n) | O(1) | No |
+| Counting | O(n + k) | O(n + k) | O(n + k) | O(k) | Yes |
+
+## 8. Choosing a Sort in Practice
+
+@chart bar title="Approximate comparisons to sort 1,000 items"
+labels:
+Bubble sort
+Insertion sort
+Merge sort
+Quicksort
+
+data:
+495000
+250000
+10000
+11000
+@/chart
+
+In practice, reach for the built-in sort and move on — Python and Java
+ship **Timsort**, a stable merge/insertion hybrid that runs in O(n) on
+nearly-sorted data; C++ `std::sort` uses **introsort**, quicksort that
+turns to heapsort when recursion runs deep.
+
+- Guaranteed stability? Timsort. Tiny arrays? Insertion sort.
+  Small integer keys? Counting sort.
+
+[summary]
+The simple sorts are O(n²) and only suit tiny or nearly-sorted inputs.
+Merge, quick, and heap all average O(n log n): merge stable but O(n)
+space; quick in-place with an O(n²) worst case; heap safe but unstable.
+Counting sort reaches O(n + k) by abandoning comparisons.
+[/summary]

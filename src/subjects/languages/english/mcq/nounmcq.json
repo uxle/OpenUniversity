@@ -29,6 +29,48 @@
       "options": ["Gold", "Team", "Kindness", "Ramayana"],
       "correct": 1,
       "rationale": "'Team' refers to a group, making it a Collective Noun, distinct from Material (Gold), Abstract (Kindness), or Proper (Ramayana) nouns."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is an Uncountable Noun that must NOT take '-s' or a plural form?",
+      "options": ["Furniture", "Chair", "Table", "Book"],
+      "correct": 0,
+      "rationale": "Nouns like Furniture, Luggage, Information, and Poetry are uncountable — they take a singular verb and never take -s/es (no 'furnitures', 'informations')."
+    },
+    {
+      "id": 6,
+      "question": "\"Some cattle ___ entered the fields.\" Choose the correct verb.",
+      "options": ["has", "is", "have", "was"],
+      "correct": 2,
+      "rationale": "Nouns like Cattle, People, Police and Folk are always plural and take plural verbs — 'Some cattle have entered the fields.' Never add -s to them."
+    },
+    {
+      "id": 7,
+      "question": "\"Today my cousin sister prepared tea.\" What correction does the lesson suggest?",
+      "options": ["my cousins sister prepared tea", "my cousin prepared tea", "my cousin's sisters prepared tea", "No correction needed"],
+      "correct": 1,
+      "rationale": "'Cousin' already means brother or sister, so using 'Sister/Brother' with it is superfluous — the correct sentence is 'Today my cousin prepared tea.'"
+    },
+    {
+      "id": 8,
+      "question": "\"A bunch of keys ___ used to open it.\" Choose the correct verb.",
+      "options": ["are", "have", "were", "is"],
+      "correct": 3,
+      "rationale": "A collective noun expression like 'A bunch of keys' or 'A team of players', when functioning as a single unit, takes a singular verb — 'is'."
+    },
+    {
+      "id": 9,
+      "question": "Which sentence is correct according to the Numerical Nouns rule?",
+      "options": ["I bought five dozens bananas.", "Two hundreds people gathered.", "She gave me millions of rupees yesterday.", "Please buy five dozen bananas."],
+      "correct": 3,
+      "rationale": "With definite numbers, Dozen/Hundred/Million take no -s: 'five dozen bananas', 'two hundred people'. The '-s + of' form is used only without definite numbers (e.g., 'Millions of students')."
+    },
+    {
+      "id": 10,
+      "question": "Which of these nouns remains exactly the same in singular and plural?",
+      "options": ["Child", "Cattle", "Sheep", "Furniture"],
+      "correct": 2,
+      "rationale": "Nouns like Fish, Deer, Sheep, Team, Jury and Audience retain the same form in singular and plural — e.g., 'Sheep are economically useful.' ('Children' is an irregular plural; 'cattle' is always plural.)"
     }
   ]
 }

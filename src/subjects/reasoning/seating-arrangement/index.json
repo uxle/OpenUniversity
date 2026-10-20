@@ -1,5 +1,7 @@
 {
   "lessons": [
-    "seating-arrangement-reasoning"
+    "seating-arrangement-reasoning",
+    "linear-seating-arrangement",
+    "circular-seating-arrangement"
   ]
 }

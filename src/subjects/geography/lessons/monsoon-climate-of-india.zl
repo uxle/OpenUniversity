@@ -1,0 +1,98 @@
+# The Indian Monsoon: Onset, Retreat, and Year-to-Year Variation
+
+> India's year turns on a seasonal reversal of winds that delivers
+> about three-quarters of its rain in four months. This lesson explains
+> the monsoon's machinery, calendar, and notorious variability.
+
+## 1. What "Monsoon" Means
+
+[definition]
+The **monsoon** — from the Arabic word *mausim*, season — is a seasonal
+reversal of wind direction and rainfall, driven by the temperature
+contrast between land and sea. In summer air flows sea-to-land; in
+winter, land-to-sea.
+[/definition]
+
+## 2. The Machinery
+
+- **Differential heating** — the land warms faster than the ocean,
+  drawing a thermal low over north India and Tibet.
+- **ITCZ migration** — the equatorial low (doldrums) follows the Sun
+  and settles over the Ganga plain by July.
+- **Tibetan Plateau heating** — the high plateau acts as a heat pump
+  lofting warm air and strengthening the low.
+- **Somali (Findlater) jet** — a cross-equatorial stream that feeds
+  the Arabian Sea branch with moisture.
+- **El Niño** — a warming of the eastern Pacific that typically
+  weakens the Indian monsoon.
+- **Indian Ocean Dipole** — a positive dipole (western Indian Ocean
+  warmer than normal) generally strengthens it.
+
+## 3. The Southwest Monsoon
+
+@diagram tree id="monsoon-branches" layout="tree" aria="Two branches of the southwest monsoon"
+  "Southwest monsoon" -> "Arabian Sea branch"
+  "Southwest monsoon" -> "Bay of Bengal branch"
+  "Arabian Sea branch" -> "Kerala and Western Ghats"
+  "Bay of Bengal branch" -> "Meghalaya and the Ganga plain"
+@/diagram
+
+The **Arabian Sea branch** strikes Kerala about 1 June, heaving
+orographic rain on the windward Western Ghats. The **Bay of Bengal
+branch**, deflected westward by the Himalaya, soaks Meghalaya — home
+of **Mawsynram**, the wettest place on Earth (~11,870 mm a year) —
+before crossing the Ganga plain. The two branches cover the whole
+country by about mid-July and retreat by mid-October.
+
+[info title="Why the windward Ghats flood"]
+Moisture-laden winds forced up the Ghats cool and condense; the
+leeward Deccan sits in a rain shadow that keeps Pune drier than Mumbai.
+[/info]
+
+## 4. The Retreating (Northeast) Monsoon
+
+In October–November the land cools, the lows fade, and winds reverse
+to blow from the north-east. Crossing the Bay of Bengal, they pick up
+moisture and drench the **Tamil Nadu coast**, which depends on this
+season for most of its rain. Meanwhile the northern plains swelter
+under the humid **October heat**, and Bay of Bengal cyclones strike
+the Andhra–Odisha–Tamil Nadu coast.
+
+## 5. The Indian Year in Four Seasons
+
+| Season | Months | Signature |
+| --- | --- | --- |
+| Cold weather | December–February | North-east trades; western disturbances water the rabi crop |
+| Hot weather | March–May | The Loo, dust storms, soaring maximums |
+| Southwest monsoon | June–September | About 75% of India's annual rainfall |
+| Retreating monsoon | October–November | North-east winds, Tamil Nadu rain, cyclones |
+
+## 6. Agriculture and the Monsoon Gamble
+
+| Crop season | Sown | Harvested | Typical crops |
+| --- | --- | --- | --- |
+| Kharif | June, with the monsoon | September–October | Rice, jute, cotton, maize |
+| Rabi | October–November | March–April | Wheat, barley, mustard, peas |
+
+Kharif yields live or die by the monsoon's timing and vigour; rabi
+crops lean on stored moisture and irrigation. Years of excess bring
+floods — years of deficit, drought; El Niño years are frequently, but
+not automatically, deficient ones.
+
+[warning]
+A delayed onset or a long mid-season break can halve kharif output,
+which is why the India Meteorological Department's weekly forecasts are
+watched like election results.
+[/warning]
+
+## 7. Quick Revision
+
+| Question | Answer |
+| --- | --- |
+| Monsoon's root cause? | Land–sea temperature contrast |
+| Onset over Kerala? | About 1 June |
+| Wettest place on Earth? | Mawsynram, Meghalaya |
+| Who gets retreating-monsoon rain? | The Tamil Nadu coast |
+| Share of annual rain from SW monsoon? | About 75% |
+| El Niño's usual effect? | Weakens the Indian monsoon |
+| Kharif crops? | Rice, jute, cotton, maize |

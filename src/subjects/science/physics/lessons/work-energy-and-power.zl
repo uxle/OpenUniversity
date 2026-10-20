@@ -1,0 +1,135 @@
+# Work, Energy, and Power: The Currency of Physics
+
+> Work is force moving through a distance, energy is the capacity
+> to do work, and power is how fast the work gets done. Together
+> they form the accounting system of physics.
+
+## 1. Work Done by a Force
+
+[definition]
+**Work** is done when a force acts along a displacement; it equals
+force × displacement × cosine of the angle between them.
+[/definition]
+
+@math label="eq:work"
+W = F s \cos\theta
+@/math
+
+The SI unit of work (and energy) is the **joule**: 1 J = 1 N·m.
+Only the force component along the motion counts, so when θ = 90°
+the force does no work at all.
+
+| Angle θ | Work | Everyday picture |
+| --- | --- | --- |
+| 0° | positive, W = Fs | pushing a box along its path |
+| 90° | zero | carrying a bag while walking level |
+| 180° | negative | friction acting on a sliding box |
+
+## 2. Kinetic Energy
+
+@math label="eq:kinetic-energy"
+KE = \frac{1}{2}mv^{2}
+@/math
+
+**Kinetic energy** is the energy of motion. The **work–energy
+theorem** states that the net work done on a body equals its
+change in kinetic energy — pushing a cart adds KE, friction
+removes it.
+
+[example]
+Doubling the speed quadruples the energy: at 2v the kinetic
+energy is ½m(2v)² = 4 × ½mv². This is why even small rises in
+road speed make accidents far more destructive.
+[/example]
+
+## 3. Potential Energy
+
+@math label="eq:potential-energy"
+PE = mgh
+@/math
+
+**Potential energy** is stored energy of position or shape: a
+lifted book (gravitational), a stretched bow or compressed spring
+(elastic), water held behind a dam. Only the *change* in height
+matters, so the floor may be chosen as h = 0 anywhere.
+
+## 4. Conservation of Energy
+
+[definition]
+Energy can neither be created nor destroyed — it only changes
+form. The total energy of an isolated system stays constant.
+[/definition]
+
+[example]
+**Falling ball.** A ball dropped from 20 m starts with
+PE = mgh and finishes with KE = ½mv²:
+
+@math label="eq:falling-ball"
+v = \sqrt{2gh} = \sqrt{2 \times 9.8 \times 20} \approx 20\ \mathrm{m/s}
+@/math
+
+A pendulum performs the same trade every swing: maximum PE at the
+ends of the arc, maximum KE at the lowest point.
+[/example]
+
+@diagram tree id="energy-chain" layout="tree" aria="Energy transformation chain in a hydroelectric power station"
+  "Dam water: gravitational PE" -> "Falling water: kinetic energy"
+  "Falling water: kinetic energy" -> "Turbine: kinetic energy"
+  "Turbine: kinetic energy" -> "Generator: electrical energy"
+  "Generator: electrical energy" -> "Homes: light and heat"
+@/diagram
+
+## 5. Power
+
+@math label="eq:power"
+P = \frac{W}{t}
+@/math
+
+**Power** is the rate of doing work; its unit is the **watt**
+(1 W = 1 J/s). The same task done faster demands more power.
+
+[example]
+A 50 kg student climbs a 4 m staircase in 10 s. Work done
+= mgh = 50 × 9.8 × 4 ≈ 1960 J, so the power output is
+1960 ÷ 10 ≈ 196 W — about two old light bulbs.
+[/example]
+
+## 6. The Commercial Unit: Kilowatt-Hour
+
+Electricity bills measure energy in the **kilowatt-hour**, the
+energy delivered by 1 kW running for one hour.
+
+@math label="eq:kwh"
+1\ \mathrm{kWh} = 3.6 \times 10^{6}\ \mathrm{J}
+@/math
+
+[example]
+A 100 W bulb burning for 10 hours uses 100 × 10 = 1000 Wh
+= 1 kWh — exactly one "unit" on a domestic electricity bill.
+[/example]
+
+## 7. Forms of Energy
+
+| Form | Carried by | Example |
+| --- | --- | --- |
+| Mechanical | position + motion | dam water, flying arrow |
+| Heat | random molecular motion | engine radiator |
+| Chemical | molecular bonds | food, petrol, battery |
+| Electrical | moving charges | household supply |
+| Light | electromagnetic waves | sunlight, lasers |
+| Nuclear | binding energy of nuclei | uranium fission, the Sun |
+
+Energy chains everyday: food (chemical) → muscle work
+(mechanical) → heat; petrol (chemical) → engine (kinetic + heat).
+
+## 8. Quick Revision
+
+| Item | Remember |
+| --- | --- |
+| Work | W = Fs cos θ; unit joule (J) |
+| Zero work | force ⊥ displacement (θ = 90°) |
+| Kinetic energy | KE = ½mv²; doubling v gives 4× KE |
+| Potential energy | PE = mgh |
+| Conservation | energy only changes form |
+| Power | P = W/t; unit watt (W) |
+| Commercial unit | 1 kWh = 3.6 × 10⁶ J |

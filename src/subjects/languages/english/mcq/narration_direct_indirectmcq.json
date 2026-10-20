@@ -29,6 +29,55 @@
       "options": ["Says", "Tells", "Told", "Will tell"],
       "correct": 2,
       "rationale": "'Said to' becomes 'told' when converting to Indirect Speech with a Past Tense reporting verb."
+    },
+    {
+      "id": 5,
+      "question": "With a Past Tense reporting verb, what do 'Has/Have' become in Indirect Speech?",
+      "options": ["Had", "Has been", "Would have", "Was/Were"],
+      "correct": 0,
+      "rationale": "Per the tense-change table, 'Has/Have' changes to 'Had' when the reporting verb is in the past tense."
+    },
+    {
+      "id": 6,
+      "question": "With a Past Tense reporting verb, how do 'Will/Can/May' change in Indirect Speech?",
+      "options": ["Shall / May / Might", "Would / Could / Might", "Should / Can / Must", "Will / Could / May"],
+      "correct": 1,
+      "rationale": "'Will/Can/May' change to 'Would/Could/Might' respectively when converting from direct to indirect speech with a past reporting verb."
+    },
+    {
+      "id": 7,
+      "question": "He said, \"Two and three is five.\" → He said that two and three ___ five. Why does the tense stay 'is'?",
+      "options": ["Because the reporting verb is in present tense", "Because it expresses a Universal Truth — the tense does NOT change (Rule 4)", "Because 'five' is a plural noun", "It is incorrect; it must change to 'was'"],
+      "correct": 1,
+      "rationale": "Rule 4 states that if the Reported Speech expresses a Universal Truth or Habitual Fact, the tense does not change — so 'two and three is five' keeps 'is'."
+    },
+    {
+      "id": 8,
+      "question": "For Yes/No questions converted to Indirect Speech, which connectors are used?",
+      "options": ["that / which", "if / whether", "what / where", "since / because"],
+      "correct": 1,
+      "rationale": "Per Rule 5, the reporting verb 'said to' becomes 'asked', and 'if' or 'whether' is used as connector for Yes/No questions; question words (why, what, where) are retained for question-word questions."
+    },
+    {
+      "id": 9,
+      "question": "While converting narration, 'Tomorrow' changes to:",
+      "options": ["The next day", "That day", "The previous day", "Next tomorrow"],
+      "correct": 0,
+      "rationale": "Time-word changes: Today → That day, Yesterday → The previous day, Tomorrow → The next day."
+    },
+    {
+      "id": 10,
+      "question": "In the SON rule for pronoun changes, the letter 'O' stands for:",
+      "options": ["1st Person changes according to Object", "2nd Person (You) changes according to Object", "Order of tenses", "Original tense retained"],
+      "correct": 1,
+      "rationale": "In SON, 'O' means the 2nd Person (You) changes according to the Object of the reporting sentence."
+    },
+    {
+      "id": 11,
+      "question": "Choose the correct Indirect form: He said to me, \"What is your name?\"",
+      "options": ["He asked me what my name was.", "He asked me what is my name.", "He said to me that what was my name.", "He asked me that what my name is."],
+      "correct": 0,
+      "rationale": "'Said to' becomes 'asked', the question word 'what' is retained as connector, and the tense backshifts: 'is' → 'was' — hence 'He asked me what my name was.'"
     }
   ]
 }

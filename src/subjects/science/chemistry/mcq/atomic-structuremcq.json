@@ -1,0 +1,76 @@
+{
+  "lessonId": "atomic-structure",
+  "title": "Atomic Structure: From Dalton to Quantum Numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who discovered the neutron, and in which year?",
+      "options": ["E. Rutherford, 1911", "J. Chadwick, 1932", "J. J. Thomson, 1897", "E. Goldstein, 1886"],
+      "correct": 1,
+      "rationale": "Chadwick detected the neutral particle in 1932. Thomson found the electron (1897), Rutherford proposed the nucleus (1911), and Goldstein observed canal rays (1886)."
+    },
+    {
+      "id": 2,
+      "question": "In Rutherford's gold foil experiment, most α-particles passed straight through the foil. This showed that:",
+      "options": ["atoms are dense, solid spheres", "electrons carry most of the mass", "the atom is mostly empty space", "gold atoms are radioactive"],
+      "correct": 2,
+      "rationale": "Straight passage meant the atom's body holds almost no matter; the rare large deflections came from a concentrated positive charge."
+    },
+    {
+      "id": 3,
+      "question": "About 1 in 20,000 α-particles bounced almost straight back because:",
+      "options": ["a tiny, dense, positive nucleus repelled and turned them", "the atom is mostly empty", "electrons absorbed the particles", "the gold foil was too thick"],
+      "correct": 0,
+      "rationale": "Only a concentrated positive charge could reverse a fast, heavy α-particle — the key evidence for the nuclear model."
+    },
+    {
+      "id": 4,
+      "question": "The 'plum pudding' model of the atom was proposed by:",
+      "options": ["Dalton", "Bohr", "Rutherford", "Thomson"],
+      "correct": 3,
+      "rationale": "J. J. Thomson imagined electrons embedded in a sphere of positive charge, like plums in a pudding."
+    },
+    {
+      "id": 5,
+      "question": "According to the Pauli exclusion principle, a single orbital can hold:",
+      "options": ["one electron only", "two electrons with opposite spins", "six electrons", "any number of electrons"],
+      "correct": 1,
+      "rationale": "No two electrons in an atom share all four quantum numbers, so an orbital holds at most two electrons, with spins opposed."
+    },
+    {
+      "id": 6,
+      "question": "Hund's rule states that electrons entering a set of equal-energy orbitals:",
+      "options": ["pair up before spreading out", "occupy orbitals singly with parallel spins before any pairing", "skip the subshell entirely", "fill only the middle orbital"],
+      "correct": 1,
+      "rationale": "Degenerate orbitals each gain one electron, spins parallel, before pairing begins."
+    },
+    {
+      "id": 7,
+      "question": "The electron configuration of potassium (Z = 19) is:",
+      "options": ["[Ar] 3d¹", "[Ne] 3s¹", "[Ar] 4s¹", "[Ar] 3p⁶"],
+      "correct": 2,
+      "rationale": "By the Aufbau order the 4s subshell fills before 3d, so potassium is [Ar] 4s¹ with one valence electron."
+    },
+    {
+      "id": 8,
+      "question": "Tritium (³H) contains how many neutrons?",
+      "options": ["0", "1", "2", "3"],
+      "correct": 2,
+      "rationale": "Tritium has 1 proton and mass number 3, so it contains 3 − 1 = 2 neutrons; protium has none and deuterium has one."
+    },
+    {
+      "id": 9,
+      "question": "⁴⁰Ar and ⁴⁰Ca are examples of:",
+      "options": ["isotopes", "isobars", "isotones", "ions"],
+      "correct": 1,
+      "rationale": "Isobars share a mass number (here 40) but differ in proton count; isotopes instead share the proton count."
+    },
+    {
+      "id": 10,
+      "question": "Bohr's model won lasting fame because it explained:",
+      "options": ["the neutron's discovery", "radioactivity", "the photoelectric effect", "hydrogen's line emission spectrum"],
+      "correct": 3,
+      "rationale": "Fixed orbits allow only definite energy jumps with ΔE = hν, matching hydrogen's sharp emission lines — though the model fails for multi-electron atoms."
+    }
+  ]
+}

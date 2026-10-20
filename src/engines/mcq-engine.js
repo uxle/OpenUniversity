@@ -93,11 +93,11 @@ class MCQEngine {
                 --text-main: #1c1c1e;
                 --text-sub: #8e8e93;
                 
-                --apple-green: #34c759;
-                --apple-green-bg: rgba(52, 199, 89, 0.12);
-                --apple-red: #ff3b30;
-                --apple-red-bg: rgba(255, 59, 48, 0.12);
-                --apple-blue: #007aff;
+                --apple-green: #22a05c;
+                --apple-green-bg: rgba(34, 160, 92, 0.12);
+                --apple-red: #e0564f;
+                --apple-red-bg: rgba(224, 86, 79, 0.12);
+                --apple-blue: #1d1d1f;
                 
                 --radius-card: 24px;
                 --radius-btn: 14px;
@@ -215,14 +215,14 @@ class MCQEngine {
             .option-item.correct {
                 background: var(--apple-green-bg);
                 border-color: var(--apple-green);
-                color: #155724;
+                color: #166b3f;
                 animation: appleBounce 0.4s var(--ease-apple);
             }
 
             .option-item.wrong {
                 background: var(--apple-red-bg);
                 border-color: var(--apple-red);
-                color: #721c24;
+                color: #a03e39;
                 animation: appleShake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
             }
 
@@ -234,7 +234,7 @@ class MCQEngine {
             .rationale-card {
                 margin-top: 1.5rem;
                 padding: 1rem 1.25rem;
-                background: rgba(0, 122, 255, 0.06);
+                background: rgba(77, 157, 248, 0.08);
                 border-radius: var(--radius-btn);
                 font-size: 0.85rem;
                 line-height: 1.5;
