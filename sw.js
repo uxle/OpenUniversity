@@ -19,7 +19,7 @@
 // caches are deleted on activate; clients are claimed so the first
 // page after an update is already controllerless-safe.
 
-const CACHE_VERSION = "openknowledge-v8-fluid-menu";
+const CACHE_VERSION = "openknowledge-v9-pdf-export";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -74,7 +74,26 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Everything else: stale-while-revalidate.
+  // App code (JS modules, CSS): network-first. Stale-while-revalidate here
+  // made returning visitors run the previous deploy's code for a whole
+  // visit (e.g. the old window.print() export instead of the PDF writer).
+  // Falls back to the cache when offline.
+  if (/\.(?:js|mjs|css)$/.test(url.pathname)) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_VERSION).then((c) => c.put(request, copy));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // Everything else (lessons, JSON, fonts, icons): stale-while-revalidate.
   event.respondWith(
     caches.match(request).then((cached) => {
       const refresh = fetch(request)
