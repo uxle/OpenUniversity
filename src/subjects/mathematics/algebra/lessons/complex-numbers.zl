@@ -1,0 +1,166 @@
+# Complex Numbers: Extending the Number Line into a Plane
+
+> No real number squared gives $-1$, yet equations like
+> $x^2 + 1 = 0$ demand answers. Mathematics answered by inventing a
+> new unit, $i$, and with it an entire two-dimensional number system —
+> the complex numbers. What began as a "imaginary" curiosity now
+> underpins AC circuit analysis, quantum mechanics, signal processing,
+> and fractal geometry.
+
+## 1. The Imaginary Unit
+
+[definition]
+The **imaginary unit** $i$ is defined by $i^2 = -1$. A **complex
+number** is any number of the form $z = a + bi$, where $a$ (the real
+part, $\text{Re}(z)$) and $b$ (the imaginary part, $\text{Im}(z)$)
+are real numbers.
+[/definition]
+
+Powers of $i$ cycle with period four and should be second nature:
+
+@math label="eq:i-cycle"
+i^1 = i, \quad i^2 = -1, \quad i^3 = -i, \quad i^4 = 1
+@/math
+
+So $i^{37} = i^{36} \cdot i = (i^4)^9 \cdot i = i$. Two complex numbers
+are equal exactly when both real parts and both imaginary parts match —
+which is how complex equations split into two real ones.
+
+## 2. The Argand Plane
+
+Every complex number $a + bi$ is drawn as the point $(a, b)$ in the
+**Argand diagram** — real axis horizontal, imaginary axis vertical.
+The distance from the origin is the **modulus**:
+
+@math label="eq:modulus"
+|z| = \sqrt{a^2 + b^2}
+@/math
+
+The angle from the positive real axis is the **amplitude (argument)**
+$\theta$, with $\tan\theta = \frac{b}{a}$ (quadrant chosen to match
+the signs of $a$ and $b$).
+
+| Form | Expression | Best for |
+| --- | --- | --- |
+| Cartesian | $a + bi$ | Addition, subtraction |
+| Polar | $r(\cos\theta + i\sin\theta)$ | Multiplication, division |
+| Exponential | $re^{i\theta}$ | Advanced work, roots |
+
+A complex number and its **conjugate** $\bar{z} = a - bi$ are mirror
+images across the real axis. Their product is always real:
+$z\bar{z} = |z|^2 = a^2 + b^2$ — the trick behind rationalising
+denominators.
+
+## 3. Arithmetic in the Complex Plane
+
+**Addition and subtraction** work component-wise — like vectors:
+
+@math label="eq:add"
+(a+bi) + (c+di) = (a+c) + (b+d)i
+@/math
+
+**Multiplication** follows from $i^2 = -1$:
+
+@math label="eq:multiply"
+(a+bi)(c+di) = (ac - bd) + (ad + bc)i
+@/math
+
+**Division** uses the conjugate to make the denominator real:
+
+@math label="eq:divide"
+\frac{a+bi}{c+di} = \frac{(a+bi)(c-di)}{c^2+d^2} = \frac{ac+bd}{c^2+d^2} + \frac{bc-ad}{c^2+d^2}\,i
+@/math
+
+**Worked example.** Simplify $\frac{3 + 4i}{1 - 2i}$:
+
+@math label="eq:divide-example"
+\frac{(3+4i)(1+2i)}{(1-2i)(1+2i)} = \frac{3 + 6i + 4i + 8i^2}{1+4} = \frac{-5 + 10i}{5} = -1 + 2i
+@/math
+
+## 4. Properties Worth Memorising
+
+- **Modulus is multiplicative:** $|z_1 z_2| = |z_1||z_2|$
+- **Conjugation respects arithmetic:** $\overline{z_1 + z_2} = \bar{z_1} + \bar{z_2}$ and $\overline{z_1 z_2} = \bar{z_1}\bar{z_2}$
+- **Triangle inequality:**
+
+@math label="eq:triangle"
+|z_1 + z_2| \le |z_1| + |z_2|
+@/math
+
+- **Distance interpretation:** $|z - z_1|$ is the distance between the
+  points $z$ and $z_1$, so loci like $|z - z_1| = r$ are circles and
+  $|z - z_1| = |z - z_2|$ are perpendicular bisectors.
+
+[important]
+If $z = a + bi$ satisfies an equation, so does $\bar{z}$ whenever the
+equation has **real coefficients**. This is why a quadratic with real
+coefficients and complex root $p + qi$ automatically has the conjugate
+$p - qi$ as its other root — non-real roots always come in conjugate
+pairs.
+[/important]
+
+## 5. Polar Multiplication, De Moivre, and Roots
+
+In polar form, multiplication multiplies moduli and **adds** the
+angles; division divides moduli and subtracts them. Raising to the
+$n$-th power becomes De Moivre's theorem:
+
+@math label="eq:demoivre"
+\left(\cos\theta + i\sin\theta\right)^n = \cos n\theta + i\sin n\theta
+@/math
+
+The $n$-th roots of unity follow instantly — they are $n$ points
+equally spaced on the unit circle:
+
+@math label="eq:roots-unity"
+\omega_k = \cos\frac{2k\pi}{n} + i\sin\frac{2k\pi}{n}, \quad k = 0, 1, \ldots, n-1
+@/math
+
+For the cube roots of unity, $1, \omega, \omega^2$, two identities
+appear everywhere in exams:
+
+@math label="eq:omega"
+1 + \omega + \omega^2 = 0, \quad \omega^3 = 1
+@/math
+
+[example]
+Compute $(1+i)^8$. The modulus of $1+i$ is $\sqrt{2}$ and its angle is
+$45°$, so $(1+i)^8$ has modulus $(\sqrt{2})^8 = 16$ and angle
+$8 \times 45° = 360°$. Hence $(1+i)^8 = 16(\cos 360° + i\sin 360°)
+= 16$. What looks like a brutal binomial expansion is a two-line
+polar computation.
+[/example]
+
+## 6. Square Roots and Quadratic Equations
+
+The square root of $a + bi$ is found by writing
+$(x + yi)^2 = a + bi$ and equating parts:
+
+@math label="eq:sqrt-complex"
+x^2 - y^2 = a, \quad 2xy = b
+@/math
+
+For the quadratic $az^2 + bz + c = 0$ with discriminant
+$D = b^2 - 4ac < 0$, the roots are complex conjugates:
+
+@math label="eq:quadratic-complex"
+z = \frac{-b \pm i\sqrt{4ac - b^2}}{2a}
+@/math
+
+Nature-of-roots questions simply classify by the sign of $D$: real and
+distinct ($D > 0$), real and equal ($D = 0$), complex conjugates
+($D < 0$).
+
+[summary]
+Complex numbers $z = a + bi$ (with $i^2 = -1$) extend arithmetic into
+the Argand plane. Addition is component-wise; multiplication follows
+from $i^2 = -1$; division rationalises with the conjugate, and
+$z\bar{z} = |z|^2 = a^2 + b^2$. Polar form turns multiplication into
+angle addition, giving De Moivre's theorem and the $n$-th roots of
+unity — including the cube-root identities $1 + \omega + \omega^2 = 0$
+and $\omega^3 = 1$. Real-coefficient quadratics with negative
+discriminant have conjugate-pair roots, and the triangle inequality
+$|z_1 + z_2| \le |z_1| + |z_2|$ makes complex numbers behave like
+planar vectors. One invented number, $i$, buys an entire plane of
+algebra.
+[/summary]

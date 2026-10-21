@@ -1,0 +1,76 @@
+{
+  "lessonId": "prehistoric-india",
+  "title": "Prehistoric India: The Stone Age Foundations",
+  "questions": [
+    {
+      "id": 1,
+      "question": "'Prehistory' refers to the period:",
+      "options": ["Before humans existed", "Before written records, known only through material remains", "After the invention of writing", "Of the first cities only"],
+      "correct": 1,
+      "rationale": "Prehistory covers the human past lacking written documents; scholars reconstruct it from stone tools, pottery, bones, ash, and rock art."
+    },
+    {
+      "id": 2,
+      "question": "The correct cultural sequence of Indian prehistory is:",
+      "options": ["Neolithic → Palaeolithic → Mesolithic → Chalcolithic", "Palaeolithic → Mesolithic → Neolithic → Chalcolithic", "Chalcolithic → Neolithic → Mesolithic → Palaeolithic", "Mesolithic → Chalcolithic → Palaeolithic → Neolithic"],
+      "correct": 1,
+      "rationale": "Old Stone Age (knapped tools) → Middle (microliths) → New (farming, polished tools, pottery) → Copper-Stone villages."
+    },
+    {
+      "id": 3,
+      "question": "The rock shelters of Bhimbetka, famous for prehistoric paintings, are located in:",
+      "options": ["Raisen, Madhya Pradesh", "Belan valley, Uttar Pradesh", "Mewar, Rajasthan", "Daojali Hading, Assam"],
+      "correct": 0,
+      "rationale": "Bhimbetka (Raisen district, MP) — a UNESCO site discovered for science by V. S. Wakankar — holds paintings from Mesolithic times onward in red and white ochre."
+    },
+    {
+      "id": 4,
+      "question": "Microliths, tiny stone blades set into wood or bone with resin, characterise which age?",
+      "options": ["Lower Palaeolithic", "Mesolithic", "Neolithic", "Chalcolithic"],
+      "correct": 1,
+      "rationale": "Mesolithic hunters targeted small game and fish using these composite tools — light, versatile tips for arrows and spears."
+    },
+    {
+      "id": 5,
+      "question": "Mehrgarh, the earliest Neolithic farming village of the subcontinent (c. 7000 BCE), lies in:",
+      "options": ["The Kaveri delta", "Balochistan (Kachi plain)", "The middle Ganga valley", "Kashmir"],
+      "correct": 1,
+      "rationale": "Mehrgarh in Balochistan grew wheat and barley and cultivated cotton — the ancestor settlement of the later Harappan tradition."
+    },
+    {
+      "id": 6,
+      "question": "Pit-dwellings — circular pits dug into the ground as house foundations — characterise which Neolithic site?",
+      "options": ["Burzahom, Kashmir", "Maski, Karnataka", "Inamgaon, Maharashtra", "Eran, MP"],
+      "correct": 0,
+      "rationale": "Burzahom's people lived in pits (warm in winter, cool in summer) with mud-plastered sides and thatched roofs, alongside polished stone and bone tools."
+    },
+    {
+      "id": 7,
+      "question": "Which is a Chalcolithic culture of Maharashtra known from Inamgaon and Daimabad?",
+      "options": ["Ahar–Banas", "Jorwe", "Kayatha", "Savalda"],
+      "correct": 1,
+      "rationale": "The Jorwe culture (c. 1400–700 BCE) built planned farming villages in the northern Deccan; Ahar–Banas, Kayatha, and Malwa are its western-central contemporaries."
+    },
+    {
+      "id": 8,
+      "question": "In Chalcolithic Jorwe villages, children were often buried:",
+      "options": ["In separate cemeteries outside the village", "Under house floors in pairs of urns joined mouth-to-mouth", "In megalithic stone circles", "Not at all"],
+      "correct": 1,
+      "rationale": "Two urns placed mouth-to-mouth under the house floor held the child's remains — a domestic ritual echoed at Inamgaon and Nevasa."
+    },
+    {
+      "id": 9,
+      "question": "Ash-mound Neolithic sites associated with cattle herding, like Piklihal and Utnur, are found in:",
+      "options": ["South India (Karnataka–Andhra)", "Punjab", "Bengal", "Kashmir"],
+      "correct": 0,
+      "rationale": "Southern Neolithic herders penning cattle built up mounds of burnt dung and ash — Piklihal, Utnur, Maski, Brahmagiri — while growing ragi and horsegram."
+    },
+    {
+      "id": 10,
+      "question": "The large-scale clearing of Gangetic forests became possible only with the arrival of:",
+      "options": ["Copper tools", "Iron technology (c. 1000 BCE)", "Microliths", "Bullock-drawn pottery wheels"],
+      "correct": 1,
+      "rationale": "Soft copper could not fell dense monsoon forest; iron axes of the Painted Grey Ware era cleared land for settled agriculture, enabling the Mahajanapadas."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "ranking-and-order-basics",
+  "title": "Ranking and Order Basics: Position Puzzles in One Line",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a row, Aman is 7th from the left and 9th from the right. How many people are in the row?",
+      "options": ["14", "15", "16", "17"],
+      "correct": 1,
+      "rationale": "N = L + R - 1 = 7 + 9 - 1 = 15. The person is counted once from each end, so the overlap of one is subtracted. Forgetting the -1 (answering 16) is the standard error."
+    },
+    {
+      "id": 2,
+      "question": "In a queue of 40 people, Ravi is 33rd from the back. What is his position from the front?",
+      "options": ["6th", "7th", "8th", "9th"],
+      "correct": 2,
+      "rationale": "Position from the other end = N - position + 1 = 40 - 33 + 1 = 8. The two ranks and the line length always satisfy this one equation."
+    },
+    {
+      "id": 3,
+      "question": "In a row of 30 students, P is 11th from the left and Q is 16th from the right. How many students sit between them?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 1,
+      "rationale": "Between = N - L - R = 30 - 11 - 16 = 3. Check: Q's position from the left is 30 - 16 + 1 = 15; between positions 11 and 15 sit exactly 12, 13, 14 — three students."
+    },
+    {
+      "id": 4,
+      "question": "Two people in a row are 10th from the left and 14th from the right (opposite ends). Between-count is 4. How many people are in the row?",
+      "options": ["27", "28", "29", "30"],
+      "correct": 1,
+      "rationale": "N = L + R + b = 10 + 14 + 4 = 28. The between-count bridges the two ranks: left-rank + between + right-rank sweeps the entire line once."
+    },
+    {
+      "id": 5,
+      "question": "In a row, P is 8th from the left, Q is 12th from the right, and exactly 5 people sit between them. What is the MINIMUM possible number of people?",
+      "options": ["13", "20", "25", "19"],
+      "correct": 0,
+      "rationale": "Run both orders. P left of Q: Q at 8 + 5 + 1 = 14 from left, N = 14 + 12 - 1 = 25. P right of Q: Q at 8 - 5 - 1 = 2 from left, N = 2 + 12 - 1 = 13. Minimum = 13 — when order is unknown, always test both arrangements."
+    },
+    {
+      "id": 6,
+      "question": "In a row, A is 11th from the left and B is 14th from the right. They interchange seats; A is now 9th from the left. How many people are in the row?",
+      "options": ["20", "21", "22", "24"],
+      "correct": 2,
+      "rationale": "After the swap, A occupies B's old seat, which is 9th from the left (given) and 14th from the right (B's original rank). One seat, two ends: N = 9 + 14 - 1 = 22. The row never changes — only the labels move."
+    },
+    {
+      "id": 7,
+      "question": "Positions of two people measured from the SAME end are 5th and 12th. How many people sit between them?",
+      "options": ["6", "7", "8", "Cannot be determined"],
+      "correct": 0,
+      "rationale": "Same-end ranks make it pure subtraction: |12 - 5| - 1 = 6 people between. The -1 excludes the two endpoint people themselves."
+    },
+    {
+      "id": 8,
+      "question": "In a photograph row of 20 students plus one teacher seated at the left end, a student is '13th from the left including the teacher'. What is the student's position among students only?",
+      "options": ["12th", "13th", "14th", "11th"],
+      "correct": 0,
+      "rationale": "The teacher occupies the leftmost slot, so counting from the left among students only shifts down by one: 13 - 1 = 12th. Re-base the count whenever the line's membership changes."
+    },
+    {
+      "id": 9,
+      "question": "In a row of 25, the person at the 25th-from-left position is how many from the right?",
+      "options": ["0th", "1st", "2nd", "24th"],
+      "correct": 1,
+      "rationale": "The last person from one end is first from the other: N - L + 1 = 25 - 25 + 1 = 1. Extreme positions are worth an instant sanity check of the formula."
+    },
+    {
+      "id": 10,
+      "question": "In a merit list, A is 5th from the top and Q is three ranks below A. What is Q's rank from the top?",
+      "options": ["7th", "8th", "9th", "6th"],
+      "correct": 1,
+      "rationale": "Three ranks below means three positions down: 5 + 3 = 8th. A 'rank below' is a position step, not a between-count — the two counting modes must never be mixed."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "lessonId": "biomes-and-world-climate-regions",
+  "title": "Biomes and World Climate Regions: The Great Pattern of Life Zones",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which biome is characterised by four canopy storeys, latosol soils, and the highest biodiversity on Earth?",
+      "options": ["Tropical savanna", "Equatorial rainforest", "Mediterranean scrubland", "Taiga"],
+      "correct": 1,
+      "rationale": "The equatorial rainforest (Koppen Af) receives 2000+ mm year-round, develops heavily leached latosols, and stacks life into multiple canopies — the Congo, Amazon, and Indonesia shelter the richest biodiversity."
+    },
+    {
+      "id": 2,
+      "question": "In the Koppen classification, the code BWh stands for:",
+      "options": ["Cold desert", "Hot desert", "Tundra climate", "Highland climate"],
+      "correct": 1,
+      "rationale": "B marks dry climates, W the desert (versus S for steppe), and h the hot variant — BWh is the hot desert of the Sahara, Thar, and Atacama type; adding k instead gives the cold desert (BWk)."
+    },
+    {
+      "id": 3,
+      "question": "The Mediterranean climate's signature vegetation of thick, small, waxy leaves is called:",
+      "options": ["Taiga", "Maquis (chaparral)", "Llanos", "Veld"],
+      "correct": 1,
+      "rationale": "Dry summers with wet winters select for hard, small, evergreen, fire-resistant leaves — the maquis of the Mediterranean, chaparral of California, and matorral of Chile: one climate recipe, three names."
+    },
+    {
+      "id": 4,
+      "question": "Which soil-and-biome pairing is correct?",
+      "options": [
+        "Chernozem with rainforest",
+        "Podzol with taiga",
+        "Laterite with steppe grassland",
+        "Latosol with tundra"
+      ],
+      "correct": 1,
+      "rationale": "The cold, coniferous taiga leaches minerals into pale ash-grey podzols. Chernozem-type black earths belong to the temperate grasslands, laterite/red soils to the seasonally wet tropics, and tundra supports only thin gley soils over permafrost."
+    },
+    {
+      "id": 5,
+      "question": "The Atacama and Namib deserts are coastal deserts primarily because of:",
+      "options": [
+        "Their latitude alone",
+        "Cold ocean currents and upwelling suppressing rainfall",
+        "Their great distance from the sea",
+        "Persistent monsoon winds"
+      ],
+      "correct": 1,
+      "rationale": "Cold currents (Humboldt, Benguela) chill the air above them; the stable, inversion-capped air rarely rains — producing Earth's driest strips right beside the ocean, often fog-fed rather than rain-fed."
+    },
+    {
+      "id": 6,
+      "question": "Ascending an equatorial mountain reproduces the full sequence of latitudinal zones. This is called:",
+      "options": ["Continentality", "Altitudinal zonation", "Rain shadow", "Orographic lifting"],
+      "correct": 1,
+      "rationale": "Altitude mimics latitude: the Andes climb from tierra caliente through templada and fria to paramo and permanent snow — the whole poleward journey compressed into kilometres."
+    },
+    {
+      "id": 7,
+      "question": "Which biome supports the great herd migrations of the Serengeti?",
+      "options": ["Tropical savanna", "Boreal forest", "Mediterranean scrub", "Ice cap"],
+      "correct": 0,
+      "rationale": "Savannas — wet season grass flushes traded against dry-season fires — sustain wildebeest, zebra, and antelope migrations tracking the rain belt, along with fire-adapted acacia and baobab."
+    },
+    {
+      "id": 8,
+      "question": "The largest land biome on Earth is:",
+      "options": ["Tropical rainforest", "Taiga (boreal forest)", "Temperate grassland", "Hot desert"],
+      "correct": 1,
+      "rationale": "The spruce-pine-fir belt of Siberia, Canada, and Fennoscandia — the taiga — covers more continuous land than any other forest or biome, a store of timber and carbon on thin podzolic soils."
+    },
+    {
+      "id": 9,
+      "question": "Permafrost is the defining condition of which biome?",
+      "options": ["Tundra", "Steppe", "Savanna", "Mediterranean"],
+      "correct": 0,
+      "rationale": "Tundra (Koppen ET) locks its subsoil permanently frozen; only a shallow active layer thaws each summer, supporting lichens, mosses, and cushion plants — and thawing permafrost now destabilises everything built on it."
+    },
+    {
+      "id": 10,
+      "question": "By latitude alone the Thar region should be desert-like, yet Rajasthan's eastern fringe turns green every summer. The reason is:",
+      "options": [
+        "Cold currents offshore",
+        "The monsoon's seasonal wind reversal pushing moisture inland",
+        "A warm current off the coast",
+        "Its high altitude"
+      ],
+      "correct": 1,
+      "rationale": "The monsoon overrides the general subtropical-high dryness of the latitude, driving moist summer winds deep inland — vegetation grades from thorn forest to savanna-like grassland where pure latitude would predict sand."
+    }
+  ]
+}

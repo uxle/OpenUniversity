@@ -1,0 +1,158 @@
+# States of Matter and the Gas Laws: How Particles Fill Their World
+
+> Matter organises itself into states — solid, liquid, gas, and the
+> exotic plasma — by balancing the pull of intermolecular attraction
+> against the energy of motion. Gases are the simplest state to
+> describe mathematically, and their laws powered the industrial
+> revolution's steam engines.
+
+## 1. The Three Familiar States
+
+| Property | Solid | Liquid | Gas |
+| --- | --- | --- | --- |
+| Shape | Fixed | Takes container's shape | Fills container |
+| Volume | Fixed | Fixed | Fills container |
+| Particle motion | Vibrate in place | Slide past each other | Fast, random, straight lines |
+| Compressibility | Almost none | Very little | Large |
+| Typical density | High | Medium | Low |
+
+[definition]
+A **state of matter** is a distinct arrangement of particles set by
+the balance between intermolecular forces (pulling particles together)
+and thermal energy (driving them apart). Heat a solid and it melts;
+heat a liquid and it vaporises — each transition marks thermal energy
+winning a round against attraction.
+[/definition]
+
+Melting, freezing, vaporisation, condensation, and sublimation (solid
+straight to gas, as with dry ice or camphor) are **physical changes**:
+the identity of the particles never changes, only their arrangement.
+
+## 2. Intermolecular Forces: The Glue Behind the States
+
+- **London dispersion forces** — momentary dipoles; exist between all
+  molecules, dominate in non-polar ones (waxes, iodine).
+- **Dipole–dipole forces** — permanent dipoles align plus-to-minus
+  (HCl, acetone).
+- **Hydrogen bonding** — the strongest common intermolecular force,
+  when H is bonded to N, O, or F. It explains water's high boiling
+  point, ice floating on water, and DNA's base pairing.
+
+[tip]
+Compare neighbours in the periodic table: HCl (−85 °C bp) vs H₂O
+(+100 °C) vs H₂S (−60 °C). Water boils 185 °C higher than H₂S despite
+similar molar mass — the fingerprint of extensive hydrogen bonding.
+[/tip]
+
+## 3. Pressure: Gases Push Back
+
+Gas molecules collide with container walls billions of times a
+second; the average push per area is **pressure**.
+
+@math label="eq:pressure"
+P = \frac{F}{A}
+@/math
+
+1 atmosphere (atm) = 101,325 Pa = 760 mm of mercury — the reading of a
+barometer at sea level, where a column of mercury ~76 cm balances the
+entire atmosphere's weight.
+
+## 4. Boyle's Law: Volume vs Pressure (Constant T)
+
+Squeezing a gas at fixed temperature crowds the same molecules into
+less space — more wall collisions, higher pressure:
+
+@math label="eq:boyle"
+P_1V_1 = P_2V_2
+@/math
+
+A bubble of air rising from a diver at 40 m (5 atm) to the surface
+(1 atm) expands to five times its volume — why divers must exhale
+while ascending and never hold their breath.
+
+## 5. Charles's Law: Volume vs Temperature (Constant P)
+
+Heating a gas at fixed pressure makes particles hit harder, so the
+piston rises until pressure rebalances:
+
+@math label="eq:charles"
+\frac{V_1}{T_1} = \frac{V_2}{T_2}
+@/math
+
+[warning]
+The temperatures in Charles's law (and the ideal gas law) must be in
+kelvin — $T(K) = T(°C) + 273.15$. Doubling 25 °C does not double the
+gas volume; doubling 298 K does.
+[/warning]
+
+Extrapolating real gases' volume vs temperature towards zero pressure
+points to the same limit for every gas: **absolute zero, −273.15 °C**
+— the temperature at which, classically, particle motion ceases.
+
+## 6. The Ideal Gas Equation
+
+Combine the separate laws and count the molecules (in moles $n$) and
+you reach the master equation:
+
+@math label="eq:ideal-gas"
+PV = nRT
+@/math
+
+with $R = 8.314$ J·mol⁻¹·K⁻¹. One mole of *any* ideal gas at standard
+conditions occupies about 22.4 litres — a fact worth remembering.
+
+@chart line title="Pressure of a fixed amount of gas at constant volume rises linearly with kelvin temperature (arbitrary units)"
+labels:
+100
+200
+300
+400
+500
+
+series:
+  - name: "P"
+    data: 8 17 25 34 42
+@/chart
+
+[definition]
+An **ideal gas** has particles with negligible volume and no
+intermolecular attractions. Real gases approach this at high
+temperature and low pressure; near condensation they deviate and the
+corrections of van der Waals' equation matter.
+[/definition]
+
+## 7. Partial Pressures (Dalton's Law)
+
+In a mixture, each gas pushes independently:
+
+@math label="eq:dalton"
+P_{total} = P_a + P_b + P_c + \dots
+@/math
+
+Air is ~78% N₂, 21% O₂, 1% Ar — so at 1 atm, oxygen's partial
+pressure is ~0.21 atm. This is why high-altitude air feels "thin":
+total pressure is lower, so the partial pressure driving oxygen into
+your blood is lower too, even though the percentages are unchanged.
+
+## 8. Plasma: The Fourth State
+
+Heat a gas past ~10,000 K and electrons tear free from their atoms —
+the result is **plasma**, a soup of ions and electrons that conducts
+electricity and responds to magnetic fields.
+
+- Over 99% of the visible universe is plasma: stars, nebulae,
+  lightning, and the Sun's corona.
+- Neon signs and plasma TVs confine glowing plasma in tubes.
+- Fusion research (ITER and its cousins) aims to bottle star-grade
+  plasma in magnetic fields — the pursuit of limitless clean energy.
+
+[summary]
+Solids, liquids, and gases differ in how strongly intermolecular
+forces pin particles in place, with hydrogen bonding the strongest
+common glue. Gases obey simple laws: Boyle ($P \propto 1/V$ at
+constant T), Charles ($V \propto T$ in kelvin), combined in
+$PV = nRT$, with partial pressures adding independently (Dalton).
+Absolute zero (−273.15 °C) is the extrapolated zero of particle
+motion, and beyond gases lies plasma — the ionised state that fills
+the universe and may one day power it.
+[/summary]

@@ -1,0 +1,76 @@
+{
+  "lessonId": "searching-algorithms",
+  "title": "Searching Algorithms: Finding Needles in Data Haystacks",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the worst-case time complexity of linear search?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "correct": 2,
+      "rationale": "If the target is last or absent, linear search inspects all n items — O(n) — though it needs no ordering."
+    },
+    {
+      "id": 2,
+      "question": "Binary search requires that the data be:",
+      "options": ["Unique", "Sorted", "Numeric", "Stored in a linked list"],
+      "correct": 1,
+      "rationale": "Halving only works when comparing with the middle tells you which half can contain the target — that inference needs order."
+    },
+    {
+      "id": 3,
+      "question": "In the worked example, searching 23 in [2 5 8 12 16 23 38 56 72 91] compared with which middles, in order?",
+      "options": ["56, 16, 23", "16, 56, 23", "23, 16, 56", "16, 23, 38"],
+      "correct": 1,
+      "rationale": "First mid = 16 (discard left), then mid = 56 (discard right), then mid = 23 — found in three comparisons."
+    },
+    {
+      "id": 4,
+      "question": "Roughly how many comparisons does binary search need in the worst case for n = 1,000,000?",
+      "options": ["About 10", "About 20", "About 1000", "About 500,000"],
+      "correct": 1,
+      "rationale": "O(log₂ n): 2²⁰ ≈ 1,048,576, so at most 20 halvings — versus a million for linear search."
+    },
+    {
+      "id": 5,
+      "question": "Why is mid = low + (high - low) / 2 safer than mid = (low + high) / 2 in some languages?",
+      "options": ["It is faster", "It avoids integer overflow when low + high exceeds the max integer", "It rounds better", "It works on unsorted arrays"],
+      "correct": 1,
+      "rationale": "low + high can overflow fixed-width integers; the difference form cannot — a real bug that lived in Java's standard library."
+    },
+    {
+      "id": 6,
+      "question": "A hash table achieves average O(1) lookup by:",
+      "options": ["Keeping keys sorted", "Computing the storage index directly from the key with a hash function", "Searching every bucket in parallel", "Storing all values in one list"],
+      "correct": 1,
+      "rationale": "The hash function maps key → bucket index, so no comparisons are needed; collisions are handled by chaining or probing."
+    },
+    {
+      "id": 7,
+      "question": "When two different keys hash to the same index, it is called a:",
+      "options": ["Miss", "Collision", "Overflow", "Probe"],
+      "correct": 1,
+      "rationale": "Collisions are resolved by chaining (list per bucket) or open addressing (probing for the next free slot); a good hash keeps them rare."
+    },
+    {
+      "id": 8,
+      "question": "You need both fast point lookups AND range queries (e.g., 'all keys between 40 and 50'). Which structure fits best?",
+      "options": ["Hash table", "Sorted array / B-tree", "Unsorted linked list", "Stack"],
+      "correct": 1,
+      "rationale": "Hash tables scatter keys, killing order; sorted structures support ranges naturally alongside O(log n) lookup — which is why databases use B-trees."
+    },
+    {
+      "id": 9,
+      "question": "Interpolation search improves on binary search when:",
+      "options": ["Data is unsorted", "Keys are uniformly distributed — it estimates the target's position", "The array is tiny", "Keys are strings only"],
+      "correct": 1,
+      "rationale": "Like opening a phone book near the 'S' section, it guesses by value distribution, reaching O(log log n) average — but degrades to O(n) on skewed data."
+    },
+    {
+      "id": 10,
+      "question": "'Binary search on the answer' refers to:",
+      "options": ["Searching for a key equal to log n", "Binary-searching a monotonic property's threshold value (e.g., minimum feasible capacity)", "A recursive hash function", "Searching two arrays simultaneously"],
+      "correct": 1,
+      "rationale": "When feasibility is monotonic ('works for x ⇒ works for x+1'), you can binary-search the breakpoint itself — the pattern behind many optimisation problems."
+    }
+  ]
+}

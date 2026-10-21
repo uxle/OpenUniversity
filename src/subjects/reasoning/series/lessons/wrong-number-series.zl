@@ -1,0 +1,159 @@
+# Wrong Number Series: Spotting the Imposter
+
+> A wrong-number series looks exactly like a number series — same
+> arithmetic, algebraic, or geometric engine — except one term breaks
+> the rule. The exam asks not for the next term but for the
+> *imposter*. Same pattern-detection skills, one new reflex: when
+> you find the rule, run it across every term, because the trap is
+> usually a near-miss planted where you least expect it.
+
+[important]
+Two habits separate wrong-number questions from next-term questions:
+first, you must **verify the rule on both sides** of the suspicious
+term (a rule that fits the gap after a term but not before it points
+at that term); second, always **subtract or ratio the whole series at
+once** before guessing — the difference table exposes the imposter in
+seconds.
+[/important]
+
+## 1. Method: Difference Tables First
+
+Given a series, compute the differences between consecutive terms in
+one sweep. In a clean series the difference row is constant, forms an
+AP, or forms a GP. In a wrong-number series, one difference sits out
+of line — and the neighbouring differences straddle the broken term.
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-1"
+1, 3, 7, 13, 22, 33
+@/math
+
+Differences: 2, 4, 6, 9, 11. The pattern should be 2, 4, 6, 8, 10 —
+so 22 is wrong: the term should be $13 + 8 = 21$, and then
+$21 + 10 = 31$ (not 33). **22 is the imposter.**
+
+[tip]
+When two consecutive differences look jointly wrong (9, 11 instead of
+8, 10), the shared term between them is the culprit — always convert
+"two odd differences" into "one bad term" before answering.
+[/tip]
+
+## 2. Wrong Number in Algebraic (n-th term) Series
+
+Test the natural formula $T_n = an^2 + bn + c$ or cubic forms.
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-2"
+2, 5, 10, 17, 26, 38, 50
+@/math
+
+The fit is $n^2 + 1$: 2, 5, 10, 17, 26, 37, 50. Everything matches
+except **38**, which should be $6^2 + 1 = 37$.
+
+Notice how the imposter sits near the end — test setters plant the
+error in the last third of the series, after the pattern feels
+"confirmed" in your head.
+
+## 3. Wrong Number in Multiplicative and Mixed Series
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-3"
+2, 6, 18, 52, 162, 486
+@/math
+
+The engine is $\times 3$: 2, 6, 18, **54**, 162, 486. So **52** is
+wrong — a digit-swap trap for 54.
+
+**Worked example (mixed add-multiply).** Find the wrong term:
+
+@math label="eq:wrong-4"
+3, 4, 10, 33, 136, 685
+@/math
+
+Rule: $\times 1 + 1, \times 2 + 2, \times 3 + 3, \ldots$
+Check: 3→4 ($\times 1+1$), 4→10 ($\times 2+2$), 10→33 ($\times 3+3$),
+33→136 ($\times 4+4$), 136→685 ($\times 5+5$). Every step verifies —
+this particular series is clean; in the exam variant, the planted
+value is usually one step's arithmetic off by a small margin, so
+verify each step's multiply AND add separately.
+
+## 4. Squares, Cubes, and Prime-Series Traps
+
+[definition]
+The most common wrong-number series hide one step off a recognisable
+ladder — squares ($1, 4, 9, 16, 25, \ldots$), cubes
+($1, 8, 27, 64, \ldots$), primes, or "square $\pm k$" families. Name
+the ladder first, then audit each term against it.
+[/definition]
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-5"
+1, 8, 27, 64, 125, 215, 343
+@/math
+
+Cubes: $1^3, 2^3, 3^3, 4^3, 5^3, 6^3, 7^3$ = 1, 8, 27, 64, 125,
+**216**, 343. So **215** is the imposter (one less than $6^3$).
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-6"
+2, 3, 5, 7, 11, 14, 17
+@/math
+
+Primes: 2, 3, 5, 7, 11, **13**, 17. **14** breaks the prime ladder.
+
+## 5. Fibonacci-Style and Alternating Series
+
+**Worked example.** Find the wrong term:
+
+@math label="eq:wrong-7"
+1, 1, 2, 3, 5, 8, 12, 20
+@/math
+
+Each term should be the sum of the previous two: after 5, 8 the next
+is $5 + 8 = 13$ (not 12), and then $8 + 13 = 21$ (not 20). The first
+break — **12** — is the wrong term; the errors after it are only
+echoes.
+
+[important]
+In any rule-chained series (Fibonacci, running differences, mixed
+rules), a single wrong term corrupts every later term. Always report
+the FIRST term that violates the rule, not the most obviously odd
+number. Answering an echo instead of the root cause is the single
+most common mistake in this topic.
+[/important]
+
+## 6. Strategy Summary
+
+| Series type | First move | Imposter signature |
+| --- | --- | --- |
+| Arithmetic | Difference table | One difference off the AP |
+| Quadratic | Differences of differences | Second-difference row breaks once |
+| Geometric | Ratio check | One ratio off (digit-swap traps: 52/54, 34/36) |
+| Mixed rules | Verify each step's rule fully | One step's add or multiply drifted |
+| Ladders (squares/cubes/primes) | Name the ladder | Term near a famous value, off by 1-2 |
+| Fibonacci | Sum check | First term breaking the chain |
+
+[example]
+A composite time-saver: for 240, 120, 60, 31, 15, 7.5 — halving
+gives 240, 120, 60, 30, 15, 7.5, so **31** is wrong (should be 30).
+One ratio sweep caught it; no tables needed. Whenever ratios are
+clean halves or doubles, run the ratio check before the difference
+check.
+[/example]
+
+[summary]
+Wrong-number series reuse every engine from number-series work —
+differences, ratios, n-th term formulas, mixed rules, squares/cubes/
+primes ladders, Fibonacci chains — with one new discipline: after
+finding a rule that fits, audit EVERY term with it, and answer with
+the first term that breaks the chain, never its downstream echoes.
+Difference tables expose arithmetic imposters; ratio sweeps expose
+multiplicative ones; ladder naming (cube? prime? square+3?) exposes
+near-miss traps like 215 for 216. One wrong difference usually means
+one wrong term — find the term, not the difference.
+[/summary]

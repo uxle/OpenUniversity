@@ -1,0 +1,106 @@
+{
+  "lessonId": "analytic-and-contemporary-philosophy",
+  "title": "Analytic and Contemporary Philosophy: The Language Turn",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who is regarded as the father of analytic philosophy, having invented modern quantified logic?",
+      "options": ["Bertrand Russell", "Gottlob Frege", "Ludwig Wittgenstein", "Rudolf Carnap"],
+      "correct": 1,
+      "rationale": "Frege created the predicate calculus and the sense/reference distinction, and pursued logicism — grounding arithmetic in logic. Russell and Wittgenstein built on his foundation."
+    },
+    {
+      "id": 2,
+      "question": "Russell's theory of descriptions was designed to analyse sentences like:",
+      "options": [
+        "All bachelors are unmarried",
+        "The present king of France is bald",
+        "Snow is white",
+        "I think, therefore I am"
+      ],
+      "correct": 1,
+      "rationale": "A sentence about a non-existent entity seems meaningful yet lacks a referent. Russell showed its true logical form is a conjunction of claims (existence, uniqueness, predication) — some false — dissolving the puzzle without fake objects."
+    },
+    {
+      "id": 3,
+      "question": "Wittgenstein's later philosophy, in the Philosophical Investigations, holds that:",
+      "options": [
+        "Language pictures facts",
+        "Meaning is use — words live in language games within forms of life",
+        "Metaphysics is the queen of sciences",
+        "Every term needs a strict definition"
+      ],
+      "correct": 1,
+      "rationale": "The later Wittgenstein abandoned the single logical picture: language is a family of activities, and a word's meaning is its use in a practice. The Tractatus had held the picture theory."
+    },
+    {
+      "id": 4,
+      "question": "The Vienna Circle's verification principle collapsed chiefly because:",
+      "options": [
+        "Aristotle was rehabilitated",
+        "The principle itself is neither empirically verifiable nor analytic",
+        "Wittgenstein endorsed it",
+        "Science disproved induction"
+      ],
+      "correct": 1,
+      "rationale": "The principle was self-refuting: by its own standard, 'only the verifiable is meaningful' is not verifiable. Quine's Two Dogmas then dismantled the analytic/synthetic distinction that survived the wreckage."
+    },
+    {
+      "id": 5,
+      "question": "Kuhn's The Structure of Scientific Revolutions introduced the idea that science alternates between normal science and:",
+      "options": ["Verification phases", "Paradigm revolutions", "Baconian induction", "Pure deduction"],
+      "correct": 1,
+      "rationale": "Kuhn described science as puzzle-solving under a paradigm, punctuated by crises that overturn the paradigm itself — a revolution (Copernican, chemical, relativistic). History, not just logic, shapes science."
+    },
+    {
+      "id": 6,
+      "question": "Popper's criterion separating science from non-science is:",
+      "options": ["Verifiability", "Falsifiability", "Consensus", "Usefulness"],
+      "correct": 1,
+      "rationale": "Popper argued genuine science states claims that could, in principle, be refuted by evidence — conjectures at risk. Freudian psychoanalysis and astrology were his favourite pseudo-scientific foils."
+    },
+    {
+      "id": 7,
+      "question": "Rawls's 'veil of ignorance' is a device for:",
+      "options": [
+        "Proving God's existence",
+        "Choosing principles of justice without knowing one's own place in society",
+        "Refuting induction",
+        "Deconstructing texts"
+      ],
+      "correct": 1,
+      "rationale": "Behind the veil, parties ignorant of their own wealth, talents, and status would rationally choose fair principles (equal basic liberties, difference principle) — justice as fairness."
+    },
+    {
+      "id": 8,
+      "question": "Which thinker is the central figure of deconstruction?",
+      "options": ["Foucault", "Derrida", "Habermas", "Sartre"],
+      "correct": 1,
+      "rationale": "Derrida's deconstruction exposes how texts undermine their own claims to stable meaning. Foucault analysed knowledge/power regimes; Habermas rebuilt communicative rationality; Sartre led existentialism."
+    },
+    {
+      "id": 9,
+      "question": "Austin's speech-act theory distinguishes what a sentence says from:",
+      "options": [
+        "Its verification conditions",
+        "What uttering it does (the illocutionary act)",
+        "Its paradigm-relative truth",
+        "Its sensory origin"
+      ],
+      "correct": 1,
+      "rationale": "Austin split the locutionary (saying), illocutionary (doing — promising, warning), and perlocutionary (effecting) dimensions of speech — utterances are acts, not just statements."
+    },
+    {
+      "id": 10,
+      "question": "The 'hard problem' of consciousness, formulated by David Chalmers, is the problem of:",
+      "options": [
+        "Explaining intelligent behaviour",
+        "Explaining why physical processing is accompanied by subjective experience (qualia)",
+        "Defining the word mind",
+        "Building faster computers"
+      ],
+      "correct": 1,
+      "rationale": "Easy problems explain functions (discrimination, report, control); the hard problem is why any of it feels like anything from the inside — the qualia question driving contemporary philosophy of mind and AI debates."
+    }
+  ]
+}

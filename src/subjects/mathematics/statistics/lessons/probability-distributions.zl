@@ -1,0 +1,199 @@
+# Probability Distributions: The Shapes of Chance
+
+> Single probabilities answer "how likely is this one outcome?";
+> distributions answer "how is chance spread over all outcomes?"
+> The binomial distribution counts successes in trials, and the
+> normal distribution — the bell curve — describes test scores,
+> heights, measurement errors, and countless natural phenomena.
+
+## 1. From Outcomes to Distributions
+
+[definition]
+A **probability distribution** assigns a probability to every
+possible outcome of a random variable. The probabilities are
+non-negative and sum to 1.
+[/definition]
+
+A **random variable** takes numeric values determined by chance:
+
+- **Discrete** — countable values (number of heads in 5 tosses).
+- **Continuous** — any value in an interval (a person's exact
+  height), where probability attaches to ranges, not single points.
+
+For a fair die, the distribution is flat: each face has probability
+$\frac{1}{6}$. Roll two dice and the sum already shows structure — 7
+is the most likely total (6 ways), 2 and 12 the least (1 way each).
+
+@chart bar title="Ways to obtain each sum with two dice"
+labels:
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+data:
+1
+2
+3
+4
+5
+6
+5
+4
+3
+2
+1
+@/chart
+
+## 2. Describing a Distribution
+
+- **Expected value** $E(X)$ — the long-run average:
+
+@math label="eq:expected-value"
+E(X) = \sum x_i \, p_i
+@/math
+
+For a die: $E(X) = \frac{1+2+3+4+5+6}{6} = 3.5$. (You never roll
+3.5, but the average of many rolls homes in on it.)
+
+- **Variance** $\sigma^2$ and **standard deviation** $\sigma$ —
+  spread around the mean:
+
+@math label="eq:variance"
+\sigma^2 = \sum (x_i - \mu)^2 p_i
+@/math
+
+For a die: $\sigma^2 = \frac{35}{12} \approx 2.92$, so
+$\sigma \approx 1.71$.
+
+## 3. The Binomial Distribution
+
+[important]
+The **binomial distribution** counts successes in $n$ independent
+trials, each with success probability $p$:
+
+$P(X = k) = \mathrm{C}(n,k) p^k (1-p)^{n-k}$
+[/important]
+
+The ingredients — exactly $k$ successes, $n-k$ failures, and
+$\mathrm{C}(n,k)$ arrangements — multiply, and the probabilities for
+$k = 0, 1, \dots, n$ sum to 1.
+
+**Worked example.** A batsman hits a boundary on 30% of balls ($p =
+0.3$). In 4 balls, the chance of exactly 2 boundaries:
+
+@math label="eq:binomial-example"
+P(X{=}2) = \mathrm{C}(4,2)(0.3)^2(0.7)^2 = 6 \times 0.09 \times 0.49 = 0.2648
+@/math
+
+About 26.5%.
+
+**Binomial mean and spread.** For $n$ trials:
+
+@math label="eq:binomial-mean"
+\mu = np, \qquad \sigma = \sqrt{np(1-p)}
+@/math
+
+For 100 questions guessed at random ($p = 0.25$): expect
+$\mu = 25$ correct with $\sigma = \sqrt{18.75} \approx 4.3$.
+
+@chart bar title="Probabilities of k boundaries in 4 balls (p = 0.3)"
+labels:
+0
+1
+2
+3
+4
+
+data:
+0.2401
+0.4116
+0.2646
+0.0756
+0.0081
+@/chart
+
+## 4. The Normal Distribution: The Bell Curve
+
+The continuous king of statistics:
+
+@math label="eq:normal-pdf"
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}\, e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+@/math
+
+Symmetric, bell-shaped, centred on the mean $\mu$, with spread set by
+$\sigma$. Why it is everywhere: averaging many small independent
+influences produces a bell — the **central limit theorem** — so
+heights, measurement errors, and exam scores (raw or scaled) all
+follow it.
+
+### The 68–95–99.7 rule
+
+| Range | Contains |
+| --- | --- |
+| $\mu \pm 1\sigma$ | ≈ 68% of data |
+| $\mu \pm 2\sigma$ | ≈ 95% of data |
+| $\mu \pm 3\sigma$ | ≈ 99.7% of data |
+
+[tip]
+Adult male heights average about 170 cm with $\sigma \approx 7$ cm.
+So 95% of men stand between 156 and 184 cm — and a 200 cm man is
+over 4σ tall: fewer than about 3 in 100,000.
+[/tip]
+
+### Standard scores (z-scores)
+
+@math label="eq:z-score"
+z = \frac{x - \mu}{\sigma}
+@/math
+
+The z-score counts how many standard deviations an observation lies
+from the mean — a common currency for comparing across different
+distributions. A student 1.5σ above the mean on either a physics or
+a history exam has the same z = +1.5.
+
+## 5. Sampling and the Central Limit Theorem
+
+Take many random samples of size $n$ from *any* distribution with
+finite variance; the sample means themselves are approximately
+normal with standard deviation $\frac{\sigma}{\sqrt{n}}$ — the
+**standard error**.
+
+This is the engine of opinion polls: a sample of 1,000 shrinks the
+margin of error to roughly $\frac{1}{\sqrt{1000}} \approx 3$% of the
+population's spread, regardless of the population's shape.
+
+[warning]
+The bell curve's tails tempt overconfidence: the 2008 financial
+crisis partly came from models assuming normally distributed (thin
+tails) market moves, underestimating extreme events. Always ask
+whether extreme outcomes are truly as rare as the normal model
+claims.
+[/warning]
+
+## 6. Choosing the Right Model
+
+| Situation | Model |
+| --- | --- |
+| Count successes in fixed trials, constant $p$ | Binomial |
+| Counts of rare events in time/space (typos per page) | Poisson |
+| Measurements, averages, natural quantities | Normal |
+| Waiting time between random events | Exponential |
+
+[summary]
+Distributions spread probability over outcomes: describe them by
+expected value $E(X) = \sum x_ip_i$ and standard deviation. The
+binomial gives the probability of exactly $k$ successes in $n$
+independent trials as $\mathrm{C}(n,k)p^k(1-p)^{n-k}$, with mean $np$.
+The normal bell — universal via the central limit theorem — obeys
+the 68–95–99.7 rule and standardises through z-scores, powering
+polls and measurement alike. Real analysts pick (or question) the
+model to fit the process generating the data.
+[/summary]

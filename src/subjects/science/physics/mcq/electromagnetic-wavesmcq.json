@@ -1,0 +1,76 @@
+{
+  "lessonId": "electromagnetic-waves",
+  "title": "Electromagnetic Waves: The Spectrum That Carries the Modern World",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Electromagnetic waves differ from sound waves in that they:",
+      "options": ["Need a material medium", "Travel through vacuum", "Are always longitudinal", "Travel much slower in air"],
+      "correct": 1,
+      "rationale": "EM waves are self-sustaining oscillations of electric and magnetic fields and need no medium — they cross vacuum at 3 × 10⁸ m/s, which sound cannot do."
+    },
+    {
+      "id": 2,
+      "question": "Arrange these in order of increasing frequency: I. X-rays, II. Radio waves, III. Green light, IV. Infrared.",
+      "options": ["II, IV, III, I", "II, III, IV, I", "IV, II, III, I", "I, III, IV, II"],
+      "correct": 0,
+      "rationale": "Frequency rises from radio → infrared → visible → X-rays, since c = fλ fixes high frequency with short wavelength."
+    },
+    {
+      "id": 3,
+      "question": "The energy of a photon is given by:",
+      "options": ["E = hc", "E = hf", "E = hλ", "E = c/λ"],
+      "correct": 1,
+      "rationale": "Each photon carries E = hf, where h is Planck's constant — so higher frequency means a more energetic photon."
+    },
+    {
+      "id": 4,
+      "question": "Why do gamma rays damage living tissue while radio waves do not?",
+      "options": ["Gamma rays travel faster", "Gamma-ray photons carry enough energy to ionise atoms and break molecular bonds", "Radio waves are too weak to exist", "Gamma rays are charged particles"],
+      "correct": 1,
+      "rationale": "Ionising radiation has photons energetic enough (E = hf) to strip electrons from atoms and damage DNA; low-frequency photons cannot."
+    },
+    {
+      "id": 5,
+      "question": "A microwave oven heats food mainly by making which molecules oscillate?",
+      "options": ["Fat molecules", "Polar water molecules", "Salt ions only", "Protein chains"],
+      "correct": 1,
+      "rationale": "Microwaves at ~2.45 GHz flip polar water molecules back and forth billions of times a second; friction between molecules then converts this motion into heat."
+    },
+    {
+      "id": 6,
+      "question": "The sky appears blue because:",
+      "options": ["Oxygen is blue", "Air molecules scatter short (blue) wavelengths far more strongly than long ones", "Water vapour reflects the sea", "The Sun emits mostly blue light"],
+      "correct": 1,
+      "rationale": "Rayleigh scattering varies as 1/λ⁴, so blue light is scattered around the sky much more than red; at sunset the long path leaves reds to reach our eyes."
+    },
+    {
+      "id": 7,
+      "question": "X-ray and gamma-ray astronomy must be done from satellites because:",
+      "options": ["These waves move too fast for ground telescopes", "Earth's atmosphere absorbs X-rays and gamma rays", "Ground telescopes are too small", "The Moon blocks them from the ground"],
+      "correct": 1,
+      "rationale": "The atmosphere is opaque to ionising radiation — fortunate for life on the surface, but it means observatories like Chandra must orbit above it."
+    },
+    {
+      "id": 8,
+      "question": "An EM wave of wavelength 3 m has a frequency of about:",
+      "options": ["1 MHz", "10 MHz", "100 MHz", "1 GHz"],
+      "correct": 2,
+      "rationale": "f = c/λ = (3 × 10⁸)/(3) = 10⁸ Hz = 100 MHz — an FM radio band frequency."
+    },
+    {
+      "id": 9,
+      "question": "Radar measures an aircraft's distance by:",
+      "options": ["Listening for engine noise", "Timing the echo of a reflected microwave pulse", "Measuring the plane's shadow", "Triangulating with visible light only"],
+      "correct": 1,
+      "rationale": "Radar sends a microwave pulse and times the echo; distance = c × (time)/2, while the Doppler shift of the echo gives speed."
+    },
+    {
+      "id": 10,
+      "question": "Which pair of colours brackets the visible spectrum?",
+      "options": ["Infrared and ultraviolet", "Red (≈700 nm) and violet (≈400 nm)", "Blue and green", "Gamma and radio"],
+      "correct": 1,
+      "rationale": "Visible light spans roughly 700 nm (red) to 400 nm (violet), flanked by infrared on the long side and ultraviolet on the short side."
+    }
+  ]
+}

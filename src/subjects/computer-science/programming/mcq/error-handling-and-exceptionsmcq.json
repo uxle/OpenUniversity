@@ -1,0 +1,76 @@
+{
+  "lessonId": "error-handling-and-exceptions",
+  "title": "Error Handling and Exceptions: Failing Gracefully",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is an exception?",
+      "options": ["A syntax error caught by the compiler", "An object representing an abnormal condition, thrown at the fault and caught by a handler", "A special return value like -1", "A comment marking known bugs"],
+      "correct": 1,
+      "rationale": "Exceptions are runtime objects that unwind the call stack until a matching handler catches them; uncaught, they stop the program."
+    },
+    {
+      "id": 2,
+      "question": "Which block is guaranteed to run whether or not an exception is thrown?",
+      "options": ["try", "except / catch", "finally", "else"],
+      "correct": 2,
+      "rationale": "finally is the cleanup hook that executes on every path — success, handled failure, or unhandled failure."
+    },
+    {
+      "id": 3,
+      "question": "int(\"abc\") in Python raises:",
+      "options": ["TypeError", "ValueError", "KeyError", "Nothing — it returns 0"],
+      "correct": 1,
+      "rationale": "The argument is the right type (a string) but an unusable value, so ValueError — TypeError would be int(None) style mistakes."
+    },
+    {
+      "id": 4,
+      "question": "Why is `except Exception: pass` considered dangerous?",
+      "options": ["It is too slow", "It silently swallows every error, including bugs you need to see, corrupting state unnoticed", "It raises a new exception", "It only works in Python 2"],
+      "correct": 1,
+      "rationale": "Bare or overly broad catches hide real failures; the recommended practice is catching the narrowest specific exception you can actually handle."
+    },
+    {
+      "id": 5,
+      "question": "Defining a custom exception class (e.g., class PaymentError(Exception)) mainly helps because:",
+      "options": ["It runs faster than built-in errors", "Callers can distinguish your library's failures from unrelated ones", "It removes the need for try blocks", "It disables stack traces"],
+      "correct": 1,
+      "rationale": "Custom types let handlers filter precisely — catch PaymentError without over-catching ValueError from someone else's code — while keeping stack traces."
+    },
+    {
+      "id": 6,
+      "question": "The 'fail fast' principle recommends:",
+      "options": ["Retrying every error automatically", "Checking preconditions at function entry and throwing immediately on violation", "Hiding errors until the end of the program", "Using error codes instead of exceptions"],
+      "correct": 1,
+      "rationale": "The earlier invalid state is rejected, the smaller the blast radius and the clearer the traceback pointing at the true source."
+    },
+    {
+      "id": 7,
+      "question": "Python's `with open('f.csv') as f:` statement exists to:",
+      "options": ["Open files faster", "Guarantee the file closes even if an exception occurs inside the block", "Prevent read errors", "Lock the file against other processes"],
+      "correct": 1,
+      "rationale": "with (like Java's try-with-resources and C++ RAII) ties resource release to scope exit — cleanup on every path without manual finally."
+    },
+    {
+      "id": 8,
+      "question": "Which is an appropriate use of exceptions rather than a normal return value?",
+      "options": ["'Query returned no rows' — an expected outcome", "A missing required file on startup", "Loop counter reaching the end", "An empty search result"],
+      "correct": 1,
+      "rationale": "Exceptions are for exceptional states; expected outcomes like empty results are ordinary return values — using exceptions for them makes control flow slow and unclear."
+    },
+    {
+      "id": 9,
+      "question": "The 'retry with backoff' pattern is appropriate for:",
+      "options": ["A syntax error in your source code", "A transient network timeout when calling a remote API", "Invalid user input", "A missing database table"],
+      "correct": 1,
+      "rationale": "Transient faults often clear with time — retrying a few times with increasing waits survives blips; deterministic errors (bad input, missing schema) will fail identically forever."
+    },
+    {
+      "id": 10,
+      "question": "Reading an exception traceback bottom-up tells you:",
+      "options": ["The oldest log entry first", "The innermost failing line first, then each caller that led to it", "The exception's message last", "Nothing useful"],
+      "correct": 1,
+      "rationale": "Tracebacks list the failure point first and the call chain above it — the path to the fault, which is what you actually need to debug."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "averages",
+  "title": "Averages: The Art of Balanced Numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The average of 5 numbers is 27. If one number 35 is excluded, the average of the remaining numbers is:",
+      "options": ["25", "26", "24", "28"],
+      "correct": 0,
+      "rationale": "Sum of 5 = 135. Removing 35 leaves 100 over 4 numbers, average = 25. Total = average x count, adjusted for the exclusion."
+    },
+    {
+      "id": 2,
+      "question": "The average of 11 results is 50. The average of the first six is 49 and of the last six is 52. The sixth result is:",
+      "options": ["56", "55", "54", "57"],
+      "correct": 0,
+      "rationale": "Sum of all 11 = 550. Sum of first six + last six = 294 + 312 = 606. The 6th result is counted twice, so it equals 606 - 550 = 56."
+    },
+    {
+      "id": 3,
+      "question": "The average weight of 8 persons increases by 2.5 kg when a new person weighing 55 kg replaces one of them. The weight of the replaced person is:",
+      "options": ["75 kg", "65 kg", "35 kg", "80 kg"],
+      "correct": 2,
+      "rationale": "The average rising by 2.5 kg over 8 persons means the total weight rises by 8 x 2.5 = 20 kg. The newcomer (55 kg) must therefore be 20 kg heavier than the person replaced: replaced = 55 - 20 = 35 kg."
+    },
+    {
+      "id": 4,
+      "question": "A batsman scores 87 runs in his 17th innings, increasing his average by 3. His average after the 17th innings is:",
+      "options": ["36", "39", "42", "45"],
+      "correct": 1,
+      "rationale": "16a + 87 = 17(a + 3) gives 16a + 87 = 17a + 51, so a = 36. The new average is 36 + 3 = 39."
+    },
+    {
+      "id": 5,
+      "question": "A car travels from A to B at 60 km/h and returns along the same road at 40 km/h. Its average speed for the whole trip is:",
+      "options": ["50 km/h", "48 km/h", "45 km/h", "52 km/h"],
+      "correct": 1,
+      "rationale": "Equal distances use the harmonic mean: 2 x 60 x 40/(60+40) = 4800/100 = 48 km/h. The average is closer to the slower speed because more time is spent at 40 km/h."
+    },
+    {
+      "id": 6,
+      "question": "The average of first 20 natural numbers is:",
+      "options": ["10", "10.5", "11", "9.5"],
+      "correct": 1,
+      "rationale": "First n naturals average (n+1)/2 = 21/2 = 10.5. Alternatively: sum = 210, divided by 20 = 10.5."
+    },
+    {
+      "id": 7,
+      "question": "A class of 40 boys has average age 16 years; 10 girls join with average age 15 years. The combined average age is:",
+      "options": ["15.5 years", "15.8 years", "16.2 years", "15.9 years"],
+      "correct": 1,
+      "rationale": "Weighted average = (40 x 16 + 10 x 15)/50 = (640 + 150)/50 = 790/50 = 15.8 years — closer to the boys' average because the boys' group is four times larger."
+    },
+    {
+      "id": 8,
+      "question": "The average age of a family of 5 members today is 32 years. What was their average age 5 years ago?",
+      "options": ["27 years", "26 years", "25 years", "Cannot be determined"],
+      "correct": 0,
+      "rationale": "Five years ago every member was exactly 5 years younger, so the total drops by 5 x 5 = 25 and the average drops by 5: 32 - 5 = 27 years. Time shifts all averages uniformly."
+    },
+    {
+      "id": 9,
+      "question": "The average of 7 consecutive odd numbers is 27. The largest of these numbers is:",
+      "options": ["31", "33", "35", "37"],
+      "correct": 1,
+      "rationale": "Consecutive values in AP average to the middle term, so the 4th number is 27. The largest (7th) is 27 + 2 + 2 + 2 = 33."
+    },
+    {
+      "id": 10,
+      "question": "A cricketer's average in 10 matches is 38.9. How many runs must he score in the 11th match to raise his average to exactly 40?",
+      "options": ["50", "51", "52", "55"],
+      "correct": 1,
+      "rationale": "Target total = 11 x 40 = 440; current total = 10 x 38.9 = 389. Required runs = 440 - 389 = 51. Work through totals, never through the average alone."
+    }
+  ]
+}

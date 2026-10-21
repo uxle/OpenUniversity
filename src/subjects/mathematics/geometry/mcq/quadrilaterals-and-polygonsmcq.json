@@ -1,0 +1,76 @@
+{
+  "lessonId": "quadrilaterals-and-polygons",
+  "title": "Quadrilaterals and Polygons: Many-Sided Geometry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The interior angles of any quadrilateral sum to:",
+      "options": ["180°", "270°", "360°", "540°"],
+      "correct": 2,
+      "rationale": "A diagonal splits a quadrilateral into 2 triangles: 2 × 180° = 360°, matching the formula (n − 2) × 180° for n = 4."
+    },
+    {
+      "id": 2,
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "options": ["540°", "620°", "720°", "900°"],
+      "correct": 2,
+      "rationale": "(6 − 2) × 180° = 720°. From one vertex, a hexagon divides into 4 triangles."
+    },
+    {
+      "id": 3,
+      "question": "The sum of the exterior angles (one at each vertex) of any polygon is:",
+      "options": ["Depends on the number of sides", "180°", "360°", "540°"],
+      "correct": 2,
+      "rationale": "Walking once around the polygon, you turn a full 360° in total, regardless of how many sides it has."
+    },
+    {
+      "id": 4,
+      "question": "Each interior angle of a regular pentagon measures:",
+      "options": ["90°", "100°", "108°", "120°"],
+      "correct": 2,
+      "rationale": "(5 − 2) × 180° / 5 = 540°/5 = 108°; the matching exterior angle is 72°."
+    },
+    {
+      "id": 5,
+      "question": "Which property belongs to a rhombus but NOT to every parallelogram?",
+      "options": ["Opposite sides parallel", "Diagonals bisect each other", "Diagonals are perpendicular", "Opposite angles equal"],
+      "correct": 2,
+      "rationale": "Every rhombus has perpendicular diagonals, while a general parallelogram (e.g. a slanted rectangle) does not."
+    },
+    {
+      "id": 6,
+      "question": "A square can be described as:",
+      "options": ["A rhombus with right angles", "A rectangle with all sides equal", "Both a rectangle and a rhombus", "A trapezium with equal sides"],
+      "correct": 2,
+      "rationale": "A square sits at the junction of the rectangle and rhombus branches — it inherits every property of both."
+    },
+    {
+      "id": 7,
+      "question": "The diagonals of a rectangle are always:",
+      "options": ["Perpendicular", "Equal in length and bisect each other", "Unequal", "Angle bisectors of the corners"],
+      "correct": 1,
+      "rationale": "Rectangle diagonals are equal and bisect each other; perpendicularity belongs to rhombi and angle-bisecting to rhombi/squares."
+    },
+    {
+      "id": 8,
+      "question": "A rhombus has diagonals 10 cm and 8 cm. Its area is:",
+      "options": ["40 cm²", "80 cm²", "20 cm²", "160 cm²"],
+      "correct": 0,
+      "rationale": "Rhombus area = ½ × d₁ × d₂ = ½ × 10 × 8 = 40 cm²."
+    },
+    {
+      "id": 9,
+      "question": "Joining the midpoints of the sides of ANY quadrilateral in order always produces a:",
+      "options": ["Rectangle", "Square", "Parallelogram", "Kite"],
+      "correct": 2,
+      "rationale": "Varignon's theorem: the midpoint quadrilateral is always a parallelogram whose sides are parallel to the original diagonals."
+    },
+    {
+      "id": 10,
+      "question": "How many diagonals does a decagon (10 sides) have?",
+      "options": ["35", "45", "10", "70"],
+      "correct": 0,
+      "rationale": "n(n − 3)/2 = 10 × 7/2 = 35 diagonals."
+    }
+  ]
+}

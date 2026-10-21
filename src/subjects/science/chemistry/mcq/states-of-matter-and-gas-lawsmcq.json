@@ -1,0 +1,76 @@
+{
+  "lessonId": "states-of-matter-and-gas-laws",
+  "title": "States of Matter and the Gas Laws: How Particles Fill Their World",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which state of matter has both fixed shape and fixed volume?",
+      "options": ["Solid", "Liquid", "Gas", "Plasma"],
+      "correct": 0,
+      "rationale": "In a solid, particles vibrate about fixed positions held by intermolecular forces, so both shape and volume are locked."
+    },
+    {
+      "id": 2,
+      "question": "Dry ice shrinking to gas without melting is an example of:",
+      "options": ["Melting", "Condensation", "Sublimation", "Deposition"],
+      "correct": 2,
+      "rationale": "Sublimation is the direct solid → gas transition; solid CO₂ (dry ice) at atmospheric pressure skips the liquid state entirely."
+    },
+    {
+      "id": 3,
+      "question": "Hydrogen bonding accounts for water's unusually high boiling point. Hydrogen bonding requires hydrogen bonded directly to:",
+      "options": ["Carbon or silicon", "Nitrogen, oxygen, or fluorine", "Any metal", "Another hydrogen"],
+      "correct": 1,
+      "rationale": "Only N, O, and F are small and electronegative enough to make H carry a strong partial positive charge that bridges to lone pairs on neighbouring molecules."
+    },
+    {
+      "id": 4,
+      "question": "A diver's air bubble at 5 atm pressure and 20 mL volume rises to the surface (1 atm). Its new volume, at constant temperature, is about:",
+      "options": ["4 mL", "20 mL", "100 mL", "500 mL"],
+      "correct": 2,
+      "rationale": "By Boyle's law P₁V₁ = P₂V₂: 5 × 20 = 1 × V₂, so V₂ = 100 mL — why divers must never hold their breath while ascending."
+    },
+    {
+      "id": 5,
+      "question": "Which temperature scale must be used in gas-law calculations?",
+      "options": ["Celsius", "Fahrenheit", "Kelvin", "Any, as long as it is consistent"],
+      "correct": 2,
+      "rationale": "The gas laws are proportional to absolute temperature; only the kelvin scale starts at absolute zero, making ratios meaningful."
+    },
+    {
+      "id": 6,
+      "question": "Absolute zero corresponds to:",
+      "options": ["0 °C", "−100 °C", "−273.15 °C", "−459 °C"],
+      "correct": 2,
+      "rationale": "Extrapolating gas volume against temperature points to −273.15 °C (0 K), where classical particle motion would cease."
+    },
+    {
+      "id": 7,
+      "question": "In the ideal gas equation PV = nRT, the value of R is:",
+      "options": ["8.314 J·mol⁻¹·K⁻¹", "6.63 × 10⁻³⁴ J·s", "1.38 × 10⁻²³ J/K", "0.082 L·atm only"],
+      "correct": 0,
+      "rationale": "The universal gas constant R = 8.314 J·mol⁻¹·K⁻¹ (equivalently 0.0821 L·atm·mol⁻¹·K⁻¹); 6.63 × 10⁻³⁴ is Planck's constant."
+    },
+    {
+      "id": 8,
+      "question": "One mole of an ideal gas at standard temperature and pressure occupies approximately:",
+      "options": ["1 litre", "2.24 litres", "22.4 litres", "224 litres"],
+      "correct": 2,
+      "rationale": "At STP, molar volume is ~22.4 L/mol — a direct consequence of PV = nRT."
+    },
+    {
+      "id": 9,
+      "question": "Air is 21% oxygen. At a total pressure of 1 atm, the partial pressure of oxygen is:",
+      "options": ["1 atm", "0.78 atm", "0.21 atm", "0.021 atm"],
+      "correct": 2,
+      "rationale": "By Dalton's law, each gas contributes in proportion to its fraction: 0.21 × 1 atm = 0.21 atm."
+    },
+    {
+      "id": 10,
+      "question": "Plasma differs from a gas because plasma:",
+      "options": ["Is colder", "Is ionised — its electrons are stripped from atoms", "Has fixed volume", "Has no mass"],
+      "correct": 1,
+      "rationale": "Heating a gas sufficiently ionises it: plasma is a conductive mix of free ions and electrons, the state of stars and lightning."
+    }
+  ]
+}

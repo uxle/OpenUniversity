@@ -1,0 +1,178 @@
+# Limits and Continuity: The Gateway to Calculus
+
+> Calculus begins with a paradox: to find the slope of a curve at a
+> single point, or the area under a curve down to a hair's width, we
+> need to divide by zero or add infinitely many terms. The limit is
+> the idea that resolves the paradox — a number the function *approaches*
+> even where it never arrives. Master limits and continuity, and
+> derivatives and integrals become bookkeeping.
+
+## 1. What a Limit Really Means
+
+[definition]
+We write $\lim_{x \to a} f(x) = L$ when the values of $f(x)$ can be
+made arbitrarily close to $L$ by taking $x$ sufficiently close to $a$
+(but not equal to $a$). The limit describes the *neighbourhood*, never
+the point itself.
+[/definition]
+
+Two consequences follow immediately:
+
+- $f(a)$ need not exist for the limit to exist. The classic
+  $\frac{x^2 - 4}{x - 2}$ is undefined at $x = 2$, yet everywhere near
+  it equals $x + 2$, so the limit is $4$.
+- If left-hand and right-hand approaches disagree, the limit does not
+  exist. For $|x|/x$, the left limit is $-1$ and the right limit is
+  $+1$, so $\lim_{x \to 0}$ fails to exist.
+
+[important]
+A limit exists if and only if both one-sided limits exist and are
+equal:
+$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L$. Checking the two
+sides separately is mandatory for piecewise functions and for
+expressions containing $|x|$, $\lfloor x \rfloor$, or
+$\{x\}$ (fractional part).
+[/important]
+
+## 2. Algebra of Limits and Standard Results
+
+Limits respect sums, products, quotients (non-zero denominator
+limits), and composition — provided every limit involved exists. On
+top of that stack sit the **standard limits** every exam expects:
+
+@math label="eq:std-trig"
+\lim_{x \to 0}\frac{\sin x}{x} = 1, \qquad \lim_{x \to 0}\frac{\tan x}{x} = 1
+@/math
+
+@math label="eq:std-exp"
+\lim_{x \to 0}\frac{e^x - 1}{x} = 1, \qquad \lim_{x \to 0}\frac{a^x - 1}{x} = \ln a
+@/math
+
+@math label="eq:std-log"
+\lim_{x \to 0}\frac{\ln(1+x)}{x} = 1
+@/math
+
+@math label="eq:std-power"
+\lim_{x \to 0}(1+x)^{1/x} = e, \qquad \lim_{n \to \infty}\left(1+\frac{1}{n}\right)^n = e
+@/math
+
+@math label="eq:std-poly"
+\lim_{x \to a}\frac{x^n - a^n}{x - a} = n\,a^{n-1}
+@/math
+
+**Worked example.**
+
+@math label="eq:limit-example"
+\lim_{x \to 0}\frac{\sin 5x}{3x} = \lim_{x \to 0}\frac{\sin 5x}{5x} \cdot \frac{5x}{3x} = 1 \times \frac{5}{3} = \frac{5}{3}
+@/math
+
+The standard trick — multiply and divide by the angle that matches the
+sine — converts any $\frac{\sin kx}{mx}$ to $\frac{k}{m}$.
+
+## 3. Indeterminate Forms and How to Break Them
+
+Direct substitution sometimes yields nonsense values called
+**indeterminate forms**:
+
+@math label="eq:indeterminate"
+\frac{0}{0}, \quad \frac{\infty}{\infty}, \quad \infty - \infty, \quad 0 \times \infty, \quad 1^{\infty}, \quad 0^0, \quad \infty^0
+@/math
+
+| Form | Escape route | Example |
+| --- | --- | --- |
+| $\frac{0}{0}$ (polynomials) | Factor and cancel | $\frac{x^2-4}{x-2}$ at $x=2$ |
+| $\frac{0}{0}$ (radicals) | Rationalise | $\frac{\sqrt{x}-2}{x-4}$ at $x=4$ |
+| $\frac{\infty}{\infty}$ | Divide by highest power | Rational functions at infinity |
+| $1^{\infty}$ | Rewrite as $[1 + f(x)]^{1/f(x)}$ | $(1+\frac{2}{n})^n$ |
+| $\infty - \infty$ | Combine into one fraction | $\sqrt{x^2+x} - x$ |
+
+**Rational function at infinity.** For
+$f(x) = \frac{3x^2 + 1}{5x^2 - 7}$, divide numerator and denominator
+by $x^2$: everything with $x$ in the denominator vanishes, leaving
+$\frac{3}{5}$. In general the limit at infinity equals the ratio of
+leading coefficients (equal degrees), $0$ (denominator degree higher),
+or diverges (numerator degree higher).
+
+## 4. Continuity at a Point
+
+[definition]
+A function $f$ is **continuous at $a$** when three things hold at once:
+$f(a)$ is defined, $\lim_{x \to a} f(x)$ exists, and
+$\lim_{x \to a} f(x) = f(a)$. Break any one leg and the function has a
+discontinuity at $a$.
+[/definition]
+
+| Discontinuity type | Signature | Example |
+| --- | --- | --- |
+| Removable (hole) | Limit exists, value missing or wrong | $\frac{x^2-4}{x-2}$ at $2$ |
+| Jump | One-sided limits exist but differ | $|x|/x$ at $0$ |
+| Infinite | Function blows up | $\frac{1}{x}$ at $0$ |
+| Oscillatory | Values oscillate without settling | $\sin\frac{1}{x}$ at $0$ |
+
+Continuity is *local* — a function can be continuous everywhere except
+at a handful of jump points. Polynomials are continuous everywhere;
+rational functions are continuous except at zeros of the denominator;
+and the familiar functions ($\sin x$, $e^x$, $\ln x$ on positive
+reals) are continuous on their domains.
+
+[example]
+Is $f(x) = \begin{cases} 2x + 1 & x < 2 \\ 9 - x & x \ge 2\end{cases}$
+continuous at $x = 2$? Left limit: $2(2)+1 = 5$. Right limit:
+$9 - 2 = 7$. The one-sided limits disagree, so the limit fails and the
+function has a jump discontinuity at $2$ — regardless of what value we
+assign there.
+[/example]
+
+## 5. Theorems That Ride on Continuity
+
+Two theorems about continuous functions generate endless exam
+questions:
+
+- **Intermediate Value Theorem (IVT).** A function continuous on
+  $[a, b]$ takes every value between $f(a)$ and $f(b)$. In particular,
+  if $f(a)$ and $f(b)$ have opposite signs, some $c$ in between has
+  $f(c) = 0$ — this is why bisection methods find roots.
+- **Extreme Value Theorem.** A function continuous on a closed bounded
+  interval attains a maximum and a minimum on it — the guarantee that
+  makes optimisation possible.
+
+[info title="Sandwich (Squeeze) theorem"]
+If $g(x) \le f(x) \le h(x)$ near $a$, and both $g$ and $h$ tend to the
+same limit $L$, then $f$ is squeezed to $L$ as well. The proof that
+$\lim_{x \to 0} x^2 \sin\frac{1}{x} = 0$ is a one-liner: the sine
+factor is trapped between $-1$ and $1$, so the product is trapped
+between $\pm x^2$, both of which vanish.
+[/info]
+
+## 6. Limits Involving the Greatest Integer and e
+
+The greatest integer function $\lfloor x \rfloor$ jumps at every
+integer, so its one-sided limits straddle each integer: just below
+$n$, $\lfloor x \rfloor \to n-1$; just above, it equals $n$. Questions
+mixing $\lfloor x \rfloor$ with limits must always be split by side.
+
+Exponential limits of the $1^{\infty}$ family reduce to a single
+template:
+
+@math label="eq:one-infty"
+\lim_{x \to a}\left(1 + f(x)\right)^{1/f(x)} = e \quad \text{whenever } f(x) \to 0
+@/math
+
+Thus $\lim_{n \to \infty}\left(\frac{n+3}{n}\right)^{2n}
+= \lim\left(1 + \frac{3}{n}\right)^{n \cdot 2} = e^{6}$, because the
+base is $1 + \frac{3}{n}$ and the exponent carries the reciprocal,
+doubled.
+
+[summary]
+A limit describes the value a function approaches, independent of its
+value at the point; it exists exactly when both one-sided limits agree.
+Standard limits — $\frac{\sin x}{x} \to 1$, $\frac{e^x-1}{x} \to 1$,
+$\frac{\ln(1+x)}{x} \to 1$, $(1+x)^{1/x} \to e$,
+$\frac{x^n-a^n}{x-a} \to na^{n-1}$ — plus factoring, rationalising,
+and dividing by the top power dissolve every indeterminate form.
+Continuity at $a$ requires definedness, an existing limit, and their
+equality; its failure modes are removable, jump, infinite, and
+oscillatory discontinuities. The IVT guarantees roots between sign
+changes, and the sandwich theorem squeezes trapped functions to their
+limit. Limits are the doorway; calculus walks through it.
+[/summary]

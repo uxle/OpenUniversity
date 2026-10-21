@@ -1,0 +1,155 @@
+# Profit and Loss and Discount: The Mathematics of Buying and Selling
+
+> Every shop transaction hides an arithmetic story: a cost price, a
+> marked price, maybe a discount, and a selling price. Profit and loss
+> questions test whether you can follow that story without losing
+> track of which price is which — and the dishonest-dealer and
+> successive-discount twists make it one of the richest chapters in
+> commercial arithmetic.
+
+## 1. The Core Vocabulary
+
+[definition]
+**Cost price (CP)** is what the seller pays; **selling price (SP)** is
+what the buyer pays; **marked price (MP)** is the label price before
+discount. Profit or loss is always reckoned **on the cost price**
+unless stated otherwise.
+[/definition]
+
+@math label="eq:pl-basic"
+\text{Profit} = SP - CP, \quad \text{Profit\%} = \frac{SP - CP}{CP} \times 100
+@/math
+
+@math label="eq:loss-basic"
+\text{Loss} = CP - SP, \quad \text{Loss\%} = \frac{CP - SP}{CP} \times 100
+@/math
+
+Two manipulations of the same relation do most of the work:
+
+@math label="eq:sp-from-cp"
+SP = CP\left(1 + \frac{P\%}{100}\right), \qquad CP = \frac{SP}{1 + \frac{P\%}{100}}
+@/math
+
+**Worked example.** An article sold at $540$ gains $20\%$:
+
+@math label="eq:gain-example"
+CP = \frac{540}{1.2} = 450, \quad \text{profit} = 90
+@/math
+
+## 2. Discount and Marked Price
+
+Discount is always computed **on the marked price**:
+
+@math label="eq:discount"
+SP = MP\left(1 - \frac{D\%}{100}\right)
+@/math
+
+Chaining the two relations links all three prices:
+
+@math label="eq:mp-cp-link"
+SP = MP\left(1-\frac{D}{100}\right) = CP\left(1+\frac{P}{100}\right)
+@/math
+
+[important]
+**Successive discounts of $a\%$ and $b\%$ are NOT
+$(a+b)\%$.** The combined effect is
+$a + b - \frac{ab}{100}$ percent — a "single discount equivalent"
+question expects exactly this formula. Discounts of $20\%$ and $10\%$
+equal a single discount of $28\%$, not $30\%$.
+[/important]
+
+**Worked example.** A trader marks goods $40\%$ above cost and allows
+a $25\%$ discount:
+
+@math label="eq:trader-mp"
+SP = 1.40 \times 0.75 \times CP = 1.05 \times CP
+@/math
+
+so the trader still earns a $5\%$ profit.
+
+## 3. The Classic Exam Patterns
+
+**Pattern 1 — Same selling price, one profit one loss.** Two
+articles sold at the same price, one at $P\%$ profit and the other at
+$P\%$ loss, always produce an overall loss of:
+
+@math label="eq:same-sp"
+\text{Loss\%} = \left(\frac{P}{10}\right)^2
+@/math
+
+Selling two items at $240$ each, one at $20\%$ profit and one at
+$20\%$ loss, loses $4\%$ overall.
+
+**Pattern 2 — Selling at half or double.** If selling an article at
+$\frac{3}{4}$ of CP causes a loss, restate as ratio: $SP:CP = 3:4$
+means $25\%$ loss. Ratios avoid decimals entirely.
+
+**Pattern 3 — Two transactions, net zero.** A man sells one article
+at $10\%$ loss; to recover fully, the second (identical) article must
+be sold at $11.11\%$ profit — recovery percentage is
+$\frac{x}{10-x}\times 100$ for a loss of $x\%$ (here
+$\frac{10}{90} \times 100 = 11.11\%$).
+
+**Pattern 4 — CP of many articles = SP of fewer.** "The cost price of
+15 articles equals the selling price of 12" — take the common value as
+$60$ (LCM-ish): $CP = 4$, $SP = 5$, so profit is $25\%$. The general
+result: profit% $= \frac{m-n}{n} \times 100$ when $CP$ of $m$ articles
+equals $SP$ of $n$ articles ($m > n$).
+
+**Pattern 5 — Break-even bundles.** Selling 20 pens at the price of
+25 bought pens and bundling freebies ("buy 4 get 1 free") both reduce
+to the same fraction logic: effective SP per unit = $\frac{4}{5}$ CP
+gives $20\%$ loss.
+
+## 4. Dishonest Dealers
+
+[definition]
+A **false weight** dealer claims to sell at cost price but uses a
+weighing measure that gives less (or takes more) than claimed. The
+entire profit hides in the weight ratio:
+[/definition]
+
+@math label="eq:false-weight"
+\text{Gain\%} = \frac{\text{error}}{\text{true value} - \text{error}} \times 100
+@/math
+
+**Worked example.** A shopkeeper sells at cost price using a $900\ \text{g}$
+weight in place of $1\ \text{kg}$: gain
+$= \frac{100}{900} \times 100 = 11.11\%$.
+
+**Worked example (double dishonesty).** He both uses a $950\ \text{g}$
+weight *and* marks up $10\%$: effective gain
+$= 1.10 \times \frac{1000}{950} - 1 \approx 15.79\%$. Multiply the
+gain factors — never add them.
+
+## 5. Quick Percentage Sense
+
+| Situation | Result |
+| --- | --- |
+| $x\%$ profit then $x\%$ loss (same base) | Net loss $\left(\frac{x}{10}\right)^2\%$ |
+| Two equal discounts vs one | Successive is always less |
+| Markup then equal markdown on MP | Always a loss ("marked up 25%, discounted 25%" $\Rightarrow$ $6.25\%$ loss) |
+| Successive profits $a\%$ then $b\%$ | Net $a + b + \frac{ab}{100}\%$ |
+
+[example]
+A shopkeeper marks a shirt at $1500$, allows a $20\%$ discount, and
+still earns $20\%$ profit. What was the cost price?
+$SP = 1500 \times 0.8 = 1200$; then $CP = \frac{1200}{1.2} = 1000$.
+The full chain $MP \to SP \to CP$ is just two multiplications when the
+percentages are friendly.
+[/example]
+
+[summary]
+Profit and loss lives on four prices — CP, MP, SP, and discount —
+with profit and discount percentages defined on CP and MP
+respectively. The master relation
+$SP = MP(1-\frac{D}{100}) = CP(1+\frac{P}{100})$ links them.
+Successive discounts (or profits) combine as
+$a + b - \frac{ab}{100}$ (or $a + b + \frac{ab}{100}$); equal-profit-
+and-loss at the same SP always nets a
+$\left(\frac{P}{10}\right)^2\%$ loss; false weights gain
+$\frac{\text{error}}{\text{true}-\text{error}} \times 100\%$; and
+"CP of $m$ = SP of $n$" gives $\frac{m-n}{n} \times 100\%$ profit.
+Anchor every question to the base of its percentage, and the chapter
+becomes multiplication practice.
+[/summary]

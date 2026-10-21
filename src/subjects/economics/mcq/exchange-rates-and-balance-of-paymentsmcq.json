@@ -1,0 +1,116 @@
+{
+  "lessonId": "exchange-rates-and-balance-of-payments",
+  "title": "Exchange Rates and Balance of Payments: India in the World Economy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Remittances from Indians working abroad are recorded in which part of the balance of payments?",
+      "options": ["Capital account", "Current account (transfers)", "Financial account", "Official reserve account"],
+      "correct": 1,
+      "rationale": "Workers' remittances are current transfers — income flows without anything given in return — recorded in the current account. They form India's largest stable invisible inflow, softening the trade deficit."
+    },
+    {
+      "id": 2,
+      "question": "The difference between depreciation and devaluation is:",
+      "options": [
+        "Depreciation is market-driven; devaluation is a deliberate official act",
+        "Depreciation happens only in fixed regimes",
+        "Devaluation happens in floating regimes",
+        "There is no difference"
+      ],
+      "correct": 0,
+      "rationale": "Depreciation is the market pushing a currency down in a floating/managed system; devaluation is a government decision to lower the official parity under a fixed regime. Revaluation is devaluation's official opposite."
+    },
+    {
+      "id": 3,
+      "question": "Under the managed floating exchange rate system that India follows since 1993:",
+      "options": [
+        "The RBI fixes a target rate daily",
+        "The market sets the rate; the RBI intervenes only to smooth excessive volatility",
+        "The rupee is pegged to a basket of currencies",
+        "The RBI has never intervened since 1993"
+      ],
+      "correct": 1,
+      "rationale": "In a managed (dirty) float the market determines the rupee's level, while the RBI buys or sells dollars to dampen sharp swings — not to defend any announced target level."
+    },
+    {
+      "id": 4,
+      "question": "The rupee depreciates sharply against the dollar. Which group GAINS?",
+      "options": ["Oil importers", "Software exporters", "Students studying abroad", "Foreign tourists visiting India"],
+      "correct": 1,
+      "rationale": "Depreciation makes exports cheaper in foreign currency — IT, pharma, and textile exporters gain as their dollar revenues convert to more rupees. Importers, foreign education, and inbound tourists' home currency buys face the opposite effect."
+    },
+    {
+      "id": 5,
+      "question": "The J-curve refers to:",
+      "options": [
+        "The immediate improvement of the trade balance after depreciation",
+        "The initial worsening of the trade balance after depreciation before it improves",
+        "The shape of economic growth during a boom",
+        "The path of interest rates in a cycle"
+      ],
+      "correct": 1,
+      "rationale": "Right after depreciation, import bills rise (contracts reprice slowly) while export volumes take time to respond — so the trade balance first dips (the hook of the J) before recovering and improving."
+    },
+    {
+      "id": 6,
+      "question": "The Indian rupee is:",
+      "options": [
+        "Fully convertible on both current and capital accounts",
+        "Fully convertible on the current account but only partially on the capital account",
+        "Partially convertible on both accounts",
+        "Not convertible on either account"
+      ],
+      "correct": 1,
+      "rationale": "Since 1994 the rupee is fully convertible on the current account (trade, travel, education within limits), while capital-account flows face quantity and price restrictions — a deliberate guard against sudden capital flight."
+    },
+    {
+      "id": 7,
+      "question": "The SDR (Special Drawing Right) is:",
+      "options": [
+        "A currency issued by the World Bank",
+        "A basket reserve asset of the IMF valued on five major currencies",
+        "India's quota in the Asian Development Bank",
+        "A swap line between central banks"
+      ],
+      "correct": 1,
+      "rationale": "The SDR is an IMF-created reserve asset whose value is the weighted basket of the US dollar, euro, yuan, yen, and pound. It is neither a currency nor a claim on the IMF itself; its basket is reviewed every five years."
+    },
+    {
+      "id": 8,
+      "question": "Autonomous items in the balance of payments are:",
+      "options": [
+        "Transactions the RBI makes to fill the residual gap",
+        "Transactions undertaken for profit or need, independent of the BoP position",
+        "Only gold transactions",
+        "Errors and omissions"
+      ],
+      "correct": 1,
+      "rationale": "Autonomous items — exports, imports, FDI, remittances — happen for their own commercial motives. Accommodating items (official reserve transactions by the central bank) exist only to bridge the gap the autonomous flows leave."
+    },
+    {
+      "id": 9,
+      "question": "Which factor most directly pressures the rupee downward, given India's import basket?",
+      "options": [
+        "A sharp rise in global crude oil prices",
+        "A rise in software exports",
+        "Higher remittances from the Gulf",
+        "RBI buying dollars in the market"
+      ],
+      "correct": 0,
+      "rationale": "India imports roughly 85 percent of its crude, so an oil price spike inflates the dollar demand for imports, widens the current account deficit, and pulls the rupee down — the single most reliable rupee pressure point."
+    },
+    {
+      "id": 10,
+      "question": "A current account deficit means:",
+      "options": [
+        "The country is bankrupt",
+        "The country is a net borrower from the rest of the world",
+        "Foreign exchange reserves must be zero",
+        "Exports of goods exceed imports"
+      ],
+      "correct": 1,
+      "rationale": "A CAD means the country spends more foreign currency on current transactions than it earns — the gap is financed by net capital inflows, i.e. borrowing from the world. Sustainable while lenders believe in future returns, dangerous when financing suddenly dries up."
+    }
+  ]
+}

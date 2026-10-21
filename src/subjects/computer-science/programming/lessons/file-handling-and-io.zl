@@ -1,0 +1,182 @@
+# File Handling and I/O: Programs That Remember
+
+> Variables die when the program ends — a file is how a program
+> remembers. Reading configuration, logging events, saving a
+> document, or downloading data all flow through the same pipeline:
+> open a file, work with a stream of bytes or lines, and close it
+> cleanly. This lesson covers Python's file I/O — the patterns,
+> the pitfalls, and the safety rails.
+
+## 1. Files, Streams, and File Objects
+
+[definition]
+A **file** is a named, durable sequence of bytes on a storage device.
+Python accesses it through a **file object** (a stream): data flows
+from disk to program on read, and from program to disk on write. The
+**file cursor** marks the next byte to read or write.
+[/definition]
+
+Two file species behave differently:
+
+| Kind | Contents | Read as | Examples |
+| --- | --- | --- | --- |
+| Text files | Character bytes (UTF-8, etc.) | `str`, line by line | `.txt`, `.py`, `.csv`, `.json` |
+| Binary files | Raw bytes | `bytes` objects | `.png`, `.pdf`, `.zip`, `.db` |
+
+Text mode handles encoding/decoding and universal newlines
+automatically; binary mode passes bytes through untouched — images
+opened in text mode are the classic first crash.
+
+## 2. Opening Files the Right Way
+
+`open(path, mode)` returns a file object. The mode string packs two
+facts — read/write direction and text/binary:
+
+| Mode | Meaning | Cursor |
+| --- | --- | --- |
+| `"r"` | read (default); error if missing | start |
+| `"w"` | write; **truncates existing file** | start |
+| `"a"` | append; creates if missing | end |
+| `"r+"` | read and write, no truncation | start |
+| `"x"` | exclusive create; error if exists | start |
+| add `"b"` | binary variant (`"rb"`, `"wb"`, ...) | — |
+
+[important]
+Always close files — unclosed files leak handles, lock resources on
+some operating systems, and may lose buffered writes. The `with`
+statement closes automatically, even on exceptions, and is the
+professional default:
+[/important]
+
+```python
+with open("notes.txt", "r", encoding="utf-8") as f:
+    content = f.read()        # entire file as one string
+# f is closed here, no matter what happened above
+```
+
+Leaving out `encoding` invites platform-dependent defaults —
+name it explicitly for anything that must be portable.
+
+## 3. Reading: The Four Styles
+
+```python
+f.read()            # whole file as one string (memory-hungry)
+f.read(1024)        # next 1024 bytes/characters
+f.readline()        # next line, keeping the trailing newline
+f.readlines()       # list of all lines
+for line in f:      # memory-friendly iteration — preferred
+    process(line)
+```
+
+The `for line in f` loop streams the file lazily — a 10 GB log is
+scanned without ever holding more than one line in memory. For large
+files this is not a style preference; it is the difference between
+working and crashing.
+
+## 4. Writing: Newlines and Buffers
+
+```python
+with open("log.txt", "w") as f:
+    f.write("first line")          # write() adds NO newline
+    f.write("second line\n")       # be explicit
+    print("third line", file=f)    # print() adds it for you
+    f.writelines(["a\n", "b\n"])   # writes each item as-is
+```
+
+`write()` returns the number of characters written and never appends
+a newline itself. Writes land in an in-memory **buffer**, flushed to
+disk when the buffer fills, when `f.flush()` is called, or when the
+file closes — the reason `with` matters for data integrity.
+
+The pattern `open(path, "a")` appends — perfect for logs, since each
+run adds to history instead of erasing yesterday's entries.
+
+## 5. Structured Files: CSV, JSON, and Pickle
+
+**CSV** (comma-separated values) is the lingua franca of
+spreadsheets:
+
+```python
+import csv
+with open("marks.csv", newline="", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row["name"], row["marks"])
+```
+
+**JSON** nests naturally into Python types via the `json` module —
+the standard currency of web APIs:
+
+```python
+import json
+config = {"host": "localhost", "port": 8080, "debug": False}
+
+with open("config.json", "w") as f:
+    json.dump(config, f, indent=2)      # Python -> file
+
+with open("config.json") as f:
+    loaded = json.load(f)               # file -> Python
+```
+
+For Python objects specifically, `pickle` serialises almost anything
+(a list of custom objects, for instance) — but pickle files are
+Python-only and **unsafe to load from untrusted sources**, since
+deserialisation can execute code. JSON stays the safe interchange
+format.
+
+## 6. Robust I/O: Errors and Paths
+
+File I/O fails in well-known ways, and every handler should plan for
+them:
+
+```python
+try:
+    with open("data.csv", encoding="utf-8") as f:
+        rows = list(csv.reader(f))
+except FileNotFoundError:
+    print("data.csv is missing — nothing to load")
+except PermissionError:
+    print("no permission to read this file")
+except UnicodeDecodeError:
+    print("file is not valid UTF-8 text")
+```
+
+Paths deserve the `pathlib` treatment — joining with `/` works
+across operating systems:
+
+```python
+from pathlib import Path
+config = Path("settings") / "app.json"    # settings/app.json
+if config.exists():
+    text = config.read_text(encoding="utf-8")
+```
+
+[example]
+A tiny but complete logging pattern ties the chapter together:
+
+```python
+from datetime import datetime
+from pathlib import Path
+
+def log(message, path=Path("app.log")):
+    stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with path.open("a", encoding="utf-8") as f:
+        f.write(f"[{stamp}] {message}\n")
+```
+
+Append mode preserves history, `with` guarantees the handle closes,
+`encoding` makes the log portable, and `pathlib` keeps the path
+cross-platform — five ideas from this lesson in six lines.
+[/example]
+
+[summary]
+Files give programs durable memory through file objects opened with
+`open(path, mode)` — modes set direction (r/w/a/x) and encoding
+(text vs binary). The `with` statement is non-negotiable: it closes
+files and flushes buffers even on exceptions. Read with
+`for line in f` for memory-safe streaming; write with explicit
+newlines; append for logs. Structured data flows through `csv` for
+tables, `json` for interchange, and `pickle` for Python-only objects
+(never from untrusted sources). Guard `FileNotFoundError` and
+friends, and build paths with `pathlib` so code runs everywhere.
+[/summary]

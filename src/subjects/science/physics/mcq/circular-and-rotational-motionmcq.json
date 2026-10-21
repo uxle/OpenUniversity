@@ -1,0 +1,76 @@
+{
+  "lessonId": "circular-and-rotational-motion",
+  "title": "Circular and Rotational Motion: Motion That Turns",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A body completes 2 full revolutions per second in a circle of radius 0.5 m. What is its angular velocity?",
+      "options": ["2π rad/s", "4π rad/s", "π rad/s", "8π rad/s"],
+      "correct": 1,
+      "rationale": "One revolution is 2π rad, so ω = 2π × n = 2π × 2 = 4π rad/s."
+    },
+    {
+      "id": 2,
+      "question": "What supplies the centripetal force for a car taking a turn on a flat (unbanked) road?",
+      "options": ["The car's engine thrust", "Friction between the tyres and the road", "The normal reaction of the road", "Air resistance"],
+      "correct": 1,
+      "rationale": "On a flat curve only friction points horizontally towards the centre of the turn, so friction plays the role of the centripetal force."
+    },
+    {
+      "id": 3,
+      "question": "Centripetal acceleration for a body moving with speed v in a circle of radius r is:",
+      "options": ["v²/r directed away from the centre", "v²/r directed towards the centre", "vr² directed towards the centre", "v/r² directed away from the centre"],
+      "correct": 1,
+      "rationale": "The acceleration of uniform circular motion has magnitude v²/r and points radially inward, towards the centre of the circle."
+    },
+    {
+      "id": 4,
+      "question": "A skater spinning with arms extended pulls her arms in. What happens to her angular velocity, and why?",
+      "options": ["Decreases — moment of inertia rises", "Increases — moment of inertia falls and angular momentum is conserved", "Stays the same — speed is conserved", "Increases — torque is conserved"],
+      "correct": 1,
+      "rationale": "With no external torque, L = Iω stays constant. Pulling the arms in reduces I, so ω must increase to compensate."
+    },
+    {
+      "id": 5,
+      "question": "The minimum speed at the top of a vertical circle of radius r for a body to complete the loop is:",
+      "options": ["√(gr)", "√(2gr)", "√(rg/2)", "2√(gr)"],
+      "correct": 0,
+      "rationale": "At the top, gravity alone can supply the whole centripetal force, so v² ≥ gr, giving v_min = √(gr)."
+    },
+    {
+      "id": 6,
+      "question": "Which quantity is the rotational analogue of mass?",
+      "options": ["Torque", "Angular velocity", "Moment of inertia", "Angular momentum"],
+      "correct": 2,
+      "rationale": "Moment of inertia I = Σmr² resists changes in rotational motion, exactly as mass resists changes in straight-line motion."
+    },
+    {
+      "id": 7,
+      "question": "The moment of inertia of a uniform solid sphere of mass M and radius R about its diameter is:",
+      "options": ["MR²", "½MR²", "⅖MR²", "7/5 MR²"],
+      "correct": 2,
+      "rationale": "For a solid sphere about its symmetry axis, I = (2/5)MR². MR² is a ring and ½MR² is a disc."
+    },
+    {
+      "id": 8,
+      "question": "Why are roads banked at curves?",
+      "options": ["To increase friction", "So a component of the normal reaction provides the centripetal force", "To slow vehicles down", "To drain rainwater only"],
+      "correct": 1,
+      "rationale": "On a banked road the normal reaction tilts inward; its horizontal component supplies centripetal force, reducing reliance on friction."
+    },
+    {
+      "id": 9,
+      "question": "A 30 kg child sits 2 m from a see-saw's pivot. Where must a 60 kg adult sit to balance it?",
+      "options": ["2 m from the pivot", "1 m from the pivot", "4 m from the pivot", "0.5 m from the pivot"],
+      "correct": 1,
+      "rationale": "Rotational equilibrium needs equal moments: 30 × 2 = 60 × r, so r = 1 m."
+    },
+    {
+      "id": 10,
+      "question": "A geostationary satellite appears stationary above one point on Earth's equator because:",
+      "options": ["It has no angular velocity", "Its orbital period matches Earth's rotation period at an altitude of 35,786 km", "Gravity does not act on it", "It is stationary relative to the Sun"],
+      "correct": 1,
+      "rationale": "At 35,786 km altitude the orbital period equals 24 hours, so the satellite revolves with the Earth and stays over the same longitude."
+    }
+  ]
+}

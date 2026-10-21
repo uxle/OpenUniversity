@@ -1,0 +1,127 @@
+{
+  "lessonId": "wave-optics",
+  "title": "Wave Optics: Interference, Diffraction, and Polarisation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In Young's double-slit experiment, the slit separation is 0.4 mm, the screen is 1.6 m away, and light of wavelength 500 nm is used. What is the fringe width?",
+      "zolto": "\\beta = \\frac{\\lambda D}{d}",
+      "options": [
+        "1.0 mm",
+        "2.0 mm",
+        "3.0 mm",
+        "4.0 mm"
+      ],
+      "correct": 1,
+      "rationale": "Fringe width = lambdaD/d = (500 x 10^-9 x 1.6)/(0.4 x 10^-3) = 2 x 10^-3 m = 2 mm. Halving the slit separation would double it, but with the given numbers the answer is 2 mm."
+    },
+    {
+      "id": 2,
+      "question": "What is the path difference for destructive interference at a point on the screen?",
+      "options": [
+        "n times lambda",
+        "Odd multiples of lambda/2",
+        "Even multiples of lambda/2",
+        "Zero always"
+      ],
+      "correct": 1,
+      "rationale": "Crest meets trough when the path difference is (2n+1)lambda/2, i.e. odd multiples of half a wavelength. Whole multiples of lambda give constructive interference instead."
+    },
+    {
+      "id": 3,
+      "question": "The entire Young's double-slit apparatus is immersed in water. What happens to the fringe width?",
+      "options": [
+        "Increases, because light slows down",
+        "Decreases, because the wavelength in water is shorter",
+        "Stays the same, since frequency is unchanged",
+        "Becomes zero"
+      ],
+      "correct": 1,
+      "rationale": "In water the wavelength becomes lambda/n, so beta = (lambda/n)D/d decreases by the factor n (about 4/3). Fringes crowd closer together under water."
+    },
+    {
+      "id": 4,
+      "question": "If one of the two slits in Young's experiment is covered, what is observed on the screen?",
+      "options": [
+        "The fringes become brighter",
+        "A uniform dark screen",
+        "The interference fringes vanish; only a broad single-slit diffraction pattern remains",
+        "The fringe width halves"
+      ],
+      "correct": 2,
+      "rationale": "Interference needs two coherent waves. With one slit open there is nothing to interfere with, so the screen shows only the single-slit diffraction envelope — a broad central maximum with weak side bands."
+    },
+    {
+      "id": 5,
+      "question": "Light of wavelength 600 nm falls on a single slit of width 0.02 mm. At what angle is the first diffraction minimum formed?",
+      "options": [
+        "About 1.7 degrees",
+        "About 3.5 degrees",
+        "About 6.0 degrees",
+        "About 12.5 degrees"
+      ],
+      "correct": 0,
+      "rationale": "First minimum: a sin(theta) = lambda, so sin(theta) = 600x10^-9 / 0.02x10^-3 = 0.03, giving theta of about 1.7 degrees. Small angles keep the central maximum narrow for wide slits."
+    },
+    {
+      "id": 6,
+      "question": "Which phenomenon proves conclusively that light waves are transverse?",
+      "options": [
+        "Interference",
+        "Diffraction",
+        "Polarisation",
+        "Reflection"
+      ],
+      "correct": 2,
+      "rationale": "Only transverse waves can have a vibration direction to filter, so only they can be polarised. Sound (longitudinal) shows interference and diffraction but never polarisation."
+    },
+    {
+      "id": 7,
+      "question": "Unpolarised light strikes a glass surface (n = 1.5) at Brewster's angle. What is the angle of refraction?",
+      "options": [
+        "About 33 degrees",
+        "About 45 degrees",
+        "About 57 degrees",
+        "About 63 degrees"
+      ],
+      "correct": 0,
+      "rationale": "Brewster's angle: tan(theta_p) = 1.5, so theta_p of incidence is about 57 degrees. At Brewster incidence the reflected and refracted rays are perpendicular, so the angle of refraction is 90 - 57 = 33 degrees."
+    },
+    {
+      "id": 8,
+      "question": "Two polaroids have their axes at 60 degrees. If unpolarised light of intensity I0 falls on the first, what intensity emerges from the second?",
+      "options": [
+        "I0/2",
+        "I0/4",
+        "I0/8",
+        "3I0/8"
+      ],
+      "correct": 2,
+      "rationale": "The first polaroid halves any unpolarised beam: I0/2. Malus's law then gives the second transmission as (I0/2)cos^2(60) = (I0/2)(1/4) = I0/8."
+    },
+    {
+      "id": 9,
+      "question": "Why do anti-reflection coatings on camera lenses look bluish-purple?",
+      "options": [
+        "The coating absorbs red light completely",
+        "Destructive interference cancels reflection strongest around green-yellow, so the residual reflected light is richer in red and violet",
+        "The coating polarises the reflected light",
+        "Glass itself is purple at the surface"
+      ],
+      "correct": 1,
+      "rationale": "The quarter-wave coating is tuned so reflections from its two surfaces destructively interfere near the middle of the visible spectrum (green-yellow). What little light still reflects is dominated by the spectral ends — red and violet — mixing into a bluish-purple tint."
+    },
+    {
+      "id": 10,
+      "question": "A telescope's main mirror is replaced by one of twice the diameter, observing at the same wavelength. The smallest resolvable angular separation:",
+      "options": [
+        "Doubles",
+        "Halves",
+        "Stays the same",
+        "Becomes four times larger"
+      ],
+      "correct": 1,
+      "rationale": "Rayleigh's criterion gives theta_min = 1.22 lambda/D. Doubling the aperture D halves theta_min, so the telescope resolves details twice as close together — resolution improves in direct proportion to aperture."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "responsive-design",
+  "title": "Responsive Design: One Site, Every Screen",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The three pillars of responsive web design, as coined by Ethan Marcotte (2010), are:",
+      "options": ["HTML, CSS, JavaScript", "Fluid grids, flexible media, media queries", "Mobile apps, desktop apps, PWAs", "Bootstrap, Tailwind, Foundation"],
+      "correct": 1,
+      "rationale": "Marcotte's formula: layouts and media measured in relative units, plus media queries that adapt layout to the viewport — one document, many layouts."
+    },
+    {
+      "id": 2,
+      "question": "Without the viewport meta tag, mobile browsers:",
+      "options": ["Show a blank page", "Pretend to be ~980px wide and zoom out, so media queries misfire", "Automatically apply dark mode", "Reject the CSS file"],
+      "correct": 1,
+      "rationale": "Legacy behaviour lays pages out at ~980 virtual px and scales them down; width=device-width makes CSS pixels match the real screen — the foundation of responsive work."
+    },
+    {
+      "id": 3,
+      "question": "What does clamp(1rem, 0.8rem + 1vw, 1.25rem) do?",
+      "options": ["Fixes the size at 1rem", "Animates between values on hover", "Grows fluidly with the viewport but never below 1rem or above 1.25rem", "Clamps the element's width, not its font"],
+      "correct": 2,
+      "rationale": "clamp(min, ideal, max) gives a smooth, responsive value with hard bounds — ideal for type that scales but never becomes silly."
+    },
+    {
+      "id": 4,
+      "question": "Which layout system is designed for two-dimensional layouts (rows AND columns at once)?",
+      "options": ["Flexbox", "CSS Grid", "Floats", "Position: absolute"],
+      "correct": 1,
+      "rationale": "Grid places items in a 2D matrix (with named areas); flexbox excels along a single axis — toolbars, nav strips, card rows."
+    },
+    {
+      "id": 5,
+      "question": "What makes grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)) special?",
+      "options": ["It requires JavaScript", "It fits as many ≥16rem columns as the width allows with no media queries at all", "It creates exactly three columns always", "It only works on desktop"],
+      "correct": 1,
+      "rationale": "The browser computes the column count from available space — the layout is inherently responsive; the min(100%, …) guard prevents overflow on tiny screens."
+    },
+    {
+      "id": 6,
+      "question": "In the srcset example, what does sizes=\"(min-width: 900px) 60vw, 100vw\" tell the browser?",
+      "options": ["To crop the image at 900px", "That on wide viewports the image renders at 60vw (so pick a smaller file), otherwise full width 100vw", "To load only on screens ≥900px", "To resize the viewport"],
+      "correct": 1,
+      "rationale": "sizes describes the rendered width per condition; armed with it and the candidate files in srcset, the browser downloads the most appropriate one — saving mobile data."
+    },
+    {
+      "id": 7,
+      "question": "'Mobile-first' CSS practice means:",
+      "options": ["Writing a separate m.example.com site", "Styling the narrow layout as the base and layering min-width enhancements", "Blocking desktop users", "Using only px units on phones"],
+      "correct": 1,
+      "rationale": "Base styles serve phones; min-width media queries add complexity as space grows — aligning the code's default with the majority of traffic and forcing content prioritisation."
+    },
+    {
+      "id": 8,
+      "question": "Which is a content-driven (rather than device-driven) breakpoint rationale?",
+      "options": ["Target iPhone 14 at 393px because it's popular", "Switch to two columns when the text column exceeds ~75 characters and looks stretched", "Copy competitor breakpoints", "Always break at exactly 768px"],
+      "correct": 1,
+      "rationale": "Device widths change yearly; breakpoints anchored to content behaviour (line length, cramped cards) stay correct as hardware evolves."
+    },
+    {
+      "id": 9,
+      "question": "The minimum comfortable touch target on mobile is roughly:",
+      "options": ["16 × 16 px", "44 × 44 px", "8 × 8 px", "200 × 100 px"],
+      "correct": 1,
+      "rationale": "Guidelines (Apple, WCAG-derived) recommend about 44×44 px so fingers can hit targets reliably — tiny close buttons are the classic violation."
+    },
+    {
+      "id": 10,
+      "question": "Which media feature respects a user's OS setting in CSS?",
+      "options": ["@media (max-width: 600px)", "@media (prefers-color-scheme: dark)", "@media print", "@media (orientation: landscape)"],
+      "correct": 1,
+      "rationale": "prefers-color-scheme (and prefers-reduced-motion) query user preferences, letting the site honour dark mode and accessibility needs automatically."
+    }
+  ]
+}

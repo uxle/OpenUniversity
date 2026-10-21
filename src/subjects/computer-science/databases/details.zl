@@ -12,4 +12,5 @@
   sql-fundamentals
   er-model-and-normalisation
   transactions-and-concurrency
+  nosql-and-modern-databases
 }

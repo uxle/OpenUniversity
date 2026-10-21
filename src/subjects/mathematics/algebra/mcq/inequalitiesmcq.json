@@ -1,0 +1,76 @@
+{
+  "lessonId": "inequalities",
+  "title": "Inequalities: When Answers Are Ranges, Not Points",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Solve: −3x < 15.",
+      "options": ["x < −5", "x > −5", "x < 5", "x > 5"],
+      "correct": 1,
+      "rationale": "Divide both sides by −3 and flip the inequality: x > −5. Check with x = 0: −3(0) = 0 < 15. ✓"
+    },
+    {
+      "id": 2,
+      "question": "The interval notation for x ≥ 2 together with x < 5 is:",
+      "options": ["(2, 5)", "[2, 5]", "[2, 5)", "(2, 5]"],
+      "correct": 2,
+      "rationale": "x ≥ 2 includes 2 (closed bracket), x < 5 excludes 5 (open parenthesis): [2, 5)."
+    },
+    {
+      "id": 3,
+      "question": "Solve the double inequality: −4 ≤ 2x + 1 < 7.",
+      "options": ["−3 ≤ x ≤ 3", "−2.5 ≤ x < 3", "−5 ≤ x < 6", "−1.5 ≤ x < 4"],
+      "correct": 1,
+      "rationale": "Subtract 1 everywhere (−5 ≤ 2x < 6), then divide by 2: −2.5 ≤ x < 3."
+    },
+    {
+      "id": 4,
+      "question": "For which values of x is x² − x − 6 > 0?",
+      "options": ["−2 < x < 3", "x < −2 or x > 3", "All real x", "x < 3 only"],
+      "correct": 1,
+      "rationale": "The upward parabola has roots −2 and 3, so it is positive outside the roots and negative between them."
+    },
+    {
+      "id": 5,
+      "question": "The solution of |2x − 1| ≤ 7 is:",
+      "options": ["x ≤ 4", "−3 ≤ x ≤ 4", "x ≤ −3 or x ≥ 4", "−4 ≤ x ≤ 3"],
+      "correct": 1,
+      "rationale": "|A| ≤ a means −a ≤ A ≤ a: −7 ≤ 2x − 1 ≤ 7 → −6 ≤ 2x ≤ 8 → −3 ≤ x ≤ 4."
+    },
+    {
+      "id": 6,
+      "question": "A taxi charges ₹50 fixed plus ₹12 per km. With ₹200 to spend, the inequality for the number of kilometres k is:",
+      "options": ["50 + 12k < 200", "50 + 12k ≤ 200", "12k − 50 ≤ 200", "50 − 12k ≥ 200"],
+      "correct": 1,
+      "rationale": "Total cost 50 + 12k must not exceed 200: 50 + 12k ≤ 200, giving k ≤ 12.5, i.e. at most 12 full km."
+    },
+    {
+      "id": 7,
+      "question": "|x| > a (with a > 0) is equivalent to:",
+      "options": ["−a < x < a", "x < −a or x > a", "x > a only", "a < x < −a"],
+      "correct": 1,
+      "rationale": "'Distance from 0 exceeds a' means two tails: x < −a or x > a."
+    },
+    {
+      "id": 8,
+      "question": "A bottle filler must stay within 10 mL of 500 mL. The condition on volume V is:",
+      "options": ["|V − 500| ≤ 10", "|V + 500| ≤ 10", "V ≥ 490", "|V − 10| ≤ 500"],
+      "correct": 0,
+      "rationale": "Deviation from target: |V − 500| ≤ 10, i.e. 490 ≤ V ≤ 510 mL."
+    },
+    {
+      "id": 9,
+      "question": "Which operation does NOT require special care with inequalities?",
+      "options": ["Multiplying both sides by −1", "Dividing both sides by −4", "Adding 7 to both sides", "Multiplying both sides by −0.5"],
+      "correct": 2,
+      "rationale": "Addition (and subtraction) never changes the direction of an inequality; multiplication/division by any negative flips it."
+    },
+    {
+      "id": 10,
+      "question": "In linear programming, the best (maximum profit) solution is found:",
+      "options": ["At the centre of the feasible region", "At a corner (vertex) of the feasible region", "Anywhere on the boundary", "Always at the origin"],
+      "correct": 1,
+      "rationale": "A linear objective over a polygonal feasible region attains its optimum at a vertex — the corner-point principle used in scheduling and logistics."
+    }
+  ]
+}

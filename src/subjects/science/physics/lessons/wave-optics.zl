@@ -1,0 +1,188 @@
+# Wave Optics: Interference, Diffraction, and Polarisation
+
+> Light bends around razor blades, oil films glow with rainbow colours,
+> and polaroid sunglasses cut glare from water. None of this makes sense
+> if light were only a stream of particles. Wave optics explains what
+> ray optics cannot — how light waves overlap, spread, and vibrate, and
+> why these effects decide the design of telescopes, microscopes, and
+> anti-glare coatings.
+
+## 1. Huygens' Principle and the Nature of Wavefronts
+
+[definition]
+**Huygens' principle** states that every point on a wavefront acts as a
+source of secondary wavelets that spread out in all directions with the
+same speed as the wave. The new wavefront after a small time is the
+tangent surface (envelope) drawn over all these secondary wavelets.
+[/definition]
+
+A wavefront is the locus of points vibrating in the same phase. Light
+from a point source gives **spherical wavefronts**; far from the source
+they flatten into **plane wavefronts**. Huygens' construction explains
+reflection, refraction, and even the small bending of light near edges —
+the first hint that shadows are never perfectly sharp.
+
+| Phenomenon | What the wave model adds beyond rays |
+| --- | --- |
+| Interference | Two waves add to give bright and dark fringes |
+| Diffraction | Light spreads into the geometric shadow |
+| Polarisation | Light vibrates in a direction — proves transverse waves |
+| Ray optics limit | When wavelength is negligible, rays suffice |
+
+## 2. Coherent Sources and Superposition
+
+For a stable interference pattern, the two sources must be
+**coherent**: they should have the same frequency and a constant phase
+difference. Two independent sodium lamps can never produce steady
+fringes because their phase difference drifts randomly millions of
+times per second. In Young's experiment, one slit is illuminated by
+two virtual images of the same source, guaranteeing coherence.
+
+[important]
+Only **constructive interference** (path difference = whole multiples of
+$\lambda$) produces bright fringes; **destructive interference**
+(path difference = odd multiples of $\frac{\lambda}{2}$) produces dark
+fringes. Intermediate path differences give intermediate brightness.
+[/important]
+
+@math label="eq:constructive"
+\Delta L = n\lambda \quad (n = 0, 1, 2, \ldots) \quad \text{bright}
+@/math
+
+@math label="eq:destructive"
+\Delta L = (2n+1)\frac{\lambda}{2} \quad (n = 0, 1, 2, \ldots) \quad \text{dark}
+@/math
+
+## 3. Young's Double-Slit Experiment
+
+Light of wavelength $\lambda$ passes through two narrow slits separated
+by distance $d$ and falls on a screen at distance $D$ (where
+$D \gg d$). The path difference between the two routes to a point at
+angle $\theta$ is $d\sin\theta \approx d\frac{y}{D}$, where $y$ is the
+height of the point above the centre.
+
+The **fringe width** — spacing between consecutive bright (or dark)
+fringes — is the working formula of wave optics:
+
+@math label="eq:fringe-width"
+\beta = \frac{\lambda D}{d}
+@/math
+
+**Worked example.** Yellow light of $600\ \text{nm}$ illuminates slits
+$0.3\ \text{mm}$ apart, with a screen $1.5\ \text{m}$ away:
+
+@math label="eq:yds-example"
+\beta = \frac{600 \times 10^{-9} \times 1.5}{0.3 \times 10^{-3}} = 3 \times 10^{-3}\ \text{m} = 3\ \text{mm}
+@/math
+
+[info title="Reading the formula"]
+Fringe width grows with longer wavelength (red fringes are wider than
+blue), grows with screen distance $D$, and shrinks with larger slit
+separation $d$. If the whole apparatus is dipped in water, $\lambda$
+shrinks by the refractive index and fringes crowd together.
+[/info]
+
+## 4. Thin-Film Interference and Colours of Films
+
+A soap bubble or an oil slick shows colours because light reflected
+from the top and bottom surfaces of the thin film travels different
+distances and interferes. Since the film has slightly different
+thickness at different points, different wavelengths interfere
+constructively at different spots — painting the film with bands of
+colour. This is why:
+
+- Soap bubbles show shifting colours just before they burst (the film
+  thins to a few hundred nanometres).
+- Camera lenses are coated with a **quarter-wavelength layer** of
+  magnesium fluoride so reflected waves from the two surfaces cancel —
+  an anti-reflection coating.
+- Wedge-shaped air films between glass plates produce straight,
+  equally spaced fringes used to test optical flatness.
+
+## 5. Diffraction: Light Enters the Shadow
+
+[definition]
+**Diffraction** is the bending and spreading of waves around obstacles
+and apertures whose size is comparable to the wavelength. A single slit
+of width $a$ sends light into the geometric shadow with intensity
+minima at angles satisfying $a\sin\theta = n\lambda$.
+[/definition]
+
+The central maximum is twice as wide as the side maxima and carries
+the bulk of the light. Notice the deep contrast with a double-slit
+pattern: interference of two slits gives many equally bright fringes,
+while diffraction of one slit gives a broad central band with weak
+sidelobes.
+
+**Resolving power.** Two point objects are just resolved when the
+first diffraction minimum of one falls on the central maximum of the
+other (Rayleigh criterion). For a lens or mirror of aperture $D$:
+
+@math label="eq:rayleigh"
+\theta_{min} = \frac{1.22\lambda}{D}
+@/math
+
+This single equation explains why large telescopes collect more light
+*and* see finer detail, and why blue-tinted microscopes resolve smaller
+features than red-tinted ones for the same aperture.
+
+## 6. Polarisation: Light Has a Direction
+
+Interference and diffraction happen for all waves; **polarisation
+happens only for transverse waves**. Ordinary light vibrates in all
+directions perpendicular to its travel; a **polariser** passes only
+one vibration direction.
+
+- **Reflection:** at Brewster's angle the reflected ray is completely
+  polarised, and reflected and refracted rays are perpendicular:
+
+@math label="eq:brewster"
+\tan\theta_p = n
+@/math
+
+For glass ($n = 1.5$), $\theta_p \approx 57°$ — the basis of polaroid
+sunglasses that kill water and road glare.
+
+- **Transmission:** when polarised light passes through an analyser
+  rotated by angle $\theta$ from its axis, the transmitted intensity
+  follows **Malus's law**:
+
+@math label="eq:malus"
+I = I_0 \cos^2\theta
+@/math
+
+- **Double refraction:** crystals such as calcite split a beam into an
+  ordinary ray and an extraordinary ray with different polarisations —
+  the phenomenon through which most polarisers are made.
+
+## 7. Exam Checklist and Common Traps
+
+| Situation | Correct conclusion |
+| --- | --- |
+| Fringes crowd closer in water | $\lambda$ decreases, so $\beta$ decreases |
+| White-light double slit | Central fringe white, coloured fringes with violet innermost |
+| One slit closed in YDSE | No fringes — only single-slit diffraction |
+| Slit width doubled (double slit) | Fringe positions unchanged; intensity changes |
+| Brewster angle incidence | Reflected light fully polarised, refracted partially |
+| Analyser parallel to polariser | $\theta = 0$, full transmission ($I = I_0$) |
+
+[example]
+Two polaroids are crossed (axes at $90°$), so no light passes
+($I = I_0\cos^2 90° = 0$). Insert a third polaroid at $45°$ between
+them. Surprisingly, light now gets through: the first pair of crossings
+transmits $\frac{I_0}{2} \times \cos^2 45° = \frac{I_0}{4}$, and the
+second crossing transmits $\frac{I_0}{4} \times \cos^2 45° = \frac{I_0}{8}$.
+Three polaroids pass light where two do not — a favourite exam twist.
+[/example]
+
+[summary]
+Wave optics handles what rays cannot. Coherent sources superpose to
+give bright fringes at $\Delta L = n\lambda$ and dark fringes at
+$(2n+1)\frac{\lambda}{2}$; Young's experiment yields the fringe width
+$\beta = \frac{\lambda D}{d}$. Thin films colour soap bubbles, a single
+slit diffracts with minima at $a\sin\theta = n\lambda$, and resolution
+is limited by $\theta_{min} = \frac{1.22\lambda}{D}$. Polarisation —
+governed by Brewster's law $\tan\theta_p = n$ and Malus's law
+$I = I_0\cos^2\theta$ — proves light is a transverse wave. Together
+these ideas set the limits of every optical instrument ever built.
+[/summary]

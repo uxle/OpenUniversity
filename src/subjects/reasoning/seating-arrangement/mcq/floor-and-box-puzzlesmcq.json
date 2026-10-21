@@ -1,0 +1,91 @@
+{
+  "lessonId": "floor-and-box-puzzles",
+  "title": "Floor and Box Puzzles: Vertical Arrangements Made Routine",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a 5-floor puzzle (bottom = floor 1), Q lives on an odd-numbered floor below 4, R immediately above Q, T on the top floor, P immediately below S, and P on the bottom floor. On which floor does Q live?",
+      "options": ["Floor 1", "Floor 2", "Floor 3", "Floor 4"],
+      "correct": 2,
+      "rationale": "T = 5 (top floor). P = 1 (bottom), so S = 2 sits immediately above P. The remaining floors 3 and 4 take the Q/R pair: Q must be odd and below 4, so Q = 3 with R = 4 immediately above. Final: P1, S2, Q3, R4, T5 — one anchor per clue, no trial and error."
+    },
+    {
+      "id": 2,
+      "question": "Six boxes A-F are stacked (position 1 = bottom). A is immediately above C; C is second from the bottom; E is at the top; D is immediately below B; B is below A. Which box is at the bottom?",
+      "options": ["A", "D", "F", "C"],
+      "correct": 2,
+      "rationale": "C = 2, so A = 3; E = 6. The B/D pair with B above D must fit below A among slots 1 and 4/5: only (D4, B5) works, leaving F = 1. Bottom to top: F, C, A, D, B, E."
+    },
+    {
+      "id": 3,
+      "question": "In floor puzzles, the conventional numbering unless stated otherwise is:",
+      "options": ["Top floor = 1", "Bottom floor = 1", "Floors numbered from the middle", "Numbering does not matter"],
+      "correct": 1,
+      "rationale": "The standard convention numbers the ground/lowest floor 1 and rises from there. The first move in every puzzle is to write the numbers on your diagram — and to re-check the wording when a question says 'the top floor is numbered 1' instead."
+    },
+    {
+      "id": 4,
+      "question": "The clue 'there are two boxes between A and B' means the positions of A and B differ by:",
+      "options": ["2", "3", "4", "1"],
+      "correct": 1,
+      "rationale": "Two boxes BETWEEN means two intervening positions, so the gap in position numbers is 3. Confusing position-gap with box-count (answering 2) is the topic's most common trap."
+    },
+    {
+      "id": 5,
+      "question": "In a two-flat-per-floor arrangement, 'B lives immediately above A in the same flat' means:",
+      "options": [
+        "B is one floor up, same flat number",
+        "B is one flat across, same floor",
+        "B is one floor up, any flat",
+        "B and A are on the same floor"
+      ],
+      "correct": 0,
+      "rationale": "'Same flat' copies the column; 'immediately above' shifts the row by +1. Two-dimensional clues always decompose into a row instruction and a column instruction — draw the grid."
+    },
+    {
+      "id": 6,
+      "question": "Which clue type should you place FIRST when solving a floor puzzle?",
+      "options": ["Negative clues", "Relative clues", "Definite clues", "The longest clue"],
+      "correct": 2,
+      "rationale": "Definite clues ('G lives on floor 3') fix anchors outright, shrinking every later choice. Relative clues need an anchor to attach to, and negative clues only prune — they come last, to break ties."
+    },
+    {
+      "id": 7,
+      "question": "In an 8-floor building, T lives on floor 6 and R's floor is three away from T's. Where does R live?",
+      "options": ["Floor 9 only", "Floor 3 only", "Floor 3 or floor 9", "Floor 2 or floor 10"],
+      "correct": 1,
+      "rationale": "Candidates are 6 + 3 = 9 and 6 - 3 = 3. Floor 9 does not exist in an 8-floor building, so the stack's own limits force R = 3 — direction-finding from building size, no trial and error."
+    },
+    {
+      "id": 8,
+      "question": "'As many floors above X as below Y' on floors 1-9 with X on floor 3 puts Y on:",
+      "options": ["Floor 5", "Floor 6", "Floor 7", "Floor 8"],
+      "correct": 2,
+      "rationale": "Floors above X: 9 - 3 = 6. Floors below Y must also be 6, so Y - 1 = 6 and Y = 7. The trap is forgetting that 'below floor Y' counts Y - 1 floors, not Y."
+    },
+    {
+      "id": 9,
+      "question": "When a floor puzzle's clues seem to produce TWO complete valid arrangements, the correct response is:",
+      "options": [
+        "Pick the arrangement matching option (a)",
+        "Re-read the clues for a missed discriminator (especially negatives)",
+        "Both arrangements are answers",
+        "Declare the puzzle invalid"
+      ],
+      "correct": 1,
+      "rationale": "Well-formed exam puzzles have exactly one solution — a surviving second arrangement means a clue (usually a negative one) was skipped or an either/or was collapsed prematurely. Audit unused clues before matching options."
+    },
+    {
+      "id": 10,
+      "question": "Floor puzzles and box-stack puzzles are best treated as:",
+      "options": [
+        "Completely different topics",
+        "The same skeleton with different furniture",
+        "Box puzzles are easier",
+        "Floor puzzles need no diagram"
+      ],
+      "correct": 1,
+      "rationale": "Both are numbered vertical stacks processed by definite-then-relative-then-negative clues, with identical arithmetic (+1 for immediately above, position gaps for between-counts). Shelves and berths join the same family — one method covers all."
+    }
+  ]
+}

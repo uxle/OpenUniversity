@@ -1,0 +1,116 @@
+{
+  "lessonId": "backend-fundamentals-and-apis",
+  "title": "Backend Fundamentals and APIs: The Server Behind the Screen",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which HTTP method should create a new resource, such as submitting a new order?",
+      "options": ["GET", "POST", "PUT", "HEAD"],
+      "correct": 1,
+      "rationale": "POST submits data to create a new resource and is NOT idempotent — repeating it creates another order. GET only reads, PUT replaces an existing resource, and HEAD fetches headers only."
+    },
+    {
+      "id": 2,
+      "question": "An API replies with status 404. This means:",
+      "options": [
+        "The server crashed",
+        "The requested resource was not found",
+        "The client lacks permission",
+        "The request body is malformed"
+      ],
+      "correct": 1,
+      "rationale": "404 Not Found is a 4xx CLIENT-side status: the URL points at no existing resource. A crash is 5xx (500), lacking permission is 403, and malformed input is 400."
+    },
+    {
+      "id": 3,
+      "question": "In a REST API, the URL design `DELETE /api/books/42` follows the REST convention because:",
+      "options": [
+        "URLs should contain verbs like delete",
+        "The URL names a resource and the HTTP method expresses the action",
+        "IDs must always be numeric",
+        "REST requires the word api in every URL"
+      ],
+      "correct": 1,
+      "rationale": "REST uses nouns for resources in URLs and lets the HTTP method (GET/POST/PUT/PATCH/DELETE) express the verb. Read aloud it is 'delete book 42' — predictable for tools, caches, and other developers."
+    },
+    {
+      "id": 4,
+      "question": "The Express middleware line `app.use(express.json())` exists to:",
+      "options": [
+        "Compress responses",
+        "Parse incoming JSON request bodies into req.body",
+        "Convert responses to XML",
+        "Serve static files"
+      ],
+      "correct": 1,
+      "rationale": "Express does not parse bodies by default; without this middleware req.body is undefined for JSON POSTs. It reads the request stream and attaches the parsed object to req.body."
+    },
+    {
+      "id": 5,
+      "question": "Why must a payment button be protected against double-clicking?",
+      "options": [
+        "GET requests are idempotent",
+        "POST is not idempotent — resubmitting creates a second payment",
+        "Browsers cannot send two requests at once",
+        "JSON does not support payments"
+      ],
+      "correct": 1,
+      "rationale": "POST lacks idempotency: each submission creates a new resource. Robust APIs add idempotency keys so retries (double clicks, flaky networks) are recognised server-side and applied only once."
+    },
+    {
+      "id": 6,
+      "question": "In the browser, `const res = await fetch(url)` pauses:",
+      "options": [
+        "The entire page's event loop until the server answers",
+        "Only the async function — the page stays responsive",
+        "Nothing; fetch is synchronous",
+        "The server from serving others"
+      ],
+      "correct": 1,
+      "rationale": "fetch returns a promise; await suspends just that async function's continuation while the event loop keeps serving clicks and rendering. That asynchrony is what keeps SPAs responsive during network waits."
+    },
+    {
+      "id": 7,
+      "question": "A JWT-based authentication flow identifies the user by:",
+      "options": [
+        "A server-side session table keyed by cookie ID",
+        "Verifying the signature of a signed token sent with each request",
+        "The client's IP address",
+        "Encrypting the whole database"
+      ],
+      "correct": 1,
+      "rationale": "The server signs the token (e.g. with HMAC); every request carries it in the Authorization header, and the server verifies the signature — no session lookup needed. This statelessness scales across many servers."
+    },
+    {
+      "id": 8,
+      "question": "Which status code family indicates SERVER-side failure?",
+      "options": ["2xx", "3xx", "4xx", "5xx"],
+      "correct": 3,
+      "rationale": "5xx means the server is at fault: 500 Internal Server Error, 502 Bad Gateway, 503 Unavailable. 4xx faults the client's request, 2xx is success, and 3xx is redirection."
+    },
+    {
+      "id": 9,
+      "question": "CORS errors appear because:",
+      "options": [
+        "The server is down",
+        "Browsers block cross-origin requests unless the server opts in with CORS headers",
+        "The API uses the wrong status code",
+        "JSON cannot cross the network"
+      ],
+      "correct": 1,
+      "rationale": "The same-origin policy blocks web pages from reading responses of other origins unless the server sends Access-Control-Allow-Origin (and friends). It is a browser-side protection, not a server bug — the fix belongs on the serving API."
+    },
+    {
+      "id": 10,
+      "question": "Why must backend code validate inputs even though the frontend already checks them?",
+      "options": [
+        "To make the frontend faster",
+        "Because anyone can bypass the UI and call the API directly with a tool",
+        "Because HTTP deletes form data",
+        "Validation is only a server-side concept"
+      ],
+      "correct": 1,
+      "rationale": "The UI is a convenience, not a boundary: curl and scripts hit your endpoints with arbitrary payloads. Server-side validation of types, lengths, and permissions is the only line that cannot be walked around."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "financial-markets",
+  "title": "Financial Markets: Where Savings Meet Borrowers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Financial markets essentially channel funds from:",
+      "options": ["Government to banks", "Surplus units (savers) to deficit units (borrowers)", "Banks to regulators", "Firms to households only"],
+      "correct": 1,
+      "rationale": "Households save more than they invest; firms and government invest more than they save — markets and intermediaries bridge the two."
+    },
+    {
+      "id": 2,
+      "question": "In an IPO, the money paid for shares goes to:",
+      "options": ["The selling shareholders or the company in the primary market", "The stock exchange", "SEBI", "The brokers only"],
+      "correct": 0,
+      "rationale": "An IPO is a primary-market issue — the company (or offer-for-sale shareholders) receives the proceeds; afterwards, secondary trading pays only the selling investor."
+    },
+    {
+      "id": 3,
+      "question": "Market interest rates rise from 8% to 10%. The price of an existing 8%-coupon bond will:",
+      "options": ["Rise", "Fall", "Stay the same", "Double"],
+      "correct": 1,
+      "rationale": "New bonds pay more, so old bonds must become cheaper to compete — bond prices and yields always move in opposite directions."
+    },
+    {
+      "id": 4,
+      "question": "Which is India's oldest stock exchange (established 1875)?",
+      "options": ["NSE", "BSE", "Calcutta Stock Exchange", "MCX"],
+      "correct": 1,
+      "rationale": "The Bombay Stock Exchange (BSE) dates to 1875 — Asia's first; NSE began electronic screen-based trading in 1994."
+    },
+    {
+      "id": 5,
+      "question": "A mutual fund's NAV represents:",
+      "options": ["The fund's total profit", "(Assets − liabilities) ÷ number of units outstanding", "The broker's commission", "The index level"],
+      "correct": 1,
+      "rationale": "Net Asset Value is the per-unit worth of the fund's portfolio; SIPs buy units at each instalment's NAV, averaging cost over time."
+    },
+    {
+      "id": 6,
+      "question": "SEBI's statutory objectives are to:",
+      "options": ["Print currency and manage inflation", "Protect investors, develop the securities market, and regulate it", "Regulate insurance companies", "Set income tax rates"],
+      "correct": 1,
+      "rationale": "The SEBI Act 1992 gives the triple mandate — investor protection, market development, market regulation — via IPO disclosure norms, insider-trading rules, and surveillance."
+    },
+    {
+      "id": 7,
+      "question": "Which regulator supervises the money market and government securities?",
+      "options": ["SEBI", "RBI", "IRDAI", "PFRDA"],
+      "correct": 1,
+      "rationale": "The RBI regulates banks, the money market (T-bills, call money, commercial paper), G-secs, payments, and forex; SEBI handles the securities market."
+    },
+    {
+      "id": 8,
+      "question": "A stock index like NIFTY 50 is weighted by:",
+      "options": ["Alphabetical order of companies", "Free-float market capitalisation", "Number of employees", "Age of listing"],
+      "correct": 1,
+      "rationale": "Larger free-float market caps move the index more — free float excludes promoter-held shares unavailable for trading."
+    },
+      {
+      "id": 9,
+      "question": "An option gives its buyer:",
+      "options": ["An obligation to trade", "The right, but not the obligation, to buy or sell at a set price", "Guaranteed profit", "Ownership of the underlying"],
+      "correct": 1,
+      "rationale": "Options convey a right exercisable at choice (hence the premium paid); futures impose a binding obligation on both parties."
+    },
+    {
+      "id": 10,
+      "question": "Which of these shows the power of compounding?",
+      "options": ["₹10,000 invested yearly for 30 years at 12% grows to roughly ₹1.4 crore", "Doubling risk doubles return always", "Trading daily maximises returns", "Fixed deposits always beat equities"],
+      "correct": 0,
+      "rationale": "Compounding converts steady SIPs into large sums over decades — the arithmetic case for starting early rather than timing markets."
+    }
+  ]
+}

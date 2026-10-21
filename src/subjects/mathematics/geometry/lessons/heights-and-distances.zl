@@ -1,0 +1,147 @@
+# Heights and Distances: Trigonometry in the Field
+
+> A surveyor stands 30 metres from a tower and looks up at $60°$; a
+> sailor notes a lighthouse top at $30°$ from the deck. No ladder, no
+> climbing — just an angle and a distance, and trigonometry hands over
+> the height. Heights and distances is the oldest applied chapter of
+> trigonometry and remains one of the most reliably scored topics in
+> competitive exams.
+
+## 1. Angles of Elevation and Depression
+
+[definition]
+The **angle of elevation** is the angle above the horizontal when
+looking *up* at an object. The **angle of depression** is the angle
+below the horizontal when looking *down* at an object. Both are
+measured from the horizontal line of the observer's eye — never from
+the vertical.
+[/definition]
+
+[important]
+By alternate interior angles, the angle of depression from a tower's
+top to an observer equals the angle of elevation from the observer to
+the top — provided both are drawn from the same pair of points. This
+symmetry halves the work in many problems.
+[/important]
+
+## 2. The Standard Angle Toolkit
+
+Almost every exam question is built from $30°$, $45°$, and $60°$:
+
+| $\theta$ | $\sin\theta$ | $\cos\theta$ | $\tan\theta$ | $\cot\theta$ |
+| --- | --- | --- | --- | --- |
+| $30°$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{\sqrt{3}}$ | $\sqrt{3}$ |
+| $45°$ | $\frac{1}{\sqrt{2}}$ | $\frac{1}{\sqrt{2}}$ | $1$ | $1$ |
+| $60°$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ | $\sqrt{3}$ | $\frac{1}{\sqrt{3}}$ |
+
+Three templates cover the field:
+
+@math label="eq:height-tan"
+h = d \tan\theta \quad \text{(height from distance)}
+@/math
+
+@math label="eq:distance-tan"
+d = \frac{h}{\tan\theta} = h\cot\theta \quad \text{(distance from height)}
+@/math
+
+@math label="eq:hypotenuse"
+\text{line of sight} = \frac{h}{\sin\theta} = h\,\text{cosec}\,\theta
+@/math
+
+## 3. Worked Patterns
+
+**Pattern 1 — Tower on level ground.** From a point $30\ \text{m}$
+from a tower's base, the top subtends $60°$:
+
+@math label="eq:pattern1"
+h = 30\tan 60° = 30\sqrt{3} \approx 51.96\ \text{m}
+@/math
+
+**Pattern 2 — Two shadows, one pole.** The sun's elevation changes
+from $30°$ to $45°$, lengthening a pole's shadow by $20\ \text{m}$.
+Let the height be $h$: at $45°$ the shadow is $h$, at $30°$ it is
+$h\sqrt{3}$. Then $h\sqrt{3} - h = 20$, so:
+
+@math label="eq:pattern2"
+h = \frac{20}{\sqrt{3}-1} = \frac{20(\sqrt{3}+1)}{2} = 10(\sqrt{3}+1) \approx 27.3\ \text{m}
+@/math
+
+**Pattern 3 — Walking toward the tower.** From a point the angle to a
+tower's top is $30°$; walking $20\ \text{m}$ closer it becomes $60°$.
+The height follows from the two tangent equations:
+
+@math label="eq:pattern3"
+h = x\tan 30° = (x-20)\tan 60° \;\Rightarrow\; \frac{x}{\sqrt{3}} = (x-20)\sqrt{3}
+@/math
+
+@math label="eq:pattern3b"
+x = 3(x-20) \Rightarrow x = 30, \quad h = \frac{30}{\sqrt{3}} = 10\sqrt{3}\ \text{m}
+@/math
+
+**Pattern 4 — Two objects from a height (opposite sides).** From a
+$60\ \text{m}$ lighthouse the angles of depression to two ships on
+opposite sides are $45°$ and $30°$. The ships are $60\tan 45°$ and
+$60\cot 30°$ from the base — so they are $60 + 60\sqrt{3}$ apart.
+When the objects sit on the *same* side, subtract instead of add.
+
+**Pattern 5 — Broken tree.** A tree breaks and the top touches the
+ground at $30°$ elevation, $8\ \text{m}$ from the stump. The standing
+part is $8\tan 30° = \frac{8}{\sqrt{3}}$; the broken (hypotenuse) part
+is $\frac{8}{\sin 30°} = 16$. Total height
+$= \frac{8}{\sqrt{3}} + 16$.
+
+## 4. Special Configurations
+
+- **Angle bisector shortcut:** if the angles of elevation of the top
+  and bottom of a flagstaff on a tower are complementary and the top
+  angle is bisected, the flagstaff's height equals the distance run
+  along the bisected triangle — a favourite of older exam boards.
+- **Building and tower pairing:** when a tower stands on a building,
+  the angles to the top and bottom differ; subtracting the two tangent
+  equations isolates the tower's height from the building's.
+- **River width:** standing on one bank, angle of depression to a
+  stone directly opposite is $\theta$ from a cliff of height $h$ —
+  the width is $h\cot\theta$.
+- **Two angles from the same point** with objects one behind another
+  (like a distant hill behind a tower) create nested right triangles
+  whose bases share a segment.
+
+[example]
+The angles of depression of the top and the bottom of a $3\ \text{m}$
+high wall, seen from the top of a tower on the same level ground, are
+$30°$ and $45°$. From the $45°$ depression to the wall's foot:
+$\frac{H}{d} = \tan 45° = 1$, so the wall stands at distance $d = H$
+from the tower's base. From the $30°$ depression to the wall's top,
+the sight line drops $H - 3$ over the same horizontal run $d = H$:
+$\frac{H-3}{H} = \tan 30° = \frac{1}{\sqrt{3}}$. Solving,
+$H - 3 = \frac{H}{\sqrt{3}}$, so
+$H\left(1 - \frac{1}{\sqrt{3}}\right) = 3$, giving
+$H = \frac{3\sqrt{3}}{\sqrt{3}-1} = \frac{3\sqrt{3}(\sqrt{3}+1)}{2}
+= \frac{9 + 3\sqrt{3}}{2} \approx 7.1\ \text{m}$. One shared distance
+variable makes both sight lines usable at once.
+[/example]
+
+## 5. Exam Strategy
+
+1. **Draw first.** Mark the observer's eye level, every right angle,
+   and every angle as elevation/depression from a horizontal.
+2. **Name unknowns minimally** — usually one height $h$ and one
+   distance $d$; the two tangent equations finish the job.
+3. **Check for complementary angles** ($30°$ with $60°$, $45°$ with
+   $45°$) — they usually signal the $\sqrt{3}$-factor shortcuts.
+4. **Approximate at the end:** keep $\sqrt{3} \approx 1.73$ and
+   $\sqrt{2} \approx 1.41$ until the final line of working.
+5. **Same side vs opposite side** — the most common careless error in
+   two-object problems is adding distances that should subtract.
+
+[summary]
+Heights and distances converts one angle plus one length into every
+other length in a right triangle: $h = d\tan\theta$ for heights,
+$d = h\cot\theta$ for distances, and the line of sight via sine.
+The five standard patterns — tower on level ground, changing shadow,
+walking toward the object, two objects from a height (add for opposite
+sides, subtract for the same side), and the broken tree — cover
+essentially every exam question. Always measure angles from the
+horizontal, draw before computing, and reserve decimal approximation
+for the last step.
+[/summary]

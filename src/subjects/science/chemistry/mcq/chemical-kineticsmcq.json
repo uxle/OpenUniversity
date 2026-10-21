@@ -1,0 +1,126 @@
+{
+  "lessonId": "chemical-kinetics",
+  "title": "Chemical Kinetics: The Study of Reaction Rates",
+  "questions": [
+    {
+      "id": 1,
+      "question": "For the reaction 2N2O5 -> 4NO2 + O2, the rate of disappearance of N2O5 is 0.02 mol per litre per second. The rate of formation of NO2 is:",
+      "options": [
+        "0.01 mol per litre per second",
+        "0.02 mol per litre per second",
+        "0.04 mol per litre per second",
+        "0.08 mol per litre per second"
+      ],
+      "correct": 2,
+      "rationale": "Rate = -(1/2)d[N2O5]/dt = +(1/4)d[NO2]/dt. So d[NO2]/dt = 2 x 0.02 = 0.04 mol per litre per second — the stoichiometric factor converts one rate into the other."
+    },
+    {
+      "id": 2,
+      "question": "The units of the rate constant of a first-order reaction are:",
+      "options": [
+        "mol per litre per second",
+        "per second",
+        "litre per mole per second",
+        "dimensionless"
+      ],
+      "correct": 1,
+      "rationale": "For first order, rate = k[A], so k = rate/[A] has units (mol L-1 s-1)/(mol L-1) = s-1. Zero order gives mol L-1 s-1, second order gives L mol-1 s-1."
+    },
+    {
+      "id": 3,
+      "question": "A first-order reaction has a half-life of 10 minutes. The time required for 75 percent completion is:",
+      "options": [
+        "15 minutes",
+        "20 minutes",
+        "30 minutes",
+        "40 minutes"
+      ],
+      "correct": 1,
+      "rationale": "75 percent completion leaves 25 percent, which is two half-lives worth of decay: 10 + 10 = 20 minutes. Each half-life halves the remainder, so after n half-lives, (1/2)^n of the reactant survives."
+    },
+    {
+      "id": 4,
+      "question": "The order of a reaction:",
+      "options": [
+        "Is always equal to the sum of stoichiometric coefficients",
+        "Must be a whole number",
+        "Is determined experimentally and can be zero or fractional",
+        "Is always equal to the molecularity"
+      ],
+      "correct": 2,
+      "rationale": "Order comes from experiment, not from the balanced equation, and can be zero or fractional (as in the H2 + Br2 chain reaction). Molecularity, by contrast, applies to elementary steps and is always 1, 2, or 3."
+    },
+    {
+      "id": 5,
+      "question": "For a zero-order reaction, the rate constant k equals:",
+      "options": [
+        "The rate itself, independent of concentration",
+        "Half the rate",
+        "The reciprocal of the rate",
+        "The slope of the rate-versus-1/T plot"
+      ],
+      "correct": 0,
+      "rationale": "Zero order: rate = k[A]^0 = k. The rate is constant regardless of concentration, and the concentration falls linearly with time. Photochemical reactions on saturated surfaces show this behaviour."
+    },
+    {
+      "id": 6,
+      "question": "A rise of 10 K roughly doubles the rate of a reaction. The main reason is:",
+      "options": [
+        "Molecules collide more frequently",
+        "Collision frequency barely changes; the fraction of molecules exceeding the activation energy grows sharply",
+        "The activation energy decreases with temperature",
+        "The equilibrium constant doubles"
+      ],
+      "correct": 1,
+      "rationale": "A 10 K rise changes collision frequency only a few percent. The dramatic effect comes from the Maxwell-Boltzmann tail: exponentially more molecules cross the activation-energy barrier (Arrhenius, k = A e^(-Ea/RT))."
+    },
+    {
+      "id": 7,
+      "question": "Which statement about a catalyst is FALSE?",
+      "options": [
+        "It lowers the activation energy",
+        "It speeds up the forward and reverse reactions equally",
+        "It shifts the equilibrium position toward more products",
+        "It is regenerated chemically unchanged at the end"
+      ],
+      "correct": 2,
+      "rationale": "A catalyst provides a faster pathway with lower Ea for BOTH directions, so equilibrium is reached sooner but its position (the equilibrium constant) is untouched. It never makes an unfavourable reaction favourable."
+    },
+    {
+      "id": 8,
+      "question": "In the Arrhenius equation k = A e^(-Ea/RT), a plot of log k versus 1/T is a straight line whose slope equals:",
+      "options": [
+        "Ea/R",
+        "-Ea/2.303R",
+        "2.303Ea/R",
+        "RT/Ea"
+      ],
+      "correct": 1,
+      "rationale": "log k = log A - (Ea/2.303R)(1/T). Comparing with y = c + mx, the slope is -Ea/2.303R. Measuring slopes at several temperatures is the standard way to determine activation energy."
+    },
+    {
+      "id": 9,
+      "question": "The rate law for a reaction is rate = k[A]^1/2[B]^3/2. The overall order of the reaction is:",
+      "options": [
+        "First order",
+        "Second order",
+        "Half order",
+        "Third order"
+      ],
+      "correct": 1,
+      "rationale": "Overall order = sum of exponents = 1/2 + 3/2 = 2. Individual orders may be fractional, and their sum gives the overall order — here exactly two."
+    },
+    {
+      "id": 10,
+      "question": "A first-order reaction is 20 percent complete in 10 minutes. The half-life of the reaction is approximately:",
+      "options": [
+        "About 31 minutes",
+        "About 50 minutes",
+        "About 70 minutes",
+        "About 20 minutes"
+      ],
+      "correct": 0,
+      "rationale": "k = (2.303/t) log(100/80) = (2.303/10)(0.0969) about 0.0223 per minute. Then t-half = 0.693/k about 31 minutes. Since each half-life reduces the remainder by half, 20 percent gone is well under one half-life of decay."
+    }
+  ]
+}

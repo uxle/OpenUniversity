@@ -1,0 +1,126 @@
+{
+  "lessonId": "thermodynamics-and-thermochemistry",
+  "title": "Thermodynamics and Thermochemistry: Energy Bookkeeping in Chemistry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is NOT a state function?",
+      "options": [
+        "Enthalpy",
+        "Entropy",
+        "Work",
+        "Internal energy"
+      ],
+      "correct": 2,
+      "rationale": "State functions (H, S, U, G) depend only on the state, not the path. Heat and work are path-dependent quantities describing energy in transit, so work is not a state function."
+    },
+    {
+      "id": 2,
+      "question": "A gas absorbs 100 J of heat and expands doing 40 J of work on the piston. The change in internal energy of the gas is:",
+      "options": [
+        "140 J",
+        "60 J",
+        "-60 J",
+        "-140 J"
+      ],
+      "correct": 1,
+      "rationale": "First law: dU = q + w. With q = +100 J (absorbed) and w = -40 J (work done BY the gas is negative work on the gas), dU = 100 - 40 = +60 J. Energy in minus energy out is stored."
+    },
+    {
+      "id": 3,
+      "question": "For an ideal gas undergoing an isothermal expansion, which statement is correct?",
+      "options": [
+        "q = 0 and the gas cools",
+        "dU = 0, so all absorbed heat leaves as work",
+        "w = 0 because temperature is constant",
+        "dU is negative because the gas expands"
+      ],
+      "correct": 1,
+      "rationale": "Ideal-gas internal energy depends only on temperature; constant T means dU = 0. The first law then forces q = -w: every joule of heat absorbed is spent pushing the piston."
+    },
+    {
+      "id": 4,
+      "question": "Hess's law of constant heat summation is a direct consequence of:",
+      "options": [
+        "The first law of thermodynamics",
+        "Enthalpy being a state function",
+        "The second law of thermodynamics",
+        "Le Chatelier's principle"
+      ],
+      "correct": 1,
+      "rationale": "Because H is a state function, the enthalpy change between reactants and products is fixed regardless of the route — one step or ten. Summing step enthalpies around any cycle returns the same overall dH: that is Hess's law."
+    },
+    {
+      "id": 5,
+      "question": "The standard enthalpy of formation of an element in its reference state (say O2 gas) at 298 K is:",
+      "options": [
+        "Negative and large",
+        "Positive and small",
+        "Exactly zero",
+        "Undefined for elements"
+      ],
+      "correct": 2,
+      "rationale": "Formation means making one mole from elements in their standard states. Making O2 from O2 is no change at all, so the defined reference value is zero. This convention is what makes formation tables usable in Hess cycles."
+    },
+    {
+      "id": 6,
+      "question": "For the reaction N2(g) + 3H2(g) -> 2NH3(g), the value of the change in the number of gas moles is -2. The relation between the reaction's dH and dU at temperature T is:",
+      "options": [
+        "dH = dU - 2RT",
+        "dH = dU + 2RT",
+        "dH = dU - RT",
+        "dH = dU, always"
+      ],
+      "correct": 0,
+      "rationale": "dH = dU + (dng)RT. With dng = -2, dH = dU - 2RT, so the enthalpy change is slightly more negative than the internal-energy change. For gas-consuming reactions this correction is small but real."
+    },
+    {
+      "id": 7,
+      "question": "A reaction has dH = -40 kJ and dS = -100 J per K. Above what temperature does the reaction become non-spontaneous?",
+      "options": [
+        "About 4 K",
+        "About 40 K",
+        "About 400 K",
+        "It is spontaneous at all temperatures"
+      ],
+      "correct": 2,
+      "rationale": "Set dG = dH - TdS = 0, so T = dH/dS = (-40000 J)/(-100 J/K) = 400 K. Below 400 K the negative dH dominates (spontaneous); above it the negative entropy term wins, flipping dG positive."
+    },
+    {
+      "id": 8,
+      "question": "Which set of conditions always gives a spontaneous reaction at all temperatures?",
+      "options": [
+        "dH positive, dS positive",
+        "dH negative, dS positive",
+        "dH negative, dS negative",
+        "dH positive, dS negative"
+      ],
+      "correct": 1,
+      "rationale": "With dH negative and dS positive, dG = dH - TdS is negative minus a positive term — negative at every temperature. Combustion of carbon (exothermic, gas moles increasing) is the classic example."
+    },
+    {
+      "id": 9,
+      "question": "In a bomb calorimeter, the heat measured at constant volume corresponds directly to:",
+      "options": [
+        "dH of the reaction",
+        "dU of the reaction",
+        "dG of the reaction",
+        "dS of the reaction"
+      ],
+      "correct": 1,
+      "rationale": "Constant volume means no PV work, so all energy change appears as heat: q(v) = dU. Converting to dH needs the dH = dU + (dng)RT correction using the change in gas moles."
+    },
+    {
+      "id": 10,
+      "question": "According to the second law of thermodynamics, a spontaneous process must satisfy:",
+      "options": [
+        "The system's entropy always increases",
+        "The surroundings' entropy always increases",
+        "The total entropy of system plus surroundings increases",
+        "The Gibbs energy of the system always decreases"
+      ],
+      "correct": 2,
+      "rationale": "The second law targets the universe, not the system alone: dS(system) + dS(surroundings) > 0. A system's entropy can fall (freezing water below 0 degrees C) provided the surroundings gain more."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "lessonId": "complex-numbers",
+  "title": "Complex Numbers: Extending the Number Line into a Plane",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the value of i^37?",
+      "options": ["1", "-1", "i", "-i"],
+      "correct": 2,
+      "rationale": "Powers of i cycle with period 4: i, -1, -i, 1. Since 37 = 4x9 + 1, i^37 = i^1 = i. Always reduce the exponent mod 4."
+    },
+    {
+      "id": 2,
+      "question": "The modulus of the complex number 3 + 4i is:",
+      "options": ["3", "4", "5", "7"],
+      "correct": 2,
+      "rationale": "|z| = sqrt(a^2 + b^2) = sqrt(9 + 16) = sqrt(25) = 5. The 3-4-5 triple makes this the most reused example in the chapter."
+    },
+    {
+      "id": 3,
+      "question": "Simplify (3 + 4i)/(1 - 2i).",
+      "options": ["-1 + 2i", "1 - 2i", "11 - 2i", "3 + 2i"],
+      "correct": 0,
+      "rationale": "Multiply numerator and denominator by the conjugate 1 + 2i: (3+4i)(1+2i) = 3 + 6i + 4i - 8 = -5 + 10i; denominator (1-2i)(1+2i) = 5. Quotient = -1 + 2i."
+    },
+    {
+      "id": 4,
+      "question": "If z = 5 - 12i, then z times its conjugate equals:",
+      "options": ["169", "25 - 144i", "13", "-119"],
+      "correct": 0,
+      "rationale": "z z-bar = |z|^2 = 5^2 + 12^2 = 169. The product of a complex number with its conjugate is always the real, non-negative square of the modulus."
+    },
+    {
+      "id": 5,
+      "question": "For the cube roots of unity 1, omega, omega^2, which identity is always true?",
+      "options": ["1 + omega + omega^2 = 0", "1 - omega + omega^2 = 0", "1 + omega - omega^2 = 0", "omega + omega^2 = 1"],
+      "correct": 0,
+      "rationale": "The three cube roots of unity sum to zero: 1 + omega + omega^2 = 0, and omega^3 = 1. These two identities crack nearly every omega-based exam question."
+    },
+    {
+      "id": 6,
+      "question": "The value of (1 + i)^8 is:",
+      "options": ["8", "16", "8i", "16i"],
+      "correct": 1,
+      "rationale": "1 + i has modulus sqrt(2) and angle 45 degrees. Raising to the 8th power: modulus (sqrt(2))^8 = 16, angle 8 x 45 = 360 degrees, which points along the positive real axis. So (1+i)^8 = 16."
+    },
+    {
+      "id": 7,
+      "question": "The amplitude (argument) of the complex number -1 - i is:",
+      "options": ["45 degrees", "135 degrees", "225 degrees (or -135 degrees)", "315 degrees"],
+      "correct": 2,
+      "rationale": "The point (-1, -1) lies in the third quadrant, where both tangent arms are negative; the angle is 180 + 45 = 225 degrees, equivalently -135 degrees. Always pick the quadrant from the signs of a and b."
+    },
+    {
+      "id": 8,
+      "question": "If a quadratic equation with REAL coefficients has one root 2 + 3i, the other root must be:",
+      "options": ["2 - 3i", "-2 + 3i", "3 + 2i", "-2 - 3i"],
+      "correct": 0,
+      "rationale": "Non-real roots of real-coefficient equations occur in conjugate pairs: if 2 + 3i is a root, so is 2 - 3i. This also lets you build the equation: x^2 - 4x + 13 = 0."
+    },
+    {
+      "id": 9,
+      "question": "The locus |z - 2| = 3 in the Argand plane is:",
+      "options": ["A straight line", "A circle of radius 3 centred at (2, 0)", "An ellipse", "A pair of points"],
+      "correct": 1,
+      "rationale": "|z - z1| is the distance between z and z1. Requiring it to equal 3 keeps z at constant distance 3 from the point 2 + 0i — a circle with centre (2, 0), radius 3."
+    },
+    {
+      "id": 10,
+      "question": "Which statement about |z1 + z2| is correct?",
+      "options": [
+        "|z1 + z2| = |z1| + |z2| always",
+        "|z1 + z2| is at least |z1| + |z2|",
+        "|z1 + z2| is at most |z1| + |z2|",
+        "|z1 + z2| equals ||z1| - |z2|| always"
+      ],
+      "correct": 2,
+      "rationale": "The triangle inequality guarantees |z1 + z2| <= |z1| + |z2|, with equality only when the two complex numbers point in the same direction. Complex addition behaves exactly like vector addition."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-art-and-culture",
+  "title": "Indian Art and Culture: Temples, Stupas, Dances, and Music",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A hemispherical Buddhist relic mound encircled by a path for clockwise circumambulation is a:",
+      "options": ["Chaitya", "Vihara", "Stupa", "Gopuram"],
+      "correct": 2,
+      "rationale": "The stupa (e.g. Sanchi) holds relics under its anda dome; a chaitya is a prayer hall and a vihara a monastery."
+    },
+    {
+      "id": 2,
+      "question": "The Kailasa temple at Ellora, carved top-down out of a single rock, was built under which dynasty?",
+      "options": ["Pallava", "Rashtrakuta", "Chola", "Hoysala"],
+      "correct": 1,
+      "rationale": "Rashtrakuta king Krishna I commissioned the Kailasa temple in the 8th century — the largest monolithic excavation in the world."
+    },
+    {
+      "id": 3,
+      "question": "Which feature belongs to the NAGARA temple style?",
+      "options": ["Towering gopuram gateways", "Temple water tank", "Curvilinear shikhara with amalaka and kalasha", "Star-shaped stellate plan"],
+      "correct": 2,
+      "rationale": "Nagara (north Indian) temples — like Khajuraho or Konark — have beehive-curved shikharas crowned by amalaka and kalasha; gopurams/tanks are Dravida, star plans are Vesara."
+    },
+    {
+      "id": 4,
+      "question": "The Brihadeshvara temple at Thanjavur, hallmark of Dravida architecture, was built by:",
+      "options": ["Rajaraja Chola I", "Krishnadeva Raya", "Chandella rulers", "Pallava Mahendravarman"],
+      "correct": 0,
+      "rationale": "Rajaraja I (c. 1010 CE) raised the Brihadeshvara (Rajarajeshvaram) — a 66 m vimana in granite — at the height of Chola power."
+    },
+    {
+      "id": 5,
+      "question": "The Greco-Roman influenced school of sculpture, with wavy-haired Buddhas in grey schist, is:",
+      "options": ["Mathura", "Gandhara", "Amaravati", "Gupta"],
+      "correct": 1,
+      "rationale": "Gandhara (northwest, 1st–5th c. CE) blended Hellenistic realism with Buddhist subjects; Mathura worked in spotted red sandstone."
+    },
+    {
+      "id": 6,
+      "question": "Which dance is correctly matched with its state?",
+      "options": ["Kathakali – Kerala", "Bharatanatyam – Andhra Pradesh", "Odissi – Manipur", "Kuchipudi – Tamil Nadu"],
+      "correct": 0,
+      "rationale": "Kathakali is Kerala's green-faced dance-drama; Bharatanatyam belongs to Tamil Nadu, Odissi to Odisha, Kuchipudi to Andhra Pradesh."
+    },
+    {
+      "id": 7,
+      "question": "The classical grammar of Indian drama and dance — mudras, karanas, and rasa theory — was codified in:",
+      "options": ["Natya Shastra of Bharata", "Arthashastra of Kautilya", "Kamasutra of Vatsyayana", "Manusmriti"],
+      "correct": 0,
+      "rationale": "Bharata's Natya Shastra (c. 200 BCE–200 CE), the 'fifth Veda', defines 108 karanas and the aesthetic theory of rasa underlying all classical performing arts."
+    },
+    {
+      "id": 8,
+      "question": "The Sattriya dance tradition, recognised as a classical dance in 2000, grew out of the satras founded by:",
+      "options": ["Sankardeva in Assam", "Chaitanya in Bengal", "Basavanna in Karnataka", "Ramanuja in Tamil Nadu"],
+      "correct": 0,
+      "rationale": "The 15th–16th century saint Sankardeva created Sattriya as part of his neo-Vaishnavite satra monasteries in Assam."
+    },
+    {
+      "id": 9,
+      "question": "The Carnatic music trinity consists of:",
+      "options": ["Tansen, Baiju Bawra, Amir Khusrau", "Tyagaraja, Muthuswami Dikshitar, Syama Sastri", "Purandara Dasa, Kanaka Dasa, Swati Tirunal", "Bhimsen Joshi, Bismillah Khan, Ravi Shankar"],
+      "correct": 1,
+      "rationale": "The trinity of Tiruvarur — Tyagaraja, Dikshitar, and Syama Sastri (18th–19th c.) — defined the kriti repertoire of Carnatic music."
+    },
+    {
+      "id": 10,
+      "question": "The serene Gupta-era Buddha delivering his first sermon, in dharma-chakra-pravartana mudra, is the masterwork of:",
+      "options": ["Sarnath", "Bharhut", "Nalanda", "Amaravati"],
+      "correct": 0,
+      "rationale": "The Sarnath Buddha — transparent drapery, full serenity, preaching gesture — is the summit of Gupta classicism in stone."
+    }
+  ]
+}

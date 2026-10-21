@@ -1,0 +1,111 @@
+{
+  "lessonId": "statement-and-argument-and-inference",
+  "title": "Statement and Argument and Inference: Judging Reasons and Conclusions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Statement: Should exams be conducted online? Argument: No — my cousin failed an online exam last year, so online exams are unfair. This argument is:",
+      "options": ["Strong — it cites a real case", "Weak — an unrepresentative single case", "Strong — it opposes the proposal", "Weak — online exams are actually fair"],
+      "correct": 1,
+      "rationale": "A single relative's failure cannot support a claim about all exams — the argument fails the representativeness filter. Note the fourth option commits the sin of importing your own opinion instead of judging reasoning quality."
+    },
+    {
+      "id": 2,
+      "question": "Which of these is a CIRCULAR argument in a debate on banning private tuition?",
+      "options": [
+        "Tuition should be banned because tutoring outside school is wrong",
+        "Tuition should be banned because it costs parents dearly",
+        "Tuition should not be banned because coaching employs lakhs",
+        "Tuition should not be banned because classroom sizes are large"
+      ],
+      "correct": 0,
+      "rationale": "The circular option assumes the very conclusion (that such tutoring is wrong) as its premise. The others offer external, testable grounds — cost, employment, classroom conditions — which may be strong or weak but at least engage the issue."
+    },
+    {
+      "id": 3,
+      "question": "Statement: All applicants who cleared the interview had either a postgraduate degree or three years of experience. Ravi cleared the interview. What DEFINITELY follows?",
+      "options": [
+        "Ravi has a postgraduate degree",
+        "Ravi has three years of experience",
+        "Ravi was interviewed",
+        "Ravi has both a degree and experience"
+      ],
+      "correct": 2,
+      "rationale": "Clearing the interview forces having been interviewed — but the either/or clause leaves the degree-versus-experience branch undetermined. Options 1, 2, and 4 all smuggle in a branch the statement never pins down."
+    },
+    {
+      "id": 4,
+      "question": "Statement: All diabetics are patients; some patients are children. Which conclusion follows?",
+      "options": [
+        "Some diabetics are children",
+        "All children are patients",
+        "Some patients are diabetics",
+        "No child is diabetic"
+      ],
+      "correct": 2,
+      "rationale": "All A are B validly converts to some B are A — so some patients are diabetics. The 'some-some' chain proves nothing about diabetic children, and reversing a 'some' (option 2) is the classic illicit conversion."
+    },
+    {
+      "id": 5,
+      "question": "'All A are B; x is not B' — what validly follows?",
+      "options": ["x is A", "x is not A", "x may be A", "Nothing follows"],
+      "correct": 1,
+      "rationale": "This is modus tollens: if every A is inside B, and x lies outside B, then x cannot be an A. The invalid sibling, denying the antecedent ('x is not A, so x is not B'), is the exam's favourite wrong option."
+    },
+    {
+      "id": 6,
+      "question": "Statement: The municipal corporation will fine any household with an illegal water connection, after a survey beginning next month. Which inference is DEFININITELY true?",
+      "options": [
+        "Some households have illegal connections",
+        "The corporation wants revenue",
+        "Households surveyed after the survey begins can be fined",
+        "All illegal connections will be found"
+      ],
+      "correct": 2,
+      "rationale": "The fine's trigger is mechanical: any household with an illegal connection, once the survey is underway — so post-survey fining is definitely true. Whether violations exist (option 1) is only probable, and motive (option 2) is speculation."
+    },
+    {
+      "id": 7,
+      "question": "An argument saying 'this policy should be rejected because it will ALWAYS fail everywhere it is tried' is weakened primarily by:",
+      "options": ["Relevance filter", "Absolutist tone claims too much", "Lack of emotion", "Being too long"],
+      "correct": 1,
+      "rationale": "'Always' and 'everywhere' make the claim refutable by a single counterexample — the proportion and tone filters mark such absolutism as weak unless overwhelming evidence is supplied."
+    },
+    {
+      "id": 8,
+      "question": "In statement-and-inference questions, bringing in your own outside knowledge is:",
+      "options": [
+        "Encouraged — it shows awareness",
+        "Allowed only for well-known facts",
+        "Forbidden — the statement is a closed universe",
+        "Required for 'probably true' answers"
+      ],
+      "correct": 2,
+      "rationale": "Every inference must be graded purely on what the statement says. If the statement is silent, the answer is 'data inadequate' — no matter how true your outside fact feels, it cannot upgrade a conclusion."
+    },
+    {
+      "id": 9,
+      "question": "Statement: Some cats are black; some black things are dogs. What follows about cats and dogs?",
+      "options": [
+        "Some cats are dogs",
+        "No cat is a dog",
+        "All dogs are black",
+        "Nothing definite follows"
+      ],
+      "correct": 3,
+      "rationale": "Two 'some' statements share only the middle term (black things) — the overlap regions may or may not intersect. Neither a positive nor a negative link between cats and dogs is forced."
+    },
+    {
+      "id": 10,
+      "question": "A strong argument in the online-exams debate would be:",
+      "options": [
+        "Online exams are bad because screens are modern",
+        "Online exams halve evaluation time per paper, as pilot results from 50 colleges show",
+        "Everyone knows online exams fail",
+        "My teacher dislikes online exams"
+      ],
+      "correct": 1,
+      "rationale": "It is relevant, representative (50 colleges, not one cousin), evidenced (pilot data), proportionate, and measured — passing all five filters. Vague modernity complaints, appeals to common knowledge, and single-person anecdotes fail them."
+    }
+  ]
+}

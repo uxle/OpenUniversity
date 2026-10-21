@@ -1,0 +1,76 @@
+{
+  "lessonId": "time-speed-and-distance",
+  "title": "Time, Speed and Distance: Trains, Boats, and Relative Motion",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A train 240 m long passes a pole in 12 seconds. Its speed is:",
+      "options": ["60 km/h", "66 km/h", "72 km/h", "80 km/h"],
+      "correct": 2,
+      "rationale": "Speed = 240/12 = 20 m/s. Convert: 20 x 18/5 = 72 km/h. Passing a pole means covering only the train's own length."
+    },
+    {
+      "id": 2,
+      "question": "The same 240 m train (20 m/s) passes a 210 m long platform in:",
+      "options": ["21 s", "22.5 s", "24 s", "25.5 s"],
+      "correct": 1,
+      "rationale": "Distance = train + platform = 450 m; time = 450/20 = 22.5 s. The tail must clear the far end, so both lengths count."
+    },
+    {
+      "id": 3,
+      "question": "Two trains 140 m and 160 m long run at 54 km/h and 36 km/h toward each other on parallel tracks. They cross each other in:",
+      "options": ["10 s", "12 s", "15 s", "18 s"],
+      "correct": 1,
+      "rationale": "Speeds 15 m/s and 10 m/s; relative speed = 25 m/s. Combined length 300 m gives 300/25 = 12 s. Opposite directions ADD speeds."
+    },
+    {
+      "id": 4,
+      "question": "A boat covers 24 km downstream in 3 hours and the same distance upstream in 6 hours. The speed of the boat in still water is:",
+      "options": ["6 km/h", "5 km/h", "4 km/h", "8 km/h"],
+      "correct": 0,
+      "rationale": "Downstream speed = 8, upstream = 4. Still-water speed b = (8+4)/2 = 6 km/h (and stream s = 2 km/h). Averages of the two observed speeds."
+    },
+    {
+      "id": 5,
+      "question": "A car travels the first 150 km at 50 km/h and the next 150 km at 75 km/h. Its average speed for the whole 300 km is:",
+      "options": ["62.5 km/h", "60 km/h", "58 km/h", "65 km/h"],
+      "correct": 1,
+      "rationale": "Times: 3 h and 2 h, total 5 h for 300 km: average = 60 km/h. Average speed is total distance over total time — never the mean of the speeds."
+    },
+    {
+      "id": 6,
+      "question": "A thief 200 m ahead of a policeman runs at 8 m/s while the policeman chases at 10 m/s. The policeman catches him after running:",
+      "options": ["800 m", "1000 m", "1200 m", "600 m"],
+      "correct": 1,
+      "rationale": "Gap 200 m closes at 2 m/s: capture in 100 s. Distance run by policeman = 10 x 100 = 1000 m. Relative speed turns a chase into simple division."
+    },
+    {
+      "id": 7,
+      "question": "Walking at 4/5 of his usual speed, a man reaches office 15 minutes late. His usual time is:",
+      "options": ["45 min", "50 min", "60 min", "75 min"],
+      "correct": 2,
+      "rationale": "Time ratio inverts the speed ratio: new time = (5/4) x usual time. So (5/4)t - t = 15 gives t/4 = 15, t = 60 minutes."
+    },
+    {
+      "id": 8,
+      "question": "Two trains start simultaneously from A and B, 300 km apart, toward each other at 50 km/h and 100 km/h. They meet after:",
+      "options": ["2 h, 100 km from A", "3 h, 150 km from A", "2 h, 120 km from A", "2.5 h, 125 km from A"],
+      "correct": 0,
+      "rationale": "Closing speed = 150 km/h, so they meet in 300/150 = 2 h. The slower train (from A) covers 100 km in that time. Distances split in the speed ratio 1:2."
+    },
+    {
+      "id": 9,
+      "question": "A train crosses a 320 m bridge in 28 s at a uniform speed. If it crossed a pole in 12 s, the length of the train is:",
+      "options": ["240 m", "280 m", "300 m", "320 m"],
+      "correct": 0,
+      "rationale": "Let length L, speed v: L = 12v and L + 320 = 28v. Subtracting: 320 = 16v, v = 20 m/s, so L = 240 m. Two equations from two crossing events."
+    },
+    {
+      "id": 10,
+      "question": "A man rows 35 km downstream in 5 hours and returns to the start in 7 hours. The speed of the stream is:",
+      "options": ["1 km/h", "2 km/h", "3 km/h", "1.5 km/h"],
+      "correct": 0,
+      "rationale": "Downstream speed = 35/5 = 7 km/h; upstream speed = 35/7 = 5 km/h. Still-water speed b = (7+5)/2 = 6 km/h and stream speed s = (7-5)/2 = 1 km/h. The two observed speeds always average to b and halve-differ to s."
+    }
+  ]
+}

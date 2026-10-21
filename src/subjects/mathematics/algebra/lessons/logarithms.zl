@@ -1,0 +1,173 @@
+# Logarithms: The Mathematics of Exponents, Reversed
+
+> A logarithm answers a simple question: "What power gives me this?"
+> Since $2^3 = 8$, the logarithm of 8 to base 2 is 3. Before
+> calculators, logarithms turned hard multiplication into easy
+> addition — and they still power everything from earthquake scales
+> to sound levels and compound interest.
+
+## 1. Defining the Logarithm
+
+[definition]
+For $a > 0$, $a \ne 1$ and $x > 0$:
+${\log}_a x = y$ means $a^y = x$.
+The base is $a$, the argument is $x$, and the logarithm is the
+exponent $y$.
+[/definition]
+
+| Exponential form | Logarithmic form |
+| --- | --- |
+| $2^3 = 8$ | ${\log}_2 8 = 3$ |
+| $10^2 = 100$ | ${\log}_{10} 100 = 2$ |
+| $5^1 = 5$ | ${\log}_5 5 = 1$ |
+| $3^0 = 1$ | ${\log}_3 1 = 0$ |
+| $10^{-2} = 0.01$ | ${\log}_{10} 0.01 = -2$ |
+
+Two facts follow immediately and are worth memorising:
+
+@math label="eq:log-one-and-base"
+{\log}_a 1 = 0 \quad \text{and} \quad {\log}_a a = 1
+@/math
+
+[important]
+The argument must be positive — ${\log}_a 0$ and ${\log}_a(-3)$ are
+undefined (no real power of a positive base gives 0 or a negative
+number). Bases must be positive and not equal to 1.
+[/important]
+
+## 2. The Three Laws of Logarithms
+
+These laws convert between operations — multiplication becomes
+addition, division becomes subtraction, powers become coefficients:
+
+@math label="eq:log-laws"
+{\log}_a(mn) = {\log}_a m + {\log}_a n
+@/math
+
+@math label="eq:log-quotient"
+{\log}_a\frac{m}{n} = {\log}_a m - {\log}_a n
+@/math
+
+@math label="eq:log-power"
+{\log}_a(m^k) = k{\log}_a m
+@/math
+
+**Worked example.** Simplify ${\log}_{10} 4 + {\log}_{10} 25$:
+
+@math label="eq:log-example"
+{\log}_{10} 4 + {\log}_{10} 25 = {\log}_{10}(4 \times 25) = {\log}_{10} 100 = 2
+@/math
+
+**Another.** Solve ${\log}_2(x - 1) = 3$:
+
+@math label="eq:log-solve-example"
+x - 1 = 2^3 = 8 \;\Rightarrow\; x = 9
+@/math
+
+[warning]
+The laws combine only logs of the *same base*, and they never permit
+splitting a sum: $\log(m + n) \ne \log m + \log n$, and
+$(\log m)(\log n) \ne \log(mn)$. These are the most common exam
+errors.
+[/warning]
+
+## 3. Change of Base
+
+Calculators usually offer only ${\log}_{10}$ and $\ln$ (base $e$). Any
+other base converts through:
+
+@math label="eq:change-of-base"
+{\log}_a x = \frac{{\log}_b x}{{\log}_b a}
+@/math
+
+For example, ${\log}_4 8 = \frac{{\log}_2 8}{{\log}_2 4} = \frac{3}{2}$,
+since $4^{3/2} = (\sqrt{4})^3 = 8$.
+
+## 4. Common and Natural Logarithms
+
+| Name | Notation | Base | Where it appears |
+| --- | --- | --- | --- |
+| Common log | $\log x$ | 10 | Decibels, pH, Richter scale, engineering |
+| Natural log | $\ln x$ | $e \approx 2.718$ | Growth/decay, calculus, finance |
+| Binary log | ${\log}_2 x$ | 2 | Computer science, algorithm analysis |
+
+The number $e$ — the limit of $\left(1 + \frac{1}{n}\right)^n$ — is
+the natural base of growth: populations, radioactive decay, and
+continuously compounded interest all involve $e$.
+
+## 5. Where Logarithms Run the World
+
+### The Richter scale (earthquakes)
+
+Magnitude is logarithmic: each whole step multiplies the wave
+amplitude by 10 and releases about 31.6 times more energy. A
+magnitude 7 quake is not "a bit bigger" than a 6 — it is 10× larger
+in amplitude.
+
+@chart bar title="Relative ground motion vs earthquake magnitude"
+labels:
+Mag 4
+Mag 5
+Mag 6
+Mag 7
+Mag 8
+
+data:
+1
+10
+100
+1000
+10000
+@/chart
+
+### Sound: decibels and pH
+
+- Loudness in decibels: a whisper ~30 dB, conversation ~60 dB, a
+  rock concert ~120 dB — each +10 dB multiplies sound intensity by
+  10.
+- pH: $\text{pH} = -{\log}_{10}[\text{H}^+]$. pH 3 is 10× more acidic
+  than pH 4; lemon juice (pH 2) is 100,000× more acidic than pure
+  water (pH 7) — wait, 100,000× refers to H⁺ concentration at pH 2
+  vs pH 7: $10^{7-2}$.
+
+### Algorithms and finance
+
+- Binary search takes ${\log}_2 n$ steps: a million sorted items need
+  only ~20 probes.
+- Compound interest inverts logarithms: doubling time at rate $r$ is
+  roughly $\frac{0.69}{r}$ — the "rule of 70".
+
+## 6. Solving Exponential Equations
+
+Logarithms undo exponentials, which makes them the tool of choice for
+unknown exponents.
+
+**Example.** Solve $3^{x} = 81$:
+
+@math label="eq:exp-solve-1"
+3^x = 81 = 3^4 \;\Rightarrow\; x = 4
+@/math
+
+**Example with unlike bases.** Solve $2^x = 10$:
+
+@math label="eq:exp-solve-2"
+x = {\log}_2 10 = \frac{{\log}_{10} 10}{{\log}_{10} 2} = \frac{1}{0.301} \approx 3.32
+@/math
+
+**Growth problem.** A culture doubles every 3 hours. Starting from
+200 cells, when does it reach 6,400?
+
+@math label="eq:exp-growth"
+200 \times 2^{t/3} = 6400 \Rightarrow 2^{t/3} = 32 = 2^5 \Rightarrow t = 15 \text{ hours}
+@/math
+
+[summary]
+${\log}_a x$ is the exponent that turns $a$ into $x$. Its laws —
+$\log mn = \log m + \log n$, $\log \frac{m}{n} = \log m - \log n$,
+$\log m^k = k \log m$ — transform products into sums, and the
+change-of-base rule ${\log}_a x = \frac{{\log}_b x}{{\log}_b a}$ connects
+every base. Common ($\log$), natural ($\ln$), and binary (${\log}_2$)
+logarithms dominate science and computing, from Richter magnitudes
+and decibels to doubling times and algorithm analysis. Whenever the
+exponent is unknown, logarithms are the tool.
+[/summary]

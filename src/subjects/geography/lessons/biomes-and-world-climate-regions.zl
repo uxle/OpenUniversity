@@ -1,0 +1,157 @@
+# Biomes and World Climate Regions: The Great Pattern of Life Zones
+
+> Why do equatorial forests steam with life while high latitudes
+> wear lichen and ice? The answer is a chain: sun → temperature and
+> rainfall regimes → soils and vegetation → animals and human land
+> use. That chain produces the world's great **biomes** — repeated,
+> predictable life zones that appear wherever the climate recipe is
+> found, whether in Africa, Asia, or the Americas.
+
+## 1. Climate Controls: The Recipe Before the Cake
+
+[definition]
+A **biome** is a large, regionally distinct community of plants and
+animals shaped mainly by climate (temperature and precipitation) and
+secondarily by soils, relief, and human modification. A **climate
+region** is the physical classification of the same territory — the
+two maps largely coincide.
+[/definition]
+
+The controlling ingredients:
+
+- **Latitude** governs the annual solar dose and seasonality — the
+  fundamental control.
+- **Pressure and wind belts** deliver moisture: rising air at the
+  equator (wet), sinking at the tropics (dry), stormy mid-latitude
+  westerlies.
+- **Continentality:** interiors swing between temperature extremes;
+  coasts stay mild.
+- **Altitude** mimics latitude — a tropical mountain runs from hot
+  lowland to cold "alpine tundra" within kilometres.
+- **Ocean currents and rain shadows** redistribute heat and moisture
+  (cold coasts desiccate, warm coasts rain).
+- **Monsoon dynamics** override the general circulation over South
+  and East Asia with seasonal reversal.
+
+## 2. The Köppen Alphabet (Read Any Climate Code)
+
+Wladimir Köppen's classification labels every climate with letters
+worth decoding on exam maps:
+
+| First letter | Second letter (temperature) | Example |
+| --- | --- | --- |
+| **A** tropical | f = wet year-round, m = monsoon, s = dry summer, w = dry winter | **Af** — equatorial rainforest |
+| **B** dry | S = steppe, W = desert (h/k for hot/cold) | **BWh** — hot desert |
+| **C** temperate | s = dry summer, w = dry winter, f = wet | **Csb** — Mediterranean |
+| **D** continental | s/w/f as above | **Dfb** — humid continental |
+| **E** polar | T = tundra, F = ice cap | **ET** — tundra |
+| H added for highland | — | **H** — Alpine climates |
+
+## 3. The Great Biomes from Equator to Pole
+
+**Equatorial rainforest (Af).** 2000+ mm rain all year, no true
+season. Leached **latosols** (nutrients locked in living biomass, not
+soil), buttress-rooted hardwoods, four canopy storeys, the planet's
+richest biodiversity (Congo, Amazon, Indonesia). The dark, humid
+floor is surprisingly quiet and nutrient-thin.
+
+**Tropical monsoon and savanna (Am/Aw).** A wet season traded
+against a fierce dry one — grassland with scattered drought-resistant
+trees (baobab, acacia) and the great herd migrations of the Serengeti
+and the Terai. Red **laterite** soils, fire-adapted vegetation, and
+dense human pressure (this is much of India and Africa's farm belt).
+
+**Hot deserts (BWh).** Sub-tropical high pressure plus cold-current
+coasts cap rainfall below 250 mm: cacti/succulents (New World),
+xerophytic shrubs (Old World), camel thorn, salt pans and shifting
+sand seas, nomadic herding and oasis life (Sahara, Thar, Atacama —
+Earth's driest).
+
+**Mediterranean (Cs).** Dry sunny summers, mild wet winters; the
+**maquis/chaparral** scrub of thick, small, waxy leaves; orchard
+agriculture — olives, grapes, citrus — on the western flanks of
+continents (California, Cape, coastal Mediterranean lands).
+
+**Humid subtropical (Cfa) and humid continental (Dfb).** The monsoon-
+like summer rains of eastern seaboards support paddy, tea, and
+deciduous hardwood; further poleward, conifer-mixed forests meet
+fertile prairie and chernozem grasslands — the world's breadbaskets
+(Ukraine, North American Midwest, North China Plain).
+
+**Taiga / boreal forest (Dfc).** The vast cold conifer belt of
+spruce-pine-fir, podzol soils, short growing seasons, and paper-and-
+timber economies (Siberia, Canada, Fennoscandia) — the largest land
+biome on Earth.
+
+**Tundra (ET) and ice caps (EF).** Permafrost, matted lichens,
+cushion plants, lemming–caribou–wolf chains in the brief polar
+summer; poleward of that, permanent ice (Greenland, Antarctica).
+
+@chart bar title="Approximate annual rainfall (mm) of selected biomes" labels:
+Equatorial rainforest
+Tropical savanna
+Mediterranean
+Hot desert
+Taiga
+Tundra
+
+data:
+2200
+900
+500
+120
+450
+250
+@/chart
+
+## 4. Reading Patterns: Altitude, Coasts, and Anomalies
+
+- **Altitudinal zonation:** ascending a tropical mountain replays
+  the whole latitudinal sequence — tierra caliente → templada →
+  fria → paramo puna → snow line (the Andes' four "tierras").
+- **Rain-shadow deserts:** the Deccan's leeward side, Patagonia, and
+  the American Great Basin are deserts born behind mountains, not
+  latitude.
+- **Cold-current deserts:** Atacama and Namib hug coasts chilled by
+  upwelling currents — fog deserts with near-zero rain but strange
+  moisture-harvesting life.
+- **Warm-current coasts:** western Europe and British Columbia stay
+  forested and mild far poleward of their latitudinal "right".
+- **Monsoon overlay:** India's Thar would be expected desert by
+  latitude, but the monsoon pushes savanna-like summer green far into
+  Rajasthan.
+
+## 5. Biomes, Humans, and Change
+
+Each biome historically prescribed its economy: shifting cultivation
+and forest gathering in rainforest, herding and millet in savanna,
+nomadism and oasis irrigation in deserts, orchards and viticulture
+in Mediterranean lands, and grain monoculture on the grasslands.
+Human reshaping is now itself a biome-scale force: deforestation of
+rainforest for palm and pasture, desertification nibbling the
+Sahel's savanna edges, permafrost thaw undercutting tundra
+infrastructure, and wheat lines marching poleward as climate zones
+shift — the Köppen map of 2100 will not be today's map.
+
+[example]
+A single latitudinal transect across Africa at about 20 degrees east
+runs the full ladder: Congo rainforest (Af) → East African
+savanna (Aw) → Sahel dry steppe (BS) → Sahara desert (BWh) →
+Mediterranean coast (Cs). No other continent displays the textbook
+biome sequence so cleanly — which is why world-climate questions so
+often use Africa as their map.
+[/example]
+
+[summary]
+Biomes are climate's grandchildren: latitude and pressure belts set
+temperature and rainfall, soils and vegetation follow, and animals
+and human economies follow them. Köppen's letters encode the recipe
+(Af rainforest, BWh hot desert, Cs Mediterranean, Dfb continental,
+ET tundra), while altitude replays latitude on mountains and
+currents plus rain shadows bend the simple zones into real-world
+shape. From the four-storey equatorial forest and migrating herds
+of the savanna to the conifer taiga and permafrost tundra, each
+biome pairs a climate signature with a characteristic soil-plant-
+animal package — and shifting climate zones are redrawing that
+package faster than ecosystems can migrate.
+[/summary]

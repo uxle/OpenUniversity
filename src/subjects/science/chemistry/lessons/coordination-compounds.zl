@@ -1,0 +1,167 @@
+# Coordination Compounds: The Chemistry of Metal Complexes
+
+> Dissolve white copper sulfate in water and a blue solution appears;
+> add ammonia and it deepens to royal ink-blue. The colour changes
+> because water and ammonia cluster around the copper ion as
+> **ligands**, forming a coordination compound. From haemoglobin
+> carrying oxygen to chlorophyll harvesting sunlight to the
+> anti-cancer drug cisplatin, metal complexes run the chemistry of
+> life and industry alike.
+
+## 1. Werner's Revolution: Two Kinds of Valency
+
+[definition]
+A **coordination compound** contains a central metal atom or ion
+bonded to surrounding electron-pair donors called **ligands**. The
+ligands and metal sit inside square brackets as the **coordination
+sphere**; ions outside the brackets balance charge as
+**counter ions**.
+[/definition]
+
+Alfred Werner (Nobel Prize 1913) proposed that metals show two
+valencies: **primary valency** — the oxidation state satisfied by
+counter ions — and **secondary valency** — the coordination number
+satisfied by ligands, fixed in geometry around the metal. In
+$CoCl_3 \cdot 6NH_3$, written $[Co(NH_3)_6]Cl_3$, six ammines satisfy
+the secondary valency (octahedral), and three chlorides are ionisable
+primary-valency ions. His insight — that complex ions keep their
+identity in solution — founded coordination chemistry.
+
+@math label="eq:ion-count"
+[Co(NH_3)_6]Cl_3 \to [Co(NH_3)_6]^{+3} + 3Cl^-
+@/math
+
+The number of ionisable ions follows Werner's analysis, which is why
+$CoCl_3 \cdot 5NH_3$ ($[Co(NH_3)_5Cl]Cl_2$) gives only two chloride
+ions with silver nitrate, and $CoCl_3 \cdot 4NH_3$ gives just one.
+
+## 2. Ligands, Coordination Number, and Nomenclature
+
+Ligands are classified by the number of donor atoms they bind:
+
+| Type | Donor atoms | Examples |
+| --- | --- | --- |
+| Monodentate | 1 | $H_2O$, $NH_3$, $CO$, $Cl^-$, $OH^-$, $CN^-$ |
+| Bidentate | 2 | ethylenediamine (en), oxalate ($C_2O_4^{-2}$), glycinate |
+| Polydentate | many | EDTA$^{-4}$ (hexadentate — the claw) |
+
+The **coordination number (CN)** counts donor atoms bonded to the
+metal — commonly 6 (octahedral), 4 (tetrahedral or square planar), and
+2 (linear). A polydentate ligand gripping one metal at several points
+is **chelated**; chelation stabilises complexes dramatically, which is
+why EDTA titrations measure water hardness and chelation therapy
+removes toxic metals from blood.
+
+**Naming rules in brief:**
+
+1. Name the cation before the anion (as simple salts).
+2. Within the complex: ligands alphabetically (ignoring prefixes), then
+   metal with oxidation state in Roman numerals.
+3. Neutral ligands keep their names ($ammine$ for $NH_3$, $aqua$ for
+   $H_2O$, $carbonyl$ for $CO$); anionic ligands end in *-o* (chloro,
+   cyano, oxalato).
+4. Anionic complexes take the suffix *-ate* (ferrate, cuprate,
+   zincate); cationic or neutral complexes keep the metal's name.
+
+[example]
+$[Cr(NH_3)_6]Cl_3$ is hexaamminechromium(III) chloride;
+$K_4[Fe(CN)_6]$ is potassium hexacyanidoferrate(II);
+$[Pt(NH_3)_2Cl_2]$ is diamminedichloridoplatinum(II);
+$[Cu(en)_2]SO_4$ is bis(ethylenediamine)copper(II) sulfate — the
+prefixes di, tri, bis, tris never enter the alphabetisation.
+[/example]
+
+## 3. Isomerism: Same Formula, Different Architecture
+
+| Isomer type | What differs | Classic pair |
+| --- | --- | --- |
+| Ionisation | Which ions leave the sphere | $[Co(NH_3)_5Br]SO_4$ vs $[Co(NH_3)_5SO_4]Br$ |
+| Hydrate (water position) | $H_2O$ inside or out | $[Cr(H_2O)_6]Cl_3$ violet vs $[Cr(H_2O)_5Cl]Cl_2 \cdot H_2O$ green |
+| Linkage | Which atom of an ambidentate ligand binds | M-SCN vs M-NCS (thiocyanato/isothiocyanato) |
+| Coordination | Ligand swaps between metal spheres | $[Co(NH_3)_6][Cr(CN)_6]$ vs $[Cr(NH_3)_6][Co(CN)_6]$ |
+| Geometrical (cis-trans) | Positions around the metal | cis/trans-$[Pt(NH_3)_2Cl_2]$ |
+| Optical | Mirror images not superimposable | cis-$[Co(en)_2Cl_2]^+$ (chiral) |
+
+[important]
+Geometrical isomerism needs at least two different ligands each
+appearing twice; optical isomerism needs a chiral arrangement —
+octahedral complexes with 2–3 bidentate ligands such as
+$[Co(en)_3]^{+3}$ or cis-$[Co(en)_2Cl_2]^+$ are the standard examples.
+Trans-$[Pt(NH_3)_2Cl_2]$ is therapeutically useless while the cis
+isomer, **cisplatin**, fights tumours — isomerism is not cosmetic.
+[/important]
+
+## 4. Bonding: Valence Bond Theory in Brief
+
+Valence bond theory describes ligands donating lone pairs into empty
+metal orbitals of suitable geometry:
+
+- $sp^3$ — tetrahedral (e.g. $[Ni(CO)_4]$, $[ZnCl_4]^{-2}$)
+- $dsp^2$ — square planar, using an inner d orbital
+  (e.g. $[Ni(CN)_4]^{-2}$)
+- $sp^3d^2$ — octahedral, outer-orbital, high-spin, paramagnetic
+  (e.g. $[CoF_6]^{-3}$)
+- $d^2sp^3$ — octahedral, inner-orbital, low-spin, often diamagnetic
+  (e.g. $[Co(NH_3)_6]^{+3}$)
+
+Magnetic behaviour becomes evidence for hybridisation: unpaired
+electrons mean paramagnetism, and counting them from measured magnetic
+moments tests which orbitals were used.
+
+## 5. Crystal Field Theory: Colour and Magnetism Explained
+
+In crystal field theory (CFT), ligands are treated as point charges
+whose field splits the metal d-orbitals. In an **octahedral field**
+the two orbitals pointing at ligands ($d_{z^2}, d_{x^2-y^2}$ — the
+$e_g$ set) rise in energy, while the three between ligands
+($t_{2g}$) fall, separated by the crystal field splitting
+$\Delta_o$.
+
+Electrons then make a choice: pair up in the lower $t_{2g}$ set, or
+jump the gap. **Strong-field ligands** (large $\Delta_o$ —
+$CN^-$, $CO$, $NH_3$) force pairing: low-spin, often diamagnetic.
+**Weak-field ligands** (small $\Delta_o$ — $I^-$, $Br^-$, $F^-$,
+$H_2O$) let electrons stay unpaired: high-spin, paramagnetic. The
+spectrochemical series ranks them:
+
+@math label="eq:spectrochemical"
+I^- < Br^- < S^{-2} < SCN^- < Cl^- < F^- < OH^- < H_2O < NH_3 < en < NO_2^- < CN^- < CO
+@/math
+
+**Colour** follows naturally: the gap $\Delta_o$ absorbs one specific
+wavelength of visible light (the $d$-$d$ transition), and the
+compound shows the complementary colour. That is why
+$[Ti(H_2O)_6]^{+3}$ is violet, why changing $H_2O$ to $NH_3$ shifts
+copper's blue, and why $d^0$ or $d^{10}$ ions are usually colourless —
+no d-d jump is possible.
+
+In **tetrahedral** fields the splitting inverts ($e$ below $t_2$) and
+shrinks to about $\frac{4}{9}\Delta_o$, so tetrahedral complexes are
+almost always high-spin.
+
+## 6. Applications That Matter
+
+- **Biology:** haemoglobin's Fe(II) in a porphyrin ring binds
+  $O_2$ reversibly (CO binds 200 times stronger — carbon monoxide
+  poisoning); chlorophyll's Mg complex harvests light;
+  vitamin B12 is a cobalt complex.
+- **Medicine:** cisplatin and its relatives cross-link tumour DNA;
+  EDTA chelation clears lead; technetium complexes image organs in
+  nuclear medicine.
+- **Industry and analysis:** nickel purification by Mond's process
+  ($Ni(CO)_4$), extraction of gold and silver with cyanide complexes,
+  EDTA estimation of hardness, and the colour tests that identify
+  metal ions in qualitative analysis.
+
+[summary]
+Coordination compounds pair a metal centre with ligand donors inside a
+coordination sphere balanced by counter ions. Werner's two-valency
+idea, the coordination number, chelating ligands like EDTA, and
+systematic nomenclature describe their composition; ionisation,
+linkage, hydrate, geometrical, and optical isomerism describe their
+architecture. Valence bond theory rationalises geometries and magnetic
+behaviour, while crystal field theory explains the colours and
+high/low-spin states through the octahedral splitting $\Delta_o$ and
+the spectrochemical series. From haemoglobin to cisplatin, the
+chemistry of metal complexes is the chemistry of life itself.
+[/summary]

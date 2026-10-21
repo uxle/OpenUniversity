@@ -1,0 +1,76 @@
+{
+  "lessonId": "universe-and-solar-system",
+  "title": "The Universe and the Solar System: Our Cosmic Address",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The universe is estimated to be about how old?",
+      "options": ["4.6 billion years", "13.8 billion years", "100,000 years", "1 trillion years"],
+      "correct": 1,
+      "rationale": "Cosmic microwave background and Hubble expansion measurements date the Big Bang to roughly 13.8 billion years ago; 4.6 billion is the solar system's age."
+    },
+    {
+      "id": 2,
+      "question": "Our solar system is located in which galaxy?",
+      "options": ["Andromeda", "The Milky Way", "Triangulum", "Sombrero"],
+      "correct": 1,
+      "rationale": "The Sun is one of 100–400 billion stars of the Milky Way, in its Orion arm; Andromeda is the nearest large galaxy, 2.5 million light-years away."
+    },
+    {
+      "id": 3,
+      "question": "Which is the correct order of planets from the Sun?",
+      "options": ["Venus, Mercury, Earth, Mars", "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune", "Mercury, Venus, Mars, Earth, Jupiter, Saturn, Neptune, Uranus", "Earth, Venus, Mercury, Mars, Saturn, Jupiter, Uranus, Neptune"],
+      "correct": 1,
+      "rationale": "Outward: Mercury, Venus, Earth, Mars, then the asteroid belt, then Jupiter, Saturn, Uranus, Neptune."
+    },
+    {
+      "id": 4,
+      "question": "Which planet is the hottest in the solar system, and why?",
+      "options": ["Mercury — closest to the Sun", "Venus — a runaway CO₂ greenhouse effect", "Mars — iron oxide trapping heat", "Jupiter — internal heat"],
+      "correct": 1,
+      "rationale": "Venus averages ~465 °C, hotter than Mercury, because its dense CO₂ atmosphere traps heat despite being farther from the Sun."
+    },
+    {
+      "id": 5,
+      "question": "The asteroid belt lies between:",
+      "options": ["Earth and Mars", "Mars and Jupiter", "Jupiter and Saturn", "Neptune and Pluto"],
+      "correct": 1,
+      "rationale": "Rocky leftover planetesimals orbit mostly between Mars and Jupiter, marking the boundary of the terrestrial and giant planets."
+    },
+    {
+      "id": 6,
+      "question": "Pluto was reclassified as a dwarf planet in 2006 because it:",
+      "options": ["Is too small to be round", "Has not cleared its orbital neighbourhood of debris", "Has no moons", "Orbits outside the Kuiper Belt"],
+      "correct": 1,
+      "rationale": "The IAU requires a planet to orbit the Sun, be round, and clear its zone; Pluto shares its Kuiper-belt region with many bodies, failing the third test."
+    },
+    {
+      "id": 7,
+      "question": "One astronomical unit (AU) is approximately:",
+      "options": ["1 light-year", "149.6 million km — the mean Earth–Sun distance", "384,400 km — the Earth–Moon distance", "9.46 trillion km"],
+      "correct": 1,
+      "rationale": "The AU is defined by Earth's average distance from the Sun; 384,400 km is the lunar distance, and 9.46 trillion km is a light-year."
+    },
+    {
+      "id": 8,
+      "question": "Saturn is famous for its rings and also for being:",
+      "options": ["The most massive planet", "The least dense planet — it would float in water", "The fastest spinner", "The hottest planet"],
+      "correct": 1,
+      "rationale": "Saturn's density (~0.69 g/cm³) is below water's, while Jupiter is the most massive and Venus the hottest."
+    },
+    {
+      "id": 9,
+      "question": "A 'shooting star' is technically a:",
+      "options": ["Falling star", "Meteor — a meteoroid burning in Earth's atmosphere", "Comet passing close by", "Meteorite resting on the ground"],
+      "correct": 1,
+      "rationale": "Meteoroids are small debris; they become meteors as they burn in the atmosphere, and meteorites only if any part lands on the ground."
+    },
+    {
+      "id": 10,
+      "question": "Elements heavier than helium — including the iron in Earth's core — originated:",
+      "options": ["In the Big Bang directly", "In the cores of earlier stars and supernova explosions", "From Earth's radioactivity", "From the solar wind"],
+      "correct": 1,
+      "rationale": "The Big Bang made essentially hydrogen and helium; stellar fusion and supernovae forged the heavier elements that planets — and people — are built from."
+    }
+  ]
+}

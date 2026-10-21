@@ -1,0 +1,76 @@
+{
+  "lessonId": "heights-and-distances",
+  "title": "Heights and Distances: Trigonometry in the Field",
+  "questions": [
+    {
+      "id": 1,
+      "question": "From a point 30 m from the base of a tower on level ground, the angle of elevation of the top is 60 degrees. The height of the tower is:",
+      "options": ["30 m", "30 times sqrt(3) m (about 51.96 m)", "10 times sqrt(3) m", "60 m"],
+      "correct": 1,
+      "rationale": "h = d tan(60) = 30 x sqrt(3) = 51.96 m. The 30-60-90 triangle ratios give the same result: the height is the sqrt(3)-leg beside the 30 m short leg."
+    },
+    {
+      "id": 2,
+      "question": "The angle of depression of a boat seen from the top of a 60 m cliff is 30 degrees. The boat's distance from the base of the cliff is:",
+      "options": ["20 m", "60 times sqrt(3) m", "60 m", "30 m"],
+      "correct": 1,
+      "rationale": "Depression from the cliff top equals elevation from the boat. Distance d = h cot(30) = 60 sqrt(3) m. Distance answers use cotangent of the angle."
+    },
+    {
+      "id": 3,
+      "question": "The angle of elevation of a tower's top from a point is 30 degrees. Walking 20 m toward the tower, the angle becomes 60 degrees. The tower's height is:",
+      "options": ["10 m", "10 times sqrt(3) m", "20 times sqrt(3) m", "30 m"],
+      "correct": 1,
+      "rationale": "Let the near point be x m from the base: h = x tan(60) and h = (x + 20) tan(30). Equating: x sqrt(3) = (x+20)/sqrt(3), so 3x = x + 20, x = 10, h = 10 sqrt(3) m."
+    },
+    {
+      "id": 4,
+      "question": "When the sun's elevation changes from 30 to 45 degrees, a pole's shadow shortens by 20 m. The pole's height is:",
+      "options": ["10(sqrt(3)+1) m", "20 m", "10(sqrt(3)-1) m", "20 sqrt(3) m"],
+      "correct": 0,
+      "rationale": "At 45 degrees the shadow equals h; at 30 degrees it is h sqrt(3). The 20 m shortening gives h(sqrt(3) - 1) = 20, so h = 20/(sqrt(3)-1) = 10(sqrt(3)+1), about 27.3 m."
+    },
+    {
+      "id": 5,
+      "question": "From a 60 m lighthouse, angles of depression of two ships on OPPOSITE sides are 45 and 30 degrees. The distance between the ships is:",
+      "options": ["60(1 + sqrt(3)) m", "60 sqrt(3) m", "60(sqrt(3) - 1) m", "120 m"],
+      "correct": 0,
+      "rationale": "Ship A sits 60 tan(45) = 60 m from the base; ship B sits 60 cot(30) = 60 sqrt(3) m on the other side. Opposite sides mean ADD: total separation = 60 + 60 sqrt(3) m."
+    },
+    {
+      "id": 6,
+      "question": "A tree breaks in the wind; the broken top touches the ground 8 m from the stump making a 30 degree angle of elevation. The original height of the tree was:",
+      "options": ["8/sqrt(3) + 16 m", "16 m", "8 sqrt(3) m", "24 m"],
+      "correct": 0,
+      "rationale": "Standing stump: 8 tan(30) = 8/sqrt(3). Broken part is the hypotenuse: 8/sin(30) = 16. Original height = stump + broken part = 8/sqrt(3) + 16 m, about 20.6 m."
+    },
+    {
+      "id": 7,
+      "question": "Angles of depression of the top and bottom of a 3 m wall from a tower's top (same ground level) are 30 and 45 degrees. The tower's height is:",
+      "options": ["about 4.5 m", "about 7.1 m", "about 9 m", "about 6 m"],
+      "correct": 1,
+      "rationale": "From 45 degrees: distance d = H (tower height). From 30 degrees to the wall top: (H - 3)/H = tan(30) = 1/sqrt(3). Solving H(1 - 1/sqrt(3)) = 3 gives H = 3 sqrt(3)/(sqrt(3) - 1) = (9 + 3 sqrt(3))/2, about 7.1 m."
+    },
+    {
+      "id": 8,
+      "question": "An observer 1.5 m tall stands 28.5 m from a tower and finds the angle of elevation of its top to be 45 degrees. The tower's height is:",
+      "options": ["28.5 m", "30 m", "27 m", "33 m"],
+      "correct": 1,
+      "rationale": "The elevation is measured from EYE level (1.5 m). Height above eye = 28.5 tan(45) = 28.5 m; total tower height = 28.5 + 1.5 = 30 m. Never forget the observer's own height."
+    },
+    {
+      "id": 9,
+      "question": "The angles of elevation of a tower's top from two points on the ground at distances 16 m and 25 m from its base are complementary. The tower's height is:",
+      "options": ["20 m", "18 m", "22 m", "41 m"],
+      "correct": 0,
+      "rationale": "Let the elevations be alpha and 90 - alpha. Then tan(alpha) = h/16 and cot(alpha) = h/25, i.e. tan(alpha) = h/25. Equating the two expressions for tan(alpha): h/16 = 25/h, so h^2 = 400 and h = 20 m. Classic result: complementary elevations from base distances a and b give height sqrt(ab)."
+    },
+    {
+      "id": 10,
+      "question": "A ladder 10 m long leans against a wall reaching 8 m up. What angle does it make with the ground?",
+      "options": ["about 37 degrees", "about 53 degrees", "about 45 degrees", "about 60 degrees"],
+      "correct": 1,
+      "rationale": "sin(theta) = 8/10 = 0.8, so theta = about 53 degrees (the classic 3-4-5 triangle's larger acute angle). At 37 degrees the ladder would reach only 6 m."
+    }
+  ]
+}

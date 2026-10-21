@@ -4,8 +4,10 @@
     "data-structures",
     "object-oriented-programming",
     "debugging-and-development-tools",
+    "error-handling-and-exceptions",
     "python-fundamentals",
     "functions-and-modularity",
+    "file-handling-and-io",
     "version-control-with-git"
   ]
 }

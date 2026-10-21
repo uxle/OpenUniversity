@@ -1,0 +1,116 @@
+{
+  "lessonId": "mahajanapadas-and-rise-of-magadha",
+  "title": "Mahajanapadas and the Rise of Magadha: India's First Great Powers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The lists of sixteen mahajanapadas are found in which pair of texts?",
+      "options": [
+        "Rigveda and Atharvaveda",
+        "Buddhist Anguttara Nikaya and Jain Bhagavati Sutra",
+        "Arthashastra and Mudrarakshasa",
+        "Manusmriti and Mahabharata"
+      ],
+      "correct": 1,
+      "rationale": "Both the Buddhist Anguttara Nikaya and the Jain Bhagavati Sutra enumerate the sixteen mahajanapadas (with minor variations) — two independent traditions confirming the political map of the sixth century BCE."
+    },
+    {
+      "id": 2,
+      "question": "The Vajji confederacy with its Lichchhavis of Vaishali was distinctive because it was:",
+      "options": [
+        "The wealthiest kingdom",
+        "A ganasangha — an oligarchic republic ruled by an assembly of clans",
+        "A theocracy ruled by priests",
+        "A Persian satrapy"
+      ],
+      "correct": 1,
+      "rationale": "The Vajjis and Mallas were ganasanghas: ruling clans deliberating in the santhagara hall rather than serving a single hereditary monarch. The Buddha, raised in the Shakya republic tradition, praised their assembled government."
+    },
+    {
+      "id": 3,
+      "question": "Which of these was NOT a factor in Magadha's rise?",
+      "options": [
+        "Fortress geography of Rajagriha and the Ganga-Son confluence",
+        "Nearby iron ores of Chhotanagpur",
+        "The first use of war elephants and river fleets",
+        "Control of the Khyber Pass trade to Central Asia"
+      ],
+      "correct": 3,
+      "rationale": "Magadha's advantages were eastern: hill-girded capitals, iron, elephants, rice surplus, and river control. The Khyber Pass corridor belonged to Gandhara in the north-west — never to Magadha."
+    },
+    {
+      "id": 4,
+      "question": "Ajatashatru is chiefly remembered for:",
+      "options": [
+        "Founding Pataliputra",
+        "Destroying the Vajji confederacy after a long war and annexing Vaishali",
+        "Conquering Kalinga",
+        "Meeting Alexander on the Beas"
+      ],
+      "correct": 1,
+      "rationale": "Ajatashatru (c. 492-460 BCE) ground down the Vajji republic in a sixteen-year war using new siege machinery and Vassakara's divisive diplomacy. Pataliputra was founded by his successor Udayin; Kalinga fell much later under the Nandas."
+    },
+    {
+      "id": 5,
+      "question": "The city of Pataliputra was founded by:",
+      "options": ["Bimbisara", "Ajatashatru", "Udayin", "Mahapadma Nanda"],
+      "correct": 2,
+      "rationale": "Udayin (c. 460-444 BCE) built the new capital at the Ganga-Son confluence, commanding the river highway — a site that ruled as capital from the Magadhan dynasties through the Mauryas and Guptas."
+    },
+    {
+      "id": 6,
+      "question": "Mahapadma Nanda is called 'the second Parashurama' in the Puranas because:",
+      "options": [
+        "He was a great devotee of Shiva",
+        "He destroyed many kshatriya ruling lines, rising as a shudra king",
+        "He renounced the world like a sage",
+        "He conquered Persia"
+      ],
+      "correct": 1,
+      "rationale": "The Puranas' epithet marks Mahapadma as an uprooter of kshatriya dynasties — a shudra of obscure origin who founded the Nanda line, an ideological shock the orthodox texts recorded with horror."
+    },
+    {
+      "id": 7,
+      "question": "Alexander's troops refused to march beyond the Beas in 326 BCE largely because:",
+      "options": [
+        "They had run out of supplies",
+        "They learned of the Nanda empire's vast army waiting in the east",
+        "Magadha allied with Persia",
+        "The monsoon flooded the route permanently"
+      ],
+      "correct": 1,
+      "rationale": "Greek sources describe the terrifying scale of the Nanda forces (Agrammes/Xandrames) massed beyond the river; the mutiny at the Hyphasis (Beas) turned Alexander back — leaving Indian history to the Nandas, and then the Mauryas."
+    },
+    {
+      "id": 8,
+      "question": "Which ruler was a contemporary and patron-linked friend of BOTH the Buddha and Mahavira?",
+      "options": ["Bimbisara", "Shishunaga", "Udayin", "Dhana Nanda"],
+      "correct": 0,
+      "rationale": "Bimbisara (c. 544-492 BCE) overlapped both masters, offered the Buddha the Vulture's Peak, and sent his physician Jivaka to Rajagriha debates — the era's heterodox movements and Magadha's throne grew up together."
+    },
+    {
+      "id": 9,
+      "question": "The material foundations of the mahajanapada era included:",
+      "options": [
+        "Iron plough agriculture, the second urbanisation, and punch-marked silver coins",
+        "Copper-plate land grants",
+        "Turkish cavalry tactics",
+        "Paper currency"
+      ],
+      "correct": 0,
+      "rationale": "Iron tools opened the middle Ganga forests to rice agriculture; NBPW cities rose (the second urbanisation); and karshapana punch-marked coins financed standing armies — the hardware of the new states."
+    },
+    {
+      "id": 10,
+      "question": "The Shishunaga dynasty's major achievement was:",
+      "options": [
+        "Founding Pataliputra",
+        "Annexing Avanti, ending the era's chief rivalry",
+        "Defeating Alexander",
+        "Building the Sarnath stupa"
+      ],
+      "correct": 1,
+      "rationale": "Shishunaga (c. 412 BCE) and his successors destroyed Avanti's power, folding Ujjain into Magadha — removing the last great rival on the road from kingdom to empire."
+    }
+  ]
+}

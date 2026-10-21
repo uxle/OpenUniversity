@@ -1,0 +1,76 @@
+{
+  "lessonId": "semiconductors-and-electronics",
+  "title": "Semiconductors and Electronics: From Doped Silicon to Logic Gates",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Doping pure silicon with phosphorus (group 15, five valence electrons) produces:",
+      "options": ["p-type silicon with holes as majority carriers", "n-type silicon with free electrons as majority carriers", "An insulator", "Neutral, carrier-free silicon"],
+      "correct": 1,
+      "rationale": "Four of phosphorus's five valence electrons bond with silicon neighbours; the fifth is freed to roam, making the crystal n-type with electrons as majority carriers."
+    },
+    {
+      "id": 2,
+      "question": "A diode conducts easily when:",
+      "options": ["Its p-side is made negative and n-side positive", "Its p-side is made positive and n-side negative (forward bias)", "Both sides are at the same potential", "It is reverse biased beyond breakdown"],
+      "correct": 1,
+      "rationale": "Forward bias (p to +, n to −) shrinks the depletion region and lets current flow; reverse bias widens it and blocks current."
+    },
+    {
+      "id": 3,
+      "question": "Which component converts AC mains electricity into (pulsating) DC inside a charger?",
+      "options": ["A capacitor", "A rectifier built from diodes", "A transistor", "An LED"],
+      "correct": 1,
+      "rationale": "Diodes' one-way conduction rectifies AC: a bridge of four diodes steers both half-cycles the same direction, and a capacitor then smooths the result."
+    },
+    {
+      "id": 4,
+      "question": "The colour of light emitted by an LED is set chiefly by:",
+      "options": ["The plastic casing colour", "The semiconductor's band gap", "The current's direction", "The size of the diode"],
+      "correct": 1,
+      "rationale": "In an LED, electrons fall across the band gap into holes, emitting photons with energy E = hf — the gap size fixes the wavelength and hence the colour."
+    },
+    {
+      "id": 5,
+      "question": "A solar cell works by:",
+      "options": ["Burning sunlight like fuel", "Light-generated charge separation across a p–n junction driving current", "Reversing a battery's chemistry", "Using heat to boil a fluid"],
+      "correct": 1,
+      "rationale": "Photons knock electrons loose in the junction; the built-in field sweeps them across, producing a photocurrent — the photovoltaic effect."
+    },
+    {
+      "id": 6,
+      "question": "In a MOSFET, the terminal that controls current flow between source and drain is the:",
+      "options": ["Emitter", "Base", "Gate", "Collector"],
+      "correct": 2,
+      "rationale": "The gate voltage opens or closes the conducting channel between source and drain; 'emitter' and 'base' belong to BJTs."
+    },
+    {
+      "id": 7,
+      "question": "An XOR gate outputs 1 when:",
+      "options": ["All inputs are 1", "Any input is 1", "Its inputs differ", "Its inputs are equal"],
+      "correct": 2,
+      "rationale": "XOR (exclusive OR) is 1 exactly when the inputs are different — 0⊕0 and 1⊕1 both give 0, while 0⊕1 and 1⊕0 give 1."
+    },
+    {
+      "id": 8,
+      "question": "Which gate is functionally complete — capable of building every other gate and hence any computer?",
+      "options": ["AND", "OR", "NOT", "NAND"],
+      "correct": 3,
+      "rationale": "NAND alone can construct NOT, AND, and OR, so any Boolean circuit — including entire processors — can be built purely from NAND gates."
+    },
+    {
+      "id": 9,
+      "question": "Wiring an XOR gate and an AND gate across the same two inputs produces:",
+      "options": ["A full adder", "A half adder (XOR = sum, AND = carry)", "A flip-flop", "A multiplexer"],
+      "correct": 1,
+      "rationale": "The XOR output gives the sum bit and the AND output gives the carry bit — the half adder, the one-bit building block of binary arithmetic."
+    },
+    {
+      "id": 10,
+      "question": "Unlike metals, a semiconductor's conductivity:",
+      "options": ["Falls as temperature rises", "Rises as temperature rises", "Never changes", "Depends only on its mass"],
+      "correct": 1,
+      "rationale": "Heating excites more electrons across the small band gap, adding carriers — so semiconductors conduct better when warm, the opposite of metals."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "lessonId": "elasticity-surface-tension-and-viscosity",
+  "title": "Elasticity, Surface Tension, and Viscosity: Mechanical Properties of Matter",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A wire of length 2 m and cross-section 1 mm^2 extends by 1 mm under a load of 200 N. What is Young's modulus of the material?",
+      "zolto": "Y = \\frac{FL}{A\\,\\Delta L}",
+      "options": [
+        "1 x 10^11 Pa",
+        "2 x 10^11 Pa",
+        "4 x 10^11 Pa",
+        "5 x 10^10 Pa"
+      ],
+      "correct": 2,
+      "rationale": "Y = FL/(A deltaL) = 200 x 2 / (1x10^-6 x 1x10^-3) = 400/10^-9 = 4 x 10^11 Pa. Note that doubling the length or halving the elongation doubles the modulus read-off."
+    },
+    {
+      "id": 2,
+      "question": "Which modulus is defined for liquids as well as solids?",
+      "options": [
+        "Young's modulus",
+        "Modulus of rigidity",
+        "Bulk modulus",
+        "None — liquids have no elastic modulus"
+      ],
+      "correct": 2,
+      "rationale": "Liquids cannot sustain tensile or shear stress (they flow instead), so Young's modulus and rigidity are undefined for them. But liquids do resist compression, so the bulk modulus (and its reciprocal, compressibility) applies."
+    },
+    {
+      "id": 3,
+      "question": "The excess pressure inside a soap bubble of radius r compared to a liquid drop of the same radius is:",
+      "options": [
+        "The same, because both are curved",
+        "Twice as large, because the bubble has two surfaces",
+        "Half as large",
+        "Four times as large"
+      ],
+      "correct": 1,
+      "rationale": "A drop has one surface: deltaP = 2S/R. A soap bubble has an inner and an outer surface, each contributing 2S/R, so deltaP = 4S/R — exactly twice the drop's excess pressure."
+    },
+    {
+      "id": 4,
+      "question": "Water rises in a clean glass capillary tube. If the tube radius is halved, the capillary rise:",
+      "options": [
+        "Halves",
+        "Doubles",
+        "Becomes four times",
+        "Stays the same"
+      ],
+      "correct": 1,
+      "rationale": "Capillary rise h = 2S cos(theta)/(r rho g) is inversely proportional to the tube radius r. Halving r doubles the rise — which is why finer tubes suck water higher."
+    },
+    {
+      "id": 5,
+      "question": "For most liquids, as temperature increases the viscosity:",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Remains constant",
+        "First increases then decreases"
+      ],
+      "correct": 1,
+      "rationale": "In liquids, viscosity arises from molecular cohesion; heating weakens these attractions, so eta falls. Gases behave oppositely — faster molecules cross between layers more often, so their viscosity rises with temperature."
+    },
+    {
+      "id": 6,
+      "question": "Poiseuille's law says flow rate through a small tube varies as R^4. If an artery's radius narrows to 80 percent of healthy value, the flow (at the same pressure) becomes about:",
+      "options": [
+        "80 percent of normal",
+        "64 percent of normal",
+        "41 percent of normal",
+        "20 percent of normal"
+      ],
+      "correct": 2,
+      "rationale": "0.8^4 = 0.4096, so a mere 20 percent narrowing nearly cuts flow to two-fifths — the reason narrowed arteries strain the heart, which must raise pressure steeply to keep flow up."
+    },
+    {
+      "id": 7,
+      "question": "A spherical raindrop falling through air eventually reaches terminal velocity because:",
+      "options": [
+        "Its weight becomes zero",
+        "Stokes drag plus buoyant force equals its weight",
+        "Air pressure pushes it up",
+        "Surface tension cancels gravity"
+      ],
+      "correct": 1,
+      "rationale": "As speed grows, the viscous drag 6(pi)eta r v grows until drag + upthrust balance weight. Net force zero means zero acceleration — the drop then falls at constant terminal velocity v_t = 2r^2(rho - sigma)g/(9 eta)."
+    },
+    {
+      "id": 8,
+      "question": "The energy stored per unit volume in a wire stretched within its elastic limit equals:",
+      "options": [
+        "Stress x strain",
+        "Half of stress x strain",
+        "Young's modulus x strain",
+        "Strain divided by stress"
+      ],
+      "correct": 1,
+      "rationale": "Like a spring (energy = half k x^2), a stretched wire stores (1/2) x stress x strain per unit volume. The full product stress x strain counts work done, but half of the graph-area logic gives the recoverable stored energy."
+    },
+    {
+      "id": 9,
+      "question": "A steel wire and a copper wire of identical dimensions hang from the same support, each carrying the same load at its end. Which one stretches more?",
+      "options": [
+        "Steel, because it is stronger",
+        "Copper, because its Young's modulus is smaller",
+        "Both stretch equally",
+        "Neither stretches — metals are perfectly rigid"
+      ],
+      "correct": 1,
+      "rationale": "Elongation deltaL = FL/(AY). Copper's Young's modulus (about 1.2 x 10^11 Pa) is lower than steel's (about 2 x 10^11 Pa), so for the same load and geometry copper stretches nearly twice as much."
+    },
+    {
+      "id": 10,
+      "question": "Small dust particles remain suspended in air for a long time. The direct reason is:",
+      "options": [
+        "They are weightless",
+        "Their terminal velocity is extremely small because it varies as r^2",
+        "Air currents are always upward",
+        "Surface tension holds them up"
+      ],
+      "correct": 1,
+      "rationale": "Terminal velocity v_t = 2r^2(rho - sigma)g/(9 eta) falls with the square of the radius. For dust particles of a few micrometres, v_t is fractions of a millimetre per second, so gentle air currents keep them afloat indefinitely."
+    }
+  ]
+}

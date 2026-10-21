@@ -1,0 +1,96 @@
+{
+  "lessonId": "nosql-and-modern-databases",
+  "title": "NoSQL and Modern Databases: Beyond the Relational Model",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which NoSQL family is MongoDB the best-known example of?",
+      "options": ["Key-value store", "Document store", "Column-family store", "Graph database"],
+      "correct": 1,
+      "rationale": "MongoDB stores flexible JSON-like documents fetched whole, without joins — the signature of a document store. Redis is the key-value icon, Cassandra the column-family one, and Neo4j the graph leader."
+    },
+    {
+      "id": 2,
+      "question": "In the CAP theorem, the letter P stands for:",
+      "options": ["Performance", "Partition tolerance", "Persistence", "Primary key"],
+      "correct": 1,
+      "rationale": "P is partition tolerance — surviving network splits between nodes. Since partitions inevitably occur in distributed systems, the real-time choice is between consistency (C) and availability (A) when a partition strikes."
+    },
+    {
+      "id": 3,
+      "question": "A system that always answers queries during a network partition, possibly with stale data, is choosing:",
+      "options": ["CP", "AP", "ACID", "BASE-independent"],
+      "correct": 1,
+      "rationale": "Answering at all times means favouring Availability over Consistency during a partition — the AP choice, as in Cassandra and CouchDB. CP systems like HBase may refuse requests to preserve consistency."
+    },
+    {
+      "id": 4,
+      "question": "Which store is the most natural fit for a shopping-cart cache needing microsecond reads?",
+      "options": ["PostgreSQL", "Redis", "Neo4j", "Cassandra"],
+      "correct": 1,
+      "rationale": "Carts are small values fetched by a single key — the exact shape a key-value store like Redis optimises, often serving entirely from memory at microsecond latency."
+    },
+    {
+      "id": 5,
+      "question": "'Find all friends of friends of Ravi who reviewed a product his sister bought' is most naturally served by:",
+      "options": ["A graph database", "A column-family store", "A key-value cache", "A data warehouse"],
+      "correct": 0,
+      "rationale": "Multi-hop relationship walks are graph databases' home turf: nodes and edges are traversed directly in constant hops per relationship. The same query in SQL becomes a chain of recursive JOINs that degrades quickly."
+    },
+    {
+      "id": 6,
+      "question": "Eventual consistency means:",
+      "options": [
+        "The database never becomes consistent",
+        "Replicas may temporarily disagree but converge once the network heals",
+        "Writes are acknowledged only after all replicas confirm",
+        "Only one replica ever receives a write"
+      ],
+      "correct": 1,
+      "rationale": "AP systems allow replicas to drift during partitions and reconcile later — 'eventually' all reads return the last written value. It trades staleness windows for uninterrupted availability."
+    },
+    {
+      "id": 7,
+      "question": "Cassandra's design is tuned primarily for:",
+      "options": [
+        "Complex multi-table joins",
+        "Ad hoc analytical SQL",
+        "Relentless write throughput across many machines",
+        "Storing relationships between entities"
+      ],
+      "correct": 2,
+      "rationale": "Column-family stores like Cassandra partition rows across clusters and excel at append-heavy, partition-friendly workloads: time-series, telemetry, and messaging — explicitly not joins, which they do not support."
+    },
+    {
+      "id": 8,
+      "question": "BASE, the relaxed counterpart of ACID, expands to:",
+      "options": [
+        "Basically Available, Soft state, Eventual consistency",
+        "Balanced, Atomic, Serializable, Ephemeral",
+        "Binary Access, Sequential Encoding",
+        "Backup, Archive, Snapshot, Export"
+      ],
+      "correct": 0,
+      "rationale": "BASE = Basically Available (answers even during partitions), Soft state (state may shift as replicas converge), Eventual consistency (agreement arrives with time). It is the design philosophy behind many NoSQL stores."
+    },
+    {
+      "id": 9,
+      "question": "NewSQL databases such as Google Spanner and CockroachDB aim to deliver:",
+      "options": [
+        "SQL and ACID with horizontal scale",
+        "Key-value speed with graph relationships",
+        "Document flexibility with in-memory-only storage",
+        "Schema-less design with strict two-phase locking"
+      ],
+      "correct": 0,
+      "rationale": "NewSQL keeps the relational model and its ACID guarantees while distributing data across machines using consensus protocols (Raft/Paxos) — SQL's correctness with NoSQL's scale."
+    },
+    {
+      "id": 10,
+      "question": "An e-commerce platform uses PostgreSQL for orders, Redis for carts, MongoDB for the catalogue, and Neo4j for recommendations. This mix is called:",
+      "options": ["Monolithic persistence", "Polyglot persistence", "Denormalisation", "Sharding"],
+      "correct": 1,
+      "rationale": "Polyglot persistence means choosing several purpose-fit stores per workload rather than forcing one database to do everything — ACID for money, key-value for speed, documents for flexibility, graphs for relationships."
+    }
+  ]
+}

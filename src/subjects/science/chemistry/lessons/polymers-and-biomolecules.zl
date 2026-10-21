@@ -1,0 +1,147 @@
+# Polymers and Biomolecules: The Chemistry of Giants
+
+> The biggest molecules we meet daily — plastics, proteins, DNA,
+> starch — are all polymers: small units chained into giants. This
+> lesson covers how synthetic plastics are built and classified, then
+> tours the four families of molecules that make life possible.
+
+## 1. What Is a Polymer?
+
+[definition]
+A **polymer** is a giant molecule built from repeated small units
+(**monomers**) joined into a chain, like paper clips linked one after
+another. Polyethylene is thousands of ethylene
+(CH₂=CH₂) units strong; proteins are chains of amino-acid monomers.
+[/definition]
+
+@diagram tree id="polymer-hierarchy" layout="tree" aria="Monomers joining into a polymer chain"
+  "Ethylene monomers" -> "CH2=CH2"
+  "Ethylene monomers" -> "CH2=CH2"
+  "Ethylene monomers" -> "CH2=CH2"
+  "CH2=CH2" -> "-CH2-CH2-CH2-CH2- (polyethylene)"
+@/diagram
+
+## 2. Making Polymers: Two Routes
+
+- **Addition polymerisation:** monomers with double bonds clip
+  together without losing any atoms. Ethylene → polyethylene;
+  propylene → polypropylene; vinyl chloride → PVC; tetrafluoroethylene
+  → Teflon (PTFE).
+- **Condensation polymerisation:** monomers join with the loss of a
+  small molecule, usually water. The two growing ends must carry
+  complementary groups (e.g. acid + alcohol). Polyesters, polyamides
+  (nylon), and every protein are made this way.
+
+## 3. Classifying Plastics by Behaviour
+
+| Class | On heating | Structure | Examples |
+| --- | --- | --- | --- |
+| Thermoplastic | Softens, can be remoulded | Linear/branched chains | PE, PP, PVC, PET, polystyrene |
+| Thermosetting | Hardens permanently, chars on reheating | Cross-linked network | Bakelite, melamine, epoxy |
+| Elastomer (rubber) | Stretches, snaps back | Coiled, lightly cross-linked | Natural rubber, neoprene, silicone |
+
+[important]
+Vulcanisation — Charles Goodyear's 1839 discovery — heats natural
+rubber with sulphur, which forges cross-links between chains. More
+sulphur means more cross-links: elastic bands (little) to tyre rubber
+(moderate) to ebonite (a lot, becoming hard).
+[/important]
+
+### Everyday plastics worth knowing
+
+| Plastic | Made from | Uses |
+| --- | --- | --- |
+| PE (polyethylene) | Ethylene | Bags, bottles, pipes |
+| PP (polypropylene) | Propylene | Ropes, food boxes, car parts |
+| PVC | Vinyl chloride | Pipes, flooring, insulation |
+| PET | Ethylene glycol + terephthalic acid | Drink bottles, fleece |
+| PS (polystyrene) | Styrene | Packaging, foam cups |
+| Bakelite | Phenol + formaldehyde | Old plugs, switches (first fully synthetic plastic, 1907) |
+| Nylon-6,6 | Adipic acid + hexamethylenediamine | Stockings, ropes, gears |
+
+The resin identification codes (1–7) stamped on plastics guide
+recycling: PET (1) and HDPE (2) are widely recyclable; the rest,
+harder.
+
+## 4. Biomolecules: Life's Four Families
+
+### Carbohydrates — the fuel
+
+Built from carbon, hydrogen, oxygen (~1:2:1 ratio). One unit =
+monosaccharide (glucose, fructose); two = disaccharide (sucrose =
+glucose + fructose; lactose = glucose + galactose); many joined =
+polysaccharide (starch for storage in plants, glycogen in animals,
+cellulose for plant cell walls). Humans digest starch but not
+cellulose — we lack the enzyme — which is why fibre passes through.
+
+### Proteins — the workers
+
+Chains of **amino acids** (20 kinds), joined by **peptide bonds** — a
+condensation polymerisation happening in every cell. The sequence of
+amino acids is the **primary structure**; folding into helices and
+sheets is secondary; the full 3D shape is tertiary. Shape is
+function: enzymes, antibodies, haemoglobin, keratin (hair, nails),
+insulin — all proteins.
+
+- Essential amino acids (about 9) cannot be made by the body and must
+  come from food.
+- Cooking an egg **denatures** its proteins: heat destroys the folded
+  shape, which is why the white turns opaque and solid.
+
+### Lipids — the storehouse
+
+Fats and oils are triglycerides: glycerol bonded to three fatty
+acids. **Saturated** fatty acids (straight chains, usually animal
+fats) stack tightly and are solid at room temperature; **unsaturated**
+ones (double bonds kinking the chain, mostly plant oils) stay liquid.
+Cholesterol, waxes, and phospholipids (cell membranes) are also
+lipids. Fat stores ~37 kJ/g — over twice the energy of carbohydrate
+or protein.
+
+### Nucleic acids — the blueprint
+
+**DNA** and **RNA** are polymers of nucleotides. Each nucleotide =
+sugar + phosphate + nitrogen base. In DNA, A pairs with T and G with
+C across the double helix — hydrogen bonds that make the
+hereditary copy both faithful and unzip-able. RNA (single strand,
+uracil in place of thymine) carries the recipe from nucleus to
+ribosome.
+
+@chart donut title="Approximate composition of the dry human body by mass"
+labels:
+Protein
+Lipid
+Minerals
+Carbohydrate
+Nucleic acids
+
+data:
+50
+30
+15
+3
+2
+@/chart
+
+## 5. Synthetic Meets Natural
+
+- **Rayon** (semi-synthetic, 1905): cellulose dissolved and re-spun —
+  the first "artificial silk".
+- **Polyester and nylon** mimic silk's strength; Kevlar (an aramid)
+  is five times stronger than steel by weight — bulletproof vests.
+- **Biodegradable polymers** (PLA from corn starch) and the enzyme
+  that digests PET (discovered 2016) are sustainability frontiers:
+  conventional plastics persist for centuries because few organisms
+  can cleave their carbon backbones.
+
+[summary]
+Polymers are monomer chains made by addition (no by-product) or
+condensation (water out) reactions; thermoplastics can be remoulded,
+thermosets cannot, and elastomers snap back thanks to sparse
+cross-links. Life runs on four polymer families: carbohydrates
+(fuel), proteins (amino-acid workers whose folded shape is function),
+lipids (compact energy stores and membranes), and nucleic acids (the
+A–T, G–C blueprint of heredity). From Bakelite to Kevlar to
+biodegradable PLA, synthetic polymers are condensation and addition
+chemistry doing nature's tricks in new ways.
+[/summary]

@@ -1,0 +1,174 @@
+# Chemical Kinetics: The Study of Reaction Rates
+
+> Thermodynamics tells us whether a reaction can happen; kinetics tells
+> us how fast it will. The rusting of iron and the explosion of
+> gunpowder are both spontaneous — one takes years, the other
+> microseconds. Chemical kinetics explains that gap, and gives chemists
+> the levers to speed reactions up or slow them down.
+
+## 1. Rate of a Reaction
+
+[definition]
+The **rate of a reaction** is the change in concentration of a reactant
+or product per unit time. It is always positive, expressed in
+$\text{mol L}^{-1}\text{s}^{-1}$, and usually decreases as reactants
+deplete.
+[/definition]
+
+For a reaction $aA + bB \to cC + dD$, the rate may be tracked through
+any species:
+
+@math label="eq:rate-convention"
+\text{rate} = -\frac{1}{a}\frac{d[A]}{dt}
+= -\frac{1}{b}\frac{d[B]}{dt}
+= \frac{1}{c}\frac{d[C]}{dt}
+@/math
+
+The negative sign simply converts the *fall* in reactant concentration
+into a positive rate. Dividing by stoichiometric coefficients makes the
+rate the same whichever species the experiment monitors.
+
+## 2. Factors That Change the Rate
+
+| Factor | Effect | Molecular reason |
+| --- | --- | --- |
+| Concentration | Rate rises | More collisions per second |
+| Temperature | Rate rises steeply | Larger fraction of molecules beats the energy barrier |
+| Catalyst | Rate rises | New low-energy pathway |
+| Surface area (heterogeneous) | Rate rises | More exposed reactive sites |
+| Inhibitor | Rate falls | Blocks catalyst or reactive sites |
+
+A rule of thumb: a $10\ \text{K}$ rise in temperature roughly doubles
+or triples the rate of an ordinary reaction — a far stronger effect
+than concentration changes produce.
+
+## 3. Rate Law, Order, and Molecularity
+
+Experimentally, the rate of $aA + bB \to$ products often follows:
+
+@math label="eq:rate-law"
+\text{rate} = k[A]^x[B]^y
+@/math
+
+The exponents $x$ and $y$ are found **only by experiment** — never
+from the balanced equation. The sum $x + y$ is the **overall order**,
+and $k$ is the rate constant, whose units depend on the order.
+
+| Order | Units of $k$ | Half-life behaviour |
+| --- | --- | --- |
+| Zero | $\text{mol L}^{-1}\text{s}^{-1}$ | Decreases with concentration |
+| First | $\text{s}^{-1}$ | Constant, independent of $[A]$ |
+| Second | $\text{L mol}^{-1}\text{s}^{-1}$ | Increases as concentration falls |
+
+[important]
+Do not confuse **order** (an experimental quantity, can be zero or
+fractional) with **molecularity** (the number of species colliding in
+an elementary step — always a whole number, 1, 2, or 3). For complex
+reactions the slowest elementary step, the **rate-determining step**,
+controls the observed rate law.
+[/important]
+
+## 4. Integrated Rate Equations and Half-Life
+
+For a **first-order** reaction ($2A \to$ products style decay,
+radioactive-style), the concentration falls exponentially:
+
+@math label="eq:first-order"
+k = \frac{2.303}{t}\log\frac{[A]_0}{[A]}
+@/math
+
+The **half-life** — time for concentration to halve — is the signature
+of first-order kinetics:
+
+@math label="eq:half-life"
+t_{1/2} = \frac{0.693}{k}
+@/math
+
+**Worked example.** A first-order reaction is 25 percent complete in
+40 minutes. When is it 50 percent complete?
+
+Since 25 percent completion means $[A] = 0.75[A]_0$:
+
+@math label="eq:kinetics-example"
+k = \frac{2.303}{40}\log\frac{1}{0.75}
+= \frac{2.303}{40}(0.125) \approx 7.2 \times 10^{-3}\ \text{min}^{-1}
+@/math
+
+@math label="eq:kinetics-thalf"
+t_{1/2} = \frac{0.693}{7.2 \times 10^{-3}} \approx 96\ \text{min}
+@/math
+
+A faster route: 75 percent left after 40 min means half-life is
+$40 \times \log_{0.75} 0.5 \approx 96$ min — the hallmark exponential
+decline.
+
+## 5. Collision Theory and Activation Energy
+
+Reactions occur when molecules collide with energy at least equal to
+the **activation energy** $E_a$ and with the proper orientation.
+Increasing temperature swells the fraction of molecules past this
+barrier — the exponential tail of the Maxwell-Boltzmann distribution —
+which is why rates climb so steeply with heat.
+
+The **Arrhenius equation** ties the rate constant to temperature:
+
+@math label="eq:arrhenius"
+k = A e^{-E_a/RT}
+@/math
+
+Here $A$ is the frequency factor. Taking logarithms of Arrhenius'
+equation at two temperatures lets exam problems find $E_a$ from a
+straight-line plot of $\log k$ against $\frac{1}{T}$ (slope
+$= \frac{-E_a}{2.303R}$).
+
+## 6. Catalysts and Catalysis
+
+[definition]
+A **catalyst** increases the rate of a reaction by providing an
+alternate pathway of lower activation energy, while remaining
+chemically unchanged at the end. It accelerates forward and reverse
+reactions equally and never shifts the position of equilibrium.
+[/definition]
+
+- **Homogeneous catalysis:** catalyst and reactants in one phase —
+  acid catalysis of ester hydrolysis, $NO$ in the oxidation of
+  $SO_2$ (lead chamber process).
+- **Heterogeneous catalysis:** catalyst as a separate phase — iron in
+  Haber's ammonia synthesis, platinum in catalytic converters,
+  nickel in hydrogenation of oils.
+- **Enzymes:** biological catalysts of staggering specificity and
+  efficiency, operating near body temperature.
+
+[info title="Exam corner"]
+Remember the three things a catalyst never changes: it does not change
+$\Delta H$, it does not change the equilibrium constant, and it is not
+consumed. It only lowers the hill between reactants and products —
+arriving at the same destination, sooner.
+[/info]
+
+## 7. Reaction Intermediates in Complex Reactions
+
+Many reactions proceed through elementary steps, e.g. the
+iodide-catalysed decomposition of hydrogen peroxide or the
+chlorination of methane in light. Species formed in one step and
+consumed in a later step — **intermediates** — never appear in the
+overall equation or in the final rate law. The step through the
+highest-energy transition state (not the intermediate!) is the
+rate-determining step. Distinguishing intermediate from
+transition state is a classic trap: an intermediate exists for a
+finite time at an energy valley; a transition state is the
+fleeting hilltop.
+
+[summary]
+Kinetics measures speed. Rate laws $\text{rate} = k[A]^x[B]^y$ are
+experimental; order is the sum of exponents; molecularity belongs to
+elementary steps. First-order reactions obey
+$k = \frac{2.303}{t}\log\frac{[A]_0}{[A]}$ with a constant half-life
+$t_{1/2} = \frac{0.693}{k}$, while zero-order and second-order
+kinetics have their own integrated forms. Temperature acts through the
+Arrhenius relation $k = Ae^{-E_a/RT}$ — a $10\ \text{K}$ rise can
+double the rate — and catalysts work by cutting $E_a$ without touching
+$\Delta H$ or the equilibrium constant. Master rate laws, half-lives,
+and Arrhenius plots and every exam question on speed reduces to these
+three tools.
+[/summary]

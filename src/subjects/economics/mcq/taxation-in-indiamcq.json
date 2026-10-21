@@ -1,0 +1,76 @@
+{
+  "lessonId": "taxation-in-india",
+  "title": "Taxation in India: From Budget to GST",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a DIRECT tax?",
+      "options": ["GST", "Customs duty", "Income tax", "Excise duty on petrol"],
+      "correct": 2,
+      "rationale": "Direct taxes fall on income/wealth and cannot be shifted (income, corporate, capital gains); GST, customs, and excise are indirect, collected at transactions and passed on through prices."
+    },
+    {
+      "id": 2,
+      "question": "A tax that takes a larger percentage of income from the rich than the poor is:",
+      "options": ["Regressive", "Proportional", "Progressive", "A cess"],
+      "correct": 2,
+      "rationale": "Progressivity is the design of income tax slabs; indirect taxes like GST tend to be regressive since everyone pays the same rate regardless of income."
+    },
+    {
+      "id": 3,
+      "question": "Which Article of the Constitution mandates that no tax can be levied except by authority of law?",
+      "options": ["Article 280", "Article 246A", "Article 265", "Article 279A"],
+      "correct": 2,
+      "rationale": "Article 265 is the first word of Indian tax law: 'No tax shall be levied or collected except by authority of law.'"
+    },
+    {
+      "id": 4,
+      "question": "The GST Council, created by Article 279A, has voting weights of:",
+      "options": ["States 2/3, Centre 1/3, decisions needing 3/4 majority", "Centre 2/3, states 1/3, simple majority", "Equal votes for all", "Only the Finance Minister votes"],
+      "correct": 0,
+      "rationale": "The Centre holds 1/3 of the vote and states together 2/3, with decisions carried by a 3/4 majority — cooperative federalism by design."
+    },
+    {
+      "id": 5,
+      "question": "Input tax credit under GST means:",
+      "options": ["A subsidy for inputs", "A firm deducts tax already paid on inputs from the tax it collects, so only value added is taxed", "Exemption for small firms only", "A refund of income tax"],
+      "correct": 1,
+      "rationale": "Credit for tax on inputs eliminates the pre-GST cascade — each stage pays tax only on the value it adds, which is the essence of a value-added tax."
+    },
+    {
+      "id": 6,
+      "question": "On an inter-state sale, the component collected is:",
+      "options": ["CGST + SGST", "IGST", "Only SGST", "Customs duty"],
+      "correct": 1,
+      "rationale": "Inter-state supplies attract IGST, which the Centre collects and then devolves appropriately to the destination state."
+    },
+    {
+      "id": 7,
+      "question": "India's maximum marginal personal income tax rate in 1973–74 was about:",
+      "options": ["30%", "50%", "97.75%", "10%"],
+      "correct": 2,
+      "rationale": "The 1973–74 peak of 97.75% (including surcharge) is legendary; reforms since 1991 have progressively cut rates to today's 30% top slab."
+    },
+    {
+      "id": 8,
+      "question": "Which item is NOT currently within GST?",
+      "options": ["Restaurant services", "Smartphones", "Petroleum products (crude, petrol, diesel)", "Soap and detergent"],
+      "correct": 2,
+      "rationale": "Petroleum products, electricity, real estate (mostly), and alcohol for human consumption stay outside GST — a major critique of the credit chain's completeness."
+    },
+    {
+      "id": 9,
+      "question": "The Finance Commission (Article 280) is concerned with:",
+      "options": ["Setting GST rates", "Dividing the divisible pool of central taxes between the Union and the states", "Collecting income tax", "Auditing government accounts"],
+      "correct": 1,
+      "rationale": "Every five years the Finance Commission recommends the vertical (Centre-state) and horizontal (inter-state) sharing of tax devolution and grants."
+    },
+    {
+      "id": 10,
+      "question": "GST is often criticised as regressive because:",
+      "options": ["It is too easy to evade", "Uniform rates take a larger share of a poor household's budget than a rich one's", "It applies only to services", "States cannot alter it"],
+      "correct": 1,
+      "rationale": "Consumption taxes fall equally on the last rupee spent; since the poor consume most of their income, GST bites harder proportionally — softened by exemptions on food, health, and education."
+    }
+  ]
+}

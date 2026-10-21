@@ -1,0 +1,12 @@
+# Mathematical Operations
+
+@subject {
+  id: mathematical-operations
+  title: "Mathematical Operations"
+  parent: reasoning
+  description: "Coded BODMAS: sign substitutions, interchange of signs and numbers, and equation repair."
+}
+
+@lessons {
+  mathematical-operations-reasoning
+}

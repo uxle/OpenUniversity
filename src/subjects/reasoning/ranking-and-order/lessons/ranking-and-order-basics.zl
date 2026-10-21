@@ -1,0 +1,164 @@
+# Ranking and Order Basics: Position Puzzles in One Line
+
+> A row of students, a merit list, a queue — the question hides one
+> number: how many people are there in all? Or where does a person
+> stand from the other end? Ranking puzzles need no diagrams or
+> cases, just one or two line-length formulas and the discipline to
+> read "from the left" versus "from the right" carefully.
+
+[definition]
+A **ranking puzzle** fixes positions along a line (row, list,
+queue, tower). The two facts usually given: a person's position
+from one end, and either the same person's position from the other
+end (direct type) or a second person's position (overlap type).
+Everything reduces to counting the line.
+[/definition]
+
+## 1. The Master Formulas
+
+[important]
+Three formulas run the entire topic. Let a position from the LEFT be
+$L$ and from the RIGHT be $R$ for the same person in a line of $N$
+people:
+
+@math label="eq:total"
+N = L + R - 1
+@/math
+
+The person is counted twice (once by each end), hence the -1.
+Position from the other end: $R = N - L + 1$. Overlap between two
+people: people between them
+$= N - (L_1 + R_2)$ when positions are given from opposite ends, or
+$= |L_1 - L_2| - 1$ when from the same end.
+[/important]
+
+**Worked example.** In a row, Aman is 7th from the left and 9th from
+the right. How many people are in the row?
+
+@math label="eq:aman-row"
+N = 7 + 9 - 1 = 15
+@/math
+
+**Worked example.** A queue of 40 people: where is Ravi from the
+front if he is 33rd from the back?
+
+@math label="eq:ravi-queue"
+\text{from front} = 40 - 33 + 1 = 8
+@/math
+
+## 2. The Overlap Cases: Between Two People
+
+When two persons' positions are known, the count of people sitting
+between them depends on whether the positions are measured from the
+same end or opposite ends — the exam's favourite switch.
+
+| Given | Formula for people BETWEEN |
+| --- | --- |
+| Both positions from same end | $|L_1 - L_2| - 1$ |
+| One from each end (no overlap info) | $N - L_1 - R_2$ |
+| Total N asked, between-count $b$ given | $N = L_1 + R_2 + b$ |
+
+**Worked example.** In a row of 30 students, P is 11th from the left
+and Q is 16th from the right. How many students sit between them?
+
+@math label="eq:pq-between"
+30 - 11 - 16 = 3
+@/math
+
+Sanity check: P occupies position 11; Q occupies position
+$30 - 16 + 1 = 15$ from the left; between 11 and 15 sit positions
+12, 13, 14 — exactly 3. ✓
+
+**Worked example (between-count given, order unknown).** In a row,
+P is 8th from the left, Q is 12th from the right, and exactly 5
+people sit between them. Find the minimum possible number of people
+in the row.
+
+Two arrangements are possible:
+
+- **P left of Q:** P at 8, then 5 people, so Q at position 14 from
+  the left. Then $N = 14 + 12 - 1 = 25$.
+- **P right of Q:** P at 8, so Q is at $8 - 5 - 1 = 2$ from the
+  left. Then $N = 2 + 12 - 1 = 13$.
+
+Minimum possible strength: **13**. When a question hides who is
+ahead of whom, always run BOTH orders and pick per what is asked
+(minimum or maximum of N).
+
+[tip]
+The between-count chain is the cleanest way to see it:
+$N = L_P + R_Q + b$ assumes P left of Q. The reversed order simply
+places Q at $L_P - b - 1$ from the left and re-runs
+$N = (\text{Q's left-position}) + R_Q - 1$. Two lines of arithmetic
+settle any "minimum possible" question in the topic.
+[/tip]
+
+## 3. Interchange Puzzles
+
+A beloved pattern: two people swap seats, and a new rank is revealed.
+
+**Worked example.** In a row, A is 11th from the left and B is 14th
+from the right. They interchange seats; after the swap, A is 9th
+from the left. How many people are in the row?
+
+After the swap, A occupies B's original seat. That one seat is
+therefore 9th from the left (given, post-swap) AND 14th from the
+right (B's original rank, unchanged by the swap). One seat, two
+ends:
+
+@math label="eq:interchange"
+N = 9 + 14 - 1 = 22
+@/math
+
+**A is 9th from the left** — and note the general rule: after an
+interchange, each person's new rank-from-an-end equals the other's
+old rank from that same end. The row never changes; only the labels
+move.
+
+## 4. Orderings Beyond Rows
+
+The same counting logic ranks along any list:
+
+- **Merit lists:** "A is 5th from the top; B is 8 ranks below A" —
+  B is 13th from the top.
+- **Towers/heights:** "C's floor is 6 above D's" — subtract floor
+  numbers, not people.
+- **Time-ordered queues:** consecutive positions differ by 1.
+- **Points tables:** "as many teams above X as below Y" — set up
+  the count equation, exactly like the floors-above/below trick.
+
+[example]
+A composite case: In a class photograph row of students, the teacher
+is NOT counted as a student; questions that sneak the teacher in are
+the classic trap. If the row has 20 students plus the teacher seated
+at an end, "13th from the left including the teacher" places a
+student at position 12 among students alone. Whenever the question
+says "including X" or "not counting X", re-base the counting before
+touching any formula — the formula counts whatever the line actually
+contains.
+[/example]
+
+## 5. Strategy Summary
+
+1. Draw a quick line, mark ends L and R, and label what each number
+   is measured FROM.
+2. Same person, both ends: $N = L + R - 1$.
+3. Two people, opposite ends, between-count $b$:
+   $N = L_1 + R_2 + b$ (and $b = N - L_1 - R_2$).
+4. Two people, same end: between $= |L_1 - L_2| - 1$.
+5. Interchange: positions swap, line does not — write each person's
+   new rank in terms of the other's old rank.
+6. Re-base counting whenever the line's membership changes
+   (teacher, vacant seat, "including/excluding").
+
+[summary]
+Ranking puzzles are line arithmetic. One master relation,
+$N = L + R - 1$, counts the row from a single person seen from both
+ends; the between-count formula
+$N = L_1 + R_2 + b$ handles two-person overlaps, flipping to
+$b = |L_1 - L_2| - 1$ when ranks share an end; interchanges swap
+ranks without touching the line; and every "including/excluding"
+wording demands re-basing the count first. Draw the line, mark the
+ends, translate each sentence into one arithmetic step — and the
+topic's marks are the fastest in the reasoning section.
+[/summary]

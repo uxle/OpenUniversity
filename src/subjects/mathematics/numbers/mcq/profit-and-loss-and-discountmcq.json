@@ -1,0 +1,76 @@
+{
+  "lessonId": "profit-and-loss-and-discount",
+  "title": "Profit and Loss and Discount: The Mathematics of Buying and Selling",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An article sold for 540 rupees gives a profit of 20 percent. Its cost price is:",
+      "options": ["432 rupees", "450 rupees", "468 rupees", "500 rupees"],
+      "correct": 1,
+      "rationale": "SP = CP x 1.2, so CP = 540/1.2 = 450 rupees. Dividing out the profit factor recovers the base — always divide, never subtract 20 percent of 540."
+    },
+    {
+      "id": 2,
+      "question": "Two articles are sold at the same price, one at 20 percent profit and the other at 20 percent loss. The overall result is:",
+      "options": ["No profit no loss", "4 percent loss", "4 percent profit", "2 percent loss"],
+      "correct": 1,
+      "rationale": "Same-SP equal profit-and-loss percentages always net a loss of (P/10)^2 = (20/10)^2 = 4 percent. The loss item drags the total below zero because its cost price is larger."
+    },
+    {
+      "id": 3,
+      "question": "Successive discounts of 20 percent and 10 percent equal a single discount of:",
+      "options": ["30 percent", "28 percent", "27 percent", "25 percent"],
+      "correct": 1,
+      "rationale": "Combined = a + b - ab/100 = 20 + 10 - 200/100 = 28 percent. Check with 100: 100 -> 80 -> 72, a single cut of 28."
+    },
+    {
+      "id": 4,
+      "question": "A trader marks his goods 40 percent above cost price and allows a 25 percent discount on the marked price. His profit percent is:",
+      "options": ["10 percent", "5 percent", "15 percent", "No profit no loss"],
+      "correct": 1,
+      "rationale": "SP = 1.40 x 0.75 x CP = 1.05 CP — a 5 percent profit. Multiply the factors: 1.4 x 0.75 = 1.05."
+    },
+    {
+      "id": 5,
+      "question": "A shopkeeper claims to sell at cost price but uses a 900 g weight in place of 1 kg. His gain percent is:",
+      "options": ["10 percent", "11.11 percent", "9 percent", "12.5 percent"],
+      "correct": 1,
+      "rationale": "Gain = error/(true - error) x 100 = 100/900 x 100 = 11.11 percent. He pockets the value of 100 g on every 900 g actually delivered."
+    },
+    {
+      "id": 6,
+      "question": "The cost price of 15 articles equals the selling price of 12 articles. The profit percent is:",
+      "options": ["20 percent", "25 percent", "15 percent", "12.5 percent"],
+      "correct": 1,
+      "rationale": "Take the common value as 60: CP = 4 per article, SP = 5 per article, profit = (5-4)/4 = 25 percent. Generally m/n pairs give (m-n)/n profit."
+    },
+    {
+      "id": 7,
+      "question": "A shopkeeper marks a shirt at 1500 rupees, allows a 20 percent discount, and still makes a 20 percent profit. The cost price is:",
+      "options": ["1200 rupees", "1000 rupees", "900 rupees", "1080 rupees"],
+      "correct": 1,
+      "rationale": "SP = 1500 x 0.80 = 1200. CP = 1200/1.2 = 1000. Two multiplications walk the chain MP -> SP -> CP."
+    },
+    {
+      "id": 8,
+      "question": "A man sells an article at 10 percent loss. To recover the loss, at what profit percent must he sell a second identical article?",
+      "options": ["10 percent", "11.11 percent", "12.5 percent", "20 percent"],
+      "correct": 1,
+      "rationale": "Recovery percent = x/(10 - x) x 100 for a loss of x = 10: 10/90 x 100 = 11.11 percent. Selling the second at 10 percent profit only breaks even on a DIFFERENT base — the classic trap."
+    },
+    {
+      "id": 9,
+      "question": "By selling 45 mangoes at the price of 50 bought mangoes, a fruit-seller's profit or loss percent is:",
+      "options": ["11.11 percent profit", "11.11 percent loss", "10 percent profit", "5 percent loss"],
+      "correct": 0,
+      "rationale": "CP of 50 = SP of 45. Take common value 450: CP = 9, SP = 10 per mango — profit (10-9)/9 = 11.11 percent. Same false-weight logic, now friendly."
+    },
+    {
+      "id": 10,
+      "question": "A price is first marked up 25 percent and then discounted 25 percent (both on the then-current price). The net effect is:",
+      "options": ["No change", "6.25 percent loss", "6.25 percent profit", "12.5 percent loss"],
+      "correct": 1,
+      "rationale": "1.25 x 0.75 = 0.9375, a 6.25 percent loss. Equal markup-then-markdown on moving bases always lands below the start — the (x/10)^2 family again with x = 25."
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+# Statement and Argument and Inference: Judging Reasons and Conclusions
+
+> Verbal reasoning moves from finding what a statement *assumes* to
+> judging what it *argues* and what *follows*. A statement and
+> argument question hands you a proposal — "should exams go
+> online?" — plus four arguments, and asks which are strong. An
+> inference question gives premises and asks what must be true.
+> Both test the same muscle: separating good reasoning from
+> persuasive-sounding noise.
+
+[important]
+The examiner's ground rules: judge the **argument's strength**, never
+whether you personally agree. A strong argument is relevant, addresses
+the *main* proposal directly, and is well-supported by fact or
+established principle. Anything vague, extreme, half-off-topic, or
+merely emotional is weak — however nicely it is worded.
+[/important]
+
+## 1. Strong vs Weak Arguments: The Filters
+
+| Filter | Strong argument passes | Weak argument fails |
+| --- | --- | --- |
+| Relevance | Bears on the proposal itself | Attacks a side issue |
+| Representativeness | Applies generally, not one stray case | "My cousin flunked online, so it's bad" |
+| Evidence | Facts, experience, established theory | Bare assertion or prediction |
+| Proportion | Scales with the issue | Trivial benefit vs major disruption |
+| Tone | Reasoned | Emotional, parochial, absolutist ("always", "never") |
+
+**Worked example.** Statement: *Should India ban all private
+tuition?*
+
+- Argument I: *No — tuition is the only support for students in
+  overcrowded classrooms* (relevant, experiential — **strong**).
+- Argument II: *Yes — tuition makes parents feel poor at parties*
+  (status anxiety is trivial vs a ban's fallout — **weak**).
+- Argument III: *Yes — a ban restores the classroom's monopoly on
+  learning* (assumes what it must prove — **weak**, circular).
+- Argument IV: *No — coaching is a Rs 50,000-crore industry
+  employing lakhs; a sudden ban destroys livelihoods* (proportionate,
+  factual — **strong**).
+
+## 2. Three Classic Weak-Argument Species
+
+[definition]
+**Circular argument** — the conclusion sneaks into the premise
+("private tuition should be banned because tutoring outside school
+is wrong"). **Distant/diverted argument** — attacks something
+adjacent (the cost of marker pens, in an online-exam debate).
+**Absolutist argument** — claims too much ("ALL students hate
+exams") and can be refuted by one counterexample.
+[/definition]
+
+Exams re-test these three endlessly because each *sounds* forceful.
+The counter-move: read the argument asking "could this be true and
+the proposal still be fine?" — if yes, the argument is weak.
+
+## 3. Statement and Inference: What MUST Follow
+
+Inference questions flip the power balance: you are no longer
+weighing arguments but checking entailment. The standard options:
+
+- **Definitely true** — the statement forces it (no outside
+  knowledge needed).
+- **Probably true** — statement supports but does not force it.
+- **Definitely false** — statement rules it out.
+- **Probably false** — statement leans against it.
+- **Data inadequate** — the statement is silent.
+
+**Worked example.** Statement: *Every applicant who cleared the
+interview had either a postgraduate degree or three years of work
+experience; Ravi cleared the interview.*
+
+- *Ravi has a postgraduate degree* — not forced (experience was the
+  alternative) — **data inadequate**, even though it *probably*
+  tempts.
+- *Ravi does not have both a degree and experience* — nothing rules
+  out having both — **data inadequate**.
+- *Ravi was interviewed* — forced by "cleared the interview" —
+  **definitely true**.
+
+[tip]
+Inference answers travel only *downward* from general to specific.
+"Every A has B or C" tells you about each A; it never tells you
+which branch each A took. Draw the Venn in your head before reading
+the options.
+[/tip]
+
+## 4. Syllogistic Inference Patterns
+
+| Pattern | Valid form | Classic trap |
+| --- | --- | --- |
+| Modus ponens | All A are B; x is A — so x is B | Reading "All A are B" as "All B are A" (illicit conversion) |
+| Modus tollens | All A are B; x is not B — so x is not A | Denying the antecedent: x not A, so x not B (INVALID) |
+| Some-statements | Some A are B — gives only overlap | "Some A are B" + "Some B are C" — conclude NOTHING forced |
+| Negations | No A are B — so No B are A (valid) | "No A are B" + "x is B" — so x is not A (valid; underused) |
+
+**Worked example.** *All diabetics are patients; some patients are
+children.* Conclusion options: (I) *Some diabetics are children* —
+nothing forces the overlap to include diabetics — invalid. (II)
+*All children are patients* — reverses a "some" — invalid. (III)
+*Some patients are diabetics* — valid conversion — **follows**.
+
+## 5. Statement and Conclusion vs Statement and Inference
+
+The two question brands differ in strictness:
+
+- **Statement and conclusion:** usually multiple statements and
+  multiple conclusions; judge each independently, "follows / does not
+  follow".
+- **Statement and inference:** degree language (definitely /
+  probably / inadequate); the answer set forces you to commit to a
+  level of certainty, not just yes/no.
+
+Both punish the same sin: importing your own knowledge. If the
+statement never mentions cricket, the correct answer cannot depend
+on cricket — no matter how true your cricket "fact" feels.
+
+[example]
+Statement: *The municipal corporation will fine any household whose
+water connection is illegal, after a survey beginning next month.*
+
+- *Some households have illegal connections* — implied by the
+  scheme's design (why fine otherwise?), but is it *forced*? A law
+  may be preventive — exams here accept "probably true", not
+  "definitely true".
+- *Households surveyed before next month face no fine* — the fine
+  applies after the survey begins — "definitely true" in standard
+  answer keys.
+- *The corporation needs revenue* — motive speculation — data
+  inadequate.
+
+Reading the fine's trigger conditions — "after a survey beginning
+next month" — does the work; every trap option plays on motive
+instead of mechanics.
+[/example]
+
+## 6. Strategy Summary
+
+1. **Bracket the proposal** — know exactly what is being argued
+   before touching the options.
+2. For arguments: run the five filters (relevance,
+   representativeness, evidence, proportion, tone) — an argument
+   failing two or more is weak.
+3. For inferences: hunt the *forced* conclusion; when not forced,
+   decide between "probably" and "data inadequate" by asking whether
+   the statement even speaks to the claim.
+4. **Never import outside facts** — the statement is a closed
+   universe.
+5. Eliminate in pairs: two options often mirror each other
+   (definitely/probably true); the mirror tells you what the examiner
+   considers the decision point.
+
+[summary]
+Statement-and-argument questions score reasoning quality: strong
+arguments are relevant, representative, evidenced, proportionate,
+and measured; weak ones are circular, diverted, absolutist, or
+emotional. Statement-and-inference questions score entailment:
+"definitely true" must be forced by the statement alone, "probably
+true" is supported but not compelled, and "data inadequate" marks
+silence — outside knowledge never enters. Syllogistic discipline
+(valid conversion, modus tollens, the nothing-forcing power of
+"some") plus option-pair elimination turns both formats into
+mechanical checks. Judge the reasoning, not the opinion; extract
+only what is forced, and note what the statement carefully never
+says.
+[/summary]

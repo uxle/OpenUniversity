@@ -1,0 +1,154 @@
+# Financial Markets: Where Savings Meet Borrowers
+
+> Money that sits idle earns nothing; money that moves builds
+> factories, homes, and retirements. Financial markets are the
+> plumbing that channels savings to their most productive uses —
+> through stocks, bonds, mutual funds, and the regulators (RBI,
+> SEBI) who keep the pipes honest.
+
+## 1. The Purpose of Finance
+
+[definition]
+**Financial markets** transfer funds from **surplus units**
+(savers — households) to **deficit units** (borrowers — firms,
+government) — directly (shares, bonds) through **capital markets**
+or indirectly through **intermediaries** (banks) — in exchange for
+returns: interest, dividends, or capital gains.
+[/definition]
+
+| Market | Trades | Maturity | Example venue |
+| --- | --- | --- | --- |
+| Money market | Short-term debt | < 1 year | Call money, T-bills, commercial paper |
+| Capital market | Equity + long-term debt | > 1 year | NSE, BSE, corporate bond market |
+| Forex market | Currencies | Spot/forward | Interbank |
+| Derivatives market | Contracts on underlying | Varies | NSE derivatives segment |
+
+## 2. Equities: Ownership Shares
+
+A **share** is part-ownership: entitlement to dividends (from
+profits), voting rights, and residual claims. Prices aggregate
+crowd beliefs about future earnings, which is why news moves them
+instantly.
+
+- **Primary market** — IPOs and follow-ons: the company itself
+  receives the money.
+- **Secondary market** — exchanges (BSE — Asia's oldest, 1875; NSE
+  — 1992, electronic from birth) where existing shares change
+  hands; the company gets nothing, but liquidity is what makes
+  people willing to buy in the first place.
+
+**Indices** summarise the market: **SENSEX** (30 BSE blue chips)
+and **NIFTY 50** (NSE). Both are free-float market-capitalisation
+weighted — bigger companies move them more.
+
+[tip]
+Price–earnings ratio (P/E) = price per share ÷ earnings per share.
+A P/E of 20 says buyers pay ₹20 for each ₹1 of annual profit —
+willingness to pay for growth, or overvaluation, depending on
+whose story you believe.
+[/tip]
+
+## 3. Debt: The Bond and Its Seesaw
+
+A **bond** is a loan in tradeable form: coupons (interest) plus
+principal at maturity.
+
+@math label="eq:yield-price"
+\text{Price} \;\uparrow \;\Longleftrightarrow\; \text{Yield} \;\downarrow
+@/math
+
+Buy a ₹1,000 bond paying ₹80; if market rates rise to 10%, new
+buyers demand ₹100 — your older ₹80 bond must be cheap enough (₹800)
+to match. **Bond prices and yields move opposite ways** — the
+single most-asked exam fact in finance.
+
+| Instrument | Issuer | Risk |
+| --- | --- | --- |
+| T-bills / G-secs | Government of India | Lowest (sovereign) |
+| State development loans | State governments | Low |
+| Corporate bonds / CPs | Companies | Credit-rated, higher |
+| Municipal bonds | Urban local bodies | Varies |
+
+## 4. Intermediaries and Institutions
+
+- **Banks** (see the Banking & RBI lesson) — the indirect channel:
+  deposits transformed into loans, with maturity transformation and
+  diversification.
+- **Mutual funds** pool small savings: **NAV** = (assets −
+  liabilities) ÷ units; equity funds, debt funds, hybrid funds;
+  Systematic Investment Plans (SIPs) ride **rupee-cost averaging**.
+- **Insurance and pension funds** (LIC, EPFO, NPS) — long-horizon
+  money that owns much of the market.
+- **Brokers, depositaries (NSDL/CDSL — demat accounts)**, and
+  **market makers** keep the machinery running.
+
+@chart donut title="Stylised ownership of Indian equities (approximate)"
+labels:
+Domestic institutions
+Foreign portfolio investors
+Retail & HNI
+Promoters & others
+
+data:
+15
+18
+9
+58
+@/chart
+
+## 5. The Regulators
+
+| Regulator | Domain | Key statute |
+| --- | --- | --- |
+| **RBI** (1935) | Banks, money market, G-secs, payments, forex | RBI Act 1934, Banking Regulation Act 1949 |
+| **SEBI** (1988 stat.; 1992 statutory) | Securities market: exchanges, brokers, IPOs, mutual funds, FPIs, insider trading | SEBI Act 1992 |
+| **IRDAI** (1999) | Insurance | IRDA Act 1999 |
+| **PFRDA** (2003/14) | Pensions (NPS) | PFRDA Act 2013 |
+
+[important]
+**SEBI's mandate:** protect investors, develop the market, and
+regulate it — through disclosure-driven IPO norms (DRHP → SEBI
+observations → listing), **Prohibition of Insider Trading
+regulations**, **FPI registration**, takeover codes, and
+surveillance (price bands, circuit breakers, ASM lists). The
+**grievance redressal** SCORES system takes investor complaints.
+[/important]
+
+## 6. Instruments Beyond Stocks and Bonds
+
+- **Derivatives** — futures (obligation) and options (right, not
+  obligation): hedging for farmers, exporters, and fund managers;
+  zero-sum speculation on the other side. Basis = spot − future.
+- **InvITs/REITs** — fractional ownership of infrastructure and
+  real estate income streams.
+- **AIFs, PMS** — the sophisticated-money lane.
+- **Gold (Sovereign Gold Bonds) and crypto** — alternative assets
+  outside SEBI's equity world (crypto regulated as VDA under PMLA,
+  30% tax).
+
+## 7. Behaviour, Bubbles, and the Long Run
+
+- **Compounding:** ₹10,000/year for 30 years at 12% ≈ ₹144 lakh —
+  time in the market beats timing the market.
+- **Bubbles:** South Sea (1720), dot-com (2000), and every
+  "this time is different" — prices detach from earnings; SEBI's
+  surveillance and margin systems try to soften, not abolish, the
+  cycle.
+- **Systemic risk:** one default cascading (IL&FS 2018, Yes Bank
+  2020 rescues) — the reason RBI stress-tests and deposit insurance
+  (DICGC, ₹5 lakh) exist.
+- **Financial inclusion** completes the design: UPI made payments
+  universal; the next frontier is bringing the last 200 million
+  savers into formal markets via SIPs and NPS.
+
+[summary]
+Financial markets move savings to their highest-valued use: equity
+markets (NSE/BSE) sell ownership, debt markets trade bonds whose
+prices move inversely to yields, and intermediaries — banks, mutual
+funds, insurers, pension funds — do the pooling. RBI governs money
+and banks; SEBI polices securities with a
+protect-develop-regulate charter; IRDAI and PFRDA complete the
+oversight. Derivatives manage risk, indices summarise sentiment,
+compounding rewards patience, and regulators stand between
+exuberance and systemic collapse.
+[/summary]

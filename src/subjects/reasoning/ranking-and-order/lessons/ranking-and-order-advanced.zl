@@ -1,0 +1,169 @@
+# Ranking and Order Advanced: Comparisons, Intersections, and Mixed Lines
+
+> Basics gave you one line and direct positions. Advanced ranking
+> multiplies the complexity three ways: **comparison chains** ("A is
+> taller than B but shorter than C"), **two-line setups** (a row and
+> a queue, or two rows facing each other), and **interlocking
+> conditions** where several order facts must combine before any
+> question is answerable. The tools stay arithmetic — they just get
+> chained.
+
+[important]
+The discipline that earns marks here: convert every comparison
+sentence into an inequality immediately — "$A > B$", "$C < D$" —
+and merge them into one chain before reading the question. Half
+the options in an advanced puzzle test whether you merged the
+chain correctly, not whether you can count.
+[/important]
+
+## 1. Comparison Chains: Sorting People by Quality
+
+**Worked example.** Five friends compare weights: R is heavier than
+S but lighter than T; T is lighter than M; M is lighter than nobody.
+Who is second heaviest?
+
+Sentences to inequalities:
+
+@math label="eq:chain-1"
+T > R > S, \quad M > T
+@/math
+
+Merging: $M > T > R > S$ (the fifth friend slots wherever a later
+clue puts her). Second heaviest: **T**.
+
+**Worked example (interlocking).** Five students compare exam
+scores: A scores more than B; R scores less than S; B scores more
+than S; T scores less than R. Who is the topper, and who stands
+in the middle?
+
+Convert every sentence on sight:
+
+@math label="eq:chain-2"
+A > B, \quad S > R, \quad B > S, \quad R > T
+@/math
+
+Now merge through the anchor letters: $B$ links to both $A$ and
+$S$; $R$ links to both $S$ and $T$. Full chain:
+
+@math label="eq:chain-merged"
+A > B > S > R > T
+@/math
+
+Topper: **A**, middle: **S**, last: **T**. Note the reading trap:
+"R scores less than S" had to be written $S > R$ (subject-first
+habits flip signs) — every conversion error upstream destroys
+the merge downstream.
+
+[tip]
+Merging tip: write the chain vertically, one letter per line, and
+insert each new inequality by finding an anchor letter already
+placed. Contradictions mean a flipped inequality in YOUR notes far
+more often than a flawed question.
+[/tip]
+
+## 2. "As Many Above as Below": Equations from Positions
+
+Statements like "there are as many people above X as below Y"
+convert into floor/position equations:
+
+@math label="eq:balance"
+\text{top} - \text{pos}(X) = \text{pos}(Y) - 1
+@/math
+
+**Worked example.** In a 9-floor building, there are as many floors
+above X's floor as below Y's; X lives on floor 3. Then
+$9 - 3 = \text{pos}(Y) - 1$, so Y lives on floor 7. The equation
+does everything; the trap is forgetting that "below floor f" counts
+$f - 1$ floors, not $f$.
+
+## 3. Two-Line Arrangements
+
+Two parallel lines — a row of boys and a row of girls, or two queues
+— link through "facing each other" or positional pairing:
+
+- **Facing rows:** person 1 from the left in row A faces person N
+  from the left in row B (if B faces the opposite way). Pairing:
+  $\text{pos}_A + \text{pos}_B = N + 1$.
+- **Paired queues:** "the 4th person in queue 1 corresponds to the
+  4th in queue 2" — positions match by index, no reversal.
+- **Cross-references:** "the girl behind the boy who is 6th" — hop
+  lines with an explicit arrow, never from memory.
+
+**Worked example.** 6 boys face 6 girls. Amit is 3rd from the left
+among boys. The girl facing him is:
+
+@math label="eq:facing"
+\text{pos}_{\text{girls}} = 6 + 1 - 3 = 4 \text{ from the girls' left}
+@/math
+
+...only if the girls face the boys' direction of counting — which
+is why the facing convention must be extracted from the puzzle's
+own sentence before any arithmetic.
+
+## 4. Ranking with Gaps and Vacancies
+
+Advanced puzzles add vacant seats, absent students, or floors
+skipped:
+
+**Worked example.** In a 40-seat row, seats 12 and 27 are broken.
+Where is the person "15th from the left among occupied seats"?
+Counting occupied seats: seats 1-11 (11 people), skip 12, so
+occupied #12 = seat 13, #13 = seat 14, ... occupied #15 = seat 16.
+Convert the person-rank to a seat-rank by adding the number of
+broken seats at or before it — and re-check after every skip.
+
+## 5. Comparison + Position Hybrids
+
+The hardest questions chain a comparison and a position:
+
+**Worked example.** In a merit list, P is 5th from the top. Q is
+three ranks below P. R is above Q but below P, and no one stands
+between R and P. Then R is 6th, Q is 8th; and S, who is exactly
+between Q and the bottom of a 12-person list, is 10th — every
+question about "who is 7th" now answers itself (nobody named —
+data inadequate). Expect the options to include the "obvious" 7th
+from misreading R's position; anchor each rank on paper before
+option-matching.
+
+[example]
+A full hybrid in six sentences: five boxes A-E in a stack, bottom
+seat numbered 1. E is at the bottom; C is second from the top; B
+is above E but below C; D is immediately above B; A is not
+adjacent to E. Fix the anchors: E = 1, C = 4, so B must be 2 or 3.
+D immediately above B: if B = 3, D = 4 — occupied by C, so
+B = 2 and D = 3. The only seat left for A is 5, which is not
+adjacent to E (seat 1) — consistent. Final stack, bottom to top:
+E, B, D, C, A. The lesson: anchors first (E, C), then constrained
+pairs (B, D), then verify the leftover (A) against the negative
+clue — six sentences, one unique answer, zero trial and error.
+[/example]
+
+## 6. Strategy Summary
+
+1. Inequality-convert every comparison sentence on sight.
+2. Merge chains via anchor letters; check for accidental flips on
+   any contradiction.
+3. Turn "as many above as below" into an equation with top and
+   bottom explicitly written.
+4. Two-line puzzles: extract the facing convention FIRST, then
+   $\text{pos}_A + \text{pos}_B = N + 1$ (facing) or index-matching
+   (parallel).
+5. Gaps: convert person-ranks to seat-ranks by adding skips
+   encountered; re-verify after each broken seat.
+6. Hybrids: fix all positional anchors before answering
+   comparison questions; treat "nobody" as a legitimate answer.
+
+[summary]
+Advanced ranking stacks three devices on the basics: comparison
+chains (convert to inequalities, merge through anchors, expect one
+apparent contradiction that dissolves on re-reading), balance
+equations ("as many above X as below Y" becomes
+$\text{top} - \text{pos}(X) = \text{pos}(Y) - 1$), and two-line
+arrangements (facing rows pair as
+$\text{pos}_A + \text{pos}_B = N + 1$; parallel queues match by
+index). Vacant seats convert person-ranks to seat-ranks, and hybrid
+puzzles insist on fixing every positional anchor before any
+comparison question is answered. One theme runs through it all:
+write every relation as arithmetic you can see, because the options
+are designed to punish chains held only in the head.
+[/summary]

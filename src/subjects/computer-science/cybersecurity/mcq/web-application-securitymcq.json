@@ -1,0 +1,76 @@
+{
+  "lessonId": "web-application-security",
+  "title": "Web Application Security: Thinking Like an Attacker",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The core defense against SQL injection is:",
+      "options": ["Escaping quotes manually", "Parameterised queries / prepared statements — data never becomes code", "Hiding database errors", "Using NoSQL"],
+      "correct": 1,
+      "rationale": "Parameterisation sends the query structure and the data separately, so an attacker's payload can only ever be compared as data, never executed as SQL."
+    },
+    {
+      "id": 2,
+      "question": "A stored XSS vulnerability means:",
+      "options": ["The server's disk is corrupted", "Attacker-supplied script is saved and later executed in other users' browsers", "Passwords are stored unencrypted", "The browser caches the page"],
+      "correct": 1,
+      "rationale": "A malicious payload persisted in a comment or profile runs in every visitor's session — the reason output must be escaped and CSP set."
+    },
+    {
+      "id": 3,
+      "question": "Which defense pairs with output escaping to stop XSS?",
+      "options": ["Longer passwords", "Content-Security-Policy restricting script sources (no inline scripts)", "Rate limiting", "HTTPS only"],
+      "correct": 1,
+      "rationale": "CSP is defence in depth: even if escaping misses a context, the browser refuses to run scripts from unlisted origins."
+    },
+    {
+      "id": 4,
+      "question": "IDOR (Insecure Direct Object Reference) is best described as:",
+      "options": ["Guessing weak passwords", "Changing an ID in a URL/API to access another user's record", "Injecting SQL into a URL", "Flooding a server with requests"],
+      "correct": 1,
+      "rationale": "The server hands back object 1044 just because it was asked — the fix is verifying ownership/authorisation server-side on every request; UUIDs help but don't authorise."
+    },
+    {
+      "id": 5,
+      "question": "Which cookie flags protect a session cookie?",
+      "options": ["Path=/", "HttpOnly, Secure, SameSite", "Domain=.com", "Expires=never"],
+      "correct": 1,
+      "rationale": "HttpOnly blocks JavaScript (XSS) from reading it, Secure confines it to HTTPS, and SameSite blocks cross-site sends (CSRF)."
+    },
+    {
+      "id": 6,
+      "question": "CSRF attacks are primarily mitigated by:",
+      "options": ["Parameterised SQL", "SameSite cookies plus per-form CSRF tokens", "CSP headers", "bcrypt hashing"],
+      "correct": 1,
+      "rationale": "CSRF abuses the browser auto-sending cookies cross-site; SameSite stops that, and tokens prove the request came from your own form. Note: CSRF tokens don't help against XSS."
+    },
+    {
+      "id": 7,
+      "question": "Passwords should be stored using:",
+      "options": ["SHA-1", "MD5 with a fixed salt", "A slow, salted hash like bcrypt or argon2", "Reversible encryption"],
+      "correct": 2,
+      "rationale": "Slow hashes with per-user salts make offline guessing astronomically expensive; MD5/SHA-1 are fast and collision-prone; encryption is for data you must read back — passwords aren't."
+    },
+    {
+      "id": 8,
+      "question": "SSRF (Server-Side Request Forgery) is dangerous because:",
+      "options": ["It steals CSS files", "The server can be tricked into fetching internal URLs (e.g., cloud metadata endpoints) on the attacker's behalf", "It overflows the server's RAM", "It only affects client browsers"],
+      "correct": 1,
+      "rationale": "A URL-fetch feature becomes a pivot into the internal network — defences include allow-lists of destinations and blocking link-local/metadata addresses."
+    },
+    {
+      "id": 9,
+      "question": "'Mass assignment' vulnerability refers to:",
+      "options": ["Sending too many requests", "An API blindly copying user-submitted fields into an object — e.g., setting role: admin", "Assigning memory unsafely", "Storing files in bulk"],
+      "correct": 1,
+      "rationale": "The fix is an allow-list of updatable fields; trusting the request body's shape lets attackers write to fields they should never touch."
+    },
+    {
+      "id": 10,
+      "question": "Which practice reflects 'defence in depth'?",
+      "options": ["Relying on one strong firewall", "Layering parameterised queries + least-privilege DB accounts + output escaping + CSP, so one failure isn't fatal", "Security through obscurity", "Trusting client-side validation"],
+      "correct": 1,
+      "rationale": "Every layer will eventually fail; layered, independent controls ensure a single bypass doesn't become a full compromise."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+# Time, Speed and Distance: Trains, Boats, and Relative Motion
+
+> A train takes 9 seconds to pass a pole and 21 to enter a tunnel
+> completely — how fast is it moving, and how long is the tunnel? The
+> entire chapter hangs on one equation, $\text{distance} =
+> \text{speed} \times \text{time}$, plus the discipline to measure the
+> *right* distance. Trains bring their own length; boats bring the
+> stream; two moving objects bring relative speed.
+
+## 1. The Master Equation and Unit Sense
+
+[definition]
+Distance, speed, and time obey $D = S \times T$. Speeds convert
+between the two common unit systems by:
+[/definition]
+
+@math label="eq:kmh-ms"
+1\ \text{km/h} = \frac{5}{18}\ \text{m/s}, \qquad 1\ \text{m/s} = \frac{18}{5}\ \text{km/h}
+@/math
+
+So $72\ \text{km/h} = 72 \times \frac{5}{18} = 20\ \text{m/s}$ — and
+every train problem in metres and seconds begins with this conversion.
+
+**Worked example.** A car covers $150\ \text{km}$ at $50\ \text{km/h}$
+and the next $150\ \text{km}$ at $75\ \text{km/h}$ — average speed is
+total distance over total time
+$\frac{300}{3+2} = 60\ \text{km/h}$ (not $62.5$).
+
+## 2. Trains: The Four Distances
+
+| Situation | Distance to cover | Time |
+| --- | --- | --- |
+| Train passes a pole/man | length of train $L$ | $t = \frac{L}{v}$ |
+| Train passes a platform/bridge | $L + L_{\text{platform}}$ | $t = \frac{L + L_p}{v}$ |
+| Overtakes a moving man/object (same direction) | $L + L_{\text{obj}}$ at relative speed $v_1 - v_2$ | as below |
+| Crosses an oncoming train | $L_1 + L_2$ at relative speed $v_1 + v_2$ | $t = \frac{L_1+L_2}{v_1+v_2}$ |
+
+[important]
+A train "passes" a point object when its **nose** to **tail** sweeps
+past — hence the train's own length; it "crosses" a platform only
+when its tail clears the far end — hence both lengths. Identifying
+which distance the question means is 80 percent of the battle.
+[/important]
+
+**Worked example.** A $240\ \text{m}$ train passes a pole in
+$12\ \text{s}$: speed $= 20\ \text{m/s} = 72\ \text{km/h}$. Passing a
+$210\ \text{m}$ platform takes
+$\frac{240+210}{20} = 22.5\ \text{s}$.
+
+**Worked example (two trains).** Trains $140\ \text{m}$ and
+$160\ \text{m}$ long run at $54\ \text{km/h}$ ($15\ \text{m/s}$) and
+$36\ \text{km/h}$ ($10\ \text{m/s}$) toward each other. Crossing time:
+
+@math label="eq:two-trains"
+t = \frac{140+160}{15+10} = \frac{300}{25} = 12\ \text{s}
+@/math
+
+Same direction (faster behind): relative speed $5\ \text{m/s}$, time
+$60\ \text{s}$.
+
+## 3. Boats and Streams
+
+[definition]
+Let the boat's speed in still water be $b$ and the stream's speed be
+$s$. Downstream (with the current) the boat moves at $b+s$; upstream
+(against) at $b-s$.
+[/definition]
+
+@math label="eq:boat-derive"
+b = \frac{d + u}{2}, \qquad s = \frac{d - u}{2}
+@/math
+
+where $d$ and $u$ are the observed downstream and upstream speeds.
+
+**Worked example.** A boat travels $24\ \text{km}$ downstream in
+$3\ \text{h}$ ($d = 8$) and the same distance upstream in $6\ \text{h}$
+($u = 4$). Then $b = 6\ \text{km/h}$ and $s = 2\ \text{km/h}$.
+
+**Worked example (zero displacement).** A man rows $35\ \text{km}$
+downstream and back in 12 hours total; the stream runs $3\ \text{km/h}$.
+With $b$ the still-water speed:
+
+@math label="eq:boat-round"
+\frac{35}{b+3} + \frac{35}{b-3} = 12 \Rightarrow b = 7\ \text{km/h}
+@/math
+
+(One rejects the inadmissible root $b < 3$.)
+
+## 4. Relative Speed and Escape Problems
+
+- **Same direction:** relative speed $= |v_1 - v_2|$
+- **Opposite directions:** relative speed $= v_1 + v_2$
+- **At an angle** (rare in exams): relative speed via vector sum.
+
+**Classic catch-up.** A thief runs at $8\ \text{m/s}$ with a
+$200\ \text{m}$ head start; police pursue at $10\ \text{m/s}$. The gap
+closes at $2\ \text{m/s}$, so capture occurs
+$\frac{200}{2} = 100\ \text{s}$ later — distance run by police:
+$1000\ \text{m}$.
+
+## 5. Clock-Hand Distances and Ratio Speeds
+
+Two ratio facts power a family of shortcuts:
+
+- If speeds are in ratio $a:b$, times for the same distance are in
+  ratio $b:a$.
+- If A's speed is $\frac{1}{x}$ of B's, A's time is $x$ times B's.
+
+**Worked example.** Walking at $\frac{4}{5}$ of his usual speed a man
+is 15 minutes late. Usual time $t$ satisfies
+$\frac{5}{4}t = t + 15$, so $t = 60$ minutes.
+
+**Worked example (meeting point).** Two trains start toward each other
+from $A$ and $B$, $300\ \text{km}$ apart, at speeds $50$ and
+$100\ \text{km/h}$. They meet after
+$\frac{300}{150} = 2\ \text{h}$ at $100\ \text{km}$ from $A$ —
+distances divide in the speed ratio $1:2$, no algebra needed.
+
+[example]
+A $270\ \text{m}$-long train running at $120\ \text{km/h}$ overtakes a
+cyclist riding at $12\ \text{km/h}$ along a parallel track. Train
+speed $= 33.33\ \text{m/s}$, cyclist $= 3.33\ \text{m/s}$, relative
+$= 30\ \text{m/s}$. Time to pass:
+$\frac{270}{30} = 9\ \text{s}$. Notice how the friendly
+$5/18$ conversion turned $108\ \text{km/h}$ of relative speed into a
+clean $30\ \text{m/s}$.
+[/example]
+
+[summary]
+One equation — $D = S \times T$ — with the right distance and the
+right (relative) speed answers everything. Convert units with
+$\frac{5}{18}$, add lengths for trains crossing objects, add speeds
+for opposite directions and subtract for same. Boats gain the stream
+downstream and lose it upstream, with $b = \frac{d+u}{2}$ and
+$s = \frac{d-u}{2}$. Average speed is total distance over total time
+(the harmonic mean for equal legs), times invert speed ratios, and
+head-start problems are gap-closing at the relative speed. Measure
+what actually moves past what, and the chapter solves itself.
+[/summary]

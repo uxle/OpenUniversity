@@ -1,0 +1,126 @@
+{
+  "lessonId": "coordination-compounds",
+  "title": "Coordination Compounds: The Chemistry of Metal Complexes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the complex [Co(NH3)6]Cl3, the coordination number of cobalt and the oxidation state of cobalt are respectively:",
+      "options": [
+        "3 and +6",
+        "6 and +3",
+        "6 and +2",
+        "4 and +3"
+      ],
+      "correct": 1,
+      "rationale": "Six ammine ligands surround the metal, so the coordination number is 6 (octahedral). The complex cation carries a +3 charge with neutral NH3 ligands, so cobalt is in the +3 oxidation state."
+    },
+    {
+      "id": 2,
+      "question": "How many ions per formula unit does CoCl3·5NH3, i.e. [Co(NH3)5Cl]Cl2, give in aqueous solution?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": 1,
+      "rationale": "The complex ion [Co(NH3)5Cl](2+) is a single entity; only the two outer chlorides ionise. Total particles: 1 complex cation + 2 chloride anions = 3 ions. Werner verified this by precipitating only 2 of the 3 chlorides with AgNO3."
+    },
+    {
+      "id": 3,
+      "question": "EDTA(4-) is classified as which type of ligand?",
+      "options": [
+        "Monodentate",
+        "Bidentate",
+        "Hexadentate",
+        "Ambidentate"
+      ],
+      "correct": 2,
+      "rationale": "EDTA4- donates through six donor atoms (two nitrogens and four carboxylate oxygens), wrapping the metal like a claw. This hexadentate chelation is why EDTA complexes are exceptionally stable."
+    },
+    {
+      "id": 4,
+      "question": "The IUPAC name of K4[Fe(CN)6] is:",
+      "options": [
+        "Potassium hexacyanoferrate(II)",
+        "Potassium hexacyanidoferrate(II)",
+        "Potassium hexacyanideiron(II)",
+        "Tripotassium hexacyanoferrate(IV)"
+      ],
+      "correct": 1,
+      "rationale": "Cation first (potassium), then the anionic complex with ligand names ending in -ido (hexacyanido), and an anionic metal takes the -ate suffix with its oxidation state: ferrate(II). Hence potassium hexacyanidoferrate(II)."
+    },
+    {
+      "id": 5,
+      "question": "Which pair represents ionisation isomers?",
+      "options": [
+        "cis- and trans-[Pt(NH3)2Cl2]",
+        "[Co(NH3)5Br]SO4 and [Co(NH3)5SO4]Br",
+        "[Co(NH3)6][Cr(CN)6] and [Cr(NH3)6][Co(CN)6]",
+        "M-SCN and M-NCS bonded complexes"
+      ],
+      "correct": 1,
+      "rationale": "Ionisation isomers swap a ligand between the inner sphere and the ionisable counter-ion position: one releases Br- and the other releases SO4(2-) with AgNO3 or BaCl2 tests. Same overall formula, different ions in solution."
+    },
+    {
+      "id": 6,
+      "question": "[Ni(CO)4], [Ni(CN)4]2-, and [NiCl4]2- respectively show which geometries?",
+      "options": [
+        "Square planar, tetrahedral, octahedral",
+        "Tetrahedral, square planar, tetrahedral",
+        "Tetrahedral, octahedral, square planar",
+        "All three are tetrahedral"
+      ],
+      "correct": 1,
+      "rationale": "Ni(CO)4 uses sp3 hybrids (tetrahedral, zero-valent nickel). Strong-field CN- pairs the electrons into dsp2 hybrids for square planar [Ni(CN)4]2-. Weak-field Cl- leaves sp3 tetrahedral [NiCl4]2- — magnetic and spectral data confirm all three."
+    },
+    {
+      "id": 7,
+      "question": "Which ligand produces the LARGEST crystal field splitting in an octahedral complex?",
+      "options": [
+        "I-",
+        "H2O",
+        "NH3",
+        "CN-"
+      ],
+      "correct": 3,
+      "rationale": "The spectrochemical series places CN- (and CO) at the strong-field extreme, well beyond NH3, H2O and the weak halides. Larger splitting means low-spin configurations and strong d-d absorption shifted to shorter wavelengths."
+    },
+    {
+      "id": 8,
+      "question": "A d6 metal ion in a weak octahedral field has how many unpaired electrons?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correct": 2,
+      "rationale": "Weak field means small splitting, so electrons occupy all five d orbitals before pairing (high spin): t2g holds 4 electrons (one pair + two singles) and eg holds 2 singles, giving 4 unpaired electrons and strong paramagnetism."
+    },
+    {
+      "id": 9,
+      "question": "Why are complexes of d0 and d10 metal ions usually colourless?",
+      "options": [
+        "They absorb all visible light",
+        "No d-d transition is possible",
+        "They are always tetrahedral",
+        "Their ligands are weak-field"
+      ],
+      "correct": 1,
+      "rationale": "Colour in complexes arises from d-d transitions across the crystal-field gap. With an empty (d0) or completely filled (d10) d set there is no vacant destination for the electron, so no visible absorption and no colour — as in Zn2+ and Sc3+ salts."
+    },
+    {
+      "id": 10,
+      "question": "Carbon monoxide poisoning occurs because CO bound to haemoglobin's Fe(II):",
+      "options": [
+        "Oxidises Fe(II) to Fe(III)",
+        "Binds about 200 times more strongly than oxygen and blocks O2 transport",
+        "Destroys the porphyrin ring",
+        "Chelates through both C and O atoms"
+      ],
+      "correct": 1,
+      "rationale": "CO is a strong-field ligand forming a very stable carbonyl-type bond with the haem iron, outcompeting oxygen roughly 200:1. The blocked sites can no longer carry O2, causing oxygen starvation — the core of CO toxicity."
+    }
+  ]
+}

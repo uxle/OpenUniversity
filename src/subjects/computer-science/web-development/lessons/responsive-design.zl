@@ -1,0 +1,171 @@
+# Responsive Design: One Site, Every Screen
+
+> A phone is 360 CSS pixels wide; a desktop monitor, 1920 or more.
+> Building separate mobile and desktop sites died a decade ago — the
+> modern answer is **responsive design**: one flexible layout that
+> reflows itself to fit any screen, the way water takes the shape of
+> its glass.
+
+## 1. The Mobile-First Mindset
+
+[definition]
+**Responsive web design** (Ethan Marcotte, 2010) = **fluid grids +
+flexible media + media queries** — a single HTML document whose
+layout adapts to the viewport instead of maintaining separate mobile
+and desktop pages.
+[/definition]
+
+Over half of web traffic is phones; Google indexes **mobile-first**.
+So the workflow inverts: design the narrow layout first, then
+layer on enhancements (`min-width` media queries) as space grows.
+Starting wide and "shrinking down" tends to leave cramped
+afterthoughts.
+
+## 2. The Viewport: Where Geometry Begins
+
+```html
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+```
+
+Without this meta tag, phones pretend to be 980 px wide and zoom
+out — your media queries never fire as intended. With it, the
+browser's CSS width equals the real device width, and 1 CSS pixel
+maps predictably to physical pixels.
+
+## 3. Fluid Units: The End of Fixed Pixels
+
+Fixed widths (`width: 960px`) break the moment the screen is 360 px.
+Fluid units adapt:
+
+| Unit | Meaning | Use for |
+| --- | --- | --- |
+| `%` | Relative to parent | Column widths |
+| `em` / `rem` | Relative to font size (rem = root) | Spacing, type scale |
+| `vw` / `vh` | 1% of viewport width / height | Hero sections |
+| `fr` | Fraction of free space (grid) | Track sizing |
+| `clamp(min, ideal, max)` | Fluid value with bounds | Font sizes, padding |
+
+```css
+/* Grows smoothly 1rem → 1.25rem between 360px and 1200px viewports */
+h1 { font-size: clamp(1rem, 0.8rem + 1vw, 1.25rem); }
+
+/* Container breathes with the screen */
+.container { width: min(100% - 2rem, 68rem); margin-inline: auto; }
+```
+
+Flexible media round out the technique:
+
+```css
+img, video { max-width: 100%; height: auto; }
+```
+
+## 4. Media Queries: Layout Checkpoints
+
+```css
+/* Base styles = mobile. Enhance upward: */
+.card-grid { display: grid; gap: 1rem; }
+
+@media (min-width: 600px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .card-grid { grid-template-columns: repeat(4, 1fr); }
+}
+```
+
+[important]
+Query by **content behaviour**, not device names. "iPhone 14" widths
+change yearly; "the point where two columns start feeling cramped"
+is stable. Common breakpoints — small < 600, medium 600–1000, large
+> 1000 CSS px — are conventions, not laws. And there are no rules
+at all without the viewport meta tag: it is the foundation media
+queries stand on.
+[/important]
+
+## 5. Modern Layout: Flexbox and Grid
+
+Two systems now do the heavy lifting, replacing float hacks:
+
+- **Flexbox** — one dimension: rows *or* columns. Toolbars, nav
+  bars, cards in a strip.
+
+```css
+.nav { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.nav .spacer { margin-left: auto; }   /* pushes the rest right */
+```
+
+- **Grid** — two dimensions: rows *and* columns, with named areas
+  that redefine themselves per breakpoint:
+
+```css
+.layout { display: grid;
+  grid-template-areas: "nav" "main" "aside"; }
+@media (min-width: 900px) {
+  .layout { grid-template-areas: "nav nav" "aside main";
+            grid-template-columns: 260px 1fr; }
+}
+```
+
+The `auto-fill` + `minmax` combo builds layouts that need **no media
+queries at all** — the grid simply fits as many cards as the width
+allows:
+
+```css
+.cards { display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); }
+```
+
+@diagram flowchart id="responsive-decisions" layout="hierarchical" aria="Choosing a responsive strategy"
+  node fluid label="Fluid units (%, rem, clamp, vw)" shape="round-rect"
+  node flex label="Flexbox — 1D rows/strips" shape="round-rect"
+  node grid label="Grid — 2D areas" shape="round-rect"
+  node mq label="Media queries — content checkpoints" shape="diamond"
+
+  fluid -> flex
+  fluid -> grid
+  flex -> mq
+  grid -> mq
+@/diagram
+
+## 6. Images and Media That Fit
+
+- **`srcset` and `sizes`** let the browser pick a photo sized to the
+  viewport — no 3000 px download on a phone:
+
+```html
+<img src="hero-800.jpg"
+     srcset="hero-400.jpg 400w, hero-800.jpg 800w, hero-1600.jpg 1600w"
+     sizes="(min-width: 900px) 60vw, 100vw"
+     alt="Sunrise over the mountains">
+```
+
+- **`<picture>`** swaps crops (a wide hero on desktop, a tight
+  portrait on phones) and serves modern formats with fallback.
+- Icons favour SVG — resolution-independent and tiny.
+
+## 7. Beyond Width: A Responsive Checklist
+
+- **Touch targets** ≥ 44 × 44 px; hover must never be the only way
+  to reach a function.
+- **Typography**: body ≥ 16 px; line length 45–75 characters.
+- **Performance**: phones are on slow networks — lazy-load images
+  (`loading="lazy"`), and prefer fewer, smaller assets. Speed is a
+  responsive feature.
+- **Test** on real devices and by resizing DevTools; check landscape
+  and zoom to 200% (an accessibility requirement).
+- **Dark mode** via `prefers-color-scheme`, reduced motion via
+  `prefers-reduced-motion` — media queries ask preferences, not just
+  width.
+
+[summary]
+Responsive design = one document, many layouts: the viewport meta
+tag, fluid units (%, rem, vw, clamp), and flexible media form the
+base; media queries at content-driven breakpoints reflow it;
+flexbox handles one-dimensional strips and grid handles
+two-dimensional areas — often with no breakpoints at all via
+auto-fill + minmax. Serve right-sized images with srcset, keep
+touch targets large, and treat performance and user preferences
+(prefers-color-scheme, reduced motion) as part of responsiveness.
+[/summary]

@@ -1,0 +1,91 @@
+{
+  "lessonId": "mathematical-operations-reasoning",
+  "title": "Mathematical Operations: Sign Swaps and Equation Repair",
+  "questions": [
+    {
+      "id": 1,
+      "question": "If '+' means 'x', '-' means 'divide by', 'x' means '-', and 'divide by' means '+', what is the value of 9 + 6 - 3 x 4 divide-by 2?",
+      "options": ["14", "16", "18", "20"],
+      "correct": 1,
+      "rationale": "Rewrite with declared meanings: 9 x 6 / 3 - 4 + 2. BODMAS: 9 x 6 = 54; 54 / 3 = 18; 18 - 4 + 2 = 16. Always write the full decoded expression before evaluating a single step."
+    },
+    {
+      "id": 2,
+      "question": "Which pair of signs, when interchanged, makes this equation true: 3 + 4 x 8 - 6 = 14?",
+      "options": ["+ and x", "+ and -", "x and -", "None of these"],
+      "correct": 0,
+      "rationale": "As printed: 3 + 32 - 6 = 29 (false). Swapping + and x: 3 x 4 + 8 - 6 = 12 + 8 - 6 = 14 — true. The other pairs give -23 and -41. Verify each trial by full written evaluation."
+    },
+    {
+      "id": 3,
+      "question": "Which two numbers should be interchanged to make this true: 8 + 4 x 3 - 6 = 14?",
+      "options": ["8 and 6", "4 and 6", "4 and 3", "8 and 3"],
+      "correct": 2,
+      "rationale": "Swapping 4 and 3 gives 8 + 3 x 4 - 6 = 8 + 12 - 6 = 14. Target-guided testing: the needed product is 12, and 3 x 4 supplies it — test product-friendly pairs first."
+    },
+    {
+      "id": 4,
+      "question": "One sign is wrong in: 25 - 5 x 5 + 3 = 27. Replacing which sign with which makes it correct?",
+      "options": ["x with divide-by", "- with +", "+ with -", "No change needed"],
+      "correct": 0,
+      "rationale": "As printed: 25 - 25 + 3 = 3. Replacing x with division: 25 - 5/5 + 3 = 25 - 1 + 3 = 27 — correct. Evaluate as printed first, compare with the target, then hunt the single bridging edit."
+    },
+    {
+      "id": 5,
+      "question": "If P means 'divide by', Q means 'x', R means '+', and S means '-', then 16 P 4 Q 2 R 5 S 1 equals:",
+      "options": ["10", "11", "12", "13"],
+      "correct": 2,
+      "rationale": "Decoded: 16 / 4 x 2 + 5 - 1. BODMAS: 16 / 4 = 4; 4 x 2 = 8; 8 + 5 - 1 = 12. Division and multiplication are processed left to right BEFORE the additions and subtractions."
+    },
+    {
+      "id": 6,
+      "question": "In BODMAS/BIDMAS, the correct order of operations is:",
+      "options": [
+        "Addition before multiplication",
+        "Brackets, Orders, Division/Multiplication (left to right), Addition/Subtraction (left to right)",
+        "Left to right regardless of operator",
+        "Multiplication before brackets"
+      ],
+      "correct": 1,
+      "rationale": "Brackets bind tightest, then powers/roots, then division and multiplication share a level processed left to right, and finally addition and subtraction share a level, also left to right. Every question in this topic is this order wearing a disguise."
+    },
+    {
+      "id": 7,
+      "question": "A decoded expression is 18 / 3 x 2. Its value is:",
+      "options": ["3", "12", "6", "36"],
+      "correct": 1,
+      "rationale": "Division and multiplication hold equal precedence and run left to right: (18 / 3) x 2 = 6 x 2 = 12. Doing the multiplication first (18 / 6 = 3) is the single most common BODMAS slip in the topic."
+    },
+    {
+      "id": 8,
+      "question": "If P means 'divide by', Q means '=', and R means '+', which statement is TRUE: (a) 16 P 4 Q 8 R 6 (b) 16 P 4 Q 2 R 2?",
+      "options": ["Only (a)", "Only (b)", "Both", "Neither"],
+      "correct": 1,
+      "rationale": "Split each at the coded equals and evaluate both sides. (a): 16/4 = 4 versus 8 + 6 = 14 — false. (b): 16/4 = 4 versus 2 + 2 = 4 — both sides 4, true. With a coded equals, the task is balancing two sides, never producing one number."
+    },
+    {
+      "id": 9,
+      "question": "During an interchange-of-signs question, none of the four options seems to work. Statistically the most likely cause is:",
+      "options": [
+        "The question is misprinted",
+        "A BODMAS slip in one of your own trial evaluations",
+        "The options are in a foreign language",
+        "Interchange questions have no solution"
+      ],
+      "correct": 1,
+      "rationale": "Exam papers almost always include exactly one working interchange. A hidden precedence error — usually evaluating an addition before a multiplication — flips one trial's value and hides the answer. Re-audit your arithmetic before doubting the paper."
+    },
+    {
+      "id": 10,
+      "question": "The first mechanical step for ANY sign-substitution or coded-operator question is:",
+      "options": [
+        "Evaluate the printed expression as-is",
+        "Write the entire expression rewritten with decoded meanings",
+        "Compute the last operation first",
+        "Multiply everything by 1"
+      ],
+      "correct": 1,
+      "rationale": "Rewriting the full expression with the declared meanings (before any arithmetic) prevents the two killer errors: evaluating a printed symbol by habit, and losing track of changed precedence. The table printed-to-actual plus one clean rewritten line makes the rest routine."
+    }
+  ]
+}

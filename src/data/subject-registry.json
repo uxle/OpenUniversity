@@ -4,14 +4,14 @@
       "id": "civics",
       "title": "Civics",
       "description": "The Indian Constitution and political system — its history, institutions, rights, and governing bodies.",
-      "lessonCount": 22,
+      "lessonCount": 25,
       "subSubjects": []
     },
     {
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 35,
+      "lessonCount": 42,
       "subSubjects": [
         {
           "id": "ai-reasoning",
@@ -23,19 +23,19 @@
           "id": "algorithms",
           "title": "Algorithms",
           "description": "Step-by-step methods for solving problems, and how to measure their efficiency.",
-          "lessonCount": 5
+          "lessonCount": 6
         },
         {
           "id": "cybersecurity",
           "title": "Cybersecurity",
           "description": "How systems and users are attacked, and the principles — CIA triad, cryptography, defence in depth — that keep them safe.",
-          "lessonCount": 4
+          "lessonCount": 5
         },
         {
           "id": "databases",
           "title": "Databases",
           "description": "How structured data is stored, queried, and protected — tables, SQL, schema design, and transactions.",
-          "lessonCount": 4
+          "lessonCount": 5
         },
         {
           "id": "networking",
@@ -53,13 +53,13 @@
           "id": "programming",
           "title": "Programming",
           "description": "Writing instructions that tell computers what to do.",
-          "lessonCount": 7
+          "lessonCount": 9
         },
         {
           "id": "web-development",
           "title": "Web Development",
           "description": "How the web works and how pages are built — HTML structure, CSS layout, and JavaScript interactivity.",
-          "lessonCount": 4
+          "lessonCount": 6
         }
       ]
     },
@@ -67,34 +67,34 @@
       "id": "economics",
       "title": "Economics",
       "description": "How individuals, businesses, and societies allocate scarce resources.",
-      "lessonCount": 18,
+      "lessonCount": 21,
       "subSubjects": []
     },
     {
       "id": "geography",
       "title": "Geography",
       "description": "The study of places, landscapes, and how people interact with them.",
-      "lessonCount": 18,
+      "lessonCount": 22,
       "subSubjects": []
     },
     {
       "id": "history",
       "title": "History",
       "description": "The study of past events and how they shaped the present.",
-      "lessonCount": 19,
+      "lessonCount": 25,
       "subSubjects": []
     },
     {
       "id": "languages",
       "title": "Languages",
       "description": "Learn the script, grammar, and structure of world languages.",
-      "lessonCount": 58,
+      "lessonCount": 59,
       "subSubjects": [
         {
           "id": "english",
           "title": "English",
           "description": "Learn English grammar — sentence structure, tenses, parts of speech, and vocabulary building.",
-          "lessonCount": 26
+          "lessonCount": 27
         },
         {
           "id": "hindi",
@@ -108,37 +108,37 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 30,
+      "lessonCount": 44,
       "subSubjects": [
         {
           "id": "algebra",
           "title": "Algebra",
           "description": "Working with symbols and variables, and the rules for manipulating them.",
-          "lessonCount": 8
+          "lessonCount": 11
         },
         {
           "id": "calculus",
           "title": "Calculus",
           "description": "The mathematics of change, motion, and accumulation.",
-          "lessonCount": 4
+          "lessonCount": 6
         },
         {
           "id": "geometry",
           "title": "Geometry",
           "description": "The study of shapes, sizes, angles, and the properties of space.",
-          "lessonCount": 7
+          "lessonCount": 9
         },
         {
           "id": "numbers",
           "title": "Numbers",
           "description": "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on.",
-          "lessonCount": 6
+          "lessonCount": 12
         },
         {
           "id": "statistics",
           "title": "Statistics",
           "description": "Collecting, analyzing, and interpreting data.",
-          "lessonCount": 5
+          "lessonCount": 6
         }
       ]
     },
@@ -146,14 +146,14 @@
       "id": "philosophy",
       "title": "Philosophy",
       "description": "Fundamental questions about knowledge, existence, and ethics.",
-      "lessonCount": 14,
+      "lessonCount": 15,
       "subSubjects": []
     },
     {
       "id": "reasoning",
       "title": "Reasoning",
       "description": "Logical and verbal reasoning for competitive exams — organized by topic: blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, and sentence rearrangement.",
-      "lessonCount": 116,
+      "lessonCount": 122,
       "subSubjects": [
         {
           "id": "analogy-and-classification",
@@ -204,10 +204,22 @@
           "lessonCount": 10
         },
         {
+          "id": "mathematical-operations",
+          "title": "Mathematical Operations",
+          "description": "Coded BODMAS: sign substitutions, interchange of signs and numbers, and equation repair.",
+          "lessonCount": 1
+        },
+        {
+          "id": "ranking-and-order",
+          "title": "Ranking and Order",
+          "description": "Position-based reasoning: ranks from ends, between-counts, comparison chains, and order puzzles.",
+          "lessonCount": 2
+        },
+        {
           "id": "seating-arrangement",
           "title": "Seating Arrangement",
           "description": "Linear, circular, and double-row seating arrangement puzzles.",
-          "lessonCount": 3
+          "lessonCount": 4
         },
         {
           "id": "sentence-rearrangement",
@@ -219,7 +231,7 @@
           "id": "series",
           "title": "Number & Alphabet Series",
           "description": "Number series, alphabet series, and mixed series pattern-detection.",
-          "lessonCount": 3
+          "lessonCount": 4
         },
         {
           "id": "syllogism",
@@ -231,7 +243,7 @@
           "id": "verbal-reasoning",
           "title": "Verbal Reasoning",
           "description": "Statement-based reasoning for competitive exams — assumptions, conclusions, cause and effect, and course of action.",
-          "lessonCount": 4
+          "lessonCount": 5
         }
       ]
     },
@@ -239,25 +251,25 @@
       "id": "science",
       "title": "Science",
       "description": "Explore the natural world through scientific knowledge.",
-      "lessonCount": 39,
+      "lessonCount": 58,
       "subSubjects": [
         {
           "id": "biology",
           "title": "Biology",
           "description": "The study of living organisms and life processes.",
-          "lessonCount": 15
+          "lessonCount": 22
         },
         {
           "id": "chemistry",
           "title": "Chemistry",
           "description": "The study of matter, its properties, and how it changes.",
-          "lessonCount": 12
+          "lessonCount": 18
         },
         {
           "id": "physics",
           "title": "Physics",
           "description": "Study matter, energy, motion, forces and the laws of nature.",
-          "lessonCount": 12
+          "lessonCount": 18
         }
       ]
     }

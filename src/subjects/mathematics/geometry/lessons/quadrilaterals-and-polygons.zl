@@ -1,0 +1,159 @@
+# Quadrilaterals and Polygons: Many-Sided Geometry
+
+> Triangles are geometry's atoms; polygons are its molecules. From
+> the quadrilaterals of doors, windows, and tiles to the pentagons
+> and hexagons of nature and architecture, closed straight-edged
+> shapes follow elegant counting rules — and a hierarchy that every
+> exam loves to test.
+
+## 1. What Is a Polygon?
+
+[definition]
+A **polygon** is a closed plane figure made of straight line
+segments. In a **regular** polygon, all sides and all angles are
+equal.
+[/definition]
+
+| Name | Sides | Interior angle (regular) | Where you meet it |
+| --- | --- | --- | --- |
+| Triangle | 3 | 60° | Roof trusses |
+| Quadrilateral | 4 | 90° (square) | Paper, tiles |
+| Pentagon | 5 | 108° | The Pentagon, okra cuts |
+| Hexagon | 6 | 120° | Honeycombs, bolts |
+| Octagon | 8 | 135° | Stop signs |
+| Decagon | 10 | 144° | Coins, mirrors |
+
+## 2. The Angle Formulas
+
+For a polygon with $n$ sides:
+
+@math label="eq:angle-sum"
+\text{Interior angle sum} = (n - 2) \times 180°
+@/math
+
+@math label="eq:exterior-sum"
+\text{Sum of exterior angles} = 360° \quad (\text{always, any polygon})
+@/math
+
+[important]
+Why $(n-2) \times 180°$? Pick one vertex and draw all diagonals from
+it: the polygon splits into exactly $n - 2$ triangles, each
+contributing 180°. A quadrilateral gives 2 triangles (360°); a
+pentagon gives 3 (540°); a hexagon gives 4 (720°).
+[/important]
+
+**Regular polygons.** Each interior angle of a regular $n$-gon:
+
+@math label="eq:regular-interior"
+\text{Each interior angle} = \frac{(n-2) \times 180°}{n}
+@/math
+
+A regular hexagon: $\frac{4 \times 180°}{6} = 120°$ each. The
+matching exterior angle is $\frac{360°}{n}$ — 60° for the hexagon,
+which is why hexagons tile so neatly with three meeting at every
+point ($3 \times 120° = 360°$).
+
+@chart bar title="Interior angle sum by number of sides"
+labels:
+Triangle
+Quadrilateral
+Pentagon
+Hexagon
+Octagon
+
+data:
+180
+360
+540
+720
+1080
+@/chart
+
+## 3. The Quadrilateral Family Tree
+
+Every quadrilateral has angle sum 360°, but special properties nest
+neatly:
+
+@diagram tree id="quad-hierarchy" layout="tree" aria="The quadrilateral family hierarchy"
+  "Quadrilateral" -> "Parallelogram"
+  "Quadrilateral" -> "Trapezium"
+  "Quadrilateral" -> "Kite"
+  "Parallelogram" -> "Rectangle"
+  "Parallelogram" -> "Rhombus"
+  "Rectangle" -> "Square"
+  "Rhombus" -> "Square"
+@/diagram
+
+| Shape | Sides | Angles | Diagonals |
+| --- | --- | --- | --- |
+| Parallelogram | Opposite sides equal & parallel | Opposite angles equal | Bisect each other |
+| Rectangle | All angles 90° | — | Equal, bisect each other |
+| Rhombus | All sides equal | Diagonals bisect angles | Perpendicular bisectors |
+| Square | All sides equal | All 90° | Equal, perpendicular, bisect angles |
+| Kite | Two pairs of adjacent equal sides | One pair of equal opposite angles | One diagonal bisects the other at 90° |
+| Trapezium | One pair of parallel sides | — | — |
+
+[tip]
+A square is simultaneously a rectangle and a rhombus — it inherits
+every property of both. In exams, "a rhombus with equal diagonals" or
+"a rectangle with perpendicular diagonals" both quietly describe a
+square.
+[/tip]
+
+### Key properties worth memorising
+
+- **Parallelogram** — diagonals bisect each other; each diagonal
+  splits it into two congruent triangles.
+- **Rectangle** — diagonals are equal: half a rectangle plus its
+  diagonal gives the 5-12-13 right triangle.
+- **Rhombus** — diagonals are perpendicular bisectors; area =
+  half the product of diagonals.
+- **Midpoint theorem:** joining midpoints of any quadrilateral in
+  order always yields a **parallelogram** (Varignon's theorem).
+
+## 4. Areas
+
+@math label="eq:areas"
+\text{Parallelogram} = b \times h, \quad \text{Trapezium} = \tfrac{1}{2}(a + b)h
+@/math
+
+@math label="eq:more-areas"
+\text{Rhombus} = \tfrac{1}{2}d_1 d_2, \quad \text{Kite} = \tfrac{1}{2}d_1 d_2
+@/math
+
+**Worked example.** A rhombus has diagonals 10 cm and 8 cm. Its area
+is $\frac{1}{2}(10)(8) = 40$ cm², and each side (half-diagonals 5
+and 4 with the right angle between) is $\sqrt{5^2+4^2} = \sqrt{61}$
+cm ≈ 7.8 cm.
+
+## 5. Tiling, Nature, and Design
+
+- Only **triangles, quadrilaterals, and hexagons** tile the plane
+  edge-to-edge with a single regular shape — which is why bees build
+  hexagons: most honey stored for least wax.
+- Footballs stitch pentagons (12) with hexagons (20) into a sphere —
+  Euler's formula $V - E + F = 2$ counts it exactly.
+- Paving, wallpaper, brick bonds, and kirigami all exploit
+  quadrilateral geometry: parallelogram tiles interlock and resist
+  shifting.
+
+## 6. Concave, Convex, and Diagonals
+
+- **Convex polygon:** every interior angle < 180°; diagonals stay
+  inside.
+- **Concave polygon:** at least one reflex angle; at least one
+  diagonal lies outside (think of an arrowhead).
+- A polygon with $n$ sides has $\frac{n(n-3)}{2}$ diagonals: a
+  decagon has $\frac{10 \times 7}{2} = 35$.
+
+[summary]
+Polygons are closed straight-edged figures; their interior angles sum
+to $(n-2) \times 180°$, while exterior angles always sum to 360°.
+The quadrilateral family nests by properties: parallelograms
+(diagonals bisect), rectangles (equal diagonals), rhombi
+(perpendicular diagonals), squares (all of it), plus kites and
+trapeziums. Areas follow a few compact formulas, including
+rhombus = ½d₁d₂. Hexagons tile with least perimeter, pentagons and
+hexagons close into spheres, and every quadrilateral hides a
+parallelogram at its midpoints.
+[/summary]

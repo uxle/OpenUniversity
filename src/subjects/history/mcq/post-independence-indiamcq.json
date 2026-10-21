@@ -1,0 +1,76 @@
+{
+  "lessonId": "post-independence-india",
+  "title": "Post-Independence India: The Republic's Journey Since 1947",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The integration of over 560 princely states into the Indian Union was chiefly the work of:",
+      "options": ["Jawaharlal Nehru and Lord Mountbatten", "Sardar Vallabhbhai Patel with V. P. Menon", "Dr B. R. Ambedkar", "C. Rajagopalachari"],
+      "correct": 1,
+      "rationale": "Patel, as Home Minister (with secretary V. P. Menon), negotiated accession of almost all states — Hyderabad and Junagadh included — in 1947–48."
+    },
+    {
+      "id": 2,
+      "question": "The Constitution of India came into force on:",
+      "options": ["15 August 1947", "26 November 1949", "26 January 1950", "2 October 1950"],
+      "correct": 2,
+      "rationale": "Adopted 26 November 1949, it came into force 26 January 1950 — chosen to honour Purna Swaraj Day (1930)."
+    },
+    {
+      "id": 3,
+      "question": "The States Reorganisation Act of 1956 redrew state boundaries primarily on the basis of:",
+      "options": ["Religion", "Language", "River basins", "Administrative convenience"],
+      "correct": 1,
+      "rationale": "After Potti Sriramulu's fast created Andhra State (1953), the States Reorganisation Act and the 7th Amendment made language the basis of the map, effective 1 November 1956."
+    },
+    {
+      "id": 4,
+      "question": "The Second Five-Year Plan (1956) is associated with:",
+      "options": ["Gandhian village industries", "The Mahalanobis model emphasising heavy industry", "Export-led services", "Privatisation"],
+      "correct": 1,
+      "rationale": "P. C. Mahalanobis's strategy channelled investment into capital goods and heavy industry — the steel plants at Bhilai, Rourkela, and Durgapur."
+    },
+    {
+      "id": 5,
+      "question": "The Non-Aligned Movement was formally launched in 1961 by Nehru together with:",
+      "options": ["Kennedy and de Gaulle", "Tito, Nasser, Sukarno, and Nkrumah", "Mao and Ho Chi Minh", "Stalin and Tito"],
+      "correct": 1,
+      "rationale": "The Belgrade conference (1961) of Nehru, Tito, Nasser, Sukarno, and Nkrumah formalised NAM — steering clear of both Cold War blocs."
+    },
+    {
+      "id": 6,
+      "question": "Which pairing of year and event is correct?",
+      "options": ["1962: India-Pakistan war", "1965: China war", "1971: Bangladesh liberation war", "1974: Emergency"],
+      "correct": 2,
+      "rationale": "1971 brought the Bangladesh war and Pakistan's surrender in Dhaka; 1962 was the China war, 1965 the second Pakistan war, and the Emergency came in 1975."
+    },
+    {
+      "id": 7,
+      "question": "Pokhran-I, India's first nuclear test (1974), was codenamed:",
+      "options": ["Shakti", "Smiling Buddha", "Operation Vijay", "Operation Cactus"],
+      "correct": 1,
+      "rationale": "'Smiling Buddha' (18 May 1974) made India a nuclear-capable state; Pokhran-II of May 1998 (Operation Shakti) made it a declared nuclear power."
+    },
+    {
+      "id": 8,
+      "question": "Operation Flood, making India the world's largest milk producer, is identified with:",
+      "options": ["M. S. Swaminathan", "Verghese Kurien", "Norman Borlaug", "Sam Pitroda"],
+      "correct": 1,
+      "rationale": "Verghese Kurien built the Anand cooperative (Amul) into Operation Flood's national dairy grid; Swaminathan and Borlaug belong to the green revolution, Pitroda to telecom."
+    },
+    {
+      "id": 9,
+      "question": "The 1991 economic liberalisation was steered by:",
+      "options": ["Indira Gandhi and P. C. Mahalanobis", "P. V. Narasimha Rao and Manmohan Singh", "Atal Bihari Vajpayee and Jaswant Singh", "Rajiv Gandhi and Sam Pitroda"],
+      "correct": 1,
+      "rationale": "Facing a reserves crisis, PM Narasimha Rao and Finance Minister Manmohan Singh devalued the rupee, delicensed industry, and opened trade — ending the Licence Raj."
+    },
+    {
+      "id": 10,
+      "question": "The Kargil War (Operation Vijay), fought along the LoC, took place in:",
+      "options": ["1965", "1971", "1999", "2001"],
+      "correct": 2,
+      "rationale": "Pakistani intrusions in Kargil (summer 1999) were evicted by Indian forces — commemorated as Kargil Vijay Diwas (26 July)."
+    }
+  ]
+}

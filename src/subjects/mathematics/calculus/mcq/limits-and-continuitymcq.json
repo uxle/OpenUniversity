@@ -1,0 +1,82 @@
+{
+  "lessonId": "limits-and-continuity",
+  "title": "Limits and Continuity: The Gateway to Calculus",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Evaluate lim (x->2) of (x^2 - 4)/(x - 2).",
+      "zolto": "\\frac{x^2 - 4}{x - 2}",
+      "options": ["0", "2", "4", "Does not exist"],
+      "correct": 2,
+      "rationale": "Factor the numerator: (x-2)(x+2)/(x-2) = x + 2 for all x near 2 (except at 2, which the limit ignores). The limit is 2 + 2 = 4 — a removable discontinuity lives at the point itself."
+    },
+    {
+      "id": 2,
+      "question": "lim (x->0) of sin(4x)/(7x) equals:",
+      "options": ["4/7", "7/4", "1", "0"],
+      "correct": 0,
+      "rationale": "Write sin(4x)/(7x) = [sin(4x)/(4x)] x (4/7). The bracket tends to 1 by the standard limit, so the answer is 4/7. The ratio of coefficients survives every time."
+    },
+    {
+      "id": 3,
+      "question": "The one-sided limits of |x|/x as x approaches 0 are:",
+      "options": ["1 and 1", "-1 and -1", "-1 and 1", "0 and 1"],
+      "correct": 2,
+      "rationale": "For x slightly negative, |x|/x = (-x)/x = -1; for x positive, |x|/x = x/x = 1. Since the left limit (-1) differs from the right limit (+1), the two-sided limit does not exist — a jump."
+    },
+    {
+      "id": 4,
+      "question": "For f(x) = (3x^2 + 2)/(5x^2 - 7), lim (x->infinity) equals:",
+      "options": ["0", "3/5", "5/3", "Infinity"],
+      "correct": 1,
+      "rationale": "Divide numerator and denominator by x^2: all terms with x in the denominator vanish, leaving 3/5. With equal degrees the limit at infinity is the ratio of leading coefficients."
+    },
+    {
+      "id": 5,
+      "question": "lim (n->infinity) of (1 + 3/n)^(2n) equals:",
+      "options": ["e^2", "e^3", "e^6", "1"],
+      "correct": 2,
+      "rationale": "Rewrite as [(1 + 3/n)^(n/3)]^6. The inner bracket tends to e, so the whole limit is e^6. For 1^infinity forms, the exponent times the small quantity is the power of e."
+    },
+    {
+      "id": 6,
+      "question": "Which is NOT one of the three conditions for continuity of f at x = a?",
+      "options": ["f(a) must be defined", "The limit as x->a must exist", "The limit must equal f(a)", "f must be differentiable at a"],
+      "correct": 3,
+      "rationale": "Continuity demands definedness, an existing limit, and their equality — nothing about differentiability. Absolute value functions are continuous everywhere yet not differentiable at the kink."
+    },
+    {
+      "id": 7,
+      "question": "The function f(x) = 1/x at x = 0 has which kind of discontinuity?",
+      "options": ["Removable", "Jump", "Infinite", "Oscillatory"],
+      "correct": 2,
+      "rationale": "As x -> 0, 1/x blows up to plus or minus infinity on the two sides — an infinite discontinuity. No redefinition of f(0) can repair it, unlike a removable (hole) discontinuity."
+    },
+    {
+      "id": 8,
+      "question": "lim (x->0) of (e^(5x) - 1)/(3x) equals:",
+      "options": ["1", "5/3", "3/5", "0"],
+      "correct": 1,
+      "rationale": "Standard limit: (e^u - 1)/u -> 1. Write (e^(5x)-1)/(3x) = [(e^(5x)-1)/(5x)] x (5/3); the bracket tends to 1, giving 5/3 — the same coefficient trick as sin(kx)/(mx)."
+    },
+    {
+      "id": 9,
+      "question": "By the Intermediate Value Theorem, if f is continuous on [1, 2] with f(1) = -3 and f(2) = 5, then:",
+      "options": [
+        "f has a maximum at 1",
+        "f takes the value 0 somewhere in (1, 2)",
+        "f is increasing on [1, 2]",
+        "f(1.5) must equal 1"
+      ],
+      "correct": 1,
+      "rationale": "A continuous function on an interval takes every value between its endpoint values — including 0, since -3 and 5 straddle it. Note the theorem guarantees existence of a root, not monotonicity or a specific midpoint value."
+    },
+    {
+      "id": 10,
+      "question": "lim (x->a) of (x^5 - a^5)/(x - a) equals:",
+      "options": ["a^4", "5a", "5a^4", "0"],
+      "correct": 2,
+      "rationale": "Standard algebraic limit: (x^n - a^n)/(x - a) -> n a^(n-1). With n = 5 the answer is 5a^4 — the very formula that becomes the derivative of x^5 in the next chapter."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "polymers-and-biomolecules",
+  "title": "Polymers and Biomolecules: The Chemistry of Giants",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the term 'polymer', the repeating small units are called:",
+      "options": ["Isomers", "Monomers", "Polymers", "Ions"],
+      "correct": 1,
+      "rationale": "Polymers are built from monomers linked end to end, the way ethylene units chain into polyethylene."
+    },
+    {
+      "id": 2,
+      "question": "Nylon is formed by joining adipic acid and hexamethylenediamine with the loss of water. This is an example of:",
+      "options": ["Addition polymerisation", "Condensation polymerisation", "Vulcanisation", "Hydrogenation"],
+      "correct": 1,
+      "rationale": "In condensation polymerisation, monomers with complementary functional groups join, releasing a small molecule — usually water — per bond formed."
+    },
+    {
+      "id": 3,
+      "question": "Which type of plastic softens on heating and can be remoulded repeatedly?",
+      "options": ["Thermosetting", "Thermoplastic", "Elastomer", "Vulcanised rubber"],
+      "correct": 1,
+      "rationale": "Thermoplastics (PE, PP, PVC, PET) have linear or branched chains that slide apart on heating; thermosets are permanently cross-linked and only char."
+    },
+    {
+      "id": 4,
+      "question": "Vulcanisation of natural rubber involves heating it with:",
+      "options": ["Carbon", "Sulphur", "Oxygen", "Phosphorus"],
+      "correct": 1,
+      "rationale": "Goodyear's vulcanisation forms sulphur cross-links between rubber chains; the degree of cross-linking spans elastic bands to tyre rubber to hard ebonite."
+    },
+    {
+      "id": 5,
+      "question": "The first fully synthetic plastic, made from phenol and formaldehyde in 1907, was:",
+      "options": ["Nylon", "Bakelite", "Teflon", "Polyethylene"],
+      "correct": 1,
+      "rationale": "Bakelite, a thermosetting phenol-formaldehyde resin created by Leo Baekeland, was the first completely synthetic plastic."
+    },
+    {
+      "id": 6,
+      "question": "Humans cannot digest cellulose because we lack the enzyme to break its β-glucose linkages. Which polysaccharide CAN we digest?",
+      "options": ["Cellulose", "Starch", "Chitin", "Lignin"],
+      "correct": 1,
+      "rationale": "Starch uses α-glucose bonds, which amylase can cleave; cellulose's β linkages pass through us as dietary fibre."
+    },
+    {
+      "id": 7,
+      "question": "Amino acids in a protein are joined by:",
+      "options": ["Hydrogen bonds", "Peptide bonds", "Glycosidic bonds", "Phosphodiester bonds"],
+      "correct": 1,
+      "rationale": "Peptide bonds (a condensation link between the amino group of one amino acid and the acid group of the next) form the protein's primary chain."
+    },
+    {
+      "id": 8,
+      "question": "Why does frying an egg turn the transparent white opaque and solid?",
+      "options": ["Water evaporates", "Heat denatures the proteins, destroying their folded shape", "New peptide bonds form", "The lipids melt"],
+      "correct": 1,
+      "rationale": "Denaturation unravels and tangles the folded proteins into a solid network — the shape (and so the function) is lost permanently."
+    },
+    {
+      "id": 9,
+      "question": "In DNA, adenine pairs across the helix with:",
+      "options": ["Guanine", "Cytosine", "Thymine", "Uracil"],
+      "correct": 2,
+      "rationale": "A–T and G–C pairing via hydrogen bonds; uracil replaces thymine only in RNA."
+    },
+    {
+      "id": 10,
+      "question": "Which fibre, used in bulletproof vests, is about five times stronger than steel by weight?",
+      "options": ["Nylon", "Kevlar", "Rayon", "Acrylic"],
+      "correct": 1,
+      "rationale": "Kevlar, an aramid polymer, owes its strength to rigid, highly ordered chains packed with hydrogen bonds between them."
+    }
+  ]
+}

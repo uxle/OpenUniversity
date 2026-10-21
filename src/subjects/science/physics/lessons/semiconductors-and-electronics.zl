@@ -1,0 +1,162 @@
+# Semiconductors and Electronics: From Doped Silicon to Logic Gates
+
+> Every computer, phone, and charger is built from one idea: a
+> material whose conductivity can be dialled between conductor and
+> insulator. This lesson follows that idea from doped silicon through
+> diodes and transistors to the logic gates that compute.
+
+## 1. Conductors, Insulators, Semiconductors
+
+The difference is the **band gap** — the energy an electron needs to
+jump from the bound valence band to the free conduction band.
+
+| Material | Band gap | Conductivity | Examples |
+| --- | --- | --- | --- |
+| Conductor | Overlapping bands | Very high | Copper, silver, aluminium |
+| Semiconductor | Small (~1 eV) | In between, tunable | Silicon, germanium |
+| Insulator | Large (> 5 eV) | Negligible | Glass, rubber, diamond |
+
+[definition]
+A **semiconductor** conducts poorly at low temperature but much better
+when warm, doped, or lit — its conductivity rises with temperature,
+the exact opposite of a metal.
+[/definition]
+
+Silicon (group 14, four valence electrons) is the workhorse because
+it forms a perfect crystal lattice with each atom sharing electrons
+with four neighbours.
+
+## 2. Doping: n-type and p-type
+
+Pure (intrinsic) silicon carries almost no free charge. Adding a
+trace impurity — **doping** — changes everything:
+
+- **n-type:** inject a group-15 atom (phosphorus, arsenic) with five
+  valence electrons. Four bond, the fifth roams free — the charge
+  carriers are **electrons** (negative).
+- **p-type:** inject a group-13 atom (boron, gallium) with three
+  valence electrons. One bond is left incomplete — a **hole** that
+  behaves as a mobile positive charge carrier.
+
+[important]
+Both types are electrically neutral overall — doping adds *carriers*,
+not net charge. In n-type the majority carriers are electrons; in
+p-type they are holes.
+[/important]
+
+## 3. The p–n Junction Diode
+
+Join a p-type and an n-type region and electrons diffuse from n to p,
+leaving a thin **depletion region** with a built-in electric field
+that opposes further flow.
+
+| Bias | Connection | Behaviour |
+| --- | --- | --- |
+| Forward | p-side to +, n-side to − | Depletion region narrows; current flows easily (after ~0.7 V for Si) |
+| Reverse | p-side to −, n-side to + | Depletion region widins; only a tiny leakage current |
+
+The asymmetric current–voltage curve is the diode's signature: it
+conducts one way only — an electronic **one-way valve**.
+
+```text
+      Forward bias →  current flows
+   +──▶|── -          (arrow = anode/p, bar = cathode/n)
+      ◀─  Reverse: blocked
+```
+
+### Applications
+
+- **Rectification:** converting AC to DC — a bridge of four diodes
+  flips the negative half-cycle, giving the pulsating DC a phone
+  charger then smooths.
+- **Light emitting diode (LED):** forward current makes electrons fall
+  into holes, emitting photons; the band gap sets the colour.
+- **Solar cell:** light does the reverse — it knocks electrons loose,
+  driving current the "wrong" way and delivering power.
+- **Zener diode:** designed to conduct in reverse at a precise
+  voltage, acting as a voltage reference.
+
+## 4. The Transistor: Amplifier and Switch
+
+A **bipolar junction transistor (BJT)** sandwiches three layers —
+npn or pnp — giving emitter, base, and collector terminals. A small
+base current controls a large collector current: the transistor
+**amplifies**.
+
+The more common **field-effect transistor (FET/MOSFET)** uses a
+voltage on the gate to open or shut a channel between source and
+drain. Because the gate draws almost no current, millions of them fit
+in a microchip without melting it.
+
+[tip]
+A MOSFET gate is effectively a tiny capacitor. CMOS chips pair an
+n-channel and a p-channel MOSFET so that one is always off — power is
+drawn mainly while switching, which is why clock speed and voltage
+dominate a chip's heat output.
+[/tip]
+
+Two working modes matter:
+
+1. **Switch:** gate voltage on/off = 1/0 — the heart of digital
+   logic. A modern processor executes billions of such switches per
+   second.
+2. **Amplifier:** a small signal at the input is reproduced as a
+   large signal at the output — the heart of audio systems and radio
+   transmitters.
+
+## 5. Logic Gates: Computing With Switches
+
+Combine transistors so that outputs depend on inputs by rule, and you
+have **logic gates** — the alphabet of digital circuits.
+
+| Gate | Output is 1 when | Boolean form |
+| --- | --- | --- |
+| AND | all inputs are 1 | A · B |
+| OR | any input is 1 | A + B |
+| NOT | input is 0 (inverts) | $\overline{A}$ |
+| NAND | not all inputs are 1 | $\overline{A \cdot B}$ |
+| NOR | no input is 1 | $\overline{A + B}$ |
+| XOR | inputs differ | A ⊕ B |
+
+@diagram flowchart id="half-adder" layout="hierarchical" aria="An XOR gate and an AND gate wired as a half adder"
+node a label="A" shape="circle"
+node b label="B" shape="circle"
+node x label="XOR" shape="rect"
+node n label="AND" shape="rect"
+node s label="Sum" shape="round-rect"
+node c label="Carry" shape="round-rect"
+
+a -> x
+b -> x
+a -> n
+b -> n
+x -> s
+n -> c
+@/diagram
+
+Wire XOR and AND in parallel on the same inputs (the diagram above)
+and you get a **half adder** — the one-bit adding circuit that,
+stacked, does arithmetic in every processor. NAND alone is
+**functionally complete**: every other gate, and hence every computer
+ever built, can be constructed from NAND gates alone.
+
+## 6. From One Transistor to a Billion
+
+- 1947 — the point-contact transistor (Bardeen, Brattain, Shockley;
+  Nobel 1956) at Bell Labs.
+- 1958 — the integrated circuit (Kilby at TI, Noyce at Fairchild)
+  puts many transistors on one chip.
+- 1965 — Moore's law: transistor counts double roughly every two
+  years; the trend held for half a century.
+- Today — smartphone chips hold tens of billions of transistors, each
+  a MOSFET switch a few dozen atoms long.
+
+[summary]
+Semiconductors sit between conductors and insulators, and doping
+turns pure silicon into n-type (electron carriers) or p-type (hole
+carriers). A p–n junction conducts one way — the diode, basis of
+rectifiers, LEDs, and solar cells. Transistors (BJT, MOSFET) amplify
+or switch; as switches they build logic gates, whose rules (AND, OR,
+NOT, NAND, NOR, XOR) compose into adders and processors. The entire
+digital world is doped silicon, layered one switch at a time.
+[/summary]

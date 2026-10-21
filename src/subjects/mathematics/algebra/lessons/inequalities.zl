@@ -1,0 +1,158 @@
+# Inequalities: When Answers Are Ranges, Not Points
+
+> Equations pin a variable to exact values; inequalities describe
+> whole ranges of them. Salary brackets, medicine doses, safety
+> margins, and optimisation constraints are all inequalities — and
+> solving them has one golden rule: negatives flip the sign.
+
+## 1. The Language of Inequalities
+
+| Symbol | Meaning | Example solution set |
+| --- | --- | --- |
+| $<$, $>$ | strictly less / greater | $x > 3$ |
+| $\le$, $\ge$ | or equal to | $x \le 3$ |
+
+A solution is a **range**, usually drawn on a number line or written
+in interval notation: $x > 3$ is $(3, \infty)$; $x \le 3$ is
+$(-\infty, 3]$.
+
+[definition]
+An **open interval** $(a, b)$ excludes its endpoints; a **closed
+interval** $[a, b]$ includes them. $x \ge 2$ and $x < 5$ together
+give $[2, 5)$ — closed at 2, open at 5.
+[/definition]
+
+## 2. The Golden Rule: Multiplying by a Negative
+
+You may add or subtract anything from both sides freely. But multiply
+or divide both sides by a **negative number** and the direction of the
+inequality **reverses**:
+
+$$3 < 5 \quad\text{yet}\quad -3 > -5$$
+
+@math label="eq:flip-example"
+-2x < 6 \;\Rightarrow\; x > -3 \quad (\text{divide by } -2,\ \text{flip})
+@/math
+
+[warning]
+Forgetting the flip is the single most common inequality error — and
+it silently produces a wrong half-line. Check by substitution: with
+$x = 0 > -3$, indeed $-2(0) = 0 < 6$. ✓
+[/warning]
+
+## 3. Linear Inequalities
+
+**Example.** Solve $3x - 4 \le 11$:
+
+@math label="eq:linear-example"
+3x \le 15 \;\Rightarrow\; x \le 5 \;\Rightarrow\; (-\infty,\ 5]
+@/math
+
+**Double inequalities.** Solve $-4 \le 2x + 1 < 7$ by operating on
+all three parts at once:
+
+@math label="eq:double-example"
+-5 \le 2x < 6 \;\Rightarrow\; -2.5 \le x < 3 \;\Rightarrow\; [-2.5,\ 3)
+@/math
+
+## 4. Applications: Brackets, Budgets, and Doses
+
+- **Tax brackets:** income up to ₹2.5 lakh at 0%, ₹2.5–5 lakh at 5%,
+  and so on — each bracket is a compound inequality.
+- **Budgeting:** a taxi charges ₹50 plus ₹12/km. How many kilometres
+  fit a ₹200 budget?
+
+@math label="eq:taxi-example"
+50 + 12k \le 200 \;\Rightarrow\; 12k \le 150 \;\Rightarrow\; k \le 12.5
+@/math
+
+At most 12 full kilometres.
+
+## 5. Quadratic Inequalities
+
+Graph thinking beats algebra here. Solve $x^2 - x - 6 > 0$:
+
+1. Find roots: $(x-3)(x+2) = 0$ gives $x = -2, 3$.
+2. The parabola opens upward, so it is **above** zero outside the
+   roots and below between them.
+3. Answer: $x < -2$ or $x > 3$.
+
+@chart spline title="Sign of y = x² − x − 6 across the number line"
+labels:
+−3
+−2
+0
+3
+4
+
+series:
+  - name: "y"
+    data: 6 0 -6 0 6
+@/chart
+
+[tip]
+The "outside-between" rule: for a positive quadratic ($x^2$ positive),
+"$> 0$" holds outside the roots, "$< 0$" between them. Flip this for
+a negative quadratic. When the quadratic has no real roots, its sign
+never changes — test one point and you know it everywhere.
+[/tip]
+
+## 6. Absolute Value Inequalities
+
+Recall $|x|$ is the distance of $x$ from 0. Distance language turns
+these into range problems:
+
+@math label="eq:abs-less"
+|x| < a \;\Longleftrightarrow\; -a < x < a \qquad (a > 0)
+@/math
+
+@math label="eq:abs-greater"
+|x| > a \;\Longleftrightarrow\; x < -a \ \text{ or } \ x > a
+@/math
+
+**Example.** Solve $|2x - 1| \le 7$:
+
+@math label="eq:abs-example"
+-7 \le 2x - 1 \le 7 \;\Rightarrow\; -6 \le 2x \le 8 \;\Rightarrow\; -3 \le x \le 4
+@/math
+
+**Real use.** A machine fills 500 mL bottles with error at most
+10 mL: $|V - 500| \le 10$ means every bottle holds between 490 and
+510 mL.
+
+## 7. Systems and the Number Line
+
+For several conditions at once, mark each on a number line and keep
+the overlap ("and") or the union ("or").
+
+**Example.** Find $x$ such that $x + 2 > 3$ **and** $2x \le 10$:
+
+- $x > 1$ and $x \le 5$
+
+- Answer: $(1, 5]$
+
+## 8. A Taste of Optimisation
+
+Businesses live inside inequalities: production capacity, budget,
+demand. Suppose a bakery makes ₹40 profit per cake and ₹25 per plate
+of cookies, with flour for at most 30 cakes or 60 plates:
+
+@math label="eq:optimisation"
+40c + 25p \to \text{max}, \quad \text{subject to } 2c + p \le 60,\ c, p \ge 0
+@/math
+
+This is **linear programming**: the best answer hides at a corner of
+the feasible region — a triangle whose sides are the inequalities.
+Maximising subject to constraints scales up to airline scheduling
+and supply chains.
+
+[summary]
+Inequalities describe ranges, written in interval notation. Golden
+rule: multiplying or dividing by a negative flips the sign. Linear
+inequalities solve like equations; double inequalities operate on
+all parts together. For quadratics, use the roots and the "outside /
+between" sign pattern. Absolute values translate into distance
+ranges — $|x| < a$ gives a strip, $|x| > a$ gives two tails. Combine
+multiple conditions on a number line, and you hold the basic tool of
+optimisation: feasible regions carved out by inequalities.
+[/summary]

@@ -1,0 +1,141 @@
+# Simple Harmonic Motion: The Physics of Oscillation
+
+> A pendulum swings, a guitar string hums, a suspension bridge shivers
+> in the wind — all are oscillations. The simplest, purest kind is
+> **simple harmonic motion (SHM)**: to-and-fro movement where the
+> restoring force grows in exact proportion to the displacement.
+
+## 1. What Makes Motion Harmonic?
+
+[definition]
+Motion is **simple harmonic** when the restoring force (or
+acceleration) is directly proportional to the displacement from the
+mean position and always directed towards it:
+$F = -kx$, the minus sign marking the pull back towards the centre.
+[/definition]
+
+Because the force grows with distance, the motion is fastest at the
+centre (equilibrium) and momentarily zero at the extremes — the
+**amplitude** $A$. One full to-and-fro trip is one **oscillation**;
+oscillations per second is the **frequency** $f$ (hertz), and the
+period is $T = 1/f$.
+
+## 2. The Equations of SHM
+
+For displacement measured from the mean position, with $\omega = 2\pi f$:
+
+@math label="eq:shm-displacement"
+x = A\sin(\omega t)
+@/math
+
+@math label="eq:shm-period-spring"
+T = 2\pi\sqrt{\frac{m}{k}}
+@/math
+
+[important]
+The period of an ideal spring–mass system depends only on the mass and
+the spring's stiffness — **not** on how far you pull it. A stiffer
+spring (larger $k$) oscillates faster; a heavier mass oscillates
+slower.
+[/important]
+
+## 3. Energy: Sloshing Between Kinetic and Potential
+
+In SHM, energy swings between kinetic energy (maximum at the centre)
+and potential energy (maximum at the extremes), while the total stays
+constant:
+
+@math label="eq:shm-energy"
+E = \frac{1}{2}kA^2 = \text{constant}
+@/math
+
+| Position | Speed | Kinetic energy | Potential energy |
+| --- | --- | --- | --- |
+| Mean position ($x = 0$) | Maximum | $\frac{1}{2}kA^2$ | 0 |
+| Extreme ($x = A$) | Zero | 0 | $\frac{1}{2}kA^2$ |
+| Any point $x$ | varies | $E - \frac{1}{2}kx^2$ | $\frac{1}{2}kx^2$ |
+
+@chart bar title="Energy of a pendulum across one quarter swing"
+labels:
+Extreme
+Half-way
+Mean position
+
+data:
+0
+50
+100
+@/chart
+
+## 4. The Simple Pendulum
+
+For a small bob on a light string of length $l$ (swings under ~15°),
+the period is:
+
+@math label="eq:pendulum-period"
+T = 2\pi\sqrt{\frac{l}{g}}
+@/math
+
+[tip]
+The pendulum's period does **not** depend on the bob's mass or the
+swing size — only on length and gravity. This is why a pendulum clock
+keeps steady time: doubling the length makes the period √2 times
+longer, and a pendulum taken to the Moon (g about 1/6) runs slow by
+a factor of √6.
+[/tip]
+
+## 5. Damped and Forced Oscillations
+
+Real oscillations die out because friction drains energy each cycle —
+this is **damping**. The amplitude decays over time: a swinging door
+closer, a car's shock absorbers, and the fading ring of a struck bell
+are all damped oscillators.
+
+Feed an oscillator a periodic push instead, and you get **forced
+oscillations**. When the driving frequency matches the system's
+natural frequency, amplitude explodes — **resonance**.
+
+[warning]
+Resonance is powerful and sometimes destructive. Soldiers break step
+crossing bridges; the Tacoma Narrows bridge (1940) twisted itself
+apart when wind-driven oscillations locked onto its natural
+frequencies. Earthquake-safe buildings are designed so their natural
+frequencies stay far from typical quake frequencies.
+[/warning]
+
+## 6. Resonance We Live By
+
+Resonance is not always an enemy — technology leans on it:
+
+- **Radio tuning** — the receiver's circuit is tuned to resonate with
+  one station's frequency, amplifying it above all others.
+- **MRI machines** — hydrogen nuclei resonate at specific radio
+  frequencies in a magnetic field.
+- **Musical instruments** — an instrument's body resonates with the
+  string or air column, projecting sound loudly.
+- **Swings** — small pushes timed to the swing's natural period build
+  a large amplitude effortlessly.
+
+## 7. From SHM to Waves
+
+Every wave is born from oscillation. Connect many SHM oscillators in a
+chain and the disturbance travels — a **wave**. This is the bridge to
+the next lessons: a vibrating string is SHM; the ripple running down
+it is a wave with speed $v = f\lambda$.
+
+| Concept | Symbol | Meaning |
+| --- | --- | --- |
+| Amplitude | $A$ | Maximum displacement |
+| Frequency | $f$ | Oscillations per second (Hz) |
+| Period | $T$ | Time per oscillation; $T = 1/f$ |
+| Angular frequency | $\omega$ | $2\pi f$ (rad/s) |
+
+[summary]
+SHM is oscillation under a restoring force $F = -kx$. The period of a
+spring–mass system is $2\pi\sqrt{m/k}$ and of a simple pendulum
+$2\pi\sqrt{l/g}$ — independent of amplitude in both cases. Energy
+sloshes between kinetic and potential forms while the total
+$\frac{1}{2}kA^2$ stays fixed. Friction damps real oscillations;
+driving a system at its natural frequency produces resonance, which
+can amplify — or destroy.
+[/summary]

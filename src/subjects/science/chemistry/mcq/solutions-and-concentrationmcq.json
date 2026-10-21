@@ -1,0 +1,76 @@
+{
+  "lessonId": "solutions-and-concentration",
+  "title": "Solutions and Concentration: The Chemistry of Mixtures",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a sugar-water solution, the water is best described as the:",
+      "options": ["Solute", "Solvent", "Saturated phase", "Colloid"],
+      "correct": 1,
+      "rationale": "The solvent is the component present in the larger amount that does the dissolving; sugar, the smaller dissolved component, is the solute."
+    },
+    {
+      "id": 2,
+      "question": "'Like dissolves like' explains which observation?",
+      "options": ["Oil dissolves in water", "Grease dissolves in petrol but not in water", "Salt floats on water", "Sand dissolves in alcohol"],
+      "correct": 1,
+      "rationale": "Polar solvents dissolve polar/ionic solutes; non-polar solvents dissolve non-polar ones. Grease (non-polar) mixes with petrol (non-polar), not with polar water."
+    },
+    {
+      "id": 3,
+      "question": "Milk, in which fat droplets scatter light but never settle, is a:",
+      "options": ["True solution", "Suspension", "Colloid", "Compound"],
+      "correct": 2,
+      "rationale": "Colloids have particles between 1 and 1000 nm — big enough to scatter light (the Tyndall effect) but small enough to stay suspended, like milk or fog."
+    },
+    {
+      "id": 4,
+      "question": "What is the molarity of a solution made by dissolving 0.5 mol of NaOH in enough water to make 250 mL of solution?",
+      "options": ["0.5 M", "1 M", "2 M", "4 M"],
+      "correct": 2,
+      "rationale": "M = n/V = 0.5 mol / 0.25 L = 2 M."
+    },
+    {
+      "id": 5,
+      "question": "Which concentration unit is preferred for freezing-point-depression measurements?",
+      "options": ["Molarity", "Molality", "Mass percent", "ppm"],
+      "correct": 1,
+      "rationale": "Molality (mol/kg of solvent) is based on mass, so it is independent of temperature, while volume-based molarity drifts as the solution expands."
+    },
+    {
+      "id": 6,
+      "question": "To prepare 1 L of 2 M HCl from a 12 M stock solution, you should:",
+      "options": ["Take 1 L of stock and boil it", "Take 167 mL of stock and dilute to 1 L with water", "Mix 2 L of water with the stock", "Take 24 mL of stock and dilute to 100 mL"],
+      "correct": 1,
+      "rationale": "M₁V₁ = M₂V₂ → V₁ = (2 × 1)/12 ≈ 0.167 L: measure 167 mL of stock, then add water to the 1 L mark (acid into water)."
+    },
+    {
+      "id": 7,
+      "question": "A solution that holds more dissolved solute than its normal saturation limit at that temperature is:",
+      "options": ["Unsaturated", "Saturated", "Supersaturated", "Diluted"],
+      "correct": 2,
+      "rationale": "Supersaturated solutions are metastable, prepared by slow cooling; a seed crystal triggers rapid crystallisation of the excess, as in rock candy."
+    },
+    {
+      "id": 8,
+      "question": "Why is calcium chloride (CaCl₂) more effective than sodium chloride (NaCl) per mole at melting road ice?",
+      "options": ["CaCl₂ is heavier", "CaCl₂ yields three ions per formula unit versus two for NaCl, tripling the freezing-point depression", "CaCl₂ reacts chemically with ice", "NaCl raises the freezing point"],
+      "correct": 1,
+      "rationale": "Colligative properties count dissolved particles: CaCl₂ → Ca²⁺ + 2Cl⁻ gives ~3 particles per mole versus ~2 for NaCl, depressing the freezing point further."
+    },
+    {
+      "id": 9,
+      "question": "As temperature rises, the solubility of a gas in water:",
+      "options": ["Increases", "Decreases", "Stays constant", "Doubles"],
+      "correct": 1,
+      "rationale": "Gas molecules gain kinetic energy with heat and escape the solvent more easily — warm soda goes flat and warm water holds less oxygen for fish."
+    },
+    {
+      "id": 10,
+      "question": "Arsenic in drinking water is regulated at 10 ppb. 'ppb' stands for:",
+      "options": ["Partial pressure bars", "Parts per billion", "Percentage by boiling", "Purity per batch"],
+      "correct": 1,
+      "rationale": "ppb = parts per billion, a mass-ratio unit for trace concentrations; ppm (parts per million) is its thousand-fold bigger cousin."
+    }
+  ]
+}

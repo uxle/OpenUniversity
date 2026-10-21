@@ -1,0 +1,169 @@
+# Solutions and Concentration: The Chemistry of Mixtures
+
+> Almost everything we drink, inject, and clean with is a solution —
+> one substance spread evenly through another. This lesson covers how
+> solutions form, the many ways chemists express "how much is
+> dissolved", and why dissolving things changes boiling and freezing
+> points.
+
+## 1. What Is a Solution?
+
+[definition]
+A **solution** is a homogeneous mixture of two or more substances —
+uniform throughout, with particles of size < 1 nm that never settle.
+The **solute** is the smaller (dissolved) component; the **solvent**
+is the larger one doing the dissolving.
+[/definition]
+
+| Solute | Solvent | Example |
+| --- | --- | --- |
+| Solid | Liquid | Sugar in water, salt in sea water |
+| Gas | Liquid | Oxygen in water, CO₂ in soft drinks |
+| Liquid | Liquid | Ethanol in water (whisky) |
+| Solid | Solid | Alloys like brass (zinc in copper) |
+| Gas | Gas | Air (mainly N₂ and O₂) |
+
+Not to be confused with: **suspensions** (cloudy, particles settle —
+muddy water, milk of magnesia) and **colloids** (particles ~1–1000 nm,
+scatter light — milk, fog, mayonnaise, gelatin).
+
+## 2. How Dissolving Works: "Like Dissolves Like"
+
+Water molecules are polar. When salt dissolves, water's partial
+charges surround each Na⁺ and Cl⁻, prising ions from the crystal
+lattice — **hydration**. Non-polar solutes (grease, wax) can't be
+hydrated, which is why oil and water refuse to mix, while grease
+dissolves happily in non-polar solvents like petrol or hexane.
+
+[info title="Why soap works"]
+A soap molecule has a polar head and a long non-polar tail. The tails
+embed in grease while heads stay in water, so grease breaks into
+micelles that water can carry away — the chemistry behind every
+dishwash.
+[/info]
+
+Solubility rises with temperature for most solids (more sugar
+dissolves in hot tea), but falls for gases (warm soda goes flat, warm
+water holds less oxygen for fish).
+
+## 3. Expressing Concentration
+
+"How much solute per how much solution" has several standard
+vocabularies — each suited to different work:
+
+### Mass percent
+
+@math label="eq:mass-percent"
+\text{mass \%} = \frac{\text{mass of solute}}{\text{mass of solution}} \times 100
+@/math
+
+5 g of salt in 95 g of water → 5% by mass. Common in labs and on
+food labels.
+
+### Parts per million (ppm)
+
+For tiny concentrations — pollutants, minerals, chlorine in a pool:
+
+@math label="eq:ppm"
+\text{ppm} = \frac{\text{mass of solute}}{\text{mass of solution}} \times 10^6
+@/math
+
+Fluoride in drinking water is dosed at ~1 ppm; arsenic's safe limit is
+10 ppb (parts per billion).
+
+### Molarity (M) — the chemist's favourite
+
+@math label="eq:molarity"
+M = \frac{n_{\text{solute}}}{V_{\text{solution (L)}}}
+@/math
+
+A 1 M NaCl solution holds 1 mole (58.5 g) of NaCl per litre of
+*solution*. Molarity links directly to reaction stoichiometry, since
+equations count moles.
+
+### Molality (m) — for temperature work
+
+@math label="eq:molality"
+m = \frac{n_{\text{solute}}}{\text{mass of solvent (kg)}}
+@/math
+
+Molality uses mass, not volume, so it never changes with temperature —
+the right unit for freezing-point and boiling-point experiments.
+
+[tip]
+Dilution shortcut: $M_1V_1 = M_2V_2$. To turn concentrated 12 M HCl
+into 1 L of 2 M acid, measure $V_1 = (2 \times 1)/12 = 0.167$ L and
+dilute to the mark — always add acid to water, never water to acid.
+[/tip]
+
+## 4. Saturated, Unsaturated, Supersaturated
+
+- **Unsaturated** — could still dissolve more solute at this
+  temperature.
+- **Saturated** — holds the maximum; extra solute sits on the bottom
+  in equilibrium with dissolved particles.
+- **Supersaturated** — a carefully cooled solution holding *more*
+  than the normal maximum, metastable. Drop in a seed crystal and the
+  excess crashes out — how rock candy and honey crystallisation work.
+
+@chart line title="Grams of KNO₃ and NaCl dissolving in 100 g water vs temperature"
+labels:
+0
+20
+40
+60
+80
+
+series:
+  - name: "KNO₃"
+    data: 13 32 64 110 169
+  - name: "NaCl"
+    data: 35 36 37 38 39
+@/chart
+
+The steep curve of potassium nitrate vs the nearly flat one of salt is
+why **fractional crystallisation** separates them: cool a hot
+saturated mixture and KNO₃ crystallises out while salt stays behind.
+
+## 5. Colligative Properties: Numbers, Not Identity
+
+Dissolved particles impede the solvent's escape and freezing — the
+effects depend only on *how many* particles, not what they are:
+
+- **Boiling point elevation:** a solution boils above the pure
+  solvent's boiling point (adding salt raises water's bp slightly).
+- **Freezing point depression:** a solution freezes below the pure
+  solvent's freezing point — why salt melts road ice and why
+  radiator antifreeze (ethylene glycol) protects engines both winter
+  and summer.
+
+[important]
+Electrolytes multiply the effect. One mole of sugar gives 1 mole of
+particles; one mole of NaCl gives ~2 moles of ions (Na⁺, Cl⁻), and
+CaCl₂ gives ~3 — so salts depress freezing points several times
+harder molecule-for-molecule than sugar.
+[/important]
+
+## 6. Solutions in the Body and Around Us
+
+- **Blood plasma** is an aqueous solution; its ~0.9% NaCl
+  concentration defines "normal saline" — matching it prevents cells
+  from swelling or shrivelling.
+- **Intravenous drips** are formulated in milliosmoles to be
+  isotonic with blood.
+- **Sea water** is ~3.5% dissolved salts; desalination by reverse
+  osmosis pushes it through membranes that block ions.
+- **Humidity** is water vapour dissolved in air; saturation gives
+  100% relative humidity, and cooling supersaturates it into dew, fog,
+  or rain.
+
+[summary]
+A solution is a homogeneous mixture of solute in solvent, governed by
+"like dissolves like". Concentration is expressed as mass percent,
+ppm, molarity (moles per litre of solution), or molality (moles per
+kg of solvent), with $M_1V_1 = M_2V_2$ handling dilutions. Saturated
+solutions sit at the solubility limit, supersaturated ones beyond it.
+Dissolved particles raise boiling points and depress freezing points
+in proportion to their count — colligative properties behind road
+salt, antifreeze, and IV drips.
+[/summary]

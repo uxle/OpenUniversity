@@ -1,0 +1,81 @@
+{
+  "lessonId": "wrong-number-series",
+  "title": "Wrong Number Series: Spotting the Imposter",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Find the wrong term: 1, 3, 7, 13, 22, 33",
+      "options": ["7", "13", "22", "33"],
+      "correct": 2,
+      "rationale": "Differences should be 2, 4, 6, 8, 10 — giving 1, 3, 7, 13, 21, 31. The printed 22 breaks the even-step ladder (difference 9 instead of 8), and 33 is only its echo (21 + 10 = 31). Report the first break: 22."
+    },
+    {
+      "id": 2,
+      "question": "Find the wrong term: 2, 5, 10, 17, 26, 38, 50",
+      "options": ["17", "26", "38", "50"],
+      "correct": 2,
+      "rationale": "The series is n-squared + 1: 2, 5, 10, 17, 26, 37, 50. The term 38 sits where 6^2 + 1 = 37 belongs — a planted near-miss near the end, where the pattern already feels confirmed."
+    },
+    {
+      "id": 3,
+      "question": "Find the wrong term: 2, 6, 18, 52, 162, 486",
+      "options": ["18", "52", "162", "486"],
+      "correct": 1,
+      "rationale": "The engine is multiply by 3: 2, 6, 18, 54, 162, 486. The imposter 52 is a digit-swap trap for 54 — one ratio sweep catches it without any table."
+    },
+    {
+      "id": 4,
+      "question": "Find the wrong term: 1, 8, 27, 64, 125, 215, 343",
+      "options": ["64", "125", "215", "343"],
+      "correct": 2,
+      "rationale": "Perfect cubes: 1, 8, 27, 64, 125, 216, 343. The term 215 is one less than 6-cubed — the classic off-by-one trap planted beside a famous value."
+    },
+    {
+      "id": 5,
+      "question": "Find the wrong term: 2, 3, 5, 7, 11, 14, 17",
+      "options": ["7", "11", "14", "17"],
+      "correct": 2,
+      "rationale": "The prime ladder runs 2, 3, 5, 7, 11, 13, 17. The term 14 (2 x 7) breaks the ladder where 13 belongs — name the ladder first, then audit every term."
+    },
+    {
+      "id": 6,
+      "question": "Find the wrong term: 1, 1, 2, 3, 5, 8, 12, 20",
+      "options": ["5", "8", "12", "20"],
+      "correct": 2,
+      "rationale": "Each Fibonacci term is the sum of the previous two: after 5, 8 the next is 13, then 21. The first violation is 12; the later 20 is only an echo. Always answer the FIRST break in a chained rule."
+    },
+    {
+      "id": 7,
+      "question": "Find the wrong term: 240, 120, 60, 31, 15, 7.5",
+      "options": ["120", "60", "31", "15"],
+      "correct": 2,
+      "rationale": "The rule is halving: 240, 120, 60, 30, 15, 7.5. The term 31 should be 30 — a one-off planted mid-series. Clean halving/doubling chains are best audited by a single ratio sweep."
+    },
+    {
+      "id": 8,
+      "question": "Find the wrong term: 5, 11, 23, 47, 96, 191",
+      "options": ["23", "47", "96", "191"],
+      "correct": 2,
+      "rationale": "The rule is double-and-add-one: 5, 11 (5x2+1), 23 (11x2+1), 47, 95, 191. The term 96 should be 2 x 47 + 1 = 95 — verify each step's multiply AND add separately, since either can be the planted error."
+    },
+    {
+      "id": 9,
+      "question": "Find the wrong term: 4, 9, 19, 39, 79, 160",
+      "options": ["19", "39", "79", "160"],
+      "correct": 3,
+      "rationale": "Differences are 5, 10, 20, 40, 80 — doubling — so the series should end at 79 + 80 = 159, not 160. The second-difference/ratio view catches the off-by-one at the tail."
+    },
+    {
+      "id": 10,
+      "question": "In a wrong-number series, two consecutive differences look wrong (say the ladder 2, 4, 6, 9, 11 has 9 and 11 out of place). This usually means:",
+      "options": [
+        "Two separate terms are wrong",
+        "The single term between those two differences is the imposter",
+        "The series has no rule",
+        "The first term is wrong"
+      ],
+      "correct": 1,
+      "rationale": "One bad term corrupts both differences that touch it: expected 8 and 10 appear as 9 and 11 when the shared middle term is 1 too high. Convert 'two odd differences' into 'one bad term' before answering."
+    }
+  ]
+}

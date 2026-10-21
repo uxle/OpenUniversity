@@ -1,0 +1,76 @@
+{
+  "lessonId": "mixture-and-alligation",
+  "title": "Mixture and Alligation: Mixing Quantities, Balancing Prices",
+  "questions": [
+    {
+      "id": 1,
+      "question": "30 litres of 20 percent acid is mixed with 20 litres of 45 percent acid. The strength of the mixture is:",
+      "options": ["30 percent", "32.5 percent", "28 percent", "35 percent"],
+      "correct": 0,
+      "rationale": "Weighted average = (30x20 + 20x45)/50 = (600 + 900)/50 = 30 percent. Volume-weighted, and closer to the 20 percent solution since it has more volume."
+    },
+    {
+      "id": 2,
+      "question": "In what ratio must rice at 40 rupees/kg be mixed with rice at 60 rupees/kg so that the blend costs 45 rupees/kg?",
+      "options": ["1:3", "3:1", "2:3", "3:2"],
+      "correct": 1,
+      "rationale": "Alligation diagonal: cheaper/dearer = (60-45)/(45-40) = 15/5 = 3/1. Three parts cheap to one part dear. Check: (3x40 + 1x60)/4 = 180/4 = 45."
+    },
+    {
+      "id": 3,
+      "question": "How much water must be added to 40 litres of 90 percent acid to dilute it to 60 percent acid?",
+      "options": ["10 litres", "20 litres", "15 litres", "25 litres"],
+      "correct": 1,
+      "rationale": "Treat water as 0 percent acid. Ratio acid-solution:water = (60-0)/(90-60) = 2/1, so 40 L of the acid needs 20 L of water. Check: 36 L pure acid in a 60 L total = 60 percent."
+    },
+    {
+      "id": 4,
+      "question": "From 60 litres of pure milk, 12 litres are drawn and replaced with water; the operation is repeated once. Milk remaining is:",
+      "options": ["40.5 litres", "38.4 litres", "36 litres", "42 litres"],
+      "correct": 1,
+      "rationale": "Each replacement keeps 1 - 12/60 = 4/5 of the milk. After two rounds: 60 x (4/5)^2 = 60 x 0.64 = 38.4 litres of milk (water = 21.6 L). Replacement cycles multiply survival factors."
+    },
+    {
+      "id": 5,
+      "question": "A vessel contains milk:water = 4:1. Another contains milk:water = 3:2. In what ratio must they be mixed to obtain milk:water = 7:3?",
+      "options": ["1:1", "1:2", "2:1", "2:3"],
+      "correct": 0,
+      "rationale": "Milk fractions: vessel A = 4/5 = 0.8, vessel B = 3/5 = 0.6, target 7/10 = 0.7. Alligation: A:B = (0.7 - 0.6):(0.8 - 0.7) = 1:1. Check: equal volumes average to (0.8 + 0.6)/2 = 0.7 = exactly 7:3."
+    },
+    {
+      "id": 6,
+      "question": "A grocer buys wheat at 36 rupees/kg and 42 rupees/kg and mixes them to sell the blend at 44.80 rupees/kg with a 12 percent profit. The mixing ratio is:",
+      "options": ["1:2", "2:1", "1:1", "4:3"],
+      "correct": 0,
+      "rationale": "First find the target COST: 44.80/1.12 = 40 rupees/kg. Alligation between 36 and 42 about 40: cheaper/dearer = (42-40)/(40-36) = 2/4 = 1:2. Compute the mean from the profit first, then alligate."
+    },
+    {
+      "id": 7,
+      "question": "A man travels part of a 60 km trip at 20 km/h and the rest at 60 km/h, averaging 30 km/h overall. The time spent at 20 km/h is:",
+      "options": ["1.5 h", "2 h", "1 h", "0.5 h"],
+      "correct": 0,
+      "rationale": "Alligation on speeds gives the TIME ratio slow:fast = (60-30):(30-20) = 3:1. Total time = 60/30 = 2 h, split 3:1 into 1.5 h and 0.5 h. Distance check: 20 x 1.5 + 60 x 0.5 = 30 + 30 = 60 km."
+    },
+    {
+      "id": 8,
+      "question": "Two alloys contain copper and zinc in ratios 5:3 and 3:5. Equal quantities of each are melted together. The copper fraction in the new alloy is:",
+      "options": ["1/2", "5/8", "3/8", "2/3"],
+      "correct": 0,
+      "rationale": "Alloy A is 5/8 copper, alloy B is 3/8 copper. Equal quantities average directly: (5/8 + 3/8)/2 = 1/2. When the mixing ratio is already given, plain weighted averaging replaces alligation."
+    },
+    {
+      "id": 9,
+      "question": "A 40-litre mixture has milk:water = 7:1. How much milk should be ADDED to make the ratio 9:1?",
+      "options": ["6 litres", "8 litres", "10 litres", "5 litres"],
+      "correct": 2,
+      "rationale": "The mixture holds 35 L milk and 5 L water; water stays fixed at 5 L while milk is added. For ratio 9:1, milk needed = 9 x 5 = 45 L, so the addition is 45 - 35 = 10 litres. Adding pure milk changes only the milk side of the ledger."
+    },
+    {
+      "id": 10,
+      "question": "A container has 60 litres of milk. 20 litres are removed and replaced with water, twice. The final milk-to-water ratio is:",
+      "options": ["4:5", "16:9", "5:4", "9:16"],
+      "correct": 0,
+      "rationale": "Each round keeps 1 - 20/60 = 2/3 of the milk. After two rounds: milk = 60 x (2/3)^2 = 80/3 L, water = 60 - 80/3 = 100/3 L. Ratio = 80:100 = 4:5 — slightly more water than milk."
+    }
+  ]
+}

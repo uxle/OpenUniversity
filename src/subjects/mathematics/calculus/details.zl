@@ -9,7 +9,9 @@
 
 @lessons {
   lesson1
+  limits-and-continuity
   derivatives
   integration-basics
   applications-of-calculus
+  differential-equations
 }

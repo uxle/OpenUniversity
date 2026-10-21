@@ -1,0 +1,154 @@
+# Averages: The Art of Balanced Numbers
+
+> The average is the first statistical tool anyone learns — add
+> everything, divide by the count — yet competitive exams wring an
+> astonishing variety of questions from it: cricket scores, replaced
+> members, combined classes, and age puzzles. Every one of them
+> reduces to a single principle: the total is the average times the
+> count.
+
+## 1. The Fundamental Relation
+
+[definition]
+The **average (arithmetic mean)** of $n$ quantities is their sum
+divided by $n$:
+
+@math label="eq:avg-basic"
+\bar{x} = \frac{\text{sum of observations}}{\text{number of observations}}
+@/math
+
+[/definition]
+
+Equivalently, the **sum** equals average $\times$ count. Almost every
+trick in this chapter is just this equation rearranged.
+
+**Worked example.** The average of 5 numbers is 27; one number 35 is
+removed. The average of the remaining four:
+
+@math label="eq:avg-removed"
+\text{new sum} = 27 \times 5 - 35 = 100, \quad \text{new average} = \frac{100}{4} = 25
+@/math
+
+## 2. Standard Sums and Results
+
+| Result | Statement |
+| --- | --- |
+| First $n$ naturals | average $= \frac{n+1}{2}$ |
+| First $n$ even numbers | average $= n+1$ |
+| First $n$ odd numbers | average $= n$ |
+| Consecutive numbers/AP | average $=$ the middle term (mean of first and last) |
+| Average always lies between min and max | — |
+
+[important]
+The average of quantities in arithmetic progression is simply the
+middle value — so for 11 consecutive integers the average is the 6th.
+For an even count, it is the mean of the two middle terms.
+[/important]
+
+**Worked example.** The average of 11 results is 50; the average of
+the first six is 49 and of the last six is 52. The sixth result:
+
+@math label="eq:avg-overlap"
+S = 11 \times 50 = 550,\; S_6 + S_6' = 6 \times 49 + 6 \times 52 = 606
+@/math
+
+The overlap counts the 6th result twice, so the 6th result is
+$606 - 550 = 56$.
+
+## 3. Weighted Average
+
+[definition]
+A **weighted average** multiplies each value by its weight (group
+size, price, or share) before dividing by the total weight:
+
+@math label="eq:weighted"
+\bar{x} = \frac{w_1x_1 + w_2x_2 + \cdots + w_kx_k}{w_1 + w_2 + \cdots + w_k}
+@/math
+
+[/definition]
+
+**Worked example.** A class of 40 boys averages 16 years; 10 girls
+average 15 years. The combined average:
+
+@math label="eq:weighted-example"
+\frac{40 \times 16 + 10 \times 15}{50} = \frac{640 + 150}{50} = 15.8
+@/math
+
+A weighted average always lies between the group averages — and closer
+to the heavier group.
+
+## 4. Replacement Problems
+
+When one member leaves and another joins, the average changes by
+exactly the difference between the new and old members, spread over
+the count:
+
+@math label="eq:replacement"
+\text{new member} = \text{old member} \pm n \times (\text{change in average})
+@/math
+
+**Worked example.** The average weight of 8 persons increases by
+$2.5\ \text{kg}$ when a new person replaces one weighing $55\ \text{kg}$.
+The newcomer weighs $55 + 8 \times 2.5 = 75\ \text{kg}$.
+
+**Worked example (two replacements).** The average age of a committee
+of 7 falls by 1 year when two members aged 45 and 40 are replaced by
+two newcomers. Total age drop $= 7 \times 1 = 7$ years, so the
+newcomers' combined age $= 85 - 7 = 78$.
+
+## 5. Average Speed
+
+The average speed over a journey is **never** the average of the
+speeds — it is total distance over total time. For equal distances at
+speeds $a$ and $b$ (the classic "to and fro" case):
+
+@math label="eq:avg-speed"
+\text{average speed} = \frac{2ab}{a+b}
+@/math
+
+This **harmonic mean** is always less than the arithmetic mean of $a$
+and $b$. **Worked example:** at $60\ \text{km/h}$ out and
+$40\ \text{km/h}$ back, the average is
+$\frac{2 \times 60 \times 40}{100} = 48\ \text{km/h}$ — not
+$50\ \text{km/h}$, because the slower leg consumes more time.
+
+## 6. Age and Batting Teasers
+
+**Ages.** The average age of a family of 5 is 32 today. Five years
+ago, everyone was 5 years younger, so the average was
+$32 - 5 = 27$ — time shifts every average by the same number of
+years. In reverse: "a child born today raises the family average
+from..." questions only need the total to be recomputed with the new
+count (newborn age 0).
+
+**Batting.** A batsman scores 87 in his 17th innings, raising his
+average by 3. Before: average $a$ with $16a$ runs; after:
+$a + 3$ with $16a + 87$ over 17 innings:
+
+@math label="eq:batting"
+16a + 87 = 17(a+3) \Rightarrow 16a + 87 = 17a + 51 \Rightarrow a = 36
+@/math
+
+The new average is $39$.
+
+[example]
+The average marks of a class rose from 60 to 63 after a student
+scoring 84 joined a class of 20. Check: new total $= 60 \times 20 +
+84 = 1284$; new average $= 1284/21 = 61.14$ — not 63! The correct
+setup for average 63 needs $84 - x = 21 \times 3$, giving the joining
+score $x = 147$. Whenever a question feels self-inconsistent, trust
+the total-equals-average-times-count equation, not the story.
+[/example]
+
+[summary]
+Every average question is the equation
+$\text{sum} = \text{average} \times \text{count}$ in disguise.
+Removed or added members change the sum; replacements change it by the
+difference of the swapped values ($\pm n \times$ change in average).
+Combined groups use the weighted average, which always sits nearer the
+bigger group. Averages of APs equal the middle term; averages over
+time shift uniformly with the years; and average speed over equal
+distances is the harmonic mean $\frac{2ab}{a+b}$, not the arithmetic
+mean. Find the total, adjust it, divide again — that is the whole
+chapter.
+[/summary]

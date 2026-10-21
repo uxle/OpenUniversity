@@ -1,0 +1,162 @@
+# Error Handling and Exceptions: Failing Gracefully
+
+> Programs fail: files vanish, networks drop, users type "abc" where
+> a number belongs. What separates toy code from production code is
+> not whether errors happen — it is whether the program *fails
+> gracefully*. This lesson covers exceptions, try/catch, custom
+> errors, and defensive design.
+
+## 1. Why Errors Need a Plan
+
+Without handling, the first unexpected condition crashes everything
+after it — one bad record kills the whole import, one dead sensor
+brings down the whole dashboard. Good error handling pursues three
+goals:
+
+1. **Don't crash** on foreseeable problems — recover and continue.
+2. **Fail loudly and clearly** on real bugs — visible, not silent.
+3. **Clean up** — files, connections, locks — even on the way out.
+
+## 2. Exceptions: Errors as Objects
+
+[definition]
+An **exception** is an object representing an abnormal condition,
+*thrown* (raised) by the failing code and *caught* by a handler
+along the call chain. Uncaught, it unwinds the program and stops it.
+[/definition]
+
+```python
+def read_score(text):
+    value = int(text)          # raises ValueError if text isn't a number
+    if not 0 <= value <= 100:
+        raise ValueError(f"score {value} out of range")   # deliberate throw
+    return value
+```
+
+Typical built-in families:
+
+| Exception | Trigger |
+| --- | --- |
+| ValueError | Right type, wrong value — `int("abc")` |
+| TypeError | Wrong type — `"1" + 1` |
+| IndexError | List index out of range |
+| KeyError | Missing dict key |
+| FileNotFoundError | Opening a missing file |
+| ZeroDivisionError | Division by zero |
+| (JS) TypeError / ReferenceError | Calling undefined things |
+
+## 3. try / except / finally
+
+The handler pattern across languages (Python shown; JavaScript has
+try/catch/finally, Java try/catch/finally + checked exceptions):
+
+```python
+try:
+    score = read_score(user_input)
+    save(score)
+except ValueError as err:
+    print(f"Bad input: {err}")        # recover: ask again
+except (ConnectionError, TimeoutError):
+    print("Network trouble — retry later")
+finally:
+    close_connection()                # ALWAYS runs, error or not
+```
+
+- **try** — the risky stretch.
+- **except / catch** — named rescues; match specific classes.
+- **else** (Python) — runs when no exception occurred.
+- **finally** — cleanup guaranteed to run either way.
+
+[important]
+Catch the **narrowest** useful exception. `except Exception:` (or a
+bare `catch (e)` in JS) swallows *everything* — including the
+programming bugs you need to see. A silent catch that just logs
+"something went wrong" is how data corrupts unnoticed.
+[/important]
+
+## 4. Throwing Well: Messages and Custom Types
+
+Raise with a message that names the culprit and the constraint:
+
+```python
+class PaymentError(Exception): pass
+
+def charge(amount):
+    if amount <= 0:
+        raise PaymentError(f"amount must be positive, got {amount}")
+```
+
+Custom exception classes let callers filter *your* failures from
+everyone else's — a library exporting only `Exception` forces callers
+to over-catch. In JavaScript, `class PaymentError extends Error`
+gives you stack traces for free.
+
+## 5. Errors by Design: Validation and Contracts
+
+Cheapest errors are the ones never thrown — validate at the edges:
+
+```javascript
+function withdraw(balance, amount) {
+  if (typeof amount !== "number" || Number.isNaN(amount))
+    throw new TypeError("amount must be a number");
+  if (amount <= 0) throw new RangeError("amount must be positive");
+  if (amount > balance) throw new RangeError("insufficient funds");
+  return balance - amount;
+}
+```
+
+- **Fail fast:** check preconditions at entry, not deep inside.
+- **Parse, don't validate:** convert raw input (strings, JSON) into
+  typed data once at the boundary; inner code then trusts its inputs.
+- **Return-or-throw discipline:** reserve exceptions for
+  *exceptional* states; expected outcomes ("no rows found") are
+  normal return values, not exceptions.
+
+## 6. Cleanup: finally, with, and RAII
+
+Resources — files, sockets, locks — must be released exactly once,
+on every path:
+
+```python
+with open("data.csv") as f:      # closes automatically, even on error
+    rows = parse(f)
+```
+
+Python's `with`, Java's try-with-resources, and C++'s RAII all embody
+the same rule: **attach cleanup to object lifetime, not to the
+programmer's memory**. `finally` is the manual fallback.
+
+[tip]
+Debugging tip: when an exception surprises you, read it bottom-up —
+the traceback shows the call chain: innermost failure first, then
+each caller that led there. The last line names the error and
+message; the lines above name the code path that reached it.
+[/tip]
+
+## 7. Patterns and Anti-Patterns
+
+| Pattern | Use |
+| --- | --- |
+| **Retry with backoff** | Transient network faults (retry 3×, doubling wait) |
+| **Circuit breaker** | Stop hammering a dead service; probe occasionally |
+| **Fallback value** | Cache last-good data when refresh fails |
+| **Validation at edges** | Reject garbage at input; keep the core clean |
+| **Structured logging** | Log type + context, so failures are searchable |
+
+| Anti-pattern | Why it hurts |
+| --- | --- |
+| Empty catch block `except: pass` | Errors vanish; bugs surface later as corrupt data |
+| Catch-all on a huge try | Mixes recoverable and fatal; hides bugs |
+| Using exceptions for normal flow | Slow, unreadable control flow |
+| String-only errors | Callers can't distinguish your failure from others |
+| finally doing real logic | Cleanup only — it runs even when things went wrong |
+
+[summary]
+Exceptions carry failure as objects — thrown at the fault, caught by
+name, and followed by finally-guaranteed cleanup. Catch narrowly,
+throw early with precise custom types, and validate at the edges so
+the core can trust its data. Use with/RAII for resources, retries
+and fallbacks for transient faults, and never write a silent catch:
+graceful failure is loud about what went wrong and quiet about the
+rest of the program.
+[/summary]

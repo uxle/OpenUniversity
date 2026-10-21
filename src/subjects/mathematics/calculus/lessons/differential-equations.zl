@@ -1,0 +1,160 @@
+# Differential Equations: Equations About Change
+
+> A differential equation describes how a quantity changes —
+> populations growing, coffee cooling, money compounding,
+> radioactive atoms decaying. Solving it means recovering the
+> original quantity from its rate of change, which is why this tiny
+> corner of mathematics runs physics, biology, economics, and
+> engineering.
+
+## 1. What Is a Differential Equation?
+
+[definition]
+A **differential equation** is an equation involving a function and
+its derivatives, such as $\frac{dy}{dx} = 3x^2$. Its **solution** is
+not a number but a *family of functions*.
+[/definition]
+
+$$\frac{dy}{dx} = 3x^2 \;\Rightarrow\; y = x^3 + C$$
+
+Every value of $C$ gives a valid curve — the family $y = x^3 + C$ is
+a stack of identical cubics shifted vertically. A single extra data
+point (an **initial condition**) pins down one member of the family:
+knowing $y(0) = 5$ gives $C = 5$.
+
+### Order and degree
+
+- **Order** = highest derivative present: $\frac{dy}{dx} = ky$ is
+  first order; $\frac{d^2y}{dt^2} + y = 0$ is second order.
+- **Degree** = the power of the highest-order derivative (when the
+  equation is polynomial in derivatives).
+
+## 2. Solving by Direct Integration
+
+The simplest differential equations are pure derivatives — integrate
+both sides.
+
+**Example.** A car's speed is $v(t) = 20 + 3t$ m/s. Its position
+(from rest at $s(0)=0$):
+
+@math label="eq:integration-example"
+\frac{ds}{dt} = 20 + 3t \;\Rightarrow\; s = 20t + \frac{3t^2}{2} + C
+@/math
+
+With $s(0) = 0$, $C = 0$: after 4 s, $s = 80 + 24 = 104$ m.
+
+## 3. Separable Equations: Split the Variables
+
+If the equation can be written with all $y$'s on one side and all
+$x$'s (or $t$'s) on the other, it is **separable** — the workhorse
+method:
+
+@math label="eq:separable-steps"
+\frac{dy}{dx} = f(x)\,g(y) \;\Rightarrow\; \frac{dy}{g(y)} = f(x)\,dx
+@/math
+
+Integrate both sides, then apply the initial condition.
+
+**Worked example.** Solve $\frac{dy}{dx} = 2xy$ with $y(0) = 3$:
+
+@math label="eq:separable-example"
+\frac{dy}{y} = 2x\,dx \;\Rightarrow\; \ln|y| = x^2 + C \;\Rightarrow\; y = Ae^{x^2}
+@/math
+
+The initial condition $y(0)=3$ gives $A = 3$, so $y = 3e^{x^2}$.
+Verify: $\frac{dy}{dx} = 6xe^{x^2} = 2x \cdot 3e^{x^2}$. ✓
+
+## 4. The Equation of Growth and Decay
+
+[important]
+The most consequential differential equation in science:
+$\frac{dy}{dt} = ky$. Its solution is $y = y_0 e^{kt}$ —
+**exponential growth** if $k > 0$, **exponential decay** if $k < 0$.
+[/important]
+
+| Phenomenon | Equation | Behaviour |
+| --- | --- | --- |
+| Population (unlimited) | $\frac{dP}{dt} = kP$ | Doubles in $\frac{\ln 2}{k}$ |
+| Radioactive decay | $\frac{dN}{dt} = -\lambda N$ | Halves every half-life $\frac{\ln 2}{\lambda}$ |
+| Compound interest (continuous) | $\frac{dA}{dt} = rA$ | Doubles in $\frac{0.693}{r}$ |
+| Coffee cooling (Newton) | $\frac{dT}{dt} = -k(T - T_{room})$ | Approaches room temperature |
+
+**Carbon dating.** Carbon-14 has a half-life of 5,730 years
+($\lambda = \frac{\ln 2}{5730}$). A relic with 25% of the original
+C-14:
+
+@math label="eq:carbon-dating"
+0.25 = e^{-\lambda t} \;\Rightarrow\; t = \frac{\ln 4}{\ln 2} \times 5730 \approx 11{,}460 \text{ years}
+@/math
+
+Two half-lives — 25% survives one quarter after two halvings.
+
+@chart line title="Radioactive decay: percentage remaining vs half-lives"
+labels:
+0
+1
+2
+3
+4
+5
+
+series:
+  - name: "Remaining %"
+    data: 100 50 25 12.5 6.25 3.1
+@/chart
+
+## 5. Newton's Law of Cooling
+
+A body cools at a rate proportional to its excess over the
+surroundings:
+
+@math label="eq:cooling"
+\frac{dT}{dt} = -k(T - T_s) \;\Rightarrow\; T(t) = T_s + (T_0 - T_s)e^{-kt}
+@/math
+
+Coffee at 90° in a 20° room, cooling to 60° in 10 minutes, reaches
+$20 + 70e^{-2k \cdot 10}$ after 20 minutes — exponential approach
+never quite touching room temperature. Forensic scientists invert
+this law to estimate time of death from body temperature.
+
+## 6. Second-Order Stars: Oscillation
+
+@math label="eq:shm-de"
+\frac{d^2x}{dt^2} = -\omega^2 x
+@/math
+
+Its solution is $x = A\sin(\omega t + \phi)$ — pure simple harmonic
+motion. The same equation appears in electrical circuits (the LC
+circuit), so mechanical springs and electronic tuners obey identical
+mathematics.
+
+## 7. Modelling in Practice
+
+1. **Translate:** write the rate statement as a derivative ("growth
+   proportional to population" → $\frac{dP}{dt} = kP$).
+2. **Solve:** separate variables and integrate.
+3. **Fit:** use data (initial condition, half-life, doubling time)
+   to find constants.
+4. **Interpret:** extract doubling times, predict future values,
+   sanity-check limits.
+
+[tip]
+Always sanity-check the long-run behaviour. Exponential models grow
+without limit — real populations hit food limits, so ecologists
+upgrade to the **logistic equation**
+$\frac{dP}{dt} = kP(1 - P/K)$, whose solution curves flatten toward
+the carrying capacity $K$ — the famous S-curve of adoption of new
+technologies too.
+[/tip]
+
+[summary]
+A differential equation links a function to its rates of change; its
+solution is a family of functions, fixed to one member by initial
+conditions. Separable equations ($\frac{dy}{g(y)} = f(x)dx$) solve by
+integration. The master equation $\frac{dy}{dt} = ky$ yields
+exponential growth and decay, governing populations, interest,
+radioactivity (carbon dating), and — with a subtraction of
+surroundings — Newton's cooling. Second-order equations describe
+oscillation, and logistic variants tame unbounded growth into
+realistic S-curves.
+[/summary]

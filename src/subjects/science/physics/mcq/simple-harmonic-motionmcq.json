@@ -1,0 +1,76 @@
+{
+  "lessonId": "simple-harmonic-motion",
+  "title": "Simple Harmonic Motion: The Physics of Oscillation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The defining condition for simple harmonic motion is that the restoring force is:",
+      "options": ["Constant and opposite to velocity", "Proportional to displacement and directed towards the mean position", "Proportional to the square of displacement", "Always directed away from the mean position"],
+      "correct": 1,
+      "rationale": "SHM requires F = −kx: force proportional to displacement, acting back towards the equilibrium (mean) position."
+    },
+    {
+      "id": 2,
+      "question": "Where is a body in SHM moving fastest?",
+      "options": ["At the extreme displacement", "At the mean (equilibrium) position", "Halfway between centre and extreme", "It moves at constant speed everywhere"],
+      "correct": 1,
+      "rationale": "All the energy is kinetic at the mean position, so speed is maximum there, and momentarily zero at the extremes."
+    },
+    {
+      "id": 3,
+      "question": "The period of a mass–spring oscillator depends on:",
+      "options": ["Amplitude and mass", "Mass and spring constant only", "Spring constant and amplitude", "Amplitude only"],
+      "correct": 1,
+      "rationale": "T = 2π√(m/k) involves only the mass and the spring stiffness — not the amplitude of oscillation."
+    },
+    {
+      "id": 4,
+      "question": "A simple pendulum's period on Earth is 2 s. Taken to the Moon where g is about one-sixth, its period becomes roughly:",
+      "options": ["0.8 s", "2 s", "5 s", "12 s"],
+      "correct": 2,
+      "rationale": "T ∝ 1/√g. Reducing g by a factor of 6 increases T by √6 ≈ 2.45, so 2 s becomes about 4.9 s ≈ 5 s."
+    },
+    {
+      "id": 5,
+      "question": "Doubling the length of a simple pendulum changes its period by a factor of:",
+      "options": ["2", "4", "√2", "1/√2"],
+      "correct": 2,
+      "rationale": "T = 2π√(l/g), so T scales with the square root of length: doubling l multiplies T by √2."
+    },
+    {
+      "id": 6,
+      "question": "The total energy of a spring–mass system in SHM equals:",
+      "options": ["½kA²", "½kx² at the mean position", "½mv² at the extreme", "kA"],
+      "correct": 0,
+      "rationale": "Total energy E = ½kA², set by the amplitude; it converts fully between kinetic and potential forms during the motion."
+    },
+    {
+      "id": 7,
+      "question": "Resonance occurs when:",
+      "options": ["A system is heavily damped", "The driving frequency matches the system's natural frequency", "The amplitude is very small", "The restoring force is zero"],
+      "correct": 1,
+      "rationale": "Driving an oscillator at its natural frequency feeds energy in step with the motion, so the amplitude grows dramatically — resonance."
+    },
+    {
+      "id": 8,
+      "question": "Why do soldiers break step while marching across a bridge?",
+      "options": ["To reduce noise", "To avoid setting up forced oscillations at the bridge's natural frequency", "Because bridges are slippery", "To keep formation visible"],
+      "correct": 1,
+      "rationale": "Rhythmic marching could match the bridge's natural frequency and excite destructive resonance, as famously happened at Angers Bridge (1850)."
+    },
+    {
+      "id": 9,
+      "question": "Damping in an oscillating system:",
+      "options": ["Increases the total energy", "Progressively reduces the amplitude", "Increases the frequency without limit", "Has no effect on amplitude"],
+      "correct": 1,
+      "rationale": "Damping (friction, air resistance) drains energy each cycle, so the amplitude decays over time while the system settles towards equilibrium."
+    },
+    {
+      "id": 10,
+      "question": "Radio receivers select one station among many broadcasting simultaneously by using:",
+      "options": ["Damping", "Resonance — tuning the circuit to one frequency", "Interference", "Doppler shift"],
+      "correct": 1,
+      "rationale": "The tuner adjusts the circuit's natural frequency until it resonates with one station's carrier wave, amplifying only that signal."
+    }
+  ]
+}

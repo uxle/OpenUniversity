@@ -1,0 +1,197 @@
+# Elasticity, Surface Tension, and Viscosity: Mechanical Properties of Matter
+
+> Bridges sway in wind, insects walk on ponds, and honey pours slowly.
+> Three distinct properties of matter answer for all of these: solids
+> resist deformation (elasticity), liquid surfaces shrink like stretched
+> skin (surface tension), and fluid layers drag on each other
+> (viscosity). This lesson assembles the three into one working toolkit.
+
+## 1. Stress and Strain
+
+When a body is deformed by an external force, internal restoring forces
+appear. The restoring force per unit area is **stress**, and the
+fractional change in dimensions is **strain** — the deformation itself.
+
+| Type | Stress | Strain |
+| --- | --- | --- |
+| Tensile | $\frac{F}{A}$ (pull along length) | $\frac{\Delta L}{L}$ (elongation) |
+| Bulk | $\frac{F}{A} = \Delta P$ (uniform squeeze) | $\frac{\Delta V}{V}$ (volume change) |
+| Shear | $\frac{F}{A}$ (tangential) | $\theta$ (angular tilt) |
+
+Stress has units of pressure ($\text{N/m}^2$ or pascal) while strain is
+a pure ratio — dimensionless.
+
+## 2. Hooke's Law and the Elastic Moduli
+
+[definition]
+Within the **elastic limit**, stress is directly proportional to
+strain. The constant of proportionality is called the modulus of
+elasticity of the material.
+[/definition]
+
+@math label="eq:hooke"
+\text{Stress} = E \times \text{Strain}
+@/math
+
+Three moduli match the three deformations:
+
+@math label="eq:young"
+Y = \frac{F/A}{\Delta L / L} = \frac{FL}{A\,\Delta L}
+@/math
+
+@math label="eq:bulk"
+B = -\frac{\Delta P}{\Delta V / V}
+@/math
+
+@math label="eq:rigidity"
+G = \frac{F/A}{\theta}
+@/math
+
+[important]
+Young's modulus $Y$ and the bulk modulus $B$ are defined only for
+solids (liquids cannot sustain tensile or shear stress), while the
+compressibility $\frac{1}{B}$ is most useful for gases and liquids.
+Also, $Y$ is a **material** property: a steel wire and a steel girder
+share the same $Y \approx 2 \times 10^{11}\ \text{Pa}$ however
+different their shapes.
+[/important]
+
+**Elastic potential energy.** Stretching a wire stores energy in it,
+just as stretching a spring does:
+
+@math label="eq:elastic-energy"
+U = \frac{1}{2} \times \text{stress} \times \text{strain} \times \text{volume}
+= \frac{1}{2} \frac{(F/A)^2}{Y} \times \text{volume}
+@/math
+
+The stress-strain graph climbs linearly to the proportional limit,
+bends through the elastic limit, and ends at the breaking point. The
+area under the graph measures work done per unit volume.
+
+## 3. Surface Tension and Surface Energy
+
+[definition]
+**Surface tension** $S$ is the force per unit length acting along a
+liquid surface, or equivalently the work done to create unit area of
+new surface. Its unit is $\text{N/m}$ (same as $\text{J/m}^2$).
+[/definition]
+
+Molecules at the surface miss half their attractions, so the surface
+stores extra energy and behaves like a stretched elastic membrane —
+always trying to shrink to minimum area. That is why raindrops are
+nearly spherical (sphere = least area for a given volume) and a needle,
+though denser than water, can float if laid gently.
+
+**Excess pressure inside curved surfaces.** A curved liquid surface
+needs a pressure difference to stay in equilibrium:
+
+@math label="eq:drop-pressure"
+\Delta P = \frac{2S}{R} \quad \text{(liquid drop)}
+@/math
+
+@math label="eq:bubble-pressure"
+\Delta P = \frac{4S}{R} \quad \text{(soap bubble — two surfaces)}
+@/math
+
+**Capillary rise.** A tube of radius $r$ dipped in a wetting liquid
+draws the liquid up to height $h$ where surface tension balances
+weight:
+
+@math label="eq:capillary"
+h = \frac{2S\cos\theta}{r \rho g}
+@/math
+
+Here $\theta$ is the angle of contact. Water in glass has
+$\theta \approx 0°$ (rises), mercury in glass has
+$\theta \approx 140°$ (depressed). Thinner tubes give higher rises —
+the principle by which plants lift water and ink climbs blotting paper.
+
+## 4. Viscosity: Fluid Friction
+
+[definition]
+**Viscosity** is the resistance of a fluid to relative motion between
+its layers. The viscous force is proportional to the area and the
+velocity gradient — Newton's law of viscosity — and the constant
+$\eta$ is the coefficient of viscosity.
+[/definition]
+
+@math label="eq:newton-viscosity"
+F = -\eta A \frac{dv}{dy}
+@/math
+
+The SI unit of $\eta$ is $\text{Pa}\cdot\text{s}$ (older: poise). Gases
+have tiny viscosities; engine oils have large ones. Unlike solids,
+fluid flow obeys the layer picture: adjacent layers slide, and the
+drag depends on speed — honey in winter illustrates how strongly
+$\eta$ grows as temperature falls (for liquids, viscosity *decreases*
+with temperature; for gases it *increases*).
+
+**Poiseuille's equation** gives the volume flowing per second through
+a narrow tube under pressure difference $\Delta P$:
+
+@math label="eq:poiseuille"
+Q = \frac{\pi R^4 \Delta P}{8 \eta L}
+@/math
+
+The dramatic fourth power of radius is why a slight narrowing of
+arteries forces the heart to work much harder.
+
+**Stokes' law and terminal velocity.** A small sphere of radius $r$
+moving slowly through a fluid of viscosity $\eta$ feels a drag:
+
+@math label="eq:stokes"
+F = 6\pi \eta r v
+@/math
+
+A falling body accelerates until drag plus buoyancy equals weight;
+then it falls at constant **terminal velocity**. For a sphere of
+density $\rho$ in a fluid of density $\sigma$:
+
+@math label="eq:terminal"
+v_t = \frac{2 r^2 (\rho - \sigma) g}{9 \eta}
+@/math
+
+This is how raindrops arrive gently, how dust stays airborne for days,
+and how Millikan weighed the electron with oil droplets.
+
+## 5. Steady Flow, Turbulence, and Bernoulli's World
+
+Viscous flow through pipes splits into two regimes. Below a critical
+**Reynolds number** ($R_e = \frac{\rho v D}{\eta}$), flow is laminar —
+smooth layers sliding past each other, obeying Poiseuille. Above it,
+flow turns turbulent and resistance rises steeply with speed. Blood
+flow in healthy arteries is laminar; plaques and narrowed valves push
+it toward turbulence, which doctors hear as murmurs.
+
+[example]
+A bubble of air of diameter $2\ \text{mm}$ rises through water.
+Using Stokes' law with the density difference $\rho - \sigma \approx
+-1000\ \text{kg/m}^3$ (air far lighter), the terminal velocity comes
+out a few centimetres per second — which is why champagne bubbles
+leisurely parade upward in straight lines, then wobble when they grow
+past the laminar limit.
+[/example]
+
+## 6. Quick Comparison Table
+
+| Property | Symbol/Equation | Depends on | Typical question |
+| --- | --- | --- | --- |
+| Young's modulus | $Y = \frac{FL}{A\Delta L}$ | Material only | Wire extension under load |
+| Surface tension | $S$, drop: $\frac{2S}{R}$ | Liquid and interface | Excess pressure, capillary rise |
+| Viscosity | $\eta$, $F = 6\pi\eta r v$ | Fluid and temperature | Terminal velocity, flow rate |
+| Elastic energy | $\frac{1}{2} \times$ stress $\times$ strain $\times$ volume | Loading | Energy stored in a wire |
+
+[summary]
+Elasticity describes solids: within the elastic limit, stress is
+proportional to strain, with Young's modulus $Y = \frac{FL}{A\Delta L}$
+measuring stiffness and elastic energy $\frac{1}{2} \times$
+stress $\times$ strain $\times$ volume stored on stretching. Surface
+tension $S$ makes liquid surfaces contract, giving excess pressure
+$\frac{2S}{R}$ in drops, $\frac{4S}{R}$ in soap bubbles, and capillary
+rise $h = \frac{2S\cos\theta}{r\rho g}$. Viscosity $\eta$ resists
+layer motion with $F = \eta A \frac{dv}{dy}$, drives Poiseuille's
+$Q = \frac{\pi R^4 \Delta P}{8\eta L}$, and yields terminal velocity
+$v_t = \frac{2r^2(\rho-\sigma)g}{9\eta}$ from Stokes' law. Three
+properties, one lesson: how matter resists change — in shape, area,
+and flow.
+[/summary]

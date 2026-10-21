@@ -1,0 +1,76 @@
+{
+  "lessonId": "time-and-work",
+  "title": "Time and Work: Rates, Efficiency, and Team Effort",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A can finish a job in 12 days and B in 18 days. Working together, they finish it in:",
+      "options": ["7.2 days", "7.5 days", "8 days", "6.8 days"],
+      "correct": 0,
+      "rationale": "Combined rate = 1/12 + 1/18 = 5/36 per day, so time = 36/5 = 7.2 days. Shortcut: ab/(a+b) = 216/30 = 7.2."
+    },
+    {
+      "id": 2,
+      "question": "A is twice as efficient as B and finishes the work 8 days earlier. B alone can finish the work in:",
+      "options": ["8 days", "12 days", "16 days", "20 days"],
+      "correct": 2,
+      "rationale": "Let B take t days; A takes t/2. Then t - t/2 = 8 gives t = 16. Efficiency inverse to time: double speed means half the days."
+    },
+    {
+      "id": 3,
+      "question": "12 men working 8 hours a day finish a wall in 15 days. 18 men working 10 hours a day will finish the same wall in:",
+      "options": ["8 days", "9 days", "10 days", "12 days"],
+      "correct": 0,
+      "rationale": "MDH: D2 = 12 x 8 x 15/(18 x 10) = 1440/180 = 8 days. Work = men x days x hours stays constant."
+    },
+    {
+      "id": 4,
+      "question": "Pipe A fills a tank in 6 hours, pipe B fills it in 8 hours, and pipe C empties it in 12 hours. All three open together fill the tank in:",
+      "options": ["4.8 hours", "4.5 hours", "5.2 hours", "5.6 hours"],
+      "correct": 0,
+      "rationale": "Rate = 1/6 + 1/8 - 1/12 = 4/24 + 3/24 - 2/24 = 5/24 tank per hour, so time = 24/5 = 4.8 hours. Draining pipes enter the sum with negative rates."
+    },
+    {
+      "id": 5,
+      "question": "A does 1/10 of a job per day. After A and B work together for 3 days, half the job remains. B alone can finish the whole job in:",
+      "options": ["15 days", "12 days", "18 days", "10 days"],
+      "correct": 0,
+      "rationale": "In 3 days they complete 1/2, so combined rate = 1/6 per day. B's rate = 1/6 - 1/10 = 1/15 — B alone needs 15 days. Subtract rates to unmask a partner."
+    },
+    {
+      "id": 6,
+      "question": "A and B together finish a work in 6 days; A alone in 10 days. B alone will finish it in:",
+      "options": ["15 days", "12 days", "18 days", "16 days"],
+      "correct": 0,
+      "rationale": "B's rate = 1/6 - 1/10 = (5-3)/30 = 2/30 = 1/15, so B alone takes 15 days. The rate-subtraction line solves the entire 'missing worker' family."
+    },
+    {
+      "id": 7,
+      "question": "A job of 60 units needs A (4 units/day) and B (6 units/day). They work together for 3 days, then A leaves. B finishes the remaining work alone in:",
+      "options": ["3 days", "4 days", "5 days", "6 days"],
+      "correct": 2,
+      "rationale": "Together they clear 10 units per day, so 3 days remove 30 units. The remaining 30 units go to B alone at 6 units per day: 30/6 = 5 days. The LCM-units method keeps every step integer."
+    },
+    {
+      "id": 8,
+      "question": "3 men or 6 women can complete a job in 12 days. Working together, 3 men and 6 women will complete it in:",
+      "options": ["6 days", "8 days", "9 days", "12 days"],
+      "correct": 0,
+      "rationale": "3 men have the same rate as 6 women, so together the crew equals two such teams: rate = 2 x (1/12) = 1/6 of the job per day. Time = 6 days. Equivalence chains first, rate addition second."
+    },
+    {
+      "id": 9,
+      "question": "A and B together earn 700 rupees for a job they complete in 6 days at efficiencies 3:2. B's share is:",
+      "options": ["280 rupees", "300 rupees", "320 rupees", "350 rupees"],
+      "correct": 0,
+      "rationale": "Wages divide in the ratio of work = efficiency: B gets 2/(3+2) x 700 = 280 rupees. Whoever works more units takes home more, regardless of the calendar."
+    },
+    {
+      "id": 10,
+      "question": "A can do a piece of work in 10 days. He works for 4 days and then B finishes the remainder in 9 days. B alone could do the whole work in:",
+      "options": ["15 days", "18 days", "12 days", "20 days"],
+      "correct": 0,
+      "rationale": "A completes 4/10 = 2/5; the remaining 3/5 is done by B in 9 days. B's rate = (3/5)/9 = 1/15 per day — B alone needs 15 days."
+    }
+  ]
+}

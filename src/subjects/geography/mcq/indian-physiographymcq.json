@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-physiography",
+  "title": "Indian Physiography: The Six Faces of the Subcontinent",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which is the correct order of Himalayan ranges from north to south?",
+      "options": ["Shiwaliks – Himachal – Himadri", "Himadri – Himachal – Shiwaliks", "Himachal – Himadri – Shiwaliks", "Himadri – Shiwaliks – Himachal"],
+      "correct": 1,
+      "rationale": "The Greater Himalayas (Himadri) lie on the Tibetan side, then the Lesser Himalayas (Himachal), and the outermost Shiwaliks towards the plains."
+    },
+    {
+      "id": 2,
+      "question": "The Himalayas were formed by:",
+      "options": ["Volcanic eruptions", "Collision of the Indian plate with the Eurasian plate, closing the Tethys Sea", "Erosion of older mountains", "Coral deposition"],
+      "correct": 1,
+      "rationale": "Continental collision folded the Tethys sediments upward; the Indian plate still pushes ~5 cm/year, keeping the range rising and seismically active."
+    },
+    {
+      "id": 3,
+      "question": "The porous, pebbly belt at the Himalayan foot where streams disappear underground is the:",
+      "options": ["Terai", "Bhabar", "Bhangar", "Khadar"],
+      "correct": 1,
+      "rationale": "Bhabar is the 8–16 km porous strip at the mountain foot; streams re-emerge in the marshy Terai to its south."
+    },
+    {
+      "id": 4,
+      "question": "The Peninsular Plateau is divided into the Central Highlands and the Deccan Plateau by which feature?",
+      "options": ["The Western Ghats", "The Narmada rift", "The Garo Hills", "The Malwa Plateau"],
+      "correct": 1,
+      "rationale": "The Narmada rift valley separates the Central Highlands (north) from the Deccan Plateau (south), both parts of the ancient Gondwana core."
+    },
+    {
+      "id": 5,
+      "question": "The highest peak entirely within India, Anai Mudi (2,695 m), stands in the:",
+      "options": ["Eastern Ghats", "Western Ghats", "Aravallis", "Nilgiri Hills"],
+      "correct": 1,
+      "rationale": "Anai Mudi crowns the Western Ghats (Sahyadri) in Kerala — the Eastern Ghats' highest is Mahendragiri (1,501 m)."
+    },
+    {
+      "id": 6,
+      "question": "The Thar Desert lies mainly arid because:",
+      "options": ["It is far from the sea", "The Aravalli ranges block moisture-bearing winds", "Cold currents dominate", "It lies in a rain shadow of the Western Ghats"],
+      "correct": 1,
+      "rationale": "The relict Aravallis intercept what moisture reaches Rajasthan; combined with high aridity and sandy soils, rainfall stays under ~150 mm/year."
+    },
+    {
+      "id": 7,
+      "question": "Which correctly matches the coastal plains?",
+      "options": ["West: broad, deltaic; East: narrow", "West: narrow with lagoons; East: broad and deltaic", "Both are identical in width", "East coast has no ports"],
+      "correct": 1,
+      "rationale": "The western plain is narrow (10–50 km) with lagoons like Vembanad, while the eastern plain (100–130 km) carries the Mahanadi–Godavari–Krishna–Kaveri deltas."
+    },
+    {
+      "id": 8,
+      "question": "Lakshadweep islands are:",
+      "options": ["Volcanic islands", "Coral atolls", "Parts of the Deccan Plateau", "Deltaic islands"],
+      "correct": 1,
+      "rationale": "Lakshadweep is a chain of coral atolls on the Laccadive–Chagos ridge; volcanic origin belongs to the Andaman & Nicobar group (Barren Island is India's only active volcano)."
+    },
+    {
+      "id": 9,
+      "question": "The western coastal plain is widest and characterised by tidal mudflats and salt marshes in:",
+      "options": ["Konkan coast", "Malabar coast", "Gujarat (Kachchh and Kathiawar)", "Coromandel coast"],
+      "correct": 2,
+      "rationale": "In Gujarat the plain broadens around the gulfs of Kachchh and Khambhat with extensive mudflats — Rann of Kachchh — unlike the narrow Konkan and Malabar stretches."
+    },
+    {
+      "id": 10,
+      "question": "The Deccan Plateau's extensive black-soil tracts come from:",
+      "options": ["River alluvium", "Ancient lava flows (Deccan Traps)", "Coral weathering", "Glacial deposits"],
+      "correct": 1,
+      "rationale": "Cretaceous–Eocene basaltic lava flows weathered into moisture-retentive black regur soils — ideal for cotton — over much of Maharashtra and Madhya Pradesh."
+    }
+  ]
+}

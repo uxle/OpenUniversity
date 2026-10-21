@@ -1,0 +1,154 @@
+# NoSQL and Modern Databases: Beyond the Relational Model
+
+> For forty years the relational database was the only answer to
+> "where should we store this?" — and then the web happened. Billions
+> of users, global replication, unstructured JSON documents, and
+> graphs of friendships pushed the classic model to its limits. NoSQL
+> databases answered by trading away some guarantees to buy scale and
+> flexibility, and modern systems now blend both worlds.
+
+## 1. Why Relational Databases Strain
+
+The relational model — tables, rows, SQL joins, ACID transactions —
+remains superb for structured data with rich query patterns: banking
+ledgers, inventory, payroll. The strain appears when applications
+need:
+
+| Pressure | Why SQL strains | What breaks |
+| --- | --- | --- |
+| Massive write volume | Single-node ACID coordination | Vertical scaling hits a ceiling |
+| Flexible schemas | ALTER TABLE on huge tables | Every column must fit every row |
+| Global replication | Synchronous cross-region commits | Latency balloons |
+| Deep relationships | Many-way JOINs | Queries slow as graphs grow |
+
+NoSQL (coined for a 2009 meetup, "Not Only SQL") is a family of
+storage engines that relax one or more relational assumptions to
+serve these patterns.
+
+## 2. The Four Families
+
+[definition]
+**NoSQL databases** store and retrieve data without a fixed
+table-join-centric model. The four main families are key-value,
+document, column-family (wide-column), and graph — each shaped by the
+access pattern it optimises.
+[/definition]
+
+@diagram tree id="nosql-families-tree" layout="tree" aria="Classification of NoSQL database families"
+  "NoSQL" -> "Key-Value"
+  "NoSQL" -> "Document"
+  "NoSQL" -> "Column-Family"
+  "NoSQL" -> "Graph"
+  "Key-Value" -> "Redis, DynamoDB"
+  "Document" -> "MongoDB, CouchDB"
+  "Column-Family" -> "Cassandra, HBase"
+  "Graph" -> "Neo4j, Neptune"
+@/diagram
+
+**Key-value stores** treat the database as a giant hash map: `GET`
+and `PUT` by key, no queries inside values. They are breathtakingly
+fast and simple — the natural home of sessions, caches, and shopping
+carts. Redis even holds everything in memory.
+
+**Document stores** keep self-contained JSON-like documents
+(`users`, `orders`, `posts`) that may differ field by field. A
+document is fetched whole — no joins — which mirrors how web pages
+use data. MongoDB queries documents with JSON-shaped filters:
+
+```javascript
+db.users.find({ city: "Pune", age: { $gte: 18 } })
+```
+
+**Column-family stores** split rows into column families that live
+and are read together, spreading them across many machines. Cassandra
+tunes for relentless write throughput (time-series, IoT, messaging).
+
+**Graph databases** make relationships first-class citizens: nodes
+and edges you can walk in constant hops. "Which friends of Ravi
+bought something his sister reviewed?" is one graph traversal — and
+a recursive-join nightmare in SQL.
+
+## 3. CAP Theorem: The Impossibility Triangle
+
+[important]
+A distributed data store can strongly provide at most **two** of:
+**Consistency** (every read sees the latest write), **Availability**
+(every request gets a response), and **Partition tolerance (P)**
+(the system survives network splits). Since partitions *will* happen
+in any real network, the practical choice is between C and A **when
+a partition strikes** — CP systems (many SQL clusters, MongoDB
+defaults, HBase) may refuse requests; AP systems (Cassandra, CouchDB,
+DynamoDB) answer possibly-stale data.
+[/important]
+
+**Eventual consistency** is the AP compromise: replicas drift apart
+during a partition and converge once the network heals. Shopping
+carts and social feeds tolerate seconds of staleness; bank balances
+and inventory decrements usually do not — which is why serious
+systems use the right store per use case, not one store for
+everything.
+
+## 4. ACID vs BASE
+
+| ACID (relational) | BASE (many NoSQL) |
+| --- | --- |
+| Atomicity — all or nothing | Basically Available |
+| Consistency — constraints always hold | Soft state |
+| Isolation — transactions don't interleave | Eventual consistency |
+| Durability — committed writes survive crashes | — |
+
+Neither is "better": ACID protects correctness under contention;
+BASE buys availability and scale with delayed convergence. Payment
+routing wants ACID; a "like" counter wants BASE.
+
+## 5. When to Choose What
+
+- **Choose SQL (PostgreSQL, MySQL)** when data is relational, queries
+  are ad hoc and join-heavy, and transactional integrity matters —
+  still the default answer for most applications.
+- **Choose key-value (Redis, DynamoDB)** for caching, sessions,
+  leaderboards — small values, hot keys, microsecond reads.
+- **Choose document (MongoDB)** for flexible, evolving JSON-shaped
+  records: catalogues, content management, user profiles.
+- **Choose column-family (Cassandra)** for append-heavy,
+  partition-friendly workloads at enormous scale: logs, telemetry,
+  chat history.
+- **Choose graph (Neo4j)** when the *relationship* is the question:
+  recommendations, fraud rings, knowledge graphs, network topology.
+
+[example]
+An e-commerce platform commonly uses five stores at once: PostgreSQL
+for orders and payments (ACID), Redis for carts and sessions
+(speed), MongoDB for the product catalogue (flexible attributes),
+Cassandra for click-stream analytics (write volume), and Neo4j for
+recommendations (graph walks). Polyglot persistence — choosing
+several purpose-fit stores — is the modern default, not an
+exotic exception.
+[/example]
+
+## 6. NewSQL and the Blended Future
+
+A newer wave — **NewSQL** (CockroachDB, Google Spanner, TiDB) —
+delivers SQL's ACID guarantees with NoSQL's horizontal scale, using
+distributed consensus (Raft/Paxos) and clever clock synchronisation.
+Meanwhile PostgreSQL gained JSONB documents and full-text search,
+blurring the boundary from the other side. Vector databases
+(Pinecone, pgvector) extend storage toward machine-learning
+embeddings — similarity search is becoming a first-class query type.
+The industry's direction is clear: the question is no longer
+"SQL or NoSQL?" but "which guarantees does each workload actually
+need?"
+
+[summary]
+NoSQL is a family of stores trading relational guarantees for scale
+and flexibility: key-value (Redis) for blinding lookups, document
+(MongoDB) for flexible JSON records, column-family (Cassandra) for
+relentless writes, and graph (Neo4j) for relationship-first queries.
+The CAP theorem forces a consistency-versus-availability choice
+during network partitions, giving CP and AP flavours and the
+eventual-consistency compromise; BASE is the relaxed counterpart of
+ACID. Pragmatic systems practise polyglot persistence — SQL for
+money, key-value for speed, documents for flexibility — while
+NewSQL (Spanner, CockroachDB) and JSONB-enabled PostgreSQL blend the
+best of both worlds. Choose per workload, not per fashion.
+[/summary]

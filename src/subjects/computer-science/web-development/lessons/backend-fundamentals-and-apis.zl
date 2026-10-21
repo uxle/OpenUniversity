@@ -1,0 +1,173 @@
+# Backend Fundamentals and APIs: The Server Behind the Screen
+
+> Every "Check availability" button and every feed refresh is a
+> conversation: the browser asks, a distant server answers. Frontend
+> code (HTML, CSS, JavaScript) builds what users see; the
+> **backend** — servers, routes, and APIs — does the remembering,
+> checking, and deciding. This lesson explains how that conversation
+> works and how to build your first API.
+
+## 1. Client, Server, and the Request Cycle
+
+[definition]
+The **backend** is the server-side layer of an application: it
+receives HTTP requests, applies business logic, reads and writes a
+database, and sends responses. The **frontend** (browser or app) is
+the client that initiates requests.
+[/definition]
+
+One click triggers a familiar loop:
+
+1. The client builds an **HTTP request**: method + URL + headers +
+   optional body.
+2. DNS resolves the hostname; the request travels to the server.
+3. The server's **router** matches the URL to a handler.
+4. The handler runs business logic, usually talking to a database.
+5. The server replies with a **status code, headers, and a body**
+   (today, nearly always JSON).
+6. The client renders the result — and the cycle repeats.
+
+## 2. HTTP: Method, URL, Status
+
+| Method | Meaning | Typical use | Body? |
+| --- | --- | --- | --- |
+| GET | read | fetch a list or item | no |
+| POST | create | submit a new order | yes |
+| PUT / PATCH | replace / partially update | edit a profile | yes |
+| DELETE | remove | cancel an item | usually no |
+
+Status codes form a small vocabulary worth memorising:
+
+- **2xx success** — 200 OK, 201 Created, 204 No Content
+- **3xx redirect** — 301 Moved Permanently
+- **4xx client error** — 400 Bad Request, 401 Unauthorized,
+  403 Forbidden, 404 Not Found, 429 Too Many Requests
+- **5xx server error** — 500 Internal Server Error, 503 Unavailable
+
+[important]
+Idempotency separates the methods: GET, PUT, and DELETE repeated
+give the same result as once; POST does not — re-submitting a POST
+creates a second order. This is why browsers warn before
+re-submitting forms, and why payment buttons must guard against
+double clicks.
+[/important]
+
+## 3. REST: Resources Speak in Nouns
+
+**REST (Representational State Transfer)** is the dominant API
+style: URLs name *resources* (nouns), HTTP methods express the
+*verb*, and JSON carries the payload.
+
+```text
+GET    /api/books          list books
+GET    /api/books/42       one book
+POST   /api/books          create (body carries data)
+PATCH  /api/books/42       update fields
+DELETE /api/books/42       remove
+```
+
+A well-designed REST API can be read aloud: "GET book 42", "DELETE
+review 7". Contrast with RPC-style URLs like `/getBook?id=42` —
+workable, but REST's uniformity lets tools, caches, and other
+developers predict everything.
+
+## 4. A Minimal API in Node.js (Express)
+
+Node.js with Express is the smallest complete backend in common use:
+
+```javascript
+const express = require("express");
+const app = express();
+
+app.use(express.json());              // parse JSON request bodies
+
+let books = [{ id: 1, title: "Panchatantra" }];
+
+app.get("/api/books", (req, res) => {
+  res.json(books);
+});
+
+app.post("/api/books", (req, res) => {
+  const book = { id: books.length + 1, title: req.body.title };
+  books.push(book);
+  res.status(201).json(book);         // 201 = Created
+});
+
+app.listen(3000, () => console.log("API on :3000"));
+```
+
+Three routes in fifteen lines — yet the shape (middleware to parse
+bodies, handlers receiving `req`/`res`, JSON responses with
+deliberate status codes) scales unchanged to production services in
+any framework: Flask (Python), Spring (Java), Laravel (PHP), Rails
+(Ruby).
+
+## 5. The Frontend Calls Back: fetch
+
+From the browser, the `fetch` API makes the same conversation
+asynchronous — the page never freezes while awaiting the server:
+
+```javascript
+const res = await fetch("/api/books", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ title: "Hitopadesha" })
+});
+const created = await res.json();     // parse the JSON reply
+```
+
+`async/await` (introduced with promises) keeps asynchronous code
+reading top-to-bottom while the event loop stays free.
+
+## 6. Statelessness, Auth, and Sessions
+
+HTTP itself remembers nothing — every request arrives anonymous.
+Backends add memory through:
+
+- **Sessions:** a cookie stores a random ID; the server keeps a
+  table of ID → user. Simple, but state lives on one server (or a
+  shared store).
+- **Tokens (JWT):** the client holds a signed token and sends it in
+  the `Authorization` header; the server verifies the signature
+  without a lookup table — the standard for APIs and mobile apps.
+- **API keys / OAuth:** machine-to-machine access and
+  "log in with Google" flows.
+
+[example]
+A login flow ties the pieces together: the client POSTs credentials
+to `/api/login`; the server verifies them (hashing passwords with
+bcrypt — never storing plaintext), then signs a JWT containing the
+user ID and an expiry. Every later request carries
+`Authorization: Bearer <token>`; the server checks the signature and
+expiry, and knows who is asking without any server-side session
+state.
+[/example]
+
+## 7. Beyond the Basics
+
+- **Databases behind APIs:** handlers translate requests into queries
+  (SQL or NoSQL); the database, not the server, is usually the
+  scaling bottleneck.
+- **Validation and sanitisation:** never trust client input —
+  validate types, lengths, and permissions on the server, because
+  anyone can call your API with a tool, bypassing your UI.
+- **CORS:** browsers block cross-origin AJAX calls unless the server
+  opts in with `Access-Control-Allow-Origin` headers.
+- **GraphQL and friends:** an alternative style where clients
+  describe exactly the shape of data they want, in one request.
+- **Environment and secrets:** ports, database URLs, and keys belong
+  in environment variables — never committed to the repository.
+
+[summary]
+The backend receives HTTP requests, applies logic, touches a
+database, and answers with JSON and a status code. Methods carry
+intent — GET reads, POST creates, PUT/PATCH updates, DELETE removes
+— with POST alone being non-idempotent. REST names resources as
+nouns in URLs so APIs stay predictable; a fifteen-line Express app
+demonstrates the whole pattern (middleware, handlers, status-correct
+JSON replies), and the browser joins in with `async/await fetch`.
+Statelessness is patched by sessions or signed JWTs, while
+production readiness adds validation, CORS, secrets in environment
+variables, and a database chosen for the workload. Frontend is what
+users see; the backend is what makes it true.
+[/summary]

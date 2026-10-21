@@ -3,6 +3,7 @@
     "intro-databases-and-dbms",
     "sql-fundamentals",
     "er-model-and-normalisation",
-    "transactions-and-concurrency"
+    "transactions-and-concurrency",
+    "nosql-and-modern-databases"
   ]
 }

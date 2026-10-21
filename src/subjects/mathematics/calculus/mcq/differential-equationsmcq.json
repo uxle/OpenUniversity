@@ -1,0 +1,76 @@
+{
+  "lessonId": "differential-equations",
+  "title": "Differential Equations: Equations About Change",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The solution of dy/dx = 3x² is:",
+      "options": ["y = x³", "y = x³ + C", "y = 6x", "y = 3x + C"],
+      "correct": 1,
+      "rationale": "Integrating both sides gives y = x³ + C — a family of curves; an initial condition would pin down C."
+    },
+    {
+      "id": 2,
+      "question": "The order of the equation d²y/dt² + y = 0 is:",
+      "options": ["Zero", "One", "Two", "Three"],
+      "correct": 2,
+      "rationale": "Order is the highest derivative present — here the second derivative, making it a second-order equation (of simple harmonic motion)."
+    },
+    {
+      "id": 3,
+      "question": "Solve dy/dx = 2xy with y(0) = 3. Which is the particular solution?",
+      "options": ["y = 3e^(x²)", "y = e^(x²)", "y = 3x²", "y = 2x + 3"],
+      "correct": 0,
+      "rationale": "Separating: dy/y = 2x dx → ln|y| = x² + C → y = Ae^(x²); y(0) = 3 forces A = 3."
+    },
+    {
+      "id": 4,
+      "question": "The equation dy/dt = ky with k > 0 describes:",
+      "options": ["Exponential decay", "Exponential growth", "Oscillation", "Linear growth"],
+      "correct": 1,
+      "rationale": "The solution y = y₀e^(kt) grows without bound when k > 0; k < 0 gives decay."
+    },
+    {
+      "id": 5,
+      "question": "Carbon-14 has a half-life of 5,730 years. An artefact contains 25% of its original C-14. Its age is about:",
+      "options": ["5,730 years", "11,460 years", "17,190 years", "2,865 years"],
+      "correct": 1,
+      "rationale": "25% survives after exactly two half-lives: 2 × 5,730 = 11,460 years."
+    },
+    {
+      "id": 6,
+      "question": "According to Newton's law of cooling, a hot object in a cooler room:",
+      "options": ["Cools at a constant rate", "Cools fastest when hottest, approaching room temperature exponentially", "Never cools below room temperature", "Cools at a rate independent of temperature difference"],
+      "correct": 1,
+      "rationale": "dT/dt = −k(T − Tₛ): the rate is proportional to the temperature excess, so cooling is fast at first and slows as T nears Tₛ."
+    },
+    {
+      "id": 7,
+      "question": "Money compounded continuously at 100% interest would grow according to:",
+      "options": ["dA/dt = A", "dA/dt = t", "dA/dt = −A", "d²A/dt² = A"],
+      "correct": 0,
+      "rationale": "Continuous compounding follows dA/dt = rA with r = 1, giving A = A₀eᵗ — the birthplace of e."
+    },
+    {
+      "id": 8,
+      "question": "A separable differential equation is one where:",
+      "options": ["All terms involve derivatives", "The variables can be split to opposite sides before integrating", "The solution is always exponential", "It is second order"],
+      "correct": 1,
+      "rationale": "dy/dx = f(x)g(y) rearranges to dy/g(y) = f(x)dx, letting each side be integrated separately."
+    },
+    {
+      "id": 9,
+      "question": "The equation d²x/dt² = −ω²x describes simple harmonic motion. Its general solution is:",
+      "options": ["x = Ae^(ωt)", "x = A sin(ωt + φ)", "x = At + B", "x = A cosh(ωt)"],
+      "correct": 1,
+      "rationale": "Sinusoids have second derivative proportional to −x: x = A sin(ωt + φ) (equivalently a cosine mix) satisfies the equation."
+    },
+    {
+      "id": 10,
+      "question": "Unlike the exponential model, the logistic equation dP/dt = kP(1 − P/K) predicts:",
+      "options": ["Unbounded growth", "Extinction always", "Growth that flattens toward the carrying capacity K", "Oscillation around zero"],
+      "correct": 2,
+      "rationale": "The (1 − P/K) factor brakes growth as P nears K, producing the S-curve seen in populations and technology adoption."
+    }
+  ]
+}

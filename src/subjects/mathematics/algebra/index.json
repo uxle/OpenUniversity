@@ -2,9 +2,12 @@
   "lessons": [
     "lesson1",
     "quadratic-equations",
+    "complex-numbers",
     "linear-equations",
+    "inequalities",
     "polynomials-and-factorisation",
     "sequences-and-series",
+    "logarithms",
     "permutations-and-combinations",
     "binomial-theorem",
     "matrices-and-determinants"

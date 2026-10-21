@@ -1,0 +1,140 @@
+# Earth's Motions: Rotation, Revolution, and the Making of Seasons
+
+> The Earth never sits still: it spins daily on a tilted axis and
+> races yearly around the Sun. Together these two motions — plus
+> that crucial 23.5° tilt — produce day and night, the seasons, the
+> march of the noon shadow, and the two special latitudes where the
+> Sun stands overhead.
+
+## 1. Rotation: The Daily Spin
+
+[definition]
+**Rotation** is Earth's spin on its axis — west to east
+(counterclockwise viewed from above the North Pole) — taking
+**23 hours 56 minutes 4 seconds** (one sidereal day) per rotation.
+The 24-hour solar day is slightly longer because Earth also moves
+along its orbit while spinning.
+[/definition]
+
+### Consequences of rotation
+
+- **Day and night:** the illuminated hemisphere faces the Sun; the
+  terminator (circle of illumination) sweeps west as Earth turns
+  east.
+- **The Sun's apparent journey:** sunrise in the east, noon high,
+  sunset in the west.
+- **Time zones:** 360° ÷ 24 h = 15° per hour. IST (UTC+5:30) is
+  referenced to 82.5° E (near Mirzapur, UP).
+- **Coriolis effect:** moving bodies deflect right in the Northern
+  Hemisphere, left in the Southern — steering winds and ocean
+  currents (see the Pressure and Winds lesson).
+- **The bulge:** rotation makes Earth an **oblate spheroid** —
+  equatorial diameter ~43 km larger than polar.
+
+## 2. Revolution: The Yearly Journey
+
+Earth orbits the Sun at ~107,000 km/h along a slightly **elliptical**
+path (eccentricity 0.017 — nearly circular):
+
+- **Perihelion** (closest, ~147 million km): around **3 January**
+- **Aphelion** (farthest, ~152 million km): around **4 July**
+
+[important]
+Seasons are NOT caused by distance from the Sun — Earth is closest
+to the Sun in January, the Northern Hemisphere's winter! The cause
+is the **axial tilt**: 23.5° from the perpendicular to the orbital
+plane, pointing steadily at Polaris all year.
+[/important]
+
+## 3. The Tilt Makes the Seasons
+
+With a 23.5° tilt, as Earth revolves:
+
+- **June solstice (~21 June):** the North Pole tilts sunward. The
+  Sun's rays strike vertically at the **Tropic of Cancer (23.5° N)**
+  — longest day, summer in the Northern Hemisphere.
+- **December solstice (~22 December):** the tilt reverses; vertical
+  Sun over the **Tropic of Capricorn (23.5° S)** — Northern winter.
+- **Equinoxes (~20 March, ~22–23 September):** no tilt component
+  along the Sun–Earth line; the Sun is overhead at the **Equator**
+  and day equals night everywhere ('equi-nox').
+
+| Event | Date | Vertical Sun at | NH season |
+| --- | --- | --- | --- |
+| Spring (vernal) equinox | ~20 March | Equator | Spring begins |
+| Summer solstice | ~21 June | Tropic of Cancer | Summer begins |
+| Autumnal equinox | ~23 September | Equator | Autumn begins |
+| Winter solstice | ~22 December | Tropic of Capricorn | Winter begins |
+
+### Why tilt means warmth
+
+Two effects compound in summer: (1) **higher solar angle** — the
+same energy concentrates on less ground (shine a torch straight vs
+slanted); (2) **longer days** — more hours of sunlight. Winter
+reverses both.
+
+@chart bar title="Approximate daylight hours on key dates at 40° N"
+labels:
+21 Mar
+21 Jun
+23 Sep
+22 Dec
+
+data:
+12
+15
+12
+9
+@/chart
+
+[tip]
+At the equator days stay ~12 h year-round; at the poles the Sun
+stays up six months and sets for six. Between the tropics the Sun is
+overhead twice a year; it is NEVER overhead poleward of the tropics
+— the tropics mark exactly how far the vertical ray travels.
+[/tip]
+
+## 4. Latitudes Drawn by the Motions
+
+| Line | Latitude | Reason it exists |
+| --- | --- | --- |
+| Equator | 0° | Great circle equidistant from the poles |
+| Tropic of Cancer | 23.5° N | Northernmost vertical Sun (June) |
+| Tropic of Capricorn | 23.5° S | Southernmost vertical Sun (December) |
+| Arctic Circle | 66.5° N | Midnight sun on 21 June |
+| Antarctic Circle | 66.5° S | Midnight sun on 22 December |
+
+## 5. Eclipses: Shadows in the Sky
+
+- **Lunar eclipse:** Earth blocks sunlight, its shadow falls on the
+  full Moon — the Moon turns coppery ("blood moon"). Safe to watch.
+- **Solar eclipse:** the new Moon blocks the Sun; viewers inside the
+  umbral shadow see totality. Never view without certified filters.
+
+Eclipses are rare because the Moon's orbit tilts ~5° to the
+ecliptic — shadows usually miss. The two points where the orbital
+planes cross are the **nodes**, and eclipses occur only when the new
+or full Moon is near a node (eclipse seasons, ~every 6 months).
+
+## 6. The Slow Motions: Why Geography Is Never Finished
+
+- **Precession:** Earth's axis wobbles like a spinning top,
+  tracing a circle every ~25,800 years — Polaris has not always been
+  the pole star.
+- **Axial wobble (nutation)** and **Milankovitch cycles** (tilt
+  22.1°–24.5° every ~41,000 years; orbital eccentricity ~100,000
+  years) pace the ice ages.
+- **Tidal braking:** days lengthen ~1.7 ms/century as the Moon
+  recedes — in the Devonian, days were ~22 hours long.
+
+[summary]
+Earth rotates west-to-east daily (making day–night, time zones, the
+Coriolis deflection, and its equatorial bulge) and revolves
+elliptically yearly (perihelion in January, aphelion in July).
+Seasons come from the steady 23.5° tilt: solstices at the tropics,
+equinoxes over the equator, with high sun angle plus long days
+making summer. Latitudes from the Arctic Circle to the tropics are
+direct products of the tilt; eclipses need Moon near its nodes; and
+slow precession and Milankovitch rhythms set the long drumbeat of
+climate.
+[/summary]

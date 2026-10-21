@@ -1,0 +1,180 @@
+# Mathematical Operations: Sign Swaps and Equation Repair
+
+> The reasoning section's arithmetic playground: a correct equation
+> is scrambled — signs swapped, numbers interchanged — and you are
+> asked to restore it, or to compute a new expression after a
+> declared substitution. Nothing here is hard mathematics; the
+> difficulty is purely **order of operations discipline** plus
+> careful reading of what is swapped with what.
+
+[important]
+Every question in this topic leans on **BODMAS/BIDMAS** order:
+Brackets → Orders (powers/roots) → Division and Multiplication
+(left to right) → Addition and Subtraction (left to right). Before
+touching any substitution or swap, re-derive the order for the new
+expression — swapped signs silently change which operation comes
+first.
+[/important]
+
+## 1. Sign Substitution: New Symbols, Old Rules
+
+[definition]
+A **sign-substitution question** declares a new meaning for familiar
+symbols — e.g., "$+$ means $\times$" and "$-$ means $\div$" — and
+asks you to evaluate an expression under those meanings. The trap:
+your fingers evaluate the printed symbol, not the declared one.
+[/definition]
+
+**Worked example.** If $+$ means $\times$, $-$ means $\div$,
+$\times$ means $-$, and $\div$ means $+$, evaluate:
+
+@math label="eq:sub-eval"
+9 + 6 - 3 \times 4 \div 2
+@/math
+
+Rewrite with declared meanings (in writing, never in the head):
+
+@math label="eq:sub-rewritten"
+9 \times 6 \div 3 - 4 + 2
+@/math
+
+Apply BODMAS on the rewritten line: $9 \times 6 = 54$;
+$54 \div 3 = 18$; $18 - 4 + 2 = 16$. Answer: **16**.
+
+[tip]
+Two habits make sign-substitution automatic: (1) write the full
+rewritten expression BEFORE evaluating anything; (2) put the
+declared meanings in a mini-table at the top —
+printed $\to$ actual — and consult it for every single symbol,
+including the innocent-looking ones.
+[/tip]
+
+## 2. Interchanging Signs: The Swap That Repairs
+
+Here a TRUE equation is given with two signs swapped; find which
+pair of signs must be interchanged to make the equation correct
+again.
+
+**Worked example.** Which pair of signs, when interchanged, makes
+the equation true?
+
+@math label="eq:swap-q"
+3 + 4 \times 8 - 6 = 14
+@/math
+
+First confirm the printed version is indeed false:
+$3 + 4 \times 8 - 6 = 3 + 32 - 6 = 29 \ne 14$. Now test the pairs:
+
+- Swap $+$ and $\times$: $3 \times 4 + 8 - 6 = 12 + 8 - 6 = 14$ ✓
+
+Found on the first test — but in the exam, still verify the
+remaining options to rule out a double fit:
+
+- Swap $+$ and $-$: $3 - 4 \times 8 + 6 = 3 - 32 + 6 = -23$ ✗
+- Swap $\times$ and $-$: $3 + 4 - 8 \times 6 = 7 - 48 = -41$ ✗
+
+**Answer: interchange $+$ and $\times$.** Each trial is a full,
+written evaluation — never a mental one, because a single BODMAS
+slip flips which option "works".
+
+## 3. Interchanging Numbers: Position Swaps
+
+A variant swaps two NUMBERS (not signs): "which two numbers should
+be interchanged so the equation holds?"
+
+**Worked example.** Interchange two numbers to make this true:
+
+@math label="eq:num-swap"
+8 + 4 \times 3 - 6 = 14
+@/math
+
+Try promising pairs: swapping 4 and 6 gives
+$8 + 6 \times 3 - 4 = 8 + 18 - 4 = 22$ ✗. Swapping 8 and 6:
+$6 + 4 \times 3 - 8 = 6 + 12 - 8 = 10$ ✗. Swapping 3 and 6:
+$8 + 4 \times 6 - 3 = 8 + 24 - 3 = 29$ ✗. Swapping 8 and 4:
+$4 + 8 \times 3 - 6 = 4 + 24 - 6 = 22$ ✗. Swapping 8 and 3:
+$3 + 4 \times 8 - 6 = 3 + 32 - 6 = 29$ ✗. Swapping 4 and 3:
+$8 + 3 \times 4 - 6 = 8 + 12 - 6 = 14$ ✓ — **interchange 4 and 3**.
+
+Working smart: estimate which product lands near the target
+($14 - 8 + 6 = 12$, so we need $\text{something} \times
+\text{something} = 12$), and test product-friendly pairs first —
+here $3 \times 4$.
+
+## 4. Equation Correction: Find the Wrong Element
+
+The mirror format: the equation is false, and one sign or number is
+wrong — identify it.
+
+**Worked example.** One sign is wrong in:
+
+@math label="eq:wrong-sign"
+25 - 5 \times 5 + 3 = 27
+@/math
+
+Value as printed: $25 - 25 + 3 = 3$, far from 27. Hunting the single
+sign at fault: replacing $\times$ with $\div$ gives
+$25 - 5 \div 5 + 3 = 25 - 1 + 3 = 27$ ✓. **The wrong sign is
+$\times$ (it should be $\div$).** The method: evaluate as printed,
+compare with the target, and find the single edit — sign or numeral
+— that bridges the gap; verify by full re-evaluation.
+
+## 5. Symbol-Operator Families (Coded BODMAS)
+
+The polished version codes operations as symbols: "@ means
+$\times$", "∆ means $+$", and so on. The procedure is identical to
+Section 1 — decode first, then BODMAS — but two extra traps appear:
+
+1. **Coded brackets:** some symbols decode to brackets; they take
+   absolute priority.
+2. **Coded equals:** when one symbol means "=", stop evaluating
+   there and check the balance of the two sides rather than
+   producing a number.
+
+**Worked example.** If $P$ means $\div$, $Q$ means $\times$,
+$R$ means $+$, $S$ means $-$, evaluate:
+
+@math label="eq:coded"
+16 P 4 Q 2 R 5 S 1
+@/math
+
+Decoded: $16 \div 4 \times 2 + 5 - 1$. BODMAS: $16 \div 4 = 4$;
+$4 \times 2 = 8$; $8 + 5 - 1 = 12$. Answer: **12**.
+
+[example]
+A composite exam favourite introduces a coded $=$: "If $P$ means
+$\div$, $Q$ means $=$, and $R$ means $+$, which of the following is
+TRUE: (a) $16\,P\,4\,Q\,8\,R\,6$ (b) $16\,P\,4\,Q\,2\,R\,2$?"
+Decode each, splitting at the coded equals. Option (a):
+$16 \div 4 = 8 + 6$ — left side 4, right side 14 — false. Option
+(b): $16 \div 4 = 2 + 2$ — both sides 4 — TRUE. When a coded $=$
+exists, the task is never a single number: plan the two sides of
+the split first, evaluate each side independently, and only then
+compare.
+[/example]
+
+## 6. Strategy Summary
+
+1. Build the printed-to-actual table; rewrite the ENTIRE expression
+   before any arithmetic.
+2. Re-derive BODMAS on the rewritten expression — swaps change
+   precedence, not just operators.
+3. For interchange questions, let the target value guide which
+   pair to test first (product estimates); keep every trial's full
+   evaluation on paper.
+4. Doubt your arithmetic before doubting the question — "no option
+   fits" is almost always one BODMAS slip.
+5. With coded $=$ signs, plan the two sides of the split first,
+   then evaluate each side.
+
+[summary]
+Mathematical operations reasoning is BODMAS under a mask. Decode
+every symbol by writing the full rewritten expression; re-derive
+precedence after the swap; test interchange candidates with
+target-guided arithmetic kept fully on paper; treat "none fits"
+moments as a personal arithmetic slip to audit, not a broken
+question. Coded-operator families add bracket and equality
+symbols, where the task becomes balancing two decoded sides. The
+mathematics never exceeds middle school — the marks reward
+process discipline alone.
+[/summary]

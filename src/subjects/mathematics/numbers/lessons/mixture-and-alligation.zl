@@ -1,0 +1,146 @@
+# Mixture and Alligation: Mixing Quantities, Balancing Prices
+
+> Mix milk with water, cheap grain with costly grain, a $20\%$ acid
+> solution with a $70\%$ one — whenever two ingredients merge, the
+> mixture's strength is a weighted average of the parts. **Alligation**
+> is the centuries-old rule that finds those weights instantly, and
+> with a little practice it cracks problems that look like they need
+> full equation setups.
+
+## 1. Mixtures: The Weighted Average
+
+[definition]
+When $x_1$ litres of strength (or price) $c_1$ mix with $x_2$ litres
+of $c_2$, the mixture's strength is
+[/definition]
+
+@math label="eq:mixture-avg"
+c = \frac{c_1 x_1 + c_2 x_2}{x_1 + x_2}
+@/math
+
+**Worked example.** $30\ \text{L}$ of $20\%$ acid plus $20\ \text{L}$
+of $45\%$ acid:
+
+@math label="eq:mixture-example"
+\frac{30 \times 20 + 20 \times 45}{50} = \frac{600+900}{50} = 30\%
+@/math
+
+The mixture value always sits between the two input values, nearer the
+larger volume.
+
+## 2. The Rule of Alligation
+
+[important]
+Write the two end values ($\text{cheaper } c$ and
+$\text{dearer } d$) beside the target mean $m$. The mixing ratio of
+the quantities is:
+
+@math label="eq:alligation"
+\frac{\text{quantity of cheaper}}{\text{quantity of dearer}}
+= \frac{d - m}{m - c}
+@/math
+
+Each ingredient's weight is the **diagonal difference** — the other
+value's distance from the mean.
+[/important]
+
+**Worked example.** Rice at $40/\text{kg}$ is mixed with rice at
+$60/\text{kg}$ to make a blend worth $45/\text{kg}$:
+
+@math label="eq:rice-alligation"
+\frac{40\text{'s qty}}{60\text{'s qty}} = \frac{60-45}{45-40} = \frac{15}{5} = \frac{3}{1}
+@/math
+
+Three parts cheap to one part dear. For $16\ \text{kg}$ of blend:
+$12\ \text{kg}$ of the $40$ rice and $4\ \text{kg}$ of the $60$ rice.
+
+**Worked example (solutions).** Water (0 percent) mixed into $90\%$
+acid to obtain $60\%$ acid:
+
+@math label="eq:acid-water"
+\frac{\text{acid}}{\text{water}} = \frac{60-0}{90-60} = \frac{2}{1}
+@/math
+
+so every 2 parts acid needs 1 part water — for $40\ \text{L}$ of
+$60\%$ solution: $\frac{80}{3}\ \text{L}$ acid and
+$\frac{40}{3}\ \text{L}$ water.
+
+## 3. Replacement Problems
+
+A container holds pure milk; a fraction is drawn off and replaced
+with water, possibly repeatedly. After $n$ rounds of replacing
+fraction $f$ of the mixture:
+
+@math label="eq:replacement"
+\text{remaining milk fraction} = \left(1-f\right)^n
+@/math
+
+**Worked example.** From $60\ \text{L}$ pure milk, $12\ \text{L}$
+(one-fifth) is drawn and replaced with water, twice. Milk left
+$= 60\left(\frac{4}{5}\right)^2 = 38.4\ \text{L}$, so water
+$= 21.6\ \text{L}$.
+
+The same formula prices a dishonest milkman's scheme: replacing
+one-fifth of milk with water daily for 3 days leaves
+$51.2\%$ milk... the mathematics of adulteration, quantified.
+
+## 4. Two-Container Mixing
+
+When two mixtures of known strength combine, alligation applies to
+the *strengths*, not the pure contents.
+
+**Worked example.** Vessel A holds milk:water $= 4:1$; vessel B holds
+$3:2$. In what ratio are they mixed for a $1:1$ blend? Milk
+fractions: A has $\frac{4}{5}$, B has $\frac{3}{5}$, target
+$\frac{1}{2}$:
+
+@math label="eq:two-vessels"
+\frac{A}{B} = \frac{\frac{1}{2} - \frac{3}{5}}{\frac{4}{5} - \frac{1}{2}}
+= \frac{-0.1}{0.3}
+@/math
+
+The negative result flags an impossibility: $\frac{1}{2}$ is **outside**
+the interval $[\frac{3}{5}, \frac{4}{5}]$, so no mixing of A and B
+can reach it — always check the mean lies between the two ends before
+alligating.
+
+## 5. Alligation on Speeds, Profits, and Averages
+
+Alligation is not only for prices — it works for any quantity where a
+weighted mean governs:
+
+- **Speeds:** a man averages $24\ \text{km/h}$ over a trip partly at
+  $20$ and partly at $30$. Time ratio
+  $= \frac{30-24}{24-20} = \frac{6}{4} = \frac{3}{2}$ — for a 5-hour
+  trip: 3 h at 20 and 2 h at 30.
+- **Profit margins:** blending a $10\%$ profit item with a $25\%$
+  profit item for an overall $15\%$ profit gives a quantity ratio
+  $\frac{25-15}{15-10} = \frac{2}{1}$.
+- **Populations:** mixing a $40\%$-male group with a $60\%$-male group
+  for a $52\%$-male total: ratio
+  $\frac{60-52}{52-40} = \frac{2}{3}$.
+
+[example]
+In what proportion must a grocer mix wheat at $36/\text{kg}$ and
+$42/\text{kg}$ so that selling the mix at $44.80/\text{kg}$ yields a
+$12\%$ profit? First find the *target cost*: cost
+$= \frac{44.80}{1.12} = 40/\text{kg}$. Alligation between 36 and 42
+about 40 gives
+$\frac{36\text{'s}}{42\text{'s}} = \frac{42-40}{40-36} = \frac{1}{2}$.
+The profit requirement hides inside the mean — compute the mean cost
+first, then alligate.
+[/example]
+
+[summary]
+Mixture strength is the volume-weighted average of ingredients. The
+rule of alligation converts any weighted-mean problem into a
+diagonal-difference ratio:
+$\frac{\text{cheaper qty}}{\text{dearer qty}} =
+\frac{d-m}{m-c}$ — valid for prices, concentrations, speeds, profit
+rates, or any two values averaged by quantity, provided the mean lies
+between the two ends. Replacement cycles multiply survival:
+after $n$ replacements of fraction $f$, pure content scales as
+$(1-f)^n$. Compute the required target mean first (e.g. cost from a
+selling price and desired profit), then alligate — most "tricky"
+questions are only this two-step order of operations.
+[/summary]

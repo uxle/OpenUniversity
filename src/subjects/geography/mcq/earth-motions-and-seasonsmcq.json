@@ -1,0 +1,76 @@
+{
+  "lessonId": "earth-motions-and-seasons",
+  "title": "Earth's Motions: Rotation, Revolution, and the Making of Seasons",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Earth's rotation takes about:",
+      "options": ["Exactly 24 hours", "23 hours 56 minutes (one sidereal day)", "365.25 days", "12 hours"],
+      "correct": 1,
+      "rationale": "One rotation relative to the stars (sidereal day) is 23 h 56 min 4 s; the 24-hour solar day is longer because Earth also advances along its orbit."
+    },
+    {
+      "id": 2,
+      "question": "The primary cause of Earth's seasons is:",
+      "options": ["Earth's changing distance from the Sun", "The 23.5° axial tilt combined with revolution", "Sunspot cycles", "The Moon's gravity"],
+      "correct": 1,
+      "rationale": "The tilt changes the Sun's angle and day length through the year; Earth is actually closest to the Sun (perihelion) in January, during Northern winter."
+    },
+    {
+      "id": 3,
+      "question": "On 21 June, the Sun's rays strike vertically at:",
+      "options": ["The Equator", "The Tropic of Cancer (23.5° N)", "The Tropic of Capricorn (23.5° S)", "The Arctic Circle"],
+      "correct": 1,
+      "rationale": "At the June solstice the Northern Hemisphere tilts fully sunward, putting the vertical ray at the Tropic of Cancer — the northernmost overhead position."
+    },
+    {
+      "id": 4,
+      "question": "At the equinoxes, which statement is true?",
+      "options": ["Day is longer than night everywhere", "Day and night are of equal length everywhere", "Only the poles see the Sun", "The Sun is overhead at 45° latitude"],
+      "correct": 1,
+      "rationale": "Around 20 March and 23 September the circle of illumination passes through the poles, giving ~12 hours of daylight at every latitude, with the Sun overhead at the equator."
+    },
+    {
+      "id": 5,
+      "question": "Perihelion (Earth closest to the Sun) occurs around:",
+      "options": ["3 January", "4 July", "21 June", "22 December"],
+      "correct": 0,
+      "rationale": "Perihelion is about 3 January (147 million km); aphelion is about 4 July (152 million km)."
+    },
+    {
+      "id": 6,
+      "question": "The Coriolis effect, a consequence of rotation, deflects moving objects:",
+      "options": ["To the right in the Northern Hemisphere, left in the Southern", "Always to the west", "To the left in both hemispheres", "Only at the equator"],
+      "correct": 0,
+      "rationale": "Rotation makes long-range motions curve right (NH) or left (SH), steering trade winds, cyclones, and ocean currents."
+    },
+    {
+      "id": 7,
+      "question": "IST (Indian Standard Time, UTC+5:30) is referenced to which longitude?",
+      "options": ["75° E", "82.5° E", "90° E", "77.5° E"],
+      "correct": 1,
+      "rationale": "IST uses the meridian 82.5° E (passing near Mirzapur, UP), 5 hours 30 minutes ahead of UTC — one zone for the whole country."
+    },
+    {
+      "id": 8,
+      "question": "Eclipses do not occur every month because:",
+      "options": ["The Moon is too small", "The Moon's orbit is tilted ~5° to the ecliptic, so shadows usually miss", "Earth's tilt blocks them", "The Sun moves away"],
+      "correct": 1,
+      "rationale": "The lunar orbit is inclined to the ecliptic; only when the new/full Moon is near a node (eclipse season, roughly twice a year) can the shadows align."
+    },
+    {
+      "id": 9,
+      "question": "During a lunar eclipse:",
+      "options": ["The Moon blocks the Sun", "Earth's shadow falls on the full Moon", "The Sun's shadow falls on Earth", "The Moon turns blue"],
+      "correct": 1,
+      "rationale": "Earth between Sun and Moon casts its shadow on the full Moon; refracted red light gives the 'blood moon' colour, and it is safe to watch directly."
+    },
+    {
+      "id": 10,
+      "question": "The 41,000-year and 100,000-year Milankovitch cycles involve:",
+      "options": ["Changes in Earth's tilt and orbital eccentricity, pacing ice ages", "Ocean tides and monsoons", "Magnetic field reversals", "Continental drift speed"],
+      "correct": 0,
+      "rationale": "Milankovitch identified cyclic changes in axial tilt (~41,000 yr), orbital shape (~100,000 yr), and precession (~26,000 yr) that together pace the glacial ages."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "probability-distributions",
+  "title": "Probability Distributions: The Shapes of Chance",
+  "questions": [
+    {
+      "id": 1,
+      "question": "When rolling two fair dice, which total is most likely?",
+      "options": ["6", "7", "8", "All totals are equally likely"],
+      "correct": 1,
+      "rationale": "Seven has six combinations (1+6, 2+5, 3+4, 4+3, 5+2, 6+1) — more than any other total, giving probability 6/36."
+    },
+    {
+      "id": 2,
+      "question": "For a fair die, the expected value of the face shown is:",
+      "options": ["3", "3.5", "4", "6"],
+      "correct": 1,
+      "rationale": "E(X) = (1+2+3+4+5+6)/6 = 3.5 — the long-run average, even though no single roll shows it."
+    },
+    {
+      "id": 3,
+      "question": "The binomial distribution models:",
+      "options": ["The number of successes in n independent trials with constant success probability", "Continuous measurements", "Waiting times between events", "Uniform outcomes only"],
+      "correct": 0,
+      "rationale": "Binomial counts successes across n independent trials, each with the same p — formula: C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ."
+    },
+    {
+      "id": 4,
+      "question": "A batsman hits a boundary with probability 0.3 on each ball. What is the probability of exactly 2 boundaries in 4 balls?",
+      "options": ["0.126", "0.2648", "0.3", "0.4116"],
+      "correct": 1,
+      "rationale": "P = C(4,2)·(0.3)²·(0.7)² = 6 × 0.09 × 0.49 = 0.2648."
+    },
+    {
+      "id": 5,
+      "question": "For a binomial distribution with n = 100 and p = 0.25, the mean is:",
+      "options": ["25", "18.75", "4.33", "50"],
+      "correct": 0,
+      "rationale": "Mean = np = 100 × 0.25 = 25; the standard deviation is √(np(1−p)) = √18.75 ≈ 4.33."
+    },
+    {
+      "id": 6,
+      "question": "In a normal distribution, approximately what percentage of data lies within two standard deviations of the mean?",
+      "options": ["50%", "68%", "95%", "99.7%"],
+      "correct": 2,
+      "rationale": "The 68–95–99.7 rule: 68% within 1σ, 95% within 2σ, 99.7% within 3σ."
+    },
+    {
+      "id": 7,
+      "question": "Heights are normally distributed with mean 170 cm and σ = 7 cm. A z-score of −2 corresponds to a height of:",
+      "options": ["156 cm", "163 cm", "170 cm", "184 cm"],
+      "correct": 0,
+      "rationale": "z = (x − μ)/σ → x = μ + zσ = 170 − 2(7) = 156 cm."
+    },
+    {
+      "id": 8,
+      "question": "The central limit theorem states that:",
+      "options": ["All data are normally distributed", "Sample means become approximately normal as sample size grows, whatever the population's shape", "Variances add", "Probabilities sum to 1"],
+      "correct": 1,
+      "rationale": "Averaging many independent influences — or taking sufficiently large samples — produces a bell curve; this is why the normal distribution is everywhere."
+    },
+    {
+      "id": 9,
+      "question": "Quadrant: a poll samples 1,000 voters. The standard error of the sample proportion shrinks roughly by what factor relative to the population spread?",
+      "options": ["1/10", "1/√1000 ≈ 1/32", "1/1000", "It does not shrink"],
+      "correct": 1,
+      "rationale": "The standard error is σ/√n; with n = 1000 the factor is about 1/31.6, giving poll margins of error near ±3%."
+    },
+    {
+      "id": 10,
+      "question": "Which model best fits counting the number of typos on a random page of a book (rare events in a fixed interval)?",
+      "options": ["Binomial", "Poisson", "Normal", "Exponential"],
+      "correct": 1,
+      "rationale": "Poisson models counts of rare events per unit of time or space — typos per page, calls per minute, defects per batch."
+    }
+  ]
+}

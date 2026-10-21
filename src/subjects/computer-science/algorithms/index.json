@@ -1,3 +1,10 @@
 {
-  "lessons": ["lesson1", "sorting-algorithms", "recursion-and-divide-and-conquer", "graph-algorithms", "dynamic-programming-and-greedy"]
+  "lessons": [
+    "lesson1",
+    "sorting-algorithms",
+    "searching-algorithms",
+    "recursion-and-divide-and-conquer",
+    "graph-algorithms",
+    "dynamic-programming-and-greedy"
+  ]
 }

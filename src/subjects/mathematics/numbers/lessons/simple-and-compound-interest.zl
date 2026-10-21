@@ -1,0 +1,148 @@
+# Simple and Compound Interest: Money That Grows on Itself
+
+> Lend a sum at interest and it grows — but *how* it grows changes
+> everything. Simple interest pays rent on the original principal
+> forever; compound interest pays rent on the rent, and the difference
+> over the years becomes spectacular. Einstein is (apocryphally) said
+> to have called compounding the eighth wonder of the world; exam
+> boards certainly treat it as one.
+
+## 1. Simple Interest
+
+[definition]
+**Simple interest (SI)** is computed only on the original principal
+$P$ for the entire period, at rate $R\%$ per annum for $T$ years:
+[/definition]
+
+@math label="eq:si"
+SI = \frac{P \times R \times T}{100}, \qquad A = P\left(1 + \frac{RT}{100}\right)
+@/math
+
+Simple interest grows **linearly** — equal increments every year.
+$5000$ at $8\%$ for 3 years earns
+$\frac{5000 \times 8 \times 3}{100} = 1200$, giving $6200$.
+
+A time-saving view: the interest for one year is
+$\frac{PR}{100}$; any fractional period just scales it.
+
+## 2. Compound Interest
+
+[definition]
+**Compound interest (CI)** recalculates interest each conversion
+period on the *accumulated* amount, not the original principal. With
+annual compounding:
+[/definition]
+
+@math label="eq:ci"
+A = P\left(1+\frac{R}{100}\right)^T, \qquad CI = A - P
+@/math
+
+**Worked example.** $5000$ at $8\%$ for 3 years compounded annually:
+
+@math label="eq:ci-example"
+A = 5000(1.08)^3 = 5000 \times 1.259712 = 6298.56
+@/math
+
+so $CI = 1298.56$ — about $98.56$ more than the simple interest for
+the identical terms. That surplus is precisely "interest on
+interest."
+
+## 3. Fractional and Multiple Compounding
+
+When interest compounds more than once a year, scale the rate down
+and the period count up:
+
+| Compounding | Rate per period | Periods | Amount formula |
+| --- | --- | --- | --- |
+| Half-yearly | $\frac{R}{2}$ | $2T$ | $P\left(1+\frac{R}{200}\right)^{2T}$ |
+| Quarterly | $\frac{R}{4}$ | $4T$ | $P\left(1+\frac{R}{400}\right)^{4T}$ |
+| Monthly | $\frac{R}{12}$ | $12T$ | $P\left(1+\frac{R}{1200}\right)^{12T}$ |
+
+**Worked example.** $10000$ at $10\%$ for 2 years compounded
+half-yearly:
+
+@math label="eq:half-yearly"
+A = 10000\left(1+\frac{10}{200}\right)^{4} = 10000 \times (1.05)^4 = 12155.06
+@/math
+
+More frequent compounding always yields more — watch the limit:
+continuous compounding gives $A = Pe^{RT}$.
+
+For fractional years, compound the whole years and apply SI to the
+stub: $2\frac{1}{2}$ years at $10\%$ gives
+$P(1.1)^2 \times 1.05$.
+
+## 4. The SI-CI Gap
+
+The difference for 2 years is the second year's extra interest —
+interest on the first year's interest:
+
+@math label="eq:diff-2yr"
+D_2 = P\left(\frac{R}{100}\right)^2
+@/math
+
+@math label="eq:diff-3yr"
+D_3 = P\left(\frac{R}{100}\right)^2\left(3 + \frac{R}{100}\right)
+@/math
+
+**Worked example.** The difference between CI and SI on a sum for
+2 years at $10\%$ is $40$. Then
+$P\left(\frac{10}{100}\right)^2 = 40$, so
+$P = \frac{40 \times 100}{1} \times \frac{100}{100} = 4000$.
+
+[important]
+For **one year**, SI and CI are equal (annual compounding) — the gap
+only opens from the second year. Questions exploiting this often give
+the one-year amounts as identical and ask about year two.
+[/important]
+
+## 5. Applications: Population, Depreciation, and Growth
+
+The compound formula models any repeated percentage change:
+
+- **Population growth:** $P_{new} = P\left(1+\frac{R}{100}\right)^n$;
+  a $5\%$ annual increase for 2 years on $20000$ gives
+  $20000 \times 1.1025 = 22050$.
+- **Depreciation:** value falls by $R\%$ yearly,
+  $V = P\left(1-\frac{R}{100}\right)^n$; a machine worth $50000$
+  depreciating $10\%$ yearly is worth $40500$ after 2 years.
+- **Virus/bacteria doubling:** the rate is $100\%$ per period —
+  $A = P \cdot 2^n$.
+
+## 6. Instalments and the Rule of 72
+
+**Instalment (EMI) sketch.** A loan $P$ repaid in $n$ equal annual
+instalments at rate $R$ satisfies: each instalment $x$ is discounted
+back to present value and summed:
+
+@math label="eq:instalment"
+P = \frac{x}{1+\frac{R}{100}} + \frac{x}{\left(1+\frac{R}{100}\right)^2} + \cdots + \frac{x}{\left(1+\frac{R}{100}\right)^n}
+@/math
+
+**Rule of 72.** Money doubles when
+$n \approx \frac{72}{R}$ (percent). At $9\%$, doubling takes about
+8 years; at $12\%$, about 6. A sister rule (Rule of 114 for tripling)
+extends the trick.
+
+[example]
+A sum triples itself at $20\%$ compound interest in approximately
+$\log_{1.2} 3 \approx 6.03$ years — but examiners accept the
+successive-multiplication route: $1.2^5 \approx 2.49$ and
+$1.2^6 \approx 2.99$, so "about 6 years" arrives without logarithms.
+[/example]
+
+[summary]
+Simple interest is linear: $SI = \frac{PRT}{100}$. Compound interest
+is exponential:
+$A = P\left(1+\frac{R}{100}\right)^T$, with the rate divided and
+periods multiplied for half-yearly ($\frac{R}{200}, 2T$) or quarterly
+($\frac{R}{400}, 4T$) compounding. The 2-year SI-CI gap is
+$P\left(\frac{R}{100}\right)^2$, the 3-year gap
+$P\left(\frac{R}{100}\right)^2\left(3+\frac{R}{100}\right)$; year one
+shows no gap. The same engine drives population growth
+$\left(1+\frac{R}{100}\right)^n$, depreciation
+$\left(1-\frac{R}{100}\right)^n$, doubling problems ($2^n$),
+instalment present values, and the Rule of 72 for quick doubling
+times. Compounding rewards patience — and punishes borrowers who
+ignore it.
+[/summary]

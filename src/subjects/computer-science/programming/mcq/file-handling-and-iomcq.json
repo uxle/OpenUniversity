@@ -1,0 +1,106 @@
+{
+  "lessonId": "file-handling-and-io",
+  "title": "File Handling and I/O: Programs That Remember",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the Python statement `open(\"data.txt\", \"w\")` do to an existing data.txt file?",
+      "options": [
+        "Appends to it",
+        "Reads it and leaves it unchanged",
+        "Erases (truncates) it completely",
+        "Raises an error if the file exists"
+      ],
+      "correct": 2,
+      "rationale": "Mode \"w\" truncates the file to zero length before writing — existing content vanishes. To preserve content use \"a\" (append), and to guard against accidental creation use \"x\", which errors if the file exists."
+    },
+    {
+      "id": 2,
+      "question": "The primary benefit of opening files with the `with` statement is:",
+      "options": [
+        "It reads files faster",
+        "It automatically closes the file even if an exception occurs",
+        "It compresses the file on disk",
+        "It loads the entire file into memory"
+      ],
+      "correct": 1,
+      "rationale": "`with open(...) as f:` guarantees close() on scope exit — exceptions included. This flushes buffers, releases file handles, and avoids the data loss and leaks of manual close() management."
+    },
+    {
+      "id": 3,
+      "question": "To scan a 10 GB log file line by line without exhausting memory, the correct choice is:",
+      "options": [
+        "f.read() then split by newline",
+        "f.readlines()",
+        "for line in f:",
+        "f.seek(0) in a while loop with read()"
+      ],
+      "correct": 2,
+      "rationale": "Iterating the file object streams lazily — only the current line occupies memory. read() and readlines() load the entire file at once, which for a 10 GB log is a guaranteed crash."
+    },
+    {
+      "id": 4,
+      "question": "Which mode is right for adding new entries to a running application's log file?",
+      "options": ["\"r\"", "\"w\"", "\"a\"", "\"r+\""],
+      "correct": 2,
+      "rationale": "Append mode places the cursor at end-of-file and preserves existing content — every run adds history. Mode \"w\" would erase yesterday's logs on each start, and \"r\" cannot write at all."
+    },
+    {
+      "id": 5,
+      "question": "f.write(\"hello\") in Python:",
+      "options": [
+        "Adds a newline after hello",
+        "Writes exactly hello with no newline",
+        "Returns the file contents",
+        "Fails if the file contains data"
+      ],
+      "correct": 1,
+      "rationale": "write() writes the bytes you give it, nothing more — no newline is appended. The classic bug is writing several strings that end up glued on one line; either add \\n yourself or use print(..., file=f)."
+    },
+    {
+      "id": 6,
+      "question": "Images and PDFs must be opened in which mode?",
+      "options": ["\"r\"", "\"w\"", "\"rb\" or \"wb\" (binary)", "\"a+\""],
+      "correct": 2,
+      "rationale": "Non-text files contain arbitrary byte sequences that text mode's decoding and newline translation would corrupt. Binary modes pass bytes through untouched — the safe choice for every non-text format."
+    },
+    {
+      "id": 7,
+      "question": "Which module is the standard choice for saving a dictionary as a web-friendly file?",
+      "options": ["pickle", "json", "csv", "pathlib"],
+      "correct": 1,
+      "rationale": "json.dump() writes the dictionary as portable JSON text that any language and browser can read. pickle serialises Python objects too, but its files are Python-only and unsafe from untrusted sources."
+    },
+    {
+      "id": 8,
+      "question": "Reading a missing file raises which exception?",
+      "options": ["FileNotFoundError", "IOError only", "KeyError", "ValueError"],
+      "correct": 0,
+      "rationale": "open() in read mode raises FileNotFoundError when the path does not exist. Related I/O failures include PermissionError and UnicodeDecodeError — all worth catching explicitly around file operations."
+    },
+    {
+      "id": 9,
+      "question": "Buffering means:",
+      "options": [
+        "Files are read twice for safety",
+        "Writes accumulate in memory before being flushed to disk",
+        "The file is copied to a temporary folder",
+        "Python encrypts file contents automatically"
+      ],
+      "correct": 1,
+      "rationale": "Writes land in an in-memory buffer, which is flushed to disk when full, when flush() is called, or when the file closes. This is why skipping close() can lose data — the buffer never reached the disk."
+    },
+    {
+      "id": 10,
+      "question": "Why is `Path(\"data\") / \"results.json\"` preferred over string concatenation for paths?",
+      "options": [
+        "It is shorter to type",
+        "It works identically across Windows and Unix separators",
+        "It reads the file as well",
+        "It makes the folder read-only"
+      ],
+      "correct": 1,
+      "rationale": "pathlib's / operator joins path components using the current operating system's separator, avoiding the hard-coded \\ or / bugs that break ported scripts. It also offers exists(), read_text(), and friends."
+    }
+  ]
+}

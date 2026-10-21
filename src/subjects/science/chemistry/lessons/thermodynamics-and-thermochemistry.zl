@@ -1,0 +1,188 @@
+# Thermodynamics and Thermochemistry: Energy Bookkeeping in Chemistry
+
+> Every chemical change either stores or releases energy, and the
+> science that tracks it is thermodynamics. Why does a match release
+> heat while an instant cold pack absorbs it? Why do some reactions run
+> forward spontaneously while others need constant pushing? The answers
+> live in three laws and one small equation, $\Delta G = \Delta H -
+> T\Delta S$, the most useful inequality in chemistry.
+
+## 1. Systems, Surroundings, and State Functions
+
+[definition]
+A **system** is the part of the universe under study; everything else
+is the **surroundings**. An open system exchanges both matter and
+energy, a closed system exchanges only energy, and an isolated system
+exchanges nothing.
+[/definition]
+
+**State functions** — internal energy $U$, enthalpy $H$, entropy $S$,
+Gibbs energy $G$ — depend only on the current state, not on the path
+taken between states. Heat $q$ and work $w$ are *not* state functions:
+they describe energy in transit and depend on how the change is
+carried out. This path-versus-state distinction powers everything else
+in the chapter.
+
+## 2. The First Law: Energy Is Conserved
+
+[important]
+Internal energy can change only by heat flowing in or work being done:
+$\Delta U = q + w$. Energy is neither created nor destroyed — it only
+changes costume between heat, work, and stored chemical energy.
+[/important]
+
+@math label="eq:first-law"
+\Delta U = q + w
+@/math
+
+Sign conventions matter: $q > 0$ when heat is absorbed by the system;
+$w > 0$ when work is done **on** the system (compression). For
+gaseous pressure-volume work against a constant external pressure:
+
+@math label="eq:pv-work"
+w = -P_{ext}\Delta V
+@/math
+
+so expansion ($\Delta V > 0$) does negative work — the system spends
+energy pushing the piston.
+
+**Special cases worth memorising:**
+
+| Process | Condition | Result |
+| --- | --- | --- |
+| Isothermal ideal gas | $\Delta T = 0$ | $\Delta U = 0$, so $q = -w$ |
+| Isochoric (constant $V$) | $\Delta V = 0$ | $w = 0$, so $\Delta U = q_v$ |
+| Adiabatic | $q = 0$ | $\Delta U = w$ |
+| Free expansion into vacuum | $P_{ext} = 0$ | $w = 0$ |
+
+## 3. Enthalpy: The Chemist's Energy Currency
+
+Reactions in open vessels run at constant (atmospheric) pressure, so
+chemists use **enthalpy** $H = U + PV$ instead of $U$ itself. The
+change in enthalpy equals the heat absorbed at constant pressure:
+
+@math label="eq:enthalpy"
+\Delta H = q_p
+@/math
+
+- $\Delta H < 0$ — **exothermic**: heat released (combustion,
+  neutralisation, respiration).
+- $\Delta H > 0$ — **endothermic**: heat absorbed (photosynthesis,
+  decomposition of limestone, melting ice).
+
+The tabulated $\Delta H$ values obey **Hess's law**: because $H$ is a
+state function, the enthalpy change of a reaction is the same whether
+it happens in one step or many. Thermochemical cycles — most famously
+the Born-Haber cycle for lattice energy — are nothing but bookkeeping
+with Hess's law around a closed loop:
+
+@math label="eq:hess"
+\Delta H_{\text{overall}} = \sum \Delta H_{\text{steps}}
+@/math
+
+**Standard enthalpies** you should recognise: formation
+($\Delta_f H$, of one mole from elements in standard states — zero for
+an element in its reference form), combustion ($\Delta_c H$, always
+negative), bond dissociation, atomisation, and solution.
+
+## 4. Heat Capacity and Calorimetry
+
+The heat needed to raise a temperature is $q = mc\Delta T$, with $c$
+the specific heat capacity. For chemists the **molar heat capacity**
+and, at constant volume or pressure, the relations below hold:
+
+@math label="eq:heat-capacity"
+q_v = nC_v\Delta T \quad\text{and}\quad q_p = nC_p\Delta T
+@/math
+
+For an ideal gas, $C_p - C_v = R$. A bomb calorimeter (constant
+volume) measures $\Delta U$ directly; multiplying results for
+gaseous reactants by the $\Delta n_g RT$ correction converts to
+$\Delta H$:
+
+@math label="eq:uv-h"
+\Delta H = \Delta U + \Delta n_g RT
+@/math
+
+**Worked example.** Combustion of benzene in a bomb calorimeter gives
+$\Delta U = -3264\ \text{kJ/mol}$:
+
+@math label="eq:benzene"
+C_6H_6(l) + \frac{15}{2}O_2(g) \to 6CO_2(g) + 3H_2O(l)
+@/math
+
+Here $\Delta n_g = 6 - 7.5 = -1.5$, so $\Delta H$ is slightly *more
+negative* than $\Delta U$ by about $3.7\ \text{kJ/mol}$ — tiny against
+thousands, which is why the correction often looks negligible.
+
+## 5. The Second Law and Entropy
+
+The first law cannot tell us why heat flows from hot to cold and never
+backwards. The **second law** can: in any spontaneous process the
+total entropy of the universe increases.
+
+@math label="eq:entropy-def"
+\Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}} > 0
+@/math
+
+Entropy $S$ measures the number of accessible microscopic
+arrangements — disorder, loosely. It is a state function with units
+$\text{J K}^{-1}\text{mol}^{-1}$, and for a reversible heat exchange:
+
+@math label="eq:entropy-rev"
+\Delta S = \frac{q_{rev}}{T}
+@/math
+
+Entropy rises with melting, vaporisation, dissolution of most salts,
+and whenever gas moles increase. The **third law** completes the
+picture: the entropy of a perfect crystal at $0\ \text{K}$ is zero,
+giving absolute entropies their reference point.
+
+[info title="Gibbs energy, the chemist's compass"]
+The second law hides one inconvenience: we usually cannot measure the
+surroundings' entropy directly. Gibbs energy fixes this by folding the
+surroundings into the temperature:
+$\Delta S_{\text{surr}} = -\frac{\Delta H_{\text{sys}}}{T}$, so
+multiplying through by $-T$ gives a criterion using system quantities
+alone.
+[/info]
+
+## 6. Spontaneity: The Gibbs Energy Test
+
+@math label="eq:gibbs"
+\Delta G = \Delta H - T\Delta S
+@/math
+
+At constant $T$ and $P$, $\Delta G < 0$ means spontaneous,
+$\Delta G = 0$ means equilibrium, and $\Delta G > 0$ means the reverse
+direction is spontaneous. The four cases:
+
+| $\Delta H$ | $\Delta S$ | Result |
+| --- | --- | --- |
+| $-$ | $+$ | Spontaneous at all temperatures |
+| $+$ | $-$ | Never spontaneous |
+| $-$ | $-$ | Spontaneous at low $T$ (freezing, below the freezing point) |
+| $+$ | $+$ | Spontaneous at high $T$ (boiling, above the boiling point) |
+
+The temperature where a sign flips is found by setting $\Delta G = 0$,
+giving $T = \frac{\Delta H}{\Delta S}$ — the melting or boiling point
+in disguise.
+
+**Coupled reactions.** Even an uphill reaction ($\Delta G > 0$) can be
+driven by pairing it with a strongly downhill one — how metabolism
+pushes biosynthesis using ATP hydrolysis, and how graphite converts to
+diamond industrially alongside favourable side reactions.
+
+[summary]
+Thermodynamics is energy accounting. The first law,
+$\Delta U = q + w$, conserves energy, with $w = -P_{ext}\Delta V$ for
+gas expansion. Enthalpy $\Delta H = q_p$ tracks heat at constant
+pressure, and Hess's law cycles any path into standard formation and
+combustion data. Calorimetry measures $q = mc\Delta T$; bomb
+calorimeters give $\Delta U$, converted by $\Delta H = \Delta U +
+\Delta n_g RT$. The second law demands $\Delta S_{\text{univ}} > 0$,
+and Gibbs energy compresses that test into $\Delta G = \Delta H -
+T\Delta S$ — negative means spontaneous, zero means equilibrium, and
+the sign-flip temperature is $T = \frac{\Delta H}{\Delta S}$. Energy
+decides possibility; entropy decides direction.
+[/summary]

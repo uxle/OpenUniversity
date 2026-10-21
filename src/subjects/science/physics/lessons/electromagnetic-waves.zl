@@ -1,0 +1,155 @@
+# Electromagnetic Waves: The Spectrum That Carries the Modern World
+
+> Light, radio, X-rays, and microwaves are all the same physical thing
+> — electric and magnetic fields oscillating together, racing through
+> vacuum at the speed of light. This lesson maps the full
+> electromagnetic spectrum and what each band does for us.
+
+## 1. What Is an Electromagnetic Wave?
+
+[definition]
+An **electromagnetic (EM) wave** is a self-sustaining pair of
+oscillating fields — electric and magnetic — perpendicular to each
+other and to the direction of travel. Unlike sound, it needs no
+medium and travels through vacuum at
+$c = 3 \times 10^8$ m/s.
+[/definition]
+
+James Clerk Maxwell predicted the wave in the 1860s from his
+equations; Heinrich Hertz produced and detected radio waves in 1887.
+All EM waves share the basic wave relation:
+
+@math label="eq:wave-relation"
+c = f\lambda
+@/math
+
+Since $c$ is fixed, higher frequency means shorter wavelength — the
+single organizing principle of the spectrum.
+
+## 2. The Electromagnetic Spectrum
+
+Ordered from longest wavelength (lowest frequency, least energy) to
+shortest (highest frequency, most energetic):
+
+| Band | Wavelength range | Everyday uses |
+| --- | --- | --- |
+| Radio | > 1 m | AM/FM broadcast, TV, astronomy |
+| Microwave | 1 m – 1 mm | Wi-Fi, Bluetooth, radar, ovens, satellite links |
+| Infrared (IR) | 1 mm – 700 nm | Remote controls, thermal imaging, night vision |
+| Visible light | 700 nm (red) – 400 nm (violet) | Everything we see |
+| Ultraviolet (UV) | 400 nm – 10 nm | Sterilisation, vitamin D, tanning |
+| X-rays | 10 nm – 0.01 nm | Medical imaging, airport security, crystallography |
+| Gamma rays | < 0.01 nm | Cancer radiotherapy, sterilising food, astronomy |
+
+@chart bar title="Approximate wavelength (metres, log scale shown as powers of ten) of each band"
+labels:
+Radio
+Microwave
+Infrared
+Visible
+Ultraviolet
+X-ray
+Gamma
+
+data:
+10
+0.01
+0.000001
+0.0000005
+0.00000001
+0.0000000001
+0.00000000001
+@/chart
+
+[info title="Why the sky is blue and sunsets are red"]
+Short wavelengths scatter far more strongly than long ones
+(Rayleigh scattering varies as $1/\lambda^4$). Air molecules scatter
+blue light across the whole sky, while reds and oranges pass straight
+through the thick atmosphere at sunset to paint the horizon.
+[/info]
+
+## 3. Photons: The Quantum Side
+
+An EM wave also behaves as a stream of particles — **photons** — each
+carrying a packet of energy:
+
+@math label="eq:photon-energy"
+E = hf
+@/math
+
+where $h = 6.63 \times 10^{-34}$ J·s is Planck's constant. This is why
+gamma rays and X-rays (high $f$) are **ionising** — their photons carry
+enough energy to knock electrons off atoms, damaging DNA — while radio
+and microwaves are not.
+
+[warning]
+Ionising radiation — UV, X-rays, gamma rays — is why you wear a lead
+apron at dental X-rays and sun-screen against UV. Damage is
+cumulative; dose limits exist for good reason.
+[/warning]
+
+## 4. How Each Band Earns Its Keep
+
+### Radio and microwaves — communication
+
+- **Broadcasting:** AM (amplitude modulation) travels far at night via
+  ionosphere reflection; FM (frequency modulation) resists noise,
+  giving clearer sound.
+- **Radar** (Radio Detection and Ranging) times microwave echoes to
+  find aircraft range and speed — the police speed gun uses the
+  Doppler shift of reflected microwaves.
+- **Microwave ovens** target a water-absorbing frequency (~2.45 GHz);
+  the waves twist polar water molecules back and forth, heating food
+  from within.
+- **5G, Wi-Fi, GPS, satellite TV** all live in the microwave band —
+  a modern city carries thousands of simultaneous conversations
+  through it.
+
+### Infrared — heat and remote sensing
+
+Every warm object glows in IR. Thermal cameras spot heat leaks in
+buildings, fevers at airports, and survivors under rubble. The
+**James Webb Space Telescope** observes the universe in infrared,
+piercing dust to see the earliest galaxies.
+
+### Visible light — the sliver we sense
+
+Less than one octave of the spectrum, yet it powers photosynthesis,
+astronomy's first telescopes, and all human vision.
+
+### Ultraviolet and beyond — probing matter
+
+UV sterilises surgical tools and drinking water; X-rays reveal bones,
+baggage, and the atomic structure of crystals (DNA's double helix was
+confirmed by X-ray diffraction); gamma rays treat tumours and trace
+radioactive tracers in the body.
+
+## 5. The Atmosphere's Windows
+
+Earth's atmosphere absorbs most EM radiation but is transparent in a
+few **windows** — the reason astronomy and satellite communication
+work at all:
+
+| Window | Band | What gets through |
+| --- | --- | --- |
+| Optical | Visible + near IR | Ground telescopes |
+| Radio | ~1 cm to ~10 m | Radio telescopes, GPS, satellite links |
+| (Open space) | IR, UV, X-ray, gamma | Only from satellites — hence Hubble, Chandra, JWST |
+
+[tip]
+Next time your phone shows full Wi-Fi signal in a concrete room but
+drops Bluetooth in the next, you are watching the spectrum at work:
+longer waves diffract around obstacles better; 5 GHz Wi-Fi carries
+more data than 2.4 GHz but penetrates walls worse.
+[/tip]
+
+[summary]
+EM waves are coupled oscillating electric and magnetic fields
+travelling at $c = 3 \times 10^8$ m/s in vacuum, linked by
+$c = f\lambda$. The spectrum runs from radio through microwave,
+infrared, visible, ultraviolet, and X-rays to gamma rays, energy per
+photon rising as $E = hf$. Low-frequency bands carry communication
+and radar; IR reveals heat; only a narrow visible sliver powers
+vision; ionising UV, X-rays, and gamma rays both probe and damage
+matter — which is exactly why they must be handled with care.
+[/summary]

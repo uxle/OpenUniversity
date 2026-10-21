@@ -1,0 +1,76 @@
+{
+  "lessonId": "industrial-revolution",
+  "title": "The Industrial Revolution: How Machines Remade the World",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Industrial Revolution began around 1760 in:",
+      "options": ["France", "Britain", "Germany", "The United States"],
+      "correct": 1,
+      "rationale": "Britain combined coal, colonial capital, agricultural surplus labour, and textile demand — the unique starting stack."
+    },
+    {
+      "id": 2,
+      "question": "Which chronological order of textile inventions is correct?",
+      "options": ["Power loom → spinning jenny → flying shuttle", "Flying shuttle → spinning jenny → water frame → power loom", "Spinning jenny → flying shuttle → cotton gin", "Water frame → spinning mule → flying shuttle"],
+      "correct": 1,
+      "rationale": "Kay's flying shuttle (1733) speeded weaving; Hargreaves' jenny (1764) and Arkwright's water frame (1769) caught spinning up; Cartwright's power loom (1785) mechanised weaving."
+    },
+    {
+      "id": 3,
+      "question": "James Watt's crucial improvement to the steam engine (patented 1769) was:",
+      "options": ["The piston", "The separate condenser, multiplying efficiency", "Using coal instead of wood", "Putting it on rails"],
+      "correct": 1,
+      "rationale": "Watt's separate condenser saved the cylinder's heat, making steam power economical everywhere — not just at coal mines like Newcomen's engine."
+    },
+    {
+      "id": 4,
+      "question": "The Stockton–Darlington railway (1825) and the Rocket (1829) are associated with:",
+      "options": ["George and Robert Stephenson", "Richard Trevithick alone", "Isambard Kingdom Brunel", "James Watt"],
+      "correct": 0,
+      "rationale": "The Stephensons proved steam traction on public railways; Trevithick built the first steam locomotive (1804), and Brunel engineered broad-gauge lines and great steamships."
+    },
+    {
+      "id": 5,
+      "question": "The Luddites (1811–16) were:",
+      "options": ["Early trade unionists seeking higher wages", "Machine-breakers protesting job losses in the mills", "A religious sect", "Parliament's factory inspectors"],
+      "correct": 1,
+      "rationale": "Handicraft workers (stocking-frames in Nottingham) smashed the machinery pauperising them; the government made machine-breaking a capital offence."
+    },
+    {
+      "id": 6,
+      "question": "The Factory Act of 1833 in Britain:",
+      "options": ["Introduced the 8-hour day", "Banned children under 9 from textile mills and limited child working hours, with inspectors to enforce it", "Legalised trade unions", "Repealed the Corn Laws"],
+      "correct": 1,
+      "rationale": "The 1833 Act set age limits and hours for children in textiles and — crucially — appointed factory inspectors; unions were legalised in 1824–25 and the Corn Laws repealed in 1846."
+    },
+    {
+      "id": 7,
+      "question": "Which country industrialised fastest outside Europe and North America, in a single generation after 1868?",
+      "options": ["China", "India", "Meiji Japan", "The Ottoman Empire"],
+      "correct": 2,
+      "rationale": "Meiji Japan's state-led modernisation — missions abroad, model factories, universal schooling — went from feudal to industrial power by the 1890s."
+    },
+    {
+      "id": 8,
+      "question": "In colonial India, early industrialisation was marked by:",
+      "options": ["Heavy machinery exports to Britain", "Cotton mills in Bombay and jute mills in Bengal, with railways from 1853", "No factories before 1947", "Steel mills founded by the British East India Company"],
+      "correct": 1,
+      "rationale": "Cowasjee Davar's Bombay cotton mill (1851) and Bengal jute mills pioneered modern industry; the Bombay–Thane line (1853) began the railways; Tata Steel followed at Jamshedpur (1907)."
+    },
+    {
+      "id": 9,
+      "question": "The Bessemer converter (1856) revolutionised production of:",
+      "options": ["Cotton thread", "Cheap steel", "Sulphuric acid", "Electricity"],
+      "correct": 1,
+      "rationale": "Bessemer's process blew air through molten pig iron to burn off carbon, making inexpensive steel — the material of rails, ships, and skyscrapers."
+    },
+    {
+      "id": 10,
+      "question": "Dadabhai Naoroji's 'drain theory' responded to:",
+      "options": ["The salt tax", "Colonial extraction of India's wealth to Britain — wealth from industry's peripheries", "The Permanent Settlement of Bengal", "The Doctrine of Lapse"],
+      "correct": 1,
+      "rationale": "Naoroji (and R.C. Dutt) quantified how India's exports without equivalent returns drained wealth to Britain — the economic critique that fed early nationalism and linked industrialisation to empire."
+    }
+  ]
+}

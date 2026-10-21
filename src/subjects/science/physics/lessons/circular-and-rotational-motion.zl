@@ -1,0 +1,188 @@
+# Circular and Rotational Motion: Motion That Turns
+
+> Motion is not always straight-line. Objects loop loops (circular
+> motion) and spin about an axis (rotational motion) — from a planet
+> orbiting the Sun to a ceiling fan's blades. This lesson builds the
+> vocabulary, the forces, and the conservation laws for both.
+
+## 1. Describing Rotation: Angular Quantities
+
+A body moving in a circle is described with angles instead of
+distances. Let the radius be $r$ and the angle swept be $\theta$.
+
+| Quantity | Symbol | Unit | Straight-line analogue |
+| --- | --- | --- | --- |
+| Angular displacement | $\theta$ | radian (rad) | distance $s$ |
+| Angular velocity | $\omega$ | rad/s | velocity $v$ |
+| Angular acceleration | $\alpha$ | rad/s² | acceleration $a$ |
+
+[definition]
+**Angular velocity** $\omega$ is the rate of change of angular
+displacement: $\omega = \theta / t$. One full turn is $2\pi$ rad, so a
+body completing $n$ revolutions per second has $\omega = 2\pi n$.
+[/definition]
+
+The link between linear and angular descriptions of the same motion is
+the radius:
+
+@math label="eq:v-omega-r"
+v = \omega r
+@/math
+
+## 2. Uniform Circular Motion and Centripetal Force
+
+In uniform circular motion the speed is constant but the velocity is
+not — its direction changes continuously, so there is always an
+acceleration **towards the centre**, the **centripetal acceleration**:
+
+@math label="eq:centripetal-acceleration"
+a_c = \frac{v^2}{r} = \omega^2 r
+@/math
+
+By Newton's second law, a real force must supply this acceleration.
+That force — directed to the centre — is the **centripetal force**:
+
+@math label="eq:centripetal-force"
+F_c = \frac{mv^2}{r} = m\omega^2 r
+@/math
+
+[important]
+Centripetal force is not a new kind of force. It is the *role* played
+by whatever real force happens to point towards the centre: tension in
+a whirled string, gravity for a satellite, friction between tyres and
+road for a car on a flat curve.
+[/important]
+
+## 3. Banked Roads and the Speed of Turns
+
+On a flat road, friction alone provides the centripetal force, which
+caps how fast a car can turn. Roads and velodrome tracks are **banked**
+so that a component of the normal reaction does part of the job. For a
+road banked at angle $\theta$ (no friction needed):
+
+@math label="eq:banking"
+v = \sqrt{rg \tan\theta}
+@/math
+
+| Situation | Provides the centripetal force |
+| --- | --- |
+| Stone on a string | Tension |
+| Satellite in orbit | Gravity |
+| Car on a flat curve | Friction |
+| Aircraft turning in flight | Horizontal component of lift |
+| Electron orbiting a nucleus | Electrostatic attraction |
+
+## 4. Vertical Circles: Where Speed Changes
+
+A body swung in a **vertical circle** is not uniform circular motion —
+gravity speeds it up at the bottom and slows it at the top. At the top
+of the loop, both gravity and string tension point downward:
+
+@math label="eq:vertical-top"
+v_{min}^2 = gr
+@/math
+
+[tip]
+For a bucket of water whirled in a vertical circle, this is why the
+water stays in at the top: if $v \ge \sqrt{gr}$, the required
+centripetal acceleration already exceeds $g$, so the water presses
+into the bucket instead of falling out.
+[/tip]
+
+## 5. Rotational Motion: Torque and Moment of Inertia
+
+For spinning bodies, Newton's laws are re-cast in angular form. The
+rotational analogue of force is **torque** $\tau$, and the analogue of
+mass is the **moment of inertia** $I$ — which also depends on *how far*
+the mass sits from the axis.
+
+| Concept | Straight-line form | Rotational form |
+| --- | --- | --- |
+| Inertia | mass $m$ | $I = \Sigma mr^2$ |
+| Newton's second law | $F = ma$ | $\tau = I\alpha$ |
+| Momentum | $p = mv$ | $L = I\omega$ |
+| Kinetic energy | $\frac{1}{2}mv^2$ | $\frac{1}{2}I\omega^2$ |
+
+Moments of inertia for standard shapes (about the symmetry axis):
+
+| Body | $I$ |
+| --- | --- |
+| Ring | $MR^2$ |
+| Disc | $\frac{1}{2}MR^2$ |
+| Solid sphere | $\frac{2}{5}MR^2$ |
+| Rod about its centre | $\frac{1}{12}ML^2$ |
+
+[definition]
+**Torque** (moment of force) about an axis is
+$\tau = rF\sin\phi$, where $r$ is the distance from the axis to the
+point where the force acts and $\phi$ is the angle between the force
+and the radius. A longer handle (larger $r$) gives more torque from the
+same push — that is why spanners have long handles and door knobs sit
+far from hinges.
+[/definition]
+
+## 6. Angular Momentum and Its Conservation
+
+[important]
+The **angular momentum** $L = I\omega$ of a system stays constant when
+no external torque acts on it: $I\omega = $ constant.
+[/important]
+
+This single rule explains a classic set of observations:
+
+- A spinning skater pulls her arms in — $I$ drops, so $\omega$ rises:
+  she spins faster.
+- A diver tucked into a ball rotates quicker than when stretched out.
+- The Earth's rotation slowly transfers angular momentum to the Moon
+  through tides: days lengthen while the Moon recedes.
+
+## 7. Rotational Equilibrium
+
+A body is in rotational equilibrium when the net torque on it is zero.
+A see-saw balances, not when the two weights are equal, but when their
+**moments** are equal and opposite:
+
+@math label="eq:seesaw"
+m_1 r_1 = m_2 r_2
+@/math
+
+A 30 kg child sitting 2 m from the pivot balances a 60 kg adult at
+1 m: $30 \times 2 = 60 \times 1$. Levers, crowbars, and weighing
+balances (like the traditional *tarazu*) all work on this principle.
+
+## 8. Satellites and Orbits
+
+A satellite is a body in permanent free fall around a planet. Gravity
+supplies exactly the centripetal force needed, which fixes the orbital
+speed at radius $r$:
+
+@math label="eq:orbital-speed"
+v = \sqrt{\frac{GM}{r}}
+@/math
+
+@chart line title="Orbital speed falls with altitude (approximate km/s)"
+labels:
+400 km (ISS)
+2000 km
+MEO (20200 km)
+GEO (35786 km)
+
+data:
+7.67
+6.9
+3.9
+3.07
+@/chart
+
+Geostationary satellites orbit at 35,786 km with $\omega$ matching
+Earth's rotation, so they hover over one point on the equator — the
+reason a fixed dish antenna can point at one TV satellite all day.
+
+[summary]
+Circular motion is described by angular quantities linked to linear
+ones through $v = \omega r$. A net inward (centripetal) force
+$mv^2/r$ is supplied by real forces like tension, gravity, or
+friction. For spinning bodies, $\tau = I\alpha$ replaces $F = ma$,
+rotational kinetic energy is $\frac{1}{2}I\omega^2$, and angular
+momentum $I\omega$ is conserved when no external torque acts.
+[/summary]

@@ -1,0 +1,111 @@
+{
+  "lessonId": "renaissance-and-enlightenment",
+  "title": "Renaissance and Enlightenment: Europe's Long Revolution of the Mind",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Renaissance began in Italy primarily because of:",
+      "options": [
+        "The Protestant Reformation",
+        "Trade wealth of city-states, Roman ruins, and Byzantine scholars bringing Greek manuscripts",
+        "The Black Death's absence from Italy",
+        "Spanish conquest of Naples"
+      ],
+      "correct": 1,
+      "rationale": "Medici and Venetian wealth funded art and learning; Roman antiquity lay at hand; and after 1453 Greek scholars fleeing Constantinople carried classical texts west — Italy held every ingredient of the rebirth."
+    },
+    {
+      "id": 2,
+      "question": "Petrarch is called 'the father of humanism' for:",
+      "options": [
+        "Printing the first Bible",
+        "Recovering and championing classical Latin texts and human-centred learning",
+        "Painting the Sistine ceiling",
+        "Defending heliocentrism"
+      ],
+      "correct": 1,
+      "rationale": "Petrarch's recovery of Cicero and the classical tradition — studying human letters (studia humanitatis) rather than scholastic theology — set the movement's agenda. Gutenberg did the printing, Michelangelo the ceiling, Copernicus the heavens."
+    },
+    {
+      "id": 3,
+      "question": "Which invention most accelerated the spread of both the Reformation and the Scientific Revolution?",
+      "options": ["The telescope", "Gutenberg's printing press", "The marine chronometer", "The steam engine"],
+      "correct": 1,
+      "rationale": "Printing (c. 1455) made books and pamphlets cheap: Luther's theses went viral, vernacular Bibles spread literacy, and scientific journals travelled between scholars — the era's information infrastructure."
+    },
+    {
+      "id": 4,
+      "question": "Machiavelli's The Prince departed from medieval political thought by:",
+      "options": [
+        "Defending the divine right of kings",
+        "Analysing power as it is, separating politics from morality",
+        "Arguing for papal supremacy",
+        "Supporting republican constitutions only"
+      ],
+      "correct": 1,
+      "rationale": "Machiavelli studied statecraft empirically — how rulers gain and keep power — without grounding it in religion or ethics, founding modern political science."
+    },
+    {
+      "id": 5,
+      "question": "The phrase 'life, liberty, and property' as natural rights the state must protect is associated with:",
+      "options": ["Rousseau", "John Locke", "Voltaire", "Montesquieu"],
+      "correct": 1,
+      "rationale": "Locke's Two Treatises argued that governments exist by consent to protect natural rights, and may be overthrown when they breach the trust. Jefferson adapted the trio to 'life, liberty, and the pursuit of happiness' in 1776."
+    },
+    {
+      "id": 6,
+      "question": "The separation of powers into legislative, executive, and judicial branches derives from:",
+      "options": [
+        "Rousseau's Social Contract",
+        "Montesquieu's The Spirit of the Laws",
+        "Adam Smith's Wealth of Nations",
+        "Kant's Critique of Pure Reason"
+      ],
+      "correct": 1,
+      "rationale": "Montesquieu argued that concentrated power invites abuse, so liberty requires checks and balances across three branches — the engineering principle behind the US Constitution."
+    },
+    {
+      "id": 7,
+      "question": "'Man is born free, and everywhere he is in chains' opens which work, arguing for popular sovereignty?",
+      "options": ["The Prince", "The Social Contract", "Candide", "Leviathan"],
+      "correct": 1,
+      "rationale": "Rousseau's Social Contract (1762) grounded legitimate authority in the general will of the people — the intellectual dynamite under the French Revolution. Leviathan is Hobbes' absolutist counterpoint."
+    },
+    {
+      "id": 8,
+      "question": "Newton's Principia (1687) mattered to the Enlightenment because:",
+      "options": [
+        "It proved the Church correct about astronomy",
+        "It showed one law governs both heavens and earth — nature as a knowable machine",
+        "It invented the printing press",
+        "It translated the Bible into French"
+      ],
+      "correct": 1,
+      "rationale": "Universal gravitation unified Kepler's orbits and falling apples under one law. If reason could decode the heavens, Enlightenment thinkers reasoned it could decode society, kings included."
+    },
+    {
+      "id": 9,
+      "question": "Mary Wollstonecraft's A Vindication of the Rights of Woman (1792) argued:",
+      "options": [
+        "Women should not be educated",
+        "The Revolution's rights-logic applies equally to women",
+        "Only queens may rule",
+        "Education should be church-controlled"
+      ],
+      "correct": 1,
+      "rationale": "Wollstonecraft turned the Enlightenment's own principles against its blind spot: if rights rest on reason, and women possess reason, denying them education and rights is incoherent tyranny."
+    },
+    {
+      "id": 10,
+      "question": "Which sequence correctly orders these events?",
+      "options": [
+        "French Revolution - American Declaration - Gutenberg press - Luther's theses",
+        "Gutenberg press - Luther's theses - American Declaration - French Revolution",
+        "Luther's theses - Gutenberg press - French Revolution - American Declaration",
+        "American Declaration - Luther's theses - Gutenberg press - French Revolution"
+      ],
+      "correct": 1,
+      "rationale": "Printing (c. 1455) armed Luther (1517); the ideas matured through the Scientific Revolution and Enlightenment into the American Declaration (1776) and then the French Revolution (1789) — technology to faith to politics."
+    }
+  ]
+}

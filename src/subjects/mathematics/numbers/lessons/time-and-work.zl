@@ -1,0 +1,131 @@
+# Time and Work: Rates, Efficiency, and Team Effort
+
+> If A builds a wall in 12 days and B in 18, how long together?
+> Three sentences of setup and one line of algebra answer it. Time and
+> work problems convert every worker into a *rate*, add the rates, and
+> divide the job by the total. From there the chapter branches into
+> pipes, alternate days, wages, and the ever-popular "man-days"
+> equations — all one idea wearing different hats.
+
+## 1. From Times to Rates
+
+[definition]
+If a worker completes a job in $n$ days, the **one-day work** (rate)
+is $\frac{1}{n}$ of the job per day. Workers' rates simply add:
+together they do $\frac{1}{a} + \frac{1}{b} + \cdots$ of the job each
+day.
+[/definition]
+
+@math label="eq:rate-add"
+\frac{1}{T} = \frac{1}{a} + \frac{1}{b} \quad\Rightarrow\quad T = \frac{ab}{a+b}
+@/math
+
+**Worked example.** A: 12 days, B: 18 days, together:
+
+@math label="eq:together"
+\frac{1}{12} + \frac{1}{18} = \frac{3+2}{36} = \frac{5}{36} \Rightarrow T = \frac{36}{5} = 7.2\ \text{days}
+@/math
+
+The harmonic-style result $\frac{ab}{a+b}$ gives
+$\frac{12 \times 18}{30} = 7.2$ immediately.
+
+## 2. The LCM Method: Work in Units
+
+Instead of fractions, set the **total work = LCM of the days**.
+For 12 and 18, take 36 units: A does 3 units/day, B does 2 units/day,
+together 5 — $36/5 = 7.2$ days. The method shines when several
+workers join and leave:
+
+**Worked example.** A and B begin a 60-unit job (A: 4/day, B:
+6/day — from 15 and 10 days). After 3 days (30 units done), C joins
+(C: 5/day). Remaining 30 units at 15/day needs 2 more days — total 5
+days. No fraction ever appears.
+
+## 3. Efficiency and the Chain of Workers
+
+Efficiency is the inverse of time — twice the efficiency means half
+the days:
+
+@math label="eq:efficiency"
+\text{time} \times \text{efficiency} = \text{constant}
+@/math
+
+**Worked example.** A is twice as efficient as B and finishes 8 days
+earlier. Let B take $t$ days, so A takes $\frac{t}{2}$: then
+$t - \frac{t}{2} = 8$, giving $t = 16$ and A takes 8 days.
+
+**Men-women-children chains.** "3 men = 5 women" style equivalences
+convert everyone into one currency (say, units/day of the *same*
+job) before adding.
+
+## 4. The MDH Formula for Groups
+
+[important]
+Work is proportional to men $\times$ days $\times$ hours $\times$
+per-hour efficiency. For two crews on the same kind of job:
+
+@math label="eq:mdh"
+\frac{M_1 D_1 H_1}{W_1} = \frac{M_2 D_2 H_2}{W_2}
+@/math
+
+Add efficiency ratios $\frac{E_1}{E_2}$ as an extra factor when
+crews differ in skill.
+[/important]
+
+**Worked example.** 12 men working 8 hours/day finish a wall in 15
+days. How long will 18 men working 10 hours/day take (same wall)?
+
+@math label="eq:mdh-example"
+D_2 = \frac{12 \times 8 \times 15}{18 \times 10} = 8\ \text{days}
+@/math
+
+## 5. Pipes and Cisterns
+
+Filling pipes are positive rates, draining pipes negative:
+
+@math label="eq:pipes"
+\frac{1}{T} = \frac{1}{f_1} + \frac{1}{f_2} - \frac{1}{d}
+@/math
+
+**Worked example.** Pipe A fills in 6 h, B fills in 8 h, C empties in
+12 h; all open:
+
+@math label="eq:pipes-example"
+\frac{1}{6} + \frac{1}{8} - \frac{1}{12} = \frac{4+3-2}{24} = \frac{5}{24}
+\Rightarrow T = \frac{24}{5} = 4.8\ \text{h}
+@/math
+
+Tank-capacity LCM (24 units) makes it visual: A gives 4/h, B 3/h, C
+takes 2/h — net 5/h.
+
+## 6. Alternating Days and Wages
+
+**Alternate days.** A (3 units/day) and B (2 units/day) alternate on a
+12-unit job starting with A. Two days yield 5 units; after 4 such
+cycles (8 days) 20 units — overshoot means the 12-unit job finishes
+inside: after 2 days 5, 4 days 10, then A's day adds 3 $\Rightarrow$
+done on day 5. Always simulate day-pairs, then handle the leftover.
+
+**Wages.** Pay divides in the ratio of work done, i.e. the ratio of
+efficiencies. If A and B finish a job in 6 days with rates 3:2, wages
+split $3:2$ regardless of who worked which day — unless the question
+specifies unequal attendance.
+
+[example]
+A alone finishes in 10 days; A and B together in 6. B's rate:
+$\frac{1}{6} - \frac{1}{10} = \frac{5-3}{30} = \frac{1}{15}$, so B
+alone needs 15 days. Every "find the missing worker" question is this
+subtraction of rates — the single most used line in the chapter.
+[/example]
+
+[summary]
+Convert every time into a rate: one-day work $= \frac{1}{n}$, add
+rates for collaboration ($T = \frac{ab}{a+b}$ for two workers), and
+prefer the LCM-units method for multi-stage problems. Efficiency is
+inverse to time; groups scale by
+$\frac{M_1 D_1 H_1}{W_1} = \frac{M_2 D_2 H_2}{W_2}$. Pipes and
+cisterns are the same engine with signed rates. Alternating-day
+puzzles are solved by simulating day-pairs and cleaning the leftover,
+and wages split by efficiency ratio. Find the rate; everything else is
+arithmetic.
+[/summary]

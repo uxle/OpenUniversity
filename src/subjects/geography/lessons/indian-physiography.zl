@@ -1,0 +1,149 @@
+# Indian Physiography: The Six Faces of the Subcontinent
+
+> India's landscape divides into six macro-physiographic divisions —
+> the mighty Himalayan wall, the world's most fertile river plains,
+> the ancient peninsular plateau, the coastal strips, the deserts,
+> and the islands. Each is a distinct story of tectonics, rivers, and
+> time.
+
+## 1. The Six Divisions
+
+@diagram tree id="india-physiography" layout="tree" aria="Six physiographic divisions of India"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Himalayan Mountains"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Northern Plains"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Peninsular Plateau"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Indian Desert"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Coastal Plains"
+  "भारत का भू-आकृति विज्ञान / Indian Physiography" -> "Islands"
+@/diagram
+
+| Division | Area share | Key features |
+| --- | --- | --- |
+| Himalayas | ~10% | Highest, youngest fold mountains |
+| Northern Plains | ~13% | Alluvial, extremely fertile |
+| Peninsular Plateau | ~43% | Oldest landmass, rich minerals |
+| Indian Desert | ~10% (of west) | Arid, sandy Thar |
+| Coastal Plains | ~13% | Narrow western, broader eastern |
+| Islands | ~0.2% | Andaman & Nicobar; Lakshadweep |
+
+## 2. The Himalayas: Three Ranges, Three Widths
+
+Formed by the Tethys Sea closure as the Indian plate collided with
+Eurasia (~50 million years ago and still pushing ~5 cm/year), the
+Himalayas run ~2,400 km west–east in parallel ranges:
+
+| Range | Average height | Character |
+| --- | --- | --- |
+| **Himadri (Greater Himalayas)** | 6,000 m | Continuous core; glaciers; Everest (8,849 m), Kanchenjunga |
+| **Himachal (Lesser Himalayas)** | 3,700–4,500 m | Hill stations (Shimla, Mussoorie, Nainital, Darjeeling); duns (valleys like Dehradun) |
+| **Shiwaliks (Outer)** | 900–1,100 m | Discontinuous, youngest; duns between ranges |
+
+- **Regional divisions:** Punjab (Kashmir) Himalayas → Kumaon →
+  Nepal → Assam Himalayas (west to east). The **Purvanchal** hills
+  continue south of the Brahmaputra (Patkai, Naga, Manipur, Mizo —
+  the Meghalaya plateau incl. Shillong stands apart).
+- **Syntaxial bends:** the ranges sharply pivot at Nanga Parbat
+  (west) and Namcha Barwa (east).
+- **Passes:** Zoji La, Banihal, Nathu La (with China), Shipki La,
+  Bomdila.
+
+[info title="Why the Himalayas matter"]
+They block the cold Central Asian winds, force the monsoon's ascent
+(orographic rain), feed three great river systems (Indus, Ganga,
+Brahmaputra) with glacier melt, and historically shielded the
+subcontinent from northern invasions — geography shaping climate,
+agriculture, and history at once.
+[/info]
+
+## 3. The Northern Plains: The Granary's Floor
+
+Lying between the Himalayas and the peninsula, built of
+Indo-Gangetic alluvium — thousands of metres deep — deposited over
+millions of years:
+
+| Division | Formation feature | Region |
+| --- | --- | --- |
+| **Bhabar** | Pebble-strewn porous belt at Himalayan foot; streams vanish | 8–16 km wide |
+| **Terai** | Streams re-emerge; marshy, malaria-prone, now largely reclaimed | South of Bhabar |
+| **Bhangar** | Older alluvium, kankar (lime) nodules | Above flood level |
+| **Khadar** | New alluvium, renewed by floods every year | The active floodplain |
+
+About 700 km wide near the Ganga's mid-course, the plain holds the
+densest rural population on Earth and grows most of India's wheat,
+rice, and sugarcane.
+
+## 4. The Peninsular Plateau: The Old, Stable Heart
+
+[definition]
+The **Peninsular Plateau** — India's oldest and most stable
+landmass, part of the ancient Gondwana — is a tableland of
+crystalline igneous and metamorphic rocks, rising 600–900 m,
+tilted east, drained largely to the Bay of Bengal.
+[/definition]
+
+Two blocks divided by the **Narmada rift**:
+
+- **Central Highlands** (north of Narmada): Malwa plateau,
+  Chotanagpur plateau (Damodar trough; Jharkhand's coal and
+  minerals), the Meghalaya and Aravalli outliers — the Aravallis
+  (Guru Shikhar, 1,722 m) are among the world's oldest fold ranges,
+  now relict and relict-eroded.
+- **Deccan Plateau** (south): basaltic lava flows (the Deccan
+  Traps), bounded by the **Western Ghats (Sahyadri)** — higher,
+  continuous, Anai Mudi 2,695 m — and the **Eastern Ghats** — lower,
+  dissected by rivers (Mahendragiri 1,501 m). The Nilgiri, Annamalai,
+  and Cardamom hills join the two ranges at the plateau's southern
+  tip.
+
+[tip]
+The Western Ghats force the south-west monsoon to rise, drenching
+the windward Konkan–Malabar coast while the plateau's leeward side
+sits in a **rain shadow** — one reason Mumbai gets ~2,200 mm while
+Pune, barely 150 km inland, gets ~700 mm.
+[/tip]
+
+## 5. The Indian Desert: The Thar
+
+West of the Aravallis lies the **Thar** — sandy, rolling dunes
+(bhers), seasonal streams (Luni the only notable river), scrub
+vegetation, and rainfall under 150 mm/yr. The Aravallis block
+moisture-bearing winds; irrigation (Indira Gandhi Canal) now
+greens its northern edge.
+
+## 6. The Coastal Plains and the Islands
+
+- **Western Coastal Plain:** narrow (10–50 km), between Ghats and
+  Arabian Sea — Kachchh and Kathiawar (Gujarat), Konkan
+  (Maharashtra), Kanara (Karnataka), Malabar (Kerala); dotted with
+  lagoons (Vembanad, backwaters) and a series of ports, natural
+  harbours included.
+- **Eastern Coastal Plain:** wide (100–130 km), flat, deltaic —
+  Utkal (Odisha), Coromandel (TN–AP); the Krishna–Godavari–Kaveri
+  deltas make it the rice bowl; cyclone-prone in autumn.
+
+| Islands | Origin | Character |
+| --- | --- | --- |
+| **Andaman & Nicobar** | Mountainous; tectonic uplift, volcanic (Barren Island — India's only active volcano) | Equatorial rainforest, coral fringes |
+| **Lakshadweep** | **Coral atolls** on the Laccadive-Chagos ridge | ~36 islands, coconut groves, lagoons |
+
+## 7. Reading the Landscape Like a Geographer
+
+Ask of any Indian landscape three questions: (1) *What built it?*
+— plate tectonics, rivers, lava, or coral; (2) *What is wearing it
+down?* — monsoon rivers, glaciers, or arid winds; (3) *What does it
+offer people?* — fertile alluvium, mineral belts, ports, or
+forests. Every division answers differently, and together they
+explain India's population map, its crops, and its strategic
+frontiers.
+
+[summary]
+India's six physiographic divisions: the young, three-ranged
+Himalayas (Himadri–Himachal–Shiwaliks) blocking cold winds and
+shaping the monsoon; the deep-alluvial Northern Plains (Bhabar,
+Terai, Bhangar, Khadar) feeding the nation; the ancient tilted
+Peninsular Plateau split by the Narmada into Central Highlands and
+Deccan, rimmed by the Western and Eastern Ghats; the rain-starved
+Thar beyond the Aravallis; the contrasting narrow-western and
+deltaic-eastern coastal plains; and the tectonic Andaman–Nicobar
+versus coral Lakshadweep islands.
+[/summary]

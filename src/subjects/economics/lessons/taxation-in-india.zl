@@ -1,0 +1,157 @@
+# Taxation in India: From Budget to GST
+
+> Taxes pay for everything the state does — and how a country taxes
+> shapes its economy as much as how much it collects. This lesson
+> maps India's tax system: direct vs indirect, the constitutional
+> architecture, the century-long journey to **GST**, and the
+> economics of who ultimately bears the burden.
+
+## 1. Why Governments Tax
+
+[definition]
+Taxation serves three functions: **revenue** (funding public goods —
+defence, roads, schools), **redistribution** (narrowing inequality
+via progressive taxation), and **repricing** (discouraging
+externalities — e.g., high excise on tobacco, coal cess).
+[/definition]
+
+Canonically: **Taxes are compulsory, unrequited payments** — you
+don't get a specific good in return; you get the state.
+
+## 2. The Two Great Families
+
+| | **Direct taxes** | **Indirect taxes** |
+| --- | --- | --- |
+| On whom levied | Income/wealth of persons & firms | Goods and services, transactions |
+| Who pays the government | The person on whom it falls | The seller, who passes it on |
+| Incidence (burden) | Cannot be shifted | Shifted to consumers via prices |
+| Progressivity | Progressive (rich pay higher %) | Regressive (same rate for all incomes) |
+| Examples | Income tax, corporate tax, capital gains, STT | GST, customs duty, excise |
+
+**Buoyancy and elasticity:** direct taxes grow with income; indirect
+taxes collect from everyone including the informal economy. India's
+gross tax revenue divides roughly: ~one-fifth corporate tax,
+~one-sixth income tax (direct together ~55–60%), GST ~one-fifth,
+with the rest from union excise and customs.
+
+## 3. The Constitutional Architecture
+
+- **Article 265:** *No tax without authority of law.*
+- **Seventh Schedule**: **Union List** (income tax beyond
+  agricultural income, customs, corporate tax), **State List**
+  (agricultural income tax, stamp duty, excise on liquor, vehicle
+  tax), **Concurrent List** — taxes not expressly assigned stayed
+  with the Union ( residuary).
+- **Finance Commission (Article 280)** divides the divisible pool of
+  central taxes between the Union and the states — the ballast of
+  fiscal federalism.
+- **Articles 268–281** enumerate the cesses, surcharges, and grants
+  through which money flows.
+
+[info title="Article 246A and the 101st Amendment"]
+The **Constitution (101st Amendment) Act, 2016** inserted Articles
+246A (simultaneous GST powers for Union and states), 269A (inter-
+state GST), and 279A (the GST Council) — the only tax with both
+Centre and state legislating on the same base.
+[/info]
+
+## 4. Direct Taxes Today
+
+- **Personal income tax:** progressive slabs (new regime from FY
+  2023–24: nil below ₹3 lakh, then 5–30% steps, with rebate for
+  low incomes; surcharge above ₹50 lakh; marginal relief smooths
+  the jump). First ₹1 lakh of income was taxed at only 8.5% back in
+  1974 — rates once touched **97.75%** (1973–74); reforms since
+  1991 cut both rates and slabs.
+- **Corporate tax:** standard 22% (+ surcharge/cess) for domestic
+  companies under the 2019 concessional regime; 15% for new
+  manufacturing firms — a deliberate investment signal.
+- **Capital gains,** STT, securities and wealth-adjacent levies
+  round out the toolkit.
+- **CBDT** administers direct taxes under the **Income Tax Act,
+  1961**.
+
+## 5. The Road to GST
+
+Before July 2017, taxes cascaded: excise at the factory, entry tax
+at each border, VAT (post-1999 state-level reform) on sales, service
+tax (1994) on services — each levied on a price that already
+contained the earlier tax ("tax on tax").
+
+@chart line title="Stylised pre-GST cascade vs post-GST value-add tax on a ₹100 good"
+labels:
+Factory
+Wholesaler
+Retailer
+
+series:
+  - name: "Pre-GST (cumulative)"
+    data: 10 18.5 27.6
+  - name: "GST (on value added)"
+    data: 10 18 26
+@/chart
+
+**GST (1 July 2017)** subsumed excise, service tax, VAT, entry tax,
+octroi, and a dozen more into:
+
+| Component | Within state | Across states |
+| --- | --- | --- |
+| Central GST (CGST) | ✓ | — |
+| State GST (SGST)/UTGST | ✓ | — |
+| Integrated GST (IGST) | — | ✓ (Centre collects, devolves) |
+
+Four-rate structure **5 / 12 / 18 / 28%** (plus cess on luxury and
+sin goods), a **compensation cess** guaranteeing states 14% annual
+growth for five years, and the **GST Council (Article 279A)** —
+Union finance minister + state finance ministers, votes weighted
+1/3 Centre and 2/3 states, decisions by 3/4 majority.
+
+[important]
+**Why GST is called a game-changer:**
+(1) **Input tax credit** kills the cascade — tax only on value
+added at each stage;
+(2) **One nation, one market** — no border checkpoints;
+(3) **Formalisation** — credit chains pull traders into invoicing
+and filing;
+(4) revenue **transparency** — the invoice trail reconciles itself
+across the chain.
+[/important]
+
+## 6. Critiques and Design Questions
+
+- **Regressivity:** a uniform GST rate takes a bigger share of a
+  poor household's budget; mitigations — exemptions/low slab for
+  food, health, education.
+- **Exclusion of real estate, electricity, petroleum products, and
+  alcohol** keeps input-credit chains incomplete (petroleum enters
+  GST for input credit only, 2022+).
+- **Compliance burden** on small firms — composition scheme (1–6%
+  flat, no credit) eases the smallest.
+- **Rate rationalisation** debates continue — the July 2025
+  restructure moved toward two main slabs (5% and 18%) with a 40%
+  demerit band.
+
+## 7. Indirect Taxes Beyond GST and the Black Economy
+
+- **Customs duty** (tariffs) — trade policy instrument as much as
+  revenue; **SAFTA/FTA** concessions.
+- **Union excise** survives on **petroleum, tobacco** (not in GST).
+- **Cesses and surcharges** (health cess, road cess) stay outside
+  the divisible pool — a federal friction point.
+- **Black money:** unaccounted income hidden from tax — attacked via
+  demonetisation (2016), mandatory PAN/high-value transaction
+  reporting, the **Black Money Act 2015**, faceless assessment, and
+  the 2025 **Income Tax Act** rewrite aimed at simplification.
+
+[summary]
+India taxes along two axes: **direct** (income, corporate —
+progressive, administered by CBDT, with today's peak 30% personal
+marginal rate and 22% corporate) and **indirect** (GST, customs —
+broad-based, regressive, now dominated by the GST's 5/12/18/28
+architecture). The 101st Amendment's dual model (CGST/SGST/IGST)
+with the GST Council replaced a cascading jungle with a value-added
+system whose input credits tax only value addition. The system
+keeps evolving — rate rationalisation, petroleum exclusion,
+cess-versus-devolution federalism — under the constitutional rule
+of Article 265: no tax without law.
+[/summary]

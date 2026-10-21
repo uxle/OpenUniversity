@@ -1,0 +1,143 @@
+# Floor and Box Puzzles: Vertical Arrangements Made Routine
+
+> Strip away the furniture and most modern "puzzle" questions are
+> the same skeleton: a numbered stack of positions — floors of a
+> building, boxes in a pile, shelves on a rack — and a list of
+> relational clues. The stack gives the puzzle its order, the clues
+> give constraints, and a fixed method gives you the answer. Master
+> the method once and floors, boxes, and shelves all solve
+> identically.
+
+[important]
+Floors and boxes share one core convention: **number from the
+bottom** unless told otherwise. Floor 1 (or the bottom box) is the
+lowest position; the top floor/box is the highest number. The
+single most common error is silently flipping the numbering when a
+question switches from "floor" to "box" wording — write the numbers
+on your diagram and never re-derive them mid-solve.
+[/important]
+
+## 1. Reading the Skeleton
+
+**Floor puzzle.** A building has 5 floors (or 7, or 9); persons
+live one per floor; clues position them.
+
+**Box puzzle.** Boxes are stacked one above another — "box A is
+above box B" behaves exactly like "A lives above B". Sometimes the
+question says *box 1 is at the bottom*; sometimes *the top box is
+numbered 1* — the wording is the puzzle's first clue.
+
+[definition]
+A **definite clue** fixes a person outright ("Q lives on the 3rd
+floor"). A **relative clue** positions against another person
+("M lives immediately above Q"). A **negative clue** only removes
+options ("P does not live on the top floor"). Solve definite clues
+first, chain relatives onto them, spend negatives last.
+[/definition]
+
+## 2. The Standard Method: Floors, Persons, and Lines
+
+1. Draw the floors as horizontal lines, numbered bottom to top,
+   with the top line drawn FIRST so additions above/below stay
+   unambiguous.
+2. Write each person beside the floor lines as clues place them.
+3. Convert every clue to floor arithmetic:
+   "immediately above" = +1, "two floors below" = -2, "adjacent
+   (immediately above or below)" = ±1.
+4. Track possibilities in pencil: a person known to be "above X but
+   not on 5" collects a list (floors 3, 4) that later clues prune.
+
+**Worked example.** Five persons P, Q, R, S, T live on floors 1-5
+(bottom = 1). Clues: Q lives on an odd-numbered floor below 4;
+R lives immediately above Q; T lives on the top floor; P is
+immediately below S.
+
+- T → floor 5 (definite).
+- Q → odd below 4: floor 1 or 3.
+- R = Q + 1: if Q = 3, R = 4; if Q = 1, R = 2 — both alive so far.
+- P and S occupy consecutive floors among 1-4: possible blocks
+  (1,2), (2,3), (3,4).
+- If Q = 3, R = 4, then the P/S block needs (1,2): P=1, S=2.
+  Everything fits — final: P1, Q3, R4, S2, T5.
+- Check the alternative: Q=1, R=2 leaves P/S only (3,4) — also
+  consistent! When two arrangements survive, one more clue must
+  discriminate — real exams always supply it; practice spotting
+  when your solution is NOT yet unique.
+
+## 3. Box Stacks: Same Method, New Traps
+
+- "A is kept above B" — anywhere above, not necessarily adjacent.
+- "A is kept immediately above B" — exactly one box between-less
+  step (B directly under A).
+- "There are two boxes between A and B" — exactly two boxes, so a
+  gap of 2 floors' positions between them (A and B three positions
+  apart).
+- "B is at the top of the stack" — anchor; box numbers depend on
+  the stated convention.
+
+**Worked example.** Six boxes A-F. A is immediately above C; C is
+second from the bottom; E is at the top; D is immediately below B;
+B is below A.
+
+Positions 1 (bottom) - 6 (top). C = 2, so A = 3. E = 6. D/B block:
+B immediately above D, and both below A — available slots 1 and
+4/5. "Below A" allows 4 or 5 for B with D one below — the pair
+(B5, D4) works, leaving F = 1. Final (bottom to top):
+F, C, A, D, B, E.
+
+## 4. Variables: Floors with Flats (Two-Dimensional Stacks)
+
+Modern puzzles stack a second dimension: each floor has 2-3 flats
+(e.g., flats 1-2 on each of 4 floors), each occupied by one person.
+The method extends with two grids:
+
+- "A lives on an even-numbered floor" fixes the floor row only.
+- "A lives in flat-2 of an odd floor" fixes row and column.
+- "B lives immediately above A in the same flat" — copy the column,
+  shift the row by +1.
+
+Two-dimensional puzzles reward a drawn grid (floors as rows,
+flats as columns) and punish mental diagrams — draw it.
+
+## 5. Time-Savers and Common Traps
+
+| Device | Use |
+| --- | --- |
+| Bottom/top anchors | Place definite anchors first; they shrink every later choice |
+| Consecutive blocks | "P immediately below S" is a glued two-cell block — move it whole |
+| Floor-count arithmetic | "As many floors above X as below Y" becomes floor equation: top - x = y - 1 |
+| Negative pruning | Keep negatives for ties; they kill surviving branches quickly |
+| Parity | Odd/even floor clues halve cases instantly |
+
+[tip]
+When a puzzle says "X lives three floors above Y", the gap contains
+exactly two floors — count positions, not people. But "three people
+live between X and Y" counts people. Confusing the two counting
+modes (position-gap vs person-gap) is the topic's top trap.
+[/tip]
+
+[example]
+Direction-forcing from stack limits: in an 8-floor building, T lives
+on floor 6, and a clue says R's floor number is three away from
+T's. Candidates: 6 + 3 = 9 or 6 - 3 = 3. Floor 9 does not exist,
+so R = 3 — the building's size itself decides the direction, and no
+trial-and-error is needed. The same device resolves "as many floors
+above X as below Y": on floors 1-9, if X = 3, then top - X = X - Y
+gives Y = -3 (impossible) unless the clue is read as floors above X
+equalling floors below Y for a DIFFERENT pair — when arithmetic
+returns an out-of-range floor, discard that branch immediately
+instead of forcing it.
+[/example]
+
+[summary]
+Floor and box puzzles are one skeleton: a numbered vertical stack
+(bottom = 1 unless stated), definite-then-relative-then-negative
+clue processing, and clue-to-arithmetic translation (immediately
+above = +1, exactly two between = gap of 3 positions). Draw the
+stack or grid, glue consecutive blocks together, use anchors to
+shrink cases, and let stack limits decide direction when "above/below"
+is ambiguous. The person-count versus position-count distinction
+(three people between ≠ three floors between) settles most
+disputes. Floors, boxes, shelves, berths — once the skeleton is
+seen, they are all the same puzzle with different costumes.
+[/summary]

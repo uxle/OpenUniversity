@@ -1,0 +1,171 @@
+# Searching Algorithms: Finding Needles in Data Haystacks
+
+> Sorting (the previous lesson) exists largely so that searching can
+> be fast. This lesson contrasts the two fundamental search
+> strategies — scan-everything linear search versus halve-and-repeat
+> binary search — then shows how hash tables make lookup
+> effectively instant, and why all of it matters at real-world
+> scale.
+
+## 1. The Problem: Membership and Lookup
+
+Two everyday questions reduce to search:
+
+- **Membership:** is this word in the dictionary?
+- **Retrieval:** what value does this key map to (a phone number for
+  a name)?
+
+[definition]
+A searching algorithm takes a collection and a target key, and
+returns the key's location (or its associated value), or reports
+"not found." Its cost is measured in **comparisons** or **lookups**
+as a function of collection size $n$.
+[/definition]
+
+## 2. Linear Search: Simple, Universal, Slow
+
+Check items one by one until the target appears or the list ends:
+
+```text
+LINEAR-SEARCH(A, target):
+  for i in 0 .. length(A) - 1:
+    if A[i] == target:
+      return i
+  return NOT-FOUND
+```
+
+| Case | Comparisons | Time |
+| --- | --- | --- |
+| Best (first item) | 1 | O(1) |
+| Average | n/2 | O(n) |
+| Worst (absent / last) | n | O(n) |
+
+Linear search needs **no ordering** and works on linked lists,
+streams, anything iterable — often the right choice for small or
+unsorted data.
+
+## 3. Binary Search: Halve the World
+
+**Requirement:** the array must be **sorted**. Compare the target
+with the middle element; discard the impossible half; repeat:
+
+```text
+BINARY-SEARCH(A, target):
+  low = 0; high = length(A) - 1
+  while low <= high:
+    mid = (low + high) / 2   (floor)
+    if A[mid] == target:  return mid
+    if A[mid] <  target:  low  = mid + 1
+    else:                 high = mid - 1
+  return NOT-FOUND
+```
+
+### Worked example: search 23 in
+
+@diagram tree id="binary-search-trace" layout="tree" aria="Binary search halving steps for target 23"
+  "[2 5 8 12 16 23 38 56 72 91] mid=16" -> "[23 38 56 72 91] mid=56"
+  "[23 38 56 72 91] mid=56" -> "[23 38] mid=23"
+  "[23 38] mid=23" -> "FOUND at index 5"
+@/diagram
+
+| Step | Range remaining | mid | Discard |
+| --- | --- | --- | --- |
+| 1 | 10 items | 16 | everything left of 16 |
+| 2 | 5 items | 56 | 56 and above |
+| 3 | 2 items | 23 | found ✓ |
+
+Three comparisons instead of six; the gap only widens with size:
+
+@chart bar title="Worst-case comparisons for n = 1,000,000"
+labels:
+Linear
+Binary
+
+data:
+1000000
+20
+@/chart
+
+[important]
+Each step halves the candidates, so binary search runs in
+**O(log n)**: a million items take ≤ 20 probes, a billion ≤ 30.
+But the array must stay sorted — one insertion in the middle costs
+O(n) shifting, which is why databases pair search with careful
+insertion structures (see the sorting lesson's trade-offs).
+[/important]
+
+[tip]
+Overflow bug: `mid = (low + high) / 2` can overflow in languages with
+fixed-size integers; write `mid = low + (high - low) / 2`. This bug
+lived in Java's own library for years — Bentley's *Programming
+Pearls* famously asked professional programmers to write binary
+search and most got it wrong. Test with empty arrays, one element,
+and targets at both ends.
+[/tip]
+
+## 4. Beyond Comparison: Hash Tables
+
+Sorting is not the only route to speed. A **hash table** computes a
+storage slot directly from the key:
+
+1. A **hash function** maps the key to an index — e.g.
+   `h(key) = key mod 10` for an array of 10 buckets.
+2. Collisions (two keys, one bucket) are resolved by **chaining**
+   (a list per bucket) or **open addressing** (probe onward).
+
+| Operation | Average | Worst (chaining, poor hash) |
+| --- | --- | --- |
+| Insert | O(1) | O(n) |
+| Lookup | O(1) | O(n) |
+| Delete | O(1) | O(n) |
+
+Hash tables trade order for speed: no sorted traversal, but
+instant membership — the engine behind Python's `dict`, Java's
+`HashMap`, JavaScript objects, caches, deduplication sets, database
+indexes, and blockchain address lookups.
+
+[definition]
+Two ideas to keep distinct: **binary search = O(log n) lookup on a
+sorted array** (no extra memory); **hash table = O(1) average
+lookup with O(n) extra memory and no ordering**. Choose by whether
+you need range queries (sorted wins) or pure point lookups (hash
+wins).
+[/definition]
+
+## 5. Variations Worth Knowing
+
+- **Interpolation search** — for uniformly distributed sorted keys,
+  guess where the target should be (like opening a phone book near
+  'S' for 'Sharma'): O(log log n) average, but degrades to O(n) on
+  skewed data.
+- **Exponential (galloping) search** — double the index until past
+  the target, then binary-search the last interval; ideal for
+  unbounded streams.
+- **Depth-first / breadth-first search** — searching *graphs* and
+  trees (next: the graph algorithms lesson), not arrays.
+- **Binary search on the answer** — when a property is monotonic
+  ("can we finish within time x?"), binary-search the value itself:
+  the pattern behind "minimum maximum capacity" interview classics
+  and judge time-limit tooling.
+
+## 6. Real-World Scale
+
+- **Git** stores every object by SHA-1 hash — object lookup is a
+  hash-table probe, not a search.
+- **Databases** use B-trees — multi-way search trees keeping log
+  height tiny for disk-sized data (one node per page).
+- **Spell-checkers** keep a hash set of dictionary words for O(1)
+  "is this a word?"
+- Your **browser cache**, OS **page tables**, and **DNS resolvers**
+  are all, at bottom, hash tables with clever eviction.
+
+[summary]
+Linear search is O(n) and universal; binary search is O(log n) but
+demands sorted data — halving the candidate set each comparison,
+20 probes suffice for a million items. Hash tables skip comparisons
+entirely by computing positions, giving O(1) average lookup at the
+cost of memory and ordering. Variations (interpolation, galloping,
+search-on-answer) tune the trade-off, and B-trees scale the idea to
+disk. Choosing between them is a matter of data order, memory, and
+whether you need ranges or just point lookups.
+[/summary]

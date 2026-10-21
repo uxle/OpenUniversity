@@ -1,0 +1,86 @@
+{
+  "lessonId": "spelling-and-misspelt-words",
+  "title": "Spelling and Misspelt Words: Writing the Word Right",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which word is spelled INCORRECTLY?",
+      "options": ["Believe", "Receive", "Weird", "Religeon"],
+      "correct": 3,
+      "rationale": "Correct: religion. The others obey the i-before-e rule — believe (i before e), receive (ei after c) — while weird is a memorised exception ('we are weird')."
+    },
+    {
+      "id": 2,
+      "question": "Choose the correctly spelled word:",
+      "options": ["Accomodate", "Acommodate", "Accommodate", "Accomadate"],
+      "correct": 2,
+      "rationale": "Accommodate takes two c's and two m's — the most misspelt word in English. Remember: accommodation has room for two of everything."
+    },
+    {
+      "id": 3,
+      "question": "The correct spelling of the word meaning 'to go before' is:",
+      "options": ["Preceed", "Precede", "Proceed", "Precede/Preceed both"],
+      "correct": 1,
+      "rationale": "Only exceed, proceed, and succeed take -ceed; supersede alone takes -sede; every other word in the family takes -cede — precede, concede, recede, secede."
+    },
+    {
+      "id": 4,
+      "question": "Which sentence contains a spelling error?",
+      "options": [
+        "The committee met on Wednesday.",
+        "She gave a definite answer.",
+        "It was a necesary decision.",
+        "They arrived separately."
+      ],
+      "correct": 2,
+      "rationale": "Correct: necessary — one c, two s's ('one collar and two sleeves'). The other three are the correct forms of committee, definite, and separately."
+    },
+    {
+      "id": 5,
+      "question": "The plural of 'knife' and 'leaf' respectively is:",
+      "options": ["knifes, leafs", "knives, leaves", "knives, leafs", "knifes, leaves"],
+      "correct": 1,
+      "rationale": "Most -f/-fe nouns change to -ves (knife-knives, leaf-leaves, wolf-wolves), but a few keep plain -s: roofs, chiefs, beliefs, cliffs."
+    },
+    {
+      "id": 6,
+      "question": "Which is the correct British spelling, as used in Indian exams?",
+      "options": ["Color, center, organize", "Colour, centre, organise", "Colour, center, organise", "Color, centre, organize"],
+      "correct": 1,
+      "rationale": "British/Indian convention: -our (colour), -re (centre), -ise (organise), doubled l in travelled — the American flips (color, center, organize) stay consistent only within US texts."
+    },
+    {
+      "id": 7,
+      "question": "Which word has a silent 'b'?",
+      "options": ["Island", "Debt", "Psychology", "Wednesday"],
+      "correct": 1,
+      "rationale": "Debt (and doubt, subtle, dumb) keep a silent b from Latin debitum. Island has a silent s, psychology a silent p, and Wednesday a silent first d."
+    },
+    {
+      "id": 8,
+      "question": "The correct spelling is:",
+      "options": ["Millenium", "Millennium", "Milennium", "Millenneum"],
+      "correct": 1,
+      "rationale": "Millennium carries double l AND double n. Anniversary-style mnemonic: a millennium is a thousand years — too long to spell with single letters."
+    },
+    {
+      "id": 9,
+      "question": "'Begin' becomes 'beginning' with doubled n because:",
+      "options": [
+        "All -ing forms double the final consonant",
+        "The word ends in a vowel",
+        "The final syllable is stressed (be-GIN), so the single final consonant doubles",
+        "It is an exception to every rule"
+      ],
+      "correct": 2,
+      "rationale": "Doubling applies when a two-syllable word is stressed on the final syllable (begin, refer, permit), but not when stress falls earlier — hence visiting, benefited, developed stay single."
+    },
+    {
+      "id": 10,
+      "question": "Spot the correctly spelled word:",
+      "options": ["Seperate", "Definately", "Privilege", "Goverment"],
+      "correct": 2,
+      "rationale": "Privilege (no d between e and g) is correct. The rogues' gallery catches the rest: separate (a-r-a), definitely (no a), government (includes the n)."
+    }
+  ]
+}

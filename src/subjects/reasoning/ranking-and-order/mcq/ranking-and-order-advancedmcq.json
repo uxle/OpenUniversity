@@ -1,0 +1,91 @@
+{
+  "lessonId": "ranking-and-order-advanced",
+  "title": "Ranking and Order Advanced: Comparisons, Intersections, and Mixed Lines",
+  "questions": [
+    {
+      "id": 1,
+      "question": "R is heavier than S but lighter than T; T is lighter than M. If these four are ranked by weight, who is second heaviest?",
+      "options": ["R", "S", "T", "M"],
+      "correct": 2,
+      "rationale": "Convert: T > R > S and M > T. Merge into M > T > R > S. Second heaviest is T — one inequality per sentence, merged through the shared letter T."
+    },
+    {
+      "id": 2,
+      "question": "A scores more than B; R scores less than S; B scores more than S; T scores less than R. Who stands in the middle of the merged chain?",
+      "options": ["A", "B", "S", "R"],
+      "correct": 2,
+      "rationale": "Inequalities: A > B, S > R, B > S, R > T. Merge through anchors B and R: A > B > S > R > T. The middle of five is S. Watch the reversed readings: 'R scores less than S' is S > R."
+    },
+    {
+      "id": 3,
+      "question": "In a 9-floor building there are as many floors above X's floor as below Y's. If X lives on floor 3, Y lives on:",
+      "options": ["Floor 6", "Floor 7", "Floor 8", "Floor 5"],
+      "correct": 1,
+      "rationale": "Floors above X: 9 - 3 = 6. Set below-Y count equal: Y - 1 = 6, so Y = 7. The classic slip is writing Y = 6 by counting Y's own floor among 'below'."
+    },
+    {
+      "id": 4,
+      "question": "Six boys face six girls across a table (facing rows). Amit is 3rd from the left among boys. The girl facing him is (from the girls' left, girls facing the boys):",
+      "options": ["3rd", "4th", "5th", "6th"],
+      "correct": 1,
+      "rationale": "In facing rows of six, paired positions sum to N + 1: pos_girl = 7 - 3 = 4. The facing convention (each row's 'left' is its own) creates the reversal — extract it from the puzzle text before computing."
+    },
+    {
+      "id": 5,
+      "question": "In a 40-seat row with seats 12 and 27 broken, the person 15th from the left among OCCUPIED seats sits on which seat?",
+      "options": ["Seat 15", "Seat 16", "Seat 17", "Seat 14"],
+      "correct": 1,
+      "rationale": "Seats 1-11 hold occupied persons #1-#11. Seat 12 is broken, so occupied #12 = seat 13, #13 = seat 14, #14 = seat 15, #15 = seat 16 (the second broken seat, 27, is far to the right and does not intervene). Convert person-ranks to seat-ranks by adding one for each broken seat encountered."
+    },
+    {
+      "id": 6,
+      "question": "Five boxes A-E in a stack (bottom = 1): E at the bottom; C second from the top; B above E but below C; D immediately above B; A not adjacent to E. Which box is on top?",
+      "options": ["A", "C", "D", "B"],
+      "correct": 0,
+      "rationale": "E = 1, C = 4. B is 2 or 3; D immediately above B: if B = 3 then D = 4 (taken), so B = 2, D = 3. The leftover seat 5 goes to A, which is indeed not adjacent to E (1). Top = A. Anchors first, constrained pairs second, leftover verified last."
+    },
+    {
+      "id": 7,
+      "question": "While merging comparison chains you hit an apparent contradiction (X > Y > Z > X). The FIRST thing to do is:",
+      "options": [
+        "Declare the question invalid",
+        "Re-check your inequality conversions for a flipped sign",
+        "Remove the smallest person",
+        "Average the conflicting ranks"
+      ],
+      "correct": 1,
+      "rationale": "Genuine cycles almost never appear in exam data — the usual culprit is a reversed reading ('P is smaller than Q' written as P > Q). Audit your own conversions before blaming the paper."
+    },
+    {
+      "id": 8,
+      "question": "In a merit list, P is 5th from the top, Q is three ranks below P, and R is above Q but below P with nobody between R and P. Who is 7th?",
+      "options": ["Q", "R", "Somebody unnamed (data inadequate)", "P"],
+      "correct": 2,
+      "rationale": "Fixing ranks: R = 6th (immediately below P), Q = 8th. The 7th position belongs to no named person — 'data inadequate' style options reward exact anchoring, and misreading R as 7th is the planted trap."
+    },
+    {
+      "id": 9,
+      "question": "Two parallel queues match people by index (the 4th of queue 1 corresponds to the 4th of queue 2). This differs from facing rows because:",
+      "options": [
+        "Positions match by index instead of summing to N + 1",
+        "Parallel queues reverse order",
+        "Facing rows match by index",
+        "There is no difference"
+      ],
+      "correct": 0,
+      "rationale": "Facing rows pair as pos_A + pos_B = N + 1 (reversal); parallel same-direction queues pair equal indices (4th with 4th). The facing convention in the puzzle's own wording decides which equation applies."
+    },
+    {
+      "id": 10,
+      "question": "The core discipline that earns marks in advanced ranking is:",
+      "options": [
+        "Memorising more formulas",
+        "Writing every relation as visible arithmetic before answering",
+        "Solving faster in the head",
+        "Guessing when chains get long"
+      ],
+      "correct": 1,
+      "rationale": "Options in advanced puzzles are engineered to punish chains held only in the head. Inequality-convert, merge via anchors, write balance equations and facing conventions — visible arithmetic, not mental gymnastics."
+    }
+  ]
+}

@@ -1,6 +1,14 @@
 {
   "entries": [
     {
+      "lessonId": "basic-structure-doctrine",
+      "subjectId": "civics",
+      "title": "24. मूल संरचना सिद्धांत (Basic Structure Doctrine)",
+      "subject": "civics",
+      "keywords": [],
+      "content": "24. मूल संरचना सिद्धांत (Basic Structure Doctrine) संविधान संशोधन की असीमित शक्ति के विरुद्ध न्यायपालिका का सबसे शक्तिशाली ढाल — मूल संरचना सिद्धांत । यह सिद्धांत घोषित करता है कि संसद अनुच्छेद 368 द्वारा संविधान संशोधन कर सकती है, किंतु संविधान की मूल पहचान (Basic Identity) को नष्ट नहीं कर सकती। --- पृष्ठभूमि: शंकरी प्रकरण से लेकर केशवानंद तक | प्रकरण | वर्ष | निर्णय | | --- | --- | --- | | शंकरी प्रसाद प्रकरण | 1951 | संसद मौलिक अधिकारों (भाग-3) सहित किसी भी अनुच्छेद का संशोधन कर सकती है | | स"
+    },
+    {
       "lessonId": "centre-state-relations",
       "subjectId": "civics",
       "title": "22. संघ-राज्य संबंध (Centre-State Relations)",
@@ -31,6 +39,14 @@
       "subject": "civics",
       "keywords": [],
       "content": "20. संविधान संशोधन (Constitutional Amendments) संविधान एक जीवित दस्तावेज़ है, जिसे बदलती सामाजिक, आर्थिक एवं राजनीतिक परिस्थितियों के अनुसार ढाला जा सकता है। यह पाठ अनुच्छेद 368 की संशोधन प्रक्रिया, बहुमतों के प्रकार, मूल ढांचा सिद्धांत तथा प्रमुख संविधान संशोधनों का वर्णन करता है। 1. संशोधन की आवश्यकता एवं अवधारणा - आवश्यकता: संविधान राष्ट्र के भविष्य की रूपरेखा है; समय के साथ उत्पन्न नई आवश्यकताओं को पूरा करने हेतु इसमें परिवर्तन अनिवार्य है। - भारतीय दृष्टिकोण: ब्रिटेन के लचीले (Flexible) तथा"
+    },
+    {
+      "lessonId": "constitutional-bodies",
+      "subjectId": "civics",
+      "title": "25. संवैधानिक एवं प्रमुख अन्य निकाय (Constitutional and Other Major Bodies)",
+      "subject": "civics",
+      "keywords": [],
+      "content": "25. संवैधानिक एवं प्रमुख अन्य निकाय (Constitutional and Other Major Bodies) संविधान केवल शक्तियों का वितरण नहीं करता — वह संस्थाएँ भी गढ़ता है जो व्यवस्था को निष्पक्ष रखें: चुनाव आयोग मतदान चलाए, संघ लोक सेवा आयोग अधिकारी चुने, नियंत्रक एवं महालेखा परीक्षक पैसा गिने। यह पाठ इन्हीं निकायों — संवैधानिक, वैधानिक व कार्यपालिका-निर्मित — का मानचित्र है। --- 1. वर्गीकरण: तीन प्रकार के निकाय | प्रकार | उदाहरण | | --- | --- | | संवैधानिक निकाय — सीधे संविधान द्वारा निर्मित (अनुच्छेद सहित) | चुनाव आयोग, "
     },
     {
       "lessonId": "directive-principles-of-state-policy",
@@ -145,6 +161,14 @@
       "content": "13. प्रधानमंत्री, मंत्रिपरिषद, महान्यायवादी व CAG 1. प्रधानमंत्री एवं संघीय मंत्रिपरिषद (Part 5, Art 74–78) प्रमुख अनुच्छेद: - Article 74: राष्ट्रपति को सलाह एवं सहायता देने के लिए एक संघीय मंत्रिपरिषद होगी, जिसका प्रमुख प्रधानमंत्री होगा। - Article 75(1): प्रधानमंत्री की नियुक्ति राष्ट्रपति करेगा तथा अन्य मंत्रियों की नियुक्ति PM की सलाह पर राष्ट्रपति करेगा। - PM लोकसभा में बहुमत दल का नेता होता है। - यदि मंत्री बनते समय संसद का सदस्य न हो, तो 6 माह के भीतर लोकसभा या राज्यसभा की सदस्यता लेना अन"
     },
     {
+      "lessonId": "rti-and-transparency-laws",
+      "subjectId": "civics",
+      "title": "26. सूचना का अधिकार एवं पारदर्शिता के कानून (RTI and Transparency Laws)",
+      "subject": "civics",
+      "keywords": [],
+      "content": "26. सूचना का अधिकार एवं पारदर्शिता के कानून (RTI and Transparency Laws) सत्ता किसी के भी हाथ में क्यों न हो, उसका सबसे बड़ा नशा गोपनीयता है — लोकापवाद (decree) जनता से बात नहीं करता। लोकतंत्र का उत्तर सरल है: सूचना का अधिकार (Right to Information) — यह अधिकार नागरिक को सरकारी फ़ाइलों की कुंजी देता है और पारदर्शिता-जवाबदेही के जिन कानूनों के साथ चलता है — लोकपाल, CVC, व्हिसलब्लोअर संरक्षण — उन्हें एक साथ यह पाठ कवर करता है। 1. सूचना का अधिकार अधिनियम, 2005 (RTI Act) सूचना का अधिकार अधिनियम, 2005 "
+    },
+    {
       "lessonId": "schedules",
       "subjectId": "civics",
       "title": "4. अनुसूचियाँ (Schedules of the Constitution)",
@@ -240,6 +264,15 @@
       "content": "Recursion and Divide-and-Conquer: Solve Big Problems with Small Ones A recursive function solves a problem by calling itself on a smaller copy of the same problem. Divide-and-conquer builds whole algorithms on that move: split, solve, combine — and logarithms do the rest. 1. Recursion: A Function That Calls Itself Every recursive definition has exactly two ingredients: 1. Base case — a small input answered directly, with no self-call. 2. Recursive case — the problem restated in terms of smaller "
     },
     {
+      "lessonId": "searching-algorithms",
+      "subjectId": "computer-science",
+      "subSubjectId": "algorithms",
+      "title": "Searching Algorithms: Finding Needles in Data Haystacks",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Searching Algorithms: Finding Needles in Data Haystacks Sorting (the previous lesson) exists largely so that searching can be fast. This lesson contrasts the two fundamental search strategies — scan-everything linear search versus halve-and-repeat binary search — then shows how hash tables make lookup effectively instant, and why all of it matters at real-world scale. 1. The Problem: Membership and Lookup Two everyday questions reduce to search: - Membership: is this word in the dictionary? - Re"
+    },
+    {
       "lessonId": "sorting-algorithms",
       "subjectId": "computer-science",
       "subSubjectId": "algorithms",
@@ -285,6 +318,15 @@
       "content": "Network Attacks and Defence in Depth Once a machine is on a network, strangers can touch it. This lesson maps the main attack families — floods, interception, spoofing — and the layered defences that answer them: firewalls, IDS, IPS, VPNs. 1. Know the Adversary Defences make sense once you know who is attacking and why. | Attacker | Motive | Typical behaviour | | --- | --- | --- | | Script kiddie | curiosity, bragging | reuses other people's tools | | Cybercriminal | money | ransomware, fraud, d"
     },
     {
+      "lessonId": "web-application-security",
+      "subjectId": "computer-science",
+      "subSubjectId": "cybersecurity",
+      "title": "Web Application Security: Thinking Like an Attacker",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Web Application Security: Thinking Like an Attacker Every input field, URL parameter, and HTTP header is a door an attacker can try. Web security is the discipline of assuming hostile input everywhere and verifying every action — this lesson tours the OWASP Top 10 risks and the defenses that neutralise them. 1. The First Law: Never Trust Input Injection (OWASP 3, historically 1) happens when attacker data is interpreted as code . The classic is SQL injection : user input concatenated into a quer"
+    },
+    {
       "lessonId": "er-model-and-normalisation",
       "subjectId": "computer-science",
       "subSubjectId": "databases",
@@ -301,6 +343,15 @@
       "subject": "computer-science",
       "keywords": [],
       "content": "What Is a Database? Data, Tables, and the DBMS Every application you use — banking, shopping, attendance portals — rests on a database that stores, protects, and retrieves its data. This lesson defines the database, shows why the DBMS replaced plain files, and introduces tables, keys, and data independence. 1. Data, Information, and the Storage Problem A database is an organised, persistent collection of interrelated data stored so that it can be searched, updated, and shared reliably. A DBMS (D"
+    },
+    {
+      "lessonId": "nosql-and-modern-databases",
+      "subjectId": "computer-science",
+      "subSubjectId": "databases",
+      "title": "NoSQL and Modern Databases: Beyond the Relational Model",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "NoSQL and Modern Databases: Beyond the Relational Model For forty years the relational database was the only answer to \"where should we store this?\" — and then the web happened. Billions of users, global replication, unstructured JSON documents, and graphs of friendships pushed the classic model to its limits. NoSQL databases answered by trading away some guarantees to buy scale and flexibility, and modern systems now blend both worlds. 1. Why Relational Databases Strain The relational model — t"
     },
     {
       "lessonId": "sql-fundamentals",
@@ -411,6 +462,24 @@
       "content": "Debugging and Development Tools: Finding and Fixing Bugs Like a Professional Bugs are the normal byproduct of writing software, not failures of character — professionals differ from beginners mainly in their toolkit: debuggers, logs, version control, and tests. 1. A Field Guide to Bugs | Kind | When it bites | Tiny example | | --- | --- | --- | | Syntax error | Before the program runs at all | if x == 5 missing its colon | | Runtime error | Mid-execution, crashes it | 10 / 0 → ZeroDivisionError "
     },
     {
+      "lessonId": "error-handling-and-exceptions",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "Error Handling and Exceptions: Failing Gracefully",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Error Handling and Exceptions: Failing Gracefully Programs fail: files vanish, networks drop, users type \"abc\" where a number belongs. What separates toy code from production code is not whether errors happen — it is whether the program fails gracefully . This lesson covers exceptions, try/catch, custom errors, and defensive design. 1. Why Errors Need a Plan Without handling, the first unexpected condition crashes everything after it — one bad record kills the whole import, one dead sensor bring"
+    },
+    {
+      "lessonId": "file-handling-and-io",
+      "subjectId": "computer-science",
+      "subSubjectId": "programming",
+      "title": "File Handling and I/O: Programs That Remember",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "File Handling and I/O: Programs That Remember Variables die when the program ends — a file is how a program remembers. Reading configuration, logging events, saving a document, or downloading data all flow through the same pipeline: open a file, work with a stream of bytes or lines, and close it cleanly. This lesson covers Python's file I/O — the patterns, the pitfalls, and the safety rails. 1. Files, Streams, and File Objects A file is a named, durable sequence of bytes on a storage device. Pyt"
+    },
+    {
       "lessonId": "functions-and-modularity",
       "subjectId": "computer-science",
       "subSubjectId": "programming",
@@ -456,6 +525,15 @@
       "content": "Version Control with Git: Tracking Every Change Every serious codebase is a history, not a file. Git records who changed what, when, and why — letting you experiment fearlessly, collaborate safely, and travel back in time when tomorrow's code breaks yesterday's work. 1. Why Version Control Matters Before version control, teams emailed zips ( final v2 REAL.zip ) and lived in fear of overwriting a colleague's work. A version control system (VCS) stores a project as a chain of snapshots: each commi"
     },
     {
+      "lessonId": "backend-fundamentals-and-apis",
+      "subjectId": "computer-science",
+      "subSubjectId": "web-development",
+      "title": "Backend Fundamentals and APIs: The Server Behind the Screen",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Backend Fundamentals and APIs: The Server Behind the Screen Every \"Check availability\" button and every feed refresh is a conversation: the browser asks, a distant server answers. Frontend code (HTML, CSS, JavaScript) builds what users see; the backend — servers, routes, and APIs — does the remembering, checking, and deciding. This lesson explains how that conversation works and how to build your first API. 1. Client, Server, and the Request Cycle The backend is the server-side layer of an appli"
+    },
+    {
       "lessonId": "css-styling-and-layout",
       "subjectId": "computer-science",
       "subSubjectId": "web-development",
@@ -492,6 +570,15 @@
       "content": "JavaScript and the DOM: Making Pages Interactive HTML is the skeleton and CSS the appearance; JavaScript is the nervous system that reacts to the user. This lesson covers the language essentials, the DOM tree, events and delegation, fetching data, and the performance pitfalls every front-end developer hits. 1. JavaScript's Job in the Browser JavaScript is the only language browsers execute natively. It is single-threaded (one call stack — a long loop freezes the page), dynamically typed , and ev"
     },
     {
+      "lessonId": "responsive-design",
+      "subjectId": "computer-science",
+      "subSubjectId": "web-development",
+      "title": "Responsive Design: One Site, Every Screen",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Responsive Design: One Site, Every Screen A phone is 360 CSS pixels wide; a desktop monitor, 1920 or more. Building separate mobile and desktop sites died a decade ago — the modern answer is responsive design : one flexible layout that reflows itself to fit any screen, the way water takes the shape of its glass. 1. The Mobile-First Mindset Responsive web design (Ethan Marcotte, 2010) = fluid grids + flexible media + media queries — a single HTML document whose layout adapts to the viewport inste"
+    },
+    {
       "lessonId": "banking-and-rbi",
       "subjectId": "economics",
       "title": "Banking and the Reserve Bank of India",
@@ -522,6 +609,22 @@
       "subject": "economics",
       "keywords": [],
       "content": "Elasticity: How Sensitive Markets Are to Price and Income Elasticity puts a number on sensitivity — how much quantity responds when price, income, or a related good's price changes. Price elasticity of demand (PED) measures the percentage change in quantity demanded caused by a one percent change in price. Because price and quantity move oppositely, PED is negative; by convention we use its absolute value. 1. The PED Formula If price rises 10% and quantity demanded falls 20%, PED = 20/10 = 2 — d"
+    },
+    {
+      "lessonId": "exchange-rates-and-balance-of-payments",
+      "subjectId": "economics",
+      "title": "Exchange Rates and Balance of Payments: India in the World Economy",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Exchange Rates and Balance of Payments: India in the World Economy When the rupee \"falls\" against the dollar, petrol prices climb, imported laptops cost more, and software exporters cheer. What is actually moving is a price — the price of one currency in terms of another — set by a market that never sleeps. This lesson decodes that market: how exchange rates are quoted, why the balance of payments must always balance, and what depreciation really does to an economy. 1. The Balance of Payments: A"
+    },
+    {
+      "lessonId": "financial-markets",
+      "subjectId": "economics",
+      "title": "Financial Markets: Where Savings Meet Borrowers",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Financial Markets: Where Savings Meet Borrowers Money that sits idle earns nothing; money that moves builds factories, homes, and retirements. Financial markets are the plumbing that channels savings to their most productive uses — through stocks, bonds, mutual funds, and the regulators (RBI, SEBI) who keep the pipes honest. 1. The Purpose of Finance Financial markets transfer funds from surplus units (savers — households) to deficit units (borrowers — firms, government) — directly (shares, bond"
     },
     {
       "lessonId": "fiscal-policy-and-budget",
@@ -636,6 +739,14 @@
       "content": "The Sectors of the Indian Economy: Primary, Secondary, and Tertiary Every rupee of national income is earned in a sector: growing, making, or serving. Mapping India's output and workforce across the three sectors reveals both the economy's shape and its biggest structural puzzle. 1. Why Classify Economic Activity? Economic activities are grouped into sectors by the kind of work done: the primary sector extracts gifts of nature (agriculture, forestry, fishing, mining and quarrying); the secondary"
     },
     {
+      "lessonId": "taxation-in-india",
+      "subjectId": "economics",
+      "title": "Taxation in India: From Budget to GST",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Taxation in India: From Budget to GST Taxes pay for everything the state does — and how a country taxes shapes its economy as much as how much it collects. This lesson maps India's tax system: direct vs indirect, the constitutional architecture, the century-long journey to GST , and the economics of who ultimately bears the burden. 1. Why Governments Tax Taxation serves three functions: revenue (funding public goods — defence, roads, schools), redistribution (narrowing inequality via progressive"
+    },
+    {
       "lessonId": "agriculture-in-india",
       "subjectId": "geography",
       "title": "Agriculture in India: Crops, Seasons, and Farming Systems",
@@ -652,12 +763,36 @@
       "content": "The Atmosphere: Composition, Layers, and the Heat Budget A thin shell of gases shields Earth from space, stores the Sun's energy, and makes weather possible. This lesson profiles the air's make-up, its layered structure, and the heat budget that drives climate. 1. Composition of the Atmosphere | Gas | Share of dry air | Role | | --- | --- | --- | | Nitrogen | 78.08% | Dilutes oxygen; feeds life through the nitrogen cycle | | Oxygen | 20.95% | Respiration and combustion | | Argon | 0.93% | Inert "
     },
     {
+      "lessonId": "biomes-and-world-climate-regions",
+      "subjectId": "geography",
+      "title": "Biomes and World Climate Regions: The Great Pattern of Life Zones",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Biomes and World Climate Regions: The Great Pattern of Life Zones Why do equatorial forests steam with life while high latitudes wear lichen and ice? The answer is a chain: sun → temperature and rainfall regimes → soils and vegetation → animals and human land use. That chain produces the world's great biomes — repeated, predictable life zones that appear wherever the climate recipe is found, whether in Africa, Asia, or the Americas. 1. Climate Controls: The Recipe Before the Cake A biome is a la"
+    },
+    {
+      "lessonId": "earth-motions-and-seasons",
+      "subjectId": "geography",
+      "title": "Earth's Motions: Rotation, Revolution, and the Making of Seasons",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Earth's Motions: Rotation, Revolution, and the Making of Seasons The Earth never sits still: it spins daily on a tilted axis and races yearly around the Sun. Together these two motions — plus that crucial 23.5° tilt — produce day and night, the seasons, the march of the noon shadow, and the two special latitudes where the Sun stands overhead. 1. Rotation: The Daily Spin Rotation is Earth's spin on its axis — west to east (counterclockwise viewed from above the North Pole) — taking 23 hours 56 mi"
+    },
+    {
       "lessonId": "earthquakes-and-volcanoes",
       "subjectId": "geography",
       "title": "Earthquakes and Volcanoes: When the Earth Releases Energy",
       "subject": "geography",
       "keywords": [],
       "content": "Earthquakes and Volcanoes: When the Earth Releases Energy Strain stored in rock and heat stored in the mantle escape as trembling ground and erupting mountains. This lesson explains how earthquakes are measured, where they cluster, and how volcanoes are built and classified. 1. Anatomy of an Earthquake An earthquake is the shaking of the ground caused by a sudden release of accumulated strain along a fault. The rupture point at depth is the focus ; the point on the surface directly above it is t"
+    },
+    {
+      "lessonId": "indian-physiography",
+      "subjectId": "geography",
+      "title": "Indian Physiography: The Six Faces of the Subcontinent",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Indian Physiography: The Six Faces of the Subcontinent India's landscape divides into six macro-physiographic divisions — the mighty Himalayan wall, the world's most fertile river plains, the ancient peninsular plateau, the coastal strips, the deserts, and the islands. Each is a distinct story of tectonics, rivers, and time. 1. The Six Divisions | Division | Area share | Key features | | --- | --- | --- | | Himalayas | ~10% | Highest, youngest fold mountains | | Northern Plains | ~13% | Alluvial"
     },
     {
       "lessonId": "indian-rivers-and-lakes",
@@ -772,6 +907,14 @@
       "content": "Transport, Communication, and Trade: Connecting People and Markets No region is an island: goods, messages, and money must move for a market to exist. This lesson tours India's road, rail, water, air, and pipeline networks, the systems of communication, and the trade flows they carry. 1. Lifelines of the Economy Transport moves people, goods, and services from one place to another; communication moves messages; trade is the exchange of goods and services that both make possible. - Efficient tran"
     },
     {
+      "lessonId": "universe-and-solar-system",
+      "subjectId": "geography",
+      "title": "The Universe and the Solar System: Our Cosmic Address",
+      "subject": "geography",
+      "keywords": [],
+      "content": "The Universe and the Solar System: Our Cosmic Address Geography begins in space: the Earth is a planet shaped by its position around an ordinary star in an ordinary galaxy. This lesson tours the universe's structure, the Sun's family, and the member worlds nearest to home. 1. The Scale of the Universe The universe is all of space, time, matter, and energy. Its largest known structures are galaxies — vast islands of stars — and our Sun is one of an estimated 100–400 billion stars in the Milky Way"
+    },
+    {
       "lessonId": "world-population-and-settlement",
       "subjectId": "geography",
       "title": "Population and Settlements: How People Fill the Earth",
@@ -820,6 +963,14 @@
       "content": "The Gupta Age: India's Classical Golden Age From about 319 to 550 CE the Guptas reunited the Ganga plain and set off an extraordinary run of mathematics, poetry, medicine, and temple art — Aryabhata's zero, Kalidasa's dramas, the Iron Pillar, and Nalanda all belong to this classical moment. Harsha's brief empire and southern Pallava-Chalukya art carry the story into the seventh century. 1. Rise of the Guptas Chandragupta I (319-335 CE) took the title maharajadhiraja , married the Lichchhavi prin"
     },
     {
+      "lessonId": "indian-art-and-culture",
+      "subjectId": "history",
+      "title": "Indian Art and Culture: Temples, Stupas, Dances, and Music",
+      "subject": "history",
+      "keywords": [],
+      "content": "Indian Art and Culture: Temples, Stupas, Dances, and Music Beyond kings and battles, India's past lives most vividly in its art — the stooping Buddha of Sarnath, the soaring gopurams of the south, the stone rhythms of Bharatanatyam. This lesson tours the classical arts every exam and every traveller should recognise. 1. Architecture I: Stupas, Chaityas, and Viharas The stupa — a hemispherical burial mound (Sanskrit stūpa : \"heap\") housing relics of the Buddha or monks — is earliest Buddhist arch"
+    },
+    {
       "lessonId": "indian-national-movement-1885-1919",
       "subjectId": "history",
       "title": "The National Movement 1885-1919: From Petitions to Mass Politics",
@@ -836,12 +987,28 @@
       "content": "The Indus Valley Civilization: Bronze Age Urban Genius South Asia's first urban culture flourished from about 2600 to 1900 BCE on the floodplains of the Indus and the now-dry Ghaggar-Hakra. Larger in area than Egypt and Mesopotamia combined, it is remembered less for kings than for grid streets, covered drains, and standardised bricks. 1. Discovery and Dating The civilization surfaced only in the 1920s, when the Archaeological Survey of India excavated mounds in Punjab and Sindh and its Director"
     },
     {
+      "lessonId": "industrial-revolution",
+      "subjectId": "history",
+      "title": "The Industrial Revolution: How Machines Remade the World",
+      "subject": "history",
+      "keywords": [],
+      "content": "The Industrial Revolution: How Machines Remade the World Between 1760 and 1840, a small island off Europe's coast learned to substitute coal, iron, and steam for muscle, water, and wind. Output that had crept for centuries exploded — and with it came factories, railways, cities, capitalism's triumph, colonial extraction, and the fossil-fuelled world we still inhabit. 1. Why Britain, and Why Then? The Industrial Revolution was the transition from hand-production in homes and workshops to machine "
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "history",
       "title": "What Is History? Sources and Periodization",
       "subject": "history",
       "keywords": [],
       "content": "What Is History? Sources and Periodization History is the systematic study of the past, built from evidence — not just a list of dates. Historians ask questions, gather sources, weigh them against each other, and only then write an account. 1. Why Study History? - Identity: history explains how societies, institutions, and borders came to be. - Judgement: past decisions and their consequences teach judgement, not lessons to copy blindly. - Evidence-based thinking: history trains you to ask \"how "
+    },
+    {
+      "lessonId": "mahajanapadas-and-rise-of-magadha",
+      "subjectId": "history",
+      "title": "Mahajanapadas and the Rise of Magadha: India's First Great Powers",
+      "subject": "history",
+      "keywords": [],
+      "content": "Mahajanapadas and the Rise of Magadha: India's First Great Powers In the sixth century BCE, the Ganga plain filled with walled cities, coined money, and rival kingdoms — a world the Buddha knew and walked through. Sixteen mahajanapadas replaced the slow tribal order of the Vedic age with something new: territorial states with armies, treasuries, and ambitions. From among them, one kingdom — Magadha — spent two centuries grinding its way to empire. 1. From Janas to Janapadas to Mahajanapadas A ja"
     },
     {
       "lessonId": "marathas-and-the-18th-century",
@@ -868,6 +1035,14 @@
       "content": "The Mughal Empire: From Babur to the Last Emperor Between 1526 and 1707 the Mughals built the richest empire of the early modern world — artillery victories at Panipat, a mansabdari state run on ranked salaries, the Taj Mahal, and Akbar's policy of sulh-i-kul. After Aurangzeb's over-long reign, the same machine unravelled in fifty years. 1. Babur and the Founding Battles | Battle | Year | Combatants | Outcome | | --- | --- | --- | --- | | First Panipat | 1526 | Babur vs Ibrahim Lodi | Artillery "
     },
     {
+      "lessonId": "post-independence-india",
+      "subjectId": "history",
+      "title": "Post-Independence India: The Republic's Journey Since 1947",
+      "subject": "history",
+      "keywords": [],
+      "content": "Post-Independence India: The Republic's Journey Since 1947 Midnight of 15 August 1947 began the world's largest experiment: could a poor, diverse, colonised subcontinent run itself as one democratic republic? This lesson tracks the republic's milestones — integration, wars, green and white revolutions, the Emergency, liberalisation, the nuclear and digital ages. 1. Consolidating the Union (1947–56) - Partition — division of Punjab and Bengal; ~10–15 million displaced; Gandhi's assassination (30 "
+    },
+    {
       "lessonId": "post-mauryan-kingdoms",
       "subjectId": "history",
       "title": "The Post-Mauryan Kingdoms: Indo-Greeks, Kushanas, and Satavahanas",
@@ -876,12 +1051,28 @@
       "content": "The Post-Mauryan Kingdoms: Indo-Greeks, Kushanas, and Satavahanas After the Mauryas fell in 185 BCE no single power held the subcontinent. Greek, Shaka, and Central Asian dynasties ruled the north-west while the Satavahanas bridged the Deccan — an age that fused Greek coinage, Kushana gold, and Roman trade into India. 1. A Fragmented Canvas The two centuries after Pushyamitra Shunga's coup saw a dozen powers share India: the Shungas and Kanvas near Vidisha and Pataliputra, Kharavela's Chedis in "
     },
     {
+      "lessonId": "prehistoric-india",
+      "subjectId": "history",
+      "title": "Prehistoric India: The Stone Age Foundations",
+      "subject": "history",
+      "keywords": [],
+      "content": "Prehistoric India: The Stone Age Foundations Before kings, scripts, and cities, the subcontinent hosted hundreds of thousands of years of stone-tool cultures — the Palaeolithic hunter, the Mesolithic fisher, the Neolithic first farmer, and the metal-working Chalcolithic villages that seeded the Indus civilization. 1. What \"Prehistory\" Means Prehistory is the span of the human past before written records. Its only witnesses are material: stone tools, bones, ash, pottery, and rock art. India's pre"
+    },
+    {
       "lessonId": "religious-movements-buddhism-jainism",
       "subjectId": "history",
       "title": "Buddhism and Jainism: The Shramana Challenge",
       "subject": "history",
       "keywords": [],
       "content": "Buddhism and Jainism: The Shramana Challenge In the sixth century BCE, two Kshatriya teachers — Siddhartha Gautama and Vardhamana Mahavira — rejected Vedic ritual and varna hierarchy to preach in the people's languages. Their orders reshaped Indian religion, ethics, and art for the next two millennia. 1. The Sixth-Century Ferment By 600 BCE the Gangetic plains had iron ploughs, punch-marked silver coins, new cities — and religious restlessness: Buddhist texts count 62 sects . The causes behind t"
+    },
+    {
+      "lessonId": "renaissance-and-enlightenment",
+      "subjectId": "history",
+      "title": "Renaissance and Enlightenment: Europe's Long Revolution of the Mind",
+      "subject": "history",
+      "keywords": [],
+      "content": "Renaissance and Enlightenment: Europe's Long Revolution of the Mind Between the 1300s and the 1700s, Europe changed the questions it asked. The Renaissance turned eyes from heaven to earth — to human beings, their bodies, cities, and past. The Enlightenment weaponised reason against throne and altar. The ideas these two movements forged — human dignity, scientific method, natural rights — later detonated in the American and French Revolutions and still define the modern political vocabulary. 1. "
     },
     {
       "lessonId": "socio-religious-reform-movements",
@@ -1082,6 +1273,15 @@
       "subject": "languages",
       "keywords": [],
       "content": "Lesson 23: Reading Comprehension & Passage Strategy Key Steps to Solve Reading Passages 1. Identify Core Details: Look for explicit facts, dates, names, numbers, and locations. 2. Understand Tone & Theme: Determine whether the author's tone is critical, supportive, objective, or personal. 3. Contextual Vocabulary: Infer meanings of words based on sentence usage rather than dictionary definitions alone. --- Additional Reading Strategies 4. Skim First, Then Scan: On the first read, skim quickly fo"
+    },
+    {
+      "lessonId": "spelling-and-misspelt-words",
+      "subjectId": "languages",
+      "subSubjectId": "english",
+      "title": "Spelling and Misspelt Words: Writing the Word Right",
+      "subject": "languages",
+      "keywords": [],
+      "content": "Spelling and Misspelt Words: Writing the Word Right Competitive exams lose more marks to spelling than to grammar — one silent letter, one doubled consonant, one -ible/-able slip, and the \"error spotting\" answer changes. The good news: English spelling is more rule-governed than it looks. Learn the rules, memorise the rogues, and spelling questions become free marks. 1. The i-before-e Rule — and Its Reliable Core The classic rule: i before e, except after c , when the sound is \"ee\" — believe, re"
     },
     {
       "lessonId": "spotting_errors_and_sentence_improvement",
@@ -1462,6 +1662,24 @@
       "content": "The Binomial Theorem: Expanding Powers Efficiently Multiplying $(a+b)$ by itself twice is easy; by itself twenty times is impossible by hand. The binomial theorem writes down any such power directly — every coefficient computed from a formula, no multiplying out required. 1. Why Not Just Multiply? Multiply out the first few powers and a pattern of coefficients emerges: The powers of $a$ fall from $n$ to 0 while the powers of $b$ rise from 0 to $n$; only the coefficients need explaining. Brute fo"
     },
     {
+      "lessonId": "complex-numbers",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Complex Numbers: Extending the Number Line into a Plane",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Complex Numbers: Extending the Number Line into a Plane No real number squared gives $-1$, yet equations like $x^2 + 1 = 0$ demand answers. Mathematics answered by inventing a new unit, $i$, and with it an entire two-dimensional number system — the complex numbers. What began as a \"imaginary\" curiosity now underpins AC circuit analysis, quantum mechanics, signal processing, and fractal geometry. 1. The Imaginary Unit The imaginary unit $i$ is defined by $i^2 = -1$. A complex number is any number"
+    },
+    {
+      "lessonId": "inequalities",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Inequalities: When Answers Are Ranges, Not Points",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Inequalities: When Answers Are Ranges, Not Points Equations pin a variable to exact values; inequalities describe whole ranges of them. Salary brackets, medicine doses, safety margins, and optimisation constraints are all inequalities — and solving them has one golden rule: negatives flip the sign. 1. The Language of Inequalities | Symbol | Meaning | Example solution set | | --- | --- | --- | | $<$, $ $ | strictly less / greater | $x 3$ | | $\\le$, $\\ge$ | or equal to | $x \\le 3$ | A solution is "
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "algebra",
@@ -1478,6 +1696,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Linear Equations: Lines, Slopes, and Intersections A linear equation $y = mx + c$ draws a straight line. The slope $m$ measures tilt; the intercept $c$ says where it crosses the y-axis. 1. Reading the Form - Slope $m = \\frac{\\text{rise}}{\\text{run}} = \\frac{y 2 - y 1}{x 2 - x 1}$ between any two points on the line. - Intercept $c$ is the output when $x = 0$. Example Through $(1, 3)$ and $(3, 11)$: $m = \\frac{11-3}{3-1} = 4$, then $3 = 4(1) + c$ gives $c = -1$. So $y = 4x - 1$. 2. Two Lines Meet "
+    },
+    {
+      "lessonId": "logarithms",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Logarithms: The Mathematics of Exponents, Reversed",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Logarithms: The Mathematics of Exponents, Reversed A logarithm answers a simple question: \"What power gives me this?\" Since $2^3 = 8$, the logarithm of 8 to base 2 is 3. Before calculators, logarithms turned hard multiplication into easy addition — and they still power everything from earthquake scales to sound levels and compound interest. 1. Defining the Logarithm For $a 0$, $a \\ne 1$ and $x 0$: ${\\log} a x = y$ means $a^y = x$. The base is $a$, the argument is $x$, and the logarithm is the ex"
     },
     {
       "lessonId": "matrices-and-determinants",
@@ -1543,6 +1770,15 @@
       "content": "Derivatives: Measuring Instantaneous Change The derivative of $f(x)$ at a point is the slope of the curve there — how fast the output changes per unit input at that exact moment. 1. From Secant to Tangent The average rate over an interval $h$ is $\\frac{f(x+h) - f(x)}{h}$. Shrinking $h \\to 0$ turns the secant's slope into the tangent's: 2. Rules That Replace the Definition | Function | Derivative | Rule name | | --- | --- | --- | | $c$ (constant) | 0 | constant rule | | $x^n$ | $nx^{n-1}$ | power"
     },
     {
+      "lessonId": "differential-equations",
+      "subjectId": "mathematics",
+      "subSubjectId": "calculus",
+      "title": "Differential Equations: Equations About Change",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Differential Equations: Equations About Change A differential equation describes how a quantity changes — populations growing, coffee cooling, money compounding, radioactive atoms decaying. Solving it means recovering the original quantity from its rate of change, which is why this tiny corner of mathematics runs physics, biology, economics, and engineering. 1. What Is a Differential Equation? A differential equation is an equation involving a function and its derivatives, such as $\\frac{dy}{dx}"
+    },
+    {
       "lessonId": "integration-basics",
       "subjectId": "mathematics",
       "subSubjectId": "calculus",
@@ -1559,6 +1795,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Limits: The Gateway to Calculus Calculus is the mathematics of change. Its entire structure rests on one idea — the limit — which lets us speak precisely about \"infinitely close\" and \"infinitely small\". 1. The Problem Limits Solve How fast is a car going at an instant ? Speed is distance ÷ time, but an instant contains no time to divide by. The way out: compute average speed over shorter and shorter intervals and see what value it approaches. As $h$ shrinks toward 0, that fraction approaches the"
+    },
+    {
+      "lessonId": "limits-and-continuity",
+      "subjectId": "mathematics",
+      "subSubjectId": "calculus",
+      "title": "Limits and Continuity: The Gateway to Calculus",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Limits and Continuity: The Gateway to Calculus Calculus begins with a paradox: to find the slope of a curve at a single point, or the area under a curve down to a hair's width, we need to divide by zero or add infinitely many terms. The limit is the idea that resolves the paradox — a number the function approaches even where it never arrives. Master limits and continuity, and derivatives and integrals become bookkeeping. 1. What a Limit Really Means We write $\\lim {x \\to a} f(x) = L$ when the va"
     },
     {
       "lessonId": "circles-and-their-properties",
@@ -1588,6 +1833,15 @@
       "content": "Coordinate Geometry: Algebra Meets Geometry Every point on the plane can be named by a pair of numbers, and every geometric question — distance, midpoint, slope, area — then becomes an algebra calculation. This lesson builds that toolkit step by step. 1. The Cartesian Plane Two perpendicular number lines — the x-axis and the y-axis — cross at the origin O(0, 0) and divide the plane into four quadrants . A point P is written as an ordered pair $(x, y)$: $x$ is the abscissa (horizontal distance fr"
     },
     {
+      "lessonId": "heights-and-distances",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Heights and Distances: Trigonometry in the Field",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Heights and Distances: Trigonometry in the Field A surveyor stands 30 metres from a tower and looks up at $60°$; a sailor notes a lighthouse top at $30°$ from the deck. No ladder, no climbing — just an angle and a distance, and trigonometry hands over the height. Heights and distances is the oldest applied chapter of trigonometry and remains one of the most reliably scored topics in competitive exams. 1. Angles of Elevation and Depression The angle of elevation is the angle above the horizontal "
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "mathematics",
       "subSubjectId": "geometry",
@@ -1604,6 +1858,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Mensuration: Surface Areas and Volumes of Solids A solid carries two measures: how much wrapping its surface needs and how much space its inside holds. Six shapes — cube, cuboid, cylinder, cone, sphere, hemisphere — cover almost every question there is. 1. The Family of Solids Surface area measures the total boundary of a solid in square units; volume measures the space it encloses in cubic units. Curved surface area (CSA) counts only the curved part, while total surface area (TSA) adds every fl"
+    },
+    {
+      "lessonId": "quadrilaterals-and-polygons",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Quadrilaterals and Polygons: Many-Sided Geometry",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Quadrilaterals and Polygons: Many-Sided Geometry Triangles are geometry's atoms; polygons are its molecules. From the quadrilaterals of doors, windows, and tiles to the pentagons and hexagons of nature and architecture, closed straight-edged shapes follow elegant counting rules — and a hierarchy that every exam loves to test. 1. What Is a Polygon? A polygon is a closed plane figure made of straight line segments. In a regular polygon, all sides and all angles are equal. | Name | Sides | Interior"
     },
     {
       "lessonId": "triangles-properties",
@@ -1624,6 +1887,15 @@
       "content": "Trigonometry: Measuring with Triangles One known side and one known angle unlock every other side and angle of a right triangle. Three ratios, one table, and a handful of identities have guided surveyors and sailors for two thousand years. 1. The Three Basic Ratios In a right triangle, the sides of an acute angle θ are named the opposite (directly across from θ), the adjacent (next to θ but not the hypotenuse), and the hypotenuse (the longest side, opposite the right angle). | Ratio | Definition"
     },
     {
+      "lessonId": "averages",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Averages: The Art of Balanced Numbers",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Averages: The Art of Balanced Numbers The average is the first statistical tool anyone learns — add everything, divide by the count — yet competitive exams wring an astonishing variety of questions from it: cricket scores, replaced members, combined classes, and age puzzles. Every one of them reduces to a single principle: the total is the average times the count. 1. The Fundamental Relation The average (arithmetic mean) of $n$ quantities is their sum divided by $n$: Equivalently, the sum equals"
+    },
+    {
       "lessonId": "fractions-and-decimals",
       "subjectId": "mathematics",
       "subSubjectId": "numbers",
@@ -1640,6 +1912,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "LCM and HCF: Factors, Multiples, and Their Powers Two numbers are built from shared primes. Take the lowest powers of those primes and you get the HCF; take the highest and you get the LCM — one factorisation answers both questions at once. 1. Factors and Multiples A factor divides a number exactly; a multiple is what you get by multiplying the number by a whole number. For 12: factors are 1, 2, 3, 4, 6, 12; multiples are 12, 24, 36, 48, … - Factors arrive in pairs: 12 = 1 × 12 = 2 × 6 = 3 × 4. "
+    },
+    {
+      "lessonId": "mixture-and-alligation",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Mixture and Alligation: Mixing Quantities, Balancing Prices",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Mixture and Alligation: Mixing Quantities, Balancing Prices Mix milk with water, cheap grain with costly grain, a $20\\%$ acid solution with a $70\\%$ one — whenever two ingredients merge, the mixture's strength is a weighted average of the parts. Alligation is the centuries-old rule that finds those weights instantly, and with a little practice it cracks problems that look like they need full equation setups. 1. Mixtures: The Weighted Average When $x 1$ litres of strength (or price) $c 1$ mix wit"
     },
     {
       "lessonId": "numbers",
@@ -1660,6 +1941,15 @@
       "content": "Percentages and Ratios: Comparing Quantities Percentages and ratios both compare quantities — percentages against a base of 100, ratios part-to-part. Most \"real world\" maths is one of these two in disguise. 1. Percent Means Per Hundred - 45% of ₹800: $\\frac{45}{100} \\times 800 = 360$ - What percent is 18 of 60? $\\frac{18}{60} \\times 100 = 30\\%$ 2. Percentage Change Percentage change = $\\frac{\\text{new} - \\text{old}}{\\text{old}} \\times 100$. The denominator is always the ORIGINAL value — the most"
     },
     {
+      "lessonId": "profit-and-loss-and-discount",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Profit and Loss and Discount: The Mathematics of Buying and Selling",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Profit and Loss and Discount: The Mathematics of Buying and Selling Every shop transaction hides an arithmetic story: a cost price, a marked price, maybe a discount, and a selling price. Profit and loss questions test whether you can follow that story without losing track of which price is which — and the dishonest-dealer and successive-discount twists make it one of the richest chapters in commercial arithmetic. 1. The Core Vocabulary Cost price (CP) is what the seller pays; selling price (SP) "
+    },
+    {
       "lessonId": "sets-and-venn-diagrams",
       "subjectId": "mathematics",
       "subSubjectId": "numbers",
@@ -1669,6 +1959,15 @@
       "content": "Sets and Venn Diagrams: Grouping Things Precisely A set is a collection with a sharp edge: either an object belongs or it does not — there is no \"sort of\". Venn diagrams turn that sharpness into pictures, so counting overlapping groups stops being guesswork. 1. What Is a Set? A set is a well-defined collection of distinct objects. Each object is an element (or member), written with $\\in$: if $A = \\{2, 4, 6, 8\\}$ then $4 \\in A$ and $5 \\notin A$. \"Well-defined\" means membership can be decided with"
     },
     {
+      "lessonId": "simple-and-compound-interest",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Simple and Compound Interest: Money That Grows on Itself",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Simple and Compound Interest: Money That Grows on Itself Lend a sum at interest and it grows — but how it grows changes everything. Simple interest pays rent on the original principal forever; compound interest pays rent on the rent, and the difference over the years becomes spectacular. Einstein is (apocryphally) said to have called compounding the eighth wonder of the world; exam boards certainly treat it as one. 1. Simple Interest Simple interest (SI) is computed only on the original principa"
+    },
+    {
       "lessonId": "squares-roots-and-powers",
       "subjectId": "mathematics",
       "subSubjectId": "numbers",
@@ -1676,6 +1975,24 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Squares, Roots, and Powers: Exponents in Action Squaring turns repeated multiplication into two symbols: $7^2$ says \"seven sevens\" at a glance. Roots undo the squaring, indices generalise it to any power — and a short list of laws governs every calculation. 1. Squares and Cubes: The Base Camp A square multiplies a number by itself; a cube multiplies it by itself twice more: $n^2 = n \\times n$ and $n^3 = n \\times n \\times n$. Squaring is area thinking (a 5 cm square tile covers $25$ cm$^2$) and c"
+    },
+    {
+      "lessonId": "time-and-work",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Time and Work: Rates, Efficiency, and Team Effort",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Time and Work: Rates, Efficiency, and Team Effort If A builds a wall in 12 days and B in 18, how long together? Three sentences of setup and one line of algebra answer it. Time and work problems convert every worker into a rate , add the rates, and divide the job by the total. From there the chapter branches into pipes, alternate days, wages, and the ever-popular \"man-days\" equations — all one idea wearing different hats. 1. From Times to Rates If a worker completes a job in $n$ days, the one-da"
+    },
+    {
+      "lessonId": "time-speed-and-distance",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Time, Speed and Distance: Trains, Boats, and Relative Motion",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Time, Speed and Distance: Trains, Boats, and Relative Motion A train takes 9 seconds to pass a pole and 21 to enter a tunnel completely — how fast is it moving, and how long is the tunnel? The entire chapter hangs on one equation, $\\text{distance} = \\text{speed} \\times \\text{time}$, plus the discipline to measure the right distance. Trains bring their own length; boats bring the stream; two moving objects bring relative speed. 1. The Master Equation and Unit Sense Distance, speed, and time obey "
     },
     {
       "lessonId": "data-interpretation-and-correlation",
@@ -1705,6 +2022,15 @@
       "content": "Probability: Measuring Chance with Numbers Probability turns \"probably\" and \"rarely\" into precise fractions between 0 and 1 — favourable over total, plus honest counting. 1. Chance Has a Grammar A random experiment has outcomes that cannot be predicted in advance (a coin toss, a dice roll, a card draw). The sample space lists every possible outcome; an event is any subset of it. - One coin: the outcomes are H and T. One die: 1, 2, 3, 4, 5, 6. - Two coins: HH, HT, TH, TT — four outcomes, not thre"
     },
     {
+      "lessonId": "probability-distributions",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Probability Distributions: The Shapes of Chance",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Probability Distributions: The Shapes of Chance Single probabilities answer \"how likely is this one outcome?\"; distributions answer \"how is chance spread over all outcomes?\" The binomial distribution counts successes in trials, and the normal distribution — the bell curve — describes test scores, heights, measurement errors, and countless natural phenomena. 1. From Outcomes to Distributions A probability distribution assigns a probability to every possible outcome of a random variable. The proba"
+    },
+    {
       "lessonId": "probability",
       "subjectId": "mathematics",
       "subSubjectId": "statistics",
@@ -1721,6 +2047,14 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Surveys and Sampling: How Data Is Collected Fairly Asking everyone is usually impossible, so statisticians ask a slice and trust mathematics to make the slice stand in for the whole. How the slice is chosen decides what the survey can honestly say. 1. Population, Sample, and Census The population is every individual the study is about; a sample is the subset actually studied. A census studies the whole population, while a sample survey studies a sample and generalises from it with quantified unc"
+    },
+    {
+      "lessonId": "analytic-and-contemporary-philosophy",
+      "subjectId": "philosophy",
+      "title": "Analytic and Contemporary Philosophy: The Language Turn",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Analytic and Contemporary Philosophy: The Language Turn Imagine philosophy's oldest problems — truth, mind, science, justice — suddenly being re-asked as questions about words . That was the twentieth century's move. One half of the century policed language with logic (analytic philosophy); the other half used language to unmask power (continental thought). Both agreed on one thing: the old way of doing metaphysics had to change. 1. The Break with the Nineteenth Century Kant to Existentialism le"
     },
     {
       "lessonId": "applied-ethics",
@@ -2744,6 +3078,33 @@
       "content": "Directions and Distance Reasoning — Part 9 of 10 Continuing from the previous part. back to Part 8 ( directions-and-distance-reasoning-part-8 ) · continue to Part 10 ( directions-and-distance-reasoning-part-10 ). 68. Example Compilation Input: AST: Spatial IR: Execution: Result: 69. Minimal Algorithm Conceptually: 70. Multi-Hop Reasoning Consider: The system can choose a reference: Then propagate constraints: Now any pair can be compared. For example: Therefore: This demonstrates why coordinate "
     },
     {
+      "lessonId": "mathematical-operations-reasoning",
+      "subjectId": "reasoning",
+      "subSubjectId": "mathematical-operations",
+      "title": "Mathematical Operations: Sign Swaps and Equation Repair",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Mathematical Operations: Sign Swaps and Equation Repair The reasoning section's arithmetic playground: a correct equation is scrambled — signs swapped, numbers interchanged — and you are asked to restore it, or to compute a new expression after a declared substitution. Nothing here is hard mathematics; the difficulty is purely order of operations discipline plus careful reading of what is swapped with what. Every question in this topic leans on BODMAS/BIDMAS order: Brackets → Orders (powers/root"
+    },
+    {
+      "lessonId": "ranking-and-order-advanced",
+      "subjectId": "reasoning",
+      "subSubjectId": "ranking-and-order",
+      "title": "Ranking and Order Advanced: Comparisons, Intersections, and Mixed Lines",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Ranking and Order Advanced: Comparisons, Intersections, and Mixed Lines Basics gave you one line and direct positions. Advanced ranking multiplies the complexity three ways: comparison chains (\"A is taller than B but shorter than C\"), two-line setups (a row and a queue, or two rows facing each other), and interlocking conditions where several order facts must combine before any question is answerable. The tools stay arithmetic — they just get chained. The discipline that earns marks here: conver"
+    },
+    {
+      "lessonId": "ranking-and-order-basics",
+      "subjectId": "reasoning",
+      "subSubjectId": "ranking-and-order",
+      "title": "Ranking and Order Basics: Position Puzzles in One Line",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Ranking and Order Basics: Position Puzzles in One Line A row of students, a merit list, a queue — the question hides one number: how many people are there in all? Or where does a person stand from the other end? Ranking puzzles need no diagrams or cases, just one or two line-length formulas and the discipline to read \"from the left\" versus \"from the right\" carefully. A ranking puzzle fixes positions along a line (row, list, queue, tower). The two facts usually given: a person's position from one"
+    },
+    {
       "lessonId": "circular-seating-arrangement",
       "subjectId": "reasoning",
       "subSubjectId": "seating-arrangement",
@@ -2751,6 +3112,15 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Circular Seating Arrangement: Round Tables and Complex Puzzles Circular puzzles replace fixed seat numbers with neighbours, opposites, and clockwise counts. This lesson fixes the left-right convention around a table, breaks rotational symmetry, and walks an eight-person puzzle before adding hybrid facing, square tables, and floor-puzzle variants. Memorise the convention once: facing the centre, a person's LEFT runs anti-clockwise around the table and their RIGHT runs clockwise, as seen from abov"
+    },
+    {
+      "lessonId": "floor-and-box-puzzles",
+      "subjectId": "reasoning",
+      "subSubjectId": "seating-arrangement",
+      "title": "Floor and Box Puzzles: Vertical Arrangements Made Routine",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Floor and Box Puzzles: Vertical Arrangements Made Routine Strip away the furniture and most modern \"puzzle\" questions are the same skeleton: a numbered stack of positions — floors of a building, boxes in a pile, shelves on a rack — and a list of relational clues. The stack gives the puzzle its order, the clues give constraints, and a fixed method gives you the answer. Master the method once and floors, boxes, and shelves all solve identically. Floors and boxes share one core convention: number f"
     },
     {
       "lessonId": "linear-seating-arrangement",
@@ -2816,6 +3186,15 @@
       "content": "Number and Alphabet Series Reasoning A series question gives you a sequence of numbers or letters that follows a hidden pattern, and asks you to find the missing term, the next term, or the one term that breaks the pattern. Series reasoning is pattern detection, not calculation. Before you calculate anything, look at the sequence and ask: is it going up, down, alternating, or repeating in blocks? That single glance usually tells you which pattern family to test first. 1. What Series Reasoning Me"
     },
     {
+      "lessonId": "wrong-number-series",
+      "subjectId": "reasoning",
+      "subSubjectId": "series",
+      "title": "Wrong Number Series: Spotting the Imposter",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Wrong Number Series: Spotting the Imposter A wrong-number series looks exactly like a number series — same arithmetic, algebraic, or geometric engine — except one term breaks the rule. The exam asks not for the next term but for the imposter . Same pattern-detection skills, one new reflex: when you find the rule, run it across every term, because the trap is usually a near-miss planted where you least expect it. Two habits separate wrong-number questions from next-term questions: first, you must"
+    },
+    {
       "lessonId": "reverse-syllogism-and-new-patterns",
       "subjectId": "reasoning",
       "subSubjectId": "syllogism",
@@ -2850,6 +3229,15 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Cause and Effect and Course of Action Two statements are put side by side: is the first the cause of the second, the reverse, or neither? Then a problem is described: which proposed step is a sound and feasible response? This lesson gives the decision rules for both judgement types and solves ten questions end to end. In cause and effect questions, both statements are facts — you never doubt them, you only order them. In course of action questions, both proposals are opinions — you judge them fo"
+    },
+    {
+      "lessonId": "statement-and-argument-and-inference",
+      "subjectId": "reasoning",
+      "subSubjectId": "verbal-reasoning",
+      "title": "Statement and Argument and Inference: Judging Reasons and Conclusions",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Statement and Argument and Inference: Judging Reasons and Conclusions Verbal reasoning moves from finding what a statement assumes to judging what it argues and what follows . A statement and argument question hands you a proposal — \"should exams go online?\" — plus four arguments, and asks which are strong. An inference question gives premises and asks what must be true. Both test the same muscle: separating good reasoning from persuasive-sounding noise. The examiner's ground rules: judge the ar"
     },
     {
       "lessonId": "statement-and-assumption",
@@ -2933,6 +3321,15 @@
       "content": "परिसंचरण तंत्र (Circulatory System) 1. हृदय (Heart) हृदय एक पेशीय पंप है जो रक्त को पूरे शरीर में प्रवाहित करता है। यह वक्ष गुहा (Thoracic Cavity) में, दोनों फेफड़ों के बीच, थोड़ा बायीं ओर स्थित होता है। | तथ्य | विवरण | | --- | --- | | आकार | बंद मुट्ठी के बराबर | | भार (पुरुष) | लगभग 300 ग्राम | | भार (महिला) | लगभग 250 ग्राम | | आवरण | पेरीकार्डियम (Pericardium) | | कक्ष (Chambers) | 4 — 2 अलिंद (Atria) + 2 निलय (Ventricles) | | हृदय गति (सामान्य) | 72 बार/मिनट | हृदय के धड़कने की प्रथम खोज व"
     },
     {
+      "lessonId": "digestive-system",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "पाचन तंत्र (Digestive System): भोजन से ऊर्जा तक का सफ़र",
+      "subject": "science",
+      "keywords": [],
+      "content": "पाचन तंत्र (Digestive System): भोजन से ऊर्जा तक का सफ़र एक रोटी का टुकड़ा ऊर्जा में कैसे बदलता है? मुँह से मलाशय तक लगभग 9 मीटर लंबी यात्रा में भोजन यांत्रिक रूप से कुचला जाता है, रासायनिक रूप से विभाजित होता है और अंततः रक्त में अवशोषित होकर शरीर की हर कोशिका तक पहुँचता है। यह पाठ मानव पाचन तंत्र की संरचना, एंजाइमों और अवशोषण की प्रक्रिया को परीक्षा-उपयोगी शैली में प्रस्तुत करता है। 1. पाचन तंत्र के भाग | भाग | प्रमुख कार्य | | --- | --- | | मुँह (मुख गुहा) | चबाना, लार से मिश्रण, स्वाद | | ग्र"
+    },
+    {
       "lessonId": "ecology-and-diseases",
       "subjectId": "science",
       "subSubjectId": "biology",
@@ -2951,6 +3348,15 @@
       "content": "अन्तःस्रावी तंत्र (Endocrine System) 1. परिचय (Introduction) अन्तःस्रावी तंत्र (Endocrine System) ऐसी ग्रंथियों से मिलकर बना है जो सीधे रक्त में हार्मोन (Hormones) स्रावित करती हैं (बिना किसी वाहिनी/नली के — इसीलिए इन्हें नलिकाविहीन ग्रंथियाँ / Ductless Glands भी कहते हैं)। एंडोक्राइनोलॉजी (अंतःस्रावी विज्ञान) के पिता थॉमस एडिसन (Thomas Addison) हैं — एक ब्रिटिश चिकित्सक, जिन्होंने एड्रिनल ग्रंथि से जुड़े रोग (Addison's disease) का वर्णन किया था। (ध्यान दें: यह आविष्कारक थॉमस एडिसन — Thomas Edis"
     },
     {
+      "lessonId": "excretory-system",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "उत्सर्जन तंत्र (Excretory System)",
+      "subject": "science",
+      "keywords": [],
+      "content": "उत्सर्जन तंत्र (Excretory System) 1. परिचय (Introduction) उत्सर्जन (Excretion) शरीर में चयापचय (Metabolism) से बने अपशिष्ट एवं हानिकारक पदार्थों को शरीर से बाहर निकालने की प्रक्रिया है। यह कार्य उत्सर्जन तंत्र (Excretory System) द्वारा किया जाता है। शरीर से उत्सर्जन के मुख्य मार्ग: | अंग | उत्सर्जित अपशिष्ट | | --- | --- | | वृक्क (Kidneys) | यूरिया, यूरिक अम्ल, जल, लवण (मूत्र द्वारा) | | त्वचा | पसीने के साथ जल, लवण, यूरिया | | फेफड़े | CO₂ एवं जलवाष्प | | यकृत (Liver) | पित्त वर्णक (Bilirubin)"
+    },
+    {
       "lessonId": "genetics-and-evolution",
       "subjectId": "science",
       "subSubjectId": "biology",
@@ -2960,6 +3366,15 @@
       "content": "आनुवंशिकी एवं विकास (Genetics and Evolution) आनुवंशिकी (Genetics) बताती है कि जीव अपने लक्षण संतानों तक कैसे पहुँचाते हैं, और विकास (Evolution) बताता है कि इन्हीं लक्षणों में पीढ़ी-दर-पीढ़ी परिवर्तन से नई प्रजातियाँ कैसे जन्म लेती हैं। मेंडल की मटर के खेत से लेकर डार्विन के गैलापागोस द्वीप तक — यह पाठ उस पूरी यात्रा के सभी परीक्षा-बिंदु समेटता है। 1. मूल परिभाषाएँ (Basic Definitions) वंशागति (Heredity) — जनक (Parents) से संतान (Offspring) तक लक्षणों का स्थानांतरण। विभिन्नता (Variation) — एक ही प"
     },
     {
+      "lessonId": "immune-system",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "प्रतिरक्षा तंत्र (Immune System): शरीर की रक्षा-व्यवस्था",
+      "subject": "science",
+      "keywords": [],
+      "content": "प्रतिरक्षा तंत्र (Immune System): शरीर की रक्षा-व्यवस्था रोज़ाना हज़ारों जीवाणु, विषाणु और विषैले पदार्थ शरीर पर आक्रमण करते हैं, फिर भी हम स्वस्थ रहते हैं। यह चमत्कार प्रतिरक्षा तंत्र (Immune System) का है — शरीर की वह सेना जो हमें रोगों से बचाती है, रोग-कारकों को पहचानती है और याद रखती है। टीकाकरण इसी स्मृति पर आधारित है। 1. प्रतिरक्षा के प्रकार जन्मजात प्रतिरक्षा (Innate Immunity) जन्म से ही प्राप्त, अ-विशिष्ट एवं तुरंत क्रियाशील रक्षा है, जबकि अर्जित प्रतिरक्षा (Acquired Immunity) जीवनकाल मे"
+    },
+    {
       "lessonId": "lesson1",
       "subjectId": "science",
       "subSubjectId": "biology",
@@ -2967,6 +3382,24 @@
       "subject": "science",
       "keywords": [],
       "content": "The Characteristics of Life What separates a living thing from a rock, a flame, or a crystal? Biologists answer with a checklist of processes — not a single magic property. 1. The Seven Characteristics Something is generally considered alive when it shows all of the following: | Characteristic | Meaning | Example | | --- | --- | --- | | Movement | Change of position or internal motion | Plants grow toward light | | Respiration | Releasing energy from food | Mitochondria burning glucose | | Sensi"
+    },
+    {
+      "lessonId": "microbiology",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "सूक्ष्मजीव विज्ञान (Microbiology)",
+      "subject": "science",
+      "keywords": [],
+      "content": "सूक्ष्मजीव विज्ञान (Microbiology) 1. परिचय (Introduction) सूक्ष्मजीव (Microorganisms) वे जीव हैं जो नंगी आँख से नहीं दिखते और केवल सूक्ष्मदर्शी (Microscope) द्वारा देखे जा सकते हैं। इनके अध्ययन को सूक्ष्मजीव विज्ञान (Microbiology) कहते हैं। एंटोनी वॉन ल्यूवेनहॉक (Antonie van Leeuwenhoek) ने सर्वप्रथम (1674) स्वनिर्मित सूक्ष्मदर्शी से सूक्ष्मजीव देखे — इसीलिए इन्हें 'सूक्ष्मजीव विज्ञान का जनक' कहा जाता है। लुई पाश्चर (Louis Pasteur) ने किण्वन एवं जीवाणु सिद्धांत पर कार्य किया, जबकि रॉबर्ट कोच (Ro"
+    },
+    {
+      "lessonId": "nervous-system",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "तंत्रिका तंत्र (Nervous System)",
+      "subject": "science",
+      "keywords": [],
+      "content": "तंत्रिका तंत्र (Nervous System) 1. परिचय (Introduction) तंत्रिका तंत्र (Nervous System) शरीर का वह नियंत्रण तंत्र है जो उद्दीपन (Stimulus) को ग्रहण करके, उसकी सूचना केंद्रीय तंत्रिका तंत्र तक पहुँचाकर तथा प्रतिक्रिया (Response) देकर — शरीर के सभी अंगों का तालमेल (Coordination) बनाए रखता है। तंत्रिका ऊतक पर महत्वपूर्ण कार्य हेतु कैमिलो गॉल्जी (Camillo Golgi) एवं सैंटियागो रेमन वाई काजाल (Santiago Ramón y Cajal) को 1906 का शरीरक्रिया विज्ञान (Physiology) का नोबेल पुरस्कार दिया गया। 2. तंत्रिका तंत"
     },
     {
       "lessonId": "nutrition-and-vitamins",
@@ -3005,6 +3438,15 @@
       "content": "श्वसन तंत्र (Respiratory System) 1. श्वसन का परिचय (Introduction) श्वसन (Respiration) वह प्रक्रिया है जिसके द्वारा शरीर की कोशिकाएँ भोजन (ग्लूकोज़) को ऑक्सीजन की सहायता से तोड़कर ऊर्जा (ATP) प्राप्त करती हैं। श्वासोच्छ्वास (Breathing) एक भौतिक प्रक्रिया है (फेफड़ों में हवा का अंदर-बाहर होना), जबकि श्वसन (Respiration) एक जैव-रासायनिक प्रक्रिया है (कोशिका स्तर पर ऊर्जा निर्माण)। 2. श्वसन तंत्र के अंग (Organs of the Respiratory System) नासाद्वार (Nostrils) → ग्रसनी (Pharynx) → स्वरयंत्र (Larynx) → "
     },
     {
+      "lessonId": "sense-organs",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "ज्ञानेंद्रियाँ (Sense Organs): बाहरी जगत से संपर्क के द्वार",
+      "subject": "science",
+      "keywords": [],
+      "content": "ज्ञानेंद्रियाँ (Sense Organs): बाहरी जगत से संपर्क के द्वार संसार को हम जिन पाँच द्वारों से जानते हैं वे हैं ज्ञानेंद्रियाँ — नेत्र देखते हैं, कर्ण सुनते हैं, त्वचा स्पर्श बताती है, जिह्वा स्वाद देती है और नासिका सूँघती है। हर इंद्रिय एक ग्राही (Receptor) है जो उद्दीपन को तंत्रिका आवेग में बदलती है — परीक्षाओं में नेत्र व कर्ण की संरचना सर्वाधिक पूछी जाती है। 1. ग्राहियों के प्रकार | ग्राही | उद्दीपन | स्थान | | --- | --- | --- | | प्रकाशग्राही (Photoreceptors) | प्रकाश | नेत्र — शंकु व दण्ड कोश"
+    },
+    {
       "lessonId": "skeleton-and-muscular-system",
       "subjectId": "science",
       "subSubjectId": "biology",
@@ -3012,6 +3454,15 @@
       "subject": "science",
       "keywords": [],
       "content": "कंकाल तंत्र एवं पेशीय तंत्र (Skeletal & Muscular System) 1. कंकाल तंत्र का परिचय (Introduction to the Skeletal System) कंकाल तंत्र (Skeletal System) शरीर की हड्डियों तथा उपास्थियों (Cartilages) से मिलकर बनता है। यह शरीर को आकार, आधार तथा सुरक्षा प्रदान करता है। अध्ययन: ऑस्टियोलॉजी (Osteology) । एक नवजात शिशु में लगभग 300 हड्डियाँ होती हैं, परंतु वृद्धि के दौरान कई हड्डियाँ आपस में जुड़ जाती हैं, जिससे वयस्क शरीर में अंततः 206 हड्डियाँ शेष रहती हैं। 2. वयस्क मानव कंकाल — 206 हड्डियाँ (The Adult H"
+    },
+    {
+      "lessonId": "tissues",
+      "subjectId": "science",
+      "subSubjectId": "biology",
+      "title": "ऊतक (Tissues) — पौधों एवं जंतुओं में",
+      "subject": "science",
+      "keywords": [],
+      "content": "ऊतक (Tissues) — पौधों एवं जंतुओं में 1. परिचय (Introduction) समान उत्पत्ति, समान संरचना एवं समान कार्य वाली कोशिकाओं के समूह को ऊतक (Tissue) कहते हैं। विभिन्न ऊतक मिलकर अंग (Organ) बनाते हैं और अंग मिलकर अंग-तंत्र (Organ System) । ऊतक विज्ञान (Histology) के जनक मार्सेलो माल्पीघी (Marcello Malpighi) माने जाते हैं। 'टिश्यू' शब्द का प्रयोग सर्वप्रथम एम. बिशॉ (M. Bichat) ने किया। 2. पादप ऊतक (Plant Tissues) (क) विभज्योतक ऊतक (Meristematic Tissue) - विशेषता: सक्रिय विभाजन की क्षमता, पतली प्राथमिक भित"
     },
     {
       "lessonId": "acids-bases-and-salts",
@@ -3050,6 +3501,15 @@
       "content": "Chemical Bonding: How Atoms Combine Atoms bond to shed energy and reach noble-gas outer shells. The bond type chosen — ionic, covalent, metallic, or merely intermolecular — fixes melting point, conductivity, and shape. 1. Why Bonds Form A chemical bond is a lasting attraction between atoms that lowers the system's energy. The driving rule is the octet rule : atoms gain, lose, or share electrons to complete an outer shell. Lewis dot symbols track only valence electrons — Na has one dot, Cl seven "
     },
     {
+      "lessonId": "chemical-kinetics",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Chemical Kinetics: The Study of Reaction Rates",
+      "subject": "science",
+      "keywords": [],
+      "content": "Chemical Kinetics: The Study of Reaction Rates Thermodynamics tells us whether a reaction can happen; kinetics tells us how fast it will. The rusting of iron and the explosion of gunpowder are both spontaneous — one takes years, the other microseconds. Chemical kinetics explains that gap, and gives chemists the levers to speed reactions up or slow them down. 1. Rate of a Reaction The rate of a reaction is the change in concentration of a reactant or product per unit time. It is always positive, "
+    },
+    {
       "lessonId": "chemical-reactions-and-equilibrium",
       "subjectId": "science",
       "subSubjectId": "chemistry",
@@ -3057,6 +3517,15 @@
       "subject": "science",
       "keywords": [],
       "content": "Chemical Reactions: Types, Rates, and Equilibrium Every change around you — rusting, breathing, digesting — is a chemical equation in motion. Learn the types, what speeds them up, and how reversible reactions settle into balance. 1. The Main Reaction Types | Type | Pattern | Example | | --- | --- | --- | | Combination | A + B → AB | CaO + H₂O → Ca(OH)₂ + heat | | Decomposition | AB → A + B | CaCO₃ → CaO + CO₂ (on heating) | | Displacement | A + BC → AC + B | Fe + CuSO₄ → FeSO₄ + Cu | | Double di"
+    },
+    {
+      "lessonId": "coordination-compounds",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Coordination Compounds: The Chemistry of Metal Complexes",
+      "subject": "science",
+      "keywords": [],
+      "content": "Coordination Compounds: The Chemistry of Metal Complexes Dissolve white copper sulfate in water and a blue solution appears; add ammonia and it deepens to royal ink-blue. The colour changes because water and ammonia cluster around the copper ion as ligands , forming a coordination compound. From haemoglobin carrying oxygen to chlorophyll harvesting sunlight to the anti-cancer drug cisplatin, metal complexes run the chemistry of life and industry alike. 1. Werner's Revolution: Two Kinds of Valenc"
     },
     {
       "lessonId": "electrochemistry",
@@ -3122,6 +3591,60 @@
       "content": "The Periodic Table: Order from Atomic Number Sixty-three known elements defied order until Mendeleev arranged them by mass — and Moseley later corrected the key to atomic number. The table's shape now predicts how every element behaves. 1. From Triads to the Modern Law | Attempt | Scientist (Year) | Idea | Why it fell short | | --- | --- | --- | --- | | Triads | Döbereiner (1817) | middle element's mass ≈ mean of the other two (Li 7, Na 23, K 39) | only a handful of triads worked | | Law of octa"
     },
     {
+      "lessonId": "polymers-and-biomolecules",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Polymers and Biomolecules: The Chemistry of Giants",
+      "subject": "science",
+      "keywords": [],
+      "content": "Polymers and Biomolecules: The Chemistry of Giants The biggest molecules we meet daily — plastics, proteins, DNA, starch — are all polymers: small units chained into giants. This lesson covers how synthetic plastics are built and classified, then tours the four families of molecules that make life possible. 1. What Is a Polymer? A polymer is a giant molecule built from repeated small units ( monomers ) joined into a chain, like paper clips linked one after another. Polyethylene is thousands of e"
+    },
+    {
+      "lessonId": "solutions-and-concentration",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Solutions and Concentration: The Chemistry of Mixtures",
+      "subject": "science",
+      "keywords": [],
+      "content": "Solutions and Concentration: The Chemistry of Mixtures Almost everything we drink, inject, and clean with is a solution — one substance spread evenly through another. This lesson covers how solutions form, the many ways chemists express \"how much is dissolved\", and why dissolving things changes boiling and freezing points. 1. What Is a Solution? A solution is a homogeneous mixture of two or more substances — uniform throughout, with particles of size < 1 nm that never settle. The solute is the s"
+    },
+    {
+      "lessonId": "states-of-matter-and-gas-laws",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "States of Matter and the Gas Laws: How Particles Fill Their World",
+      "subject": "science",
+      "keywords": [],
+      "content": "States of Matter and the Gas Laws: How Particles Fill Their World Matter organises itself into states — solid, liquid, gas, and the exotic plasma — by balancing the pull of intermolecular attraction against the energy of motion. Gases are the simplest state to describe mathematically, and their laws powered the industrial revolution's steam engines. 1. The Three Familiar States | Property | Solid | Liquid | Gas | | --- | --- | --- | --- | | Shape | Fixed | Takes container's shape | Fills contain"
+    },
+    {
+      "lessonId": "thermodynamics-and-thermochemistry",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Thermodynamics and Thermochemistry: Energy Bookkeeping in Chemistry",
+      "subject": "science",
+      "keywords": [],
+      "content": "Thermodynamics and Thermochemistry: Energy Bookkeeping in Chemistry Every chemical change either stores or releases energy, and the science that tracks it is thermodynamics. Why does a match release heat while an instant cold pack absorbs it? Why do some reactions run forward spontaneously while others need constant pushing? The answers live in three laws and one small equation, $\\Delta G = \\Delta H - T\\Delta S$, the most useful inequality in chemistry. 1. Systems, Surroundings, and State Functi"
+    },
+    {
+      "lessonId": "circular-and-rotational-motion",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Circular and Rotational Motion: Motion That Turns",
+      "subject": "science",
+      "keywords": [],
+      "content": "Circular and Rotational Motion: Motion That Turns Motion is not always straight-line. Objects loop loops (circular motion) and spin about an axis (rotational motion) — from a planet orbiting the Sun to a ceiling fan's blades. This lesson builds the vocabulary, the forces, and the conservation laws for both. 1. Describing Rotation: Angular Quantities A body moving in a circle is described with angles instead of distances. Let the radius be $r$ and the angle swept be $\\theta$. | Quantity | Symbol "
+    },
+    {
+      "lessonId": "elasticity-surface-tension-and-viscosity",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Elasticity, Surface Tension, and Viscosity: Mechanical Properties of Matter",
+      "subject": "science",
+      "keywords": [],
+      "content": "Elasticity, Surface Tension, and Viscosity: Mechanical Properties of Matter Bridges sway in wind, insects walk on ponds, and honey pours slowly. Three distinct properties of matter answer for all of these: solids resist deformation (elasticity), liquid surfaces shrink like stretched skin (surface tension), and fluid layers drag on each other (viscosity). This lesson assembles the three into one working toolkit. 1. Stress and Strain When a body is deformed by an external force, internal restoring"
+    },
+    {
       "lessonId": "electricity-and-magnetism",
       "subjectId": "science",
       "subSubjectId": "physics",
@@ -3129,6 +3652,15 @@
       "subject": "science",
       "keywords": [],
       "content": "Electricity and Magnetism: Charges, Currents, and Fields Static charge, flowing current, and magnetic fields are one story. This lesson runs from Coulomb to Ohm to Faraday, ending in the circuits wired through your home. 1. Electric Charge and Static Electricity Electric charge comes in two kinds; like charges repel and unlike charges attract. Charge can neither be created nor destroyed — only transferred, as when rubbing a comb through dry hair. Coulomb's law says the force between two charges "
+    },
+    {
+      "lessonId": "electromagnetic-waves",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Electromagnetic Waves: The Spectrum That Carries the Modern World",
+      "subject": "science",
+      "keywords": [],
+      "content": "Electromagnetic Waves: The Spectrum That Carries the Modern World Light, radio, X-rays, and microwaves are all the same physical thing — electric and magnetic fields oscillating together, racing through vacuum at the speed of light. This lesson maps the full electromagnetic spectrum and what each band does for us. 1. What Is an Electromagnetic Wave? An electromagnetic (EM) wave is a self-sustaining pair of oscillating fields — electric and magnetic — perpendicular to each other and to the direct"
     },
     {
       "lessonId": "fluids-and-pressure",
@@ -3194,6 +3726,24 @@
       "content": "Modern Physics: Quanta, Atoms, and Nuclei Around 1900 physics changed gears: energy arrived in lumps called quanta, light began to behave like particles, and the nucleus gave up radioactivity, fission, and fusion. This lesson follows the quantum idea from Planck's equation to E = mc² and the electron microscope. 1. The Quantum Idea In 1900 Max Planck proposed that matter emits or absorbs energy not continuously but in packets called quanta . The energy of one quantum is $E = h\\nu$ where ν is the"
     },
     {
+      "lessonId": "semiconductors-and-electronics",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Semiconductors and Electronics: From Doped Silicon to Logic Gates",
+      "subject": "science",
+      "keywords": [],
+      "content": "Semiconductors and Electronics: From Doped Silicon to Logic Gates Every computer, phone, and charger is built from one idea: a material whose conductivity can be dialled between conductor and insulator. This lesson follows that idea from doped silicon through diodes and transistors to the logic gates that compute. 1. Conductors, Insulators, Semiconductors The difference is the band gap — the energy an electron needs to jump from the bound valence band to the free conduction band. | Material | Ba"
+    },
+    {
+      "lessonId": "simple-harmonic-motion",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Simple Harmonic Motion: The Physics of Oscillation",
+      "subject": "science",
+      "keywords": [],
+      "content": "Simple Harmonic Motion: The Physics of Oscillation A pendulum swings, a guitar string hums, a suspension bridge shivers in the wind — all are oscillations. The simplest, purest kind is simple harmonic motion (SHM) : to-and-fro movement where the restoring force grows in exact proportion to the displacement. 1. What Makes Motion Harmonic? Motion is simple harmonic when the restoring force (or acceleration) is directly proportional to the displacement from the mean position and always directed tow"
+    },
+    {
       "lessonId": "space-and-defence-technology",
       "subjectId": "science",
       "subSubjectId": "physics",
@@ -3210,6 +3760,15 @@
       "subject": "science",
       "keywords": [],
       "content": "Units and Measurement: The Language of Physics Every physical statement pairs a number with a unit. This lesson assembles the toolkit — SI base units, prefixes, significant figures, dimensional analysis, and errors. 1. Why Units Matter A number without a unit is half a measurement — a wire \"10 long\" could be 10 millimetres or 10 metres. In 1999 NASA lost the Mars Climate Orbiter to a metric–imperial mix-up between its teams. A physical quantity is any measurable property written as a number toge"
+    },
+    {
+      "lessonId": "wave-optics",
+      "subjectId": "science",
+      "subSubjectId": "physics",
+      "title": "Wave Optics: Interference, Diffraction, and Polarisation",
+      "subject": "science",
+      "keywords": [],
+      "content": "Wave Optics: Interference, Diffraction, and Polarisation Light bends around razor blades, oil films glow with rainbow colours, and polaroid sunglasses cut glare from water. None of this makes sense if light were only a stream of particles. Wave optics explains what ray optics cannot — how light waves overlap, spread, and vibrate, and why these effects decide the design of telescopes, microscopes, and anti-glare coatings. 1. Huygens' Principle and the Nature of Wavefronts Huygens' principle state"
     },
     {
       "lessonId": "waves-and-sound",
