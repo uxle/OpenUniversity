@@ -1,0 +1,145 @@
+# Mirror and Water Images
+
+> Hold a figure to a mirror and every point jumps across an invisible
+> axis; flip it face-down in water and every point flips across a
+> horizontal line. Two reflections, one idea: **each point moves to
+> an equal distance on the opposite side of the axis**. Master the
+> axes and letters, and these become the fastest marks in the
+> non-verbal section.
+
+## 1. The Two Reflections
+
+[definition]
+A **mirror image** reflects a figure across a **vertical axis**
+(the mirror stands upright): left becomes right, right becomes left;
+top and bottom stay. A **water image** reflects across a
+**horizontal axis** (the water surface): top becomes bottom, bottom
+becomes top; left and right stay.
+[/definition]
+
+| | Mirror (vertical axis) | Water (horizontal axis) |
+| --- | --- | --- |
+| Left–right | swapped | unchanged |
+| Top–bottom | unchanged | swapped |
+
+[important]
+The memory hook: a mirror flips **across**, water flips **along** —
+but never both. If an option has both left-right AND top-bottom
+inverted, it is a 180° rotation, not a reflection, and is the
+classic wrong answer planted in every question.
+[/important]
+
+## 2. Mirror Images of Letters and Numbers
+
+Letters that look the same in a vertical mirror (their mirror image
+is unchanged): **A, H, I, M, O, T, U, V, W, X, Y**.
+
+Letters that do NOT mirror to themselves (they turn into reversed
+shapes): **B, C, D, E, F, G, J, K, L, N, P, Q, R, S, Z** — the
+right-facing parts (B's bumps, L's foot, K's arms) swing to the
+other side.
+
+Digits unchanged in a vertical mirror: **0, 1, 8** (1 only in
+simple fonts). Every other digit becomes a *reversed* version of
+itself — a backwards 2, a backwards 3, and so on. Careful: mirrored
+digits are NOT rotations (6 does not become 9 in a mirror); exam
+options deliberately include the rotated twins as traps.
+
+**Worked example.** The mirror image of **MOM** is **MOM** — M, O
+and M are each self-mirroring, and the sequence is palindromic.
+But **PAN** mirrors to a visually reversed **NAP**: each letter is
+reflected AND the letter order reverses — two changes to track,
+not one. Reflect letter by letter, then read the sequence
+backwards.
+
+## 3. Water Images of Letters and Numbers
+
+In idealised block form, the letters with horizontal (top-bottom)
+symmetry — **B, C, D, E, H, I, K, O, X** — keep their water images
+unchanged. The clear changers are **A, F, L, P, T, U, V, Y**, whose
+tops and bottoms swap; each still reads as a flipped version of
+itself, never as a different letter.
+
+Among digits, **0, 1, 8** survive the water flip unchanged, while
+3, 5, 7 and 9 flip into near-unrecognisable shapes — the flipped 9
+resembles a misshapen 6, which examiners exploit. When in doubt,
+write the character on paper and fold along the horizontal axis.
+
+## 4. Clocks and Time in Mirrors
+
+[definition]
+Mirror-clock shortcut: the mirror time reads **11:60 − H:MM** (or
+equivalently 12:00 − time). Between 11 and 1 o'clock mirrors, use
+**23:60 − time** when needed. Water-image time: **18:30 − H:MM**
+(17:90 in some books for hour-precision) — i.e. subtract from
+6:30/6:90.
+[/definition]
+
+**Worked example.** A clock shows 4:30. Its mirror image shows
+11:60 − 4:30 = 7:30. Check: 4:30 + 7:30 = 12:00 — mirror times of a
+12-hour dial always sum to 11:60 (i.e., 12 hours minus the
+reflection offset).
+
+**Worked example (water).** The water image of 4:30: subtract from
+18:30 → 14:00 → on a 12-hour dial, 2:00. (Top of the clock becomes
+the bottom: 12↔6, 3↔9 swap across the horizontal.)
+
+## 5. Figures: Reading the Reflection
+
+For line drawings, reflect piece by piece:
+
+```text
+Figure:               Mirror image:
+   |\                    /|
+   | \                   / |
+   |__\                 /__|
+   (arrow points          (arrow points
+    bottom-right)          bottom-left)
+```
+
+Method:
+
+1. Find the axis the question states (usually the mirror is drawn
+   to the right of the figure — axis vertical).
+2. Flip the most asymmetric feature first (an arrowhead, a dot, a
+   tick-mark) — it eliminates two options instantly.
+3. Check distances: gaps preserved, sizes preserved, angles
+   preserved. Reflection never resizes.
+4. Count elements in each region if the figure has internal lines —
+   counts must match region by region.
+
+## 6. Combined Operations
+
+Some questions reflect twice: mirror then water. **Mirror + water
+in succession equals a 180° rotation** — a fact worth knowing
+because options often include the intermediate (mirror-only) state
+as a trap.
+
+Sequence questions show a figure and its reflection across changing
+axes: alternating vertical/horizontal axes generate the pattern
+mirror → rotate180 → mirror → rotate180...
+
+## 7. Traps and Tactics
+
+- **Rotation traps:** a 180° rotated option (both flips) when only
+  the mirror is asked; a 90° rotated option for water questions.
+- **Rebuild traps:** one small internal mark correctly reflected but
+  the outline redrawn wrong (or vice versa) — verify outline and
+  detail separately.
+- **Letter-order traps:** in word images, the ORDER of letters also
+  reverses (MOM stays MOM only because each letter mirrors and the
+  sequence is palindromic); **PAN** mirrors to a visually reversed
+  **NAP** — reflect each letter AND read the sequence backwards.
+- **Time-saving order:** eliminate by (1) obvious wrong axis, (2)
+  the most asymmetric detail, (3) internal counts.
+
+## 8. Summary
+
+Mirror = flip across a vertical line (swap left–right); water =
+flip across a horizontal line (swap top–bottom); both together =
+180° rotation. For letters, memorise the self-mirroring set
+(A H I M O T U V W X Y) and treat everything else as reversed.
+Clocks: mirror time = 11:60 − actual; water time = 18:30 − actual.
+For figures, flip the most asymmetric detail first, then verify
+counts — reflection preserves every distance, area and angle except
+orientation.

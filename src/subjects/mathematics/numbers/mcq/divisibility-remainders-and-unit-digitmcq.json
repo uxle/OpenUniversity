@@ -1,0 +1,76 @@
+{
+  "lessonId": "divisibility-remainders-and-unit-digit",
+  "title": "Divisibility, Remainders and Unit Digits",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The number 4318560 is tested for divisibility by 88. The correct conclusion is:",
+      "options": ["Divisible by 8 but not by 11", "Divisible by 88", "Divisible by 11 but not by 8", "Divisible by neither"],
+      "correct": 0,
+      "rationale": "88 = 8 x 11. Last three digits 560 = 8 x 70, so the 8-test passes. For 11: (4+1+5+0) - (3+8+6) = 10 - 17 = -7, not a multiple of 11. So it fails for 11 and hence for 88."
+    },
+    {
+      "id": 2,
+      "question": "What digit should replace * so that 2739* is divisible by 9?",
+      "options": ["6", "3", "9", "0"],
+      "correct": 0,
+      "rationale": "The digit sum must be a multiple of 9. Existing digits sum to 2+7+3+9 = 21; the next multiple of 9 is 27, so * = 6."
+    },
+    {
+      "id": 3,
+      "question": "Which of these numbers is divisible by 11?",
+      "options": ["25396", "48345", "98765", "909091"],
+      "correct": 1,
+      "rationale": "For 11, the difference between the sums of alternate digits must be 0 or a multiple of 11. 48345: (4+3+5) - (8+4) = 0, so 48345 = 11 x 4395. The others: 25396 gives 11 - 14 = -3, 98765 gives 22 - 19 = 3, and 909091 gives 27 - 1 = 26 - none a multiple of 11."
+    },
+    {
+      "id": 4,
+      "question": "The remainder when 7^103 is divided by 5 is:",
+      "options": ["3", "2", "4", "1"],
+      "correct": 0,
+      "rationale": "Powers of 7 end in the cycle 7, 9, 3, 1 of length 4. 103 = 4x25 + 3, so the last digit is the 3rd member: 3. A number ending in 3 leaves remainder 3 when divided by 5."
+    },
+    {
+      "id": 5,
+      "question": "The remainder when (123 + 456 x 789) is divided by 6 is:",
+      "options": ["3", "1", "0", "5"],
+      "correct": 0,
+      "rationale": "Reduce each number first: 123 = 6x20 + 3 leaves 3; 456 is a multiple of 6 (digit sum 15, even last digit) leaves 0; 789 leaves 3. Then 3 + 0 x 3 = 3 (mod 6)."
+    },
+    {
+      "id": 6,
+      "question": "The unit digit of 3^34 is:",
+      "options": ["9", "7", "3", "1"],
+      "correct": 0,
+      "rationale": "The cycle for 3 is 3, 9, 7, 1 with length 4. Since 34 mod 4 = 2, take the 2nd member of the cycle: 9."
+    },
+    {
+      "id": 7,
+      "question": "The unit digit of (7^95 x 3^58) is:",
+      "options": ["7", "3", "1", "9"],
+      "correct": 0,
+      "rationale": "95 mod 4 = 3, and the 3rd member of 7's cycle (7,9,3,1) is 3. 58 mod 4 = 2, and the 2nd member of 3's cycle (3,9,7,1) is 9. Then 3 x 9 = 27 ends in 7."
+    },
+    {
+      "id": 8,
+      "question": "The remainder when 8^100 is divided by 9 is:",
+      "options": ["1", "8", "0", "4"],
+      "correct": 0,
+      "rationale": "8 is -1 (mod 9), so 8^100 = (-1)^100 = 1 (mod 9). Rewriting the base as a small negative remainder makes even powers collapse instantly."
+    },
+    {
+      "id": 9,
+      "question": "A number is divisible by 12. It must be:",
+      "options": ["Divisible by both 3 and 4", "Divisible by 2 and 6", "Divisible by 3 and 6", "Even and digit sum divisible by 3, which is sufficient"],
+      "correct": 0,
+      "rationale": "12 = 3 x 4 with 3 and 4 coprime, so divisibility by both 3 and 4 guarantees divisibility by 12. The 2-and-6 pair is not coprime (2 x 6 = 12 but they share factor 2), so passing those two tests does not suffice."
+    },
+    {
+      "id": 10,
+      "question": "The remainder when 6^83 is divided by 10 is:",
+      "options": ["6", "4", "2", "8"],
+      "correct": 0,
+      "rationale": "Division by 10 asks only for the last digit, and every power of 6 ends in 6 (a one-element cycle). So the remainder is 6. Spotting the fixed last digit first avoids all cycle machinery."
+    }
+  ]
+}

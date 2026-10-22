@@ -1,0 +1,13 @@
+# Software Engineering
+
+@subject {
+  id: software-engineering
+  parent: computer-science
+  title: "Software Engineering"
+  description: "How large software is planned, built, tested, and maintained — process models, requirements, and quality assurance."
+}
+
+@lessons {
+  software-development-life-cycle
+  software-testing-and-quality-assurance
+}

@@ -1,0 +1,137 @@
+# The Software Development Life Cycle: From Idea to Maintenance
+
+> Writing a 100-line script needs inspiration; delivering a
+> million-line system needs engineering discipline. The Software
+> Development Life Cycle (SDLC) is that discipline — a sequence of
+> phases that turns a vague need into working, maintained software
+> while keeping cost, schedule and quality under control.
+
+## 1. Why a Process at All
+
+[definition]
+The **Software Development Life Cycle (SDLC)** is a structured
+sequence of phases — requirement analysis, design, implementation,
+testing, deployment and maintenance — that guides a software project
+from conception to retirement. Its purpose is predictability: catching
+mistakes early, when they are cheapest to fix.
+[/definition]
+
+The economics drive everything: an error that costs 1 unit to fix
+during requirements can cost 10× during coding, 100× during testing
+and 1000× after release. Every process model below is a different
+strategy for moving error discovery toward the cheap end.
+
+## 2. The Core Phases
+
+| Phase | Central question | Key outputs |
+| --- | --- | --- |
+| 1. Requirement analysis | What must the system do? | Software Requirement Specification (SRS) |
+| 2. Design | How will it do it? | Architecture, data models, interface designs (HLD + LLD) |
+| 3. Implementation | Build it | Source code, unit-tested modules |
+| 4. Testing | Does it work correctly? | Test reports, defect logs |
+| 5. Deployment | Deliver it | Installed/launched product, user training |
+| 6. Maintenance | Keep it working | Patches, enhancements, retirements |
+
+Two requirements vocabularies matter in exams: **functional**
+requirements describe what the system does ("user can reset
+password"), while **non-functional** requirements constrain how well
+it does it (performance, security, usability, scalability).
+
+## 3. The Waterfall Model
+
+Phases flow strictly downward, each finishing before the next begins,
+with signed-off documents at every step.
+
+- **Strengths:** simple, well-documented, easy to manage; suits stable,
+  well-understood domains (regulated industries, embedded firmware).
+- **Weaknesses:** late feedback — the customer sees working software
+  only at the end, and a wrong early assumption is catastrophically
+  expensive to unwind.
+
+[example]
+A payments switch for a bank regulator might choose Waterfall because
+every requirement must be frozen and audited. A social-media startup
+would not — its features change faster than documents can be signed.
+[/example]
+
+## 4. Iterative and Incremental Models
+
+**Iterative** models revisit the same phases repeatedly, refining the
+product each cycle. **Incremental** models deliver the system in
+usable slices — the first increment might implement only login and
+profile, the next adds payments.
+
+- **Spiral model (Boehm):** each loop through the spiral covers
+  planning, risk analysis, engineering and evaluation. Its signature
+  is **explicit risk handling at every iteration** — best for large,
+  high-risk projects.
+- **RAD (Rapid Application Development):** 60–90 day cycles, heavy
+  user involvement, reusable components and prototyping; needs strong
+  staffing and modularised systems.
+- **Prototyping:** build a quick throwaway model to clarify unclear
+  requirements before committing to real development.
+
+## 5. Agile and the V-Model
+
+[definition]
+**Agile** embraces changing requirements through short, fixed-length
+iterations (sprints), continuous customer collaboration and working
+software as the primary measure of progress. The **Agile Manifesto**
+values individuals and interactions, working software, customer
+collaboration and responding to change — each over rigid processes,
+comprehensive documentation, contract negotiation and following a
+plan.
+[/definition]
+
+Scrum operationalises agile with three roles (product owner, scrum
+master, developers), five events (sprint, planning, daily stand-up,
+review, retrospective) and three artefacts (product backlog, sprint
+backlog, increment). Kanban limits work-in-progress on a visible
+board instead of time-boxing.
+
+The **V-Model** pairs each development phase with a matching test
+level:
+
+| Development phase | Verified by |
+| --- | --- |
+| Requirements | Acceptance testing |
+| System design | System testing |
+| High-level design | Integration testing |
+| Low-level design | Unit testing |
+| Implementation | coding, executed alongside unit tests |
+
+[important]
+A favourite exam distinction: **verification** asks "are we building
+the product right?" (matching specifications — reviews, inspections);
+**validation** asks "are we building the right product?" (matching
+user needs — actual testing). The V-Model is strong on verification;
+agile's customer collaboration strengthens validation.
+[/important]
+
+## 6. Maintenance: The Longest Phase
+
+More money is spent maintaining software than building it — typically
+60–80% of lifetime cost. Four categories:
+
+1. **Corrective** — fixing discovered defects.
+2. **Adaptive** — adjusting to changed environments (new OS, new tax
+   rules).
+3. **Perfective** — improving performance or adding refinements
+   users ask for; the largest share in practice.
+4. **Preventive** — refactoring and paying down technical debt to
+   make future change cheaper.
+
+## 7. Choosing a Model
+
+| Situation | Best-fit model |
+| --- | --- |
+| Fixed, regulated, well-understood needs | Waterfall |
+| Large project dominated by risk | Spiral |
+| Unclear requirements, need quick feedback | Prototyping |
+| Fast delivery with strong user involvement | RAD / Agile |
+| Safety-critical, contract-driven | V-Model |
+
+No model is universally correct; maturity lies in matching process to
+project volatility, risk profile and team culture. That judgment —
+not memorising diagram shapes — is what the exam questions ultimately
+probe.

@@ -4,14 +4,14 @@
       "id": "civics",
       "title": "Civics",
       "description": "The Indian Constitution and political system — its history, institutions, rights, and governing bodies.",
-      "lessonCount": 25,
+      "lessonCount": 27,
       "subSubjects": []
     },
     {
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 42,
+      "lessonCount": 47,
       "subSubjects": [
         {
           "id": "ai-reasoning",
@@ -38,6 +38,12 @@
           "lessonCount": 5
         },
         {
+          "id": "emerging-technologies",
+          "title": "Emerging Technologies",
+          "description": "Cloud platforms, machine learning, and distributed ledgers — the technologies reshaping how software is deployed and used.",
+          "lessonCount": 3
+        },
+        {
           "id": "networking",
           "title": "Networking",
           "description": "How computers communicate and exchange data across networks.",
@@ -56,6 +62,12 @@
           "lessonCount": 9
         },
         {
+          "id": "software-engineering",
+          "title": "Software Engineering",
+          "description": "How large software is planned, built, tested, and maintained — process models, requirements, and quality assurance.",
+          "lessonCount": 2
+        },
+        {
           "id": "web-development",
           "title": "Web Development",
           "description": "How the web works and how pages are built — HTML structure, CSS layout, and JavaScript interactivity.",
@@ -67,40 +79,96 @@
       "id": "economics",
       "title": "Economics",
       "description": "How individuals, businesses, and societies allocate scarce resources.",
-      "lessonCount": 21,
+      "lessonCount": 24,
       "subSubjects": []
+    },
+    {
+      "id": "general-knowledge",
+      "title": "General Knowledge",
+      "description": "Static GK for competitive exams — symbols, firsts, states, capitals, awards, sports, books, days, culture, and inventions.",
+      "lessonCount": 15,
+      "subSubjects": [
+        {
+          "id": "art-and-culture",
+          "title": "Art and Culture",
+          "description": "India's classical and folk dances, its two classical music systems, and its painting schools.",
+          "lessonCount": 2
+        },
+        {
+          "id": "awards-and-honours",
+          "title": "Awards and Honours",
+          "description": "India's civilian, gallantry and national awards, and the Nobel with the world's big prizes.",
+          "lessonCount": 2
+        },
+        {
+          "id": "books-and-authors",
+          "title": "Books and Authors",
+          "description": "The exam-staple books — from the Vedas and epics to modern Indian and world classics.",
+          "lessonCount": 1
+        },
+        {
+          "id": "important-days",
+          "title": "Important Days",
+          "description": "The national and international days every exam expects you to know.",
+          "lessonCount": 1
+        },
+        {
+          "id": "india-gk",
+          "title": "India GK",
+          "description": "National symbols, famous firsts, states and union territories, and city nicknames.",
+          "lessonCount": 4
+        },
+        {
+          "id": "science-gk",
+          "title": "Science GK",
+          "description": "Who invented or discovered what — the rapid-fire science facts of the GK paper.",
+          "lessonCount": 1
+        },
+        {
+          "id": "sports-gk",
+          "title": "Sports GK",
+          "description": "The Olympics and multi-sport events, then terms, trophies and venues across games.",
+          "lessonCount": 2
+        },
+        {
+          "id": "world-gk",
+          "title": "World GK",
+          "description": "Countries, capitals and currencies, plus the major international organizations.",
+          "lessonCount": 2
+        }
+      ]
     },
     {
       "id": "geography",
       "title": "Geography",
       "description": "The study of places, landscapes, and how people interact with them.",
-      "lessonCount": 22,
+      "lessonCount": 23,
       "subSubjects": []
     },
     {
       "id": "history",
       "title": "History",
       "description": "The study of past events and how they shaped the present.",
-      "lessonCount": 25,
+      "lessonCount": 27,
       "subSubjects": []
     },
     {
       "id": "languages",
       "title": "Languages",
       "description": "Learn the script, grammar, and structure of world languages.",
-      "lessonCount": 59,
+      "lessonCount": 62,
       "subSubjects": [
         {
           "id": "english",
           "title": "English",
           "description": "Learn English grammar — sentence structure, tenses, parts of speech, and vocabulary building.",
-          "lessonCount": 27
+          "lessonCount": 29
         },
         {
           "id": "hindi",
           "title": "Hindi",
           "description": "Learn Hindi grammar and structure, starting from the Devanagari script and the Hindi alphabet (varnmala).",
-          "lessonCount": 31
+          "lessonCount": 32
         }
       ]
     },
@@ -108,13 +176,13 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 44,
+      "lessonCount": 49,
       "subSubjects": [
         {
           "id": "algebra",
           "title": "Algebra",
           "description": "Working with symbols and variables, and the rules for manipulating them.",
-          "lessonCount": 11
+          "lessonCount": 12
         },
         {
           "id": "calculus",
@@ -126,13 +194,13 @@
           "id": "geometry",
           "title": "Geometry",
           "description": "The study of shapes, sizes, angles, and the properties of space.",
-          "lessonCount": 9
+          "lessonCount": 10
         },
         {
           "id": "numbers",
           "title": "Numbers",
           "description": "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on.",
-          "lessonCount": 12
+          "lessonCount": 15
         },
         {
           "id": "statistics",
@@ -146,14 +214,14 @@
       "id": "philosophy",
       "title": "Philosophy",
       "description": "Fundamental questions about knowledge, existence, and ethics.",
-      "lessonCount": 15,
+      "lessonCount": 18,
       "subSubjects": []
     },
     {
       "id": "reasoning",
       "title": "Reasoning",
       "description": "Logical and verbal reasoning for competitive exams — organized by topic: blood relations, clock and direction problems, coding-decoding, series, syllogism, seating arrangement, analogy/classification, counting of figures, dice reasoning, and sentence rearrangement.",
-      "lessonCount": 122,
+      "lessonCount": 128,
       "subSubjects": [
         {
           "id": "analogy-and-classification",
@@ -166,6 +234,12 @@
           "title": "Blood Relation",
           "description": "Family-tree and relationship reasoning, in 4 parts.",
           "lessonCount": 4
+        },
+        {
+          "id": "calendar",
+          "title": "Calendar",
+          "description": "Odd days, leap-year cycles, and day-of-week puzzles — finding which weekday any date falls on.",
+          "lessonCount": 1
         },
         {
           "id": "clock",
@@ -204,10 +278,22 @@
           "lessonCount": 10
         },
         {
+          "id": "input-output",
+          "title": "Input-Output",
+          "description": "Machine-input puzzles: decoding the rearrangement rule from snapshots and predicting later steps.",
+          "lessonCount": 1
+        },
+        {
           "id": "mathematical-operations",
           "title": "Mathematical Operations",
           "description": "Coded BODMAS: sign substitutions, interchange of signs and numbers, and equation repair.",
           "lessonCount": 1
+        },
+        {
+          "id": "non-verbal-reasoning",
+          "title": "Non-Verbal Reasoning",
+          "description": "Picture-based logic: mirror and water images, paper folding and cutting, embedded and completed figures.",
+          "lessonCount": 3
         },
         {
           "id": "ranking-and-order",
@@ -243,7 +329,7 @@
           "id": "verbal-reasoning",
           "title": "Verbal Reasoning",
           "description": "Statement-based reasoning for competitive exams — assumptions, conclusions, cause and effect, and course of action.",
-          "lessonCount": 5
+          "lessonCount": 6
         }
       ]
     },
@@ -251,7 +337,7 @@
       "id": "science",
       "title": "Science",
       "description": "Explore the natural world through scientific knowledge.",
-      "lessonCount": 58,
+      "lessonCount": 59,
       "subSubjects": [
         {
           "id": "biology",
@@ -263,7 +349,7 @@
           "id": "chemistry",
           "title": "Chemistry",
           "description": "The study of matter, its properties, and how it changes.",
-          "lessonCount": 18
+          "lessonCount": 19
         },
         {
           "id": "physics",

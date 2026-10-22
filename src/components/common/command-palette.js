@@ -36,6 +36,7 @@ const MAX_LESSONS = 7;
 const ACTIONS = [
   { label: "Go to Home", iconName: "house", href: "#/" },
   { label: "Browse subjects", iconName: "book-open", href: "#/subjects" },
+  { label: "Take a mock test", iconName: "clipboard-list", href: "#/mock-tests" },
   { label: "View my progress", iconName: "chart-line", href: "#/progress" },
   { label: "Open bookmarks", iconName: "bookmark", href: "#/bookmarks" },
   { label: "Open notes", iconName: "note-sticky", href: "#/notes" },

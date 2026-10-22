@@ -1,0 +1,12 @@
+# Science GK
+
+@subject {
+  id: science-gk
+  title: "Science GK"
+  parent: general-knowledge
+  description: "Who invented or discovered what — the rapid-fire science facts of the GK paper."
+}
+
+@lessons {
+  inventions-and-discoveries
+}

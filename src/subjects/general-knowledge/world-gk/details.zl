@@ -1,0 +1,13 @@
+# World GK
+
+@subject {
+  id: world-gk
+  title: "World GK"
+  parent: general-knowledge
+  description: "Countries, capitals and currencies, plus the major international organizations."
+}
+
+@lessons {
+  countries-capitals-and-currencies
+  international-organizations
+}

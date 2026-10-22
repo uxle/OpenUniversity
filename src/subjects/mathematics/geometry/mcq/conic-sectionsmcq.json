@@ -1,0 +1,76 @@
+{
+  "lessonId": "conic-sections",
+  "title": "Conic Sections: Slicing the Cone",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A plane cuts a right circular cone parallel to the slant (generator) of the cone. The section is a:",
+      "options": ["Parabola", "Circle", "Ellipse", "Hyperbola"],
+      "correct": 0,
+      "rationale": "A cut parallel to the generator produces the unbounded parabola. A horizontal cut gives a circle, a tilted-but-closed cut an ellipse, and a steep cut through both nappes a hyperbola."
+    },
+    {
+      "id": 2,
+      "question": "The eccentricity of a hyperbola is:",
+      "options": ["Greater than 1", "Between 0 and 1", "Exactly 1", "Exactly 0"],
+      "correct": 0,
+      "rationale": "e = c/a with c squared greater than a squared (since c squared = a squared + b squared), so c > a and e > 1. Circle e = 0, ellipse 0 < e < 1, parabola e = 1."
+    },
+    {
+      "id": 3,
+      "question": "For the parabola y^2 = 12x, the focus and latus rectum are:",
+      "options": ["(3, 0) and 12", "(3, 0) and 6", "(12, 0) and 3", "(0, 3) and 12"],
+      "correct": 0,
+      "rationale": "Compare with y^2 = 4ax: 4a = 12 gives a = 3. The focus is (a, 0) = (3, 0) and the latus rectum has length 4a = 12."
+    },
+    {
+      "id": 4,
+      "question": "The directrix of the parabola x^2 = 16y is:",
+      "options": ["y = -4", "y = 4", "x = -4", "x = 4"],
+      "correct": 0,
+      "rationale": "x^2 = 4ay with 4a = 16 gives a = 4: an up-opening parabola with focus (0, 4) and directrix y = -a = -4, the mirror line below the vertex."
+    },
+    {
+      "id": 5,
+      "question": "For the ellipse 9x^2 + 16y^2 = 144, the eccentricity is:",
+      "options": ["sqrt(7)/4", "3/4", "sqrt(7)/3", "4/5"],
+      "correct": 0,
+      "rationale": "Divide by 144: x^2/16 + y^2/9 = 1, so a = 4, b = 3 and c = sqrt(16 - 9) = sqrt(7). Then e = c/a = sqrt(7)/4, about 0.66."
+    },
+    {
+      "id": 6,
+      "question": "In an ellipse, the relationship between a, b and c (a > b) is:",
+      "options": ["c^2 = a^2 - b^2", "c^2 = a^2 + b^2", "b^2 = a^2 + c^2", "a^2 = b^2 - c^2"],
+      "correct": 0,
+      "rationale": "Ellipses subtract: b^2 = a^2 - c^2. Hyperbolas add: c^2 = a^2 + b^2. Confusing the two is the classic conics error, so anchor the sign to the shape: the ellipse is 'smaller' inside, the hyperbola stretches 'beyond'."
+    },
+    {
+      "id": 7,
+      "question": "The asymptotes of the hyperbola x^2/9 - y^2/16 = 1 are:",
+      "options": ["y = +-(4/3)x", "y = +-(3/4)x", "y = +-(16/9)x", "y = +-(9/16)x"],
+      "correct": 0,
+      "rationale": "a = 3 and b = 4, and asymptotes are y = (b/a)x = (4/3)x and y = -(4/3)x. The foci are (+-5, 0) since c = sqrt(9 + 16) = 5."
+    },
+    {
+      "id": 8,
+      "question": "The conic 4x^2 - 9y^2 = 36 is a:",
+      "options": ["Hyperbola", "Ellipse", "Parabola", "Circle"],
+      "correct": 0,
+      "rationale": "The x-squared and y-squared coefficients have opposite signs, which is the signature of a hyperbola. Dividing by 36 gives x^2/9 - y^2/4 = 1 with a = 3, b = 2."
+    },
+    {
+      "id": 9,
+      "question": "The latus rectum of the ellipse x^2/25 + y^2/16 = 1 has length:",
+      "options": ["32/5", "8/5", "32/25", "5/2"],
+      "correct": 0,
+      "rationale": "a = 5, b = 4. The latus rectum of an ellipse is 2b^2/a = 2(16)/5 = 32/5. For a parabola it would be 4a, and for a hyperbola also 2b^2/a - the three formulas are worth memorising together."
+    },
+    {
+      "id": 10,
+      "question": "Satellite dishes are shaped like paraboloids because:",
+      "options": ["Rays parallel to the axis reflect through the focus", "Rays from one focus reflect to the other focus", "The difference of distances to the foci is constant", "A parabola has eccentricity zero"],
+      "correct": 0,
+      "rationale": "The parabola's reflecting property sends every ray arriving parallel to the axis through the focus, so an antenna or solar cooker placed at the focus receives/gathers all the energy. Reflecting-between-foci is the ellipse's property (whispering galleries), and the constant-distance-difference property of hyperbolas underlies GPS navigation."
+    }
+  ]
+}

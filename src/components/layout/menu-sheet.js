@@ -17,24 +17,27 @@
 // the trigger on close, and the current route's row is highlighted.
 import { createEl } from "../../utils/dom.js";
 import { icon } from "../../utils/icon.js";
-import { createThemeToggleButton } from "./theme-toggle.js";
+import { currentTheme, applyTheme } from "../../utils/theme.js";
+import { appStore } from "../../app/state.js";
 import { eventBus } from "../../core/event-bus.js";
 import { EVENTS } from "../../app/constants.js";
 
-const PRIMARY_LINKS = [
-  { label: "Home", path: "/", iconName: "house" },
-  { label: "Subjects", path: "/subjects", iconName: "book-open" },
-  { label: "Search", path: "/search", iconName: "magnifying-glass" },
-  { label: "Progress", path: "/progress", iconName: "chart-line" },
-];
-
-const MORE_LINKS = [
-  { label: "Bookmarks", path: "/bookmarks", iconName: "bookmark" },
-  { label: "Notes", path: "/notes", iconName: "note-sticky" },
-  { label: "Profile", path: "/profile", iconName: "user" },
-  { label: "Settings", path: "/settings", iconName: "gear" },
-  { label: "About", path: "/about", iconName: "circle-info" },
-  { label: "Contribute", path: "/contribute", iconName: "code-branch" },
+// The five primary destinations (Home, Subjects, Search, Tests, Progress)
+// live in the always-visible bottom nav, so repeating them here only gave
+// phones two ways to do the same thing. The menu holds everything ELSE.
+const SECTIONS = [
+  { label: "Library", links: [
+    { label: "Bookmarks", path: "/bookmarks", iconName: "bookmark" },
+    { label: "Notes", path: "/notes", iconName: "note-sticky" },
+  ] },
+  { label: "You", links: [
+    { label: "Profile", path: "/profile", iconName: "user" },
+    { label: "Settings", path: "/settings", iconName: "gear" },
+  ] },
+  { label: "OpenKnowledge", links: [
+    { label: "About", path: "/about", iconName: "circle-info" },
+    { label: "Contribute", path: "/contribute", iconName: "code-branch" },
+  ] },
 ];
 
 function currentPath() {
@@ -53,10 +56,7 @@ export function createMenuSheet(trigger) {
 
   const bar = createEl("div", { class: "ou-menu__bar" }, [
     createEl("span", { class: "ou-menu__brand", "aria-hidden": "true" }, ["Menu"]),
-    createEl("div", { class: "ou-menu__bar-actions" }, [
-      createThemeToggleButton(),
-      closeBtn,
-    ]),
+    createEl("div", { class: "ou-menu__bar-actions" }, [closeBtn]),
   ]);
 
   const sectionLabel = (text) => createEl("p", { class: "ou-menu__section-label" }, [text]);
@@ -71,11 +71,27 @@ export function createMenuSheet(trigger) {
     icon("chevron-right", { class: "ou-menu__chev" }),
   ]);
 
+  // Appearance: a labelled two-option control. A bare sun/moon icon says
+  // nothing about what it does or what state it is in.
+  const themeBtns = ["light", "dark"].map((mode) => createEl("button", {
+    type: "button", class: "ou-menu__seg", dataset: { themeMode: mode },
+    on: { click: () => applyTheme(mode) },
+  }, [icon(mode === "light" ? "sun" : "moon"), mode === "light" ? "Light" : "Dark"]));
+  const syncTheme = () => {
+    const now = currentTheme();
+    themeBtns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.themeMode === now)));
+  };
+  syncTheme();
+  appStore.subscribe(syncTheme);
+  const appearance = createEl("div", { class: "ou-menu__appearance", role: "group", "aria-label": "Appearance" }, [
+    createEl("span", { class: "ou-menu__appearance-label" }, ["Appearance"]),
+    createEl("div", { class: "ou-menu__segs" }, themeBtns),
+  ]);
+
   const nav = createEl("nav", { class: "ou-menu__nav", "aria-label": "Site menu" }, [
-    sectionLabel("Menu"),
-    ...PRIMARY_LINKS.map(row),
-    sectionLabel("More"),
-    ...MORE_LINKS.map(row),
+    ...SECTIONS.flatMap((sec) => [sectionLabel(sec.label), ...sec.links.map(row)]),
+    sectionLabel("Display"),
+    appearance,
   ]);
 
   const panel = createEl("div", { class: "ou-menu__panel" }, [bar, nav]);

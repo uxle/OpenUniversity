@@ -1,0 +1,12 @@
+# Books and Authors
+
+@subject {
+  id: books-and-authors
+  title: "Books and Authors"
+  parent: general-knowledge
+  description: "The exam-staple books — from the Vedas and epics to modern Indian and world classics."
+}
+
+@lessons {
+  famous-books-and-authors
+}

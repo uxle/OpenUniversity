@@ -1,0 +1,76 @@
+{
+  "lessonId": "homophones-and-commonly-confused-words",
+  "title": "Homophones and Commonly Confused Words",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Choose the correct completion: 'The hot weather had a bad ___ on milk production.'",
+      "options": ["effect", "affect", "affekt", "efect"],
+      "correct": 0,
+      "rationale": "Effect is the noun (a result); affect is the verb (to influence). 'Had a bad effect' - the noun slot needs effect. Remember: Action = affect (verb), End result = effect (noun)."
+    },
+    {
+      "id": 2,
+      "question": "'The new policy will ___ thousands of farmers.'",
+      "options": ["affect", "effect", "effects", "affection"],
+      "correct": 0,
+      "rationale": "The blank needs a verb (will + verb), so 'affect' (to influence) is correct. 'Effect' as a verb exists only in the special sense of 'to bring about' (effect change)."
+    },
+    {
+      "id": 3,
+      "question": "Which sentence uses ITS/IT'S correctly?",
+      "options": ["The committee published its report yesterday.", "The team changed it's captain mid-season.", "Its a matter of principle.", "The dog wagged it's tail happily."],
+      "correct": 0,
+      "rationale": "'Its' (no apostrophe) is the possessive - the report belonging to the committee. 'It's' expands to 'it is/it has', which fits neither the possessive nor the 'Its a matter' error (should be 'It's a matter')."
+    },
+    {
+      "id": 4,
+      "question": "The school ___ gave an inspiring speech, defending the ___ of fair play.",
+      "options": ["principal, principle", "principle, principal", "principal, principal", "principle, principle"],
+      "correct": 0,
+      "rationale": "The head of a school is the principal (your pal); a rule or belief is a principle. The 'principle is your pal' mnemonic fails here - only the person is the pal."
+    },
+    {
+      "id": 5,
+      "question": "The shop sells ___ : pens, envelopes and paper. Meanwhile, the ___ bicycle refused to move.",
+      "options": ["stationery, stationary", "stationary, stationery", "stationery, stationery", "stationary, stationary"],
+      "correct": 0,
+      "rationale": "Stationery (e for envelope) is writing material; stationary (a for 'at') means standing still. Both fill their own slot in this classic double-test."
+    },
+    {
+      "id": 6,
+      "question": "A word that is SPELLED the same but has different meanings, like 'bear' (animal) and 'bear' (to carry), is a:",
+      "options": ["Homograph", "Homophone", "Synonym", "Antonym"],
+      "correct": 0,
+      "rationale": "Homographs share spelling but differ in meaning (and sometimes sound, like tear/tear). Homophones share sound but differ in spelling (pair/pear)."
+    },
+    {
+      "id": 7,
+      "question": "Which pair completes the sentence? 'The minister made an ___ to Shakespeare; the magician created the ___ of floating.'",
+      "options": ["allusion, illusion", "illusion, allusion", "elusion, allusion", "allusion, elusion"],
+      "correct": 0,
+      "rationale": "An allusion is an indirect reference; an illusion is a false image. Elusion (escaping) is the rare third twin and fits neither slot here."
+    },
+    {
+      "id": 8,
+      "question": "'The judge must remain ___ in the case, even if he is personally ___ in cricket.'",
+      "options": ["disinterested, uninterested", "uninterested, disinterested", "disinterested, disinterested", "uninterested, uninterested"],
+      "correct": 0,
+      "rationale": "Disinterested means impartial - the judge's duty. Uninterested means bored - how he may feel about cricket. Swapping them is one of the commonest register errors in formal writing."
+    },
+    {
+      "id": 9,
+      "question": "There are ___ students in the corridor than yesterday, so we need ___ time to finish.",
+      "options": ["fewer, less", "less, fewer", "fewer, fewer", "less, less"],
+      "correct": 0,
+      "rationale": "Fewer goes with countable nouns (students); less with uncountable (time). The supermarket '10 items or less' sign is the standing joke of this rule."
+    },
+    {
+      "id": 10,
+      "question": "In 'Its too late too except there offer', how many homophone errors are there?",
+      "options": ["4", "3", "2", "1"],
+      "correct": 0,
+      "rationale": "The errors: Its -> It's ('it is' fits); the second too -> to (infinitive marker before 'accept'); except -> accept (to receive); there -> their (possessive). The first 'too' is correct - 'too late' means excessively late. Corrected sentence: 'It's too late to accept their offer.'"
+    }
+  ]
+}

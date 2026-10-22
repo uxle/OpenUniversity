@@ -1,0 +1,168 @@
+# Surface Chemistry and Catalysis: Where Reactions Really Happen
+
+> Chemistry at surfaces obeys different rules from chemistry in bulk.
+> A catalyst speed‑shapes a reaction without being consumed, a colloid
+> refuses to settle for years, and a few grams of activated charcoal
+> clean a whole tank of water — all because surface area, not amount,
+> is the currency that matters.
+
+## 1. Adsorption: The Surface Phenomenon
+
+[definition]
+**Adsorption** is the accumulation of a substance (the **adsorbate**)
+on the **surface** of a solid or liquid (the **adsorbent**). It is
+distinct from **absorption**, where the substance penetrates into the
+bulk. When both occur together, the word is **sorption**.
+[/definition]
+
+| Contrast | Adsorption | Absorption |
+| --- | --- | --- |
+| Where | surface only | throughout the bulk |
+| Classic example | water vapour on silica gel | water by anhydrous CaCl₂ |
+| Rate | rapid initially, then slows | uniform throughout |
+| Concentration | higher at surface than bulk | same everywhere |
+
+Adsorption is always **exothermic** (ΔH < 0): gas molecules lose
+freedom when they stick, so entropy decreases and enthalpy must fall
+to keep the process spontaneous.
+
+## 2. Physisorption versus Chemisorption
+
+| Property | Physisorption | Chemisorption |
+| --- | --- | --- |
+| Forces | van der Waals | chemical bonds |
+| Enthalpy | ~20–40 kJ/mol | ~80–240 kJ/mol |
+| Reversible | yes | largely irreversible |
+| Specificity | low — any gas on any solid | high — depends on reactants |
+| Temperature | low temperature favours it | high temperature needed |
+| Layers | multimolecular | unimolecular |
+
+[important]
+The same gas can switch mechanism: hydrogen on glass beads is
+physisorbed at low temperature but **chemisorbed on nickel** at higher
+temperature, forming surface hydride-like species. Temperature is the
+lever that moves a system from physical to chemical adsorption — the
+reason catalysts are heated before use (activation).
+[/important]
+
+## 3. Freundlich's Adsorption Isotherm
+
+At constant temperature, the amount $x/m$ (mass adsorbed per gram of
+adsorbent) grows with pressure (gas) or concentration (solution):
+
+@math label="eq:freundlich}
+\frac{x}{m} = k\,P^{1/n}, \qquad n > 1
+@/math
+
+Taking logarithms gives a straight line when
+$\log(x/m)$ is plotted against $\log P$ — slope $1/n$, intercept
+$\log k$. The isotherm is empirical: it works at moderate pressures
+but fails at very low pressures (where $x/m \propto P$) and very high
+pressures (where $x/m$ saturates).
+
+**Worked example.** Charcoal adsorbs 0.3 g of a dye from 100 mL of
+solution (mass of charcoal 1.5 g). Here $x/m = 0.3/1.5 = 0.2$ g per
+gram — doubling the charcoal at the same concentration roughly
+doubles the dye removed, the everyday logic of adsorption
+calculations.
+
+## 4. Catalysis: Speed Without Consumption
+
+[definition]
+A **catalyst** is a substance that changes the rate of a reaction by
+offering an alternative path of lower activation energy, emerging
+chemically unchanged. It cannot make a thermodynamically impossible
+reaction occur, and it does not shift the position of equilibrium —
+it only helps equilibrium arrive sooner.
+[/definition]
+
+| Type | Example |
+| --- | --- |
+| Homogeneous | acid-catalysed ester hydrolysis; NO in oxidation of SO₂ |
+| Heterogeneous | Fe in Haber process; V₂O₅ in Contact process; Ni in hydrogenation |
+| Enzymatic | invertase hydrolysing sucrose; zymase fermenting glucose |
+| Negative (inhibitor) | glycerol slowing decomposition of H₂O₂ |
+
+Key facts examiners test:
+
+- A catalyst is **poisoned** by impurities that block active sites
+  (arsenic poisoning the iron catalyst in Haber).
+- **Promoters** enhance catalysts without catalysing themselves
+  (Mo₂O₃ with Fe in Haber).
+- Autocatalysis: a product speeds its own reaction (Mn²⁺ in
+  KMnO₄ + oxalic acid titration).
+- Shape-selective catalysis: zeolites (ZSM‑5) crack petroleum to
+  gasoline in pores of molecular size.
+
+## 5. Colloids: The Middle State
+
+[definition]
+A **colloid** is a dispersion in which particles of 1–1000 nm are
+spread through a medium: neither a true solution (too big to dissolve)
+nor a suspension (too small to settle). Examples: fog, milk, ink,
+blood, butter, cheese, clouds.
+[/definition]
+
+| Type | Dispersed phase | Medium | Example |
+| --- | --- | --- | --- |
+| Aerosol | solid/liquid | gas | smoke, fog |
+| Foam | gas | liquid | whipped cream |
+| Emulsion | liquid | liquid | milk |
+| Sol | solid | liquid | paint, ink |
+| Gel | liquid | solid | jelly, cheese |
+
+**Lyophilic** colloids (starch, gelatin — "solvent-loving") are
+stable and self-forming; **lyophobic** colloids (metals, sulphides)
+are unstable and need stabilisers, which is why they coagulate
+readily.
+
+## 6. The Signature Properties of Colloids
+
+- **Brownian movement** — the zig-zag dance of particles bombarded by
+  solvent molecules; it keeps colloids from settling.
+- **Tyndall effect** — colloids scatter a light beam (visible path)
+  because particle size is comparable to the wavelength of light;
+  true solutions do not.
+- **Electrophoresis** — charged particles migrate in an electric
+  field, proving particles carry charge.
+- **Coagulation** — adding electrolyte neutralises the charge and
+  flocculates the sol.
+
+[important]
+**Hardy–Schulze rule:** the ion carrying the **opposite charge** to
+the sol particles, and with the **highest charge**, coagulates most
+efficiently. For a negative sol (As₂S₃), Al³⁺ > Ba²⁺ > Na⁺; for a
+positive sol (Fe(OH)₃), phosphate > SO₄²⁻ > Cl⁻. Flocculation is
+about charge, not quantity.
+[/important]
+
+Emulsification by soaps works the same way in reverse: the
+hydrocarbon tail dissolves in the oil droplet, the charged head faces
+water, and the resulting charged droplets repel one another instead
+of merging — a **micelle** wrapping grease.
+
+## 7. Applications That Appear in Exams
+
+- **Activated charcoal** in gas masks and water purifiers (physical
+  adsorption of toxic vapours).
+- **Froth floatation** for sulphide ores — adsorption of collectors
+  on ore particles makes them water-repellent.
+- **Heterogeneous catalysis** on the surfaces of Fe, Ni, V₂O₅, Pt —
+  reactant molecules adsorb, react on the surface, and desorb.
+- **Chromatography** — differential adsorption on paper or alumina
+  separates mixtures.
+- **Catalytic converters** adsorb exhaust gases on platinum-group
+  surfaces and convert CO/NOₓ to CO₂/N₂.
+- **Medicine and daily life** — aluminium hydroxide gel as antacid
+  (adsorbs acid), silica gel as desiccant, catalase degrading H₂O₂
+  millions of times faster than uncatalysed decomposition.
+
+## 8. Summary
+
+Surface chemistry reduces to three sentences. Adsorption concentrates
+molecules at surfaces — stronger when bonds form (chemisorption), and
+quantified by Freundlich's isotherm. Catalysis is adsorption put to
+work: a surface hosts reactants, lowers the activation energy, and
+releases products unchanged. Colloids are systems stabilised by
+surface charge, undone by electrolytes (Hardy–Schulze) and betrayed
+by the Tyndall beam.

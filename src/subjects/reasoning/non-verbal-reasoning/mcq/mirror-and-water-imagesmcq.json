@@ -1,0 +1,76 @@
+{
+  "lessonId": "mirror-and-water-images",
+  "title": "Mirror and Water Images",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A vertical mirror image of a figure swaps:",
+      "options": ["Left and right only", "Top and bottom only", "Both left-right and top-bottom", "Nothing"],
+      "correct": 0,
+      "rationale": "A mirror standing upright reflects across a vertical axis: left becomes right, right becomes left, while top and bottom stay put. An option with BOTH swapped is a 180-degree rotation - the classic planted trap."
+    },
+    {
+      "id": 2,
+      "question": "A water image of a figure swaps:",
+      "options": ["Top and bottom only", "Left and right only", "Both", "Neither"],
+      "correct": 0,
+      "rationale": "The water surface is a horizontal axis: the top of the figure dips to the bottom and vice versa, while left-right positions are untouched."
+    },
+    {
+      "id": 3,
+      "question": "Which of these letters has the SAME mirror image (vertical mirror) as itself?",
+      "options": ["M", "P", "L", "S"],
+      "correct": 0,
+      "rationale": "The self-mirroring set is A, H, I, M, O, T, U, V, W, X, Y - all left-right symmetric. P, L and S all swing their one-sided features to the wrong side."
+    },
+    {
+      "id": 4,
+      "question": "In a mirror, the digit 6 appears as:",
+      "options": ["A reversed 6", "The digit 9", "The digit 0", "Itself"],
+      "correct": 0,
+      "rationale": "Reflection reverses orientation but is not rotation: 6 becomes a backwards 6. The digit 9 is what you get by ROTATING 6 by 180 degrees - which is why 9 is the standard trap option in mirror questions."
+    },
+    {
+      "id": 5,
+      "question": "A clock seen in a mirror shows 4:30. The actual time is:",
+      "options": ["7:30", "6:30", "5:30", "8:30"],
+      "correct": 0,
+      "rationale": "Mirror time = 11:60 - 4:30 = 7:30. Check the shortcut: the two readings sum to 12:00 (4:30 + 7:30), the signature of mirror reflection on a 12-hour dial."
+    },
+    {
+      "id": 6,
+      "question": "The water image of the time 4:30 is:",
+      "options": ["2:00", "7:30", "6:00", "1:30"],
+      "correct": 0,
+      "rationale": "Water time = 18:30 - 4:30 = 14:00, which reads 2:00 on a 12-hour dial. The horizontal flip exchanges 12 with 6 and 3 with 9 across the water surface."
+    },
+    {
+      "id": 7,
+      "question": "Applying a mirror reflection and then a water reflection to a figure produces:",
+      "options": ["A 180-degree rotation", "The original figure", "A 90-degree rotation", "An enlargement"],
+      "correct": 0,
+      "rationale": "Swapping left-right and then top-bottom turns the figure upside down with left-right restored - exactly a half turn. This identity also explains why rotate-180 options serve as traps in single-reflection questions."
+    },
+    {
+      "id": 8,
+      "question": "The mirror image of the word 'PAN' reads as:",
+      "options": ["A visually reversed NAP", "PAN unchanged", "NAP in normal lettering", "A visually reversed PAN"],
+      "correct": 0,
+      "rationale": "Two changes happen together: each letter reflects (P, A, N all have one-sided features) AND the letter sequence reverses order. So the result is the letters N-A-P in reversed visual form - not the ordinary spelling NAP."
+    },
+    {
+      "id": 9,
+      "question": "Which digit is unchanged BOTH in a mirror image and in a water image?",
+      "options": ["8", "3", "6", "2"],
+      "correct": 0,
+      "rationale": "8 is symmetric both left-right and top-bottom, so neither reflection alters it (0 also qualifies). 3 survives a water flip but not a mirror; 6 and 2 survive neither."
+    },
+    {
+      "id": 10,
+      "question": "In figure-based reflection questions, the fastest elimination strategy is to first check:",
+      "options": ["The most asymmetric detail - arrowheads, dots, tick marks", "The overall outline", "The number of options", "The sizes of all parts"],
+      "correct": 0,
+      "rationale": "A single highly asymmetric element (an arrow pointing up-right, a dot in one corner) appears in a known opposite position in the true reflection - checking it first typically eliminates two or three options instantly. Reflection preserves all sizes and distances, so size checks help only later."
+    }
+  ]
+}

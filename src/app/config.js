@@ -4,6 +4,7 @@ export const config = {
   dataBasePath: "src/subjects",
   registryPath: "src/data/subject-registry.json",
   searchIndexPath: "src/data/search-index.json",
+  mockTestsPath: "src/data/mock-tests.json",
   defaultTheme: "light",
   defaultLocale: "en",
   debug: false,

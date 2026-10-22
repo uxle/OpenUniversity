@@ -1,0 +1,76 @@
+{
+  "lessonId": "imperialism-and-colonialism",
+  "title": "Imperialism and Colonialism: The Scramble for the World",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Berlin Conference of 1884-85 is remembered for:",
+      "options": ["Fixing the rules for the partition of Africa among European powers", "Banning the slave trade", "Unifying Germany and Italy", "Dividing China into spheres of influence"],
+      "correct": 0,
+      "rationale": "Convened by Bismarck over Leopold's Congo grab, it declared that 'effective occupation' on the ground earned recognition on the map. No African representative attended; by 1914 only Ethiopia and Liberia remained independent."
+    },
+    {
+      "id": 2,
+      "question": "Which African power defeated a European army at the Battle of Adwa (1896), preserving its independence?",
+      "options": ["Ethiopia under Menelik II", "Egypt under Arabi Pasha", "Zululand under Cetshwayo", "Sudan under the Mahdi"],
+      "correct": 0,
+      "rationale": "Menelik II's Ethiopian army annihilated an Italian column at Adwa - Africa's decisive victory over a European invader, keeping Ethiopia free alongside Liberia when the Scramble ended."
+    },
+    {
+      "id": 3,
+      "question": "The Opium Wars resulted in:",
+      "options": ["Treaty ports and Hong Kong being ceded to Britain", "The partition of China into formal colonies", "The fall of the Meiji dynasty", "China annexing Korea"],
+      "correct": 0,
+      "rationale": "The wars of 1839-42 and 1856-60 forced open ports, ceded Hong Kong and imposed extraterritoriality - the model of INFORMAL empire: economic domination through concessions and gunboats without annexation."
+    },
+    {
+      "id": 4,
+      "question": "Lenin's 1916 analysis 'Imperialism, the Highest Stage of Capitalism' argued that:",
+      "options": ["Colonial expansion arose from capitalism's need for investment outlets and monopoly", "Empire was purely a cultural mission", "Colonies should immediately unite with the metropole", "Imperialism would end once railroads were built"],
+      "correct": 0,
+      "rationale": "Lenin built on Hobson (1902): surplus capital seeking returns drives the annexation of markets and raw-material sources. Whatever one thinks of the economics, it is the classic exam pairing: Hobson-Lenin on the economic causes of empire."
+    },
+    {
+      "id": 5,
+      "question": "A 'sphere of influence' means:",
+      "options": ["A state retaining nominal independence while a foreign power enjoys exclusive economic privileges", "Direct settler rule over a territory", "A colony ruled by a chartered company", "A self-governing dominion"],
+      "correct": 0,
+      "rationale": "Spheres of influence were informal imperialism - China's treaty-port system is the archetype. Colonies, protectorates and dominions are progressively different points on the control spectrum."
+    },
+    {
+      "id": 6,
+      "question": "The Suez Canal (1869) mattered to imperialism because it:",
+      "options": ["Cut the Europe-India sea voyage by thousands of kilometres", "Made the Sahara arable", "Eliminated the need for coal stations", "Was dug by the British themselves"],
+      "correct": 0,
+      "rationale": "Suez slashed the London-Bombay run by weeks, making India (and east of Suez generally) far cheaper to hold - which is exactly why Britain occupied Egypt in 1882 to guard the Canal's approaches."
+    },
+    {
+      "id": 7,
+      "question": "The Congo Free State (1885-1908) was:",
+      "options": ["The personal possession of King Leopold II of Belgium, run as a rubber-extraction regime", "A Dutch trading post", "A British protectorate", "A League of Nations mandate"],
+      "correct": 0,
+      "rationale": "Leopold ran the Congo privately; the rubber terror killed millions and provoked the first great international human-rights campaign, forcing Belgium to take over as a formal colony in 1908."
+    },
+    {
+      "id": 8,
+      "question": "Japan avoided being colonised and itself became an imperial power primarily because of:",
+      "options": ["Rapid Meiji-era industrialisation and military modernisation", "European respect for its ancient culture", "Its lack of natural resources", "A treaty with the United States guaranteeing neutrality"],
+      "correct": 0,
+      "rationale": "After Perry's 1853 ships exposed Japan's weakness, the Meiji state industrialised, conscripted and modernised with extraordinary speed - then joined the game, taking Taiwan (1895) and Korea (1910). Machines, not race, decided the era."
+    },
+    {
+      "id": 9,
+      "question": "The Fashoda incident (1898) was a confrontation between:",
+      "options": ["Britain and France in the Sudan", "Britain and Germany in East Africa", "France and Italy in Tunisia", "Russia and Britain in Afghanistan"],
+      "correct": 0,
+      "rationale": "Marchand's French expedition from the west met Kitchener's Anglo-Egyptian force after Omdurman; France backed down, conceding the Nile valley and pivoting toward the Entente Cordiale (1904)."
+    },
+    {
+      "id": 10,
+      "question": "Which best describes the long-term borders left by colonialism?",
+      "options": ["Arbitrary boundaries drawn in European capitals that split or merged communities", "Boundaries that followed ethnic and linguistic lines precisely", "Borders redrawn by the UN in 1945", "Borders that were abandoned at independence"],
+      "correct": 0,
+      "rationale": "Africa's straight lines, the Durand Line splitting the Pashtuns, and Sykes-Picot's Middle East were drawn for European convenience - and became the frozen, inherited borders of post-colonial states, source of conflicts from Kashmir to Kurdistan."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "surface-chemistry-and-catalysis",
+  "title": "Surface Chemistry and Catalysis: Where Reactions Really Happen",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Water vapour held on the surface of silica gel is an example of:",
+      "options": ["Adsorption", "Absorption", "Sorption in the bulk", "Chemisorption"],
+      "correct": 0,
+      "rationale": "Silica gel concentrates water molecules on its surface only - adsorption. Absorption would mean penetration into the bulk, as with anhydrous CaCl2, which first absorbs and then dissolves the water."
+    },
+    {
+      "id": 2,
+      "question": "Which statement about adsorption is correct?",
+      "options": ["It is always exothermic", "It is always endothermic", "It increases entropy", "Its enthalpy change is zero"],
+      "correct": 0,
+      "rationale": "Gas molecules lose freedom (entropy decreases) when they stick to a surface; since adsorption is spontaneous at suitable conditions, delta-G must be negative, which forces delta-H negative. Adsorption is always exothermic."
+    },
+    {
+      "id": 3,
+      "question": "The enthalpy of chemisorption is typically:",
+      "options": ["80-240 kJ/mol", "8-20 kJ/mol", "20-40 kJ/mol", "About 400 kJ/mol"],
+      "correct": 0,
+      "rationale": "Chemisorption forms chemical bonds, so its enthalpy (80-240 kJ/mol) approaches reaction energies. Physisorption relies on weak van der Waals forces at roughly 20-40 kJ/mol."
+    },
+    {
+      "id": 4,
+      "question": "According to the Freundlich isotherm, x/m varies with pressure as:",
+      "options": ["x/m = k P^(1/n), n > 1", "x/m = kP", "x/m = k/P", "x/m = k log P"],
+      "correct": 0,
+      "rationale": "The empirical Freundlich law is x/m = kP^(1/n) with n > 1. It behaves linearly (x/m proportional to P) at very low pressure and saturates at very high pressure, which is exactly where the law fails."
+    },
+    {
+      "id": 5,
+      "question": "A catalyst changes the reaction rate by:",
+      "options": ["Lowering the activation energy via an alternative path", "Shifting the equilibrium position toward products", "Increasing the enthalpy change of the reaction", "Being consumed in the reaction"],
+      "correct": 0,
+      "rationale": "A catalyst offers a route of lower activation energy so more molecules can react, and it emerges unchanged. It does not alter the equilibrium constant or the enthalpy - equilibrium is simply reached faster from either side."
+    },
+    {
+      "id": 6,
+      "question": "Molybdenum oxide added with iron in the Haber process is an example of:",
+      "options": ["A promoter", "A catalyst poison", "An inhibitor", "An autocatalyst"],
+      "correct": 0,
+      "rationale": "Mo2O3 does not catalyse ammonia synthesis itself but enhances the activity of the iron catalyst - a promoter. Poisons do the reverse (arsenic blocks iron's active sites), and inhibitors slow reactions."
+    },
+    {
+      "id": 7,
+      "question": "The Tyndall effect is shown by:",
+      "options": ["Colloidal solutions only", "True solutions only", "Both colloids and true solutions", "Suspensions settling overnight"],
+      "correct": 0,
+      "rationale": "Colloid particles (1-1000 nm) are comparable in size to the wavelength of light, so they scatter it and make the beam path visible. True-solution particles are far too small to scatter appreciably."
+    },
+    {
+      "id": 8,
+      "question": "For coagulating a negative sol such as As2S3, the most effective ion is:",
+      "options": ["Al3+", "Na+", "Ba2+", "Cl-"],
+      "correct": 0,
+      "rationale": "By the Hardy-Schulze rule the coagulating ion must carry the charge opposite to the sol (positive here), and higher charge works best: Al3+ > Ba2+ > Na+. Cl- has the wrong sign entirely."
+    },
+    {
+      "id": 9,
+      "question": "Milk is an example of:",
+      "options": ["An emulsion", "A foam", "An aerosol", "A gel"],
+      "correct": 0,
+      "rationale": "Milk is fat (liquid) dispersed in water (liquid) - an emulsion. Aerosols disperse in gas (fog), foams are gas-in-liquid (whipped cream), and gels are liquid-in-solid (jelly)."
+    },
+    {
+      "id": 10,
+      "question": "Froth floatation concentration of sulphide ores depends on:",
+      "options": ["Preferential adsorption of collectors making ore particles water-repellent", "Absorption of water into the ore", "Coagulation by electrolytes", "Brownian movement of ore particles"],
+      "correct": 0,
+      "rationale": "Pine-oil collectors adsorb on sulphide particles, making them hydrophobic so they attach to air bubbles and rise with the froth, while wettable gangue sinks. It is adsorption - a surface phenomenon - doing the separation."
+    }
+  ]
+}

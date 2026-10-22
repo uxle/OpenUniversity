@@ -1,0 +1,76 @@
+{
+  "lessonId": "software-development-life-cycle",
+  "title": "The Software Development Life Cycle: From Idea to Maintenance",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The correct sequence of SDLC phases is:",
+      "options": ["Requirements, design, implementation, testing, deployment, maintenance", "Design, requirements, testing, implementation, deployment, maintenance", "Requirements, implementation, design, testing, maintenance, deployment", "Design, implementation, requirements, deployment, testing, maintenance"],
+      "correct": 0,
+      "rationale": "Analysis (what to build) precedes design (how to build), which precedes coding; testing verifies the build before deployment, and maintenance follows release. Every other ordering puts cart before horse."
+    },
+    {
+      "id": 2,
+      "question": "A defect that costs 1 unit to fix during requirements costs roughly how much if found after release?",
+      "options": ["Up to 1000 units", "About the same", "About 2 units", "Exactly 10 units"],
+      "correct": 0,
+      "rationale": "Cost amplification across phases follows roughly 1x, 10x, 100x, 1000x: the later an error surfaces, the more artifacts (code, tests, docs, deployed systems) must be reworked around it. Early detection is the economic argument for every SDLC process."
+    },
+    {
+      "id": 3,
+      "question": "\"The system must respond to searches within 200 ms\" is a:",
+      "options": ["Non-functional requirement", "Functional requirement", "Design constraint of the database layer only", "Maintenance task"],
+      "correct": 0,
+      "rationale": "It constrains how WELL the system performs, not WHAT it does - the hallmark of a non-functional requirement. 'The system must support keyword search' would be the functional counterpart."
+    },
+    {
+      "id": 4,
+      "question": "The software model distinguished by explicit risk analysis at every iteration is the:",
+      "options": ["Spiral model", "Waterfall model", "V-Model", "RAD model"],
+      "correct": 0,
+      "rationale": "Boehm's Spiral loops through planning, RISK ANALYSIS, engineering and evaluation each cycle, making it the natural fit for large, high-risk projects. RAD emphasises speed, the V-Model emphasises paired test levels, Waterfall has no iteration at all."
+    },
+    {
+      "id": 5,
+      "question": "In the V-Model, unit testing verifies:",
+      "options": ["The low-level design (modules)", "The requirements", "The system architecture", "User acceptance criteria"],
+      "correct": 0,
+      "rationale": "Each development phase pairs with a test level: requirements with acceptance testing, system design with system testing, high-level design with integration testing, and low-level (module) design with unit testing."
+    },
+    {
+      "id": 6,
+      "question": "Verification answers the question:",
+      "options": ["Are we building the product right?", "Are we building the right product?", "Will users like the product?", "Is the product fast enough?"],
+      "correct": 0,
+      "rationale": "Verification checks conformance to specifications (reviews, inspections, walkthroughs). Validation - actual execution against user needs - asks whether the right product is being built. The classic exam mnemonic: verification = right product; validation = product right for the user."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is NOT one of the four values highlighted by the Agile Manifesto?",
+      "options": ["Comprehensive documentation over working software", "Individuals and interactions over processes and tools", "Customer collaboration over contract negotiation", "Responding to change over following a plan"],
+      "correct": 0,
+      "rationale": "The manifesto prefers WORKING SOFTWARE over comprehensive documentation - the option states the reverse. The other three options quote the manifesto's preferences correctly."
+    },
+    {
+      "id": 8,
+      "question": "In Scrum, the ordered list of everything potentially wanted in the product is the:",
+      "options": ["Product backlog", "Sprint backlog", "Increment", "Burndown chart"],
+      "correct": 0,
+      "rationale": "The product owner maintains the product backlog. The sprint backlog is the subset selected for the current sprint, the increment is the working output, and the burndown chart merely visualises remaining work."
+    },
+    {
+      "id": 9,
+      "question": "Rewriting a messy module so future changes are easier, without altering behaviour, is which type of maintenance?",
+      "options": ["Preventive", "Corrective", "Adaptive", "Perfective"],
+      "correct": 0,
+      "rationale": "Preventive maintenance pays down technical debt before it hurts - refactoring, restructuring, re-documenting. Corrective fixes bugs, adaptive tracks environment changes, and perfective adds user-requested improvements."
+    },
+    {
+      "id": 10,
+      "question": "A startup with rapidly changing feature ideas and a demo due every two weeks should most likely adopt:",
+      "options": ["An agile incremental approach", "Pure Waterfall", "The Spiral model", "No process at all"],
+      "correct": 0,
+      "rationale": "Short iterations, embracing change and frequent delivery are agile's home ground. Waterfall's frozen requirements would guarantee obsolescence, and the Spiral's heavyweight risk analysis suits large high-risk programmes, not a two-week demo cadence."
+    }
+  ]
+}

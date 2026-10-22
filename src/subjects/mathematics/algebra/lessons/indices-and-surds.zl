@@ -1,0 +1,183 @@
+# Indices and Surds: Advanced Techniques for Exams
+
+[info title="Where this fits"]
+This lesson is the exam-level sequel to `squares-roots-and-powers`, which introduced surds and the exponent laws. Here the focus is the advanced toolkit: comparison of unlike surds, three-term rationalisation, and $x + \frac{1}{x}$ identities.
+[/info]
+
+> Powers compress repeated multiplication into a compact language, and
+> surds are the powers that refuse to simplify into tidy whole numbers.
+> Together they form one of the most reliable scoring chapters in any
+> competitive exam — every question is just the index laws, applied
+> patiently.
+
+## 1. Index Notation and the Laws of Indices
+
+[definition]
+In $a^n$, the **base** is $a$ and the **index (exponent)** is $n$.
+For a positive integer $n$, $a^n$ means $a$ multiplied by itself
+$n$ times. The same symbol extends to zero, negative and fractional
+indices by the laws below.
+[/definition]
+
+The seven laws that solve nearly every question:
+
+| Law | Statement |
+| --- | --- |
+| Product | $a^m \times a^n = a^{m+n}$ |
+| Quotient | $a^m \div a^n = a^{m-n}$ |
+| Power of a power | $(a^m)^n = a^{mn}$ |
+| Zero index | $a^0 = 1$ (for $a \neq 0$) |
+| Negative index | $a^{-n} = \frac{1}{a^n}$ |
+| Fractional index | $a^{p/q}$ is the $q$-th root of $a^{p}$ |
+| Same power | $a^n \times b^n = (ab)^n$ |
+
+**Worked example.** Simplify $\frac{(2^3)^2 \times 2^{-4}}{2^5}$.
+
+@math label="eq:idx-laws"
+\frac{2^{6} \times 2^{-4}}{2^{5}} = 2^{6-4-5} = 2^{-3} = \frac{1}{8}
+@/math
+
+[important]
+When several powers of the **same base** are multiplied or divided,
+never evaluate them — collect the exponents first. Examiners plant
+huge-looking numbers like $17^3 \times 17^{-5} \times 17^{2}$ precisely
+because they collapse to $17^0 = 1$ in one line.
+[/important]
+
+## 2. Negative and Fractional Indices
+
+A negative index inverts; a fractional index roots. The denominator of
+the fractional index selects the root, the numerator the power:
+$8^{2/3} = (\sqrt[3]{8})^2 = 2^2 = 4$, and
+$16^{-3/4} = \frac{1}{16^{3/4}} = \frac{1}{(\sqrt[4]{16})^3} = \frac{1}{8}$.
+
+**Worked example.** Evaluate $\left(\frac{27}{8}\right)^{-2/3}$.
+
+@math label="eq:idx-fractional"
+\left(\frac{27}{8}\right)^{-2/3} = \left(\frac{8}{27}\right)^{2/3} = \left(\frac{2}{3}\right)^{2} = \frac{4}{9}
+@/math
+
+[example]
+$25^{1/2} = 5$, $\ 100^{-1/2} = \frac{1}{10}$, $\ 32^{2/5} = 4$,
+$\ \left(\frac{25}{4}\right)^{-1/2} = \frac{2}{5}$. Recognising perfect
+squares, cubes and fifth powers (up to about $20^2$, $6^3$, $2^5$) turns
+these into mental arithmetic.
+[/example]
+
+## 3. Surds: What They Are
+
+[definition]
+A **surd** is an irrational root that cannot be simplified to a whole
+number or fraction — for example $\sqrt{2}$, $\sqrt{3}$, $\sqrt[3]{5}$.
+A number like $\sqrt{16} = 4$ is **not** a surd, because it simplifies
+exactly.
+[/definition]
+
+Two vocabularies matter in exams:
+
+| Term | Meaning | Example |
+| --- | --- | --- |
+| Pure (entire) surd | whole number under the root | $\sqrt{50}$ |
+| Mixed surd | rational factor outside | $5\sqrt{2}$ |
+| Like surds | same irrational part | $3\sqrt{7}$ and $-5\sqrt{7}$ |
+| Unlike surds | different irrational parts | $2\sqrt{3}$ and $2\sqrt{5}$ |
+
+Only **like** surds can be added or subtracted — exactly as only like
+terms combine in algebra.
+
+## 4. Simplifying Surds
+
+Pull out every perfect square factor: $\sqrt{72} = \sqrt{36 \times 2}
+= 6\sqrt{2}$. Always finish with the smallest possible number left
+under the root.
+
+**Worked example.** Arrange in ascending order: $\sqrt{5}$,
+$\sqrt[3]{11}$, $2.4$.
+
+Convert everything to the same index — here, sixth powers, since
+LCM(2, 3) = 6:
+
+@math label="eq:surd-compare"
+\sqrt{5} = 5^{1/2} = 5^{3/6}, \quad \sqrt[3]{11} = 11^{1/3} = 11^{2/6}, \quad 2.4 = \left(2.4^{6}\right)^{1/6}
+@/math
+
+Comparing $5^3 = 125$, $11^2 = 121$ and $2.4^6 \approx 191$ gives the
+order $\sqrt[3]{11} < \sqrt{5} < 2.4$.
+
+## 5. Rationalising the Denominator
+
+[definition]
+**Rationalisation** removes surds from a denominator. For a single
+surd, multiply top and bottom by that surd; for a binomial like
+$a + \sqrt{b}$, multiply by its **conjugate** $a - \sqrt{b}$, using
+the difference-of-squares identity.
+[/definition]
+
+**Worked example.** Rationalise $\frac{6}{\sqrt{5} + 1}$.
+
+@math label="eq:surd-rationalise"
+\frac{6}{\sqrt{5} + 1} \times \frac{\sqrt{5} - 1}{\sqrt{5} - 1} = \frac{6(\sqrt{5} - 1)}{5 - 1} = \frac{3(\sqrt{5} - 1)}{2}
+@/math
+
+**Worked example (three-term denominator).** Rationalise
+$\frac{1}{1 + \sqrt{2} + \sqrt{3}}$ by pairing:
+
+@math label="eq:surd-threeterm"
+\frac{1}{1 + \sqrt{2} + \sqrt{3}} \times \frac{1 + \sqrt{2} - \sqrt{3}}{1 + \sqrt{2} - \sqrt{3}} = \frac{1 + \sqrt{2} - \sqrt{3}}{(1 + \sqrt{2})^{2} - 3} = \frac{1 + \sqrt{2} - \sqrt{3}}{2\sqrt{2}}
+@/math
+
+A final multiplication by $\frac{\sqrt{2}}{\sqrt{2}}$ clears the last
+surd from the denominator.
+
+## 6. Conjugates and Standard Results
+
+The **conjugate** of $a + \sqrt{b}$ is $a - \sqrt{b}$, and their
+product is the rational number $a^2 - b$. This single fact powers a
+family of exam favourites:
+
+| Result | Value |
+| --- | --- |
+| $(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b})$ | $a - b$ |
+| $(\sqrt{a} + \sqrt{b})^2$ | $a + b + 2\sqrt{ab}$ |
+| $(\sqrt{a} - \sqrt{b})^2$ | $a + b - 2\sqrt{ab}$ |
+| $\frac{1}{\sqrt{a} + \sqrt{b}}$ | $\frac{\sqrt{a} - \sqrt{b}}{a - b}$ |
+
+**Worked example.** Given $\sqrt{2} \approx 1.414$, find the value of
+$\frac{1}{3 - 2\sqrt{2}}$ correct to three decimals.
+
+@math label="eq:surd-conjugate"
+\frac{1}{3 - 2\sqrt{2}} \times \frac{3 + 2\sqrt{2}}{3 + 2\sqrt{2}} = \frac{3 + 2\sqrt{2}}{9 - 8} = 3 + 2(1.414) = 5.828
+@/math
+
+[example]
+A classic trick question: which is larger, $\sqrt{2} + \sqrt{8}$ or
+$\sqrt{18}$? Simplify first: $\sqrt{2} + 2\sqrt{2} = 3\sqrt{2}$, while
+$\sqrt{18} = 3\sqrt{2}$ — they are **equal**. Simplify before you
+compare; the numbers are chosen to look different.
+[/example]
+
+## 7. Exam Patterns and Common Traps
+
+- **Compare before computing.** Almost every "arrange in order"
+  question is solved by raising to a common index, never by decimals.
+- **Watch the base of a negative power.** $(-2)^4 = 16$ but
+  $(-2)^3 = -8$; brackets decide the sign.
+- **Fractional powers of fractions invert:** $\left(\frac{b}{a}\right)^{-n} = \left(\frac{a}{b}\right)^{n}$.
+- **Surd addition needs like terms:** $\sqrt{2} + \sqrt{3}$ cannot
+  combine into $\sqrt{5}$ — that single error eliminates half the
+  wrong options in objective papers.
+
+**Worked example.** If $x = 3 + 2\sqrt{2}$, find $x + \frac{1}{x}$ and
+$x^2 + \frac{1}{x^2}$ without a calculator.
+
+@math label="eq:surd-x-square"
+\frac{1}{x} = \frac{3 - 2\sqrt{2}}{9 - 8} = 3 - 2\sqrt{2}, \quad \text{so} \quad x + \frac{1}{x} = 6
+@/math
+
+@math label="eq:surd-x-square2"
+x^{2} + \frac{1}{x^{2}} = \left(x + \frac{1}{x}\right)^{2} - 2 = 36 - 2 = 34
+@/math
+
+The irrational parts cancel perfectly — a wholly rational answer from
+a wholly irrational-looking input, which is exactly the kind of
+elegance indices and surds are built to reward.

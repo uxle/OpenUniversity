@@ -1,0 +1,18 @@
+# General Knowledge
+
+@subject {
+  id: general-knowledge
+  title: "General Knowledge"
+  description: "Static GK for competitive exams — symbols, firsts, states, capitals, awards, sports, books, days, culture, and inventions."
+}
+
+@subSubjects {
+  india-gk
+  world-gk
+  awards-and-honours
+  sports-gk
+  books-and-authors
+  important-days
+  art-and-culture
+  science-gk
+}

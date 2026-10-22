@@ -12,6 +12,11 @@
   --ou-accent-subtle: rgba(255, 255, 0, 0.15);
   --ou-accent-contrast: #000000;
   --ou-focus-ring: #ffff00;
+  --ou-signal: #ffff00;
+  --ou-signal-hover: #ffff00;
+  --ou-signal-subtle: rgba(255, 255, 0, 0.15);
+  --ou-signal-border: #ffff00;
+  --ou-signal-contrast: #000000;
   color-scheme: dark;
 }
 [data-theme="high-contrast"] * {

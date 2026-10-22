@@ -1,0 +1,76 @@
+{
+  "lessonId": "ai-and-machine-learning-basics",
+  "title": "AI and Machine Learning Basics: How Machines Learn From Data",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The core inversion that distinguishes machine learning from traditional programming is:",
+      "options": ["Data and answers go in; rules (a model) come out", "Rules and data go in; answers come out, same as before", "Machines program themselves without any data", "Code is compiled rather than interpreted"],
+      "correct": 0,
+      "rationale": "Classic programming: rules + data -> answers. ML: data + answers -> rules (the trained model). The learned model then generalises to unseen data, which is the entire point."
+    },
+    {
+      "id": 2,
+      "question": "Grouping customers by purchasing behaviour without any labelled examples is:",
+      "options": ["Unsupervised learning (clustering)", "Supervised classification", "Reinforcement learning", "Regression"],
+      "correct": 0,
+      "rationale": "No labels means no supervision - the model must find structure on its own, which is clustering, an unsupervised task. Classification needs labelled categories; regression needs labelled numbers; RL needs reward signals."
+    },
+    {
+      "id": 3,
+      "question": "Predicting a house's sale price in rupees from its features is a:",
+      "options": ["Regression problem", "Classification problem", "Clustering problem", "Control problem"],
+      "correct": 0,
+      "rationale": "The target is a continuous number, so it is regression. If the task were to bucket houses into 'cheap / mid / premium' categories, it would be classification."
+    },
+    {
+      "id": 4,
+      "question": "In gradient descent, the learning rate controls:",
+      "options": ["How big each parameter-update step is", "How many layers the network has", "The train/test split ratio", "The number of features"],
+      "correct": 0,
+      "rationale": "Each step moves a parameter by (learning rate) x (slope of loss). Too large: overshoot and divergence; too small: glacial training. The classic Goldilocks hyperparameter."
+    },
+    {
+      "id": 5,
+      "question": "Training loss keeps decreasing but validation loss starts rising. This is:",
+      "options": ["Overfitting", "Underfitting", "Data leakage", "Vanishing gradient"],
+      "correct": 0,
+      "rationale": "The model is beginning to memorise training noise instead of the general pattern - the signature of overfitting. Remedies: more data, regularisation, early stopping, or a simpler model."
+    },
+    {
+      "id": 6,
+      "question": "A model too simple to capture the underlying pattern even on training data exhibits:",
+      "options": ["High bias (underfitting)", "High variance (overfitting)", "Perfect generalisation", "Exploding gradients"],
+      "correct": 0,
+      "rationale": "High bias = rigid model = underfitting: both training and validation losses stay high. High variance is the opposite failure - chasing noise. The bias-variance trade-off sits between them."
+    },
+    {
+      "id": 7,
+      "question": "Which statement about train/validation/test splits is correct?",
+      "options": ["The test set is used exactly once, for final evaluation", "The test set is used at every epoch to guide training", "The validation set measures the final released model", "All three sets are interchangeable"],
+      "correct": 0,
+      "rationale": "The validation set guides tuning during training; the test set is a one-shot honest estimate of real-world performance. Repeatedly evaluating on the test set leaks information into your decisions, quietly inflating the reported score."
+    },
+    {
+      "id": 8,
+      "question": "Backpropagation is:",
+      "options": ["An algorithm that propagates loss gradients backward through layers to update weights", "A method to split data into batches", "A regularisation technique", "A way to compress model weights"],
+      "correct": 0,
+      "rationale": "Backprop applies the chain rule layer by layer, computing each weight's contribution to the loss so gradient descent can update it. It is the workhorse that makes training deep networks feasible."
+    },
+    {
+      "id": 9,
+      "question": "With 1% fraud in the data, a model that always predicts 'not fraud' achieves 99% accuracy. The better diagnostic pair is:",
+      "options": ["Precision and recall (with F1)", "Accuracy and file size", "Epochs and batch size", "Layers and neurons"],
+      "correct": 0,
+      "rationale": "Accuracy is meaningless under class imbalance. Precision (of raised alarms, how many are real) and recall (of real frauds, how many are caught) expose the useless model immediately: its recall is zero. F1 or ROC-AUC summarise both."
+    },
+    {
+      "id": 10,
+      "question": "Starting from a large pre-trained language model and tuning it on a small domain dataset is called:",
+      "options": ["Transfer learning", "Reinforcement learning", "Ensembling", "Feature hashing"],
+      "correct": 0,
+      "rationale": "Transfer learning reuses representations learned on massive corpora and adapts them with modest data and compute - the practical default in modern NLP and vision, since training from scratch is rarely affordable."
+    }
+  ]
+}

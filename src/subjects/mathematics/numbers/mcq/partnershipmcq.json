@@ -1,0 +1,76 @@
+{
+  "lessonId": "partnership",
+  "title": "Partnership: Sharing Profits Fairly",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A, B and C invest Rs 40,000, Rs 50,000 and Rs 60,000 respectively in a business for a year. Out of a profit of Rs 45,000, C's share is:",
+      "options": ["Rs 18,000", "Rs 15,000", "Rs 12,000", "Rs 20,000"],
+      "correct": 0,
+      "rationale": "Same time period, so shares follow the investment ratio 4 : 5 : 6 (15 parts). Each part = 45000/15 = 3000, so C gets 6 x 3000 = Rs 18,000."
+    },
+    {
+      "id": 2,
+      "question": "A starts a business with Rs 20,000. After 4 months, B joins with Rs 30,000. Out of an annual profit of Rs 27,800, B's share is:",
+      "options": ["Rs 13,900", "Rs 16,680", "Rs 11,120", "Rs 15,000"],
+      "correct": 0,
+      "rationale": "Profit shares go by investment x time: A = 20000 x 12 = 240000, B = 30000 x 8 = 240000. The ratio is 1 : 1, so B receives half of 27800 = Rs 13,900. Treating time as equal would wrongly give B a 3 : 2 majority share."
+    },
+    {
+      "id": 3,
+      "question": "In a partnership, profits are shared in the ratio of:",
+      "options": ["investment x time invested", "investment only, always", "number of partners equally", "time invested only"],
+      "correct": 0,
+      "rationale": "The governing rule is profit proportional to capital multiplied by the time for which it stayed in the business. Only when all partners invest for the same period does this collapse to the investment ratio alone."
+    },
+    {
+      "id": 4,
+      "question": "A invests Rs 1,00,000 and B invests Rs 50,000. B works as the managing partner and is paid Rs 4,000 per month from profits. If the annual profit is Rs 68,000, B's total take is:",
+      "options": ["Rs 54,667", "Rs 22,667", "Rs 13,333", "Rs 48,000"],
+      "correct": 0,
+      "rationale": "Salary first: 12 x 4000 = 48000, leaving 20000. The remainder is split 100000 : 50000 = 2 : 1, giving A 13,333 and B 6,667. B's total = 48000 + 6667 = Rs 54,667. The salary must come out before the ratio division."
+    },
+    {
+      "id": 5,
+      "question": "A and B share profits 3 : 2. B invested Rs 36,000 for 10 months, and A invested Rs 40,000. A's money remained invested for:",
+      "options": ["13.5 months", "10 months", "12 months", "15 months"],
+      "correct": 0,
+      "rationale": "From (40000 x t)/(36000 x 10) = 3/2, t = (3 x 360000)/(2 x 40000) = 13.5 months. Running the ratio rule backwards recovers the missing time."
+    },
+    {
+      "id": 6,
+      "question": "A invests Rs 30,000; after 6 months he adds Rs 10,000 more. B invests Rs 50,000 for the whole year. Their profit ratio is:",
+      "options": ["7 : 10", "1 : 1", "4 : 5", "3 : 5"],
+      "correct": 0,
+      "rationale": "Split A's timeline at the deposit: 30000 x 6 + 40000 x 6 = 420000. B: 50000 x 12 = 600000. The ratio 420000 : 600000 simplifies to 7 : 10."
+    },
+    {
+      "id": 7,
+      "question": "Three partners invest Rs 5,000, Rs 6,000 and Rs 8,000 for a year. If the profit is Rs 7,600, the largest investor receives:",
+      "options": ["Rs 3,200", "Rs 2,400", "Rs 3,000", "Rs 3,800"],
+      "correct": 0,
+      "rationale": "The ratio is 5 : 6 : 8, i.e. 19 parts. Each part = 7600/19 = 400, so the Rs 8,000 partner receives 8 x 400 = Rs 3,200."
+    },
+    {
+      "id": 8,
+      "question": "X and Y enter a partnership. X invests Rs 25,000 for 8 months and Y invests Rs 40,000 for 5 months. The profit ratio (X : Y) is:",
+      "options": ["1 : 1", "5 : 8", "25 : 40", "2 : 1"],
+      "correct": 0,
+      "rationale": "Products: X = 25000 x 8 = 200000; Y = 40000 x 5 = 200000. Ratio 1 : 1. The distractor 5 : 8 ignores time and uses only the months, while 25 : 40 uses only the capitals."
+    },
+    {
+      "id": 9,
+      "question": "A, B, C rent a pasture. A grazes 8 cows for 3 months, B grazes 10 cows for 5 months and C grazes 12 cows for 4 months. The rent of Rs 3,050 is shared so that A pays:",
+      "options": ["Rs 600", "Rs 750", "Rs 1,000", "Rs 500"],
+      "correct": 0,
+      "rationale": "Pasture problems are partnership problems in disguise: each share is cows x months. A = 24, B = 50, C = 48, giving 12 : 25 : 24 (61 parts). Each part = 3050/61 = 50, so A pays 12 x 50 = Rs 600."
+    },
+    {
+      "id": 10,
+      "question": "A withdraws half his capital 4 months before the year ends. If A started with Rs 60,000 and B put Rs 40,000 for the full year, the profit ratio (A : B) is:",
+      "options": ["5 : 4", "1 : 1", "3 : 4", "4 : 5"],
+      "correct": 0,
+      "rationale": "Split A's timeline at the withdrawal: 60000 x 8 + 30000 x 4 = 600000. B: 40000 x 12 = 480000. The ratio 600000 : 480000 simplifies to 5 : 4. The distractor 1 : 1 compares the starting capitals only, and 4 : 5 inverts the order."
+    }
+  ]
+}

@@ -119,7 +119,7 @@ function watchSystemTheme() {
 /** Keep the browser chrome / taskbar tint in sync with the active theme. */
 function applyThemeColorMeta(theme) {
   const meta = document.getElementById("theme-color-meta");
-  if (meta) meta.content = theme === "dark" ? "#000000" : "#fbfbfd";
+  if (meta) meta.content = theme === "dark" ? "#141a24" : "#f7f5f0";
 }
 
 /**

@@ -1,0 +1,76 @@
+{
+  "lessonId": "assertion-and-reason",
+  "title": "Assertion and Reason Questions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The standard assertion-reason decision tree tests three judgements. Which of these is NOT one of them?",
+      "options": ["Whether the assertion is written in passive voice", "Whether the assertion is true", "Whether the reason is true", "Whether the reason correctly explains the assertion"],
+      "correct": 0,
+      "rationale": "The three judgements are: A true? R true? Does R explain A? Combining their answers selects the option. Grammar and style play no role - only truth values and the causal link matter."
+    },
+    {
+      "id": 2,
+      "question": "A: Ice floats on water. R: Ice is less dense than water. The correct classification is:",
+      "options": ["Both A and R true, and R is the correct explanation of A", "Both true but R does not explain A", "A true, R false", "A false, R true"],
+      "correct": 0,
+      "rationale": "Both statements are true, and the density difference is exactly WHY ice floats - the molecular lattice expands on freezing, lowering density. The BECAUSE test passes: 'Ice floats because it is less dense' is sound science."
+    },
+    {
+      "id": 3,
+      "question": "A: The RBI raises interest rates to cool inflation. R: India is a member of the WTO. Choose:",
+      "options": ["Both true, but R is not the correct explanation of A", "Both true and R explains A", "A true, R false", "A false, R true"],
+      "correct": 0,
+      "rationale": "Both statements are true facts, but WTO membership has no causal role in monetary policy - a pure 'two truths, zero relation' case, the most common option-(b) trap. Same-subject fame creates a false sense of linkage."
+    },
+    {
+      "id": 4,
+      "question": "A: Rivers flood during heavy rain. R: Floods cause rainfall. Choose:",
+      "options": ["A true, R false", "Both true and R explains A", "Both true but R does not explain A", "A false, R true"],
+      "correct": 0,
+      "rationale": "The assertion is true. The reason inverts the causation - it is rainfall that causes floods, not floods that cause rain - and being causally backwards, it is judged FALSE as stated. Watch for cause-effect inversion: it produces option (c), not (b)."
+    },
+    {
+      "id": 5,
+      "question": "A: Sharks are mammals. R: Sharks live in the ocean. Choose:",
+      "options": ["A false, R true", "Both true and R explains A", "A true, R false", "Both false"],
+      "correct": 0,
+      "rationale": "Sharks are fish, not mammals, so A is false; the ocean-dwelling statement is true. Option (d). The reason's truth is independent of the assertion's - judge each statement separately."
+    },
+    {
+      "id": 6,
+      "question": "The 'BECAUSE test' for linkage means:",
+      "options": ["Join the statements as 'A because R' and check whether it reads as a sound explanation", "Check whether both statements begin with the same letter", "Verify R appears in the textbook after A", "Count the words in both statements"],
+      "correct": 0,
+      "rationale": "Grammatically joining the statements exposes absurd links instantly: 'It is hot in May because people use air conditioners' is grammatical but causally backwards. Sound explanation passes; mere relatedness fails."
+    },
+    {
+      "id": 7,
+      "question": "The commonest trap producing option (b) is:",
+      "options": ["Two true statements from the same subject with no causal relation", "Both statements false", "A grammatical error in R", "A false assertion with a true reason"],
+      "correct": 0,
+      "rationale": "Two famous facts from one field FEEL linked (Plassey + Babur, both 'history'), tempting candidates to choose (a). The truth judgements pass but the because-test fails - textbook option (b)."
+    },
+    {
+      "id": 8,
+      "question": "A: Delhi experiences scorching summers. R: Delhi uses extensive air conditioning in summer. The relationship is:",
+      "options": ["Both true, but R is not the correct explanation - it is a response to A, not a cause", "Both true and R explains A", "A true, R false", "A false, R true"],
+      "correct": 0,
+      "rationale": "Both statements are true and clearly related - but the causal arrow points the wrong way. Air conditioning is a consequence of Delhi's heat. Related-but-reversed or related-but-insufficient reasons yield (b)."
+    },
+    {
+      "id": 9,
+      "question": "You are unsure whether R is factually true, but the 'A because R' sentence is obviously absurd. The sound inference is:",
+      "options": ["Option (a) is eliminated, improving your guess among the rest", "The answer must be (b)", "The answer must be (c)", "Skip unconditionally"],
+      "correct": 0,
+      "rationale": "Option (a) requires a true reason that correctly explains A. An absurd link kills (a) regardless of R's truth value, narrowing the field before you gamble. Partial information still has value - use it."
+    },
+    {
+      "id": 10,
+      "question": "In assertion-reason questions, absolute words like 'only', 'always' and 'never' deserve special attention because:",
+      "options": ["They can turn an otherwise-true statement false", "They make sentences longer", "They signal option (e)", "They indicate passive voice"],
+      "correct": 0,
+      "rationale": "Absolutes are the classic fact-trap: 'Diamond is the ONLY natural substance harder than quartz' style claims hide false exclusivity inside familiar facts. One counterexample defeats an absolute - treat every 'only/always/never' as a claim to verify."
+    }
+  ]
+}

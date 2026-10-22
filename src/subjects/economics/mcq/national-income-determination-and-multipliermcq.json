@@ -1,0 +1,76 @@
+{
+  "lessonId": "national-income-determination-and-multiplier",
+  "title": "National Income Determination and the Multiplier",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Keynes's principle of effective demand states that in the short run, output and employment are determined by:",
+      "options": ["Aggregate demand", "Aggregate supply alone", "The money supply alone", "Wage flexibility"],
+      "correct": 0,
+      "rationale": "Effective demand: planned spending governs how much firms produce and hire. The classical view - supply creates its own demand (Say's Law) - was shattered by the Depression's persistent underemployment equilibrium."
+    },
+    {
+      "id": 2,
+      "question": "The consumption function C = C-bar + cY implies that if c = 0.75, a rise in income of Rs 100 raises consumption by:",
+      "options": ["Rs 75", "Rs 100", "Rs 25", "Rs 175"],
+      "correct": 0,
+      "rationale": "c is the marginal propensity to consume: of each extra rupee, 75 paise is spent. The remaining Rs 25 is saved - the marginal propensity to save, s = 1 - c."
+    },
+    {
+      "id": 3,
+      "question": "In a two-sector economy with autonomous consumption 200, MPC 0.75 and investment 100, equilibrium income is:",
+      "options": ["1200", "300", "400", "1600"],
+      "correct": 0,
+      "rationale": "Y = (C-bar + I)/(1 - c) = (200 + 100)/0.25 = 1200. At that income, savings = 100 exactly equal planned investment, so there is no pressure for output to change."
+    },
+    {
+      "id": 4,
+      "question": "The value of the investment multiplier when MPC = 0.75 is:",
+      "options": ["4", "0.75", "1.33", "25"],
+      "correct": 0,
+      "rationale": "k = 1/(1 - MPC) = 1/0.25 = 4. Every rupee of new investment ultimately raises income by Rs 4 through successive rounds of re-spending."
+    },
+    {
+      "id": 5,
+      "question": "If MPC is 0.5, an increase in investment of Rs 200 will raise equilibrium income by:",
+      "options": ["Rs 400", "Rs 200", "Rs 100", "Rs 800"],
+      "correct": 0,
+      "rationale": "k = 1/(1 - 0.5) = 2, so delta-Y = 2 x 200 = 400. The lower the MPC, the more leaks into saving each round and the smaller the multiplier."
+    },
+    {
+      "id": 6,
+      "question": "Which factor makes the real-world multiplier SMALLER than the simple textbook value?",
+      "options": ["Imports and taxes draining spending from the circular flow", "A higher MPC", "Lower savings rates", "Idle capacity and unemployment"],
+      "correct": 0,
+      "rationale": "Leakages - saving, taxes, imports - shrink each round of re-spending; with tax rate t and import propensity m, the multiplier falls to 1/(1 - c(1-t) + m). Higher MPC enlarges the multiplier; idle capacity is an assumption, not a leakage."
+    },
+    {
+      "id": 7,
+      "question": "The paradox of thrift refers to:",
+      "options": ["If everyone saves more, income falls so much that total savings may not rise", "Thrift always increases national wealth", "Saving is impossible without investment", "Banks refuse deposits during recessions"],
+      "correct": 0,
+      "rationale": "A collective rise in the desire to save cuts consumption, which cuts income through the multiplier, which cuts saving itself. What is rational for one household is self-defeating for the whole economy - the classic fallacy of composition."
+    },
+    {
+      "id": 8,
+      "question": "A deflationary gap exists when:",
+      "options": ["Aggregate demand is below the level needed for full-employment output", "Aggregate demand exceeds full-employment output", "Exports exceed imports", "Government spending exceeds tax revenue"],
+      "correct": 0,
+      "rationale": "A deflationary (recessionary) gap is deficient demand: the economy settles below full employment. An inflationary gap is the opposite - demand beyond capacity, which spills into price rises instead of extra output."
+    },
+    {
+      "id": 9,
+      "question": "Near full employment, an increase in aggregate demand mainly leads to:",
+      "options": ["Higher prices rather than higher output", "Proportionally higher output", "Falling prices", "Automatic increase in unemployment"],
+      "correct": 0,
+      "rationale": "With capacity fully used, extra spending chases the same goods - inflation. The multiplier's force assumes idle resources; that assumption is exactly what breaks down at full employment."
+    },
+    {
+      "id": 10,
+      "question": "Which postulate belongs to the CLASSICAL school rather than to Keynes?",
+      "options": ["Flexible wages automatically restore full employment", "Demand deficiency can trap an economy below full employment", "Government spending can close a demand gap", "Savings and investment are coordinated by income, not just interest rates"],
+      "correct": 0,
+      "rationale": "Classical economics trusted wage-price flexibility and Say's Law to self-correct unemployment. Keynes argued underemployment equilibrium can persist, making active fiscal policy necessary - the other three options are all Keynesian positions."
+    }
+  ]
+}

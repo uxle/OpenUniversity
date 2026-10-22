@@ -1,0 +1,138 @@
+# Cloud Computing: Renting Computers by the Minute
+
+> The cloud is other people's computers, rented by the minute. Behind
+> that simple idea hides the biggest shift in computing economics
+> since the PC: capital expense becomes operating expense, capacity
+> becomes elastic, and a student's side project runs on the same
+> infrastructure as a global corporation.
+
+## 1. What "Cloud" Means
+
+[definition]
+**Cloud computing** is the on-demand delivery of computing resources
+— servers, storage, databases, networking, software — over the
+internet with pay-as-you-go pricing, provisioned in minutes and
+released just as fast. The provider owns and operates the hardware;
+the consumer rents exactly what is needed, when it is needed.
+[/definition]
+
+The defining characteristics (NIST's five):
+
+1. **On-demand self-service** — provision resources without human
+   interaction with the provider.
+2. **Broad network access** — available from any device over standard
+   networks.
+3. **Resource pooling** — multi-tenant hardware shared among
+   customers.
+4. **Rapid elasticity** — scale up under load, scale down after; pay
+   only for what is used.
+5. **Measured service** — usage is metered and billed like
+   electricity.
+
+## 2. The Service Models: IaaS, PaaS, SaaS
+
+| Model | You manage | Provider manages | Example |
+| --- | --- | --- | --- |
+| **IaaS** | OS, runtime, data, apps | data centre, servers, virtualisation, networking | EC2, Compute Engine |
+| **PaaS** | data, apps | everything up to the platform/runtime | App Engine, Heroku, Vercel |
+| **SaaS** | nothing but your data and settings | the entire application | Gmail, Salesforce, Office 365 |
+
+[important]
+A reliable exam mnemonic — the **pizza analogy**: IaaS is a rented
+kitchen where you cook; PaaS is a pizza delivery of dough and toppings
+you assemble and bake; SaaS is eating at the restaurant. The deeper
+the model, the less you control and the less you maintain. Control
+and convenience trade off along the same line.
+[/important]
+
+**Serverless/FaaS** extends the ladder: functions (AWS Lambda) run
+only when invoked, scale automatically, and are billed per
+millisecond of execution — the provider even manages the container
+your code runs in. "Serverless" still has servers; you just never see
+them.
+
+## 3. Deployment Models
+
+- **Public cloud** — shared infrastructure operated by a provider
+  (AWS, Azure, GCP) for anyone who pays.
+- **Private cloud** — dedicated infrastructure for one organisation,
+  on-premise or hosted; control and compliance at higher cost.
+- **Hybrid cloud** — both, connected: bursts of public capacity on
+  top of a private base; sensitive data stays private, spiky workloads
+  overflow.
+- **Community cloud** — shared by organisations with common
+  requirements (government agencies, research consortia).
+
+## 4. Virtualisation and Containers
+
+Virtual machines (hypervisors like KVM, Hyper-V, VMware) virtualise
+hardware: each VM carries a full guest OS — heavy but strongly
+isolated. **Containers** (Docker, containerd) virtualise only the
+userland above a shared kernel: an app and its dependencies are
+packaged into a lightweight image that runs identically on a laptop
+and in production.
+
+| | VM | Container |
+| --- | --- | --- |
+| Isolation | strong (separate kernel) | process-level |
+| Size | gigabytes | megabytes |
+| Boot | minutes | seconds |
+| Density | few per host | hundreds per host |
+
+Kubernetes orchestrates containers at scale: scheduling,
+auto-restart, scaling and rolling updates across fleets of machines.
+
+## 5. Economics and Scalability
+
+CapEx (buying servers for peak load that idles 90% of the time)
+becomes OpEx (paying for the minutes actually used). Three scaling
+directions:
+
+- **Vertical (scale up):** a bigger machine — simple, capped by
+  hardware, requires downtime.
+- **Horizontal (scale out):** more machines behind a load balancer —
+  the cloud-native way.
+- **Automatic:** rules or ML add/remove instances as load changes.
+
+Trade-offs to respect: cloud bills demand monitoring (a forgotten
+load-test cluster can cost thousands), data egress is deliberately
+pricey (lock-in pressure), and long-run steady workloads are
+sometimes cheaper on reserved instances or on-premise — the FinOps
+discipline exists to optimise exactly this.
+
+## 6. Architectural Patterns the Cloud Enables
+
+- **Load balancing** across zones for availability and throughput.
+- **Auto-scaling groups** matching capacity to demand curves.
+- **Object storage** (S3-style) for durable, versioned blobs.
+- **CDNs** caching content at the network edge close to users.
+- **Managed databases** with automated backup, patching and
+  failover.
+- **Regions and availability zones** — geographic separation for
+  disaster tolerance; multi-zone designs survive a data-centre
+  failure, multi-region designs survive a city.
+
+Design for failure is the cloud's core discipline: any instance can
+vanish at any moment, so systems are built stateless, with health
+checks and redundancy replacing single machines that "shouldn't"
+crash.
+
+## 7. Security, Privacy and Lock-in
+
+Data lives on shared hardware in distant jurisdictions: encryption
+(at rest and in transit), identity and access management (IAM),
+least-privilege policies and compliance certifications (ISO 27001,
+SOC 2, GDPR data residency) dominate procurement conversations.
+Vendor lock-in — proprietary managed services that resist migration —
+is countered by containerisation, open standards and
+multi-provider designs, at the price of some convenience.
+
+## 8. Summary
+
+Cloud computing converts computing from a product you buy into a
+utility you rent. Its service ladder (IaaS → PaaS → SaaS →
+serverless) trades control for convenience; its deployment models
+(public, private, hybrid) trade cost for compliance; its elasticity
+and managed services let small teams build planet-scale systems.
+Understanding the trade-offs — not the brand names — is what the
+exams, and the industry, actually test.

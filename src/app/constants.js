@@ -45,6 +45,11 @@ export const ROUTES = {
   SUBJECT_LESSON: "/subjects/:subjectId/lessons/:lessonId",
   SUBJECT_MCQ: "/subjects/:subjectId/mcq/:lessonId",
   SEARCH: "/search",
+  MOCK_TESTS: "/mock-tests",
+  // Shared by catalog tests and the custom builder's /mock-tests/custom
+  // (its subjects/count/timed travel as query params, re-read on the page
+  // because the router's route params never include them).
+  MOCK_TEST: "/mock-tests/:testId",
   BOOKMARKS: "/bookmarks",
   NOTES: "/notes",
   PROGRESS: "/progress",

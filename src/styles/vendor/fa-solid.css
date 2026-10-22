@@ -53,6 +53,7 @@
 .fa-circle-play::before { content: "\f144"; }
 .fa-circle-question::before { content: "\f059"; }
 .fa-circle-xmark::before { content: "\f057"; }
+.fa-clipboard-list::before { content: "\f46d"; }
 .fa-clock::before { content: "\f017"; }
 .fa-code::before { content: "\f121"; }
 .fa-code-branch::before { content: "\f126"; }
@@ -73,14 +74,17 @@
 .fa-language::before { content: "\f1ab"; }
 .fa-laptop::before { content: "\f109"; }
 .fa-lightbulb::before { content: "\f0eb"; }
+.fa-list-check::before { content: "\f0ae"; }
 .fa-lock::before { content: "\f023"; }
 .fa-magnifying-glass::before { content: "\f002"; }
 .fa-map::before { content: "\f279"; }
 .fa-moon::before { content: "\f186"; }
 .fa-note-sticky::before { content: "\f249"; }
+.fa-paper-plane::before { content: "\f1d8"; }
 .fa-pen::before { content: "\f304"; }
 .fa-play::before { content: "\f04b"; }
 .fa-plug-circle-xmark::before { content: "\e560"; }
+.fa-rotate-right::before { content: "\f2f9"; }
 .fa-shield-halved::before { content: "\f3ed"; }
 .fa-star::before { content: "\f005"; }
 .fa-sun::before { content: "\f185"; }

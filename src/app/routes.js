@@ -27,6 +27,8 @@ const routeTable = {
   [ROUTES.SUBJECT_LESSON]: () => import("../pages/lesson.js"),
   [ROUTES.SUBJECT_MCQ]: () => import("../pages/mcq.js"),
   [ROUTES.SEARCH]: () => import("../pages/search.js"),
+  [ROUTES.MOCK_TESTS]: () => import("../pages/mock-tests.js"),
+  [ROUTES.MOCK_TEST]: () => import("../pages/mock-test-runner.js"),
   [ROUTES.BOOKMARKS]: () => import("../pages/bookmarks.js"),
   [ROUTES.NOTES]: () => import("../pages/notes.js"),
   [ROUTES.PROGRESS]: () => import("../pages/progress.js"),
@@ -100,7 +102,7 @@ export async function registerRoutes(router, container) {
  * Failures are ignored — routes still import lazily as a fallback.
  */
 export function prefetchPrimaryRoutes() {
-  for (const pattern of [ROUTES.HOME, ROUTES.SUBJECTS, ROUTES.SEARCH, ROUTES.PROGRESS, ROUTES.LESSON, ROUTES.SUBJECT_LESSON]) {
+  for (const pattern of [ROUTES.HOME, ROUTES.SUBJECTS, ROUTES.SEARCH, ROUTES.MOCK_TESTS, ROUTES.PROGRESS, ROUTES.LESSON, ROUTES.SUBJECT_LESSON]) {
     const load = routeTable[pattern];
     if (load) load().catch(() => {});
   }

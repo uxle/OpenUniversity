@@ -1,0 +1,76 @@
+{
+  "lessonId": "simplification-and-approximation",
+  "title": "Simplification and Approximation: Fast, Safe Arithmetic",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Evaluate: 12 / 3 x 2 + 5 - sqrt(16).",
+      "options": ["9", "3", "8", "11"],
+      "correct": 0,
+      "rationale": "BODMAS with left-to-right for division/multiplication: 12/3 = 4, 4 x 2 = 8, sqrt(16) = 4. Then 8 + 5 - 4 = 9. Doing multiplication before division would wrongly give 12/(3x2) = 2."
+    },
+    {
+      "id": 2,
+      "question": "Simplify: [8 - {5 - (7 - 3)}].",
+      "options": ["7", "3", "9", "1"],
+      "correct": 0,
+      "rationale": "Clear brackets from the inside out: (7 - 3) = 4, then {5 - 4} = 1, then [8 - 1] = 7."
+    },
+    {
+      "id": 3,
+      "question": "The value of 10 - 4 + 3 is:",
+      "options": ["9", "3", "7", "13"],
+      "correct": 0,
+      "rationale": "Addition and subtraction share a rank and run left to right: 10 - 4 = 6, then 6 + 3 = 9. Doing 4 + 3 first (wrongly) gives 10 - 7 = 3."
+    },
+    {
+      "id": 4,
+      "question": "63.98% of 449.9 + ? is approximately 480. The missing number is closest to:",
+      "options": ["192", "170", "220", "250"],
+      "correct": 0,
+      "rationale": "Approximate 64% of 450 = 0.64 x 450 = 288. Then 480 - 288 = 192. The options are spaced widely apart, so rounding 63.98 to 64 and 449.9 to 450 is safe."
+    },
+    {
+      "id": 5,
+      "question": "37.5% of 256 equals:",
+      "options": ["96", "84", "108", "92"],
+      "correct": 0,
+      "rationale": "37.5% = 3/8, so the value is (3/8) x 256 = 3 x 32 = 96. Knowing the fraction equivalents turns a long multiplication into a two-second calculation."
+    },
+    {
+      "id": 6,
+      "question": "97 x 103 equals:",
+      "options": ["9991", "10009", "9997", "9901"],
+      "correct": 0,
+      "rationale": "The factors sit symmetrically about 100: 97 x 103 = (100 - 3)(100 + 3) = 100^2 - 9 = 9991. Difference-of-squares beats multiplication."
+    },
+    {
+      "id": 7,
+      "question": "The value of (3/4) of 240 - 15% of 200 + sqrt(225) is:",
+      "options": ["165", "150", "180", "158"],
+      "correct": 0,
+      "rationale": "Convert 'of' to multiplication: (3/4) x 240 = 180; 15% of 200 = 30; sqrt(225) = 15. Then 180 - 30 + 15 = 165."
+    },
+    {
+      "id": 8,
+      "question": "36 / (3/4 of 16) equals:",
+      "options": ["3", "48", "12", "9"],
+      "correct": 0,
+      "rationale": "'Of' is evaluated first: (3/4) x 16 = 12. Then 36 / 12 = 3. Misreading 'of' as a plain division produces the distractor 48."
+    },
+    {
+      "id": 9,
+      "question": "The square of 45 is best found instantly as:",
+      "options": ["(4 x 5)/25 = 2025", "45 x 45 by long multiplication only", "(40 + 5)(40 - 5) = 1875", "4^2 5^2 = 400"],
+      "correct": 0,
+      "rationale": "For numbers ending in 5: take n = 4, compute n(n + 1) = 20 and append 25, giving 2025. The identity (10n + 5)^2 = 100n(n + 1) + 25 makes every such square instant."
+    },
+    {
+      "id": 10,
+      "question": "sqrt(1369) + sqrt(2025) - 34 / 17 equals:",
+      "options": ["80", "82", "78", "84"],
+      "correct": 0,
+      "rationale": "Recognise the squares: 37^2 = 1369 and 45^2 = 2025. Division first: 34/17 = 2. So 37 + 45 - 2 = 80. Memorising squares to 30 (and beyond) is what makes this a 10-second question."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "important-days-and-observances",
+  "title": "Important Days and Observances: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "National Youth Day is observed on 12 January to mark whose birth anniversary?",
+      "options": ["Swami Vivekananda", "Bhagat Singh", "Subhas Chandra Bose", "Sardar Patel"],
+      "correct": 0,
+      "rationale": "Vivekananda was born on 12 January 1863; the day has been National Youth Day since 1985, honouring his hold on young India."
+    },
+    {
+      "id": 2,
+      "question": "National Science Day on 28 February commemorates:",
+      "options": ["The Raman effect announcement", "C.V. Raman's birth", "ISRO's founding", "The Nobel announcement"],
+      "correct": 0,
+      "rationale": "Raman announced the discovery of the scattering effect on 28 February 1928 — the discovery date, not the Nobel (1930) or a birthday, anchors the day."
+    },
+    {
+      "id": 3,
+      "question": "National Sports Day in India is celebrated on:",
+      "options": ["5 September", "29 August", "14 November", "21 June"],
+      "correct": 1,
+      "rationale": "Dhyan Chand's birthday (29 August 1905) is National Sports Day — the day the national sports awards are also conferred. 5 September is the Teachers' Day trap."
+    },
+    {
+      "id": 4,
+      "question": "Teachers' Day in India honours the birth anniversary of:",
+      "options": ["Dr. S. Radhakrishnan", "Dr. Rajendra Prasad", "Maulana Azad", "Dr. B.R. Ambedkar"],
+      "correct": 0,
+      "rationale": "The philosopher-president's birthday (5 September) became Teachers' Day at his own suggestion that it honour teachers rather than him."
+    },
+    {
+      "id": 5,
+      "question": "National Technology Day marks the anniversary of:",
+      "options": ["The Pokhran-II tests", "Aryabhata's launch", "Smiling Buddha", "Chandrayaan-1"],
+      "correct": 0,
+      "rationale": "The Pokhran-II nuclear tests of 11 May 1998 anchor the day. The 1974 'Smiling Buddha' test (18 May) is the deliberate decoy."
+    },
+    {
+      "id": 6,
+      "question": "The International Day of Yoga, first observed in 2015, falls on:",
+      "options": ["21 June", "5 June", "21 September", "1 July"],
+      "correct": 0,
+      "rationale": "Proposed by India and adopted by the UN in December 2014, the day is 21 June — the summer solstice. 5 June is World Environment Day, the paired trap."
+    },
+    {
+      "id": 7,
+      "question": "Constitution Day (Samvidhan Divas) is observed on:",
+      "options": ["26 January", "26 November", "15 August", "2 October"],
+      "correct": 1,
+      "rationale": "The Constitution was adopted on 26 November 1949 and came into force on 26 January 1950 — adoption and commencement are the two dates the paper swaps."
+    },
+    {
+      "id": 8,
+      "question": "Human Rights Day marks the adoption of the Universal Declaration of Human Rights in:",
+      "options": ["1945", "1948", "1950", "1919"],
+      "correct": 1,
+      "rationale": "The UDHR was adopted on 10 December 1948 — a declaration by the General Assembly, not a treaty, which is the follow-up distinction."
+    },
+    {
+      "id": 9,
+      "question": "National Mathematics Day commemorates the birth of:",
+      "options": ["C.V. Raman", "Srinivasa Ramanujan", "Aryabhata", "Brahmagupta"],
+      "correct": 1,
+      "rationale": "Ramanujan was born on 22 December 1887. The 'Raman-Ramanujan' pair — Science Day for Raman, Mathematics Day for Ramanujan — is the exam's favourite December confusion."
+    },
+    {
+      "id": 10,
+      "question": "World Health Day is observed on:",
+      "options": ["7 April", "22 April", "5 April", "1 December"],
+      "correct": 0,
+      "rationale": "7 April marks the WHO's founding in 1948. 22 April is Earth Day — the two spring dates swap only for the careless."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+# Embedded Figures and Figure Completion
+
+> A large, busy figure hides a small, simple one inside its lines —
+> find it. Or a figure is missing a quadrant and the pattern demands
+> what belongs there — restore it. These two question families train
+> the eye's two directions: zooming **into** a figure to extract a
+> known shape, and zooming **out** to continue a rule.
+
+## 1. Embedded Figures
+
+[definition]
+A figure is **embedded** in another when all its lines appear among
+the host figure's lines, at the same scale — possibly rotated or
+reflected. The task: locate the option's outline among the tangle.
+No line may be missing; none may be invented.
+[/definition]
+
+**The three-step search method:**
+
+1. **Pick the most distinctive element** of the small figure — its
+   longest side, sharpest angle, or a rare feature (a dot, a
+   double-line) — and hunt for it in the host.
+2. **Anchor on it**, then trace the rest of the shape line by line,
+   counting sides as you go.
+3. **Verify completeness**: every side of the option must land on a
+   host line. If even one side floats in blank space, the option is
+   not embedded (that is precisely how distractors are drawn).
+
+```text
+Host figure:                Option to find: triangle
+
+   +----------+
+   |\        /|              The diagonal + top edge + one side
+   | \      / |              form several triangles - count
+   |  \    /  |              them systematically, not randomly.
+   |   \  /   |
+   +----\/----+
+```
+
+**Counting trick:** before hunting a specific triangle, count the
+total — lines crossing a figure create C(k,3)-style combinations of
+triangles; doing a quick census ("this figure should contain about
+six triangles") tells you when to stop searching.
+
+## 2. What Makes an Embedded Question Hard
+
+- **Rotation and reflection**: the option may appear flipped or
+  rotated inside the host — anchor on features, not orientation.
+- **Scale**: embedding is always at equal scale (in standard exam
+  questions); a smaller look-alike is a decoy.
+- **Shared lines**: the target may share lines with neighbouring
+  shapes inside the host; do not expect a clean, isolated outline.
+- **Extra lines**: the host bristles with lines that belong to no
+  option — the search must be feature-led, not outline-led.
+
+## 3. Figure Completion
+
+[definition]
+**Figure completion** gives a figure with a missing part — a
+quadrant, an edge, a cell of a grid — and options for the patch.
+The right patch continues every rule of the figure: element counts
+grow or repeat, shapes rotate, positions rotate or mirror, lines
+continue their geometry.
+[/definition]
+
+**The rule inventory to check, in order:**
+
+| Rule type | What to ask |
+| --- | --- |
+| Rotation | Does each cell rotate a fixed angle (45°, 90°)? |
+| Mirror/flip | Do alternate cells flip? |
+| Count | Does the number of elements increase, decrease, alternate? |
+| Movement | Do dots/arrows move corner-to-corner in a fixed cycle? |
+| Geometry | Do lines continue symmetrically (axis or point symmetry)? |
+| Combination | Do pairs of cells merge elements additively? |
+
+**Worked example.** A 2×2 matrix has three cells filled: each shows
+a circle with one, two, then three radial lines (rotating 45° each
+step). The fourth cell needs four radial lines at the next rotation
+angle. Rules applied: count (+1 each step) and rotation (+45°) —
+options showing four lines at the wrong angle are the planted
+traps.
+
+**Worked example (odd-one-out completion).** A sequence figure
+repeats every fourth step. If steps 1–3 are given and the question
+asks for step 7, the answer is a copy of step 3 (7 mod 4 = 3).
+Completion questions hide easy modular arithmetic inside pictures.
+
+## 4. Symmetry Toolkit for Completion
+
+- **Line (mirror) symmetry**: the missing part must mirror the given
+  part across the stated axis — vertical, horizontal, diagonal.
+- **Point (rotational) symmetry**: a 180° turn maps the figure to
+  itself; the missing quadrant is the given one rotated.
+- **Translation**: bands and borders repeat a unit cell — the
+  missing patch is a copy shifted, not mirrored. Distinguish border
+  repeats (translation) from corner repeats (rotation).
+
+## 5. Tactics for Both Families
+
+1. **Option-first search** for embedding: take the *simplest* option
+   (fewest sides) — if it is embedded, done; the exam's answer is
+   usually findable in under 30 seconds per option.
+2. **Feature anchoring**: dots, arrowheads, double lines, longest
+   sides — search by rare features, never by general shape.
+3. **Rule extraction first** for completion: write the rule in
+   words ("arrow rotates 90° clockwise, dot alternates sides")
+   before looking at options — the verbal rule resists the pull of
+   attractive wrong patches.
+4. **Check ALL rules before choosing**: a patch may satisfy the
+   rotation rule but break the count rule; distractors are built to
+   satisfy exactly one rule.
+5. **Time control**: embedded/completion questions average 30–45
+   seconds; if a search exceeds 90 seconds, mark and move — these
+   are the most time-elastic items in the section.
+
+## 6. Common Traps
+
+- The near-miss triangle using one invented line (always trace
+  every side).
+- A patch with the right elements at the wrong scale.
+- Completion options continuing ONE rule while silently breaking a
+  second (rotation right, count wrong).
+- Mirror-image patches where rotation was the rule (and vice versa).
+- In grid completions, options matching the wrong cell (e.g. row
+  rule vs column rule confusion) — first decide whether the rule
+  runs across rows, down columns, or both.
+
+## 7. Summary
+
+Embedded figures test extraction: anchor on rare features, trace
+every side, allow rotation and reflection, demand exact scale.
+Figure completion tests continuation: inventory the rules (count,
+rotation, flip, movement, symmetry), state them in words, then pick
+the patch that satisfies every rule simultaneously. Both families
+reward the same discipline — systematic search beats staring, and
+verifying all constraints beats pattern intuition.

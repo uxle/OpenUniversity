@@ -3,8 +3,11 @@
 // matching src/storage/*-storage.js.
 
 const DB_NAME = "openuniversity";
-const DB_VERSION = 1;
-export const STORES = ["progress", "bookmarks", "notes", "user"];
+// v2: added the "mockTests" store for saved mock-test attempts (see
+// storage/mock-test-storage.js). Existing users upgrade transparently —
+// onupgradeneeded creates any store the new version is missing.
+const DB_VERSION = 2;
+export const STORES = ["progress", "bookmarks", "notes", "user", "mockTests"];
 
 let dbPromise = null;
 

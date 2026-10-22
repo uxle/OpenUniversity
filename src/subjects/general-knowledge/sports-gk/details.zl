@@ -1,0 +1,13 @@
+# Sports GK
+
+@subject {
+  id: sports-gk
+  title: "Sports GK"
+  parent: general-knowledge
+  description: "The Olympics and multi-sport events, then terms, trophies and venues across games."
+}
+
+@lessons {
+  olympics-and-multi-sport-events
+  sports-terms-trophies-and-venues
+}

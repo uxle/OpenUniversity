@@ -1,0 +1,14 @@
+# Non-Verbal Reasoning
+
+@subject {
+  id: non-verbal-reasoning
+  parent: reasoning
+  title: "Non-Verbal Reasoning"
+  description: "Picture-based logic: mirror and water images, paper folding and cutting, embedded and completed figures."
+}
+
+@lessons {
+  mirror-and-water-images
+  paper-folding-and-cutting
+  embedded-figures-and-figure-completion
+}

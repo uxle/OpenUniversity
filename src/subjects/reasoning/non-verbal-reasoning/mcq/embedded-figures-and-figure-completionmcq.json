@@ -1,0 +1,76 @@
+{
+  "lessonId": "embedded-figures-and-figure-completion",
+  "title": "Embedded Figures and Figure Completion",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A figure is 'embedded' in a host figure when:",
+      "options": ["All its lines appear among the host's lines at the same scale, possibly rotated or reflected", "It looks similar but smaller", "It shares only the outline shape", "It is drawn inside a box"],
+      "correct": 0,
+      "rationale": "Embedding requires every side of the small figure to lie on lines of the host - at identical scale, with rotation and reflection allowed. A smaller look-alike or a partial match is the standard decoy."
+    },
+    {
+      "id": 2,
+      "question": "The fastest way to search for an embedded figure is to:",
+      "options": ["Anchor on the option's most distinctive feature - longest side, sharpest angle, a dot - and trace from there", "Scan the whole figure randomly", "Compare the areas", "Count all lines in the host"],
+      "correct": 0,
+      "rationale": "Rare features (dots, arrowheads, double lines, extreme angles) appear in few places, so anchoring on them narrows the search instantly; then trace the shape side by side, verifying each side lands on a host line."
+    },
+    {
+      "id": 3,
+      "question": "While tracing an option figure inside the host, one of its sides floats in blank space. You conclude:",
+      "options": ["The option is not embedded - every side must land on a host line", "The side can be imagined", "The option is embedded if the rest matches", "The figure needs rotation only"],
+      "correct": 0,
+      "rationale": "No line may be missing: one floating side disqualifies the option. Distractors are drawn precisely with one invented or missing line - the final verification step catches them."
+    },
+    {
+      "id": 4,
+      "question": "A 2x2 matrix shows circles with one, two and three radial lines in successive cells, the line cluster rotating 45 degrees each step. The fourth cell should contain:",
+      "options": ["Four radial lines at the next 45-degree rotation", "Three lines at the original angle", "Four lines at the original angle", "Five radial lines"],
+      "correct": 0,
+      "rationale": "Two rules run together: count (+1 line per cell) and rotation (+45 degrees per cell). The correct patch satisfies BOTH - four lines at the next angle. Options fixing one rule while breaking the other are the planted traps."
+    },
+    {
+      "id": 5,
+      "question": "A figure with 180-degree (point) symmetry has one quadrant missing. The correct patch is:",
+      "options": ["The diagonally opposite quadrant rotated 180 degrees", "A mirror image of the top quadrant", "A blank patch", "Any quadrant of the same size"],
+      "correct": 0,
+      "rationale": "Point symmetry maps every point through the centre: the missing quadrant must be the given opposite quadrant rotated a half turn. Mirror symmetry would be the rule if the figure reflected across an axis instead."
+    },
+    {
+      "id": 6,
+      "question": "In figure completion, the first step before looking at options should be:",
+      "options": ["State the figure's rules in words (rotation, count, flip, movement)", "Pick the most attractive option", "Measure the figure", "Guess based on the previous question"],
+      "correct": 0,
+      "rationale": "A verbal rule ('arrow rotates 90 clockwise, dot alternates sides') resists the pull of attractive wrong patches. Options are engineered to satisfy exactly one rule - only a complete rule inventory defeats them."
+    },
+    {
+      "id": 7,
+      "question": "A border pattern repeats its design every 4 steps. Given steps 1-3, the figure at step 11 will match:",
+      "options": ["Step 3", "Step 1", "Step 2", "Step 4"],
+      "correct": 0,
+      "rationale": "Cyclic patterns hide modular arithmetic: 11 mod 4 = 3, so step 11 repeats step 3. Completion questions frequently wrap easy cycle-counting inside pictures."
+    },
+    {
+      "id": 8,
+      "question": "Which of these is NOT a standard rule type in figure completion?",
+      "options": ["Area of the figure", "Rotation of elements", "Counting of elements", "Movement of dots or arrows"],
+      "correct": 0,
+      "rationale": "Completion rules operate on elements - rotation, flips, counts, movements, symmetry. Absolute area is not a visual rule examiners use, since figures are printed at fixed size."
+    },
+    {
+      "id": 9,
+      "question": "In a grid completion problem, you must first determine:",
+      "options": ["Whether the rule runs across rows, down columns, or both", "The number of options", "The colours used", "The answer to the previous question"],
+      "correct": 0,
+      "rationale": "Row-rule and column-rule confusions are deliberate: a cell may fit the row pattern but break the column pattern. Fix the rule's direction before evaluating patches - most wrong answers apply the wrong direction."
+    },
+    {
+      "id": 10,
+      "question": "If an embedded-figure search runs past 90 seconds, the best tactic is:",
+      "options": ["Mark the question and move on - these items are highly time-elastic", "Keep searching until found", "Guess the first option", "Abandon the whole section"],
+      "correct": 0,
+      "rationale": "Embedded questions average 30-45 seconds; a 90-second stuck search signals a hidden trick better approached fresh. Bank the easy marks first - the section rewards triage discipline."
+    }
+  ]
+}

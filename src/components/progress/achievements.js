@@ -15,10 +15,28 @@ export function getEarnedAchievements(stats) {
   return MILESTONES.filter((m) => m.test(stats));
 }
 
+const HINTS = {
+  "first-lesson": "Complete any lesson.",
+  "five-lessons": "Complete 5 lessons.",
+  "streak-3": "Study 3 days in a row.",
+  "streak-7": "Study 7 days in a row.",
+  "high-accuracy": "Average 90% or more across quizzes.",
+};
+
+/** Earned milestones first, then the locked ones as visible goals —
+ *  a list that only ever shows what you already have gives nothing to
+ *  aim at. */
 export function createAchievementsList(stats) {
-  const earned = getEarnedAchievements(stats);
-  if (!earned.length) return createEl("p", { class: "ou-text-secondary" }, ["No achievements yet — keep learning!"]);
-  return createEl("ul", { role: "list", class: "ou-cluster" }, earned.map((m) =>
-    createEl("li", { class: "ou-card ou-card--interactive ou-cluster" }, [icon(m.iconName), m.label])
-  ));
+  const earnedIds = new Set(getEarnedAchievements(stats).map((m) => m.id));
+  const ordered = [...MILESTONES.filter((m) => earnedIds.has(m.id)), ...MILESTONES.filter((m) => !earnedIds.has(m.id))];
+  return createEl("ul", { role: "list", class: "ou-badges" }, ordered.map((m) => {
+    const got = earnedIds.has(m.id);
+    return createEl("li", { class: `ou-badge${got ? " is-earned" : " is-locked"}` }, [
+      createEl("span", { class: "ou-badge__icon", "aria-hidden": "true" }, [icon(got ? m.iconName : "lock")]),
+      createEl("span", { class: "ou-badge__body" }, [
+        createEl("span", { class: "ou-badge__title" }, [m.label]),
+        createEl("span", { class: "ou-badge__hint" }, [got ? "Earned" : `Locked — ${HINTS[m.id]}`]),
+      ]),
+    ]);
+  }));
 }

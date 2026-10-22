@@ -1,0 +1,76 @@
+{
+  "lessonId": "international-economic-institutions",
+  "title": "International Economic Institutions: The Bretton Woods System and Beyond",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Bretton Woods conference of 1944 gave birth to:",
+      "options": ["The IMF and the World Bank", "The WTO and UNCTAD", "The GATT and OECD", "The UN and NATO"],
+      "correct": 0,
+      "rationale": "The 1944 conference (44 nations, Keynes and White as architects) created the IMF for monetary cooperation and the IBRD/World Bank for reconstruction. GATT arrived in 1947 and the WTO only in 1995."
+    },
+    {
+      "id": 2,
+      "question": "Which institution lends to countries facing balance-of-payments crises?",
+      "options": ["The IMF", "The World Bank (IBRD)", "The WTO", "The IFC"],
+      "correct": 0,
+      "rationale": "The IMF is the short-run firefighter: standby arrangements and extended facilities provide foreign exchange in BoP distress, typically with policy conditionality. The World Bank funds long-run development; the WTO makes trade rules and does not lend."
+    },
+    {
+      "id": 3,
+      "question": "Voting power in the IMF is determined by:",
+      "options": ["Quota subscriptions (quota-weighted)", "One member, one vote", "Population", "GDP growth rates"],
+      "correct": 0,
+      "rationale": "A member's quota - its subscription - sets its vote, borrowing access and SDR allocation, concentrating influence in large economies. The WTO by contrast operates on consensus with formal one-member-one-vote equality."
+    },
+    {
+      "id": 4,
+      "question": "The Special Drawing Right (SDR) is:",
+      "options": ["The IMF's reserve asset based on a basket of major currencies", "The World Bank's unit of account", "A WTO tariff schedule", "A UN development goal"],
+      "correct": 0,
+      "rationale": "The SDR is a basket of five currencies (USD, EUR, CNY, JPY, GBP) allocated to IMF members to supplement reserves - expanded by $650 billion in 2021 during the pandemic."
+    },
+    {
+      "id": 5,
+      "question": "Which arm of the World Bank Group provides interest-free credits to the poorest countries?",
+      "options": ["IDA", "IBRD", "MIGA", "ICSID"],
+      "correct": 0,
+      "rationale": "The International Development Association (1960) extends concessional, essentially interest-free finance to low-income countries. IBRD lends to middle-income governments, IFC to private firms, MIGA guarantees against political risk, ICSID arbitrates disputes."
+    },
+    {
+      "id": 6,
+      "question": "The WTO was established in:",
+      "options": ["1995, replacing the GATT", "1944, at Bretton Woods", "1947, alongside the IMF", "2001, at the Doha conference"],
+      "correct": 0,
+      "rationale": "The Uruguay Round's final act created the WTO on 1 January 1995, upgrading the 1947 GATT into a full institution with services (GATS), IP (TRIPS) and binding dispute settlement."
+    },
+    {
+      "id": 7,
+      "question": "The most-favoured-nation (MFN) principle requires that:",
+      "options": ["Any trade concession to one member be extended to all members", "Imports be taxed more than domestic goods", "Only neighbouring countries trade freely", "Developing countries get zero tariffs"],
+      "correct": 0,
+      "rationale": "MFN is non-discrimination: favour one, favour all. National treatment - the companion rule - then forbids taxing imports worse than domestic goods once they have entered."
+    },
+    {
+      "id": 8,
+      "question": "The WTO's Appellate Body, the crown of its dispute settlement system, has been paralysed since 2019 because:",
+      "options": ["The US has blocked appointments to it", "All members withdrew their cases", "Its building was closed", "The Doha Round merged it with the IMF"],
+      "correct": 0,
+      "rationale": "Blocking new appointments leaves the seven-member body without a quorum, so appeals lapse into the void. Members responded with the interim multi-party appeal arrangement and, increasingly, unilateral retaliation."
+    },
+    {
+      "id": 9,
+      "question": "The IMF's conditionality refers to:",
+      "options": ["Policy adjustments attached to loans above the basic tranche", "Membership fees for joining", "Mandatory currency convertibility", "Voting reform requirements"],
+      "correct": 0,
+      "rationale": "Access to larger IMF programs requires agreed policy measures - fiscal tightening, exchange-rate reform, structural changes - intended to restore external viability. Critics blame these austerity conditions for deepening crises such as the 1997-98 Asian turmoil."
+    },
+    {
+      "id": 10,
+      "question": "Which pairing of flagship publication and institution is correct?",
+      "options": ["World Economic Outlook - IMF", "World Development Report - WTO", "Doing Business - IMF", "Global Trade Review - World Bank"],
+      "correct": 0,
+      "rationale": "The IMF publishes the World Economic Outlook (and Fiscal Monitor); the World Bank publishes the World Development Report (and published Doing Business until 2021). The WTO's signature output is its agreements and the World Trade Report."
+    }
+  ]
+}

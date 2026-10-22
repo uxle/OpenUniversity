@@ -1,0 +1,141 @@
+# Calendar Reasoning: Odd Days and Weekday Puzzles
+
+> Calendar questions look like trivia — "what day was 15 August
+> 1947?" — but they run on a small arithmetic engine: count the
+> **odd days** between two dates and the weekday falls out. Learn
+> the engine once and every date in history becomes a 30-second
+> calculation.
+
+## 1. The Foundation: Ordinary and Leap Years
+
+[definition]
+An **ordinary year** has 365 days = 52 weeks + **1 odd day**. A
+**leap year** has 366 days = 52 weeks + **2 odd days**. Odd days are
+simply the leftovers after removing whole weeks — and leftover days
+are what move the weekday.
+[/definition]
+
+Leap-year rule (Gregorian):
+
+- Divisible by 4 → leap year; **but** divisible by 100 → not;
+  **but** divisible by 400 → leap again.
+
+So 2000 and 2400 are leap years; 1700, 1800, 1900, 2100 are not.
+In 400 years there are 97 leap years, giving
+$400 \times 365 + 97 = 146097$ days $=$ exactly 20871 weeks — **zero
+odd days**. That is why the calendar repeats exactly every 400
+years, and why a century always starts with the same two candidate
+weekdays.
+
+## 2. Odd-Day Bookkeeping
+
+| Span | Odd days |
+| --- | --- |
+| Ordinary year | 1 |
+| Leap year | 2 |
+| 100 years | 5 (24 leap + 76 ordinary → 124 → 5) |
+| 200 years | 3 |
+| 300 years | 1 |
+| 400 years | 0 |
+
+Month codes (odd days within months):
+
+| Month | Odd days | Month | Odd days |
+| --- | --- | --- | --- |
+| January | 3 | July | 3 |
+| February | 0/1 (leap) | August | 3 |
+| March | 3 | September | 2 |
+| April | 2 | October | 3 |
+| May | 3 | November | 2 |
+| June | 2 | December | 3 |
+
+[important]
+The **day-number key** used in the standard method:
+Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4,
+Friday = 5, Saturday = 6. Total odd days are divided by 7; the
+remainder maps directly to the weekday. A negative total? Add 7 —
+like counting backwards past midnight.
+[/important]
+
+## 3. Finding the Weekday of a Given Date
+
+**Worked example.** What day of the week was 15 August 1947?
+
+- Odd days up to 1600: **0**
+- 1601–1900 (300 years): **1**
+- 1901–1946: 46 years = 11 leap + 35 ordinary
+  = $11 \times 2 + 35 \times 1 = 57$ days $\to 57 \bmod 7 = 1$ odd
+  day → **1**
+- 1 January – 31 July 1947 (not a leap year):
+  $3+0+3+2+3+2+3 = 16 \to 2$ odd days
+- 1–15 August: 15 days $\to 1$ odd day.
+
+Total: $0 + 1 + 1 + 2 + 1 = 5$ → **Friday**. (History agrees:
+the midnight session of 14–15 August 1947 was a Friday.)
+
+**Worked example.** What day was 26 January 1950 (Republic Day)?
+
+- Up to 1947-end: 0 (1600) + 1 (300 yrs) + odd days 1901–47:
+  $11 \times 2 + 36 \times 1 = 58 \to 2$ → total 3.
+- 1948, 1949 (ordinary): 1 + 1 = 2 → total 5.
+- Jan 1–26, 1950: 26 days $\to 5$.
+- Grand total $5 + 5 = 10 \to 3$ → **Thursday**.
+
+## 4. Calendar Repetition Questions
+
+"Which year will have the same calendar as 2024?"
+
+Two conditions decide a true repeat: the later year must start on
+the **same weekday** and have the **same leap status** (otherwise
+February 29 breaks the match).
+
+**Worked example.** Same calendar as 2023 (ordinary year; 1 January
+2023 was a Sunday)? Walk forward, adding each passed year's odd
+days: 2024 (+2) → 2, 2025 (+1) → 3, 2026 (+1) → 4, 2027 (+1) → 5,
+2028 (+2) → 7 ≡ 0. So 1 January 2029 also falls on Sunday — and
+2029 is an ordinary year like 2023. Answer: **2029**.
+
+**Worked example.** Same calendar as 2024 (a leap year starting on
+Monday)? A weekday match is not enough here — the repeat must also
+be a leap year. Leap years starting on Monday recur roughly every
+28 years: 2024 → **2052**. (If a century non-leap year intervenes,
+the gap can stretch to 40 years — always verify both conditions.)
+
+## 5. Last-Day and Same-Weekday Puzzles
+
+- "It was Sunday on 1 January 2006 — what was 1 January 2010?"
+  Add odd days for 2006–2009: $1+1+2+1 = 5$; Sunday + 5 = **Friday**.
+- "Which months of an ordinary year start on the same weekday?"
+  In an ordinary year: January and October; April and July;
+  September and December; February and March (and November);
+  also February–March pair with each other. In a leap year:
+  January–April–July, February–August, March–November,
+  September–December.
+- "A day repeater": the 13th of the month falls on Friday more
+  often than any other weekday (a quirk of the Gregorian cycle).
+
+## 6. Exam Patterns and Traps
+
+- **Count the year BEFORE, not the target**: odd days from
+  1 Jan 1857 to 1 Jan 1860 use the years 1857, 1858, 1859 — never
+  1860. Off-by-one here is the single most common calendar error.
+- **February in leap years**: when the span includes a leap
+  February *before* your target date, add 2 odd days for that year;
+  if the span ends before 29 February, the year still counts as it
+  falls.
+- **Century years**: 1900 is NOT a leap year — papers love it.
+- **Reverse questions**: "X was a Thursday; what day is 100 days
+  later?" — $100 \bmod 7 = 2$; Thursday + 2 = Saturday.
+- **Date arithmetic across months**: 18 June to 9 July =
+  $(30-18) + 9 = 21$ days — always count remaining days of the first
+  month plus elapsed of the last.
+
+## 7. Summary
+
+Calendar reasoning is modular arithmetic on leftover days: 1 odd
+day per ordinary year, 2 per leap year, 5/3/1/0 per block of
+hundred years. Chain the odd days, take remainder mod 7, and map
+0–6 to Sunday–Saturday. Watch the two classic traps — the
+before-year rule and the century exception — and the chapter
+becomes the most mechanical, and therefore the most bankable, of
+all reasoning topics.

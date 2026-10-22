@@ -1,0 +1,76 @@
+{
+  "lessonId": "input-output-reasoning",
+  "title": "Input-Output Reasoning: Decoding the Machine",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In an input-output puzzle, the machine places ONE element in its final position per step. For an input of 9 elements, the maximum number of steps is:",
+      "options": ["8", "9", "7", "10"],
+      "correct": 0,
+      "rationale": "Each step fixes one element; after 8 steps, 8 elements are placed and the 9th falls into place automatically. So N elements need at most N - 1 steps. If a question asks for step 9 here, the answer is that no such step exists - step 8 is the last."
+    },
+    {
+      "id": 2,
+      "question": "Input: 39 121 25 406 72 94. Step 1: 406 39 121 25 72 94. Step 2: 406 121 39 25 72 94. The machine's rule is:",
+      "options": ["Sort in descending order, one element placed per step", "Sort in ascending order", "Rotate right by one each step", "Halve every number"],
+      "correct": 0,
+      "rationale": "The largest number (406) comes to the front in step 1, the next largest (121) to slot 2 in step 2 - a descending sort placing one element per step. The remaining elements keep their relative order while they wait."
+    },
+    {
+      "id": 3,
+      "question": "For the machine in question 2, if the input is 'cat an zebra in dog ox' and the rule is dictionary order ascending with one word placed per step, how many steps until the last one?",
+      "options": ["5", "6", "4", "7"],
+      "correct": 0,
+      "rationale": "Six words - an, cat, dog, in, ox, zebra - need 6 - 1 = 5 steps: each step fixes the next word of the dictionary sequence at the left of the unsorted block, and the final word is left in place automatically."
+    },
+    {
+      "id": 4,
+      "question": "A machine rotates the line right by one position each step: a b c d e f -> f a b c d e -> e f a b c d -> ... For this 6-element input, step 9 will look the same as:",
+      "options": ["Step 3", "Step 1", "Step 6", "Step 4"],
+      "correct": 0,
+      "rationale": "A rotation of N elements cycles every N steps. 9 mod 6 = 3, so step 9 equals step 3. Rotation machines are solved with modular arithmetic, never by brute-force simulation."
+    },
+    {
+      "id": 5,
+      "question": "Input: 56 27 84 19. Step 1: 28 27 42 19. A plausible rule, if it holds for every pair, is:",
+      "options": ["Halve only the even numbers, leave odds unchanged", "Subtract 29 from every number", "Reverse the digits of every number", "Sort descending"],
+      "correct": 0,
+      "rationale": "56 -> 28 and 84 -> 42 (halved), while 27 and 19 are unchanged (odd). A candidate rule must be verified on EVERY pair before you trust it: test one pair, then test them all - the makers plant rules that fit half the line."
+    },
+    {
+      "id": 6,
+      "question": "The question states 'Step 5 is the last step.' For a similar machine acting on 7 elements, the most useful inference is:",
+      "options": ["The machine needs exactly 6 steps for 7 elements if it places one per step - so the given input may already contain placed elements", "The machine always stops at step 5", "The input had 5 elements", "The rule is a rotation"],
+      "correct": 0,
+      "rationale": "One placement per step means 7 elements finish in at most 6 steps. A declared last step is DATA: it tells you the total step count for that input, anchoring the N-1 formula for related questions."
+    },
+    {
+      "id": 7,
+      "question": "In dictionary-order machines, 'of' comes before 'out' because:",
+      "options": ["Dictionary comparison is letter by letter: f precedes u at the second letter", "'of' is shorter", "It depends on the machine", "Both are equal in order"],
+      "correct": 0,
+      "rationale": "Lexicographic order compares the first differing letter: o-f vs o-u, and f < u, so 'of' precedes 'out'. Length matters only when one word is a prefix of the other ('an' before 'ant')."
+    },
+    {
+      "id": 8,
+      "question": "A pull-to-front descending machine produced Step 2 = 406 121 39 25 72 94. To reverse it to Step 1, you should:",
+      "options": ["Lift 121 out of slot 2 and reinsert it between 39 and 25", "Swap 406 and 121", "Move 72 to the front", "Remove 406 from the line"],
+      "correct": 0,
+      "rationale": "The last placement was 121 at slot 2. Undoing means lifting it out and reinserting it so the shifted remainder keeps its previous relative order - between 39 and 25 - giving Step 1 = 406 39 121 25 72 94. Forward-checking the result confirms it."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is NOT a standard machine rule in input-output puzzles?",
+      "options": ["Reversing the alphabet of every word's letters", "Sorting numbers ascending or descending", "Arranging words by length, ties by alphabet", "Shifting the last element to the front each step"],
+      "correct": 0,
+      "rationale": "Sorting by value/length/alphabet and rotations (last-to-front) are the standard families. 'Reversing each word's letters' is not a standard rearrangement rule in these puzzles - though any consistent, inferable rule could in principle appear, exams stick to the classic families."
+    },
+    {
+      "id": 10,
+      "question": "The best first move in ANY input-output question is:",
+      "options": ["Compare consecutive steps to identify what moves, where, and how much per step", "Simulate all steps for the asked question", "Count the total number of elements", "Look at the answer options first"],
+      "correct": 0,
+      "rationale": "Rule extraction comes first: diff step 0 to step 1 and step 1 to step 2 - the jumping element and its destination reveal the machine. Only then decide whether to jump ahead (sorting), wrap around (rotation), or reverse (backwards questions)."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "indices-and-surds",
+  "title": "Indices and Surds: Advanced Techniques for Exams",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Simplify (2^3)^2 x 2^(-4) / 2^5.",
+      "options": ["1/8", "8", "1/4", "2"],
+      "correct": 0,
+      "rationale": "(2^3)^2 = 2^6. Collect exponents: 6 - 4 - 5 = -3, so the value is 2^(-3) = 1/8. Never evaluate large powers; combine exponents first."
+    },
+    {
+      "id": 2,
+      "question": "Evaluate (27/8)^(-2/3).",
+      "options": ["4/9", "9/4", "3/4", "8/9"],
+      "correct": 0,
+      "rationale": "The negative index inverts the fraction: (8/27)^(2/3) = (2/3)^2 = 4/9. The denominator 3 of the index takes the cube root, the numerator 2 squares."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a surd?",
+      "options": ["sqrt(16)", "cube root of 27", "sqrt(12)", "sqrt(25)"],
+      "correct": 2,
+      "rationale": "sqrt(16), cube root of 27 and sqrt(25) simplify to whole numbers (4, 3, 5). Only sqrt(12) = 2*sqrt(3) remains irrational, so it is the surd."
+    },
+    {
+      "id": 4,
+      "question": "Arrange in ascending order: sqrt(5), cube root of 11, 2.4.",
+      "options": ["cube root of 11 < sqrt(5) < 2.4", "sqrt(5) < cube root of 11 < 2.4", "2.4 < sqrt(5) < cube root of 11", "cube root of 11 < 2.4 < sqrt(5)"],
+      "correct": 0,
+      "rationale": "Raise to the 6th power: (sqrt(5))^6 = 125, (cube root of 11)^6 = 121, 2.4^6 is about 191. Since 121 < 125 < 191, the order is cube root of 11 < sqrt(5) < 2.4."
+    },
+    {
+      "id": 5,
+      "question": "Rationalise the denominator of 6/(sqrt(5) + 1).",
+      "options": ["(3(sqrt(5) - 1))/2", "6(sqrt(5) + 1)/4", "3(sqrt(5) + 1)", "(sqrt(5) - 1)/2"],
+      "correct": 0,
+      "rationale": "Multiply by the conjugate (sqrt(5) - 1): 6(sqrt(5) - 1)/(5 - 1) = 6(sqrt(5) - 1)/4 = 3(sqrt(5) - 1)/2. The difference of squares clears the surd from the denominator."
+    },
+    {
+      "id": 6,
+      "question": "If x = 3 + 2*sqrt(2), what is 1/x?",
+      "options": ["3 - 2*sqrt(2)", "2*sqrt(2) - 3", "1/(3 + 2*sqrt(2)) stays irrational", "5 - 2*sqrt(2)"],
+      "correct": 0,
+      "rationale": "Multiply by the conjugate: 1/x = (3 - 2*sqrt(2))/((3)^2 - (2*sqrt(2))^2) = (3 - 2*sqrt(2))/(9 - 8) = 3 - 2*sqrt(2)."
+    },
+    {
+      "id": 7,
+      "question": "sqrt(2) + sqrt(8) equals:",
+      "options": ["3*sqrt(2)", "sqrt(10)", "2*sqrt(2)", "sqrt(16)"],
+      "correct": 0,
+      "rationale": "sqrt(8) = 2*sqrt(2), so the sum is 3*sqrt(2). Surds combine only when their irrational parts match; sqrt(2) + sqrt(8) is never sqrt(10)."
+    },
+    {
+      "id": 8,
+      "question": "The conjugate of 5 - sqrt(3) is:",
+      "options": ["5 + sqrt(3)", "-5 - sqrt(3)", "sqrt(3) - 5", "5 - sqrt(3)"],
+      "correct": 0,
+      "rationale": "A conjugate flips only the sign between the terms: 5 + sqrt(3). Their product (5)^2 - 3 = 22 is rational, which is why conjugates rationalise denominators."
+    },
+    {
+      "id": 9,
+      "question": "Given sqrt(2) is about 1.414, the value of 1/(3 - 2*sqrt(2)) is closest to:",
+      "options": ["5.828", "0.172", "1.414", "2.414"],
+      "correct": 0,
+      "rationale": "Multiply by (3 + 2*sqrt(2))/(3 + 2*sqrt(2)): the denominator becomes 9 - 8 = 1, leaving 3 + 2(1.414) = 5.828."
+    },
+    {
+      "id": 10,
+      "question": "If x = 3 + 2*sqrt(2), then x^2 + 1/x^2 equals:",
+      "options": ["34", "36", "32", "38"],
+      "correct": 0,
+      "rationale": "First 1/x = 3 - 2*sqrt(2) (conjugate over 9 - 8 = 1), so x + 1/x = 6. Then x^2 + 1/x^2 = (x + 1/x)^2 - 2 = 36 - 2 = 34. The surd parts cancel, giving a clean rational answer."
+    }
+  ]
+}

@@ -11,7 +11,7 @@ import { createProgressRing } from "./progress-ring.js";
  *   the "x / y lessons" line. When unknown/0, falls back to a plain count
  *   with no denominator (ring shows "Start" until something's completed).
  */
-export function createProgressCard({ lessonsCompleted, mcqsAnswered, accuracy }, totalLessons = 0) {
+export function createProgressCard({ lessonsCompleted, mcqsAnswered, accuracy }, totalLessons = 0, { linked = true } = {}) {
   const ratio = totalLessons > 0 ? lessonsCompleted / totalLessons : 0;
   const lessonLabel = totalLessons > 0
     ? `${lessonsCompleted} / ${totalLessons} ${pluralize("lesson", totalLessons)} completed`
@@ -22,7 +22,11 @@ export function createProgressCard({ lessonsCompleted, mcqsAnswered, accuracy },
       ? "All lessons completed"
       : "Continue learning";
 
-  return createEl("a", { href: "#/progress", class: "ou-card ou-card--interactive ou-progress-card" }, [
+  // On the Progress page itself the card must not link to "#/progress"
+  // (a dead tap); there it is a plain summary.
+  return createEl(linked ? "a" : "div", linked
+    ? { href: "#/progress", class: "ou-card ou-card--interactive ou-progress-card" }
+    : { class: "ou-card ou-progress-card ou-progress-card--static" }, [
     createEl("div", { class: "ou-cluster", style: "gap: var(--ou-space-4);" }, [
       createProgressRing(ratio),
       createEl("div", {}, [
@@ -31,6 +35,6 @@ export function createProgressCard({ lessonsCompleted, mcqsAnswered, accuracy },
         createEl("div", { class: "ou-text-sm ou-text-secondary ou-tabular-nums" }, [`${mcqsAnswered} ${pluralize("quiz", mcqsAnswered, "quizzes")} answered · ${formatPercent(accuracy)} accuracy`]),
       ]),
     ]),
-    icon("chevron-right", { class: "ou-progress-card__chevron" }),
+    linked ? icon("chevron-right", { class: "ou-progress-card__chevron" }) : null,
   ]);
 }

@@ -1,0 +1,162 @@
+# Input-Output Reasoning: Decoding the Machine
+
+> A mythical machine takes a line of words or numbers and rearranges
+> it one step at a time. You see the input and the first few steps —
+> and must predict step 47, or run the machine backwards. The trick
+> is always the same: find the rule from the pattern, write it as a
+> recipe, then apply it without actually simulating every step.
+
+## 1. The Structure of These Puzzles
+
+[definition]
+An **input-output (machine input)** puzzle presents a starting line
+(called the **Input**) followed by several **Steps**, where each
+step applies one hidden rearrangement rule — typically moving one
+element at a time to its final position. Questions then ask for a
+later step, the number of steps for a new input, the previous step,
+or the input itself.
+[/definition]
+
+```text
+Input:  39     121   25    406    72     94
+Step 1: 406    39    121   25     72     94
+Step 2: 406    121   39    25     72     94
+Step 3: 406    121   94    25     72     39
+Step 4: 406    121   94    72     25     39
+Step 5: 406    121   94    72     39     25
+Step 5 is the last step.
+```
+
+Reading the snapshots: the machine is sorting the numbers in
+**descending order**, and each step places **one more number** in its
+final slot from the left. Six numbers → five steps to finish.
+
+## 2. The Five-Question Protocol
+
+1. **What is moving?** Compare consecutive steps; the element that
+   jumps to the front (or back) reveals what the machine values.
+2. **In which direction?** Ascending/descending; left-to-right or
+   right-to-left; by value, by first letter, by length, by
+   consonant/vowel pattern.
+3. **How much per step?** Usually ONE element fixed per step — this
+   gives the step-count formula.
+4. **When does it stop?** The last step is a fully sorted (or
+   fully shifted) line — often the question tells you, or the
+   pattern completes obviously.
+5. **What is the fixed tail?** Elements already in position never
+   move again — so later steps only touch the unsorted remainder.
+
+[important]
+The golden shortcut: **N elements need at most N−1 steps** when one
+element is placed per step (a fully sorted line needs 0). So for an
+8-word input, step 7 is the last; if asked for "step 9", the answer
+is "no such step exists" or "same as the last step". Questions
+asking for very late steps are usually testing this insight, not
+your patience.
+[/important]
+
+## 3. Word-Based Machines
+
+Words rearrange by dictionary order, by length, by the number of
+letters, vowels or consonants:
+
+```text
+Input:  goat   out    of   always   the   barn
+Step 1: always goat   out  of        the   barn
+Step 2: always barn   goat out       of    the
+Step 3: always barn   goat of        out   the
+Step 3 is the last step.
+```
+
+Rule read: **alphabetical (dictionary) order, ascending**, one word
+placed per step. Note "of" before "out" — dictionary order compares
+letter by letter, so "of" precedes "out" because *f* < *u*.
+
+**Worked example.** If the rule is "words in ascending order of
+length, ties by alphabet", then for the input
+**cat, an, zebra, in, dog, ox**:
+Step 1 fixes "an" (an < in < ox by alphabet among 2-letter words),
+Step 2 fixes "in", Step 3 fixes "ox", Step 4 fixes "cat", Step 5
+fixes "dog", and "zebra" falls into place — 5 steps for 6 words.
+
+## 4. Number-Based Machines
+
+Two families dominate:
+
+- **Sorting**: ascending or descending (as in Section 1).
+- **Arithmetic mutation**: each step adds/subtracts a constant,
+  squares, or halves the numbers; or the machine operates on digits
+  (sum of digits, interchanging digits).
+
+```text
+Input:  56    27    84    19
+Step 1: 28    27    42    19     (each number halved, then...)
+```
+
+Mutations are spotted by testing a candidate rule on ONE pair
+(input → step 1) and verifying it on ALL pairs. If it works
+everywhere, you have the rule; if it fails anywhere, try the next
+candidate (digit-sum, product of digits, reverse-and-add).
+
+## 5. Interleaving and Shifting Machines
+
+Some machines move both ends inward:
+
+```text
+Input:  a    b    c    d    e    f
+Step 1: f    a    b    c    d    e     (last to front)
+Step 2: e    f    a    b    c    d     (new last to front)
+```
+
+Each step is a **rotation by one**; after N steps the line returns
+to the input. For rotations, compute the requested step as
+$\text{step} \bmod N$ — step 9 of a 6-element rotation equals
+step 3. Other variants: swap pairs; interchange first and last
+halves; move every second element to the end.
+
+## 6. Running the Machine Backwards
+
+Backwards questions usually ask: "If this line is a step of an
+input, which of the following could be the input?" The safest
+method is **forward-checking** — simulate each option one step and
+see which produces the given line. But when the machine's mechanic
+is "pull one element to the front of the unsorted block, others
+keep relative order" (the standard pull-to-front machine), you can
+also reverse directly: **lift out the most recently placed element
+and reinsert it so that the remaining elements keep their previous
+relative order.**
+
+**Worked example.** In the Section 1 machine (descending,
+pull-to-front), suppose Step 2 = **406 121 39 25 72 94**. Undo the
+last placement: lift 121 out of slot 2. The shifted remainder (39,
+25) keeps its order, and 121 returns to its stable position among
+them — between 39 and 25, as the input's relative order demands.
+Result: Step 1 = **406 39 121 25 72 94** — exactly the Section 1
+snapshot, confirming the reversal.
+
+## 7. Exam Tactics
+
+- **Never simulate more than you must.** Establish the rule from
+  steps 1–2, then jump: for sorting machines, step k simply has the
+  first k elements in final order.
+- **Write the rule in words** ("descending, one per step") before
+  answering — half of all wrong answers come from misreading the
+  direction.
+- **Check stability**: elements not yet placed keep their **relative
+  input order** in most papers' machines — that is how you fill
+  unplaced slots when predicting.
+- **"Last step" declarations** in the question are data: they tell
+  you the machine halts, hence the total step count — use it for
+  the N−1 formula.
+- **For huge step numbers**, reduce modulo the cycle length
+  (rotations) or cap at the last step (sorting).
+
+## 8. Summary
+
+Input-output puzzles are rule extraction plus arithmetic
+bookkeeping: identify what moves, where, and how much per step;
+know that one-placement-per-step means N−1 steps; use modular
+thinking for rotations; and go backwards by mirroring the rule one
+operation at a time. The machine is imaginary — the discipline it
+tests (infer a rule from snapshots, then extrapolate) is exactly
+what real data analysis is.

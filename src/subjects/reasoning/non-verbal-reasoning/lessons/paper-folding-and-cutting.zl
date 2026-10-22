@@ -1,0 +1,141 @@
+# Paper Folding and Cutting
+
+> A square sheet is folded twice, a corner is punched through all
+> layers, and the paper is unfolded. How many holes, and where?
+> Paper-folding questions are pure symmetry bookkeeping: every fold
+> creates a mirror, every cut pierces every layer, and unfolding
+> reflects the cut once per fold.
+
+## 1. The Core Principle
+
+[definition]
+When a sheet is folded, the fold line becomes an **axis of
+symmetry**: whatever is cut through the folded stack appears on
+**every layer**. Unfolding the sheet therefore **reflects the cut
+across every fold line**, once for each fold made, producing the
+final pattern of holes.
+[/definition]
+
+Two consequences drive every question:
+
+1. **Holes multiply by layers.** A punch through 4 layers = 4 holes
+   when opened.
+2. **Position comes from reflection.** Each hole's partner lies
+   mirrored across the fold line, at the same perpendicular distance
+   on the other side.
+
+## 2. Tracking Folds: The Half-Turn Table
+
+Folds double the layers (for folds that stack the paper over
+itself):
+
+| Folds | Layers | Holes per punch |
+| --- | --- | --- |
+| 0 | 1 | 1 |
+| 1 | 2 | 2 |
+| 2 | 4 | 4 |
+| 3 | 8 | 8 |
+
+But position matters more than count: a punch **on** the fold line
+punches only the doubled edge and produces a hole *bisected* by the
+fold line (a half-hole becomes a full hole straddling the axis on
+opening). A punch at a **corner made by two folds** multiplies
+across both axes.
+
+```text
+Fold once vertically, punch top-right corner:
+
+  +------+--/|--+         +------+------+
+  |      |  X   |   ==>   |   X  |  X   |
+  |      |      |  open   |      |      |
+  +------+------+         +------+------+
+        (fold)          two holes, mirrored
+```
+
+## 3. Standard Question Types
+
+**(a) Find the punched paper** — you are shown the folded paper with
+punched holes, and must pick the unfolded sheet. Method: mentally
+unfold **one fold at a time, in reverse order of folding** (last
+fold first), reflecting all holes across that fold line.
+
+**(b) Find the punched position** — the final unfolded pattern is
+given; find which folded-punch would produce it. Method: fold the
+pattern back down, mirroring hole-groups across the fold lines
+until the paper is the given folded size; the surviving hole is the
+punch position.
+
+**(c) Fold-direction questions** — the fold sequence is described in
+words ("folded twice, first vertically, then horizontally, then
+punched at the top-left of the remaining stack"). Draw a small
+diagram with the stack shrinking each fold; the punch position in
+the question always refers to the FINAL stacked shape.
+
+[important]
+Unfold in **reverse order**: if the paper was folded right-over-left
+and then bottom-over-top, you open the horizontal fold first (holes
+reflect top-bottom), then the vertical fold (holes reflect
+left-right). Reversing this order is the number-one error in the
+chapter.
+[/important]
+
+## 4. Worked Examples
+
+**Example 1 — two folds, one punch.** A square is folded
+vertically (right half onto left), then horizontally (bottom half
+onto top). The top-left corner of the resulting quarter is punched.
+Unfold the horizontal fold first: the corner hole gains a mirror
+below the horizontal axis — two holes at top-left and bottom-left
+of the half-sheet. Now unfold the vertical axis: each hole gains a
+mirror to the right — four holes, one in each corner. Answer:
+**4 corner holes** (diagonally symmetric pattern: all four corners).
+
+**Example 2 — punch on the fold.** One vertical fold; the punch
+lands **on** the folded edge. Opening gives a single hole centred
+ON the crease line — the punch went through both layers at the same
+spot, and the two half-holes merge. Count: **1 hole**, straddling
+the fold line.
+
+**Example 3 — cut shapes, not holes.** A folded paper has a
+triangular notch cut from the folded edge. Unfolding reveals the
+full symmetric shape the notch traces: a **rhombus/diamond** (two
+mirrored triangles meeting at the crease), or if cut from a corner,
+an arrowhead. Cutting questions obey the same reflection law as
+punch questions; only the shapes are richer.
+
+## 5. Multiple Cuts and Mixed Patterns
+
+With two or more punches at different positions, track each punch
+independently — patterns don't interact unless their mirror images
+overlap (two holes may merge into one larger/odd hole; exams rarely
+do this, but symmetry-aware merging explains such options).
+
+Dotted-line conventions in exam figures: solid lines = visible
+edges, dashed = fold creases, arrows = fold direction. Read the
+creases first, decide the stacking order, then apply the reverse
+unfold.
+
+## 6. Tactics That Score
+
+1. **Draw the stack.** Three quick rectangles, each half the
+   previous size, labelled with fold order — 15 seconds that
+   prevent most errors.
+2. **Unfold in reverse.** Last fold made is first fold opened.
+3. **Count first, position second.** The hole count (layers)
+   eliminates half the options instantly.
+4. **Punch on a crease = merged hole on the line**; punch on a
+   corner made by creases = symmetric cluster around that corner.
+5. **For notch/slit cuts**, think "what symmetric shape do the
+   mirrored cut-outs combine into?"
+6. **Verify with one mirror:** the final pattern must be symmetric
+   across EVERY fold line — if an option breaks the crease
+   symmetry, it is wrong regardless of hole count.
+
+## 7. Summary
+
+Paper folding is reflection made physical: each fold is a mirror,
+each punch prints on every layer, and unfolding runs the mirror
+back. Count layers for the number of holes; unfold in reverse fold
+order for their positions; respect crease symmetry in the final
+pattern. With the stack-diagram habit, the whole chapter reduces to
+ten seconds of drawing and one careful reflection per fold.

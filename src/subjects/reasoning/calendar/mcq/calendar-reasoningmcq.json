@@ -1,0 +1,76 @@
+{
+  "lessonId": "calendar-reasoning",
+  "title": "Calendar Reasoning: Odd Days and Weekday Puzzles",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An ordinary year has how many odd days?",
+      "options": ["1", "0", "2", "7"],
+      "correct": 0,
+      "rationale": "365 = 52 weeks + 1 day. That single leftover day - the 'odd day' - is what shifts the weekday of a given date from one year to the next. A leap year leaves 2."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following years is NOT a leap year?",
+      "options": ["1900", "2000", "2012", "2024"],
+      "correct": 0,
+      "rationale": "The Gregorian exception: divisible by 100 is NOT leap unless also divisible by 400. 1900 fails the 400 test (2000 passes). Exam papers love this century trap."
+    },
+    {
+      "id": 3,
+      "question": "The number of odd days in 300 consecutive years is:",
+      "options": ["1", "0", "3", "5"],
+      "correct": 0,
+      "rationale": "Each 100-year block (say 1601-1700) contains 24 leap years - the century year itself fails the 400 rule - so odd days = 24x2 + 76x1 = 124 -> 5. Stacking three centuries: 5+5+5 = 15 -> 1. The ladder to memorise: 100y = 5, 200y = 3, 300y = 1, 400y = 0."
+    },
+    {
+      "id": 4,
+      "question": "What day of the week was 15 August 1947?",
+      "options": ["Friday", "Thursday", "Saturday", "Monday"],
+      "correct": 0,
+      "rationale": "Odd days: up to 1600 = 0; 1601-1900 = 1; 1901-46 = 57 -> 1; Jan-Jul 1947 = 16 -> 2; Aug 1-15 = 15 -> 1. Total 0+1+1+2+1 = 5, and 5 = Friday (0 = Sunday)."
+    },
+    {
+      "id": 5,
+      "question": "26 January 1950, the day India became a Republic, was a:",
+      "options": ["Thursday", "Friday", "Saturday", "Tuesday"],
+      "correct": 0,
+      "rationale": "Odd days: 1601-1900 = 1; 1901-47 = 58 -> 2; 1948-49 = 2; Jan 1-26, 1950 = 26 -> 5. Total 1+2+2+5 = 10 -> 3, and 3 = Thursday (0 = Sunday)."
+    },
+    {
+      "id": 6,
+      "question": "If 1 January 2006 was a Sunday, then 1 January 2010 was a:",
+      "options": ["Friday", "Sunday", "Monday", "Wednesday"],
+      "correct": 0,
+      "rationale": "Add odd days for 2006-2009: 1+1+2+1 = 5. Sunday + 5 = Friday. Only 2008 was leap, contributing the extra odd day."
+    },
+    {
+      "id": 7,
+      "question": "Which year will have the same calendar as 2023 (an ordinary year that began on a Sunday)?",
+      "options": ["2029", "2028", "2030", "2034"],
+      "correct": 0,
+      "rationale": "Running odd days from 2023: 2024(+2)=2, 2025(+1)=3, 2026(+1)=4, 2027(+1)=5, 2028(+2)=7 = 0. So 1 January 2029 falls on a Sunday, and 2029 is an ordinary year like 2023 - both repeat conditions met. 2028 is leap and starts on Saturday, so it cannot match; 2030 starts on Tuesday."
+    },
+    {
+      "id": 8,
+      "question": "In an ordinary (non-leap) year, which pair of months starts on the same weekday?",
+      "options": ["April and July", "January and April", "February and August", "March and September"],
+      "correct": 0,
+      "rationale": "In an ordinary year the same-weekday pairs are January & October, February/March & November, April & July, September & December. January-April and February-August are the LEAP-year pairings."
+    },
+    {
+      "id": 9,
+      "question": "A year repeats its calendar every 400 years because:",
+      "options": ["400 years contain a whole number of weeks (zero odd days)", "the leap cycle is exactly 4 years", "all centuries are leap years", "February resets the count"],
+      "correct": 0,
+      "rationale": "400 years = 400x365 + 97 leap days = 146097 days = 20871 exact weeks, remainder 0. With 97 (not 100) leaps because 1700/1800/1900-type centuries fail the 400 rule - hence the exact repetition."
+    },
+    {
+      "id": 10,
+      "question": "Today is Wednesday. What day will it be 100 days later?",
+      "options": ["Friday", "Wednesday", "Thursday", "Saturday"],
+      "correct": 0,
+      "rationale": "100 mod 7 = 2 (98 is 14 full weeks). Wednesday + 2 = Friday. Any 'N days later' question is just N mod 7 added to the weekday number."
+    }
+  ]
+}

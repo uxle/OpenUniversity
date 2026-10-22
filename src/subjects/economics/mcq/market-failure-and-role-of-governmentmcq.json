@@ -1,0 +1,76 @@
+{
+  "lessonId": "market-failure-and-role-of-government",
+  "title": "Market Failure and the Role of Government",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A factory pollutes a river, shifting costs onto downstream villages. This is an example of:",
+      "options": ["A negative externality", "A positive externality", "A public good", "Adverse selection"],
+      "correct": 0,
+      "rationale": "A cost imposed on third parties that the price does not capture is a negative externality: private cost (Rs 30,000/tonne, say) is below social cost (Rs 40,000), so the market over-produces."
+    },
+    {
+      "id": 2,
+      "question": "A tax set equal to the marginal external cost of an activity is called a:",
+      "options": ["Pigouvian tax", "Lump-sum tax", "Tariff", "Poll tax"],
+      "correct": 0,
+      "rationale": "Pigou's remedy: tax the externality until private cost equals social cost. Output then falls to the social optimum instead of the market's too-high level."
+    },
+    {
+      "id": 3,
+      "question": "National defence is the textbook example of a public good because it is:",
+      "options": ["Non-rival and non-excludable", "Rival and excludable", "Rival but non-excludable", "Excludable but non-rival"],
+      "correct": 0,
+      "rationale": "One citizen's protection does not reduce another's (non-rival) and no citizen can be left unprotected (non-excludable). Free-riding then starves private provision, which is why states finance defence through taxation."
+    },
+    {
+      "id": 4,
+      "question": "Over-fishing in international waters is an illustration of:",
+      "options": ["The tragedy of the commons", "Moral hazard", "The Coase theorem", "A merit good"],
+      "correct": 0,
+      "rationale": "Fisheries are rival but non-excludable - a common resource. Each boat ignores the depletion it causes others, so effort expands until the stock collapses. Quotas, licences or property rights are the standard remedies."
+    },
+    {
+      "id": 5,
+      "question": "An industry where one firm can supply the entire market at lowest cost because of huge economies of scale is a:",
+      "options": ["Natural monopoly", "Perfectly competitive market", "Cartel", "Contestable oligopoly"],
+      "correct": 0,
+      "rationale": "Rail tracks or electricity grids cost so much per extra customer-relevant scale that duplicating them wastes resources. The policy menu: public ownership, or regulated pricing (average-cost pricing to break even, marginal-cost pricing with subsidy)."
+    },
+    {
+      "id": 6,
+      "question": "Akerlof's 'market for lemons' illustrates:",
+      "options": ["Adverse selection from hidden type", "Moral hazard from hidden action", "A negative externality", "Diminishing marginal utility"],
+      "correct": 0,
+      "rationale": "Before the sale, only the seller knows the car's quality; buyers discount all cars, so owners of good cars withdraw, and the market unravels toward lemons. Moral hazard is the AFTER-contract problem of changed behaviour."
+    },
+    {
+      "id": 7,
+      "question": "An insured person driving more recklessly is an example of:",
+      "options": ["Moral hazard", "Adverse selection", "Free riding", "Pigouvian distortion"],
+      "correct": 0,
+      "rationale": "Moral hazard is hidden action after the deal: insurance changes behaviour because consequences shift to the insurer. Deductibles and co-pays exist precisely to keep skin in the game."
+    },
+    {
+      "id": 8,
+      "question": "Education is often subsidised because it is treated as a:",
+      "options": ["Merit good with positive externalities", "Demerit good", "Pure private good with no spillovers", "Common resource"],
+      "correct": 0,
+      "rationale": "Educated citizens generate spillovers (productivity, citizenship, lower crime) that private tuition fees do not capture, so the market under-consumes it. Subsidies align private choice with social benefit."
+    },
+    {
+      "id": 9,
+      "question": "The Coase theorem states that private bargaining can solve an externality when:",
+      "options": ["Property rights are clear and transaction costs are negligible", "The government sets the price", "Both parties are firms", "The externality is global"],
+      "correct": 0,
+      "rationale": "With clear rights and cheap bargaining, the parties trade to the efficient outcome regardless of who initially holds the right. In reality a million polluters and victims make transaction costs enormous, which is why legislation, not negotiation, handles smog."
+    },
+    {
+      "id": 10,
+      "question": "Regulatory capture refers to:",
+      "options": ["The regulator serving the interests of the industry it oversees", "Government taking over private firms", "Voters capturing elections through donations", "Firms copying regulations from rivals"],
+      "correct": 0,
+      "rationale": "Capture is a flagship case of government failure: expertise, revolving doors and lobbying bend the agency toward the regulated. It is the standing counter-argument that intervention beats market failure only when it does not replace it with a worse one."
+    }
+  ]
+}

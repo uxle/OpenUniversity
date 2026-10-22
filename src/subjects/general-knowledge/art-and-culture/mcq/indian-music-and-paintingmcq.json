@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-music-and-painting",
+  "title": "Indian Music and Painting: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Carnatic music trinity consists of Tyagaraja, Muthuswami Dikshitar and:",
+      "options": ["Syama Sastri", "Purandara Dasa", "Swathi Thirunal", "Gopalakrishna Bharathi"],
+      "correct": 0,
+      "rationale": "The three masters, all associated with Tiruvarur in the late 18th century, anchor the Carnatic kriti repertoire. Purandara Dasa is the 'father of Carnatic music' but not of the trinity."
+    },
+    {
+      "id": 2,
+      "question": "The gharana system is a feature of which classical music tradition?",
+      "options": ["Hindustani", "Carnatic", "Both equally", "Sufi qawwali"],
+      "correct": 0,
+      "rationale": "Hindustani music's master-disciple lineages — Gwalior, Agra, Jaipur, Kirana and others — define styles; Carnatic music organised differently, around the trinity's compositions."
+    },
+    {
+      "id": 3,
+      "question": "Pandit Shivkumar Sharma is associated with which instrument?",
+      "options": ["Santoor", "Sarod", "Sitar", "Shehnai"],
+      "correct": 0,
+      "rationale": "He carried the Kashmiri santoor from folk accompaniment to the classical concert stage — one of the cleanest instrument-maestro pairs in the paper."
+    },
+    {
+      "id": 4,
+      "question": "Who was the first musician to receive the Bharat Ratna?",
+      "options": ["M.S. Subbulakshmi", "Lata Mangeshkar", "Bismillah Khan", "Bhimsen Joshi"],
+      "correct": 0,
+      "rationale": "The Carnatic vocalist received it in 1998; Lata Mangeshkar (2001) and Bismillah Khan and Bhimsen Joshi (2008) followed."
+    },
+    {
+      "id": 5,
+      "question": "'Bani Thani', often called the 'Mona Lisa of India', belongs to which painting school?",
+      "options": ["Kangra", "Kishangarh", "Mughal", "Basholi"],
+      "correct": 1,
+      "rationale": "The elongated, arched-brow portrait is Kishangarh's masterpiece — with Kangra the standard decoy among the Pahari and Rajasthani options."
+    },
+    {
+      "id": 6,
+      "question": "Raja Ravi Varma is celebrated as:",
+      "options": ["The father of modern Indian painting", "A Bengal School revivalist", "A Progressive Artists' Group founder", "A Mughal court painter"],
+      "correct": 0,
+      "rationale": "The Kerala prince fused European oil realism with Indian mythology — the title every exam attaches to his name."
+    },
+    {
+      "id": 7,
+      "question": "The mridangam is the primary percussion instrument of:",
+      "options": ["Carnatic music", "Hindustani music", "Both", "Sufi music"],
+      "correct": 0,
+      "rationale": "The mridangam drives the southern system's tala; the tabla holds the same seat in Hindustani music — the cleanest north-south pair in the section."
+    },
+    {
+      "id": 8,
+      "question": "Warli painting, with its white stick figures, is a folk art of:",
+      "options": ["Bihar", "Maharashtra", "Odisha", "West Bengal"],
+      "correct": 1,
+      "rationale": "The Adivasi tradition of Maharashtra's coastal belt paints in rice paste on mud walls — Madhubani (Bihar) is its habitual decoy."
+    },
+    {
+      "id": 9,
+      "question": "Ustad Bismillah Khan is inseparably associated with the:",
+      "options": ["Shehnai", "Sarangi", "Sarod", "Tabla"],
+      "correct": 0,
+      "rationale": "The shehnai's greatest exponent played at Delhi's Red Fort on 15 August 1947 — the instrument-man pairing papers quote most."
+    },
+    {
+      "id": 10,
+      "question": "The Ajanta murals, masterpieces of ancient Indian painting, are chiefly:",
+      "options": ["Jain manuscripts", "Buddhist cave paintings", "Mughal miniatures", "Rajput frescoes"],
+      "correct": 1,
+      "rationale": "The Buddhist cave monasteries of the Deccan (c. 2nd century BCE to 6th century CE) hold the graceful figures that every later school borrowed from."
+    }
+  ]
+}

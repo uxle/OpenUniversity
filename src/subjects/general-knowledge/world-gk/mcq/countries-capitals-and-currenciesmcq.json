@@ -1,0 +1,76 @@
+{
+  "lessonId": "countries-capitals-and-currencies",
+  "title": "Countries, Capitals and Currencies: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The capital of Australia is:",
+      "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+      "correct": 2,
+      "rationale": "Canberra was purpose-built as a compromise between rivals Sydney and Melbourne — the world's most famous 'decoy capital' question."
+    },
+    {
+      "id": 2,
+      "question": "The currency of Bhutan is:",
+      "options": ["Ngultrum", "Kyat", "Taka", "Rufiyaa"],
+      "correct": 0,
+      "rationale": "The Bhutanese ngultrum is pegged to the Indian rupee. Kyat belongs to Myanmar, taka to Bangladesh, rufiyaa to the Maldives."
+    },
+    {
+      "id": 3,
+      "question": "Which country's capital is Ankara?",
+      "options": ["Greece", "Turkey", "Iran", "Kazakhstan"],
+      "correct": 1,
+      "rationale": "Ankara became Turkey's capital in 1923; Istanbul is the larger, more famous city — the classic decoy."
+    },
+    {
+      "id": 4,
+      "question": "The official capital of Sri Lanka is:",
+      "options": ["Colombo", "Kandy", "Sri Jayawardenepura Kotte", "Galle"],
+      "correct": 2,
+      "rationale": "The legislative capital is Sri Jayawardenepura Kotte; Colombo remains the commercial capital. Papers phrase it as 'administrative capital' to make Kotte the answer."
+    },
+    {
+      "id": 5,
+      "question": "The currency of Indonesia is:",
+      "options": ["Ringgit", "Baht", "Rupiah", "Dong"],
+      "correct": 2,
+      "rationale": "Indonesia's rupiah, Malaysia's ringgit, Thailand's baht, Vietnam's dong — four south-east Asian currencies the paper shuffles."
+    },
+    {
+      "id": 6,
+      "question": "South Africa has:",
+      "options": ["One capital", "Two capitals", "Three capitals", "No designated capital"],
+      "correct": 2,
+      "rationale": "Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial) split the three branches — with Johannesburg as the tempting decoy."
+    },
+    {
+      "id": 7,
+      "question": "The currency of Japan is:",
+      "options": ["Won", "Yuan", "Yen", "Kyat"],
+      "correct": 2,
+      "rationale": "Yen (Japan), won (Koreas), yuan/renminbi (China) — the three-character east-Asian set every exam recycles."
+    },
+    {
+      "id": 8,
+      "question": "Which of these countries uses the taka?",
+      "options": ["Bangladesh", "Nepal", "Pakistan", "Afghanistan"],
+      "correct": 0,
+      "rationale": "The Bangladeshi taka sits in the subcontinental currency ladder with the Nepalese rupee, Pakistani rupee and Afghani."
+    },
+    {
+      "id": 9,
+      "question": "The capital of Canada is:",
+      "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+      "correct": 1,
+      "rationale": "Ottawa was chosen by Queen Victoria in 1857, partly as a compromise between Toronto and Montreal — and it remains the answer."
+    },
+    {
+      "id": 10,
+      "question": "Sweden's currency is the:",
+      "options": ["Krone", "Krona", "Euro", "Mark"],
+      "correct": 1,
+      "rationale": "Sweden uses the krona; Norway and Denmark use the krone. The single-letter difference is the entire question."
+    }
+  ]
+}

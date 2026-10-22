@@ -1,0 +1,145 @@
+# Philosophy of Science: What Makes Science Science?
+
+> Science flies planes and cures diseases, yet philosophers cannot
+> agree on what, if anything, marks it off from myth. Philosophy of
+> science studies the logic of scientific method, the structure of
+> theory change, and the limits of scientific knowledge — a subject
+> whose classic debates (induction, falsification, revolutions,
+> paradigms) are now standard vocabulary far outside philosophy
+> departments.
+
+## 1. The Problem and the Players
+
+[definition]
+**Philosophy of science** asks: what distinguishes science from
+non-science (the **demarcation problem**), how evidence confirms
+theories, what scientific theories *are* (descriptions of reality or
+instruments for prediction), and how science changes over time.
+[/definition]
+
+The founding tension: **induction**. Science generalises from
+observed cases to universal laws — but Hume showed no such inference
+is rationally guaranteed (the sun rising ten thousand times does not
+logically entail tomorrow's sunrise). Popper built his whole system
+as the escape.
+
+## 2. Popper: Falsification, Not Verification
+
+Karl Popper's demarcation: a theory is **scientific if it forbids
+something** — if it can be **falsified** by possible observation.
+"All swans are white" is scientific (one black swan kills it);
+psychoanalysis and, he argued, Marxism, immunised against any
+possible counter-example, are not.
+
+Consequences: science is a set of **conjectures that have survived
+refutation attempts** — never verified, only *not yet falsified*.
+Corroboration, not truth, is what a good track record confers.
+Bold, risky, falsifiable theories (Einstein's, risking the 1919
+eclipse test) are the scientific ideal.
+
+Criticisms: falsification is itself messy — a failed prediction
+might indict an auxiliary hypothesis, not the core theory (**Duhem-
+Quine thesis**: hypotheses face the court of experience as a
+corporate body). Scientists rationally retain theories through
+anomalies (the Uranus anomaly produced Neptune's discovery, not
+Newton's funeral).
+
+## 3. Kuhn: Paradigms and Revolutions
+
+Thomas Kuhn's *The Structure of Scientific Revolutions* (1962)
+replaced the tidy picture with history:
+
+- **Normal science** — puzzle-solving inside a **paradigm**: the
+  accepted exemplars, methods and worldview of a discipline.
+- **Anomalies** accumulate that the paradigm cannot digest.
+- **Crisis and revolution** — a new paradigm replaces the old
+  (Ptolemaic → Copernican; phlogiston → oxygen; Newtonian →
+  relativistic/quantum).
+- **Incommensurability** — rival paradigms do not fully share
+  meanings or standards; converts report the world itself changing.
+
+[important]
+The exam-grade contrast: Popper's science is a **perpetual
+revolution** (bold conjectures, attempted killings), Kuhn's is long
+stretches of **conservative puzzle-solving punctuated by ruptures**.
+Lakatos tried to mediate: research programmes have a protected
+**hard core** plus a **protective belt** of adjustable auxiliaries;
+programmes are judged **progressive or degenerating** by whether
+they predict novel facts. Feyerabend went further - *Against
+Method* - claiming no method rules all science ("anything goes").
+[/important]
+
+## 4. Confirmation, Probability and Explanation
+
+- **Hypothetico-deductive method**: deduce a prediction from the
+  hypothesis; test it. Confirmation is not symmetrical — the
+  **ravens paradox** (a red apple confirms "all ravens are black"
+  under Nicod's criterion!) and **Goodman's grue** show
+  confirmation's logic is treacherous.
+- **Bayesianism** treats rational credence as probability: evidence
+  raises a theory's **posterior** in proportion to how much better
+  the theory predicted it than its rivals (likelihoods, priors).
+  Today's statistical practice (and the replication crisis debates)
+  runs on Bayesian/frequentist fault lines.
+- **Explanation**: Hempel's **covering-law (D-N) model** — an event
+  is explained by subsumption under laws. Counterexamples (the flag
+  pole and its shadow; irrelevancies) pushed alternatives:
+  **causal-mechanistic** accounts (explain by showing the mechanism
+  and the causes), unificationist and pragmatic models.
+
+## 5. Realism versus Anti-Realism
+
+Do successful theories describe how the world *is*?
+
+- **Scientific realism**: mature theories are approximately true;
+  their unobservables (electrons, fields, genes) exist. Argument:
+  no-miracles — the predictive success of science would be a miracle
+  unless theories were at least approximately right.
+- **Van Fraassen's constructive empiricism**: science aims only at
+  empirical adequacy — saving the phenomena; belief in
+  unobservables is optional.
+- **Pessimistic meta-induction**: past successful theories (phlogiston,
+  ether) turned out false; why trust today's? (Realists reply:
+  reference survived — "ether" theories were still approximately
+  right about wave transmission.)
+- **Underdetermination**: any body of evidence is compatible with
+  infinitely many rival theories (Quine); theory choice must then
+  lean on virtues beyond evidence — simplicity, unification,
+  fecundity.
+
+## 6. The Special Sciences and Their Questions
+
+- **Physics** — what is a law of nature? necessity or regularity?
+  Is time's arrow entropic?
+- **Biology** — what is a species? Are genes replicators or
+  information? Is selection a force or a statistic?
+- **Psychology/cognitive science** — can folk-psychological states
+  (belief, desire) survive as scientific kinds?
+- **Social science** — meaning-laden subject matter, reflexivity
+  (theories change their objects — markets react to economists),
+  methodological individualism versus holism.
+
+## 7. Science Under the Modern Lens
+
+The replication crisis (psychology, biomedical sciences) turned
+philosophy-of-science staples into practical concerns: p-hacking,
+publication bias and the file-drawer problem are exactly the
+methodological sins Popper and Merton catalogued. Responses —
+preregistration, multi-lab replication, open data — are institutional
+falsificationism. Meanwhile the sociology of science (Latour's
+actor-networks, Merton's norms of CUDOS) studies how laboratories
+actually produce facts, and the debate over science's values
+(Longino's contextual empiricism) asks whether pure value-freedom is
+either possible or desirable.
+
+## 8. Summary
+
+Philosophy of science pivots on four moves: Hume's problem forces a
+method response; **Popper** answers with falsification — science is
+what risks refutation; **Kuhn** historicises the enterprise —
+paradigms, normal science, revolutions; **Bayesians** quantify
+confirmation, and the **realism debate** asks whether the
+successes of science purchase truth about unobservables. The
+result is not a rulebook for scientists but a map of what their
+practice presupposes — and a vaccine against both scientism and
+cynicism.

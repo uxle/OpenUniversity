@@ -1,0 +1,154 @@
+# AI and Machine Learning Basics: How Machines Learn From Data
+
+> Traditional programming feeds rules and data in to get answers;
+> machine learning feeds data and answers in to get rules. That
+> single inversion now powers search, translation, recommendations
+> and chat assistants — and rests on surprisingly few ideas: a model,
+> a loss, and a loop that keeps making the loss smaller.
+
+## 1. Rule-Based AI versus Machine Learning
+
+[definition]
+**Artificial intelligence** is the broad goal of machines performing
+tasks that need intelligence. **Machine learning (ML)** achieves that
+goal differently from classic programming: instead of hand-coding
+rules, the system **fits a model to data** — parameters are adjusted
+until predictions match known examples.
+[/definition]
+
+| | Classic programming | Machine learning |
+| --- | --- | --- |
+| Input | rules + data | data + labels |
+| Output | answers | rules (a trained model) |
+| Good when | logic is known, stable | patterns are complex, shifting |
+| Weakness | can't enumerate every case | needs data; can inherit its biases |
+
+## 2. The Three Learning Paradigms
+
+- **Supervised learning** — the data carries labels (answers). Two
+  flavours: **regression** predicts a continuous number (house price)
+  and **classification** picks a category (spam / not spam).
+- **Unsupervised learning** — no labels; the model finds structure:
+  **clustering** (group similar customers), dimensionality reduction
+  (compress features), association rules.
+- **Reinforcement learning (RL)** — an **agent** acts in an
+  **environment**, receives **rewards**, and learns a **policy** that
+  maximises long-run reward (game playing, robotics, resource
+  management).
+
+[example]
+Predicting tomorrow's temperature from history: regression. Flagging a
+transaction fraudulent or genuine: classification. Segmenting
+shoppers with no labels at all: clustering. Teaching a robot to walk
+from reward signals only: reinforcement learning. Most exam questions
+reduce to exactly this four-way mapping.
+[/example]
+
+## 3. The Anatomy of Learning
+
+1. Collect and clean data; split into **training**, **validation**
+   and **test** sets (a typical 70/15/15).
+2. Choose a **model** — a family of adjustable functions (a line, a
+   tree, a neural network).
+3. Define a **loss function** — a number measuring how wrong the
+   model currently is (mean squared error for regression,
+   cross-entropy for classification).
+4. **Train**: adjust parameters to shrink the loss on the training
+   set, typically by **gradient descent** — repeatedly nudging every
+   parameter a small step downhill against the loss's slope.
+5. **Validate/tune** hyperparameters on the validation set; finally
+   **evaluate** once on the untouched test set.
+
+@math label="eq:gradient-descent"
+w_{\text{new}} = w_{\text{old}} - \eta \, \frac{\partial L}{\partial w}
+@/math
+
+where $\eta$ is the **learning rate**: too large and training
+oscillates or diverges; too small and it crawls.
+
+## 4. Overfitting: The Central Disease
+
+[important]
+**Overfitting** is memorising the training set instead of learning
+the pattern: training loss keeps falling while validation loss rises.
+Its mirror, **underfitting**, happens when the model is too simple to
+capture the signal even in training. The fix for overfitting is more
+data, a simpler model, regularisation (penalise large weights), or
+early stopping; the fix for underfitting is more capacity or better
+features.
+[/important]
+
+**Bias–variance trade-off:** high-bias models are too rigid
+(underfit), high-variance models chase noise (overfit). The goal is
+the sweet spot — and honest measurement demands the test set be
+touched exactly once, at the end.
+
+## 5. Common Algorithms and When They Fit
+
+| Algorithm | Type | Strength |
+| --- | --- | --- |
+| Linear/logistic regression | supervised | interpretable baseline |
+| Decision trees | supervised | human-readable rules |
+| Random forests / gradient boosting | supervised | strong tabular performers |
+| k-means | unsupervised | simple clustering |
+| k-NN | supervised | no training phase; lazy learner |
+| Neural networks | supervised/RL | images, speech, language |
+
+**Feature engineering** — scaling, encoding categories, crafting
+informative inputs — often matters more than the algorithm choice on
+tabular data; a raw model on good features beats a fancy model on
+raw columns.
+
+## 6. Neural Networks and Deep Learning
+
+A neuron computes a weighted sum plus bias, then applies a
+non-linear **activation** (ReLU, sigmoid). Stacking neurons in layers
+creates a network; many layers make it **deep**. Training uses
+**backpropagation**: run the gradient of the loss backward through
+every layer to know which way each weight should move.
+
+Depth buys automatic feature hierarchy: early layers learn edges,
+later layers learn eyes, faces and objects. Deep learning dominates
+vision, speech and language, but it is data-hungry, compute-hungry
+and opaque — hence the popularity of **transfer learning** (start
+from a pre-trained model and fine-tune on a small dataset) and the
+rise of **transformers** for language tasks.
+
+## 7. Measuring Quality: Beyond Accuracy
+
+On imbalanced data (1% fraud), predicting "never fraud" scores 99%
+accuracy and is useless. Better instruments:
+
+- **Confusion matrix** — TP, FP, TN, FN.
+- **Precision** $= \frac{TP}{TP + FP}$: of the alarms raised, how
+  many were real?
+- **Recall** $= \frac{TP}{TP + FN}$: of the real cases, how many were
+  caught?
+- **F1** — their harmonic mean; **ROC-AUC** — ranking quality across
+  thresholds.
+
+**Worked example.** A classifier catching 80 of 100 frauds (recall
+0.80) while misflagging 200 honest transactions among 10,000:
+precision $= \frac{80}{280} \approx 0.29$. Whether that is acceptable
+depends on the cost of a missed fraud versus a blocked customer — a
+business decision, not a mathematical one.
+
+## 8. Ethics, Limits and the Road Ahead
+
+Models inherit the biases of their training data (hiring models that
+absorb historical discrimination); opaque models fail high-stakes
+accountability (hence XAI — explainable AI); generative models can
+hallucinate confident nonsense. Meanwhile deployment concerns — data
+drift, monitoring, feedback loops — dominate real-world failure
+modes. The discipline's future is less about bigger models than
+about safer, more frugal, better-governed ones.
+
+## 9. Summary
+
+Machine learning replaces hand-written rules with parameters fitted
+to data. Supervised learning maps inputs to known labels,
+unsupervised learning finds structure, reinforcement learning learns
+from reward. Training is nothing more than minimising a loss by
+gradient descent, and the craft lies in the boring parts: clean data,
+honest splits, the right bias–variance balance and metrics that
+reflect real costs.

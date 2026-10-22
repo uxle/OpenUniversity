@@ -1,0 +1,76 @@
+{
+  "lessonId": "first-in-india",
+  "title": "First in India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who was the first woman President of India?",
+      "options": ["Indira Gandhi", "Sarojini Naidu", "Pratibha Patil", "Sucheta Kripalani"],
+      "correct": 2,
+      "rationale": "Pratibha Patil became President in 2007. Indira Gandhi was the first woman Prime Minister (1966) — the exam's favourite swap."
+    },
+    {
+      "id": 2,
+      "question": "The first Indian Governor-General of independent India was:",
+      "options": ["Lord Mountbatten", "C. Rajagopalachari", "Dr. Rajendra Prasad", "Lord Wavell"],
+      "correct": 1,
+      "rationale": "Mountbatten was the last British Governor-General (1947-48); C. Rajagopalachari was the first and only Indian to hold the office (1948-50) before it was abolished."
+    },
+    {
+      "id": 3,
+      "question": "Who was the first Indian to travel into space?",
+      "options": ["Kalpana Chawla", "Rakesh Sharma", "Sunita Williams", "Vikram Ambalal Sarabhai"],
+      "correct": 1,
+      "rationale": "Squadron Leader Rakesh Sharma flew aboard the Soviet Soyuz T-11 in 1984 and answered Indira Gandhi's question with 'Saare Jahan Se Achha'."
+    },
+    {
+      "id": 4,
+      "question": "The first Indian to win a Nobel Prize was:",
+      "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Hargobind Khorana"],
+      "correct": 1,
+      "rationale": "Tagore won the 1913 Literature Nobel for Gitanjali — the first non-European laureate. Raman took the sciences' first Indian Nobel in 1930."
+    },
+    {
+      "id": 5,
+      "question": "Who became the first woman Chief Minister of an Indian state?",
+      "options": ["Indira Gandhi", "Sucheta Kripalani", "Sarojini Naidu", "Vijaya Lakshmi Pandit"],
+      "correct": 1,
+      "rationale": "Sucheta Kripalani led Uttar Pradesh from 1963 to 1967. Sarojini Naidu was the first woman Governor (of a province, UP) — the paired trap."
+    },
+    {
+      "id": 6,
+      "question": "India's first sound film was:",
+      "options": ["Raja Harishchandra", "Alam Ara", "Mother India", "Awara"],
+      "correct": 1,
+      "rationale": "Ardeshir Irani's Alam Ara (1931) was the first Indian talkie. Raja Harishchandra (1913) was the first full-length Indian feature film — silent."
+    },
+    {
+      "id": 7,
+      "question": "Who won independent India's first individual Olympic gold medal?",
+      "options": ["Abhinav Bindra", "K.D. Jadhav", "Neeraj Chopra", "Rajyavardhan Singh Rathore"],
+      "correct": 0,
+      "rationale": "Shooter Abhinav Bindra won the 10 m air rifle gold at Beijing 2008. Jadhav took the first individual medal (bronze, 1952); Rathore the first individual silver (2004)."
+    },
+    {
+      "id": 8,
+      "question": "The first Indian woman to climb Mount Everest was:",
+      "options": ["Bachendri Pal", "Tenzing Norgay", "Santosh Yadav", "Premlata Agarwal"],
+      "correct": 0,
+      "rationale": "Bachendri Pal summited in 1984, a year after India's fourth expedition put her on top. Santosh Yadav later became the first woman to climb Everest twice."
+    },
+    {
+      "id": 9,
+      "question": "India's first woman IPS officer was:",
+      "options": ["Kiran Bedi", "Anna Rajam Malhotra", "Meera Borwankar", "B. Chandrakala"],
+      "correct": 0,
+      "rationale": "Kiran Bedi joined the service in 1972. Anna Rajam Malhotra was the first woman IAS officer (1951) — the pair papers swap."
+    },
+    {
+      "id": 10,
+      "question": "India's first satellite, launched in 1975, was named after which mathematician-astronomer?",
+      "options": ["Brahmagupta", "Aryabhata", "Bhaskara II", "Varahamihira"],
+      "correct": 1,
+      "rationale": "ISRO's Aryabhata (1975) honoured the 5th-century author of the Aryabhatiya — a double-trap, since the name belongs to both the man and the machine."
+    }
+  ]
+}

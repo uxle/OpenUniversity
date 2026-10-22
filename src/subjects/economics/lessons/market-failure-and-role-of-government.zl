@@ -1,0 +1,137 @@
+# Market Failure and the Role of Government
+
+> Markets are magnificent coordination machines — when their prices
+> carry the full truth. But some costs hide from prices, some goods
+> invite free-riders, some markets tip into monopoly. When prices
+> lie, the invisible hand pushes the wrong way, and that is the
+> precise boundary where economics hands the reins to government.
+
+## 1. The Benchmark: Why Markets Usually Work
+
+In a perfectly competitive market, price equals marginal cost, every
+mutually beneficial trade happens, and the outcome is **Pareto
+efficient** — no one can be made better off without making someone
+worse off. All of that rests on quiet assumptions: prices reflect all
+costs and benefits, property rights are complete, information is
+symmetric, and no single buyer or seller can bend the price.
+
+**Market failure** is the name for the systematic breakdown of these
+assumptions. Five classic species follow.
+
+## 2. Externalities: Costs and Benefits That Escape the Price
+
+[definition]
+An **externality** is a cost or benefit of an economic activity that
+falls on third parties and is not reflected in the market price.
+Negative externalities (pollution) make private cost smaller than
+**social cost**; positive externalities (vaccination, education) make
+private benefit smaller than social benefit.
+[/definition]
+
+With a negative externality, the market produces **too much**:
+private actors compare their own cost with the price, ignoring the
+harm dumped on others. The gap is corrected by a **Pigouvian tax**
+set equal to the marginal external cost — raising private cost to
+social cost and shrinking output to the social optimum. Positive
+externalities call for the mirror policy: subsidies that lower the
+private price and expand output.
+
+**Worked example.** A factory's each tonne of steel costs it ₹30,000
+to make but dumps ₹10,000 of damage on downstream villages. Social
+cost = ₹40,000. A tax of ₹10,000 per tonne makes the factory's books
+tell the social truth, and the highest-cost, dirtiest tonnes
+disappear from production.
+
+**Coase theorem:** if property rights are clear and transaction costs
+negligible, private bargaining can internalise the externality
+whatever the initial assignment of rights. In practice, transaction
+costs, many victims and missing property rights are the norm — which
+is why smog is bargained about in parliaments, not between a million
+commuters.
+
+## 3. Public Goods: Non-rival, Non-excludable
+
+[definition]
+A **public good** is **non-rival** (one person's consumption does not
+diminish another's) and **non-excludable** (no one can be prevented
+from consuming it): national defence, street lighting, lighthouses,
+clean air. Because no one can be charged, private markets
+under-provide them — the **free-rider problem**.
+[/definition]
+
+| | Rival | Non-rival |
+| --- | --- | --- |
+| **Excludable** | private good (bread) | club good (streaming, toll roads) |
+| **Non-excludable** | common resource (fisheries) | public good (defence) |
+
+Common resources are rival but non-excludable — each user ignores the
+congestion imposed on others, and the result is overuse: the
+**tragedy of the commons**. Remedies: quotas, licenses, property
+rights or community management.
+
+## 4. Imperfect Competition and Natural Monopoly
+
+When one or few sellers control price, output is restricted below the
+competitive level and price sits above marginal cost — a deadweight
+loss. **Natural monopoly** is the special case where economies of
+scale are so large that a single firm serves the whole market
+cheapest (rail tracks, electricity distribution). Options: public
+ownership, or price regulation (marginal-cost pricing needs a
+subsidy; average-cost pricing breaks even).
+
+Antitrust (competition law) polices cartels, collusion and abusive
+dominance — trust-busting from Standard Oil to modern platform
+regulation.
+
+## 5. Information Asymmetry
+
+When one side of a trade knows more than the other, markets misfire:
+
+- **Adverse selection** (hidden type): before the deal. The sickest
+  customers buy the most insurance; the market for lemons (Akerlof)
+  can unravel entirely as good cars are driven out.
+- **Moral hazard** (hidden action): after the deal. The insured drive
+  carelessly; bailed-out banks gamble again.
+
+Responses: warranties, deductibles, screening and signalling
+(education as a credible signal of ability — Spence), disclosure
+regulation, credit bureaus.
+
+## 6. The Government's Toolkit
+
+| Failure | Standard instruments |
+| --- | --- |
+| Externalities | Pigouvian taxes, cap-and-trade, subsidies |
+| Public goods | Direct provision, procurement |
+| Common resources | Quotas, licences, property rights |
+| Monopoly | Antitrust, regulation, public provision |
+| Information gaps | Mandatory disclosure, standards, consumer law |
+| Macroeconomic instability | Fiscal and monetary policy |
+
+Meritorious interventions also include **merit goods** (education,
+vaccination — under-consumed from the social viewpoint) and
+**redistribution**, justified not by efficiency but by society's
+preferences for equity — progressive taxation and transfers are the
+usual instruments.
+
+## 7. Government Failure: The Mirror Image
+
+Interventions carry their own diseases: information problems (the
+regulator knows less than the regulated), **regulatory capture**
+(the agency serves the industry it polices), rent-seeking (resources
+burnt lobbying for favours), unintended consequences (rent ceilings
+shrinking rental supply), and public-choice dynamics (policies timed
+to election cycles). The honest comparison is never "imperfect market
+versus ideal government" but *both* against each other — which is why
+good policy design builds in sunset clauses, evaluation and
+competition wherever possible.
+
+## 8. Summary
+
+Markets fail through externalities, public goods, monopoly power and
+asymmetric information; each failure has a matching instrument —
+taxes and subsidies, public provision, antitrust and regulation,
+disclosure and standards. The case for intervention is always
+comparative: against a government that can also fail. Choosing the
+least-bad instrument, and sizing it to the actual divergence between
+private and social cost, is the everyday craft of public economics.

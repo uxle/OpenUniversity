@@ -1,0 +1,76 @@
+{
+  "lessonId": "philosophy-of-science",
+  "title": "Philosophy of Science: What Makes Science Science?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The demarcation problem asks:",
+      "options": ["What distinguishes science from non-science", "Where to draw national borders", "How to divide the sciences into departments", "Which science came first"],
+      "correct": 0,
+      "rationale": "Demarcation is the question Popper made famous: what separates genuine science from pseudo-science? His answer - falsifiability - remains the most cited criterion in exams and courtrooms (including creation-science rulings)."
+    },
+    {
+      "id": 2,
+      "question": "Popper's criterion of scientific status is:",
+      "options": ["Falsifiability - a theory must forbid some possible observation", "Verifiability by repeated experiment", "Consensus of the scientific community", "Mathematical formulation"],
+      "correct": 0,
+      "rationale": "For Popper, a theory is scientific only if it risks refutation: 'all swans are white' is scientific because one black swan kills it. Verificationism (the positivists' earlier answer) fails because pseudo-theories can also accumulate confirming instances."
+    },
+    {
+      "id": 3,
+      "question": "The Duhem-Quine thesis undermines simple falsificationism by arguing that:",
+      "options": ["Hypotheses face evidence as a corporate body - a failed prediction might indict an auxiliary assumption, not the core theory", "All theories are equally good", "Evidence is irrelevant to theory choice", "Science has no method"],
+      "correct": 0,
+      "rationale": "A prediction needs auxiliaries (instruments, background laws). When the Uranus orbit misbehaved, astronomers fixed Newton by discovering Neptune rather than abandoning the core. Hence scientists rationally retain theories through anomalies."
+    },
+    {
+      "id": 4,
+      "question": "Kuhn's 'normal science' refers to:",
+      "options": ["Puzzle-solving research within an accepted paradigm", "Statistically average science", "Science done under normal funding", "Consensus-free enquiry"],
+      "correct": 0,
+      "rationale": "Normal science fills in the paradigm's map - extending it, refining constants, solving its puzzles - until anomalies accumulate into crisis and a revolutionary paradigm shift occurs (Ptolemaic to Copernican, Newtonian to relativistic)."
+    },
+    {
+      "id": 5,
+      "question": "Lakatos's research programmes consist of:",
+      "options": ["A protected hard core plus a protective belt of adjustable auxiliary hypotheses", "Only falsified theories", "Paradigms with incommensurable meanings", "Bayesian priors"],
+      "correct": 0,
+      "rationale": "Lakatos mediated Popper and Kuhn: the hard core (e.g., Newton's laws) is kept by methodological decision; the belt absorbs refutations. Programmes are judged by whether they predict novel facts (progressive) or only patch old ones (degenerating)."
+    },
+    {
+      "id": 6,
+      "question": "The 'no miracles' argument supports:",
+      "options": ["Scientific realism - successful theories would be miracles unless approximately true", "Constructive empiricism", "Pessimistic meta-induction", "Feyerabend's anarchism"],
+      "correct": 0,
+      "rationale": "Realists argue that the predictive success of mature theories is best explained by their being at least approximately true - electrons and genes being real. Anti-realists reply with the pessimistic meta-induction: past successful theories (phlogiston, ether) went false."
+    },
+    {
+      "id": 7,
+      "question": "Van Fraassen's constructive empiricism holds that science aims at:",
+      "options": ["Empirical adequacy - saving the observable phenomena - without commitment to unobservables", "Literal truth about unobservable entities", "Useful technological spinoffs", "Mathematical elegance"],
+      "correct": 0,
+      "rationale": "For the constructive empiricist, accepting a theory means believing it is empirically adequate, not believing its electrons and fields exist. Realism's debates over unobservables become optional metaphysics."
+    },
+    {
+      "id": 8,
+      "question": "Hempel's covering-law (D-N) model explains an event by:",
+      "options": ["Subsuming it under general laws plus initial conditions", "Describing its mechanism", "Showing its purpose", "Quantifying its probability"],
+      "correct": 0,
+      "rationale": "Deduce the event from laws and boundary conditions - the deductive-nomological ideal. Its counterexamples (flagpole/shadow asymmetry, irrelevancies) pushed philosophers toward causal-mechanistic and unificationist accounts of explanation."
+    },
+    {
+      "id": 9,
+      "question": "Bayesian philosophy of science models rational belief using:",
+      "options": ["Probability - evidence raises a theory's posterior in proportion to predictive likelihood", "Falsification only", "Paradigm shifts", "Consensus voting"],
+      "correct": 0,
+      "rationale": "Bayesians update credences by conditionalisation: strong evidence for a theory is one it predicts much better than rivals. The approach powers today's statistics and the replication-crisis debates over p-values and priors."
+    },
+    {
+      "id": 10,
+      "question": "Feyerabend's position in 'Against Method' is captured by:",
+      "options": ["'Anything goes' - no single methodology governs all good science", "Falsification is the only rule", "Science is paradigm-locked", "Induction is rational after all"],
+      "correct": 0,
+      "rationale": "Feyerabend argued history shows successful scientists breaking every proposed rule; methodological anarchism follows. He is the standard endpoint of the method debate: Popper's rules, Kuhn's history, Lakatos's programmes, then Feyerabend's shrug."
+    }
+  ]
+}

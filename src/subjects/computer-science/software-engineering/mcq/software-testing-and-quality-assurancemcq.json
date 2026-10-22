@@ -1,0 +1,76 @@
+{
+  "lessonId": "software-testing-and-quality-assurance",
+  "title": "Software Testing and Quality Assurance: Breaking Software on Purpose",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Testing can prove:",
+      "options": ["The presence of defects, not their absence", "The absence of all defects", "That software is secure", "That performance meets every load"],
+      "correct": 0,
+      "rationale": "Dijkstra's classic result: passing tests shows no failure on the cases tried; it cannot show no faults exist elsewhere. Exhaustive input enumeration is astronomically impossible, so testing samples rather than proves."
+    },
+    {
+      "id": 2,
+      "question": "Verifying interfaces and data flow between two modules is done at which test level?",
+      "options": ["Integration testing", "Unit testing", "System testing", "Acceptance testing"],
+      "correct": 0,
+      "rationale": "Integration testing targets the interactions between units. Unit tests isolate one module, system tests exercise the assembled product against requirements, and acceptance tests confirm business readiness."
+    },
+    {
+      "id": 3,
+      "question": "In top-down integration testing, missing lower-level modules are replaced by:",
+      "options": ["Stubs", "Drivers", "Mock servers", "Builds"],
+      "correct": 0,
+      "rationale": "Top-down tests the higher modules first, so the modules they call do not exist yet and are replaced by stubs - minimal stand-ins that accept calls and return canned values. Bottom-up testing instead needs drivers, temporary callers of the low modules."
+    },
+    {
+      "id": 4,
+      "question": "A field accepts quantity 1-99. Using equivalence partitioning plus boundary value analysis, the strongest compact case set is:",
+      "options": ["0, 1, 99, 100", "1, 50, 99", "0, 1, 2, 50, 98, 99, 100", "1, 2, 98, 99"],
+      "correct": 0,
+      "rationale": "Three partitions exist: below 1, 1-99, above 99. Defects cluster at boundaries, so the compact high-yield set samples the edges of each: 0 and 1 (lower boundary) and 99 and 100 (upper boundary). Option 3 is more exhaustive but adds no new partitions."
+    },
+    {
+      "id": 5,
+      "question": "Which coverage criterion subsumes statement coverage?",
+      "options": ["Branch coverage", "Statement coverage itself", "Loop coverage only", "No criterion subsumes another"],
+      "correct": 0,
+      "rationale": "Exercising both outcomes of every decision guarantees every statement runs (each statement lies on some branch), so branch coverage is always at least as strong as statement coverage. The converse fails: a decision with no else still reaches every statement while only testing one branch outcome."
+    },
+    {
+      "id": 6,
+      "question": "Cyclomatic complexity V(G) = E - N + 2P for a module with 12 edges, 10 nodes and one connected component. V(G) is:",
+      "options": ["4", "2", "6", "22"],
+      "correct": 0,
+      "rationale": "V(G) = 12 - 10 + 2(1) = 4. This equals both the number of linearly independent paths and the minimum number of test cases needed for full branch coverage."
+    },
+    {
+      "id": 7,
+      "question": "A misspelled company logo on the homepage on launch day is best triaged as:",
+      "options": ["Low severity, high priority", "High severity, high priority", "Low severity, low priority", "High severity, low priority"],
+      "correct": 0,
+      "rationale": "Severity measures technical impact (a cosmetic typo barely affects function - low), while priority measures business urgency (brand image on launch day - high). The two axes are independent, which is exactly what this classic exam pair tests."
+    },
+    {
+      "id": 8,
+      "question": "Re-running the existing test suite after a bug fix is called:",
+      "options": ["Regression testing", "Smoke testing", "Acceptance testing", "Stress testing"],
+      "correct": 0,
+      "rationale": "Regression testing confirms that the change did not break previously working behaviour. Smoke tests are quick build-worthiness checks, acceptance is user-side sign-off, and stress testing pushes the system beyond normal load."
+    },
+    {
+      "id": 9,
+      "question": "The testing pyramid recommends:",
+      "options": ["Many unit tests, fewer integration tests, few end-to-end UI tests", "Many UI tests, few unit tests", "Only manual testing", "Equal numbers of every test type"],
+      "correct": 0,
+      "rationale": "Unit tests are fast, cheap and pinpoint failures precisely; UI tests are slow, brittle and expensive. The pyramid shape keeps feedback quick and the suite maintainable - an inverted pyramid is the classic anti-pattern."
+    },
+    {
+      "id": 10,
+      "question": "The difference between testing and debugging is that:",
+      "options": ["Testing finds that a defect exists; debugging locates and fixes its cause", "Testing is done by developers only", "Debugging is automated; testing is manual", "There is no difference"],
+      "correct": 0,
+      "rationale": "Testing executes software to reveal symptoms of failure; debugging is the investigative process - breakpoints, logging, bisection - that traces a symptom to its root cause and removes it. They are complementary, and in TDD the loop repeats: red test, debug, green."
+    }
+  ]
+}

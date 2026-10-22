@@ -21,7 +21,7 @@ export function applyTheme(theme) {
   // the new base theme instead of being silently wiped.
   applyAccessibilitySettings();
   const meta = document.getElementById("theme-color-meta");
-  if (meta) meta.content = theme === "dark" ? "#000000" : "#ffffff";
+  if (meta) meta.content = theme === "dark" ? "#141a24" : "#f7f5f0";
   announce(`${theme === "dark" ? "Dark" : "Light"} mode enabled`);
 }
 

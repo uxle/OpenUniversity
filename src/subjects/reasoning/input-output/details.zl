@@ -1,0 +1,12 @@
+# Input-Output Reasoning
+
+@subject {
+  id: input-output
+  parent: reasoning
+  title: "Input-Output"
+  description: "Machine-input puzzles: decoding the rearrangement rule from snapshots and predicting later steps."
+}
+
+@lessons {
+  input-output-reasoning
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "nicknames-of-indian-cities",
+  "title": "Nicknames of Indian Cities: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Indian city is known as the 'Pink City'?",
+      "options": ["Jodhpur", "Jaipur", "Udaipur", "Bikaner"],
+      "correct": 1,
+      "rationale": "Jaipur's old city was painted pink for the 1876 visit of the Prince of Wales, and a later law kept it pink. Jodhpur is the Blue (and Sun) City — the standing trap."
+    },
+    {
+      "id": 2,
+      "question": "The 'City of Joy' is:",
+      "options": ["Varanasi", "Kolkata", "Mumbai", "Chennai"],
+      "correct": 1,
+      "rationale": "The nickname comes from Dominique Lapierre's 1985 novel set in Kolkata's slums. Varanasi tempts candidates with its spiritual aura, but the book title decides it."
+    },
+    {
+      "id": 3,
+      "question": "Which city is called the 'Manchester of India'?",
+      "options": ["Coimbatore", "Kanpur", "Ahmedabad", "Surat"],
+      "correct": 2,
+      "rationale": "Ahmedabad's textile mills earned it the title in the 19th-20th century. Coimbatore holds the 'Manchester of South India' variant."
+    },
+    {
+      "id": 4,
+      "question": "The 'Silicon Valley of India' refers to:",
+      "options": ["Hyderabad", "Pune", "Bengaluru", "Chennai"],
+      "correct": 2,
+      "rationale": "Bengaluru's IT industry earned the label. Hyderabad's parallel claim is 'Cyberabad' — the examiner's favourite alternative option."
+    },
+    {
+      "id": 5,
+      "question": "Which city is known as the 'Detroit of India'?",
+      "options": ["Chennai", "Jamshedpur", "Pune", "Kolkata"],
+      "correct": 0,
+      "rationale": "Chennai's automobile manufacturing cluster earned the American motor-city comparison. Jamshedpur's equivalent is the 'Pittsburgh of India' (steel)."
+    },
+    {
+      "id": 6,
+      "question": "The 'Queen of the Arabian Sea' is:",
+      "options": ["Mumbai", "Kochi", "Mangalore", "Kozhikode"],
+      "correct": 1,
+      "rationale": "Kochi's historic spice-trade harbour carries the title. Mumbai's nickname set runs differently — 'City of Dreams' and the financial capital."
+    },
+    {
+      "id": 7,
+      "question": "Which city is famous as the 'Steel City of India'?",
+      "options": ["Bhilai", "Rourkela", "Jamshedpur", "Durgapur"],
+      "correct": 2,
+      "rationale": "Jamshedpur grew around Tata Steel's 1907 plant — India's first steel city, also called the Pittsburgh of India. Bhilai is the usual decoy."
+    },
+    {
+      "id": 8,
+      "question": "The 'Venice of the East' among Kerala's cities is:",
+      "options": ["Kumarakom", "Alappuzha (Alleppey)", "Kottayam", "Thrissur"],
+      "correct": 1,
+      "rationale": "Alappuzha's backwater canals and houseboats hold the Kerala claim; Udaipur carries the title in Rajasthan. Answer by region when both appear."
+    },
+    {
+      "id": 9,
+      "question": "Which city is known as the 'Diamond City' of India?",
+      "options": ["Surat", "Antwerp", "Mumbai", "Jaipur"],
+      "correct": 0,
+      "rationale": "Surat cuts and polishes the overwhelming majority of the world's diamonds, giving it the title."
+    },
+    {
+      "id": 10,
+      "question": "The 'Oxford of the East' is usually identified with:",
+      "options": ["Kolkata", "Pune", "Guwahati", "Patna"],
+      "correct": 1,
+      "rationale": "Pune's dense cluster of universities and colleges earned the comparison. Madurai, for its ancient Tamil tradition, is the 'Athens of the East'."
+    }
+  ]
+}

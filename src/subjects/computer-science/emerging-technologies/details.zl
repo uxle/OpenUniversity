@@ -1,0 +1,14 @@
+# Emerging Technologies
+
+@subject {
+  id: emerging-technologies
+  parent: computer-science
+  title: "Emerging Technologies"
+  description: "Cloud platforms, machine learning, and distributed ledgers — the technologies reshaping how software is deployed and used."
+}
+
+@lessons {
+  cloud-computing
+  ai-and-machine-learning-basics
+  blockchain-basics
+}

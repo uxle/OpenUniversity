@@ -1,0 +1,76 @@
+{
+  "lessonId": "blockchain-basics",
+  "title": "Blockchain Basics: Trust Without a Middleman",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The primary problem a blockchain solves is:",
+      "options": ["Letting parties who do not trust each other share one tamper-evident ledger without a central keeper", "Making databases run faster than SQL", "Encrypting files so only the owner can read them", "Compressing transactions to save storage"],
+      "correct": 0,
+      "rationale": "A bank normally arbitrates disputes; a blockchain replaces that arbiter with replicated copies plus consensus rules, making unilateral rewriting of history economically infeasible. It is slower than a normal database - its value is trustlessness, not speed."
+    },
+    {
+      "id": 2,
+      "question": "A good cryptographic hash function has the property that:",
+      "options": ["A one-bit change in input scrambles the output completely", "The input can be recovered from the hash", "Two different inputs often share a hash", "Output length depends on input length"],
+      "correct": 0,
+      "rationale": "The avalanche effect means the tiniest edit produces a wholly different digest, which is what makes hashes usable as tamper-seals. Hashes are one-way (irreversible), collision-resistant, and fixed-length regardless of input."
+    },
+    {
+      "id": 3,
+      "question": "Each block in a blockchain contains, among other things:",
+      "options": ["The hash of the previous block", "The private keys of all users", "The bank's approval signature", "A backup of all earlier blocks"],
+      "correct": 0,
+      "rationale": "Storing the previous block's hash welds blocks together: altering any old block changes its hash, visibly breaking every later block. Blocks also carry a Merkle root, timestamp and nonce - but never private keys."
+    },
+    {
+      "id": 4,
+      "question": "Tampering with a transaction in block 100 requires the attacker to:",
+      "options": ["Re-mine block 100 and every block after it faster than the honest network", "Only rewrite block 100", "Obtain the network administrator's password", "Delete the recipient's copy of the chain"],
+      "correct": 0,
+      "rationale": "Changing block 100 changes its hash, so block 101's stored reference breaks; the attacker must redo the work for all subsequent blocks AND outpace honest miners extending the real chain. Immutability is economic, not magical."
+    },
+    {
+      "id": 5,
+      "question": "In Bitcoin's proof of work, the right to append the next block is earned by:",
+      "options": ["Being first to solve a computational hash puzzle", "Holding the most bitcoins", "Being elected by validators", "Paying the highest fee"],
+      "correct": 0,
+      "rationale": "Miners race to find a nonce making the block hash fall below a target; solving first earns block rewards plus fees. Proof of stake instead selects validators by capital staked - Ethereum's mechanism since 2022."
+    },
+    {
+      "id": 6,
+      "question": "A transaction is signed with the sender's:",
+      "options": ["Private key, and verified by anyone using the public key", "Public key, and verified with the private key", "Password and a CAPTCHA", "Bank's master key"],
+      "correct": 0,
+      "rationale": "Digital signatures: sign with the secret, verify with the public. Ownership in blockchain reduces to private-key possession - lose the key and the funds are unreachable forever, since there is no bank to appeal to."
+    },
+    {
+      "id": 7,
+      "question": "A smart contract is best described as:",
+      "options": ["A program on the blockchain that executes automatically when its conditions are met", "A legal document scanned onto the blockchain", "A handshake agreement between two miners", "An insurance policy against hacks"],
+      "correct": 0,
+      "rationale": "Smart contracts are self-executing code - a vending machine for agreements. Their rigidity is the feature (no intermediary can interfere) and the bug (a flawed contract is expensive or impossible to patch, as billion-dollar exploits have shown)."
+    },
+    {
+      "id": 8,
+      "question": "A consortium of banks wants a shared ledger among known, regulated participants. The most sensible choice is:",
+      "options": ["A permissioned (private) blockchain such as Hyperledger", "The public Bitcoin network", "No blockchain at all is impossible", "A social media platform"],
+      "correct": 0,
+      "rationale": "When participants are known and regulation matters more than censorship-resistance, permissioned chains give control, privacy and throughput that open networks cannot. Public chains suit open, trustless environments."
+    },
+    {
+      "id": 9,
+      "question": "A 51% attack refers to:",
+      "options": ["One party controlling the majority of the network's mining power or stake", "Stealing 51% of the coins", "A bug that corrupts 51% of blocks", "Losing 51% of your private key"],
+      "correct": 0,
+      "rationale": "Majority control lets an attacker censor transactions or reorganise recent blocks - the reason small networks with little total hash power are far easier to attack than Bitcoin's planet-scale footprint."
+    },
+    {
+      "id": 10,
+      "question": "The scaling debate in blockchain is driven by:",
+      "options": ["Base layers processing far fewer transactions per second than card networks", "Blocks being too large to download", "Electricity being too cheap", "Too many banks adopting the technology"],
+      "correct": 0,
+      "rationale": "Bitcoin handles around 7 transactions per second versus tens of thousands for card networks. Solutions split into layer-1 redesigns (bigger/faster base chains) and layer-2 systems like payment channels and rollups that batch off-chain and settle on-chain."
+    }
+  ]
+}

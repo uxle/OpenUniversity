@@ -1,0 +1,76 @@
+{
+  "lessonId": "national-symbols-of-india",
+  "title": "National Symbols of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who designed the flag that became the basis of India's National Flag?",
+      "options": ["Pingali Venkayya", "Rabindranath Tagore", "Bankim Chandra Chattopadhyay", "Surendranath Banerjee"],
+      "correct": 0,
+      "rationale": "Pingali Venkayya's design, refined with Gandhi's input (the charkha later replaced by the Ashoka Chakra), was adopted by the Constituent Assembly on 22 July 1947."
+    },
+    {
+      "id": 2,
+      "question": "How many spokes does the Ashoka Chakra on the National Flag have?",
+      "options": ["12", "24", "18", "32"],
+      "correct": 1,
+      "rationale": "The navy-blue wheel has 24 spokes — one for each hour of the day — taken from the Lion Capital of Sarnath. The clock-face 12 is the classic trap option."
+    },
+    {
+      "id": 3,
+      "question": "The National Anthem of India, 'Jana Gana Mana', was first sung on:",
+      "options": ["26 January 1950", "15 August 1947", "27 December 1911", "2 January 1950"],
+      "correct": 2,
+      "rationale": "Tagore's Bengali original was sung at the Calcutta session of the Indian National Congress on 27 December 1911; it was adopted as the National Anthem on 24 January 1950."
+    },
+    {
+      "id": 4,
+      "question": "The words 'Satyameva Jayate' on the State Emblem are taken from which Upanishad?",
+      "options": ["Katha Upanishad", "Ishavasya Upanishad", "Brihadaranyaka Upanishad", "Mundaka Upanishad"],
+      "correct": 3,
+      "rationale": "'Truth alone triumphs' appears in the Mundaka Upanishad. Exams love pairing this with the wrong Upanishad — the answer stays Mundaka."
+    },
+    {
+      "id": 5,
+      "question": "The National Song 'Vande Mataram' originally appeared in which novel?",
+      "options": ["Anandamath", "Gitanjali", "Rajatarangini", "Discovery of India"],
+      "correct": 0,
+      "rationale": "Bankim Chandra Chattopadhyay wrote it into his 1882 novel Anandamath, about sanyasis rebelling during the Bengal famine."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is India's national aquatic animal?",
+      "options": ["Blue whale", "Olive ridley turtle", "Ganges river dolphin", "Gharial"],
+      "correct": 2,
+      "rationale": "The Ganges river dolphin (Platanista gangetica), declared the national aquatic animal in 2009, is nearly blind and navigates by echolocation."
+    },
+    {
+      "id": 7,
+      "question": "The full version of the National Anthem takes approximately how long to play?",
+      "options": ["About 20 seconds", "About 52 seconds", "About 2 minutes", "About 90 seconds"],
+      "correct": 1,
+      "rationale": "The full anthem runs roughly 52 seconds; a shortened ~20-second version exists for specific occasions. The two durations are a favourite exam pair."
+    },
+    {
+      "id": 8,
+      "question": "The Lion Capital of Sarnath, adopted as the State Emblem, belongs to the reign of which ruler?",
+      "options": ["Kanishka", "Chandragupta Maurya", "Ashoka", "Samudragupta"],
+      "correct": 2,
+      "rationale": "The polished-sandstone capital was carved around 250 BCE during Ashoka's reign, and the emblem version was adopted on 26 January 1950."
+    },
+    {
+      "id": 9,
+      "question": "India's national calendar, adopted in 1957, is based on which era?",
+      "options": ["Vikram Samvat", "Saka era", "Hijri era", "Kali era"],
+      "correct": 1,
+      "rationale": "The Saka era counts from 78 CE; the national calendar's first month Chaitra begins on 22 March (21 March in a leap year)."
+    },
+    {
+      "id": 10,
+      "question": "Which animal is India's National Heritage Animal?",
+      "options": ["Lion", "One-horned rhinoceros", "Indian elephant", "Snow leopard"],
+      "correct": 2,
+      "rationale": "The Indian elephant was declared the National Heritage Animal in 2010 — a conservation-era addition the older books keep missing."
+    }
+  ]
+}

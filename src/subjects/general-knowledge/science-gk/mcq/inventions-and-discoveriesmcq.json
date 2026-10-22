@@ -1,0 +1,76 @@
+{
+  "lessonId": "inventions-and-discoveries",
+  "title": "Inventions and Discoveries: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The telephone was invented by:",
+      "options": ["Alexander Graham Bell", "Thomas Edison", "Guglielmo Marconi", "Elisha Gray"],
+      "correct": 0,
+      "rationale": "Bell's 1876 patent is the credited invention — Elisha Gray filed a rival caveat the same day, a footnote exams occasionally weaponise."
+    },
+    {
+      "id": 2,
+      "question": "The electron was discovered by:",
+      "options": ["Ernest Rutherford", "J.J. Thomson", "James Chadwick", "Niels Bohr"],
+      "correct": 1,
+      "rationale": "Thomson found the electron (1897), Rutherford the proton, Chadwick the neutron (1932) — the subatomic ladder that answers three questions in every paper."
+    },
+    {
+      "id": 3,
+      "question": "Penicillin was discovered by:",
+      "options": ["Louis Pasteur", "Alexander Fleming", "Joseph Lister", "Edward Jenner"],
+      "correct": 1,
+      "rationale": "Fleming noticed the mould's antibacterial effect in 1928; Florey and Chain developed it into medicine, and all three shared the 1945 Nobel."
+    },
+    {
+      "id": 4,
+      "question": "The World Wide Web was invented by:",
+      "options": ["Bill Gates", "Tim Berners-Lee", "Vint Cerf", "Steve Jobs"],
+      "correct": 1,
+      "rationale": "Berners-Lee proposed and built the Web at CERN in 1989 — distinct from the Internet's underlying protocols, which is the deeper version of the question."
+    },
+    {
+      "id": 5,
+      "question": "X-rays were discovered by:",
+      "options": ["Wilhelm Röntgen", "Henri Becquerel", "Marie Curie", "Max Planck"],
+      "correct": 0,
+      "rationale": "Röntgen's 1895 discovery earned the very first Physics Nobel (1901); Becquerel and the Curies followed with radioactivity."
+    },
+    {
+      "id": 6,
+      "question": "The periodic table's periodic law was formulated by:",
+      "options": ["Dmitri Mendeleev", "Antoine Lavoisier", "John Dalton", "Niels Bohr"],
+      "correct": 0,
+      "rationale": "Mendeleev's 1869 table even predicted the properties of elements yet to be discovered — the exam's favourite embellishment."
+    },
+    {
+      "id": 7,
+      "question": "The Wright brothers are credited with:",
+      "options": ["The first powered, controlled airplane flight", "The first helicopter", "The first jet engine", "The first balloon flight"],
+      "correct": 0,
+      "rationale": "Kitty Hawk, 1903 — powered, controlled, sustained. The helicopter belongs to Sikorsky and the jet to Whittle and von Ohain."
+    },
+    {
+      "id": 8,
+      "question": "The Raman effect, announced in 1928, earned C.V. Raman the Nobel Prize in:",
+      "options": ["1928", "1930", "1935", "1947"],
+      "correct": 1,
+      "rationale": "The discovery was announced on 28 February 1928 (now National Science Day); the Physics Nobel followed in 1930 — two years apart, the fact the paper tests."
+    },
+    {
+      "id": 9,
+      "question": "The DNA double helix structure was worked out by:",
+      "options": ["Mendel and Darwin", "Watson and Crick", "Pasteur and Koch", "Salk and Sabin"],
+      "correct": 1,
+      "rationale": "Watson and Crick published the structure in 1953, building on Rosalind Franklin's X-ray diffraction images — the trio fact the options quietly acknowledge."
+    },
+    {
+      "id": 10,
+      "question": "The concept of the zero's arithmetic rules was first formally set out by:",
+      "options": ["Aryabhata", "Brahmagupta", "Bhaskara II", "Al-Khwarizmi"],
+      "correct": 1,
+      "rationale": "Brahmagupta's Brahmasphutasiddhanta (628 CE) gives the earliest formal rules for zero's arithmetic; Aryabhata's system supplied the place-value foundation."
+    }
+  ]
+}

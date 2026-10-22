@@ -1,0 +1,12 @@
+# Calendar Reasoning
+
+@subject {
+  id: calendar
+  parent: reasoning
+  title: "Calendar"
+  description: "Odd days, leap-year cycles, and day-of-week puzzles — finding which weekday any date falls on."
+}
+
+@lessons {
+  calendar-reasoning
+}

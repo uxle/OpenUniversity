@@ -1,0 +1,168 @@
+# Conic Sections: Slicing the Cone
+
+> Cut a double cone with a plane at different angles and four eternal
+> curves fall out — the circle, parabola, ellipse and hyperbola. Every
+> one of them is defined by a single distance condition, and every
+> exam question is that condition translated into algebra.
+
+## 1. The Cone and Its Sections
+
+[definition]
+A **conic section** is the curve formed where a plane intersects a
+right circular cone. A horizontal cut gives a **circle**; a tilted
+cut a closed oval, the **ellipse**; a cut parallel to the cone's slant
+the unbounded **parabola**; and a cut steep enough to pass through
+both nappes the two-branched **hyperbola**.
+[/definition]
+
+The unified definition: a conic is the set of points where the
+distance to a fixed point (**focus**) bears a constant ratio
+$e$ (**eccentricity**) to the distance from a fixed line
+(**directrix**):
+
+| Curve | Eccentricity | Bounded? |
+| --- | --- | --- |
+| Circle | $e = 0$ | yes |
+| Parabola | $e = 1$ | no |
+| Ellipse | $0 < e < 1$ | yes |
+| Hyperbola | $e > 1$ | no |
+
+## 2. The Parabola
+
+[definition]
+A **parabola** is the locus of points equidistant from the focus and
+the directrix. For focus $(a, 0)$ with directrix $x = -a$
+($a > 0$), the equation is $y^2 = 4ax$.
+[/definition]
+
+| Form | Equation | Focus | Directrix |
+| --- | --- | --- | --- |
+| Right-opening | $y^2 = 4ax$ | $(a, 0)$ | $x = -a$ |
+| Left-opening | $y^2 = -4ax$ | $(-a, 0)$ | $x = a$ |
+| Up-opening | $x^2 = 4ay$ | $(0, a)$ | $y = -a$ |
+| Down-opening | $x^2 = -4ay$ | $(0, -a)$ | $y = a$ |
+
+**Key measurements** (for $y^2 = 4ax$): vertex $(0,0)$; latus rectum
+(the chord through the focus perpendicular to the axis) has length
+$4a$ and endpoints $(a, \pm 2a)$.
+
+**Worked example.** For $y^2 = 12x$: compare with $y^2 = 4ax$ to get
+$a = 3$. Focus $(3, 0)$, directrix $x = -3$, latus rectum $12$.
+
+## 3. The Ellipse
+
+[definition]
+An **ellipse** is the locus of points whose distances from two fixed
+points (the foci) add to a constant $2a$. Its standard equation is
+
+@math label="eq:ellipse-std}
+\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} = 1, \qquad a > b
+@/math
+
+[/definition]
+
+With $b^2 = a^2 - c^2$, the foci are $(\pm c, 0)$, and the
+eccentricity $e = c/a$ satisfies $0 < e < 1$. Key lengths:
+
+| Element | Value |
+| --- | --- |
+| Major axis (length) | $2a$ |
+| Minor axis (length) | $2b$ |
+| Foci | $(\pm ae, 0)$ |
+| Latus rectum | $\frac{2b^{2}}{a}$ |
+| Focal distance sum | always $2a$ |
+
+**Worked example.** For $9x^2 + 16y^2 = 144$: divide by 144 to get
+$\frac{x^2}{16} + \frac{y^2}{9} = 1$, so $a = 4$, $b = 3$, and
+$c = \sqrt{16 - 9} = \sqrt{7}$. Foci $(\pm\sqrt{7}, 0)$;
+eccentricity $\sqrt{7}/4$; major axis 8; minor axis 6.
+
+[important]
+A circle is just an ellipse whose foci have merged: set $c = 0$, so
+$a = b = r$ and the equation collapses to $x^2 + y^2 = r^2$. This is
+why every ellipse formula becomes a circle formula when $e = 0$.
+[/important]
+
+## 4. The Hyperbola
+
+[definition]
+A **hyperbola** is the locus of points whose distances from two fixed
+foci **differ** by a constant $2a$. Standard equation (foci on the
+x-axis):
+
+@math label="eq:hyper-std}
+\frac{x^{2}}{a^{2}} - \frac{y^{2}}{b^{2}} = 1, \qquad c^{2} = a^{2} + b^{2}
+@/math
+
+[/definition]
+
+| Element | Value |
+| --- | --- |
+| Transverse axis | $2a$ (through the vertices) |
+| Conjugate axis | $2b$ |
+| Foci | $(\pm c, 0)$ with $c^{2} = a^{2} + b^{2}$ |
+| Eccentricity | $e = c/a > 1$ |
+| Latus rectum | $\frac{2b^{2}}{a}$ |
+| Asymptotes | $y = \pm\frac{b}{a}x$ |
+
+Note the sign flip: ellipses subtract to find $c$
+($c^2 = a^2 - b^2$), hyperbolas add ($c^2 = a^2 + b^2$).
+
+**Worked example.** For $x^2/9 - y^2/16 = 1$: $a = 3$, $b = 4$,
+$c = 5$; foci $(\pm 5, 0)$; eccentricity $5/3$; asymptotes
+$y = \pm\frac{4}{3}x$.
+
+**Worked example (rectangular hyperbola).** When $a = b$ the
+hyperbola $xy = c^2$ is called rectangular (equilateral): its
+asymptotes are perpendicular, and for $xy = 16$ the foci lie at
+$(\pm 4\sqrt{2}, \pm 4\sqrt{2})$ along the line $y = x$.
+
+## 5. Identifying a Conic at a Glance
+
+For the general second-degree equation
+$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ (exam questions usually have
+$B = 0$), the conic is decided by the quadratic part:
+
+| Condition | Conic |
+| --- | --- |
+| $A = C$ (after scaling), $B = 0$ | circle |
+| $A$ and $C$ same sign | ellipse |
+| $A$ or $C$ equals zero | parabola |
+| $A$ and $C$ opposite signs | hyperbola |
+
+**Worked example.** Classify $4x^2 + 9y^2 = 36$ and
+$4x^2 - 9y^2 = 36$ and $y^2 = 8x$. The first: same signs → ellipse
+(divide by 36: $\frac{x^2}{9} + \frac{y^2}{4} = 1$). The second:
+opposite signs → hyperbola. The third: no $x^2$ term → parabola.
+
+## 6. Reflecting Property and Real Uses
+
+- **Parabola:** rays parallel to the axis reflect through the focus —
+  hence satellite dishes, searchlights and solar cookers all use
+  parabolic surfaces.
+- **Ellipse:** a ray from one focus reflects to the other — the
+  "whispering gallery" effect in domed halls, and lithotripsy
+  machines that focus sound waves to shatter kidney stones.
+- **Hyperbola:** the difference of distances to two known points is
+  constant — the basis of LORAN and GPS navigation, where time-delay
+  differences place the receiver on a hyperbola.
+- Planetary orbits are ellipses with the Sun at one focus (Kepler's
+  first law); comets on escape paths trace parabolas or hyperbolas.
+
+## 7. Exam Checklist
+
+1. Normalise the equation first: make the right side 1.
+2. Match to a standard form; read off $a$ and $b$ from the
+   denominators.
+3. Compute $c$ — subtract for ellipses, add for hyperbolas.
+4. Know by heart: latus rectum $4a$ (parabola), $\frac{2b^2}{a}$
+   (ellipse/hyperbola), eccentricity definitions.
+5. Condition questions ("the conic $x^2 + k y^2 = 16$ is an
+   ellipse") reduce to sign rules on the coefficients.
+
+**Worked example.** Find the eccentricity of the ellipse
+$25x^2 + 4y^2 = 100$. Divide by 100: $\frac{x^2}{4} + \frac{y^2}{25}
+= 1$ — the larger denominator sits under $y$, so the major axis is
+vertical: $a = 5$, $b = 2$, $c = \sqrt{21}$, and $e = \sqrt{21}/5
+\approx 0.92$. Reading which axis is major *before* computing $c$ is
+the step most candidates skip — and the step the examiner is testing.

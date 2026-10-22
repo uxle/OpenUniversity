@@ -1,0 +1,162 @@
+# Divisibility, Remainders and Unit Digits
+
+> Number-system questions rarely ask for a full division — they ask
+> whether a division is clean, what is left over, or what the last
+> digit looks like. Three small toolkits answer all of them without
+> ever performing the division.
+
+## 1. Divisibility Rules: The Complete Table
+
+[definition]
+A **divisibility rule** is a shortcut that decides whether a number is
+a multiple of another without carrying out the division. The useful
+ones cover every divisor from 2 to 12, plus a few classics beyond.
+[/definition]
+
+| Divisor | Test | Example |
+| --- | --- | --- |
+| 2 | last digit even | 348 yes |
+| 3 | digit sum divisible by 3 | 261: $2+6+1 = 9$ yes |
+| 4 | last two digits divisible by 4 | 1732: 32 yes |
+| 5 | last digit 0 or 5 | 975 yes |
+| 6 | divisible by 2 **and** 3 | 432 yes |
+| 8 | last three digits divisible by 8 | 5928: 928 yes |
+| 9 | digit sum divisible by 9 | 837: $8+3+7 = 18$ yes |
+| 10 | last digit 0 | 1450 yes |
+| 11 | (sum of odd-place digits) − (sum of even-place digits) is 0 or a multiple of 11 | 25396: $(2+3+6) - (5+9) = -3$ no |
+| 12 | divisible by 3 **and** 4 | 2760 yes |
+
+[important]
+For 7, double the last digit and subtract from the rest: $343 \rightarrow
+34 - 6 = 28$, which is a multiple of 7. For 13, multiply the last
+digit by 4 and **add**: $234 \rightarrow 23 + 16 = 39$, a multiple of
+13. These two are slower than the others — use them only when no
+alternative exists.
+[/important]
+
+## 2. Applying the Rules
+
+**Worked example.** Is 4,318,560 divisible by 88?
+
+Factorise: $88 = 8 \times 11$. Last three digits 560 give
+$560 \div 8 = 70$ — passes the 8 test. For 11: odd-place digits
+$4 + 1 + 5 + 0 = 10$, even-place $3 + 8 + 6 = 17$, difference
+$-7$ — fails the 11 test. So the number is divisible by 8 but not by
+11, hence **not** by 88.
+
+**Worked example.** What must replace $\ast$ in $2739\ast$ to make it
+divisible by 9?
+
+Digit sum $2 + 7 + 3 + 9 = 21$; adding $\ast$ must land on the next
+multiple of 9, which is 27. So $\ast = 6$.
+
+## 3. Remainders: The Basic Language
+
+[definition]
+For any integer $n$ and positive divisor $d$:
+$n = dq + r$ with $0 \le r < d$. The **remainder** $r$ is what is
+left after taking out whole groups of $d$. Every remainder fact is
+just this equation.
+[/definition]
+
+Key working facts:
+
+- Adding: remainders of a sum $=$ remainder of the sum of remainders
+  (reduced mod $d$). Same for multiplication.
+- $n \equiv r (\mathrm{mod}\ d)$ means $n$ and $r$ leave the same remainder
+  $r$ with $d$.
+- A negative remainder may be converted by adding the divisor:
+  $-2 \equiv 5 (\mathrm{mod}\ 7)$.
+
+**Worked example.** Find the remainder when $7^{103}$ is divided by 5.
+
+Powers of 7 end in 7, 9, 3, 1, 7, 9, 3, 1 — a cycle of 4. Since
+$103 = 4 \times 25 + 3$, the last digit of $7^{103}$ matches the 3rd
+member of the cycle: 3. A number ending in 3 leaves remainder
+$3 (\mathrm{mod}\ 5)$.
+
+## 4. Remainder of Sums and Products
+
+**Worked example.** Remainder when $123 + 456 \times 789$ is divided
+by 6.
+
+@math label="eq:rem-sumprod}
+123 \equiv 3, \quad 456 \equiv 0, \quad 789 \equiv 3 (\mathrm{mod}\ 6)
+@/math
+
+So the expression behaves as $3 + 0 \times 3 = 3 (\mathrm{mod}\ 6)$.
+Remainder arithmetic lets each huge number shrink to its remainder
+before any operation.
+
+[example]
+A classic short trick: the remainder when $x$ is divided by $d$
+equals the remainder of the **digit sum chain** for $d = 3$ or $9$.
+So $8^{100} (\mathrm{mod}\ 9)$: since $8 \equiv -1 (\mathrm{mod}\ 9)$, we get
+$(-1)^{100} = 1$ — no powers of 8 ever computed.
+[/example]
+
+## 5. Unit Digits: The Cycle Machine
+
+[definition]
+The **unit (last) digit** of $a^n$ repeats in a fixed cycle. Cycle
+lengths: 1 for 0, 1, 5, 6; 2 for 4, 9; 4 for 2, 3, 7, 8.
+[/definition]
+
+| Base | Cycle | Unit digit of $a^n$ |
+| --- | --- | --- |
+| 2 | 2, 4, 8, 6 | position $n \bmod 4$ (0 means 4th) |
+| 3 | 3, 9, 7, 1 | same rule |
+| 4 | 4, 6 | odd $n$: 4; even $n$: 6 |
+| 7 | 7, 9, 3, 1 | same rule as 2 |
+| 8 | 8, 4, 2, 6 | same rule as 2 |
+| 9 | 9, 1 | odd $n$: 9; even $n$: 1 |
+
+**Worked example.** Unit digit of $3^{34}$?
+
+$34 \bmod 4 = 2$, so take the 2nd member of the cycle 3, 9, 7, 1 —
+which is **9**.
+
+**Worked example.** Unit digit of $7^{95} \times 3^{58}$?
+
+$95 \bmod 4 = 3 \rightarrow$ unit digit of $7^{95}$ is 3;
+$58 \bmod 4 = 2 \rightarrow$ unit digit of $3^{58}$ is 9.
+Then $3 \times 9 = 27$ ends in **7**.
+
+## 6. Remainder Powers: Pattern Spotting
+
+For $a^n (\mathrm{mod}\ d)$ with small $d$, write the cycle of remainders
+directly:
+
+@math label="eq:rem-cycle}
+2^{1} \equiv 2,\; 2^{2} \equiv 4,\; 2^{3} \equiv 3,\; 2^{4} \equiv 1 (\mathrm{mod}\ 5)
+@/math
+
+The cycle length divides 4 here; $n \bmod 4$ then selects the
+remainder. This "list the cycle, index by the exponent" method solves
+nearly every exam power-remainder question.
+
+[important]
+Cyclic behaviour always appears because there are only $d$ possible
+remainders; by pigeonhole the sequence must repeat, and once a
+remainder recurs the pattern is locked in forever. That is why cycle
+hunting is guaranteed to work, not a lucky accident.
+[/important]
+
+## 7. Exam Patterns to Recognise
+
+- "Is $N$ divisible by $k$?" — factor $k$ into coprime pieces and
+  test each rule (6 = 2 × 3, 12 = 3 × 4, 88 = 8 × 11).
+- "Find the missing digit for divisibility" — digit-sum tests for 3
+  and 9; last-digit tests for 2, 5, 10; last-two for 4; alternating
+  sum for 11.
+- "Last digit of a huge power" — cycle table, index by
+  $n \bmod 4$ (or 2).
+- "Remainder of a big sum/product" — reduce each term first, then
+  combine.
+- **Division by 10** questions are unit-digit questions in disguise:
+  the remainder is the last digit itself.
+
+**Worked example.** Find the remainder when $6^{83}$ is divided by
+10 — that is, the last digit of $6^{83}$. Since every power of 6
+ends in 6, the remainder is simply **6**. Noticing such one-element
+cycles first saves the entire machinery of this chapter.

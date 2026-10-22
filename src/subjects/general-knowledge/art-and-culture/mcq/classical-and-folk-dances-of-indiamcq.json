@@ -1,0 +1,76 @@
+{
+  "lessonId": "classical-and-folk-dances-of-india",
+  "title": "Classical and Folk Dances of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many classical dance forms of India are recognised by the Sangeet Natak Akademi?",
+      "options": ["Six", "Seven", "Eight", "Nine"],
+      "correct": 2,
+      "rationale": "Eight — with Sattriya of Assam the most recent (recognised in 2000), joining the seven classics of the older lists."
+    },
+    {
+      "id": 2,
+      "question": "The classical dance form associated with the sattra monasteries of Assam is:",
+      "options": ["Manipuri", "Sattriya", "Odissi", "Kuchipudi"],
+      "correct": 1,
+      "rationale": "Sankardev created Sattriya within the Vaishnavite sattra institutions — the monastery link is the clue that names the form."
+    },
+    {
+      "id": 3,
+      "question": "Which classical dance is traditionally performed without ankle bells (ghungroos)?",
+      "options": ["Kathak", "Bharatanatyam", "Manipuri", "Kathakali"],
+      "correct": 2,
+      "rationale": "Manipuri's soft, rounded aesthetic treats percussion as external (the pung drum), not worn on the ankles — a one-fact question that recurs annually."
+    },
+    {
+      "id": 4,
+      "question": "The 'tarangam' — dancing on the rim of a brass plate — belongs to:",
+      "options": ["Kuchipudi", "Bharatanatyam", "Mohiniyattam", "Odissi"],
+      "correct": 0,
+      "rationale": "Kuchipudi's signature plate balance comes from the Bhagavata Mela tradition codified by Siddhendra Yogi in Andhra Pradesh."
+    },
+    {
+      "id": 5,
+      "question": "The Natyashastra, the founding treatise of Indian dramaturgy and dance, is attributed to:",
+      "options": ["Bharata Muni", "Panini", "Patanjali", "Kautilya"],
+      "correct": 0,
+      "rationale": "Bharata Muni's Natyashastra (c. 200 BCE-200 CE) is the 'fifth Veda' of theatre — the text behind every classical form's grammar."
+    },
+    {
+      "id": 6,
+      "question": "Kathak's characteristic fast spins (chakkars) developed in the courts of:",
+      "options": ["The Chola temples", "The Mughal courts", "The Kerala temples", "The sattra monasteries"],
+      "correct": 1,
+      "rationale": "Kathak grew in the Mughal darbar — the reason it alone among the eight carries a courtly rather than temple lineage."
+    },
+    {
+      "id": 7,
+      "question": "Garba and Dandiya Raas are folk dances of:",
+      "options": ["Punjab", "Gujarat", "Rajasthan", "Maharashtra"],
+      "correct": 1,
+      "rationale": "Both belong to Gujarat's Navratri nights — Dandiya's paired sticks distinguish it from Garba's clapped circular form."
+    },
+    {
+      "id": 8,
+      "question": "Which folk dance is a UNESCO-recognised intangible cultural heritage of Rajasthan?",
+      "options": ["Ghoomar", "Kalbelia", "Chhau", "Bhavai"],
+      "correct": 1,
+      "rationale": "The Kalbelia — the snake-charmer community's sensuous dance — was inscribed by UNESCO in 2010; Chhau (eastern India) is the other dance on the list."
+    },
+    {
+      "id": 9,
+      "question": "The pacha (green) makeup of noble heroes is a signature of:",
+      "options": ["Kathakali", "Yakshagana", "Theyyam", "Chhau"],
+      "correct": 0,
+      "rationale": "Kathakali's colour code — pacha green for heroes, kathi knives for villains — turns the painted face into the drama's grammar."
+    },
+    {
+      "id": 10,
+      "question": "Mohiniyattam, the 'dance of the enchantress', comes from:",
+      "options": ["Tamil Nadu", "Kerala", "Andhra Pradesh", "Odisha"],
+      "correct": 1,
+      "rationale": "Kerala's lasya-style women's dance joins Kathakali as the state's second classical form — the state pairing is the question's real test."
+    }
+  ]
+}

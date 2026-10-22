@@ -1,0 +1,76 @@
+{
+  "lessonId": "famous-books-and-authors",
+  "title": "Famous Books and Authors: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Mahabharata is traditionally attributed to:",
+      "options": ["Valmiki", "Ved Vyasa", "Kalidasa", "Panini"],
+      "correct": 1,
+      "rationale": "Ved Vyasa (Krishna Dvaipayana) is the traditional compiler-author; the epic runs to 18 parvas and includes the Bhagavad Gita within the Bhishma Parva."
+    },
+    {
+      "id": 2,
+      "question": "'Arthashastra', the ancient treatise on statecraft, was written by:",
+      "options": ["Kautilya (Chanakya)", "Manu", "Bharata Muni", "Banabhatta"],
+      "correct": 0,
+      "rationale": "Kautilya's Arthashastra is the Mauryan-era manual of governance and strategy — the book examiners attach to 'statecraft' every single time."
+    },
+    {
+      "id": 3,
+      "question": "'India Wins Freedom' was written by:",
+      "options": ["Jawaharlal Nehru", "Maulana Abul Kalam Azad", "Mahatma Gandhi", "Sardar Patel"],
+      "correct": 1,
+      "rationale": "Azad's account of the freedom movement and Partition anchors the memoir set along with Nehru's Discovery of India and Gandhi's autobiography."
+    },
+    {
+      "id": 4,
+      "question": "'Wings of Fire' is the autobiography of:",
+      "options": ["Dr. A.P.J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "C.V. Raman"],
+      "correct": 0,
+      "rationale": "Kalam's Wings of Fire (with Arun Tiwari) traces the missile scientist's path from Rameswaram to the Pokhran era."
+    },
+    {
+      "id": 5,
+      "question": "'Anandamath', the novel containing the hymn 'Vande Mataram', was written by:",
+      "options": ["Rabindranath Tagore", "Bankim Chandra Chattopadhyay", "Sarat Chandra Chatterjee", "Premchand"],
+      "correct": 1,
+      "rationale": "Bankim Chandra's 1882 novel of sanyasis in famine-struck Bengal gave the national song its text — a fact that doubles as a national-symbols question."
+    },
+    {
+      "id": 6,
+      "question": "The 'Booker of Bookers' was awarded to:",
+      "options": ["Midnight's Children", "The God of Small Things", "The White Tiger", "A Suitable Boy"],
+      "correct": 0,
+      "rationale": "Salman Rushdie's Midnight's Children won the Booker (1981) and then the 'Booker of Bookers' anniversaries — the best-known fact in Indian English fiction."
+    },
+    {
+      "id": 7,
+      "question": "'The Wealth of Nations' was written by:",
+      "options": ["Karl Marx", "John Maynard Keynes", "Adam Smith", "David Ricardo"],
+      "correct": 2,
+      "rationale": "Adam Smith's 1776 treatise founded modern economics with its division of labour and the invisible hand — the same year as the American Declaration of Independence."
+    },
+    {
+      "id": 8,
+      "question": "'Rajatarangini', the history of Kashmir, was written by:",
+      "options": ["Kalhana", "Bilhana", "Kalidasa", "Banabhatta"],
+      "correct": 0,
+      "rationale": "Kalhana's 12th-century chronicle is India's first properly historical narrative — the answer whenever 'history of Kashmir' appears."
+    },
+    {
+      "id": 9,
+      "question": "'Das Kapital' was written by:",
+      "options": ["Friedrich Engels", "Karl Marx", "Adam Smith", "Vladimir Lenin"],
+      "correct": 1,
+      "rationale": "Marx wrote Das Kapital; Engels co-authored only the Communist Manifesto and later edited Capital's later volumes — the collaboration the question exploits."
+    },
+    {
+      "id": 10,
+      "question": "'Gitanjali', the work that won the 1913 Nobel Prize, was composed by:",
+      "options": ["Sarojini Naidu", "Rabindranath Tagore", "Sri Aurobindo", "Toru Dutt"],
+      "correct": 1,
+      "rationale": "Tagore's Gitanjali (Song Offerings) made him the first non-European Nobel laureate — the anchor fact of Indian literature in every GK paper."
+    }
+  ]
+}

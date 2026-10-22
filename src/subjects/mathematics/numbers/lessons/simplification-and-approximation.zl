@@ -1,0 +1,149 @@
+# Simplification and Approximation: Fast, Safe Arithmetic
+
+> Simplification questions carry no clever traps — only the risk of
+> your own arithmetic slipping under time pressure. The chapter trains
+> two habits: a fixed order of operations, and rounding so shrewdly
+> that the nearest option is obvious long before the exact decimal.
+
+## 1. BODMAS: The Order of Operations
+
+[definition]
+**BODMAS** fixes the sequence of every calculation:
+**B**rackets first, then **O**rders (powers and roots), then
+**D**ivision and **M**ultiplication (left to right), and finally
+**A**ddition and **S**ubtraction (left to right).
+[/definition]
+
+| Rank | Operation | Example |
+| --- | --- | --- |
+| 1 | Brackets: $(\ )$, then $\{\ \}$, then $[\ ]$ | innermost first |
+| 2 | Of / Orders / Roots | $20 \times \frac{1}{4}$, $\sqrt{16}$ |
+| 3 | Division and Multiplication | left to right |
+| 4 | Addition and Subtraction | left to right |
+
+**Worked example.** Evaluate $12 \div 3 \times 2 + 5 - \sqrt{16}$.
+
+@math label="eq:simp-bodmas"
+12 \div 3 \times 2 + 5 - 4 = 4 \times 2 + 5 - 4 = 8 + 5 - 4 = 9
+@/math
+
+[important]
+Division and multiplication share one rank — work them **left to
+right**, never multiplication first. $12 \div 3 \times 2 = 8$, not
+$2$. The same left-to-right rule applies to addition and subtraction
+mixed together: $10 - 4 + 3 = 9$, not $3$.
+[/important]
+
+## 2. Brackets and the Vinculum
+
+Problems often nest brackets deliberately. The order of removal:
+
+1. **Vinculum** (bar): $\overline{4 + 5}$ means evaluate $4+5$ first.
+2. **Round brackets** $(\ )$
+3. **Curly brackets** $\{\ \}$
+4. **Square brackets** $[\ ]$
+
+**Worked example.**
+
+@math label="eq:simp-brackets"
+[ 8 - \{ 5 - ( 7 - 3) \} ] = [ 8 - \{ 5 - 4 \} ] = [ 8 - 1 ] = 7
+@/math
+
+[example]
+A time-saving habit: when a bracket contains a mini-calculation,
+finish it completely before leaving it. Juggling three half-evaluated
+brackets at once is where sign errors are born.
+[/example]
+
+## 3. Approximation: Rounding With Intent
+
+Approximation questions ask for the value "closest to" a given
+number, so rough values suffice — provided you round in a controlled
+way.
+
+**Rules of safe rounding:**
+
+- Round each awkward number to the nearest convenient whole number
+  or simple fraction ($7.89 \approx 8$, $3.04 \approx 3$).
+- If you round one number **up**, prefer rounding the other in the
+  same direction so errors don't pile up in products.
+- Keep the rounding small: changing $398.7$ to $400$ is fine;
+  changing $349$ to $400$ is not.
+- For mixed operations, approximate only after clearing brackets.
+
+**Worked example.** Approximately, $63.98\%$ of $449.9 + ? = 480.
+
+Take $64\%$ of $450 = 288$; then $480 - 288 = 192$. The options will
+be spaced far apart — say 170, 192, 220, 250 — so the approximation
+lands safely on 192.
+
+## 4. Percentage–Fraction Equivalents
+
+[definition]
+Speed simplification depends on knowing the standard fraction
+equivalents cold: $\frac{1}{2} = 50\%$, $\frac{1}{3} \approx 33.33\%$,
+$\frac{1}{4} = 25\%$, $\frac{1}{5} = 20\%$, $\frac{1}{8} = 12.5\%$,
+$\frac{1}{12} \approx 8.33\%$, $\frac{1}{16} = 6.25\%$.
+[/definition]
+
+| Percentage | Fraction | Percentage | Fraction |
+| --- | --- | --- | --- |
+| $16.67\%$ | $\frac{1}{6}$ | $37.5\%$ | $\frac{3}{8}$ |
+| $14.28\%$ | $\frac{1}{7}$ | $62.5\%$ | $\frac{5}{8}$ |
+| $11.11\%$ | $\frac{1}{9}$ | $87.5\%$ | $\frac{7}{8}$ |
+| $9.09\%$ | $\frac{1}{11}$ | $83.33\%$ | $\frac{5}{6}$ |
+
+**Worked example.** $37.5\%$ of $256$ is $\frac{3}{8} \times 256 =
+3 \times 32 = 96$ — a five-second calculation for anyone who knows
+the table, a minute of long multiplication for anyone who does not.
+
+## 5. Reciprocals, Squares and Quick Tools
+
+A small toolkit removes most of the drudgery:
+
+| Tool | Result | Use |
+| --- | --- | --- |
+| $a \times \frac{b}{c}$ | $\frac{a \times b}{c}$, cancel first | reduce before multiplying |
+| $\frac{a}{b} \div \frac{c}{d}$ | $\frac{a}{b} \times \frac{d}{c}$ | invert and multiply |
+| Squares ending in 5 | $35^2 = 3 \times 4\ /\ 25 = 1225$ | $n5^2 = n(n+1)$ then $25$ |
+| Difference of squares | $97 \times 103 = 100^2 - 9 = 9991$ | pair around a mean |
+| Digit sum check | cast out 9s | verify long sums |
+
+**Worked example.** $97 \times 103$: the numbers sit symmetrically
+around 100, so the product is $100^2 - 3^2 = 9991$. The same trick
+gives $48 \times 52 = 50^2 - 4 = 2496$.
+
+## 6. Chain Simplification and Successive Operations
+
+Exam questions often chain an expression such as
+$\frac{3}{4}$ of $240 - 15\%$ of $200 + \sqrt{225}$.
+Work term by term, converting "of" into multiplication:
+
+@math label="eq:simp-chain"
+\frac{3}{4} \times 240 - \frac{15}{100} \times 200 + 15 = 180 - 30 + 15 = 165
+@/math
+
+[example]
+"Of" means multiply and binds **before** division in most exam
+conventions: $36 \div \frac{3}{4}$ of $16 = 36 \div 12 = 3$. Read the
+sentence twice before touching the pen — misreading "of" as
+multiplication-after-division is the single most common simplification
+error.
+[/example]
+
+## 7. Exam Strategy
+
+- Options far apart (e.g. 42, 480, 5,100) signal that approximation
+  is invited; options close together (e.g. 191, 192, 194) demand
+  exact work.
+- Cancel factors before multiplying two fractions — the numbers in
+  designed questions almost always cancel heavily.
+- Verify with digit sums when the arithmetic is long; a cast-out-nines
+  mismatch catches most slips instantly.
+- Memorise squares to 30 and cubes to 12; they surface inside roots,
+  percentages and algebra alike.
+
+**Worked example.** $\sqrt{1369} + \sqrt{2025} - 34 \div 17$
+becomes $37 + 45 - 2 = 80$ the moment the two squares are recognised
+($37^2 = 1369$, $45^2 = 2025$) — which is precisely why squares are
+worth memorising in the first place.

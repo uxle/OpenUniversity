@@ -1,0 +1,76 @@
+{
+  "lessonId": "clauses-and-sentence-types",
+  "title": "Clauses and Sentence Types: The Architecture of Sentences",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a CLAUSE (not a phrase)?",
+      "options": ["because she was late", "under the old bridge", "running very fast", "in the morning"],
+      "correct": 0,
+      "rationale": "A clause contains a subject and a finite verb ('she was'); a phrase does not. 'Running very fast' has a verb form but no subject, so it is a participial phrase, not a clause."
+    },
+    {
+      "id": 2,
+      "question": "A sentence with one main clause and one subordinate clause is:",
+      "options": ["Complex", "Compound", "Simple", "Compound-complex"],
+      "correct": 0,
+      "rationale": "Complex = 1 main + 1 or more subordinate ('When the dog barked, the postman fled'). Compound needs 2 main clauses; compound-complex needs 2 main + 1 subordinate."
+    },
+    {
+      "id": 3,
+      "question": "Identify the sentence type: 'Although the offer was generous, she declined it, but she sent a polite note.'",
+      "options": ["Compound-complex", "Complex", "Compound", "Simple"],
+      "correct": 0,
+      "rationale": "Main clauses: 'she declined it' and 'she sent a polite note' (2). Subordinate: 'Although the offer was generous' (1). Two main + one subordinate = compound-complex."
+    },
+    {
+      "id": 4,
+      "question": "In 'I know that she left yesterday', the clause 'that she left yesterday' functions as a:",
+      "options": ["Noun clause (object of 'know')", "Adjective clause", "Adverb clause", "Main clause"],
+      "correct": 0,
+      "rationale": "Replace it with 'it': 'I know it' still works - the clause is the object of the verb, hence a noun clause. Adjective clauses modify nouns; adverb clauses modify verbs answering when/why/if."
+    },
+    {
+      "id": 5,
+      "question": "'The car that I bought last year is already rusting.' The clause 'that I bought last year' is:",
+      "options": ["A defining adjective clause", "A non-defining clause", "A noun clause", "An adverb clause"],
+      "correct": 0,
+      "rationale": "It tells us WHICH car - restrictive/defining - so it takes no commas and allows 'that'. A non-defining clause would merely add information about an already identified car and would be comma-set and use 'which'."
+    },
+      {
+      "id": 6,
+      "question": "Which sentence is punctuated CORRECTLY?",
+      "options": ["The rain stopped; we left immediately.", "The rain stopped, we left immediately.", "The rain stopped we left immediately.", "Although the rain stopped, we left immediately however."],
+      "correct": 0,
+      "rationale": "Option 1 joins two main clauses correctly with a semicolon. Option 2 is a comma splice; option 3 is a fused run-on; option 4 mixes subordination with 'however' incorrectly."
+    },
+    {
+      "id": 7,
+      "question": "'Walking to school, the clock struck nine.' This sentence contains:",
+      "options": ["A dangling modifier", "A comma splice", "A fragment", "Correct parallel structure"],
+      "correct": 0,
+      "rationale": "The opening participle has nothing in the main clause to attach to - the clock was not walking to school. Fix: 'Walking to school, I heard the clock strike nine.'"
+    },
+    {
+      "id": 8,
+      "question": "'One of the students who ___ present today will be fined.' The correct verb form is:",
+      "options": ["are", "is", "was", "been"],
+      "correct": 0,
+      "rationale": "The relative clause attaches to the plural noun 'students' (the students who ARE present), not to 'one'. Agreement questions are usually clause-structure questions in disguise: find the noun the clause actually modifies."
+    },
+    {
+      "id": 9,
+      "question": "'What a view this is!' is an example of:",
+      "options": ["An exclamatory sentence", "An interrogative sentence", "An imperative sentence", "A declarative sentence"],
+      "correct": 0,
+      "rationale": "Exclamatory sentences express strong feeling, typically introduced by 'what' or 'how': 'What a view this is!' Interrogative asks; imperative commands; declarative states."
+    },
+    {
+      "id": 10,
+      "question": "Which conjunction set can join two main clauses to form a COMPOUND sentence?",
+      "options": ["FANBOYS: for, and, nor, but, or, yet, so", "although, because, since, unless", "who, whom, which, that", "if, whether, when"],
+      "correct": 0,
+      "rationale": "Only coordinating conjunctions (FANBOYS) or a semicolon can legally join two independent clauses. The other sets are subordinators - they create subordinate clauses, producing complex sentences."
+    }
+  ]
+}

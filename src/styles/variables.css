@@ -11,50 +11,73 @@
    and layered, rounding is unchanged. */
 :root {
   /* Color — light (default) */
-  --ou-bg: #ffffff;
-  --ou-surface: #ffffff;              /* solid card background */
-  --ou-surface-subtle: #f5f5f7;
-  --ou-surface-raised: #ffffff;       /* elevated card above ou-surface, e.g. modal */
-  --ou-border: rgba(0, 0, 0, 0.06);
-  --ou-border-strong: rgba(0, 0, 0, 0.12);
-  --ou-text: #1d1d1f;
-  --ou-text-secondary: #6e6e73;
-  --ou-text-muted: #a1a1a6;
-  --ou-accent: #1d1d1f;
-  --ou-accent-hover: #000000;
-  --ou-accent-subtle: rgba(0, 0, 0, 0.06);
-  --ou-accent-contrast: #ffffff;
-  --ou-success: #22a05c;
-  --ou-warning: #d97706;
-  --ou-danger: #e0564f;
-  --ou-focus-ring: #1d1d1f;
+  --ou-bg: #f7f5f0;
+  --ou-surface: #fdfcf9;              /* solid card background */
+  --ou-surface-subtle: #efece4;
+  --ou-surface-raised: #fdfcf9;       /* elevated card above ou-surface, e.g. modal */
+  --ou-border: rgba(32, 43, 60, 0.09);
+  --ou-border-strong: rgba(32, 43, 60, 0.18);
+  --ou-text: #202b3c;
+  --ou-text-secondary: #56627a;
+  --ou-text-muted: #8a93a5;
+  --ou-accent: #315c52;
+  --ou-accent-hover: #264a42;
+  --ou-accent-subtle: rgba(49, 92, 82, 0.09);
+  --ou-accent-contrast: #f7f5f0;
+  --ou-success: #2f6f55;
+  --ou-warning: #a8641a;
+  --ou-danger: #b4524d;
+  --ou-focus-ring: #6657a0;
 
   /* Optional accents — small doses only (marks, selection, tiny dots).
      --ou-hue is the single soft brand blue; everything else keeps ink. */
-  --ou-hue: #4d9df8;
-  --ou-highlight: #fff3bf;
-  --ou-highlight-ink: #6b5900;
+  --ou-hue: #477ca8;
+  --ou-highlight: #f6e7c1;
+  --ou-highlight-ink: #5c4510;
 
   /* Elevation — soft, layered (ambient + a barely-there direct shadow) */
-  --ou-shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.08);
-  --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.12);
+  --ou-shadow-xs: 0 2px 8px rgba(32, 43, 60, 0.05);
+  --ou-shadow-sm: 0 4px 20px rgba(32, 43, 60, 0.06);
+  --ou-shadow-md: 0 12px 32px rgba(32, 43, 60, 0.09);
+  --ou-shadow-lg: 0 20px 48px rgba(32, 43, 60, 0.13);
   --ou-shadow-glow-accent: 0 0 0 4px var(--ou-accent-subtle),
-                           0 8px 24px rgba(0, 0, 0, 0.14);
+                           0 8px 24px rgba(32, 43, 60, 0.15);
 
   /* Gradient tokens — grayscale only: depth comes from ink darkness,
      never from hue. */
-  --ou-gradient-brand: linear-gradient(135deg, #1d1d1f 0%, #3a3a3c 100%);
+  --ou-gradient-brand: linear-gradient(135deg, #315c52 0%, #264a42 100%);
   --ou-gradient-hue: linear-gradient(135deg, #4d9df8 0%, #7a70f2 100%);
   --ou-gradient-surface: linear-gradient(160deg, var(--ou-surface) 0%, var(--ou-surface-subtle) 100%);
-  --ou-gradient-success: linear-gradient(135deg, #2c2c2e 0%, #1d1d1f 100%);
+  --ou-gradient-success: linear-gradient(135deg, #2f6f55 0%, #315c52 100%);
   --ou-gradient-skeleton: linear-gradient(
     90deg,
     var(--ou-surface-subtle) 25%,
     var(--ou-surface) 50%,
     var(--ou-surface-subtle) 75%
   );
+
+  /* ── v2 tokens ─────────────────────────────────────────────────────
+     --ou-signal is the ONE chromatic color of the system and it has ONE
+     job: communicating STATE (progress, selection, focus, "you are here").
+     Ink stays the identity color for surfaces/buttons/text; signal never
+     decorates. Soft purple #6657a0 on chalk = 5.6:1 (AA for text and UI). */
+  --ou-signal: #6657a0;
+  --ou-signal-hover: #54478a;
+  --ou-signal-subtle: rgba(102, 87, 160, 0.11);
+  --ou-signal-border: rgba(102, 87, 160, 0.40);
+  --ou-signal-contrast: #f7f5f0;
+
+  /* Reading measure + rhythm (typographic tokens) */
+  --ou-measure: 68ch;
+  --ou-lh-tight: 1.2;
+  --ou-lh-read: 1.75;
+  --ou-fs-display: clamp(2rem, 1.3rem + 3vw, 3.25rem);
+
+  /* Motion durations (paired with the existing easing curves) */
+  --ou-dur-1: 120ms;
+  --ou-dur-2: 200ms;
+  --ou-dur-3: 320ms;
+  --ou-lift: -2px;            /* hover elevation travel (was -6px) */
 
   /* Radius */
   --ou-radius-sm: 8px;

@@ -1,0 +1,76 @@
+{
+  "lessonId": "nobel-and-international-awards",
+  "title": "Nobel and International Awards: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Nobel Prizes were first awarded in:",
+      "options": ["1896", "1901", "1905", "1911"],
+      "correct": 1,
+      "rationale": "Alfred Nobel died in 1896; his will's prizes were first distributed on 5 December 1901, the fifth anniversary of his death."
+    },
+    {
+      "id": 2,
+      "question": "The Nobel Prize category that was NOT part of Nobel's original will is:",
+      "options": ["Physics", "Literature", "Economics", "Medicine"],
+      "correct": 2,
+      "rationale": "The economics prize was endowed by Sweden's central bank in 1968 in Nobel's memory — the reason it is formally called a prize 'in economic sciences'."
+    },
+    {
+      "id": 3,
+      "question": "The first Indian Nobel laureate was:",
+      "options": ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
+      "correct": 1,
+      "rationale": "Tagore won the 1913 Literature Nobel — the first non-European laureate. Raman (1930) was the first Indian in the sciences."
+    },
+    {
+      "id": 4,
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": ["Marie Curie", "Irene Joliot-Curie", "Pearl Buck", "Dorothy Hodgkin"],
+      "correct": 0,
+      "rationale": "Marie Curie took the 1903 Physics Nobel — and later the 1911 Chemistry Nobel, making her the only person with Nobels in two different sciences."
+    },
+    {
+      "id": 5,
+      "question": "The first Indian-born winner of an Oscar was:",
+      "options": ["Satyajit Ray", "Bhanu Athaiya", "A.R. Rahman", "Resul Pookutty"],
+      "correct": 1,
+      "rationale": "Costume designer Bhanu Athaiya won for Richard Attenborough's Gandhi (1983). Satyajit Ray received an honorary Oscar in 1992."
+    },
+    {
+      "id": 6,
+      "question": "The Booker Prize is awarded for:",
+      "options": ["Journalism", "Fiction in English", "Poetry in any language", "Biography"],
+      "correct": 1,
+      "rationale": "Founded in 1969, it honours the best novel in English published in the UK — originally restricted to Commonwealth and Irish authors."
+    },
+    {
+      "id": 7,
+      "question": "'Tomb of Sand', the first Hindi novel to win the International Booker, was written by:",
+      "options": ["Arundhati Roy", "Geetanjali Shree", "Kiran Desai", "Perumal Murugan"],
+      "correct": 1,
+      "rationale": "Geetanjali Shree's ret dahi gardbh ka ghar (translated by Daisy Rockwell) took the 2022 International Booker — the first Hindi work to do so."
+    },
+    {
+      "id": 8,
+      "question": "The Ramon Magsaysay Award, often called Asia's Nobel, is administered from:",
+      "options": ["Manila", "Tokyo", "Bangkok", "Singapore"],
+      "correct": 0,
+      "rationale": "The award, instituted in 1958 after the Philippine president's death, is given from Manila. Vinoba Bhave was its first laureate."
+    },
+    {
+      "id": 9,
+      "question": "The Fields Medal, mathematics' most famous honour, can only be awarded to mathematicians:",
+      "options": ["Under 40", "Under 50", "Of any age", "Over 60"],
+      "correct": 0,
+      "rationale": "Awarded every four years to up to four mathematicians under 40, it is the age rule — not the medal itself — that the paper tests."
+    },
+    {
+      "id": 10,
+      "question": "Which Indian musician has won the most Grammy Awards?",
+      "options": ["A.R. Rahman", "Zakir Hussain", "Ravi Shankar", "Anoushka Shankar"],
+      "correct": 2,
+      "rationale": "Pandit Ravi Shankar won five Grammys, including a lifetime-achievement award — the sitar maestro remains India's most-awarded musician at the Grammys."
+    }
+  ]
+}

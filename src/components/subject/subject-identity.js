@@ -21,6 +21,7 @@ const KNOWN_ICONS = {
   languages: "language",
   civics: "user",
   reasoning: "code-branch",
+  "general-knowledge": "lightbulb",
 };
 
 /**

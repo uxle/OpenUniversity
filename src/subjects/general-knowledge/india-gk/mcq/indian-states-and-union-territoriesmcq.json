@@ -1,0 +1,76 @@
+{
+  "lessonId": "indian-states-and-union-territories",
+  "title": "Indian States and Union Territories: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "As of 2020, how many states does India have?",
+      "options": ["29", "28", "27", "30"],
+      "correct": 1,
+      "rationale": "Jammu and Kashmir's 2019 reorganisation into two union territories brought the count from 29 states down to 28 — the pre-2019 figure is the trap option."
+    },
+    {
+      "id": 2,
+      "question": "The 1956 States Reorganisation Act created states primarily on the basis of:",
+      "options": ["Religion", "Language", "Administrative convenience", "River basins"],
+      "correct": 1,
+      "rationale": "The act redrew the map along linguistic lines, creating 14 states and 6 union territories and ending the multi-lingual provincial patchwork."
+    },
+    {
+      "id": 3,
+      "question": "Which was the first Indian state created on a linguistic basis?",
+      "options": ["Andhra State", "Gujarat", "Haryana", "Punjab"],
+      "correct": 0,
+      "rationale": "Andhra State was carved out of Madras in 1953 after Potti Sriramulu's fast — three years before the 1956 act made it the general rule."
+    },
+    {
+      "id": 4,
+      "question": "The smallest state of India by area is:",
+      "options": ["Sikkim", "Tripura", "Goa", "Mizoram"],
+      "correct": 2,
+      "rationale": "Goa (3,702 sq km) is the smallest state. Sikkim is the least populous — a different superlative the paper swaps in."
+    },
+    {
+      "id": 5,
+      "question": "Which three states were created in November 2000?",
+      "options": ["Telangana, Sikkim, Goa", "Chhattisgarh, Uttarakhand, Jharkhand", "Haryana, Himachal, Manipur", "Nagaland, Meghalaya, Tripura"],
+      "correct": 1,
+      "rationale": "Chhattisgarh (1 Nov), Uttarakhand (9 Nov) and Jharkhand (15 Nov) all attained statehood that month — same year, three different dates."
+    },
+    {
+      "id": 6,
+      "question": "The southernmost point of India is:",
+      "options": ["Kanyakumari", "Indira Point", "Cape Comorin", "Rameswaram"],
+      "correct": 1,
+      "rationale": "Indira Point on Great Nicobar island is the southernmost tip of Indian territory. Kanyakumari is only the southernmost tip of the mainland."
+    },
+    {
+      "id": 7,
+      "question": "Which state has its administrative capital at Dispur?",
+      "options": ["Meghalaya", "Assam", "Nagaland", "Manipur"],
+      "correct": 1,
+      "rationale": "Dispur, a locality of Guwahati, serves as Assam's capital — the classic 'capital that is not the famous city' question."
+    },
+    {
+      "id": 8,
+      "question": "In 2019, the state of Jammu and Kashmir was reorganised into:",
+      "options": ["Two states", "Two union territories", "One union territory", "Three union territories"],
+      "correct": 1,
+      "rationale": "It became the UT of Jammu and Kashmir (with a legislature) and the UT of Ladakh (without one), effective 31 October 2019."
+    },
+    {
+      "id": 9,
+      "question": "Dadra and Nagar Haveli was merged with which territory in 2020?",
+      "options": ["Daman and Diu", "Lakshadweep", "Puducherry", "Chandigarh"],
+      "correct": 0,
+      "rationale": "The merger, effective 26 January 2020, created the single UT 'Dadra and Nagar Haveli and Daman and Diu', reducing the UT count to eight."
+    },
+    {
+      "id": 10,
+      "question": "The largest state of India by area is:",
+      "options": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Uttar Pradesh"],
+      "correct": 2,
+      "rationale": "Rajasthan (3.42 lakh sq km) leads by area; Uttar Pradesh leads by population — two superlatives the paper perpetually exchanges."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "national-awards-of-india",
+  "title": "National Awards of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Bharat Ratna was instituted in which year?",
+      "options": ["1947", "1950", "1954", "1960"],
+      "correct": 2,
+      "rationale": "India's highest civilian award dates from 1954 — the same year as the three Padma awards, which makes 'which came first' a trick with a flat answer."
+    },
+    {
+      "id": 2,
+      "question": "Who among the following was NOT one of the first recipients of the Bharat Ratna in 1954?",
+      "options": ["C. Rajagopalachari", "S. Radhakrishnan", "C.V. Raman", "Jawaharlal Nehru"],
+      "correct": 3,
+      "rationale": "The first trio was Rajagopalachari, Radhakrishnan and Raman. Nehru received it later, in 1955 — the odd-name-out version of the question."
+    },
+    {
+      "id": 3,
+      "question": "India's highest peacetime gallantry award is the:",
+      "options": ["Param Vir Chakra", "Ashoka Chakra", "Vir Chakra", "Kirti Chakra"],
+      "correct": 1,
+      "rationale": "The Ashoka Chakra heads the peacetime ladder; the Param Vir Chakra is the wartime equivalent. The crossover between the two ladders is the exam's favourite swap."
+    },
+    {
+      "id": 4,
+      "question": "The first sportsperson to receive the Bharat Ratna was:",
+      "options": ["Viswanathan Anand", "Sachin Tendulkar", "Dhyan Chand", "Milkha Singh"],
+      "correct": 1,
+      "rationale": "Sachin Tendulkar received it in 2014, months after his retirement — the first sportsperson so honoured."
+    },
+    {
+      "id": 5,
+      "question": "Which award is India's highest literary honour?",
+      "options": ["Sahitya Akademi Award", "Jnanpith Award", "Vyas Samman", "Saraswati Samman"],
+      "correct": 1,
+      "rationale": "The Jnanpith Award (from 1965, first won by G. Sankara Kurup) tops the ladder; the Sahitya Akademi Award honours individual works in 24 languages."
+    },
+    {
+      "id": 6,
+      "question": "The Dadasaheb Phalke Award is given for excellence in:",
+      "options": ["Literature", "Cinema", "Journalism", "Theatre"],
+      "correct": 1,
+      "rationale": "It is Indian cinema's highest honour, instituted in 1969 — the centenary year of Dadasaheb Phalke — with Devika Rani the first recipient."
+    },
+    {
+      "id": 7,
+      "question": "The first woman to receive the Bharat Ratna was:",
+      "options": ["Indira Gandhi", "Mother Teresa", "Sarojini Naidu", "Lata Mangeshkar"],
+      "correct": 0,
+      "rationale": "Indira Gandhi received it in 1971. Lata Mangeshkar followed in 2001; Mother Teresa (1979) took the Nobel, not the first-woman Bharat Ratna slot."
+    },
+    {
+      "id": 8,
+      "question": "The Khel Ratna award was renamed in 2021 after which personality?",
+      "options": ["Dhyan Chand", "Sachin Tendulkar", "Milkha Singh", "K.D. Jadhav"],
+      "correct": 0,
+      "rationale": "It became the Major Dhyan Chand Khel Ratna in 2021, dropping the Rajiv Gandhi prefix. Older books carrying the old name are the trap's source."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is a wartime gallantry award?",
+      "options": ["Kirti Chakra", "Vir Chakra", "Shaurya Chakra", "Ashoka Chakra"],
+      "correct": 1,
+      "rationale": "The V-ladder (Param Vir, Maha Vir, Vir) is wartime; the Ashoka-Kirti-Shaurya series is peacetime. Vir Chakra is the only wartime name in the list."
+    },
+    {
+      "id": 10,
+      "question": "The Shanti Swarup Bhatnagar Prize is associated with which field?",
+      "options": ["Science", "Literature", "Sports", "Public administration"],
+      "correct": 0,
+      "rationale": "CSIR's Bhatnagar Prize (from 1958) is India's highest science award, given to researchers under 45 — the age limit being a standard follow-up question."
+    }
+  ]
+}

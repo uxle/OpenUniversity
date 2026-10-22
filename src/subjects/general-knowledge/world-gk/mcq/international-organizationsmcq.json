@@ -1,0 +1,76 @@
+{
+  "lessonId": "international-organizations",
+  "title": "International Organizations: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The United Nations was founded in which year?",
+      "options": ["1945", "1946", "1919", "1950"],
+      "correct": 0,
+      "rationale": "The UN Charter came into force on 24 October 1945 — now celebrated as UN Day. India, though still a colony, was a founding member."
+    },
+    {
+      "id": 2,
+      "question": "The headquarters of the International Monetary Fund (IMF) is in:",
+      "options": ["Geneva", "New York", "Washington, D.C.", "London"],
+      "correct": 2,
+      "rationale": "Both Bretton Woods twins — the IMF and the World Bank — sit in Washington, D.C. Geneva is the trap for candidates thinking 'UN family = Geneva'."
+    },
+    {
+      "id": 3,
+      "question": "The World Trade Organization (WTO) came into existence in:",
+      "options": ["1947", "1955", "1995", "2001"],
+      "correct": 2,
+      "rationale": "The WTO began on 1 January 1995 as the successor to the GATT (1947). The two dates travel together as a pair in exams."
+    },
+    {
+      "id": 4,
+      "question": "SAARC's headquarters is located in:",
+      "options": ["New Delhi", "Kathmandu", "Dhaka", "Colombo"],
+      "correct": 1,
+      "rationale": "The South Asian Association for Regional Cooperation, founded in 1985, keeps its secretariat in Kathmandu."
+    },
+    {
+      "id": 5,
+      "question": "Which of these organizations has its headquarters in Vienna?",
+      "options": ["IAEA", "UNESCO", "UNICEF", "Interpol"],
+      "correct": 0,
+      "rationale": "The International Atomic Energy Agency sits in Vienna. UNESCO is Paris, UNICEF New York, and Interpol — the surprise — in Lyon, France."
+    },
+    {
+      "id": 6,
+      "question": "The International Court of Justice is located at:",
+      "options": ["New York", "Geneva", "The Hague", "Zurich"],
+      "correct": 2,
+      "rationale": "The ICJ, the UN's principal judicial organ, sits at The Hague in the Netherlands — as does the separate International Criminal Court."
+    },
+    {
+      "id": 7,
+      "question": "ASEAN was founded in:",
+      "options": ["1951", "1967", "1985", "1993"],
+      "correct": 1,
+      "rationale": "The Association of South-East Asian Nations came together in 1967 (Jakarta secretariat). SAARC's 1985 date is the standard decoy."
+    },
+    {
+      "id": 8,
+      "question": "India is a member of which of the following?",
+      "options": ["ASEAN", "NATO", "SCO", "OPEC"],
+      "correct": 2,
+      "rationale": "India joined the Shanghai Cooperation Organisation in 2017. It is not a member of ASEAN, NATO or OPEC — the 'not a member' boundary the paper tests."
+    },
+    {
+      "id": 9,
+      "question": "The New Development Bank (BRICS bank) is headquartered in:",
+      "options": ["New Delhi", "Shanghai", "Moscow", "Johannesburg"],
+      "correct": 1,
+      "rationale": "The NDB, created by the BRICS states, sits in Shanghai — a fact candidates expect to be Mumbai or Delhi, which is exactly why it is asked."
+    },
+    {
+      "id": 10,
+      "question": "Interpol's headquarters is in:",
+      "options": ["Geneva", "Lyon", "Paris", "Brussels"],
+      "correct": 1,
+      "rationale": "The International Criminal Police Organization is headquartered in Lyon, France. Nearly everyone guesses Geneva — which is the point of the question."
+    }
+  ]
+}

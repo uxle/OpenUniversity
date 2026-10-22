@@ -153,6 +153,14 @@
       "content": "12. राष्ट्रपति एवं उपराष्ट्रपति (President & Vice President) भाग-5 (अनुच्छेद 52 से 71) --- 1. भारत का राष्ट्रपति (President of India) - स्थिति: देश का प्रथम नागरिक, राष्ट्रध्यक्ष (Head of the State), तीनों सेनाओं (थल, नभ, जल) का सर्वोच्च कमांडर। - तुलना: ब्रिटेन के सम्राट/रानी से। प्रमुख अनुच्छेद: - Article 52: भारत का एक राष्ट्रपति होगा। - Article 53: संघ की समस्त कार्यपालिका शक्ति राष्ट्रपति में निहित होगी, जिसका प्रयोग वह स्वयं या अपने अधीनस्थों (मंत्रिपरिषद) की सलाह पर करेगा। - Article 54: र"
     },
     {
+      "lessonId": "pressure-groups-and-civil-society",
+      "subjectId": "civics",
+      "title": "27. दबाव समूह एवं नागरिक समाज (Pressure Groups and Civil Society)",
+      "subject": "civics",
+      "keywords": [],
+      "content": "27. दबाव समूह एवं नागरिक समाज (Pressure Groups and Civil Society) चुनाव जीतकर सत्ता में आने वाले दल लोकतंत्र का चेहरा हैं, पर लोकतंत्र की धड़कन उन संगठनों में भी है जो कभी सत्ता नहीं चाहते — वे केवल नीति बदलवाना चाहते हैं। यह पाठ दबाव समूहों, नागरिक समाज और लोक आंदोलनों के संसार का मानचित्र है, जो संसद की दीवारों के बाहर से शासन को निरंतर जवाबदेह रखते हैं। 1. दबाव समूह क्या है? दबाव समूह (Pressure Group) वह संगठित समूह है जो सरकार का विरोध या समर्थन करके अपने विशेष हितों की रक्षा करना चाहता है, "
+    },
+    {
       "lessonId": "prime-minister-and-council-of-ministers",
       "subjectId": "civics",
       "title": "13. प्रधानमंत्री, मंत्रिपरिषद, महान्यायवादी व CAG",
@@ -175,6 +183,14 @@
       "subject": "civics",
       "keywords": [],
       "content": "4. अनुसूचियाँ (Schedules of the Constitution) अनुसूचियों का तुलनात्मक विवरण - मूल संविधान: 8 अनुसूचियाँ (395 अनुच्छेद, 22 भाग) - वर्तमान संविधान: 12 अनुसूचियाँ (470+ अनुच्छेद, 25 भाग) --- 12 अनुसूचियों की सूची | अनुसूची | विवरण / विषय वस्तु | | :---: | :--- | | 1st | भारत संघ एवं उसके राज्य क्षेत्रों तथा केंद्र शासित प्रदेशों के नाम, सीमाएं व क्षेत्राधिकार। | | 2nd | प्रमुख पदाधिकारियों (राष्ट्रपति, राज्यपाल, स्पीकर, उपसभापति, SC/HC के न्यायाधीश, CAG आदि) के वेतन एवं भत्ते । | | 3rd | मंत्रियों,"
+    },
+    {
+      "lessonId": "separation-of-powers-and-checks-and-balances",
+      "subjectId": "civics",
+      "title": "28. शक्ति-पृथक्करण एवं नियंत्रणों का संतुलन (Separation of Powers and Checks and Balances)",
+      "subject": "civics",
+      "keywords": [],
+      "content": "28. शक्ति-पृथक्करण एवं नियंत्रणों का संतुलन (Separation of Powers and Checks and Balances) सत्ता संकेंद्रित होते ही वह स्वेच्छाचारी बनने लगती है — यह राजनीतिक चिंतन की सबसे पुरानी सीख है। भारतीय संविधान ने विधायिका, कार्यपालिका और न्यायपालिका के बीच कार्यों का विभाजन किया और उस पर आपसी नियंत्रणों की जाल बिछाई, ताकि कोई भी अंग इतना शक्तिशाली न बने कि स्वयं संविधान को ही निगल जाए। 1. सिद्धांत: मॉन्टेस्क्यू से लेकर संविधान सभा तक शक्ति-पृथक्करण (Separation of Powers) का सिद्धांत कहता है: राज्य के त"
     },
     {
       "lessonId": "sources-of-the-constitution",
@@ -372,6 +388,33 @@
       "content": "Transactions and Concurrency: ACID, Locks, and Isolation A bank transfer touches two accounts; a crash halfway must leave no trace. This lesson covers the transaction — the unit of correctness — and how a DBMS delivers ACID while letting hundreds of users work at the same moment without trampling each other. 1. The Transaction Idea A transaction is a logical unit of work — one or more statements treated as all-or-nothing. Either every change it makes is applied and made permanent, or none of the"
     },
     {
+      "lessonId": "ai-and-machine-learning-basics",
+      "subjectId": "computer-science",
+      "subSubjectId": "emerging-technologies",
+      "title": "AI and Machine Learning Basics: How Machines Learn From Data",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "AI and Machine Learning Basics: How Machines Learn From Data Traditional programming feeds rules and data in to get answers; machine learning feeds data and answers in to get rules. That single inversion now powers search, translation, recommendations and chat assistants — and rests on surprisingly few ideas: a model, a loss, and a loop that keeps making the loss smaller. 1. Rule-Based AI versus Machine Learning Artificial intelligence is the broad goal of machines performing tasks that need int"
+    },
+    {
+      "lessonId": "blockchain-basics",
+      "subjectId": "computer-science",
+      "subSubjectId": "emerging-technologies",
+      "title": "Blockchain Basics: Trust Without a Middleman",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Blockchain Basics: Trust Without a Middleman A blockchain lets strangers who do not trust each other share one tamper-evident ledger — no bank in the middle. It is less an invention than a clever assembly of known parts: hash functions, digital signatures and a consensus rule that makes rewriting history cost more than it could ever pay. 1. The Problem Blockchains Solve Alice pays Bob through a bank because the bank keeps the ledger everyone believes. Remove the bank and any peer could claim \"Al"
+    },
+    {
+      "lessonId": "cloud-computing",
+      "subjectId": "computer-science",
+      "subSubjectId": "emerging-technologies",
+      "title": "Cloud Computing: Renting Computers by the Minute",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Cloud Computing: Renting Computers by the Minute The cloud is other people's computers, rented by the minute. Behind that simple idea hides the biggest shift in computing economics since the PC: capital expense becomes operating expense, capacity becomes elastic, and a student's side project runs on the same infrastructure as a global corporation. 1. What \"Cloud\" Means Cloud computing is the on-demand delivery of computing resources — servers, storage, databases, networking, software — over the "
+    },
+    {
       "lessonId": "application-protocols-and-security",
       "subjectId": "computer-science",
       "subSubjectId": "networking",
@@ -525,6 +568,24 @@
       "content": "Version Control with Git: Tracking Every Change Every serious codebase is a history, not a file. Git records who changed what, when, and why — letting you experiment fearlessly, collaborate safely, and travel back in time when tomorrow's code breaks yesterday's work. 1. Why Version Control Matters Before version control, teams emailed zips ( final v2 REAL.zip ) and lived in fear of overwriting a colleague's work. A version control system (VCS) stores a project as a chain of snapshots: each commi"
     },
     {
+      "lessonId": "software-development-life-cycle",
+      "subjectId": "computer-science",
+      "subSubjectId": "software-engineering",
+      "title": "The Software Development Life Cycle: From Idea to Maintenance",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "The Software Development Life Cycle: From Idea to Maintenance Writing a 100-line script needs inspiration; delivering a million-line system needs engineering discipline. The Software Development Life Cycle (SDLC) is that discipline — a sequence of phases that turns a vague need into working, maintained software while keeping cost, schedule and quality under control. 1. Why a Process at All The Software Development Life Cycle (SDLC) is a structured sequence of phases — requirement analysis, desig"
+    },
+    {
+      "lessonId": "software-testing-and-quality-assurance",
+      "subjectId": "computer-science",
+      "subSubjectId": "software-engineering",
+      "title": "Software Testing and Quality Assurance: Breaking Software on Purpose",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Software Testing and Quality Assurance: Breaking Software on Purpose Testing is the art of finding the defects a developer hopes are not there, before the user does. It cannot prove software correct — only the presence of bugs, never their absence — but a disciplined blend of levels, techniques and automation turns quality from a wish into a measurable, managed property. 1. Testing, QA, QC — Three Different Things Software testing is the process of executing software to find defects. Quality Con"
+    },
+    {
       "lessonId": "backend-fundamentals-and-apis",
       "subjectId": "computer-science",
       "subSubjectId": "web-development",
@@ -659,6 +720,14 @@
       "content": "Inflation: Causes, Measurement, and Control Inflation is a sustained rise in the general price level; how it is measured, why it happens, and who it hurts decide both policy and personal finance. Inflation is a persistent increase in the general price level of goods and services over time, which erodes the purchasing power of money — each rupee buys less than before. 1. Measuring Inflation in India | Feature | WPI | CPI | | --- | --- | --- | | Full name | Wholesale Price Index | Consumer Price I"
     },
     {
+      "lessonId": "international-economic-institutions",
+      "subjectId": "economics",
+      "title": "International Economic Institutions: The Bretton Woods System and Beyond",
+      "subject": "economics",
+      "keywords": [],
+      "content": "International Economic Institutions: The Bretton Woods System and Beyond The world economy is a machine with no single driver — so after two world wars and a depression, nations built institutions to steady it: a bank for reconstruction, a fund for currencies, later an organisation for trade. Knowing who does what — and who criticises whom — is passport knowledge for any exam on the global economy. 1. Why the Institutions Exist Between the wars, the world practised economic nationalism: currency"
+    },
+    {
       "lessonId": "international-trade",
       "subjectId": "economics",
       "title": "International Trade and the Balance of Payments",
@@ -683,6 +752,14 @@
       "content": "The LPG Reforms of 1991: Liberalisation, Privatisation, and Globalisation In June 1991 India was weeks from default, its gold flown abroad as collateral. The response — the New Economic Policy of July 1991 — dismantled four decades of controls under three watchwords: Liberalisation, Privatisation, and Globalisation. This lesson unpacks what each pillar contained and what the reforms delivered. 1. The Crisis of 1991: A Perfect Storm By mid-1991 the Indian state faced a balance-of-payments crisis "
     },
     {
+      "lessonId": "market-failure-and-role-of-government",
+      "subjectId": "economics",
+      "title": "Market Failure and the Role of Government",
+      "subject": "economics",
+      "keywords": [],
+      "content": "Market Failure and the Role of Government Markets are magnificent coordination machines — when their prices carry the full truth. But some costs hide from prices, some goods invite free-riders, some markets tip into monopoly. When prices lie, the invisible hand pushes the wrong way, and that is the precise boundary where economics hands the reins to government. 1. The Benchmark: Why Markets Usually Work In a perfectly competitive market, price equals marginal cost, every mutually beneficial trad"
+    },
+    {
       "lessonId": "market-structures",
       "subjectId": "economics",
       "title": "Market Structures: Competition, Monopoly, and the Middle Ground",
@@ -705,6 +782,14 @@
       "subject": "economics",
       "keywords": [],
       "content": "Money: From Barter to Modern Currency Money is whatever a society accepts as the common medium of exchange; its functions and its measure define modern economies. Money is anything that is generally accepted as a medium of exchange and that simultaneously serves as a unit of value and a store of value. Acceptance, not material, makes money. 1. The Barter Problem Barter — goods for goods — requires a double coincidence of wants : a weaver wanting wheat must find a farmer wanting cloth, at the sam"
+    },
+    {
+      "lessonId": "national-income-determination-and-multiplier",
+      "subjectId": "economics",
+      "title": "National Income Determination and the Multiplier",
+      "subject": "economics",
+      "keywords": [],
+      "content": "National Income Determination and the Multiplier What decides whether an economy produces ₹200 lakh crore this year or ₹250? Keynes's answer was deceptively simple: output goes where aggregate demand pulls it. The idea of effective demand — and its sharpest tool, the multiplier — turned economics from a moral science into macroeconomic engineering. 1. From Classical to Keynesian Thinking The classical view held that supply creates its own demand ( Say's Law ): every act of production pays out ex"
     },
     {
       "lessonId": "national-income",
@@ -745,6 +830,141 @@
       "subject": "economics",
       "keywords": [],
       "content": "Taxation in India: From Budget to GST Taxes pay for everything the state does — and how a country taxes shapes its economy as much as how much it collects. This lesson maps India's tax system: direct vs indirect, the constitutional architecture, the century-long journey to GST , and the economics of who ultimately bears the burden. 1. Why Governments Tax Taxation serves three functions: revenue (funding public goods — defence, roads, schools), redistribution (narrowing inequality via progressive"
+    },
+    {
+      "lessonId": "classical-and-folk-dances-of-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "art-and-culture",
+      "title": "Classical and Folk Dances of India: Eight Classical Forms, Dozens of Folk",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Classical and Folk Dances of India: Eight Classical Forms, Dozens of Folk India's dance map has two layers: the eight classical forms recognised by the Sangeet Natak Akademi, each bound to a state and a scripture-rooted grammar, and beneath them a living sea of folk dances tied to harvests, weddings, and festivals. The exam asks both layers, and the trap is always the same — a classical form offered as folk, or the wrong state attached to a famous name. 1. The Eight Classical Dances India recogn"
+    },
+    {
+      "lessonId": "indian-music-and-painting",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "art-and-culture",
+      "title": "Indian Music and Painting: Two Systems, Many Schools",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Indian Music and Painting: Two Systems, Many Schools North and south India hear classical music differently — two systems, one theory of raga. Its walls wear painting differently too — Mughal miniatures beside Rajasthani courts, folk walls beside gold-leaf temple panels. The GK paper samples both worlds: a gharana here, a Bani Thani there, an instrument matched to its maestro. This lesson tunes both strings. 1. The Two Classical Systems India has two systems of classical music : Hindustani (Nort"
+    },
+    {
+      "lessonId": "national-awards-of-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "awards-and-honours",
+      "title": "National Awards of India: Bharat Ratna to the Gallantry Ladder",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "National Awards of India: Bharat Ratna to the Gallantry Ladder India's honours system runs on two ladders — civilian and military — and the general-awareness paper walks both. The Bharat Ratna sits at the top of one; the Param Vir Chakra at the top of the other; and between them the Padma trio, the peacetime Ashoka Chakra series, and the cultural and sports honours. The examiner's favourite move is to swap a name between the ladders. 1. The Bharat Ratna and the Padma Trio The Bharat Ratna (Jewel"
+    },
+    {
+      "lessonId": "nobel-and-international-awards",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "awards-and-honours",
+      "title": "The Nobel Prize and the World's Big Awards",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "The Nobel Prize and the World's Big Awards Alfred Nobel's will created the most famous prize on earth, and general-knowledge papers never tire of its details: the six categories, the first laureates, the Indian names on the roll. Then they widen the net to the Oscars, the Booker, the Pulitzer, and the Magsaysay — each with its own trap. One lesson, and the awards section of any paper is yours. 1. The Nobel Machinery The Nobel Prizes were established by the will of Alfred Nobel (the Swedish inven"
+    },
+    {
+      "lessonId": "famous-books-and-authors",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "books-and-authors",
+      "title": "Famous Books and Authors: From the Vedas to the Booker Shelf",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Famous Books and Authors: From the Vedas to the Booker Shelf Ask a general-knowledge examiner to name the most reliable question ever written, and they will point at a book-author pair. The Vedas and the epics, the Mughal chronicles, the freedom movement's classics, and the modern prize-winners form a single ladder of Indian writing, with the world's classics bolted on. This lesson climbs the ladder once, carefully. 1. The Ancient Canon — Vedas, Upanishads, Epics The four Vedas — Rig, Sama, Yaju"
+    },
+    {
+      "lessonId": "important-days-and-observances",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "important-days",
+      "title": "Important Days and Observances: The Calendar of the GK Paper",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Important Days and Observances: The Calendar of the GK Paper Every general-awareness paper carries at least one \"which day is observed on ...\" question, and every year candidates lose those marks to a date they half-remember. The fix is to learn the calendar as twelve short clusters, each anchored to a story — a birth anniversary, a treaty, a declaration — so that the date and the reason arrive together. 1. The Winter and Spring Cluster — January to March | Date | Observance | The anchor | | ---"
+    },
+    {
+      "lessonId": "first-in-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "First in India: The Trailblazers Every Exam Asks About",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "First in India: The Trailblazers Every Exam Asks About Every republic keeps a shelf of firsts. India's shelf is unusually crowded and unusually examined: the first President, the first woman in space, the first Indian Nobel laureate, the first film with sound. These questions look like memory tests, and they are — but the underlying stories trace how fast a colonised society built modern institutions of its own. 1. Firsts of the Republic — President, Prime Minister, and the Rest | Office | First"
+    },
+    {
+      "lessonId": "indian-states-and-union-territories",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "Indian States and Union Territories: A Map That Keeps Redrawing Itself",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Indian States and Union Territories: A Map That Keeps Redrawing Itself India's internal map is not fixed; it is a work in progress. The boundaries drawn in 1956 on linguistic lines have been redrawn more than a dozen times since — most recently in 2019, when Jammu and Kashmir became two union territories. Questions about states, their capitals, and their superlatives are guaranteed marks in every general-awareness paper, provided you memorise the current map and not an old one. 1. The Numbers: 2"
+    },
+    {
+      "lessonId": "national-symbols-of-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "National Symbols of India: The Flag, the Anthem, and the Rest",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "National Symbols of India: The Flag, the Anthem, and the Rest A country announces itself through symbols. India's flag flies with a spinning wheel from a 2,300-year-old pillar capital; its anthem was sung by Rabindranath Tagore before the Crown knew it would one day become a republic's voice; its national song was born in a novel about monks fighting famine. Every general-knowledge paper since the 1950s has asked for one of these facts — and every one of them has a story attached. 1. The Nationa"
+    },
+    {
+      "lessonId": "nicknames-of-indian-cities",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "Nicknames of Indian Cities: The Poetic Names on the Map",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Nicknames of Indian Cities: The Poetic Names on the Map Kings, traders, and colour-washed walls gave India's cities their second names. Examiners adore them precisely because they are pure association — no reasoning, just recall. The Pink City, the City of Joy, the Manchester of India: each nickname encodes something real about a city's history, and knowing the why makes the what impossible to forget. 1. The Colour Cities of Rajasthan | City | Nickname | Why | | --- | --- | --- | | Jaipur | Pink"
+    },
+    {
+      "lessonId": "inventions-and-discoveries",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "science-gk",
+      "title": "Inventions and Discoveries: The Rapid-Fire Science GK File",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Inventions and Discoveries: The Rapid-Fire Science GK File Who invented the telephone? Who discovered penicillin? Which Indian discovered the effect that won Asia its first science Nobel? Inventions-and-discoveries questions are the fastest marks in the paper — pure association, one name per thing — and the examiners' traps come from exactly two habits: swapping the two co-discoverers and moving a discovery to its populariser. 1. The Communication and Transport Set An invention is a device or pr"
+    },
+    {
+      "lessonId": "olympics-and-multi-sport-events",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "sports-gk",
+      "title": "The Olympics and Multi-Sport Events: From Athens 1896 to the Present",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "The Olympics and Multi-Sport Events: From Athens 1896 to the Present The modern Olympics were revived in 1896 by a French baron who believed international sport could prevent war. It could not — but it created the world's most examined sporting dataset. India's own Olympic story is a hockey dynasty, a long wait for individual medals, and a new century of shooters, wrestlers, badminton players, and javelin throwers. Every general-awareness paper asks from this history. 1. The Ancient and Modern G"
+    },
+    {
+      "lessonId": "sports-terms-trophies-and-venues",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "sports-gk",
+      "title": "Sports Terms, Trophies and Venues: The Rest of the Sports GK Paper",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Sports Terms, Trophies and Venues: The Rest of the Sports GK Paper Beyond the Olympics lies the sporting trivia that fills the rest of the general-awareness section: the language of each game (what is a googly?), the trophies and who awards them (Ranji, Davis, Uber), and the stadiums with histories (Eden, Lord's, the MCG). The examiner picks one row from each column and calls it a question. 1. The Vocabulary of Games — Terms and Their Sports | Term | Sport | Meaning | | --- | --- | --- | | Love,"
+    },
+    {
+      "lessonId": "countries-capitals-and-currencies",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "world-gk",
+      "title": "Countries, Capitals and Currencies: The Static GK Backbone",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Countries, Capitals and Currencies: The Static GK Backbone No section of general knowledge returns more marks per minute of study than the countries table. The trick is that exams rarely ask the famous pair — they ask the second city, the unexpected capital, the currency nobody can spell. Canberra, not Sydney. Ankara, not Istanbul. Bern, not Zurich. This lesson drills the exam-famous rows and the reasons behind them. 1. The Unexpected Capitals A decoy capital is a city more famous than the actua"
+    },
+    {
+      "lessonId": "international-organizations",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "world-gk",
+      "title": "International Organizations: Who Sits Where, Founded When",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "International Organizations: Who Sits Where, Founded When The United Nations family, the Bretton Woods twins, the regional clubs — international organizations are the plumbing of world politics, and general-knowledge papers test the plumbing: founding years, headquarters cities, and who belongs. The trick, as always, is that the questions target the pairs people swap — the IMF is not the World Bank, and SAARC is not ASEAN. 1. The United Nations and Its Specialized Family The United Nations was f"
     },
     {
       "lessonId": "agriculture-in-india",
@@ -915,6 +1135,14 @@
       "content": "The Universe and the Solar System: Our Cosmic Address Geography begins in space: the Earth is a planet shaped by its position around an ordinary star in an ordinary galaxy. This lesson tours the universe's structure, the Sun's family, and the member worlds nearest to home. 1. The Scale of the Universe The universe is all of space, time, matter, and energy. Its largest known structures are galaxies — vast islands of stars — and our Sun is one of an estimated 100–400 billion stars in the Milky Way"
     },
     {
+      "lessonId": "world-physical-geography",
+      "subjectId": "geography",
+      "title": "World Physical Geography: The Face of the Planet",
+      "subject": "geography",
+      "keywords": [],
+      "content": "World Physical Geography: The Face of the Planet Before political maps there were physical ones: mountain walls that decided where empires stopped, rivers that decided where cities rose, deserts and straits that decided who traded with whom. Static geography — the fixed furniture of the Earth — remains the skeleton on which every other geography hangs. 1. Continents and Oceans: The Frame The seven continents in decreasing area: Asia, Africa, North America, South America, Antarctica, Europe, Aust"
+    },
+    {
       "lessonId": "world-population-and-settlement",
       "subjectId": "geography",
       "title": "Population and Settlements: How People Fill the Earth",
@@ -961,6 +1189,14 @@
       "subject": "history",
       "keywords": [],
       "content": "The Gupta Age: India's Classical Golden Age From about 319 to 550 CE the Guptas reunited the Ganga plain and set off an extraordinary run of mathematics, poetry, medicine, and temple art — Aryabhata's zero, Kalidasa's dramas, the Iron Pillar, and Nalanda all belong to this classical moment. Harsha's brief empire and southern Pallava-Chalukya art carry the story into the seventh century. 1. Rise of the Guptas Chandragupta I (319-335 CE) took the title maharajadhiraja , married the Lichchhavi prin"
+    },
+    {
+      "lessonId": "imperialism-and-colonialism",
+      "subjectId": "history",
+      "title": "Imperialism and Colonialism: The Scramble for the World",
+      "subject": "history",
+      "keywords": [],
+      "content": "Imperialism and Colonialism: The Scramble for the World In 1800 Europeans controlled perhaps a third of the world's land; by 1914, more than four-fifths. The century between — powered by steam, quinine and machine guns — redrew every map, made and broke every economy it touched, and planted the borders, debts and grievances that the twentieth century spent itself settling. 1. Definitions and Distinctions Colonialism is the practice of acquiring full or partial control over another territory, set"
     },
     {
       "lessonId": "indian-art-and-culture",
@@ -1091,6 +1327,14 @@
       "content": "The South Indian Kingdoms: Pallavas, Cholas, and Their Neighbours From the Sangam crowns of the far south, through the Pallava rock-cut temples of Mamallapuram, to the imperial Cholas whose fleets reached Sri Lanka and Srivijaya, the Tamil country built a civilisation of granite, bronze, and village assemblies — the Dravidian temple style was born here, and local self-government was inscribed in stone at Uttaramerur. 1. The Three Crowns of the Sangam Age Tamil poetry remembers three muventar — C"
     },
     {
+      "lessonId": "unification-of-germany-and-italy",
+      "subjectId": "history",
+      "title": "Unification of Germany and Italy: Making Nations in the 19th Century",
+      "subject": "history",
+      "keywords": [],
+      "content": "Unification of Germany and Italy: Making Nations in the 19th Century In 1800 \"Germany\" and \"Italy\" were names on maps, not countries — a quilt of kingdoms, duchies and free cities. Within seventy years both had welded themselves into single states, one forged by \"blood and iron\", the other by diplomacy, rebellion and a red-shirted guerrilla. Together they redrew Europe's political geometry. 1. Europe Before Unification: Fragments, Not Nations After Napoleon's defeat, the Congress of Vienna (1815"
+    },
+    {
       "lessonId": "vedic-age",
       "subjectId": "history",
       "title": "The Vedic Age: From Pastoral Tribes to Kingdoms",
@@ -1167,6 +1411,15 @@
       "content": "Lesson 17: Articles - A, An, and The Indefinite Articles (A / An) Used before singular countable nouns. Usage Rule: Sound-Based Selection An : Used before words beginning with a Vowel Sound (अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ). An orange , an hour , an honest man , an X-ray machine , an F.I.R. , an IPS officer . A : Used before words beginning with a Consonant Sound (क, ख, ग, घ...). A book , a European citizen , a university , a newspaper . Special Exclamatory Usage: What a car this is! How an expensi"
     },
     {
+      "lessonId": "clauses-and-sentence-types",
+      "subjectId": "languages",
+      "subSubjectId": "english",
+      "title": "Clauses and Sentence Types: The Architecture of Sentences",
+      "subject": "languages",
+      "keywords": [],
+      "content": "Clauses and Sentence Types: The Architecture of Sentences Every sentence you will ever write is built from the same five bricks: three clause types and two phrase-loads of modifiers. Competitive exams hide their hardest grammar questions inside this architecture — identify the clause, and the question answers itself. 1. Phrase versus Clause A phrase is a group of related words without a subject–verb pair (\"in the morning\", \"running fast\"). A clause is a group of related words containing a subjec"
+    },
+    {
       "lessonId": "cloze_test_and_fill_ins",
       "subjectId": "languages",
       "subSubjectId": "english",
@@ -1183,6 +1436,15 @@
       "subject": "languages",
       "keywords": [],
       "content": "Lesson 21: Conjunctions and Correlative Pairs Definition A Conjunction connects words, phrases, or sentences together. --- Types of Conjunctions Before the correlative pairs below, it helps to know the three broad families a conjunction can belong to: 1. Coordinating Conjunctions (FANBOYS) Join two independent clauses of equal grammatical rank: For , And , Nor , But , Or , Yet , So . He was tired, so he went to bed early. She likes tea, but she prefers coffee. 2. Subordinating Conjunctions Join "
+    },
+    {
+      "lessonId": "homophones-and-commonly-confused-words",
+      "subjectId": "languages",
+      "subSubjectId": "english",
+      "title": "Homophones and Commonly Confused Words",
+      "subject": "languages",
+      "keywords": [],
+      "content": "Homophones and Commonly Confused Words English is full of twins: their/there/they're , principal/principle , affect/effect — words that sound identical (or nearly) but mean different things. Spelling-checkers miss them because each spelling is a real word; only a trained eye catches them. This lesson trains that eye. 1. What Homophones, Homonyms and Homographs Are Homophones sound the same but differ in meaning and usually spelling ( pair/pear , write/right ). Homographs are spelled the same but"
     },
     {
       "lessonId": "idioms_and_phrases",
@@ -1399,6 +1661,15 @@
       "subject": "languages",
       "keywords": [],
       "content": "अनुच्छेद एवं निबंध लेखन (Paragraph and Essay Writing) अनुच्छेद (Paragraph) एक ही विचार की क्रमबद्ध इकाई है, और निबंध (Essay) ऐसे कई अनुच्छेदों का संगठित विस्तार — भूमिका, विषय विस्तार और उपसंहार के ढाँचे में। परीक्षाओं में दोनों के लिए अलग शब्द-सीमाएँ, अलग गुण और अलग सामान्य त्रुटियाँ निर्धारित होती हैं। यह पाठ गुणों, भेदों, ढाँचे, हल किए उदाहरण और परीक्षा-युक्तियों के साथ पूरा अभ्यास देता है। 1. अनुच्छेद: अर्थ एवं परिभाषा एक ही मुख्य विचार (Central Idea) को विकसित करने के लिए क्रमबद्ध रूप से लि"
+    },
+    {
+      "lessonId": "apathit_gadyansh",
+      "subjectId": "languages",
+      "subSubjectId": "hindi",
+      "title": "अपठित गद्यांश (Unseen Passage Comprehension)",
+      "subject": "languages",
+      "keywords": [],
+      "content": "अपठित गद्यांश (Unseen Passage Comprehension) हिंदी परीक्षाओं में सबसे अधिक अंक और सबसे कम तैयारी वाला खंड है अपठित गद्यांश — ऐसा अनुच्छेद जो पहले से याद नहीं है, उसे वहीं पढ़कर समझना और उस पर प्रश्नों के उत्तर देने होते हैं। यह पाठ कहता है कि गद्यांश को \"पढ़ना\" कौन-सा कौन-सा कदम है और प्रश्नों के प्रकार के अनुसार उत्तर कैसे ढूँढ़े जाते हैं। 1. अपठित गद्यांश क्या है और क्या परखता है अपठित गद्यांश (unseen passage) वह गद्य-अंश है जो परीक्षार्थी ने पहले नहीं पढ़ा होता। उद्देश्य यह जाँचना है कि पढ़ने"
     },
     {
       "lessonId": "avyaya",
@@ -1671,6 +1942,15 @@
       "content": "Complex Numbers: Extending the Number Line into a Plane No real number squared gives $-1$, yet equations like $x^2 + 1 = 0$ demand answers. Mathematics answered by inventing a new unit, $i$, and with it an entire two-dimensional number system — the complex numbers. What began as a \"imaginary\" curiosity now underpins AC circuit analysis, quantum mechanics, signal processing, and fractal geometry. 1. The Imaginary Unit The imaginary unit $i$ is defined by $i^2 = -1$. A complex number is any number"
     },
     {
+      "lessonId": "indices-and-surds",
+      "subjectId": "mathematics",
+      "subSubjectId": "algebra",
+      "title": "Indices and Surds: Advanced Techniques for Exams",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Indices and Surds: Advanced Techniques for Exams This lesson is the exam-level sequel to squares-roots-and-powers , which introduced surds and the exponent laws. Here the focus is the advanced toolkit: comparison of unlike surds, three-term rationalisation, and $x + \\frac{1}{x}$ identities. Powers compress repeated multiplication into a compact language, and surds are the powers that refuse to simplify into tidy whole numbers. Together they form one of the most reliable scoring chapters in any c"
+    },
+    {
       "lessonId": "inequalities",
       "subjectId": "mathematics",
       "subSubjectId": "algebra",
@@ -1824,6 +2104,15 @@
       "content": "Circles: Chords, Angles, and π A circle is the set of points at a fixed distance (the radius) from a centre. Its symmetry produces the cleanest angle rules in geometry. 1. Core Vocabulary | Term | Meaning | | --- | --- | | Radius | Centre to any point on the circle | | Diameter | A chord through the centre — the longest one ($d = 2r$) | | Chord | Segment joining two points on the circle | | Tangent | Line touching the circle at exactly one point | | Arc | Part of the circumference | | Sector | \""
     },
     {
+      "lessonId": "conic-sections",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Conic Sections: Slicing the Cone",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Conic Sections: Slicing the Cone Cut a double cone with a plane at different angles and four eternal curves fall out — the circle, parabola, ellipse and hyperbola. Every one of them is defined by a single distance condition, and every exam question is that condition translated into algebra. 1. The Cone and Its Sections A conic section is the curve formed where a plane intersects a right circular cone. A horizontal cut gives a circle ; a tilted cut a closed oval, the ellipse ; a cut parallel to t"
+    },
+    {
       "lessonId": "coordinate-geometry",
       "subjectId": "mathematics",
       "subSubjectId": "geometry",
@@ -1896,6 +2185,15 @@
       "content": "Averages: The Art of Balanced Numbers The average is the first statistical tool anyone learns — add everything, divide by the count — yet competitive exams wring an astonishing variety of questions from it: cricket scores, replaced members, combined classes, and age puzzles. Every one of them reduces to a single principle: the total is the average times the count. 1. The Fundamental Relation The average (arithmetic mean) of $n$ quantities is their sum divided by $n$: Equivalently, the sum equals"
     },
     {
+      "lessonId": "divisibility-remainders-and-unit-digit",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Divisibility, Remainders and Unit Digits",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Divisibility, Remainders and Unit Digits Number-system questions rarely ask for a full division — they ask whether a division is clean, what is left over, or what the last digit looks like. Three small toolkits answer all of them without ever performing the division. 1. Divisibility Rules: The Complete Table A divisibility rule is a shortcut that decides whether a number is a multiple of another without carrying out the division. The useful ones cover every divisor from 2 to 12, plus a few class"
+    },
+    {
       "lessonId": "fractions-and-decimals",
       "subjectId": "mathematics",
       "subSubjectId": "numbers",
@@ -1932,6 +2230,15 @@
       "content": "Numbers Long before anyone wrote a number down, people needed to answer one simple question: how many? How many sheep in the flock. How many days until the harvest. How many stones to mark a grave. A number is just an answer to \"how many\" or \"how much\" — a symbol that stands in for a quantity, so we don't have to carry the actual sheep around to compare flocks. A number is a symbol or word that represents a quantity, an amount, or a position in a sequence. 1. Counting is where numbers begin The "
     },
     {
+      "lessonId": "partnership",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Partnership: Sharing Profits Fairly",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Partnership: Sharing Profits Fairly When people pool money to run a business, the profit must be split in a way everyone accepts as fair. Partnership questions convert that fairness into arithmetic: multiply each partner's money by the time it stayed invested, and share the profit in exactly those ratios. 1. Simple Partnership: Same Time, Different Money A partnership is a business owned jointly by two or more people (the partners), who agree in advance how profits and losses will be shared. Whe"
+    },
+    {
       "lessonId": "percentages-and-ratios",
       "subjectId": "mathematics",
       "subSubjectId": "numbers",
@@ -1966,6 +2273,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Simple and Compound Interest: Money That Grows on Itself Lend a sum at interest and it grows — but how it grows changes everything. Simple interest pays rent on the original principal forever; compound interest pays rent on the rent, and the difference over the years becomes spectacular. Einstein is (apocryphally) said to have called compounding the eighth wonder of the world; exam boards certainly treat it as one. 1. Simple Interest Simple interest (SI) is computed only on the original principa"
+    },
+    {
+      "lessonId": "simplification-and-approximation",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Simplification and Approximation: Fast, Safe Arithmetic",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Simplification and Approximation: Fast, Safe Arithmetic Simplification questions carry no clever traps — only the risk of your own arithmetic slipping under time pressure. The chapter trains two habits: a fixed order of operations, and rounding so shrewdly that the nearest option is obvious long before the exact decimal. 1. BODMAS: The Order of Operations BODMAS fixes the sequence of every calculation: B rackets first, then O rders (powers and roots), then D ivision and M ultiplication (left to "
     },
     {
       "lessonId": "squares-roots-and-powers",
@@ -2081,6 +2397,14 @@
       "content": "Charvaka and the Heterodox Traditions: Philosophy Without God or Soul Not every ancient Indian school accepted the Vedas, a soul, or an afterlife. The heterodox thinkers built materialist and determinist worldviews — and forced every rival school to argue harder. 1. Astika and Nastika: Drawing the Line The classical divide in Indian philosophy is not \"believer versus atheist\". It is the acceptance or rejection of the Vedas as a valid source of knowledge (pramana) . | Label | Meaning | Members | "
     },
     {
+      "lessonId": "epistemology-theories-of-knowledge",
+      "subjectId": "philosophy",
+      "title": "Epistemology: Theories of Knowledge",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Epistemology: Theories of Knowledge Before any other discipline asks its questions, philosophy asks: what does it take to know something rather than merely believe it? Epistemology — the theory of knowledge — examines where knowledge comes from, how much of it we can have, and what makes a belief justified. Every \"how do you know?\" is its territory. 1. Knowledge: More Than True Belief The classical JTB (justified true belief) analysis, from Plato's Meno , holds that knowledge is belief that is ("
+    },
+    {
       "lessonId": "ethics-theories",
       "subjectId": "philosophy",
       "title": "Ethics: Theories of Right and Wrong",
@@ -2137,12 +2461,28 @@
       "content": "Medieval and Early Modern Philosophy: Faith, Reason, and the Rise of Science Medieval thinkers reasoned about God with Greek tools; the early moderns rebuilt philosophy on the knowing subject, split into rationalists and empiricists, and political philosophy followed. 1. Augustine and Aquinas: Faith Seeking Understanding Augustine (354–430 CE) baptised Plato: the Forms become ideas in God's mind, and the restless soul knows truth by divine illumination. His Confessions invents the inner autobiog"
     },
     {
+      "lessonId": "metaphysics-nature-of-reality",
+      "subjectId": "philosophy",
+      "title": "Metaphysics: The Nature of Reality",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Metaphysics: The Nature of Reality When a physicist says only particles and fields exist, a theist says souls do, a mathematician insists numbers do — metaphysics is the discipline that referees. It asks what exists, what existence even means, and what holds the world together: substance, cause, time, person, free will. The other sciences presuppose its answers; metaphysics makes them explicit. 1. What Metaphysics Asks Metaphysics is the philosophical study of the fundamental nature of reality —"
+    },
+    {
       "lessonId": "philosophy-of-mind",
       "subjectId": "philosophy",
       "title": "Philosophy of Mind: What Is Consciousness?",
       "subject": "philosophy",
       "keywords": [],
       "content": "Philosophy of Mind: What Is Consciousness? You know what it is like to taste coffee; physics lists only masses, charges, and fields. This lesson examines the mind–body problem: how mental life relates to the brain — and what AI now forces us to decide about minds like and unlike our own. 1. The Mind–Body Problem Mental states feel private, unified, and qualitative; brains are public, divisible, and measurable. That these are somehow the same thing is the puzzle philosophy of mind exists to solve"
+    },
+    {
+      "lessonId": "philosophy-of-science",
+      "subjectId": "philosophy",
+      "title": "Philosophy of Science: What Makes Science Science?",
+      "subject": "philosophy",
+      "keywords": [],
+      "content": "Philosophy of Science: What Makes Science Science? Science flies planes and cures diseases, yet philosophers cannot agree on what, if anything, marks it off from myth. Philosophy of science studies the logic of scientific method, the structure of theory change, and the limits of scientific knowledge — a subject whose classic debates (induction, falsification, revolutions, paradigms) are now standard vocabulary far outside philosophy departments. 1. The Problem and the Players Philosophy of scien"
     },
     {
       "lessonId": "political-philosophy-justice-and-rights",
@@ -2464,6 +2804,15 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Blood Relation Reasoning — Part 4 of 4 Continuing from the previous part. back to Part 3 ( blood-relation-reasoning-part-3 ). Blood relation reasoning is the ability to understand family relationships from language, build a family graph, and answer questions about who is related to whom. The core idea is simple: convert words like father , mother , brother , uncle , and cousin into a structured family model, then reason step by step. 46. Direct Example Tree A → B → C → D If: - A is parent of B -"
+    },
+    {
+      "lessonId": "calendar-reasoning",
+      "subjectId": "reasoning",
+      "subSubjectId": "calendar",
+      "title": "Calendar Reasoning: Odd Days and Weekday Puzzles",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Calendar Reasoning: Odd Days and Weekday Puzzles Calendar questions look like trivia — \"what day was 15 August 1947?\" — but they run on a small arithmetic engine: count the odd days between two dates and the weekday falls out. Learn the engine once and every date in history becomes a 30-second calculation. 1. The Foundation: Ordinary and Leap Years An ordinary year has 365 days = 52 weeks + 1 odd day . A leap year has 366 days = 52 weeks + 2 odd days . Odd days are simply the leftovers after rem"
     },
     {
       "lessonId": "clock-reasoning-part-1",
@@ -3078,6 +3427,15 @@
       "content": "Directions and Distance Reasoning — Part 9 of 10 Continuing from the previous part. back to Part 8 ( directions-and-distance-reasoning-part-8 ) · continue to Part 10 ( directions-and-distance-reasoning-part-10 ). 68. Example Compilation Input: AST: Spatial IR: Execution: Result: 69. Minimal Algorithm Conceptually: 70. Multi-Hop Reasoning Consider: The system can choose a reference: Then propagate constraints: Now any pair can be compared. For example: Therefore: This demonstrates why coordinate "
     },
     {
+      "lessonId": "input-output-reasoning",
+      "subjectId": "reasoning",
+      "subSubjectId": "input-output",
+      "title": "Input-Output Reasoning: Decoding the Machine",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Input-Output Reasoning: Decoding the Machine A mythical machine takes a line of words or numbers and rearranges it one step at a time. You see the input and the first few steps — and must predict step 47, or run the machine backwards. The trick is always the same: find the rule from the pattern, write it as a recipe, then apply it without actually simulating every step. 1. The Structure of These Puzzles An input-output (machine input) puzzle presents a starting line (called the Input ) followed "
+    },
+    {
       "lessonId": "mathematical-operations-reasoning",
       "subjectId": "reasoning",
       "subSubjectId": "mathematical-operations",
@@ -3085,6 +3443,33 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Mathematical Operations: Sign Swaps and Equation Repair The reasoning section's arithmetic playground: a correct equation is scrambled — signs swapped, numbers interchanged — and you are asked to restore it, or to compute a new expression after a declared substitution. Nothing here is hard mathematics; the difficulty is purely order of operations discipline plus careful reading of what is swapped with what. Every question in this topic leans on BODMAS/BIDMAS order: Brackets → Orders (powers/root"
+    },
+    {
+      "lessonId": "embedded-figures-and-figure-completion",
+      "subjectId": "reasoning",
+      "subSubjectId": "non-verbal-reasoning",
+      "title": "Embedded Figures and Figure Completion",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Embedded Figures and Figure Completion A large, busy figure hides a small, simple one inside its lines — find it. Or a figure is missing a quadrant and the pattern demands what belongs there — restore it. These two question families train the eye's two directions: zooming into a figure to extract a known shape, and zooming out to continue a rule. 1. Embedded Figures A figure is embedded in another when all its lines appear among the host figure's lines, at the same scale — possibly rotated or re"
+    },
+    {
+      "lessonId": "mirror-and-water-images",
+      "subjectId": "reasoning",
+      "subSubjectId": "non-verbal-reasoning",
+      "title": "Mirror and Water Images",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Mirror and Water Images Hold a figure to a mirror and every point jumps across an invisible axis; flip it face-down in water and every point flips across a horizontal line. Two reflections, one idea: each point moves to an equal distance on the opposite side of the axis . Master the axes and letters, and these become the fastest marks in the non-verbal section. 1. The Two Reflections A mirror image reflects a figure across a vertical axis (the mirror stands upright): left becomes right, right be"
+    },
+    {
+      "lessonId": "paper-folding-and-cutting",
+      "subjectId": "reasoning",
+      "subSubjectId": "non-verbal-reasoning",
+      "title": "Paper Folding and Cutting",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Paper Folding and Cutting A square sheet is folded twice, a corner is punched through all layers, and the paper is unfolded. How many holes, and where? Paper-folding questions are pure symmetry bookkeeping: every fold creates a mirror, every cut pierces every layer, and unfolding reflects the cut once per fold. 1. The Core Principle When a sheet is folded, the fold line becomes an axis of symmetry : whatever is cut through the folded stack appears on every layer . Unfolding the sheet therefore r"
     },
     {
       "lessonId": "ranking-and-order-advanced",
@@ -3220,6 +3605,15 @@
       "subject": "reasoning",
       "keywords": [],
       "content": "Syllogism Reasoning Syllogism reasoning gives you two or more statements taken to be true, and asks which conclusions definitely follow from them — using only the logic of the statements, never outside knowledge or assumptions. The single biggest source of errors in syllogism is substituting real-world knowledge for the statement's exact wording. Even if a statement sounds false or strange in real life, you must treat it as 100% true and reason only from what it literally says. 1. What Syllogism"
+    },
+    {
+      "lessonId": "assertion-and-reason",
+      "subjectId": "reasoning",
+      "subSubjectId": "verbal-reasoning",
+      "title": "Assertion and Reason Questions",
+      "subject": "reasoning",
+      "keywords": [],
+      "content": "Assertion and Reason Questions Two statements, one instruction: decide whether each is true, and whether the second genuinely explains the first. The format looks like a test of knowledge — and it is — but the knowledge is always packaged inside a fixed five-option decision tree. Learn the tree, and only the truth of the statements remains to be judged. 1. The Format An assertion (A) is a statement presented as true. A reason (R) is offered as its explanation. The five standard options combine t"
     },
     {
       "lessonId": "cause-and-effect-and-course-of-action",
@@ -3616,6 +4010,15 @@
       "subject": "science",
       "keywords": [],
       "content": "States of Matter and the Gas Laws: How Particles Fill Their World Matter organises itself into states — solid, liquid, gas, and the exotic plasma — by balancing the pull of intermolecular attraction against the energy of motion. Gases are the simplest state to describe mathematically, and their laws powered the industrial revolution's steam engines. 1. The Three Familiar States | Property | Solid | Liquid | Gas | | --- | --- | --- | --- | | Shape | Fixed | Takes container's shape | Fills contain"
+    },
+    {
+      "lessonId": "surface-chemistry-and-catalysis",
+      "subjectId": "science",
+      "subSubjectId": "chemistry",
+      "title": "Surface Chemistry and Catalysis: Where Reactions Really Happen",
+      "subject": "science",
+      "keywords": [],
+      "content": "Surface Chemistry and Catalysis: Where Reactions Really Happen Chemistry at surfaces obeys different rules from chemistry in bulk. A catalyst speed‑shapes a reaction without being consumed, a colloid refuses to settle for years, and a few grams of activated charcoal clean a whole tank of water — all because surface area, not amount, is the currency that matters. 1. Adsorption: The Surface Phenomenon Adsorption is the accumulation of a substance (the adsorbate ) on the surface of a solid or liqui"
     },
     {
       "lessonId": "thermodynamics-and-thermochemistry",

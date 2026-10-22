@@ -22,6 +22,7 @@
 .ou-hue-languages        { color: #ee6fa4; background: color-mix(in srgb, #ee6fa4 14%, transparent); }
 .ou-hue-civics           { color: #e75d6f; background: color-mix(in srgb, #e75d6f 13%, transparent); }
 .ou-hue-reasoning        { color: #38b6e0; background: color-mix(in srgb, #38b6e0 14%, transparent); }
+.ou-hue-general-knowledge { color: #8a9a2b; background: color-mix(in srgb, #8a9a2b 14%, transparent); }
 
 /* ---- Subject hues (dark theme — lighter, airy variants) ------------ */
 [data-theme="dark"] .ou-hue-science          { color: #7fdfae; background: color-mix(in srgb, #7fdfae 16%, transparent); }
@@ -34,6 +35,7 @@
 [data-theme="dark"] .ou-hue-languages        { color: #ff9cc4; background: color-mix(in srgb, #ff9cc4 16%, transparent); }
 [data-theme="dark"] .ou-hue-civics           { color: #ff8f9c; background: color-mix(in srgb, #ff8f9c 16%, transparent); }
 [data-theme="dark"] .ou-hue-reasoning        { color: #7fd4f2; background: color-mix(in srgb, #7fd4f2 16%, transparent); }
+[data-theme="dark"] .ou-hue-general-knowledge { color: #cdd96e; background: color-mix(in srgb, #cdd96e 16%, transparent); }
 
 /* ---- Gentle text highlight (search results / lesson <mark>) -------- */
 mark,
@@ -112,7 +114,8 @@ mark,
 [data-theme="high-contrast"] .ou-hue-philosophy,
 [data-theme="high-contrast"] .ou-hue-languages,
 [data-theme="high-contrast"] .ou-hue-civics,
-[data-theme="high-contrast"] .ou-hue-reasoning {
+[data-theme="high-contrast"] .ou-hue-reasoning,
+[data-theme="high-contrast"] .ou-hue-general-knowledge {
   color: var(--ou-text);
   background: var(--ou-accent-subtle);
 }

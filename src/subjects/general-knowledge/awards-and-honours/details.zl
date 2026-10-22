@@ -1,0 +1,13 @@
+# Awards and Honours
+
+@subject {
+  id: awards-and-honours
+  title: "Awards and Honours"
+  parent: general-knowledge
+  description: "India's civilian, gallantry and national awards, and the Nobel with the world's big prizes."
+}
+
+@lessons {
+  national-awards-of-india
+  nobel-and-international-awards
+}

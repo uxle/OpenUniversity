@@ -1,0 +1,151 @@
+{
+  "tests": [
+    {
+      "id": "ssc-general-awareness",
+      "title": "SSC General Awareness Mock",
+      "category": "Government Exams",
+      "description": "SSC CGL/CHSL-style general awareness section — GK, history, geography, polity and science in one paper.",
+      "durationMinutes": 25,
+      "sections": [
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 10 },
+        { "title": "History", "subjectId": "history", "count": 5 },
+        { "title": "Geography", "subjectId": "geography", "count": 5 },
+        { "title": "Polity", "subjectId": "civics", "count": 5 },
+        { "title": "Science", "subjectId": "science", "count": 5 }
+      ]
+    },
+    {
+      "id": "rrb-ntpc-mock",
+      "title": "Railway RRB NTPC Mock",
+      "category": "Government Exams",
+      "description": "RRB NTPC-style paper mixing mathematics, reasoning, general knowledge and general science.",
+      "durationMinutes": 20,
+      "sections": [
+        { "title": "Mathematics", "subjectId": "mathematics", "count": 8 },
+        { "title": "Reasoning", "subjectId": "reasoning", "count": 8 },
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 5 },
+        { "title": "General Science", "subjectId": "science", "count": 4 }
+      ]
+    },
+    {
+      "id": "banking-prelims-mock",
+      "title": "Banking Prelims Mock",
+      "category": "Government Exams",
+      "description": "IBPS/SBI prelims pattern — quantitative aptitude, reasoning ability and English in a timed sprint.",
+      "durationMinutes": 20,
+      "sections": [
+        { "title": "Quantitative Aptitude", "subjectId": "mathematics", "count": 10 },
+        { "title": "Reasoning Ability", "subjectId": "reasoning", "count": 10 },
+        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 5 }
+      ]
+    },
+    {
+      "id": "upsc-gs-mock",
+      "title": "UPSC Prelims GS Mock",
+      "category": "Government Exams",
+      "description": "Civil-services preliminary pattern — history, geography, polity, economy, GK and science at prelims breadth.",
+      "durationMinutes": 25,
+      "sections": [
+        { "title": "History", "subjectId": "history", "count": 6 },
+        { "title": "Geography", "subjectId": "geography", "count": 5 },
+        { "title": "Polity", "subjectId": "civics", "count": 6 },
+        { "title": "Economy", "subjectId": "economics", "count": 4 },
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 4 },
+        { "title": "Science", "subjectId": "science", "count": 5 }
+      ]
+    },
+    {
+      "id": "gk-sprint",
+      "title": "GK Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random general-knowledge questions across symbols, firsts, awards, sports, books, days and culture.",
+      "durationMinutes": 7,
+      "sections": [
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 10 }
+      ]
+    },
+    {
+      "id": "maths-sprint",
+      "title": "Maths Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random questions from across the mathematics syllabus — algebra to arithmetic.",
+      "durationMinutes": 10,
+      "sections": [
+        { "title": "Mathematics", "subjectId": "mathematics", "count": 10 }
+      ]
+    },
+    {
+      "id": "reasoning-sprint",
+      "title": "Reasoning Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random reasoning questions — series, puzzles, syllogisms, non-verbal and more.",
+      "durationMinutes": 8,
+      "sections": [
+        { "title": "Reasoning", "subjectId": "reasoning", "count": 10 }
+      ]
+    },
+    {
+      "id": "english-sprint",
+      "title": "English Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random English questions — grammar, vocabulary, spelling and usage.",
+      "durationMinutes": 7,
+      "sections": [
+        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 10 }
+      ]
+    },
+    {
+      "id": "science-sprint",
+      "title": "Science Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random questions across physics, chemistry and biology.",
+      "durationMinutes": 8,
+      "sections": [
+        { "title": "Science", "subjectId": "science", "count": 10 }
+      ]
+    },
+    {
+      "id": "humanities-sprint",
+      "title": "Humanities Sprint",
+      "category": "Subject Sprints",
+      "description": "Ten random questions spanning history, geography, civics and economics.",
+      "durationMinutes": 8,
+      "sections": [
+        { "title": "History", "subjectId": "history", "count": 3 },
+        { "title": "Geography", "subjectId": "geography", "count": 3 },
+        { "title": "Civics", "subjectId": "civics", "count": 2 },
+        { "title": "Economics", "subjectId": "economics", "count": 2 }
+      ]
+    },
+    {
+      "id": "gk-full-mock",
+      "title": "GK Full Mock",
+      "category": "Full Syllabus",
+      "description": "Twenty questions from the entire general-knowledge bank — the complete static-GK workout.",
+      "durationMinutes": 15,
+      "sections": [
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 20 }
+      ]
+    },
+    {
+      "id": "mega-mock",
+      "title": "Full Syllabus Mega Mock",
+      "category": "Full Syllabus",
+      "description": "Forty questions from every subject on the site — the all-India, all-subject challenge.",
+      "durationMinutes": 35,
+      "sections": [
+        { "title": "Mathematics", "subjectId": "mathematics", "count": 5 },
+        { "title": "Reasoning", "subjectId": "reasoning", "count": 5 },
+        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 5 },
+        { "title": "Science", "subjectId": "science", "count": 5 },
+        { "title": "History", "subjectId": "history", "count": 3 },
+        { "title": "Geography", "subjectId": "geography", "count": 3 },
+        { "title": "Civics", "subjectId": "civics", "count": 3 },
+        { "title": "Economics", "subjectId": "economics", "count": 3 },
+        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 4 },
+        { "title": "Computer Science", "subjectId": "computer-science", "count": 2 },
+        { "title": "Philosophy", "subjectId": "philosophy", "count": 2 }
+      ]
+    }
+  ]
+}

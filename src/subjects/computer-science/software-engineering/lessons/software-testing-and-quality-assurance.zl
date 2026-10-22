@@ -1,0 +1,143 @@
+# Software Testing and Quality Assurance: Breaking Software on Purpose
+
+> Testing is the art of finding the defects a developer hopes are not
+> there, before the user does. It cannot prove software correct — only
+> the presence of bugs, never their absence — but a disciplined blend
+> of levels, techniques and automation turns quality from a wish into
+> a measurable, managed property.
+
+## 1. Testing, QA, QC — Three Different Things
+
+[definition]
+**Software testing** is the process of executing software to find
+defects. **Quality Control (QC)** is the broader inspection activity
+(design reviews, code walkthroughs, testing) that verifies work
+products against requirements. **Quality Assurance (QA)** is
+process-focused: defining and improving the procedures that prevent
+defects from being created in the first place.
+[/definition]
+
+| Term | Focus | Question asked |
+| --- | --- | --- |
+| Testing | product | does this build fail anywhere? |
+| QC | product & documents | do work products meet specs? |
+| QA | process | are we working in a way that produces quality? |
+
+[important]
+Testing shows **presence** of defects, not their absence
+(Dijkstra). Exhaustive testing of every input combination is
+impossible — a program with three 32-bit inputs has more cases than
+seconds in a billion years — so every test strategy is really the art
+of choosing a *representative, high-yield* sample.
+[/important]
+
+## 2. The Test Levels
+
+| Level | Scope | Typical target |
+| --- | --- | --- |
+| **Unit** | a single module in isolation | a function, a class |
+| **Integration** | interactions between modules | interfaces, data flow |
+| **System** | the whole system against requirements | end-to-end behaviour |
+| **Acceptance (UAT)** | business readiness, by/for the user | release decision |
+
+Integration proceeds **bottom-up** (test lower modules first, drive
+with drivers), **top-down** (higher modules first, stub the missing
+lower ones) or **big-bang** (everything at once — cheap, but defects
+are hardest to localise). **Sandwich** mixes both directions.
+
+## 3. Black-Box Techniques
+
+Black-box tests derive cases from specifications, without seeing code.
+
+- **Equivalence partitioning:** split inputs into classes where all
+  members should behave identically; one representative per class. A
+  field accepting ages 18–59 gives three partitions: below 18, 18–59,
+  above 59.
+- **Boundary value analysis (BVA):** defects cluster at edges — test
+  17, 18, 19 and 58, 59, 60 rather than the middles (traditional 5-
+  or 7-value BVA around each boundary).
+- **Decision tables:** map combinations of conditions to expected
+  actions (discount rules, admission rules).
+- **State transition testing:** exercise every legal (and an illegal)
+  transition — login → locked after three failures.
+
+**Worked example.** "A discount of 10% applies for bills over ₹1,000
+but under ₹5,000; 15% above ₹5,000." Partitions: ≤1000, 1001–5000,
+>5000. Boundary values: 1000, 1001, 5000, 5001 — four cases that
+  catch most of the off-by-one bugs this spec can contain.
+
+## 4. White-Box Techniques
+
+White-box tests derive cases from the code's structure.
+
+[definition]
+**Statement coverage** requires every executable statement to run at
+least once. **Branch (decision) coverage** requires every branch
+outcome (true AND false of each condition) to be exercised — always
+at least as strong as statement coverage. **Path coverage** requires
+every possible route through the code — usually impossible for
+programs with loops.
+[/definition]
+
+Cyclomatic complexity $V(G) = E - N + 2P$ (edges − nodes + 2 ×
+components) counts the linearly independent paths; a practical rule is
+that $V(G) \le 10$ keeps a module testable, and $V(G)$ equals the
+minimum number of test cases needed for branch coverage.
+
+**Worked example.** A module with two sequential `if` statements has
+4 paths and $V(G) = 3$; two `if-else` branches in sequence typically
+need 4 test cases for full branch coverage — one per truth
+combination of the decisions.
+
+## 5. Test Types and the Testing Pyramid
+
+- **Functional:** does the feature do what it should?
+- **Non-functional:** performance/load (response under expected and
+  peak traffic), stress (beyond limits), security, usability,
+  reliability, portability.
+- **Regression:** after every change, re-run the suite to confirm old
+  features still work — the safety net that makes refactoring
+  possible.
+- **Smoke/sanity:** quick checks deciding whether a build is worth
+  deeper testing.
+- **Alpha (in-house) vs beta (selected real users)** — pre-release
+  exposure stages.
+
+The testing **pyramid** recommends many fast unit tests, fewer
+integration tests, and a thin top of slow, flaky end-to-end UI
+tests — inverted pyramids (all UI, no unit) are slow, brittle and
+expensive.
+
+## 6. Defects, Severity and Priority
+
+A **defect** is a mismatch between expected and actual behaviour; a
+**failure** is what the user observes when a defect executes. Triage
+assigns two independent axes:
+
+| | High priority | Low priority |
+| --- | --- | --- |
+| **High severity** | crash on checkout — fix now | crash in a screen shipped next quarter |
+| **Low severity** | logo typo on launch day | cosmetic bug in a rare screen |
+
+Severity is technical impact; priority is business urgency. A
+misspelled brand name on the homepage is low severity, high priority.
+
+## 7. Debugging vs Testing, and Automation
+
+Testing finds that a defect exists; **debugging** (breakpoints,
+logging, bisection, rubber-duck reasoning) locates and removes its
+cause. Regression suites, load tests and CI pipelines are automated
+because they are repetitive; exploratory testing stays human because
+it depends on curiosity and pattern recognition. Modern practice
+wires the suite into **continuous integration**: every commit runs
+the tests, and a red build blocks the merge — quality stops being a
+final phase and becomes a property of every change.
+
+## 8. Summary
+
+Test at every level (unit → integration → system → acceptance),
+choose cases with black-box heuristics (partitions, boundaries) and
+white-box structure (branches, complexity), never confuse severity
+with priority, and automate the regression net. The goal is not to
+prove the software perfect — impossible — but to reduce the risk of
+release to a level the business consciously accepts.

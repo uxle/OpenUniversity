@@ -39,8 +39,12 @@
 @import "./mcq/options.css";
 @import "./mcq/results.css";
 
+@import "./mock/mock-tests.css";
+@import "./mock/exam.css";
+
 @import "./search/search.css";
 @import "./account/account.css";
+@import "./redesign.css";
 @import "./print.css" print;
 
 body { background: var(--ou-bg); color: var(--ou-text); }

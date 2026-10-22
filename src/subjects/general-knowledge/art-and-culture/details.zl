@@ -1,0 +1,13 @@
+# Art and Culture
+
+@subject {
+  id: art-and-culture
+  title: "Art and Culture"
+  parent: general-knowledge
+  description: "India's classical and folk dances, its two classical music systems, and its painting schools."
+}
+
+@lessons {
+  classical-and-folk-dances-of-india
+  indian-music-and-painting
+}

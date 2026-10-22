@@ -1,0 +1,151 @@
+# National Income Determination and the Multiplier
+
+> What decides whether an economy produces ₹200 lakh crore this year
+> or ₹250? Keynes's answer was deceptively simple: output goes where
+> aggregate demand pulls it. The idea of effective demand — and its
+> sharpest tool, the multiplier — turned economics from a moral
+> science into macroeconomic engineering.
+
+## 1. From Classical to Keynesian Thinking
+
+The classical view held that supply creates its own demand
+(**Say's Law**): every act of production pays out exactly enough
+income to buy it, so general overproduction is impossible and
+unemployment must be temporary — flexible wages would restore full
+employment. The Great Depression broke this picture: unemployment
+persisted for years, wages fell, and still demand did not return.
+
+[definition]
+**Keynes's principle of effective demand**: output and employment in
+the short run are determined by **aggregate demand (AD)** — the total
+planned spending on goods and services — not by supply alone. If
+demand is deficient, the economy can settle at an **underemployment
+equilibrium** with no automatic force pulling it to full capacity.
+[/definition]
+
+## 2. The Components of Aggregate Demand
+
+@math label="eq:ad-components}
+AD = C + I + G + (X - M)
+@/math
+
+where $C$ is household consumption, $I$ private investment, $G$
+government spending and $(X - M)$ net exports.
+
+**Consumption and the consumption function.** The Keynesian
+consumption function is
+
+@math label="eq:consumption-fn}
+C = \bar{C} + c\,Y
+@/math
+
+where $\bar{C} > 0$ is **autonomous consumption** (people must eat
+even at zero income), $c$ is the **marginal propensity to consume
+(MPC)** — the fraction of each extra rupee spent — and $s = 1 - c$
+is the marginal propensity to save (MPS). The **average propensity
+to consume** $C/Y$ falls as income rises, one of Keynes's
+"psychological laws".
+
+**Worked example.** If $\bar{C} = 200$ (billion), $c = 0.75$ and
+$Y = 2000$: $C = 200 + 1500 = 1700$. Of the last ₹100 of income, ₹75
+is spent and ₹25 saved.
+
+## 3. Equilibrium Income: Where Planned Savings Equal Investment
+
+In the simplest two-sector economy (households and firms only),
+equilibrium income is where planned investment equals planned
+savings:
+
+@math label="eq:equilibrium-y}
+Y = \frac{\bar{C} + I}{1 - c}
+@/math
+
+**Worked example.** With $\bar{C} = 200$, $c = 0.75$ and planned
+investment $I = 100$:
+
+@math label="eq:equilibrium-y-ex}
+Y = \frac{200 + 100}{1 - 0.75} = \frac{300}{0.25} = 1200
+@/math
+
+At income 1200: consumption $= 200 + 0.75(1200) = 1100$, savings
+$= 100$ — exactly matching investment. Below this income, spending
+plans exceed output (inventories fall, production rises); above it,
+goods pile up unsold (production falls). The economy is pulled toward
+1200 like water seeking its level.
+
+## 4. The Investment Multiplier
+
+[definition]
+The **multiplier** $k$ is the ratio of the change in equilibrium
+income to the change in autonomous spending that caused it:
+
+@math label="eq:multiplier}
+k = \frac{\Delta Y}{\Delta I} = \frac{1}{1 - c} = \frac{1}{MPS}
+@/math
+
+[/definition]
+
+**Why it happens — the spending chain.** An injection of ₹100 of new
+investment becomes ₹100 of someone's income; with MPC 0.75, ₹75 is
+re-spent, becoming someone else's income; ₹56.25 of that is spent,
+then ₹42.19...
+
+@math label="eq:multiplier-chain}
+\Delta Y = 100 \times \left(1 + 0.75 + 0.75^{2} + 0.75^{3} + \cdots\right) = \frac{100}{1 - 0.75} = 400
+@/math
+
+[important]
+The multiplier works in **both directions** and its size depends only
+on the leakages: the higher the MPC, the larger the multiplier. If
+MPC = 0.75, $k = 4$; if MPC = 0.5, $k = 2$. Every extra rupee saved,
+taxed or spent on imports leaks out of the circular flow and shrinks
+the chain — which is why the real-world open-economy multiplier with
+taxes is far smaller than the simple textbook value.
+[/important]
+
+With proportional taxes at rate $t$ and marginal propensity to
+import $m$, the multiplier becomes
+$\frac{1}{1 - c(1-t) + m}$ — smaller, because leakages multiply.
+
+## 5. The Paradox of Thrift and Deficient Demand
+
+If every household tries to save more simultaneously (rise in MPS),
+aggregate consumption falls, income falls through the multiplier, and
+**total savings may end up no higher — or lower**. Individually
+rational, collectively self-defeating: the **paradox of thrift**.
+This is the intellectual basis for counter-cyclical policy — when
+private demand collapses, government spending (or tax cuts) can fill
+the gap, riding the same multiplier downward-in-reverse.
+
+## 6. Accelerator, Deflationary Gap and Full Employment
+
+- **Deflationary gap:** the amount by which aggregate demand falls
+  short of the level needed for full-employment output. Closing it
+  needs $\Delta G = \text{gap} \times (1-c)$.
+- **Inflationary gap:** demand exceeds full-employment output;
+  output cannot rise, so prices rise instead.
+- **Accelerator effect:** rising income induces extra investment to
+  expand capacity — investment thus depends on the *rate of change*
+  of output, amplifying booms and slumps.
+
+## 7. Limitations and Relevance
+
+The multiplier is a short-run demand-side tool. It assumes spare
+capacity and idle labour; near full employment, extra spending feeds
+prices, not output. It ignores supply bottlenecks, time lags
+(the chain takes quarters, not days), crowding-out (government
+borrowing may raise interest rates and displace private investment)
+and inflationary expectations. Post-2008 stimulus and COVID-era
+relief packages were multiplier logic applied at planetary scale —
+with the same debates about debt, capacity and lags that Keynes's
+critics raised in 1936.
+
+## 8. Summary
+
+Equilibrium income settles where planned spending equals output:
+$Y = (\bar{C} + I)/(1-c)$. The multiplier $1/(1-c)$ turns an
+injection of spending into a multiple rise in income through
+successive rounds of re-spending, weakened by every leakage (saving,
+taxes, imports). Deficient demand can trap an economy below full
+employment — and fiscal policy, sized by the multiplier, is the
+classic Keynesian response.

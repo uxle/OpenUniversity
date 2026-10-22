@@ -70,7 +70,7 @@
   font-size: var(--ou-fs-lg);
   margin-bottom: var(--ou-space-3);
   background: var(--ou-gradient-brand);
-  color: white;
+  color: var(--ou-accent-contrast);
   box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
   transition: transform var(--ou-transition-bounce), box-shadow var(--ou-transition-base);
 }

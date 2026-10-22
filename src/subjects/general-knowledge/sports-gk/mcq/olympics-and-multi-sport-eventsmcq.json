@@ -1,0 +1,76 @@
+{
+  "lessonId": "olympics-and-multi-sport-events",
+  "title": "Olympics and Multi-Sport Events: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The modern Olympic Games were revived in 1896 at:",
+      "options": ["Paris", "London", "Athens", "Rome"],
+      "correct": 2,
+      "rationale": "Pierre de Coubertin's revival began in Athens in 1896, honouring the Games' Greek birthplace at ancient Olympia (from 776 BCE)."
+    },
+    {
+      "id": 2,
+      "question": "The five interlocking rings of the Olympic symbol represent:",
+      "options": ["Five founding nations", "Five inhabited continents", "Five sports of the ancient Games", "Five Olympic values"],
+      "correct": 1,
+      "rationale": "The rings stand for the union of the five inhabited continents, with colours chosen so that every national flag of the era contained at least one."
+    },
+    {
+      "id": 3,
+      "question": "India's hockey team has won how many Olympic gold medals?",
+      "options": ["Six", "Seven", "Eight", "Five"],
+      "correct": 2,
+      "rationale": "Eight golds (1928-1980), beginning with Amsterdam 1928 and including six consecutive titles through 1956 — a record for any team sport."
+    },
+    {
+      "id": 4,
+      "question": "The first individual Olympic medal for independent India was won by:",
+      "options": ["K.D. Jadhav", "Abhinav Bindra", "Norman Pritchard", "Leander Paes"],
+      "correct": 0,
+      "rationale": "Wrestler K.D. Jadhav took bronze at Helsinki 1952. Pritchard's two silvers (1900) predate independence; Bindra's gold (2008) came first among individuals."
+    },
+    {
+      "id": 5,
+      "question": "Neeraj Chopra won India's first athletics gold at which Games?",
+      "options": ["Rio 2016", "Tokyo 2020", "Paris 2024", "Beijing 2008"],
+      "correct": 1,
+      "rationale": "His javelin gold at Tokyo 2020 (held 2021) was independent India's first athletics gold; he added a silver at Paris 2024."
+    },
+    {
+      "id": 6,
+      "question": "The International Olympic Committee (IOC) is headquartered in:",
+      "options": ["Geneva", "Zurich", "Lausanne", "Vienna"],
+      "correct": 2,
+      "rationale": "The IOC sits in Lausanne, Switzerland. FIFA's Zurich is the usual decoy for the city-pair question."
+    },
+    {
+      "id": 7,
+      "question": "The first Asian Games (1951) were held at:",
+      "options": ["Tokyo", "Manila", "New Delhi", "Jakarta"],
+      "correct": 2,
+      "rationale": "New Delhi hosted the inaugural Asiad in 1951 — and again in 1982, making it the first city to host the Games twice."
+    },
+    {
+      "id": 8,
+      "question": "At Paris 2024, Manu Bhaker became the first Indian to:",
+      "options": ["Win a shooting gold", "Win two medals at a single post-independence Olympics", "Carry the Indian flag", "Win a medal in pistol events"],
+      "correct": 1,
+      "rationale": "Her individual bronze and the 10 m air pistol mixed-team bronze (with Sarabjot Singh) made her the first Indian double-medallist at one Games since independence."
+    },
+    {
+      "id": 9,
+      "question": "India hosted the Commonwealth Games for the first time in:",
+      "options": ["2003", "2010", "2014", "1998"],
+      "correct": 1,
+      "rationale": "Delhi 2010 remains India's only CWG hosting — and its best finish, second in the medal table led by the shooters."
+    },
+    {
+      "id": 10,
+      "question": "The Olympic motto was extended in 2021 with which word?",
+      "options": ["Fortius", "Communiter", "Citius", "Altius"],
+      "correct": 1,
+      "rationale": "'Citius, Altius, Fortius' gained '- Communiter' (Together) in 2021, the first change to the motto in over a century."
+    }
+  ]
+}

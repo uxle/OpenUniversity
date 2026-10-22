@@ -8,6 +8,9 @@ export async function render(container) {
   const notes = await getAllNotes().catch(() => []);
   mount(container, createEl("div", { class: "ou-container ou-stack" }, [
     createEl("h1", {}, ["Notes"]),
-    createNoteList(notes),
+    createNoteList(notes, {
+      emptyMessage: "No notes yet. Open any lesson and use the Notes panel — everything you write is collected here.",
+      emptyAction: { actionLabel: "Browse subjects", onAction: () => { location.hash = "/subjects"; } },
+    }),
   ]));
 }

@@ -1,0 +1,76 @@
+{
+  "lessonId": "epistemology-theories-of-knowledge",
+  "title": "Epistemology: Theories of Knowledge",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The classical JTB analysis of knowledge holds that knowledge is:",
+      "options": ["Justified true belief", "Belief held with certainty", "Truth as correspondence", "Whatever the community accepts"],
+      "correct": 0,
+      "rationale": "From Plato's Meno: to know, a belief must be true, believed, and justified by good reasons. Each element rules out an imitator - lucky guesses, false certainty, empty conviction."
+    },
+    {
+      "id": 2,
+      "question": "Gettier problems (1963) challenged the JTB analysis by showing:",
+      "options": ["A belief can be true and justified yet arise from luck, and so fail to be knowledge", "Justification is impossible", "Truth is relative", "Belief is involuntary"],
+      "correct": 0,
+      "rationale": "Gettier's cases: the evidence supports the belief for the wrong reason, and the belief is true by coincidence - true, justified, but not knowledge. Responses add conditions (no luck, no defeaters) or replace justification with reliability."
+    },
+    {
+      "id": 3,
+      "question": "Which pairing of thesis and school is correct?",
+      "options": ["Tabula rasa - empiricism", "Innate ideas - empiricism", "All knowledge from impressions - rationalism", "Cogito as foundation - empiricism"],
+      "correct": 0,
+      "rationale": "Locke's blank-slate mind is empiricism's signature. Innate ideas and the cogito belong to Descartes' rationalism; Hume's 'impressions' claim is empiricism at its most radical."
+    },
+    {
+      "id": 4,
+      "question": "Kant's 'Copernican revolution' in epistemology claims that:",
+      "options": ["Objects of experience conform to the mind's structures (space, time, categories)", "The mind passively copies external objects", "Knowledge of things-in-themselves is complete", "Reason alone can describe the noumenon"],
+      "correct": 0,
+      "rationale": "Kant inverted the question: instead of the mind conforming to objects, experience is structured by the mind's a priori forms. We know phenomena - the world as structured - never the noumenon in itself."
+    },
+    {
+      "id": 5,
+      "question": "Hume's problem of induction is that:",
+      "options": ["There is no non-circular justification for expecting the future to resemble the past", "Deduction is invalid", "All swans are white", "Memory is perfectly reliable"],
+      "correct": 0,
+      "rationale": "Induction assumes uniformity of nature, which itself can only be defended inductively - circular. Popper's falsificationism is the famous response: science proceeds by surviving refutation, not by inductive proof."
+    },
+    {
+      "id": 6,
+      "question": "Agrippa's trilemma says every justification must end in:",
+      "options": ["Infinite regress, circularity, or an arbitrary stopping point", "Faith, reason, or sense data", "Truth, belief, or doubt", "Internal, external, or social grounds"],
+      "correct": 0,
+      "rationale": "Any claim to knowledge, asked for its grounds, either spawns grounds forever, loops back on itself, or simply dogmatically stops - the classic sceptical challenge that foundationalism, coherentism and infinitism each try to answer."
+    },
+    {
+      "id": 7,
+      "question": "Goldman's reliabilism is a form of:",
+      "options": ["Externalism - justification can come from reliable processes outside the subject's awareness", "Internalism - justification must be accessible to the subject", "Scepticism", "Coherentism"],
+      "correct": 0,
+      "rationale": "A belief is justified if formed by a dependable process (normal vision, calibrated instruments), even if the believer cannot cite reasons - hence externalist. Internalism demands accessible reasons; the dispute defines modern justification theory."
+    },
+    {
+      "id": 8,
+      "question": "The evil demon (and its modern descendant, the simulation hypothesis) functions in epistemology as:",
+      "options": ["A sceptical scenario testing whether we know anything about the external world", "A proof of God's existence", "A theory of perception", "An argument for empiricism"],
+      "correct": 0,
+      "rationale": "Descartes' demon makes experience globally deceptive; if you cannot rule it out, global scepticism follows. The cogito was Descartes' way out - the demon cannot deceive me about my existing while deceived."
+    },
+    {
+      "id": 9,
+      "question": "Social epistemology studies:",
+      "options": ["How communities, testimony networks and institutions produce and distribute knowledge", "Only the psychology of individual belief", "The supernatural sources of revelation", "The definition of wisdom"],
+      "correct": 0,
+      "rationale": "Knowledge is made socially - by labs, peer review, testimony, expertise - so its pathologies (epistemic injustice, echo chambers, deepfakes) are social too. Fricker's epistemic injustice - unfairly discounted testimony - is its flagship concept."
+    },
+    {
+      "id": 10,
+      "question": "Moore's 'Here is a hand' response to scepticism is:",
+      "options": ["A common-sense proof: the hand is more certain than any sceptical premise", "A concession to the sceptic", "A version of coherentism", "An argument that certainty is required for knowledge"],
+      "correct": 0,
+      "rationale": "Moore argued that knowing ordinary things (hands) is more certain than any abstract sceptical argument's premises - flipping the burden of proof. Critics call it begging the question; contextualists instead make 'knows' shift with context."
+    }
+  ]
+}

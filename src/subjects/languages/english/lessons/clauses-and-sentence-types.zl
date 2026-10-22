@@ -1,0 +1,141 @@
+# Clauses and Sentence Types: The Architecture of Sentences
+
+> Every sentence you will ever write is built from the same five
+> bricks: three clause types and two phrase-loads of modifiers.
+> Competitive exams hide their hardest grammar questions inside this
+> architecture — identify the clause, and the question answers
+> itself.
+
+## 1. Phrase versus Clause
+
+[definition]
+A **phrase** is a group of related words without a subject–verb
+pair ("in the morning", "running fast"). A **clause** is a group of
+related words containing a **subject and a finite verb** ("because
+she was late"). Phrases decorate; clauses assert.
+[/definition]
+
+| | Phrase | Clause |
+| --- | --- | --- |
+| Subject + verb | no | yes |
+| Can stand as message | no | main clauses can |
+| Example | "under the old bridge" | "she stood under the old bridge" |
+
+## 2. The Three Clause Types
+
+1. **Main (independent) clause** — a complete assertion; can stand
+   alone: *The train departed.*
+2. **Subordinate (dependent) clause** — has subject + verb but
+   cannot stand alone; it is introduced by a subordinator
+   (*because, although, when, if, who, which, that*) and functions
+   as a noun, adjective or adverb inside a larger sentence:
+   *...because the bridge was closed.*
+3. **Relative (adjective) clause** — a special subordinate clause
+   modifying a noun, introduced by a relative pronoun (*who, whom,
+   whose, which, that*) or adverb (*where, when, why*):
+   *The train "that was delayed" departed at noon.*
+
+[important]
+The fastest exam test: **can the fragment stand alone with a
+capital and full stop and still sound complete?** If yes — main
+clause. If it leaves you waiting for the rest — subordinate. "She
+knew the answer" is complete; "Although she knew the answer" is a
+cliffhanger.
+[/important]
+
+## 3. Subordinate Clauses by Function
+
+| Type | Function | Marker | Example |
+| --- | --- | --- | --- |
+| Noun clause | acts as subject/object/complement | that, whether, if, what, who | I know **that she left**. |
+| Adjective clause | modifies a noun | who, which, that, whose, where | The car **that I bought** is red. |
+| Adverb clause | modifies the verb (time, cause, condition, concession) | when, because, if, although, so that | We waited **until the rain stopped**. |
+
+**Noun clause test:** replace it with *it/something* — the sentence
+survives. ("I know **it**.")
+**Adjective clause test:** delete it — a noun simply loses its
+description. ("The car is red.")
+**Adverb clause test:** it answers *when/why/if/how* about the
+verb; moving it around the sentence usually still works.
+
+## 4. Sentence Types by Structure
+
+- **Simple sentence** — one main clause: *The dog barked.*
+- **Compound sentence** — two or more main clauses joined by a
+  coordinating conjunction (FANBOYS: for, and, nor, but, or, yet,
+  so) or a semicolon: *The dog barked, and the postman fled.*
+- **Complex sentence** — one main clause + at least one subordinate
+  clause: *When the dog barked, the postman fled.*
+- **Compound–complex** — two or more main clauses + at least one
+  subordinate: *When the dog barked, the postman fled, and I
+  laughed.*
+
+**Counting rule for exams:** count main clauses and subordinate
+clauses separately — (2 main + 0 sub) = compound; (1 + 1) =
+complex; (2 + 1) = compound–complex.
+
+[example]
+*Although the offer was generous, she declined it, but she sent a
+polite note.* Subordinate: "Although the offer was generous".
+Main clauses: "she declined it" and "she sent a polite note".
+Two main + one sub = **compound–complex**.
+[/example]
+
+## 5. Sentence Types by Function
+
+- **Declarative** — states: *The museum opens at ten.*
+- **Interrogative** — asks: *Does the museum open at ten?*
+- **Imperative** — commands/requests (subject *you* understood):
+  *Open the door, please.*
+- **Exclamatory** — exclaims with strong emotion, usually with
+  *what/how*: *What a view this is!*
+
+## 6. Relative Clauses: Defining versus Non-Defining
+
+[definition]
+A **defining (restrictive) clause** identifies which noun is meant
+and takes **no commas**; a **non-defining (non-restrictive) clause**
+adds extra information about an already-identified noun and is set
+off **with commas** — and never uses *that*.
+[/definition]
+
+- Defining: *Students who cheat will be punished.* — the clause
+  "who cheat" tells us **which** students; no commas.
+- Non-defining: *My brother, who lives in Pune, is a doctor.* — I
+  have one brother; the clause merely adds a fact, so it takes
+  commas.
+
+Choosing *who/which/that* and the comma placement are the two most
+tested points in this chapter.
+
+## 7. Traps, Errors and Exam Patterns
+
+- **Comma splice:** joining two main clauses with only a comma
+  (*The rain stopped, we left.* ✗). Fix with a conjunction
+  (*...stopped, so we...*) or a semicolon (*...stopped; we left.*).
+- **Fragment:** a subordinate clause punctuated as a sentence
+  (*Because I was tired. ✗*). Attach it to a main clause.
+- **Run-on (fused):** two main clauses with nothing between them
+  (*The rain stopped we left.* ✗).
+- **That/which:** *that* for defining clauses, *which* for
+  non-defining (in exam English).
+- **Dangling modifiers:** *Walking to school, the clock struck
+  nine* ✗ — the clock wasn't walking. Reword so the modifier's
+  subject is the clause's subject.
+
+**Spot-the-error drills:** in "One of the students who *is/are*
+present...", the relative clause attaches to *students* (plural) →
+*are*. In "It was I *who was* chosen", formal English keeps the
+subject pronoun. Agreement questions are usually clause-structure
+questions in disguise: find the true subject inside the clause and
+the verb will follow it.
+
+## 8. Summary
+
+Clauses are the load-bearing walls of sentences: main clauses
+assert, subordinate clauses (noun, adjective, adverb) serve.
+Structure gives four sentence types (simple, compound, complex,
+compound–complex); function gives four moods (declarative,
+interrogative, imperative, exclamatory). Master the comma rules
+around conjunctions and relative clauses, and the majority of
+sentence-improvement questions reduce to visible mechanics.

@@ -1,0 +1,12 @@
+# Important Days
+
+@subject {
+  id: important-days
+  title: "Important Days"
+  parent: general-knowledge
+  description: "The national and international days every exam expects you to know."
+}
+
+@lessons {
+  important-days-and-observances
+}

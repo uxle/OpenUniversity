@@ -1,0 +1,76 @@
+{
+  "lessonId": "metaphysics-nature-of-reality",
+  "title": "Metaphysics: The Nature of Reality",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The word 'metaphysics' originally comes from:",
+      "options": ["The ordering of Aristotle's books (the ones 'after the Physics')", "The Greek for 'beyond the supernatural'", "A medieval Arabic treatise", "Kant's first Critique"],
+      "correct": 0,
+      "rationale": "The editors who arranged Aristotle's works placed the first-philosophy volumes after the Physics - 'ta meta ta physika'. The name is bibliographical, not mystical, though the subject matter often outruns physics."
+    },
+    {
+      "id": 2,
+      "question": "Berkeley's idealism is captured by the slogan:",
+      "options": ["Esse est percipi - to be is to be perceived", "Matter is the only substance", "The self is a bundle of perceptions", "Being precedes essence"],
+      "correct": 0,
+      "rationale": "Berkeley held that reality is fundamentally mental: things are ideas in minds, ultimately God's. The bundle theory is Hume's; 'being precedes essence' is Sartre's existentialism."
+    },
+    {
+      "id": 3,
+      "question": "The classic objection to Cartesian dualism is the:",
+      "options": ["Interaction problem - how do immaterial minds move material bodies?", "Problem of universals", "Ship of Theseus", "Problem of induction"],
+      "correct": 0,
+      "rationale": "Descartes split reality into thinking substance and extended substance, but never satisfactorily explained how the ghost steers the machine - the pineal gland 'solution' convinced almost no one. Materialism, idealism and neutral monism each avoid the split by denying one side or both."
+    },
+    {
+      "id": 4,
+      "question": "The medieval problem of universals asks:",
+      "options": ["Whether redness is one shared entity, a resemblance, or a concept", "Whether God can make a stone He cannot lift", "Whether time flows", "Whether numbers are infinite"],
+      "correct": 0,
+      "rationale": "Realism (Plato): universals exist independently; nominalism: only similar particulars exist; conceptualism: universals are concepts in minds. It remains the cleanest training ground for ontological method."
+    },
+    {
+      "id": 5,
+      "question": "Locke's memory-criterion and Hume's bundle theory are rival answers to:",
+      "options": ["Personal identity over time", "The ontology of numbers", "The direction of time", "The definition of causation"],
+      "correct": 0,
+      "rationale": "What makes you the same person across years? Locke: psychological continuity via memory. Hume: there is no self over and above a bundle of perceptions - the Buddhist anatta raised by another route. Bodily-continuity theories are the main rival."
+    },
+    {
+      "id": 6,
+      "question": "Newton held that space is an absolute container; the relationist opponent of this view is:",
+      "options": ["Leibniz", "Descartes", "Berkeley", "Kant"],
+      "correct": 0,
+      "rationale": "Leibniz (with Mach and later Einstein sympathising) argued space is nothing but the system of relations among bodies - no container without contained. The Leibniz-Clarke correspondence is the classic duel."
+    },
+    {
+      "id": 7,
+      "question": "Eternalism about time claims:",
+      "options": ["Past, present and future are all equally real - the 'block universe'", "Only the present exists", "Time is an illusion of consciousness", "Time had no beginning"],
+      "correct": 0,
+      "rationale": "Eternalism treats the universe as a four-dimensional block; presentism says only now exists. Relativity's relativity-of-simultaneity is often taken to support the block; presentists fight back."
+    },
+    {
+      "id": 8,
+      "question": "Hume's analysis of causation reduces it to:",
+      "options": ["Constant conjunction - we see B-after-A patterns, never a necessary link", "A category of the mind", "The final cause of a thing", "Divine will"],
+      "correct": 0,
+      "rationale": "Hume: all we observe is regular succession plus an expectation born of habit. Kant replied that causality is an a priori category; contemporary theories add counterfactual and interventionist glosses."
+    },
+    {
+      "id": 9,
+      "question": "Kripke's necessary a posteriori truths are best illustrated by:",
+      "options": ["'Water is H2O' - discovered empirically, yet necessarily true", "'2 + 2 = 4' - known a priori", "'All bachelors are unmarried' - analytic", "'It might rain tomorrow' - contingent"],
+      "correct": 0,
+      "rationale": "Once the empirical discovery fixes what water is, the identity holds in every possible world - necessity combined with empirical origin. Naming and Necessity (1980) thereby revived analytic metaphysics."
+    },
+    {
+      "id": 10,
+      "question": "Compatibilism defines free will as:",
+      "options": ["Acting according to one's own reasons without external constraint - consistent with determinism", "Being uncaused by prior events", "Random quantum indeterminacy in the brain", "Having God's foreknowledge"],
+      "correct": 0,
+      "rationale": "For compatibilists (Hume, Frankfurt), freedom is not exemption from causation but action flowing from your own desires and deliberation - contrast hard determinism (no freedom) and libertarianism (agent causation)."
+    }
+  ]
+}

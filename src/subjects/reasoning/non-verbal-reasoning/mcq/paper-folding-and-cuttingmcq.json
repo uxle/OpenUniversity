@@ -1,0 +1,76 @@
+{
+  "lessonId": "paper-folding-and-cutting",
+  "title": "Paper Folding and Cutting",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A sheet is folded once and a hole is punched through both layers. When unfolded, how many holes appear?",
+      "options": ["2", "1", "4", "3"],
+      "correct": 0,
+      "rationale": "One fold makes 2 layers; the punch pierces both, so 2 holes appear on opening - mirror images of each other across the crease. Hole count always equals the number of layers punched."
+    },
+    {
+      "id": 2,
+      "question": "A square is folded twice (each fold stacking the sheet over itself) and then punched once. The unfolded sheet will show:",
+      "options": ["4 holes in symmetric positions", "2 holes", "8 holes", "1 hole"],
+      "correct": 0,
+      "rationale": "Two folds create 4 layers, so one punch = 4 holes, positioned by reflecting the punch across each fold line in turn. If a question mentions THREE folds, the count would be 8."
+    },
+    {
+      "id": 3,
+      "question": "When unfolding a punched paper, the correct order of operations is:",
+      "options": ["Unfold in the reverse order of folding - last fold made is first fold opened", "Unfold in the same order as folding", "Order does not matter", "Unfold all folds simultaneously"],
+      "correct": 0,
+      "rationale": "Unfolding reverses the physical history: the last fold created the innermost mirror, so it is released first. Working in the original fold order is the single most common error in this chapter."
+    },
+    {
+      "id": 4,
+      "question": "A paper is folded once vertically and the punch lands exactly ON the folded edge. Opening the sheet reveals:",
+      "options": ["One hole centred on the crease line", "Two holes on the crease", "No hole", "Two holes off the crease"],
+      "correct": 0,
+      "rationale": "A punch on the crease pierces both layers at the same spot; the two half-holes merge on opening into a single hole straddling the fold line. Count = 1, position = on the crease."
+    },
+    {
+      "id": 5,
+      "question": "A square is folded right-over-left, then bottom-over-top, and the top-left corner of the quarter-stack is punched. The unfolded sheet shows:",
+      "options": ["Four holes, one in each corner", "Two holes on the left edge", "Four holes along the top edge only", "One hole in the centre"],
+      "correct": 0,
+      "rationale": "Unfold the horizontal fold first: the corner hole mirrors top-bottom (2 holes, left side). Then unfold the vertical fold: both mirror left-right (4 holes - all four corners). Each fold adds its own reflection."
+    },
+    {
+      "id": 6,
+      "question": "In paper-cutting questions, a triangular notch cut from the FOLDED EDGE opens into:",
+      "options": ["A symmetric composite shape (e.g. a diamond/rhombus)", "The same single triangle", "A pentagon", "Nothing changes"],
+      "correct": 0,
+      "rationale": "The notch's mirror across the crease joins it into a doubled symmetric shape - two triangles back-to-back make a rhombus. Cuts obey the same reflection law as punches; only the shapes are richer."
+    },
+    {
+      "id": 7,
+      "question": "The hole-count rule for papers folded n times (each fold stacking the sheet) is:",
+      "options": ["Each fold doubles the layers, so a punch makes 2^n holes", "Each fold adds one hole", "Folds do not change the count", "The count equals the number of folds plus one"],
+      "correct": 0,
+      "rationale": "Layers double per stacking fold: 1, 2, 4, 8 for 0, 1, 2, 3 folds - 2 to the power n. Note the exception: a punch landing exactly on a crease can merge its images."
+    },
+    {
+      "id": 8,
+      "question": "In exam figures of folded papers, dashed lines typically represent:",
+      "options": ["Fold creases", "The punch holes", "The paper's outer edge", "Cut-out shapes"],
+      "correct": 0,
+      "rationale": "Standard convention: solid lines are visible edges, dashed lines are fold creases, arrows show fold direction. Reading the creases first tells you the stacking geometry before you track any punch."
+    },
+    {
+      "id": 9,
+      "question": "The final pattern of an unfolded punched paper must satisfy:",
+      "options": ["Symmetry across every fold line used", "Symmetry only across the first fold", "Equal holes on the left half only", "No particular symmetry"],
+      "correct": 0,
+      "rationale": "Every crease is a mirror the pattern must respect. An option with the right hole count but broken crease-symmetry is wrong - symmetry checking is the fastest final verification."
+    },
+    {
+      "id": 10,
+      "question": "A question says a paper was folded three times and then punched twice in different spots. The unfolded sheet shows at most:",
+      "options": ["16 holes", "8 holes", "6 holes", "12 holes"],
+      "correct": 0,
+      "rationale": "Three folds = 8 layers; each of the two punches prints on all 8 layers: 2 x 8 = 16 holes. 'At most' guards the crease-merging exception - punches on creases can fuse their images."
+    }
+  ]
+}

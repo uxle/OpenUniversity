@@ -1,14 +1,16 @@
 // src/components/layout/header.js — minimal sticky header: brand on the
 // left; on the right, three BARE icon actions (no circles, no chrome —
 // soft rounded squares appear only as hover/active affordances):
-//   [ search ]  [ light/dark ]  [ menu ]
+//   [ search (≥720px only) ]  [ menu ]
+// Search lives in the bottom nav on phones (thumb zone), so the header
+// copy only appears where the bottom nav drops its Search tab (≥720px).
+// The light/dark toggle lives in the menu sheet, not the header.
 // The menu button sits at the top-right corner and opens the full-screen
 // menu sheet (see menu-sheet.js) — the old "More" dropdown is gone.
 // Primary navigation ALSO lives in the bottom nav at every screen width
 // (see components/layout/mobile-navigation.js).
 import { createEl } from "../../utils/dom.js";
 import { icon } from "../../utils/icon.js";
-import { createThemeToggleButton } from "./theme-toggle.js";
 import { createMenuSheet } from "./menu-sheet.js";
 
 export function createHeader(palette = null) {
@@ -54,7 +56,6 @@ export function createHeader(palette = null) {
     ]),
     createEl("div", { class: "ou-navbar__actions" }, [
       searchBtn,
-      createThemeToggleButton(),
       menuTrigger,
     ]),
   ]);

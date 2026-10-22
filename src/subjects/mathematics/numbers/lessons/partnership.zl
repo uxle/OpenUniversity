@@ -1,0 +1,137 @@
+# Partnership: Sharing Profits Fairly
+
+> When people pool money to run a business, the profit must be split
+> in a way everyone accepts as fair. Partnership questions convert
+> that fairness into arithmetic: multiply each partner's money by the
+> time it stayed invested, and share the profit in exactly those
+> ratios.
+
+## 1. Simple Partnership: Same Time, Different Money
+
+[definition]
+A **partnership** is a business owned jointly by two or more people
+(the partners), who agree in advance how profits and losses will be
+shared. When all partners invest for the **same period**, the profit
+is shared in the ratio of their investments.
+[/definition]
+
+**Worked example.** A, B and C invest ₹40,000, ₹50,000 and ₹60,000
+in a business and earn a profit of ₹45,000 in a year.
+
+Investment ratio $= 4 : 5 : 6$, which has $4+5+6 = 15$ parts. Each
+part $= 45000/15 = 3000$. So A gets ₹12,000, B gets ₹15,000 and
+C gets ₹18,000.
+
+## 2. Compound Partnership: Different Times
+
+When partners invest for **different periods** (or join and leave at
+different dates), money alone is not fair — a rupee invested for a
+year works harder than one invested for a month.
+
+[important]
+The governing rule of every partnership question:
+
+@math label="eq:partner-rule}
+\text{profit share} \propto \text{investment} \times \text{time}
+@/math
+
+Replace each partner's investment by the product
+**(capital) x (months)**, and share the profit in the ratio of those
+products.
+[/important]
+
+**Worked example.** A starts a business with ₹20,000. After 4 months
+B joins with ₹30,000. At the year end, out of a profit of ₹27,800,
+what does B receive?
+
+A's money worked 12 months: $20000 \times 12 = 240000$.
+B's money worked 8 months: $30000 \times 8 = 240000$.
+The ratio is $1 : 1$, so B takes half: **₹13,900**.
+
+## 3. Working Partners and Salary
+
+Sometimes one partner also *works* while the others only contribute
+money. A typical arrangement pays the working partner a fixed salary
+(or a percentage of profit) first, and the remainder is then divided
+by the investment rule.
+
+**Worked example.** A invests ₹1,00,000 and B invests ₹50,000. B
+manages the shop and is paid ₹4,000 per month from the profits. At
+the year end the profit is ₹68,000. Find each partner's total
+take.
+
+Salary first: $12 \times 4000 = 48000$ leaves ₹20,000. The remaining
+$20000$ is divided $100000 : 50000 = 2 : 1$ — A gets
+$\frac{2}{3} \times 20000 = 13333.33$ and B gets $6666.67$. Totals:
+A ≈ ₹13,333; B = 48000 + 6666.67 = **₹54,667**.
+
+[example]
+Notice the design of the answer: the money-only partner still earns
+more than zero — the salary recognises labour, the ratio recognises
+capital, and the exam checks that you apply them in the right
+**order**: salary out first, ratio on the remainder.
+[/example]
+
+## 4. Finding Capital or Time from a Known Ratio
+
+The rule runs backwards just as smoothly: if the profit ratio and one
+capital are known, the other capital (or its time) follows.
+
+**Worked example.** A and B share profits in the ratio $3 : 2$. B
+invested ₹36,000 for 10 months. A invested ₹40,000. For how long was
+A's money in the business?
+
+@math label="eq:partner-time}
+\frac{40000 \times t}{36000 \times 10} = \frac{3}{2} \;\Rightarrow\; t = \frac{3 \times 360000}{2 \times 40000} = 13.5 \text{ months}
+@/math
+
+**Worked example.** Three partners invest ₹5,000, ₹6,000 and ₹8,000
+for a year. A profit of ₹7,600 is shared in what ratio, and how much
+does the largest investor receive?
+
+Investment ratio $= 5 : 6 : 8$ (19 parts); $7600/19 = 400$ per part.
+Shares are ₹2,000, ₹2,400 and ₹3,200 — the largest investor takes
+**₹3,200**. Well-designed questions always make the profit a clean
+multiple of the part-count, so check divisibility early: if it fails,
+you have misread the ratio.
+
+## 5. Replacement, Withdrawal and Mid-Year Changes
+
+Capital changes mid-stream are handled by splitting the year at each
+change and adding the products.
+
+**Worked example.** A invests ₹30,000. After 6 months he adds
+₹10,000 more. B invests ₹50,000 throughout. Ratio of profits?
+
+@math label="eq:partner-withdraw}
+A: 30000 \times 6 + 40000 \times 6 = 420000, \qquad B: 50000 \times 12 = 600000
+@/math
+
+Ratio $= 420000 : 600000 = 7 : 10$.
+
+| Situation | What to do |
+| --- | --- |
+| Partner joins late | count only the months after joining |
+| Partner withdraws mid-year | split the timeline at the event, add products |
+| Capital increased | same split-and-add treatment |
+| Two working partners | salaries to each first, ratio on the rest |
+
+## 6. Common Traps
+
+- **Using the money ratio when times differ.** The single most common
+  error; always multiply by time first.
+- **Forgetting to pay salary/rent before ratio division** when the
+  question mentions a working partner.
+- **Ignoring "after 4 months"** — B's money did not work 12 months
+  but 8.
+- **Ratio order mix-ups.** Keep the letters in the same order on both
+  sides of the colon; a flipped answer is always among the options.
+
+## 7. Summary
+
+Every partnership question is one sentence: **profit shares are
+proportional to capital multiplied by time.** Compute each partner's
+product, simplify the ratio, divide the profit by the total parts,
+and distribute. Handle salaries before the ratio, split timelines at
+every deposit or withdrawal, and sanity-check that shares add up to
+the whole profit.

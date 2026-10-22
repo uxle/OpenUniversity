@@ -1,0 +1,639 @@
+/* src/styles/redesign.css — OpenKnowledge UI/UX v2 ("Ink, Signal & Rhythm").
+
+   Loaded LAST (after every component sheet, before print.css) so each rule
+   is a deliberate, reviewable override of v1 rather than an edit scattered
+   across 40 files. Every block carries a change ID (R01…R32) that the
+   design-rationale PDF references one-to-one.
+
+   Design thesis: v1 got the identity right (ink on paper, one soft accent,
+   rounded rectangles) but under-communicated STATE and HIERARCHY — progress
+   was gray, selection was gray, the desktop nav was stretched edge to edge,
+   titles competed with body copy, the quiz had no sense of position. v2
+   keeps the identity and adds exactly one signal color for state, tightens
+   the type hierarchy, calms the motion, and fixes alignment defects. */
+
+/* ── R01 · Global focus ring uses the signal color ────────────────────
+   Ink-on-ink focus rings were indistinguishable from text on light
+   surfaces. A 2px signal ring with 2px offset is visible on both themes
+   and on every surface (3:1+ against adjacent colors, WCAG 2.2 §2.4.11). */
+:where(a, button, select, input, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--ou-signal);
+  outline-offset: 2px;
+  border-radius: var(--ou-radius-sm);
+}
+::selection { background: var(--ou-signal-subtle); color: var(--ou-text); }
+
+/* ── R02 · Display typography: tighter tracking, balanced wraps ─────── */
+h1, h2, h3 { text-wrap: balance; letter-spacing: -0.02em; }
+h1 { line-height: 1.12; }
+.ou-hero-heading {
+  font-size: var(--ou-fs-display);
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+}
+.ou-hero-subtext { font-size: var(--ou-fs-lg); line-height: 1.55; max-width: 52ch; }
+p { text-wrap: pretty; }
+
+/* ── R03 · Page-header rhythm: title + intro form one block ────────────
+   Section titles get a consistent 8/16/32 vertical rhythm so the eye can
+   predict where content starts on every page. */
+.ou-container.ou-stack > h1 + p.ou-text-secondary { margin-top: var(--ou-space-2); max-width: 62ch; }
+.ou-stack--loose > * + * { margin-top: clamp(2rem, 5vw, 3rem); }
+.ou-section-title-row h2 { font-size: var(--ou-fs-xl); letter-spacing: -0.02em; }
+
+/* ── R04 · Hero atmosphere (home) ──────────────────────────────────────
+   A soft two-stop radial wash behind the hero adds depth and a focal
+   point on an otherwise empty right half of desktop screens, without a
+   single decorative image request. It is paint-only (no layout cost) and
+   fades to the page background so content contrast is unchanged. */
+.ou-app-shell__main { position: relative; isolation: isolate; }
+.ou-app-shell__main:has(.ou-hero-heading)::before {
+  content: "";
+  position: absolute;
+  inset: -56px calc(50% - 50vw) auto;
+  height: min(520px, 70vh);
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 70% at 82% 8%, var(--ou-signal-subtle), transparent 70%),
+    radial-gradient(45% 55% at 12% 0%, color-mix(in srgb, var(--ou-hue) 10%, transparent), transparent 70%);
+}
+
+/* ── R05 · Hero search: the primary action looks primary ──────────────── */
+.ou-hero-search, .ou-search-hero, .ou-hero input[type="search"] { box-shadow: var(--ou-shadow-sm); }
+.ou-hero-search:focus-within, .ou-search-hero:focus-within {
+  border-color: var(--ou-signal-border);
+  box-shadow: 0 0 0 4px var(--ou-signal-subtle), var(--ou-shadow-sm);
+}
+
+/* ── R06 · Card elevation: calmer lift, signal edge on hover ───────────
+   v1 lifted cards 6px with a layered 3-shadow stack — jumpy on a grid of
+   nine cards. 2px travel + one shadow step reads as "responsive", not
+   "bouncy", and keeps neighbouring cards from visually colliding. */
+.ou-card--interactive:hover {
+  transform: translateY(var(--ou-lift));
+  box-shadow: var(--ou-shadow-md);
+  border-color: var(--ou-signal-border);
+}
+.ou-card--interactive:active { transform: scale(0.992); }
+.ou-card { border-radius: var(--ou-radius-xl); }
+
+/* ── R07 · Subject cards: title hierarchy fixed ────────────────────────
+   v1 set card titles at 1.85rem with the global 1.6 line-height, so
+   "Computer Science" wrapped into two double-spaced lines and the title
+   outweighed the page H1. Title → 1.375rem / 1.2 leading restores the
+   H1 > card title > description > meta ladder. */
+.ou-subject-card .ou-card__title {
+  font-size: var(--ou-fs-xl);
+  line-height: var(--ou-lh-tight);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--ou-space-2);
+}
+.ou-subject-card .ou-card__subtitle { font-size: var(--ou-fs-sm); line-height: 1.55; }
+.ou-subject-card__icon {
+  box-shadow: none;   /* v1: a stray rgba(0,113,227) blue glow under every icon */
+  border-radius: var(--ou-radius-md);
+}
+.ou-card--interactive:hover .ou-subject-card__icon { transform: scale(1.06); box-shadow: none; }
+.ou-subject-card__footer { border-top-style: solid; letter-spacing: 0.01em; }
+
+/* ── R08 · Progress uses signal (bar + ring) ───────────────────────────
+   Gray progress fails the "state must be visible at a glance" test: the
+   0%→100% journey was ink-on-gray everywhere. Signal fill on a quiet
+   track makes completion the one colorful thing on the page. */
+.ou-progress-bar { height: 6px; background: var(--ou-border-strong); }
+.ou-progress-bar__fill { background: var(--ou-signal); }
+.ou-progress-ring circle:last-of-type { stroke: var(--ou-signal); }
+.ou-reading-progress { height: 3px; }
+.ou-reading-progress__fill { background: var(--ou-signal); }
+.ou-progress-ring__label--muted { color: var(--ou-text-secondary); }
+
+/* ── R09 · Primary button: flat ink, firmer states ─────────────────────
+   Gradient-on-ink gave a faint "plastic" sheen at 40px height. Flat ink
+   is more honest, and the hover/active ladder (glow → press) is kept. */
+.ou-btn { min-height: 44px; padding-inline: var(--ou-space-5); letter-spacing: -0.005em; }
+.ou-btn--sm { min-height: 36px; padding-inline: var(--ou-space-3); }
+.ou-btn--primary { background: var(--ou-accent); box-shadow: var(--ou-shadow-xs); }
+.ou-btn--primary:hover:not(:disabled) { filter: none; background: var(--ou-accent-hover); box-shadow: var(--ou-shadow-md); }
+.ou-btn--secondary { border-color: var(--ou-border-strong); }
+.ou-btn--secondary:hover:not(:disabled) { border-color: var(--ou-signal-border); }
+.ou-btn:disabled { opacity: 0.4; }
+.ou-btn--bare, .ou-btn--icon { min-height: 44px; }
+
+/* ── R10 · Chips: selection is shown by signal + check, not just fill ──
+   Color-only state fails WCAG 1.4.1. The selected chip gains a ✓ glyph
+   (shape cue) AND a signal tint (color cue). */
+.ou-mock-chip { min-height: 44px; padding-inline: var(--ou-space-4); border-width: 1px; }
+.ou-mock-chip:hover { border-color: var(--ou-signal-border); background: var(--ou-surface-subtle); }
+.ou-mock-chip[aria-pressed="true"] {
+  background: var(--ou-signal-subtle);
+  border-color: var(--ou-signal);
+  color: var(--ou-signal);
+}
+.ou-mock-chip[aria-pressed="true"]::before {
+  content: "✓";
+  margin-right: 6px;
+  font-weight: 800;
+}
+
+/* ── R11 · Custom checkbox, GLOBAL (fixes the 44px native square) ──────
+   Applies to every checkbox in the app — the same defect also hit the
+   two Settings toggles, which rendered as 44px white boxes.
+   (original note follows)
+   accessibility.css gives every checkbox a 44×44 minimum, which made the
+   native control a giant browser-blue block that broke the palette. The
+   hit area now belongs to the LABEL (44px tall); the control itself is a
+   22px rounded square drawn in tokens. */
+input[type="checkbox"],
+.ou-check {
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 0; min-height: 0;
+  width: 22px; height: 22px;
+  flex: none;
+  margin: 0;
+  display: inline-grid;
+  place-content: center;
+  border: 1.5px solid var(--ou-border-strong);
+  border-radius: 7px;
+  background: var(--ou-surface);
+  transition: background var(--ou-dur-1), border-color var(--ou-dur-1), box-shadow var(--ou-dur-1);
+}
+input[type="checkbox"]::after,
+.ou-check::after {
+  content: "";
+  width: 11px; height: 6px;
+  border-left: 2.5px solid var(--ou-signal-contrast);
+  border-bottom: 2.5px solid var(--ou-signal-contrast);
+  transform: translateY(-1px) rotate(-45deg) scale(0);
+  transition: transform var(--ou-dur-2) var(--ou-transition-bounce);
+}
+input[type="checkbox"]:checked,
+.ou-check:checked { background: var(--ou-signal); border-color: var(--ou-signal); }
+input[type="checkbox"]:checked::after,
+.ou-check:checked::after { transform: translateY(-1px) rotate(-45deg) scale(1); }
+.ou-mock-timed-label:hover input[type="checkbox"]:not(:checked) { border-color: var(--ou-signal-border); }
+.ou-mock-timed-label { min-height: 44px; color: var(--ou-text); }
+
+/* ── R12 · Select + builder controls share one control language ─────── */
+.ou-mock-select { min-height: 44px; border-width: 1px; padding-inline: var(--ou-space-4); }
+.ou-mock-select:hover { border-color: var(--ou-signal-border); }
+.ou-mock-builder__controls { row-gap: var(--ou-space-3); }
+.ou-mock-builder__controls > .ou-btn--primary { margin-left: auto; }
+.ou-mock-card__icon, .ou-mock-builder__head > .ou-mock-card__icon { border-radius: var(--ou-radius-md); }
+
+/* ── R13 · Navigation: floating dock on large screens ──────────────────
+   A 5-item bar stretched across 1280+px puts items ~250px apart (weak
+   proximity, long pointer travel — Fitts). On ≥900px it becomes a
+   centered, rounded dock (≈ 520px) hovering 16px above the viewport
+   floor: items are grouped, the page edge is free, and it echoes the
+   app's rounded-rectangle language. Phones keep the full-bleed bar. */
+@media (min-width: 900px) {
+  .ou-mobile-nav {
+    left: 50%; right: auto;
+    bottom: var(--ou-space-4);
+    width: min(540px, calc(100vw - 2 * var(--ou-space-5)));
+    height: var(--ou-bottom-nav-height);
+    padding: 0 var(--ou-space-2);
+    border: 1px solid var(--ou-border-strong);
+    border-radius: var(--ou-radius-xl);
+    box-shadow: var(--ou-shadow-lg);
+    transform: translateX(-50%);
+  }
+  .ou-mobile-nav__item { max-width: none; }
+  .ou-back-to-top { bottom: calc(var(--ou-bottom-nav-height) + var(--ou-space-6)); }
+}
+.ou-mobile-nav__item[aria-current="page"] { color: var(--ou-signal); }
+.ou-mobile-nav__item[aria-current="page"] i { color: var(--ou-signal); }
+.ou-mobile-nav__item[aria-current="page"]::before { background: var(--ou-signal-subtle); }
+
+/* ── R14 · Header: search pill is a button, not a decoration ─────────── */
+.ou-btn--bare:hover:not(:disabled), .ou-btn--bare:focus-visible { color: var(--ou-text); }
+
+/* ── R15 · Progress card (home/progress): metric first, label second ── */
+.ou-progress-card { gap: var(--ou-space-5); }
+.ou-progress-card .ou-card__title { font-size: var(--ou-fs-xl); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ou-progress-card__chevron { color: var(--ou-text-secondary); }
+
+/* ── R16 · Quiz: back link and question share ONE column ───────────────
+   In v1 the back link sat at the page's left edge while the question
+   column was centered 640px wide, so two left edges competed. The
+   container that holds both is now the 640px column. */
+.ou-container.ou-stack:has(> .ou-mcq) { max-width: 640px; margin-inline: auto; }
+.ou-container.ou-stack:has(> .ou-mcq) > .ou-back-link { margin-bottom: var(--ou-space-2); }
+.ou-mcq__header h2 {
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--ou-text-secondary);
+}
+
+/* ── R17 · Quiz options: lettered, no layout shift, state has a shape ──
+   v1 nudged hovered options 4px sideways (layout-adjacent motion that
+   makes a click target move under the pointer). v2 keeps the option
+   still, adds an A–D key (matches keyboard shortcuts and exam
+   convention) and a signal border on hover. Correct/incorrect add a
+   glyph so state never relies on red/green alone. */
+.ou-mcq-options { counter-reset: opt; gap: var(--ou-space-3); }
+.ou-mcq-option {
+  counter-increment: opt;
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-3);
+  padding: var(--ou-space-3) var(--ou-space-4);
+  border-width: 1px;
+  border-radius: var(--ou-radius-lg);
+  line-height: 1.4;
+}
+.ou-mcq-option::before {
+  content: counter(opt, upper-alpha);
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--ou-surface-subtle);
+  border: 1px solid var(--ou-border);
+  font-size: var(--ou-fs-xs);
+  font-weight: 700;
+  color: var(--ou-text-secondary);
+  transition: background var(--ou-dur-1), color var(--ou-dur-1), border-color var(--ou-dur-1);
+}
+.ou-mcq-option:hover:not(:disabled) {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--ou-signal);
+  background: var(--ou-signal-subtle);
+}
+.ou-mcq-option:hover:not(:disabled)::before {
+  background: var(--ou-signal);
+  border-color: var(--ou-signal);
+  color: var(--ou-signal-contrast);
+}
+.ou-mcq-option--correct { box-shadow: none; animation: none; border-width: 1.5px; }
+.ou-mcq-option--incorrect { box-shadow: none; border-width: 1.5px; }
+.ou-mcq-option--correct::before { content: "✓"; background: var(--ou-success); border-color: var(--ou-success); color: var(--ou-accent-contrast); }
+.ou-mcq-option--incorrect::before { content: "✕"; background: var(--ou-danger); border-color: var(--ou-danger); color: var(--ou-accent-contrast); }
+.ou-mcq-question { font-size: var(--ou-fs-xl); line-height: 1.3; letter-spacing: -0.02em; }
+
+/* ── R18 · Results: score is the hero, ink not gradient ────────────────
+   Gradient-clipped text is low-contrast at the light end of the gradient
+   on dark theme (WCAG 1.4.3 risk) and prints as nothing in forced-colors
+   mode. A solid signal numeral is legible everywhere. */
+.ou-mcq-result__score, .ou-mcq-result__score--high {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--ou-signal);
+}
+
+/* ── R19 · Lesson reader: single title, shorter chrome, real measure ───
+   (a) The article repeated the page title as a second H1 directly under
+       the header block — removed visually; the header H1 is the
+       document's one heading 1 (also fixes the duplicate-H1 outline).
+   (b) Reader controls sit on one row; action buttons share a row.
+   (c) Body leading rises 1.6 → 1.75 and the measure is capped at 68ch (it
+       was already ≈70ch at 1280px, so the cap guards wider containers).
+       The lesson title uses a reading-context size (28–40px), not the
+       52px landing display size, which wrapped long titles to two lines. */
+.ou-lesson-content > h1:first-of-type { display: none; }
+.ou-reader-title { font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.5rem); line-height: 1.12; letter-spacing: -0.03em; }
+.ou-reader-card { padding: clamp(1.25rem, 4vw, 2.5rem); }
+.ou-reader-card .ou-lesson-content { max-width: var(--ou-measure); }
+.ou-lesson-content p, .ou-lesson-content li { line-height: var(--ou-lh-read); }
+.ou-lesson-content h2 { margin-top: 2.2em; margin-bottom: 0.6em; font-size: var(--ou-fs-xl); letter-spacing: -0.02em; }
+.ou-lesson-content h3 { margin-top: 1.8em; margin-bottom: 0.5em; }
+.ou-lesson-content blockquote {
+  font-style: normal;
+  font-size: var(--ou-fs-lg);
+  line-height: 1.6;
+  color: var(--ou-text-secondary);
+  background: transparent;
+  border-left: 3px solid var(--ou-signal);
+  border-radius: 0;
+  padding: 2px 0 2px var(--ou-space-4);
+  margin-inline: 0;
+}
+.ou-reader-top-controls { gap: var(--ou-space-3); flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.ou-reader-meta-row { gap: var(--ou-space-3); padding-bottom: var(--ou-space-4); border-bottom: 1px solid var(--ou-border); margin-bottom: var(--ou-space-5); }
+.ou-lesson-badge {
+  background: var(--ou-signal-subtle);
+  color: var(--ou-signal);
+  letter-spacing: 0.06em;
+}
+.ou-reading-time { color: var(--ou-text-secondary); }
+
+/* ── R20 · Back links: same tap target, clearer affordance ───────────── */
+.ou-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ou-space-2);
+  min-height: 44px;
+  color: var(--ou-text-secondary);
+  font-weight: 600;
+  font-size: var(--ou-fs-sm);
+  transition: color var(--ou-dur-1);
+}
+.ou-back-link:hover { color: var(--ou-text); }
+.ou-back-link i { transition: transform var(--ou-dur-2) var(--ou-transition-fast); }
+.ou-back-link:hover i { transform: translateX(-3px); }
+
+/* ── R21 · Quiz CTA at the end of a lesson: reads as the next step ───── */
+.ou-quiz-cta__icon { background: var(--ou-signal-subtle); color: var(--ou-signal); border-radius: var(--ou-radius-md); }
+.ou-card--interactive:hover .ou-quiz-cta__icon { background: var(--ou-signal); color: var(--ou-signal-contrast); }
+
+/* ── R22 · Empty states: friendlier, centered, actionable ────────────── */
+.ou-empty-state { padding: var(--ou-space-7) var(--ou-space-4); }
+.ou-empty-state__icon { color: var(--ou-signal); opacity: 0.85; }
+
+/* ── R23 · Footer: quieter, and clear of the floating dock ───────────── */
+.ou-app-shell__footer { padding-top: var(--ou-space-6); }
+
+/* ── R24 · Exam runner: timer is a first-class instrument ──────────────
+   Tabular numerals stop the countdown from jittering; the low-time
+   state shares the danger token and gains a weight bump. */
+.ou-exam-timer { font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.ou-exam-timer--low { font-weight: 800; }
+
+/* ── R25 · Motion: hover travel reduced; reduced-motion honored ──────── */
+@media (prefers-reduced-motion: reduce) {
+  .ou-card--interactive:hover, .ou-back-link:hover i, .ou-mcq-option:hover { transform: none; }
+}
+
+/* ── R26 · Mobile: tighter shell padding, dock-free nav unchanged ────── */
+@media (max-width: 599px) {
+  .ou-hero-heading { letter-spacing: -0.03em; }
+  .ou-grid { gap: var(--ou-space-3); }
+  .ou-subject-card .ou-card__subtitle { -webkit-line-clamp: 2; }
+  .ou-reader-card { border-radius: var(--ou-radius-lg); }
+  .ou-reader-top-controls { gap: var(--ou-space-2); }
+}
+
+/* ── R27 · Quiz position label ("Question 3 of 10 · 20%") ──────────────
+   Pairs with components/mcq/mcq-progress.js. Label sits above the bar,
+   tabular numerals so the percentage doesn't jitter between questions. */
+.ou-mcq-progress { margin-bottom: var(--ou-space-5); }
+.ou-mcq-progress__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--ou-space-2);
+  font-size: var(--ou-fs-sm);
+  font-weight: 600;
+  color: var(--ou-text);
+}
+.ou-mcq-progress__pct { color: var(--ou-text-secondary); font-weight: 500; }
+
+/* ── R28 · Exam header: fix text collision on narrow screens ───────────
+   v1 pulled the "N answered" line up with margin-top:-12px to "hug" the
+   header. When the title wrapped to two lines and the helper sentence to
+   two more, the pulled-up line overprinted the sentence's last line
+   (visible at 390px). Negative margins that depend on content height are
+   fragile; the stack's own spacing is used instead. */
+.ou-exam-count { margin-top: var(--ou-space-1); }
+.ou-exam-head__title p { margin-top: var(--ou-space-1); max-width: 46ch; }
+.ou-exam-title { font-size: var(--ou-fs-xl); line-height: var(--ou-lh-tight); letter-spacing: -0.02em; }
+
+/* ── R29 · Exam options share the quiz option language ─────────────────
+   Lettered key, signal state, no sideways shift. "Selected" was a full
+   ink inversion (black slab) plus translateX(4px): heavy, and it moved
+   the target under the pointer. Now: signal border + tint + filled
+   letter. Contrast of signal text on its 10% tint stays ≥ 5.9:1. */
+:has(> .ou-exam-option) { counter-reset: eopt; }
+.ou-exam-option {
+  counter-increment: eopt;
+  display: flex;
+  align-items: center;
+  gap: var(--ou-space-3);
+  border-width: 1px;
+  border-radius: var(--ou-radius-lg);
+  line-height: 1.4;
+}
+.ou-exam-option::before {
+  content: counter(eopt, upper-alpha);
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  background: var(--ou-surface-subtle);
+  border: 1px solid var(--ou-border);
+  font-size: var(--ou-fs-xs);
+  font-weight: 700;
+  color: var(--ou-text-secondary);
+}
+.ou-exam-option:hover { border-color: var(--ou-signal-border); background: var(--ou-surface-subtle); box-shadow: none; transform: none; }
+.ou-exam-option--selected,
+.ou-exam-option--selected:hover {
+  background: var(--ou-signal-subtle);
+  color: var(--ou-text);
+  border-color: var(--ou-signal);
+  border-width: 1.5px;
+  box-shadow: none;
+  transform: none;
+}
+.ou-exam-option--selected::before {
+  content: "✓";
+  background: var(--ou-signal);
+  border-color: var(--ou-signal);
+  color: var(--ou-signal-contrast);
+}
+
+/* ── R30 · Exam palette: answered = signal, current = ring ───────────── */
+.ou-exam-palette__cell--answered {
+  background: var(--ou-signal-subtle);
+  border-color: var(--ou-signal);
+  color: var(--ou-signal);
+}
+
+/* ── R31 · Target size sweep (WCAG 2.5.5 / Apple HIG 44pt) ─────────────
+   Found by measuring every visible interactive element at 1280 and 390px:
+   the brand link (30px tall), footer links (~19px) and the language
+   <select> (36px via .ou-btn--sm in R09) fell short. The select is a
+   primary control on phones, so selects keep 44px even when "small".
+   Inline links inside running text keep their natural size (the
+   WCAG 2.5.8 inline exception), and the off-screen skip link is only
+   ever seen when focused. */
+select.ou-btn, select.ou-btn--sm { min-height: 44px; }
+.ou-navbar__brand { display: inline-flex; align-items: center; min-height: 44px; }
+a.ou-footer-link { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ── R32 · Settings: grouped cards, toggles with hints ─────────────────
+   v1 stacked an h2, a 360px form and two bare checkboxes directly on the
+   page background: no grouping, no hierarchy, a full-width Save. Now each
+   concern lives in one card (common region), toggles are 44px rows with
+   a one-line explanation (recognition over recall), and Save is only as
+   wide as its label. */
+.ou-settings-card { max-width: 640px; }
+.ou-settings-card .ou-account-form { max-width: none; }
+.ou-settings-card h2 { font-size: var(--ou-fs-lg); margin-bottom: var(--ou-space-3); }
+.ou-account-form input { min-height: 44px; border-color: var(--ou-border-strong); border-radius: var(--ou-radius-md); }
+.ou-account-form input:hover { border-color: var(--ou-signal-border); }
+.ou-account-form input:focus-visible { outline-offset: 0; border-color: var(--ou-signal); box-shadow: 0 0 0 4px var(--ou-signal-subtle); }
+.ou-account-form .ou-btn { align-self: flex-start; }
+label:has(> input[type="checkbox"]) { min-height: 44px; cursor: pointer; }
+.ou-settings-toggle { display: flex; align-items: flex-start; gap: var(--ou-space-3); padding-block: var(--ou-space-2); }
+.ou-settings-toggle + .ou-settings-toggle { border-top: 1px solid var(--ou-border); }
+.ou-settings-toggle input { margin-top: 2px; }
+.ou-settings-toggle__text { display: flex; flex-direction: column; gap: 2px; }
+.ou-settings-toggle__text strong { font-weight: 600; }
+.ou-settings-toggle__text small { color: var(--ou-text-secondary); line-height: 1.45; }
+
+/* ── R33 · About: balanced grid + tighter heading gap ──────────────────
+   Four cards in a 3-column grid orphaned the fourth on its own row.
+   A grid whose last child is the 4th card switches to 2×2 from 600px.
+   The loose stack also put 48px between the H1 and its own intro. */
+.ou-stack--loose > h1 + p { margin-top: var(--ou-space-3); }
+@media (min-width: 600px) {
+  .ou-grid:has(> .ou-card:nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ── R34 · Link rows get a "go" affordance ─────────────────────────────
+   Sub-subject tiles and lesson rows were bare text in a bordered box —
+   nothing said "tap me". A trailing chevron (signifier) that nudges on
+   hover turns them into obvious, scannable navigation rows. */
+ul.ou-stack > li > a.ou-card--interactive,
+.ou-card--interactive:has(> .ou-card__title:only-child) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ou-space-3);
+}
+ul.ou-stack > li > a.ou-card--interactive::after,
+.ou-card--interactive:has(> .ou-card__title:only-child)::after {
+  content: "›";
+  flex: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--ou-text-muted);
+  transition: transform var(--ou-dur-2) var(--ou-transition-fast), color var(--ou-dur-1);
+}
+ul.ou-stack > li > a.ou-card--interactive:hover::after,
+.ou-card--interactive:has(> .ou-card__title:only-child):hover::after { transform: translateX(3px); color: var(--ou-signal); }
+
+/* ── R35 · One search, in the right place ────────────────────────────────
+   Search appeared three times on a phone (header icon, bottom-nav tab,
+   menu row). Redundant paths cost attention (Hick) and clutter the
+   smallest screen. Rule: phones get Search in the bottom nav (thumb
+   zone) and NOT in the header; ≥720px the header carries the labelled
+   Ctrl K pill and the bottom nav drops its Search tab. The theme toggle
+   moves out of the header into the menu sheet, leaving the phone header
+   as brand + menu only. */
+@media (max-width: 719.98px) {
+  .ou-navbar__search-trigger { display: none; }
+}
+@media (min-width: 720px) {
+  .ou-mobile-nav__item--search { display: none; }
+}
+
+/* ── R36 · Progress becomes a dashboard that leads somewhere ─────────────
+   v1: the summary card linked to the page you were already on (a dead
+   tap), the subject chart had no labels (black bars), the ring said
+   "Start" after lessons were completed (no total passed), and nothing
+   offered a next step. v2: a static summary, three stat tiles, a
+   "What next?" action grid (continue, quiz-me-on-what-I-learned, weak
+   topics, mock test), labelled subject rows that open the subject, a
+   completed-lesson list with one-tap Quiz/Retake, and achievements that
+   show locked goals. */
+.ou-prog .ou-progress-card--static { display: flex; align-items: center; }
+.ou-prog .ou-progress-card--static:hover { transform: none; }
+.ou-prog h2 { margin-top: var(--ou-space-6); margin-bottom: var(--ou-space-3); font-size: var(--ou-fs-xl); letter-spacing: -0.02em; }
+.ou-prog-section > * + * { margin-top: var(--ou-space-3); }
+.ou-prog-section > h2 { margin-bottom: var(--ou-space-1); }
+
+.ou-stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--ou-space-3); }
+.ou-stat {
+  background: var(--ou-surface); border: 1px solid var(--ou-border); border-radius: var(--ou-radius-lg);
+  padding: var(--ou-space-3) var(--ou-space-4); display: grid; gap: 2px; justify-items: start;
+}
+.ou-stat__icon { color: var(--ou-signal); font-size: var(--ou-fs-md); }
+.ou-stat__value { font-size: var(--ou-fs-xl); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.ou-stat__label { font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); }
+
+.ou-action-grid { display: grid; gap: var(--ou-space-3); grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
+.ou-action { display: flex; align-items: center; gap: var(--ou-space-3); min-height: 72px; padding: var(--ou-space-3) var(--ou-space-4); }
+.ou-action__icon {
+  flex: none; width: 44px; height: 44px; border-radius: var(--ou-radius-md); display: grid; place-items: center;
+  background: var(--ou-signal-subtle); color: var(--ou-signal); font-size: var(--ou-fs-lg);
+}
+.ou-action__body { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.ou-action__title { font-weight: 700; letter-spacing: -0.01em; }
+.ou-action__text { font-size: var(--ou-fs-sm); color: var(--ou-text-secondary); line-height: 1.4; }
+.ou-action__chev { color: var(--ou-text-muted); flex: none; }
+.ou-action--primary { border-color: var(--ou-signal-border); }
+.ou-action--primary .ou-action__icon { background: var(--ou-signal); color: var(--ou-signal-contrast); }
+.ou-action--soft { opacity: 0.85; }
+
+.ou-prog-list { padding: var(--ou-space-1) var(--ou-space-4); }
+.ou-prog-row {
+  display: grid; grid-template-columns: 1fr auto 16px; grid-template-areas: "name count chev" "bar bar chev";
+  align-items: center; column-gap: var(--ou-space-3); row-gap: 6px; min-height: 56px; padding: var(--ou-space-3) 0;
+  border-bottom: 1px solid var(--ou-border); color: inherit;
+}
+.ou-prog-row:last-child { border-bottom: 0; }
+.ou-prog-row__name { grid-area: name; font-weight: 600; }
+.ou-prog-row__count { grid-area: count; font-size: var(--ou-fs-sm); color: var(--ou-text-secondary); }
+.ou-prog-row__bar { grid-area: bar; display: block; }
+.ou-prog-row__chev { grid-area: chev; color: var(--ou-text-muted); font-size: var(--ou-fs-sm); }
+.ou-prog-row:hover .ou-prog-row__name { color: var(--ou-signal); }
+
+.ou-lesson-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--ou-space-2); }
+.ou-lesson-row {
+  display: flex; align-items: center; gap: var(--ou-space-3); background: var(--ou-surface);
+  border: 1px solid var(--ou-border); border-radius: var(--ou-radius-lg); padding: var(--ou-space-2) var(--ou-space-3) var(--ou-space-2) var(--ou-space-4);
+}
+.ou-lesson-row__main { flex: 1; min-width: 0; display: grid; gap: 4px; padding: var(--ou-space-2) 0; color: inherit; }
+.ou-lesson-row__title { font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.ou-lesson-row__main:hover .ou-lesson-row__title { color: var(--ou-signal); }
+.ou-lesson-row__meta { display: flex; flex-wrap: wrap; gap: 4px var(--ou-space-2); align-items: center; font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); }
+.ou-lesson-row__quiz { flex: none; min-height: 44px; }
+.ou-badge-score { border: 1px solid var(--ou-border-strong); border-radius: var(--ou-radius-pill); padding: 1px 8px; font-weight: 600; }
+.ou-badge-score.is-ok { color: var(--ou-success); border-color: color-mix(in srgb, var(--ou-success) 45%, transparent); }
+.ou-badge-score.is-weak { color: var(--ou-warning); border-color: color-mix(in srgb, var(--ou-warning) 50%, transparent); }
+.ou-lesson-more { justify-self: start; min-height: 44px; }
+.ou-prog-empty { display: grid; gap: var(--ou-space-3); justify-items: start; }
+.ou-prog-empty p { margin: 0; color: var(--ou-text-secondary); }
+
+.ou-badges { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--ou-space-2); grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
+.ou-badge { display: flex; align-items: center; gap: var(--ou-space-3); padding: var(--ou-space-3); border: 1px solid var(--ou-border); border-radius: var(--ou-radius-lg); background: var(--ou-surface); }
+.ou-badge__icon { flex: none; width: 40px; height: 40px; border-radius: var(--ou-radius-md); display: grid; place-items: center; background: var(--ou-surface-subtle); color: var(--ou-text-muted); }
+.ou-badge.is-earned .ou-badge__icon { background: var(--ou-signal-subtle); color: var(--ou-signal); }
+.ou-badge__body { display: grid; gap: 1px; min-width: 0; }
+.ou-badge__title { font-weight: 600; font-size: var(--ou-fs-sm); }
+.ou-badge__hint { font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); }
+.ou-badge.is-locked .ou-badge__title { color: var(--ou-text-secondary); }
+.ou-progress-card > .ou-cluster { flex-wrap: nowrap; flex: 1; min-width: 0; }
+
+/* ── R37 · Menu: only what the bottom nav does not already offer ─────────
+   The sheet repeated Home/Subjects/Search/Tests/Progress (always visible
+   in the bottom nav) and hid the theme switch behind an unlabeled icon.
+   Now: grouped secondary pages + a labelled Light/Dark control. */
+.ou-menu__appearance { display: flex; align-items: center; justify-content: space-between; gap: var(--ou-space-3); padding: var(--ou-space-2) var(--ou-space-3); min-height: 56px; }
+.ou-menu__appearance-label { font-weight: 600; }
+.ou-menu__segs { display: inline-flex; padding: 3px; gap: 3px; background: var(--ou-surface-subtle); border: 1px solid var(--ou-border); border-radius: var(--ou-radius-pill); }
+.ou-menu__seg {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 var(--ou-space-4);
+  border: 0; border-radius: var(--ou-radius-pill); background: transparent; color: var(--ou-text-secondary); font: inherit; font-weight: 600; cursor: pointer;
+}
+.ou-menu__seg[aria-pressed="true"] { background: var(--ou-surface); color: var(--ou-signal); box-shadow: var(--ou-shadow-xs); }
+
+/* ── R38 · Profile & empty pages: every screen offers a next step ────────
+   Profile had one red destructive button and no way to set a name; Notes
+   claimed "No notes for this lesson yet" on the all-notes page. */
+.ou-profile-form { display: grid; gap: var(--ou-space-2); }
+.ou-profile-label { font-weight: 700; }
+.ou-profile-form p { margin: 0; }
+.ou-profile-form__row { display: flex; gap: var(--ou-space-2); flex-wrap: wrap; }
+.ou-profile-input {
+  flex: 1 1 200px; min-height: 44px; padding: 0 var(--ou-space-4); border-radius: var(--ou-radius-md);
+  border: 1px solid var(--ou-border-strong); background: var(--ou-bg); color: var(--ou-text); font: inherit;
+}
+.ou-profile-input:focus-visible { outline: 2px solid var(--ou-signal); outline-offset: 2px; }
+.ou-link-row { display: flex; align-items: center; gap: var(--ou-space-3); min-height: 60px; padding: var(--ou-space-2) 0; border-bottom: 1px solid var(--ou-border); color: inherit; }
+.ou-link-row:last-child { border-bottom: 0; }
+.ou-link-row__icon { flex: none; width: 40px; height: 40px; border-radius: var(--ou-radius-md); display: grid; place-items: center; background: var(--ou-signal-subtle); color: var(--ou-signal); }
+.ou-link-row__body { flex: 1; display: grid; gap: 1px; min-width: 0; }
+.ou-link-row__title { font-weight: 600; }
+.ou-link-row__text { font-size: var(--ou-fs-sm); color: var(--ou-text-secondary); }
+.ou-link-row:hover .ou-link-row__title { color: var(--ou-signal); }
+.ou-profile-reset { justify-self: start; color: var(--ou-danger); }

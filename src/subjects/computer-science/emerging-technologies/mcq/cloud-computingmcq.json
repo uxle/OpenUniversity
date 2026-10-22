@@ -1,0 +1,76 @@
+{
+  "lessonId": "cloud-computing",
+  "title": "Cloud Computing: Renting Computers by the Minute",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is NOT one of NIST's five essential characteristics of cloud computing?",
+      "options": ["Dedicated physical hardware per customer", "On-demand self-service", "Rapid elasticity", "Measured service"],
+      "correct": 0,
+      "rationale": "Clouds use RESOURCE POOLING - multi-tenant hardware shared among customers. Dedicated hardware per customer is private-cloud territory, the opposite of pooling. Self-service, elasticity and metered billing are all core NIST traits."
+    },
+    {
+      "id": 2,
+      "question": "In which service model does the provider manage everything except your data and application configuration?",
+      "options": ["SaaS", "IaaS", "PaaS", "FaaS"],
+      "correct": 0,
+      "rationale": "SaaS delivers the finished application (Gmail, Salesforce): you only supply data and settings. IaaS stops at virtualised hardware, PaaS adds the runtime platform, and FaaS runs code fragments per event."
+    },
+    {
+      "id": 3,
+      "question": "A developer wants to deploy a web app without managing servers, OS patches or runtime updates - just push code. The best fit is:",
+      "options": ["PaaS (or a modern serverless platform)", "IaaS with raw VMs", "Private cloud", "Colocation hosting"],
+      "correct": 0,
+      "rationale": "PaaS (Heroku, App Engine, Vercel) exists precisely for push-code-and-go deployment. IaaS hands you a VM and leaves the OS to you; colocation rents rack space for machines you own."
+    },
+    {
+      "id": 4,
+      "question": "The main difference between containers and virtual machines is that containers:",
+      "options": ["Share the host kernel and virtualise only userland", "Run a full guest operating system each", "Provide stronger kernel-level isolation", "Take minutes to boot"],
+      "correct": 0,
+      "rationale": "Containers package an app with its libraries above a SHARED kernel - hence megabyte images and second-scale starts. VMs virtualise hardware and each carries a full guest OS, giving stronger isolation at gigabyte cost and minute-scale boots."
+    },
+    {
+      "id": 5,
+      "question": "A hospital keeps patient records on its own dedicated infrastructure but bursts analytics jobs to a public provider. This is a:",
+      "options": ["Hybrid cloud", "Public cloud", "Private cloud", "Community cloud"],
+      "correct": 0,
+      "rationale": "Hybrid combines private infrastructure (sensitive workloads, compliance) with public capacity for spiky overflow. Pure private never leaves the organisation; pure public would host everything on shared provider hardware."
+    },
+    {
+      "id": 6,
+      "question": "Adding more identical servers behind a load balancer is called:",
+      "options": ["Horizontal scaling", "Vertical scaling", "Elastic caching", "Sharding"],
+      "correct": 0,
+      "rationale": "Horizontal (scale out) multiplies machines; vertical (scale up) buys a bigger single box. The cloud's elasticity machinery is built on horizontal patterns, since instances can be added and removed automatically."
+    },
+    {
+      "id": 7,
+      "question": "Kubernetes is best described as:",
+      "options": ["A container orchestration platform", "A hypervisor", "A cloud billing tool", "A programming language"],
+      "correct": 0,
+      "rationale": "Kubernetes schedules containers across clusters, restarting failed pods, scaling them and rolling out updates. Hypervisors virtualise hardware for VMs; Kubernetes sits a layer above, managing container fleets."
+    },
+    {
+      "id": 8,
+      "question": "In 'serverless' computing, the term is misleading because:",
+      "options": ["Servers still exist - the provider manages them and you never provision them", "It only works offline", "It forbids databases", "It requires physical machines at the edge"],
+      "correct": 0,
+      "rationale": "Functions-as-a-Service still executes on real servers; what is removed is the operator's job of provisioning, sizing and patching them. Billing is per invocation and per millisecond of execution."
+    },
+    {
+      "id": 9,
+      "question": "Designing across multiple availability zones primarily protects against:",
+      "options": ["The failure of a single data centre", "A worldwide provider bankruptcy", "Slow application code", "Password theft"],
+      "correct": 0,
+      "rationale": "Availability zones are physically separate data centres within a region with independent power and networking; multi-zone designs survive one zone's outage. Surviving a whole region's loss needs multi-region design; code speed and passwords are unrelated concerns."
+    },
+    {
+      "id": 10,
+      "question": "Cloud migration of a long-running steady workload is most often optimised by:",
+      "options": ["Reserved instances or committed-use discounts", "Pure on-demand pricing forever", "Disabling monitoring to cut bills", "Storing all data in the priciest region"],
+      "correct": 0,
+      "rationale": "On-demand pricing is for spiky, unpredictable loads; steady workloads earn large discounts through 1-3 year reservations or committed-use plans - the core of FinOps cost optimisation. Monitoring cuts bills (it finds waste), never raises them."
+    }
+  ]
+}

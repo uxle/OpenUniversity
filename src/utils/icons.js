@@ -39,6 +39,8 @@ export const ICON_NAMES = [
   /* learning actions */
   "bookmark", "note-sticky", "pen", "trash", "file-pdf", "trophy",
   "fire", "graduation-cap", "clock", "wand-magic-sparkles",
+  /* mock tests (batch testing) */
+  "clipboard-list", "list-check", "paper-plane", "rotate-right",
   /* status & meta */
   "circle-info", "circle-question", "circle-check", "circle-xmark",
   "circle-exclamation", "circle-pause", "circle", "triangle-exclamation",

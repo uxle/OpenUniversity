@@ -1,0 +1,76 @@
+{
+  "lessonId": "unification-of-germany-and-italy",
+  "title": "Unification of Germany and Italy: Making Nations in the 19th Century",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Bismarck's famous 'Blood and Iron' speech argued that Germany would be unified by:",
+      "options": ["War and military power, not speeches and votes", "Parliamentary debate", "The Catholic Church", "Economic treaties alone"],
+      "correct": 0,
+      "rationale": "Bismarck told the Prussian Landtag in 1862 that the great questions of the day are decided by iron and blood - a top-down, conservative unification through three engineered wars (1864, 1866, 1870-71)."
+    },
+    {
+      "id": 2,
+      "question": "The German Empire was proclaimed in 1871 at:",
+      "options": ["The Palace of Versailles", "Berlin's Reichstag", "Vienna's Hofburg", "Frankfurt Assembly"],
+      "correct": 0,
+      "rationale": " Wilhelm I was proclaimed Kaiser in the Hall of Mirrors at Versailles - a deliberate humiliation of defeated France, whose loss of Alsace-Lorraine then fed revanche for two generations."
+    },
+    {
+      "id": 3,
+      "question": "The Zollverein (1834) contributed to German unification by:",
+      "options": ["Economically integrating the German states under Prussian leadership", "Creating a joint German-Austrian army", "Abolishing all monarchies", "Unifying the churches"],
+      "correct": 0,
+      "rationale": "The customs union knitted 39 states into one market with Prussia at the centre - economic union preceding and smoothing political union, while Austria, excluded, watched its influence bleed away."
+    },
+    {
+      "id": 4,
+      "question": "The Austro-Prussian War of 1866 resulted in:",
+      "options": ["Austria's exclusion from German affairs", "Austria's annexation of Saxony", "France gaining the Rhineland", "Prussia joining the German Confederation"],
+      "correct": 0,
+      "rationale": "The Seven Weeks' War ended at Koniggratz with Austria crushed and pushed out of German politics; the North German Confederation followed in 1867 under Prussian leadership."
+    },
+    {
+      "id": 5,
+      "question": "Who founded the secret society Young Italy in 1831?",
+      "options": ["Giuseppe Mazzini", "Count Cavour", "Giuseppe Garibaldi", "Victor Emmanuel II"],
+      "correct": 0,
+      "rationale": "Mazzini was the movement's prophet - republican, romantic, insurrectionary. Cavour was the pragmatic statesman, Garibaldi the soldier, Victor Emmanuel the king who reaped what the other three sowed."
+    },
+    {
+      "id": 6,
+      "question": "The Pact of Plombieres (1858) was an agreement between Piedmont and:",
+      "options": ["France under Napoleon III", "Austria under Franz Joseph", "Prussia under Bismarck", "Britain under Palmerston"],
+      "correct": 0,
+      "rationale": "Cavour secretly agreed with Napoleon III that France would help expel Austria from northern Italy in exchange for Nice and Savoy. It produced the war of 1859 - Magenta and Solferino - and brought Lombardy to Piedmont."
+    },
+    {
+      "id": 7,
+      "question": "Garibaldi's Expedition of the Thousand (1860) began with the landing at:",
+      "options": ["Marsala, Sicily", "Naples", "Rome", "Venice"],
+      "correct": 0,
+      "rationale": "The red-shirted Mille landed at Marsala in May 1860, took Sicily and then crossed to the mainland to conquer Naples - handing the south to King Victor Emmanuel II at Teano rather than founding a republic."
+    },
+    {
+      "id": 8,
+      "question": "Rome became the capital of unified Italy in 1871 because:",
+      "options": ["The French garrison left to fight Prussia in 1870", "The Pope invited the king in", "Austria sold the city", "Garibaldi's third march succeeded"],
+      "correct": 0,
+      "rationale": "Napoleon III's protection of the Pope ended when France fell to Prussia in 1870; Italian troops entered Rome through the Porta Pia breach, completing the kingdom. The Pope declared himself the 'prisoner of the Vatican' until Mussolini's Lateran Pacts of 1929."
+    },
+    {
+      "id": 9,
+      "question": "German unification is best described as:",
+      "options": ["A top-down, Prussian-led unification without Austria", "A bottom-up republican revolution", "A federation of equals with Austria included", "A papal-led movement"],
+      "correct": 0,
+      "rationale": "Kleindeutsch: Prussia annexed and absorbed the northern states after 1866 and rode nationalist fervour against France in 1870-71 to weld the south in - monarchy and army, not parliament, made Germany."
+    },
+    {
+      "id": 10,
+      "question": "The Frankfurt Parliament of 1848 was significant because it:",
+      "options": ["Tried and failed to unify Germany through liberal debate", "Successfully crowned a German emperor", "Abolished the Prussian monarchy", "Created the North German Confederation"],
+      "correct": 0,
+      "rationale": "The all-German assembly offered the crown to Frederick William IV, who refused it from the gutter - proving (to Bismarck's generation) that speeches and majorities would not make a nation; armies would."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "lessonId": "sports-terms-trophies-and-venues",
+  "title": "Sports Terms, Trophies and Venues: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The term 'googly' is associated with which sport?",
+      "options": ["Tennis", "Cricket", "Hockey", "Badminton"],
+      "correct": 1,
+      "rationale": "A googly is the leg-spinner's ball that spins the 'wrong' way — the invention credited to B.J.T. Bosanquet in cricket's golden age."
+    },
+    {
+      "id": 2,
+      "question": "'Love' and 'deuce' are terms from:",
+      "options": ["Golf", "Tennis", "Bridge", "Boxing"],
+      "correct": 1,
+      "rationale": "Love (zero) and deuce (40-40) belong to tennis scoring, alongside 'ace' and 'tie-break' — the game's whole vocabulary in two words."
+    },
+    {
+      "id": 3,
+      "question": "The Durand Cup is associated with:",
+      "options": ["Cricket", "Football", "Hockey", "Polo"],
+      "correct": 1,
+      "rationale": "First held in 1888, it is Asia's oldest football tournament — older than every other Indian trophy in the options."
+    },
+    {
+      "id": 4,
+      "question": "The Thomas Cup is competed for in:",
+      "options": ["Men's badminton", "Women's badminton", "Men's tennis", "Golf"],
+      "correct": 0,
+      "rationale": "The Thomas Cup is the men's international team badminton trophy; the Uber Cup is its women's counterpart — the most-swapped pair in sports GK."
+    },
+    {
+      "id": 5,
+      "question": "India won its first Thomas Cup title in:",
+      "options": ["2010", "2014", "2022", "2018"],
+      "correct": 2,
+      "rationale": "India beat Indonesia 3-0 in the 2022 final at Bangkok — the country's first men's team world title in badminton."
+    },
+    {
+      "id": 6,
+      "question": "Which Grand Slam tournament is played on clay courts?",
+      "options": ["Wimbledon", "US Open", "Roland Garros", "Australian Open"],
+      "correct": 2,
+      "rationale": "Roland Garros (the French Open) is the only clay major; Wimbledon is the only grass one. The surface question is the safest mark on the paper."
+    },
+    {
+      "id": 7,
+      "question": "The Ryder Cup is associated with which sport?",
+      "options": ["Golf", "Cricket", "Rowing", "Rugby"],
+      "correct": 0,
+      "rationale": "Golf's Ryder Cup pits Europe against the USA — the team-event exception in an otherwise individual sport."
+    },
+    {
+      "id": 8,
+      "question": "Lord's cricket ground, 'the home of cricket', is located in:",
+      "options": ["Melbourne", "London", "Leeds", "Manchester"],
+      "correct": 1,
+      "rationale": "Lord's sits in St John's Wood, London. The MCG (Melbourne) is the decoy carrying the capacity superlative instead."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is India's officially declared national game?",
+      "options": ["Hockey", "Cricket", "Kabaddi", "None of these"],
+      "correct": 3,
+      "rationale": "India has no officially declared national game — the Sports Ministry clarified this through an RTI reply in 2012. 'Hockey' is folklore, not law."
+    },
+    {
+      "id": 10,
+      "question": "The Nehru Trophy is associated with:",
+      "options": ["Rowing", "Snake-boat racing (Vallam Kali)", "Kabaddi", "Wrestling"],
+      "correct": 1,
+      "rationale": "The Nehru Trophy Boat Race is held on Punnamada Lake at Alappuzha (Alleppey) in Kerala, with the chundan vallam snake-boats."
+    }
+  ]
+}

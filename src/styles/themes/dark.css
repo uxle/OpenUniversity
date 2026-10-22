@@ -5,32 +5,39 @@
    The optional pastel accents (--ou-hue, subject hues in accents.css)
    get lighter variants too so they stay soft — never neon — on black. */
 [data-theme="dark"] {
-  --ou-bg: #000000;
-  --ou-surface: #1c1c1e;
-  --ou-surface-subtle: #2c2c2e;
-  --ou-surface-raised: #2c2c2e;
+  --ou-bg: #141a24;
+  --ou-surface: #1c2431;
+  --ou-surface-subtle: #263042;
+  --ou-surface-raised: #263042;
   --ou-border: rgba(255, 255, 255, 0.09);
   --ou-border-strong: rgba(255, 255, 255, 0.16);
-  --ou-text: #f5f5f7;
-  --ou-text-secondary: #98989d;
-  --ou-text-muted: #636366;
-  --ou-accent: #f5f5f7;
-  --ou-accent-hover: #ffffff;
-  --ou-accent-subtle: rgba(245, 245, 247, 0.12);
-  --ou-accent-contrast: #000000;
-  --ou-focus-ring: #f5f5f7;
-  --ou-success: #6fd08c;
-  --ou-warning: #e8a04c;
-  --ou-danger: #ef6b62;
+  --ou-text: #e8e6df;
+  --ou-text-secondary: #a3acbd;
+  --ou-text-muted: #6f7a8e;
+  --ou-accent: #8fcbb5;
+  --ou-accent-hover: #a6dac7;
+  --ou-accent-subtle: rgba(143, 203, 181, 0.14);
+  --ou-accent-contrast: #141a24;
+  --ou-focus-ring: #b3a7e6;
+  --ou-success: #7fcfa0;
+  --ou-warning: #e3a55a;
+  --ou-danger: #e88a84;
+
+  /* v2 signal — lightened for 4.5:1+ on #1c2431 / #141a24 */
+  --ou-signal: #b3a7e6;
+  --ou-signal-hover: #c6bdf0;
+  --ou-signal-subtle: rgba(179, 167, 230, 0.16);
+  --ou-signal-border: rgba(179, 167, 230, 0.45);
+  --ou-signal-contrast: #141a24;
 
   /* Optional accents — same small-dose rules as light theme. */
-  --ou-hue: #8db9ff;
+  --ou-hue: #7fb0d8;
   --ou-highlight: rgba(255, 214, 10, 0.20);
   --ou-highlight-ink: #ffe68a;
 
-  --ou-gradient-brand: linear-gradient(135deg, #f5f5f7 0%, #c7c7cc 100%);
+  --ou-gradient-brand: linear-gradient(135deg, #8fcbb5 0%, #5fa38d 100%);
   --ou-gradient-hue: linear-gradient(135deg, #8db9ff 0%, #b3a6ff 100%);
-  --ou-gradient-success: linear-gradient(135deg, #f5f5f7 0%, #c7c7cc 100%);
+  --ou-gradient-success: linear-gradient(135deg, #8fcbb5 0%, #5fa38d 100%);
   --ou-gradient-skeleton: linear-gradient(
     90deg,
     #2c2c2e 25%,
@@ -41,7 +48,7 @@
   --ou-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.35);
   --ou-shadow-md: 0 12px 32px rgba(0, 0, 0, 0.55);
   --ou-shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.70);
-  --ou-shadow-glow-accent: 0 0 0 4px rgba(245, 245, 247, 0.16),
+  --ou-shadow-glow-accent: 0 0 0 4px rgba(143, 203, 181, 0.18),
                            0 8px 24px rgba(0, 0, 0, 0.55);
   color-scheme: dark;
 }

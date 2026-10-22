@@ -1,0 +1,76 @@
+{
+  "lessonId": "world-physical-geography",
+  "title": "World Physical Geography: The Face of the Planet",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The largest continent by area is:",
+      "options": ["Asia", "Africa", "North America", "Europe"],
+      "correct": 0,
+      "rationale": "Continents in decreasing area: Asia, Africa, North America, South America, Antarctica, Europe, Australia. Asia also holds both the highest point (Everest) and the lowest exposed land (Dead Sea shore)."
+    },
+    {
+      "id": 2,
+      "question": "The longest continental mountain chain in the world is the:",
+      "options": ["Andes", "Himalayas", "Rockies", "Alps"],
+      "correct": 0,
+      "rationale": "The Andes stretch about 7,000 km down western South America - the longest continental range. The Himalayas hold the highest peaks but are shorter end to end."
+    },
+    {
+      "id": 3,
+      "question": "The 'roof of the world', the largest and highest plateau, is the:",
+      "options": ["Tibetan Plateau", "Deccan Plateau", "Brazilian Plateau", "East African Plateau"],
+      "correct": 0,
+      "rationale": "The Tibetan Plateau averages about 4,500 m and covers around 2.5 million sq km - its summer heating is a principal driver of the Indian monsoon."
+    },
+      {
+      "id": 4,
+      "question": "Which river crosses the Equator twice?",
+      "options": ["Congo", "Nile", "Amazon", "Yangtze"],
+      "correct": 0,
+      "rationale": "The Congo rises south of the Equator, crosses it northward, loops through the rainforest and crosses back southward - a drainage basin lying almost entirely on the Equator."
+    },
+    {
+      "id": 5,
+      "question": "The driest desert in the world is the:",
+      "options": ["Atacama", "Sahara", "Gobi", "Thar"],
+      "correct": 0,
+      "rationale": "Chile's Atacama combines a double rain shadow (Andes) with the cold Humboldt current's stabilising air - some weather stations have never recorded meaningful rain."
+    },
+    {
+      "id": 6,
+      "question": "The strait through which about a fifth of the world's petroleum passes is:",
+      "options": ["Hormuz", "Malacca", "Gibraltar", "Bering"],
+      "correct": 0,
+      "rationale": "The Strait of Hormuz gates the Persian Gulf; tankers carrying roughly 20% of global oil must thread it. Malacca is China's general energy lifeline from Africa and the Gulf."
+    },
+    {
+      "id": 7,
+      "question": "The Suez Canal, opened in 1869, connects:",
+      "options": ["The Mediterranean Sea and the Red Sea", "The Atlantic and Pacific Oceans", "The Baltic and North Seas", "The Black Sea and Caspian Sea"],
+      "correct": 0,
+      "rationale": "Suez links the Mediterranean to the Red Sea, saving ships the Cape of Good Hope rounding - about 7,000 km between Europe and Asia. Panama (Atlantic-Pacific) and Kiel (Baltic-North Sea) are the other great canal shortcuts."
+    },
+    {
+      "id": 8,
+      "question": "The largest lake in the world by area is the:",
+      "options": ["Caspian Sea", "Lake Superior", "Lake Baikal", "Lake Victoria"],
+      "correct": 0,
+      "rationale": "The Caspian, a salt lake, is the largest by area. Baikal is the deepest (and largest by volume of fresh water), Superior the largest freshwater lake by area, and Victoria Africa's largest lake."
+    },
+    {
+      "id": 9,
+      "question": "The Vosges and Black Forest are examples of:",
+      "options": ["Block mountains", "Fold mountains", "Residual mountains", "Volcanic mountains"],
+      "correct": 0,
+      "rationale": "They are fault-bounded uplifted blocks flanking the Rhine rift - block mountains. Fold mountains are young and high (Himalayas, Alps); residual ones are worn-down ancient masses (Aravallis, Urals, Appalachians)."
+    },
+    {
+      "id": 10,
+      "question": "The deepest known point of the world's oceans lies in the:",
+      "options": ["Mariana Trench", "Puerto Rico Trench", "Java Trench", "Tonga Trench"],
+      "correct": 0,
+      "rationale": "The Challenger Deep in the western Pacific's Mariana Trench reaches about 11,000 m - deeper than Everest is tall. All four options are hadal trenches, but the Mariana is the standard exam answer for the deepest."
+    }
+  ]
+}

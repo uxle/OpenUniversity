@@ -1,0 +1,141 @@
+# Blockchain Basics: Trust Without a Middleman
+
+> A blockchain lets strangers who do not trust each other share one
+> tamper-evident ledger — no bank in the middle. It is less an
+> invention than a clever assembly of known parts: hash functions,
+> digital signatures and a consensus rule that makes rewriting
+> history cost more than it could ever pay.
+
+## 1. The Problem Blockchains Solve
+
+Alice pays Bob through a bank because the bank keeps the ledger
+everyone believes. Remove the bank and any peer could claim "Alice
+paid me a million" — who arbitrates? A blockchain makes the ledger
+itself the arbiter: replicated across thousands of independent nodes,
+each holding an identical copy, with rules for adding entries that no
+minority can bend.
+
+| Centralised ledger | Blockchain |
+| --- | --- |
+| one trusted keeper | many untrusting keepers |
+| keeper can censor/reverse | entries effectively irreversible |
+| hours to settle | minutes (or seconds) |
+| single point of failure | survives node loss |
+
+## 2. Hash Functions: The Tamper-Seal
+
+[definition]
+A **cryptographic hash** (SHA-256) converts any input into a fixed
+256-bit fingerprint with three properties: the same input always
+yields the same hash; a tiny input change scrambles the hash
+completely (avalanche effect); and the original cannot be recovered
+from the hash (one-wayness).
+[/definition]
+
+Change one comma in a document and its hash changes beyond
+recognition — which is why hashes are the perfect seal. If a block's
+content changes, its hash changes, and every later block that embeds
+that hash breaks visibly.
+
+## 3. Blocks, Chains and the Chain of Seals
+
+A block bundles transactions plus:
+
+- the **hash of the previous block** — welding blocks into a chain;
+- a timestamp and a **nonce** (a number miners fiddle with);
+- a **Merkle root** — a single hash summarising all transactions in
+  the block, so membership of any transaction can be proved with a
+  short logarithmic path.
+
+@diagram network id="chain-links" layout="hierarchical" aria="Three blocks linked in a chain; each block stores the hash of the previous block"
+node b1 [label="Block 1"]
+node b2 [label="Block 2 - stores hash of Block 1"]
+node b3 [label="Block 3 - stores hash of Block 2"]
+
+edge b1 -> b2
+edge b2 -> b3
+@/diagram
+
+[important]
+To tamper with a transaction in block 100, an attacker must re-mine
+block 100 **and every block after it** faster than the honest network
+adds new blocks. "Immutability" is not magic — it is economics: the
+work needed to rewrite history exceeds any gain from rewriting it,
+provided the majority of computing power stays honest.
+[/important]
+
+## 4. Public Keys, Signatures and Addresses
+
+Each user holds a **private key** (a secret number) and a **public
+key** derived from it. A transaction is signed with the private key;
+anyone can verify the signature with the public key without learning
+the secret. Addresses are hashes of public keys. "Not your keys, not
+your coins" is shorthand for: whoever holds the private key controls
+the funds — lose it and no bank can restore access, since there is no
+bank.
+
+## 5. Consensus: Agreeing Without a Boss
+
+The network must agree on which new block to append, even with
+malicious and slow nodes. Two dominant mechanisms:
+
+| | Proof of Work (PoW) | Proof of Stake (PoS) |
+| --- | --- | --- |
+| Rule | solve a hash puzzle; hardest chain wins | stake coins as collateral; validators chosen by stake |
+| Cost | electricity + specialised hardware | capital at risk (slashing for cheating) |
+| Used by | Bitcoin | Ethereum (since 2022) |
+
+A **51% attack** — controlling majority hash power or stake — can
+censor or reorganise recent blocks, which is why small networks are
+easier to attack than Bitcoin. Longest-chain (heaviest-work) rule and
+finality gadgets resolve honest forks; brief splits are normal, and
+merchants simply wait a few confirmations before trusting a payment.
+
+## 6. Smart Contracts: Programs That Hold Money
+
+[definition]
+A **smart contract** is a program stored on the blockchain that
+executes exactly as written when its conditions are met — a vending
+machine for agreements: put in the input, the code dispenses the
+output, no intermediary can interfere.
+[/definition]
+
+Simple example: an escrow that releases payment to a seller when an
+oracle confirms delivery. Complex reality: DAO hacks and DeFi
+exploits (billions lost to reentrancy and logic bugs) prove that
+"code is law" cuts both ways — deployed contracts are hard to patch.
+Hence the discipline of audits, formal verification and upgradable
+proxy patterns.
+
+## 7. Tokens, Coins and the Wider Ecosystem
+
+- **Coins** (BTC, ETH) secure their own chain; **tokens** ride an
+  existing one (ERC-20 on Ethereum).
+- **Stablecoins** peg value to fiat, trading trustlessness for price
+  stability.
+- **NFTs** tokenise unique ownership (art, tickets, deeds).
+- **Public vs private (permissioned) blockchains**: public = anyone
+  can read/write (Bitcoin); private/consortium = known participants
+  only (Hyperledger) — common in supply-chain and banking pilots
+  where regulation, not censorship-resistance, is the driver.
+
+## 8. Honest Limitations
+
+Throughput remains the Achilles heel — Bitcoin processes ~7
+transactions/second versus tens of thousands for card networks —
+driving a scaling debate between **layer 1** redesigns and **layer 2**
+systems (payment channels, rollups) that batch work off-chain and
+settle on-chain. Energy use under PoW is large; PoS cuts it by over
+99%. Finality is probabilistic; regulation is unsettled; and a
+private key lost is value gone forever. The engineering maturity of
+this ecosystem — measured in losses to bugs — is still young.
+
+## 9. Where Blockchains Genuinely Fit
+
+Use a blockchain when multiple parties who do not fully trust one
+another need a shared, append-only, verifiable record **and** cannot
+anoint a neutral intermediary: cross-border settlement, provenance
+tracking (diamonds, drugs, food), land registries, credentials and
+censorship-resistant value storage. When a trusted central party
+exists and is acceptable, an ordinary database is faster, cheaper and
+easier to fix — the honest first question of any blockchain project.

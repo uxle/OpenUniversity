@@ -1,0 +1,15 @@
+# India GK
+
+@subject {
+  id: india-gk
+  title: "India GK"
+  parent: general-knowledge
+  description: "National symbols, famous firsts, states and union territories, and city nicknames."
+}
+
+@lessons {
+  national-symbols-of-india
+  first-in-india
+  indian-states-and-union-territories
+  nicknames-of-indian-cities
+}

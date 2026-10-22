@@ -1,0 +1,138 @@
+# Assertion and Reason Questions
+
+> Two statements, one instruction: decide whether each is true, and
+> whether the second genuinely explains the first. The format looks
+> like a test of knowledge — and it is — but the knowledge is always
+> packaged inside a fixed five-option decision tree. Learn the tree,
+> and only the truth of the statements remains to be judged.
+
+## 1. The Format
+
+[definition]
+An **assertion (A)** is a statement presented as true. A **reason
+(R)** is offered as its explanation. The five standard options
+combine three judgements: Is A true? Is R true? Does R correctly
+explain A?
+[/definition]
+
+| Option | Meaning |
+| --- | --- |
+| (a) | Both A and R are true, **and R is the correct explanation of A** |
+| (b) | Both A and R are true, **but R is NOT the correct explanation of A** |
+| (c) | A is true, **R is false** |
+| (d) | A is false, **R is true** |
+| (e) | Both A and R are false |
+
+(Some papers use only four options by dropping (e); always read the
+option scheme first.)
+
+## 2. The Four-Step Method
+
+1. **Judge A on its own merits.** True or false? Ignore R entirely
+   while doing this — a plausible R biases you into accepting a
+   false A.
+2. **Judge R on its own merits.** True or false? Ignore A while
+   doing this. Many R statements are true facts that simply have
+   nothing to do with A.
+3. **If both true, test the linkage.** Ask: "Does R answer *why* A
+   holds?" The link test is the intellectual heart of the question
+   — see Section 3.
+4. **Map the three answers onto the option scheme.**
+
+[important]
+The discipline that scores: **judge truth before linkage**. Options
+(c) and (d) exist to catch candidates who never separately verified
+each statement; option (b) exists to catch those who see two true
+statements and stop thinking.
+[/important]
+
+## 3. Testing the Linkage: "Does R Explain A?"
+
+Three standard linkage failures produce option (b):
+
+- **True but irrelevant.** A: "Delhi suffers severe summer heat."
+  R: "The Taj Mahal is made of marble." Both true; R explains
+  nothing about Delhi's climate.
+- **True, related, but causally backwards or insufficient.** A: "It
+  is hot in Delhi in May." R: "People use air conditioners in
+  Delhi." Related — but air conditioners are a *response* to heat,
+  not its cause. Causation reversed.
+- **Both true and related, but R is only a partial or parallel
+  fact.** A: "Monsoon winds reverse direction seasonally." R: "The
+  Indian landmass heats differentially." Here R genuinely explains
+  A — this would be option (a). Compare with: R: "India has a long
+  coastline" — related to monsoons, but not the *mechanism*; that
+  is option (b).
+
+**The BECAUSE test.** Join the statements: "A **because** R." Does
+the joined sentence read like a sound explanation a teacher would
+accept? "Delhi is hot in May **because** people use air
+conditioners" — the sentence is grammatical but causally absurd.
+Reject the link.
+
+## 4. Worked Examples Across Subjects
+
+**Science.** A: Ice floats on water. R: Ice is less dense than
+water. Both true, and density difference is exactly *why* ice
+floats → **(a)**.
+
+**Science (reversed causation).** A: Rivers flood during heavy
+rain. R: Floods cause rainfall. A true, R false → **(c)**.
+
+**Geography.** A: Chennai has a milder climate than Delhi. R:
+Chennai is coastal, and the sea moderates temperature extremes.
+Both true, and the maritime-moderation mechanism is the correct
+explanation → **(a)**.
+
+**Economics.** A: The Reserve Bank raises interest rates to cool
+inflation. R: India is a member of the WTO. A true, R true, zero
+linkage → **(b)**.
+
+**History.** A: The Battle of Plassey (1757) paved the way for
+British rule in Bengal. R: The Mughal empire was founded by
+Babur in 1526. Both true; no explanatory relation → **(b)**.
+
+**Biology (false assertion).** A: Sharks are mammals. R: Sharks
+live in the ocean. A false, R true → **(d)**.
+
+## 5. Traps and How They Bite
+
+- **The beautiful reason for a false statement.** A: "Diamond is
+  the hardest known natural substance." R: "Diamond is made of
+  iron." A true, R false → (c). A seductive-sounding R with a
+  chemistry error inside is the commonest (c) trap.
+- **Two truths, zero relation** — the commonest (b) trap; the
+  statements are both famous facts from the same subject, so they
+  *feel* linked.
+- **Cause-effect inversion** — the sneaky (b): both statements true
+  and on the same topic, but the arrow points the wrong way.
+- **"Always/sometimes/only" absolutes.** A false "only" or "always"
+  turns an otherwise true assertion false. Read for absolute
+  words.
+- **Neglecting option (e)** where it exists: both statements can be
+  fabricated; double-check each truth value against your facts
+  before assuming the question "must" have a true statement.
+
+## 6. Scoring Strategy
+
+- Spend your time budget: ~40 seconds per question. The truth
+  judgements are recall; the linkage test is one "because"
+  sentence.
+- When uncertain of a fact, judge the *relationship* anyway — if
+  the linkage is obviously absurd, options (a) is dead, halving
+  your guess.
+- In papers with negative marking, prefer (b) over (a) when the
+  link is fuzzy: a true-but-imperfect reason is (b) by definition,
+  whereas (a) demands a *correct* explanation.
+- Statement-of-fact subjects (science, history, polity) dominate
+  these questions — your general-studies preparation doubles as
+  the fact base here.
+
+## 7. Summary
+
+Assertion–reason questions reduce to three ordered judgements: Is A
+true? Is R true? Does R explain A? Judge truth separately, then
+apply the BECAUSE test to the joined statements, watching for
+irrelevance and reversed causation. The option scheme then does the
+scoring — and the method, not the memory, is what the format
+actually tests.
