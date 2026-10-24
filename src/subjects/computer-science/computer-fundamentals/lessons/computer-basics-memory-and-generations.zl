@@ -1,0 +1,119 @@
+# Computer Basics: CPU, Memory, Generations and Number Systems
+
+> "Computer awareness" is a scoring section in SSC CGL, CHSL, GD, HSSC CET and police
+> papers because its questions are short and factual. The same handful of ideas return
+> every year: what the CPU does, how memory is ranked, which device is input or output,
+> what marks each generation, and simple binary-to-decimal conversions. Master the
+> tables below and most of the section becomes free marks.
+
+## 1. The CPU and the Computer's Basic Cycle
+
+A computer takes **input**, **processes** it, stores it and gives **output**. The processing is done by the **CPU (Central Processing Unit)**, often called the brain of the computer. A single-chip CPU is called a **microprocessor**.
+
+| Part | Full form | Job |
+| --- | --- | --- |
+| ALU | Arithmetic Logic Unit | Does arithmetic (add, subtract) and logic (compare, AND, OR) |
+| CU | Control Unit | Fetches instructions, decodes them and directs other parts; it does no calculation itself |
+| Registers | Small, very fast storage inside the CPU | Hold data and instructions being used right now |
+
+[definition]
+The **instruction cycle** is fetch, decode, execute. The Control Unit fetches an instruction from memory, decodes it, and the ALU (or another unit) executes it.
+[/definition]
+
+Other terms: **clock speed** is measured in hertz (MHz, GHz); the **motherboard** is the main circuit board that connects everything; the **bus** carries data, addresses and control signals; a **port** is a socket for connecting a device.
+
+## 2. Memory: Units and Hierarchy
+
+The smallest unit is the **bit** (a binary digit, 0 or 1). **4 bits = 1 nibble** and **8 bits = 1 byte**, the unit that stores one character.
+
+| Unit | Equals (binary convention used in exams) |
+| --- | --- |
+| 1 Byte | 8 bits |
+| 1 KB (Kilobyte) | 1024 bytes |
+| 1 MB (Megabyte) | 1024 KB |
+| 1 GB (Gigabyte) | 1024 MB |
+| 1 TB (Terabyte) | 1024 GB |
+| 1 PB (Petabyte) | 1024 TB |
+
+Order to remember: **Bit, Byte, KB, MB, GB, TB, PB, EB, ZB, YB.**
+
+### Hierarchy: fast and costly at the top, slow and cheap at the bottom
+
+| Level | Examples | Nature |
+| --- | --- | --- |
+| Registers | Inside CPU | Fastest, tiny |
+| Cache | L1, L2, L3 | Very fast, between CPU and RAM |
+| Main memory | RAM, ROM | Directly used by CPU |
+| Secondary storage | Hard disk, SSD, pen drive, CD/DVD | Permanent, large, slower |
+
+| Memory | Volatile? | Notes |
+| --- | --- | --- |
+| RAM | Yes (loses data on power off) | Read and write; working memory; types DRAM and SRAM |
+| ROM | No | Holds start-up (boot) instructions; mainly read only |
+| Cache | Yes | Stores frequently used data to speed up the CPU |
+
+Commonly confused: **RAM is primary and volatile; hard disk is secondary and non-volatile.** ROM varieties are PROM, EPROM (erased by ultraviolet light) and EEPROM (erased electrically). **BIOS** is stored in ROM-type memory; **virtual memory** uses part of the hard disk as if it were RAM.
+
+## 3. Input, Output and Storage Devices
+
+| Type | Devices |
+| --- | --- |
+| Input | Keyboard, mouse, scanner, microphone, webcam, joystick, light pen, barcode reader, OMR, OCR, MICR, touch screen (both) |
+| Output | Monitor, printer, plotter, speaker, projector |
+| Storage | Hard disk, SSD, CD, DVD, pen drive, memory card, magnetic tape |
+
+- **OMR** reads pencil marks on answer sheets; **OCR** reads printed or typed text; **MICR** reads magnetic ink characters on bank cheques.
+- A **touch screen** works as both input and output device, as does a modem (it sends and receives signals).
+- Printers: **impact** (dot matrix, daisy wheel; they strike paper) and **non-impact** (inkjet, laser; quieter). Print speed units: **CPS** (characters per second), **LPM** (lines per minute) and **PPM** (pages per minute).
+- Monitor sharpness is given in **pixels** and **resolution**; the mouse's pointing speed is in DPI.
+
+## 4. Generations of Computers
+
+| Generation | Period (approx.) | Key technology | Example or feature |
+| --- | --- | --- | --- |
+| First | 1940 to 1956 | Vacuum tubes | ENIAC, UNIVAC; huge, hot, machine language |
+| Second | 1956 to 1963 | Transistors | Smaller, faster, assembly language, high-level languages like FORTRAN and COBOL |
+| Third | 1964 to 1971 | Integrated circuits (IC) | Keyboard and monitor, operating systems |
+| Fourth | 1971 onward | Microprocessor (VLSI) | Personal computers; Intel 4004 appeared in 1971 |
+| Fifth | Present and beyond | Artificial intelligence, ULSI | Voice recognition, robotics, parallel processing |
+
+Memory trick: **V-T-I-M-A** (Vacuum tube, Transistor, IC, Microprocessor, AI).
+
+Classification by size: **supercomputer** (fastest, for weather and defence; speed in FLOPS), **mainframe** (large organisations, many users), **minicomputer**, **microcomputer** (PC, laptop). Classification by working: **analog**, **digital** and **hybrid**.
+
+Language levels: **machine language** (0s and 1s, the only language a computer directly understands), **assembly language** (uses mnemonics, translated by an **assembler**) and **high-level languages** (translated by a **compiler**, which converts the whole program at once, or an **interpreter**, which works line by line).
+
+## 5. Number Systems and Conversions
+
+| System | Base | Digits used |
+| --- | --- | --- |
+| Binary | 2 | 0, 1 |
+| Octal | 8 | 0 to 7 |
+| Decimal | 10 | 0 to 9 |
+| Hexadecimal | 16 | 0 to 9 and A to F (A=10 ... F=15) |
+
+**Binary to decimal:** multiply each digit by a power of 2 and add. For 101101: 32 + 0 + 8 + 4 + 0 + 1 = **45**.
+
+**Decimal to binary:** divide by 2 repeatedly and read remainders upward. 156 gives **10011100**.
+
+**Hexadecimal and octal to decimal:** 2F in hex = 2 x 16 + 15 = **47**; 745 in octal = 7 x 64 + 4 x 8 + 5 = **485**.
+
+**Shortcuts:** group binary digits in threes for octal and in fours for hex. Binary 10110111 is 1011 | 0111, which is **B7**. Decimal 4095 is **FFF** in hex.
+
+**Binary addition:** 0+0=0, 0+1=1, 1+1=10 (write 0, carry 1). 1101 + 1011 = **11000** (13 + 11 = 24).
+
+[example]
+How many bits are there in a file of 4 KB? One KB is 1024 bytes, so 4 KB = 4 x 1024 = 4096 bytes. Each byte has 8 bits, so 4096 x 8 = **32,768 bits**. Similarly, 1 MB is 1024 x 1024 = 1,048,576 bytes, and 2 GB is 2 x 1024 MB = 2048 MB.
+[/example]
+
+## 6. Commonly Confused Pairs
+
+- **Hardware vs software:** hardware is touchable (monitor, CPU); software is programs. **System software** (operating system, utilities, translators) runs the machine; **application software** (MS Word, Tally) does user tasks.
+- **Operating systems** you should know: Windows, Linux, macOS, Android, iOS; **Linux** is open source; **MS-DOS** is a command-line OS.
+- **Firmware** sits between hardware and software (for example BIOS).
+- **Compiler vs interpreter**, **RAM vs ROM**, **ALU vs CU** (calculation versus control).
+- **Bit vs byte:** 8 bits make one byte; speed is often in bits per second, storage in bytes.
+
+[summary]
+The CPU has an ALU (arithmetic and logic), a CU (control) and registers. Memory units rise by 1024 from byte to KB, MB, GB, TB; 1 byte is 8 bits. Speed order is register, cache, RAM, secondary storage; RAM is volatile, ROM is not. Generations: vacuum tube, transistor, IC, microprocessor, AI. Number systems have bases 2, 8, 10 and 16; practise binary 101101 = 45, 156 = 10011100, hex 2F = 47. Know input, output and storage devices and the compiler versus interpreter difference.
+[/summary]

@@ -1,0 +1,14 @@
+# Computer Fundamentals
+
+@subject {
+  id: computer-fundamentals
+  title: "Computer Fundamentals"
+  parent: computer-science
+  description: "Computer awareness for SSC, banking and police exams: hardware, memory, MS Office, internet and cyber terms."
+}
+
+@lessons {
+  computer-basics-memory-and-generations
+  internet-email-and-cyber-terms
+  ms-office-and-keyboard-shortcuts
+}

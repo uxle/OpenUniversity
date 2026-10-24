@@ -1,0 +1,174 @@
+{
+  "lessonId": "pipes-and-cisterns",
+  "title": "Pipes and Cisterns: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Pipe A can fill a tank in 10 hours and pipe B in 15 hours. If both are opened together, the tank is full in:",
+      "options": [
+        "5 hours",
+        "7.5 hours",
+        "6 hours",
+        "12.5 hours"
+      ],
+      "correct": 2,
+      "rationale": "Rates add: 1/10 + 1/15 = 5/30 = 1/6 per hour, so 6 hours. Shortcut ab/(a+b) = 150/25. Averaging 10 and 15 (12.5) is the tempting error."
+    },
+    {
+      "id": 2,
+      "question": "An inlet pipe fills an empty tank in 8 hours, but a leak at the bottom can empty a full tank in 24 hours. With the leak present, the inlet alone fills the tank in:",
+      "options": [
+        "12 hours",
+        "16 hours",
+        "10 hours",
+        "14 hours"
+      ],
+      "correct": 0,
+      "rationale": "Net rate = 1/8 - 1/24 = 2/24 = 1/12, so 12 hours. A leak subtracts a rate; it does not subtract the times (24 - 8 = 16)."
+    },
+    {
+      "id": 3,
+      "question": "Pipes A and B fill a tank in 20 and 30 hours respectively, while pipe C empties it in 60 hours. If all three are opened together on an empty tank, it fills in:",
+      "options": [
+        "15 hours",
+        "12 hours",
+        "18 hours",
+        "24 hours"
+      ],
+      "correct": 0,
+      "rationale": "With 60 units as capacity: A gives 3, B gives 2, C removes 1 per hour, net 4 units per hour, so 60/4 = 15 hours."
+    },
+    {
+      "id": 4,
+      "question": "A tank normally fills in 6 hours, but because of a leak it takes 8 hours. When the tank is full, the leak alone would empty it in:",
+      "options": [
+        "2 hours",
+        "14 hours",
+        "32 hours",
+        "24 hours"
+      ],
+      "correct": 3,
+      "rationale": "Leak rate = 1/6 - 1/8 = 1/24 per hour, so 24 hours. Shortcut: product over difference = 6 x 8 / (8 - 6)."
+    },
+    {
+      "id": 5,
+      "question": "Pipe A fills a tank in 10 hours and pipe B in 15 hours. They are opened alternately for one hour each, A first. The tank will be full after:",
+      "options": [
+        "10 hours",
+        "12 hours",
+        "12.5 hours",
+        "13 hours"
+      ],
+      "correct": 1,
+      "rationale": "Take 30 units: A adds 3, B adds 2, so 5 units per two-hour cycle. After 6 cycles (12 hours) exactly 30 units are in, so 12 hours. The last hour is B's, which takes the total from 28 to exactly 30."
+    },
+    {
+      "id": 6,
+      "question": "Pipe A can fill a cistern in 12 hours and pipe B in 20 hours. Both are opened together, but A is closed after 3 hours. The total time taken to fill the cistern is:",
+      "options": [
+        "12 hours",
+        "16 hours",
+        "15 hours",
+        "18 hours"
+      ],
+      "correct": 2,
+      "rationale": "With 60 units: A gives 5 and B gives 3 per hour. In 3 hours both put in 24 units, leaving 36, which B alone needs 12 hours for. Total 3 + 12 = 15 hours."
+    },
+    {
+      "id": 7,
+      "question": "Pipe A fills a tank twice as fast as pipe B. Together they fill it in 12 hours. How long would B alone take?",
+      "options": [
+        "24 hours",
+        "36 hours",
+        "18 hours",
+        "48 hours"
+      ],
+      "correct": 1,
+      "rationale": "Let B's rate be x, A's is 2x. Then 3x = 1/12, x = 1/36, so B alone takes 36 hours (and A takes 18)."
+    },
+    {
+      "id": 8,
+      "question": "A tank of capacity 1200 litres has an inlet that delivers 40 litres per minute and an outlet that drains 25 litres per minute. With both open from empty, the tank fills in:",
+      "options": [
+        "30 minutes",
+        "48 minutes",
+        "80 minutes",
+        "60 minutes"
+      ],
+      "correct": 2,
+      "rationale": "Net inflow = 40 - 25 = 15 litres per minute. 1200/15 = 80 minutes. Using only the inlet gives 30 minutes, the common slip."
+    },
+    {
+      "id": 9,
+      "question": "A pipe fills a tank in 9 hours. Because of a leak it takes 1.5 hours longer. The leak alone can empty the full tank in:",
+      "options": [
+        "10.5 hours",
+        "63 hours",
+        "42 hours",
+        "54 hours"
+      ],
+      "correct": 1,
+      "rationale": "Time with leak = 10.5 hours. Leak time = 9 x 10.5 / (10.5 - 9) = 94.5/1.5 = 63 hours."
+    },
+    {
+      "id": 10,
+      "question": "Pipe A fills an empty tank in 8 hours and pipe C empties a full tank in 12 hours. If both are opened together on the empty tank, it will be full in:",
+      "options": [
+        "24 hours",
+        "4 hours",
+        "20 hours",
+        "96 hours"
+      ],
+      "correct": 0,
+      "rationale": "Net rate = 1/8 - 1/12 = 1/24, so 24 hours."
+    },
+    {
+      "id": 11,
+      "question": "A tank is half full. Pipe A can fill the whole tank in 6 hours and pipe B can empty the whole tank in 9 hours. With both open, the tank becomes full in:",
+      "options": [
+        "18 hours",
+        "4.5 hours",
+        "9 hours",
+        "3.6 hours"
+      ],
+      "correct": 2,
+      "rationale": "Net rate = 1/6 - 1/9 = 1/18 of the tank per hour. Only half the tank is needed, so 18/2 = 9 hours."
+    },
+    {
+      "id": 12,
+      "question": "Pipes A and B fill a tank in 6 and 10 hours, and pipe C empties it in 15 hours. They are opened one at a time for one hour each in the order A, B, C, repeating. The tank is full after:",
+      "options": [
+        "12 hours",
+        "15 hours",
+        "14 hours 20 minutes",
+        "13 hours 20 minutes"
+      ],
+      "correct": 3,
+      "rationale": "With 30 units, the rates are +5, +3, -2, a net 6 per three-hour cycle. After 4 cycles (12 hours) there are 24 units. Hour 13 (A) takes it to 29. Then B needs 1 unit at 3 per hour, i.e. 20 minutes. Total 13 h 20 min."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following statements about pipes and cisterns is NOT correct?",
+      "options": [
+        "A leak is treated as a pipe that fills the tank at the same rate",
+        "An outlet pipe is given a negative sign when rates are added",
+        "If a pipe fills a tank in n hours, it fills 1/n of the tank in one hour",
+        "Two filling pipes together always take less time than the faster pipe alone"
+      ],
+      "correct": 0,
+      "rationale": "A leak or outlet empties the tank, so it carries a negative rate. The other three statements are all true."
+    },
+    {
+      "id": 14,
+      "question": "Three pipes can each fill a tank in 30 hours. If all three are opened together and one of them is shut after 4 hours, how many more hours does the remaining pair need to complete the filling?",
+      "options": [
+        "10 hours",
+        "9 hours",
+        "8 hours",
+        "6 hours"
+      ],
+      "correct": 1,
+      "rationale": "All three give 3/30 = 1/10 per hour, so 4 hours fills 4/10. Remaining 6/10 at 2/30 per hour needs 9 hours."
+    }
+  ]
+}

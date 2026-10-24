@@ -4,14 +4,14 @@
       "id": "civics",
       "title": "Civics",
       "description": "The Indian Constitution and political system — its history, institutions, rights, and governing bodies.",
-      "lessonCount": 27,
+      "lessonCount": 29,
       "subSubjects": []
     },
     {
       "id": "computer-science",
       "title": "Computer Science",
       "description": "The study of computation, algorithms, and the systems that run them.",
-      "lessonCount": 47,
+      "lessonCount": 50,
       "subSubjects": [
         {
           "id": "ai-reasoning",
@@ -24,6 +24,12 @@
           "title": "Algorithms",
           "description": "Step-by-step methods for solving problems, and how to measure their efficiency.",
           "lessonCount": 6
+        },
+        {
+          "id": "computer-fundamentals",
+          "title": "Computer Fundamentals",
+          "description": "Computer awareness for SSC, banking and police exams: hardware, memory, MS Office, internet and cyber terms.",
+          "lessonCount": 3
         },
         {
           "id": "cybersecurity",
@@ -86,7 +92,7 @@
       "id": "general-knowledge",
       "title": "General Knowledge",
       "description": "Static GK for competitive exams — symbols, firsts, states, capitals, awards, sports, books, days, culture, and inventions.",
-      "lessonCount": 15,
+      "lessonCount": 28,
       "subSubjects": [
         {
           "id": "art-and-culture",
@@ -107,6 +113,12 @@
           "lessonCount": 1
         },
         {
+          "id": "haryana-gk",
+          "title": "Haryana GK",
+          "description": "Haryana history, geography, districts, economy, culture, places, personalities, sports and schemes for HSSC CET, Haryana Police and state exams.",
+          "lessonCount": 10
+        },
+        {
           "id": "important-days",
           "title": "Important Days",
           "description": "The national and international days every exam expects you to know.",
@@ -116,7 +128,7 @@
           "id": "india-gk",
           "title": "India GK",
           "description": "National symbols, famous firsts, states and union territories, and city nicknames.",
-          "lessonCount": 4
+          "lessonCount": 7
         },
         {
           "id": "science-gk",
@@ -142,14 +154,14 @@
       "id": "geography",
       "title": "Geography",
       "description": "The study of places, landscapes, and how people interact with them.",
-      "lessonCount": 23,
+      "lessonCount": 28,
       "subSubjects": []
     },
     {
       "id": "history",
       "title": "History",
       "description": "The study of past events and how they shaped the present.",
-      "lessonCount": 27,
+      "lessonCount": 30,
       "subSubjects": []
     },
     {
@@ -176,7 +188,7 @@
       "id": "mathematics",
       "title": "Mathematics",
       "description": "The study of numbers, structures, patterns, and change.",
-      "lessonCount": 49,
+      "lessonCount": 54,
       "subSubjects": [
         {
           "id": "algebra",
@@ -194,19 +206,19 @@
           "id": "geometry",
           "title": "Geometry",
           "description": "The study of shapes, sizes, angles, and the properties of space.",
-          "lessonCount": 10
+          "lessonCount": 11
         },
         {
           "id": "numbers",
           "title": "Numbers",
           "description": "What numbers are, the main number families, and place value — the foundation everything else in mathematics builds on.",
-          "lessonCount": 15
+          "lessonCount": 18
         },
         {
           "id": "statistics",
           "title": "Statistics",
           "description": "Collecting, analyzing, and interpreting data.",
-          "lessonCount": 6
+          "lessonCount": 7
         }
       ]
     },

@@ -1,0 +1,111 @@
+# New Criminal Laws: BNS, BNSS and BSA
+
+> On 1 July 2024 India retired three colonial-era statutes and began working with three new ones. The Indian Penal Code,
+> the Code of Criminal Procedure and the Indian Evidence Act all gave way to Sanhitas with Hindi names. Newspapers
+> covered the change for months, so SSC, police and state-level papers now ask which law replaced which, what was
+> added, and which section numbers are famous.
+
+## 1. The Big Picture: Three Old Laws, Three New Ones
+
+All three Bills were passed by Parliament on 21 December 2023 and received the President's assent on 25 December 2023. They came into force together on **1 July 2024**.
+
+| Subject | Old law (year) | New law (2023) | Chapters | Sections |
+| --- | --- | --- | --- | --- |
+| Crimes and punishments (substantive law) | Indian Penal Code, 1860 | Bharatiya Nyaya Sanhita (BNS) | 20 | 358 |
+| Procedure for investigation and trial | Code of Criminal Procedure, 1973 | Bharatiya Nagarik Suraksha Sanhita (BNSS) | 39 | 531 |
+| Rules of evidence | Indian Evidence Act, 1872 | Bharatiya Sakshya Adhiniyam (BSA) | 12 | 170 |
+
+[definition]
+**Substantive law** says what is a crime and how it is punished (IPC, now BNS). **Procedural law** says how police and courts
+handle a case (CrPC, now BNSS). **Law of evidence** says what a court may accept as proof (Evidence Act, now BSA).
+[/definition]
+
+Memory trick: **N**yaya = **N**ature of crime (BNS), **S**uraksha = **S**teps of procedure (BNSS), **S**akshya = **S**ubstantiation by proof (BSA).
+
+The old IPC dated from 1860 and was drafted under Macaulay's Law Commission. The old CrPC in force until 2024 was the 1973 Code, which replaced an earlier 1898 Code.
+
+## 2. Bharatiya Nyaya Sanhita (BNS): Headline Changes
+
+The BNS keeps most IPC offences but renumbers and regroups them. Offences against women and children now come early in the Code, ahead of offences against the human body and property.
+
+| Offence | IPC section | BNS section |
+| --- | --- | --- |
+| Murder (punishment) | 302 | 103 |
+| Culpable homicide (definition) | 299 | 100 |
+| Culpable homicide not amounting to murder (punishment) | 304 | 105 |
+| Attempt to murder | 307 | 109 |
+| Rape (definition / punishment) | 375 / 376 | 63 / 64 |
+| Dowry death | 304B | 80 |
+| Theft | 379 | 303 |
+| Robbery | 392 | 309 |
+| Cheating | 420 | 318 |
+| Defamation | 500 | 356 |
+
+New or reshaped features that exams like:
+
+- **Organised crime** is defined as a separate offence (Section 111), and **terrorism** gets its own offence (Section 113). The IPC had neither.
+- **Mob lynching**: murder by a group of five or more persons on grounds such as race, caste, community, sex or language is punishable under Section 103(2) with death or life imprisonment.
+- **Sedition** (old Section 124A) is no longer an offence by that name. Section 152 punishes acts that endanger the sovereignty, unity and integrity of India.
+- **Community service** is introduced as a punishment for six minor offences.
+- Provisions of the IPC dealing with **adultery** (497) and **unnatural offences** (377) were not carried into the BNS.
+- Gender-neutral wording appears in several places, and the age threshold for adult victims of gang rape was raised from 16 to 18.
+
+[example]
+A question gives four options for "the section under which murder is punished in the new code". The IPC number 302 is the trap.
+Murder is now **Section 103**; the number 302 is used in the BNS for a different offence. Apply the same care to cheating
+(420 becomes 318) and rape (376 becomes 64).
+[/example]
+
+## 3. Bharatiya Nagarik Suraksha Sanhita (BNSS): Procedure Made Modern
+
+The BNSS replaces the CrPC and adds technology and deadlines to police and court work.
+
+| Feature | What the BNSS provides |
+| --- | --- |
+| Zero FIR (Section 173) | An FIR can be registered at any police station irrespective of where the crime happened, then transferred to the right station |
+| Electronic information | Information about a cognisable offence may be given orally or electronically |
+| E-summons (Section 64) | Summons can be served through electronic communication |
+| Preliminary inquiry | For offences punishable with 3 years or more but less than 7 years, police may hold a preliminary inquiry before registering the FIR |
+| Arrest safeguards | The arrested person must be informed of the grounds of arrest and medically examined |
+| Digital devices and property | Police can ask for digital devices during investigation, and attachment of property is covered |
+| Default bail rules | The 60-day and 90-day limits for filing a chargesheet continue (Section 187) |
+| Community service | Allowed as a punishment for petty offences |
+
+The BNSS also creates the possibility of a trial of a proclaimed offender in his absence, popularly called **trial in absentia**, and encourages audio-video recording of searches and seizures. Remember the theme: more **technology**, more **timelines**, more **victim and witness protection**.
+
+## 4. Bharatiya Sakshya Adhiniyam (BSA): Evidence in the Digital Age
+
+The BSA is a close cousin of the Indian Evidence Act. It has 170 sections (the 1872 Act had 167). Its most-asked change concerns **electronic records**.
+
+- Electronic and digital records are recognised as **documents** and, subject to conditions, as **primary evidence**.
+- The certificate for electronic evidence, which stood in Section 65B of the old Act, is now found in **Section 63**. It must be signed by the person in charge of the device and by an expert.
+- The structure is regrouped into four parts and 12 chapters, and a few sections were modified, removed or added.
+
+Commonly confused pairs:
+
+| Pair | Do not mix up |
+| --- | --- |
+| BNS vs BNSS | BNS is the **crime and punishment** code; BNSS is the **procedure** code |
+| BSA vs BNS | BSA deals with **proof**; BNS deals with **offences** |
+| 1860 / 1872 / 1973 | IPC is 1860; the Evidence Act is 1872; the CrPC in force till 2024 was 1973 |
+
+## 5. How to Answer Exam Questions
+
+Exams usually ask in one of five formats:
+
+1. Match the old Act with the new Act (IPC with BNS, CrPC with BNSS, Evidence Act with BSA).
+2. State the effective date: 1 July 2024.
+3. Identify a new offence: organised crime, terrorism or mob lynching.
+4. Identify what happened to sedition: Section 124A is replaced by Section 152 and the word is dropped.
+5. Pick the number of sections: 358, 531 and 170.
+
+Number trick: the three counts run 358, 531 and 170. Note that the BNSS is the longest and the BSA the shortest.
+
+[summary]
+The Bharatiya Nyaya Sanhita (358 sections, replacing the IPC 1860), the Bharatiya Nagarik Suraksha Sanhita (531 sections,
+replacing the CrPC 1973) and the Bharatiya Sakshya Adhiniyam (170 sections, replacing the Indian Evidence Act 1872) were passed
+in December 2023 and came into force on 1 July 2024. The BNS makes murder Section 103, adds organised crime (111),
+terrorism (113) and mob lynching, replaces sedition with Section 152 and introduces community service. The BNSS legalises Zero FIR
+(Section 173), electronic summons and trial in absentia. The BSA treats electronic records as documents and primary evidence,
+with the certificate under Section 63.
+[/summary]

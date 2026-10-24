@@ -1,0 +1,186 @@
+{
+  "lessonId": "constitutional-acts-and-reforms-in-british-india",
+  "title": "Constitutional Acts and Reforms in British India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The post of Governor-General of Bengal was created by:",
+      "options": [
+        "Pitt's India Act of 1784",
+        "The Regulating Act of 1773",
+        "The Charter Act of 1833",
+        "The Act of 1858"
+      ],
+      "correct": 1,
+      "rationale": "The 1773 Act made Warren Hastings Governor-General of Bengal. The 1833 Act later created the Governor-General of India."
+    },
+    {
+      "id": 2,
+      "question": "Which Act set up the Board of Control and the system of dual control?",
+      "options": [
+        "Pitt's India Act, 1784",
+        "Regulating Act, 1773",
+        "Charter Act, 1813",
+        "Indian Councils Act, 1861"
+      ],
+      "correct": 0,
+      "rationale": "The Board of Control handled political matters and the Court of Directors commercial ones. The Regulating Act of 1773 came earlier."
+    },
+    {
+      "id": 3,
+      "question": "Which Charter Act ended the East India Company's trade monopoly in India (tea and China trade excepted)?",
+      "options": [
+        "1793",
+        "1833",
+        "1813",
+        "1853"
+      ],
+      "correct": 2,
+      "rationale": "The Act of 1813 ended the monopoly in India. The 1833 Act ended the Company's remaining commercial functions."
+    },
+    {
+      "id": 4,
+      "question": "The Charter Act of 1833 is known for:",
+      "options": [
+        "Creating the Governor-General of India, with Bentinck as the first",
+        "Introducing dyarchy",
+        "Starting open competition for the civil service",
+        "Ending Company rule"
+      ],
+      "correct": 0,
+      "rationale": "Bentinck was first Governor-General of India. Open competition came in 1853 and Company rule ended in 1858."
+    },
+    {
+      "id": 5,
+      "question": "Open competition for recruitment to the civil service was introduced by the:",
+      "options": [
+        "Charter Act of 1833",
+        "Charter Act of 1853",
+        "Indian Councils Act of 1892",
+        "Government of India Act of 1919"
+      ],
+      "correct": 1,
+      "rationale": "The 1853 Act, the last Charter Act, opened the service to competition, followed by the Macaulay Committee of 1854."
+    },
+    {
+      "id": 6,
+      "question": "Which Act ended the rule of the East India Company and created the Secretary of State for India?",
+      "options": [
+        "Act for the Better Government of India, 1858",
+        "Indian Councils Act, 1861",
+        "Regulating Act, 1773",
+        "Government of India Act, 1935"
+      ],
+      "correct": 0,
+      "rationale": "After the Revolt of 1857, the Act of 1858 transferred power to the Crown and set up the Secretary of State with a Council of India."
+    },
+    {
+      "id": 7,
+      "question": "The portfolio system was introduced by which Act?",
+      "options": [
+        "Indian Councils Act, 1892",
+        "Indian Councils Act, 1909",
+        "Indian Councils Act, 1861",
+        "Charter Act, 1853"
+      ],
+      "correct": 2,
+      "rationale": "The 1861 Act, under Canning, divided the Viceroy's council into departments. The 1892 Act brought indirect election and budget discussion."
+    },
+    {
+      "id": 8,
+      "question": "Which Act provided separate electorates for Muslims?",
+      "options": [
+        "Indian Councils Act, 1892",
+        "Government of India Act, 1919",
+        "Government of India Act, 1935",
+        "Indian Councils Act, 1909"
+      ],
+      "correct": 3,
+      "rationale": "The Morley-Minto Reforms of 1909 gave Muslims separate electorates. The 1919 Act extended the principle to Sikhs and others."
+    },
+    {
+      "id": 9,
+      "question": "Dyarchy at the provincial level was introduced by the:",
+      "options": [
+        "Government of India Act, 1919",
+        "Government of India Act, 1935",
+        "Indian Councils Act, 1909",
+        "Indian Independence Act, 1947"
+      ],
+      "correct": 0,
+      "rationale": "Dyarchy split provincial subjects into reserved and transferred ones in 1919. The 1935 Act replaced it with provincial autonomy."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following was NOT a feature of the Government of India Act, 1919?",
+      "options": [
+        "Establishment of the Federal Court",
+        "Bicameral legislature at the Centre",
+        "Reserved and transferred subjects in provinces",
+        "Office of High Commissioner for India in London"
+      ],
+      "correct": 0,
+      "rationale": "The Federal Court came with the 1935 Act (in 1937). The other three were 1919 features."
+    },
+    {
+      "id": 11,
+      "question": "Provincial autonomy was introduced in 1937 under the:",
+      "options": [
+        "Government of India Act, 1919",
+        "Government of India Act, 1935",
+        "Cabinet Mission Plan, 1946",
+        "Indian Councils Act, 1909"
+      ],
+      "correct": 1,
+      "rationale": "The 1935 Act replaced provincial dyarchy with autonomy, and provincial elections were held for the new arrangement in 1937."
+    },
+    {
+      "id": 12,
+      "question": "Which body or institution was established under the Government of India Act, 1935 provisions?",
+      "options": [
+        "Federal Court and the Reserve Bank of India",
+        "Council of State and Legislative Assembly",
+        "Board of Control",
+        "Supreme Court at Calcutta"
+      ],
+      "correct": 0,
+      "rationale": "The Federal Court (1937) and RBI link to the 1935 Act. The Council of State came in 1919, the Board of Control in 1784, and the Calcutta court in 1773."
+    },
+    {
+      "id": 13,
+      "question": "The Montagu Declaration of August 1917 promised:",
+      "options": [
+        "Immediate Dominion status",
+        "Partition into two dominions",
+        "Gradual development of self-governing institutions and responsible government",
+        "Abolition of separate electorates"
+      ],
+      "correct": 2,
+      "rationale": "Montagu's statement of 1917 set the stage for the 1919 Act. Dominion status was not promised, and partition came in 1947."
+    },
+    {
+      "id": 14,
+      "question": "The Indian Independence Act of 1947 received royal assent on:",
+      "options": [
+        "18 July 1947",
+        "15 August 1947",
+        "3 June 1947",
+        "26 January 1950"
+      ],
+      "correct": 0,
+      "rationale": "The Act received assent on 18 July and took effect on 15 August 1947, creating the two dominions."
+    },
+    {
+      "id": 15,
+      "question": "The Supreme Court at Calcutta (1774) and the council of four for the Governor-General were provisions of the:",
+      "options": [
+        "Pitt's India Act of 1784",
+        "Regulating Act of 1773",
+        "Charter Act of 1793",
+        "Indian Councils Act of 1861"
+      ],
+      "correct": 1,
+      "rationale": "Both were created under the 1773 Act. Pitt's Act set up the Board of Control instead."
+    }
+  ]
+}

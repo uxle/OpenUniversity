@@ -1,0 +1,174 @@
+{
+  "lessonId": "important-battles-of-india",
+  "title": "Important Battles of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The First Battle of Panipat (1526) was fought between:",
+      "options": [
+        "Akbar and Hemu",
+        "Babur and Ibrahim Lodi",
+        "Humayun and Sher Shah",
+        "Abdali and the Marathas"
+      ],
+      "correct": 1,
+      "rationale": "Babur defeated Ibrahim Lodi and founded Mughal rule. Akbar-Hemu was Panipat II (1556) and Abdali-Marathas was Panipat III (1761)."
+    },
+    {
+      "id": 2,
+      "question": "Which battle of 1527 saw Babur defeat the Rajput confederacy?",
+      "options": [
+        "Khanwa",
+        "Chanderi",
+        "Ghaghra",
+        "Chausa"
+      ],
+      "correct": 0,
+      "rationale": "Khanwa (1527) was fought against Rana Sanga of Mewar. Chanderi (1528) was against Medini Rai."
+    },
+    {
+      "id": 3,
+      "question": "The Second Battle of Tarain (1192) resulted in the victory of:",
+      "options": [
+        "Prithviraj Chauhan",
+        "Jaichand",
+        "Muhammad of Ghor",
+        "Qutbuddin Aibak"
+      ],
+      "correct": 2,
+      "rationale": "Muhammad of Ghor won in 1192 after losing in 1191. Jaichand was defeated at Chandawar in 1194."
+    },
+    {
+      "id": 4,
+      "question": "Which battle was fought in 1539 between Sher Shah Suri and Humayun?",
+      "options": [
+        "Kannauj",
+        "Panipat",
+        "Samugarh",
+        "Chausa"
+      ],
+      "correct": 3,
+      "rationale": "Chausa was in 1539 and Kannauj in 1540. Samugarh (1658) was a war of succession between Aurangzeb and Dara Shikoh."
+    },
+    {
+      "id": 5,
+      "question": "Haldighati (1576) was fought between Maharana Pratap and a Mughal army led by:",
+      "options": [
+        "Man Singh",
+        "Bairam Khan",
+        "Todar Mal",
+        "Birbal"
+      ],
+      "correct": 0,
+      "rationale": "Akbar sent Raja Man Singh of Amber. Bairam Khan commanded at Panipat II in 1556."
+    },
+    {
+      "id": 6,
+      "question": "The Battle of Plassey in 1757 was fought between:",
+      "options": [
+        "Hector Munro and Mir Qasim",
+        "Robert Clive and Siraj-ud-Daulah",
+        "Eyre Coote and Lally",
+        "Wellesley and Tipu Sultan"
+      ],
+      "correct": 1,
+      "rationale": "Clive won at Plassey with Mir Jafar's support. Munro fought at Buxar (1764) and Coote at Wandiwash (1760)."
+    },
+    {
+      "id": 7,
+      "question": "Which battle led to the Treaty of Allahabad and the grant of diwani to the British?",
+      "options": [
+        "Plassey",
+        "Wandiwash",
+        "Buxar",
+        "Sobraon"
+      ],
+      "correct": 2,
+      "rationale": "After Buxar (1764), the Treaty of Allahabad (1765) gave the Company the diwani of Bengal, Bihar and Orissa."
+    },
+    {
+      "id": 8,
+      "question": "Which Mughal-era battle is correctly matched with its winner?",
+      "options": [
+        "Panipat II (1556): Akbar's side",
+        "Panipat III (1761): Marathas",
+        "Tarain I (1191): Muhammad of Ghor",
+        "Chausa (1539): Humayun"
+      ],
+      "correct": 0,
+      "rationale": "In 1556 Akbar's forces under Bairam Khan beat Hemu. At Panipat III Abdali won; Prithviraj won Tarain I, and Sher Shah won Chausa."
+    },
+    {
+      "id": 9,
+      "question": "The Third Battle of Panipat was fought in:",
+      "options": [
+        "1526",
+        "1761",
+        "1556",
+        "1857"
+      ],
+      "correct": 1,
+      "rationale": "1761 saw Ahmad Shah Abdali defeat the Marathas. The other years are Panipat I, Panipat II and the Revolt."
+    },
+    {
+      "id": 10,
+      "question": "Tipu Sultan died defending Seringapatam in the:",
+      "options": [
+        "Third Anglo-Mysore War, 1792",
+        "Second Anglo-Mysore War, 1784",
+        "First Anglo-Mysore War, 1769",
+        "Fourth Anglo-Mysore War, 1799"
+      ],
+      "correct": 3,
+      "rationale": "Tipu fell in 1799. The Third War ended with the Treaty of Seringapatam in 1792, when he lost half his territory."
+    },
+    {
+      "id": 11,
+      "question": "Who led the Ahoms to victory over the Mughals at Saraighat?",
+      "options": [
+        "Lachit Borphukan",
+        "Rana Sanga",
+        "Shivaji",
+        "Medini Rai"
+      ],
+      "correct": 0,
+      "rationale": "Lachit Borphukan won at Saraighat in 1671 against Ram Singh's Mughal army."
+    },
+    {
+      "id": 12,
+      "question": "The Anglo-Sikh Wars ended with:",
+      "options": [
+        "The Treaty of Salbai",
+        "The Treaty of Bassein",
+        "The annexation of Punjab in 1849",
+        "The Treaty of Madras"
+      ],
+      "correct": 2,
+      "rationale": "After the second war (Chilianwala and Gujrat), Dalhousie annexed Punjab in 1849. The other treaties belong to Maratha and Mysore wars."
+    },
+    {
+      "id": 13,
+      "question": "Which pair is correct for the independent-India wars?",
+      "options": [
+        "1971: surrender at Dhaka on 16 December",
+        "1965: Tashkent Declaration signed in 1972",
+        "1962: war with Pakistan",
+        "1999: Operation Parakram at Kargil"
+      ],
+      "correct": 0,
+      "rationale": "Pakistan's forces surrendered at Dhaka on 16 December 1971. The Tashkent Declaration was January 1966, 1962 was with China, and Kargil was Operation Vijay."
+    },
+    {
+      "id": 14,
+      "question": "Which battle destroyed the power of Vijayanagara in 1565?",
+      "options": [
+        "Raichur",
+        "Talikota",
+        "Panipat",
+        "Kannauj"
+      ],
+      "correct": 1,
+      "rationale": "The Deccan sultanates defeated Vijayanagara at Talikota (Rakshasa-Tangadi) and Rama Raya was killed. Raichur (1520) was a Vijayanagara victory."
+    }
+  ]
+}

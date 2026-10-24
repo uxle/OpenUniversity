@@ -1,0 +1,186 @@
+{
+  "lessonId": "computer-basics-memory-and-generations",
+  "title": "Computer Basics: CPU, Memory, Generations and Number Systems: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which part of the CPU directs the other components and decodes instructions but does no calculation itself?",
+      "options": [
+        "ALU",
+        "Control Unit",
+        "Register",
+        "Cache"
+      ],
+      "correct": 1,
+      "rationale": "The Control Unit fetches, decodes and coordinates. The ALU performs arithmetic and logic, which is the usual swap."
+    },
+    {
+      "id": 2,
+      "question": "How many bits are there in 3 KB (using 1 KB = 1024 bytes)?",
+      "options": [
+        "3072",
+        "24,576",
+        "8192",
+        "3000"
+      ],
+      "correct": 1,
+      "rationale": "3 x 1024 = 3072 bytes and 3072 x 8 = 24,576 bits. 3072 is the byte count, the tempting wrong option."
+    },
+    {
+      "id": 3,
+      "question": "Which memory is volatile?",
+      "options": [
+        "ROM",
+        "Hard disk",
+        "RAM",
+        "DVD"
+      ],
+      "correct": 2,
+      "rationale": "RAM loses its content when power is off. ROM, disk and DVD keep data without power."
+    },
+    {
+      "id": 4,
+      "question": "Which of these is the FASTEST memory: Hard disk, RAM, Register, Cache?",
+      "options": [
+        "Cache",
+        "RAM",
+        "Hard disk",
+        "Register"
+      ],
+      "correct": 3,
+      "rationale": "Registers sit inside the CPU and are the fastest, then cache, RAM and the hard disk."
+    },
+    {
+      "id": 5,
+      "question": "The binary number 101101 equals which decimal number?",
+      "options": [
+        "43",
+        "45",
+        "47",
+        "51"
+      ],
+      "correct": 1,
+      "rationale": "32 + 8 + 4 + 1 = 45."
+    },
+    {
+      "id": 6,
+      "question": "The decimal number 156 in binary is:",
+      "options": [
+        "10011100",
+        "10101100",
+        "11001100",
+        "10011010"
+      ],
+      "correct": 0,
+      "rationale": "156 = 128 + 16 + 8 + 4, giving 10011100."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is NOT an input device?",
+      "options": [
+        "Scanner",
+        "Light pen",
+        "Plotter",
+        "Barcode reader"
+      ],
+      "correct": 2,
+      "rationale": "A plotter draws large diagrams, so it is an output device. The others feed data into the computer."
+    },
+    {
+      "id": 8,
+      "question": "Which technology marks the third generation of computers?",
+      "options": [
+        "Vacuum tubes",
+        "Transistors",
+        "Integrated circuits",
+        "Microprocessors"
+      ],
+      "correct": 2,
+      "rationale": "Third generation (about 1964 to 1971) used ICs. Vacuum tubes were first, transistors second and microprocessors fourth."
+    },
+    {
+      "id": 9,
+      "question": "The hexadecimal number 2F is equal to which decimal number?",
+      "options": [
+        "37",
+        "42",
+        "47",
+        "63"
+      ],
+      "correct": 2,
+      "rationale": "2 x 16 + 15 = 47, since F stands for 15."
+    },
+    {
+      "id": 10,
+      "question": "Which reader is used to process magnetic ink characters on bank cheques?",
+      "options": [
+        "OMR",
+        "OCR",
+        "MICR",
+        "BIOS"
+      ],
+      "correct": 2,
+      "rationale": "MICR reads magnetic ink characters. OMR reads marked bubbles and OCR reads printed text."
+    },
+    {
+      "id": 11,
+      "question": "Which statement about translators is correct?",
+      "options": [
+        "An interpreter converts the whole program at once",
+        "A compiler translates the whole program into machine code before running",
+        "An assembler translates high-level language",
+        "A compiler works line by line"
+      ],
+      "correct": 1,
+      "rationale": "A compiler translates the whole program; an interpreter goes line by line; an assembler converts assembly language."
+    },
+    {
+      "id": 12,
+      "question": "Add the binary numbers 1101 and 1011. The result is:",
+      "options": [
+        "10110",
+        "11000",
+        "11010",
+        "10111"
+      ],
+      "correct": 1,
+      "rationale": "13 + 11 = 24, which is 11000 in binary."
+    },
+    {
+      "id": 13,
+      "question": "Which pair of generation and feature is correctly matched?",
+      "options": [
+        "First - integrated circuits",
+        "Second - vacuum tubes",
+        "Fourth - microprocessor",
+        "Fifth - transistors"
+      ],
+      "correct": 2,
+      "rationale": "The fourth generation is built on microprocessors (VLSI). Fifth generation is AI-oriented."
+    },
+    {
+      "id": 14,
+      "question": "Octal 745 in decimal equals:",
+      "options": [
+        "485",
+        "465",
+        "505",
+        "749"
+      ],
+      "correct": 0,
+      "rationale": "7 x 64 + 4 x 8 + 5 = 448 + 32 + 5 = 485."
+    },
+    {
+      "id": 15,
+      "question": "Which memory type can be erased using ultraviolet light?",
+      "options": [
+        "PROM",
+        "EPROM",
+        "EEPROM",
+        "DRAM"
+      ],
+      "correct": 1,
+      "rationale": "EPROM is erased by UV light; EEPROM is erased electrically and PROM is programmable only once."
+    }
+  ]
+}

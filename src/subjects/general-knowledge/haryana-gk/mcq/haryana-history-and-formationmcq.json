@@ -1,0 +1,186 @@
+{
+  "lessonId": "haryana-history-and-formation",
+  "title": "Haryana History and Formation: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "On which date was Haryana formed as a separate state?",
+      "options": [
+        "1 November 1966",
+        "15 August 1947",
+        "26 January 1950",
+        "18 September 1966"
+      ],
+      "correct": 0,
+      "rationale": "Haryana came into being on 1 November 1966. 18 September 1966 is the date Parliament passed the Punjab Reorganisation Act, the tempting wrong option."
+    },
+    {
+      "id": 2,
+      "question": "Who was the first Chief Minister of Haryana?",
+      "options": [
+        "Bansi Lal",
+        "Bhagwat Dayal Sharma",
+        "Rao Birender Singh",
+        "Devi Lal"
+      ],
+      "correct": 1,
+      "rationale": "Bhagwat Dayal Sharma took office on 1 November 1966. Rao Birender Singh followed him in March 1967."
+    },
+    {
+      "id": 3,
+      "question": "Which Harappan site in Haryana is regarded as among the largest in the subcontinent and was the subject of a 2019 ancient-DNA study?",
+      "options": [
+        "Rakhigarhi",
+        "Banawali",
+        "Kunal",
+        "Mitathal"
+      ],
+      "correct": 0,
+      "rationale": "Rakhigarhi (Hisar, now Hansi district) is the large site; Banawali is better known for its fortification and layered phases."
+    },
+    {
+      "id": 4,
+      "question": "The Harappan site of Banawali lies in which district?",
+      "options": [
+        "Sirsa",
+        "Fatehabad",
+        "Bhiwani",
+        "Rohtak"
+      ],
+      "correct": 1,
+      "rationale": "Banawali is in Fatehabad district, excavated by R.S. Bisht of the ASI. Mitathal is in Bhiwani and Farmana is in Rohtak."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following sites is NOT associated with the Indus (Harappan) civilisation in Haryana?",
+      "options": [
+        "Bhirrana",
+        "Farmana",
+        "Thanesar",
+        "Rakhigarhi"
+      ],
+      "correct": 2,
+      "rationale": "Thanesar is famous as the capital of Harsha (7th century CE), long after the Harappan period. The other three are Harappan sites."
+    },
+    {
+      "id": 6,
+      "question": "Who ruled from Thanesar before shifting his capital to Kannauj?",
+      "options": [
+        "Chandragupta II",
+        "Harsha",
+        "Ashoka",
+        "Prithviraj Chauhan"
+      ],
+      "correct": 1,
+      "rationale": "Harsha of the Pushyabhuti dynasty (606-647 CE) ruled from Thanesar and later from Kannauj. The Chinese pilgrim Xuanzang visited during his reign."
+    },
+    {
+      "id": 7,
+      "question": "The First and Second Battles of Tarain were fought in 1191 and 1192. Which statement is correct?",
+      "options": [
+        "Ghori won both",
+        "Prithviraj Chauhan won both",
+        "Ghori won the first and lost the second",
+        "Prithviraj Chauhan won the first and lost the second"
+      ],
+      "correct": 3,
+      "rationale": "Prithviraj defeated Muhammad Ghori in 1191 but lost to him in 1192. Tarain (Taraori) is in Karnal district."
+    },
+    {
+      "id": 8,
+      "question": "Match the Panipat battle with its year. Which pairing is correct?",
+      "options": [
+        "Second Battle - 1526",
+        "Third Battle - January 1761",
+        "First Battle - 1556",
+        "Second Battle - 1761"
+      ],
+      "correct": 1,
+      "rationale": "First 1526 (Babur v Ibrahim Lodi), second 1556 (Akbar's forces v Hemu), third 1761 (Abdali v Marathas)."
+    },
+    {
+      "id": 9,
+      "question": "Hemu, who briefly held Delhi in 1556, belonged to which present-day Haryana town?",
+      "options": [
+        "Hansi",
+        "Rewari",
+        "Ambala",
+        "Jind"
+      ],
+      "correct": 1,
+      "rationale": "Hemu spent his early life in Rewari. He took Delhi in October 1556 and was defeated at the Second Battle of Panipat."
+    },
+    {
+      "id": 10,
+      "question": "Who won the Third Battle of Panipat?",
+      "options": [
+        "Ahmad Shah Abdali",
+        "Bairam Khan",
+        "Marathas under Sadashivrao Bhau",
+        "Babur"
+      ],
+      "correct": 0,
+      "rationale": "Abdali defeated the Marathas under Sadashivrao Bhau in 1761. Bairam Khan was Akbar's general at the Second Battle."
+    },
+    {
+      "id": 11,
+      "question": "Rao Tula Ram, a leader of the 1857 revolt in Haryana, belonged to which region?",
+      "options": [
+        "Rewari (Ahirwal)",
+        "Ballabhgarh",
+        "Jhajjar",
+        "Hisar"
+      ],
+      "correct": 0,
+      "rationale": "Rao Tula Ram was of Rewari and led the force that fought at Nasibpur (Narnaul) on 16 November 1857. Nahar Singh ruled Ballabhgarh."
+    },
+    {
+      "id": 12,
+      "question": "Raja Nahar Singh, remembered every 9 January in Haryana, was the ruler of:",
+      "options": [
+        "Farrukhnagar",
+        "Rewari",
+        "Ballabhgarh",
+        "Jhajjar"
+      ],
+      "correct": 2,
+      "rationale": "Nahar Singh of Ballabhgarh was hanged at Chandni Chowk, Delhi on 9 January 1858 after supporting Bahadur Shah Zafar."
+    },
+    {
+      "id": 13,
+      "question": "Which commission was set up in 1966 to draw the boundary between Punjabi- and Hindi-speaking areas of Punjab?",
+      "options": [
+        "Shah Commission",
+        "Hunter Commission",
+        "Kothari Commission",
+        "Sarkaria Commission"
+      ],
+      "correct": 0,
+      "rationale": "The Shah Commission, headed by Justice J.C. Shah, was constituted in April 1966. Sarkaria looked at Centre-State relations (1983)."
+    },
+    {
+      "id": 14,
+      "question": "Which statement about Chandigarh after 1966 is correct?",
+      "options": [
+        "It became the capital of Haryana only",
+        "It became part of Himachal Pradesh",
+        "It became a Union Territory and a joint capital of Punjab and Haryana",
+        "It was handed to Punjab as a district"
+      ],
+      "correct": 2,
+      "rationale": "Chandigarh was made a Union Territory and the shared capital; the Punjab and Haryana High Court also sits there."
+    },
+    {
+      "id": 15,
+      "question": "Who was the first Governor of Haryana?",
+      "options": [
+        "Jaisukh Lal Hathi",
+        "Birendra Narayan Chakraborty",
+        "Dharma Vira",
+        "Dhanik Lal Mandal"
+      ],
+      "correct": 2,
+      "rationale": "Dharma Vira was Governor from 1 November 1966; Birendra Narayan Chakraborty succeeded him in September 1967."
+    }
+  ]
+}

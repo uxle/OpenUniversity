@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-places-monuments-and-tourism",
+  "title": "Haryana Places, Monuments and Tourism: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "At which Kurukshetra spot is Krishna believed to have delivered the Gita to Arjuna?",
+      "options": [
+        "Brahma Sarovar",
+        "Sannihit Sarovar",
+        "Jyotisar",
+        "Pehowa"
+      ],
+      "correct": 2,
+      "rationale": "Jyotisar, under a banyan tree, is the traditional spot. Brahma Sarovar and Sannihit Sarovar are bathing tanks; Pehowa is an ancestral-rites tirtha."
+    },
+    {
+      "id": 2,
+      "question": "Panipat is nicknamed:",
+      "options": [
+        "City of Lakes",
+        "City of Weavers",
+        "City of Steel",
+        "City of Gardens"
+      ],
+      "correct": 1,
+      "rationale": "Panipat is the handloom and textile hub, hence City of Weavers. City of Steel is a nickname of Hisar."
+    },
+    {
+      "id": 3,
+      "question": "Match the Panipat battle with its result: the Second Battle (1556) was won by:",
+      "options": [
+        "Abdali over the Marathas",
+        "Babur over Ibrahim Lodi",
+        "Nader Shah over Muhammad Shah",
+        "Akbar's forces over Hemu"
+      ],
+      "correct": 3,
+      "rationale": "1556: Akbar's side under Bairam Khan beat Hemu. Babur won in 1526, Abdali in 1761; Nader Shah's win was at Karnal (1739), not Panipat."
+    },
+    {
+      "id": 4,
+      "question": "The Battle of Karnal in 1739 was fought between:",
+      "options": [
+        "Akbar and Hemu",
+        "Marathas and Afghans",
+        "Babur and Lodi",
+        "Nader Shah and Muhammad Shah"
+      ],
+      "correct": 3,
+      "rationale": "Nader Shah of Persia defeated the Mughal emperor Muhammad Shah at Karnal."
+    },
+    {
+      "id": 5,
+      "question": "Hisar was founded in 1354 by:",
+      "options": [
+        "Firoz Shah Tughlaq",
+        "Sher Shah Suri",
+        "Alauddin Khilji",
+        "Harsha"
+      ],
+      "correct": 0,
+      "rationale": "Firoz Shah Tughlaq founded Hisar-e-Firoza. Harsha is linked with Thanesar."
+    },
+    {
+      "id": 6,
+      "question": "Which pair is correctly matched?",
+      "options": [
+        "Agroha - Firoz Shah",
+        "Hansi - Asigarh Fort",
+        "Tosham - Gita Mahotsav",
+        "Rakhigarhi - Surajpal"
+      ],
+      "correct": 1,
+      "rationale": "Hansi has Asigarh Fort. Agroha goes with Agrasen, Surajpal with Surajkund, and the Gita Mahotsav is held at Kurukshetra."
+    },
+    {
+      "id": 7,
+      "question": "Rakhigarhi, regarded as the largest known Harappan site by ASI estimates, lies in the Ghaggar plain in which area?",
+      "options": [
+        "Mahendragarh",
+        "Hisar region",
+        "Faridabad",
+        "Panchkula"
+      ],
+      "correct": 1,
+      "rationale": "Rakhigarhi is in the Hisar region (Hisar district). Panchkula and Faridabad are not Harappan centres in this sense."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is NOT located in Narnaul?",
+      "options": [
+        "Birbal ka Chhatta",
+        "Jal Mahal",
+        "Sheikh Chehli's Tomb",
+        "Chor Gumbad"
+      ],
+      "correct": 2,
+      "rationale": "Sheikh Chehli's tomb is at Thanesar, Kurukshetra. The other three are Narnaul monuments."
+    },
+    {
+      "id": 9,
+      "question": "Chor Gumbad at Narnaul is actually:",
+      "options": [
+        "A tomb built by Afghan noble Jamal Khan for himself in Firoz Shah's time",
+        "A Mughal garden pavilion",
+        "A Harsha-era monastery",
+        "A thieves' hideout"
+      ],
+      "correct": 0,
+      "rationale": "Despite the name it is a double-storeyed tomb, built under Firoz Shah Tughlaq."
+    },
+    {
+      "id": 10,
+      "question": "Pinjore's garden, now renamed, was built under Fidai Khan and is called today:",
+      "options": [
+        "Karna Garden",
+        "Kabuli Bagh",
+        "Nishat Garden",
+        "Yadavindra Gardens"
+      ],
+      "correct": 3,
+      "rationale": "It was renamed after Maharaja Yadavindra Singh of Patiala, who restored it. Kabuli Bagh is at Panipat."
+    },
+    {
+      "id": 11,
+      "question": "The Surajkund International Crafts Mela began in 1987 and is held in which district?",
+      "options": [
+        "Faridabad",
+        "Sonipat",
+        "Gurugram",
+        "Rohtak"
+      ],
+      "correct": 0,
+      "rationale": "Surajkund lies in Faridabad district, and the mela is held in early February."
+    },
+    {
+      "id": 12,
+      "question": "Which of these is a hill getaway in Panchkula district known for Tikkar Taal?",
+      "options": [
+        "Sohna",
+        "Hansi",
+        "Morni",
+        "Tosham"
+      ],
+      "correct": 2,
+      "rationale": "Morni Hills have the twin lakes of Tikkar Taal. Sohna is known for hot springs, Tosham for its hill and inscription."
+    },
+    {
+      "id": 13,
+      "question": "Which statement about Haryana tourism is correct?",
+      "options": [
+        "Pinjore is in Kurukshetra",
+        "Haryana Tourism Corporation was set up in 1974",
+        "Sohna is famous for crafts mela",
+        "HTC's headquarters are in Hisar"
+      ],
+      "correct": 1,
+      "rationale": "HTC dates from 1974 with headquarters in Chandigarh. Sohna is known for sulphur springs and Pinjore is in Panchkula."
+    },
+    {
+      "id": 14,
+      "question": "Agroha, linked by tradition with King Agrasen, lies near which city?",
+      "options": [
+        "Hisar",
+        "Ambala",
+        "Jhajjar",
+        "Karnal"
+      ],
+      "correct": 0,
+      "rationale": "Agroha mound and the Agroha Dham temple are in Hisar district. Remember Agroha-Agrasen, Hisar-Firoz."
+    }
+  ]
+}

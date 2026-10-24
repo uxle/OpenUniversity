@@ -1,0 +1,186 @@
+{
+  "lessonId": "internet-email-and-cyber-terms",
+  "title": "Internet, Email and Cyber Terms: Protocols, Malware and the IT Act: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which protocol is used for SENDING email between servers?",
+      "options": [
+        "POP3",
+        "IMAP",
+        "SMTP",
+        "FTP"
+      ],
+      "correct": 2,
+      "rationale": "SMTP sends mail. POP3 and IMAP are used to receive or read it."
+    },
+    {
+      "id": 2,
+      "question": "Phishing carried out through SMS messages is called:",
+      "options": [
+        "Vishing",
+        "Smishing",
+        "Pharming",
+        "Spoofing"
+      ],
+      "correct": 1,
+      "rationale": "Smishing uses SMS. Vishing uses voice calls and pharming redirects users to fake sites."
+    },
+    {
+      "id": 3,
+      "question": "In an email, a recipient placed in the Bcc field:",
+      "options": [
+        "Is visible to all other recipients",
+        "Is hidden from other recipients",
+        "Cannot open the mail",
+        "Becomes the main recipient"
+      ],
+      "correct": 1,
+      "rationale": "Bcc stands for blind carbon copy; the address is not shown to the others. Cc recipients are visible."
+    },
+    {
+      "id": 4,
+      "question": "Which malware disguises itself as useful software and does not replicate on its own?",
+      "options": [
+        "Worm",
+        "Trojan horse",
+        "Virus",
+        "Botnet"
+      ],
+      "correct": 1,
+      "rationale": "A Trojan relies on tricking the user into running it. A worm spreads by itself over a network."
+    },
+    {
+      "id": 5,
+      "question": "Which section of the IT Act, 2000 deals with punishment for cyber terrorism?",
+      "options": [
+        "66C",
+        "66D",
+        "66E",
+        "66F"
+      ],
+      "correct": 3,
+      "rationale": "66F covers cyber terrorism, with punishment up to life imprisonment. 66C is identity theft, 66D cheating by personation and 66E privacy."
+    },
+    {
+      "id": 6,
+      "question": "What is the length of an IPv6 address?",
+      "options": [
+        "32 bits",
+        "64 bits",
+        "128 bits",
+        "256 bits"
+      ],
+      "correct": 2,
+      "rationale": "IPv6 uses 128 bits; IPv4 uses 32 bits."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is NOT a web browser?",
+      "options": [
+        "Firefox",
+        "Edge",
+        "Opera",
+        "Google (the search engine)"
+      ],
+      "correct": 3,
+      "rationale": "Google is a search engine, while Firefox, Edge and Opera are browsers. A browser views pages; a search engine finds them."
+    },
+    {
+      "id": 8,
+      "question": "The default port number of HTTPS is:",
+      "options": [
+        "80",
+        "21",
+        "25",
+        "443"
+      ],
+      "correct": 3,
+      "rationale": "HTTPS uses 443. Port 80 is HTTP, 21 is FTP and 25 is SMTP."
+    },
+    {
+      "id": 9,
+      "question": "Who sent the first ARPANET network email in 1971 and introduced the @ sign in addresses?",
+      "options": [
+        "Tim Berners-Lee",
+        "Ray Tomlinson",
+        "Vint Cerf",
+        "Marc Andreessen"
+      ],
+      "correct": 1,
+      "rationale": "Ray Tomlinson did so. Tim Berners-Lee proposed the World Wide Web."
+    },
+    {
+      "id": 10,
+      "question": "In the URL https://www.example.gov.in/news/index.html, what is /news/index.html?",
+      "options": [
+        "The protocol",
+        "The domain name",
+        "The top-level domain",
+        "The path"
+      ],
+      "correct": 3,
+      "rationale": "It is the path to the page on the server. https is the protocol and example.gov.in is the domain."
+    },
+    {
+      "id": 11,
+      "question": "Ransomware is malware that:",
+      "options": [
+        "Shows unwanted adverts",
+        "Records every key pressed",
+        "Encrypts or locks data and demands payment",
+        "Sends bulk unwanted email"
+      ],
+      "correct": 2,
+      "rationale": "Ransomware holds data hostage for payment. Adware shows adverts and a keylogger records keystrokes."
+    },
+    {
+      "id": 12,
+      "question": "Which of these correctly matches term and meaning?",
+      "options": [
+        "DNS - converts domain names to IP addresses",
+        "DNS - sends email",
+        "SMTP - translates web addresses",
+        "FTP - secure remote login"
+      ],
+      "correct": 0,
+      "rationale": "The Domain Name System resolves names to IP addresses. SSH, not FTP, is secure remote login."
+    },
+    {
+      "id": 13,
+      "question": "The IT Act, 2000 came into force on:",
+      "options": [
+        "9 June 2000",
+        "15 August 2000",
+        "17 October 2000",
+        "26 January 2001"
+      ],
+      "correct": 2,
+      "rationale": "It came into force on 17 October 2000. It was amended by the IT (Amendment) Act, 2008."
+    },
+    {
+      "id": 14,
+      "question": "A network of infected computers controlled remotely by an attacker is a:",
+      "options": [
+        "Firewall",
+        "Botnet",
+        "Proxy",
+        "LAN"
+      ],
+      "correct": 1,
+      "rationale": "Botnets are commonly used for DDoS attacks and spam. A firewall is a defensive filter."
+    },
+    {
+      "id": 15,
+      "question": "Which statement about firewall is correct?",
+      "options": [
+        "It is a type of virus",
+        "It filters incoming and outgoing network traffic",
+        "It repairs corrupted files",
+        "It stores browsing cookies"
+      ],
+      "correct": 1,
+      "rationale": "A firewall monitors and filters traffic by rules. It is not a replacement for antivirus software."
+    }
+  ]
+}

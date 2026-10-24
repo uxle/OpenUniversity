@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-economy-agriculture-and-industry",
+  "title": "Haryana Economy: Agriculture, Livestock, Industry and Transport: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Where is the National Dairy Research Institute (NDRI) located?",
+      "options": [
+        "Rohtak",
+        "Ambala",
+        "Karnal",
+        "Hisar"
+      ],
+      "correct": 2,
+      "rationale": "NDRI moved to Karnal in 1955 and has been a deemed university since 1989. CIRB, the buffalo institute, is at Hisar."
+    },
+    {
+      "id": 2,
+      "question": "CCS Haryana Agricultural University is located at:",
+      "options": [
+        "Sirsa",
+        "Hisar",
+        "Panipat",
+        "Karnal"
+      ],
+      "correct": 1,
+      "rationale": "CCS HAU is at Hisar. It began as Haryana Agricultural University in 1970 and took Chaudhary Charan Singh's name in 1991."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a buffalo breed native to Haryana?",
+      "options": [
+        "Hariana",
+        "Sahiwal",
+        "Murrah",
+        "Gir"
+      ],
+      "correct": 2,
+      "rationale": "Murrah is the buffalo breed from the Rohtak-Hisar-Jind region. Hariana is a cattle breed, and Sahiwal and Gir are cattle breeds from elsewhere."
+    },
+    {
+      "id": 4,
+      "question": "Which pairing of Haryana livestock research bodies and cities is correct?",
+      "options": [
+        "NDRI - Hisar",
+        "National Research Centre on Equines - Hisar",
+        "LUVAS - Karnal",
+        "Central Institute for Research on Buffaloes - Karnal"
+      ],
+      "correct": 1,
+      "rationale": "The Equines Research Centre, CIRB and LUVAS are at Hisar, while NDRI is at Karnal."
+    },
+    {
+      "id": 5,
+      "question": "In which year was the Green Revolution era Bhakra Dam completed, an event that boosted irrigation for Haryana?",
+      "options": [
+        "1975",
+        "1991",
+        "1951",
+        "1963"
+      ],
+      "correct": 3,
+      "rationale": "The Bhakra Dam was completed in 1963 and, along with the Western Yamuna Command network of the 1970s, raised foodgrain output."
+    },
+    {
+      "id": 6,
+      "question": "Haryana is known as a major exporter of which type of rice?",
+      "options": [
+        "Red matta",
+        "Sona masuri",
+        "Njavara",
+        "Basmati"
+      ],
+      "correct": 3,
+      "rationale": "Haryana contributes about 60 per cent of India's basmati rice exports, mainly from the Karnal, Kaithal and Kurukshetra belt."
+    },
+    {
+      "id": 7,
+      "question": "According to the Economic Survey of Haryana 2024-25, which statement about per capita income in 2024-25 (advance estimate, current prices) is correct?",
+      "options": [
+        "It was below the national average",
+        "It was exactly equal to the national average",
+        "It was about 1.15 lakh rupees",
+        "It was about 3.53 lakh rupees, above India's figure of about 2.06 lakh"
+      ],
+      "correct": 3,
+      "rationale": "The Survey gives 3,53,182 rupees for Haryana against 2,05,579 rupees for India. 1.15 lakh is the national figure at constant prices."
+    },
+    {
+      "id": 8,
+      "question": "Which sector contributed the largest share of Haryana's GSVA in 2024-25 at constant 2011-12 prices?",
+      "options": [
+        "Industry",
+        "Agriculture and allied",
+        "Services",
+        "Mining"
+      ],
+      "correct": 2,
+      "rationale": "Services made up 51.2 per cent, industry 32.9 per cent and agriculture and allied activities 15.9 per cent."
+    },
+    {
+      "id": 9,
+      "question": "Which town is known for handloom textiles, carpets and a large Indian Oil refinery?",
+      "options": [
+        "Yamunanagar",
+        "Bhiwani",
+        "Panipat",
+        "Sirsa"
+      ],
+      "correct": 2,
+      "rationale": "Panipat is called the city of weavers and also hosts the Panipat Refinery. Yamunanagar is known for paper and plywood."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is NOT correctly matched with an industrial town of Haryana?",
+      "options": [
+        "Manesar - automobile manufacturing",
+        "Yamunanagar - paper and plywood",
+        "Gurugram - corporate offices and IT services",
+        "Hisar - Indian Oil refinery"
+      ],
+      "correct": 3,
+      "rationale": "The refinery is at Panipat, not Hisar. Hisar is better known for agricultural universities and livestock research."
+    },
+    {
+      "id": 11,
+      "question": "The agency that builds and allots industrial estates and IMTs in Haryana is:",
+      "options": [
+        "HSIIDC",
+        "HPSC",
+        "NABARD",
+        "HSSC"
+      ],
+      "correct": 0,
+      "rationale": "HSIIDC (Haryana State Industrial and Infrastructure Development Corporation) was set up in 1967 and is based at Panchkula."
+    },
+    {
+      "id": 12,
+      "question": "The Kundli-Manesar-Palwal (KMP) Expressway is best described as:",
+      "options": [
+        "A railway freight corridor",
+        "An expressway of about 135 km that forms a ring around Delhi",
+        "An airport link road at Hisar",
+        "A canal route to Rajasthan"
+      ],
+      "correct": 1,
+      "rationale": "KMP, also called the Western Peripheral Expressway, runs about 135 km and links Sonipat, Gurugram and Faridabad areas, helping traffic bypass Delhi."
+    },
+    {
+      "id": 13,
+      "question": "The old Grand Trunk Road passing through Ambala, Karnal, Panipat and Sonipat is now part of which national highway?",
+      "options": [
+        "NH-52",
+        "NH-44",
+        "NH-48",
+        "NH-9"
+      ],
+      "correct": 1,
+      "rationale": "The GT Road corridor through northern Haryana is now NH-44. NH-48 runs from Delhi through Gurugram toward Jaipur."
+    },
+    {
+      "id": 14,
+      "question": "Which crop is grown mainly in the southwestern districts of Sirsa, Fatehabad and Hisar?",
+      "options": [
+        "Jute",
+        "Coffee",
+        "Cotton",
+        "Tea"
+      ],
+      "correct": 2,
+      "rationale": "Cotton is a major kharif crop of the dry southwest. Tea, jute and coffee are not grown in Haryana."
+    }
+  ]
+}

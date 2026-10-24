@@ -1,0 +1,148 @@
+# Data Interpretation: Tables and Charts
+
+> A data interpretation (DI) set gives you a table, bar graph, line graph or pie
+> chart and asks four to six questions on it. SSC CGL Tier 1 and 2, CHSL and RRB
+> NTPC papers all carry DI, and the questions repeat a small group of
+> calculations: percent change, average, ratio, share of total and angle. This
+> lesson shows how to read a table in text form, the five core calculations, and
+> the traps that cost marks.
+
+## 1. Read Before You Calculate
+
+[definition]
+**Data interpretation** is the skill of extracting numbers from a table or chart
+and answering questions on them using averages, ratios, percentages and simple
+comparison.
+[/definition]
+
+Before any arithmetic, check four things.
+
+| Check | Why it matters |
+| --- | --- |
+| Title | tells you what is measured |
+| Units | lakh, thousand, percent, tonnes or rupees change the answer |
+| Row and column labels | prevents reading the wrong year or category |
+| What the question asks | total, average, ratio, percent or difference |
+
+A common slip is mixing units in a single answer, such as comparing a figure in
+thousands with one in lakhs. Convert first, then calculate.
+
+## 2. A Worked Table
+
+Student enrolment in three colleges (original data for practice):
+
+| College | 2022 | 2023 | 2024 |
+| --- | --- | --- | --- |
+| A | 420 | 450 | 480 |
+| B | 300 | 330 | 297 |
+| C | 250 | 275 | 330 |
+| Total | 970 | 1055 | 1107 |
+
+Totals are computed column by column: for 2022, $420 + 300 + 250 = 970$.
+Check the grand total two ways (row sums and column sums) to catch mistakes.
+
+**Quick questions on this table.**
+- Total for College A: $420 + 450 + 480 = 1350$.
+- Average yearly enrolment of A: $\frac{1350}{3} = 450$.
+- B in 2024 versus 2022: it rose from 300 to 297 after peaking, a net fall of 3.
+
+## 3. The Five Core Calculations
+
+@math label="eq:percent-change"
+\text{Percent change} = \frac{\text{new} - \text{old}}{\text{old}} \times 100
+@/math
+
+| Calculation | Formula | Example from the table |
+| --- | --- | --- |
+| Average | $\frac{\text{sum}}{\text{count}}$ | A: $\frac{1350}{3} = 450$ |
+| Ratio | first : second, simplified | A to B in 2023: $450 : 330 = 15 : 11$ |
+| Percent change | divide by the **old** value | B, 2022 to 2023: $\frac{30}{300} = 10\%$ |
+| Share of total | $\frac{\text{part}}{\text{total}} \times 100$ | A in 2023: $\frac{450}{1055} \approx 42.7\%$ |
+| Difference | larger minus smaller | C minus B in 2024: $330 - 297 = 33$ |
+
+[important]
+Percent change always divides by the **old** (base) value. B fell from 330 to
+297 in 2024, a drop of $\frac{33}{330} = 10\%$. C rose 20% in 2024 on a base of
+275. Dividing by the new value is the most common error.
+[/important]
+
+## 4. Bar Graphs and Line Graphs in Text Form
+
+A bar graph or line graph is a table in disguise. In the exam, read each value
+off the axis, write the numbers down as a mini-table, then calculate.
+
+| Feature | What it tells you |
+| --- | --- |
+| Height of a bar | the value for that category |
+| Slope of a line | rate of rise or fall between two points |
+| Gap between two lines | the difference between two series |
+| Axis start | check whether it starts at zero |
+
+Tips for line graphs: a steeper segment means a bigger change, but percent
+change depends on the base, so compute it rather than judging by eye. Always
+look for the year with the **highest** growth, which is not always the year
+with the highest value.
+
+**Percentage points versus percent.** If a pass rate rises from 60% to 72%, it
+rose by 12 **percentage points**, but the **percent increase** is
+$\frac{12}{60} \times 100 = 20\%$. The two are different answers.
+
+## 5. Pie Charts and Degrees
+
+A pie chart divides a whole into sectors. The full circle is $360^\circ$, so
+$1\% = 3.6^\circ$.
+
+| Item | Share | Angle |
+| --- | --- | --- |
+| Rent | 30% | $108^\circ$ |
+| Food | 25% | $90^\circ$ |
+| Transport | 15% | $54^\circ$ |
+| Savings | 20% | $72^\circ$ |
+| Other | 10% | $36^\circ$ |
+| Total | 100% | $360^\circ$ |
+
+Convert both ways. From angle to value: $\frac{\text{angle}}{360} \times \text{total}$.
+For a total monthly income of Rs 45,000, Savings (20%) equals Rs 9,000.
+
+| Question type | Method |
+| --- | --- |
+| Value of a sector | share $\times$ total |
+| Difference of two sectors | difference of percentages $\times$ total |
+| Angle for a given share | share $\times 3.6$ |
+| Share from an angle | angle $\div 3.6$ |
+
+## 6. Speed Tricks and Exam Traps
+
+- **Approximate smartly**: when options are far apart, round the numbers (e.g.
+  1055 as 1050) and choose the nearest option.
+- **Compare by cross-multiplying** instead of computing two decimals.
+- **Use the unit method**: if the unit is in thousands, drop three zeros through
+  the whole calculation and restore it at the end.
+- **Missing value**: if the average of $n$ items is given, total $= n \times$
+  average, so the missing item is total minus the known sum.
+
+| Trap | Fix |
+| --- | --- |
+| Dividing by the new value | Divide by the old value |
+| Confusing percent and percentage points | Compute both and read the question |
+| Wrong year or row | Underline the year in the question |
+| Mixed units | Convert before calculating |
+| Highest value versus highest growth | Calculate growth separately |
+
+[example]
+Using the enrolment table, which college grew fastest in 2024? A rose
+$\frac{30}{450} = 6.67\%$, B fell 10% and C rose $\frac{55}{275} = 20\%$.
+College C grew fastest. Note that A's rise of 30 is smaller than C's 55 and also
+smaller in percent, so always compute the percentage rather than judging by
+the size of the numbers.
+[/example]
+
+[summary]
+Read the title, units and labels first, then pick the calculation the question
+needs. Average is sum over count; ratio compares two values in simplest form;
+percent change divides by the old value; share of total is part over total times
+100; and a pie chart converts at 3.6 degrees per percent. Remember the
+difference between percent and percentage points, calculate growth rather than
+judging it by eye, and double-check units. Round smartly when options are far
+apart and write chart values as a small table before computing.
+[/summary]

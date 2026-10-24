@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-schemes-institutions-and-policies",
+  "title": "Haryana Schemes, Institutions and Policies: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Beti Bachao Beti Padhao was launched on 22 January 2015 at:",
+      "options": [
+        "Jhajjar",
+        "Rohtak",
+        "Panipat",
+        "Kurukshetra"
+      ],
+      "correct": 2,
+      "rationale": "The campaign began at Panipat, Haryana. The state was chosen for its low child sex ratio."
+    },
+    {
+      "id": 2,
+      "question": "How many digits does the Family ID under Parivar Pehchan Patra have?",
+      "options": [
+        "Twelve",
+        "Ten",
+        "Six",
+        "Eight"
+      ],
+      "correct": 3,
+      "rationale": "It is an eight-digit Family ID linked to birth, death and marriage records. Twelve digits is the Aadhaar length."
+    },
+    {
+      "id": 3,
+      "question": "Meri Fasal Mera Byora is mainly a portal for:",
+      "options": [
+        "Family registration",
+        "Farmer crop registration and MSP e-procurement",
+        "Land mutation only",
+        "Pension payments"
+      ],
+      "correct": 1,
+      "rationale": "It supports crop registration and procurement at MSP. Family data is the job of Parivar Pehchan Patra."
+    },
+    {
+      "id": 4,
+      "question": "Haryana Day is observed on:",
+      "options": [
+        "26 January",
+        "15 August",
+        "2 October",
+        "1 November"
+      ],
+      "correct": 3,
+      "rationale": "Haryana was formed from Punjab on 1 November 1966."
+    },
+    {
+      "id": 5,
+      "question": "Kurukshetra University was established in:",
+      "options": [
+        "2003",
+        "1956",
+        "1976",
+        "1970"
+      ],
+      "correct": 1,
+      "rationale": "11 January 1956. 1970 is HAU, 1976 is MDU and 2003 is CDLU."
+    },
+    {
+      "id": 6,
+      "question": "Which university was first called Rohtak University?",
+      "options": [
+        "Kurukshetra University",
+        "CCS HAU",
+        "CDLU Sirsa",
+        "Maharshi Dayanand University"
+      ],
+      "correct": 3,
+      "rationale": "MDU was established in 1976 and renamed in 1977."
+    },
+    {
+      "id": 7,
+      "question": "CCS Haryana Agricultural University at Hisar was renamed after Charan Singh in:",
+      "options": [
+        "1991",
+        "1970",
+        "2003",
+        "1976"
+      ],
+      "correct": 0,
+      "rationale": "It was founded as Haryana Agricultural University on 2 February 1970 and renamed on 31 October 1991."
+    },
+    {
+      "id": 8,
+      "question": "Chaudhary Devi Lal University, Sirsa, was established in:",
+      "options": [
+        "1970",
+        "2003",
+        "1956",
+        "2010"
+      ],
+      "correct": 1,
+      "rationale": "2 April 2003. 2010 is the year IIM Rohtak began classes."
+    },
+    {
+      "id": 9,
+      "question": "Arrange the universities from oldest to newest: which order is right?",
+      "options": [
+        "Kurukshetra, HAU, MDU, CDLU",
+        "MDU, HAU, Kurukshetra, CDLU",
+        "CDLU, MDU, HAU, Kurukshetra",
+        "HAU, Kurukshetra, MDU, CDLU"
+      ],
+      "correct": 0,
+      "rationale": "1956, 1970, 1976 and 2003 respectively."
+    },
+    {
+      "id": 10,
+      "question": "NIT Kurukshetra was originally known as:",
+      "options": [
+        "Regional Engineering College",
+        "Haryana Engineering Institute",
+        "Technical Teachers Institute",
+        "Polytechnic Kurukshetra"
+      ],
+      "correct": 0,
+      "rationale": "Founded in 1963 as a Regional Engineering College and renamed NIT in 2002."
+    },
+    {
+      "id": 11,
+      "question": "IIM Rohtak began classes in June of which year?",
+      "options": [
+        "2020",
+        "2010",
+        "2015",
+        "2005"
+      ],
+      "correct": 1,
+      "rationale": "Its foundation stone was laid in November 2009 and classes began in June 2010."
+    },
+    {
+      "id": 12,
+      "question": "AIIMS Rewari's foundation stone was laid by the Prime Minister on:",
+      "options": [
+        "16 February 2024",
+        "22 January 2015",
+        "26 January 2020",
+        "1 November 2016"
+      ],
+      "correct": 0,
+      "rationale": "At Majra Bhalkhi, Rewari. The scheme is under PMSSY."
+    },
+    {
+      "id": 13,
+      "question": "Which statement is correct?",
+      "options": [
+        "IIM Rohtak is in Sirsa",
+        "Parivar Pehchan Patra is for crop MSP sale",
+        "Beti Bachao Beti Padhao was launched in Panipat",
+        "Kurukshetra University began in 2003"
+      ],
+      "correct": 2,
+      "rationale": "BBBP's launch was at Panipat. PPP is a family ID, IIM is in Rohtak and Kurukshetra University dates from 1956."
+    },
+    {
+      "id": 14,
+      "question": "Which pair is correctly matched?",
+      "options": [
+        "Sirsa - Rohtak University",
+        "Rohtak - NIT",
+        "Hisar - Agricultural university",
+        "Kurukshetra - IIM"
+      ],
+      "correct": 2,
+      "rationale": "CCS HAU is at Hisar. NIT is at Kurukshetra and IIM is at Rohtak."
+    }
+  ]
+}

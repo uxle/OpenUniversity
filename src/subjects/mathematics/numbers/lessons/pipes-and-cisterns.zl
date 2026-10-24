@@ -1,0 +1,131 @@
+# Pipes and Cisterns: Filling, Draining, and Leaks
+
+> A tap fills a tank in 6 hours, a drain empties it in 9. Open both: how long now?
+> Pipes and cisterns appears in almost every SSC CGL, CHSL and RRB maths paper,
+> usually as one to two quick questions. It is the Time and Work chapter in
+> disguise, so once you see pipes as workers with a sign, the whole topic
+> becomes a few lines of arithmetic.
+
+## 1. Pipes Are Workers with a Sign
+
+[definition]
+An **inlet** is a pipe that fills a cistern (tank); an **outlet** (or a **leak**)
+is a pipe that empties it. If an inlet fills the tank in $n$ hours, it fills
+$\frac{1}{n}$ of the tank each hour. An outlet that empties it in $m$ hours
+removes $\frac{1}{m}$ of the tank each hour.
+[/definition]
+
+| Pipe type | Time for full tank | Part per hour | Sign in the sum |
+| --- | --- | --- | --- |
+| Inlet | $n$ hours | $\frac{1}{n}$ | plus |
+| Outlet or leak | $m$ hours | $\frac{1}{m}$ | minus |
+
+@math label="eq:net-rate"
+\frac{1}{T} = \frac{1}{a} + \frac{1}{b} - \frac{1}{c}
+@/math
+
+Here $a$ and $b$ are inlets, $c$ is an outlet, and $T$ is the time with all
+three open. If the result is negative, the tank never fills; it empties.
+
+## 2. The Units Method (Best for Exams)
+
+Take the tank capacity as the **LCM of all the times**. Each pipe then moves a
+whole number of units per hour and there are no fractions to add.
+
+**Worked example.** Pipes A, B fill in 20 and 30 hours; C empties in 60 hours.
+Take 60 units. A gives 3, B gives 2, C removes 1 per hour, so the net is 4
+units per hour. Time = $\frac{60}{4}$ = 15 hours.
+
+| Pipe | Time | Units per hour (capacity 60) |
+| --- | --- | --- |
+| A (inlet) | 20 h | +3 |
+| B (inlet) | 30 h | +2 |
+| C (outlet) | 60 h | -1 |
+| Net | | +4 |
+
+## 3. Shortcut Formulas
+
+| Situation | Formula |
+| --- | --- |
+| Two inlets together | $T = \frac{ab}{a+b}$ |
+| One inlet and one outlet | $T = \frac{ac}{c-a}$ (needs $c > a$) |
+| Leak found from delay | normal time $t$, time with leak $t'$: leak empties in $\frac{t \times t'}{t'-t}$ |
+| One pipe twice as fast as another | times are in the ratio $1:2$; rates in $2:1$ |
+
+**Worked example (leak).** A tank fills in 6 hours normally and in 8 hours
+with a leak. Leak time $= \frac{6 \times 8}{8-6} = 24$ hours. A common
+variant says the pipe takes "2 hours longer"; then $t' = t + 2$ and the same
+formula applies.
+
+[important]
+Never subtract times to get a net time. Always subtract **rates** (parts per
+hour), then invert. Inlet 8 hours and leak 24 hours does not give 16 hours;
+$\frac{1}{8}-\frac{1}{24} = \frac{1}{12}$ gives 12 hours.
+[/important]
+
+## 4. Pipes Opened for Part of the Time
+
+Problems often close or open a pipe midway. Work in units and track the
+tank stage by stage.
+
+**Worked example.** A fills in 12 hours, B in 20 hours. Both open, but A is
+closed after 3 hours. Take 60 units: A is 5 per hour, B is 3 per hour.
+- First 3 hours: $(5+3)\times 3 = 24$ units, leaving 36.
+- B alone: $\frac{36}{3} = 12$ hours.
+- Total: 15 hours.
+
+**Part-filled tanks.** If the tank is already half full, only half the capacity
+remains to be moved, so halve the units but keep the rates.
+
+## 5. Alternate and Rotating Pipes
+
+When pipes work one hour at a time in turn, add up one **full cycle**, count how
+many whole cycles fit, then handle the leftover units hour by hour.
+
+**Worked example.** A fills in 10 h, B in 15 h; they work alternately for an
+hour each, A first. Take 30 units: A is 3, B is 2, so a cycle of 2 hours gives
+5 units. Six cycles give 30 units exactly, so the tank is full in 12 hours.
+
+| Cycle count | Units filled | Hours used |
+| --- | --- | --- |
+| 1 | 5 | 2 |
+| 3 | 15 | 6 |
+| 6 | 30 | 12 |
+
+[important]
+Watch for overshoot: stop at the moment the tank reaches full, not at the end
+of a cycle. If the last pipe in line adds more than is needed, only a fraction
+of that hour is used.
+[/important]
+
+## 6. Rates in Litres and Typical Traps
+
+Some questions give flow in litres per minute instead of times. Then simply
+divide: time $= \frac{\text{capacity}}{\text{inflow} - \text{outflow}}$.
+
+| Trap | What to do |
+| --- | --- |
+| Averaging the times of two pipes | Add rates, never average times |
+| Forgetting the minus on an outlet | Mark each pipe plus or minus before adding |
+| Mixing hours and minutes | Convert everything to one unit first |
+| Using the full tank for a half-full one | Scale the remaining work only |
+
+**Ratio trick.** If pipe A is $k$ times as fast as pipe B and together they
+take $T$ hours, B alone takes $(k+1)T$ hours and A alone takes
+$\frac{(k+1)T}{k}$ hours.
+
+[example]
+Pipe A is twice as fast as B and together they fill a tank in 12 hours. Then
+$k = 2$, so B alone needs $(2+1)\times 12 = 36$ hours and A alone needs
+$\frac{3 \times 12}{2} = 18$ hours. Check: $\frac{1}{18}+\frac{1}{36}=\frac{3}{36}=\frac{1}{12}$.
+[/example]
+
+[summary]
+Treat every pipe as a worker: an inlet has a positive rate $\frac{1}{n}$ and an
+outlet or leak has a negative rate. Add signed rates and invert to get the time,
+or choose the LCM as capacity and work in units per hour. Memorise
+$T=\frac{ab}{a+b}$ for two inlets, $\frac{ac}{c-a}$ for an inlet and an
+outlet, and $\frac{t\,t'}{t'-t}$ for a leak found from a delay. For pipes that
+close midway or alternate, track units stage by stage and watch for overshoot
+in the final hour. Never average or subtract times; always work with rates.
+[/summary]

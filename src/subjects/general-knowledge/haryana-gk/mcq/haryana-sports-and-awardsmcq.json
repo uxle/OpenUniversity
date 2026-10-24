@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-sports-and-awards",
+  "title": "Haryana Sports and Awards: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Neeraj Chopra's native village Khandra lies in which district?",
+      "options": [
+        "Rohtak",
+        "Sonipat",
+        "Panipat",
+        "Jhajjar"
+      ],
+      "correct": 2,
+      "rationale": "Khandra is in Panipat district. Sonipat, Jhajjar and Rohtak are home districts of other medallists, a classic trap."
+    },
+    {
+      "id": 2,
+      "question": "In which event did Vijender Singh win India's first Olympic boxing medal in 2008?",
+      "options": [
+        "Middleweight 75 kg",
+        "Heavyweight",
+        "Lightweight 60 kg",
+        "Welterweight 69 kg"
+      ],
+      "correct": 0,
+      "rationale": "He took bronze in the 75 kg middleweight class at Beijing. His Asian Games gold in 2010 was also in middleweight."
+    },
+    {
+      "id": 3,
+      "question": "Sakshi Malik, bronze medallist at Rio 2016, hails from which village?",
+      "options": [
+        "Mokhra, Rohtak",
+        "Kaluwas, Bhiwani",
+        "Khudan, Jhajjar",
+        "Nahri, Sonipat"
+      ],
+      "correct": 0,
+      "rationale": "Mokhra in Rohtak. Khudan is Bajrang Punia's, Nahri is Ravi Dahiya's and Kaluwas is Vijender Singh's."
+    },
+    {
+      "id": 4,
+      "question": "Which pair of Olympic medals did Manu Bhaker win at Paris 2024?",
+      "options": [
+        "Silver in 25 m pistol and bronze in air rifle",
+        "Two bronzes in 10 m air pistol events",
+        "Gold and silver in rifle events",
+        "One gold in mixed team only"
+      ],
+      "correct": 1,
+      "rationale": "She won bronze in the women's 10 m air pistol and in the mixed team event with Sarabjot Singh. She was fourth in the 25 m pistol."
+    },
+    {
+      "id": 5,
+      "question": "Which medallist is NOT from Haryana?",
+      "options": [
+        "Ravi Dahiya",
+        "Sushil Kumar",
+        "Sumit Antil",
+        "Bajrang Punia"
+      ],
+      "correct": 1,
+      "rationale": "Sushil Kumar was born near Najafgarh, Delhi. The other three are from Sonipat, Sonipat and Jhajjar respectively."
+    },
+    {
+      "id": 6,
+      "question": "Ravi Dahiya of Nahri village won which medal at Tokyo 2020?",
+      "options": [
+        "Silver in 65 kg",
+        "Gold in 57 kg",
+        "Silver in 57 kg",
+        "Bronze in 65 kg"
+      ],
+      "correct": 2,
+      "rationale": "Silver in 57 kg freestyle. Bajrang's bronze was at 65 kg."
+    },
+    {
+      "id": 7,
+      "question": "Sumit Antil's Paralympic javelin gold at Tokyo 2020 came in which classification?",
+      "options": [
+        "F64",
+        "F46",
+        "F40",
+        "F57"
+      ],
+      "correct": 0,
+      "rationale": "F64 javelin, with a world record of 68.55 m on 30 August 2021. He defended the title at Paris 2024."
+    },
+    {
+      "id": 8,
+      "question": "Geeta Phogat's 2010 Delhi CWG gold made her the first Indian woman to win Commonwealth gold in:",
+      "options": [
+        "Judo",
+        "Wrestling",
+        "Boxing",
+        "Weightlifting"
+      ],
+      "correct": 1,
+      "rationale": "She won at 55 kg freestyle wrestling and later became the first Indian woman wrestler to qualify for the Olympics (2012)."
+    },
+    {
+      "id": 9,
+      "question": "The Phogat sisters' native village Balali belongs to which district?",
+      "options": [
+        "Jhajjar",
+        "Rohtak",
+        "Bhiwani",
+        "Charkhi Dadri"
+      ],
+      "correct": 3,
+      "rationale": "Balali is in Charkhi Dadri district, carved out of Bhiwani. Mahavir Singh Phogat's story inspired the film Dangal."
+    },
+    {
+      "id": 10,
+      "question": "In which year did Yogeshwar Dutt win Olympic bronze, and in which category?",
+      "options": [
+        "2016, 65 kg",
+        "2012, 60 kg",
+        "2008, 60 kg",
+        "2012, 66 kg"
+      ],
+      "correct": 1,
+      "rationale": "He took bronze in 60 kg freestyle at London 2012. His Asian Games gold (2014) was at 65 kg."
+    },
+    {
+      "id": 11,
+      "question": "Which statement about the Khel Ratna is correct?",
+      "options": [
+        "It was renamed Major Dhyan Chand Khel Ratna in 2021",
+        "Its first recipient was Neeraj Chopra",
+        "It is given by the Haryana Government",
+        "It was renamed after Rajiv Gandhi in 2021"
+      ],
+      "correct": 0,
+      "rationale": "The award was Rajiv Gandhi Khel Ratna until August 2021. It is national, and Viswanathan Anand was the first recipient."
+    },
+    {
+      "id": 12,
+      "question": "Match the Khel Ratna winner with the year: which pair is correct?",
+      "options": [
+        "Vinesh Phogat - 2012",
+        "Sakshi Malik - 2021",
+        "Yogeshwar Dutt - 2024",
+        "Bajrang Punia - 2019"
+      ],
+      "correct": 3,
+      "rationale": "Bajrang got it in 2019. Sakshi won in 2016, Vinesh in 2020 and Dutt in 2012."
+    },
+    {
+      "id": 13,
+      "question": "The maximum Haryana cash award reported for an Olympic silver medal is:",
+      "options": [
+        "Rs 5 crore",
+        "Rs 2.5 crore",
+        "Rs 6 crore",
+        "Rs 4 crore"
+      ],
+      "correct": 3,
+      "rationale": "Reported maximums were Rs 6 crore for gold, 4 crore for silver and 2.5 crore for bronze."
+    },
+    {
+      "id": 14,
+      "question": "Motilal Nehru School of Sports, which later became the base of the state's sports university, is located at:",
+      "options": [
+        "Sohna Road, Gurugram",
+        "Hisar",
+        "Rai, Sonipat",
+        "Kheri, Karnal"
+      ],
+      "correct": 2,
+      "rationale": "The school was founded in 1973 at Rai, Sonipat. The Gurugram location is the Tau Devi Lal Stadium."
+    }
+  ]
+}

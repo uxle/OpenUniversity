@@ -1,0 +1,186 @@
+{
+  "lessonId": "census-2011-and-demography-of-india",
+  "title": "Census 2011 and the Demography of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to Census 2011, what was the sex ratio of India (females per 1,000 males)?",
+      "options": [
+        "933",
+        "943",
+        "919",
+        "962"
+      ],
+      "correct": 1,
+      "rationale": "The all-age sex ratio was 943. The figure 919 is the child sex ratio for ages 0 to 6, the commonest swap."
+    },
+    {
+      "id": 2,
+      "question": "Which state had the largest population in Census 2011?",
+      "options": [
+        "Uttar Pradesh",
+        "Maharashtra",
+        "Bihar",
+        "West Bengal"
+      ],
+      "correct": 0,
+      "rationale": "Uttar Pradesh had 199,812,341 people. Maharashtra (112,374,333) was second and Bihar third."
+    },
+    {
+      "id": 3,
+      "question": "Which state had the highest density of population in Census 2011?",
+      "options": [
+        "Uttar Pradesh",
+        "Kerala",
+        "Bihar",
+        "West Bengal"
+      ],
+      "correct": 2,
+      "rationale": "Bihar had 1,102 persons per sq km. Delhi (11,297) is higher but is a Union Territory, so it is excluded when the question says states."
+    },
+    {
+      "id": 4,
+      "question": "Which state recorded the lowest sex ratio in Census 2011?",
+      "options": [
+        "Punjab",
+        "Rajasthan",
+        "Uttar Pradesh",
+        "Haryana"
+      ],
+      "correct": 3,
+      "rationale": "Haryana had 879 females per 1,000 males, the lowest among the states."
+    },
+    {
+      "id": 5,
+      "question": "Which pair correctly gives the highest and lowest literacy rates among states in Census 2011?",
+      "options": [
+        "Kerala and Bihar",
+        "Mizoram and Rajasthan",
+        "Kerala and Arunachal Pradesh",
+        "Goa and Bihar"
+      ],
+      "correct": 0,
+      "rationale": "Kerala had 94.00 percent and Bihar 61.80 percent. Kerala also had the highest sex ratio (1,084)."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following was the least populous state in Census 2011?",
+      "options": [
+        "Goa",
+        "Mizoram",
+        "Sikkim",
+        "Arunachal Pradesh"
+      ],
+      "correct": 2,
+      "rationale": "Sikkim had 610,577 people. Lakshadweep (64,473) is smaller but is a Union Territory."
+    },
+    {
+      "id": 7,
+      "question": "The density of population of India in Census 2011 was:",
+      "options": [
+        "325 persons per sq km",
+        "382 persons per sq km",
+        "412 persons per sq km",
+        "1,102 persons per sq km"
+      ],
+      "correct": 1,
+      "rationale": "India's density was 382 per sq km. The figure 1,102 belongs to Bihar and 325 was the 2001 density."
+    },
+    {
+      "id": 8,
+      "question": "Census 2011 recorded the overall literacy rate of India as 74.04 percent. Which statement about male and female literacy is correct?",
+      "options": [
+        "Male 80.00 and female 70.00, a gap of 10 points",
+        "Male 82.14 and female 65.46, a gap of about 8 points",
+        "Male 74.04 and female 74.04",
+        "Male 82.14 and female 65.46, a gap of about 16.7 points"
+      ],
+      "correct": 3,
+      "rationale": "The gap is 82.14 minus 65.46, which is 16.68 points. The overall rate lies between the male and female rates."
+    },
+    {
+      "id": 9,
+      "question": "Which statement about the Census is NOT correct?",
+      "options": [
+        "The first synchronous census was held in 1901",
+        "Census 2011 was the 15th census since 1872",
+        "Literacy is counted for persons aged 7 and above",
+        "The Census is conducted under the Census Act, 1948"
+      ],
+      "correct": 0,
+      "rationale": "The first synchronous census was held in 1881 under Lord Ripon. Statements about the 15th census, age 7 and the 1948 Act are correct."
+    },
+    {
+      "id": 10,
+      "question": "What was the population of India in Census 2011, to the nearest tenth of a billion?",
+      "options": [
+        "1.0 billion",
+        "1.2 billion",
+        "1.4 billion",
+        "1.1 billion"
+      ],
+      "correct": 1,
+      "rationale": "The final count was 1,210,854,977, about 1.21 billion, so 1.2 billion to the nearest tenth."
+    },
+    {
+      "id": 11,
+      "question": "In Census 2011, which of the following is true of the sex ratio among Union Territories?",
+      "options": [
+        "Delhi was the highest at 868",
+        "Lakshadweep was the lowest",
+        "Puducherry was the highest at 1,037",
+        "Chandigarh was the highest"
+      ],
+      "correct": 2,
+      "rationale": "Puducherry had 1,037 and Daman and Diu the lowest at 618. Delhi was 868, so it was neither the highest nor lowest."
+    },
+    {
+      "id": 12,
+      "question": "Which state showed a negative decadal population growth rate in Census 2011?",
+      "options": [
+        "Kerala",
+        "Mizoram",
+        "Sikkim",
+        "Nagaland"
+      ],
+      "correct": 3,
+      "rationale": "Nagaland's population fell slightly between 2001 and 2011. Kerala's growth was low but positive."
+    },
+    {
+      "id": 13,
+      "question": "What share of India's population lived in rural areas according to Census 2011?",
+      "options": [
+        "72.19 percent",
+        "68.84 percent",
+        "31.16 percent",
+        "58.40 percent"
+      ],
+      "correct": 1,
+      "rationale": "Rural share was 68.84 percent; the urban share was about 31.2 percent, which is the figure that gets swapped in."
+    },
+    {
+      "id": 14,
+      "question": "Among the following religious groups, which has the second-largest population share in Census 2011?",
+      "options": [
+        "Muslims",
+        "Christians",
+        "Sikhs",
+        "Buddhists"
+      ],
+      "correct": 0,
+      "rationale": "Hindus were 79.8 percent and Muslims 14.2 percent, ahead of Christians (2.3), Sikhs (1.7), Buddhists (0.7) and Jains (0.4)."
+    },
+    {
+      "id": 15,
+      "question": "A town qualifies as a census town if its population is at least 5,000, at least 75 percent of male main workers are in non-farm work, and its density is at least:",
+      "options": [
+        "382 persons per sq km",
+        "1,000 persons per sq km",
+        "400 persons per sq km",
+        "200 persons per sq km"
+      ],
+      "correct": 2,
+      "rationale": "The density criterion is 400 per sq km. Do not mix it up with 382, the national density in 2011."
+    }
+  ]
+}

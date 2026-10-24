@@ -1,0 +1,186 @@
+{
+  "lessonId": "haryana-culture-folk-dance-and-fairs",
+  "title": "Haryana Culture: Folk Dances, Saang, Fairs and Crafts: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Haryana folk dance is performed only by men of the Ahir community around the Gurgaon region at harvest time?",
+      "options": [
+        "Dhamal",
+        "Ghoomar",
+        "Loor",
+        "Khoria"
+      ],
+      "correct": 0,
+      "rationale": "Dhamal is the men's dance of the Ahirs. Khoria and Loor are danced by women or girls, and Ghoomar by girls in the west."
+    },
+    {
+      "id": 2,
+      "question": "Khoria, a dance of central Haryana, is performed by:",
+      "options": [
+        "Children only",
+        "Women only",
+        "Men only",
+        "Priests only"
+      ],
+      "correct": 1,
+      "rationale": "Khoria is a women's dance linked with harvest and farm occasions."
+    },
+    {
+      "id": 3,
+      "question": "The name of the dance Phag is linked with which month?",
+      "options": [
+        "Kartik",
+        "Phalgun",
+        "Chaitra",
+        "Sawan"
+      ],
+      "correct": 1,
+      "rationale": "Phag is danced in Phalgun, close to Holi, and the name comes from the month."
+    },
+    {
+      "id": 4,
+      "question": "Loor is a folk dance performed mainly by:",
+      "options": [
+        "Elderly men during Diwali",
+        "Soldiers in processions",
+        "Girls, around Phalguna and Holi",
+        "Priests at Kurukshetra"
+      ],
+      "correct": 2,
+      "rationale": "Loor is performed by girls in spring and around Holi, with songs in question-and-answer form."
+    },
+    {
+      "id": 5,
+      "question": "Which is the one-sided drum that gives its name to a Haryana spring harvest dance?",
+      "options": [
+        "Manjira",
+        "Daph",
+        "Nagara",
+        "Dholak"
+      ],
+      "correct": 1,
+      "rationale": "The Daph dance is accompanied by the daph drum. Manjira is a pair of hand cymbals used in Chaupaiya."
+    },
+    {
+      "id": 6,
+      "question": "Who is honoured as Suryakavi and is the best-known name in Haryanvi saang and raagni?",
+      "options": [
+        "Mirabai",
+        "Bhai Gurdas",
+        "Pandit Lakhmi Chand",
+        "Surdas"
+      ],
+      "correct": 2,
+      "rationale": "Pandit Lakhmi Chand (1903-1945) of Jaanti Kalan, Sonipat, is the leading figure of saang and raagni."
+    },
+    {
+      "id": 7,
+      "question": "Saang is best described as:",
+      "options": [
+        "A crafts fair",
+        "A type of embroidery",
+        "A khap assembly",
+        "Haryanvi musical folk theatre"
+      ],
+      "correct": 3,
+      "rationale": "Saang is open-air folk theatre mixing songs, dialogue and humour."
+    },
+    {
+      "id": 8,
+      "question": "Which dialect is spoken in the western parts of Haryana near Rajasthan?",
+      "options": [
+        "Mewati",
+        "Ahirwati",
+        "Braj",
+        "Bagri"
+      ],
+      "correct": 3,
+      "rationale": "Bagri is the western dialect. Ahirwati and Mewati belong to the south, and Braj to the southeast."
+    },
+    {
+      "id": 9,
+      "question": "Which statement about the Surajkund International Crafts Mela is correct?",
+      "options": [
+        "It is held at Pinjore in June",
+        "It is held in Kurukshetra in December",
+        "It began in 1987 and is held at Surajkund, Faridabad, in February",
+        "It began in 1966"
+      ],
+      "correct": 2,
+      "rationale": "Surajkund Mela started in 1987 and is held in the first fortnight of February. The theme state idea began in 1989."
+    },
+    {
+      "id": 10,
+      "question": "Which state was the first Theme State at the Surajkund Mela when the concept began in 1989?",
+      "options": [
+        "Gujarat",
+        "Punjab",
+        "Odisha",
+        "Rajasthan"
+      ],
+      "correct": 3,
+      "rationale": "Rajasthan was the first theme state."
+    },
+    {
+      "id": 11,
+      "question": "The International Gita Mahotsav is held at which place?",
+      "options": [
+        "Kurukshetra",
+        "Hisar",
+        "Panipat",
+        "Pinjore"
+      ],
+      "correct": 0,
+      "rationale": "It is held at Kurukshetra, around Brahma Sarovar, near Gita Jayanti."
+    },
+    {
+      "id": 12,
+      "question": "The Pinjore Heritage Festival takes place at which venue?",
+      "options": [
+        "Sultanpur Park",
+        "Brahma Sarovar",
+        "Karna Lake",
+        "Yadavindra Gardens"
+      ],
+      "correct": 3,
+      "rationale": "It is held in December at Yadavindra Gardens, Pinjore, in Panchkula district."
+    },
+    {
+      "id": 13,
+      "question": "Which is NOT correctly matched?",
+      "options": [
+        "Phulkari - embroidery",
+        "Panipat - durries and handlooms",
+        "Ghoomar - men's dance of the Ahirs",
+        "Gugga Pir - snake-protecting folk deity"
+      ],
+      "correct": 2,
+      "rationale": "Ghoomar is danced by girls in western Haryana; Dhamal is the Ahir men's dance."
+    },
+    {
+      "id": 14,
+      "question": "Gugga Navami is observed on the ninth day of the dark half of which month?",
+      "options": [
+        "Chaitra",
+        "Phalgun",
+        "Bhadrapada",
+        "Magha"
+      ],
+      "correct": 2,
+      "rationale": "Goga Navami falls on Krishna Paksha Navami of Bhadrapada."
+    },
+    {
+      "id": 15,
+      "question": "A Sarv Khap is:",
+      "options": [
+        "A folk drum",
+        "A court of the High Court",
+        "A state government department",
+        "An assembly of several khap panchayats"
+      ],
+      "correct": 3,
+      "rationale": "A khap panchayat is an assembly of elders of a clan; a Sarv Khap brings several of them together."
+    }
+  ]
+}

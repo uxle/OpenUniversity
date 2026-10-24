@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-geography-rivers-and-climate",
+  "title": "Haryana Geography: Landforms, Rivers and Climate: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the highest point of Haryana?",
+      "options": [
+        "Morni village",
+        "Dhosi Hill in the Aravallis",
+        "Tosham Hill",
+        "Karoh Peak in the Shivaliks"
+      ],
+      "correct": 3,
+      "rationale": "Karoh Peak, about 1,467 m, lies in the Shivalik (Morni) hills of Panchkula district. Dhosi and Tosham are low Aravalli outcrops."
+    },
+    {
+      "id": 2,
+      "question": "Which river forms the eastern boundary of Haryana with Uttar Pradesh?",
+      "options": [
+        "Yamuna",
+        "Markanda",
+        "Sahibi",
+        "Ghaggar"
+      ],
+      "correct": 0,
+      "rationale": "The Yamuna is the boundary river and the only perennial one. Ghaggar and Markanda are seasonal."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is the main seasonal river of Haryana, entering near Pinjore and flowing through Ambala and Sirsa?",
+      "options": [
+        "Dohan",
+        "Indori",
+        "Sahibi",
+        "Ghaggar"
+      ],
+      "correct": 3,
+      "rationale": "The Ghaggar (Ghaggar-Hakra) is the principal seasonal river. Sahibi, Dohan and Indori are southern Aravalli streams."
+    },
+    {
+      "id": 4,
+      "question": "Which of these rivers is NOT a seasonal stream of Haryana?",
+      "options": [
+        "Markanda",
+        "Tangri",
+        "Yamuna",
+        "Sahibi"
+      ],
+      "correct": 2,
+      "rationale": "The Yamuna is perennial. The others are rain-fed streams that dry up for much of the year."
+    },
+    {
+      "id": 5,
+      "question": "The Bagar region, a semi-desert tract, is found chiefly in:",
+      "options": [
+        "Faridabad and Palwal",
+        "Panchkula and Ambala",
+        "Sirsa and western Fatehabad",
+        "Yamunanagar and Kurukshetra"
+      ],
+      "correct": 2,
+      "rationale": "Bagar is the dry sandy northwest. Panchkula and Yamunanagar belong to the Shivalik belt."
+    },
+    {
+      "id": 6,
+      "question": "The northern end of which mountain range appears as scattered low hills in southern Haryana?",
+      "options": [
+        "Aravalli",
+        "Vindhyas",
+        "Satpura",
+        "Western Ghats"
+      ],
+      "correct": 0,
+      "rationale": "The Aravalli outcrops cover Mahendragarh, Rewari, Gurugram, Nuh and Faridabad."
+    },
+    {
+      "id": 7,
+      "question": "The Ottu barrage is built on which river in Sirsa district?",
+      "options": [
+        "Yamuna",
+        "Chautang",
+        "Ghaggar",
+        "Sahibi"
+      ],
+      "correct": 2,
+      "rationale": "Ottu barrage is on the Ghaggar-Hakra at Sirsa. Hathnikund and Tajewala are on the Yamuna."
+    },
+    {
+      "id": 8,
+      "question": "The Western Yamuna Canal takes its water from the Yamuna at headworks in which district?",
+      "options": [
+        "Yamunanagar",
+        "Rohtak",
+        "Hisar",
+        "Karnal"
+      ],
+      "correct": 0,
+      "rationale": "The Tajewala/Hathnikund headworks are in Yamunanagar. Karnal, Hisar and Rohtak are served by the canal but are not its source."
+    },
+    {
+      "id": 9,
+      "question": "Which statement about Haryana's rainfall is correct?",
+      "options": [
+        "The southwest gets the most from the sea monsoon",
+        "It is uniform across the state",
+        "It increases from northeast to southwest",
+        "It decreases from northeast to southwest"
+      ],
+      "correct": 3,
+      "rationale": "The Shivalik belt in the northeast is wettest, while the southwest (Bagar, Mahendragarh) is driest. The state averages only about 590 mm."
+    },
+    {
+      "id": 10,
+      "question": "Which pair of rivers belongs to the southern, Aravalli-fed group that flows toward the Sahibi?",
+      "options": [
+        "Markanda and Tangri",
+        "Dohan and Krishnavati",
+        "Somb and Kaushalya",
+        "Yamuna and Ghaggar"
+      ],
+      "correct": 1,
+      "rationale": "Dohan, Krishnavati and Indori join the Sahibi system in the south. Markanda, Tangri, Somb and Kaushalya belong to the Ghaggar system in the north."
+    },
+    {
+      "id": 11,
+      "question": "Sultanpur National Park, a bird sanctuary, is in which district?",
+      "options": [
+        "Gurugram",
+        "Panchkula",
+        "Yamunanagar",
+        "Sirsa"
+      ],
+      "correct": 0,
+      "rationale": "Sultanpur National Park is in Gurugram district. Kalesar National Park is the one in Yamunanagar."
+    },
+    {
+      "id": 12,
+      "question": "Which statement about Haryana's natural vegetation is correct?",
+      "options": [
+        "Thorny dry deciduous forest and scrub with shisham, khair and babul is typical",
+        "Dense tropical evergreen forest covers most of the state",
+        "Mangroves cover the plains",
+        "Alpine meadows cover the south"
+      ],
+      "correct": 0,
+      "rationale": "Haryana has thorny dry deciduous and scrub vegetation, and very low forest cover compared with India's average."
+    },
+    {
+      "id": 13,
+      "question": "Haryana encloses the National Capital Territory of Delhi on which sides?",
+      "options": [
+        "North and east only",
+        "East and south only",
+        "All four sides",
+        "North, west and south"
+      ],
+      "correct": 3,
+      "rationale": "Haryana lies north, west and south of Delhi; Uttar Pradesh lies across the Yamuna on the east."
+    },
+    {
+      "id": 14,
+      "question": "The Bhakra system, Western Yamuna Canal and Sutlej-Yamuna Link are all examples of what kind of irrigation source in Haryana?",
+      "options": [
+        "Drip irrigation",
+        "Canal irrigation",
+        "Tank irrigation",
+        "Well irrigation only"
+      ],
+      "correct": 1,
+      "rationale": "Because most rivers are seasonal, Haryana relies heavily on canals fed from perennial rivers and reservoirs."
+    }
+  ]
+}

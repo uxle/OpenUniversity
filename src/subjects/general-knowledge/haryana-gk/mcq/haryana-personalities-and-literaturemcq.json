@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-personalities-and-literature",
+  "title": "Haryana Personalities and Literature: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who was the first Chief Minister of Haryana after its formation on 1 November 1966?",
+      "options": [
+        "Bhagwat Dayal Sharma",
+        "Bansi Lal",
+        "Devi Lal",
+        "Rao Birender Singh"
+      ],
+      "correct": 0,
+      "rationale": "Bhagwat Dayal Sharma of Beri (Jhajjar) took office in 1966. Rao Birender Singh succeeded him in March 1967."
+    },
+    {
+      "id": 2,
+      "question": "Rao Birender Singh, CM in 1967, formed which party after leaving Congress?",
+      "options": [
+        "Haryana Vikas Party",
+        "Vishal Haryana Party",
+        "Haryana Janhit Congress",
+        "Indian National Lok Dal"
+      ],
+      "correct": 1,
+      "rationale": "Vishal Haryana Party was his. Haryana Vikas Party was Bansi Lal's (1996), INLD is Devi Lal's, and HJC is Bhajan Lal's (2007)."
+    },
+    {
+      "id": 3,
+      "question": "Which leader was a Deputy Prime Minister of India and is nicknamed 'Tau'?",
+      "options": [
+        "Chhotu Ram",
+        "Bhajan Lal",
+        "Bansi Lal",
+        "Devi Lal"
+      ],
+      "correct": 3,
+      "rationale": "Devi Lal of Teja Khera, Sirsa, was Deputy PM from 1989 to 1991 and is called Tau. Bansi Lal was a Union Defence and Railway Minister, not Deputy PM."
+    },
+    {
+      "id": 4,
+      "question": "Bansi Lal, called the architect of modern Haryana, was born in which district?",
+      "options": [
+        "Sirsa",
+        "Bhiwani",
+        "Hisar",
+        "Rewari"
+      ],
+      "correct": 1,
+      "rationale": "Bansi Lal was born at Golagarh, Bhiwani district. Sirsa is Devi Lal's home district and Rewari is Rao Birender Singh's."
+    },
+    {
+      "id": 5,
+      "question": "Match the leader with the home place: which pair is correct?",
+      "options": [
+        "Devi Lal - Garhi Sampla",
+        "Rao Tula Ram - Golagarh",
+        "Bhagwat Dayal Sharma - Beri",
+        "Chhotu Ram - Teja Khera"
+      ],
+      "correct": 2,
+      "rationale": "Beri in Jhajjar is Sharma's native place. Garhi Sampla belongs to Chhotu Ram, Teja Khera to Devi Lal and Golagarh to Bansi Lal."
+    },
+    {
+      "id": 6,
+      "question": "Chhotu Ram founded the Hindi weekly Jat Gazette in Rohtak in:",
+      "options": [
+        "1900",
+        "1945",
+        "1937",
+        "1916"
+      ],
+      "correct": 3,
+      "rationale": "He started it in 1916. 1937 is the year he became Punjab's Revenue Minister and was knighted; 1945 is the year he died."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following titles is associated with Sir Chhotu Ram?",
+      "options": [
+        "Deenbandhu",
+        "Lauh Purush",
+        "Kalidas of Haryana",
+        "Suryakavi"
+      ],
+      "correct": 0,
+      "rationale": "Deenbandhu (friend of the poor) is his title. Suryakavi and Kalidas of Haryana belong to the saang master Pt Lakhmi Chand."
+    },
+    {
+      "id": 8,
+      "question": "The Battle of Narnaul (Nasibpur) of 16 November 1857 is linked with which Haryana hero?",
+      "options": [
+        "Bansi Lal",
+        "Chhotu Ram",
+        "Rao Tula Ram",
+        "Baje Bhagat"
+      ],
+      "correct": 2,
+      "rationale": "Rao Tula Ram of Rewari, whose forces were led there by his cousin Rao Krishan Singh. He died at Kabul in 1863."
+    },
+    {
+      "id": 9,
+      "question": "Kalpana Chawla's first space flight was mission:",
+      "options": [
+        "STS-107",
+        "STS-1",
+        "STS-87",
+        "STS-51"
+      ],
+      "correct": 2,
+      "rationale": "STS-87 flew from 19 November 1997. STS-107 was her fatal second flight, ending with Columbia's break-up on 1 February 2003."
+    },
+    {
+      "id": 10,
+      "question": "Kalpana Chawla was born in which Haryana town?",
+      "options": [
+        "Panipat",
+        "Ambala",
+        "Kaithal",
+        "Karnal"
+      ],
+      "correct": 3,
+      "rationale": "Karnal. She studied at Tagore Baal Niketan school there and later at Punjab Engineering College, Chandigarh."
+    },
+    {
+      "id": 11,
+      "question": "Which of these is NOT a saang master or ragini poet of Haryana?",
+      "options": [
+        "Dayachand Mayna",
+        "Rao Tula Ram",
+        "Pt Lakhmi Chand",
+        "Baje Bhagat"
+      ],
+      "correct": 1,
+      "rationale": "Rao Tula Ram was a freedom fighter. The other three are saang and ragini figures."
+    },
+    {
+      "id": 12,
+      "question": "Pandit Lakhmi Chand, 'Kalidas of Haryana', belonged to which village?",
+      "options": [
+        "Janti Kalan",
+        "Sisana",
+        "Mayna",
+        "Teja Khera"
+      ],
+      "correct": 0,
+      "rationale": "Janti Kalan in Sonipat district. Sisana is Baje Bhagat's village and Mayna is Dayachand Mayna's."
+    },
+    {
+      "id": 13,
+      "question": "Which statement about Haryana's literary honours is correct?",
+      "options": [
+        "The Mahakavi Surdas honour is a sports award",
+        "Haryana Sahitya Akademi is headquartered at Panchkula",
+        "Dayachand Mayna Samman is a state police award",
+        "Babu Balmukund Gupta Samman is given for saang acting only"
+      ],
+      "correct": 1,
+      "rationale": "The Akademi sits at Panchkula. Mahakavi Surdas Samman is for literature, and Balmukund Gupta and Mayna honours are Akademi literary awards."
+    },
+    {
+      "id": 14,
+      "question": "Which phrase born in 1967 Haryana politics became synonymous with party-hopping legislators?",
+      "options": [
+        "Aya Ram Gaya Ram",
+        "Garibi Hatao",
+        "Jai Jawan Jai Kisan",
+        "Lok Dal"
+      ],
+      "correct": 0,
+      "rationale": "The 'Aya Ram Gaya Ram' phrase came from the 1967 defections and fed the later anti-defection law."
+    }
+  ]
+}

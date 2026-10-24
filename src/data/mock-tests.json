@@ -7,11 +7,31 @@
       "description": "SSC CGL/CHSL-style general awareness section — GK, history, geography, polity and science in one paper.",
       "durationMinutes": 25,
       "sections": [
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 10 },
-        { "title": "History", "subjectId": "history", "count": 5 },
-        { "title": "Geography", "subjectId": "geography", "count": 5 },
-        { "title": "Polity", "subjectId": "civics", "count": 5 },
-        { "title": "Science", "subjectId": "science", "count": 5 }
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 10
+        },
+        {
+          "title": "History",
+          "subjectId": "history",
+          "count": 5
+        },
+        {
+          "title": "Geography",
+          "subjectId": "geography",
+          "count": 5
+        },
+        {
+          "title": "Polity",
+          "subjectId": "civics",
+          "count": 5
+        },
+        {
+          "title": "Science",
+          "subjectId": "science",
+          "count": 5
+        }
       ]
     },
     {
@@ -21,10 +41,26 @@
       "description": "RRB NTPC-style paper mixing mathematics, reasoning, general knowledge and general science.",
       "durationMinutes": 20,
       "sections": [
-        { "title": "Mathematics", "subjectId": "mathematics", "count": 8 },
-        { "title": "Reasoning", "subjectId": "reasoning", "count": 8 },
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 5 },
-        { "title": "General Science", "subjectId": "science", "count": 4 }
+        {
+          "title": "Mathematics",
+          "subjectId": "mathematics",
+          "count": 8
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 8
+        },
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 5
+        },
+        {
+          "title": "General Science",
+          "subjectId": "science",
+          "count": 4
+        }
       ]
     },
     {
@@ -34,9 +70,22 @@
       "description": "IBPS/SBI prelims pattern — quantitative aptitude, reasoning ability and English in a timed sprint.",
       "durationMinutes": 20,
       "sections": [
-        { "title": "Quantitative Aptitude", "subjectId": "mathematics", "count": 10 },
-        { "title": "Reasoning Ability", "subjectId": "reasoning", "count": 10 },
-        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 5 }
+        {
+          "title": "Quantitative Aptitude",
+          "subjectId": "mathematics",
+          "count": 10
+        },
+        {
+          "title": "Reasoning Ability",
+          "subjectId": "reasoning",
+          "count": 10
+        },
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "subSubjectId": "english",
+          "count": 5
+        }
       ]
     },
     {
@@ -46,12 +95,36 @@
       "description": "Civil-services preliminary pattern — history, geography, polity, economy, GK and science at prelims breadth.",
       "durationMinutes": 25,
       "sections": [
-        { "title": "History", "subjectId": "history", "count": 6 },
-        { "title": "Geography", "subjectId": "geography", "count": 5 },
-        { "title": "Polity", "subjectId": "civics", "count": 6 },
-        { "title": "Economy", "subjectId": "economics", "count": 4 },
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 4 },
-        { "title": "Science", "subjectId": "science", "count": 5 }
+        {
+          "title": "History",
+          "subjectId": "history",
+          "count": 6
+        },
+        {
+          "title": "Geography",
+          "subjectId": "geography",
+          "count": 5
+        },
+        {
+          "title": "Polity",
+          "subjectId": "civics",
+          "count": 6
+        },
+        {
+          "title": "Economy",
+          "subjectId": "economics",
+          "count": 4
+        },
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 4
+        },
+        {
+          "title": "Science",
+          "subjectId": "science",
+          "count": 5
+        }
       ]
     },
     {
@@ -61,7 +134,11 @@
       "description": "Ten random general-knowledge questions across symbols, firsts, awards, sports, books, days and culture.",
       "durationMinutes": 7,
       "sections": [
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 10 }
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 10
+        }
       ]
     },
     {
@@ -71,7 +148,11 @@
       "description": "Ten random questions from across the mathematics syllabus — algebra to arithmetic.",
       "durationMinutes": 10,
       "sections": [
-        { "title": "Mathematics", "subjectId": "mathematics", "count": 10 }
+        {
+          "title": "Mathematics",
+          "subjectId": "mathematics",
+          "count": 10
+        }
       ]
     },
     {
@@ -81,7 +162,11 @@
       "description": "Ten random reasoning questions — series, puzzles, syllogisms, non-verbal and more.",
       "durationMinutes": 8,
       "sections": [
-        { "title": "Reasoning", "subjectId": "reasoning", "count": 10 }
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 10
+        }
       ]
     },
     {
@@ -91,7 +176,12 @@
       "description": "Ten random English questions — grammar, vocabulary, spelling and usage.",
       "durationMinutes": 7,
       "sections": [
-        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 10 }
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "subSubjectId": "english",
+          "count": 10
+        }
       ]
     },
     {
@@ -101,7 +191,11 @@
       "description": "Ten random questions across physics, chemistry and biology.",
       "durationMinutes": 8,
       "sections": [
-        { "title": "Science", "subjectId": "science", "count": 10 }
+        {
+          "title": "Science",
+          "subjectId": "science",
+          "count": 10
+        }
       ]
     },
     {
@@ -111,10 +205,26 @@
       "description": "Ten random questions spanning history, geography, civics and economics.",
       "durationMinutes": 8,
       "sections": [
-        { "title": "History", "subjectId": "history", "count": 3 },
-        { "title": "Geography", "subjectId": "geography", "count": 3 },
-        { "title": "Civics", "subjectId": "civics", "count": 2 },
-        { "title": "Economics", "subjectId": "economics", "count": 2 }
+        {
+          "title": "History",
+          "subjectId": "history",
+          "count": 3
+        },
+        {
+          "title": "Geography",
+          "subjectId": "geography",
+          "count": 3
+        },
+        {
+          "title": "Civics",
+          "subjectId": "civics",
+          "count": 2
+        },
+        {
+          "title": "Economics",
+          "subjectId": "economics",
+          "count": 2
+        }
       ]
     },
     {
@@ -124,7 +234,11 @@
       "description": "Twenty questions from the entire general-knowledge bank — the complete static-GK workout.",
       "durationMinutes": 15,
       "sections": [
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 20 }
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 20
+        }
       ]
     },
     {
@@ -134,17 +248,315 @@
       "description": "Forty questions from every subject on the site — the all-India, all-subject challenge.",
       "durationMinutes": 35,
       "sections": [
-        { "title": "Mathematics", "subjectId": "mathematics", "count": 5 },
-        { "title": "Reasoning", "subjectId": "reasoning", "count": 5 },
-        { "title": "English", "subjectId": "languages", "subSubjectId": "english", "count": 5 },
-        { "title": "Science", "subjectId": "science", "count": 5 },
-        { "title": "History", "subjectId": "history", "count": 3 },
-        { "title": "Geography", "subjectId": "geography", "count": 3 },
-        { "title": "Civics", "subjectId": "civics", "count": 3 },
-        { "title": "Economics", "subjectId": "economics", "count": 3 },
-        { "title": "General Knowledge", "subjectId": "general-knowledge", "count": 4 },
-        { "title": "Computer Science", "subjectId": "computer-science", "count": 2 },
-        { "title": "Philosophy", "subjectId": "philosophy", "count": 2 }
+        {
+          "title": "Mathematics",
+          "subjectId": "mathematics",
+          "count": 5
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 5
+        },
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "subSubjectId": "english",
+          "count": 5
+        },
+        {
+          "title": "Science",
+          "subjectId": "science",
+          "count": 5
+        },
+        {
+          "title": "History",
+          "subjectId": "history",
+          "count": 3
+        },
+        {
+          "title": "Geography",
+          "subjectId": "geography",
+          "count": 3
+        },
+        {
+          "title": "Civics",
+          "subjectId": "civics",
+          "count": 3
+        },
+        {
+          "title": "Economics",
+          "subjectId": "economics",
+          "count": 3
+        },
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 4
+        },
+        {
+          "title": "Computer Science",
+          "subjectId": "computer-science",
+          "count": 2
+        },
+        {
+          "title": "Philosophy",
+          "subjectId": "philosophy",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "ssc-cgl-tier1-mock",
+      "title": "SSC CGL Tier-1 Mock",
+      "category": "Government Exams",
+      "description": "SSC CGL Tier-1 pattern: reasoning, general awareness, quantitative aptitude and English.",
+      "durationMinutes": 60,
+      "sections": [
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 25
+        },
+        {
+          "title": "General Awareness",
+          "subjectId": "general-knowledge",
+          "count": 10
+        },
+        {
+          "title": "History & Polity",
+          "subjectId": "history",
+          "count": 5
+        },
+        {
+          "title": "Quantitative Aptitude",
+          "subjectId": "mathematics",
+          "count": 25,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "count": 10,
+          "subSubjectId": "english"
+        }
+      ]
+    },
+    {
+      "id": "ssc-chsl-mock",
+      "title": "SSC CHSL Tier-1 Mock",
+      "category": "Government Exams",
+      "description": "SSC CHSL-style paper with quant, reasoning, English and general awareness.",
+      "durationMinutes": 60,
+      "sections": [
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 20
+        },
+        {
+          "title": "General Awareness",
+          "subjectId": "general-knowledge",
+          "count": 15
+        },
+        {
+          "title": "Quantitative Aptitude",
+          "subjectId": "mathematics",
+          "count": 20,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "count": 15,
+          "subSubjectId": "english"
+        }
+      ]
+    },
+    {
+      "id": "ssc-gd-constable-mock",
+      "title": "SSC GD Constable Mock",
+      "category": "Government Exams",
+      "description": "SSC GD-style: general knowledge, elementary maths, reasoning and Hindi/English.",
+      "durationMinutes": 45,
+      "sections": [
+        {
+          "title": "General Knowledge & Awareness",
+          "subjectId": "general-knowledge",
+          "count": 15,
+          "subSubjectId": "india-gk"
+        },
+        {
+          "title": "Elementary Mathematics",
+          "subjectId": "mathematics",
+          "count": 15,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 15
+        },
+        {
+          "title": "Hindi",
+          "subjectId": "languages",
+          "count": 10,
+          "subSubjectId": "hindi"
+        }
+      ]
+    },
+    {
+      "id": "ssc-mts-mock",
+      "title": "SSC MTS Mock",
+      "category": "Government Exams",
+      "description": "SSC MTS-style: numerical, reasoning, general awareness and English.",
+      "durationMinutes": 45,
+      "sections": [
+        {
+          "title": "Numerical Aptitude",
+          "subjectId": "mathematics",
+          "count": 10,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 10
+        },
+        {
+          "title": "General Awareness",
+          "subjectId": "general-knowledge",
+          "count": 15
+        },
+        {
+          "title": "English",
+          "subjectId": "languages",
+          "count": 10,
+          "subSubjectId": "english"
+        }
+      ]
+    },
+    {
+      "id": "hssc-cet-group-d-mock",
+      "title": "HSSC CET Group D Mock",
+      "category": "Government Exams",
+      "description": "HSSC CET-style paper with a heavy Haryana GK component plus awareness, reasoning and maths.",
+      "durationMinutes": 60,
+      "sections": [
+        {
+          "title": "Haryana GK",
+          "subjectId": "general-knowledge",
+          "count": 20,
+          "subSubjectId": "haryana-gk"
+        },
+        {
+          "title": "General Awareness",
+          "subjectId": "general-knowledge",
+          "count": 10,
+          "subSubjectId": "india-gk"
+        },
+        {
+          "title": "Science",
+          "subjectId": "science",
+          "count": 8
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 10
+        },
+        {
+          "title": "Quantitative Aptitude",
+          "subjectId": "mathematics",
+          "count": 10,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "Hindi",
+          "subjectId": "languages",
+          "count": 7,
+          "subSubjectId": "hindi"
+        }
+      ]
+    },
+    {
+      "id": "haryana-police-constable-mock",
+      "title": "Haryana Police Constable Mock",
+      "category": "Government Exams",
+      "description": "Haryana Police-style: Haryana GK, general awareness, computer, reasoning and maths.",
+      "durationMinutes": 60,
+      "sections": [
+        {
+          "title": "Haryana GK",
+          "subjectId": "general-knowledge",
+          "count": 15,
+          "subSubjectId": "haryana-gk"
+        },
+        {
+          "title": "General Awareness",
+          "subjectId": "general-knowledge",
+          "count": 10,
+          "subSubjectId": "india-gk"
+        },
+        {
+          "title": "Computer Awareness",
+          "subjectId": "computer-science",
+          "count": 10,
+          "subSubjectId": "computer-fundamentals"
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 10
+        },
+        {
+          "title": "Quantitative Aptitude",
+          "subjectId": "mathematics",
+          "count": 10,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "Polity",
+          "subjectId": "civics",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "delhi-police-constable-mock",
+      "title": "Delhi Police Constable Mock",
+      "category": "Government Exams",
+      "description": "Delhi Police-style: GK and current-affairs basics, reasoning, quant and computer fundamentals.",
+      "durationMinutes": 60,
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "subjectId": "general-knowledge",
+          "count": 15,
+          "subSubjectId": "india-gk"
+        },
+        {
+          "title": "Reasoning",
+          "subjectId": "reasoning",
+          "count": 15
+        },
+        {
+          "title": "Numerical Ability",
+          "subjectId": "mathematics",
+          "count": 15,
+          "subSubjectId": "numbers"
+        },
+        {
+          "title": "Computer Fundamentals",
+          "subjectId": "computer-science",
+          "count": 10,
+          "subSubjectId": "computer-fundamentals"
+        },
+        {
+          "title": "History & Geography",
+          "subjectId": "geography",
+          "count": 5
+        }
       ]
     }
   ]

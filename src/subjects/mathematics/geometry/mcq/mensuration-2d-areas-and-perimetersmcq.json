@@ -1,0 +1,186 @@
+{
+  "lessonId": "mensuration-2d-areas-and-perimeters",
+  "title": "Mensuration 2D: Areas and Perimeters: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The sides of a triangle are 13 cm, 14 cm and 15 cm. Its area is:",
+      "options": [
+        "84 sq cm",
+        "91 sq cm",
+        "105 sq cm",
+        "98 sq cm"
+      ],
+      "correct": 0,
+      "rationale": "Semi-perimeter s = 21; area = sqrt(21 x 8 x 7 x 6) = sqrt(7056) = 84 sq cm (Heron's formula)."
+    },
+    {
+      "id": 2,
+      "question": "The area of an equilateral triangle of side 8 cm is:",
+      "options": [
+        "32 sq cm",
+        "16 sq cm",
+        "16 root 3 sq cm (about 27.71 sq cm)",
+        "64 root 3 sq cm"
+      ],
+      "correct": 2,
+      "rationale": "Area = (root 3 / 4) x side^2 = (root 3 / 4) x 64 = 16 root 3, about 27.71 sq cm. Option 64 root 3 forgets to divide by 4."
+    },
+    {
+      "id": 3,
+      "question": "The length of a rectangle is three times its breadth and its perimeter is 96 m. Its area is:",
+      "options": [
+        "384 sq m",
+        "288 sq m",
+        "576 sq m",
+        "432 sq m"
+      ],
+      "correct": 3,
+      "rationale": "2(l + b) = 96 so l + b = 48 and with l = 3b, b = 12, l = 36. Area = 36 x 12 = 432 sq m."
+    },
+    {
+      "id": 4,
+      "question": "The diagonals of a rhombus measure 24 cm and 10 cm. The side of the rhombus is:",
+      "options": [
+        "15 cm",
+        "13 cm",
+        "17 cm",
+        "26 cm"
+      ],
+      "correct": 1,
+      "rationale": "Diagonals bisect each other at right angles, so side = sqrt(12^2 + 5^2) = 13 cm. Its area would be (24 x 10)/2 = 120 sq cm."
+    },
+    {
+      "id": 5,
+      "question": "A trapezium has parallel sides of 18 cm and 12 cm and the distance between them is 8 cm. Its area is:",
+      "options": [
+        "240 sq cm",
+        "144 sq cm",
+        "120 sq cm",
+        "96 sq cm"
+      ],
+      "correct": 2,
+      "rationale": "Area = half x (sum of parallel sides) x height = 0.5 x 30 x 8 = 120 sq cm. Forgetting the half gives 240."
+    },
+    {
+      "id": 6,
+      "question": "The circumference of a circle is 44 cm. Taking pi = 22/7, its area is:",
+      "options": [
+        "308 sq cm",
+        "144 sq cm",
+        "77 sq cm",
+        "154 sq cm"
+      ],
+      "correct": 3,
+      "rationale": "2 x (22/7) x r = 44 gives r = 7 cm. Area = (22/7) x 49 = 154 sq cm. 308 is the circumference formula with an extra factor of 2 applied to the area."
+    },
+    {
+      "id": 7,
+      "question": "A sector of a circle has radius 21 cm and a central angle of 60 degrees. Taking pi = 22/7, its area is:",
+      "options": [
+        "462 sq cm",
+        "231 sq cm",
+        "132 sq cm",
+        "264 sq cm"
+      ],
+      "correct": 1,
+      "rationale": "Area = (60/360) x (22/7) x 21 x 21 = (1/6) x 1386 = 231 sq cm."
+    },
+    {
+      "id": 8,
+      "question": "A rectangular lawn measures 40 m by 30 m. A path 2 m wide runs around it on the outside. The area of the path is:",
+      "options": [
+        "296 sq m",
+        "280 sq m",
+        "256 sq m",
+        "336 sq m"
+      ],
+      "correct": 0,
+      "rationale": "Outer rectangle = 44 x 34 = 1496 sq m; lawn = 1200 sq m; path = 296 sq m. Shortcut: 2 x 2 x (40 + 30 + 2 x 2) = 296."
+    },
+    {
+      "id": 9,
+      "question": "A ring is bounded by two concentric circles with radii 14 cm and 7 cm. Taking pi = 22/7, its area is:",
+      "options": [
+        "616 sq cm",
+        "462 sq cm",
+        "154 sq cm",
+        "308 sq cm"
+      ],
+      "correct": 1,
+      "rationale": "Area = pi (R^2 - r^2) = (22/7)(196 - 49) = 462 sq cm. Using (R - r)^2 would be the usual slip."
+    },
+    {
+      "id": 10,
+      "question": "The diagonal of a square is 20 cm. Its area is:",
+      "options": [
+        "400 sq cm",
+        "100 sq cm",
+        "200 sq cm",
+        "40 sq cm"
+      ],
+      "correct": 2,
+      "rationale": "Area of a square = (diagonal^2)/2 = 400/2 = 200 sq cm."
+    },
+    {
+      "id": 11,
+      "question": "A rectangular field is 150 m long and 90 m wide. The cost of fencing it all round at Rs 12 per metre is:",
+      "options": [
+        "Rs 5,760",
+        "Rs 2,880",
+        "Rs 3,600",
+        "Rs 11,520"
+      ],
+      "correct": 0,
+      "rationale": "Perimeter = 2(150 + 90) = 480 m; cost = 480 x 12 = Rs 5,760. Using the area instead of the perimeter would be wrong because fencing runs along the boundary only."
+    },
+    {
+      "id": 12,
+      "question": "The length of a rectangle is increased by 20% and its breadth is decreased by 10%. The area changes by:",
+      "options": [
+        "an increase of 10%",
+        "a decrease of 8%",
+        "an increase of 30%",
+        "an increase of 8%"
+      ],
+      "correct": 3,
+      "rationale": "New area = 1.2 x 0.9 = 1.08 of the old, a rise of 8%. Never add 20 and subtract 10; the changes multiply."
+    },
+    {
+      "id": 13,
+      "question": "The radius of a circle is increased by 10%. The area of the circle increases by:",
+      "options": [
+        "10%",
+        "20%",
+        "21%",
+        "11%"
+      ],
+      "correct": 2,
+      "rationale": "Area goes as radius squared: 1.1^2 = 1.21, so the increase is 21%. Doubling 10% to 20% ignores the extra 1% from the cross term."
+    },
+    {
+      "id": 14,
+      "question": "Taking pi = 22/7, the perimeter of a semicircle of radius 14 cm (including the diameter) is:",
+      "options": [
+        "44 cm",
+        "58 cm",
+        "36 cm",
+        "72 cm"
+      ],
+      "correct": 3,
+      "rationale": "Curved part = pi r = 44 cm; add the diameter 28 cm. Perimeter = 72 cm. Quoting only 44 cm leaves out the straight edge."
+    },
+    {
+      "id": 15,
+      "question": "A wheel has a diameter of 70 cm. Taking pi = 22/7, how many complete revolutions does it make to cover 1.76 km?",
+      "options": [
+        "400",
+        "800",
+        "1600",
+        "560"
+      ],
+      "correct": 1,
+      "rationale": "Circumference = (22/7) x 70 = 220 cm. Distance = 1.76 km = 176000 cm. Revolutions = 176000/220 = 800."
+    }
+  ]
+}

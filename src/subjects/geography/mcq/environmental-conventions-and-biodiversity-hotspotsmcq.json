@@ -1,0 +1,186 @@
+{
+  "lessonId": "environmental-conventions-and-biodiversity-hotspots",
+  "title": "Environmental Conventions and Biodiversity Hotspots: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Ramsar Convention is concerned with the conservation of:",
+      "options": [
+        "Migratory birds only",
+        "Ozone layer",
+        "Wetlands",
+        "Tropical forests"
+      ],
+      "correct": 2,
+      "rationale": "Ramsar (1971) protects wetlands of international importance. Migratory species fall under the Bonn Convention (CMS)."
+    },
+    {
+      "id": 2,
+      "question": "Which treaty regulates international trade in endangered species of wild fauna and flora?",
+      "options": [
+        "CITES",
+        "CMS",
+        "Basel Convention",
+        "Rotterdam Convention"
+      ],
+      "correct": 0,
+      "rationale": "CITES, adopted in Washington in 1973, controls trade. CMS conserves migratory species themselves, and Basel deals with hazardous waste."
+    },
+    {
+      "id": 3,
+      "question": "The Montreal Protocol (1987) aims to:",
+      "options": [
+        "Cut greenhouse gas emissions of developed countries",
+        "Ban trade in hazardous waste",
+        "Limit mercury use",
+        "Phase out ozone depleting substances"
+      ],
+      "correct": 3,
+      "rationale": "Montreal phases out CFCs and similar chemicals. The binding emission cuts belong to the Kyoto Protocol (1997)."
+    },
+    {
+      "id": 4,
+      "question": "The Basel Convention deals with:",
+      "options": [
+        "Persistent organic pollutants",
+        "Transboundary movement of hazardous wastes",
+        "Desertification",
+        "Prior informed consent for pesticides"
+      ],
+      "correct": 1,
+      "rationale": "Basel (1989) controls hazardous waste crossing borders. POPs are Stockholm (2001) and prior informed consent is Rotterdam (1998)."
+    },
+    {
+      "id": 5,
+      "question": "Which pair of treaty and year is correctly matched?",
+      "options": [
+        "Minamata Convention, 2013",
+        "Kyoto Protocol, 2005 (adoption)",
+        "Stockholm Convention, 1989",
+        "Cartagena Protocol, 1992"
+      ],
+      "correct": 0,
+      "rationale": "Minamata, on mercury, was adopted in 2013. Kyoto was adopted in 1997 and entered into force in 2005; Stockholm is 2001; Cartagena is 2000."
+    },
+    {
+      "id": 6,
+      "question": "The Kigali Amendment (2016) relates to which treaty and which group of chemicals?",
+      "options": [
+        "Kyoto Protocol, CO2",
+        "Vienna Convention, CFCs only",
+        "Montreal Protocol, HFCs",
+        "Paris Agreement, methane"
+      ],
+      "correct": 2,
+      "rationale": "Kigali amends the Montreal Protocol to cut hydrofluorocarbons, which warm the climate though they do not deplete ozone."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is NOT one of the biodiversity hotspots that include Indian territory?",
+      "options": [
+        "Himalaya",
+        "Indo-Burma",
+        "Western Ghats and Sri Lanka",
+        "Succulent Karoo"
+      ],
+      "correct": 3,
+      "rationale": "Succulent Karoo is in southern Africa. India's parts are in the Himalaya, Indo-Burma, Western Ghats and Sri Lanka, and Sundaland."
+    },
+    {
+      "id": 8,
+      "question": "The Nicobar Islands form India's part of which biodiversity hotspot?",
+      "options": [
+        "Indo-Burma",
+        "Sundaland",
+        "Himalaya",
+        "Western Ghats and Sri Lanka"
+      ],
+      "correct": 1,
+      "rationale": "The Nicobar Islands are the Indian portion of Sundaland. Indo-Burma covers north-eastern India."
+    },
+    {
+      "id": 9,
+      "question": "A biodiversity hotspot must have lost at least what share of its original vegetation, and have at least how many endemic vascular plant species?",
+      "options": [
+        "70 percent and 1,500 species",
+        "50 percent and 1,000 species",
+        "90 percent and 3,000 species",
+        "70 percent and 500 species"
+      ],
+      "correct": 0,
+      "rationale": "The two criteria are 1,500 endemic vascular plants and at least 70 percent habitat loss. The concept came from Norman Myers in 1988."
+    },
+    {
+      "id": 10,
+      "question": "Which statement about Indian Ramsar and conservation facts is correct?",
+      "options": [
+        "Chilika and Wular are on the Montreux Record",
+        "Ramsar is headquartered at Nairobi",
+        "Keoladeo and Loktak are on the Montreux Record",
+        "India joined Ramsar in 1971"
+      ],
+      "correct": 2,
+      "rationale": "Only Keoladeo and Loktak appear on India's Montreux Record. UNEP is at Nairobi, Ramsar at Gland, and India joined in 1982."
+    },
+    {
+      "id": 11,
+      "question": "Arrange the IUCN categories from more to less threatened. Which of these is the correct ordering of three?",
+      "options": [
+        "Endangered, Critically Endangered, Vulnerable",
+        "Critically Endangered, Endangered, Vulnerable",
+        "Vulnerable, Endangered, Critically Endangered",
+        "Endangered, Vulnerable, Critically Endangered"
+      ],
+      "correct": 1,
+      "rationale": "The ladder runs Critically Endangered, Endangered, Vulnerable, then Near Threatened and Least Concern."
+    },
+    {
+      "id": 12,
+      "question": "The Paris Agreement was adopted at which Conference of the Parties?",
+      "options": [
+        "COP3",
+        "COP15",
+        "COP26",
+        "COP21"
+      ],
+      "correct": 3,
+      "rationale": "Paris (2015) was COP21. Kyoto came from COP3 in 1997 and India's net-zero 2070 pledge was announced at COP26."
+    },
+    {
+      "id": 13,
+      "question": "The Environment (Protection) Act was enacted in which year, and after which event?",
+      "options": [
+        "1986, after the Bhopal gas tragedy",
+        "1972, after the Stockholm Conference",
+        "1980, after the Chipko movement",
+        "1986, after the Rio Earth Summit"
+      ],
+      "correct": 0,
+      "rationale": "The Act of 1986 followed the Bhopal gas leak of 1984. The Rio Summit was in 1992, and the Wildlife Protection Act is the 1972 law."
+    },
+    {
+      "id": 14,
+      "question": "Which of these is the correct date and observance?",
+      "options": [
+        "22 May is World Environment Day",
+        "5 June is World Environment Day",
+        "2 February is Earth Day",
+        "16 September is World Wetlands Day"
+      ],
+      "correct": 1,
+      "rationale": "5 June is World Environment Day. 22 May is the Day for Biological Diversity, 2 February is Wetlands Day and 16 September is Ozone Day."
+    },
+    {
+      "id": 15,
+      "question": "The Cartagena Protocol, an agreement under the Convention on Biological Diversity, is about:",
+      "options": [
+        "Access and benefit sharing",
+        "Trade in ivory",
+        "Biosafety and living modified organisms",
+        "Mercury emissions"
+      ],
+      "correct": 2,
+      "rationale": "Cartagena (2000) covers biosafety. Access and benefit sharing is the Nagoya Protocol of 2010, the usual distractor."
+    }
+  ]
+}

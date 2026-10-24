@@ -1,0 +1,186 @@
+{
+  "lessonId": "problems-on-ages",
+  "title": "Problems on Ages: Ratios, Differences, and Averages: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The present ages of A and B are in the ratio 3 : 5. After 4 years the ratio of their ages will be 2 : 3. What is A's present age?",
+      "options": [
+        "12",
+        "16",
+        "8",
+        "20"
+      ],
+      "correct": 0,
+      "rationale": "Write (3x + 4) : (5x + 4) = 2 : 3. Cross-multiply: 9x + 12 = 10x + 8, so x = 4. A = 3x = 12. Option 20 is B's age; adding 4 to the ratio terms instead of the ages is the usual slip."
+    },
+    {
+      "id": 2,
+      "question": "A father is 28 years older than his son. After 6 years the father will be exactly twice as old as the son. What is the son's present age?",
+      "options": [
+        "28 years",
+        "22 years",
+        "34 years",
+        "14 years"
+      ],
+      "correct": 1,
+      "rationale": "At the later moment the gap of 28 years equals (2 - 1) = 1 unit, so the son will be 28 then. Present age = 28 - 6 = 22. Answer 28 forgets to go back 6 years."
+    },
+    {
+      "id": 3,
+      "question": "The sum of the present ages of a father and his son is 60 years. Five years ago their ages were in the ratio 4 : 1. What is the father's present age?",
+      "options": [
+        "40 years",
+        "48 years",
+        "45 years",
+        "50 years"
+      ],
+      "correct": 2,
+      "rationale": "Five years ago the sum was 60 - 10 = 50, shared 4 : 1 gives 40 and 10. Add 5 to each: father 45, son 15. Option 40 is the father's age five years ago."
+    },
+    {
+      "id": 4,
+      "question": "The average age of the 5 members of a family is 26 years and the youngest member is 6 years old. What was the average age of the family just before the youngest was born?",
+      "options": [
+        "26 years",
+        "24 years",
+        "20 years",
+        "25 years"
+      ],
+      "correct": 3,
+      "rationale": "Total now = 5 x 26 = 130. Remove the youngest (6): 124. The other four were each 6 years younger then: 124 - 24 = 100. Average = 100/4 = 25 years."
+    },
+    {
+      "id": 5,
+      "question": "The average age of 25 students is 14 years. When the class teacher's age is included, the average rises to 15 years. How old is the teacher?",
+      "options": [
+        "40 years",
+        "15 years",
+        "36 years",
+        "45 years"
+      ],
+      "correct": 0,
+      "rationale": "New total = 26 x 15 = 390; old total = 25 x 14 = 350. Teacher = 390 - 350 = 40 years. Option 15 is merely the new average; always subtract totals, not averages."
+    },
+    {
+      "id": 6,
+      "question": "The average age of 6 friends is 30 years. One friend aged 24 leaves and a new person joins, and the average becomes 32 years. How old is the new person?",
+      "options": [
+        "26 years",
+        "32 years",
+        "36 years",
+        "38 years"
+      ],
+      "correct": 2,
+      "rationale": "The total rises by 6 x 2 = 12. New person = leaver + rise in total = 24 + 12 = 36 years. 32 is just the new average."
+    },
+    {
+      "id": 7,
+      "question": "The present ages of two brothers are in the ratio 5 : 6. Six years ago their ages were in the ratio 4 : 5. What will be the elder brother's age 6 years from now?",
+      "options": [
+        "36 years",
+        "42 years",
+        "48 years",
+        "30 years"
+      ],
+      "correct": 1,
+      "rationale": "(5x - 6) : (6x - 6) = 4 : 5 gives 25x - 30 = 24x - 24, so x = 6. Present ages 30 and 36. After 6 years the elder is 36 + 6 = 42. Option 36 is his present age."
+    },
+    {
+      "id": 8,
+      "question": "A is 5 times as old as B now. Four years ago A was 9 times as old as B was then. What is B's present age?",
+      "options": [
+        "12 years",
+        "10 years",
+        "6 years",
+        "8 years"
+      ],
+      "correct": 3,
+      "rationale": "Let B = y. Then 5y - 4 = 9(y - 4), so 4y = 32 and y = 8. Check: A = 40; four years ago 36 and 4, and 36 = 9 x 4."
+    },
+    {
+      "id": 9,
+      "question": "A is 12 years older than B. Five years ago A was twice as old as B. What is A's present age?",
+      "options": [
+        "29 years",
+        "24 years",
+        "17 years",
+        "12 years"
+      ],
+      "correct": 0,
+      "rationale": "Five years ago the gap of 12 = (2 - 1) = 1 unit, so B was 12 and A was 24. Present: A = 24 + 5 = 29. B is 17 today; 24 is A's age five years ago."
+    },
+    {
+      "id": 10,
+      "question": "Five children are born at equal gaps of 3 years, and the sum of their present ages is 85 years. What is the age of the youngest child?",
+      "options": [
+        "14 years",
+        "11 years",
+        "17 years",
+        "10 years"
+      ],
+      "correct": 1,
+      "rationale": "Ages are x, x+3, x+6, x+9, x+12 with sum 5x + 30 = 85, so x = 11. Eldest = 23. Using the middle child's age (17) as the youngest is the common slip."
+    },
+    {
+      "id": 11,
+      "question": "The sum of the ages of three siblings 5 years ago was 40 years. What will be the sum of their ages 4 years from now?",
+      "options": [
+        "59 years",
+        "44 years",
+        "67 years",
+        "64 years"
+      ],
+      "correct": 2,
+      "rationale": "Sum now = 40 + 3 x 5 = 55. Four years later add 3 x 4 = 12: 55 + 12 = 67. Adding only 4 gives 59, forgetting that each of the 3 persons ages."
+    },
+    {
+      "id": 12,
+      "question": "The age of a mother is 7/3 of her daughter's age, and the difference between their ages is 24 years. How old is the mother?",
+      "options": [
+        "18 years",
+        "42 years",
+        "56 years",
+        "24 years"
+      ],
+      "correct": 1,
+      "rationale": "Ratio 7 : 3 means a gap of 4 units = 24, so one unit = 6. Mother = 7 x 6 = 42 years, daughter = 18. 18 is the daughter's age; 56 uses a wrong unit value of 8."
+    },
+    {
+      "id": 13,
+      "question": "The ratio of ages of a mother and her son is 11 : 3 and the difference between their ages is 24 years. After how many years will the mother be exactly twice as old as the son?",
+      "options": [
+        "9 years",
+        "12 years",
+        "15 years",
+        "18 years"
+      ],
+      "correct": 2,
+      "rationale": "Gap 8 units = 24, so unit = 3: mother 33, son 9. After t years, 33 + t = 2(9 + t), so t = 15. Check: 48 = 2 x 24."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following statements about age problems is correct?",
+      "options": [
+        "The ratio of two people's ages stays the same as the years pass",
+        "The difference between two people's ages never changes",
+        "The sum of the ages of 3 people rises by 1 each year",
+        "To find an age n years ago, add n to the present age"
+      ],
+      "correct": 1,
+      "rationale": "Only the difference is constant. Ratios change over time, the sum of 3 people's ages rises by 3 each year, and 'years ago' means subtract."
+    },
+    {
+      "id": 15,
+      "question": "Which one of these is NOT a correct step when solving 'ratio now, ratio after n years' questions?",
+      "options": [
+        "Write present ages as ax and bx",
+        "Add n to each person's age, then form the new ratio",
+        "Add n to each term of the present ratio, e.g. 3 : 5 becomes (3 + n) : (5 + n)",
+        "Cross-multiply to get a linear equation in x"
+      ],
+      "correct": 2,
+      "rationale": "The years must be added to the actual ages (3x + n, 5x + n), never to the bare ratio terms 3 and 5. The other three steps are the standard method."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-districts-divisions-and-administration",
+  "title": "Haryana Districts, Divisions and Administration: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "As of the December 2025 notification, how many districts does Haryana have?",
+      "options": [
+        "23",
+        "24",
+        "21",
+        "22"
+      ],
+      "correct": 0,
+      "rationale": "Hansi was notified as the 23rd district in December 2025. Charkhi Dadri (2016) had been the 22nd, which is why older books give 22."
+    },
+    {
+      "id": 2,
+      "question": "Which district was created in December 2016 as the 22nd district of Haryana?",
+      "options": [
+        "Charkhi Dadri",
+        "Palwal",
+        "Nuh",
+        "Jhajjar"
+      ],
+      "correct": 0,
+      "rationale": "Charkhi Dadri was carved out of Bhiwani on 1 December 2016. Palwal dates from 2008 and Jhajjar from 1997."
+    },
+    {
+      "id": 3,
+      "question": "How many administrative divisions does Haryana have?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "7"
+      ],
+      "correct": 2,
+      "rationale": "The six divisions are Ambala, Faridabad, Gurugram, Hisar, Karnal and Rohtak."
+    },
+    {
+      "id": 4,
+      "question": "Which district is NOT part of the Karnal division?",
+      "options": [
+        "Kaithal",
+        "Panipat",
+        "Sonipat",
+        "Karnal"
+      ],
+      "correct": 2,
+      "rationale": "Sonipat belongs to the Rohtak division. Karnal division has Karnal, Kaithal and Panipat."
+    },
+    {
+      "id": 5,
+      "question": "What is the headquarters of Mahendragarh district?",
+      "options": [
+        "Ateli",
+        "Narnaul",
+        "Bawal",
+        "Rewari"
+      ],
+      "correct": 1,
+      "rationale": "Narnaul is the headquarters of Mahendragarh district. This is the one district whose HQ name differs from the district name."
+    },
+    {
+      "id": 6,
+      "question": "How many seats does Haryana have in the Vidhan Sabha?",
+      "options": [
+        "100",
+        "90",
+        "70",
+        "120"
+      ],
+      "correct": 1,
+      "rationale": "The Haryana Vidhan Sabha has 90 seats, 17 of them reserved for Scheduled Castes. It is a unicameral legislature."
+    },
+    {
+      "id": 7,
+      "question": "Haryana sends how many members to the Lok Sabha and Rajya Sabha respectively?",
+      "options": [
+        "11 and 6",
+        "10 and 7",
+        "9 and 5",
+        "10 and 5"
+      ],
+      "correct": 3,
+      "rationale": "Haryana has 10 Lok Sabha seats (Ambala and Sirsa reserved) and 5 Rajya Sabha seats."
+    },
+    {
+      "id": 8,
+      "question": "Who was the first Chief Minister of Haryana?",
+      "options": [
+        "Devi Lal",
+        "Bhagwat Dayal Sharma",
+        "Bhajan Lal",
+        "Bansi Lal"
+      ],
+      "correct": 1,
+      "rationale": "Bhagwat Dayal Sharma became CM on 1 November 1966. Bansi Lal took office in 1968 after a spell of President's Rule."
+    },
+    {
+      "id": 9,
+      "question": "Which Chief Minister held office from March 2005 to October 2014?",
+      "options": [
+        "Bhupinder Singh Hooda",
+        "Bhajan Lal",
+        "Manohar Lal Khattar",
+        "Om Prakash Chautala"
+      ],
+      "correct": 0,
+      "rationale": "Bhupinder Singh Hooda served two successive terms from March 2005 to October 2014. Chautala's tenure ended in March 2005 and Khattar began in October 2014."
+    },
+    {
+      "id": 10,
+      "question": "Arrange in order of time: I Hukam Singh, II Devi Lal (first term), III Bansi Lal (first term), IV Bhajan Lal (first term)",
+      "options": [
+        "II, III, IV, I",
+        "I, II, III, IV",
+        "III, II, IV, I",
+        "III, IV, II, I"
+      ],
+      "correct": 2,
+      "rationale": "Bansi Lal (1968), Devi Lal (1977), Bhajan Lal (1979) and Hukam Singh (July 1990 to March 1991)."
+    },
+    {
+      "id": 11,
+      "question": "Under which Act is the three-tier Panchayati Raj system in Haryana governed?",
+      "options": [
+        "Haryana Municipal Act, 1973",
+        "Haryana Gram Sabha Act, 1983",
+        "Punjab Reorganisation Act, 1966",
+        "Haryana Panchayati Raj Act, 1994"
+      ],
+      "correct": 3,
+      "rationale": "The Haryana Panchayati Raj Act, 1994 was passed following the 73rd Amendment. The Municipal Act of 1973 governs urban bodies."
+    },
+    {
+      "id": 12,
+      "question": "Which tier of Panchayati Raj in Haryana is at the block level?",
+      "options": [
+        "Gram Panchayat",
+        "Panchayat Samiti",
+        "Zila Parishad",
+        "Nagar Palika"
+      ],
+      "correct": 1,
+      "rationale": "Panchayat Samiti is the block-level body, Gram Panchayat is the village-level body and Zila Parishad is for the district."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following pairs of state symbols is correct for Haryana?",
+      "options": [
+        "Animal: Elephant, Bird: Black francolin",
+        "Animal: Blackbuck, Bird: Black francolin",
+        "Animal: Nilgai, Bird: Sparrow",
+        "Animal: Tiger, Bird: Peacock"
+      ],
+      "correct": 1,
+      "rationale": "The blackbuck and black francolin are the state animal and bird. Peepal is the state tree and lotus the flower."
+    },
+    {
+      "id": 14,
+      "question": "Where is the Punjab and Haryana High Court located?",
+      "options": [
+        "Chandigarh",
+        "Panchkula",
+        "Ambala",
+        "Hisar"
+      ],
+      "correct": 0,
+      "rationale": "The common High Court sits at Chandigarh, the shared capital and Union Territory. HPSC and HSSC are at Panchkula."
+    }
+  ]
+}

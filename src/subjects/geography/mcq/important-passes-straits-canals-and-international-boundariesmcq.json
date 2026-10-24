@@ -1,0 +1,186 @@
+{
+  "lessonId": "important-passes-straits-canals-and-international-boundaries",
+  "title": "Important Passes, Straits, Canals, and International Boundaries: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which pass connects Srinagar with Kargil and Leh?",
+      "options": [
+        "Banihal",
+        "Zoji La",
+        "Rohtang",
+        "Khardung La"
+      ],
+      "correct": 1,
+      "rationale": "Zoji La carries the Srinagar-Leh road. Banihal links Jammu with the Kashmir Valley, and Khardung La links Leh with the Nubra Valley."
+    },
+    {
+      "id": 2,
+      "question": "Nathu La, a border trade pass to Tibet, is located in which Indian state?",
+      "options": [
+        "Sikkim",
+        "Arunachal Pradesh",
+        "Uttarakhand",
+        "Himachal Pradesh"
+      ],
+      "correct": 0,
+      "rationale": "Nathu La and its neighbour Jelep La are in Sikkim. Shipki La is in Himachal Pradesh and Lipulekh in Uttarakhand."
+    },
+    {
+      "id": 3,
+      "question": "Through which pass does the Sutlej river enter India from Tibet?",
+      "options": [
+        "Lipulekh",
+        "Bomdi La",
+        "Rohtang",
+        "Shipki La"
+      ],
+      "correct": 3,
+      "rationale": "The Sutlej enters India at Shipki La in Himachal Pradesh. Lipulekh in Uttarakhand is the Kailash Mansarovar route."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is a pass in the Western Ghats?",
+      "options": [
+        "Nathu La",
+        "Thal Ghat",
+        "Zoji La",
+        "Khyber"
+      ],
+      "correct": 1,
+      "rationale": "Thal Ghat links Mumbai and Nashik. The other three are Himalayan or lie in the Pakistan-Afghanistan region."
+    },
+    {
+      "id": 5,
+      "question": "The Palghat Gap connects which two states?",
+      "options": [
+        "Karnataka and Goa",
+        "Maharashtra and Gujarat",
+        "Kerala and Tamil Nadu",
+        "Kerala and Karnataka"
+      ],
+      "correct": 2,
+      "rationale": "The Palghat (Palakkad) Gap is a break in the Western Ghats carrying the link between Kerala and Tamil Nadu."
+    },
+    {
+      "id": 6,
+      "question": "The Khyber Pass lies between which two countries?",
+      "options": [
+        "Pakistan and Afghanistan",
+        "India and Pakistan",
+        "Pakistan and China",
+        "Afghanistan and Iran"
+      ],
+      "correct": 0,
+      "rationale": "The Khyber Pass runs from Peshawar in Pakistan to Afghanistan. Khunjerab is the Pakistan-China pass."
+    },
+    {
+      "id": 7,
+      "question": "The Palk Strait separates India from which country?",
+      "options": [
+        "Maldives",
+        "Myanmar",
+        "Sri Lanka",
+        "Indonesia"
+      ],
+      "correct": 2,
+      "rationale": "The Palk Strait lies between Tamil Nadu and Sri Lanka. The Maldives lie beyond the Eight and Nine Degree Channels."
+    },
+    {
+      "id": 8,
+      "question": "The Ten Degree Channel separates:",
+      "options": [
+        "Minicoy from the Maldives",
+        "Minicoy from the main Lakshadweep islands",
+        "Sri Lanka from India",
+        "Andaman Islands from the Nicobar Islands"
+      ],
+      "correct": 3,
+      "rationale": "Ten Degree Channel divides Andaman from Nicobar. The Eight Degree Channel splits Minicoy and the Maldives, and the Nine Degree Channel splits Minicoy from Lakshadweep."
+    },
+    {
+      "id": 9,
+      "question": "Which strait links the Persian Gulf with the Gulf of Oman?",
+      "options": [
+        "Strait of Hormuz",
+        "Bab-el-Mandeb",
+        "Malacca Strait",
+        "Strait of Gibraltar"
+      ],
+      "correct": 0,
+      "rationale": "Hormuz sits between Iran and Oman. Bab-el-Mandeb joins the Red Sea to the Gulf of Aden."
+    },
+    {
+      "id": 10,
+      "question": "Which statement about canals is correct?",
+      "options": [
+        "The Panama Canal joins the Atlantic and the Indian Ocean",
+        "The Kiel Canal is in Egypt",
+        "The Suez Canal joins the Mediterranean and the Red Sea",
+        "The Suez Canal opened in 1914"
+      ],
+      "correct": 2,
+      "rationale": "Suez (1869) links the Mediterranean and Red Seas. Panama (1914) links the Atlantic and the Pacific, and Kiel is in Germany."
+    },
+    {
+      "id": 11,
+      "question": "The Durand Line, drawn in 1893, is the boundary between:",
+      "options": [
+        "India and China",
+        "Pakistan and Afghanistan",
+        "India and Pakistan",
+        "Germany and Poland"
+      ],
+      "correct": 1,
+      "rationale": "Sir Mortimer Durand drew it between British India and Afghanistan, and it now lies between Pakistan and Afghanistan."
+    },
+    {
+      "id": 12,
+      "question": "Which line was drawn in 1947 to divide India and Pakistan?",
+      "options": [
+        "McMahon Line",
+        "Durand Line",
+        "Line of Actual Control",
+        "Radcliffe Line"
+      ],
+      "correct": 3,
+      "rationale": "Cyril Radcliffe headed the Boundary Commission. The McMahon Line (1914) lies between India and Tibet and the LAC between India and China."
+    },
+    {
+      "id": 13,
+      "question": "Which Indian neighbour shares the longest land border with India?",
+      "options": [
+        "Bangladesh",
+        "China",
+        "Pakistan",
+        "Nepal"
+      ],
+      "correct": 0,
+      "rationale": "Bangladesh's border is about 4,096.7 km, ahead of China (3,488) and Pakistan (3,323). Afghanistan has the shortest at 106 km."
+    },
+    {
+      "id": 14,
+      "question": "Which of these states has a border with Bangladesh, Nepal and Bhutan alike?",
+      "options": [
+        "Assam",
+        "West Bengal",
+        "Sikkim",
+        "Bihar"
+      ],
+      "correct": 1,
+      "rationale": "West Bengal touches all three. Assam borders Bangladesh and Bhutan, Sikkim touches Nepal and Bhutan but not Bangladesh, and Bihar touches Nepal only."
+    },
+    {
+      "id": 15,
+      "question": "The 38th Parallel and the 17th Parallel divided which pairs of countries (in the order given)?",
+      "options": [
+        "North and South Vietnam; North and South Korea",
+        "India and Pakistan; India and China",
+        "North and South Korea; North and South Vietnam",
+        "France and Germany; Germany and Poland"
+      ],
+      "correct": 2,
+      "rationale": "The 38th Parallel split Korea and the 17th Parallel split Vietnam before 1975. Reversing the order is the usual trap."
+    }
+  ]
+}

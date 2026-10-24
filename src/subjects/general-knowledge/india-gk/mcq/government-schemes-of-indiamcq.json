@@ -1,0 +1,186 @@
+{
+  "lessonId": "government-schemes-of-india",
+  "title": "Government Schemes of India: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Pradhan Mantri Jan Dhan Yojana was launched in:",
+      "options": [
+        "2012",
+        "2016",
+        "2018",
+        "2014"
+      ],
+      "correct": 3,
+      "rationale": "Announced on 15 August 2014 and launched on 28 August 2014 by the Ministry of Finance."
+    },
+    {
+      "id": 2,
+      "question": "From which place was Beti Bachao Beti Padhao launched on 22 January 2015?",
+      "options": [
+        "Jhunjhunu",
+        "Ranchi",
+        "Panipat",
+        "Ballia"
+      ],
+      "correct": 2,
+      "rationale": "Panipat in Haryana. Ballia hosted Ujjwala (2016), Ranchi hosted PM-JAY (2018) and Jhunjhunu hosted Poshan Abhiyaan (2018)."
+    },
+    {
+      "id": 3,
+      "question": "Pradhan Mantri Ujjwala Yojana provides:",
+      "options": [
+        "Crop insurance",
+        "Pucca houses",
+        "LPG connections to women from poor households",
+        "Rooftop solar systems"
+      ],
+      "correct": 2,
+      "rationale": "Ujjwala (1 May 2016) is run by the Ministry of Petroleum and Natural Gas."
+    },
+    {
+      "id": 4,
+      "question": "Ayushman Bharat PM-JAY offers health cover of how much per family per year?",
+      "options": [
+        "Rs 5 lakh",
+        "Rs 1 lakh",
+        "Rs 50,000",
+        "Rs 10 lakh"
+      ],
+      "correct": 0,
+      "rationale": "The cover is Rs 5 lakh per family per year at empanelled hospitals; the scheme began on 23 September 2018 at Ranchi."
+    },
+    {
+      "id": 5,
+      "question": "Which scheme gives Rs 6,000 a year to farmer families in three instalments?",
+      "options": [
+        "PM-KISAN",
+        "Mudra Yojana",
+        "PM Fasal Bima Yojana",
+        "Atal Pension Yojana"
+      ],
+      "correct": 0,
+      "rationale": "PM-KISAN was launched in February 2019 under the Ministry of Agriculture and Farmers Welfare."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is NOT a 2015 launch?",
+      "options": [
+        "Digital India",
+        "Mudra Yojana",
+        "Make in India",
+        "Skill India"
+      ],
+      "correct": 2,
+      "rationale": "Make in India began on 25 September 2014. The other three started in 2015."
+    },
+    {
+      "id": 7,
+      "question": "Atal Pension Yojana, PM Suraksha Bima Yojana and PM Jeevan Jyoti Bima Yojana were launched in:",
+      "options": [
+        "August 2014",
+        "June 2020",
+        "May 2015",
+        "January 2018"
+      ],
+      "correct": 2,
+      "rationale": "The social-security trio was launched on 9 May 2015."
+    },
+    {
+      "id": 8,
+      "question": "The Jal Jeevan Mission aims at providing:",
+      "options": [
+        "Tap water connection to rural households",
+        "Cheap housing loans",
+        "Free LPG",
+        "Digital literacy"
+      ],
+      "correct": 0,
+      "rationale": "JJM was launched in August 2019 under the Ministry of Jal Shakti, with 55 litres per person per day."
+    },
+    {
+      "id": 9,
+      "question": "Which pair of scheme and ministry is correct?",
+      "options": [
+        "PM-JAY - Petroleum and Natural Gas",
+        "Ujjwala - Petroleum and Natural Gas",
+        "PM-KISAN - Rural Development",
+        "Ujjwala - Health and Family Welfare"
+      ],
+      "correct": 1,
+      "rationale": "Ujjwala sits under Petroleum and Natural Gas, PM-JAY under Health and PM-KISAN under Agriculture."
+    },
+    {
+      "id": 10,
+      "question": "Which scheme began on 2 October 2014?",
+      "options": [
+        "Jan Dhan Yojana",
+        "Digital India",
+        "Swachh Bharat Mission",
+        "Stand-Up India"
+      ],
+      "correct": 2,
+      "rationale": "Swachh Bharat Mission began on Gandhi Jayanti, 2 October 2014."
+    },
+    {
+      "id": 11,
+      "question": "PM SVANidhi, launched in 2020, offers working-capital loans to:",
+      "options": [
+        "Street vendors",
+        "Farmers",
+        "Fishermen",
+        "Students"
+      ],
+      "correct": 0,
+      "rationale": "It is run by the Ministry of Housing and Urban Affairs for street vendors."
+    },
+    {
+      "id": 12,
+      "question": "Integrated Child Development Services (ICDS) began in:",
+      "options": [
+        "1995",
+        "2005",
+        "2014",
+        "1975"
+      ],
+      "correct": 3,
+      "rationale": "ICDS began on 2 October 1975. The Mid-Day Meal went nationwide in 1995."
+    },
+    {
+      "id": 13,
+      "question": "The Mid-Day Meal Scheme went nationwide in which year?",
+      "options": [
+        "1985",
+        "2005",
+        "1995",
+        "1975"
+      ],
+      "correct": 2,
+      "rationale": "15 August 1995. It is now called PM POSHAN."
+    },
+    {
+      "id": 14,
+      "question": "PM Vishwakarma, started on 17 September 2023, is meant for:",
+      "options": [
+        "School children's nutrition",
+        "Rooftop solar",
+        "Traditional artisans",
+        "Rural housing"
+      ],
+      "correct": 2,
+      "rationale": "It supports traditional artisans and craftspeople and is linked to the Ministry of MSME."
+    },
+    {
+      "id": 15,
+      "question": "PM Surya Ghar: Muft Bijli Yojana is concerned with:",
+      "options": [
+        "Loans to street vendors",
+        "Rural roads",
+        "Rooftop solar for households",
+        "Crop insurance"
+      ],
+      "correct": 2,
+      "rationale": "It was launched in February 2024 under the Ministry of New and Renewable Energy."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "lessonId": "ms-office-and-keyboard-shortcuts",
+  "title": "MS Office and Keyboard Shortcuts for Exams: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the default file extension of an Excel workbook saved in Excel 2007 or later?",
+      "options": [
+        ".xls",
+        ".xlsx",
+        ".xlsm",
+        ".csv"
+      ],
+      "correct": 1,
+      "rationale": ".xlsx is the default. .xls is the older binary format and .xlsm holds macros."
+    },
+    {
+      "id": 2,
+      "question": "Which key starts a PowerPoint slide show from the first slide?",
+      "options": [
+        "F5",
+        "Shift + F5",
+        "F7",
+        "Ctrl + M"
+      ],
+      "correct": 0,
+      "rationale": "F5 starts from the beginning; Shift + F5 starts from the current slide, the usual trap. Ctrl + M inserts a new slide."
+    },
+    {
+      "id": 3,
+      "question": "Which shortcut opens the Replace dialog in Word?",
+      "options": [
+        "Ctrl + F",
+        "Ctrl + R",
+        "Ctrl + H",
+        "Ctrl + K"
+      ],
+      "correct": 2,
+      "rationale": "Ctrl + H is Replace. Ctrl + F is Find, Ctrl + R right-aligns and Ctrl + K inserts a hyperlink."
+    },
+    {
+      "id": 4,
+      "question": "Cells A1 to A5 contain 12, 8, 15, 5 and 10. What does =AVERAGE(A1:A5) return?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "50"
+      ],
+      "correct": 1,
+      "rationale": "The sum is 50 and 50 divided by 5 is 10. 50 is the SUM result."
+    },
+    {
+      "id": 5,
+      "question": "In Excel, the last column of a worksheet (2007 onward) is named:",
+      "options": [
+        "XFD",
+        "ZZ",
+        "IV",
+        "XFZ"
+      ],
+      "correct": 0,
+      "rationale": "There are 16,384 columns and the last is XFD. IV was the last column of the old .xls format (256 columns)."
+    },
+    {
+      "id": 6,
+      "question": "Which function counts all cells that are not empty in a range?",
+      "options": [
+        "COUNT",
+        "COUNTA",
+        "SUM",
+        "COUNTIF"
+      ],
+      "correct": 1,
+      "rationale": "COUNTA counts non-empty cells of any type; COUNT counts only cells containing numbers."
+    },
+    {
+      "id": 7,
+      "question": "Which of these is NOT a PowerPoint extension?",
+      "options": [
+        ".pptx",
+        ".ppsx",
+        ".potx",
+        ".docx"
+      ],
+      "correct": 3,
+      "rationale": ".docx belongs to Word. The other three are PowerPoint presentation, show and template files."
+    },
+    {
+      "id": 8,
+      "question": "Which key combination switches between open windows in Windows?",
+      "options": [
+        "Alt + F4",
+        "Alt + Tab",
+        "Ctrl + Esc",
+        "Windows + L"
+      ],
+      "correct": 1,
+      "rationale": "Alt + Tab switches windows. Alt + F4 closes the active window and Windows + L locks the PC."
+    },
+    {
+      "id": 9,
+      "question": "A range A1:C4 in Excel contains how many cells?",
+      "options": [
+        "7",
+        "12",
+        "10",
+        "16"
+      ],
+      "correct": 1,
+      "rationale": "3 columns x 4 rows = 12 cells."
+    },
+    {
+      "id": 10,
+      "question": "Which Excel error appears when a formula divides a number by zero?",
+      "options": [
+        "#NAME?",
+        "#VALUE!",
+        "#REF!",
+        "#DIV/0!"
+      ],
+      "correct": 3,
+      "rationale": "#DIV/0! is the division error. #NAME? means an unrecognised name and #REF! an invalid reference."
+    },
+    {
+      "id": 11,
+      "question": "Which statement is correct?",
+      "options": [
+        "Animations control how one slide moves to the next",
+        "Transitions control how objects move on a slide",
+        "Transitions control the change from one slide to the next",
+        "Slide Sorter view is used to run the show"
+      ],
+      "correct": 2,
+      "rationale": "Transitions are slide-to-slide effects; animations act on objects within a slide. Slide Sorter is for rearranging slides."
+    },
+    {
+      "id": 12,
+      "question": "The F4 key pressed while editing a formula in Excel does what?",
+      "options": [
+        "Edits the cell",
+        "Cycles between relative and absolute references",
+        "Inserts a chart",
+        "Starts spell check"
+      ],
+      "correct": 1,
+      "rationale": "F4 toggles forms like A1, $A$1, A$1 and $A1. F2 edits the cell and F7 checks spelling."
+    },
+    {
+      "id": 13,
+      "question": "Which shortcut deletes a selected file permanently without using the Recycle Bin?",
+      "options": [
+        "Ctrl + Delete",
+        "Alt + Delete",
+        "Shift + Delete",
+        "Delete"
+      ],
+      "correct": 2,
+      "rationale": "Shift + Delete skips the Recycle Bin after confirmation. Plain Delete only moves the file to it."
+    },
+    {
+      "id": 14,
+      "question": "Which Word tab contains the Mail Merge feature?",
+      "options": [
+        "Review",
+        "References",
+        "View",
+        "Mailings"
+      ],
+      "correct": 3,
+      "rationale": "Mail Merge is in the Mailings tab. References holds table of contents and footnotes."
+    },
+    {
+      "id": 15,
+      "question": "The shortcut Ctrl + Shift + ; in Excel inserts:",
+      "options": [
+        "Today's date",
+        "Current time",
+        "A new row",
+        "A new sheet"
+      ],
+      "correct": 1,
+      "rationale": "Ctrl + ; inserts the date and Ctrl + Shift + ; inserts the time."
+    }
+  ]
+}

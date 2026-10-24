@@ -1,0 +1,123 @@
+# Problems on Ages: Ratios, Differences, and Averages
+
+> "Father is three times as old as his son; in ten years he will be twice as old."
+> Age questions look like riddles, but each one is a pair of simple equations
+> hiding behind a story. SSC CGL, CHSL, HSSC CET and police clerk papers set one
+> or two of them almost every year because they test whether you can translate
+> words into algebra quickly and calmly.
+
+## 1. The Three Facts Behind Every Age Problem
+
+[definition]
+An **age problem** gives relationships between the ages of two or more people at
+different moments (past, present, future) and asks for an age at one moment.
+Every such problem rests on three facts: ages move together year by year, the
+difference between two people's ages never changes, and ratios do change.
+[/definition]
+
+| Fact | Meaning | Example |
+| --- | --- | --- |
+| Everyone ages equally | After n years add n to each person's age | 5 years later: 12 becomes 17 |
+| The difference is fixed | A is 8 years older than B today, 10 years ago and 10 years hence | 30 and 22; 20 and 12 |
+| The ratio is NOT fixed | Only the ratio at the stated moment is given | 3 : 2 today, 4 : 3 later |
+| Sum of n people | The sum rises by n for every year that passes | Sum of 3 people: +3 per year |
+
+The commonest error is adding the years to the *ratio* instead of to the *ages*.
+Ratios are only a way to describe ages, so convert them to units first.
+
+## 2. Setting Up with Ratio Units
+
+If the present ages are in the ratio 3 : 5, write them as 3x and 5x. The
+unknown x is the "value of one unit". Then any statement about the past or
+future becomes an equation in x.
+
+**Pattern A: ratio now, ratio later.** Present ratio 4 : 5; after 6 years it
+becomes 5 : 6. Write (4x + 6) : (5x + 6) = 5 : 6. Cross-multiplying,
+24x + 36 = 25x + 30, so x = 6 and the ages are 24 and 30.
+
+**Pattern B: ratio now, ratio earlier.** Treat it the same way but subtract the
+years from each age. Ten years ago A was half of B and the present ratio is
+3 : 4: (3x - 10) = half of (4x - 10), which gives x = 5.
+
+**Pattern C: single relation.** "Father is 4 times the son and the sum is 55"
+gives 5 units = 55, so one unit (the son) is 11.
+
+## 3. Using the Constant Difference
+
+When the question gives or hides the age *difference*, a person-to-person
+shortcut avoids a long equation.
+
+[important]
+Difference between two ages never changes. If the ratio at some moment is a : b,
+then the difference of a - b units equals the known age gap. This fixes the
+value of one unit in a single step.
+[/important]
+
+**Worked example.** A father is 30 years older than his son. After 5 years he
+will be 3 times as old. At that time the gap of 30 years equals (3 - 1) = 2
+units, so one unit (the son's age after 5 years) is 15. The son is 10 today.
+
+Use the same idea for "years ago" problems: find the unit from the gap at the
+moment where the ratio is given, then move back or forward.
+
+## 4. Sums, Averages and Groups
+
+| Situation | Method |
+| --- | --- |
+| Sum of ages is given for n people | Sum after t years = sum now + n x t |
+| Average age of a group | Total age = average x number of people |
+| A member joins | New member's age = new total - old total |
+| A member leaves | Leaver's age = old total - new total |
+| Replacement | Difference of total = new person - old person |
+| Family average a few years ago | Add (years x members) to get the present total |
+| Children born at equal gaps | Ages form a sequence x, x + d, x + 2d and so on |
+
+**Teacher joins a class.** The average age of 30 students is 15. With the
+teacher added the average becomes 16. The new total is 31 x 16 = 496 and the old
+total was 450, so the teacher is 46. The teacher's age is the new total minus the
+old total, never the new average.
+
+**Family problems.** Total of three people 3 years ago plus 9 gives the total
+today. A child who was born less than 3 years ago was not counted in the old
+average, so read the dates carefully.
+
+## 5. Typical SSC Patterns and Shortcuts
+
+- **Ratio shortcut for n years later.** If the present ages are a and b and the
+  ratio after n years is p : q, then the equation (a + n) q = (b + n) p solves
+  the unknown directly.
+- **Times-as-old formula.** If A is m times B now and k years ago A was r times
+  B, then B today = k(r - 1) / (m - r). Check: father 3 times son, 8 years ago 7
+  times: 8 x 6 / 4 = 12.
+- **Birth-year trick.** Age = current year - birth year, so a question about
+  "born in" years is the same difference idea.
+- **Fractions of age.** "Mother's age is 7/3 of the daughter's" means ratio
+  7 : 3, so take 7 units and 3 units.
+- **Answer-checking.** Plug each option into the first condition. A wrong option
+  usually breaks it within seconds, which is quick in MCQ papers.
+
+## 6. Commonly Confused Points
+
+| Trap | Correct approach |
+| --- | --- |
+| Adding years to the ratio | Add years to each actual age, not to the ratio terms |
+| Forgetting which person the question asks about | Re-read the last line before choosing |
+| "Years ago" treated as future | Years ago means subtract |
+| Average after a member leaves | Use totals, not averages |
+| Sum for n people after t years | Add n x t, not just t |
+
+[example]
+Ratio of the present ages of two brothers is 5 : 7. Eight years later it will be
+3 : 4. Find the sum of their present ages.
+
+Method. (5x + 8) : (7x + 8) = 3 : 4 gives 20x + 32 = 21x + 24, so x = 8. The
+ages are 40 and 56 and the sum is 96. Check: after 8 years 48 : 64 = 3 : 4.
+[/example]
+
+[summary]
+Convert every ratio into units (a x and b x), add or subtract the same number
+of years from each real age, and keep the unit gap equal to the fixed age
+difference. For groups use totals: total = average x members, and the sum rises
+by n for every year. Plug options back into the first condition to confirm. The
+difference between two people never changes; ratios and sums always do.
+[/summary]

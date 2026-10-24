@@ -1,0 +1,141 @@
+# Mensuration 2D: Areas and Perimeters
+
+> How much fencing does a field need, and how much paint does a floor take?
+> Perimeter answers the first question and area the second. Flat-shape
+> mensuration is a staple of SSC CGL, CHSL, MTS, RRB and police constable
+> papers, where it is tested through direct formulas, percentage-change twists
+> and cost problems. This lesson collects every formula you need with fast
+> shortcuts. Solids (cubes, cones, spheres) are covered in the separate
+> Mensuration lesson on surface areas and volumes.
+
+## 1. Perimeter versus Area
+
+[definition]
+**Perimeter** is the total length of the boundary of a plane figure, measured in
+units such as cm or m. **Area** is the amount of surface the figure covers,
+measured in square units such as sq cm or sq m.
+[/definition]
+
+| Measure | Units | Used for |
+| --- | --- | --- |
+| Perimeter | cm, m | fencing, borders, wire, boundary walls |
+| Area | sq cm, sq m | tiling, painting, carpeting, ploughing |
+
+Unit conversion: 1 sq m = 10,000 sq cm; 1 hectare = 10,000 sq m;
+1 sq km = 100 hectares.
+
+## 2. Triangles
+
+| Triangle | Area | Perimeter |
+| --- | --- | --- |
+| General | $\frac{1}{2} \times \text{base} \times \text{height}$ | $a+b+c$ |
+| Heron (all sides known) | $\sqrt{s(s-a)(s-b)(s-c)}$, $s = \frac{a+b+c}{2}$ | $2s$ |
+| Equilateral, side $a$ | $\frac{\sqrt{3}}{4}a^2$ | $3a$ |
+| Right-angled, legs $p, q$ | $\frac{1}{2}pq$ | $p + q + \sqrt{p^2+q^2}$ |
+| Isosceles, equal sides $a$, base $b$ | $\frac{b}{4}\sqrt{4a^2 - b^2}$ | $2a + b$ |
+
+**Worked example.** Sides 13, 14, 15 cm. $s = 21$, so area $= \sqrt{21 \times 8
+\times 7 \times 6} = \sqrt{7056} = 84$ sq cm.
+
+Height of an equilateral triangle: $\frac{\sqrt{3}}{2}a$. Memorise the Pythagorean
+triples 3-4-5, 5-12-13, 8-15-17 and 7-24-25 so right triangles need no
+calculation.
+
+## 3. Rectangle, Square and the Four-Sided Family
+
+| Figure | Area | Perimeter | Handy fact |
+| --- | --- | --- | --- |
+| Rectangle | $l \times b$ | $2(l+b)$ | diagonal $= \sqrt{l^2+b^2}$ |
+| Square, side $a$ | $a^2$ | $4a$ | diagonal $= a\sqrt{2}$, area $= \frac{d^2}{2}$ |
+| Parallelogram | base $\times$ height | $2(a+b)$ | height is perpendicular, not the slanted side |
+| Rhombus | $\frac{1}{2}d_1 d_2$ | $4a$ | side $= \frac{1}{2}\sqrt{d_1^2+d_2^2}$ |
+| Trapezium | $\frac{1}{2}(a+b)h$ | sum of 4 sides | $a, b$ are the parallel sides |
+| Kite | $\frac{1}{2}d_1 d_2$ | $2(a+b)$ | diagonals meet at right angles |
+
+**Worked example.** Rhombus with diagonals 24 and 10: side $=
+\sqrt{12^2+5^2} = 13$, perimeter 52 and area $= \frac{24 \times 10}{2} = 120$.
+
+[important]
+The slanted side of a parallelogram is not its height. Area always uses the
+perpendicular height, so a parallelogram with sides 10 and 6 does not have area
+60 unless the angle is a right angle.
+[/important]
+
+## 4. Circle, Sector and Ring
+
+@math label="eq:circle"
+C = 2\pi r, \qquad A = \pi r^2
+@/math
+
+Use $\pi = \frac{22}{7}$ when the radius is a multiple of 7, otherwise 3.14 if
+told so.
+
+| Shape | Area | Perimeter or arc |
+| --- | --- | --- |
+| Circle | $\pi r^2$ | $2\pi r$ |
+| Semicircle | $\frac{1}{2}\pi r^2$ | $\pi r + 2r$ |
+| Quarter circle | $\frac{1}{4}\pi r^2$ | $\frac{\pi r}{2} + 2r$ |
+| Sector, angle $\theta$ | $\frac{\theta}{360}\pi r^2$ | arc $= \frac{\theta}{360}\,2\pi r$ |
+| Ring (annulus) | $\pi (R^2 - r^2)$ | $2\pi(R + r)$ |
+
+**Worked example (sector).** $r = 21$, $\theta = 60^\circ$: area
+$= \frac{1}{6} \times \frac{22}{7} \times 441 = 231$ sq cm.
+
+**Wheel problems.** Distance covered in $n$ revolutions $= n \times 2\pi r$. A
+wheel of diameter 70 cm has circumference 220 cm, so covering 1.76 km (176000 cm)
+takes 800 revolutions.
+
+## 5. Percentage Change and Shortcuts
+
+Dimensions that change by percentages multiply, they do not add.
+
+| Change | Effect on area |
+| --- | --- |
+| Length $+20\%$, breadth $-10\%$ | $1.2 \times 0.9 = 1.08$, so $+8\%$ |
+| Side of a square $+10\%$ | $1.1^2 = 1.21$, so $+21\%$ |
+| Radius $+10\%$ | $+21\%$ (same square rule) |
+| Radius doubled | area becomes 4 times |
+| All dimensions scaled by $k$ | perimeter by $k$, area by $k^2$ |
+
+Net percentage change for two changes of $x\%$ and $y\%$:
+$x + y + \frac{xy}{100}$.
+
+**Square with a given diagonal.** Area $= \frac{d^2}{2}$. A diagonal of 20 cm
+gives 200 sq cm, with no need for the side.
+
+## 6. Paths, Costs and Exam Traps
+
+**Path outside a rectangle** of size $l \times b$ with width $w$:
+$(l+2w)(b+2w) - lb = 2w(l + b + 2w)$. For $40 \times 30$ and $w = 2$:
+$2 \times 2 \times 74 = 296$ sq m.
+
+**Path inside** the rectangle: $2w(l + b - 2w)$.
+
+**Cost problems.** Fencing cost uses the perimeter; flooring, painting and
+carpeting cost use the area. A $150 \times 90$ m field fenced at Rs 12 per metre
+costs $480 \times 12 = $ Rs 5,760.
+
+| Trap | Fix |
+| --- | --- |
+| Using area for fencing | Fencing is perimeter only |
+| Forgetting the half in triangle or trapezium | Write the half first |
+| Using the slanted side as the height | Use the perpendicular |
+| Adding percentage changes | Multiply the factors |
+| Mixing cm and m | Convert before multiplying |
+
+[example]
+A rectangle's length is three times its breadth and its perimeter is 96 m.
+Then $l + b = 48$ and $l = 3b$, so $b = 12$ and $l = 36$. Area
+$= 36 \times 12 = 432$ sq m. Cost of tiling at Rs 50 per sq m would be
+$432 \times 50 = $ Rs 21,600.
+[/example]
+
+[summary]
+Perimeter measures the boundary and drives fencing cost; area measures surface
+and drives tiling and painting cost. Know the triangle forms (half base times
+height, Heron, equilateral $\frac{\sqrt{3}}{4}a^2$), the rectangle, square,
+rhombus, trapezium and parallelogram formulas, and the circle, sector and ring
+formulas. Percentage changes in dimensions multiply, a square's area equals half
+its diagonal squared, and a path's area is the outer shape minus the inner one.
+Check units and use the perpendicular height.
+[/summary]

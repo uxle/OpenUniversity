@@ -1,0 +1,186 @@
+{
+  "lessonId": "capf-and-security-forces-of-india",
+  "title": "CAPF and Security Forces of India: Who Guards What: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which force guards the Indo-China border and is nicknamed 'Himveers'?",
+      "options": [
+        "SSB",
+        "ITBP",
+        "Assam Rifles",
+        "BSF"
+      ],
+      "correct": 1,
+      "rationale": "ITBP was raised on 24 October 1962 and holds high-altitude posts along the India-China frontier. SSB looks after Nepal and Bhutan, which is the usual swap."
+    },
+    {
+      "id": 2,
+      "question": "The Sashastra Seema Bal guards which pair of borders?",
+      "options": [
+        "Pakistan and Bangladesh",
+        "China and Myanmar",
+        "Nepal and Bhutan",
+        "Bhutan and China"
+      ],
+      "correct": 2,
+      "rationale": "SSB covers about 1,751 km with Nepal and 699 km with Bhutan. Pakistan and Bangladesh belong to the BSF."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT under the Ministry of Home Affairs?",
+      "options": [
+        "CISF",
+        "Assam Rifles",
+        "NSG",
+        "Indian Coast Guard"
+      ],
+      "correct": 3,
+      "rationale": "The Coast Guard works under the Ministry of Defence (Coast Guard Act, 1978). The other three are MHA forces."
+    },
+    {
+      "id": 4,
+      "question": "The motto 'Seva aur Nishtha' (Service and Loyalty) belongs to:",
+      "options": [
+        "CRPF",
+        "CISF",
+        "BSF",
+        "SSB"
+      ],
+      "correct": 0,
+      "rationale": "CRPF's motto is Service and Loyalty. BSF's is 'Duty unto Death' and CISF's is 'Protection and Security'."
+    },
+    {
+      "id": 5,
+      "question": "BSF was raised in which year, in the aftermath of the Indo-Pakistan conflict?",
+      "options": [
+        "1962",
+        "1963",
+        "1969",
+        "1965"
+      ],
+      "correct": 3,
+      "rationale": "BSF came into being on 1 December 1965. 1962 is ITBP and 1969 is CISF."
+    },
+    {
+      "id": 6,
+      "question": "Which force is the oldest paramilitary force of India, with the Army holding operational control?",
+      "options": [
+        "CRPF",
+        "Assam Rifles",
+        "BSF",
+        "ITBP"
+      ],
+      "correct": 1,
+      "rationale": "Assam Rifles traces back to the Cachar Levy of 1835. It is administered by the MHA but led operationally by the Army, and its DG is a Lieutenant General. CRPF dates only to 1939."
+    },
+    {
+      "id": 7,
+      "question": "Which force protects the Prime Minister and reports to the Cabinet Secretariat?",
+      "options": [
+        "NSG",
+        "CISF",
+        "SPG",
+        "RPF"
+      ],
+      "correct": 2,
+      "rationale": "The SPG (1985, SPG Act 1988) is a close-protection force under the Cabinet Secretariat. NSG, popularly 'Black Cats', is a counter-terror force under the MHA."
+    },
+    {
+      "id": 8,
+      "question": "Which statement about CRPF is correct?",
+      "options": [
+        "It was founded in 1969 to protect industry",
+        "It began as the Crown Representative's Police in 1939",
+        "It guards the Nepal border",
+        "It is controlled by the Ministry of Defence"
+      ],
+      "correct": 1,
+      "rationale": "CRPF started at Neemuch on 27 July 1939 as the Crown Representative's Police and was renamed in 1949. Industrial protection is CISF's task."
+    },
+    {
+      "id": 9,
+      "question": "Valour Day, observed on 9 April, is associated with the fight at Sardar Post in 1965. Which force celebrates it?",
+      "options": [
+        "BSF",
+        "ITBP",
+        "CISF",
+        "CRPF"
+      ],
+      "correct": 3,
+      "rationale": "Valour Day commemorates the Sardar Post action in the Rann of Kutch by CRPF personnel. BSF's raising day is in December."
+    },
+    {
+      "id": 10,
+      "question": "In the order of raising years, which sequence (earliest to latest) is correct?",
+      "options": [
+        "CRPF, ITBP, BSF, CISF",
+        "ITBP, CRPF, CISF, BSF",
+        "BSF, CRPF, ITBP, CISF",
+        "CRPF, BSF, ITBP, CISF"
+      ],
+      "correct": 0,
+      "rationale": "CRPF 1939, ITBP 1962, BSF 1965, CISF 1969."
+    },
+    {
+      "id": 11,
+      "question": "RAW, India's external intelligence agency, functions under the:",
+      "options": [
+        "Ministry of Home Affairs",
+        "Ministry of Defence",
+        "DoPT",
+        "Cabinet Secretariat"
+      ],
+      "correct": 3,
+      "rationale": "RAW was formed in 1968 and sits in the Cabinet Secretariat. IB, the internal agency, is with the MHA."
+    },
+    {
+      "id": 12,
+      "question": "The National Investigation Agency was created after which event, by an Act of 2008?",
+      "options": [
+        "Kargil War",
+        "Parliament attack 2001",
+        "26/11 Mumbai attacks",
+        "Pulwama attack"
+      ],
+      "correct": 2,
+      "rationale": "The NIA Act, 2008 followed the Mumbai attacks of November 2008. The agency investigates terror-related offences and falls under the MHA."
+    },
+    {
+      "id": 13,
+      "question": "The Railway Protection Force has which motto and parent ministry?",
+      "options": [
+        "Yasho Labhasva; Ministry of Railways",
+        "Vayam Rakshamah; Ministry of Defence",
+        "Aapda Seva Sadaiv Sarvatra; MHA",
+        "Seva aur Nishtha; Ministry of Railways"
+      ],
+      "correct": 0,
+      "rationale": "RPF (Act of 1957) carries 'Yasho Labhasva' (Attain honour) and is under the Railways. 'Vayam Rakshamah' is the Coast Guard's motto."
+    },
+    {
+      "id": 14,
+      "question": "Which of these force and role pairs is correct?",
+      "options": [
+        "NDRF: disaster response, constituted in 2006",
+        "CISF: Indo-China border guarding",
+        "SSB: airports and Delhi Metro",
+        "NSG: Indian coastline patrol"
+      ],
+      "correct": 0,
+      "rationale": "NDRF was constituted on 19 January 2006 under the Disaster Management Act, 2005. Airports and the Delhi Metro are CISF duties; China border is ITBP."
+    },
+    {
+      "id": 15,
+      "question": "CBI, whose motto is 'Industry, Impartiality, Integrity', is administratively under:",
+      "options": [
+        "MHA",
+        "Ministry of Law",
+        "Cabinet Secretariat",
+        "Ministry of Personnel (DoPT)"
+      ],
+      "correct": 3,
+      "rationale": "CBI falls under DoPT and draws power from the Delhi Special Police Establishment Act, 1946. NIA, the terror-case agency, is with the MHA."
+    }
+  ]
+}

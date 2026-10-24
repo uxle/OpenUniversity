@@ -1,0 +1,162 @@
+{
+  "lessonId": "data-interpretation-tables-and-charts",
+  "title": "Data Interpretation: Tables and Charts: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. By what percent did Shop P's sales rise from 2021 to 2022?",
+      "options": [
+        "30%",
+        "12%",
+        "23%",
+        "20%"
+      ],
+      "correct": 0,
+      "rationale": "Percent change = (52 - 40)/40 x 100 = 30%. Dividing by the new value (12/52 = 23%) is the common error; always divide by the old value."
+    },
+    {
+      "id": 2,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. What is the average annual sales of Shop Q over the four years?",
+      "options": [
+        "Rs 55 lakh",
+        "Rs 65 lakh",
+        "Rs 60 lakh",
+        "Rs 62 lakh"
+      ],
+      "correct": 2,
+      "rationale": "Total = 55 + 50 + 65 + 70 = 240, so average = 240/4 = 60 lakh."
+    },
+    {
+      "id": 3,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. The ratio of the total four-year sales of Shop P to that of Shop Q is:",
+      "options": [
+        "4 : 5",
+        "5 : 6",
+        "7 : 8",
+        "9 : 10"
+      ],
+      "correct": 1,
+      "rationale": "P total = 200, Q total = 240. The ratio 200:240 simplifies by 40 to 5:6."
+    },
+    {
+      "id": 4,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. In which year were the combined sales of the three shops the highest?",
+      "options": [
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "correct": 3,
+      "rationale": "Yearly totals: 125, 138, 170, 172 for 2021 to 2024. The largest is 172 in 2024."
+    },
+    {
+      "id": 5,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. Shop R's 2023 sales are what percent of the combined 2023 sales of all three shops? (Nearest whole number.)",
+      "options": [
+        "26%",
+        "22%",
+        "30%",
+        "35%"
+      ],
+      "correct": 0,
+      "rationale": "2023 total = 170; R = 45. 45/170 x 100 = 26.5%, about 26%."
+    },
+    {
+      "id": 6,
+      "question": "Sales in lakh rupees for 2021, 2022, 2023, 2024 in order. Shop P: 40, 52, 60, 48; Shop Q: 55, 50, 65, 70; Shop R: 30, 36, 45, 54. Over which year did Shop R show the highest percentage growth compared with the previous year?",
+      "options": [
+        "2022",
+        "2023",
+        "2024",
+        "Equal in all years"
+      ],
+      "correct": 1,
+      "rationale": "R's growth: 20%, 25%, 20% for 2022, 2023, 2024. Absolute rises are 6, 9, 9, so 2023 and 2024 tie in absolute terms, but 2023 has the smaller base and hence the larger percentage."
+    },
+    {
+      "id": 7,
+      "question": "The pass percentage of a school rose from 60% to 72%. The percentage increase in the pass rate is:",
+      "options": [
+        "12%",
+        "16.67%",
+        "17%",
+        "20%"
+      ],
+      "correct": 3,
+      "rationale": "A rise of 12 percentage points on a base of 60 is 12/60 x 100 = 20%. The value 12 is the percentage-point difference, not the percent increase."
+    },
+    {
+      "id": 8,
+      "question": "In a pie chart of a family budget, Food takes 30%, Rent 25%, Education 15%, and the rest is Others and Savings. The central angle for Education is:",
+      "options": [
+        "45 degrees",
+        "60 degrees",
+        "54 degrees",
+        "90 degrees"
+      ],
+      "correct": 2,
+      "rationale": "A full circle is 360 degrees, so 15% corresponds to 0.15 x 360 = 54 degrees. 1% is 3.6 degrees."
+    },
+    {
+      "id": 9,
+      "question": "A monthly budget chart of total expenditure Rs 480,000 shows Rent as 25% and Food as 30%. How much more is spent on Food than on Rent?",
+      "options": [
+        "Rs 24,000",
+        "Rs 12,000",
+        "Rs 48,000",
+        "Rs 36,000"
+      ],
+      "correct": 0,
+      "rationale": "The gap is 30% - 25% = 5% of 4,80,000 = Rs 24,000."
+    },
+    {
+      "id": 10,
+      "question": "The average monthly rainfall of five months is 50 mm. If four of the months had 42, 38, 55 and 47 mm, the rainfall in the fifth month was:",
+      "options": [
+        "58 mm",
+        "70 mm",
+        "68 mm",
+        "62 mm"
+      ],
+      "correct": 2,
+      "rationale": "Total needed = 5 x 50 = 250. Sum of known = 182. Missing = 250 - 182 = 68 mm."
+    },
+    {
+      "id": 11,
+      "question": "Marks out of 100 in Maths, Science and English: Asha 78, 84, 66; Bimal 90, 72, 63; Chitra 70, 88, 92. Who has the highest overall percentage?",
+      "options": [
+        "Asha",
+        "Bimal",
+        "All three are equal",
+        "Chitra"
+      ],
+      "correct": 3,
+      "rationale": "Totals out of 300: Asha 228, Bimal 225, Chitra 250. Chitra's 250/300 = 83.33% is highest."
+    },
+    {
+      "id": 12,
+      "question": "A factory's output fell from 60 thousand units to 48 thousand units. The percentage decrease is:",
+      "options": [
+        "25%",
+        "20%",
+        "12%",
+        "16%"
+      ],
+      "correct": 1,
+      "rationale": "Decrease = 12 on a base of 60 = 20%. A fall from 48 back to 60 would be a 25% rise, which is the reverse question."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is the best first step when you are given a data-interpretation table in an exam?",
+      "options": [
+        "Read the title, units and column headings before calculating anything",
+        "Start calculating the largest value in every column",
+        "Assume all numbers are in the same unit",
+        "Approximate every value to the nearest ten and ignore the units"
+      ],
+      "correct": 0,
+      "rationale": "Titles and units (lakh, thousand, percent, kg) decide the meaning of every number. Most DI mistakes come from ignoring them, so reading the labels first is the right habit."
+    }
+  ]
+}

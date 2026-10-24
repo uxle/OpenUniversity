@@ -1,0 +1,139 @@
+# Census 2011 and the Demography of India
+
+> Every SSC, RRB and state-police paper carries a few questions straight out
+> of the 2011 Census: the population total, the sex ratio, the literacy rate,
+> the most populous state. The numbers are fixed, so the marks are easy once
+> you have a clean table in your head. This lesson keeps only Census 2011
+> figures, and flags the pairs that examiners love to swap.
+
+## 1. What the Census Is and How It Is Run
+
+[definition]
+The **Census** is the decennial headcount of every person in India, carried out
+by the **Registrar General and Census Commissioner of India** under the Ministry
+of Home Affairs and the **Census Act, 1948**. Census 2011 was the **15th**
+census since the first in 1872, and the **7th** since independence.
+[/definition]
+
+- The first census (1872) was taken region by region, in different years.
+  The **first synchronous census** was taken in **1881** under Viceroy
+  **Lord Ripon**, and counts have followed every ten years since.
+- Census 2011 ran in two phases: house listing (April to September 2010) and
+  population enumeration (9 to 28 February 2011, with the reference date of
+  1 March 2011).
+- The Census is on the **Union List** of the Constitution.
+- Remember the units: a person aged **0 to 6** is a "child" for the
+  child sex ratio, and literacy is counted for those aged **7 and above**.
+- **Literate** means a person aged 7 or more who can read and write with
+  understanding in any language.
+
+## 2. Headline Figures of Census 2011
+
+| Indicator | Census 2011 figure |
+| --- | --- |
+| Total population | 1,210,854,977 (about 1.21 billion) |
+| Males | 623,270,258 |
+| Females | 587,584,719 |
+| Decadal growth, 2001 to 2011 | about 17.7 percent |
+| Sex ratio | **943** females per 1,000 males |
+| Child sex ratio (0 to 6 years) | **919** |
+| Density of population | **382** persons per sq km |
+| Literacy rate | **74.04** percent |
+| Male literacy | 82.14 percent |
+| Female literacy | 65.46 percent |
+| Rural share | 68.84 percent |
+| Urban share | about 31.2 percent |
+| Districts | 640 |
+
+- The decadal growth rate fell from about 21.5 percent in 1991 to 2001 to about
+  17.7 percent in 2001 to 2011, a clear slowdown.
+- The male-female literacy gap is about **16.7 percentage points** (82.14
+  minus 65.46).
+- **Sex ratio** is expressed per **1,000 males**.
+
+[tip]
+Memory trick: 943 is the sex ratio, 919 the child sex ratio, and the two are
+"nine-four-three and nine-one-nine". Density is 382. Literacy is 74.04.
+[/tip]
+
+## 3. States at the Extremes
+
+| Category | State | Figure |
+| --- | --- | --- |
+| Most populous state | Uttar Pradesh | 199,812,341 |
+| Second | Maharashtra | 112,374,333 |
+| Third | Bihar | 104,099,452 |
+| Fourth | West Bengal | 91,276,115 |
+| Fifth | Madhya Pradesh | 72,626,809 |
+| Least populous state | Sikkim | 610,577 |
+| Least populous UT | Lakshadweep | 64,473 |
+| Highest density (state) | Bihar | 1,102 per sq km |
+| Lowest density (state) | Arunachal Pradesh | 17 per sq km |
+| Highest density (UT) | Delhi | 11,297 per sq km |
+| Highest sex ratio (state) | Kerala | 1,084 |
+| Lowest sex ratio (state) | Haryana | 879 |
+| Highest literacy (state) | Kerala | 94.00 percent |
+| Lowest literacy (state) | Bihar | 61.80 percent |
+
+- **Uttar Pradesh** alone holds roughly one in six Indians, and its population
+  is bigger than that of most countries.
+- **Nagaland** is the only state that showed a **negative** decadal growth
+  rate in 2011.
+- Among Union Territories the highest sex ratio belongs to **Puducherry**
+  (1,037) and the lowest to **Daman and Diu** (618), as counted in 2011.
+- The Union Territory of **Delhi** has density far above any state, which is
+  why exam questions always say "among the states".
+
+## 4. Religion, Caste Groups and Urbanisation
+
+| Religion | Share of population, 2011 |
+| --- | --- |
+| Hindus | 79.8 percent |
+| Muslims | 14.2 percent |
+| Christians | 2.3 percent |
+| Sikhs | 1.7 percent |
+| Buddhists | 0.7 percent |
+| Jains | 0.4 percent |
+
+- **Urban areas** in the Census are of two kinds: **statutory towns**
+  (declared by law, with a municipality or similar body) and **census towns**
+  (population of at least 5,000, at least 75 percent of male main workers in
+  non-farm work, and density of at least 400 per sq km).
+- **Rural share** of 68.84 percent means about seven Indians in ten still live
+  in villages.
+- The country is described as having **28 states and 7 Union Territories** in
+  2011. Telangana was formed in 2014, so Census 2011 counts it inside Andhra
+  Pradesh.
+
+## 5. Common Traps and a Worked Example
+
+- **Population versus growth**: Uttar Pradesh is the most populous state, but
+  Meghalaya had the highest decadal growth rate among states (about 28
+  percent). Do not confuse size with rate.
+- **Sex ratio versus child sex ratio**: 943 is the all-age figure; 919 is for
+  ages 0 to 6.
+- **Kerala has both the top sex ratio and the top literacy**, while **Bihar**
+  has the lowest literacy and the highest density among states.
+- **Haryana** has the lowest sex ratio of any state, a favourite for Haryana
+  exams (HSSC CET, Haryana Police).
+- **Provisional versus final**: provisional totals were released in 2011 and
+  the final figures differ slightly. Use the final tables for exams.
+
+[example]
+Question: "If the literacy of males is 82.14 percent and of females 65.46
+percent, by how many percentage points does male literacy exceed female?"
+Subtract: 82.14 minus 65.46 equals 16.68 points. The overall rate (74.04)
+always lies between the two, closer to the male figure because there are more
+males than females.
+[/example]
+
+[summary]
+Census 2011 counted about 1.21 billion Indians: 943 women per 1,000 men,
+child sex ratio 919, density 382 per sq km and literacy 74.04 percent
+(males 82.14, females 65.46). Uttar Pradesh is the biggest state and Sikkim the
+smallest. Bihar has the highest density and the lowest literacy among states,
+Kerala leads in both sex ratio (1,084) and literacy (94.00), and Haryana has
+the lowest sex ratio (879). Arunachal Pradesh is the thinnest in density (17),
+and Delhi, a Union Territory, the densest (11,297). About 68.84 percent of
+Indians lived in rural areas.
+[/summary]

@@ -1,0 +1,21 @@
+# Haryana GK
+
+@subject {
+  id: haryana-gk
+  title: "Haryana GK"
+  parent: general-knowledge
+  description: "Haryana history, geography, districts, economy, culture, places, personalities, sports and schemes for HSSC CET, Haryana Police and state exams."
+}
+
+@lessons {
+  haryana-culture-folk-dance-and-fairs
+  haryana-districts-divisions-and-administration
+  haryana-economy-agriculture-and-industry
+  haryana-environment-wildlife-and-protected-areas
+  haryana-geography-rivers-and-climate
+  haryana-history-and-formation
+  haryana-personalities-and-literature
+  haryana-places-monuments-and-tourism
+  haryana-schemes-institutions-and-policies
+  haryana-sports-and-awards
+}

@@ -1,0 +1,186 @@
+{
+  "lessonId": "committees-commissions-and-reports",
+  "title": "Committees, Commissions and Reports: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which committee, set up in 1957, recommended a three-tier Panchayati Raj system?",
+      "options": [
+        "L.M. Singhvi Committee",
+        "Balwant Rai Mehta Committee",
+        "Santhanam Committee",
+        "Ashok Mehta Committee"
+      ],
+      "correct": 1,
+      "rationale": "Balwant Rai Mehta (1957) proposed Gram Panchayat, Panchayat Samiti and Zila Parishad. Ashok Mehta (1977) proposed only two tiers."
+    },
+    {
+      "id": 2,
+      "question": "The Ashok Mehta Committee recommended which structure for rural local government?",
+      "options": [
+        "Single-tier village council",
+        "Four-tier with a state-level body",
+        "Two-tier: Zila Parishad and Mandal Panchayat",
+        "Three-tier with Gram Sabha at the top"
+      ],
+      "correct": 2,
+      "rationale": "The 1977 committee proposed a two-tier model. The three-tier pattern belongs to Balwant Rai Mehta."
+    },
+    {
+      "id": 3,
+      "question": "The Sarkaria Commission examined:",
+      "options": [
+        "Centre-state relations",
+        "Primary education",
+        "Banking reforms",
+        "Poverty estimation"
+      ],
+      "correct": 0,
+      "rationale": "Set up in 1983, with Justice R.S. Sarkaria as chair, it reported in 1988 on centre-state relations."
+    },
+    {
+      "id": 4,
+      "question": "Which commission recommended 27 per cent reservation for OBCs in central government posts?",
+      "options": [
+        "Mandal Commission",
+        "Shah Commission",
+        "Sachar Committee",
+        "Kothari Commission"
+      ],
+      "correct": 0,
+      "rationale": "The Mandal Commission, headed by B.P. Mandal, reported in 1980. Kothari is about education and Sachar about Muslims."
+    },
+    {
+      "id": 5,
+      "question": "The Kothari Commission (1964-66) is associated with:",
+      "options": [
+        "The Emergency",
+        "The 10+2+3 pattern of education",
+        "Reorganisation of states",
+        "Reform of the tax system"
+      ],
+      "correct": 1,
+      "rationale": "D.S. Kothari headed the Education Commission, which backed the 10+2+3 pattern and the three-language formula."
+    },
+    {
+      "id": 6,
+      "question": "Which committee led to the creation of the Central Vigilance Commission in 1964?",
+      "options": [
+        "Santhanam Committee",
+        "Narasimham Committee",
+        "Verma Committee",
+        "Malimath Committee"
+      ],
+      "correct": 0,
+      "rationale": "The Santhanam Committee of 1962 examined corruption, and the CVC followed in 1964."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is correctly matched?",
+      "options": [
+        "Shah Commission - Emergency excesses",
+        "Sachar Committee - Banking reform",
+        "Shah Commission - Babri Masjid demolition",
+        "Liberhan Commission - Emergency excesses"
+      ],
+      "correct": 0,
+      "rationale": "Justice J.C. Shah investigated excesses of the Emergency. Liberhan examined the Babri Masjid demolition and Sachar studied Muslims."
+    },
+    {
+      "id": 8,
+      "question": "The Sachar Committee, which reported in 2006, studied the condition of:",
+      "options": [
+        "Small farmers",
+        "Scheduled Tribes",
+        "Women workers",
+        "Muslims"
+      ],
+      "correct": 3,
+      "rationale": "Justice Rajinder Sachar chaired the committee on the social, economic and educational status of Muslims."
+    },
+    {
+      "id": 9,
+      "question": "Which one is the odd one out among these education bodies?",
+      "options": [
+        "Mudaliar Commission",
+        "Kothari Commission",
+        "Radhakrishnan Commission",
+        "Sarkaria Commission"
+      ],
+      "correct": 3,
+      "rationale": "Sarkaria dealt with centre-state relations. The other three studied education."
+    },
+    {
+      "id": 10,
+      "question": "The States Reorganisation Commission (1953) was headed by:",
+      "options": [
+        "S. Radhakrishnan",
+        "Fazl Ali",
+        "B.P. Mandal",
+        "J.C. Shah"
+      ],
+      "correct": 1,
+      "rationale": "Fazl Ali chaired it with K.M. Panikkar and H.N. Kunzru. Its report (1955) led to the States Reorganisation Act, 1956."
+    },
+    {
+      "id": 11,
+      "question": "Which statement about Panchayati Raj and committees is correct?",
+      "options": [
+        "Balwant Rai Mehta recommended two tiers in 1977",
+        "Ashok Mehta recommended three tiers in 1957",
+        "Balwant Rai Mehta (1957) recommended three tiers and Ashok Mehta (1977) two tiers",
+        "Both recommended identical structures"
+      ],
+      "correct": 2,
+      "rationale": "Remember B3 and A2: Balwant Rai Mehta three-tier, Ashok Mehta two-tier."
+    },
+    {
+      "id": 12,
+      "question": "The Fundamental Duties were added to the Constitution after the recommendations of which committee?",
+      "options": [
+        "Swaran Singh Committee",
+        "Punchhi Commission",
+        "Tendulkar Committee",
+        "Kothari Commission"
+      ],
+      "correct": 0,
+      "rationale": "The Swaran Singh Committee (1976) led to the 42nd Amendment adding Fundamental Duties."
+    },
+    {
+      "id": 13,
+      "question": "The Simon Commission of 1927 was opposed in India mainly because:",
+      "options": [
+        "It had no Indian member",
+        "It proposed ending the Legislative Councils",
+        "It was set up after independence",
+        "It recommended partition"
+      ],
+      "correct": 0,
+      "rationale": "All its members were British, which prompted the 'Simon Go Back' protests."
+    },
+    {
+      "id": 14,
+      "question": "Which pair is correctly matched by year?",
+      "options": [
+        "Mandal Commission - 1957 and Kothari Commission - 1979",
+        "Sarkaria Commission - 1983 and Punchhi Commission - 2007",
+        "Sarkaria Commission - 2007 and Punchhi Commission - 1983",
+        "Santhanam Committee - 1990 and Shah Commission - 1964"
+      ],
+      "correct": 1,
+      "rationale": "Sarkaria was set up in 1983 and Punchhi in 2007, both on centre-state relations. The other pairs scramble dates."
+    },
+    {
+      "id": 15,
+      "question": "The Inter-State Council under Article 263 was set up in 1990 following a recommendation of which commission?",
+      "options": [
+        "Mandal Commission",
+        "Sarkaria Commission",
+        "Kothari Commission",
+        "Second Administrative Reforms Commission"
+      ],
+      "correct": 1,
+      "rationale": "The Sarkaria Commission had recommended a permanent Inter-State Council."
+    }
+  ]
+}

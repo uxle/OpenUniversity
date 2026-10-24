@@ -25,6 +25,14 @@
       "content": "8. नागरिकता (Citizenship) भाग-2 (अनुच्छेद 5 से 11) - स्रोत: ब्रिटेन के संविधान से प्रेरित। - प्रकृति: एकल नागरिकता (Single Citizenship) । (नोट: अमेरिका में दोहरी नागरिकता है - देश व राज्य की अलग) । --- नागरिकता प्राप्त करने के 5 तरीके (Citizenship Act 1955) 1. जन्म से (By Birth): - 26 जनवरी 1950 को या उसके बाद भारत में जन्मा व्यक्ति। - संशोधन 1986: माता या पिता में से कोई एक भारतीय नागरिक हो। - अपवाद: विदेशी राजनयिकों के बच्चे एवं शत्रु देश के अधीन भू-भाग में जन्मे बच्चे। 2. वंश परंपरा द्वारा (B"
     },
     {
+      "lessonId": "committees-commissions-and-reports",
+      "subjectId": "civics",
+      "title": "Committees, Commissions and Reports: Who Studied What",
+      "subject": "civics",
+      "keywords": [],
+      "content": "Committees, Commissions and Reports: Who Studied What India has a habit of turning hard questions into commissions: how should power be shared with states, how should schools be organised, who deserves reservation? The reports often shaped real laws and institutions. Exam papers test the match between the name, the subject, the year and the headline recommendation. 1. Why Committees Matter and How to Study Them A committee or commission is a body set up by the government (or Parliament) to study"
+    },
+    {
       "lessonId": "constituent-assembly",
       "subjectId": "civics",
       "title": "1. संविधान सभा (Constituent Assembly)",
@@ -111,6 +119,14 @@
       "subject": "civics",
       "keywords": [],
       "content": "2. संविधान का निर्माण (Making of the Constitution) चुनाव एवं रचना (July–August 1946) - चुनाव का स्वरूप: अप्रत्यक्ष रूप से प्रान्तीय विधानसभाओं के सदस्यों द्वारा। - देशी रियासतें: चुनाव में भाग नहीं लिया (मनोनयन द्वारा)। - कुल चुनाव की सीटें (296): - कांग्रेस: 208 - मुस्लिम लीग: 73 - अन्य / स्वतंत्र: 15 - विशेष प्रतिनिधित्व: - प्रथम पारसी: P.H. मोदी - प्रथम एंग्लो-इंडियन: फ्रैंक एंथनी - डॉ. B.R. अम्बेडकर का चुनाव: - 1946 में पहली बार पूर्वी बंगाल से चुने गए। - विभाजन के पश्चात बंबई प्रेसीडेंसी की"
+    },
+    {
+      "lessonId": "new-criminal-laws-bns-bnss-bsa",
+      "subjectId": "civics",
+      "title": "New Criminal Laws: BNS, BNSS and BSA",
+      "subject": "civics",
+      "keywords": [],
+      "content": "New Criminal Laws: BNS, BNSS and BSA On 1 July 2024 India retired three colonial-era statutes and began working with three new ones. The Indian Penal Code, the Code of Criminal Procedure and the Indian Evidence Act all gave way to Sanhitas with Hindi names. Newspapers covered the change for months, so SSC, police and state-level papers now ask which law replaced which, what was added, and which section numbers are famous. 1. The Big Picture: Three Old Laws, Three New Ones All three Bills were pa"
     },
     {
       "lessonId": "parliament",
@@ -296,6 +312,33 @@
       "subject": "computer-science",
       "keywords": [],
       "content": "Sorting Algorithms: Ordering Data Efficiently Sorting — putting a collection into order — is the most studied problem in computer science. This lesson walks the simple quadratic sorts, the fast divide-and-conquer family, and how to choose. 1. Why Sorting Matters Sorted data is dramatically cheaper to work with: - Binary search needs sorted input: O(log n) instead of O(n). - Duplicates collapse into adjacent runs, so dedup is one scan. - People expect ordered output: price lists, rankings, inbox "
+    },
+    {
+      "lessonId": "computer-basics-memory-and-generations",
+      "subjectId": "computer-science",
+      "subSubjectId": "computer-fundamentals",
+      "title": "Computer Basics: CPU, Memory, Generations and Number Systems",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Computer Basics: CPU, Memory, Generations and Number Systems \"Computer awareness\" is a scoring section in SSC CGL, CHSL, GD, HSSC CET and police papers because its questions are short and factual. The same handful of ideas return every year: what the CPU does, how memory is ranked, which device is input or output, what marks each generation, and simple binary-to-decimal conversions. Master the tables below and most of the section becomes free marks. 1. The CPU and the Computer's Basic Cycle A co"
+    },
+    {
+      "lessonId": "internet-email-and-cyber-terms",
+      "subjectId": "computer-science",
+      "subSubjectId": "computer-fundamentals",
+      "title": "Internet, Email and Cyber Terms: Protocols, Malware and the IT Act",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "Internet, Email and Cyber Terms: Protocols, Malware and the IT Act Computer awareness papers in SSC, HSSC CET and police recruitment test the vocabulary of the online world: what HTTP and SMTP do, which part of a URL is the domain, what Bcc means, how phishing differs from pharming and which section of the IT Act covers which offence. These are short fact questions, so a tidy set of tables wins marks quickly. 1. Internet Basics The Internet is a worldwide network of networks. The World Wide Web "
+    },
+    {
+      "lessonId": "ms-office-and-keyboard-shortcuts",
+      "subjectId": "computer-science",
+      "subSubjectId": "computer-fundamentals",
+      "title": "MS Office and Keyboard Shortcuts for Exams",
+      "subject": "computer-science",
+      "keywords": [],
+      "content": "MS Office and Keyboard Shortcuts for Exams Almost every SSC, HSSC CET and police paper asks about Word, Excel, PowerPoint, file extensions or a keyboard shortcut. The questions are mechanical: \"Which key starts a slide show?\", \"What is the extension of an Excel file?\", \"Which function adds a range?\". Learn the tables below and these become the easiest marks in computer awareness. 1. Microsoft Office at a Glance MS Office is a suite of application software from Microsoft. The main members: | Prog"
     },
     {
       "lessonId": "cryptography-basics",
@@ -877,6 +920,96 @@
       "content": "Famous Books and Authors: From the Vedas to the Booker Shelf Ask a general-knowledge examiner to name the most reliable question ever written, and they will point at a book-author pair. The Vedas and the epics, the Mughal chronicles, the freedom movement's classics, and the modern prize-winners form a single ladder of Indian writing, with the world's classics bolted on. This lesson climbs the ladder once, carefully. 1. The Ancient Canon — Vedas, Upanishads, Epics The four Vedas — Rig, Sama, Yaju"
     },
     {
+      "lessonId": "haryana-culture-folk-dance-and-fairs",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Culture: Folk Dances, Saang, Fairs and Crafts",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Culture: Folk Dances, Saang, Fairs and Crafts Haryana's culture is rural, martial and musical: stamping men's dances, women's circular dances, all-night Saang plays and a calendar of fairs from Surajkund to Kurukshetra. In HSSC CET and Haryana Police papers this area gives quick marks, because the questions pair a name with one fact: who dances it, where a fair is held, or which craft belongs to which town. This lesson organises those pairs. 1. Folk Dances: Who, When, Where The state's A"
+    },
+    {
+      "lessonId": "haryana-districts-divisions-and-administration",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Districts, Divisions and Administration",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Districts, Divisions and Administration Administrative questions are the safest marks in Haryana GK, and also the easiest to lose. The number of districts changed as recently as December 2025, seat counts are asked in three houses, and the list of Chief Ministers is a favourite sequencing question. This lesson gives the dated figures, the six divisions with their districts, the machinery of government and the state symbols in one place. 1. Districts and Divisions (as of December 2025) Ha"
+    },
+    {
+      "lessonId": "haryana-economy-agriculture-and-industry",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Economy: Agriculture, Livestock, Industry and Transport",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Economy: Agriculture, Livestock, Industry and Transport Haryana feeds the country and builds its cars. A small state of about 1.4 per cent of India's area, it was a Green Revolution leader, supplies a large share of the central foodgrain pool and hosts the largest automobile cluster in the country around Gurugram and Manesar. Exam questions ask the farm institutes, the livestock breeds, the industrial town to product pairs and the main highways, so learn them as pairs. 1. The Big Picture"
+    },
+    {
+      "lessonId": "haryana-environment-wildlife-and-protected-areas",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Environment, Wildlife and Protected Areas",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Environment, Wildlife and Protected Areas Haryana is one of India's least forested states, yet it has two national parks, eight wildlife sanctuaries, two Ramsar wetlands and a Shivalik-to- Aravalli belt of hill forest. Exams ask \"which district is Kalesar in\", \"which sanctuary is in Sirsa\" and \"name the state bird and animal\". This lesson organises every protected area by district so you can answer the typical match-the-following in seconds. 1. State Symbols | Symbol | Haryana's choice |"
+    },
+    {
+      "lessonId": "haryana-geography-rivers-and-climate",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Geography: Landforms, Rivers and Climate",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Geography: Landforms, Rivers and Climate Haryana is landlocked, mostly flat and surrounded on three sides around Delhi, yet its geography questions are full of traps: seasonal rivers that vanish in sand, a \"semi-desert\" in the northwest and the northern end of the Aravallis in the south. HSSC CET and police papers ask for the highest peak, the Ghaggar and its tributaries, the barrages and the climate pattern. Learn the map in four pieces. 1. Location, Area and Neighbours | Item | Fact | "
+    },
+    {
+      "lessonId": "haryana-history-and-formation",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana History and Formation: From Rakhigarhi to 1 November 1966",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana History and Formation: From Rakhigarhi to 1 November 1966 Few states pack as much Indian history into so little ground as Haryana. A Harappan metropolis, the Mahabharata battlefield, Harsha's capital, three decisive battles at Panipat and a martyr-king of 1857 all lie within a few hours' drive of each other. The HSSC CET and Haryana Police papers draw history questions from exactly this list, and the formation date of the state is asked almost every cycle. 1. Ancient Haryana: Harappan To"
+    },
+    {
+      "lessonId": "haryana-personalities-and-literature",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Personalities and Literature",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Personalities and Literature Haryana has produced chief ministers who shaped national politics, a farmers' leader knighted by the British, an astronaut and a folk-theatre tradition that still fills village squares. Exams such as HSSC CET and Haryana Police ask \"who was the first CM\", \"where was X born\" and \"who is the saang master of Y\" almost every cycle. This lesson fixes each person to a birth place, a date and one anchor fact. 1. Chief Ministers Who Made Haryana Haryana became a stat"
+    },
+    {
+      "lessonId": "haryana-places-monuments-and-tourism",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Places, Monuments and Tourism",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Places, Monuments and Tourism Ask a Haryana examiner for an easy mark and the question will usually be \"which place is famous for what?\" Haryana packs the Mahabharata battlefield, a Harappan metropolis, Sultanate forts and three decisive Battles of Panipat into a small state. Place-to-fame pairs are asked in the HSSC CET and Haryana Police papers almost every year, so this lesson ties each place to one anchor fact you can recall in seconds. 1. Kurukshetra and Thanesar: the Land of the Gi"
+    },
+    {
+      "lessonId": "haryana-schemes-institutions-and-policies",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Schemes, Institutions and Policies",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Schemes, Institutions and Policies Two kinds of questions come from this topic: \"which scheme was launched where and when\" and \"which university or institute was set up in which year\". Beti Bachao Beti Padhao began in Panipat, Haryana, which is why the state keeps appearing in national-level papers. This lesson lists only dated, checkable facts for the schemes and institutions most often examined in HSSC CET and Haryana Police papers. 1. Welfare and Governance Schemes | Scheme | What it "
+    },
+    {
+      "lessonId": "haryana-sports-and-awards",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "haryana-gk",
+      "title": "Haryana Sports and Awards",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Haryana Sports and Awards Haryana has about two percent of India's population but supplies a large share of its Olympic medals, especially in wrestling, boxing, shooting and javelin. Competitive exams ask \"which village is X from\", \"which Olympics and which weight\" and \"how much cash does the state give\". This lesson pairs each star with a district, an event and a year, then covers the state's stadiums, institutions and reward policy. 1. Olympic and Paralympic Medallists | Athlete | Home village"
+    },
+    {
       "lessonId": "important-days-and-observances",
       "subjectId": "general-knowledge",
       "subSubjectId": "important-days",
@@ -886,6 +1019,15 @@
       "content": "Important Days and Observances: The Calendar of the GK Paper Every general-awareness paper carries at least one \"which day is observed on ...\" question, and every year candidates lose those marks to a date they half-remember. The fix is to learn the calendar as twelve short clusters, each anchored to a story — a birth anniversary, a treaty, a declaration — so that the date and the reason arrive together. 1. The Winter and Spring Cluster — January to March | Date | Observance | The anchor | | ---"
     },
     {
+      "lessonId": "capf-and-security-forces-of-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "CAPF and Security Forces of India: Who Guards What",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "CAPF and Security Forces of India: Who Guards What Every SSC GD, Delhi Police and CGL paper carries a few questions on the forces that guard India's borders, cities and airports. They look alike (all wear olive or khaki), but each has a different parent ministry, raising year, motto and mission. This lesson sorts them into clean categories so you can answer in seconds. 1. The Six Central Armed Police Forces at a Glance The Ministry of Home Affairs (MHA) controls the main Central Armed Police For"
+    },
+    {
       "lessonId": "first-in-india",
       "subjectId": "general-knowledge",
       "subSubjectId": "india-gk",
@@ -893,6 +1035,24 @@
       "subject": "general-knowledge",
       "keywords": [],
       "content": "First in India: The Trailblazers Every Exam Asks About Every republic keeps a shelf of firsts. India's shelf is unusually crowded and unusually examined: the first President, the first woman in space, the first Indian Nobel laureate, the first film with sound. These questions look like memory tests, and they are — but the underlying stories trace how fast a colonised society built modern institutions of its own. 1. Firsts of the Republic — President, Prime Minister, and the Rest | Office | First"
+    },
+    {
+      "lessonId": "government-schemes-of-india",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "Government Schemes of India: Launch Year, Ministry, Purpose",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Government Schemes of India: Launch Year, Ministry, Purpose Almost every general-awareness paper carries two or three scheme questions: which scheme did what, in which year, under which ministry. The same dozen flagship schemes return again and again. This lesson groups them by purpose so that the launch year and the headline benefit stick together. 1. How Schemes Are Classified A Centrally Sponsored Scheme is funded jointly by the Centre and the states. A Central Sector Scheme is funded wholly "
+    },
+    {
+      "lessonId": "indian-armed-forces-and-defence-basics",
+      "subjectId": "general-knowledge",
+      "subSubjectId": "india-gk",
+      "title": "Indian Armed Forces and Defence Basics",
+      "subject": "general-knowledge",
+      "keywords": [],
+      "content": "Indian Armed Forces and Defence Basics The Army, Navy and Air Force sit at the centre of a steady stream of exam questions: where is a command headquartered, which rank is the highest, which operation took place in which year, which missile came from which programme. This lesson collects the stable, non-changing facts that defence-linked and general-awareness papers keep returning to. 1. Structure and Command The President is the Supreme Commander of the Armed Forces. Day-to-day civilian control"
     },
     {
       "lessonId": "indian-states-and-union-territories",
@@ -991,6 +1151,14 @@
       "content": "Biomes and World Climate Regions: The Great Pattern of Life Zones Why do equatorial forests steam with life while high latitudes wear lichen and ice? The answer is a chain: sun → temperature and rainfall regimes → soils and vegetation → animals and human land use. That chain produces the world's great biomes — repeated, predictable life zones that appear wherever the climate recipe is found, whether in Africa, Asia, or the Americas. 1. Climate Controls: The Recipe Before the Cake A biome is a la"
     },
     {
+      "lessonId": "census-2011-and-demography-of-india",
+      "subjectId": "geography",
+      "title": "Census 2011 and the Demography of India",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Census 2011 and the Demography of India Every SSC, RRB and state-police paper carries a few questions straight out of the 2011 Census: the population total, the sex ratio, the literacy rate, the most populous state. The numbers are fixed, so the marks are easy once you have a clean table in your head. This lesson keeps only Census 2011 figures, and flags the pairs that examiners love to swap. 1. What the Census Is and How It Is Run The Census is the decennial headcount of every person in India, "
+    },
+    {
       "lessonId": "earth-motions-and-seasons",
       "subjectId": "geography",
       "title": "Earth's Motions: Rotation, Revolution, and the Making of Seasons",
@@ -1005,6 +1173,30 @@
       "subject": "geography",
       "keywords": [],
       "content": "Earthquakes and Volcanoes: When the Earth Releases Energy Strain stored in rock and heat stored in the mantle escape as trembling ground and erupting mountains. This lesson explains how earthquakes are measured, where they cluster, and how volcanoes are built and classified. 1. Anatomy of an Earthquake An earthquake is the shaking of the ground caused by a sudden release of accumulated strain along a fault. The rupture point at depth is the focus ; the point on the surface directly above it is t"
+    },
+    {
+      "lessonId": "environmental-conventions-and-biodiversity-hotspots",
+      "subjectId": "geography",
+      "title": "Environmental Conventions and Biodiversity Hotspots",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Environmental Conventions and Biodiversity Hotspots International environment treaties are a staple of SSC and RRB general awareness papers: which treaty protects wetlands, which one banned ozone depleting gases, which one is about the climate. The questions test three things only, the year, the place and the subject, so a well-built table earns easy marks. The same papers ask which Indian regions are among the world's biodiversity hotspots. 1. Landmark Conferences and Early Treaties | Event or "
+    },
+    {
+      "lessonId": "important-passes-straits-canals-and-international-boundaries",
+      "subjectId": "geography",
+      "title": "Important Passes, Straits, Canals, and International Boundaries",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Important Passes, Straits, Canals, and International Boundaries \"Which pass connects Manali and Leh?\" \"Which strait separates India from Sri Lanka?\" \"The Durand Line lies between which two countries?\" These map-based facts appear in SSC, RRB and police papers year after year. The lists are short and fixed, so this lesson sorts them into four tables with a one-line hook for each. 1. Mountain Passes of India A mountain pass is a natural gap or saddle in a mountain range that lets roads, rail lines"
+    },
+    {
+      "lessonId": "indian-dams-ports-airports-and-power-plants",
+      "subjectId": "geography",
+      "title": "Indian Dams, Ports, Airports, and Power Plants",
+      "subject": "geography",
+      "keywords": [],
+      "content": "Indian Dams, Ports, Airports, and Power Plants Questions on \"which dam is on which river\" or \"which port is the only riverine one\" turn up in almost every SSC, RRB and state-police paper. The facts are simple, but the distractors are close neighbours: Bhakra versus Tehri, Kandla versus Kolkata, Tarapur versus Kudankulam. This lesson gives the river, state and one hook for each. 1. Major Dams: River and State A multipurpose river valley project uses one dam for several jobs at once: irrigation, h"
     },
     {
       "lessonId": "indian-physiography",
@@ -1069,6 +1261,14 @@
       "subject": "geography",
       "keywords": [],
       "content": "The Indian Monsoon: Onset, Retreat, and Year-to-Year Variation India's year turns on a seasonal reversal of winds that delivers about three-quarters of its rain in four months. This lesson explains the monsoon's machinery, calendar, and notorious variability. 1. What \"Monsoon\" Means The monsoon — from the Arabic word mausim , season — is a seasonal reversal of wind direction and rainfall, driven by the temperature contrast between land and sea. In summer air flows sea-to-land; in winter, land-to"
+    },
+    {
+      "lessonId": "national-parks-sanctuaries-and-biosphere-reserves",
+      "subjectId": "geography",
+      "title": "National Parks, Sanctuaries, and Biosphere Reserves of India",
+      "subject": "geography",
+      "keywords": [],
+      "content": "National Parks, Sanctuaries, and Biosphere Reserves of India India packs a staggering share of the world's species into a small land area, and protected areas are where that wealth is guarded. Exams love the \"which animal lives in which park\" pairing, the Project Tiger story, and counts of reserves and Ramsar sites — all covered here, with the year attached to every number that changes. 1. The Protected-Area Ladder A protected area is land or water set aside by law to conserve wildlife and habit"
     },
     {
       "lessonId": "natural-hazards-and-disaster-management",
@@ -1167,6 +1367,14 @@
       "content": "The British Conquest and the Revolt of 1857 A chartered trading company became the subcontinent's ruler in stages — factories, Carnatic proxies, Plassey's conspiracy, Buxar's legitimacy, and the tools of Subsidiary Alliance and Lapse. In 1857 the sepoys rose; the revolt failed, but it ended Company rule and remade the Raj. 1. The Company Arrives (1600-1690) Queen Elizabeth I chartered the East India Company on 31 December 1600 . Embassies to Jahangir's court (Hawkins 1608, Sir Thomas Roe 1615) w"
     },
     {
+      "lessonId": "constitutional-acts-and-reforms-in-british-india",
+      "subjectId": "history",
+      "title": "Constitutional Acts and Reforms in British India",
+      "subject": "history",
+      "keywords": [],
+      "content": "Constitutional Acts and Reforms in British India From the Regulating Act of 1773 to the Indian Independence Act of 1947, a chain of British laws slowly shaped India's government, and our own Constitution borrowed from several of them. SSC, RRB and police papers ask which Act created which office, which one began dyarchy, and which one introduced separate electorates. Learn the chain in order and the answers follow. 1. Company Rule: 1773 to 1853 | Act | Year | Main provisions | | --- | --- | --- "
+    },
+    {
       "lessonId": "delhi-sultanate",
       "subjectId": "history",
       "title": "The Delhi Sultanate: Five Dynasties, 320 Years",
@@ -1197,6 +1405,14 @@
       "subject": "history",
       "keywords": [],
       "content": "Imperialism and Colonialism: The Scramble for the World In 1800 Europeans controlled perhaps a third of the world's land; by 1914, more than four-fifths. The century between — powered by steam, quinine and machine guns — redrew every map, made and broke every economy it touched, and planted the borders, debts and grievances that the twentieth century spent itself settling. 1. Definitions and Distinctions Colonialism is the practice of acquiring full or partial control over another territory, set"
+    },
+    {
+      "lessonId": "important-battles-of-india",
+      "subjectId": "history",
+      "title": "Important Battles of India",
+      "subject": "history",
+      "keywords": [],
+      "content": "Important Battles of India Battle questions are the most formulaic in the history section: a year, two names, and a winner. SSC, RRB and police papers rarely go beyond a list of about twenty famous engagements. Learn them in four eras (ancient and medieval, Mughal, colonial, and independent India) and almost every battle question becomes a quick match. 1. Ancient and Early Medieval Battles | Battle | Year | Fought between | Result | | --- | --- | --- | --- | | Hydaspes (Jhelum) | 326 BCE | Alexa"
     },
     {
       "lessonId": "indian-art-and-culture",
@@ -1341,6 +1557,14 @@
       "subject": "history",
       "keywords": [],
       "content": "The Vedic Age: From Pastoral Tribes to Kingdoms Between about 1500 and 600 BCE, Indo-Aryan-speaking communities moved from the Punjab plains to the Ganga-Yamuna doab — from cattle camps with tribal councils to territorial kingdoms with grand sacrifices. Their hymns, the Vedas, are the oldest large body of Indian literature. 1. The Four Vedas The Vedas are shruti — \"heard\" revelation — transmitted orally with extraordinary mnemonic devices (pathas) for centuries before writing. | Veda | Content |"
+    },
+    {
+      "lessonId": "viceroys-and-governor-generals-of-india",
+      "subjectId": "history",
+      "title": "Viceroys and Governor-Generals of India",
+      "subject": "history",
+      "keywords": [],
+      "content": "Viceroys and Governor-Generals of India \"Who abolished sati?\" \"Under which Viceroy was the Indian National Congress founded?\" \"Who was the last Viceroy?\" Every SSC, RRB and police paper carries two or three questions that start from a name and end at a reform, or the other way round. This lesson lays the British chiefs in order and pins each to the event examiners attach to him. 1. The Three Titles The head of the British administration in India held three titles in turn: Governor-General of Ben"
     },
     {
       "lessonId": "vijayanagara-and-bahmani-kingdoms",
@@ -2140,6 +2364,15 @@
       "content": "Points, Lines, and Angles: Geometry's Atoms Every diagram in geometry — however complicated — is built from three primitives: points, lines, and angles. Learn their rules first. 1. The Undefined Starting Points A point names a location; it has no size. A line is a straight path extending forever in both directions; it has length but no width. A ray starts at a point and extends forever one way; a segment joins two endpoints and has a measurable length. Through any two distinct points passes exac"
     },
     {
+      "lessonId": "mensuration-2d-areas-and-perimeters",
+      "subjectId": "mathematics",
+      "subSubjectId": "geometry",
+      "title": "Mensuration 2D: Areas and Perimeters",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Mensuration 2D: Areas and Perimeters How much fencing does a field need, and how much paint does a floor take? Perimeter answers the first question and area the second. Flat-shape mensuration is a staple of SSC CGL, CHSL, MTS, RRB and police constable papers, where it is tested through direct formulas, percentage-change twists and cost problems. This lesson collects every formula you need with fast shortcuts. Solids (cubes, cones, spheres) are covered in the separate Mensuration lesson on surfac"
+    },
+    {
       "lessonId": "mensuration",
       "subjectId": "mathematics",
       "subSubjectId": "geometry",
@@ -2183,6 +2416,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Averages: The Art of Balanced Numbers The average is the first statistical tool anyone learns — add everything, divide by the count — yet competitive exams wring an astonishing variety of questions from it: cricket scores, replaced members, combined classes, and age puzzles. Every one of them reduces to a single principle: the total is the average times the count. 1. The Fundamental Relation The average (arithmetic mean) of $n$ quantities is their sum divided by $n$: Equivalently, the sum equals"
+    },
+    {
+      "lessonId": "boats-and-streams",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Boats and Streams: Upstream, Downstream, and Still Water",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Boats and Streams: Upstream, Downstream, and Still Water A boat moves faster with the river than against it, and the gap between the two speeds tells you how fast the river flows. SSC and RRB papers ask one or two boats-and-streams questions nearly every year. They reuse the speed-distance-time relation with just two extra formulas, so the topic is a reliable source of quick marks. 1. Key Terms and the Two Basic Speeds Still-water speed ($u$) is the speed of the boat in calm water. Stream speed "
     },
     {
       "lessonId": "divisibility-remainders-and-unit-digit",
@@ -2246,6 +2488,24 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Percentages and Ratios: Comparing Quantities Percentages and ratios both compare quantities — percentages against a base of 100, ratios part-to-part. Most \"real world\" maths is one of these two in disguise. 1. Percent Means Per Hundred - 45% of ₹800: $\\frac{45}{100} \\times 800 = 360$ - What percent is 18 of 60? $\\frac{18}{60} \\times 100 = 30\\%$ 2. Percentage Change Percentage change = $\\frac{\\text{new} - \\text{old}}{\\text{old}} \\times 100$. The denominator is always the ORIGINAL value — the most"
+    },
+    {
+      "lessonId": "pipes-and-cisterns",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Pipes and Cisterns: Filling, Draining, and Leaks",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Pipes and Cisterns: Filling, Draining, and Leaks A tap fills a tank in 6 hours, a drain empties it in 9. Open both: how long now? Pipes and cisterns appears in almost every SSC CGL, CHSL and RRB maths paper, usually as one to two quick questions. It is the Time and Work chapter in disguise, so once you see pipes as workers with a sign, the whole topic becomes a few lines of arithmetic. 1. Pipes Are Workers with a Sign An inlet is a pipe that fills a cistern (tank); an outlet (or a leak ) is a pi"
+    },
+    {
+      "lessonId": "problems-on-ages",
+      "subjectId": "mathematics",
+      "subSubjectId": "numbers",
+      "title": "Problems on Ages: Ratios, Differences, and Averages",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Problems on Ages: Ratios, Differences, and Averages \"Father is three times as old as his son; in ten years he will be twice as old.\" Age questions look like riddles, but each one is a pair of simple equations hiding behind a story. SSC CGL, CHSL, HSSC CET and police clerk papers set one or two of them almost every year because they test whether you can translate words into algebra quickly and calmly. 1. The Three Facts Behind Every Age Problem An age problem gives relationships between the ages "
     },
     {
       "lessonId": "profit-and-loss-and-discount",
@@ -2318,6 +2578,15 @@
       "subject": "mathematics",
       "keywords": [],
       "content": "Reading Data: Averages, Spread, and Relationships Data answer questions only when you summarise them honestly. Three averages, two measures of spread, and one golden warning — correlation is not causation — carry most of that work. 1. Types of Data and Frequency Tables Qualitative data record categories (blood group, favourite subject); quantitative data record amounts, and split into discrete (countable: number of goals) and continuous (measured: height, time). Continuous data are grouped into "
+    },
+    {
+      "lessonId": "data-interpretation-tables-and-charts",
+      "subjectId": "mathematics",
+      "subSubjectId": "statistics",
+      "title": "Data Interpretation: Tables and Charts",
+      "subject": "mathematics",
+      "keywords": [],
+      "content": "Data Interpretation: Tables and Charts A data interpretation (DI) set gives you a table, bar graph, line graph or pie chart and asks four to six questions on it. SSC CGL Tier 1 and 2, CHSL and RRB NTPC papers all carry DI, and the questions repeat a small group of calculations: percent change, average, ratio, share of total and angle. This lesson shows how to read a table in text form, the five core calculations, and the traps that cost marks. 1. Read Before You Calculate Data interpretation is "
     },
     {
       "lessonId": "lesson1",

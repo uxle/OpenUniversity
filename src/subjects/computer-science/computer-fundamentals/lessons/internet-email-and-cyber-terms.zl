@@ -1,0 +1,135 @@
+# Internet, Email and Cyber Terms: Protocols, Malware and the IT Act
+
+> Computer awareness papers in SSC, HSSC CET and police recruitment test the
+> vocabulary of the online world: what HTTP and SMTP do, which part of a URL is the
+> domain, what Bcc means, how phishing differs from pharming and which section of the
+> IT Act covers which offence. These are short fact questions, so a tidy set of tables
+> wins marks quickly.
+
+## 1. Internet Basics
+
+The **Internet** is a worldwide network of networks. The **World Wide Web (WWW)** is a collection of linked pages carried over the Internet; it was proposed by **Tim Berners-Lee** at CERN (1989), and the first website went live in 1991. The Internet's ancestor was **ARPANET** (1969), and the TCP/IP protocol suite became its standard on 1 January 1983. The Internet is the network; the Web is a service on it, and email is another.
+
+| Term | Meaning |
+| --- | --- |
+| ISP | Internet Service Provider, the company that gives you access |
+| Modem | Converts digital signals to analog and back (modulator-demodulator) |
+| Router | Forwards data between networks and assigns local addresses |
+| Hub and switch | Connect devices inside one network; a switch sends data only to the intended device |
+| Bandwidth | Data capacity of a connection, measured in bits per second |
+| Wi-Fi | Wireless local network technology; **Bluetooth** is short-range wireless |
+| LAN, MAN, WAN | Local, Metropolitan and Wide Area Network (room or building, city, country or world) |
+| IP address | Numeric address of a device: **IPv4** is 32 bits (like 192.168.1.1) and **IPv6** is 128 bits |
+
+[definition]
+A **protocol** is an agreed set of rules for exchanging data between computers. **TCP/IP** is the basic protocol suite of the Internet: IP handles addressing and routing, while TCP ensures reliable delivery.
+[/definition]
+
+## 2. Common Protocols and Ports
+
+| Protocol | Full form | Purpose | Port |
+| --- | --- | --- | --- |
+| HTTP | HyperText Transfer Protocol | Web pages | 80 |
+| HTTPS | HTTP Secure | Web pages with encryption (SSL/TLS) | 443 |
+| FTP | File Transfer Protocol | Uploading and downloading files | 21 |
+| SMTP | Simple Mail Transfer Protocol | Sending email | 25 |
+| POP3 | Post Office Protocol 3 | Downloading email to your device | 110 |
+| IMAP | Internet Message Access Protocol | Reading email kept on the server | 143 |
+| DNS | Domain Name System | Turns domain names into IP addresses | 53 |
+| SSH | Secure Shell | Secure remote login | 22 |
+| Telnet | Teletype Network | Unsecure remote login | 23 |
+
+Memory trick: **S**MTP **S**ends mail; **P**OP **P**ulls mail down. A padlock in the browser means HTTPS. HTML (HyperText Markup Language) is a page-description language, not a protocol.
+
+## 3. URL, Browsers and Search
+
+A **URL (Uniform Resource Locator)** is the full address of a web resource. Take `https://www.example.gov.in/news/index.html`:
+
+| Part | Example | Meaning |
+| --- | --- | --- |
+| Scheme (protocol) | https | How to reach it |
+| Subdomain | www | Host label |
+| Domain name | example.gov.in | The site's name |
+| Path | /news/index.html | Page location on the server |
+
+Domain suffixes: **.com** (commercial), **.org** (organisation), **.edu** (education), **.gov** (government), **.net** (network), **.in** (India), **.gov.in** (Indian government).
+
+- **Browser:** software for viewing web pages (Chrome, Firefox, Edge, Safari, Opera). **Mosaic** (1993) popularised the graphical web.
+- **Search engine:** finds pages by keywords (Google, Bing).
+- **Web server** stores pages; **web browser** displays them.
+- **Cookie:** small file stored by a website on your device to remember you.
+- **Cache:** saved copies that make repeat visits faster.
+- **Hyperlink:** clickable text or image leading to another page; **bookmark** saves an address; **incognito mode** does not save browsing history on the device.
+- **Download** is receiving a file; **upload** is sending one.
+
+## 4. Email Terms
+
+Electronic mail sends messages across networks. **Ray Tomlinson** sent the first ARPANET network email in 1971 and chose the **@** sign to separate the user name from the host. An address looks like `name@domain.com`.
+
+| Field or term | Meaning |
+| --- | --- |
+| To | Main recipient |
+| Cc | Carbon copy; others can see who got it |
+| Bcc | Blind carbon copy; recipient is hidden from others |
+| Subject | Short title of the message |
+| Attachment | File sent along with the mail |
+| Inbox, Outbox, Sent, Drafts | Standard folders |
+| Spam | Unwanted bulk mail (junk mail) |
+| Reply all | Answers sender and everyone in To and Cc |
+
+Exam trap: **Cc recipients are visible; Bcc recipients are hidden.** A **draft** is a saved unsent message.
+
+## 5. Cyber Crime and Malware Terms
+
+| Term | Meaning |
+| --- | --- |
+| Virus | Code that attaches to a file or program and spreads when it is run |
+| Worm | Spreads by itself over networks without needing a host file |
+| Trojan horse | Harmful program disguised as useful software; does not self-replicate |
+| Ransomware | Locks or encrypts data and demands payment (WannaCry, 2017) |
+| Spyware | Secretly gathers information; a **keylogger** records keystrokes |
+| Adware | Shows unwanted advertisements |
+| Botnet | Network of infected computers controlled remotely |
+| Logic bomb | Code that triggers when a condition is met |
+| Firewall | Filters network traffic; protects, but is not an antivirus |
+| Antivirus | Detects and removes malware |
+
+| Attack | Meaning |
+| --- | --- |
+| Phishing | Fake emails or sites that trick you into giving passwords or card details |
+| Vishing | Phishing by phone call |
+| Smishing | Phishing by SMS |
+| Pharming | Redirecting a user to a fake site even when the right address is typed |
+| Spoofing | Pretending to be a trusted sender or device |
+| Identity theft | Using another person's personal data for fraud |
+| Cyberstalking | Repeated online harassment or tracking |
+| Cyberbullying | Harassing or humiliating someone online |
+| Hacking | Unauthorised access to a computer system |
+| DoS and DDoS | Flooding a service with traffic to make it unavailable; DDoS comes from many machines |
+| Man-in-the-middle | Secretly intercepting communication between two parties |
+| Skimming | Copying card data using a device placed on an ATM or card reader |
+
+Safety habits: use strong and different passwords, enable two-factor authentication (OTP), never share OTP or PIN, check for HTTPS, and keep software updated. In India, a cyber crime can be reported on the national portal **cybercrime.gov.in** or the helpline **1930**; **CERT-In** is the national agency for cyber security incidents.
+
+## 6. The IT Act, 2000
+
+The **Information Technology Act, 2000** came into force on **17 October 2000**. It gave legal recognition to electronic records and **digital signatures** and defined cyber offences. It was amended by the **IT (Amendment) Act, 2008**. Section 66A (offensive messages) was struck down by the Supreme Court in 2015 (Shreya Singhal case).
+
+| Section | Subject |
+| --- | --- |
+| 43 | Damage to computer or data without permission; compensation |
+| 65 | Tampering with computer source documents |
+| 66 | Computer-related offences such as hacking; up to 3 years' jail |
+| 66C | Identity theft (misuse of password or digital signature) |
+| 66D | Cheating by personation using a computer resource |
+| 66E | Violation of privacy |
+| 66F | Cyber terrorism; punishment can extend to life imprisonment |
+| 67 | Publishing obscene material electronically |
+
+[example]
+A caller pretends to be a bank officer and tricks a person into telling the OTP, then empties the account. The technique is vishing, a form of phishing by voice. The fraudster has cheated by personation using a communication device, which relates to Section 66D of the IT Act.
+[/example]
+
+[summary]
+The Internet is the network and the Web is a service on it. HTTP uses port 80 and HTTPS 443; SMTP sends mail while POP3 and IMAP receive it; DNS maps names to IPs; IPv4 is 32-bit and IPv6 is 128-bit. A Bcc recipient is hidden, a Cc recipient is visible. Viruses attach to files, worms spread alone and Trojans are disguised. Phishing is email, vishing is voice, smishing is SMS and pharming is redirection. The IT Act, 2000 (in force 17 Oct 2000, amended 2008) covers hacking under Section 66, identity theft 66C, cheating 66D, privacy 66E and cyber terrorism 66F.
+[/summary]

@@ -1,0 +1,149 @@
+# MS Office and Keyboard Shortcuts for Exams
+
+> Almost every SSC, HSSC CET and police paper asks about Word, Excel, PowerPoint,
+> file extensions or a keyboard shortcut. The questions are mechanical: "Which key
+> starts a slide show?", "What is the extension of an Excel file?", "Which function
+> adds a range?". Learn the tables below and these become the easiest marks in
+> computer awareness.
+
+## 1. Microsoft Office at a Glance
+
+**MS Office** is a suite of application software from Microsoft. The main members:
+
+| Program | Used for | Default extension (2007 onward) | Older extension |
+| --- | --- | --- | --- |
+| Word | Documents, letters, reports (word processor) | .docx | .doc |
+| Excel | Spreadsheets, calculations, charts | .xlsx | .xls |
+| PowerPoint | Presentations (slides) | .pptx | .ppt |
+| Access | Database | .accdb | .mdb |
+| Outlook | Email and calendar | .pst (data file) | |
+
+The **Ribbon** is the strip of tabs and command groups at the top (introduced in Office 2007). The **Quick Access Toolbar** holds Save, Undo and Redo. The **Backstage view** (the File tab) holds Save, Print and Options. The **status bar** at the bottom shows page number, word count and zoom.
+
+## 2. MS Word
+
+| Tab | Typical commands |
+| --- | --- |
+| Home | Font, paragraph, alignment, styles, find and replace |
+| Insert | Table, picture, shapes, header and footer, page number, hyperlink, WordArt |
+| Layout (Page Layout in older versions) | Margins, orientation, size, columns |
+| References | Table of contents, footnotes, citations |
+| Mailings | Mail merge, envelopes and labels |
+| Review | Spelling and grammar, comments, track changes |
+| View | Zoom, ruler, print layout, web layout |
+
+- **Mail merge** produces many personalised letters from one main document and a data source.
+- **Header** appears at the top margin and **footer** at the bottom of each page.
+- **Orientation:** portrait (vertical) or landscape (horizontal).
+- **Alignment:** left, centre, right, justify.
+- **Format Painter** copies formatting from one text to another.
+- **Thesaurus** gives synonyms; **Track Changes** records edits.
+- A **template** is a ready-made document design with extension .dotx.
+
+## 3. MS Excel
+
+An Excel file is a **workbook**; each page in it is a **worksheet**. A worksheet has **1,048,576 rows** and **16,384 columns** (the last column is **XFD**) in versions from 2007 onward. The intersection of a row and column is a **cell**, named like **B5** (column then row). The **active cell** is the one selected; the **Name Box** shows its address and the **Formula Bar** shows its contents. A group of cells is a **range**, written **A1:C4**.
+
+A formula always starts with the **equals sign (=)**. By default, text aligns to the left and numbers to the right.
+
+| Function | Result |
+| --- | --- |
+| SUM | Adds the numbers in a range |
+| AVERAGE | Arithmetic mean |
+| MAX and MIN | Largest and smallest value |
+| COUNT | Counts cells holding numbers |
+| COUNTA | Counts cells that are not empty |
+| IF | Returns one value if a test is true, another if false |
+| VLOOKUP and HLOOKUP | Look up a value in a column (vertical) or row (horizontal) |
+
+**Cell references:** relative (A1), absolute (**$A$1**, fixed when copied) and mixed (A$1 or $A1). Pressing **F4** while editing a formula cycles through them.
+
+**Common error values:** **#DIV/0!** (division by zero), **#NAME?** (unknown function or name), **#VALUE!** (wrong type of argument), **#REF!** (invalid cell reference) and **####** (column too narrow to show the value).
+
+Other features: **Sort** (ascending or descending), **Filter** (show only matching rows), **Chart** (column, bar, line, pie), **Pivot Table** (summarise data), **Freeze Panes** (keep headings visible) and **Merge and Center**.
+
+[example]
+Cells A1 to A5 hold 12, 8, 15, 5 and 10. The formula =SUM(A1:A5) gives 50, =AVERAGE(A1:A5) gives 10, =MAX(A1:A5) gives 15 and =MIN(A1:A5) gives 5. A range of A1:C4 contains 3 columns x 4 rows = 12 cells.
+[/example]
+
+## 4. MS PowerPoint
+
+A presentation is made of **slides**. Important ideas:
+
+- **Views:** Normal, Slide Sorter (rearranging slides), Reading View and Slide Show.
+- **Transitions** control how one slide changes to the next; **Animations** control how objects on a slide move or appear. This pair is a classic trap.
+- **Slide Master** sets the common design for all slides; a **theme** is a set of colours, fonts and effects; a **layout** arranges placeholders.
+- **Notes** hold speaker comments. A **handout** is a printed set of slides.
+- **Extensions:** .pptx (presentation), **.ppsx** (opens directly as a slide show) and **.potx** (template).
+- Slide Show tab: start from the beginning or from the current slide, rehearse timings, set up show.
+
+## 5. Keyboard Shortcuts That Are Asked
+
+### General (Word and most Windows programs)
+
+| Keys | Action |
+| --- | --- |
+| Ctrl + C, X, V | Copy, cut, paste |
+| Ctrl + Z, Y | Undo, redo |
+| Ctrl + A | Select all |
+| Ctrl + B, I, U | Bold, italic, underline |
+| Ctrl + S | Save |
+| F12 | Save As (in Office) |
+| Ctrl + P | Print |
+| Ctrl + F | Find |
+| Ctrl + H | Replace |
+| Ctrl + K | Insert hyperlink |
+| Ctrl + E, L, R, J | Centre, left, right, justify |
+| Ctrl + Enter | Page break |
+| Ctrl + Home, End | Start, end of document |
+| F7 | Spelling and grammar check |
+| Shift + F3 | Change case |
+
+### Excel and PowerPoint
+
+| Keys | Action |
+| --- | --- |
+| F2 | Edit the active cell |
+| F4 | Toggle absolute reference (in Excel) |
+| Alt + = | AutoSum |
+| Ctrl + ; | Insert today's date |
+| Ctrl + Shift + ; | Insert current time |
+| Alt + Enter | New line inside a cell |
+| Ctrl + Space | Select entire column |
+| Shift + Space | Select entire row |
+| F5 (PowerPoint) | Start slide show from the beginning |
+| Shift + F5 (PowerPoint) | Start from the current slide |
+| Ctrl + M (PowerPoint) | Insert a new slide |
+| Esc (PowerPoint) | End the slide show |
+
+### Windows desktop
+
+| Keys | Action |
+| --- | --- |
+| Alt + Tab | Switch between open windows |
+| Alt + F4 | Close the active window |
+| Windows + D | Show desktop |
+| Windows + E | Open File Explorer |
+| Windows + L | Lock the computer |
+| Ctrl + Shift + Esc | Open Task Manager |
+| Ctrl + Alt + Del | Security options screen |
+| Shift + Delete | Delete a file permanently (skips Recycle Bin) |
+| F2 | Rename a selected file |
+
+## 6. Common File Extensions
+
+| Type | Extensions |
+| --- | --- |
+| Text and documents | .txt, .docx, .pdf, .rtf |
+| Images | .jpg or .jpeg, .png, .gif, .bmp |
+| Audio and video | .mp3, .wav, .mp4, .avi |
+| Programs | .exe |
+| Compressed | .zip, .rar |
+| Web | .html, .htm |
+| Data | .csv (comma separated values), .xlsx |
+
+**Traps:** Ctrl + F is Find but Ctrl + H is Replace; transition is not animation; COUNT counts only numbers while COUNTA counts any non-empty cell; the Excel limit of 1,048,576 rows applies to 2007 and later (the old .xls had 65,536).
+
+[summary]
+Word, Excel and PowerPoint save as .docx, .xlsx and .pptx (older .doc, .xls, .ppt). Excel has 1,048,576 rows and 16,384 columns (XFD); formulas start with = and key functions are SUM, AVERAGE, MAX, MIN, COUNT, COUNTA, IF and VLOOKUP. PowerPoint: F5 starts the show, Shift + F5 starts from the current slide, transitions differ from animations. Memorise Ctrl shortcuts (C, X, V, Z, Y, A, B, I, U, S, P, F, H, E, L, R, J), Alt + Tab, Alt + F4, Windows + D and Shift + Delete.
+[/summary]

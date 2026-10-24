@@ -1,0 +1,186 @@
+{
+  "lessonId": "indian-armed-forces-and-defence-basics",
+  "title": "Indian Armed Forces and Defence Basics: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who is the Supreme Commander of the Indian Armed Forces?",
+      "options": [
+        "Defence Minister",
+        "Prime Minister",
+        "President",
+        "Chief of Defence Staff"
+      ],
+      "correct": 2,
+      "rationale": "The Constitution vests supreme command in the President. The CDS has no operational command."
+    },
+    {
+      "id": 2,
+      "question": "The post of Chief of Defence Staff was formed on:",
+      "options": [
+        "26 January 1950",
+        "1 July 2024",
+        "1 January 2020",
+        "15 August 1947"
+      ],
+      "correct": 2,
+      "rationale": "Cabinet approval came on 24 December 2019 and the post was formed on 1 January 2020."
+    },
+    {
+      "id": 3,
+      "question": "The Army's Northern Command is headquartered at:",
+      "options": [
+        "Lucknow",
+        "Jaipur",
+        "Udhampur",
+        "Pune"
+      ],
+      "correct": 2,
+      "rationale": "Northern Command sits at Udhampur. Pune is Southern, Jaipur South Western and Lucknow Central."
+    },
+    {
+      "id": 4,
+      "question": "Which pair is correctly matched?",
+      "options": [
+        "Navy Eastern Command - Visakhapatnam",
+        "Navy Southern Command - Mumbai",
+        "Navy Western Command - Kochi",
+        "Navy Western Command - Visakhapatnam"
+      ],
+      "correct": 0,
+      "rationale": "Western is at Mumbai, Eastern at Visakhapatnam and Southern at Kochi."
+    },
+    {
+      "id": 5,
+      "question": "Which of these is a tri-service command?",
+      "options": [
+        "Central Command",
+        "Andaman and Nicobar Command",
+        "Southern Naval Command",
+        "Eastern Air Command"
+      ],
+      "correct": 1,
+      "rationale": "The Andaman and Nicobar Command (2001) and the Strategic Forces Command (2003) are joint commands."
+    },
+    {
+      "id": 6,
+      "question": "Which rank in the Navy is equivalent to Colonel in the Army?",
+      "options": [
+        "Commodore",
+        "Lieutenant Commander",
+        "Commander",
+        "Captain"
+      ],
+      "correct": 3,
+      "rationale": "Colonel, Navy Captain and Group Captain are equivalent. Commodore corresponds to Brigadier."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is the five-star rank in the Air Force?",
+      "options": [
+        "Air Marshal",
+        "Air Chief Marshal",
+        "Air Vice Marshal",
+        "Marshal of the Indian Air Force"
+      ],
+      "correct": 3,
+      "rationale": "Marshal of the Indian Air Force is five-star and ceremonial; Arjan Singh held it from 2002."
+    },
+    {
+      "id": 8,
+      "question": "Navy Day is celebrated on 4 December to remember:",
+      "options": [
+        "The 1971 attack on Karachi, Operation Trident",
+        "The Kargil war",
+        "Operation Cactus",
+        "Independence of India"
+      ],
+      "correct": 0,
+      "rationale": "The date marks the 1971 naval missile attack on Karachi harbour."
+    },
+    {
+      "id": 9,
+      "question": "Operation Meghdoot (1984) was launched to:",
+      "options": [
+        "Liberate Goa",
+        "Help the Maldives",
+        "Rescue citizens from Yemen",
+        "Capture the Siachen Glacier heights"
+      ],
+      "correct": 3,
+      "rationale": "Meghdoot secured the Siachen heights. Goa was Operation Vijay (1961) and the Maldives was Operation Cactus (1988)."
+    },
+    {
+      "id": 10,
+      "question": "Which statement about Operation Vijay is correct?",
+      "options": [
+        "It was used in 1961 for Goa and in 1999 for Kargil",
+        "It occurred only in 1999",
+        "It occurred only in 1961",
+        "It was the 1971 naval operation"
+      ],
+      "correct": 0,
+      "rationale": "The name was used twice: Goa, Daman and Diu in 1961, and Kargil in 1999."
+    },
+    {
+      "id": 11,
+      "question": "Which missile is NOT part of the original IGMDP?",
+      "options": [
+        "Akash",
+        "Prithvi",
+        "BrahMos",
+        "Nag"
+      ],
+      "correct": 2,
+      "rationale": "BrahMos is an India-Russia joint venture cruise missile. The five IGMDP missiles are Prithvi, Agni, Akash, Trishul and Nag."
+    },
+    {
+      "id": 12,
+      "question": "Nag is classified as a:",
+      "options": [
+        "Submarine-launched cruise missile",
+        "Surface-to-air missile",
+        "Anti-tank guided missile",
+        "Intercontinental ballistic missile"
+      ],
+      "correct": 2,
+      "rationale": "Nag is the anti-tank guided missile of the IGMDP."
+    },
+    {
+      "id": 13,
+      "question": "Who led the Integrated Guided Missile Development Programme?",
+      "options": [
+        "Homi Bhabha",
+        "Vikram Sarabhai",
+        "Satish Dhawan",
+        "A.P.J. Abdul Kalam"
+      ],
+      "correct": 3,
+      "rationale": "Dr Kalam led the programme from the early 1980s."
+    },
+    {
+      "id": 14,
+      "question": "The Operation launched by India in May 2025 after the Pahalgam attack was named:",
+      "options": [
+        "Operation Pawan",
+        "Operation Parakram",
+        "Operation Vijay",
+        "Operation Sindoor"
+      ],
+      "correct": 3,
+      "rationale": "Operation Sindoor (7-10 May 2025). Parakram was the 2001-02 mobilisation."
+    },
+    {
+      "id": 15,
+      "question": "The DRDO was formed in which year?",
+      "options": [
+        "1971",
+        "1958",
+        "1947",
+        "1983"
+      ],
+      "correct": 1,
+      "rationale": "DRDO was formed in 1958 and works under the Ministry of Defence."
+    }
+  ]
+}

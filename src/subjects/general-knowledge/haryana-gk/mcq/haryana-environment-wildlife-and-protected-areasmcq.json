@@ -1,0 +1,174 @@
+{
+  "lessonId": "haryana-environment-wildlife-and-protected-areas",
+  "title": "Haryana Environment, Wildlife and Protected Areas: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which animal is the state animal of Haryana?",
+      "options": [
+        "Nilgai",
+        "Blackbuck",
+        "Chinkara",
+        "Leopard"
+      ],
+      "correct": 1,
+      "rationale": "The blackbuck is the state animal. Chinkara is bred at Kairu in Bhiwani but is not the state symbol."
+    },
+    {
+      "id": 2,
+      "question": "The state bird of Haryana is:",
+      "options": [
+        "Black francolin",
+        "Sarus crane",
+        "Peacock",
+        "Hoopoe"
+      ],
+      "correct": 0,
+      "rationale": "Black francolin (kala teetar). The peacock is India's national bird."
+    },
+    {
+      "id": 3,
+      "question": "Kalesar National Park is located in which district?",
+      "options": [
+        "Yamunanagar",
+        "Panchkula",
+        "Rewari",
+        "Kurukshetra"
+      ],
+      "correct": 0,
+      "rationale": "Kalesar is in Yamunanagar, in the Shivalik foothills adjoining Rajaji and Simbalbara."
+    },
+    {
+      "id": 4,
+      "question": "Sultanpur National Park was upgraded from bird sanctuary to national park in:",
+      "options": [
+        "1991",
+        "1986",
+        "2003",
+        "1972"
+      ],
+      "correct": 0,
+      "rationale": "It became a bird sanctuary in 1972 and a national park in 1991. 2003 is Kalesar's national-park year."
+    },
+    {
+      "id": 5,
+      "question": "Which pair of Haryana's Ramsar sites was designated on 25 May 2021?",
+      "options": [
+        "Kalesar and Sultanpur",
+        "Abubshahar and Nahar",
+        "Chhilchhila and Bhindawas",
+        "Sultanpur and Bhindawas"
+      ],
+      "correct": 3,
+      "rationale": "Sultanpur National Park and Bhindawas Wildlife Sanctuary are the two Ramsar sites."
+    },
+    {
+      "id": 6,
+      "question": "Which sanctuary is located in Sirsa district?",
+      "options": [
+        "Khaparwas",
+        "Chhilchhila",
+        "Nahar",
+        "Abubshahar"
+      ],
+      "correct": 3,
+      "rationale": "Abubshahar in Sirsa is the largest sanctuary by area. Nahar is in Rewari, Khaparwas in Jhajjar and Chhilchhila in Kurukshetra."
+    },
+    {
+      "id": 7,
+      "question": "Which of these is NOT located in Jhajjar district?",
+      "options": [
+        "Bir Bara Ban",
+        "Khaparwas",
+        "Bir Shikargah",
+        "Bhindawas"
+      ],
+      "correct": 2,
+      "rationale": "Bir Shikargah is in Panchkula; Bhindawas and Khaparwas are the two Jhajjar sanctuaries."
+    },
+    {
+      "id": 8,
+      "question": "Which statement about the Kalesar area is correct?",
+      "options": [
+        "It is a Ramsar site",
+        "Its sanctuary was notified in 1996 and the national park in 2003",
+        "It is in the Aravalli range",
+        "The national park came before the sanctuary"
+      ],
+      "correct": 1,
+      "rationale": "The sanctuary (1996) preceded the national park (2003). Kalesar is Shivalik, not Aravalli, and is not a Ramsar site."
+    },
+    {
+      "id": 9,
+      "question": "Chhilchhila Wildlife Sanctuary, the smallest in the official list, lies in:",
+      "options": [
+        "Sonipat",
+        "Karnal",
+        "Ambala",
+        "Kurukshetra"
+      ],
+      "correct": 3,
+      "rationale": "Chhilchhila is in Kurukshetra district at about 29 ha. Abubshahar is the largest."
+    },
+    {
+      "id": 10,
+      "question": "Which of these is a conservation reserve rather than a wildlife sanctuary?",
+      "options": [
+        "Bir Shikargah",
+        "Khol Hi-Raitan",
+        "Bir Bara Ban",
+        "Nahar"
+      ],
+      "correct": 2,
+      "rationale": "Bir Bara Ban in Jind (2007) is a conservation reserve, along with Saraswati Conservation Reserve."
+    },
+    {
+      "id": 11,
+      "question": "Mangar Bani, a sacred grove on the Aravalli ridge, is in which district?",
+      "options": [
+        "Ambala",
+        "Faridabad",
+        "Jind",
+        "Hisar"
+      ],
+      "correct": 1,
+      "rationale": "Mangar Bani lies near Mangar village in Faridabad district, and is protected mainly by local belief in saint Gudariya Das."
+    },
+    {
+      "id": 12,
+      "question": "The Haryana State Pollution Control Board enforces which pair of laws?",
+      "options": [
+        "Forest Act 1927 and Wildlife Act 1972",
+        "Water Act 1981 and Air Act 1974",
+        "Water Act 1974 and Air Act 1981",
+        "Environment Act 1986 and EPA 2000"
+      ],
+      "correct": 2,
+      "rationale": "Water (Prevention and Control of Pollution) Act 1974 and Air Act 1981. The Wildlife and Forest Acts are separate laws and the years in the swapped option are reversed."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following correctly describes Haryana's forest cover?",
+      "options": [
+        "It is among the lowest of Indian states and below the national average",
+        "It exceeds 33 percent",
+        "It is the highest in northern India",
+        "It is measured every year by HSPCB"
+      ],
+      "correct": 0,
+      "rationale": "Cover is very low. It is measured by the Forest Survey of India in the two-yearly ISFR, not by HSPCB."
+    },
+    {
+      "id": 14,
+      "question": "The state tree of Haryana is:",
+      "options": [
+        "Banyan",
+        "Bodhi tree (peepal)",
+        "Neem",
+        "Sal"
+      ],
+      "correct": 1,
+      "rationale": "The Bodhi tree, which is the peepal. Sal grows at Kalesar but is not the state tree."
+    }
+  ]
+}

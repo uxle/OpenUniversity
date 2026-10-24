@@ -1,0 +1,174 @@
+{
+  "lessonId": "new-criminal-laws-bns-bnss-bsa",
+  "title": "New Criminal Laws: BNS, BNSS and BSA: Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The Bharatiya Nyaya Sanhita replaced which earlier law?",
+      "options": [
+        "Indian Evidence Act, 1872",
+        "Arms Act, 1959",
+        "Indian Penal Code, 1860",
+        "Code of Criminal Procedure, 1973"
+      ],
+      "correct": 2,
+      "rationale": "The BNS is the substantive criminal code replacing the IPC of 1860. The CrPC is replaced by the BNSS and the Evidence Act by the BSA."
+    },
+    {
+      "id": 2,
+      "question": "From which date did the three new criminal laws come into force?",
+      "options": [
+        "15 August 2024",
+        "25 December 2023",
+        "1 July 2024",
+        "26 January 2024"
+      ],
+      "correct": 2,
+      "rationale": "Parliament passed them on 21 December 2023 and they received assent on 25 December 2023, but they came into force on 1 July 2024."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following correctly pairs the new law with the Act it replaced?",
+      "options": [
+        "BNSS with Code of Criminal Procedure",
+        "BSA with Code of Criminal Procedure",
+        "BNS with Code of Criminal Procedure",
+        "BNSS with Indian Evidence Act"
+      ],
+      "correct": 0,
+      "rationale": "BNSS replaced the CrPC; the BSA replaced the Indian Evidence Act; the BNS replaced the IPC."
+    },
+    {
+      "id": 4,
+      "question": "Under the BNS, murder is punishable under which section?",
+      "options": [
+        "Section 100",
+        "Section 111",
+        "Section 103",
+        "Section 302"
+      ],
+      "correct": 2,
+      "rationale": "IPC 302 became BNS 103. Section 100 defines culpable homicide, and 111 deals with organised crime."
+    },
+    {
+      "id": 5,
+      "question": "Which of these is a new offence introduced in the BNS, with no direct IPC equivalent?",
+      "options": [
+        "Cheating",
+        "Defamation",
+        "Organised crime",
+        "Theft"
+      ],
+      "correct": 2,
+      "rationale": "Organised crime (Section 111) is new. Theft, cheating and defamation existed in the IPC as 379, 420 and 500."
+    },
+    {
+      "id": 6,
+      "question": "The BNSS has how many sections?",
+      "options": [
+        "170",
+        "531",
+        "511",
+        "358"
+      ],
+      "correct": 1,
+      "rationale": "BNSS has 531 sections in 39 chapters. 358 is the BNS and 170 is the BSA."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following statements about sedition is correct?",
+      "options": [
+        "Sedition was shifted to the BNSS",
+        "The BNS has no offence called sedition, but Section 152 punishes acts endangering India's sovereignty, unity and integrity",
+        "Section 124A of the IPC was carried over unchanged into the BNS",
+        "The BNS raised the punishment for sedition to death"
+      ],
+      "correct": 1,
+      "rationale": "The BNS drops sedition by name and replaces it with Section 152 on acts endangering sovereignty, unity and integrity."
+    },
+    {
+      "id": 8,
+      "question": "Zero FIR, which allows registration at any police station regardless of jurisdiction, is given statutory recognition in which Act?",
+      "options": [
+        "BNS",
+        "BNSS",
+        "BSA",
+        "Indian Evidence Act"
+      ],
+      "correct": 1,
+      "rationale": "Section 173 of the BNSS recognises Zero FIR; the BNS is about offences and the BSA is about evidence."
+    },
+    {
+      "id": 9,
+      "question": "Which pair of numbers gives the number of sections in the BNS and the BSA respectively?",
+      "options": [
+        "170 and 531",
+        "358 and 170",
+        "358 and 531",
+        "531 and 358"
+      ],
+      "correct": 1,
+      "rationale": "BNS has 358 sections, BSA has 170. 531 belongs to the BNSS."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is NOT a change associated with the new criminal laws?",
+      "options": [
+        "Abolition of the Supreme Court's power to hear criminal appeals",
+        "Terrorism defined as a separate offence in the BNS",
+        "Community service as a punishment for some petty offences",
+        "Electronic records recognised as documents and primary evidence"
+      ],
+      "correct": 0,
+      "rationale": "No such abolition was made. The other three are real changes: community service, electronic records in the BSA, and terrorism in BNS Section 113."
+    },
+    {
+      "id": 11,
+      "question": "In the BSA, the certificate for electronic evidence, earlier in Section 65B of the Evidence Act, is found in:",
+      "options": [
+        "Section 63",
+        "Section 106",
+        "Section 3",
+        "Section 45"
+      ],
+      "correct": 0,
+      "rationale": "Section 63 of the BSA corresponds to the old 65B certificate for electronic records."
+    },
+    {
+      "id": 12,
+      "question": "Mob lynching by a group of five or more persons on grounds such as race, caste or language is covered in the BNS under:",
+      "options": [
+        "Section 318",
+        "Section 64",
+        "Section 356",
+        "Section 103(2)"
+      ],
+      "correct": 3,
+      "rationale": "Section 103(2) adds mob lynching as an aggravated murder, with death or life imprisonment. 318 is cheating, 356 defamation and 64 punishment for rape."
+    },
+    {
+      "id": 13,
+      "question": "Cheating, earlier punished under IPC Section 420, is now covered by which BNS section?",
+      "options": [
+        "Section 303",
+        "Section 318",
+        "Section 309",
+        "Section 356"
+      ],
+      "correct": 1,
+      "rationale": "Cheating is BNS 318. Theft is 303, robbery 309 and defamation 356."
+    },
+    {
+      "id": 14,
+      "question": "Which statement about the three laws is correct?",
+      "options": [
+        "The BNSS deals with procedure and has more sections than the BNS",
+        "The BNS deals with procedure of arrest",
+        "All three have identical numbers of sections",
+        "The BSA is the longest of the three"
+      ],
+      "correct": 0,
+      "rationale": "BNSS (531) has more sections than BNS (358), and BNSS is the procedural code. BNS lists offences."
+    }
+  ]
+}
