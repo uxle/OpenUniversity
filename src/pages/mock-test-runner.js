@@ -18,6 +18,8 @@
 // (built by the catalog page's builder). The router strips query strings
 // from route params, so — like pages/mcq.js reads ?lang — the query is
 // re-read from router.currentPath() here.
+import { lessonHref, lessonsToRevisit } from "../engines/progress-insights.js";
+import { setRich } from "../utils/rich-text.js";
 import { createEl, empty, mount } from "../utils/dom.js";
 import { icon } from "../utils/icon.js";
 import { router } from "../core/router.js";
@@ -107,7 +109,7 @@ function createExamOption(text, index, is_selected, onSelect) {
     class: ["ou-exam-option", is_selected ? "ou-exam-option--selected" : ""],
     "aria-pressed": is_selected ? "true" : "false",
     on: { click: () => onSelect(index) },
-  }, [text]);
+  }, [setRich(createEl("span", { class: "ou-mcq-option__text" }), text, { inline: true })]);
 }
 
 function createRunningView(run, state, { onAnswer, onGoto, onMark, onSubmit, onTick, onFinish }) {
@@ -133,7 +135,7 @@ function createRunningView(run, state, { onAnswer, onGoto, onMark, onSubmit, onT
   /* --- question card ---------------------------------------------- */
   const sectionChip = createEl("span", { class: "ou-exam-chip" }, [""]);
   const counterEl = createEl("span", { class: "ou-exam-counter" }, [""]);
-  const questionText = createEl("p", { class: "ou-mcq-question" }, [""]);
+  const questionText = createEl("div", { class: "ou-mcq-question" }, [""]);
   // Optional math (the MCQ schema's "zolto" field) — rendered exactly like
   // components/mcq/mcq-question.js renders it: Zolto's own trusted renderer
   // output, inserted via innerHTML.
@@ -248,7 +250,7 @@ function createRunningView(run, state, { onAnswer, onGoto, onMark, onSubmit, onT
 
     sectionChip.textContent = q.sectionTitle || "Questions";
     counterEl.textContent = `Question ${state.index + 1} of ${total}`;
-    questionText.textContent = q.question;
+    setRich(questionText, q.question);
     mathEl.innerHTML = renderInlineMath(q.zolto);
 
     empty(optionsEl);
@@ -382,14 +384,38 @@ function createResultView(run, summary, durationSec, autoSubmitted, onRetry) {
           createEl("span", { class: "ou-exam-chip" }, [q.sectionTitle || "Questions"]),
           `Q${i + 1}`,
         ]),
-        createEl("p", { class: "ou-card__title" }, [q.question]),
+        setRich(createEl("div", { class: "ou-card__title" }), q.question),
         createEl("p", { class: wasCorrect ? "ou-mcq-review--correct" : "ou-mcq-review--incorrect" }, [
-          `Your answer: ${q.options[choice] ?? "—"}${wasCorrect ? "" : ` (correct: ${q.options[q.correct]})`}`,
+          "Your answer: ",
+          choice >= 0 ? setRich(createEl("span"), q.options[choice], { inline: true }) : "—",
+          wasCorrect ? null : " (correct: ",
+          wasCorrect ? null : setRich(createEl("span"), q.options[q.correct], { inline: true }),
+          wasCorrect ? null : ")",
         ]),
-        q.rationale ? createEl("p", { class: "ou-text-sm" }, [q.rationale]) : null,
+        q.rationale ? setRich(createEl("div", { class: "ou-text-sm" }), q.rationale) : null,
+        !wasCorrect && q.lessonRef
+          ? createEl("a", { class: "ou-btn ou-btn--secondary ou-btn--sm ou-learn-link", href: lessonHref(q.lessonRef) }, [
+              icon("book-open"), `Learn this: ${q.lessonRef.title || "open the lesson"}`,
+            ])
+          : null,
       ]);
     }),
   );
+
+  const revisit = lessonsToRevisit(run.questions, (i) => (summary.choiceAt?.(i) ?? -1) !== run.questions[i].correct);
+  const revisitCard = revisit.length
+    ? createEl("div", { class: "ou-card ou-revisit" }, [
+        createEl("div", { class: "ou-card__title" }, ["Learn what you missed"]),
+        createEl("p", { class: "ou-text-sm" }, ["Open a lesson, read it, then retake the quiz on it."]),
+        createEl("ul", { class: "ou-revisit__list", role: "list" }, revisit.slice(0, 8).map((r) => createEl("li", {}, [
+          createEl("a", { href: r.href, class: "ou-revisit__link" }, [
+            icon("book-open"),
+            createEl("span", {}, [r.title || r.lessonId]),
+            createEl("span", { class: "ou-revisit__n ou-tabular-nums" }, [`${r.missed} missed`]),
+          ]),
+        ]))),
+      ])
+    : null;
 
   return createEl("div", { class: "ou-container ou-stack" }, [
     createEl("div", { class: "ou-mcq-result" }, [
@@ -402,6 +428,7 @@ function createResultView(run, summary, durationSec, autoSubmitted, onRetry) {
           sectionTable,
         ])
       : null,
+    revisitCard,
     createEl("div", { class: "ou-exam-result__actions" }, [
       createEl("button", {
         type: "button",

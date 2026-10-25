@@ -19,7 +19,11 @@
         "required": ["id", "question", "options", "correct", "rationale"],
         "properties": {
           "id": { "type": ["number", "string"] },
-          "question": { "type": "string", "minLength": 1 },
+          "question": { "type": "string", "minLength": 1, "description": "Zolto source: plain text, or $math$, `code`, **bold**, tables and @directives. Also applies to every option and the rationale." },
+          "category": {
+            "type": "string",
+            "description": "Optional topic label. When a quiz has 2+ categories the results screen shows per-topic accuracy (weakest first) and results.json lists them."
+          },
           "zolto": {
             "type": "string",
             "description": "Optional Zolto math source (the content that would sit between $…$ — no delimiters), rendered above the question via src/engines/zolto/zolto-engine.js renderInlineMath(). Use \"\" when a question has no relevant math expression, rather than omitting the field."

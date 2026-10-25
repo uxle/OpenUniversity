@@ -237,9 +237,13 @@ export async function buildTestRun(definition, { rng = Math.random } = {}) {
           .catch(() => null),
       ),
     );
+    // Tag each question with the lesson it came from, so a wrong answer in
+    // a mock can link straight back to the lesson that teaches it.
     const usable = banks
-      .filter((b) => b && Array.isArray(b.questions) && b.questions.length)
-      .map((b) => b.questions);
+      .map((b, i) => (b && Array.isArray(b.questions) && b.questions.length
+        ? b.questions.map((q) => ({ ...q, lessonRef: { ...chosen[i], title: String(b.title || "").replace(/:\s*Quiz$/i, "") } }))
+        : null))
+      .filter(Boolean);
     const picked = usable.length ? sampleQuestions(usable, section.count, rng) : [];
     if (!picked.length) continue;
 

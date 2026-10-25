@@ -78,3 +78,18 @@ export function firstUnfinished(lessonIds, subjectId, subSubjectId, records) {
   const done = new Set(records.filter((r) => r.completed && r.subjectId === subjectId && normSub(r.subSubjectId) === normSub(subSubjectId)).map((r) => r.lessonId));
   return lessonIds.find((id) => !done.has(id)) || null;
 }
+
+/** Lessons behind the questions a learner missed (wrong or skipped), most
+ *  missed first, de-duplicated — the "go and learn this" list. */
+export function lessonsToRevisit(questions, isMissed) {
+  const map = new Map();
+  questions.forEach((q, i) => {
+    if (!q.lessonRef || !isMissed(i)) return;
+    const r = q.lessonRef;
+    const key = `${r.subjectId}::${normSub(r.subSubjectId)}::${r.lessonId}`;
+    const e = map.get(key) || { ...r, href: lessonHref(r), missed: 0 };
+    e.missed++;
+    map.set(key, e);
+  });
+  return [...map.values()].sort((a, b) => b.missed - a.missed || String(a.title).localeCompare(String(b.title)));
+}

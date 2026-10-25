@@ -4232,6 +4232,91 @@ ul.ou-stack > li > a.ou-card--interactive:hover::after,
 .ou-link-row:hover .ou-link-row__title { color: var(--ou-signal); }
 .ou-profile-reset { justify-self: start; color: var(--ou-danger); }
 
+/* ── R39 · Quiz v2 (adopted from the uxle/MCQs engine) ─────────────────
+   Skip → Continue pinned in the thumb zone; a calm verdict card instead
+   of an auto-advance timer that hid the explanation; ring + stats +
+   per-topic bars on results. Colour is never the only cue (✓/✕ icons and
+   words). All motion is removed under prefers-reduced-motion. */
+.ou-mcq-qview { padding-bottom: var(--ou-space-4); }
+.ou-mcq-question.ou-rich p { margin: 0; }
+.ou-mcq-question.ou-rich p + p { margin-top: var(--ou-space-3); }
+.ou-rich .zl-table-wrap, .ou-rich pre, .ou-rich svg { max-width: 100%; }
+.ou-rich pre { overflow-x: auto; font-size: var(--ou-fs-sm); }
+.ou-mcq-option__text { min-width: 0; overflow-wrap: anywhere; text-align: left; }
+.ou-mcq-option--shake { animation: ou-mcq-shake .4s cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes ou-mcq-shake { 0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-6px)} 40%,80%{transform:translateX(6px)} }
+
+.ou-mcq-verdict { margin-top: var(--ou-space-4); padding: var(--ou-space-3) var(--ou-space-4); border: 1px solid var(--ou-border); border-left-width: 4px; border-radius: var(--ou-radius-md); background: var(--ou-surface-subtle); animation: ou-mcq-fade .3s ease both; }
+.ou-mcq-verdict--correct { border-left-color: var(--ou-success); }
+.ou-mcq-verdict--incorrect { border-left-color: var(--ou-danger); }
+.ou-mcq-verdict--skipped { border-left-color: var(--ou-text-secondary); }
+.ou-mcq-verdict__head { display: flex; align-items: center; gap: var(--ou-space-2); font-weight: 600; margin: 0; }
+.ou-mcq-verdict--correct .ou-mcq-verdict__head { color: var(--ou-success); }
+.ou-mcq-verdict--incorrect .ou-mcq-verdict__head { color: var(--ou-danger); }
+.ou-mcq-verdict__answer { margin-left: auto; font-weight: 500; color: var(--ou-text-secondary); }
+.ou-mcq-verdict__why { margin: var(--ou-space-2) 0 0; color: var(--ou-text); font-size: var(--ou-fs-sm); line-height: 1.6; }
+.ou-mcq-verdict__why p { margin: 0; }
+@keyframes ou-mcq-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* pinned footer: Skip / Continue / Finish always inside thumb reach */
+.ou-mcq-footer { position: sticky; bottom: 0; z-index: 5; display: flex; justify-content: flex-end; padding: var(--ou-space-3) 0 calc(var(--ou-space-3) + env(safe-area-inset-bottom)); background: linear-gradient(to top, var(--ou-bg) 70%, transparent); }
+@media (max-width: 719px) {
+  .ou-mcq-footer { bottom: calc(var(--ou-bottom-nav-height) + env(safe-area-inset-bottom)); }
+  .ou-mcq-footer .ou-btn { flex: 1; min-height: 48px; }
+}
+
+.ou-mcq-hero { display: flex; align-items: center; gap: var(--ou-space-5); flex-wrap: nowrap; }
+.ou-ring { position: relative; width: 120px; height: 120px; flex: none; }
+.ou-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ou-ring__track, .ou-ring__fill { fill: none; stroke-width: 9; }
+.ou-ring__track { stroke: var(--ou-border); }
+.ou-ring__fill { stroke: var(--ou-signal); stroke-linecap: round; transition: stroke-dashoffset 1s cubic-bezier(.16,1,.3,1); }
+.ou-ring__center { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
+.ou-ring__pct { font-size: var(--ou-fs-xl); font-weight: 700; color: var(--ou-text); }
+.ou-ring__cap { font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); text-transform: uppercase; letter-spacing: .06em; }
+.ou-mcq-hero__title { margin: 0; font-size: var(--ou-fs-xl); }
+.ou-mcq-hero__sub { margin: var(--ou-space-1) 0 0; color: var(--ou-text-secondary); }
+.ou-mcq-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--ou-space-2); }
+.ou-mcq-stat { text-align: center; padding: var(--ou-space-3) var(--ou-space-2); border: 1px solid var(--ou-border); border-radius: var(--ou-radius-md); }
+.ou-mcq-stat__v { font-size: var(--ou-fs-xl); font-weight: 700; }
+.ou-mcq-stat__v.is-ok { color: var(--ou-success); } .ou-mcq-stat__v.is-bad { color: var(--ou-danger); }
+.ou-mcq-stat__l { font-size: var(--ou-fs-xs); color: var(--ou-text-secondary); }
+.ou-mcq-topics__list { list-style: none; margin: var(--ou-space-3) 0 0; padding: 0; display: grid; gap: var(--ou-space-3); }
+.ou-mcq-topics__row { display: flex; justify-content: space-between; gap: var(--ou-space-3); font-size: var(--ou-fs-sm); margin-bottom: var(--ou-space-1); }
+.ou-mcq-result__actions { display: flex; flex-wrap: wrap; gap: var(--ou-space-2); }
+.ou-mcq-result__actions .ou-btn:first-child { flex: 1 1 100%; min-height: 48px; }
+
+.ou-mcq-review__item { display: grid; gap: var(--ou-space-2); }
+.ou-mcq-review__q { margin: 0; font-weight: 600; display: flex; gap: var(--ou-space-2); }
+.ou-mcq-review__n { color: var(--ou-text-secondary); }
+.ou-mcq-review__opts { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--ou-space-1); }
+.ou-mcq-review__opt { padding: var(--ou-space-2) var(--ou-space-3); border: 1px solid var(--ou-border); border-radius: var(--ou-radius-sm, 8px); font-size: var(--ou-fs-sm); }
+.ou-mcq-review__opt.is-correct { border-color: var(--ou-success); font-weight: 600; }
+.ou-mcq-review__opt.is-wrong { border-color: var(--ou-danger); text-decoration: underline wavy var(--ou-danger); text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ou-mcq-option--shake, .ou-mcq-verdict, .ou-ring__fill { animation: none; transition: none; }
+}
+@media (max-width: 380px) {
+  .ou-mcq-hero { flex-direction: column; text-align: center; }
+  .ou-mcq-stats { grid-template-columns: repeat(2, 1fr); }
+}
+.ou-mcq-verdict-slot { scroll-margin-bottom: 120px; }
+.ou-mcq-topics .ou-card__title { text-align: left; }
+.ou-rich.ou-lesson-content { font-size: inherit; line-height: inherit; }
+.ou-mcq-option .ou-rich.ou-lesson-content { display: inline; }
+@media (max-width: 719px) { .ou-mcq-qview { padding-bottom: 150px; } }
+
+/* R40 · Learn from a miss: wrong mock answers link to their lesson */
+.ou-learn-link { justify-self: start; }
+.ou-revisit__list { list-style: none; margin: var(--ou-space-3) 0 0; padding: 0; display: grid; gap: var(--ou-space-2); }
+.ou-revisit__link { display: flex; align-items: center; gap: var(--ou-space-3); padding: var(--ou-space-3); min-height: 44px; border: 1px solid var(--ou-border); border-radius: var(--ou-radius-md); color: var(--ou-text); text-decoration: none; }
+.ou-revisit__link:hover { border-color: var(--ou-signal); background: var(--ou-signal-subtle); }
+.ou-revisit__link span:nth-child(2) { flex: 1; min-width: 0; }
+.ou-revisit__n { color: var(--ou-text-secondary); font-size: var(--ou-fs-sm); }
+.ou-mcq-verdict__learn { display: inline-flex; align-items: center; gap: var(--ou-space-2); margin-top: var(--ou-space-3); min-height: 44px; font-weight: 600; color: var(--ou-signal); }
+.ou-learn-link { max-width: 100%; white-space: normal; text-align: left; height: auto; min-height: 44px; }
+
 /* ./print.css (print) — inlined by bundle-css */
 @media print {
 /* src/styles/print.css — used only in the print/PDF context (loaded via

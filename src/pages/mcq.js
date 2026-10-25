@@ -27,7 +27,7 @@ export async function render(container, { subjectId, subSubjectId, lessonId }, n
       isFallback ? createTranslationFallbackNotice(lang) : null,
       createMcqContainer(data, (correct, total) => {
         recordMcqScore(subjectId, subSubjectId, lessonId, correct, total);
-      }),
+      }, { lessonHref: backHref }),
     ]));
   } catch (err) {
     mount(container, createEmptyState({ message: `No quiz available for this lesson yet (${err.message}).` }));

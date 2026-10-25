@@ -48,3 +48,12 @@ test("firstUnfinished skips completed lessons", () => {
   assert.equal(firstUnfinished(["a"], "history", "", recs), null);
   assert.equal(completedRecords(recs).length, 2);
 });
+
+import { lessonsToRevisit } from "../../src/engines/progress-insights.js";
+test("lessonsToRevisit groups missed questions by lesson, most missed first", () => {
+  const ref = (lessonId, sub) => ({ lessonRef: { subjectId: "math", subSubjectId: sub, lessonId, title: lessonId } });
+  const qs = [ref("a", "numbers"), ref("b", "numbers"), ref("a", "numbers"), { question: "no ref" }];
+  const out = lessonsToRevisit(qs, (i) => i !== 1);
+  assert.deepEqual(out.map((x) => [x.lessonId, x.missed]), [["a", 2]]);
+  assert.equal(out[0].href, "#/subjects/math/numbers/lessons/a");
+});

@@ -19,7 +19,7 @@
 // caches are deleted on activate; clients are claimed so the first
 // page after an update is already controllerless-safe.
 
-const CACHE_VERSION = "openknowledge-v13-exam-content";
+const CACHE_VERSION = "openknowledge-v15-learn-from-misses";
 const PRECACHE = [
   "./",
   "./index.html",

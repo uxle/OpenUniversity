@@ -113,6 +113,8 @@ export function renderInlineMath(source) {
   return `<span class="zl-math zl-math-inline" role="img" aria-label="${escapeAttr(ariaText)}">${visual}<span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">${mathml}</span></span>`;
 }
 
+export function ensureMathStyles() { injectMathStylesOnce(); }
+
 function injectMathStylesOnce() {
   if (typeof document === "undefined" || document.getElementById("zl-math-styles")) return;
   const style = document.createElement("style");
